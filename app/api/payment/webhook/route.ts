@@ -4,11 +4,17 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function POST(req: NextRequest) {
   const rawBody = await req.text()
-
   const signature = req.headers.get('X-SePay-Signature') ?? ''
+  const timestamp = req.headers.get('X-SePay-Timestamp') ?? ''
+
+  const now = Math.floor(Date.now() / 1000)
+  if (Math.abs(now - parseInt(timestamp)) > 300) {
+    return NextResponse.json({ error: 'Request expired' }, { status: 401 })
+  }
+
   const expected = 'sha256=' + crypto
     .createHmac('sha256', process.env.SEPAY_WEBHOOK_SECRET!)
-    .update(rawBody)
+    .update(`${timestamp}.${rawBody}`)
     .digest('hex')
 
   if (signature !== expected) {
