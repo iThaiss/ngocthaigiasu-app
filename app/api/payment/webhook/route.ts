@@ -1,15 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
+import crypto from 'crypto'
 import { createAdminClient } from '@/lib/supabase'
 
 export async function POST(req: NextRequest) {
-  const apiKey = req.headers.get('Apikey') ?? ''
-  if (apiKey !== process.env.SEPAY_API_TOKEN) {
+  const rawBody = await req.text()
+
+  const signature = req.headers.get('X-SePay-Signature') ?? ''
+  const expected = 'sha256=' + crypto
+    .createHmac('sha256', process.env.SEPAY_WEBHOOK_SECRET!)
+    .update(rawBody)
+    .digest('hex')
+
+  if (signature !== expected) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
   let body: Record<string, unknown>
   try {
-    body = await req.json()
+    body = JSON.parse(rawBody)
   } catch {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
