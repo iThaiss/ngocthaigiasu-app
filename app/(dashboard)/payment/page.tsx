@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import {
   Crown, Check, Loader2, CheckCircle, Copy, Shield, Zap, Star,
@@ -63,6 +64,7 @@ const PRESET_AMOUNTS = [50000, 100000, 200000]
 
 export default function PaymentPage() {
   const { data: session, update: updateSession } = useSession()
+  const router = useRouter()
   const { toast } = useToast()
 
   const [points, setPoints] = useState<number | null>(null)
@@ -178,6 +180,7 @@ export default function PaymentPage() {
         return
       }
       await updateSession()
+      router.refresh()
       await fetchPoints()
       toast({
         title: 'Đăng ký VIP thành công!',

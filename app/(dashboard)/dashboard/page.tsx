@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Brain, Trophy, TrendingUp, Bell, ArrowRight, Clock, Target, Flame } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -9,6 +10,50 @@ import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { useAuth } from '@/lib/auth-context'
 import { MOCK_EXAM_SESSIONS } from '@/lib/mock-data'
+
+function CountdownTimer() {
+  const TARGET = new Date('2027-06-12T00:00:00+07:00')
+  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
+  useEffect(() => {
+    const tick = () => {
+      const diff = TARGET.getTime() - new Date().getTime()
+      if (diff <= 0) return
+      setTime({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((diff % (1000 * 60)) / 1000),
+      })
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  return (
+    <div className="rounded-xl border border-red-500/20 bg-gradient-to-r from-red-500/10 to-orange-500/10 p-6 text-center">
+      <p className="mb-4 text-sm font-medium text-red-400">⏰ Kỳ thi THPT Quốc Gia 2027</p>
+      <div className="flex justify-center gap-3 sm:gap-4">
+        {[
+          { value: time.days, label: 'Ngày' },
+          { value: time.hours, label: 'Giờ' },
+          { value: time.minutes, label: 'Phút' },
+          { value: time.seconds, label: 'Giây' },
+        ].map(({ value, label }) => (
+          <div key={label} className="flex flex-col items-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-red-500/30 bg-background">
+              <span className="tabular-nums text-2xl font-bold">{String(value).padStart(2, '0')}</span>
+            </div>
+            <span className="mt-1 text-xs text-muted-foreground">{label}</span>
+          </div>
+        ))}
+      </div>
+      <p className="mt-3 text-xs text-muted-foreground">12/06/2027</p>
+    </div>
+  )
+}
 
 const SHORTCUTS = [
   { href: '/solve', icon: Brain, label: 'Giải toán AI', desc: 'Upload ảnh bài toán', color: 'bg-purple-500/10 text-purple-500' },
@@ -33,6 +78,11 @@ export default function DashboardPage() {
           Xin chào, {user?.name?.split(' ').pop()} 👋
         </h1>
         <p className="text-muted-foreground mt-1">Chào mừng trở lại!</p>
+      </motion.div>
+
+      {/* Countdown to THPTQG 2027 */}
+      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
+        <CountdownTimer />
       </motion.div>
 
       {/* Stats */}

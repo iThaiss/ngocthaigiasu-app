@@ -93,10 +93,13 @@ export async function POST(req: NextRequest) {
   await supabase.from('transactions').update({ status: 'completed' }).eq('id', tx.id)
 
   // Notify user
+  const notifTitle = 'Nâng cấp VIP thành công 🎉'
+  const notifContent = `Tài khoản đã được nâng cấp VIP.`
+
   await supabase.from('notifications').insert({
     user_id: tx.user_id,
-    title: 'Nạp điểm thành công!',
-    content: `Bạn đã nạp thành công +${pointsToAdd} điểm vào tài khoản.`,
+    title: notifTitle,
+    content: notifContent,
     type: 'payment',
   })
 

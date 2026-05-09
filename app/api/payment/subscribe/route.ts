@@ -57,8 +57,18 @@ export async function POST(req: NextRequest) {
     description: `Đăng ký gói VIP ${planId === 'yearly' ? 'Full Khóa Học' : 'Tháng'}`,
   })
 
-  const now = new Date()
-  const vipExpiresAt = new Date(now)
+  const { data: userData } = await supabase
+    .from('users')
+    .select('vip_expires_at')
+    .eq('id', session.user.id)
+    .single()
+
+  const currentExpiry = userData?.vip_expires_at
+  const baseDate = (currentExpiry && new Date(currentExpiry) > new Date())
+    ? new Date(currentExpiry)
+    : new Date()
+
+  const vipExpiresAt = new Date(baseDate)
   if (planId === 'yearly') {
     vipExpiresAt.setFullYear(vipExpiresAt.getFullYear() + 1)
   } else {
