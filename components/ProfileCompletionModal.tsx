@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import { Loader2, User } from 'lucide-react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
@@ -37,6 +38,7 @@ interface Props {
 
 export default function ProfileCompletionModal({ isOpen, onClose, userName }: Props) {
   const { update: updateSession } = useSession()
+  const router = useRouter()
   const { toast } = useToast()
 
   const [form, setForm] = useState({
@@ -78,6 +80,7 @@ export default function ProfileCompletionModal({ isOpen, onClose, userName }: Pr
         throw new Error(data.error ?? 'Lỗi cập nhật')
       }
       await updateSession()
+      router.refresh()
       toast({ title: 'Cập nhật thành công!' })
       onClose()
     } catch (err) {

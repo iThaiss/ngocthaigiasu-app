@@ -58,13 +58,14 @@ export const authOptions: NextAuthOptions = {
         return true
       }
     },
-    async jwt({ token, user }) {
-      if (user?.email) {
+    async jwt({ token, user, trigger }) {
+      const email = user?.email ?? (trigger === 'update' ? (token.email as string) : null)
+      if (email) {
         try {
           const { data } = await supabaseAdmin
             .from('users')
             .select('id, role, is_vip, vip_expires_at, profile_completed')
-            .eq('email', user.email)
+            .eq('email', email)
             .single()
           if (data) {
             token.userId = data.id
