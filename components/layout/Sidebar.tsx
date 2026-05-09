@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   LayoutDashboard, User, Brain, FileText, Bell, CreditCard,
-  Users, BookOpen, LogOut, ChevronLeft, ChevronRight, Menu, X,
-  Crown, GitBranch,
+  Users, BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
+  Crown, GitBranch, CalendarDays, MessageCircle, Phone,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -30,6 +30,10 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/notifications', label: 'Thông báo', icon: Bell },
   { href: '/payment', label: 'Nâng cấp VIP', icon: CreditCard },
   { href: '/affiliate', label: 'Hoa hồng', icon: GitBranch },
+  { href: '/documents', label: 'Tài liệu', icon: Library },
+  { href: '/schedule', label: 'Lịch học', icon: CalendarDays },
+  { href: '/chat', label: 'Chat cộng đồng', icon: MessageCircle },
+  { href: '/contact', label: 'Liên hệ', icon: Phone },
   { href: '/profile', label: 'Hồ sơ', icon: User },
 ]
 

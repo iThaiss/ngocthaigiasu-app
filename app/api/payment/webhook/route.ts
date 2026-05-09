@@ -96,5 +96,60 @@ export async function POST(req: NextRequest) {
   })
   console.log('[webhook] notification insert:', notifError ? notifError.message : 'ok')
 
+  // Affiliate commission: tìm referral pending cho user này
+  const { data: referral } = await supabase
+    .from('affiliate_referrals')
+    .select('id, referrer_id')
+    .eq('referee_id', tx.user_id)
+    .eq('status', 'pending')
+    .single()
+
+  if (referral) {
+    console.log('[webhook] affiliate referral found:', referral.id, 'referrer:', referral.referrer_id)
+
+    // Cộng 10 điểm vào wallet của referrer
+    const { error: walletErr } = await supabase.rpc('increment_wallet_points', {
+      p_user_id: referral.referrer_id,
+      p_points: 10,
+    }).single()
+
+    if (walletErr) {
+      // Fallback: update trực tiếp nếu RPC chưa tồn tại
+      await supabase
+        .from('wallets')
+        .update({ points: supabase.rpc('wallets.points + 10' as never) })
+        .eq('user_id', referral.referrer_id)
+      console.log('[webhook] wallet rpc unavailable, skip points update')
+    } else {
+      console.log('[webhook] wallet points +10 for referrer:', referral.referrer_id)
+    }
+
+    // Insert point_transactions cho referrer
+    const { error: ptErr } = await supabase.from('point_transactions').insert({
+      user_id: referral.referrer_id,
+      amount: 10,
+      type: 'commission',
+      description: 'Hoa hồng giới thiệu bạn bè nâng cấp VIP',
+      reference_id: referral.id,
+    })
+    console.log('[webhook] point_transaction insert:', ptErr ? ptErr.message : 'ok')
+
+    // Update affiliate_referrals status
+    const { error: refUpdateErr } = await supabase
+      .from('affiliate_referrals')
+      .update({ status: 'commissioned' })
+      .eq('id', referral.id)
+    console.log('[webhook] referral status update:', refUpdateErr ? refUpdateErr.message : 'ok')
+
+    // Notification cho referrer
+    const { error: refNotifErr } = await supabase.from('notifications').insert({
+      user_id: referral.referrer_id,
+      title: 'Nhận được hoa hồng!',
+      content: 'Bạn nhận được 10 điểm hoa hồng từ người bạn giới thiệu vừa nâng cấp VIP.',
+      type: 'commission',
+    })
+    console.log('[webhook] referrer notification insert:', refNotifErr ? refNotifErr.message : 'ok')
+  }
+
   return NextResponse.json({ success: true })
 }
