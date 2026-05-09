@@ -1,19 +1,27 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { useSession } from 'next-auth/react'
-import { Crown, Check, CreditCard, Loader2, CheckCircle, Copy, Shield, Zap, BookOpen } from 'lucide-react'
+import { motion } from 'framer-motion'
+import {
+  Crown, Check, Loader2, CheckCircle, Copy, Shield, Zap, Star,
+  Plus, ArrowRight, Info,
+} from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { useToast } from '@/components/ui/use-toast'
 import { formatCurrency } from '@/lib/utils'
 
-interface PaymentInfo {
+interface TopupInfo {
   txId: string
   referenceCode: string
   amount: number
+  pointsToAdd: number
   qrUrl: string
   bankAccount: string
   accountName: string
@@ -24,100 +32,163 @@ const PLANS = [
   {
     id: 'monthly',
     name: 'Gói Tháng',
-    price: 99000,
-    period: '/ tháng',
-    features: ['Không giới hạn giải toán AI', 'Thi thử không giới hạn', 'Xem video hướng dẫn', 'Hỗ trợ 24/7'],
+    points: 69,
+    period: '/ 30 ngày',
+    features: [
+      'Không giới hạn giải toán AI',
+      'Thi thử không giới hạn',
+      'Xem video hướng dẫn',
+      'Hỗ trợ ưu tiên',
+    ],
     highlight: false,
   },
   {
     id: 'yearly',
-    name: 'Gói Năm',
-    price: 799000,
-    period: '/ năm',
-    badge: 'Tiết kiệm 34%',
-    features: ['Tất cả tính năng Gói Tháng', 'Ưu tiên hỗ trợ hàng đầu', 'Đề thi exclusive', 'Báo cáo học tập chi tiết', 'Huy hiệu VIP nổi bật'],
+    name: 'Gói Full Khóa Học',
+    points: 699,
+    period: '/ 365 ngày',
+    badge: 'Tiết kiệm nhất',
+    features: [
+      'Tất cả tính năng Gói Tháng',
+      'Toàn bộ tài liệu học tập',
+      'Đề thi exclusive',
+      'Báo cáo học tập chi tiết',
+      'Huy hiệu VIP nổi bật',
+    ],
     highlight: true,
   },
 ]
+
+const PRESET_AMOUNTS = [50000, 100000, 200000]
 
 export default function PaymentPage() {
   const { data: session, update: updateSession } = useSession()
   const { toast } = useToast()
 
-  const [loading, setLoading] = useState(false)
-  const [paymentInfo, setPaymentInfo] = useState<PaymentInfo | null>(null)
-  const [success, setSuccess] = useState(false)
-  const [open, setOpen] = useState(false)
+  const [points, setPoints] = useState<number | null>(null)
+  const [loadingPoints, setLoadingPoints] = useState(true)
+  const [amountInput, setAmountInput] = useState('')
+  const [topupLoading, setTopupLoading] = useState(false)
+  const [topupInfo, setTopupInfo] = useState<TopupInfo | null>(null)
+  const [topupSuccess, setTopupSuccess] = useState(false)
+  const [dialogOpen, setDialogOpen] = useState(false)
+  const [subscribing, setSubscribing] = useState<string | null>(null)
+
   const pollRef = useRef<NodeJS.Timeout | null>(null)
 
-  const isVip = session?.user?.isVip ?? false
-
-  function stopPolling() {
-    if (pollRef.current) {
-      clearInterval(pollRef.current)
-      pollRef.current = null
+  const fetchPoints = useCallback(async () => {
+    try {
+      const res = await fetch('/api/wallet')
+      if (res.ok) {
+        const data = await res.json()
+        setPoints(data.points ?? 0)
+      }
+    } finally {
+      setLoadingPoints(false)
     }
-  }
-
-  useEffect(() => {
-    return () => stopPolling()
   }, [])
 
-  async function handleSelectPlan(planId: string) {
-    setLoading(true)
-    setPaymentInfo(null)
-    setSuccess(false)
-    setOpen(true)
+  useEffect(() => {
+    fetchPoints()
+    return () => {
+      if (pollRef.current) clearInterval(pollRef.current)
+    }
+  }, [fetchPoints])
+
+  const parsedAmount = parseInt(amountInput.replace(/\D/g, ''), 10) || 0
+  const pointsPreview = Math.floor(parsedAmount / 1000)
+  const isVip = session?.user?.isVip ?? false
+
+  async function handleCreateTopup() {
+    if (parsedAmount < 10000) {
+      toast({ title: 'Số tiền tối thiểu 10.000đ', variant: 'destructive' })
+      return
+    }
+    setTopupLoading(true)
+    setTopupInfo(null)
+    setTopupSuccess(false)
+    setDialogOpen(true)
 
     try {
       const res = await fetch('/api/payment/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ planId }),
+        body: JSON.stringify({ amount: parsedAmount }),
       })
-
       if (!res.ok) {
         const err = await res.json().catch(() => ({}))
         throw new Error(err.error ?? 'Request failed')
       }
+      const data: TopupInfo = await res.json()
+      setTopupInfo(data)
 
-      const data: PaymentInfo = await res.json()
-      setPaymentInfo(data)
-
-      stopPolling()
+      if (pollRef.current) clearInterval(pollRef.current)
       pollRef.current = setInterval(async () => {
         try {
           const statusRes = await fetch(`/api/payment/status/${data.txId}`)
           const { status } = await statusRes.json()
           if (status === 'completed') {
-            stopPolling()
-            setSuccess(true)
-            await updateSession()
-            toast({
-              title: 'Thanh toán thành công!',
-              description: 'Tài khoản đã được nâng cấp lên VIP.',
-            })
+            clearInterval(pollRef.current!)
+            pollRef.current = null
+            setTopupSuccess(true)
+            await fetchPoints()
+            toast({ title: `Nạp điểm thành công! +${data.pointsToAdd} điểm` })
           }
         } catch {
-          // bỏ qua lỗi mạng tạm thời
+          // ignore transient network errors
         }
       }, 5000)
     } catch (err) {
-      const message = err instanceof Error ? err.message : 'Vui lòng thử lại.'
-      toast({ title: 'Không thể tạo giao dịch', description: message, variant: 'destructive' })
-      setOpen(false)
+      const msg = err instanceof Error ? err.message : 'Vui lòng thử lại.'
+      toast({ title: 'Không thể tạo giao dịch', description: msg, variant: 'destructive' })
+      setDialogOpen(false)
     } finally {
-      setLoading(false)
+      setTopupLoading(false)
     }
   }
 
-  function handleOpenChange(value: boolean) {
-    if (!value) {
-      stopPolling()
-      setSuccess(false)
-      setPaymentInfo(null)
+  function handleDialogClose(open: boolean) {
+    if (!open) {
+      if (pollRef.current) { clearInterval(pollRef.current); pollRef.current = null }
+      setTopupSuccess(false)
+      setTopupInfo(null)
     }
-    setOpen(value)
+    setDialogOpen(open)
+  }
+
+  async function handleSubscribe(planId: string) {
+    setSubscribing(planId)
+    try {
+      const res = await fetch('/api/payment/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ planId }),
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        if (data.needed !== undefined) {
+          toast({
+            title: 'Không đủ điểm',
+            description: `Cần ${data.needed} điểm, bạn đang có ${data.current} điểm (thiếu ${data.needed - data.current} điểm)`,
+            variant: 'destructive',
+          })
+        } else {
+          throw new Error(data.error ?? 'Request failed')
+        }
+        return
+      }
+      await updateSession()
+      await fetchPoints()
+      toast({
+        title: 'Đăng ký VIP thành công!',
+        description: `Tài khoản đã được kích hoạt. Còn lại ${data.pointsRemaining} điểm.`,
+      })
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : 'Vui lòng thử lại.'
+      toast({ title: 'Lỗi', description: msg, variant: 'destructive' })
+    } finally {
+      setSubscribing(null)
+    }
   }
 
   function copy(text: string, label: string) {
@@ -127,152 +198,255 @@ export default function PaymentPage() {
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
-      {/* Header */}
-      <div className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-500/10">
-          <Crown className="h-5 w-5 text-yellow-500" />
+      {/* Header + Points display */}
+      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-500/10">
+            <Crown className="h-5 w-5 text-yellow-500" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold">Hệ thống điểm VIP</h1>
+            <p className="text-muted-foreground text-sm">Nạp tiền → tích điểm → đăng ký gói</p>
+          </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-bold">Nâng cấp VIP</h1>
-          <p className="text-muted-foreground text-sm">Mở khóa toàn bộ tính năng học tập</p>
+        <div className="flex items-center gap-2 rounded-xl border border-yellow-500/30 bg-yellow-500/10 px-4 py-2">
+          <Star className="h-4 w-4 text-yellow-500" />
+          {loadingPoints
+            ? <Loader2 className="h-4 w-4 animate-spin text-yellow-500" />
+            : <span className="text-lg font-bold text-yellow-600 dark:text-yellow-400">{points ?? 0} điểm</span>
+          }
         </div>
-      </div>
+      </motion.div>
 
       {isVip && (
         <Card className="border-yellow-500/30 bg-yellow-500/5">
-          <CardContent className="pt-4 pb-4 flex items-center gap-3">
+          <CardContent className="flex items-center gap-3 pt-4 pb-4">
             <Crown className="h-5 w-5 text-yellow-500" />
             <p className="text-sm font-medium">Bạn đang là thành viên VIP. Cảm ơn bạn đã tin tưởng!</p>
           </CardContent>
         </Card>
       )}
 
-      {/* Plan cards */}
-      <div className="grid md:grid-cols-2 gap-4">
-        {PLANS.map((plan) => (
-          <Card key={plan.id} className={`relative h-full ${plan.highlight ? 'border-primary shadow-lg' : ''}`}>
-            {plan.badge && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge className="bg-primary">{plan.badge}</Badge>
-              </div>
-            )}
-            <CardHeader className="pb-4">
-              <CardTitle className="text-lg">{plan.name}</CardTitle>
-              <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-extrabold">{formatCurrency(plan.price)}</span>
-                <span className="text-muted-foreground text-sm">{plan.period}</span>
-              </div>
+      {/* Main Tabs */}
+      <Tabs defaultValue="topup">
+        <TabsList className="grid w-full grid-cols-2">
+          <TabsTrigger value="topup">
+            <Plus className="mr-1.5 h-4 w-4" /> Nạp điểm
+          </TabsTrigger>
+          <TabsTrigger value="subscribe">
+            <Crown className="mr-1.5 h-4 w-4" /> Đăng ký gói
+          </TabsTrigger>
+        </TabsList>
+
+        {/* Tab: Nạp điểm */}
+        <TabsContent value="topup" className="mt-4 space-y-4">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base">Nạp điểm qua chuyển khoản</CardTitle>
+              <p className="text-sm text-muted-foreground">Quy đổi: 1.000đ = 1 điểm · Tối thiểu 10.000đ (10 điểm)</p>
             </CardHeader>
             <CardContent className="space-y-4">
-              <ul className="space-y-2">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm">
-                    <Check className="h-4 w-4 text-green-500 shrink-0" />
-                    {f}
-                  </li>
+              <div className="space-y-1.5">
+                <Label htmlFor="amount">Số tiền muốn nạp (VND)</Label>
+                <Input
+                  id="amount"
+                  placeholder="Nhập số tiền, VD: 100000"
+                  inputMode="numeric"
+                  value={amountInput ? parseInt(amountInput).toLocaleString('vi-VN') : ''}
+                  onChange={(e) => {
+                    const raw = e.target.value.replace(/\D/g, '')
+                    setAmountInput(raw)
+                  }}
+                />
+                {parsedAmount > 0 && parsedAmount < 10000 && (
+                  <p className="text-xs text-destructive">Số tiền tối thiểu 10.000đ</p>
+                )}
+              </div>
+
+              {/* Preset buttons */}
+              <div className="grid grid-cols-3 gap-2">
+                {PRESET_AMOUNTS.map((preset) => (
+                  <Button
+                    key={preset}
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setAmountInput(String(preset))}
+                    className={parsedAmount === preset ? 'border-primary bg-primary/5' : ''}
+                  >
+                    {formatCurrency(preset)}
+                  </Button>
                 ))}
-              </ul>
+              </div>
+
+              {/* Points preview */}
+              {parsedAmount >= 10000 && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex items-center justify-between rounded-lg border border-yellow-500/20 bg-yellow-500/10 px-4 py-3"
+                >
+                  <span className="text-sm text-muted-foreground">Bạn sẽ nhận được</span>
+                  <div className="flex items-center gap-1.5 font-bold text-yellow-600 dark:text-yellow-400">
+                    <Star className="h-4 w-4" />
+                    <span className="text-xl">{pointsPreview} điểm</span>
+                  </div>
+                </motion.div>
+              )}
+
               <Button
-                className="w-full"
-                variant={plan.highlight ? 'default' : 'outline'}
-                onClick={() => handleSelectPlan(plan.id)}
-                disabled={loading}
+                className="w-full gap-2"
+                onClick={handleCreateTopup}
+                disabled={topupLoading || parsedAmount < 10000}
               >
-                <CreditCard className="h-4 w-4 mr-2" />
-                Chọn gói này
+                {topupLoading
+                  ? <Loader2 className="h-4 w-4 animate-spin" />
+                  : <ArrowRight className="h-4 w-4" />
+                }
+                Tạo QR nạp tiền
               </Button>
             </CardContent>
           </Card>
-        ))}
-      </div>
+        </TabsContent>
+
+        {/* Tab: Đăng ký gói */}
+        <TabsContent value="subscribe" className="mt-4 space-y-4">
+          {/* Current points */}
+          <div className="flex items-center justify-between rounded-lg bg-muted/50 px-4 py-3">
+            <span className="text-sm text-muted-foreground">Điểm hiện tại của bạn</span>
+            <div className="flex items-center gap-1.5 font-bold">
+              <Star className="h-4 w-4 text-yellow-500" />
+              {loadingPoints
+                ? <Loader2 className="h-4 w-4 animate-spin" />
+                : <span>{points ?? 0} điểm</span>
+              }
+            </div>
+          </div>
+
+          {/* Plan cards */}
+          <div className="grid md:grid-cols-2 gap-4">
+            {PLANS.map((plan) => {
+              const currentPts = points ?? 0
+              const canAfford = currentPts >= plan.points
+              const isSubscribing = subscribing === plan.id
+              const lacking = plan.points - currentPts
+
+              return (
+                <Card key={plan.id} className={`relative h-full ${plan.highlight ? 'border-primary shadow-lg' : ''}`}>
+                  {plan.badge && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                      <Badge className="bg-primary">{plan.badge}</Badge>
+                    </div>
+                  )}
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-lg">{plan.name}</CardTitle>
+                    <div className="flex items-center gap-1.5">
+                      <Star className="h-5 w-5 text-yellow-500" />
+                      <span className="text-3xl font-extrabold text-yellow-500">{plan.points}</span>
+                      <span className="text-sm text-muted-foreground">điểm {plan.period}</span>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <ul className="space-y-2">
+                      {plan.features.map((f) => (
+                        <li key={f} className="flex items-center gap-2 text-sm">
+                          <Check className="h-4 w-4 shrink-0 text-green-500" />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Button
+                      className="w-full"
+                      variant={plan.highlight ? 'default' : 'outline'}
+                      onClick={() => handleSubscribe(plan.id)}
+                      disabled={!canAfford || isSubscribing || !!subscribing}
+                    >
+                      {isSubscribing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                      {canAfford
+                        ? `Dùng ${plan.points} điểm đăng ký`
+                        : `Cần thêm ${lacking} điểm`
+                      }
+                    </Button>
+                  </CardContent>
+                </Card>
+              )
+            })}
+          </div>
+
+          {!loadingPoints && (points ?? 0) < 69 && (
+            <div className="flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm text-blue-700 dark:bg-blue-950/30 dark:border-blue-800 dark:text-blue-300">
+              <Info className="h-4 w-4 shrink-0" />
+              Chưa đủ điểm. Chuyển sang tab <strong className="mx-1">Nạp điểm</strong> để nạp thêm (1.000đ = 1 điểm).
+            </div>
+          )}
+        </TabsContent>
+      </Tabs>
 
       {/* Trust badges */}
       <div className="grid grid-cols-3 gap-3">
         {[
           { icon: Shield, label: 'Thanh toán an toàn' },
           { icon: Zap, label: 'Kích hoạt ngay lập tức' },
-          { icon: BookOpen, label: 'Hủy bất kỳ lúc nào' },
+          { icon: Star, label: '1.000đ = 1 điểm' },
         ].map(({ icon: Icon, label }) => (
-          <div key={label} className="flex flex-col items-center gap-1 text-center p-3 rounded-lg bg-muted/50">
+          <div key={label} className="flex flex-col items-center gap-1 rounded-lg bg-muted/50 p-3 text-center">
             <Icon className="h-5 w-5 text-muted-foreground" />
             <p className="text-xs text-muted-foreground">{label}</p>
           </div>
         ))}
       </div>
 
-      {/* Payment modal */}
-      <Dialog open={open} onOpenChange={handleOpenChange}>
+      {/* QR Dialog */}
+      <Dialog open={dialogOpen} onOpenChange={handleDialogClose}>
         <DialogContent className="max-w-sm">
           <DialogHeader>
-            <DialogTitle>Thanh toán qua chuyển khoản</DialogTitle>
+            <DialogTitle>Nạp điểm qua chuyển khoản</DialogTitle>
             <DialogDescription>
               Quét mã QR hoặc chuyển khoản theo thông tin bên dưới
             </DialogDescription>
           </DialogHeader>
 
-          {/* Loading state */}
-          {(loading || (!paymentInfo && !success)) && (
-            <div className="py-12 flex flex-col items-center gap-3">
+          {(topupLoading || (!topupInfo && !topupSuccess)) && (
+            <div className="flex flex-col items-center gap-3 py-12">
               <Loader2 className="h-8 w-8 animate-spin text-primary" />
               <p className="text-sm text-muted-foreground">Đang tạo mã thanh toán...</p>
             </div>
           )}
 
-          {/* Success state */}
-          {success && (
-            <div className="py-6 text-center space-y-3">
-              <CheckCircle className="h-16 w-16 text-green-500 mx-auto" />
-              <p className="font-bold text-lg">Thanh toán thành công!</p>
-              <p className="text-sm text-muted-foreground">Tài khoản đã được nâng cấp lên VIP</p>
-              <Badge className="bg-yellow-500 gap-1">
-                <Crown className="h-3 w-3" /> VIP Active
-              </Badge>
-              <Button className="w-full" onClick={() => setOpen(false)}>Đóng</Button>
+          {topupSuccess && topupInfo && (
+            <div className="space-y-3 py-6 text-center">
+              <CheckCircle className="mx-auto h-16 w-16 text-green-500" />
+              <p className="text-lg font-bold">Nạp điểm thành công!</p>
+              <div className="flex items-center justify-center gap-2">
+                <Star className="h-5 w-5 text-yellow-500" />
+                <span className="text-xl font-bold text-yellow-500">+{topupInfo.pointsToAdd} điểm</span>
+              </div>
+              <p className="text-sm text-muted-foreground">Điểm đã được cộng vào tài khoản</p>
+              <Button className="w-full" onClick={() => setDialogOpen(false)}>Đóng</Button>
             </div>
           )}
 
-          {/* QR + info state */}
-          {!loading && paymentInfo && !success && (
+          {!topupLoading && topupInfo && !topupSuccess && (
             <div className="space-y-3">
-              {/* QR code thật từ VietQR */}
               <div className="flex justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={paymentInfo.qrUrl}
+                  src={topupInfo.qrUrl}
                   alt="Mã QR thanh toán"
                   width={240}
                   height={240}
                   className="rounded-xl border bg-white"
                 />
               </div>
-
-              {/* Thông tin chuyển khoản */}
               <div className="space-y-2 text-sm">
-                <InfoRow label="Ngân hàng" value={paymentInfo.bankName} />
-                <InfoRow
-                  label="Số tài khoản"
-                  value={paymentInfo.bankAccount}
-                  mono
-                  onCopy={() => copy(paymentInfo.bankAccount, 'số tài khoản')}
-                />
-                <InfoRow label="Chủ tài khoản" value={paymentInfo.accountName} />
-                <InfoRow
-                  label="Số tiền"
-                  value={formatCurrency(paymentInfo.amount)}
-                  bold
-                  onCopy={() => copy(String(paymentInfo.amount), 'số tiền')}
-                />
-                <InfoRow
-                  label="Nội dung chuyển khoản"
-                  value={paymentInfo.referenceCode}
-                  mono
-                  bold
-                  onCopy={() => copy(paymentInfo.referenceCode, 'nội dung chuyển khoản')}
-                />
+                <InfoRow label="Ngân hàng" value={topupInfo.bankName} />
+                <InfoRow label="Số tài khoản" value={topupInfo.bankAccount} mono onCopy={() => copy(topupInfo.bankAccount, 'số tài khoản')} />
+                <InfoRow label="Chủ tài khoản" value={topupInfo.accountName} />
+                <InfoRow label="Số tiền" value={formatCurrency(topupInfo.amount)} bold onCopy={() => copy(String(topupInfo.amount), 'số tiền')} />
+                <InfoRow label="Nội dung CK" value={topupInfo.referenceCode} mono bold onCopy={() => copy(topupInfo.referenceCode, 'nội dung')} />
               </div>
-
-              <div className="flex items-center gap-2 text-xs text-muted-foreground bg-blue-500/10 rounded-lg px-3 py-2">
-                <Loader2 className="h-3 w-3 animate-spin shrink-0 text-blue-500" />
-                Đang chờ xác nhận thanh toán tự động...
+              <div className="flex items-center gap-2 rounded-lg bg-yellow-500/10 px-3 py-2 text-xs text-muted-foreground">
+                <Loader2 className="h-3 w-3 shrink-0 animate-spin text-yellow-500" />
+                <span>Đang chờ xác nhận. Bạn sẽ nhận <strong>{topupInfo.pointsToAdd} điểm</strong> sau khi chuyển khoản.</span>
               </div>
             </div>
           )}
@@ -283,11 +457,7 @@ export default function PaymentPage() {
 }
 
 function InfoRow({
-  label,
-  value,
-  mono = false,
-  bold = false,
-  onCopy,
+  label, value, mono = false, bold = false, onCopy,
 }: {
   label: string
   value: string
@@ -296,13 +466,13 @@ function InfoRow({
   onCopy?: () => void
 }) {
   return (
-    <div className="flex items-center justify-between bg-muted rounded-lg px-3 py-2">
+    <div className="flex items-center justify-between rounded-lg bg-muted px-3 py-2">
       <div>
         <p className="text-xs text-muted-foreground">{label}</p>
         <p className={`${mono ? 'font-mono' : ''} ${bold ? 'font-semibold' : 'font-medium'}`}>{value}</p>
       </div>
       {onCopy && (
-        <button onClick={onCopy} className="text-muted-foreground hover:text-foreground transition-colors ml-2">
+        <button onClick={onCopy} className="ml-2 text-muted-foreground transition-colors hover:text-foreground">
           <Copy className="h-4 w-4" />
         </button>
       )}

@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Save, Camera, Crown } from 'lucide-react'
+import { Save, Camera, Crown, ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -10,6 +11,7 @@ import { Label } from '@/components/ui/label'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { Progress } from '@/components/ui/progress'
 import { useAuth } from '@/lib/auth-context'
 import { useToast } from '@/components/ui/use-toast'
 import { supabase } from '@/lib/supabase'
@@ -207,6 +209,76 @@ export default function ProfilePage() {
           </CardContent>
         </Card>
       </motion.div>
+
+      {/* VIP Status Card */}
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+        <VipStatusCard isVip={isVip} vipExpiresAt={user?.vipExpiresAt ?? null} />
+      </motion.div>
     </div>
+  )
+}
+
+function VipStatusCard({ isVip, vipExpiresAt }: { isVip: boolean; vipExpiresAt: string | null }) {
+  const fmt = (d: Date) =>
+    d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
+
+  let daysRemaining = 0
+  let progressPercent = 0
+
+  if (isVip && vipExpiresAt) {
+    const expires = new Date(vipExpiresAt)
+    const today = new Date()
+    daysRemaining = Math.max(0, Math.ceil((expires.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)))
+    const estimatedTotal = daysRemaining > 60 ? 365 : 30
+    const daysUsed = estimatedTotal - daysRemaining
+    progressPercent = Math.max(0, Math.min(100, (daysUsed / estimatedTotal) * 100))
+  }
+
+  return (
+    <Card className={isVip ? 'border-yellow-500/40 bg-yellow-500/5' : ''}>
+      <CardHeader className="pb-3">
+        <div className="flex items-center gap-2">
+          <Crown className={`h-5 w-5 ${isVip ? 'text-yellow-500' : 'text-muted-foreground'}`} />
+          <CardTitle className="text-base">Trạng thái VIP</CardTitle>
+        </div>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        {isVip && vipExpiresAt ? (
+          <>
+            <div className="flex items-center justify-between">
+              <Badge className="bg-yellow-500 text-white gap-1">
+                <Crown className="h-3 w-3" /> VIP Active
+              </Badge>
+              <span className="text-sm text-muted-foreground">Còn {daysRemaining} ngày</span>
+            </div>
+            <div className="space-y-1.5">
+              <div className="flex justify-between text-xs text-muted-foreground">
+                <span>Đã sử dụng</span>
+                <span>Hết hạn: {fmt(new Date(vipExpiresAt))}</span>
+              </div>
+              <Progress value={progressPercent} className="h-2" />
+            </div>
+            <Button variant="outline" size="sm" className="w-full gap-2" asChild>
+              <Link href="/payment">
+                <Crown className="h-3.5 w-3.5" /> Gia hạn VIP <ArrowRight className="h-3.5 w-3.5 ml-auto" />
+              </Link>
+            </Button>
+          </>
+        ) : (
+          <>
+            <div className="flex items-center justify-between">
+              <Badge variant="secondary">Chưa kích hoạt</Badge>
+              <span className="text-xs text-muted-foreground">Từ 69 điểm / tháng</span>
+            </div>
+            <p className="text-sm text-muted-foreground">Nâng cấp VIP để mở khóa toàn bộ tính năng học tập.</p>
+            <Button size="sm" className="w-full gap-2" asChild>
+              <Link href="/payment">
+                <Crown className="h-3.5 w-3.5" /> Nâng cấp VIP ngay <ArrowRight className="h-3.5 w-3.5 ml-auto" />
+              </Link>
+            </Button>
+          </>
+        )}
+      </CardContent>
+    </Card>
   )
 }

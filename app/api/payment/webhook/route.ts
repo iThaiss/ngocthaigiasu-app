@@ -27,21 +27,17 @@ export async function POST(req: NextRequest) {
   try {
     body = JSON.parse(rawBody)
   } catch {
-    console.log('[webhook] Invalid JSON body')
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
 
-  console.log('[webhook] Body received:', JSON.stringify(body))
+  console.log('[webhook] received:', JSON.stringify(body))
 
-  // SePay gửi nội dung CK trong field "content" hoặc "code"
   const content = (body.content ?? body.code ?? '') as string
   const transferAmount = body.transferAmount as number
 
-  console.log('[webhook] content:', content, '| amount:', transferAmount)
-
   const match = content.match(/NT\d{6}/)
   if (!match) {
-    console.log('[webhook] No referenceCode found in content, skipping')
+    console.log('[webhook] No referenceCode in content, skipping')
     return NextResponse.json({ success: true })
   }
   const referenceCode = match[0]
@@ -49,54 +45,64 @@ export async function POST(req: NextRequest) {
 
   const supabase = createAdminClient()
 
-  const { data: tx, error: txError } = await supabase
+  const { data: tx } = await supabase
     .from('transactions')
     .select('id, user_id, metadata, amount')
     .eq('metadata->>referenceCode', referenceCode)
     .eq('status', 'pending')
     .single()
 
-  console.log('[webhook] transaction lookup:', tx ? `found id=${tx.id}` : 'not found', txError?.message ?? '')
-
   if (!tx) {
+    console.log('[webhook] transaction not found for', referenceCode)
     return NextResponse.json({ success: true })
   }
 
   if (tx.amount !== transferAmount) {
-    console.log('[webhook] Amount mismatch: expected', tx.amount, 'got', transferAmount)
+    console.log('[webhook] amount mismatch: expected', tx.amount, 'got', transferAmount)
     return NextResponse.json({ success: true })
   }
 
-  const planId: string = tx.metadata?.planId ?? 'monthly'
-  const days = planId === 'yearly' ? 365 : 30
-  const vipExpiresAt = new Date()
-  vipExpiresAt.setDate(vipExpiresAt.getDate() + days)
-  console.log('[webhook] planId:', planId, '| vip_expires_at:', vipExpiresAt.toISOString())
+  const pointsToAdd: number = tx.metadata?.pointsToAdd ?? Math.floor(tx.amount / 1000)
 
-  // Update transaction
-  const { error: txUpdateError } = await supabase
-    .from('transactions')
-    .update({ status: 'completed' })
-    .eq('id', tx.id)
-  console.log('[webhook] transaction update:', txUpdateError ? txUpdateError.message : 'ok')
+  // Read current wallet
+  const { data: wallet } = await supabase
+    .from('wallets')
+    .select('points')
+    .eq('user_id', tx.user_id)
+    .single()
 
-  // Update user VIP — chạy riêng để dễ debug
-  const { error: userUpdateError } = await supabase
-    .from('users')
-    .update({ is_vip: true, vip_expires_at: vipExpiresAt.toISOString() })
-    .eq('id', tx.user_id)
-  console.log('[webhook] user update:', userUpdateError ? userUpdateError.message : 'ok', '| user_id:', tx.user_id)
+  const currentPoints = wallet?.points ?? 0
 
-  // Insert notification
-  const { error: notifError } = await supabase.from('notifications').insert({
+  // Credit points to user wallet
+  const { error: walletErr } = await supabase
+    .from('wallets')
+    .update({ points: currentPoints + pointsToAdd })
+    .eq('user_id', tx.user_id)
+  console.log('[webhook] wallet update:', walletErr ? walletErr.message : `+${pointsToAdd} pts`)
+
+  // Record point transaction
+  await supabase.from('point_transactions').insert({
     user_id: tx.user_id,
-    title: 'Nâng cấp VIP thành công',
-    content: `Tài khoản đã được nâng cấp VIP Gói ${planId === 'yearly' ? 'Năm' : 'Tháng'}.`,
+    amount: pointsToAdd,
+    type: 'topup',
+    description: `Nạp tiền ${tx.amount.toLocaleString('vi-VN')}đ`,
+    reference_id: tx.id,
+  })
+
+  // Mark transaction completed
+  await supabase.from('transactions').update({ status: 'completed' }).eq('id', tx.id)
+
+  // Notify user
+  await supabase.from('notifications').insert({
+    user_id: tx.user_id,
+    title: 'Nạp điểm thành công!',
+    content: `Bạn đã nạp thành công +${pointsToAdd} điểm vào tài khoản.`,
     type: 'payment',
   })
-  console.log('[webhook] notification insert:', notifError ? notifError.message : 'ok')
 
-  // Affiliate commission: tìm referral pending cho user này
+  console.log('[webhook] topup complete: user', tx.user_id, '+', pointsToAdd, 'points')
+
+  // Affiliate commission — only on first topup (pending referral)
   const { data: referral } = await supabase
     .from('affiliate_referrals')
     .select('id, referrer_id')
@@ -104,51 +110,41 @@ export async function POST(req: NextRequest) {
     .eq('status', 'pending')
     .single()
 
-  if (referral) {
-    console.log('[webhook] affiliate referral found:', referral.id, 'referrer:', referral.referrer_id)
+  if (referral && referral.referrer_id !== tx.user_id) {
+    const { data: refWallet } = await supabase
+      .from('wallets')
+      .select('points')
+      .eq('user_id', referral.referrer_id)
+      .single()
 
-    // Cộng 10 điểm vào wallet của referrer
-    const { error: walletErr } = await supabase.rpc('increment_wallet_points', {
-      p_user_id: referral.referrer_id,
-      p_points: 10,
-    }).single()
+    const refPoints = refWallet?.points ?? 0
 
-    if (walletErr) {
-      // Fallback: update trực tiếp nếu RPC chưa tồn tại
-      await supabase
-        .from('wallets')
-        .update({ points: supabase.rpc('wallets.points + 10' as never) })
-        .eq('user_id', referral.referrer_id)
-      console.log('[webhook] wallet rpc unavailable, skip points update')
-    } else {
-      console.log('[webhook] wallet points +10 for referrer:', referral.referrer_id)
-    }
+    await supabase
+      .from('wallets')
+      .update({ points: refPoints + 10 })
+      .eq('user_id', referral.referrer_id)
 
-    // Insert point_transactions cho referrer
-    const { error: ptErr } = await supabase.from('point_transactions').insert({
+    await supabase.from('point_transactions').insert({
       user_id: referral.referrer_id,
       amount: 10,
       type: 'commission',
-      description: 'Hoa hồng giới thiệu bạn bè nâng cấp VIP',
+      description: 'Hoa hồng giới thiệu bạn bè nạp tiền',
       reference_id: referral.id,
     })
-    console.log('[webhook] point_transaction insert:', ptErr ? ptErr.message : 'ok')
 
-    // Update affiliate_referrals status
-    const { error: refUpdateErr } = await supabase
+    await supabase
       .from('affiliate_referrals')
       .update({ status: 'commissioned' })
       .eq('id', referral.id)
-    console.log('[webhook] referral status update:', refUpdateErr ? refUpdateErr.message : 'ok')
 
-    // Notification cho referrer
-    const { error: refNotifErr } = await supabase.from('notifications').insert({
+    await supabase.from('notifications').insert({
       user_id: referral.referrer_id,
-      title: 'Nhận được hoa hồng!',
-      content: 'Bạn nhận được 10 điểm hoa hồng từ người bạn giới thiệu vừa nâng cấp VIP.',
+      title: 'Nhận được 10 điểm hoa hồng!',
+      content: 'Bạn nhận được 10 điểm hoa hồng từ người bạn giới thiệu vừa nạp tiền.',
       type: 'commission',
     })
-    console.log('[webhook] referrer notification insert:', refNotifErr ? refNotifErr.message : 'ok')
+
+    console.log('[webhook] affiliate commission: +10 pts for', referral.referrer_id)
   }
 
   return NextResponse.json({ success: true })

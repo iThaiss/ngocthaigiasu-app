@@ -3,10 +3,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
-const PLANS = {
-  monthly: 99000,
-  yearly: 799000,
-} as const
+const MIN_AMOUNT = 10000
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions)
@@ -14,19 +11,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  let planId: string
+  let amount: number
   try {
     const body = await req.json()
-    planId = body.planId
+    amount = Math.floor(Number(body.amount))
   } catch {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
 
-  if (planId !== 'monthly' && planId !== 'yearly') {
-    return NextResponse.json({ error: 'Invalid planId' }, { status: 400 })
+  if (!amount || amount < MIN_AMOUNT) {
+    return NextResponse.json(
+      { error: `Số tiền tối thiểu ${MIN_AMOUNT.toLocaleString('vi-VN')}đ` },
+      { status: 400 }
+    )
   }
 
-  const amount = PLANS[planId]
+  const pointsToAdd = Math.floor(amount / 1000)
   const referenceCode = 'NT' + Math.floor(100000 + Math.random() * 900000)
   const bankAccount = process.env.NEXT_PUBLIC_BANK_ACCOUNT!
   const accountName = process.env.NEXT_PUBLIC_ACCOUNT_NAME!
@@ -37,9 +37,9 @@ export async function POST(req: NextRequest) {
     .insert({
       user_id: session.user.id,
       amount,
-      type: 'vip_upgrade',
+      type: 'topup',
       status: 'pending',
-      metadata: { referenceCode, planId },
+      metadata: { referenceCode, pointsToAdd },
     })
     .select('id')
     .single()
@@ -56,6 +56,7 @@ export async function POST(req: NextRequest) {
     txId: data.id,
     referenceCode,
     amount,
+    pointsToAdd,
     qrUrl,
     bankAccount,
     accountName,
