@@ -21,6 +21,14 @@ export default function LoginPage() {
     }
   }, [status, router])
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const ref = params.get('ref')
+    if (ref) {
+      document.cookie = `pending_ref=${encodeURIComponent(ref)}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`
+    }
+  }, [])
+
   const handleGoogleLogin = async () => {
     setLoading(true)
     setError(null)

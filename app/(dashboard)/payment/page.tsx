@@ -45,7 +45,7 @@ const PLANS = [
   },
   {
     id: 'yearly',
-    name: 'Gói Full Khóa Học',
+    name: 'Gói Năm Học',
     points: 699,
     period: '/ 365 ngày',
     badge: 'Tiết kiệm nhất',

@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Save, Camera, Crown, ArrowRight } from 'lucide-react'
+import { Save, Camera, Crown, ArrowRight, Loader2 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -13,78 +14,116 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Progress } from '@/components/ui/progress'
 import { useAuth } from '@/lib/auth-context'
+import { useSession } from 'next-auth/react'
 import { useToast } from '@/components/ui/use-toast'
-import { supabase } from '@/lib/supabase'
 
-interface ProfileData {
+const PROVINCES = [
+  'An Giang', 'Bạc Liêu', 'Bắc Ninh', 'Cà Mau',
+  'Cao Bằng', 'Cần Thơ', 'Đà Nẵng', 'Đắk Lắk',
+  'Điện Biên', 'Đồng Nai', 'Gia Lai', 'Hà Nội',
+  'Hà Tĩnh', 'Hải Phòng', 'Huế', 'Hưng Yên',
+  'Khánh Hòa', 'Lai Châu', 'Lâm Đồng', 'Lạng Sơn',
+  'Nghệ An', 'Ninh Bình', 'Phú Thọ', 'Quảng Ngãi',
+  'Quảng Ninh', 'Quảng Trị', 'Sơn La', 'Thái Nguyên',
+  'Thanh Hóa', 'Tiền Giang', 'TP. Hồ Chí Minh',
+  'Tuyên Quang', 'Tây Ninh', 'Vĩnh Long',
+]
+
+interface UserProfile {
   name: string
-  school: string
-  class: string
   email: string
-}
-
-interface FormErrors {
-  name?: string
+  phone: string
+  school: string
+  province: string
+  studentClass: string
+  isVip: boolean
+  vipExpiresAt: string | null
 }
 
 export default function ProfilePage() {
   const { user, isVip, role } = useAuth()
+  const { update: updateSession } = useSession()
+  const router = useRouter()
   const { toast } = useToast()
   const [saving, setSaving] = useState(false)
-  const [form, setForm] = useState<ProfileData>({
-    name: user?.name ?? '',
+  const [loading, setLoading] = useState(true)
+  const [form, setForm] = useState<UserProfile>({
+    name: '',
+    email: '',
+    phone: '',
     school: '',
-    class: '',
-    email: user?.email ?? '',
+    province: '',
+    studentClass: '',
+    isVip: false,
+    vipExpiresAt: null,
   })
-  const [errors, setErrors] = useState<FormErrors>({})
+  const [errors, setErrors] = useState<Record<string, string>>({})
 
   useEffect(() => {
     if (!user?.id) return
-    supabase
-      .from('profiles')
-      .select('school, class')
-      .eq('id', user.id)
-      .single()
-      .then(({ data }) => {
-        if (data) {
-          setForm((prev) => ({
-            ...prev,
-            school: data.school ?? '',
-            class: data.class ?? '',
-          }))
-        }
-      })
+    fetchProfile()
   }, [user?.id])
 
-  const validate = (): boolean => {
-    const newErrors: FormErrors = {}
-    if (!form.name.trim()) newErrors.name = 'Tên không được để trống'
-    if (form.name.trim().length < 2) newErrors.name = 'Tên phải có ít nhất 2 ký tự'
-    setErrors(newErrors)
-    return Object.keys(newErrors).length === 0
+  async function fetchProfile() {
+    setLoading(true)
+    try {
+      const res = await fetch('/api/profile/me')
+      if (res.ok) {
+        const data = await res.json()
+        setForm({
+          name: data.name ?? user?.name ?? '',
+          email: data.email ?? user?.email ?? '',
+          phone: data.phone ?? '',
+          school: data.school ?? '',
+          province: data.province ?? '',
+          studentClass: data.studentClass ?? '',
+          isVip: data.isVip ?? false,
+          vipExpiresAt: data.vipExpiresAt ?? null,
+        })
+      }
+    } finally {
+      setLoading(false)
+    }
   }
 
-  const handleSave = async () => {
+  function validate(): boolean {
+    const e: Record<string, string> = {}
+    if (!form.name.trim()) e.name = 'Tên không được để trống'
+    if (form.name.trim().length < 2) e.name = 'Tên phải có ít nhất 2 ký tự'
+    if (form.phone && !/^0\d{9}$/.test(form.phone.replace(/\s/g, '')))
+      e.phone = 'Số điện thoại phải 10 số, bắt đầu bằng 0'
+    setErrors(e)
+    return Object.keys(e).length === 0
+  }
+
+  async function handleSave() {
     if (!validate() || !user?.id) return
     setSaving(true)
     try {
-      const [userResult, profileResult] = await Promise.all([
-        supabase.from('users').update({ name: form.name }).eq('id', user.id),
-        supabase.from('profiles').upsert({
-          id: user.id,
+      const res = await fetch('/api/profile/update', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone || null,
           school: form.school || null,
-          class: form.class || null,
-          updated_at: new Date().toISOString(),
+          province: form.province || null,
+          studentClass: form.studentClass || null,
         }),
-      ])
-
-      if (userResult.error) throw userResult.error
-      if (profileResult.error) throw profileResult.error
-
+      })
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data.error ?? 'Lỗi cập nhật')
+      }
+      await updateSession()
+      router.refresh()
       toast({ title: 'Cập nhật thành công!', description: 'Thông tin cá nhân đã được lưu.' })
-    } catch {
-      toast({ title: 'Lỗi', description: 'Không thể lưu thông tin. Vui lòng thử lại.', variant: 'destructive' })
+    } catch (err) {
+      toast({
+        title: 'Lỗi',
+        description: err instanceof Error ? err.message : 'Không thể lưu thông tin.',
+        variant: 'destructive',
+      })
     } finally {
       setSaving(false)
     }
@@ -129,90 +168,98 @@ export default function ProfilePage() {
         <Card>
           <CardHeader>
             <CardTitle>Thông tin cá nhân</CardTitle>
-            <CardDescription>Cập nhật tên, trường và lớp học của bạn</CardDescription>
+            <CardDescription>Cập nhật tên, trường học và địa chỉ của bạn</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="space-y-2">
-              <Label htmlFor="name">
-                Họ và tên <span className="text-destructive">*</span>
-              </Label>
-              <Input
-                id="name"
-                value={form.name}
-                onChange={(e) => {
-                  setForm({ ...form, name: e.target.value })
-                  if (errors.name) setErrors({ ...errors, name: undefined })
-                }}
-                placeholder="Nhập họ và tên"
-                className={errors.name ? 'border-destructive' : ''}
-              />
-              {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
-            </div>
+            {loading ? (
+              <div className="flex items-center justify-center py-8">
+                <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+              </div>
+            ) : (
+              <>
+                <div className="space-y-2">
+                  <Label htmlFor="name">Họ và tên <span className="text-destructive">*</span></Label>
+                  <Input
+                    id="name"
+                    value={form.name}
+                    onChange={(e) => { setForm({ ...form, name: e.target.value }); setErrors({ ...errors, name: '' }) }}
+                    placeholder="Nguyễn Văn A"
+                    className={errors.name ? 'border-destructive' : ''}
+                  />
+                  {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
+                </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="email">Email (từ Google)</Label>
-              <Input id="email" value={form.email} disabled className="opacity-60 cursor-not-allowed" />
-              <p className="text-xs text-muted-foreground">Email được lấy từ tài khoản Google và không thể thay đổi.</p>
-            </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email (từ Google)</Label>
+                  <Input id="email" value={form.email} disabled className="opacity-60 cursor-not-allowed" />
+                  <p className="text-xs text-muted-foreground">Email lấy từ Google, không thể thay đổi.</p>
+                </div>
 
-            <Separator />
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Số điện thoại</Label>
+                  <Input
+                    id="phone"
+                    inputMode="numeric"
+                    value={form.phone}
+                    onChange={(e) => { setForm({ ...form, phone: e.target.value }); setErrors({ ...errors, phone: '' }) }}
+                    placeholder="0912345678"
+                    className={errors.phone ? 'border-destructive' : ''}
+                  />
+                  {errors.phone && <p className="text-xs text-destructive">{errors.phone}</p>}
+                </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="school">Trường học</Label>
-              <Input
-                id="school"
-                value={form.school}
-                onChange={(e) => setForm({ ...form, school: e.target.value })}
-                placeholder="VD: THPT Nguyễn Huệ"
-              />
-            </div>
+                <Separator />
 
-            <div className="space-y-2">
-              <Label htmlFor="class">Lớp</Label>
-              <Input
-                id="class"
-                value={form.class}
-                onChange={(e) => setForm({ ...form, class: e.target.value })}
-                placeholder="VD: 12A1"
-              />
-            </div>
+                <div className="space-y-2">
+                  <Label htmlFor="studentClass">Lớp</Label>
+                  <Input
+                    id="studentClass"
+                    value={form.studentClass}
+                    onChange={(e) => setForm({ ...form, studentClass: e.target.value })}
+                    placeholder="12A1"
+                  />
+                </div>
 
-            <div className="flex justify-end pt-2">
-              <Button onClick={handleSave} disabled={saving} className="gap-2">
-                {saving ? (
-                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent" />
-                ) : (
-                  <Save className="h-4 w-4" />
-                )}
-                {saving ? 'Đang lưu...' : 'Lưu thay đổi'}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </motion.div>
+                <div className="space-y-2">
+                  <Label htmlFor="school">Trường học</Label>
+                  <Input
+                    id="school"
+                    value={form.school}
+                    onChange={(e) => setForm({ ...form, school: e.target.value })}
+                    placeholder="THPT Nguyễn Huệ"
+                  />
+                </div>
 
-      {/* Account Info */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-        <Card>
-          <CardHeader>
-            <CardTitle>Thông tin tài khoản</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">Vai trò</span>
-              <Badge variant="outline" className="capitalize">{role}</Badge>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">Trạng thái VIP</span>
-              {isVip ? <Badge variant="success">Đang hoạt động</Badge> : <Badge variant="secondary">Chưa đăng ký</Badge>}
-            </div>
+                <div className="space-y-2">
+                  <Label htmlFor="province">Tỉnh / Thành phố</Label>
+                  <select
+                    id="province"
+                    value={form.province}
+                    onChange={(e) => setForm({ ...form, province: e.target.value })}
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="">-- Chọn tỉnh/thành --</option>
+                    {PROVINCES.map((p) => (
+                      <option key={p} value={p}>{p}</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="flex justify-end pt-2">
+                  <Button onClick={handleSave} disabled={saving} className="gap-2">
+                    {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+                    {saving ? 'Đang lưu...' : 'Lưu thay đổi'}
+                  </Button>
+                </div>
+              </>
+            )}
           </CardContent>
         </Card>
       </motion.div>
 
       {/* VIP Status Card */}
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
-        <VipStatusCard isVip={isVip} vipExpiresAt={user?.vipExpiresAt ?? null} />
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+        <VipStatusCard isVip={form.isVip || isVip} vipExpiresAt={form.vipExpiresAt ?? user?.vipExpiresAt ?? null} />
       </motion.div>
     </div>
   )
@@ -251,11 +298,10 @@ function VipStatusCard({ isVip, vipExpiresAt }: { isVip: boolean; vipExpiresAt: 
               </Badge>
               <span className="text-sm text-muted-foreground">Còn {daysRemaining} ngày</span>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Hiệu lực: {fmt(new Date())} → {fmt(new Date(vipExpiresAt))}
+            </p>
             <div className="space-y-1.5">
-              <div className="flex justify-between text-xs text-muted-foreground">
-                <span>Đã sử dụng</span>
-                <span>Hết hạn: {fmt(new Date(vipExpiresAt))}</span>
-              </div>
               <Progress value={progressPercent} className="h-2" />
             </div>
             <Button variant="outline" size="sm" className="w-full gap-2" asChild>

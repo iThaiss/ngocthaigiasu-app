@@ -11,6 +11,7 @@ declare module 'next-auth' {
       role: string
       isVip: boolean
       vipExpiresAt: string | null
+      profileCompleted: boolean
     }
   }
 }
@@ -21,5 +22,6 @@ declare module 'next-auth/jwt' {
     role?: string
     isVip?: boolean
     vipExpiresAt?: string | null
+    profileCompleted?: boolean
   }
 }

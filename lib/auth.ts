@@ -41,8 +41,10 @@ export const authOptions: NextAuthOptions = {
             .select('id')
             .single()
           if (newUser) {
+            const referralCode = 'REF' + newUser.id.replace(/-/g, '').substring(0, 8).toUpperCase()
+            await supabaseAdmin.from('users').update({ referral_code: referralCode }).eq('id', newUser.id)
             await supabaseAdmin.from('profiles').insert({ id: newUser.id })
-            await supabaseAdmin.from('wallets').insert({ user_id: newUser.id, balance: 0 })
+            await supabaseAdmin.from('wallets').insert({ user_id: newUser.id, balance: 0, points: 0 })
           }
         } else {
           await supabaseAdmin
@@ -61,7 +63,7 @@ export const authOptions: NextAuthOptions = {
         try {
           const { data } = await supabaseAdmin
             .from('users')
-            .select('id, role, is_vip, vip_expires_at')
+            .select('id, role, is_vip, vip_expires_at, profile_completed')
             .eq('email', user.email)
             .single()
           if (data) {
@@ -69,6 +71,7 @@ export const authOptions: NextAuthOptions = {
             token.role = data.role
             token.isVip = data.is_vip
             token.vipExpiresAt = data.vip_expires_at
+            token.profileCompleted = data.profile_completed ?? false
           }
         } catch (error) {
           console.error('JWT error:', error)
@@ -82,6 +85,7 @@ export const authOptions: NextAuthOptions = {
         session.user.role = token.role as string
         session.user.isVip = token.isVip as boolean
         session.user.vipExpiresAt = token.vipExpiresAt as string | null
+        session.user.profileCompleted = token.profileCompleted as boolean ?? false
       }
       return session
     },
