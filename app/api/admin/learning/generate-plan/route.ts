@@ -6,13 +6,15 @@ import { renderLessonHTML } from '@/lib/lesson-render'
 
 const anthropic = new Anthropic()
 
-function extractJSON(text: string): string {
-  const match = text.match(/```(?:json)?\s*([\s\S]*?)```/)
-  if (match) return match[1].trim()
+function extractJSON(text: string): Record<string, unknown> {
+  // Strip markdown code fences first (handles truncated fences too)
+  text = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
   const start = text.indexOf('{')
   const end = text.lastIndexOf('}')
-  if (start !== -1 && end !== -1) return text.slice(start, end + 1)
-  return text.trim()
+  if (start === -1 || end === -1 || end <= start) {
+    throw new Error(`No JSON object found in response (length=${text.length})`)
+  }
+  return JSON.parse(text.substring(start, end + 1))
 }
 
 export async function POST(req: NextRequest) {
@@ -108,19 +110,37 @@ Trả về JSON:
   "memory_tips": "mẹo nhớ công thức"
 }`
 
-  const message = await anthropic.messages.create({
-    model: 'claude-sonnet-4-20250514',
-    max_tokens: 4096,
-    system: systemPrompt,
-    messages: [{ role: 'user', content: userPrompt }],
-  })
+  let rawText = ''
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 8000,
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userPrompt }],
+    })
 
-  const rawText = message.content[0].type === 'text' ? message.content[0].text : '{}'
+    if (message.stop_reason === 'max_tokens') {
+      console.warn('[generate-plan] Response was truncated by max_tokens')
+    }
+
+    rawText = message.content[0]?.type === 'text' ? message.content[0].text : ''
+    if (!rawText) throw new Error('Empty response from Claude API')
+  } catch (apiErr) {
+    const msg = apiErr instanceof Error ? apiErr.message : String(apiErr)
+    console.error('[generate-plan] Claude API error:', msg)
+    return NextResponse.json({ error: `Claude API lỗi: ${msg}` }, { status: 502 })
+  }
+
   let lessonPlan: Record<string, unknown>
   try {
-    lessonPlan = JSON.parse(extractJSON(rawText))
-  } catch {
-    return NextResponse.json({ error: 'AI trả về JSON không hợp lệ', raw: rawText }, { status: 500 })
+    lessonPlan = extractJSON(rawText)
+  } catch (parseErr) {
+    const msg = parseErr instanceof Error ? parseErr.message : String(parseErr)
+    console.error('[generate-plan] JSON parse error:', msg, '\nRaw (first 500):', rawText.slice(0, 500))
+    return NextResponse.json(
+      { error: `Không parse được JSON từ AI: ${msg}`, rawPreview: rawText.slice(0, 300) },
+      { status: 500 }
+    )
   }
 
   // 4. Gộp exercises: 80% từ DB, 20% từ AI
