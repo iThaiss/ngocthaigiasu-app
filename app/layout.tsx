@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Providers } from '@/components/providers'
 import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
+import 'katex/dist/katex.min.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
