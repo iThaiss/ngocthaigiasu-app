@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { Bell, Sun, Moon, Crown } from 'lucide-react'
@@ -12,6 +13,29 @@ import AppBreadcrumb from './Breadcrumb'
 export default function Header() {
   const { theme, setTheme } = useTheme()
   const { user, isVip } = useAuth()
+  const [unreadCount, setUnreadCount] = useState(0)
+
+  useEffect(() => {
+    let cancelled = false
+
+    async function fetchUnread() {
+      try {
+        const res = await fetch('/api/notifications')
+        if (!res.ok || cancelled) return
+        const data = await res.json()
+        setUnreadCount(data.unreadCount ?? 0)
+      } catch {
+        // ignore network errors silently
+      }
+    }
+
+    fetchUnread()
+    const interval = setInterval(fetchUnread, 30000)
+    return () => {
+      cancelled = true
+      clearInterval(interval)
+    }
+  }, [])
 
   return (
     <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b border-border bg-background/95 backdrop-blur px-4 md:px-6">
@@ -27,6 +51,11 @@ export default function Header() {
         <Link href="/notifications">
           <Button variant="ghost" size="icon" className="relative">
             <Bell className="h-4 w-4" />
+            {unreadCount > 0 && (
+              <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-destructive text-[10px] font-bold text-destructive-foreground">
+                {unreadCount > 99 ? '99+' : unreadCount}
+              </span>
+            )}
           </Button>
         </Link>
         <Button
