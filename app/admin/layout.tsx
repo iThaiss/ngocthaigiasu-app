@@ -6,12 +6,13 @@ import { usePathname } from 'next/navigation'
 import { signOut, useSession } from 'next-auth/react'
 import {
   LayoutDashboard, HelpCircle, FileText, Users, CreditCard, Ticket,
-  LogOut, Shield, Menu, X, ChevronRight,
+  LogOut, Shield, Menu, X, ChevronRight, GraduationCap,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const NAV = [
   { href: '/admin', label: 'Tổng quan', icon: LayoutDashboard, exact: true },
+  { href: '/admin/learning', label: 'Học Tập', icon: GraduationCap },
   { href: '/admin/questions', label: 'Câu hỏi', icon: HelpCircle },
   { href: '/admin/documents', label: 'Tài liệu', icon: FileText },
   { href: '/admin/students', label: 'Học sinh', icon: Users },
