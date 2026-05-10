@@ -103,14 +103,14 @@ export default function AdminTransactionsPage() {
               <TrendingUp className="h-4 w-4 text-green-400" />
               <p className="text-xs text-zinc-400">Doanh thu tháng này</p>
             </div>
-            <p className="text-lg font-bold text-green-400">{formatCurrency(data.thisMonthRevenue * 1000)}</p>
+            <p className="text-lg font-bold text-green-400">{formatCurrency(data.thisMonthRevenue)}</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
             <div className="flex items-center gap-2 mb-1">
               <TrendingDown className="h-4 w-4 text-zinc-400" />
               <p className="text-xs text-zinc-400">Doanh thu tháng trước</p>
             </div>
-            <p className="text-lg font-bold text-zinc-300">{formatCurrency(data.lastMonthRevenue * 1000)}</p>
+            <p className="text-lg font-bold text-zinc-300">{formatCurrency(data.lastMonthRevenue)}</p>
           </div>
         </div>
       )}
@@ -172,7 +172,7 @@ export default function AdminTransactionsPage() {
                     {t.users?.name && <p className="text-zinc-500 text-[10px]">{t.users.name}</p>}
                   </td>
                   <td className="px-4 py-2.5 text-right font-mono font-medium text-yellow-400">
-                    {formatCurrency(t.amount * 1000)}
+                    {formatCurrency(t.amount)}
                   </td>
                   <td className="px-4 py-2.5 text-center text-zinc-400 text-xs">{t.type}</td>
                   <td className="px-4 py-2.5 text-center">

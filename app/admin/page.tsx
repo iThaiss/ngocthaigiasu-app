@@ -49,7 +49,7 @@ export default function AdminDashboard() {
   const cards = [
     { label: 'Tổng câu hỏi', value: stats?.totalQuestions ?? 0, icon: HelpCircle, color: 'text-blue-400' },
     { label: 'Học sinh', value: stats?.totalStudents ?? 0, icon: Users, color: 'text-green-400' },
-    { label: 'Doanh thu tháng', value: formatCurrency((stats?.monthlyRevenue ?? 0) * 1000), icon: TrendingUp, color: 'text-yellow-400', raw: true },
+    { label: 'Doanh thu tháng', value: formatCurrency(stats?.monthlyRevenue ?? 0), icon: TrendingUp, color: 'text-yellow-400', raw: true },
     { label: 'Câu hỏi thiếu đáp án', value: stats?.noAnswerQuestions ?? 0, icon: AlertCircle, color: 'text-red-400' },
     { label: 'Tài liệu đã xử lý', value: stats?.docsCompleted ?? 0, icon: FileCheck, color: 'text-purple-400' },
   ]
