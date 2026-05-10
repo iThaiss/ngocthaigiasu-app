@@ -1,0 +1,48 @@
+import { NextRequest, NextResponse } from 'next/server'
+import { requireAdmin } from '@/lib/admin-guard'
+import { createAdminClient } from '@/lib/supabase'
+
+export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+  const guard = await requireAdmin()
+  if (!guard.ok) return guard.res
+
+  const body = await req.json().catch(() => null)
+  if (!body) return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
+
+  const supabase = createAdminClient()
+  const { difficulty, correct_answer, statement_a, statement_b, statement_c, statement_d,
+    answer_a, answer_b, answer_c, answer_d, numeric_answer } = body
+
+  const updates: Record<string, unknown> = {}
+  if (difficulty !== undefined) updates.difficulty = difficulty || null
+  if (correct_answer !== undefined) updates.correct_answer = correct_answer || null
+  if (statement_a !== undefined) updates.statement_a = statement_a
+  if (statement_b !== undefined) updates.statement_b = statement_b
+  if (statement_c !== undefined) updates.statement_c = statement_c
+  if (statement_d !== undefined) updates.statement_d = statement_d
+  if (answer_a !== undefined) updates.answer_a = answer_a
+  if (answer_b !== undefined) updates.answer_b = answer_b
+  if (answer_c !== undefined) updates.answer_c = answer_c
+  if (answer_d !== undefined) updates.answer_d = answer_d
+  if (numeric_answer !== undefined) updates.numeric_answer = numeric_answer
+
+  const { data, error } = await supabase
+    .from('questions')
+    .update(updates)
+    .eq('id', params.id)
+    .select()
+    .single()
+
+  if (error) return NextResponse.json({ error: 'Failed to update' }, { status: 500 })
+  return NextResponse.json({ success: true, question: data })
+}
+
+export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+  const guard = await requireAdmin()
+  if (!guard.ok) return guard.res
+
+  const supabase = createAdminClient()
+  const { error } = await supabase.from('questions').delete().eq('id', params.id)
+  if (error) return NextResponse.json({ error: 'Failed to delete' }, { status: 500 })
+  return NextResponse.json({ success: true })
+}

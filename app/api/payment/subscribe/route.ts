@@ -3,8 +3,8 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
-const PLAN_COSTS = { monthly: 69, yearly: 699 } as const
-const PLAN_NAMES = { monthly: 'Tháng', yearly: 'Năm Học' } as const
+const PLAN_COSTS: Record<string, number> = { monthly: 69, yearly: 699 }
+const PLAN_NAMES: Record<string, string> = { monthly: 'Tháng', yearly: 'Năm Học' }
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions)
@@ -13,9 +13,11 @@ export async function POST(req: NextRequest) {
   }
 
   let planId: string
+  let couponCode: string | undefined
   try {
     const body = await req.json()
     planId = body.planId
+    couponCode = body.couponCode?.trim()?.toUpperCase() || undefined
   } catch {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
@@ -24,10 +26,33 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid planId' }, { status: 400 })
   }
 
-  const cost = PLAN_COSTS[planId as keyof typeof PLAN_COSTS]
-  const planName = PLAN_NAMES[planId as keyof typeof PLAN_NAMES]
+  const baseCost = PLAN_COSTS[planId]
+  let cost = baseCost
+  let couponId: string | null = null
+  const planName = PLAN_NAMES[planId]
   const supabase = createAdminClient()
   const userId = session.user.id
+
+  // Apply coupon if provided
+  if (couponCode) {
+    const { data: coupon } = await supabase
+      .from('coupons')
+      .select('id, discount_percent, max_uses, used_count, valid_until, is_active')
+      .eq('code', couponCode)
+      .single()
+
+    if (coupon && coupon.is_active &&
+      (!coupon.valid_until || new Date(coupon.valid_until) >= new Date()) &&
+      coupon.used_count < coupon.max_uses) {
+      const { data: alreadyUsed } = await supabase
+        .from('coupon_uses')
+        .select('id').eq('coupon_id', coupon.id).eq('user_id', userId).maybeSingle()
+      if (!alreadyUsed) {
+        cost = Math.floor(baseCost * (1 - coupon.discount_percent / 100))
+        couponId = coupon.id
+      }
+    }
+  }
 
   const { data: wallet } = await supabase
     .from('wallets')
@@ -95,6 +120,18 @@ export async function POST(req: NextRequest) {
     content: `Tài khoản đã kích hoạt VIP Gói ${planName}. Hiệu lực đến ${vipExpiresAt.toLocaleDateString('vi-VN')}.`,
     type: 'payment',
   })
+
+  // ── Coupon tracking ───────────────────────────────────────────────────────
+  if (couponId) {
+    const { data: couponRow } = await supabase
+      .from('coupons').select('used_count').eq('id', couponId).single()
+    await Promise.all([
+      supabase.from('coupons')
+        .update({ used_count: (couponRow?.used_count ?? 0) + 1 })
+        .eq('id', couponId),
+      supabase.from('coupon_uses').insert({ coupon_id: couponId, user_id: userId }),
+    ])
+  }
 
   // ── Affiliate commission ──────────────────────────────────────────────────
   const { data: referral } = await supabase

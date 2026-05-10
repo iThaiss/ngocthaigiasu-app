@@ -75,6 +75,9 @@ export default function PaymentPage() {
   const [topupSuccess, setTopupSuccess] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
   const [subscribing, setSubscribing] = useState<string | null>(null)
+  const [couponInput, setCouponInput] = useState('')
+  const [couponApplied, setCouponApplied] = useState<{ code: string; discountPercent: number; finalPoints: Record<string, number> } | null>(null)
+  const [couponLoading, setCouponLoading] = useState(false)
 
   const pollRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -158,13 +161,48 @@ export default function PaymentPage() {
     setDialogOpen(open)
   }
 
+  async function applyCoupon(planId: string) {
+    if (!couponInput.trim()) return
+    setCouponLoading(true)
+    try {
+      const res = await fetch('/api/payment/validate-coupon', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: couponInput.trim(), planId }),
+      })
+      const data = await res.json()
+      if (!data.valid) {
+        toast({ title: 'Mã không hợp lệ', description: data.error, variant: 'destructive' })
+        return
+      }
+      // Store per-plan final points
+      const allPlans = ['monthly', 'yearly']
+      const finalPoints: Record<string, number> = {}
+      for (const pid of allPlans) {
+        const r = await fetch('/api/payment/validate-coupon', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code: couponInput.trim(), planId: pid }),
+        })
+        const d = await r.json()
+        if (d.valid) finalPoints[pid] = d.finalPoints
+      }
+      setCouponApplied({ code: couponInput.trim().toUpperCase(), discountPercent: data.discountPercent, finalPoints })
+      toast({ title: `Áp dụng mã thành công! Giảm ${data.discountPercent}%` })
+    } catch {
+      toast({ title: 'Lỗi', description: 'Không thể kiểm tra mã', variant: 'destructive' })
+    } finally {
+      setCouponLoading(false)
+    }
+  }
+
   async function handleSubscribe(planId: string) {
     setSubscribing(planId)
     try {
       const res = await fetch('/api/payment/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ planId }),
+        body: JSON.stringify({ planId, ...(couponApplied && { couponCode: couponApplied.code }) }),
       })
       const data = await res.json()
       if (!res.ok) {
@@ -313,6 +351,43 @@ export default function PaymentPage() {
 
         {/* Tab: Đăng ký gói */}
         <TabsContent value="subscribe" className="mt-4 space-y-4">
+          {/* Coupon input */}
+          <div className="rounded-lg border border-border bg-muted/30 px-4 py-3 space-y-2">
+            <p className="text-xs font-medium text-muted-foreground">Mã giảm giá</p>
+            {couponApplied ? (
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Badge className="bg-green-500/15 text-green-600 dark:text-green-400 border-green-500/30">
+                    {couponApplied.code} — Giảm {couponApplied.discountPercent}%
+                  </Badge>
+                </div>
+                <button
+                  onClick={() => { setCouponApplied(null); setCouponInput('') }}
+                  className="text-xs text-muted-foreground hover:text-foreground"
+                >
+                  Xóa
+                </button>
+              </div>
+            ) : (
+              <div className="flex gap-2">
+                <Input
+                  placeholder="Nhập mã (VD: THPTQG2027)"
+                  value={couponInput}
+                  onChange={(e) => setCouponInput(e.target.value.toUpperCase())}
+                  className="uppercase"
+                />
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => applyCoupon('monthly')}
+                  disabled={couponLoading || !couponInput.trim()}
+                >
+                  {couponLoading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : 'Áp dụng'}
+                </Button>
+              </div>
+            )}
+          </div>
+
           {/* Current points */}
           <div className="flex items-center justify-between rounded-lg bg-muted/50 px-4 py-3">
             <span className="text-sm text-muted-foreground">Điểm hiện tại của bạn</span>
@@ -329,9 +404,10 @@ export default function PaymentPage() {
           <div className="grid md:grid-cols-2 gap-4">
             {PLANS.map((plan) => {
               const currentPts = points ?? 0
-              const canAfford = currentPts >= plan.points
+              const effectiveCost = couponApplied?.finalPoints?.[plan.id] ?? plan.points
+              const canAfford = currentPts >= effectiveCost
               const isSubscribing = subscribing === plan.id
-              const lacking = plan.points - currentPts
+              const lacking = effectiveCost - currentPts
 
               return (
                 <Card key={plan.id} className={`relative h-full ${plan.highlight ? 'border-primary shadow-lg' : ''}`}>
@@ -342,9 +418,16 @@ export default function PaymentPage() {
                   )}
                   <CardHeader className="pb-4">
                     <CardTitle className="text-lg">{plan.name}</CardTitle>
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex items-center gap-1.5 flex-wrap">
                       <Star className="h-5 w-5 text-yellow-500" />
-                      <span className="text-3xl font-extrabold text-yellow-500">{plan.points}</span>
+                      {couponApplied && effectiveCost !== plan.points ? (
+                        <>
+                          <span className="text-xl line-through text-muted-foreground">{plan.points}</span>
+                          <span className="text-3xl font-extrabold text-yellow-500">{effectiveCost}</span>
+                        </>
+                      ) : (
+                        <span className="text-3xl font-extrabold text-yellow-500">{plan.points}</span>
+                      )}
                       <span className="text-sm text-muted-foreground">điểm {plan.period}</span>
                     </div>
                   </CardHeader>
@@ -365,7 +448,7 @@ export default function PaymentPage() {
                     >
                       {isSubscribing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                       {canAfford
-                        ? `Dùng ${plan.points} điểm đăng ký`
+                        ? `Dùng ${effectiveCost} điểm đăng ký`
                         : `Cần thêm ${lacking} điểm`
                       }
                     </Button>

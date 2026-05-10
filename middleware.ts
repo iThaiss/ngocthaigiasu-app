@@ -5,12 +5,18 @@ export default withAuth(
   function middleware(req) {
     const token = req.nextauth.token
     const pathname = req.nextUrl.pathname
+    const role = token?.role as string | undefined
+
+    if (pathname.startsWith('/admin')) {
+      if (role !== 'admin') {
+        return NextResponse.redirect(new URL('/dashboard', req.url))
+      }
+    }
 
     const teacherAdminRoutes = ['/questions']
     const isTeacherAdminRoute = teacherAdminRoutes.some((r) => pathname.startsWith(r))
 
     if (isTeacherAdminRoute) {
-      const role = token?.role as string | undefined
       if (role !== 'teacher' && role !== 'admin') {
         return NextResponse.redirect(new URL('/dashboard', req.url))
       }
@@ -38,5 +44,6 @@ export const config = {
     '/affiliate/:path*',
     '/notifications/:path*',
     '/questions/:path*',
+    '/admin/:path*',
   ],
 }
