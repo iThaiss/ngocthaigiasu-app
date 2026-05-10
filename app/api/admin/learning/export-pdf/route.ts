@@ -1,119 +1,106 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { requireAdmin } from '@/lib/admin-guard'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
 export const dynamic = 'force-dynamic'
-export const maxDuration = 60
 
-const DIFF_COLOR: Record<string, string> = {
-  'Nhận biết': '#059669',
-  'Thông hiểu': '#2563eb',
-  'Vận dụng': '#d97706',
-  'Vận dụng cao': '#dc2626',
+interface LessonPlan {
+  duration?: number
+  title?: string
+  objectives?: string[]
+  theory?: string
+  examples?: string
+  exercises?: string
+  summary?: string
+  tips?: string
 }
 
-function buildPdfHtml(params: {
+function buildPrintHtml(params: {
   title: string
-  subject: string
-  duration: number
   courseName: string
-  lessonHtml: string
+  duration: number
+  plan: LessonPlan
 }): string {
-  const { title, subject, duration, courseName, lessonHtml } = params
-  const subjectLabel = subject === 'toan_dai' ? 'Toán Đại số' : 'Toán Hình học'
+  const { title, courseName, duration, plan } = params
+  const objectives = (plan.objectives ?? []).map((o) => `<p>• ${o}</p>`).join('')
 
   return `<!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
-<style>
-  @page { margin: 20mm 18mm; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Times New Roman', serif; font-size: 13pt; color: #111; background: #fff; }
-  .header { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 3px solid #7c3aed; margin-bottom: 18px; }
-  .header-brand { display: flex; align-items: center; gap: 10px; }
-  .header-logo { width: 42px; height: 42px; background: #7c3aed; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 14px; font-family: sans-serif; }
-  .header-name { font-family: sans-serif; font-size: 15px; font-weight: 700; color: #7c3aed; }
-  .header-url { font-family: sans-serif; font-size: 11px; color: #6b7280; }
-  .header-meta { text-align: right; font-family: sans-serif; }
-  .header-title { font-size: 14px; font-weight: 700; color: #111; max-width: 280px; }
-  .header-sub { font-size: 11px; color: #6b7280; margin-top: 3px; }
-  .badges { display: flex; gap: 6px; justify-content: flex-end; margin-top: 5px; }
-  .badge { font-family: sans-serif; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 999px; }
-  .badge-purple { background: #ede9fe; color: #7c3aed; }
-  .badge-blue { background: #dbeafe; color: #1d4ed8; }
-  .badge-orange { background: #ffedd5; color: #c2410c; }
-  .content { font-family: 'Times New Roman', serif; }
-  h2 { font-family: sans-serif; font-size: 14pt; font-weight: 700; color: #111; margin: 20px 0 10px; padding-bottom: 5px; border-bottom: 1.5px solid #e5e7eb; }
-  h3 { font-family: sans-serif; font-size: 12pt; font-weight: 600; color: #374151; margin: 14px 0 7px; }
-  ul { padding-left: 20px; margin: 6px 0; }
-  li { margin: 3px 0; }
-  .lp-formula { background: #EBF5FB; border-left: 4px solid #2980B9; border-radius: 5px; padding: 10px 14px; margin: 8px 0; }
-  .lp-formula .name { font-weight: 700; color: #1a56a6; margin-bottom: 4px; font-family: sans-serif; font-size: 11pt; }
-  .lp-formula .note { font-size: 11pt; color: #6b7280; margin-top: 3px; }
-  .lp-example { background: #FEF9E7; border-left: 4px solid #F39C12; border-radius: 5px; padding: 12px 14px; margin: 10px 0; }
-  .lp-example .prob { font-weight: 600; margin-bottom: 6px; }
-  .lp-example .sol { font-size: 12pt; color: #374151; }
-  .lp-example .tip { font-size: 11pt; color: #92400e; background: #fde68a; border-radius: 4px; padding: 5px 9px; margin-top: 7px; }
-  .lp-exercise { background: #fff; border: 1px solid #d1d5db; border-radius: 5px; padding: 12px 14px; margin: 8px 0; }
-  .lp-exercise .qt { font-weight: 600; margin-bottom: 6px; }
-  .lp-exercise .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; font-size: 12pt; }
-  .lp-exercise .opt.correct { font-weight: 700; color: #059669; }
-  .lp-exercise .sol-box { font-size: 11pt; color: #6b7280; margin-top: 8px; padding-top: 6px; border-top: 1px dashed #d1d5db; }
-  .lp-summary { background: #f0fdf4; border: 1px solid #86efac; border-radius: 7px; padding: 14px; margin-top: 14px; }
-  .lp-tips { background: #fefce8; border: 1px solid #fde047; border-radius: 7px; padding: 14px; margin-top: 10px; }
-  .lp-math-block { display: block; text-align: center; margin: 7px 0; overflow-x: auto; }
-  .katex-display { overflow-x: auto; overflow-y: hidden; }
-  .footer { position: fixed; bottom: 10mm; left: 18mm; right: 18mm; font-family: sans-serif; font-size: 9pt; color: #9ca3af; display: flex; justify-content: space-between; border-top: 1px solid #e5e7eb; padding-top: 5px; }
-  @media print {
-    .footer { display: flex; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>${title}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+  <style>
+    body { font-family: 'Be Vietnam Pro', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #111; }
+    h1 { color: #1e40af; border-bottom: 3px solid #1e40af; padding-bottom: 10px; margin-bottom: 4px; }
+    .meta { color: #6b7280; font-size: 13px; margin-bottom: 28px; }
+    .section { margin: 24px 0; }
+    .section-title { background: #1e40af; color: white; padding: 8px 16px; border-radius: 6px; font-size: 15px; font-weight: 600; margin-bottom: 12px; }
+    .theory-box { background: #eff6ff; border-left: 4px solid #1e40af; padding: 16px; margin: 12px 0; border-radius: 0 6px 6px 0; white-space: pre-wrap; line-height: 1.7; }
+    .example-box { background: #fefce8; border-left: 4px solid #ca8a04; padding: 16px; margin: 12px 0; border-radius: 0 6px 6px 0; white-space: pre-wrap; line-height: 1.7; }
+    .exercise-box { background: #f9fafb; border-left: 4px solid #16a34a; padding: 16px; margin: 8px 0; border-radius: 0 6px 6px 0; white-space: pre-wrap; line-height: 1.7; }
+    .summary-box { background: #f0fdf4; border: 1px solid #86efac; padding: 14px; border-radius: 8px; white-space: pre-wrap; line-height: 1.7; }
+    .tips-box { background: #fefce8; border: 1px solid #fde047; padding: 14px; border-radius: 8px; white-space: pre-wrap; line-height: 1.7; }
+    @media print { body { padding: 20px; } @page { margin: 20mm; } }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <div class="header-brand">
-      <div class="header-logo">NT</div>
-      <div>
-        <div class="header-name">Ngọc Thái Gia Sư</div>
-        <div class="header-url">ngocthaigiasu.id.vn</div>
-      </div>
-    </div>
-    <div class="header-meta">
-      <div class="header-title">${title}</div>
-      <div class="header-sub">${courseName}</div>
-      <div class="badges">
-        <span class="badge badge-purple">${subjectLabel}</span>
-        <span class="badge badge-orange">⏱ ${duration} phút</span>
-      </div>
-    </div>
-  </div>
+  <h1>${title}</h1>
+  <p class="meta">Ngọc Thái Gia Sư | ${courseName} | ⏱ ${duration} phút</p>
 
-  <div class="content">
-    ${lessonHtml}
-  </div>
+  ${objectives ? `<div class="section">
+    <div class="section-title">I. MỤC TIÊU</div>
+    ${objectives}
+  </div>` : ''}
 
-  <div class="footer">
-    <span>ngocthaigiasu.id.vn</span>
-    <span class="pageNumber"></span>
-  </div>
+  ${plan.theory ? `<div class="section">
+    <div class="section-title">II. LÝ THUYẾT</div>
+    <div class="theory-box">${plan.theory}</div>
+  </div>` : ''}
 
+  ${plan.examples ? `<div class="section">
+    <div class="section-title">III. VÍ DỤ MINH HỌA</div>
+    <div class="example-box">${plan.examples}</div>
+  </div>` : ''}
+
+  ${plan.exercises ? `<div class="section">
+    <div class="section-title">IV. BÀI TẬP ÁP DỤNG</div>
+    <div class="exercise-box">${plan.exercises}</div>
+  </div>` : ''}
+
+  ${plan.summary ? `<div class="section">
+    <div class="section-title">V. TỔNG KẾT</div>
+    <div class="summary-box">${plan.summary}</div>
+  </div>` : ''}
+
+  ${plan.tips ? `<div class="section">
+    <div class="section-title">MẸO GHI NHỚ</div>
+    <div class="tips-box">${plan.tips}</div>
+  </div>` : ''}
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script>
   <script>
-    // Inject page numbers
-    window.addEventListener('load', function() {
-      var footer = document.querySelector('.footer .pageNumber')
-      if (footer) footer.textContent = 'Trang 1'
-    })
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ]
+      });
+    });
   </script>
 </body>
 </html>`
 }
 
 export async function POST(req: NextRequest) {
-  const guard = await requireAdmin()
-  if (!guard.ok) return guard.res
+  const session = await getServerSession(authOptions)
+  if (!session?.user?.id) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
 
   const { lessonId } = await req.json()
   if (!lessonId) return NextResponse.json({ error: 'Missing lessonId' }, { status: 400 })
@@ -122,63 +109,25 @@ export async function POST(req: NextRequest) {
   const { data: lesson, error } = await supabase
     .from('lessons')
     .select(`
-      id, title, topic, lesson_plan_html, lesson_plan,
-      chapters ( name, subject, courses ( name ) )
+      id, title, lesson_plan,
+      chapters ( name, courses ( name ) )
     `)
     .eq('id', lessonId)
     .single()
 
   if (error || !lesson) return NextResponse.json({ error: 'Lesson not found' }, { status: 404 })
 
-  const chapter = (lesson.chapters as unknown as { name: string; subject: string; courses: { name: string } | null }) ?? null
+  const plan = (lesson.lesson_plan ?? {}) as LessonPlan
+  const chapter = lesson.chapters as unknown as { name: string; courses: { name: string } | null } | null
   const courseName = chapter?.courses?.name ?? ''
-  const subject = chapter?.subject ?? 'toan_dai'
-  const duration = (lesson.lesson_plan as { duration?: number } | null)?.duration ?? 90
-  const lessonHtml = lesson.lesson_plan_html ?? '<p style="color:#999;text-align:center">Giáo án chưa được tạo</p>'
+  const duration = plan.duration ?? 90
 
-  const fullHtml = buildPdfHtml({
+  const html = buildPrintHtml({
     title: lesson.title,
-    subject,
-    duration,
     courseName,
-    lessonHtml,
+    duration,
+    plan,
   })
 
-  let pdfBuffer: Buffer
-
-  try {
-    const puppeteer = await import('puppeteer')
-    const browser = await puppeteer.default.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
-    })
-    const page = await browser.newPage()
-    await page.setContent(fullHtml, { waitUntil: 'networkidle0', timeout: 30000 })
-    const pdf = await page.pdf({
-      format: 'A4',
-      printBackground: true,
-      margin: { top: '20mm', bottom: '20mm', left: '18mm', right: '18mm' },
-      displayHeaderFooter: true,
-      footerTemplate: `<div style="width:100%;font-family:sans-serif;font-size:9px;color:#9ca3af;display:flex;justify-content:space-between;padding:0 18mm">
-        <span>ngocthaigiasu.id.vn</span>
-        <span>Trang <span class="pageNumber"></span>/<span class="totalPages"></span></span>
-      </div>`,
-      headerTemplate: '<div></div>',
-    })
-    await browser.close()
-    pdfBuffer = Buffer.from(pdf)
-  } catch (err) {
-    console.error('PDF generation error:', err)
-    return NextResponse.json({ error: 'PDF generation failed' }, { status: 500 })
-  }
-
-  const filename = `giao-an-${lesson.title.replace(/\s+/g, '-').toLowerCase()}.pdf`
-
-  return new NextResponse(pdfBuffer as unknown as BodyInit, {
-    headers: {
-      'Content-Type': 'application/pdf',
-      'Content-Disposition': `attachment; filename="${filename}"`,
-      'Content-Length': String(pdfBuffer.length),
-    },
-  })
+  return NextResponse.json({ html })
 }

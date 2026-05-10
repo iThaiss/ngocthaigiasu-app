@@ -227,13 +227,13 @@ export default function AdminLessonsPage() {
         body: JSON.stringify({ lessonId }),
       })
       if (!res.ok) throw new Error()
-      const blob = await res.blob()
-      const url = URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = `giao-an-${lessonId.slice(0, 8)}.pdf`
-      a.click()
-      URL.revokeObjectURL(url)
+      const { html } = await res.json()
+      const w = window.open('', '_blank')
+      if (!w) throw new Error('popup blocked')
+      w.document.write(html)
+      w.document.close()
+      w.focus()
+      setTimeout(() => w.print(), 800)
     } catch {
       toast({ title: 'Xuất PDF thất bại', variant: 'destructive' })
     } finally {

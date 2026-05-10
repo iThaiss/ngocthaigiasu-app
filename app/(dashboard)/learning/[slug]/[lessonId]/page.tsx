@@ -4,6 +4,10 @@ import { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { motion } from 'framer-motion'
+import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import 'katex/dist/katex.min.css'
 import {
   BookOpen, ChevronLeft, ChevronRight, Download, Play,
   Crown, Lock, Loader2, FileText, AlertCircle,
@@ -14,6 +18,17 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { useToast } from '@/components/ui/use-toast'
 
+interface LessonPlan {
+  duration?: number
+  title?: string
+  objectives?: string[]
+  theory?: string
+  examples?: string
+  exercises?: string
+  summary?: string
+  tips?: string
+}
+
 interface Lesson {
   id: string
   title: string
@@ -21,7 +36,7 @@ interface Lesson {
   video_url: string | null
   video_source: string
   lesson_plan_html: string | null
-  lesson_plan: { duration?: number; title?: string } | null
+  lesson_plan: LessonPlan | null
   created_at: string
   chapters: {
     name: string
@@ -44,6 +59,76 @@ function getDriveEmbedUrl(url: string): string | null {
 
 function getEmbedUrl(url: string): string | null {
   return getYouTubeEmbedUrl(url) ?? getDriveEmbedUrl(url) ?? null
+}
+
+function Md({ children }: { children: string }) {
+  return (
+    <div className="prose prose-sm max-w-none dark:prose-invert">
+      <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
+        {children}
+      </ReactMarkdown>
+    </div>
+  )
+}
+
+function LessonPlanView({ plan }: { plan: LessonPlan }) {
+  return (
+    <div className="space-y-6 text-sm">
+      {plan.objectives && plan.objectives.length > 0 && (
+        <section>
+          <h3 className="font-semibold text-blue-700 dark:text-blue-400 mb-2 text-base">I. Mục tiêu bài học</h3>
+          <ul className="list-disc list-inside space-y-1 text-foreground/80">
+            {plan.objectives.map((o, i) => <li key={i}>{o}</li>)}
+          </ul>
+        </section>
+      )}
+
+      {plan.theory && (
+        <section>
+          <h3 className="font-semibold text-blue-700 dark:text-blue-400 mb-2 text-base">II. Lý thuyết</h3>
+          <div className="rounded-lg border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/30 p-4">
+            <Md>{plan.theory}</Md>
+          </div>
+        </section>
+      )}
+
+      {plan.examples && (
+        <section>
+          <h3 className="font-semibold text-amber-700 dark:text-amber-400 mb-2 text-base">III. Ví dụ minh họa</h3>
+          <div className="rounded-lg border-l-4 border-amber-400 bg-amber-50 dark:bg-amber-950/30 p-4">
+            <Md>{plan.examples}</Md>
+          </div>
+        </section>
+      )}
+
+      {plan.exercises && (
+        <section>
+          <h3 className="font-semibold text-green-700 dark:text-green-400 mb-2 text-base">IV. Bài tập áp dụng</h3>
+          <div className="rounded-lg border border-border bg-muted/30 p-4">
+            <Md>{plan.exercises}</Md>
+          </div>
+        </section>
+      )}
+
+      {plan.summary && (
+        <section>
+          <h3 className="font-semibold text-purple-700 dark:text-purple-400 mb-2 text-base">V. Tổng kết</h3>
+          <div className="rounded-lg border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-950/30 p-4">
+            <Md>{plan.summary}</Md>
+          </div>
+        </section>
+      )}
+
+      {plan.tips && (
+        <section>
+          <h3 className="font-semibold text-rose-700 dark:text-rose-400 mb-2 text-base">Mẹo ghi nhớ</h3>
+          <div className="rounded-lg border border-rose-200 dark:border-rose-800 bg-rose-50 dark:bg-rose-950/30 p-4">
+            <Md>{plan.tips}</Md>
+          </div>
+        </section>
+      )}
+    </div>
+  )
 }
 
 export default function LessonPage() {
@@ -80,13 +165,13 @@ export default function LessonPage() {
         body: JSON.stringify({ lessonId }),
       })
       if (!res.ok) throw new Error()
-      const blob = await res.blob()
-      const url = URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = `giao-an-${lesson?.title?.replace(/\s+/g, '-').toLowerCase() ?? lessonId}.pdf`
-      a.click()
-      URL.revokeObjectURL(url)
+      const { html } = await res.json()
+      const w = window.open('', '_blank')
+      if (!w) throw new Error('popup blocked')
+      w.document.write(html)
+      w.document.close()
+      w.focus()
+      setTimeout(() => w.print(), 800)
     } catch {
       toast({ title: 'Xuất PDF thất bại', variant: 'destructive' })
     } finally {
@@ -116,6 +201,7 @@ export default function LessonPage() {
   const duration = lesson.lesson_plan?.duration ?? 90
   const courseName = lesson.chapters?.courses?.name ?? ''
   const chapterName = lesson.chapters?.name ?? ''
+  const hasContent = !!(lesson.lesson_plan_html || lesson.lesson_plan?.theory)
 
   return (
     <div className="max-w-6xl mx-auto space-y-5">
@@ -140,7 +226,7 @@ export default function LessonPage() {
             <span className="text-xs text-muted-foreground">⏱ {duration} phút</span>
           </div>
         </div>
-        {isVip && lesson.lesson_plan_html && (
+        {isVip && hasContent && (
           <Button
             onClick={handleDownloadPdf}
             disabled={exporting}
@@ -164,11 +250,9 @@ export default function LessonPage() {
         {/* Left: Lesson content (2/3) */}
         <div className="lg:col-span-2">
           {!isVip ? (
-            /* VIP lock overlay */
             <Card className="border-yellow-500/30">
               <CardContent className="pt-6 pb-6">
                 <div className="relative">
-                  {/* Blurred preview */}
                   <div className="blur-md pointer-events-none select-none opacity-60 max-h-64 overflow-hidden">
                     <div className="space-y-4">
                       <div className="h-6 bg-muted rounded w-3/4" />
@@ -180,7 +264,6 @@ export default function LessonPage() {
                       <div className="h-20 bg-yellow-100 rounded" />
                     </div>
                   </div>
-                  {/* CTA */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center p-6">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-500/10">
                       <Lock className="h-7 w-7 text-yellow-500" />
@@ -203,7 +286,6 @@ export default function LessonPage() {
               </CardContent>
             </Card>
           ) : lesson.lesson_plan_html ? (
-            /* Lesson HTML content */
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <Card>
                 <CardContent className="pt-6 pb-6">
@@ -214,8 +296,15 @@ export default function LessonPage() {
                 </CardContent>
               </Card>
             </motion.div>
+          ) : lesson.lesson_plan?.theory ? (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              <Card>
+                <CardContent className="pt-6 pb-6">
+                  <LessonPlanView plan={lesson.lesson_plan} />
+                </CardContent>
+              </Card>
+            </motion.div>
           ) : (
-            /* No plan yet */
             <Card className="border-dashed">
               <CardContent className="flex flex-col items-center justify-center py-16 text-center gap-3">
                 <FileText className="h-12 w-12 text-muted-foreground" />
@@ -259,7 +348,6 @@ export default function LessonPage() {
             </CardContent>
           </Card>
 
-          {/* Navigation hints */}
           <Card className="bg-muted/30">
             <CardContent className="pt-4 pb-4 space-y-2">
               <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Khoá học này</p>

@@ -7,6 +7,24 @@ const supabase = createClient(
   Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
 )
 
+function parseResponse(text: string) {
+  const getSection = (tag: string) => {
+    const regex = new RegExp(`###${tag}###\\n([\\s\\S]*?)(?=###|$)`)
+    const match = text.match(regex)
+    return match ? match[1].trim() : ''
+  }
+
+  return {
+    title: getSection('TITLE'),
+    objectives: getSection('OBJECTIVES').split('\n').filter(Boolean),
+    theory: getSection('THEORY'),
+    examples: getSection('EXAMPLES'),
+    exercises: getSection('EXERCISES'),
+    summary: getSection('SUMMARY'),
+    tips: getSection('TIPS'),
+  }
+}
+
 Deno.serve(async (req) => {
   const { jobId } = await req.json()
 
@@ -24,100 +42,89 @@ Deno.serve(async (req) => {
 
     const { data: dbQuestions } = await supabase
       .from('questions')
-      .select('question_text, option_a, option_b, option_c, option_d, correct_answer, difficulty, topic')
+      .select('question_text, option_a, option_b, option_c, option_d, correct_answer, difficulty')
       .ilike('topic', `%${topic}%`)
       .eq('is_published', true)
       .limit(12)
 
+    const dbQuestionsText = (dbQuestions ?? []).map((q, i) =>
+      `CÂU ${i + 1} (${q.difficulty ?? 'Vận dụng'}):\nĐề: ${q.question_text}\nA. ${q.option_a}\nB. ${q.option_b}\nC. ${q.option_c}\nD. ${q.option_d}\nĐáp án: ${q.correct_answer}\nLời giải: (từ database)`
+    ).join('\n\n')
+
     const response = await anthropic.messages.create({
       model: 'claude-sonnet-4-5',
       max_tokens: 8000,
-      system: `Bạn là chuyên gia soạn giáo án Toán 12 theo chương trình THPTQG Việt Nam.
-Tạo giáo án chi tiết, đầy đủ, chuẩn format, dùng LaTeX cho công thức toán học.
-Trả về JSON thuần túy, KHÔNG có markdown, KHÔNG có \`\`\`json.`,
+      system: 'Bạn là chuyên gia soạn giáo án Toán 12. Trả lời theo đúng format được yêu cầu.',
       messages: [{
         role: 'user',
-        content: `${prompt}
+        content: `Tạo giáo án: ${prompt}
 
-Tài liệu tham khảo từ database:
+Tài liệu tham khảo:
 ${theoryData?.map((t: { content: string }) => t.content).join('\n') || 'Không có'}
 
-Câu hỏi có sẵn trong database (ưu tiên dùng 80%):
-${JSON.stringify(dbQuestions || [])}
+Câu hỏi có sẵn (ưu tiên dùng 80%):
+${dbQuestionsText || 'Không có, tự tạo câu hỏi mới'}
 
-Trả về JSON với cấu trúc đầy đủ:
-{
-  "title": "tên bài học",
-  "duration": 90,
-  "objectives": ["mục tiêu 1", "mục tiêu 2", "mục tiêu 3"],
-  "theory": {
-    "definitions": [{"term": "...", "content": "...LaTeX..."}],
-    "formulas": [{"name": "...", "formula": "$$...$$", "note": "..."}],
-    "theorems": [{"name": "...", "content": "..."}]
-  },
-  "examples": [
-    {
-      "level": "Nhận biết",
-      "problem": "...",
-      "solution": "bước 1:... bước 2:...",
-      "tip": "mẹo giải..."
-    },
-    {
-      "level": "Thông hiểu",
-      "problem": "...",
-      "solution": "...",
-      "tip": "..."
-    },
-    {
-      "level": "Vận dụng",
-      "problem": "...",
-      "solution": "...",
-      "tip": "..."
-    }
-  ],
-  "exercises": [
-    {
-      "source": "db hoặc ai",
-      "question_text": "...",
-      "option_a": "...",
-      "option_b": "...",
-      "option_c": "...",
-      "option_d": "...",
-      "correct_answer": "A|B|C|D",
-      "difficulty": "Nhận biết|Thông hiểu|Vận dụng|Vận dụng cao",
-      "solution": "lời giải chi tiết từng bước"
-    }
-  ],
-  "summary": "tổng kết bài học ngắn gọn",
-  "memory_tips": "mẹo nhớ công thức"
-}`
-      }]
+Trả về theo format sau, giữ đúng các delimiter:
+
+###TITLE###
+[tên bài học]
+
+###OBJECTIVES###
+[mục tiêu 1]
+[mục tiêu 2]
+[mục tiêu 3]
+
+###THEORY###
+[nội dung lý thuyết, công thức, định nghĩa - viết tự do bằng tiếng Việt, dùng LaTeX thoải mái]
+
+###EXAMPLES###
+VÍ DỤ 1 (Nhận biết):
+Bài toán: [đề bài]
+Lời giải: [lời giải từng bước]
+Mẹo: [mẹo giải nếu có]
+
+VÍ DỤ 2 (Thông hiểu):
+Bài toán: [đề bài]
+Lời giải: [lời giải]
+Mẹo: [mẹo]
+
+VÍ DỤ 3 (Vận dụng):
+Bài toán: [đề bài]
+Lời giải: [lời giải]
+Mẹo: [mẹo]
+
+###EXERCISES###
+CÂU 1 ([độ khó]):
+Đề: [nội dung câu hỏi]
+A. [đáp án A]
+B. [đáp án B]
+C. [đáp án C]
+D. [đáp án D]
+Đáp án: [A/B/C/D]
+Lời giải: [lời giải]
+
+CÂU 2 ([độ khó]):
+Đề: [nội dung câu hỏi]
+A. [đáp án A]
+B. [đáp án B]
+C. [đáp án C]
+D. [đáp án D]
+Đáp án: [A/B/C/D]
+Lời giải: [lời giải]
+
+###SUMMARY###
+[tổng kết bài học]
+
+###TIPS###
+[mẹo nhớ công thức]`,
+      }],
     })
 
     const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    const clean = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
-    const start = clean.indexOf('{')
-    const end = clean.lastIndexOf('}')
-    const lessonPlan = JSON.parse(clean.substring(start, end + 1))
+    if (!text) throw new Error('Empty response from Claude API')
 
-    for (const ex of (lessonPlan.exercises ?? [])) {
-      if (ex.source === 'ai' && ex.question_text) {
-        await supabase.from('questions').insert({
-          topic: topic,
-          question_type: 'multiple_choice',
-          question_text: ex.question_text,
-          option_a: ex.option_a ?? null,
-          option_b: ex.option_b ?? null,
-          option_c: ex.option_c ?? null,
-          option_d: ex.option_d ?? null,
-          correct_answer: ex.correct_answer ?? null,
-          difficulty: ex.difficulty ?? 'Vận dụng',
-          explanation: ex.solution ?? null,
-          is_published: true,
-          raw_text: JSON.stringify(ex),
-        })
-      }
-    }
+    const lessonPlan = parseResponse(text)
 
     await supabase.from('lessons').update({ lesson_plan: lessonPlan }).eq('id', lessonId)
 
