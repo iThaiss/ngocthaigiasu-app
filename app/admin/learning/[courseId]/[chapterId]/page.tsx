@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import {
-  ChevronRight, ChevronLeft, Plus, Trash2, Loader2, FileText,
-  Video, Brain, CheckCircle2, Circle, Download, Eye,
+  ChevronRight, ChevronLeft, Plus, Trash2, Loader2, Brain,
+  Video, CheckCircle2, Circle, Download, Clock,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -14,6 +14,7 @@ import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter,
 } from '@/components/ui/dialog'
 import { Switch } from '@/components/ui/switch'
+import { Badge } from '@/components/ui/badge'
 import { useToast } from '@/components/ui/use-toast'
 import { formatDate } from '@/lib/utils'
 
@@ -35,6 +36,14 @@ interface Chapter {
   course_id: string
 }
 
+type JobStatus = 'pending' | 'processing' | 'completed' | 'failed'
+
+interface ActiveJob {
+  jobId: string
+  lessonId: string
+  status: JobStatus
+}
+
 export default function AdminLessonsPage() {
   const params = useParams()
   const courseId = params.courseId as string
@@ -54,9 +63,11 @@ export default function AdminLessonsPage() {
   const [genOpen, setGenOpen] = useState(false)
   const [genLesson, setGenLesson] = useState<Lesson | null>(null)
   const [genPrompt, setGenPrompt] = useState('')
-  const [generating, setGenerating] = useState(false)
-  const [genResult, setGenResult] = useState<string | null>(null)
-  const [savingPlan, setSavingPlan] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+
+  // Active jobs polling
+  const [activeJobs, setActiveJobs] = useState<ActiveJob[]>([])
+  const pollingRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   // Delete
   const [deleting, setDeleting] = useState<string | null>(null)
@@ -82,6 +93,42 @@ export default function AdminLessonsPage() {
   }, [courseId, chapterId])
 
   useEffect(() => { fetchData() }, [fetchData])
+
+  // Poll active jobs every 10s
+  useEffect(() => {
+    if (activeJobs.length === 0) {
+      if (pollingRef.current) clearInterval(pollingRef.current)
+      return
+    }
+
+    const poll = async () => {
+      const remaining: ActiveJob[] = []
+      for (const job of activeJobs) {
+        try {
+          const res = await fetch(`/api/admin/learning/job-status/${job.jobId}`)
+          const data = await res.json()
+          if (data.status === 'completed') {
+            toast({ title: 'Giáo án đã tạo xong!', description: 'Danh sách bài đã được cập nhật.' })
+            fetchData()
+          } else if (data.status === 'failed') {
+            toast({ title: 'Tạo giáo án thất bại', description: data.error ?? 'Thử lại sau', variant: 'destructive' })
+          } else {
+            remaining.push({ ...job, status: data.status as JobStatus })
+          }
+        } catch {
+          remaining.push(job)
+        }
+      }
+      setActiveJobs(remaining)
+    }
+
+    pollingRef.current = setInterval(poll, 10000)
+    return () => { if (pollingRef.current) clearInterval(pollingRef.current) }
+  }, [activeJobs, fetchData, toast])
+
+  function getLessonJobStatus(lessonId: string): JobStatus | null {
+    return activeJobs.find((j) => j.lessonId === lessonId)?.status ?? null
+  }
 
   async function handleCreateLesson() {
     if (!lessonForm.title) return
@@ -139,14 +186,12 @@ export default function AdminLessonsPage() {
         ? `Tạo giáo án bài "${lesson.title}" về chủ đề ${lesson.topic} lớp 12, thời lượng 90 phút`
         : `Tạo giáo án bài "${lesson.title}" lớp 12, thời lượng 90 phút`
     )
-    setGenResult(null)
     setGenOpen(true)
   }
 
   async function handleGenerate() {
     if (!genLesson || !genPrompt) return
-    setGenerating(true)
-    setGenResult(null)
+    setSubmitting(true)
     try {
       const res = await fetch('/api/admin/learning/generate-plan', {
         method: 'POST',
@@ -159,13 +204,17 @@ export default function AdminLessonsPage() {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error ?? 'Lỗi')
-      setGenResult(data.htmlPreview)
-      toast({ title: 'Giáo án đã được tạo và lưu!' })
-      fetchData()
+
+      setActiveJobs((prev) => [
+        ...prev,
+        { jobId: data.jobId, lessonId: genLesson.id, status: 'pending' },
+      ])
+      toast({ title: 'Yêu cầu đã được gửi!', description: 'Giáo án đang được tạo, bạn sẽ được thông báo khi xong.' })
+      setGenOpen(false)
     } catch (err: unknown) {
-      toast({ title: 'Lỗi tạo giáo án', description: err instanceof Error ? err.message : 'Thử lại sau', variant: 'destructive' })
+      toast({ title: 'Lỗi gửi yêu cầu', description: err instanceof Error ? err.message : 'Thử lại sau', variant: 'destructive' })
     } finally {
-      setGenerating(false)
+      setSubmitting(false)
     }
   }
 
@@ -208,7 +257,6 @@ export default function AdminLessonsPage() {
           <ChevronLeft className="h-3.5 w-3.5" /> Học Tập
         </Link>
         <ChevronRight className="h-3.5 w-3.5" />
-        <Link href={`/admin/learning/${courseId}`} className="hover:text-zinc-200">{chapter?.course_id ? 'Khoá học' : ''}</Link>
         <Link href={`/admin/learning/${courseId}`} className="hover:text-zinc-200">Khoá học</Link>
         <ChevronRight className="h-3.5 w-3.5" />
         <span className="text-zinc-100">{chapter?.name ?? 'Chương'}</span>
@@ -245,75 +293,91 @@ export default function AdminLessonsPage() {
                   Chưa có bài học. Nhấn &quot;Tạo bài học&quot; để bắt đầu.
                 </td>
               </tr>
-            ) : lessons.map((lesson) => (
-              <tr key={lesson.id} className="hover:bg-zinc-800/30 transition-colors">
-                <td className="px-4 py-3 text-zinc-200 max-w-xs">
-                  <p className="font-medium line-clamp-1">{lesson.title}</p>
-                </td>
-                <td className="px-4 py-3 text-zinc-400 text-xs">{lesson.topic ?? '—'}</td>
-                <td className="px-4 py-3 text-center">
-                  {lesson.video_url
-                    ? <Video className="h-4 w-4 text-blue-400 mx-auto" />
-                    : <span className="text-zinc-600">—</span>
-                  }
-                </td>
-                <td className="px-4 py-3 text-center">
-                  {lesson.lesson_plan
-                    ? <CheckCircle2 className="h-4 w-4 text-green-400 mx-auto" />
-                    : <Circle className="h-4 w-4 text-zinc-600 mx-auto" />
-                  }
-                </td>
-                <td className="px-4 py-3 text-center">
-                  <Switch
-                    checked={lesson.is_published}
-                    onCheckedChange={() => handleTogglePublish(lesson)}
-                  />
-                </td>
-                <td className="px-4 py-3 text-zinc-500 text-xs">
-                  {formatDate(lesson.created_at)}
-                </td>
-                <td className="px-4 py-3">
-                  <div className="flex items-center justify-center gap-1">
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-7 px-2 text-xs text-violet-400 hover:text-violet-300"
-                      onClick={() => openGenModal(lesson)}
-                      title="Tạo giáo án AI"
-                    >
-                      <Brain className="h-3.5 w-3.5" />
-                    </Button>
-                    {lesson.lesson_plan && (
+            ) : lessons.map((lesson) => {
+              const jobStatus = getLessonJobStatus(lesson.id)
+              return (
+                <tr key={lesson.id} className="hover:bg-zinc-800/30 transition-colors">
+                  <td className="px-4 py-3 text-zinc-200 max-w-xs">
+                    <p className="font-medium line-clamp-1">{lesson.title}</p>
+                  </td>
+                  <td className="px-4 py-3 text-zinc-400 text-xs">{lesson.topic ?? '—'}</td>
+                  <td className="px-4 py-3 text-center">
+                    {lesson.video_url
+                      ? <Video className="h-4 w-4 text-blue-400 mx-auto" />
+                      : <span className="text-zinc-600">—</span>
+                    }
+                  </td>
+                  <td className="px-4 py-3 text-center">
+                    {jobStatus === 'pending' || jobStatus === 'processing' ? (
+                      <Badge variant="outline" className="text-yellow-400 border-yellow-700 gap-1 text-[10px]">
+                        <Loader2 className="h-2.5 w-2.5 animate-spin" /> Đang tạo...
+                      </Badge>
+                    ) : lesson.lesson_plan ? (
+                      <Badge variant="outline" className="text-green-400 border-green-800 gap-1 text-[10px]">
+                        <CheckCircle2 className="h-2.5 w-2.5" /> Có giáo án
+                      </Badge>
+                    ) : (
+                      <Badge variant="outline" className="text-zinc-500 border-zinc-700 gap-1 text-[10px]">
+                        <Circle className="h-2.5 w-2.5" /> Chưa có
+                      </Badge>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-center">
+                    <Switch
+                      checked={lesson.is_published}
+                      onCheckedChange={() => handleTogglePublish(lesson)}
+                    />
+                  </td>
+                  <td className="px-4 py-3 text-zinc-500 text-xs">
+                    {formatDate(lesson.created_at)}
+                  </td>
+                  <td className="px-4 py-3">
+                    <div className="flex items-center justify-center gap-1">
                       <Button
                         size="sm"
                         variant="ghost"
-                        className="h-7 px-2 text-xs text-zinc-400 hover:text-zinc-200"
-                        onClick={() => handleExportPdf(lesson.id)}
-                        disabled={exporting === lesson.id}
-                        title="Xuất PDF"
+                        className="h-7 px-2 text-xs text-violet-400 hover:text-violet-300"
+                        onClick={() => openGenModal(lesson)}
+                        disabled={jobStatus === 'pending' || jobStatus === 'processing'}
+                        title="Tạo giáo án AI"
                       >
-                        {exporting === lesson.id
-                          ? <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                          : <Download className="h-3.5 w-3.5" />
+                        {jobStatus === 'pending' || jobStatus === 'processing'
+                          ? <Clock className="h-3.5 w-3.5" />
+                          : <Brain className="h-3.5 w-3.5" />
                         }
                       </Button>
-                    )}
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-7 px-2 text-zinc-500 hover:text-red-400"
-                      onClick={() => handleDelete(lesson.id)}
-                      disabled={deleting === lesson.id}
-                    >
-                      {deleting === lesson.id
-                        ? <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                        : <Trash2 className="h-3.5 w-3.5" />
-                      }
-                    </Button>
-                  </div>
-                </td>
-              </tr>
-            ))}
+                      {lesson.lesson_plan && (
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-7 px-2 text-xs text-zinc-400 hover:text-zinc-200"
+                          onClick={() => handleExportPdf(lesson.id)}
+                          disabled={exporting === lesson.id}
+                          title="Xuất PDF"
+                        >
+                          {exporting === lesson.id
+                            ? <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                            : <Download className="h-3.5 w-3.5" />
+                          }
+                        </Button>
+                      )}
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="h-7 px-2 text-zinc-500 hover:text-red-400"
+                        onClick={() => handleDelete(lesson.id)}
+                        disabled={deleting === lesson.id}
+                      >
+                        {deleting === lesson.id
+                          ? <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                          : <Trash2 className="h-3.5 w-3.5" />
+                        }
+                      </Button>
+                    </div>
+                  </td>
+                </tr>
+              )
+            })}
           </tbody>
         </table>
       </div>
@@ -371,8 +435,8 @@ export default function AdminLessonsPage() {
       </Dialog>
 
       {/* Generate plan dialog */}
-      <Dialog open={genOpen} onOpenChange={(o) => { if (!generating) setGenOpen(o) }}>
-        <DialogContent className="max-w-2xl bg-zinc-900 border-zinc-800 text-zinc-100 max-h-[90vh] overflow-y-auto">
+      <Dialog open={genOpen} onOpenChange={(o) => { if (!submitting) setGenOpen(o) }}>
+        <DialogContent className="max-w-lg bg-zinc-900 border-zinc-800 text-zinc-100">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
               <Brain className="h-5 w-5 text-violet-400" />
@@ -381,6 +445,9 @@ export default function AdminLessonsPage() {
           </DialogHeader>
 
           <div className="space-y-4">
+            <p className="text-xs text-zinc-400">
+              AI sẽ tạo giáo án trong nền. Bạn có thể đóng dialog và tiếp tục làm việc, giáo án sẽ tự cập nhật khi xong.
+            </p>
             <div className="space-y-1.5">
               <label className="text-xs text-zinc-400">Prompt cho AI</label>
               <Textarea
@@ -394,41 +461,18 @@ export default function AdminLessonsPage() {
 
             <Button
               onClick={handleGenerate}
-              disabled={generating || !genPrompt}
+              disabled={submitting || !genPrompt}
               className="w-full gap-2"
             >
-              {generating
-                ? <><Loader2 className="h-4 w-4 animate-spin" /> AI đang tạo giáo án...</>
+              {submitting
+                ? <><Loader2 className="h-4 w-4 animate-spin" /> Đang gửi yêu cầu...</>
                 : <><Brain className="h-4 w-4" /> Tạo giáo án</>
               }
             </Button>
-
-            {genResult && (
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm font-medium text-zinc-200 flex items-center gap-2">
-                    <Eye className="h-4 w-4 text-green-400" /> Preview giáo án
-                  </p>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="border-zinc-700 gap-1.5"
-                    onClick={() => genLesson && handleExportPdf(genLesson.id)}
-                    disabled={!!exporting}
-                  >
-                    <Download className="h-3.5 w-3.5" /> Xuất PDF
-                  </Button>
-                </div>
-                <div
-                  className="rounded-lg border border-zinc-700 bg-white p-4 max-h-96 overflow-y-auto"
-                  dangerouslySetInnerHTML={{ __html: genResult }}
-                />
-              </div>
-            )}
           </div>
 
           <DialogFooter>
-            <Button variant="ghost" onClick={() => setGenOpen(false)} className="text-zinc-400" disabled={generating}>
+            <Button variant="ghost" onClick={() => setGenOpen(false)} className="text-zinc-400" disabled={submitting}>
               Đóng
             </Button>
           </DialogFooter>
