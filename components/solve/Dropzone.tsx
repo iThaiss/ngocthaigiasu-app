@@ -20,7 +20,7 @@ export default function Dropzone({ onFileAccepted, disabled }: DropzoneProps) {
   const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: unknown[]) => {
     setError(null)
     if (rejectedFiles && (rejectedFiles as File[]).length > 0) {
-      setError('Định dạng file phải là JPG, PNG hoặc PDF và dưới 10MB.')
+      setError('Định dạng file phải là JPG, PNG hoặc WEBP và dưới 10MB.')
       return
     }
     const file = acceptedFiles[0]
@@ -33,7 +33,7 @@ export default function Dropzone({ onFileAccepted, disabled }: DropzoneProps) {
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { 'image/jpeg': [], 'image/png': [], 'application/pdf': [] },
+    accept: { 'image/jpeg': [], 'image/png': [], 'image/webp': [] },
     maxSize: 10 * 1024 * 1024,
     multiple: false,
     disabled,
@@ -93,7 +93,7 @@ export default function Dropzone({ onFileAccepted, disabled }: DropzoneProps) {
                 <p className="font-medium">Kéo thả ảnh bài toán vào đây</p>
                 <p className="text-sm text-muted-foreground mt-1">hoặc nhấn để chọn file</p>
               </div>
-              <p className="text-xs text-muted-foreground">JPG, PNG, PDF — tối đa 10MB</p>
+              <p className="text-xs text-muted-foreground">JPG, PNG, WEBP — tối đa 10MB</p>
             </motion.div>
           )}
         </AnimatePresence>

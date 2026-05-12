@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS solve_history (
   image_url    TEXT,
   problem_text TEXT,
   solution     JSONB,
-  topics       TEXT[],
+  topic        TEXT,
   difficulty   TEXT,
   model_used   TEXT,
   created_at   TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -22,6 +22,19 @@ CREATE TABLE IF NOT EXISTS daily_solve_count (
   UNIQUE (user_id, date)
 );
 
+-- Migrate old schema if topics column exists
+DO $$
+BEGIN
+  IF EXISTS (
+    SELECT 1 FROM information_schema.columns
+    WHERE table_name = 'solve_history' AND column_name = 'topics'
+  ) THEN
+    ALTER TABLE solve_history ADD COLUMN IF NOT EXISTS topic TEXT;
+    UPDATE solve_history SET topic = topics[1] WHERE topic IS NULL AND topics IS NOT NULL;
+    ALTER TABLE solve_history DROP COLUMN IF EXISTS topics;
+  END IF;
+END $$;
+
 -- Indexes
 CREATE INDEX IF NOT EXISTS idx_solve_history_user_id ON solve_history(user_id);
 CREATE INDEX IF NOT EXISTS idx_solve_history_created ON solve_history(created_at DESC);
@@ -31,14 +44,26 @@ CREATE INDEX IF NOT EXISTS idx_daily_solve_count_user_date ON daily_solve_count(
 ALTER TABLE solve_history ENABLE ROW LEVEL SECURITY;
 ALTER TABLE daily_solve_count ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Users view own solve history" ON solve_history
-  FOR SELECT USING (auth.uid() = user_id);
+DO $$ BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_policies WHERE tablename = 'solve_history' AND policyname = 'Users view own solve history'
+  ) THEN
+    CREATE POLICY "Users view own solve history" ON solve_history
+      FOR ALL USING (auth.uid() = user_id);
+  END IF;
+END $$;
 
-CREATE POLICY "Users manage own daily count" ON daily_solve_count
-  FOR ALL USING (auth.uid() = user_id);
+DO $$ BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_policies WHERE tablename = 'daily_solve_count' AND policyname = 'Users manage own daily count'
+  ) THEN
+    CREATE POLICY "Users manage own daily count" ON daily_solve_count
+      FOR ALL USING (auth.uid() = user_id);
+  END IF;
+END $$;
 
 -- ============================================================
--- Supabase Storage:
+-- Storage:
 -- Tạo bucket 'solve-images' trên Supabase Dashboard > Storage
 -- Chọn Public bucket để ảnh có thể hiển thị trực tiếp
 -- ============================================================

@@ -2,7 +2,12 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-import { GoogleGenerativeAI } from '@google/generative-ai'
+import Anthropic from '@anthropic-ai/sdk'
+
+const anthropic = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY,
+  baseURL: process.env.ANTHROPIC_BASE_URL,
+})
 
 interface ModelConfig {
   model: string
@@ -11,34 +16,42 @@ interface ModelConfig {
 }
 
 function getModelConfig(isVip: boolean, vipExpiresAt: string | null): ModelConfig {
-  if (!isVip) return { model: 'gemini-2.5-flash-lite-preview-06-17', limit: 3, label: 'Gemini 2.5 Flash-Lite' }
+  if (!isVip) return { model: 'claude-haiku-4-5', limit: 3, label: 'Claude Haiku' }
   const expiresAt = vipExpiresAt ? new Date(vipExpiresAt) : null
-  const daysLeft = expiresAt
-    ? (expiresAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24)
-    : 0
-  if (daysLeft > 200 || (expiresAt && expiresAt.getFullYear() > 2050)) {
-    return { model: 'gemini-2.5-pro', limit: 50, label: 'Gemini 2.5 Pro' }
-  }
-  return { model: 'gemini-2.5-flash', limit: 20, label: 'Gemini 2.5 Flash' }
+  const daysLeft = expiresAt ? (expiresAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24) : 0
+  if (daysLeft > 200) return { model: 'claude-sonnet-4-6', limit: 50, label: 'Claude Sonnet (VIP Năm)' }
+  return { model: 'claude-sonnet-4-6', limit: 20, label: 'Claude Sonnet (VIP Tháng)' }
 }
 
-const SOLVE_PROMPT = `Bạn là gia sư Toán 12 chuyên nghiệp tại Việt Nam.
-Hãy đọc ảnh bài toán và giải chi tiết bằng tiếng Việt.
+const SOLVE_PROMPT = `Bạn là gia sư Toán chuyên nghiệp tại Việt Nam.
+Đọc bài toán trong ảnh và giải chi tiết từng bước bằng tiếng Việt.
 
-Trả về JSON với format sau (KHÔNG có markdown, KHÔNG có \`\`\`):
+Trả về JSON thuần túy (KHÔNG markdown, KHÔNG \`\`\`):
 {
-  "problem": "nội dung bài toán đã đọc được từ ảnh",
+  "problem": "nội dung bài toán đọc được",
+  "topic": "chủ đề chính (Đạo hàm/Tích phân/Xác suất/...)",
+  "subtopic": "chủ đề phụ cụ thể",
+  "difficulty": "Nhận biết | Thông hiểu | Vận dụng | Vận dụng cao",
   "steps": [
-    {"step": 1, "title": "Phân tích đề bài", "content": "nội dung chi tiết, dùng LaTeX: $x^2+1$"},
+    {"step": 1, "title": "Phân tích đề", "content": "...LaTeX: $x^2$..."},
     {"step": 2, "title": "Lời giải", "content": "..."},
     {"step": 3, "title": "Kết luận", "content": "..."}
   ],
-  "answer": "Đáp án: A (hoặc kết quả số)",
-  "tips": "Mẹo giải nhanh nếu có, để null nếu không có",
-  "topics": ["Tích phân", "Nguyên hàm"],
-  "difficulty": "Nhận biết | Thông hiểu | Vận dụng | Vận dụng cao",
+  "answer": "Đáp án: ...",
+  "tips": "Mẹo giải nhanh nếu có, null nếu không",
   "is_math": true
 }`
+
+interface Solution {
+  problem: string
+  topic: string
+  subtopic: string
+  difficulty: string
+  steps: { step: number; title: string; content: string }[]
+  answer: string
+  tips: string | null
+  is_math: boolean
+}
 
 export async function GET() {
   const session = await getServerSession(authOptions)
@@ -58,10 +71,10 @@ export async function GET() {
       .single(),
     supabase
       .from('solve_history')
-      .select('id, problem_text, topics, difficulty, model_used, image_url, created_at')
+      .select('id, problem_text, topic, difficulty, model_used, image_url, solution, created_at')
       .eq('user_id', userId)
       .order('created_at', { ascending: false })
-      .limit(5),
+      .limit(10),
   ])
 
   const usedToday = dailyRow?.count ?? 0
@@ -86,7 +99,7 @@ export async function POST(req: NextRequest) {
   const today = new Date().toISOString().slice(0, 10)
   const supabase = createAdminClient()
 
-  // Check daily limit
+  // Step 1: Check daily limit
   const { data: dailyRow } = await supabase
     .from('daily_solve_count')
     .select('count')
@@ -113,44 +126,45 @@ export async function POST(req: NextRequest) {
 
   if (!file) return NextResponse.json({ error: 'Không có ảnh' }, { status: 400 })
 
-  const allowedTypes = ['image/jpeg', 'image/png', 'application/pdf']
+  const allowedTypes = ['image/jpeg', 'image/png', 'image/webp']
   if (!allowedTypes.includes(file.type)) {
-    return NextResponse.json({ error: 'Chỉ chấp nhận JPG, PNG, PDF' }, { status: 400 })
+    return NextResponse.json({ error: 'Chỉ chấp nhận JPG, PNG, WEBP' }, { status: 400 })
   }
   if (file.size > 10 * 1024 * 1024) {
     return NextResponse.json({ error: 'File quá lớn, tối đa 10MB' }, { status: 400 })
   }
 
-  const arrayBuffer = await file.arrayBuffer()
-  const base64 = Buffer.from(arrayBuffer).toString('base64')
+  // Step 2: Call Claude API with image
+  const imageData = await file.arrayBuffer()
+  const base64Image = Buffer.from(imageData).toString('base64')
+  const mediaType = file.type as 'image/jpeg' | 'image/png' | 'image/webp'
 
-  // Call Gemini API
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!)
-  const geminiModel = genAI.getGenerativeModel({ model: modelConfig.model })
-
-  let solution: {
-    problem: string
-    steps: { step: number; title: string; content: string }[]
-    answer: string
-    tips: string | null
-    topics: string[]
-    difficulty: string
-    is_math: boolean
-  }
-
+  let solution: Solution
   try {
-    const result = await geminiModel.generateContent([
-      { inlineData: { mimeType: file.type as 'image/jpeg' | 'image/png' | 'application/pdf', data: base64 } },
-      SOLVE_PROMPT,
-    ])
-    const rawText = result.response.text()
+    const response = await anthropic.messages.create({
+      model: modelConfig.model,
+      max_tokens: 4000,
+      messages: [{
+        role: 'user',
+        content: [
+          {
+            type: 'image',
+            source: { type: 'base64', media_type: mediaType, data: base64Image },
+          },
+          { type: 'text', text: SOLVE_PROMPT },
+        ],
+      }],
+    })
+
+    const rawText = response.content[0].type === 'text' ? response.content[0].text : ''
     const cleaned = rawText
       .replace(/^```json\s*/m, '')
+      .replace(/^```\s*/m, '')
       .replace(/\s*```$/m, '')
       .trim()
     solution = JSON.parse(cleaned)
   } catch (err) {
-    console.error('Gemini error:', err)
+    console.error('Claude API error:', err)
     return NextResponse.json({ error: 'Lỗi phân tích ảnh, vui lòng thử lại' }, { status: 500 })
   }
 
@@ -158,65 +172,71 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Không phải bài toán' }, { status: 400 })
   }
 
-  // Find related questions
-  const topics = solution.topics ?? []
-  let relatedQuestions: { id: string; question_text: string; difficulty: string | null; correct_answer: string | null }[] = []
-  if (topics.length > 0) {
-    const { data } = await supabase
-      .from('questions')
-      .select('id, question_text, difficulty, correct_answer')
-      .eq('question_type', 'multiple_choice')
-      .ilike('question_text', `%${topics[0]}%`)
-      .limit(5)
-    relatedQuestions = data ?? []
-  }
-
-  // Upload image to Storage
-  let imageUrl: string | null = null
-  try {
-    const ext = file.type === 'application/pdf' ? 'pdf' : file.type === 'image/png' ? 'png' : 'jpg'
-    const path = `${userId}/${Date.now()}.${ext}`
-    const { data: uploadData, error: uploadError } = await supabase.storage
-      .from('solve-images')
-      .upload(path, Buffer.from(arrayBuffer), { contentType: file.type, upsert: false })
-    if (uploadData && !uploadError) {
-      const { data: urlData } = supabase.storage.from('solve-images').getPublicUrl(path)
-      imageUrl = urlData.publicUrl
-    }
-  } catch (err) {
-    console.error('Storage upload error:', err)
-  }
-
-  // Save solve_history
-  await supabase.from('solve_history').insert({
-    user_id: userId,
-    image_url: imageUrl,
-    problem_text: solution.problem,
-    solution,
-    topics: solution.topics,
-    difficulty: solution.difficulty,
-    model_used: modelConfig.model,
+  // Step 3: Insert question (non-blocking)
+  supabase.from('questions').insert({
+    question_type: 'short_answer',
+    topic: solution.topic,
+    subtopic: solution.subtopic,
+    question_text: solution.problem,
+    explanation: JSON.stringify(solution.steps),
+    answer_source: 'AI_generated',
+    is_published: false,
+    needs_review: true,
+  }).then(({ error }) => {
+    if (error) console.error('Question insert error:', error)
   })
 
-  // Update daily count
-  if (dailyRow) {
-    await supabase
-      .from('daily_solve_count')
-      .update({ count: currentCount + 1 })
-      .eq('user_id', userId)
-      .eq('date', today)
-  } else {
-    await supabase
-      .from('daily_solve_count')
-      .insert({ user_id: userId, date: today, count: 1 })
-  }
+  // Step 4 + 5: Upload image & find related questions in parallel
+  const [imageUrl, { data: relatedData }] = await Promise.all([
+    (async (): Promise<string | null> => {
+      try {
+        const ext = file!.type === 'image/png' ? 'png' : file!.type === 'image/webp' ? 'webp' : 'jpg'
+        const path = `${userId}/${Date.now()}.${ext}`
+        const { data: uploadData, error: uploadError } = await supabase.storage
+          .from('solve-images')
+          .upload(path, Buffer.from(imageData), { contentType: file!.type, upsert: false })
+        if (uploadData && !uploadError) {
+          const { data: urlData } = supabase.storage.from('solve-images').getPublicUrl(path)
+          return urlData.publicUrl
+        }
+      } catch (err) {
+        console.error('Storage upload error:', err)
+      }
+      return null
+    })(),
+    supabase
+      .from('questions')
+      .select('id, question_text, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d')
+      .eq('is_published', true)
+      .or(`topic.ilike.%${solution.topic}%,subtopic.ilike.%${solution.subtopic}%`)
+      .neq('answer_source', 'AI_generated')
+      .limit(5),
+  ])
 
+  // Step 6: Save solve_history + upsert daily count
+  await Promise.all([
+    supabase.from('solve_history').insert({
+      user_id: userId,
+      image_url: imageUrl,
+      problem_text: solution.problem,
+      solution,
+      topic: solution.topic,
+      difficulty: solution.difficulty,
+      model_used: modelConfig.model,
+    }),
+    supabase.from('daily_solve_count').upsert(
+      { user_id: userId, date: today, count: currentCount + 1 },
+      { onConflict: 'user_id,date' }
+    ),
+  ])
+
+  // Step 7: Response
   return NextResponse.json({
     solution,
-    relatedQuestions,
-    modelUsed: modelConfig.model,
-    modelLabel: modelConfig.label,
+    relatedQuestions: relatedData ?? [],
     remainingToday: Math.max(0, modelConfig.limit - (currentCount + 1)),
     limit: modelConfig.limit,
+    modelUsed: modelConfig.model,
+    modelLabel: modelConfig.label,
   })
 }

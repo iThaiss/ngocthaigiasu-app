@@ -11,12 +11,23 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: 'ids array required' }, { status: 400 })
   }
 
-  const { ids, difficulty } = body
+  const { ids, difficulty, topic, subtopic, grade, part } = body
   const supabase = createAdminClient()
+
+  const updates: Record<string, unknown> = {}
+  if (difficulty !== undefined) updates.difficulty = difficulty || null
+  if (topic !== undefined) updates.topic = topic || null
+  if (subtopic !== undefined) updates.subtopic = subtopic || null
+  if (grade !== undefined) updates.grade = grade || null
+  if (part !== undefined) updates.part = part || null
+
+  if (Object.keys(updates).length === 0) {
+    return NextResponse.json({ error: 'No fields to update' }, { status: 400 })
+  }
 
   const { error } = await supabase
     .from('questions')
-    .update({ difficulty: difficulty || null })
+    .update(updates)
     .in('id', ids)
 
   if (error) return NextResponse.json({ error: 'Failed to update' }, { status: 500 })

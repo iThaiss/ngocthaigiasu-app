@@ -15,6 +15,10 @@ export async function GET(req: NextRequest) {
   const source = searchParams.get('source') ?? ''
   const search = searchParams.get('search') ?? ''
   const noAnswer = searchParams.get('noAnswer') === 'true'
+  const grade = searchParams.get('grade') ?? ''
+  const subtopic = searchParams.get('subtopic') ?? ''
+  const part = searchParams.get('part') ?? ''
+  const needsVisual = searchParams.get('needsVisual') ?? ''
 
   const supabase = createAdminClient()
   let query = supabase.from('questions').select('*', { count: 'exact' })
@@ -24,6 +28,11 @@ export async function GET(req: NextRequest) {
   if (source) query = query.ilike('source', `%${source}%`)
   if (search) query = query.ilike('question_text', `%${search}%`)
   if (noAnswer) query = query.is('correct_answer', null).eq('question_type', 'multiple_choice')
+  if (grade) query = query.eq('grade', parseInt(grade))
+  if (subtopic) query = query.ilike('subtopic', `%${subtopic}%`)
+  if (part) query = query.eq('part', part)
+  if (needsVisual === 'true') query = query.eq('needs_visual', true)
+  if (needsVisual === 'false') query = query.eq('needs_visual', false)
 
   query = query.order('created_at', { ascending: false }).range(offset, offset + limit - 1)
 

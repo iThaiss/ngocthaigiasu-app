@@ -4,20 +4,25 @@ import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Brain, Sparkles, Clock, History, Crown, Zap, AlertCircle,
-  BookOpen, ChevronRight, Loader2, Lightbulb,
+  BookOpen, ChevronDown, ChevronRight, Loader2, Lightbulb, X,
 } from 'lucide-react'
 import katex from 'katex'
+import 'katex/dist/katex.min.css'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Skeleton } from '@/components/ui/skeleton'
+import {
+  Dialog, DialogContent, DialogHeader, DialogTitle,
+} from '@/components/ui/dialog'
 import Dropzone from '@/components/solve/Dropzone'
 import { useAuth } from '@/lib/auth-context'
 import { useToast } from '@/components/ui/use-toast'
 import Link from 'next/link'
 
-// ─── Types ──────────────────────────────────────────────────────────────────
+// ─── Types ───────────────────────────────────────────────────────────────────
+
 interface SolveStep {
   step: number
   title: string
@@ -26,27 +31,34 @@ interface SolveStep {
 
 interface Solution {
   problem: string
+  topic: string
+  subtopic: string
+  difficulty: string
   steps: SolveStep[]
   answer: string
   tips: string | null
-  topics: string[]
-  difficulty: string
 }
 
 interface RelatedQuestion {
   id: string
   question_text: string
   difficulty: string | null
+  topic: string | null
   correct_answer: string | null
+  option_a: string | null
+  option_b: string | null
+  option_c: string | null
+  option_d: string | null
 }
 
 interface HistoryItem {
   id: string
   problem_text: string
-  topics: string[] | null
+  topic: string | null
   difficulty: string | null
   model_used: string
   image_url: string | null
+  solution: Solution | null
   created_at: string
 }
 
@@ -70,22 +82,20 @@ interface Status {
 }
 
 // ─── LaTeX Renderer ──────────────────────────────────────────────────────────
+
 function renderLatex(text: string): string {
   if (!text) return ''
   let result = text
-  // Block math: $$...$$
   result = result.replace(/\$\$([^$]+)\$\$/g, (_, math) => {
     try {
       return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>`
     } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
   })
-  // Inline math: $...$
   result = result.replace(/\$([^$\n]+)\$/g, (_, math) => {
     try {
       return katex.renderToString(math.trim(), { throwOnError: false, displayMode: false })
     } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
   })
-  // Newlines to <br>
   result = result.replace(/\n/g, '<br/>')
   return result
 }
@@ -100,11 +110,21 @@ function LatexText({ text, className }: { text: string; className?: string }) {
 }
 
 // ─── Difficulty Badge ────────────────────────────────────────────────────────
+
 const DIFF_COLOR: Record<string, string> = {
-  'Nhận biết': 'bg-green-500/15 text-green-600 dark:text-green-400',
-  'Thông hiểu': 'bg-blue-500/15 text-blue-600 dark:text-blue-400',
-  'Vận dụng': 'bg-yellow-500/15 text-yellow-600 dark:text-yellow-400',
+  'Nhận biết':    'bg-green-500/15 text-green-600 dark:text-green-400',
+  'Thông hiểu':   'bg-blue-500/15 text-blue-600 dark:text-blue-400',
+  'Vận dụng':     'bg-yellow-500/15 text-yellow-600 dark:text-yellow-400',
   'Vận dụng cao': 'bg-red-500/15 text-red-600 dark:text-red-400',
+}
+
+function DiffBadge({ diff }: { diff: string | null }) {
+  if (!diff) return null
+  return (
+    <span className={`text-xs font-medium rounded-full px-2.5 py-0.5 ${DIFF_COLOR[diff] ?? 'bg-muted text-muted-foreground'}`}>
+      {diff}
+    </span>
+  )
 }
 
 function relativeTime(dateStr: string) {
@@ -117,16 +137,173 @@ function relativeTime(dateStr: string) {
   return `${Math.floor(h / 24)} ngày trước`
 }
 
-// ─── Main Page ───────────────────────────────────────────────────────────────
+// ─── Related Questions Accordion ────────────────────────────────────────────
+
+function RelatedQuestionsSection({ questions }: { questions: RelatedQuestion[] }) {
+  const [openId, setOpenId] = useState<string | null>(null)
+  if (!questions.length) return null
+
+  const OPTIONS: [string, string | null][] = [
+    ['A', null], ['B', null], ['C', null], ['D', null],
+  ]
+
+  return (
+    <Card>
+      <CardHeader className="pb-3">
+        <CardTitle className="text-base flex items-center gap-2">
+          <BookOpen className="h-4 w-4" /> Câu hỏi liên quan từ ngân hàng đề
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-0 p-0">
+        {questions.map((q, idx) => {
+          const isOpen = openId === q.id
+          const opts: [string, string | null][] = [
+            ['A', q.option_a], ['B', q.option_b], ['C', q.option_c], ['D', q.option_d],
+          ]
+          const hasOptions = opts.some(([, v]) => v)
+          void OPTIONS
+          return (
+            <div key={q.id}>
+              {idx > 0 && <Separator />}
+              <button
+                onClick={() => setOpenId(isOpen ? null : q.id)}
+                className="w-full flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors text-left"
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm line-clamp-2">{q.question_text}</p>
+                  <div className="flex items-center gap-2 mt-1.5">
+                    <DiffBadge diff={q.difficulty} />
+                    {q.topic && (
+                      <span className="text-[10px] bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2 py-0.5">
+                        {q.topic}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 mt-0.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isOpen && (
+                <div className="px-4 pb-3 space-y-2 bg-muted/20">
+                  {hasOptions && (
+                    <div className="grid grid-cols-1 gap-1">
+                      {opts.map(([label, val]) => val && (
+                        <div key={label} className={`flex gap-2 text-sm p-2 rounded ${q.correct_answer === label ? 'bg-green-500/10 text-green-700 dark:text-green-300 font-medium' : ''}`}>
+                          <span className="font-bold w-4 shrink-0">{label}.</span>
+                          <LatexText text={val} />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {q.correct_answer && (
+                    <p className="text-sm text-muted-foreground">
+                      Đáp án đúng: <span className="font-bold text-green-600 dark:text-green-400">{q.correct_answer}</span>
+                    </p>
+                  )}
+                  <Link href="/exam">
+                    <Button size="sm" variant="outline" className="gap-1 text-xs mt-1">
+                      Luyện tập thêm <ChevronRight className="h-3 w-3" />
+                    </Button>
+                  </Link>
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </CardContent>
+    </Card>
+  )
+}
+
+// ─── History Modal ────────────────────────────────────────────────────────────
+
+function HistoryModal({ item, onClose }: { item: HistoryItem; onClose: () => void }) {
+  const sol = item.solution
+  return (
+    <Dialog open onOpenChange={(open) => { if (!open) onClose() }}>
+      <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="flex items-center gap-2 flex-wrap">
+            <span>Chi tiết bài giải</span>
+            {item.topic && (
+              <span className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5 font-normal">
+                {item.topic}
+              </span>
+            )}
+            <DiffBadge diff={item.difficulty} />
+          </DialogTitle>
+        </DialogHeader>
+
+        {!sol ? (
+          <p className="text-sm text-muted-foreground">Không có dữ liệu lời giải.</p>
+        ) : (
+          <div className="space-y-4 mt-2">
+            {/* Problem */}
+            <div className="rounded-lg bg-muted/30 p-3">
+              <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1">Đề bài</p>
+              <LatexText text={sol.problem} className="text-sm leading-relaxed" />
+            </div>
+
+            {/* Steps */}
+            <div className="space-y-3">
+              <p className="text-sm font-semibold">Lời giải từng bước</p>
+              {sol.steps.map((step) => (
+                <div key={step.step} className="flex gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-bold">
+                    {step.step}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold mb-0.5">{step.title}</p>
+                    <LatexText text={step.content} className="text-sm text-muted-foreground leading-relaxed" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Answer */}
+            <div className="rounded-lg border border-green-500/30 bg-green-500/5 p-3 flex items-start gap-3">
+              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 shrink-0">
+                <span className="text-green-600 dark:text-green-400 font-bold text-xs">✓</span>
+              </div>
+              <div>
+                <p className="text-xs font-medium text-green-600 dark:text-green-400 uppercase tracking-wide mb-0.5">Đáp án</p>
+                <LatexText text={sol.answer} className="font-semibold text-green-700 dark:text-green-300" />
+              </div>
+            </div>
+
+            {/* Tips */}
+            {sol.tips && (
+              <div className="rounded-lg border border-yellow-500/30 bg-yellow-500/5 p-3 flex items-start gap-3">
+                <Lightbulb className="h-4 w-4 text-yellow-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-xs font-medium text-yellow-600 dark:text-yellow-400 uppercase tracking-wide mb-0.5">Mẹo giải nhanh</p>
+                  <LatexText text={sol.tips} className="text-sm text-yellow-700 dark:text-yellow-300" />
+                </div>
+              </div>
+            )}
+
+            <p className="text-xs text-muted-foreground text-right">
+              {item.model_used} · {relativeTime(item.created_at)}
+            </p>
+          </div>
+        )}
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+// ─── Main Page ────────────────────────────────────────────────────────────────
+
 export default function SolvePage() {
   const { user } = useAuth()
   const { toast } = useToast()
+  void user
 
   const [file, setFile] = useState<File | null>(null)
   const [solving, setSolving] = useState(false)
   const [result, setResult] = useState<SolveResult | null>(null)
   const [status, setStatus] = useState<Status | null>(null)
   const [loadingStatus, setLoadingStatus] = useState(true)
+  const [historyModal, setHistoryModal] = useState<HistoryItem | null>(null)
 
   const fetchStatus = useCallback(async () => {
     try {
@@ -169,15 +346,13 @@ export default function SolvePage() {
         return
       }
       if (!res.ok) {
-        toast({ title: 'Dịch vụ tạm thời gián đoạn', description: 'Vui lòng thử lại sau.', variant: 'destructive' })
+        toast({ title: 'Dịch vụ tạm thời gián đoạn', description: data.error ?? 'Vui lòng thử lại sau.', variant: 'destructive' })
         return
       }
 
       setResult(data)
-      // Update remaining count
       setStatus((prev) => prev ? { ...prev, remaining: data.remainingToday, usedToday: data.limit - data.remainingToday } : prev)
       toast({ title: 'Giải xong!', description: `Dùng ${data.modelLabel}` })
-      // Refresh history
       fetchStatus()
     } finally {
       setSolving(false)
@@ -202,7 +377,8 @@ export default function SolvePage() {
 
       {/* 2-column layout */}
       <div className="grid lg:grid-cols-2 gap-6">
-        {/* Left: Upload */}
+
+        {/* ─── Left: Upload ─── */}
         <div className="space-y-4">
           {/* Status bar */}
           <Card className="border-purple-500/20">
@@ -219,7 +395,7 @@ export default function SolvePage() {
                       {isVip ? (
                         <Badge className="bg-yellow-500/15 text-yellow-600 dark:text-yellow-400 border-yellow-500/30 gap-1">
                           <Crown className="h-3 w-3" />
-                          {status.modelLabel.includes('Pro') ? 'VIP Năm Học' : 'VIP Tháng'}
+                          {status.modelLabel.includes('Năm') ? 'VIP Năm Học' : 'VIP Tháng'}
                         </Badge>
                       ) : (
                         <Badge variant="secondary">Free</Badge>
@@ -244,7 +420,7 @@ export default function SolvePage() {
             </CardContent>
           </Card>
 
-          {/* Limit reached warning */}
+          {/* Limit reached banner */}
           {isLimitReached && !loadingStatus && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <Card className="border-destructive/30 bg-destructive/5">
@@ -282,7 +458,7 @@ export default function SolvePage() {
                 {solving ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    AI đang phân tích...
+                    Đang phân tích...
                   </>
                 ) : (
                   <>
@@ -311,7 +487,11 @@ export default function SolvePage() {
               ) : (
                 <div className="divide-y divide-border">
                   {(status?.history ?? []).map((item) => (
-                    <div key={item.id} className="flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors">
+                    <button
+                      key={item.id}
+                      onClick={() => setHistoryModal(item)}
+                      className="w-full flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors text-left"
+                    >
                       {item.image_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={item.image_url} alt="" className="h-10 w-10 rounded object-cover shrink-0 border" />
@@ -323,15 +503,17 @@ export default function SolvePage() {
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium truncate">{item.problem_text ?? 'Bài toán'}</p>
                         <div className="flex items-center gap-2 mt-0.5 flex-wrap">
-                          {(item.topics ?? []).slice(0, 2).map((t) => (
-                            <span key={t} className="text-[10px] bg-muted rounded px-1.5 py-0.5">{t}</span>
-                          ))}
+                          {item.topic && (
+                            <span className="text-[10px] bg-muted rounded px-1.5 py-0.5">{item.topic}</span>
+                          )}
                           <span className="text-[10px] text-muted-foreground flex items-center gap-0.5">
                             <Clock className="h-2.5 w-2.5" /> {relativeTime(item.created_at)}
                           </span>
+                          <span className="text-[10px] text-muted-foreground">{item.model_used}</span>
                         </div>
                       </div>
-                    </div>
+                      <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 mt-1" />
+                    </button>
                   ))}
                 </div>
               )}
@@ -339,7 +521,7 @@ export default function SolvePage() {
           </Card>
         </div>
 
-        {/* Right: Results */}
+        {/* ─── Right: Result ─── */}
         <div className="space-y-4">
           <AnimatePresence mode="wait">
             {solving ? (
@@ -372,15 +554,16 @@ export default function SolvePage() {
                   <CardHeader className="pb-2">
                     <div className="flex items-center justify-between gap-2 flex-wrap">
                       <CardTitle className="text-base">Đề bài</CardTitle>
-                      <div className="flex items-center gap-2">
-                        {result.solution.difficulty && (
-                          <span className={`text-xs font-medium rounded-full px-2.5 py-0.5 ${DIFF_COLOR[result.solution.difficulty] ?? 'bg-muted text-muted-foreground'}`}>
-                            {result.solution.difficulty}
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <DiffBadge diff={result.solution.difficulty} />
+                        <span className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5">
+                          {result.solution.topic}
+                        </span>
+                        {result.solution.subtopic && (
+                          <span className="text-xs bg-muted text-muted-foreground rounded-full px-2.5 py-0.5">
+                            {result.solution.subtopic}
                           </span>
                         )}
-                        {result.solution.topics?.slice(0, 2).map((t) => (
-                          <span key={t} className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5">{t}</span>
-                        ))}
                       </div>
                     </div>
                   </CardHeader>
@@ -446,42 +629,7 @@ export default function SolvePage() {
                 )}
 
                 {/* Related questions */}
-                {result.relatedQuestions.length > 0 && (
-                  <Card>
-                    <CardHeader className="pb-3">
-                      <CardTitle className="text-base flex items-center gap-2">
-                        <BookOpen className="h-4 w-4" /> Câu hỏi liên quan từ ngân hàng đề
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-0 p-0">
-                      {result.relatedQuestions.map((q, idx) => (
-                        <div key={q.id}>
-                          {idx > 0 && <Separator />}
-                          <div className="flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors">
-                            <div className="flex-1 min-w-0">
-                              <p className="text-sm line-clamp-2">{q.question_text}</p>
-                              <div className="flex items-center gap-2 mt-1.5">
-                                {q.difficulty && (
-                                  <span className={`text-[10px] font-medium rounded-full px-2 py-0.5 ${DIFF_COLOR[q.difficulty] ?? 'bg-muted text-muted-foreground'}`}>
-                                    {q.difficulty}
-                                  </span>
-                                )}
-                                {q.correct_answer && (
-                                  <span className="text-[10px] text-muted-foreground">Đáp án: <span className="font-bold text-green-500">{q.correct_answer}</span></span>
-                                )}
-                              </div>
-                            </div>
-                            <Link href="/exam">
-                              <Button size="sm" variant="ghost" className="shrink-0 gap-1 text-xs">
-                                Luyện tập <ChevronRight className="h-3 w-3" />
-                              </Button>
-                            </Link>
-                          </div>
-                        </div>
-                      ))}
-                    </CardContent>
-                  </Card>
-                )}
+                <RelatedQuestionsSection questions={result.relatedQuestions} />
 
                 {/* Meta info */}
                 <p className="text-xs text-muted-foreground text-center">
@@ -497,7 +645,7 @@ export default function SolvePage() {
                     </div>
                     <div>
                       <p className="font-medium">Kết quả sẽ hiển thị tại đây</p>
-                      <p className="text-sm text-muted-foreground mt-1">Upload ảnh và nhấn "Giải bài" để bắt đầu</p>
+                      <p className="text-sm text-muted-foreground mt-1">Upload ảnh và nhấn &quot;Giải bài&quot; để bắt đầu</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -506,6 +654,11 @@ export default function SolvePage() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* History detail modal */}
+      {historyModal && (
+        <HistoryModal item={historyModal} onClose={() => setHistoryModal(null)} />
+      )}
     </div>
   )
 }
