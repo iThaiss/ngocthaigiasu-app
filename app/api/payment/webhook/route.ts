@@ -64,20 +64,8 @@ export async function POST(req: NextRequest) {
 
   const pointsToAdd: number = tx.metadata?.pointsToAdd ?? Math.floor(tx.amount / 1000)
 
-  // Read current wallet
-  const { data: wallet } = await supabase
-    .from('wallets')
-    .select('points')
-    .eq('user_id', tx.user_id)
-    .single()
-
-  const currentPoints = wallet?.points ?? 0
-
-  // Credit points to user wallet
-  const { error: walletErr } = await supabase
-    .from('wallets')
-    .update({ points: currentPoints + pointsToAdd })
-    .eq('user_id', tx.user_id)
+  // Credit points to user wallet (atomic — avoids race condition)
+  const { error: walletErr } = await supabase.rpc('increment_points', { uid: tx.user_id, delta: pointsToAdd })
   console.log('[webhook] wallet update:', walletErr ? walletErr.message : `+${pointsToAdd} pts`)
 
   // Record point transaction
@@ -93,8 +81,8 @@ export async function POST(req: NextRequest) {
   await supabase.from('transactions').update({ status: 'completed' }).eq('id', tx.id)
 
   // Notify user
-  const notifTitle = 'Nâng cấp VIP thành công 🎉'
-  const notifContent = `Tài khoản đã được nâng cấp VIP.`
+  const notifTitle = 'Nạp điểm thành công 🎉'
+  const notifContent = `+${pointsToAdd} điểm đã được cộng vào tài khoản của bạn`
 
   await supabase.from('notifications').insert({
     user_id: tx.user_id,
@@ -114,18 +102,7 @@ export async function POST(req: NextRequest) {
     .single()
 
   if (referral && referral.referrer_id !== tx.user_id) {
-    const { data: refWallet } = await supabase
-      .from('wallets')
-      .select('points')
-      .eq('user_id', referral.referrer_id)
-      .single()
-
-    const refPoints = refWallet?.points ?? 0
-
-    await supabase
-      .from('wallets')
-      .update({ points: refPoints + 10 })
-      .eq('user_id', referral.referrer_id)
+    await supabase.rpc('increment_points', { uid: referral.referrer_id, delta: 10 })
 
     await supabase.from('point_transactions').insert({
       user_id: referral.referrer_id,

@@ -1,6 +1,8 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
+import ReactCrop, { type Crop, type PixelCrop } from 'react-image-crop'
+import 'react-image-crop/dist/ReactCrop.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Brain, Sparkles, Clock, History, Crown, Zap, AlertCircle,
@@ -331,6 +333,13 @@ export default function SolvePage() {
   const [historyModal, setHistoryModal] = useState<HistoryItem | null>(null)
   const [practiceQuestion, setPracticeQuestion] = useState<RelatedQuestion | null>(null)
 
+  // Crop state
+  const [cropSrc, setCropSrc] = useState<string | null>(null)
+  const [cropFile, setCropFile] = useState<File | null>(null)
+  const [crop, setCrop] = useState<Crop>({ unit: '%', x: 10, y: 10, width: 80, height: 80 })
+  const [completedCrop, setCompletedCrop] = useState<PixelCrop | null>(null)
+  const imgRef = useRef<HTMLImageElement>(null)
+
   const handleNextQuestion = useCallback(() => {
     if (!result?.relatedQuestions || !practiceQuestion) return
     const list = result.relatedQuestions
@@ -351,9 +360,43 @@ export default function SolvePage() {
   useEffect(() => { fetchStatus() }, [fetchStatus])
 
   const handleFileAccepted = useCallback((f: File) => {
-    setFile(f)
+    setCropFile(f)
+    setCropSrc(URL.createObjectURL(f))
     setResult(null)
   }, [])
+
+  const handleCropConfirm = useCallback(async () => {
+    if (!imgRef.current || !completedCrop || !cropFile) {
+      setFile(cropFile)
+      setCropSrc(null)
+      return
+    }
+    const canvas = document.createElement('canvas')
+    const scaleX = imgRef.current.naturalWidth / imgRef.current.width
+    const scaleY = imgRef.current.naturalHeight / imgRef.current.height
+    canvas.width = completedCrop.width * scaleX
+    canvas.height = completedCrop.height * scaleY
+    const ctx = canvas.getContext('2d')!
+    ctx.drawImage(
+      imgRef.current,
+      completedCrop.x * scaleX,
+      completedCrop.y * scaleY,
+      completedCrop.width * scaleX,
+      completedCrop.height * scaleY,
+      0, 0,
+      canvas.width,
+      canvas.height,
+    )
+    canvas.toBlob((blob) => {
+      setFile(blob ? new File([blob], cropFile.name, { type: cropFile.type }) : cropFile)
+      setCropSrc(null)
+    }, cropFile.type)
+  }, [completedCrop, cropFile])
+
+  const handleCropSkip = useCallback(() => {
+    setFile(cropFile)
+    setCropSrc(null)
+  }, [cropFile])
 
   const handleSolve = async () => {
     if (!file) {
@@ -376,7 +419,7 @@ export default function SolvePage() {
         return
       }
       if (res.status === 400 && data.error === 'Không phải bài toán') {
-        toast({ title: 'Không nhận diện được bài toán', description: 'Vui lòng upload ảnh bài Toán rõ hơn.', variant: 'destructive' })
+        toast({ title: 'Không phát hiện bài toán trong ảnh. Vui lòng chỉ upload ảnh câu hỏi Toán.', variant: 'destructive' })
         return
       }
       if (!res.ok) {
@@ -483,6 +526,11 @@ export default function SolvePage() {
           {/* Dropzone */}
           <Card>
             <CardContent className="pt-6 space-y-4">
+              {/* Warning banner */}
+              <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-3 space-y-1">
+                <p className="text-sm text-amber-700 dark:text-amber-400">⚠️ Chỉ upload <strong>1 câu hỏi</strong> mỗi lần để AI giải chính xác nhất</p>
+                <p className="text-xs text-muted-foreground">🤖 Kết quả AI có thể sai. Nếu phát hiện lỗi, vui lòng báo cáo qua: <strong>[số điện thoại/email của admin]</strong></p>
+              </div>
               <Dropzone onFileAccepted={handleFileAccepted} disabled={solving || isLimitReached} />
               <Button
                 onClick={handleSolve}
@@ -501,6 +549,7 @@ export default function SolvePage() {
                   </>
                 )}
               </Button>
+              <p className="text-xs text-muted-foreground text-center">Lưu ý: AI chỉ hỗ trợ các môn Toán</p>
             </CardContent>
           </Card>
 
@@ -688,6 +737,32 @@ export default function SolvePage() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* Crop dialog */}
+      {cropSrc && (
+        <Dialog open onOpenChange={(open) => { if (!open) handleCropSkip() }}>
+          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle>Chọn vùng bài toán cần giải</DialogTitle>
+            </DialogHeader>
+            <p className="text-sm text-muted-foreground">Kéo để khoanh vùng 1 câu hỏi, sau đó nhấn &quot;Xác nhận crop&quot;.</p>
+            <div className="flex justify-center overflow-auto">
+              <ReactCrop
+                crop={crop}
+                onChange={(c) => setCrop(c)}
+                onComplete={(c) => setCompletedCrop(c)}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img ref={imgRef} src={cropSrc} alt="crop preview" style={{ maxHeight: '55vh', maxWidth: '100%' }} />
+              </ReactCrop>
+            </div>
+            <div className="flex gap-3 justify-end pt-2">
+              <Button variant="outline" onClick={handleCropSkip}>Bỏ qua crop</Button>
+              <Button onClick={handleCropConfirm}>Xác nhận crop</Button>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
 
       {/* History detail modal */}
       {historyModal && (

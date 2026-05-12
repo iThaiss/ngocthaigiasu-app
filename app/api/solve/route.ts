@@ -203,6 +203,7 @@ export async function POST(req: NextRequest) {
     const rawText = await callClaudeWithRetry(anthropic, {
       model: modelConfig.model,
       max_tokens: 4000,
+      system: "Bạn là gia sư Toán chuyên nghiệp tại Việt Nam. Nhiệm vụ duy nhất là đọc bài toán từ ảnh và trả về JSON giải toán. KHÔNG chào hỏi, KHÔNG giải thích thêm, CHỈ trả về JSON thuần túy. Nếu ảnh không phải bài toán, trả về {\"is_math\": false}.",
       messages: [{
         role: 'user',
         content: [
