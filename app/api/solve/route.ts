@@ -352,39 +352,38 @@ export async function POST(req: NextRequest) {
   console.log('=== STEP 5: Find related questions ===')
   console.log('[solve] topic:', solution.topic, '| subtopic:', solution.subtopic)
 
-  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, question_type, statements, numeric_answer'
+  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
 
   let relatedQuestions: unknown[] = []
   try {
-    const { data: topicData } = await supabase
+    // Priority: subtopic match
+    const { data: bySubtopic } = await supabase
       .from('questions')
       .select(QUESTION_FIELDS)
       .eq('is_published', true)
-      .or(`topic.ilike.%${solution.topic}%,subtopic.ilike.%${solution.subtopic}%`)
+      .ilike('subtopic', `%${solution.subtopic}%`)
       .neq('answer_source', 'AI_generated')
+      .order('difficulty', { ascending: true })
       .limit(5)
-    relatedQuestions = topicData ?? []
-    console.log('[solve] topic-match count:', relatedQuestions.length)
-  } catch (err) {
-    console.error('[solve] related questions query error:', err)
-  }
 
-  if (relatedQuestions.length === 0) {
-    console.log('[solve] no topic-match, fallback to random multiple_choice')
-    try {
-      const { data: fallbackData } = await supabase
+    if (bySubtopic && bySubtopic.length >= 3) {
+      relatedQuestions = bySubtopic
+    } else {
+      // Fallback: topic match
+      const { data: byTopic } = await supabase
         .from('questions')
         .select(QUESTION_FIELDS)
         .eq('is_published', true)
-        .eq('question_type', 'multiple_choice')
+        .ilike('topic', `%${solution.topic}%`)
         .neq('answer_source', 'AI_generated')
+        .order('difficulty', { ascending: true })
         .limit(5)
-      relatedQuestions = fallbackData ?? []
-    } catch (err) {
-      console.error('[solve] fallback query error:', err)
+      relatedQuestions = byTopic ?? bySubtopic ?? []
     }
+    console.log('[solve] related questions count:', relatedQuestions.length)
+  } catch (err) {
+    console.error('[solve] related questions query error:', err)
   }
-  console.log('[solve] related questions count:', relatedQuestions.length)
 
   // Upsert daily count
   await supabase.from('daily_solve_count').upsert(
