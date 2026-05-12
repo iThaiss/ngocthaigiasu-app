@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
@@ -42,11 +42,14 @@ interface UserProfile {
 
 export default function ProfilePage() {
   const { user, isVip, role } = useAuth()
-  const { update: updateSession } = useSession()
+  const { update: updateSession, data: session } = useSession()
   const router = useRouter()
   const { toast } = useToast()
   const [saving, setSaving] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [uploadingAvatar, setUploadingAvatar] = useState(false)
+  const [avatarSrc, setAvatarSrc] = useState<string | undefined>(undefined)
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [form, setForm] = useState<UserProfile>({
     name: '',
     email: '',
@@ -60,11 +63,11 @@ export default function ProfilePage() {
   const [errors, setErrors] = useState<Record<string, string>>({})
 
   useEffect(() => {
-    if (!user?.id) return
-    fetchProfile()
-  }, [user?.id])
+    if (user?.image) setAvatarSrc(user.image)
+  }, [user?.image])
 
-  async function fetchProfile() {
+  const fetchProfile = useCallback(async () => {
+    if (!user?.id) return
     setLoading(true)
     try {
       const res = await fetch('/api/profile/me')
@@ -83,6 +86,32 @@ export default function ProfilePage() {
       }
     } finally {
       setLoading(false)
+    }
+  }, [user?.id, user?.name, user?.email])
+
+  useEffect(() => {
+    fetchProfile()
+  }, [fetchProfile])
+
+  const handleAvatarChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setUploadingAvatar(true)
+    try {
+      const fd = new FormData()
+      fd.append('avatar', file)
+      const res = await fetch('/api/profile/avatar', { method: 'POST', body: fd })
+      const data = await res.json()
+      if (res.ok) {
+        setAvatarSrc(data.url)
+        await updateSession()
+        toast({ title: 'Cập nhật ảnh đại diện thành công!' })
+      } else {
+        toast({ title: 'Lỗi', description: data.error ?? 'Không thể cập nhật ảnh.', variant: 'destructive' })
+      }
+    } finally {
+      setUploadingAvatar(false)
+      e.target.value = ''
     }
   }
 
@@ -143,12 +172,24 @@ export default function ProfilePage() {
             <div className="flex items-center gap-4">
               <div className="relative">
                 <Avatar className="h-20 w-20">
-                  <AvatarImage src={user?.image ?? undefined} alt={user?.name ?? ''} />
+                  <AvatarImage src={avatarSrc ?? user?.image ?? undefined} alt={user?.name ?? ''} />
                   <AvatarFallback className="text-2xl">{user?.name?.charAt(0)}</AvatarFallback>
                 </Avatar>
-                <button className="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">
-                  <Camera className="h-3.5 w-3.5" />
+                <button
+                  type="button"
+                  disabled={uploadingAvatar}
+                  onClick={() => fileInputRef.current?.click()}
+                  className="absolute -bottom-1 -right-1 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors disabled:opacity-50"
+                >
+                  {uploadingAvatar ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Camera className="h-3.5 w-3.5" />}
                 </button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/gif"
+                  className="hidden"
+                  onChange={handleAvatarChange}
+                />
               </div>
               <div>
                 <div className="flex items-center gap-2">
@@ -259,13 +300,21 @@ export default function ProfilePage() {
 
       {/* VIP Status Card */}
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-        <VipStatusCard isVip={form.isVip || isVip} vipExpiresAt={form.vipExpiresAt ?? user?.vipExpiresAt ?? null} />
+        <VipStatusCard
+        isVip={form.isVip || isVip}
+        vipExpiresAt={form.vipExpiresAt ?? user?.vipExpiresAt ?? null}
+        vipPlan={session?.user?.vipPlan ?? null}
+      />
       </motion.div>
     </div>
   )
 }
 
-function VipStatusCard({ isVip, vipExpiresAt }: { isVip: boolean; vipExpiresAt: string | null }) {
+function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
+  isVip: boolean
+  vipExpiresAt: string | null
+  vipPlan: 'monthly' | 'yearly' | null
+}) {
   const fmt = (d: Date) =>
     d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
 
@@ -276,9 +325,9 @@ function VipStatusCard({ isVip, vipExpiresAt }: { isVip: boolean; vipExpiresAt: 
     const expires = new Date(vipExpiresAt)
     const today = new Date()
     daysRemaining = Math.max(0, Math.ceil((expires.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)))
-    const estimatedTotal = daysRemaining > 60 ? 365 : 30
-    const daysUsed = estimatedTotal - daysRemaining
-    progressPercent = Math.max(0, Math.min(100, (daysUsed / estimatedTotal) * 100))
+    const totalDays = vipPlan === 'yearly' ? 365 : 30
+    const daysUsed = totalDays - daysRemaining
+    progressPercent = Math.max(0, Math.min(100, (daysUsed / totalDays) * 100))
   }
 
   return (

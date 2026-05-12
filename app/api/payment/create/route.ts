@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { randomInt } from 'crypto'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
   }
 
   const pointsToAdd = Math.floor(amount / 1000)
-  const referenceCode = 'NT' + Math.floor(100000 + Math.random() * 900000)
+  const referenceCode = 'NT' + randomInt(100000, 1000000)
   const bankAccount = process.env.NEXT_PUBLIC_BANK_ACCOUNT!
   const accountName = process.env.NEXT_PUBLIC_ACCOUNT_NAME!
 

@@ -20,7 +20,6 @@ import {
   Dialog, DialogContent, DialogHeader, DialogTitle,
 } from '@/components/ui/dialog'
 import Dropzone from '@/components/solve/Dropzone'
-import { useAuth } from '@/lib/auth-context'
 import { useToast } from '@/components/ui/use-toast'
 import Link from 'next/link'
 
@@ -357,9 +356,7 @@ function HistoryModal({ item, onClose }: { item: HistoryItem; onClose: () => voi
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function SolvePage() {
-  const { user } = useAuth()
   const { toast } = useToast()
-  void user
 
   const [file, setFile] = useState<File | null>(null)
   const [solving, setSolving] = useState(false)
