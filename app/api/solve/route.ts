@@ -42,6 +42,18 @@ Trả về JSON thuần túy (KHÔNG markdown, KHÔNG \`\`\`):
   "is_math": true
 }`
 
+function extractJSON(text: string): unknown {
+  // Strip markdown code fences (any variant)
+  text = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim()
+
+  // Find outermost JSON object
+  const start = text.indexOf('{')
+  const end   = text.lastIndexOf('}')
+  if (start === -1 || end === -1) throw new Error('No JSON object found in response')
+
+  return JSON.parse(text.substring(start, end + 1))
+}
+
 interface Solution {
   problem: string
   topic: string
@@ -157,14 +169,15 @@ export async function POST(req: NextRequest) {
     })
 
     const rawText = response.content[0].type === 'text' ? response.content[0].text : ''
-    const cleaned = rawText
-      .replace(/^```json\s*/m, '')
-      .replace(/^```\s*/m, '')
-      .replace(/\s*```$/m, '')
-      .trim()
-    solution = JSON.parse(cleaned)
+    try {
+      solution = extractJSON(rawText) as Solution
+    } catch (parseErr) {
+      console.error('[solve] JSON parse error:', parseErr)
+      console.error('[solve] raw response:', rawText)
+      throw parseErr
+    }
   } catch (err) {
-    console.error('Claude API error:', err)
+    console.error('[solve] Claude API error:', err)
     return NextResponse.json({ error: 'Lỗi phân tích ảnh, vui lòng thử lại' }, { status: 500 })
   }
 
@@ -237,7 +250,10 @@ export async function POST(req: NextRequest) {
 
   // Step 6: Save solve_history — try/catch riêng, không làm crash response
   try {
-    const { error: historyError } = await supabase.from('solve_history').insert({
+    console.log('Attempting to insert solve_history...')
+    console.log('user_id:', userId)
+    console.log('solution:', JSON.stringify(solution).substring(0, 100))
+    const { data: historyData, error: historyError } = await supabase.from('solve_history').insert({
       user_id: userId,
       image_url: imageUrl,
       problem_text: solution.problem,
@@ -247,9 +263,9 @@ export async function POST(req: NextRequest) {
       model_used: modelConfig.model,
     })
     if (historyError) {
-      console.error('[solve] solve_history INSERT error:', historyError)
+      console.error('solve_history INSERT error:', JSON.stringify(historyError))
     } else {
-      console.log('[solve] solve_history INSERT success, user:', userId)
+      console.log('solve_history INSERT success:', historyData)
     }
   } catch (err) {
     console.error('[solve] solve_history INSERT exception:', err)
