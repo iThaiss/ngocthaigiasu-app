@@ -111,7 +111,8 @@ export async function POST(req: NextRequest) {
   const today = new Date().toISOString().slice(0, 10)
   const supabase = createAdminClient()
 
-  // Step 1: Check daily limit
+  // === STEP 1: validate + check limit ===
+  console.log('=== STEP 1: validate + check limit ===')
   const { data: dailyRow } = await supabase
     .from('daily_solve_count')
     .select('count')
@@ -127,7 +128,6 @@ export async function POST(req: NextRequest) {
     )
   }
 
-  // Parse form data
   let file: File | null = null
   try {
     const formData = await req.formData()
@@ -146,7 +146,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'File quá lớn, tối đa 10MB' }, { status: 400 })
   }
 
-  // Step 2: Call Claude API with image
+  // === STEP 2: Call Claude API + parse JSON ===
+  console.log('=== STEP 2: Call Claude API ===')
   const imageData = await file.arrayBuffer()
   const base64Image = Buffer.from(imageData).toString('base64')
   const mediaType = file.type as 'image/jpeg' | 'image/png' | 'image/webp'
@@ -185,7 +186,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Không phải bài toán' }, { status: 400 })
   }
 
-  // Step 3: Insert question (non-blocking)
+  // Insert question (non-blocking, fire-and-forget)
   supabase.from('questions').insert({
     question_type: 'short_answer',
     topic: solution.topic,
@@ -199,60 +200,36 @@ export async function POST(req: NextRequest) {
     if (error) console.error('Question insert error:', error)
   })
 
-  // Step 4 + 5: Upload image & find related questions in parallel
-  console.log('[solve] topic detected:', solution.topic, '| subtopic:', solution.subtopic)
-
-  const [imageUrl, { data: topicData }] = await Promise.all([
-    (async (): Promise<string | null> => {
-      try {
-        const { error: bucketError } = await supabase.storage.getBucket('solve-images')
-        if (bucketError) {
-          console.error('[solve] bucket solve-images not found:', bucketError.message)
-          return null
-        }
-        const ext = file!.type === 'image/png' ? 'png' : file!.type === 'image/webp' ? 'webp' : 'jpg'
-        const path = `${userId}/${Date.now()}.${ext}`
-        const { data: uploadData, error: uploadError } = await supabase.storage
-          .from('solve-images')
-          .upload(path, Buffer.from(imageData), { contentType: file!.type, upsert: false })
-        if (uploadData && !uploadError) {
-          const { data: urlData } = supabase.storage.from('solve-images').getPublicUrl(path)
-          return urlData.publicUrl
-        }
-        if (uploadError) console.error('[solve] upload error:', uploadError.message)
-      } catch (err) {
-        console.error('[solve] storage exception:', err)
+  // === STEP 3: Upload ảnh (fail cũng không sao) ===
+  console.log('=== STEP 3: Upload image ===')
+  let imageUrl: string | null = null
+  try {
+    const { error: bucketError } = await supabase.storage.getBucket('solve-images')
+    if (bucketError) {
+      console.error('[solve] bucket solve-images not found:', bucketError.message)
+    } else {
+      const ext = file.type === 'image/png' ? 'png' : file.type === 'image/webp' ? 'webp' : 'jpg'
+      const path = `${userId}/${Date.now()}.${ext}`
+      const { data: uploadData, error: uploadError } = await supabase.storage
+        .from('solve-images')
+        .upload(path, Buffer.from(imageData), { contentType: file.type, upsert: false })
+      if (uploadData && !uploadError) {
+        const { data: urlData } = supabase.storage.from('solve-images').getPublicUrl(path)
+        imageUrl = urlData.publicUrl
+        console.log('[solve] image uploaded:', imageUrl)
       }
-      return null
-    })(),
-    supabase
-      .from('questions')
-      .select('id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d')
-      .eq('is_published', true)
-      .or(`topic.ilike.%${solution.topic}%,subtopic.ilike.%${solution.subtopic}%`)
-      .neq('answer_source', 'AI_generated')
-      .limit(5),
-  ])
-
-  // Fallback: nếu không tìm được theo topic → lấy 5 câu multiple_choice ngẫu nhiên
-  let relatedQuestions = topicData ?? []
-  if (relatedQuestions.length === 0) {
-    console.log('[solve] no topic-match found, fallback to random questions')
-    const { data: fallbackData } = await supabase
-      .from('questions')
-      .select('id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d')
-      .eq('is_published', true)
-      .eq('question_type', 'multiple_choice')
-      .limit(5)
-    relatedQuestions = fallbackData ?? []
+      if (uploadError) console.error('[solve] upload error:', uploadError.message)
+    }
+  } catch (err) {
+    console.error('[solve] storage exception:', err)
   }
-  console.log('[solve] related questions count:', relatedQuestions.length)
 
-  // Step 6: Save solve_history — try/catch riêng, không làm crash response
+  // === STEP 4: INSERT solve_history ===
+  console.log('=== STEP 4: INSERT solve_history ===')
   try {
     console.log('Attempting to insert solve_history...')
     console.log('user_id:', userId)
-    console.log('solution:', JSON.stringify(solution).substring(0, 100))
+    console.log('solution snippet:', JSON.stringify(solution).substring(0, 100))
     const { data: historyData, error: historyError } = await supabase.from('solve_history').insert({
       user_id: userId,
       image_url: imageUrl,
@@ -271,13 +248,50 @@ export async function POST(req: NextRequest) {
     console.error('[solve] solve_history INSERT exception:', err)
   }
 
+  // === STEP 5: Find related questions ===
+  console.log('=== STEP 5: Find related questions ===')
+  console.log('[solve] topic:', solution.topic, '| subtopic:', solution.subtopic)
+
+  const QUESTION_FIELDS = 'id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d'
+
+  let relatedQuestions: unknown[] = []
+  try {
+    const { data: topicData } = await supabase
+      .from('questions')
+      .select(QUESTION_FIELDS)
+      .eq('is_published', true)
+      .or(`topic.ilike.%${solution.topic}%,subtopic.ilike.%${solution.subtopic}%`)
+      .neq('answer_source', 'AI_generated')
+      .limit(5)
+    relatedQuestions = topicData ?? []
+  } catch (err) {
+    console.error('[solve] related questions query error:', err)
+  }
+
+  if (relatedQuestions.length === 0) {
+    console.log('[solve] no topic-match found, fallback to random questions')
+    try {
+      const { data: fallbackData } = await supabase
+        .from('questions')
+        .select(QUESTION_FIELDS)
+        .eq('is_published', true)
+        .eq('question_type', 'multiple_choice')
+        .limit(5)
+      relatedQuestions = fallbackData ?? []
+    } catch (err) {
+      console.error('[solve] fallback query error:', err)
+    }
+  }
+  console.log('[solve] related questions count:', relatedQuestions.length)
+
   // Upsert daily count
   await supabase.from('daily_solve_count').upsert(
     { user_id: userId, date: today, count: currentCount + 1 },
     { onConflict: 'user_id,date' }
   )
 
-  // Step 7: Response
+  // === STEP 6: Return response ===
+  console.log('=== STEP 6: Return response ===')
   return NextResponse.json({
     solution,
     relatedQuestions,

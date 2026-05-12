@@ -98,14 +98,28 @@ interface Status {
 function renderLatex(text: string): string {
   if (!text) return ''
   let result = text
-  result = result.replace(/\$\$([^$]+)\$\$/g, (_, math) => {
+  // Handle \[...\] display math
+  result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
     try {
-      return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>`
+      return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })}</div>`
+    } catch { return math }
+  })
+  // Handle \(...\) inline math
+  result = result.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => {
+    try {
+      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false })
+    } catch { return math }
+  })
+  // Handle $$...$$ display math
+  result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_, math) => {
+    try {
+      return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })}</div>`
     } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
   })
-  result = result.replace(/\$([^$\n]+)\$/g, (_, math) => {
+  // Handle $...$ inline math
+  result = result.replace(/\$([^$\n]+?)\$/g, (_, math) => {
     try {
-      return katex.renderToString(math.trim(), { throwOnError: false, displayMode: false })
+      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false })
     } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
   })
   result = result.replace(/\n/g, '<br/>')
