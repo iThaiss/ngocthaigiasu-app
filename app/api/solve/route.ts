@@ -26,12 +26,34 @@ function getModelConfig(isVip: boolean, vipExpiresAt: string | null): ModelConfi
 const SOLVE_PROMPT = `Bạn là gia sư Toán chuyên nghiệp tại Việt Nam.
 Đọc bài toán trong ảnh và giải chi tiết từng bước bằng tiếng Việt.
 
+Xác định question_type:
+- "multiple_choice": đề có lựa chọn A., B., C., D. hoặc A), B), C), D)
+- "true_false": đề có mệnh đề a), b), c), d) yêu cầu xác định Đúng/Sai
+- "short_answer": đề yêu cầu tính/tìm một số cụ thể
+
+Xác định needs_visual = true nếu đề có: "hình vẽ bên", "như hình", "hình bên", "đồ thị bên", "bảng biến thiên", "theo đồ thị", "bảng số liệu"
+
 Trả về JSON thuần túy (KHÔNG markdown, KHÔNG \`\`\`):
 {
   "problem": "nội dung bài toán đọc được",
   "topic": "chủ đề chính (Đạo hàm/Tích phân/Xác suất/...)",
   "subtopic": "chủ đề phụ cụ thể",
   "difficulty": "Nhận biết | Thông hiểu | Vận dụng | Vận dụng cao",
+  "question_type": "multiple_choice | true_false | short_answer",
+  "option_a": "nội dung đáp án A (null nếu không phải multiple_choice)",
+  "option_b": "nội dung đáp án B (null nếu không phải multiple_choice)",
+  "option_c": "nội dung đáp án C (null nếu không phải multiple_choice)",
+  "option_d": "nội dung đáp án D (null nếu không phải multiple_choice)",
+  "correct_answer": "A | B | C | D (null nếu không phải multiple_choice)",
+  "statements": [
+    {"label": "a", "text": "mệnh đề a", "answer": true},
+    {"label": "b", "text": "mệnh đề b", "answer": false},
+    {"label": "c", "text": "mệnh đề c", "answer": true},
+    {"label": "d", "text": "mệnh đề d", "answer": false}
+  ],
+  "numeric_answer": null,
+  "needs_visual": false,
+  "visual_description": null,
   "steps": [
     {"step": 1, "title": "Phân tích đề", "content": "...LaTeX: $x^2$..."},
     {"step": 2, "title": "Lời giải", "content": "..."},
@@ -73,6 +95,16 @@ interface Solution {
   topic: string
   subtopic: string
   difficulty: string
+  question_type: 'multiple_choice' | 'true_false' | 'short_answer'
+  option_a: string | null
+  option_b: string | null
+  option_c: string | null
+  option_d: string | null
+  correct_answer: string | null
+  statements: { label: string; text: string; answer: boolean }[] | null
+  numeric_answer: number | null
+  needs_visual: boolean
+  visual_description: string | null
   steps: { step: number; title: string; content: string }[]
   answer: string
   tips: string | null
@@ -199,18 +231,34 @@ export async function POST(req: NextRequest) {
   }
 
   // Insert question (non-blocking, fire-and-forget)
-  supabase.from('questions').insert({
-    question_type: 'short_answer',
-    topic: solution.topic,
-    subtopic: solution.subtopic,
-    question_text: solution.problem,
-    explanation: JSON.stringify(solution.steps),
-    answer_source: 'AI_generated',
-    is_published: false,
-    needs_review: true,
-  }).then(({ error }) => {
+  ;(async () => {
+    const questionData: Record<string, unknown> = {
+      question_type: solution.question_type || 'short_answer',
+      topic: solution.topic,
+      subtopic: solution.subtopic,
+      question_text: solution.problem,
+      difficulty: solution.difficulty,
+      explanation: JSON.stringify(solution.steps),
+      answer_source: 'AI_generated',
+      is_published: false,
+      needs_review: true,
+      needs_visual: solution.needs_visual || false,
+      visual_description: solution.visual_description || null,
+    }
+    if (solution.question_type === 'multiple_choice') {
+      questionData.option_a = solution.option_a
+      questionData.option_b = solution.option_b
+      questionData.option_c = solution.option_c
+      questionData.option_d = solution.option_d
+      questionData.correct_answer = solution.correct_answer
+    } else if (solution.question_type === 'true_false') {
+      questionData.statements = JSON.stringify(solution.statements)
+    } else {
+      questionData.numeric_answer = solution.numeric_answer
+    }
+    const { error } = await supabase.from('questions').insert(questionData)
     if (error) console.error('Question insert error:', error)
-  })
+  })()
 
   // === STEP 3: Upload ảnh (fail cũng không sao) ===
   console.log('=== STEP 3: Upload image ===')
@@ -264,7 +312,7 @@ export async function POST(req: NextRequest) {
   console.log('=== STEP 5: Find related questions ===')
   console.log('[solve] topic:', solution.topic, '| subtopic:', solution.subtopic)
 
-  const QUESTION_FIELDS = 'id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d'
+  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, question_type, statements, numeric_answer'
 
   let relatedQuestions: unknown[] = []
   try {
@@ -276,18 +324,20 @@ export async function POST(req: NextRequest) {
       .neq('answer_source', 'AI_generated')
       .limit(5)
     relatedQuestions = topicData ?? []
+    console.log('[solve] topic-match count:', relatedQuestions.length)
   } catch (err) {
     console.error('[solve] related questions query error:', err)
   }
 
   if (relatedQuestions.length === 0) {
-    console.log('[solve] no topic-match found, fallback to random questions')
+    console.log('[solve] no topic-match, fallback to random multiple_choice')
     try {
       const { data: fallbackData } = await supabase
         .from('questions')
         .select(QUESTION_FIELDS)
         .eq('is_published', true)
         .eq('question_type', 'multiple_choice')
+        .neq('answer_source', 'AI_generated')
         .limit(5)
       relatedQuestions = fallbackData ?? []
     } catch (err) {
