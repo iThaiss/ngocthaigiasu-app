@@ -54,6 +54,20 @@ function extractJSON(text: string): unknown {
   return JSON.parse(text.substring(start, end + 1))
 }
 
+async function callClaudeWithRetry(
+  client: Anthropic,
+  params: Anthropic.MessageCreateParamsNonStreaming,
+  maxRetries = 3
+): Promise<string> {
+  for (let i = 0; i < maxRetries; i++) {
+    const response = await client.messages.create(params)
+    const text = response.content[0]?.type === 'text' ? response.content[0].text : ''
+    if (text.trim().length > 0) return text
+    console.log(`[solve] empty response, retry ${i + 1}/${maxRetries}`)
+  }
+  throw new Error('Claude returned empty response after retries')
+}
+
 interface Solution {
   problem: string
   topic: string
@@ -154,7 +168,7 @@ export async function POST(req: NextRequest) {
 
   let solution: Solution
   try {
-    const response = await anthropic.messages.create({
+    const rawText = await callClaudeWithRetry(anthropic, {
       model: modelConfig.model,
       max_tokens: 4000,
       messages: [{
@@ -168,8 +182,6 @@ export async function POST(req: NextRequest) {
         ],
       }],
     })
-
-    const rawText = response.content[0].type === 'text' ? response.content[0].text : ''
     try {
       solution = extractJSON(rawText) as Solution
     } catch (parseErr) {
