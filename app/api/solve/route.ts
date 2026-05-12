@@ -386,8 +386,9 @@ export async function POST(req: NextRequest) {
   }
 
   // Upsert daily count
+  const newCount = currentCount + 1
   await supabase.from('daily_solve_count').upsert(
-    { user_id: userId, date: today, count: currentCount + 1 },
+    { user_id: userId, date: today, count: newCount },
     { onConflict: 'user_id,date' }
   )
 
@@ -396,7 +397,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     solution,
     relatedQuestions,
-    remainingToday: Math.max(0, modelConfig.limit - (currentCount + 1)),
+    remainingToday: Math.max(0, modelConfig.limit - newCount),
     limit: modelConfig.limit,
     modelUsed: modelConfig.model,
     modelLabel: modelConfig.label,

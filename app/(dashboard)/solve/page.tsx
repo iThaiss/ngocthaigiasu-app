@@ -282,6 +282,8 @@ export default function SolvePage() {
   const [loadingStatus, setLoadingStatus] = useState(true)
   const [historyModal, setHistoryModal] = useState<HistoryItem | null>(null)
   const [practiceOpen, setPracticeOpen] = useState(false)
+  const [remainingToday, setRemainingToday] = useState<number | null>(null)
+  const [dailyLimit, setDailyLimit] = useState<number | null>(null)
 
   // Crop state
   const [cropSrc, setCropSrc] = useState<string | null>(null)
@@ -300,6 +302,16 @@ export default function SolvePage() {
   }, [])
 
   useEffect(() => { fetchStatus() }, [fetchStatus])
+
+  useEffect(() => {
+    fetch('/api/solve/remaining')
+      .then(r => r.json())
+      .then(data => {
+        if (typeof data.remaining === 'number') setRemainingToday(data.remaining)
+        if (typeof data.limit === 'number') setDailyLimit(data.limit)
+      })
+      .catch(() => {})
+  }, [])
 
   const handleFileAccepted = useCallback((f: File) => {
     setCropFile(f)
@@ -371,7 +383,7 @@ export default function SolvePage() {
 
       setResult(data)
       setPracticeOpen(false)
-      setStatus((prev) => prev ? { ...prev, remaining: data.remainingToday, usedToday: data.limit - data.remainingToday } : prev)
+      setRemainingToday(data.remainingToday)
       toast({ title: 'Giải xong!' })
       await fetchStatus()
     } finally {
@@ -379,7 +391,9 @@ export default function SolvePage() {
     }
   }
 
-  const isLimitReached = status !== null && status.remaining <= 0
+  const effectiveRemaining = remainingToday ?? status?.remaining ?? null
+  const effectiveLimit = dailyLimit ?? status?.limit ?? null
+  const isLimitReached = effectiveRemaining !== null && effectiveRemaining <= 0
   const isVip = status?.isVip ?? false
 
   return (
@@ -421,7 +435,7 @@ export default function SolvePage() {
                         <Badge variant="secondary">Free</Badge>
                       )}
                       <span className={`text-sm font-medium ${isLimitReached ? 'text-destructive' : 'text-foreground'}`}>
-                        Còn {status.remaining}/{status.limit} lượt hôm nay
+                        Còn {effectiveRemaining ?? '…'}/{effectiveLimit ?? '…'} lượt hôm nay
                       </span>
                     </div>
                   </div>
@@ -682,7 +696,7 @@ export default function SolvePage() {
 
                 {/* Meta info */}
                 <p className="text-xs text-muted-foreground text-center">
-                  Còn {result.remainingToday}/{result.limit} lượt hôm nay
+                  Còn {effectiveRemaining ?? result.remainingToday}/{effectiveLimit ?? result.limit} lượt hôm nay
                 </p>
               </motion.div>
             ) : (
