@@ -5,7 +5,7 @@ import ReactCrop, { type Crop, type PixelCrop } from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  Brain, Sparkles, Clock, History, Crown, Zap, AlertCircle,
+  Brain, Sparkles, Clock, History, Crown, AlertCircle,
   BookOpen, ChevronRight, Loader2, Lightbulb,
 } from 'lucide-react'
 import QuestionPracticeModal, { type PracticeQuestion } from '@/components/QuestionPracticeModal'
@@ -37,9 +37,45 @@ interface Solution {
   topic: string
   subtopic: string
   difficulty: string
+  question_type: 'multiple_choice' | 'true_false' | 'short_answer'
+  option_a: string | null
+  option_b: string | null
+  option_c: string | null
+  option_d: string | null
+  correct_answer: string | null
+  statements: { label: string; text: string; answer: boolean }[] | null
+  numeric_answer: number | null
   steps: SolveStep[]
   answer: string
   tips: string | null
+}
+
+function formatAnswer(solution: Solution): string {
+  if (solution.question_type === 'multiple_choice') {
+    const optionMap: Record<string, string> = {
+      A: solution.option_a ?? '',
+      B: solution.option_b ?? '',
+      C: solution.option_c ?? '',
+      D: solution.option_d ?? '',
+    }
+    const ans = solution.correct_answer ?? solution.answer?.replace('Đáp án: ', '') ?? ''
+    const content = optionMap[ans] ?? ''
+    return `${ans}${content ? ' - ' + content : ''}`
+  }
+  if (solution.question_type === 'short_answer') {
+    if (solution.numeric_answer !== null && solution.numeric_answer !== undefined) {
+      return String(solution.numeric_answer)
+    }
+    const match = solution.answer?.match(/-?\d+\.?\d*/)
+    return match ? match[0] : solution.answer ?? ''
+  }
+  if (solution.question_type === 'true_false') {
+    if (solution.statements && solution.statements.length > 0) {
+      return solution.statements.map((s) => (s.answer ? 'Đ' : 'S')).join('')
+    }
+    return solution.answer?.replace(/[^ĐDS]/g, '') ?? ''
+  }
+  return solution.answer ?? ''
 }
 
 interface RelatedQuestion {
@@ -309,7 +345,7 @@ function HistoryModal({ item, onClose }: { item: HistoryItem; onClose: () => voi
             )}
 
             <p className="text-xs text-muted-foreground text-right">
-              {item.model_used} · {relativeTime(item.created_at)}
+              {relativeTime(item.created_at)}
             </p>
           </div>
         )}
@@ -429,7 +465,7 @@ export default function SolvePage() {
 
       setResult(data)
       setStatus((prev) => prev ? { ...prev, remaining: data.remainingToday, usedToday: data.limit - data.remainingToday } : prev)
-      toast({ title: 'Giải xong!', description: `Dùng ${data.modelLabel}` })
+      toast({ title: 'Giải xong!' })
       fetchStatus()
     } finally {
       setSolving(false)
@@ -481,9 +517,6 @@ export default function SolvePage() {
                         Còn {status.remaining}/{status.limit} lượt hôm nay
                       </span>
                     </div>
-                    <p className="text-xs text-muted-foreground flex items-center gap-1">
-                      <Zap className="h-3 w-3" /> Đang dùng: {status.modelLabel}
-                    </p>
                   </div>
                   {!isVip && (
                     <Link href="/payment">
@@ -592,7 +625,6 @@ export default function SolvePage() {
                           <span className="text-[10px] text-muted-foreground flex items-center gap-0.5">
                             <Clock className="h-2.5 w-2.5" /> {relativeTime(item.created_at)}
                           </span>
-                          <span className="text-[10px] text-muted-foreground">{item.model_used}</span>
                         </div>
                       </div>
                       <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 mt-1" />
@@ -632,6 +664,24 @@ export default function SolvePage() {
                 exit={{ opacity: 0 }}
                 className="space-y-4"
               >
+                {/* Answer highlight */}
+                <Card className="border-green-500/40 bg-green-500/8">
+                  <CardContent className="pt-4 pb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-green-500/20 text-lg">
+                        ✅
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-xs font-medium text-green-600 dark:text-green-400 uppercase tracking-wide mb-0.5">Đáp án</p>
+                        <LatexText
+                          text={formatAnswer(result.solution)}
+                          className="font-bold text-green-700 dark:text-green-300 text-base"
+                        />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
                 {/* Problem statement */}
                 <Card className="border-purple-500/30">
                   <CardHeader className="pb-2">
@@ -716,7 +766,7 @@ export default function SolvePage() {
 
                 {/* Meta info */}
                 <p className="text-xs text-muted-foreground text-center">
-                  Giải bởi {result.modelLabel} · Còn {result.remainingToday}/{result.limit} lượt hôm nay
+                  Còn {result.remainingToday}/{result.limit} lượt hôm nay
                 </p>
               </motion.div>
             ) : (

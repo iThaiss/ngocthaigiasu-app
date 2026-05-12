@@ -135,7 +135,26 @@ export async function GET() {
       .limit(10),
   ])
 
-  const usedToday = dailyRow?.count ?? 0
+  let usedToday = dailyRow?.count ?? 0
+
+  // Reset daily count if user upgraded to VIP today (so Free uses don't eat into VIP quota)
+  if (session.user.isVip && usedToday > 0) {
+    const { data: vipTx } = await supabase
+      .from('transactions')
+      .select('created_at')
+      .eq('user_id', userId)
+      .eq('status', 'completed')
+      .gte('created_at', today)
+      .limit(1)
+      .single()
+    if (vipTx) {
+      await supabase.from('daily_solve_count').upsert(
+        { user_id: userId, date: today, count: 0 },
+        { onConflict: 'user_id,date' }
+      )
+      usedToday = 0
+    }
+  }
 
   return NextResponse.json({
     usedToday,
@@ -166,7 +185,27 @@ export async function POST(req: NextRequest) {
     .eq('date', today)
     .single()
 
-  const currentCount = dailyRow?.count ?? 0
+  let currentCount = dailyRow?.count ?? 0
+
+  // Reset daily count if user upgraded to VIP today
+  if (session.user.isVip && currentCount > 0) {
+    const { data: vipTx } = await supabase
+      .from('transactions')
+      .select('created_at')
+      .eq('user_id', userId)
+      .eq('status', 'completed')
+      .gte('created_at', today)
+      .limit(1)
+      .single()
+    if (vipTx) {
+      await supabase.from('daily_solve_count').upsert(
+        { user_id: userId, date: today, count: 0 },
+        { onConflict: 'user_id,date' }
+      )
+      currentCount = 0
+    }
+  }
+
   if (currentCount >= modelConfig.limit) {
     return NextResponse.json(
       { error: 'Hết lượt', limit: modelConfig.limit, used: currentCount, isVip: session.user.isVip },
