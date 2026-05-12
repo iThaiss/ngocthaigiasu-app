@@ -4,8 +4,9 @@ import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Brain, Sparkles, Clock, History, Crown, Zap, AlertCircle,
-  BookOpen, ChevronDown, ChevronRight, Loader2, Lightbulb, X,
+  BookOpen, ChevronRight, Loader2, Lightbulb,
 } from 'lucide-react'
+import QuestionPracticeModal, { type PracticeQuestion } from '@/components/QuestionPracticeModal'
 import katex from 'katex'
 import 'katex/dist/katex.min.css'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -41,6 +42,7 @@ interface Solution {
 
 interface RelatedQuestion {
   id: string
+  question_type: 'multiple_choice' | 'true_false' | 'short_answer' | null
   question_text: string
   difficulty: string | null
   topic: string | null
@@ -49,6 +51,16 @@ interface RelatedQuestion {
   option_b: string | null
   option_c: string | null
   option_d: string | null
+  numeric_answer: number | null
+  explanation: string | null
+  statement_a: string | null
+  statement_b: string | null
+  statement_c: string | null
+  statement_d: string | null
+  answer_a: boolean | null
+  answer_b: boolean | null
+  answer_c: boolean | null
+  answer_d: boolean | null
 }
 
 interface HistoryItem {
@@ -137,16 +149,43 @@ function relativeTime(dateStr: string) {
   return `${Math.floor(h / 24)} ngày trước`
 }
 
-// ─── Related Questions Accordion ────────────────────────────────────────────
+// ─── Transform DB row → PracticeQuestion ─────────────────────────────────────
 
-function RelatedQuestionsSection({ questions }: { questions: RelatedQuestion[] }) {
-  const [openId, setOpenId] = useState<string | null>(null)
+function transformToQuestion(q: RelatedQuestion): PracticeQuestion {
+  const statements: PracticeQuestion['statements'] = q.question_type === 'true_false'
+    ? (['a', 'b', 'c', 'd'] as const).flatMap((k) => {
+        const text   = q[`statement_${k}` as keyof RelatedQuestion] as string | null
+        const answer = q[`answer_${k}`    as keyof RelatedQuestion] as boolean | null
+        if (!text) return []
+        return [{ label: k.toUpperCase(), text, answer: answer ?? false }]
+      })
+    : undefined
+  return {
+    id: q.id,
+    question_type: (q.question_type ?? 'multiple_choice') as PracticeQuestion['question_type'],
+    question_text: q.question_text,
+    option_a: q.option_a,
+    option_b: q.option_b,
+    option_c: q.option_c,
+    option_d: q.option_d,
+    correct_answer: q.correct_answer,
+    statements,
+    numeric_answer: q.numeric_answer,
+    explanation: q.explanation,
+    difficulty: q.difficulty,
+    topic: q.topic,
+  }
+}
+
+// ─── Related Questions List ───────────────────────────────────────────────────
+
+function RelatedQuestionsSection({
+  questions, onPractice,
+}: {
+  questions: RelatedQuestion[]
+  onPractice: (q: RelatedQuestion) => void
+}) {
   if (!questions.length) return null
-
-  const OPTIONS: [string, string | null][] = [
-    ['A', null], ['B', null], ['C', null], ['D', null],
-  ]
-
   return (
     <Card>
       <CardHeader className="pb-3">
@@ -155,60 +194,32 @@ function RelatedQuestionsSection({ questions }: { questions: RelatedQuestion[] }
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-0 p-0">
-        {questions.map((q, idx) => {
-          const isOpen = openId === q.id
-          const opts: [string, string | null][] = [
-            ['A', q.option_a], ['B', q.option_b], ['C', q.option_c], ['D', q.option_d],
-          ]
-          const hasOptions = opts.some(([, v]) => v)
-          void OPTIONS
-          return (
-            <div key={q.id}>
-              {idx > 0 && <Separator />}
-              <button
-                onClick={() => setOpenId(isOpen ? null : q.id)}
-                className="w-full flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors text-left"
+        {questions.map((q, idx) => (
+          <div key={q.id}>
+            {idx > 0 && <Separator />}
+            <div className="flex items-start gap-3 px-4 py-3">
+              <div className="flex-1 min-w-0">
+                <p className="text-sm line-clamp-2">{q.question_text}</p>
+                <div className="flex items-center gap-2 mt-1.5">
+                  <DiffBadge diff={q.difficulty} />
+                  {q.topic && (
+                    <span className="text-[10px] bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2 py-0.5">
+                      {q.topic}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => onPractice(q)}
+                className="shrink-0 text-xs gap-1"
               >
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm line-clamp-2">{q.question_text}</p>
-                  <div className="flex items-center gap-2 mt-1.5">
-                    <DiffBadge diff={q.difficulty} />
-                    {q.topic && (
-                      <span className="text-[10px] bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2 py-0.5">
-                        {q.topic}
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <ChevronDown className={`h-4 w-4 text-muted-foreground shrink-0 mt-0.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {isOpen && (
-                <div className="px-4 pb-3 space-y-2 bg-muted/20">
-                  {hasOptions && (
-                    <div className="grid grid-cols-1 gap-1">
-                      {opts.map(([label, val]) => val && (
-                        <div key={label} className={`flex gap-2 text-sm p-2 rounded ${q.correct_answer === label ? 'bg-green-500/10 text-green-700 dark:text-green-300 font-medium' : ''}`}>
-                          <span className="font-bold w-4 shrink-0">{label}.</span>
-                          <LatexText text={val} />
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {q.correct_answer && (
-                    <p className="text-sm text-muted-foreground">
-                      Đáp án đúng: <span className="font-bold text-green-600 dark:text-green-400">{q.correct_answer}</span>
-                    </p>
-                  )}
-                  <Link href="/exam">
-                    <Button size="sm" variant="outline" className="gap-1 text-xs mt-1">
-                      Luyện tập thêm <ChevronRight className="h-3 w-3" />
-                    </Button>
-                  </Link>
-                </div>
-              )}
+                Luyện tập <ChevronRight className="h-3 w-3" />
+              </Button>
             </div>
-          )
-        })}
+          </div>
+        ))}
       </CardContent>
     </Card>
   )
@@ -304,6 +315,15 @@ export default function SolvePage() {
   const [status, setStatus] = useState<Status | null>(null)
   const [loadingStatus, setLoadingStatus] = useState(true)
   const [historyModal, setHistoryModal] = useState<HistoryItem | null>(null)
+  const [practiceQuestion, setPracticeQuestion] = useState<RelatedQuestion | null>(null)
+
+  const handleNextQuestion = useCallback(() => {
+    if (!result?.relatedQuestions || !practiceQuestion) return
+    const list = result.relatedQuestions
+    const idx  = list.findIndex(q => q.id === practiceQuestion.id)
+    const next = list[(idx + 1) % list.length]
+    setTimeout(() => setPracticeQuestion(next), 50)
+  }, [result, practiceQuestion])
 
   const fetchStatus = useCallback(async () => {
     try {
@@ -629,7 +649,7 @@ export default function SolvePage() {
                 )}
 
                 {/* Related questions */}
-                <RelatedQuestionsSection questions={result.relatedQuestions} />
+                <RelatedQuestionsSection questions={result.relatedQuestions} onPractice={setPracticeQuestion} />
 
                 {/* Meta info */}
                 <p className="text-xs text-muted-foreground text-center">
@@ -658,6 +678,20 @@ export default function SolvePage() {
       {/* History detail modal */}
       {historyModal && (
         <HistoryModal item={historyModal} onClose={() => setHistoryModal(null)} />
+      )}
+
+      {/* Practice modal */}
+      {practiceQuestion && (
+        <QuestionPracticeModal
+          question={transformToQuestion(practiceQuestion)}
+          isOpen
+          onClose={() => setPracticeQuestion(null)}
+          onNext={
+            result?.relatedQuestions && result.relatedQuestions.length > 1
+              ? handleNextQuestion
+              : undefined
+          }
+        />
       )}
     </div>
   )

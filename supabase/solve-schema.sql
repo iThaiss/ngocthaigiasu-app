@@ -63,6 +63,29 @@ DO $$ BEGIN
 END $$;
 
 -- ============================================================
+-- Bảng student_answers — lưu đáp án luyện tập
+-- ============================================================
+CREATE TABLE IF NOT EXISTS student_answers (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id     UUID REFERENCES users(id),
+  question_id UUID REFERENCES questions(id),
+  answer      TEXT,
+  is_correct  BOOLEAN,
+  time_spent  INTEGER,
+  created_at  TIMESTAMPTZ DEFAULT NOW()
+);
+ALTER TABLE student_answers ENABLE ROW LEVEL SECURITY;
+
+DO $$ BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM pg_policies WHERE tablename = 'student_answers' AND policyname = 'Users manage own answers'
+  ) THEN
+    CREATE POLICY "Users manage own answers" ON student_answers
+      FOR ALL USING (auth.uid() = user_id);
+  END IF;
+END $$;
+
+-- ============================================================
 -- Storage:
 -- Tạo bucket 'solve-images' trên Supabase Dashboard > Storage
 -- Chọn Public bucket để ảnh có thể hiển thị trực tiếp

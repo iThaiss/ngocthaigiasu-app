@@ -187,9 +187,16 @@ export async function POST(req: NextRequest) {
   })
 
   // Step 4 + 5: Upload image & find related questions in parallel
-  const [imageUrl, { data: relatedData }] = await Promise.all([
+  console.log('[solve] topic detected:', solution.topic, '| subtopic:', solution.subtopic)
+
+  const [imageUrl, { data: topicData }] = await Promise.all([
     (async (): Promise<string | null> => {
       try {
+        const { error: bucketError } = await supabase.storage.getBucket('solve-images')
+        if (bucketError) {
+          console.error('[solve] bucket solve-images not found:', bucketError.message)
+          return null
+        }
         const ext = file!.type === 'image/png' ? 'png' : file!.type === 'image/webp' ? 'webp' : 'jpg'
         const path = `${userId}/${Date.now()}.${ext}`
         const { data: uploadData, error: uploadError } = await supabase.storage
@@ -199,23 +206,38 @@ export async function POST(req: NextRequest) {
           const { data: urlData } = supabase.storage.from('solve-images').getPublicUrl(path)
           return urlData.publicUrl
         }
+        if (uploadError) console.error('[solve] upload error:', uploadError.message)
       } catch (err) {
-        console.error('Storage upload error:', err)
+        console.error('[solve] storage exception:', err)
       }
       return null
     })(),
     supabase
       .from('questions')
-      .select('id, question_text, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d')
+      .select('id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d')
       .eq('is_published', true)
       .or(`topic.ilike.%${solution.topic}%,subtopic.ilike.%${solution.subtopic}%`)
       .neq('answer_source', 'AI_generated')
       .limit(5),
   ])
 
-  // Step 6: Save solve_history + upsert daily count
-  await Promise.all([
-    supabase.from('solve_history').insert({
+  // Fallback: nếu không tìm được theo topic → lấy 5 câu multiple_choice ngẫu nhiên
+  let relatedQuestions = topicData ?? []
+  if (relatedQuestions.length === 0) {
+    console.log('[solve] no topic-match found, fallback to random questions')
+    const { data: fallbackData } = await supabase
+      .from('questions')
+      .select('id, question_text, question_type, difficulty, topic, correct_answer, option_a, option_b, option_c, option_d, numeric_answer, explanation, statement_a, statement_b, statement_c, statement_d, answer_a, answer_b, answer_c, answer_d')
+      .eq('is_published', true)
+      .eq('question_type', 'multiple_choice')
+      .limit(5)
+    relatedQuestions = fallbackData ?? []
+  }
+  console.log('[solve] related questions count:', relatedQuestions.length)
+
+  // Step 6: Save solve_history — try/catch riêng, không làm crash response
+  try {
+    const { error: historyError } = await supabase.from('solve_history').insert({
       user_id: userId,
       image_url: imageUrl,
       problem_text: solution.problem,
@@ -223,17 +245,26 @@ export async function POST(req: NextRequest) {
       topic: solution.topic,
       difficulty: solution.difficulty,
       model_used: modelConfig.model,
-    }),
-    supabase.from('daily_solve_count').upsert(
-      { user_id: userId, date: today, count: currentCount + 1 },
-      { onConflict: 'user_id,date' }
-    ),
-  ])
+    })
+    if (historyError) {
+      console.error('[solve] solve_history INSERT error:', historyError)
+    } else {
+      console.log('[solve] solve_history INSERT success, user:', userId)
+    }
+  } catch (err) {
+    console.error('[solve] solve_history INSERT exception:', err)
+  }
+
+  // Upsert daily count
+  await supabase.from('daily_solve_count').upsert(
+    { user_id: userId, date: today, count: currentCount + 1 },
+    { onConflict: 'user_id,date' }
+  )
 
   // Step 7: Response
   return NextResponse.json({
     solution,
-    relatedQuestions: relatedData ?? [],
+    relatedQuestions,
     remainingToday: Math.max(0, modelConfig.limit - (currentCount + 1)),
     limit: modelConfig.limit,
     modelUsed: modelConfig.model,
