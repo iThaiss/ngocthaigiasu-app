@@ -3,7 +3,6 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
-const DIFFICULTY_ORDER = ['Nhận biết', 'Thông hiểu', 'Vận dụng', 'Vận dụng cao']
 const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
 
 function pick<T>(arr: T[]): T {
@@ -21,16 +20,16 @@ export async function GET(req: NextRequest) {
   const difficulty = searchParams.get('difficulty') ?? 'Nhận biết'
 
   const excludeIds = excludeStr.split(',').filter(Boolean)
-  const diffIdx    = Math.max(0, DIFFICULTY_ORDER.indexOf(difficulty))
   const supabase   = createAdminClient()
 
-  const buildQuery = (field: 'subtopic' | 'topic', value: string, diff: string) => {
+  const buildQuery = (field: 'subtopic' | 'topic', value: string) => {
     let q = supabase
       .from('questions')
       .select(FIELDS)
       .eq('is_published', true)
       .ilike(field, `%${value}%`)
-      .eq('difficulty', diff)
+      .eq('difficulty', difficulty)
+      .or('needs_visual.eq.false,visual_image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
       .limit(20)
     if (excludeIds.length > 0) {
@@ -39,38 +38,15 @@ export async function GET(req: NextRequest) {
     return q
   }
 
-  // Try subtopic/topic at current difficulty and escalate upward
-  for (let i = diffIdx; i < DIFFICULTY_ORDER.length; i++) {
-    const d = DIFFICULTY_ORDER[i]
-
-    if (subtopic) {
-      const { data } = await buildQuery('subtopic', subtopic, d)
-      if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
-    }
-
-    if (topic) {
-      const { data } = await buildQuery('topic', topic, d)
-      if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
-    }
+  if (subtopic) {
+    const { data } = await buildQuery('subtopic', subtopic)
+    if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
   }
 
-  // All difficulties exhausted — reset exclude list and restart from beginning
-  const resetQuery = () => {
-    let q = supabase
-      .from('questions')
-      .select(FIELDS)
-      .eq('is_published', true)
-      .neq('answer_source', 'AI_generated')
-      .limit(20)
-    if (subtopic) q = q.ilike('subtopic', `%${subtopic}%`)
-    else if (topic) q = q.ilike('topic', `%${topic}%`)
-    return q
+  if (topic) {
+    const { data } = await buildQuery('topic', topic)
+    if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
   }
 
-  const { data: fallback } = await resetQuery()
-  if (fallback && fallback.length > 0) {
-    return NextResponse.json({ question: pick(fallback), reset: true })
-  }
-
-  return NextResponse.json({ error: 'Không còn câu hỏi phù hợp' }, { status: 404 })
+  return NextResponse.json({ done: true, message: 'Hết câu cùng dạng' })
 }

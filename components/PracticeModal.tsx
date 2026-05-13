@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
+import confetti from 'canvas-confetti'
 import katex from 'katex'
 import 'katex/dist/katex.min.css'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
@@ -63,9 +64,9 @@ function LatexText({ text, className }: { text: string; className?: string }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
 }
 
-// ─── Statement toggle (Đ/S) ───────────────────────────────────────────────────
+// ─── Statement switch (Đ/S slider) ───────────────────────────────────────────
 
-function StatementToggle({
+function StatementSwitch({
   label, text, value, onChange, disabled,
 }: {
   label: string
@@ -75,23 +76,30 @@ function StatementToggle({
   disabled?: boolean
 }) {
   return (
-    <div className="flex items-center gap-3 p-3 rounded-lg border">
+    <div className="flex items-center gap-3 p-3 rounded-lg border mb-2">
       <span className="text-sm flex-1 min-w-0">
         <span className="font-bold mr-1">{label})</span>
         <LatexText text={text} />
       </span>
-      <button
-        type="button"
+      <div
         onClick={() => !disabled && onChange(!value)}
-        disabled={disabled}
         className={cn(
-          'px-3 py-1 rounded-full font-bold text-sm transition-all shrink-0 min-w-[36px]',
-          value ? 'bg-green-500 text-white' : 'bg-red-500 text-white',
-          disabled && 'opacity-60 cursor-not-allowed',
+          'relative w-16 h-8 rounded-full transition-colors shrink-0',
+          value ? 'bg-green-500' : 'bg-red-500',
+          disabled ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer',
         )}
       >
-        {value ? 'Đ' : 'S'}
-      </button>
+        <div className={cn(
+          'absolute top-1 w-6 h-6 bg-white rounded-full transition-transform shadow',
+          value ? 'translate-x-8' : 'translate-x-1',
+        )} />
+        <span className={cn(
+          'absolute top-1.5 text-xs font-bold text-white',
+          value ? 'left-1.5' : 'right-1.5',
+        )}>
+          {value ? 'Đ' : 'S'}
+        </span>
+      </div>
     </div>
   )
 }
@@ -105,6 +113,14 @@ const DIFF_COLOR: Record<string, string> = {
   'Vận dụng cao': 'bg-red-500/15 text-red-600 dark:text-red-400',
 }
 
+const DIFFICULTY_ORDER = ['Nhận biết', 'Thông hiểu', 'Vận dụng', 'Vận dụng cao']
+
+// ─── Confetti ─────────────────────────────────────────────────────────────────
+
+function fireConfetti() {
+  confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } })
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function PracticeModal({
@@ -116,6 +132,7 @@ export default function PracticeModal({
   const [answered,        setAnswered]        = useState(false)
   const [isCorrect,       setIsCorrect]       = useState<boolean | null>(null)
   const [loadingNext,     setLoadingNext]     = useState(false)
+  const [done,            setDone]            = useState(false)
 
   // Multiple choice
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
@@ -123,7 +140,7 @@ export default function PracticeModal({
   // Short answer
   const [shortInput, setShortInput] = useState('')
 
-  // True/false — empty means "not yet set by user"; display defaults to true (Đ)
+  // True/false — empty means "not changed by user"; defaults to true (Đ) for all
   const [tfValues, setTfValues] = useState<Record<string, boolean>>({})
   const [tfSummary, setTfSummary] = useState<{ correct: number; total: number } | null>(null)
 
@@ -136,8 +153,6 @@ export default function PracticeModal({
     }
     return raw
   })()
-
-  const allTfSet = statements.length > 0 && statements.every(s => s.label in tfValues)
 
   // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -165,7 +180,9 @@ export default function PracticeModal({
   const handleOptionClick = (label: string) => {
     if (answered) return
     setSelectedOption(label)
-    commitResult(label === currentQuestion.correct_answer)
+    const correct = label === currentQuestion.correct_answer
+    if (correct) fireConfetti()
+    commitResult(correct)
   }
 
   const optionStyle = (label: string) => {
@@ -181,39 +198,49 @@ export default function PracticeModal({
     if (answered || !shortInput.trim()) return
     const val    = parseFloat(shortInput)
     const target = currentQuestion.numeric_answer ?? NaN
-    commitResult(!isNaN(val) && !isNaN(target) && Math.abs(val - target) <= 0.01)
+    const correct = !isNaN(val) && !isNaN(target) && Math.abs(val - target) <= 0.01
+    if (correct) fireConfetti()
+    commitResult(correct)
   }
 
   // ── True / False ───────────────────────────────────────────────────────────
 
   const handleTfSubmit = () => {
-    if (!allTfSet || answered) return
+    if (answered) return
     let correctCount = 0
     statements.forEach(s => {
       if ((tfValues[s.label] ?? true) === s.answer) correctCount++
     })
     setTfSummary({ correct: correctCount, total: statements.length })
-    commitResult(correctCount === statements.length)
+    const allCorrect = correctCount === statements.length
+    if (allCorrect) fireConfetti()
+    commitResult(allCorrect)
   }
 
   // ── Load next question ─────────────────────────────────────────────────────
 
-  const loadNext = useCallback(async () => {
+  const loadNext = useCallback(async (opts?: { forceDifficulty?: string; excludeIds?: string[] }) => {
     setLoadingNext(true)
     try {
+      const effectiveExcludes = opts?.excludeIds ?? usedIds
       const params = new URLSearchParams({
         subtopic:   subtopic || currentQuestion.subtopic || '',
         topic:      topic    || currentQuestion.topic    || '',
-        exclude:    usedIds.join(','),
-        difficulty: currentQuestion.difficulty ?? 'Nhận biết',
+        exclude:    effectiveExcludes.join(','),
+        difficulty: opts?.forceDifficulty ?? currentQuestion.difficulty ?? 'Nhận biết',
       })
       const res = await fetch(`/api/questions/practice?${params}`)
       if (!res.ok) { onClose(); return }
       const data = await res.json()
+      if (data.done) {
+        setDone(true)
+        return
+      }
       const q = data.question as PracticeQuestion
       setCurrentQuestion(q)
-      setUsedIds(prev => data.reset ? [q.id] : [...prev, q.id])
+      setUsedIds(opts?.excludeIds !== undefined ? [q.id] : (prev => data.reset ? [q.id] : [...prev, q.id]))
       setScore(prev => ({ ...prev, total: prev.total + 1 }))
+      setDone(false)
       resetAnswer()
     } finally {
       setLoadingNext(false)
@@ -221,12 +248,19 @@ export default function PracticeModal({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentQuestion, usedIds, topic, subtopic, onClose])
 
+  const handleLoadHarder = useCallback(() => {
+    const idx = DIFFICULTY_ORDER.indexOf(currentQuestion.difficulty ?? 'Nhận biết')
+    const nextDiff = DIFFICULTY_ORDER[Math.min(idx + 1, DIFFICULTY_ORDER.length - 1)]
+    loadNext({ forceDifficulty: nextDiff, excludeIds: [] })
+  }, [currentQuestion.difficulty, loadNext])
+
   // ── Close / reset ──────────────────────────────────────────────────────────
 
   const handleClose = () => {
     setCurrentQuestion(initialQuestion)
     setUsedIds([initialQuestion.id])
     setScore({ correct: 0, wrong: 0, total: 1 })
+    setDone(false)
     resetAnswer()
     onClose()
   }
@@ -280,6 +314,16 @@ export default function PracticeModal({
                   </button>
                 )
               })}
+              {answered && isCorrect === false && currentQuestion.correct_answer && (() => {
+                const key = `option_${currentQuestion.correct_answer.toLowerCase()}` as keyof PracticeQuestion
+                const content = currentQuestion[key] as string | null
+                return (
+                  <p className="text-sm text-muted-foreground pl-1">
+                    Đáp án đúng: <span className="font-bold text-green-600 dark:text-green-400">{currentQuestion.correct_answer}</span>
+                    {content && <> — <LatexText text={content} /></>}
+                  </p>
+                )
+              })()}
             </div>
           )}
 
@@ -319,7 +363,7 @@ export default function PracticeModal({
           {currentQuestion.question_type === 'true_false' && (
             <div className="space-y-2">
               {statements.map(s => (
-                <StatementToggle
+                <StatementSwitch
                   key={s.label}
                   label={s.label}
                   text={s.text}
@@ -328,13 +372,31 @@ export default function PracticeModal({
                   disabled={answered}
                 />
               ))}
+              {answered && tfSummary && tfSummary.correct < tfSummary.total && (
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 rounded-lg p-3">
+                  <p className="font-semibold text-yellow-800 dark:text-yellow-300 mb-2">Đáp án đúng:</p>
+                  {statements.map(s => {
+                    const userAnswer = tfValues[s.label] ?? true
+                    return (
+                      <div key={s.label} className="flex items-center gap-2 text-sm">
+                        <span className={s.answer ? 'text-green-600' : 'text-red-600'}>
+                          {s.label}) {s.answer ? '✓ Đúng' : '✗ Sai'}
+                        </span>
+                        {userAnswer !== s.answer && (
+                          <span className="text-orange-600 text-xs">(Bạn chọn: {userAnswer ? 'Đ' : 'S'})</span>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
               {tfSummary && (
                 <p className={cn('text-sm font-medium', tfSummary.correct === tfSummary.total ? 'text-green-600 dark:text-green-400' : 'text-amber-600 dark:text-amber-400')}>
                   Đúng {tfSummary.correct}/{tfSummary.total} mệnh đề
                 </p>
               )}
               {!answered && (
-                <Button onClick={handleTfSubmit} disabled={!allTfSet} size="sm" className="w-full">
+                <Button onClick={handleTfSubmit} disabled={statements.length === 0} size="sm" className="w-full">
                   Kiểm tra
                 </Button>
               )}
@@ -367,11 +429,24 @@ export default function PracticeModal({
             </div>
           )}
 
+          {/* Done state — hết câu cùng dạng */}
+          {done && (
+            <div className="rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-300 p-4 text-center space-y-3">
+              <p className="text-blue-800 dark:text-blue-300 font-semibold">
+                🎉 Bạn đã luyện hết câu cùng dạng! Thử độ khó cao hơn nhé.
+              </p>
+              <Button size="sm" onClick={handleLoadHarder} disabled={loadingNext}>
+                {loadingNext && <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" />}
+                Tăng độ khó
+              </Button>
+            </div>
+          )}
+
           {/* Footer */}
           <div className="flex justify-between pt-2 border-t">
             <Button variant="outline" size="sm" onClick={handleClose}>Đóng</Button>
-            {answered && (
-              <Button size="sm" onClick={loadNext} disabled={loadingNext} className="gap-1">
+            {answered && !done && (
+              <Button size="sm" onClick={() => loadNext()} disabled={loadingNext} className="gap-1">
                 {loadingNext && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
                 Câu tiếp theo <ChevronRight className="h-3.5 w-3.5" />
               </Button>
