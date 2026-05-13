@@ -4,6 +4,7 @@ import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
 const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 
 function pick<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)]
@@ -19,15 +20,18 @@ export async function GET(req: NextRequest) {
   const excludeStr = searchParams.get('exclude') ?? ''
   const difficulty = searchParams.get('difficulty') ?? 'Nhận biết'
 
-  const excludeIds = excludeStr.split(',').filter(Boolean)
+  const excludeIds = excludeStr.split(',').map((id) => id.trim()).filter((id) => UUID_RE.test(id))
   const supabase   = createAdminClient()
 
   const buildQuery = (field: 'subtopic' | 'topic', value: string) => {
+    const normalizedValue = value.trim()
+    if (!normalizedValue) return null
+
     let q = supabase
       .from('questions')
       .select(FIELDS)
       .eq('is_published', true)
-      .ilike(field, `%${value}%`)
+      .ilike(field, `%${normalizedValue}%`)
       .eq('difficulty', difficulty)
       .or('needs_visual.eq.false,visual_image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
@@ -39,12 +43,14 @@ export async function GET(req: NextRequest) {
   }
 
   if (subtopic) {
-    const { data } = await buildQuery('subtopic', subtopic)
+    const query = buildQuery('subtopic', subtopic)
+    const { data } = query ? await query : { data: null }
     if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
   }
 
   if (topic) {
-    const { data } = await buildQuery('topic', topic)
+    const query = buildQuery('topic', topic)
+    const { data } = query ? await query : { data: null }
     if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
   }
 

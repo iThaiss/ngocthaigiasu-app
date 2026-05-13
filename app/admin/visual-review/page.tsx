@@ -200,6 +200,7 @@ export default function VisualReviewPage() {
 
               {/* Current image preview */}
               {q.visual_image_url && (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={q.visual_image_url}
                   alt="Visual"

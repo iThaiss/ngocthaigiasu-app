@@ -67,6 +67,7 @@ export default function Dropzone({ onFileAccepted, disabled }: DropzoneProps) {
               exit={{ opacity: 0, scale: 0.95 }}
               className="relative w-full max-w-sm"
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={preview} alt="Preview" className="rounded-lg object-contain max-h-48 w-full" />
               <Button
                 variant="destructive"

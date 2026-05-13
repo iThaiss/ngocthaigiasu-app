@@ -16,7 +16,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'file and questionId required' }, { status: 400 })
   }
 
-  const ext = file.name.split('.').pop() ?? 'jpg'
+  const allowedTypes: Record<string, string> = {
+    'image/jpeg': 'jpg',
+    'image/png': 'png',
+    'image/webp': 'webp',
+  }
+  const ext = allowedTypes[file.type]
+  if (!ext) {
+    return NextResponse.json({ error: 'Only JPG, PNG, and WEBP images are allowed' }, { status: 400 })
+  }
+  if (file.size > 5 * 1024 * 1024) {
+    return NextResponse.json({ error: 'Image must be 5MB or smaller' }, { status: 400 })
+  }
+
   const path = `question-images/${questionId}.${ext}`
   const buffer = Buffer.from(await file.arrayBuffer())
 

@@ -11,12 +11,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const { isLoading } = useAuth()
   const { data: session } = useSession()
   const [showProfileModal, setShowProfileModal] = useState(false)
+  const profileCompleted = session?.user?.profileCompleted
 
   useEffect(() => {
-    if (session?.user && session.user.profileCompleted === false) {
+    if (profileCompleted === false) {
       setShowProfileModal(true)
     }
-  }, [session?.user?.profileCompleted])
+  }, [profileCompleted])
 
   // Process pending affiliate ref cookie after sign-in
   useEffect(() => {

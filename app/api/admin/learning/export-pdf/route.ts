@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '@/lib/auth'
+import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 
 export const dynamic = 'force-dynamic'
@@ -16,6 +15,15 @@ interface LessonPlan {
   tips?: string
 }
 
+function escapeHtml(value: unknown): string {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
 function buildPrintHtml(params: {
   title: string
   courseName: string
@@ -23,13 +31,21 @@ function buildPrintHtml(params: {
   plan: LessonPlan
 }): string {
   const { title, courseName, duration, plan } = params
-  const objectives = (plan.objectives ?? []).map((o) => `<p>• ${o}</p>`).join('')
+  const safeTitle = escapeHtml(title)
+  const safeCourseName = escapeHtml(courseName)
+  const safeDuration = Number.isFinite(duration) ? duration : 90
+  const objectives = (plan.objectives ?? []).map((o) => `<p>&bull; ${escapeHtml(o)}</p>`).join('')
+  const theory = escapeHtml(plan.theory)
+  const examples = escapeHtml(plan.examples)
+  const exercises = escapeHtml(plan.exercises)
+  const summary = escapeHtml(plan.summary)
+  const tips = escapeHtml(plan.tips)
 
   return `<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>${title}</title>
+  <title>${safeTitle}</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
   <style>
@@ -47,37 +63,37 @@ function buildPrintHtml(params: {
   </style>
 </head>
 <body>
-  <h1>${title}</h1>
-  <p class="meta">Ngọc Thái Gia Sư | ${courseName} | ⏱ ${duration} phút</p>
+  <h1>${safeTitle}</h1>
+  <p class="meta">Ngọc Thái Gia Sư | ${safeCourseName} | ${safeDuration} phút</p>
 
   ${objectives ? `<div class="section">
     <div class="section-title">I. MỤC TIÊU</div>
     ${objectives}
   </div>` : ''}
 
-  ${plan.theory ? `<div class="section">
+  ${theory ? `<div class="section">
     <div class="section-title">II. LÝ THUYẾT</div>
-    <div class="theory-box">${plan.theory}</div>
+    <div class="theory-box">${theory}</div>
   </div>` : ''}
 
-  ${plan.examples ? `<div class="section">
+  ${examples ? `<div class="section">
     <div class="section-title">III. VÍ DỤ MINH HỌA</div>
-    <div class="example-box">${plan.examples}</div>
+    <div class="example-box">${examples}</div>
   </div>` : ''}
 
-  ${plan.exercises ? `<div class="section">
+  ${exercises ? `<div class="section">
     <div class="section-title">IV. BÀI TẬP ÁP DỤNG</div>
-    <div class="exercise-box">${plan.exercises}</div>
+    <div class="exercise-box">${exercises}</div>
   </div>` : ''}
 
-  ${plan.summary ? `<div class="section">
+  ${summary ? `<div class="section">
     <div class="section-title">V. TỔNG KẾT</div>
-    <div class="summary-box">${plan.summary}</div>
+    <div class="summary-box">${summary}</div>
   </div>` : ''}
 
-  ${plan.tips ? `<div class="section">
+  ${tips ? `<div class="section">
     <div class="section-title">MẸO GHI NHỚ</div>
-    <div class="tips-box">${plan.tips}</div>
+    <div class="tips-box">${tips}</div>
   </div>` : ''}
 
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
@@ -97,12 +113,10 @@ function buildPrintHtml(params: {
 }
 
 export async function POST(req: NextRequest) {
-  const session = await getServerSession(authOptions)
-  if (!session?.user?.id) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
+  const guard = await requireAdmin()
+  if (!guard.ok) return guard.res
 
-  const { lessonId } = await req.json()
+  const { lessonId } = await req.json().catch(() => ({ lessonId: null }))
   if (!lessonId) return NextResponse.json({ error: 'Missing lessonId' }, { status: 400 })
 
   const supabase = createAdminClient()

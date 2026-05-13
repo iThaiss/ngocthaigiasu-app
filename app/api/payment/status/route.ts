@@ -19,7 +19,7 @@ export async function GET(req: NextRequest) {
     .from('transactions')
     .select('status')
     .eq('user_id', session.user.id)
-    .eq('metadata->>ref', ref)
+    .eq('metadata->>referenceCode', ref)
     .single()
 
   return NextResponse.json({ status: data?.status ?? 'not_found' })

@@ -85,7 +85,8 @@ export default function QuestionPracticeModal({
   const isDone = isCorrect === true || attempts >= MAX_ATTEMPTS
 
   const fireConfetti = () => {
-    confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } })
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 }, disableForReducedMotion: true })
   }
 
   const saveAnswer = async (answer: string, correct: boolean) => {
