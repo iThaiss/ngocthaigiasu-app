@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   LayoutDashboard, User, Brain, FileText, Bell, CreditCard,
   Users, BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
-  Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap,
+  Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap, Target,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -26,6 +26,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/dashboard', label: 'Tổng quan', icon: LayoutDashboard },
   { href: '/learning', label: 'Học Tập', icon: GraduationCap },
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
+  { href: '/practice', label: 'Luyện tập', icon: Target },
   { href: '/exam', label: 'Thi thử', icon: FileText },
   { href: '/questions', label: 'Câu hỏi', icon: BookOpen, roles: ['teacher', 'admin'] },
   { href: '/notifications', label: 'Thông báo', icon: Bell },

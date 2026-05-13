@@ -38,6 +38,7 @@ export const config = {
   matcher: [
     '/dashboard/:path*',
     '/solve/:path*',
+    '/practice/:path*',
     '/exam/:path*',
     '/profile/:path*',
     '/payment/:path*',
