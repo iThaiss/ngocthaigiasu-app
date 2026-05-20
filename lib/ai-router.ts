@@ -22,10 +22,41 @@ interface AiCompletionParams {
 }
 
 function getRouterConfig() {
-  const baseUrl = process.env.AI_ROUTER_BASE_URL ?? process.env.NINE_ROUTER_BASE_URL ?? process.env.OPENROUTER_BASE_URL
-  const apiKey = process.env.AI_ROUTER_API_KEY ?? process.env.NINE_ROUTER_API_KEY ?? process.env.OPENROUTER_API_KEY
-  const model = process.env.AI_ROUTER_MODEL ?? process.env.NINE_ROUTER_MODEL
-  return { baseUrl: baseUrl?.replace(/\/$/, ''), apiKey, model }
+  const baseUrl =
+    process.env.AI_ROUTER_BASE_URL ??
+    process.env.AI_BASE_URL ??
+    process.env.NINE_ROUTER_BASE_URL ??
+    process.env.ROUTER9_BASE_URL ??
+    process.env['9ROUTER_BASE_URL'] ??
+    process.env.OPENROUTER_BASE_URL
+  const apiKey =
+    process.env.AI_ROUTER_API_KEY ??
+    process.env.AI_API_KEY ??
+    process.env.NINE_ROUTER_API_KEY ??
+    process.env.ROUTER9_API_KEY ??
+    process.env['9ROUTER_API_KEY'] ??
+    process.env.OPENROUTER_API_KEY
+  const model =
+    process.env.AI_ROUTER_MODEL ??
+    process.env.AI_MODEL ??
+    process.env.NINE_ROUTER_MODEL ??
+    process.env.ROUTER9_MODEL ??
+    process.env['9ROUTER_MODEL'] ??
+    process.env.OPENROUTER_MODEL
+  const chatCompletionsUrl =
+    process.env.AI_ROUTER_CHAT_COMPLETIONS_URL ??
+    process.env.AI_CHAT_COMPLETIONS_URL ??
+    process.env.NINE_ROUTER_CHAT_COMPLETIONS_URL ??
+    process.env.ROUTER9_CHAT_COMPLETIONS_URL ??
+    process.env['9ROUTER_CHAT_COMPLETIONS_URL'] ??
+    process.env.OPENROUTER_CHAT_COMPLETIONS_URL
+
+  return {
+    baseUrl: baseUrl?.replace(/\/$/, ''),
+    apiKey,
+    model,
+    chatCompletionsUrl: chatCompletionsUrl?.replace(/\/$/, ''),
+  }
 }
 
 function getFallbackConfig() {
@@ -53,12 +84,20 @@ function openAiContentToAnthropic(content: RouterMessage['content']) {
   return content
 }
 
-async function callOpenAiCompatible(params: AiCompletionParams, config: { baseUrl: string; apiKey?: string; model?: string }) {
-  const res = await fetch(`${config.baseUrl}/chat/completions`, {
+function getChatCompletionsUrl(config: { baseUrl: string; chatCompletionsUrl?: string }) {
+  if (config.chatCompletionsUrl) return config.chatCompletionsUrl
+  if (config.baseUrl.endsWith('/chat/completions')) return config.baseUrl
+  return `${config.baseUrl}/chat/completions`
+}
+
+async function callOpenAiCompatible(params: AiCompletionParams, config: { baseUrl: string; apiKey?: string; model?: string; chatCompletionsUrl?: string }) {
+  if (!config.apiKey) throw new Error('Missing AI router API key')
+
+  const res = await fetch(getChatCompletionsUrl(config), {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      ...(config.apiKey ? { Authorization: `Bearer ${config.apiKey}` } : {}),
+      Authorization: `Bearer ${config.apiKey}`,
       ...(process.env.AI_ROUTER_APP_URL ? { 'HTTP-Referer': process.env.AI_ROUTER_APP_URL } : {}),
       ...(process.env.AI_ROUTER_APP_NAME ? { 'X-Title': process.env.AI_ROUTER_APP_NAME } : {}),
     },
@@ -127,6 +166,7 @@ export async function createAiCompletion(params: AiCompletionParams) {
         baseUrl: router.baseUrl,
         apiKey: router.apiKey,
         model: router.model,
+        chatCompletionsUrl: router.chatCompletionsUrl,
       })
       if (text) return { text, provider: 'router' as const, model: router.model ?? params.model }
     } catch (error) {
