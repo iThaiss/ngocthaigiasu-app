@@ -21,6 +21,7 @@ import {
 import Dropzone from '@/components/solve/Dropzone'
 import { useToast } from '@/components/ui/use-toast'
 import Link from 'next/link'
+import QuestionTutorAgent, { type TutorQuestionContext } from '@/components/QuestionTutorAgent'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -395,6 +396,25 @@ export default function SolvePage() {
   const effectiveLimit = dailyLimit ?? status?.limit ?? null
   const isLimitReached = effectiveRemaining !== null && effectiveRemaining <= 0
   const isVip = status?.isVip ?? false
+  const solveTutorContext: TutorQuestionContext | null = result ? {
+    questionText: result.solution.problem,
+    type: result.solution.question_type,
+    topic: result.solution.topic,
+    subtopic: result.solution.subtopic,
+    difficulty: result.solution.difficulty,
+    options: {
+      A: result.solution.option_a,
+      B: result.solution.option_b,
+      C: result.solution.option_c,
+      D: result.solution.option_d,
+    },
+    statements: result.solution.statements ?? undefined,
+    correctAnswer: result.solution.correct_answer,
+    numericAnswer: result.solution.numeric_answer,
+    explanation: result.solution.answer,
+    solutionSteps: result.solution.steps,
+    answered: true,
+  } : null
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
@@ -680,6 +700,15 @@ export default function SolvePage() {
                       </div>
                     </CardContent>
                   </Card>
+                )}
+
+                {solveTutorContext && (
+                  <QuestionTutorAgent
+                    mode="solve"
+                    contextKey={`${result.solution.problem}-${result.modelUsed}`}
+                    context={solveTutorContext}
+                    title="AI hỏi thêm về lời giải"
+                  />
                 )}
 
                 {/* Practice button */}

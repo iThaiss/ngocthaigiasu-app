@@ -11,13 +11,14 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: 'ids array required' }, { status: 400 })
   }
 
-  const { ids, difficulty, topic, subtopic, grade, part } = body
+  const { ids, difficulty, topic, subtopic, source, grade, part } = body
   const supabase = createAdminClient()
 
   const updates: Record<string, unknown> = {}
   if (difficulty !== undefined) updates.difficulty = difficulty || null
   if (topic !== undefined) updates.topic = topic || null
   if (subtopic !== undefined) updates.subtopic = subtopic || null
+  if (source !== undefined) updates.source = source || null
   if (grade !== undefined) updates.grade = grade || null
   if (part !== undefined) updates.part = part || null
 

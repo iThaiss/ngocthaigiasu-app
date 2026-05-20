@@ -68,6 +68,7 @@ export default function AdminQuestionsPage() {
   const [gradeFilter, setGradeFilter] = useState('')
   const [partFilter, setPartFilter] = useState('')
   const [subtopicFilter, setSubtopicFilter] = useState('')
+  const [sourceFilter, setSourceFilter] = useState('')
   const [noAnswer, setNoAnswer] = useState(false)
   const [needsVisualFilter, setNeedsVisualFilter] = useState('')
 
@@ -81,6 +82,9 @@ export default function AdminQuestionsPage() {
   const [selected, setSelected] = useState<Set<string>>(new Set())
   const [bulkDiff, setBulkDiff] = useState('')
   const [bulkTopic, setBulkTopic] = useState('')
+  const [bulkSubtopic, setBulkSubtopic] = useState('')
+  const [bulkSource, setBulkSource] = useState('')
+  const [bulkPart, setBulkPart] = useState('')
   const [bulkGrade, setBulkGrade] = useState('')
   const [bulkLoading, setBulkLoading] = useState(false)
 
@@ -95,6 +99,7 @@ export default function AdminQuestionsPage() {
         ...(gradeFilter && { grade: gradeFilter }),
         ...(partFilter && { part: partFilter }),
         ...(subtopicFilter && { subtopic: subtopicFilter }),
+        ...(sourceFilter && { source: sourceFilter }),
         ...(noAnswer && { noAnswer: 'true' }),
         ...(needsVisualFilter && { needsVisual: needsVisualFilter }),
       })
@@ -106,7 +111,7 @@ export default function AdminQuestionsPage() {
     } finally {
       setLoading(false)
     }
-  }, [page, search, typeFilter, diffFilter, gradeFilter, partFilter, subtopicFilter, noAnswer, needsVisualFilter])
+  }, [page, search, typeFilter, diffFilter, gradeFilter, partFilter, subtopicFilter, sourceFilter, noAnswer, needsVisualFilter])
 
   useEffect(() => { fetchQuestions() }, [fetchQuestions])
 
@@ -116,6 +121,7 @@ export default function AdminQuestionsPage() {
       difficulty: q.difficulty,
       topic: q.topic,
       subtopic: q.subtopic,
+      source: q.source,
       grade: q.grade,
       part: q.part,
       correct_answer: q.correct_answer,
@@ -169,13 +175,16 @@ export default function AdminQuestionsPage() {
 
   async function handleBulkDiff() {
     if (selected.size === 0) return
-    if (!bulkDiff && !bulkTopic && !bulkGrade) return
+    if (!bulkDiff && !bulkTopic && !bulkSubtopic && !bulkSource && !bulkGrade && !bulkPart) return
     setBulkLoading(true)
     try {
       const body: Record<string, unknown> = { ids: Array.from(selected) }
       if (bulkDiff) body.difficulty = bulkDiff
       if (bulkTopic) body.topic = bulkTopic
+      if (bulkSubtopic) body.subtopic = bulkSubtopic
+      if (bulkSource) body.source = bulkSource
       if (bulkGrade) body.grade = parseInt(bulkGrade)
+      if (bulkPart) body.part = bulkPart
       const res = await fetch('/api/admin/questions/bulk', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -184,7 +193,7 @@ export default function AdminQuestionsPage() {
       if (!res.ok) throw new Error()
       toast({ title: `Đã cập nhật ${selected.size} câu hỏi` })
       setSelected(new Set())
-      setBulkDiff(''); setBulkTopic(''); setBulkGrade('')
+      setBulkDiff(''); setBulkTopic(''); setBulkSubtopic(''); setBulkSource(''); setBulkGrade(''); setBulkPart('')
       fetchQuestions()
     } catch {
       toast({ title: 'Lỗi bulk update', variant: 'destructive' })
@@ -269,6 +278,12 @@ export default function AdminQuestionsPage() {
           value={subtopicFilter}
           onChange={(e) => { setSubtopicFilter(e.target.value); setPage(1) }}
         />
+        <Input
+          className="w-44 bg-zinc-900 border-zinc-700 text-zinc-100 placeholder:text-zinc-500"
+          placeholder="Nguồn đề..."
+          value={sourceFilter}
+          onChange={(e) => { setSourceFilter(e.target.value); setPage(1) }}
+        />
         <select
           value={needsVisualFilter}
           onChange={(e) => { setNeedsVisualFilter(e.target.value); setPage(1) }}
@@ -302,6 +317,18 @@ export default function AdminQuestionsPage() {
             value={bulkTopic}
             onChange={(e) => setBulkTopic(e.target.value)}
           />
+          <Input
+            className="w-36 h-8 bg-zinc-900 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 text-sm"
+            placeholder="Dạng bài..."
+            value={bulkSubtopic}
+            onChange={(e) => setBulkSubtopic(e.target.value)}
+          />
+          <Input
+            className="w-40 h-8 bg-zinc-900 border-zinc-700 text-zinc-100 placeholder:text-zinc-500 text-sm"
+            placeholder="Nguồn đề..."
+            value={bulkSource}
+            onChange={(e) => setBulkSource(e.target.value)}
+          />
           <select
             value={bulkGrade}
             onChange={(e) => setBulkGrade(e.target.value)}
@@ -312,7 +339,17 @@ export default function AdminQuestionsPage() {
             <option value="11">Lớp 11</option>
             <option value="12">Lớp 12</option>
           </select>
-          <Button size="sm" onClick={handleBulkDiff} disabled={(!bulkDiff && !bulkTopic && !bulkGrade) || bulkLoading}>
+          <select
+            value={bulkPart}
+            onChange={(e) => setBulkPart(e.target.value)}
+            className="rounded border border-zinc-700 bg-zinc-900 px-2 py-1 text-sm text-zinc-100"
+          >
+            <option value="">Phần...</option>
+            <option value="I">Phần I</option>
+            <option value="II">Phần II</option>
+            <option value="III">Phần III</option>
+          </select>
+          <Button size="sm" onClick={handleBulkDiff} disabled={(!bulkDiff && !bulkTopic && !bulkSubtopic && !bulkSource && !bulkGrade && !bulkPart) || bulkLoading}>
             {bulkLoading && <Loader2 className="mr-1 h-3 w-3 animate-spin" />} Áp dụng
           </Button>
           <Button size="sm" variant="ghost" onClick={() => setSelected(new Set())} className="text-zinc-400">
@@ -329,6 +366,7 @@ export default function AdminQuestionsPage() {
               <th className="px-3 py-2.5 w-8"></th>
               <th className="px-3 py-2.5 text-left font-medium">STT</th>
               <th className="px-3 py-2.5 text-left font-medium">Nội dung</th>
+              <th className="px-3 py-2.5 text-left font-medium">Nguồn</th>
               <th className="px-3 py-2.5 text-left font-medium">Chủ đề</th>
               <th className="px-3 py-2.5 text-center font-medium">Lớp</th>
               <th className="px-3 py-2.5 text-center font-medium">Phần</th>
@@ -342,13 +380,13 @@ export default function AdminQuestionsPage() {
           <tbody className="divide-y divide-zinc-800/60">
             {loading ? (
               <tr>
-                <td colSpan={10} className="py-12 text-center">
+                <td colSpan={12} className="py-12 text-center">
                   <Loader2 className="h-5 w-5 animate-spin mx-auto text-zinc-500" />
                 </td>
               </tr>
             ) : questions.length === 0 ? (
               <tr>
-                <td colSpan={10} className="py-12 text-center text-zinc-500">Không có câu hỏi</td>
+                <td colSpan={12} className="py-12 text-center text-zinc-500">Không có câu hỏi</td>
               </tr>
             ) : (
               questions.map((q, idx) => (
@@ -361,6 +399,9 @@ export default function AdminQuestionsPage() {
                   <td className="px-3 py-2.5 text-zinc-500">{(page - 1) * 20 + idx + 1}</td>
                   <td className="px-3 py-2.5 text-zinc-200 max-w-xs">
                     <p className="line-clamp-2 text-xs">{q.question_text}</p>
+                  </td>
+                  <td className="px-3 py-2.5 max-w-[120px]">
+                    {q.source ? <p className="truncate text-xs text-zinc-300">{q.source}</p> : <span className="text-zinc-600">—</span>}
                   </td>
                   <td className="px-3 py-2.5 max-w-[120px]">
                     <p className="text-xs text-zinc-300 truncate">{q.topic ?? '—'}</p>
@@ -433,7 +474,17 @@ export default function AdminQuestionsPage() {
                 <p className="text-zinc-300 text-xs leading-relaxed">{editQ.question_text}</p>
               </div>
 
-              {/* Topic / Subtopic */}
+              {/* Source / Topic / Subtopic */}
+              <div className="space-y-1.5">
+                <label className="text-xs text-zinc-400">Nguồn đề</label>
+                <input
+                  value={editForm.source ?? ''}
+                  onChange={(e) => setEditForm(f => ({ ...f, source: e.target.value || null }))}
+                  className="w-full rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-100"
+                  placeholder="VD: Đề minh họa 2025"
+                />
+              </div>
+
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
                   <label className="text-xs text-zinc-400">Chủ đề</label>

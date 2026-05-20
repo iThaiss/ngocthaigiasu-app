@@ -12,6 +12,7 @@ import { Progress } from '@/components/ui/progress'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
+import QuestionTutorAgent, { type TutorQuestionContext } from '@/components/QuestionTutorAgent'
 
 type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'
 
@@ -262,6 +263,38 @@ export default function PracticePage() {
     : current?.question_type === 'true_false'
       ? 'Đúng/Sai'
       : 'Trả lời ngắn'
+
+  const currentUserAnswer = current?.question_type === 'multiple_choice'
+    ? selectedOption
+    : current?.question_type === 'short_answer'
+      ? shortAnswer
+      : Object.keys(tfAnswers).length
+        ? JSON.stringify(tfAnswers)
+        : null
+
+  const tutorContext: TutorQuestionContext | null = current ? {
+    questionText: current.question_text,
+    type: current.question_type,
+    topic: current.topic,
+    subtopic: current.subtopic,
+    difficulty: current.difficulty,
+    options: {
+      A: current.option_a,
+      B: current.option_b,
+      C: current.option_c,
+      D: current.option_d,
+    },
+    statements: statements.map((statement) => ({
+      label: statement.label,
+      text: statement.text,
+      answer: statement.answer,
+    })),
+    correctAnswer: current.correct_answer,
+    numericAnswer: current.numeric_answer,
+    explanation: current.explanation,
+    userAnswer: currentUserAnswer,
+    answered,
+  } : null
 
   if (loading) {
     return (
@@ -520,6 +553,15 @@ export default function PracticePage() {
           </div>
         </CardContent>
       </Card>
+
+      {tutorContext && (
+        <QuestionTutorAgent
+          mode="practice"
+          contextKey={current.id}
+          context={tutorContext}
+          title="AI hỏi đáp câu luyện tập"
+        />
+      )}
     </div>
   )
 }

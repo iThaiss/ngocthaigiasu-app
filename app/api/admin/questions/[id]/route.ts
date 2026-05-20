@@ -12,7 +12,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   const supabase = createAdminClient()
   const { difficulty, correct_answer, statement_a, statement_b, statement_c, statement_d,
     answer_a, answer_b, answer_c, answer_d, numeric_answer,
-    topic, subtopic, grade, part, needs_visual, visual_image_url } = body
+    topic, subtopic, source, grade, part, needs_visual, visual_image_url } = body
 
   const updates: Record<string, unknown> = {}
   if (difficulty !== undefined) updates.difficulty = difficulty || null
@@ -28,6 +28,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   if (numeric_answer !== undefined) updates.numeric_answer = numeric_answer
   if (topic !== undefined) updates.topic = topic || null
   if (subtopic !== undefined) updates.subtopic = subtopic || null
+  if (source !== undefined) updates.source = source || null
   if (grade !== undefined) updates.grade = grade || null
   if (part !== undefined) updates.part = part || null
   if (needs_visual !== undefined) updates.needs_visual = needs_visual

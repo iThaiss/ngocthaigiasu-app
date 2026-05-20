@@ -2,12 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-import Anthropic from '@anthropic-ai/sdk'
-
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-  baseURL: process.env.ANTHROPIC_BASE_URL,
-})
+import { createAiCompletion, type RouterMessage } from '@/lib/ai-router'
 
 interface ModelConfig {
   model: string
@@ -76,18 +71,22 @@ function extractJSON(text: string): unknown {
   return JSON.parse(text.substring(start, end + 1))
 }
 
-async function callClaudeWithRetry(
-  client: Anthropic,
-  params: Anthropic.MessageCreateParamsNonStreaming,
+async function callAiWithRetry(
+  params: {
+    model: string
+    system: string
+    messages: RouterMessage[]
+    maxTokens: number
+    temperature?: number
+  },
   maxRetries = 3
-): Promise<string> {
+): Promise<{ text: string; provider: string; model: string }> {
   for (let i = 0; i < maxRetries; i++) {
-    const response = await client.messages.create(params)
-    const text = response.content[0]?.type === 'text' ? response.content[0].text : ''
-    if (text.trim().length > 0) return text
-    console.log(`[solve] empty response, retry ${i + 1}/${maxRetries}`)
+    const response = await createAiCompletion(params)
+    if (response.text.trim().length > 0) return response
+    console.log(`[solve] empty AI response, retry ${i + 1}/${maxRetries}`)
   }
-  throw new Error('Claude returned empty response after retries')
+  throw new Error('AI provider returned empty response after retries')
 }
 
 interface Solution {
@@ -239,9 +238,9 @@ export async function POST(req: NextRequest) {
 
   let solution: Solution
   try {
-    const rawText = await callClaudeWithRetry(anthropic, {
+    const aiResponse = await callAiWithRetry({
       model: modelConfig.model,
-      max_tokens: 4000,
+      maxTokens: 4000,
       system: "Bạn là gia sư Toán chuyên nghiệp tại Việt Nam. Nhiệm vụ duy nhất là đọc bài toán từ ảnh và trả về JSON giải toán. KHÔNG chào hỏi, KHÔNG giải thích thêm, CHỈ trả về JSON thuần túy. Nếu ảnh không phải bài toán, trả về {\"is_math\": false}.",
       messages: [{
         role: 'user',
@@ -254,6 +253,9 @@ export async function POST(req: NextRequest) {
         ],
       }],
     })
+    const rawText = aiResponse.text
+    modelConfig.model = aiResponse.model
+    modelConfig.label = aiResponse.provider === 'router' ? 'AI Router' : modelConfig.label
     try {
       solution = extractJSON(rawText) as Solution
     } catch (parseErr) {

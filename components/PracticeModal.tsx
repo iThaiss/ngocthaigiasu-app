@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Button } from '@/components/ui/button'
 import { CheckCircle2, XCircle, Lightbulb, ChevronRight, Loader2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import QuestionTutorAgent, { type TutorQuestionContext } from '@/components/QuestionTutorAgent'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -154,6 +155,38 @@ export default function PracticeModal({
     }
     return raw
   })()
+
+  const currentUserAnswer = currentQuestion.question_type === 'multiple_choice'
+    ? selectedOption
+    : currentQuestion.question_type === 'short_answer'
+      ? shortInput
+      : Object.keys(tfValues).length
+        ? JSON.stringify(tfValues)
+        : null
+
+  const tutorContext: TutorQuestionContext = {
+    questionText: currentQuestion.question_text,
+    type: currentQuestion.question_type,
+    topic: currentQuestion.topic,
+    subtopic: currentQuestion.subtopic,
+    difficulty: currentQuestion.difficulty,
+    options: {
+      A: currentQuestion.option_a,
+      B: currentQuestion.option_b,
+      C: currentQuestion.option_c,
+      D: currentQuestion.option_d,
+    },
+    statements: statements.map((statement) => ({
+      label: statement.label,
+      text: statement.text,
+      answer: statement.answer,
+    })),
+    correctAnswer: currentQuestion.correct_answer,
+    numericAnswer: currentQuestion.numeric_answer,
+    explanation: currentQuestion.explanation,
+    userAnswer: currentUserAnswer,
+    answered,
+  }
 
   // ── helpers ────────────────────────────────────────────────────────────────
 
@@ -429,6 +462,14 @@ export default function PracticeModal({
               }
             </div>
           )}
+
+          <QuestionTutorAgent
+            mode="practice"
+            contextKey={currentQuestion.id}
+            context={tutorContext}
+            title="AI hỏi đáp câu này"
+            compact
+          />
 
           {/* Done state — hết câu cùng dạng */}
           {done && (
