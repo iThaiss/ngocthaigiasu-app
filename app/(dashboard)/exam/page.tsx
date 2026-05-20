@@ -146,6 +146,15 @@ function answerLabel(question: ExamQuestion) {
   return question.statements?.map((s) => `${s.label}) ${s.answer ? 'Đúng' : 'Sai'}`).join('; ') ?? ''
 }
 
+function userAnswerLabel(question: ExamQuestion, answer: string | undefined) {
+  if (answer === undefined) return 'Chưa trả lời'
+  if (question.question_type !== 'true_false') return answer
+  const parsed = parseTfAnswer(answer)
+  return (question.statements ?? [])
+    .map((statement) => `${statement.label}) ${parsed[statement.label] === undefined ? '-' : parsed[statement.label] ? 'Đúng' : 'Sai'}`)
+    .join('; ')
+}
+
 function sectionTitle(sectionCode: string) {
   if (sectionCode === 'part_1') return 'Phần I'
   if (sectionCode === 'part_2') return 'Phần II'
@@ -211,6 +220,15 @@ export default function ExamPage() {
     return Array.from(map.entries())
   }, [answers, questions])
 
+  const reviewGroups = useMemo(() => {
+    const map = new Map<string, Array<{ question: ExamQuestion; index: number }>>()
+    questions.forEach((question, index) => {
+      const key = question.section_code
+      map.set(key, [...(map.get(key) ?? []), { question, index }])
+    })
+    return Array.from(map.entries()).sort(([a], [b]) => a.localeCompare(b))
+  }, [questions])
+
   const handleAutoExpire = useCallback(() => {
     if (phase !== 'exam') return
     setTimeSpent(Math.floor((Date.now() - startTime) / 1000))
@@ -255,6 +273,22 @@ export default function ExamPage() {
     setTimeSpent(Math.floor((Date.now() - startTime) / 1000))
     setPhase('result')
     toast({ title: 'Đã nộp bài', description: `Điểm của bạn: ${score.toFixed(2)}/${maxScore}`, variant: 'success' as never })
+  }
+
+  const scrollToReviewQuestion = (examQuestionId: string) => {
+    document.getElementById(`review-question-${examQuestionId}`)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
+  const reviewButtonClass = (question: ExamQuestion, index: number) => {
+    const answer = answers[index]
+    if (answer === undefined) return 'border-muted bg-muted text-muted-foreground hover:bg-muted/80'
+    const questionScore = scoreQuestion(question, answer)
+    if (questionScore >= question.max_score) return 'border-green-500 bg-green-500/15 text-green-700 dark:text-green-300'
+    if (questionScore > 0) return 'border-yellow-500 bg-yellow-500/15 text-yellow-700 dark:text-yellow-300'
+    return 'border-red-500 bg-red-500/15 text-red-700 dark:text-red-300'
   }
 
   const tutorContext: TutorQuestionContext | null = q ? {
@@ -497,65 +531,214 @@ export default function ExamPage() {
         {phase === 'result' && (
           <motion.div key="result" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-6">
             <Card>
-              <CardContent className="space-y-5 pt-6 text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-yellow-500/10">
-                  <Trophy className="h-7 w-7 text-yellow-500" />
-                </div>
-                <div>
-                  <h2 className="text-3xl font-extrabold">{score.toFixed(2)} <span className="text-xl font-normal text-muted-foreground">/ {maxScore}</span></h2>
-                  <p className="mt-1 text-muted-foreground">{autoSubmitted ? 'Tự động nộp khi hết giờ' : 'Đã nộp bài thành công'}</p>
-                </div>
-                <div className="mx-auto grid max-w-md grid-cols-3 gap-4">
-                  <div>
-                    <CheckCircle className="mx-auto h-5 w-5 text-green-500" />
-                    <p className="mt-1 text-lg font-bold">{score.toFixed(2)}</p>
-                    <p className="text-xs text-muted-foreground">Điểm đạt</p>
+              <CardContent className="space-y-5 pt-6">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-yellow-500/10">
+                      <Trophy className="h-7 w-7 text-yellow-500" />
+                    </div>
+                    <div>
+                      <h2 className="text-3xl font-extrabold">{score.toFixed(2)} <span className="text-xl font-normal text-muted-foreground">/ {maxScore}</span></h2>
+                      <p className="mt-1 text-muted-foreground">{autoSubmitted ? 'Tự động nộp khi hết giờ' : 'Đã nộp bài thành công'}</p>
+                    </div>
                   </div>
-                  <div>
-                    <XCircle className="mx-auto h-5 w-5 text-red-500" />
-                    <p className="mt-1 text-lg font-bold">{(maxScore - score).toFixed(2)}</p>
-                    <p className="text-xs text-muted-foreground">Mất điểm</p>
-                  </div>
-                  <div>
-                    <Clock className="mx-auto h-5 w-5 text-blue-500" />
-                    <p className="mt-1 text-lg font-bold">{formatTime(timeSpent)}</p>
-                    <p className="text-xs text-muted-foreground">Thời gian</p>
-                  </div>
-                </div>
-                <div className="flex justify-center gap-2">
                   <Button variant="outline" onClick={() => { setPhase('start'); setQuestions([]); setAnswers({}); setCurrent(0) }}>
                     <RotateCcw className="mr-1 h-4 w-4" /> Chọn đề khác
                   </Button>
                 </div>
+
+                <div className="grid gap-4 md:grid-cols-3">
+                  <div className="rounded-md border p-3">
+                    <CheckCircle className="h-5 w-5 text-green-500" />
+                    <p className="mt-1 text-lg font-bold">{score.toFixed(2)}</p>
+                    <p className="text-xs text-muted-foreground">Điểm đạt</p>
+                  </div>
+                  <div className="rounded-md border p-3">
+                    <XCircle className="h-5 w-5 text-red-500" />
+                    <p className="mt-1 text-lg font-bold">{(maxScore - score).toFixed(2)}</p>
+                    <p className="text-xs text-muted-foreground">Mất điểm</p>
+                  </div>
+                  <div className="rounded-md border p-3">
+                    <Clock className="h-5 w-5 text-blue-500" />
+                    <p className="mt-1 text-lg font-bold">{formatTime(timeSpent)}</p>
+                    <p className="text-xs text-muted-foreground">Thời gian</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-base">
-                  <BarChart3 className="h-5 w-5" /> Xem lại đáp án
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
+            <div className="grid gap-5 lg:grid-cols-[1fr_320px]">
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <BarChart3 className="h-5 w-5" />
+                  <h2 className="text-lg font-semibold">Chữa chi tiết</h2>
+                </div>
+
                 {questions.map((question, index) => {
                   const userAnswer = answers[index]
+                  const questionScore = scoreQuestion(question, userAnswer)
+                  const tfUserAnswer = parseTfAnswer(userAnswer)
                   return (
-                    <div key={question.exam_question_id} className="rounded-md border p-3 text-sm">
-                      <div className="mb-2 flex flex-wrap items-center gap-2">
-                        <Badge variant="outline">Câu {question.question_number}</Badge>
-                        <Badge variant="secondary">{sectionTitle(question.section_code)}</Badge>
-                        <span className="text-xs text-muted-foreground">{scoreQuestion(question, userAnswer).toFixed(2)}/{question.max_score} điểm</span>
-                      </div>
-                      <LatexText text={question.question_text} className="block leading-relaxed" />
-                      <div className="mt-2 grid gap-1 text-xs text-muted-foreground md:grid-cols-2">
-                        <p>Bạn chọn: <strong>{userAnswer ?? 'Chưa trả lời'}</strong></p>
-                        <p>Đáp án: <strong>{answerLabel(question)}</strong></p>
-                      </div>
-                    </div>
+                    <Card
+                      key={question.exam_question_id}
+                      id={`review-question-${question.exam_question_id}`}
+                      className="scroll-mt-24"
+                    >
+                      <CardHeader className="space-y-3">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <Badge variant="outline">Câu {question.question_number}</Badge>
+                          <Badge variant="secondary">{sectionTitle(question.section_code)}</Badge>
+                          <Badge className={questionScore >= question.max_score ? 'bg-green-600' : questionScore > 0 ? 'bg-yellow-600' : 'bg-red-600'}>
+                            {questionScore.toFixed(2)}/{question.max_score} điểm
+                          </Badge>
+                          {question.subtopic && <span className="text-xs text-muted-foreground">{question.subtopic}</span>}
+                        </div>
+                        <CardTitle className="text-base leading-relaxed">
+                          <LatexText text={question.question_text} />
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        {question.image_url && (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={question.image_url} alt="" className="max-h-80 rounded-md border object-contain" />
+                        )}
+
+                        {question.question_type === 'multiple_choice' && (
+                          <div className="grid gap-2">
+                            {(['A', 'B', 'C', 'D'] as const).map((label) => {
+                              const text = question[`option_${label.toLowerCase()}` as keyof ExamQuestion] as string | null
+                              if (!text) return null
+                              const isCorrectAnswer = question.correct_answer === label
+                              const isUserAnswer = userAnswer === label
+                              return (
+                                <div
+                                  key={label}
+                                  className={`flex items-start gap-3 rounded-md border p-3 text-sm ${
+                                    isCorrectAnswer
+                                      ? 'border-green-500 bg-green-500/10'
+                                      : isUserAnswer
+                                        ? 'border-red-500 bg-red-500/10'
+                                        : 'border-border'
+                                  }`}
+                                >
+                                  <span className="font-bold">{label}.</span>
+                                  <LatexText text={text} className="flex-1" />
+                                  {isCorrectAnswer && <CheckCircle className="mt-0.5 h-4 w-4 text-green-500" />}
+                                  {isUserAnswer && !isCorrectAnswer && <XCircle className="mt-0.5 h-4 w-4 text-red-500" />}
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )}
+
+                        {question.question_type === 'true_false' && (
+                          <div className="space-y-3">
+                            {(question.statements ?? []).map((statement) => {
+                              const chosen = tfUserAnswer[statement.label]
+                              const isRight = chosen === statement.answer
+                              return (
+                                <div
+                                  key={statement.label}
+                                  className={`rounded-md border p-3 text-sm ${
+                                    chosen === undefined
+                                      ? 'border-muted bg-muted/30'
+                                      : isRight
+                                        ? 'border-green-500 bg-green-500/10'
+                                        : 'border-red-500 bg-red-500/10'
+                                  }`}
+                                >
+                                  <div className="flex gap-2">
+                                    <span className="font-bold">{statement.label})</span>
+                                    <LatexText text={statement.text} />
+                                  </div>
+                                  <div className="mt-2 flex flex-wrap gap-3 text-xs text-muted-foreground">
+                                    <span>Bạn chọn: <strong>{chosen === undefined ? 'Chưa chọn' : chosen ? 'Đúng' : 'Sai'}</strong></span>
+                                    <span>Đáp án: <strong>{statement.answer ? 'Đúng' : 'Sai'}</strong></span>
+                                  </div>
+                                  {statement.explanation && (
+                                    <div className="mt-2 border-t pt-2 text-sm">
+                                      <LatexText text={statement.explanation} />
+                                    </div>
+                                  )}
+                                </div>
+                              )
+                            })}
+                          </div>
+                        )}
+
+                        {question.question_type === 'short_answer' && (
+                          <div className="grid gap-3 sm:grid-cols-2">
+                            <div className="rounded-md border p-3">
+                              <p className="text-xs text-muted-foreground">Bạn trả lời</p>
+                              <p className="mt-1 font-semibold">{userAnswer ?? 'Chưa trả lời'}</p>
+                            </div>
+                            <div className="rounded-md border border-green-500/40 bg-green-500/10 p-3">
+                              <p className="text-xs text-green-700 dark:text-green-300">Đáp án đúng</p>
+                              <p className="mt-1 font-semibold">{answerLabel(question)}</p>
+                            </div>
+                          </div>
+                        )}
+
+                        <div className="rounded-md border bg-muted/30 p-3 text-sm">
+                          <div className="mb-2 grid gap-1 text-xs text-muted-foreground sm:grid-cols-2">
+                            <p>Bạn chọn: <strong>{userAnswerLabel(question, userAnswer)}</strong></p>
+                            <p>Đáp án: <strong>{answerLabel(question)}</strong></p>
+                          </div>
+                          <div className="border-t pt-3">
+                            <p className="mb-2 font-medium">Lời giải chi tiết</p>
+                            {question.explanation ? (
+                              <LatexText text={question.explanation} className="leading-relaxed" />
+                            ) : (
+                              <p className="text-muted-foreground">Chưa có lời giải chi tiết cho câu này.</p>
+                            )}
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   )
                 })}
-              </CardContent>
-            </Card>
+              </div>
+
+              <aside className="lg:sticky lg:top-20 lg:self-start">
+                <Card>
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-base">Bảng đáp án</CardTitle>
+                    <p className="text-xs text-muted-foreground">Click vào câu để xem lời giải</p>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {reviewGroups.map(([code, items]) => (
+                      <div key={code} className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <p className="text-sm font-medium">{sectionTitle(code)}</p>
+                          <span className="text-xs text-muted-foreground">
+                            {items.reduce((sum, item) => sum + scoreQuestion(item.question, answers[item.index]), 0).toFixed(2)}đ
+                          </span>
+                        </div>
+                        <div className="grid grid-cols-6 gap-2">
+                          {items.map(({ question, index }) => (
+                            <button
+                              key={question.exam_question_id}
+                              type="button"
+                              onClick={() => scrollToReviewQuestion(question.exam_question_id)}
+                              className={`h-9 rounded-md border text-xs font-semibold transition-colors ${reviewButtonClass(question, index)}`}
+                              title={`Câu ${question.question_number}: ${scoreQuestion(question, answers[index]).toFixed(2)}/${question.max_score} điểm`}
+                            >
+                              {question.question_number}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                    <div className="grid grid-cols-2 gap-2 border-t pt-3 text-[11px] text-muted-foreground">
+                      <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded bg-green-500/60" /> Đủ điểm</span>
+                      <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded bg-yellow-500/60" /> Một phần</span>
+                      <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded bg-red-500/60" /> Sai</span>
+                      <span className="flex items-center gap-1"><span className="h-2.5 w-2.5 rounded bg-muted" /> Chưa làm</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              </aside>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
