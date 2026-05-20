@@ -23,33 +23,62 @@ import QuestionTutorAgent, { type TutorQuestionContext } from '@/components/Ques
 type Phase = 'start' | 'exam' | 'result'
 type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'
 
+interface ExamSet {
+  id: string
+  title: string
+  exam_type: string
+  exam_index: number
+  expected_question_count: number
+  expected_item_count: number
+  extracted_question_count: number
+  max_score: number
+  status: string
+}
+
+interface ExamSection {
+  id: string
+  section_code: string
+  title: string | null
+  question_type: QuestionType
+  section_order: number
+  expected_count: number
+  extracted_count: number
+  max_score: number
+  scoring_rule: Record<string, unknown> | null
+}
+
 interface ExamQuestion {
   id: string
+  exam_question_id: string
+  section_code: string
+  question_number: number
+  display_order: number
+  page_number: number | null
+  source_hint: string | null
+  max_score: number
+  scoring_rule_snapshot: Record<string, unknown> | null
   question_text: string
   question_type: QuestionType
-  difficulty: string | null
   topic: string | null
   subtopic: string | null
-  grade: number | null
-  part: string | null
-  source: string | null
-  correct_answer: string | null
+  chapter: string | null
+  difficulty: string | null
   option_a: string | null
   option_b: string | null
   option_c: string | null
   option_d: string | null
-  statements: Array<{ label: string; text: string; answer: boolean }> | null
-  numeric_answer: number | null
+  correct_answer: string | null
+  statements: Array<{ label: string; text: string; answer: boolean; explanation?: string }> | null
+  numeric_answer: string | number | null
   explanation: string | null
+  needs_visual: boolean
+  image_url: string | null
 }
 
 interface ExamMetadata {
-  sources: string[]
-  grades: number[]
-  parts: string[]
-  topics: string[]
-  subtopics: string[]
-  recommendedSource: string
+  examSets: ExamSet[]
+  defaultExamId: string | null
+  sections: ExamSection[]
 }
 
 const ALL = 'all'
@@ -77,8 +106,38 @@ function LatexText({ text, className }: { text: string; className?: string }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
 }
 
-function parseNumber(value: string) {
-  return Number(value.replace(',', '.').trim())
+function parseNumber(value: string | number | null | undefined) {
+  if (typeof value === 'number') return value
+  if (!value) return Number.NaN
+  return Number(String(value).replace(',', '.').trim())
+}
+
+function parseTfAnswer(value: string | undefined) {
+  if (!value) return {}
+  try { return JSON.parse(value) as Record<string, boolean> } catch { return {} }
+}
+
+function scoreQuestion(question: ExamQuestion, answer: string | undefined) {
+  if (answer === undefined) return 0
+
+  if (question.question_type === 'multiple_choice') {
+    return answer === question.correct_answer ? question.max_score : 0
+  }
+
+  if (question.question_type === 'short_answer') {
+    const userValue = parseNumber(answer)
+    const target = parseNumber(question.numeric_answer)
+    return Number.isFinite(userValue) && Number.isFinite(target) && Math.abs(userValue - target) <= 0.01
+      ? question.max_score
+      : 0
+  }
+
+  const parsed = parseTfAnswer(answer)
+  const correctCount = (question.statements ?? []).filter((statement) => parsed[statement.label] === statement.answer).length
+  const rule = question.scoring_rule_snapshot
+  const scoreByCorrect = rule?.score_by_correct_statements as Record<string, number> | undefined
+  if (scoreByCorrect) return Number(scoreByCorrect[String(correctCount)] ?? 0)
+  return correctCount === (question.statements ?? []).length ? question.max_score : 0
 }
 
 function answerLabel(question: ExamQuestion) {
@@ -87,18 +146,23 @@ function answerLabel(question: ExamQuestion) {
   return question.statements?.map((s) => `${s.label}) ${s.answer ? 'Đúng' : 'Sai'}`).join('; ') ?? ''
 }
 
+function sectionTitle(sectionCode: string) {
+  if (sectionCode === 'part_1') return 'Phần I'
+  if (sectionCode === 'part_2') return 'Phần II'
+  if (sectionCode === 'part_3') return 'Phần III'
+  return sectionCode
+}
+
 export default function ExamPage() {
   const { toast } = useToast()
   const [phase, setPhase] = useState<Phase>('start')
-  const [metadata, setMetadata] = useState<ExamMetadata>({ sources: [], grades: [], parts: [], topics: [], subtopics: [], recommendedSource: '' })
+  const [metadata, setMetadata] = useState<ExamMetadata>({ examSets: [], defaultExamId: null, sections: [] })
+  const [examSet, setExamSet] = useState<ExamSet | null>(null)
+  const [sections, setSections] = useState<ExamSection[]>([])
   const [loadingMeta, setLoadingMeta] = useState(true)
   const [starting, setStarting] = useState(false)
-  const [source, setSource] = useState(ALL)
-  const [grade, setGrade] = useState(ALL)
-  const [part, setPart] = useState(ALL)
-  const [topic, setTopic] = useState(ALL)
-  const [subtopic, setSubtopic] = useState(ALL)
-  const [limit, setLimit] = useState('50')
+  const [selectedExamId, setSelectedExamId] = useState('')
+  const [sectionCode, setSectionCode] = useState(ALL)
   const [questions, setQuestions] = useState<ExamQuestion[]>([])
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<number, string>>({})
@@ -115,53 +179,37 @@ export default function ExamPage() {
       .then((data) => {
         if (!mounted) return
         const next = {
-          sources: data.sources ?? [],
-          grades: data.grades ?? [],
-          parts: data.parts ?? [],
-          topics: data.topics ?? [],
-          subtopics: data.subtopics ?? [],
-          recommendedSource: data.recommendedSource ?? '',
+          examSets: data.examSets ?? [],
+          defaultExamId: data.defaultExamId ?? null,
+          sections: data.sections ?? [],
         }
         setMetadata(next)
-        if (next.recommendedSource) setSource(next.recommendedSource)
+        setSections(next.sections)
+        setSelectedExamId(next.defaultExamId ?? '')
       })
-      .catch(() => setError('Không tải được danh sách đề chuẩn.'))
+      .catch(() => setError('Không tải được schema standard_exam.'))
       .finally(() => mounted && setLoadingMeta(false))
     return () => { mounted = false }
   }, [])
 
   const q = questions[current]
   const answeredIndexes = useMemo(() => new Set(Object.keys(answers).map(Number)), [answers])
-  const score = questions.reduce((total, question, index) => {
-    const answer = answers[index]
-    if (answer === undefined) return total
-    if (question.question_type === 'multiple_choice') return total + (answer === question.correct_answer ? 1 : 0)
-    if (question.question_type === 'short_answer') {
-      const target = question.numeric_answer ?? Number.NaN
-      const value = parseNumber(answer)
-      return total + (Number.isFinite(value) && Number.isFinite(target) && Math.abs(value - target) <= 0.01 ? 1 : 0)
-    }
-    try {
-      const parsed = JSON.parse(answer) as Record<string, boolean>
-      return total + (question.statements?.every((s) => parsed[s.label] === s.answer) ? 1 : 0)
-    } catch {
-      return total
-    }
-  }, 0)
+  const maxScore = examSet?.max_score ?? questions.reduce((sum, question) => sum + question.max_score, 0)
+  const score = questions.reduce((total, question, index) => total + scoreQuestion(question, answers[index]), 0)
+  const progress = questions.length ? (answeredIndexes.size / questions.length) * 100 : 0
 
   const partStats = useMemo(() => {
-    const map = new Map<string, { total: number; answered: number }>()
+    const map = new Map<string, { total: number; answered: number; score: number }>()
     questions.forEach((question, index) => {
-      const key = question.part ? `Phần ${question.part}` : 'Chưa phân phần'
-      const item = map.get(key) ?? { total: 0, answered: 0 }
+      const key = sectionTitle(question.section_code)
+      const item = map.get(key) ?? { total: 0, answered: 0, score: 0 }
       item.total += 1
       if (answers[index] !== undefined) item.answered += 1
+      item.score += scoreQuestion(question, answers[index])
       map.set(key, item)
     })
     return Array.from(map.entries())
   }, [answers, questions])
-
-  const progress = questions.length ? (answeredIndexes.size / questions.length) * 100 : 0
 
   const handleAutoExpire = useCallback(() => {
     if (phase !== 'exam') return
@@ -178,19 +226,18 @@ export default function ExamPage() {
     setStarting(true)
     setError(null)
     try {
-      const params = new URLSearchParams({ mode: 'session', limit })
-      if (source !== ALL) params.set('source', source)
-      if (grade !== ALL) params.set('grade', grade)
-      if (part !== ALL) params.set('part', part)
-      if (topic !== ALL) params.set('topic', topic)
-      if (subtopic !== ALL) params.set('subtopic', subtopic)
+      const params = new URLSearchParams({ mode: 'session' })
+      if (selectedExamId) params.set('examSetId', selectedExamId)
+      if (sectionCode !== ALL) params.set('sectionCode', sectionCode)
       const res = await fetch(`/api/exam?${params}`)
       const data = await res.json()
       if (!res.ok) throw new Error(data.error ?? 'Failed to start exam')
       if (!data.questions?.length) {
-        setError('Chưa có câu hỏi phù hợp với bộ lọc này.')
+        setError('Đề chuẩn này chưa có câu hỏi phù hợp.')
         return
       }
+      setExamSet(data.examSet)
+      setSections(data.sections ?? [])
       setQuestions(data.questions)
       setAnswers({})
       setCurrent(0)
@@ -207,7 +254,7 @@ export default function ExamPage() {
   const submitExam = () => {
     setTimeSpent(Math.floor((Date.now() - startTime) / 1000))
     setPhase('result')
-    toast({ title: 'Đã nộp bài', description: `Bạn làm đúng ${score}/${questions.length} câu.`, variant: 'success' as never })
+    toast({ title: 'Đã nộp bài', description: `Điểm của bạn: ${score.toFixed(2)}/${maxScore}`, variant: 'success' as never })
   }
 
   const tutorContext: TutorQuestionContext | null = q ? {
@@ -219,7 +266,7 @@ export default function ExamPage() {
     options: { A: q.option_a, B: q.option_b, C: q.option_c, D: q.option_d },
     statements: q.statements ?? undefined,
     correctAnswer: q.correct_answer,
-    numericAnswer: q.numeric_answer,
+    numericAnswer: parseNumber(q.numeric_answer),
     explanation: q.explanation,
     userAnswer: answers[current] ?? null,
     answered: answers[current] !== undefined,
@@ -246,67 +293,31 @@ export default function ExamPage() {
                   </div>
                   <div>
                     <h1 className="text-2xl font-bold">Luyện đề chuẩn</h1>
-                    <p className="mt-1 text-sm text-muted-foreground">Chọn đề minh họa hoặc nguồn đề trong ngân hàng câu hỏi để luyện theo cấu trúc chuẩn.</p>
+                    <p className="mt-1 text-sm text-muted-foreground">Dữ liệu lấy trực tiếp từ schema <span className="font-mono">standard_exam</span>: đề, phần đề, câu hỏi và thang điểm chuẩn.</p>
                   </div>
                 </div>
 
-                <div className="grid gap-4 md:grid-cols-3">
+                <div className="grid gap-4 md:grid-cols-2">
                   <div className="space-y-2">
-                    <p className="text-sm font-medium">Nguồn đề</p>
-                    <Select value={source} onValueChange={setSource}>
-                      <SelectTrigger><SelectValue /></SelectTrigger>
+                    <p className="text-sm font-medium">Đề chuẩn</p>
+                    <Select value={selectedExamId} onValueChange={setSelectedExamId}>
+                      <SelectTrigger><SelectValue placeholder="Chọn đề" /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value={ALL}>Tất cả nguồn đề</SelectItem>
-                        {metadata.sources.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
+                        {metadata.examSets.map((item) => <SelectItem key={item.id} value={item.id}>{item.title}</SelectItem>)}
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-sm font-medium">Lớp</p>
-                    <Select value={grade} onValueChange={setGrade}>
+                    <p className="text-sm font-medium">Phạm vi luyện</p>
+                    <Select value={sectionCode} onValueChange={setSectionCode}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value={ALL}>Tất cả lớp</SelectItem>
-                        {metadata.grades.map((item) => <SelectItem key={item} value={String(item)}>Lớp {item}</SelectItem>)}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm font-medium">Phần đề</p>
-                    <Select value={part} onValueChange={setPart}>
-                      <SelectTrigger><SelectValue /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value={ALL}>Đủ các phần</SelectItem>
-                        {metadata.parts.map((item) => <SelectItem key={item} value={item}>Phần {item}</SelectItem>)}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm font-medium">Chủ đề</p>
-                    <Select value={topic} onValueChange={setTopic}>
-                      <SelectTrigger><SelectValue /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value={ALL}>Tất cả chủ đề</SelectItem>
-                        {metadata.topics.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm font-medium">Dạng bài</p>
-                    <Select value={subtopic} onValueChange={setSubtopic}>
-                      <SelectTrigger><SelectValue /></SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value={ALL}>Tất cả dạng bài</SelectItem>
-                        {metadata.subtopics.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm font-medium">Số câu</p>
-                    <Select value={limit} onValueChange={setLimit}>
-                      <SelectTrigger><SelectValue /></SelectTrigger>
-                      <SelectContent>
-                        {[10, 20, 30, 50].map((item) => <SelectItem key={item} value={String(item)}>{item} câu</SelectItem>)}
+                        <SelectItem value={ALL}>Toàn bộ đề</SelectItem>
+                        {metadata.sections.map((section) => (
+                          <SelectItem key={section.id} value={section.section_code}>
+                            {sectionTitle(section.section_code)} - {section.title ?? section.question_type}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
@@ -314,23 +325,27 @@ export default function ExamPage() {
 
                 {error && <p className="text-sm text-destructive">{error}</p>}
 
-                <div className="grid gap-3 md:grid-cols-3">
+                <div className="grid gap-3 md:grid-cols-4">
                   <div className="rounded-md border p-3">
                     <p className="text-2xl font-bold">90</p>
                     <p className="text-sm text-muted-foreground">phút luyện đề</p>
                   </div>
                   <div className="rounded-md border p-3">
-                    <p className="text-2xl font-bold">{metadata.sources.length}</p>
-                    <p className="text-sm text-muted-foreground">nguồn đề trong DB</p>
+                    <p className="text-2xl font-bold">{metadata.examSets.length}</p>
+                    <p className="text-sm text-muted-foreground">đề ready</p>
                   </div>
                   <div className="rounded-md border p-3">
-                    <p className="text-2xl font-bold">{metadata.subtopics.length}</p>
-                    <p className="text-sm text-muted-foreground">dạng bài đã phân loại</p>
+                    <p className="text-2xl font-bold">{metadata.examSets[0]?.expected_question_count ?? 22}</p>
+                    <p className="text-sm text-muted-foreground">câu mỗi đề</p>
+                  </div>
+                  <div className="rounded-md border p-3">
+                    <p className="text-2xl font-bold">{metadata.examSets[0]?.expected_item_count ?? 34}</p>
+                    <p className="text-sm text-muted-foreground">ý cần chấm</p>
                   </div>
                 </div>
 
                 <div className="flex justify-end">
-                  <Button size="lg" onClick={startExam} disabled={starting} className="gap-2">
+                  <Button size="lg" onClick={startExam} disabled={starting || !selectedExamId} className="gap-2">
                     {starting ? <Loader2 className="h-4 w-4 animate-spin" /> : <FileText className="h-4 w-4" />}
                     Bắt đầu luyện đề
                   </Button>
@@ -359,15 +374,21 @@ export default function ExamPage() {
                 <Card>
                   <CardHeader className="space-y-3">
                     <div className="flex flex-wrap items-center gap-2">
-                      {q.part && <Badge>Phần {q.part}</Badge>}
-                      {q.source && <Badge variant="outline">{q.source}</Badge>}
-                      {q.topic && <Badge variant="secondary">{q.topic}</Badge>}
+                      <Badge>{sectionTitle(q.section_code)}</Badge>
+                      <Badge variant="outline">Câu {q.question_number}</Badge>
+                      <Badge variant="secondary">{q.max_score} điểm</Badge>
+                      {q.topic && <Badge variant="outline">{q.topic}</Badge>}
                     </div>
                     <CardTitle className="text-base leading-relaxed">
                       <LatexText text={q.question_text} />
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
+                    {q.image_url && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={q.image_url} alt="" className="max-h-80 rounded-md border object-contain" />
+                    )}
+
                     {q.question_type === 'multiple_choice' && (
                       <div className="grid gap-2">
                         {(['A', 'B', 'C', 'D'] as const).map((label) => {
@@ -401,7 +422,7 @@ export default function ExamPage() {
                     {q.question_type === 'true_false' && (
                       <div className="space-y-3">
                         {(q.statements ?? []).map((statement) => {
-                          const currentAnswer = answers[current] ? JSON.parse(answers[current]) as Record<string, boolean> : {}
+                          const currentAnswer = parseTfAnswer(answers[current])
                           return (
                             <div key={statement.label} className="rounded-md border p-3">
                               <div className="mb-3 flex gap-2 text-sm">
@@ -415,7 +436,7 @@ export default function ExamPage() {
                                     type="button"
                                     variant={currentAnswer[statement.label] === value ? 'default' : 'outline'}
                                     onClick={() => setAnswers((prev) => {
-                                      const parsed = prev[current] ? JSON.parse(prev[current]) as Record<string, boolean> : {}
+                                      const parsed = parseTfAnswer(prev[current])
                                       return { ...prev, [current]: JSON.stringify({ ...parsed, [statement.label]: value }) }
                                     })}
                                   >
@@ -452,7 +473,7 @@ export default function ExamPage() {
                       {partStats.map(([name, stat]) => (
                         <div key={name} className="flex items-center justify-between text-xs text-muted-foreground">
                           <span>{name}</span>
-                          <span>{stat.answered}/{stat.total}</span>
+                          <span>{stat.answered}/{stat.total} - {stat.score.toFixed(2)}đ</span>
                         </div>
                       ))}
                     </div>
@@ -462,7 +483,7 @@ export default function ExamPage() {
                 {tutorContext && (
                   <QuestionTutorAgent
                     mode="exam"
-                    contextKey={q.id}
+                    contextKey={q.exam_question_id}
                     context={tutorContext}
                     title="AI gợi ý câu hiện tại"
                     compact
@@ -481,19 +502,19 @@ export default function ExamPage() {
                   <Trophy className="h-7 w-7 text-yellow-500" />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-extrabold">{score} <span className="text-xl font-normal text-muted-foreground">/ {questions.length}</span></h2>
+                  <h2 className="text-3xl font-extrabold">{score.toFixed(2)} <span className="text-xl font-normal text-muted-foreground">/ {maxScore}</span></h2>
                   <p className="mt-1 text-muted-foreground">{autoSubmitted ? 'Tự động nộp khi hết giờ' : 'Đã nộp bài thành công'}</p>
                 </div>
                 <div className="mx-auto grid max-w-md grid-cols-3 gap-4">
                   <div>
                     <CheckCircle className="mx-auto h-5 w-5 text-green-500" />
-                    <p className="mt-1 text-lg font-bold">{score}</p>
-                    <p className="text-xs text-muted-foreground">Đúng</p>
+                    <p className="mt-1 text-lg font-bold">{score.toFixed(2)}</p>
+                    <p className="text-xs text-muted-foreground">Điểm đạt</p>
                   </div>
                   <div>
                     <XCircle className="mx-auto h-5 w-5 text-red-500" />
-                    <p className="mt-1 text-lg font-bold">{questions.length - score}</p>
-                    <p className="text-xs text-muted-foreground">Cần xem lại</p>
+                    <p className="mt-1 text-lg font-bold">{(maxScore - score).toFixed(2)}</p>
+                    <p className="text-xs text-muted-foreground">Mất điểm</p>
                   </div>
                   <div>
                     <Clock className="mx-auto h-5 w-5 text-blue-500" />
@@ -519,11 +540,11 @@ export default function ExamPage() {
                 {questions.map((question, index) => {
                   const userAnswer = answers[index]
                   return (
-                    <div key={question.id} className="rounded-md border p-3 text-sm">
+                    <div key={question.exam_question_id} className="rounded-md border p-3 text-sm">
                       <div className="mb-2 flex flex-wrap items-center gap-2">
-                        <Badge variant="outline">Câu {index + 1}</Badge>
-                        {question.part && <Badge variant="secondary">Phần {question.part}</Badge>}
-                        {question.subtopic && <span className="text-xs text-muted-foreground">{question.subtopic}</span>}
+                        <Badge variant="outline">Câu {question.question_number}</Badge>
+                        <Badge variant="secondary">{sectionTitle(question.section_code)}</Badge>
+                        <span className="text-xs text-muted-foreground">{scoreQuestion(question, userAnswer).toFixed(2)}/{question.max_score} điểm</span>
                       </div>
                       <LatexText text={question.question_text} className="block leading-relaxed" />
                       <div className="mt-2 grid gap-1 text-xs text-muted-foreground md:grid-cols-2">

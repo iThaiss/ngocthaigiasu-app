@@ -3,80 +3,42 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
-const QUESTION_FIELDS = [
-  'id',
-  'question_text',
-  'question_type',
-  'difficulty',
-  'topic',
-  'subtopic',
-  'grade',
-  'part',
-  'source',
-  'correct_answer',
-  'option_a',
-  'option_b',
-  'option_c',
-  'option_d',
-  'statements',
-  'statement_a',
-  'statement_b',
-  'statement_c',
-  'statement_d',
-  'answer_a',
-  'answer_b',
-  'answer_c',
-  'answer_d',
-  'numeric_answer',
-  'explanation',
-  'created_at',
-].join(', ')
+type StandardQuestionRow = Record<string, unknown>
+type StandardExamQuestionRow = Record<string, unknown> & { questions?: StandardQuestionRow | null }
 
-function parseLimit(value: string | null) {
-  const limit = Number(value ?? 50)
-  if (!Number.isFinite(limit)) return 50
-  return Math.min(60, Math.max(1, Math.floor(limit)))
-}
-
-function shuffle<T>(items: T[]) {
-  return [...items].sort(() => Math.random() - 0.5)
-}
-
-function normalizeQuestion(row: Record<string, unknown>) {
-  const statements = (() => {
-    if (Array.isArray(row.statements)) return row.statements
-    if (typeof row.statements === 'string') {
-      try { return JSON.parse(row.statements) } catch { return null }
-    }
-
-    const parts = ['a', 'b', 'c', 'd'].map((label) => {
-      const text = row[`statement_${label}`]
-      const answer = row[`answer_${label}`]
-      if (!text) return null
-      return { label, text, answer: Boolean(answer) }
-    }).filter(Boolean)
-
-    return parts.length ? parts : null
-  })()
+function normalizeQuestion(row: StandardExamQuestionRow) {
+  const q = row.questions ?? {}
+  const raw = q.raw_text && typeof q.raw_text === 'object' ? q.raw_text as Record<string, unknown> : {}
+  const statements = Array.isArray(q.statements) ? q.statements : Array.isArray(raw.statements) ? raw.statements : null
 
   return {
-    id: row.id,
-    question_text: row.question_text,
-    question_type: row.question_type ?? 'multiple_choice',
-    difficulty: row.difficulty,
-    topic: row.topic,
-    subtopic: row.subtopic,
-    grade: row.grade,
-    part: row.part,
-    source: row.source,
-    correct_answer: row.correct_answer,
-    option_a: row.option_a,
-    option_b: row.option_b,
-    option_c: row.option_c,
-    option_d: row.option_d,
+    id: q.id,
+    exam_question_id: row.id,
+    exam_set_id: row.exam_set_id,
+    section_id: row.section_id,
+    section_code: row.section_code,
+    question_number: row.question_number,
+    display_order: row.display_order,
+    page_number: row.page_number,
+    source_hint: row.source_hint,
+    max_score: Number(row.max_score ?? 0),
+    scoring_rule_snapshot: row.scoring_rule_snapshot ?? null,
+    question_text: q.question_text,
+    question_type: q.question_type,
+    topic: q.canonical_topic_title ?? q.topic ?? raw.topic ?? null,
+    subtopic: q.canonical_subtopic_title ?? q.subtopic ?? raw.subtopic ?? null,
+    chapter: q.chapter ?? raw.chapter ?? null,
+    difficulty: q.difficulty ?? raw.difficulty ?? null,
+    option_a: q.option_a,
+    option_b: q.option_b,
+    option_c: q.option_c,
+    option_d: q.option_d,
+    correct_answer: q.correct_answer,
     statements,
-    numeric_answer: row.numeric_answer,
-    explanation: row.explanation,
+    numeric_answer: q.numeric_answer,
+    explanation: q.explanation,
+    needs_visual: q.needs_visual,
+    image_url: q.image_url,
   }
 }
 
@@ -86,77 +48,90 @@ export async function GET(req: NextRequest) {
 
   const { searchParams } = req.nextUrl
   const mode = searchParams.get('mode') ?? 'metadata'
-  const supabase = createAdminClient()
+  const db = createAdminClient().schema('standard_exam')
 
   if (mode === 'metadata') {
-    const { data, error } = await supabase
-      .from('questions')
-      .select('source, grade, part, topic, subtopic, question_type')
-      .eq('is_published', true)
-      .or('needs_visual.eq.false,visual_image_url.not.is.null')
-      .neq('answer_source', 'AI_generated')
-      .limit(3000)
+    const { data: examSets, error: setsError } = await db
+      .from('exam_sets')
+      .select('id, title, subject, exam_type, exam_index, expected_question_count, expected_item_count, extracted_question_count, max_score, status, audit_json, created_at')
+      .eq('status', 'ready')
+      .order('created_at', { ascending: false })
 
-    if (error) return NextResponse.json({ error: 'Failed to load exam metadata' }, { status: 500 })
+    if (setsError) {
+      console.error('[exam] metadata sets error:', setsError)
+      return NextResponse.json({ error: 'Failed to load standard exams' }, { status: 500 })
+    }
 
-    const rows = data ?? []
-    const sources = Array.from(new Set(rows.map((q) => q.source).filter(Boolean) as string[])).sort((a, b) => {
-      const aScore = /minh|chuẩn|standard/i.test(a) ? 0 : 1
-      const bScore = /minh|chuẩn|standard/i.test(b) ? 0 : 1
-      return aScore - bScore || a.localeCompare(b, 'vi')
-    })
+    const defaultExamId = examSets?.[0]?.id ?? null
+    const { data: sections } = defaultExamId
+      ? await db
+        .from('exam_sections')
+        .select('id, exam_set_id, section_code, title, question_type, section_order, expected_count, extracted_count, max_score, scoring_rule')
+        .eq('exam_set_id', defaultExamId)
+        .order('section_order', { ascending: true })
+      : { data: [] }
 
     return NextResponse.json({
-      sources,
-      grades: Array.from(new Set(rows.map((q) => q.grade).filter(Boolean))).sort(),
-      parts: Array.from(new Set(rows.map((q) => q.part).filter(Boolean) as string[])).sort(),
-      topics: Array.from(new Set(rows.map((q) => q.topic).filter(Boolean) as string[])).sort(),
-      subtopics: Array.from(new Set(rows.map((q) => q.subtopic).filter(Boolean) as string[])).sort(),
-      total: rows.length,
-      recommendedSource: sources[0] ?? '',
+      examSets: examSets ?? [],
+      defaultExamId,
+      sections: sections ?? [],
     })
   }
 
   if (mode !== 'session') return NextResponse.json({ error: 'Invalid mode' }, { status: 400 })
 
-  const source = searchParams.get('source')?.trim() ?? ''
-  const grade = searchParams.get('grade')?.trim() ?? ''
-  const part = searchParams.get('part')?.trim() ?? ''
-  const topic = searchParams.get('topic')?.trim() ?? ''
-  const subtopic = searchParams.get('subtopic')?.trim() ?? ''
-  const limit = parseLimit(searchParams.get('limit'))
+  const examSetId = searchParams.get('examSetId')?.trim()
+  const sectionCode = searchParams.get('sectionCode')?.trim()
 
-  let query = supabase
-    .from('questions')
-    .select(QUESTION_FIELDS)
-    .eq('is_published', true)
-    .or('needs_visual.eq.false,visual_image_url.not.is.null')
-    .neq('answer_source', 'AI_generated')
-    .limit(500)
+  let selectedExamSetId = examSetId
+  if (!selectedExamSetId) {
+    const { data: firstReady } = await db
+      .from('exam_sets')
+      .select('id')
+      .eq('status', 'ready')
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .single()
+    selectedExamSetId = firstReady?.id
+  }
 
-  if (source) query = query.eq('source', source)
-  if (grade) query = query.eq('grade', Number(grade))
-  if (part) query = query.eq('part', part)
-  if (topic) query = query.ilike('topic', `%${topic}%`)
-  if (subtopic) query = query.ilike('subtopic', `%${subtopic}%`)
+  if (!selectedExamSetId) return NextResponse.json({ error: 'Không có đề chuẩn sẵn sàng.' }, { status: 404 })
+
+  const [{ data: examSet, error: setError }, { data: sections, error: sectionsError }] = await Promise.all([
+    db
+      .from('exam_sets')
+      .select('id, title, subject, exam_type, exam_index, expected_question_count, expected_item_count, extracted_question_count, max_score, status, audit_json, created_at')
+      .eq('id', selectedExamSetId)
+      .single(),
+    db
+      .from('exam_sections')
+      .select('id, exam_set_id, section_code, title, question_type, section_order, expected_count, extracted_count, max_score, scoring_rule')
+      .eq('exam_set_id', selectedExamSetId)
+      .order('section_order', { ascending: true }),
+  ])
+
+  if (setError || sectionsError || !examSet) {
+    console.error('[exam] set/sections error:', setError ?? sectionsError)
+    return NextResponse.json({ error: 'Không tải được đề chuẩn.' }, { status: 500 })
+  }
+
+  let query = db
+    .from('exam_questions')
+    .select('id, exam_set_id, section_id, question_id, section_code, question_number, display_order, page_number, source_hint, max_score, scoring_rule_snapshot, questions(*)')
+    .eq('exam_set_id', selectedExamSetId)
+    .order('display_order', { ascending: true })
+
+  if (sectionCode) query = query.eq('section_code', sectionCode)
 
   const { data, error } = await query
-  if (error) return NextResponse.json({ error: 'Failed to load exam questions' }, { status: 500 })
-
-  const normalized = (data ?? []).map((row) => normalizeQuestion(row as unknown as Record<string, unknown>))
-  const sorted = normalized.sort((a, b) => {
-    const partA = String(a.part ?? '')
-    const partB = String(b.part ?? '')
-    if (partA !== partB) return partA.localeCompare(partB, 'vi')
-    return String(a.topic ?? '').localeCompare(String(b.topic ?? ''), 'vi')
-  })
-
-  const questions = source || part ? sorted.slice(0, limit) : shuffle(sorted).slice(0, limit)
+  if (error) {
+    console.error('[exam] questions error:', error)
+    return NextResponse.json({ error: 'Không tải được câu hỏi đề chuẩn.' }, { status: 500 })
+  }
 
   return NextResponse.json({
-    questions,
-    requested: limit,
-    available: normalized.length,
-    source,
+    examSet,
+    sections: sections ?? [],
+    questions: (data ?? []).map((row) => normalizeQuestion(row as unknown as StandardExamQuestionRow)),
   })
 }
