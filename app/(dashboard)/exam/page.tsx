@@ -6,22 +6,33 @@ import katex from 'katex'
 import 'katex/dist/katex.min.css'
 import {
   BarChart3, CheckCircle, ChevronLeft, ChevronRight, Clock, FileText,
-  Loader2, RotateCcw, Trophy, XCircle,
+  Flag, Loader2, RotateCcw, Sparkles, Target, Trophy, XCircle, Bookmark,
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
+import { Textarea } from '@/components/ui/textarea'
 import Timer from '@/components/exam/Timer'
 import QuestionGrid from '@/components/exam/QuestionGrid'
 import { formatTime } from '@/lib/utils'
 import { useToast } from '@/components/ui/use-toast'
-import QuestionTutorAgent, { type TutorQuestionContext } from '@/components/QuestionTutorAgent'
+import QuestionTutorAgent, { type TutorMessage, type TutorQuestionContext } from '@/components/QuestionTutorAgent'
 
 type Phase = 'start' | 'exam' | 'result'
 type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'
+type PracticeMode = 'study' | 'battle'
+
+interface SolutionStep {
+  title?: string
+  content?: string
+  table?: {
+    columns?: string[]
+    rows?: Array<Array<string | number>>
+  }
+}
 
 interface ExamSet {
   id: string
@@ -50,6 +61,7 @@ interface ExamSection {
 interface ExamQuestion {
   id: string
   exam_question_id: string
+  exam_set_id: string
   section_code: string
   question_number: number
   display_order: number
@@ -71,6 +83,8 @@ interface ExamQuestion {
   statements: Array<{ label: string; text: string; answer: boolean; explanation?: string }> | null
   numeric_answer: string | number | null
   explanation: string | null
+  solution_steps: SolutionStep[] | null
+  solution_style_version: string | null
   needs_visual: boolean
   image_url: string | null
 }
@@ -83,10 +97,30 @@ interface ExamMetadata {
 
 const ALL = 'all'
 const DURATION = 90 * 60
+const REPORT_TYPES = [
+  { value: 'wrong_answer', label: 'Đáp án sai' },
+  { value: 'unclear_question', label: 'Đề chưa rõ' },
+  { value: 'bad_image', label: 'Hình ảnh lỗi/thiếu' },
+  { value: 'bad_explanation', label: 'Lời giải chưa đúng' },
+  { value: 'typo', label: 'Lỗi chính tả/ký hiệu' },
+  { value: 'other', label: 'Vấn đề khác' },
+]
+
+function normalizeMathText(text: string): string {
+  if (!text) return ''
+  return text
+    .replace(/\*\*/g, '')
+    .replace(/__+/g, '')
+    .replace(/\\overline\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
+    .replace(/\\overrightarrow\{([a-z])\}/g, '\\vec{$1}')
+    .replace(/\\vec\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
+    .replace(/\\sqrt\s+([A-Za-z0-9]+)/g, '\\sqrt{$1}')
+    .replace(/\\vec\s+([a-z])/g, '\\vec{$1}')
+}
 
 function renderLatex(text: string): string {
   if (!text) return ''
-  let result = text
+  let result = normalizeMathText(text)
   result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
     try { return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>` } catch { return math }
   })
@@ -104,6 +138,195 @@ function renderLatex(text: string): string {
 
 function LatexText({ text, className }: { text: string; className?: string }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
+}
+
+function isMarkdownTableSeparator(line: string) {
+  return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line)
+}
+
+function splitMarkdownTableRow(line: string) {
+  return line
+    .trim()
+    .replace(/^\|/, '')
+    .replace(/\|$/, '')
+    .split('|')
+    .map((cell) => cell.trim())
+}
+
+function parseMarkdownBlocks(text: string) {
+  const lines = normalizeMathText(text).split(/\r?\n/)
+  const blocks: Array<{ type: 'text'; content: string } | { type: 'table'; headers: string[]; rows: string[][] }> = []
+  let buffer: string[] = []
+
+  const flushText = () => {
+    const content = buffer.join('\n').trim()
+    if (content) blocks.push({ type: 'text', content })
+    buffer = []
+  }
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index]
+    const next = lines[index + 1]
+    if (line.trim().startsWith('|') && next && isMarkdownTableSeparator(next)) {
+      flushText()
+      const headers = splitMarkdownTableRow(line)
+      const rows: string[][] = []
+      index += 2
+      while (index < lines.length && lines[index].trim().startsWith('|')) {
+        rows.push(splitMarkdownTableRow(lines[index]))
+        index += 1
+      }
+      index -= 1
+      blocks.push({ type: 'table', headers, rows })
+    } else {
+      buffer.push(line)
+    }
+  }
+
+  flushText()
+  return blocks
+}
+
+function RichSolutionText({ text }: { text: string }) {
+  const blocks = parseMarkdownBlocks(text)
+  return (
+    <div className="space-y-3">
+      {blocks.map((block, index) => {
+        if (block.type === 'table') {
+          return (
+            <div key={index} className="overflow-x-auto rounded-md border">
+              <table className="w-full min-w-max border-collapse text-sm">
+                <thead className="bg-muted/70">
+                  <tr>
+                    {block.headers.map((header, cellIndex) => (
+                      <th key={cellIndex} className="border-b px-3 py-2 text-left font-semibold">
+                        <LatexText text={header} />
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map((row, rowIndex) => (
+                    <tr key={rowIndex} className="border-t">
+                      {row.map((cell, cellIndex) => (
+                        <td key={cellIndex} className="px-3 py-2 align-top">
+                          <LatexText text={cell} />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+
+        return <LatexText key={index} text={block.content} className="block leading-relaxed" />
+      })}
+    </div>
+  )
+}
+
+function SolutionTable({ table }: { table: NonNullable<SolutionStep['table']> }) {
+  const columns = table.columns ?? []
+  const rows = table.rows ?? []
+  if (!columns.length || !rows.length) return null
+
+  return (
+    <div className="overflow-x-auto rounded-md border">
+      <table className="w-full min-w-max border-collapse text-sm">
+        <thead className="bg-muted/70">
+          <tr>
+            {columns.map((column, index) => (
+              <th key={index} className="border-b px-3 py-2 text-left font-semibold">
+                <LatexText text={String(column)} />
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, rowIndex) => (
+            <tr key={rowIndex} className="border-t">
+              {row.map((cell, cellIndex) => (
+                <td key={cellIndex} className="px-3 py-2 align-top">
+                  <LatexText text={String(cell)} />
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+function hasStatementExplanations(question: ExamQuestion) {
+  return question.question_type === 'true_false'
+    && (question.statements ?? []).some((statement) => Boolean(statement.explanation?.trim()))
+}
+
+function SolutionDetails({
+  question,
+  statementExplanationsAlreadyShown = false,
+}: {
+  question: ExamQuestion
+  statementExplanationsAlreadyShown?: boolean
+}) {
+  const steps = question.solution_steps?.filter((step) => step?.content?.trim() || step?.table) ?? []
+  const showStatementExplanations = hasStatementExplanations(question) && !statementExplanationsAlreadyShown
+
+  if (showStatementExplanations) {
+    return (
+      <div className="space-y-3">
+        <p className="font-medium">Giải thích từng ý</p>
+        {(question.statements ?? []).map((statement) => (
+          <div key={statement.label} className="rounded-md border bg-background/50 p-3">
+            <div className="mb-2 flex flex-wrap items-center gap-2">
+              <Badge variant="outline">Ý {statement.label}</Badge>
+              <Badge className={statement.answer ? 'bg-green-600' : 'bg-red-600'}>
+                {statement.answer ? 'Đúng' : 'Sai'}
+              </Badge>
+            </div>
+            {statement.explanation ? (
+              <RichSolutionText text={statement.explanation} />
+            ) : (
+              <p className="text-muted-foreground">Chưa có giải thích riêng cho ý này.</p>
+            )}
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  if (question.question_type === 'true_false' && statementExplanationsAlreadyShown) return null
+
+  if (steps.length) {
+    return (
+      <div className="space-y-3">
+        <p className="font-medium">Lời giải chi tiết</p>
+        <div className="space-y-3">
+          {steps.map((step, index) => (
+            <div key={index} className="rounded-md border bg-background/50 p-3">
+              {step.title && <p className="mb-2 font-semibold">{step.title}</p>}
+              {step.table && <SolutionTable table={step.table} />}
+              {step.content && <RichSolutionText text={step.content} />}
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  if (question.explanation) {
+    return (
+      <div className="space-y-2">
+        <p className="font-medium">Lời giải chi tiết</p>
+        <RichSolutionText text={question.explanation} />
+      </div>
+    )
+  }
+
+  return <p className="text-muted-foreground">Chưa có lời giải chi tiết cho câu này.</p>
 }
 
 function parseNumber(value: string | number | null | undefined) {
@@ -165,6 +388,7 @@ function sectionTitle(sectionCode: string) {
 export default function ExamPage() {
   const { toast } = useToast()
   const [phase, setPhase] = useState<Phase>('start')
+  const [practiceMode, setPracticeMode] = useState<PracticeMode>('study')
   const [metadata, setMetadata] = useState<ExamMetadata>({ examSets: [], defaultExamId: null, sections: [] })
   const [examSet, setExamSet] = useState<ExamSet | null>(null)
   const [sections, setSections] = useState<ExamSection[]>([])
@@ -175,6 +399,15 @@ export default function ExamPage() {
   const [questions, setQuestions] = useState<ExamQuestion[]>([])
   const [current, setCurrent] = useState(0)
   const [answers, setAnswers] = useState<Record<number, string>>({})
+  const [submittedQuestions, setSubmittedQuestions] = useState<Set<number>>(new Set())
+  const [scorePopup, setScorePopup] = useState<{ key: number; score: number; maxScore: number } | null>(null)
+  const [savedQuestionIds, setSavedQuestionIds] = useState<Set<string>>(new Set())
+  const [savingQuestion, setSavingQuestion] = useState(false)
+  const [reportOpen, setReportOpen] = useState(false)
+  const [reportType, setReportType] = useState('wrong_answer')
+  const [reportDescription, setReportDescription] = useState('')
+  const [reporting, setReporting] = useState(false)
+  const [tutorChats, setTutorChats] = useState<Record<string, TutorMessage[]>>({})
   const [autoSubmitted, setAutoSubmitted] = useState(false)
   const [showAutoSubmitModal, setShowAutoSubmitModal] = useState(false)
   const [startTime, setStartTime] = useState(Date.now())
@@ -202,23 +435,38 @@ export default function ExamPage() {
   }, [])
 
   const q = questions[current]
+  const isStudyMode = practiceMode === 'study'
+  const isCurrentSubmitted = submittedQuestions.has(current)
+  const hasCurrentAnswer = answers[current] !== undefined && String(answers[current]).trim() !== ''
+  const currentScore = q ? scoreQuestion(q, answers[current]) : 0
+  const currentSaved = q ? savedQuestionIds.has(q.id) : false
   const answeredIndexes = useMemo(() => new Set(Object.keys(answers).map(Number)), [answers])
   const maxScore = examSet?.max_score ?? questions.reduce((sum, question) => sum + question.max_score, 0)
   const score = questions.reduce((total, question, index) => total + scoreQuestion(question, answers[index]), 0)
   const progress = questions.length ? (answeredIndexes.size / questions.length) * 100 : 0
 
-  const partStats = useMemo(() => {
-    const map = new Map<string, { total: number; answered: number; score: number }>()
-    questions.forEach((question, index) => {
-      const key = sectionTitle(question.section_code)
-      const item = map.get(key) ?? { total: 0, answered: 0, score: 0 }
-      item.total += 1
-      if (answers[index] !== undefined) item.answered += 1
-      item.score += scoreQuestion(question, answers[index])
-      map.set(key, item)
-    })
-    return Array.from(map.entries())
-  }, [answers, questions])
+  useEffect(() => {
+    if (!questions.length) {
+      setSavedQuestionIds(new Set())
+      return
+    }
+
+    const ids = questions.map((question) => question.id).filter(Boolean)
+    if (!ids.length) return
+
+    let mounted = true
+    fetch(`/api/saved-questions?source=standard_exam&questionIds=${encodeURIComponent(ids.join(','))}`)
+      .then((res) => res.ok ? res.json() : Promise.reject())
+      .then((data) => {
+        if (!mounted) return
+        setSavedQuestionIds(new Set(data.savedQuestionIds ?? []))
+      })
+      .catch(() => {
+        if (mounted) setSavedQuestionIds(new Set())
+      })
+
+    return () => { mounted = false }
+  }, [questions])
 
   const reviewGroups = useMemo(() => {
     const map = new Map<string, Array<{ question: ExamQuestion; index: number }>>()
@@ -230,7 +478,7 @@ export default function ExamPage() {
   }, [questions])
 
   const handleAutoExpire = useCallback(() => {
-    if (phase !== 'exam') return
+    if (phase !== 'exam' || practiceMode !== 'battle') return
     setTimeSpent(Math.floor((Date.now() - startTime) / 1000))
     setAutoSubmitted(true)
     setShowAutoSubmitModal(true)
@@ -238,7 +486,39 @@ export default function ExamPage() {
       setShowAutoSubmitModal(false)
       setPhase('result')
     }, 1800)
-  }, [phase, startTime])
+  }, [phase, practiceMode, startTime])
+
+  useEffect(() => {
+    if (phase !== 'exam') return
+
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault()
+      event.returnValue = ''
+    }
+
+    const handleLinkClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null
+      const link = target?.closest('a[href]') as HTMLAnchorElement | null
+      if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+
+      const url = new URL(link.href, window.location.href)
+      if (url.origin !== window.location.origin) return
+      if (url.pathname.startsWith('/exam')) return
+
+      const ok = window.confirm('Bạn đang làm bài. Bạn có chắc muốn rời khỏi trang luyện đề?')
+      if (!ok) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    document.addEventListener('click', handleLinkClick, true)
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+      document.removeEventListener('click', handleLinkClick, true)
+    }
+  }, [phase])
 
   const startExam = async () => {
     setStarting(true)
@@ -258,6 +538,11 @@ export default function ExamPage() {
       setSections(data.sections ?? [])
       setQuestions(data.questions)
       setAnswers({})
+      setSubmittedQuestions(new Set())
+      setScorePopup(null)
+      setReportOpen(false)
+      setReportDescription('')
+      setTutorChats({})
       setCurrent(0)
       setAutoSubmitted(false)
       setStartTime(Date.now())
@@ -273,6 +558,100 @@ export default function ExamPage() {
     setTimeSpent(Math.floor((Date.now() - startTime) / 1000))
     setPhase('result')
     toast({ title: 'Đã nộp bài', description: `Điểm của bạn: ${score.toFixed(2)}/${maxScore}`, variant: 'success' as never })
+  }
+
+  const gradeStudyQuestion = () => {
+    if (!q || !hasCurrentAnswer || isCurrentSubmitted) return false
+    const nextScore = scoreQuestion(q, answers[current])
+    setSubmittedQuestions((prev) => new Set(prev).add(current))
+    setScorePopup({ key: Date.now(), score: nextScore, maxScore: q.max_score })
+    window.setTimeout(() => setScorePopup(null), 1400)
+    return true
+  }
+
+  const goToQuestion = (index: number) => {
+    if (index === current || index < 0 || index >= questions.length) return
+    if (isStudyMode && phase === 'exam' && hasCurrentAnswer && !isCurrentSubmitted) {
+      const ok = window.confirm('Câu hiện tại đã có đáp án nhưng chưa được chấm. Bạn vẫn muốn chuyển sang câu khác?')
+      if (!ok) return
+    }
+    setCurrent(index)
+  }
+
+  const handleNextQuestion = () => {
+    if (!q) return
+    if (isStudyMode && !isCurrentSubmitted) {
+      gradeStudyQuestion()
+      return
+    }
+    if (current === questions.length - 1) {
+      submitExam()
+      return
+    }
+    setCurrent((value) => value + 1)
+  }
+
+  const toggleSavedQuestion = async () => {
+    if (!q || savingQuestion) return
+    setSavingQuestion(true)
+    const wasSaved = savedQuestionIds.has(q.id)
+    setSavedQuestionIds((prev) => {
+      const next = new Set(prev)
+      wasSaved ? next.delete(q.id) : next.add(q.id)
+      return next
+    })
+
+    try {
+      const res = await fetch(wasSaved
+        ? `/api/saved-questions?source=standard_exam&question_id=${encodeURIComponent(q.id)}`
+        : '/api/saved-questions', {
+        method: wasSaved ? 'DELETE' : 'POST',
+        headers: wasSaved ? undefined : { 'Content-Type': 'application/json' },
+        body: wasSaved ? undefined : JSON.stringify({ question_id: q.id, source: 'standard_exam' }),
+      })
+      if (!res.ok) throw new Error()
+      toast({
+        title: wasSaved ? 'Đã bỏ lưu câu hỏi' : 'Đã lưu vào danh sách ôn tập',
+        variant: 'success' as never,
+      })
+    } catch {
+      setSavedQuestionIds((prev) => {
+        const next = new Set(prev)
+        wasSaved ? next.add(q.id) : next.delete(q.id)
+        return next
+      })
+      toast({ title: 'Không cập nhật được câu cần ôn', variant: 'destructive' })
+    } finally {
+      setSavingQuestion(false)
+    }
+  }
+
+  const submitReport = async () => {
+    if (!q || !reportDescription.trim()) return
+    setReporting(true)
+    try {
+      const res = await fetch('/api/question-reports', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          question_id: q.id,
+          exam_question_id: q.exam_question_id,
+          exam_set_id: q.exam_set_id,
+          source: 'standard_exam',
+          issue_type: reportType,
+          description: reportDescription,
+        }),
+      })
+      if (!res.ok) throw new Error()
+      setReportOpen(false)
+      setReportDescription('')
+      setReportType('wrong_answer')
+      toast({ title: 'Đã gửi báo cáo cho admin', variant: 'success' as never })
+    } catch {
+      toast({ title: 'Không gửi được báo cáo', variant: 'destructive' })
+    } finally {
+      setReporting(false)
+    }
   }
 
   const scrollToReviewQuestion = (examQuestionId: string) => {
@@ -303,7 +682,7 @@ export default function ExamPage() {
     numericAnswer: parseNumber(q.numeric_answer),
     explanation: q.explanation,
     userAnswer: answers[current] ?? null,
-    answered: answers[current] !== undefined,
+    answered: isCurrentSubmitted,
   } : null
 
   if (loadingMeta) {
@@ -357,12 +736,37 @@ export default function ExamPage() {
                   </div>
                 </div>
 
+                <div className="grid gap-3 md:grid-cols-2">
+                  <button
+                    type="button"
+                    onClick={() => setPracticeMode('study')}
+                    className={`rounded-lg border p-4 text-left transition-colors ${practiceMode === 'study' ? 'border-primary bg-primary/10' : 'hover:border-primary/50 hover:bg-accent'}`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <Sparkles className="h-5 w-5 text-primary" />
+                      <p className="font-semibold">Luyện đề học tập</p>
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground">Không giới hạn thời gian, có AI gợi ý, chốt từng câu để xem điểm và lời giải.</p>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPracticeMode('battle')}
+                    className={`rounded-lg border p-4 text-left transition-colors ${practiceMode === 'battle' ? 'border-primary bg-primary/10' : 'hover:border-primary/50 hover:bg-accent'}`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <Target className="h-5 w-5 text-red-500" />
+                      <p className="font-semibold">Luyện đề thực chiến</p>
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground">Có thời gian 90 phút, không hiện AI, chỉ chấm điểm sau khi nộp toàn bài.</p>
+                  </button>
+                </div>
+
                 {error && <p className="text-sm text-destructive">{error}</p>}
 
                 <div className="grid gap-3 md:grid-cols-4">
                   <div className="rounded-md border p-3">
-                    <p className="text-2xl font-bold">90</p>
-                    <p className="text-sm text-muted-foreground">phút luyện đề</p>
+                    <p className="text-2xl font-bold">{practiceMode === 'battle' ? '90' : '∞'}</p>
+                    <p className="text-sm text-muted-foreground">{practiceMode === 'battle' ? 'phút thực chiến' : 'thời gian học tập'}</p>
                   </div>
                   <div className="rounded-md border p-3">
                     <p className="text-2xl font-bold">{metadata.examSets.length}</p>
@@ -394,11 +798,14 @@ export default function ExamPage() {
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-3">
                 <Badge variant="outline">Câu {current + 1}/{questions.length}</Badge>
+                <Badge variant={isStudyMode ? 'secondary' : 'destructive'}>
+                  {isStudyMode ? 'Học tập' : 'Thực chiến'}
+                </Badge>
                 <Progress value={progress} className="h-2 w-36" />
                 <span className="text-sm text-muted-foreground">{answeredIndexes.size} đã trả lời</span>
               </div>
               <div className="flex items-center gap-3">
-                <Timer totalSeconds={DURATION} onExpire={handleAutoExpire} />
+                {!isStudyMode && <Timer totalSeconds={DURATION} onExpire={handleAutoExpire} />}
                 <Button variant="destructive" size="sm" onClick={submitExam}>Nộp bài</Button>
               </div>
             </div>
@@ -407,13 +814,51 @@ export default function ExamPage() {
               <div className="space-y-4">
                 <Card>
                   <CardHeader className="space-y-3">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <Badge>{sectionTitle(q.section_code)}</Badge>
-                      <Badge variant="outline">Câu {q.question_number}</Badge>
-                      <Badge variant="secondary">{q.max_score} điểm</Badge>
-                      {q.topic && <Badge variant="outline">{q.topic}</Badge>}
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge>{sectionTitle(q.section_code)}</Badge>
+                        <Badge variant="outline">Câu {q.question_number}</Badge>
+                        <Badge variant="secondary">{q.max_score} điểm</Badge>
+                        {q.topic && <Badge variant="outline">{q.topic}</Badge>}
+                      </div>
+                      <div className="flex shrink-0 items-center gap-1">
+                        <Button
+                          type="button"
+                          variant={currentSaved ? 'default' : 'ghost'}
+                          size="icon"
+                          className="h-8 w-8"
+                          onClick={toggleSavedQuestion}
+                          disabled={savingQuestion}
+                          title={currentSaved ? 'Bỏ lưu câu ôn tập' : 'Lưu câu cần ôn tập'}
+                        >
+                          {savingQuestion ? <Loader2 className="h-4 w-4 animate-spin" /> : <Bookmark className="h-4 w-4" />}
+                        </Button>
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="icon"
+                          className="h-8 w-8 text-muted-foreground hover:text-destructive"
+                          onClick={() => setReportOpen(true)}
+                          title="Báo cáo vấn đề câu hỏi"
+                        >
+                          <Flag className="h-4 w-4" />
+                        </Button>
+                      </div>
                     </div>
-                    <CardTitle className="text-base leading-relaxed">
+                    <CardTitle className="relative text-base leading-relaxed">
+                      <AnimatePresence>
+                        {scorePopup && (
+                          <motion.div
+                            key={scorePopup.key}
+                            initial={{ opacity: 0, y: -8, scale: 0.96 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            className="absolute right-0 -top-10 rounded-full border bg-background px-3 py-1 text-sm font-semibold shadow-md"
+                          >
+                            +{scorePopup.score.toFixed(2)}/{scorePopup.maxScore} điểm
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                       <LatexText text={q.question_text} />
                     </CardTitle>
                   </CardHeader>
@@ -433,8 +878,11 @@ export default function ExamPage() {
                             <button
                               key={label}
                               type="button"
-                              onClick={() => setAnswers((prev) => ({ ...prev, [current]: label }))}
-                              className={`flex items-start gap-3 rounded-md border p-3 text-left text-sm transition-colors ${selected ? 'border-primary bg-primary/10 text-primary' : 'hover:border-primary/50 hover:bg-accent'}`}
+                              onClick={() => {
+                                if (isStudyMode && isCurrentSubmitted) return
+                                setAnswers((prev) => ({ ...prev, [current]: label }))
+                              }}
+                              className={`flex items-start gap-3 rounded-md border p-3 text-left text-sm transition-colors ${(isStudyMode && isCurrentSubmitted) ? 'cursor-default' : ''} ${selected ? 'border-primary bg-primary/10 text-primary' : 'hover:border-primary/50 hover:bg-accent'}`}
                             >
                               <span className="font-bold">{label}.</span>
                               <LatexText text={text} className="flex-1" />
@@ -448,6 +896,7 @@ export default function ExamPage() {
                       <input
                         value={answers[current] ?? ''}
                         onChange={(event) => setAnswers((prev) => ({ ...prev, [current]: event.target.value }))}
+                        disabled={isStudyMode && isCurrentSubmitted}
                         placeholder="Nhập đáp số"
                         className="h-10 w-full rounded-md border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
                       />
@@ -469,6 +918,7 @@ export default function ExamPage() {
                                     key={String(value)}
                                     type="button"
                                     variant={currentAnswer[statement.label] === value ? 'default' : 'outline'}
+                                    disabled={isStudyMode && isCurrentSubmitted}
                                     onClick={() => setAnswers((prev) => {
                                       const parsed = parseTfAnswer(prev[current])
                                       return { ...prev, [current]: JSON.stringify({ ...parsed, [statement.label]: value }) }
@@ -483,16 +933,36 @@ export default function ExamPage() {
                         })}
                       </div>
                     )}
+
+                    {isStudyMode && isCurrentSubmitted && (
+                      <div className="rounded-lg border bg-muted/30 p-4 text-sm">
+                        <div className="mb-3 flex flex-wrap items-center gap-2">
+                          <Badge className={currentScore >= q.max_score ? 'bg-green-600' : currentScore > 0 ? 'bg-yellow-600' : 'bg-red-600'}>
+                            {currentScore.toFixed(2)}/{q.max_score} điểm
+                          </Badge>
+                          <span className="text-muted-foreground">Đáp án: <strong>{answerLabel(q)}</strong></span>
+                        </div>
+                        <SolutionDetails question={q} />
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
 
-                <div className="flex justify-between">
-                  <Button variant="outline" disabled={current === 0} onClick={() => setCurrent((value) => value - 1)}>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <Button variant="outline" disabled={current === 0} onClick={() => goToQuestion(current - 1)}>
                     <ChevronLeft className="mr-1 h-4 w-4" /> Câu trước
                   </Button>
-                  <Button disabled={current === questions.length - 1} onClick={() => setCurrent((value) => value + 1)}>
-                    Câu sau <ChevronRight className="ml-1 h-4 w-4" />
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button
+                      disabled={isStudyMode && !isCurrentSubmitted && !hasCurrentAnswer}
+                      onClick={handleNextQuestion}
+                    >
+                      {current === questions.length - 1
+                        ? isStudyMode && !isCurrentSubmitted ? 'Chấm câu' : 'Xem kết quả'
+                        : 'Câu sau'}
+                      {current < questions.length - 1 && <ChevronRight className="ml-1 h-4 w-4" />}
+                    </Button>
+                  </div>
                 </div>
               </div>
 
@@ -502,23 +972,20 @@ export default function ExamPage() {
                     <CardTitle className="text-sm">Danh sách câu hỏi</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <QuestionGrid total={questions.length} current={current} answered={answeredIndexes} onSelect={setCurrent} />
-                    <div className="mt-4 space-y-2">
-                      {partStats.map(([name, stat]) => (
-                        <div key={name} className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>{name}</span>
-                          <span>{stat.answered}/{stat.total} - {stat.score.toFixed(2)}đ</span>
-                        </div>
-                      ))}
-                    </div>
+                    <QuestionGrid total={questions.length} current={current} answered={answeredIndexes} onSelect={goToQuestion} />
+                    <p className="mt-4 text-xs text-muted-foreground">Điểm và thống kê từng phần chỉ hiển thị sau khi nộp bài.</p>
                   </CardContent>
                 </Card>
 
-                {tutorContext && (
+                {isStudyMode && tutorContext && (
                   <QuestionTutorAgent
                     mode="exam"
                     contextKey={q.exam_question_id}
                     context={tutorContext}
+                    messages={tutorChats[q.exam_question_id] ?? []}
+                    onMessagesChange={(nextMessages) => {
+                      setTutorChats((prev) => ({ ...prev, [q.exam_question_id]: nextMessages }))
+                    }}
                     title="AI gợi ý câu hiện tại"
                     compact
                   />
@@ -684,14 +1151,11 @@ export default function ExamPage() {
                             <p>Bạn chọn: <strong>{userAnswerLabel(question, userAnswer)}</strong></p>
                             <p>Đáp án: <strong>{answerLabel(question)}</strong></p>
                           </div>
-                          <div className="border-t pt-3">
-                            <p className="mb-2 font-medium">Lời giải chi tiết</p>
-                            {question.explanation ? (
-                              <LatexText text={question.explanation} className="leading-relaxed" />
-                            ) : (
-                              <p className="text-muted-foreground">Chưa có lời giải chi tiết cho câu này.</p>
-                            )}
-                          </div>
+                          {!hasStatementExplanations(question) && (
+                            <div className="border-t pt-3">
+                              <SolutionDetails question={question} statementExplanationsAlreadyShown={question.question_type === 'true_false'} />
+                            </div>
+                          )}
                         </div>
                       </CardContent>
                     </Card>
@@ -742,6 +1206,44 @@ export default function ExamPage() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Dialog open={reportOpen} onOpenChange={setReportOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Báo cáo vấn đề câu hỏi</DialogTitle>
+            <DialogDescription>Admin sẽ dùng báo cáo này để rà lại đáp án, hình ảnh hoặc lời giải.</DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <p className="text-sm font-medium">Loại vấn đề</p>
+              <Select value={reportType} onValueChange={setReportType}>
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  {REPORT_TYPES.map((type) => (
+                    <SelectItem key={type.value} value={type.value}>{type.label}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="space-y-2">
+              <p className="text-sm font-medium">Mô tả ngắn</p>
+              <Textarea
+                value={reportDescription}
+                onChange={(event) => setReportDescription(event.target.value)}
+                placeholder="Ví dụ: đáp án đúng phải là B, hình bị thiếu trục tọa độ..."
+                className="min-h-28"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setReportOpen(false)} disabled={reporting}>Hủy</Button>
+            <Button onClick={submitReport} disabled={reporting || !reportDescription.trim()}>
+              {reporting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              Gửi báo cáo
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       <Dialog open={showAutoSubmitModal} onOpenChange={setShowAutoSubmitModal}>
         <DialogContent className="text-center">

@@ -2,8 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
+import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
+const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 const DIFFICULTIES = ['Nhận biết', 'Thông hiểu', 'Vận dụng', 'Vận dụng cao']
 
 function parseLimit(value: string | null): number {
@@ -35,9 +36,10 @@ export async function GET(req: NextRequest) {
 
     if (error) return NextResponse.json({ error: 'Failed to load practice filters' }, { status: 500 })
 
-    const topics = Array.from(new Set((data ?? []).map((q) => q.topic).filter(Boolean))).sort()
-    const subtopics = Array.from(new Set((data ?? []).map((q) => q.subtopic).filter(Boolean))).sort()
-    const difficulties = DIFFICULTIES.filter((d) => (data ?? []).some((q) => q.difficulty === d))
+    const readyData = (data ?? []).filter((question) => isQuestionStudentReady(question))
+    const topics = Array.from(new Set(readyData.map((q) => q.topic).filter(Boolean))).sort()
+    const subtopics = Array.from(new Set(readyData.map((q) => q.subtopic).filter(Boolean))).sort()
+    const difficulties = DIFFICULTIES.filter((d) => readyData.some((q) => q.difficulty === d))
 
     return NextResponse.json({
       topics,
@@ -59,7 +61,7 @@ export async function GET(req: NextRequest) {
     .eq('is_published', true)
     .or('needs_visual.eq.false,visual_image_url.not.is.null')
     .neq('answer_source', 'AI_generated')
-    .limit(Math.max(limit * 3, 30))
+    .limit(Math.max(limit * 6, 60))
 
   if (topic) query = query.ilike('topic', `%${topic}%`)
   if (subtopic) query = query.ilike('subtopic', `%${subtopic}%`)
@@ -68,9 +70,11 @@ export async function GET(req: NextRequest) {
   const { data, error } = await query
   if (error) return NextResponse.json({ error: 'Failed to load questions' }, { status: 500 })
 
+  const readyQuestions = (data ?? []).filter((question) => isQuestionStudentReady(question))
+
   return NextResponse.json({
-    questions: shuffle(data ?? []).slice(0, limit),
+    questions: shuffle(readyQuestions).slice(0, limit),
     requested: limit,
-    available: data?.length ?? 0,
+    available: readyQuestions.length,
   })
 }

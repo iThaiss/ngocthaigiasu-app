@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { HelpCircle, Users, TrendingUp, AlertCircle, FileCheck, Loader2, ImageOff } from 'lucide-react'
+import { HelpCircle, Users, TrendingUp, AlertCircle, FileCheck, Loader2, ImageOff, Bot, MessageSquareWarning, BookmarkCheck } from 'lucide-react'
 import { formatCurrency, formatDate } from '@/lib/utils'
 import Link from 'next/link'
 
@@ -13,6 +13,9 @@ interface Stats {
   noAnswerQuestions: number
   docsCompleted: number
   needsVisualCount: number
+  aiReviewCount: number
+  openReportsCount: number
+  savedQuestionsCount: number
   monthlyRevenue: number
   recentDocs: {
     id: string
@@ -117,6 +120,9 @@ export default function AdminDashboard() {
     { label: 'Câu thiếu đáp án', value: stats?.noAnswerQuestions ?? 0, icon: AlertCircle, color: 'text-red-400' },
     { label: 'Tài liệu đã xử lý', value: stats?.docsCompleted ?? 0, icon: FileCheck, color: 'text-purple-400' },
     { label: 'Câu cần hình', value: stats?.needsVisualCount ?? 0, icon: ImageOff, color: 'text-orange-400', href: '/admin/visual-review' },
+    { label: 'AI chờ duyệt', value: stats?.aiReviewCount ?? 0, icon: Bot, color: 'text-purple-300', href: '/admin/ai-review' },
+    { label: 'Báo lỗi mở', value: stats?.openReportsCount ?? 0, icon: MessageSquareWarning, color: 'text-red-300', href: '/admin/question-reports' },
+    { label: 'Câu HS lưu', value: stats?.savedQuestionsCount ?? 0, icon: BookmarkCheck, color: 'text-emerald-300', href: '/admin/saved-questions' },
   ]
 
   return (

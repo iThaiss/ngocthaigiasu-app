@@ -2,14 +2,24 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
+import { isQuestionStudentReady } from '@/lib/question-readiness'
 
 type StandardQuestionRow = Record<string, unknown>
 type StandardExamQuestionRow = Record<string, unknown> & { questions?: StandardQuestionRow | null }
+
+function isReadyExamSet(examSet: Record<string, unknown> | null | undefined) {
+  const audit = examSet?.audit_json
+  const auditStatus = audit && typeof audit === 'object' && !Array.isArray(audit)
+    ? (audit as Record<string, unknown>).status
+    : null
+  return examSet?.status === 'ready' && (!auditStatus || auditStatus === 'ready')
+}
 
 function normalizeQuestion(row: StandardExamQuestionRow) {
   const q = row.questions ?? {}
   const raw = q.raw_text && typeof q.raw_text === 'object' ? q.raw_text as Record<string, unknown> : {}
   const statements = Array.isArray(q.statements) ? q.statements : Array.isArray(raw.statements) ? raw.statements : null
+  const solutionSteps = Array.isArray(raw.solution_steps) ? raw.solution_steps : null
 
   return {
     id: q.id,
@@ -37,6 +47,8 @@ function normalizeQuestion(row: StandardExamQuestionRow) {
     statements,
     numeric_answer: q.numeric_answer,
     explanation: q.explanation,
+    solution_steps: solutionSteps,
+    solution_style_version: typeof raw.solution_style_version === 'string' ? raw.solution_style_version : null,
     needs_visual: q.needs_visual,
     image_url: q.image_url,
   }
@@ -62,7 +74,8 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Failed to load standard exams' }, { status: 500 })
     }
 
-    const defaultExamId = examSets?.[0]?.id ?? null
+    const readyExamSets = (examSets ?? []).filter((examSet) => isReadyExamSet(examSet as Record<string, unknown>))
+    const defaultExamId = readyExamSets?.[0]?.id ?? null
     const { data: sections } = defaultExamId
       ? await db
         .from('exam_sections')
@@ -72,7 +85,7 @@ export async function GET(req: NextRequest) {
       : { data: [] }
 
     return NextResponse.json({
-      examSets: examSets ?? [],
+      examSets: readyExamSets,
       defaultExamId,
       sections: sections ?? [],
     })
@@ -85,13 +98,13 @@ export async function GET(req: NextRequest) {
 
   let selectedExamSetId = examSetId
   if (!selectedExamSetId) {
-    const { data: firstReady } = await db
+    const { data: firstReadySets } = await db
       .from('exam_sets')
-      .select('id')
+      .select('id, status, audit_json')
       .eq('status', 'ready')
       .order('created_at', { ascending: false })
-      .limit(1)
-      .single()
+      .limit(10)
+    const firstReady = firstReadySets?.find((examSet) => isReadyExamSet(examSet as Record<string, unknown>))
     selectedExamSetId = firstReady?.id
   }
 
@@ -110,7 +123,7 @@ export async function GET(req: NextRequest) {
       .order('section_order', { ascending: true }),
   ])
 
-  if (setError || sectionsError || !examSet) {
+  if (setError || sectionsError || !examSet || !isReadyExamSet(examSet as Record<string, unknown>)) {
     console.error('[exam] set/sections error:', setError ?? sectionsError)
     return NextResponse.json({ error: 'Không tải được đề chuẩn.' }, { status: 500 })
   }
@@ -129,9 +142,17 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Không tải được câu hỏi đề chuẩn.' }, { status: 500 })
   }
 
+  const readyQuestions = (data ?? [])
+    .filter((row) => isQuestionStudentReady((row as unknown as StandardExamQuestionRow).questions))
+    .map((row) => normalizeQuestion(row as unknown as StandardExamQuestionRow))
+
+  if (!readyQuestions.length) {
+    return NextResponse.json({ error: 'Đề này chưa có câu hỏi đủ hình và đáp án để luyện.' }, { status: 404 })
+  }
+
   return NextResponse.json({
     examSet,
     sections: sections ?? [],
-    questions: (data ?? []).map((row) => normalizeQuestion(row as unknown as StandardExamQuestionRow)),
+    questions: readyQuestions,
   })
 }

@@ -2,8 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
+import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
+const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 
 function pick<T>(arr: T[]): T {
@@ -35,7 +36,7 @@ export async function GET(req: NextRequest) {
       .eq('difficulty', difficulty)
       .or('needs_visual.eq.false,visual_image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
-      .limit(20)
+      .limit(40)
     if (excludeIds.length > 0) {
       q = q.not('id', 'in', `(${excludeIds.join(',')})`)
     }
@@ -45,13 +46,15 @@ export async function GET(req: NextRequest) {
   if (subtopic) {
     const query = buildQuery('subtopic', subtopic)
     const { data } = query ? await query : { data: null }
-    if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
+    const ready = (data ?? []).filter((question) => isQuestionStudentReady(question))
+    if (ready.length > 0) return NextResponse.json({ question: pick(ready) })
   }
 
   if (topic) {
     const query = buildQuery('topic', topic)
     const { data } = query ? await query : { data: null }
-    if (data && data.length > 0) return NextResponse.json({ question: pick(data) })
+    const ready = (data ?? []).filter((question) => isQuestionStudentReady(question))
+    if (ready.length > 0) return NextResponse.json({ question: pick(ready) })
   }
 
   return NextResponse.json({ done: true, message: 'Hết câu cùng dạng' })

@@ -16,6 +16,9 @@ export async function GET() {
     { count: noAnswerQuestions },
     { count: docsCompleted },
     { count: needsVisualCount },
+    { count: aiReviewCount },
+    { count: openReportsCount },
+    { count: savedQuestionsCount },
     { data: revenueData },
     { data: recentDocs },
     { data: byGrade },
@@ -30,6 +33,10 @@ export async function GET() {
       .eq('question_type', 'multiple_choice').is('correct_answer', null),
     supabase.from('raw_documents').select('*', { count: 'exact', head: true }).eq('status', 'completed'),
     supabase.from('questions').select('*', { count: 'exact', head: true }).eq('needs_visual', true),
+    supabase.from('questions').select('*', { count: 'exact', head: true })
+      .eq('answer_source', 'AI_generated').eq('needs_review', true),
+    supabase.from('question_reports').select('*', { count: 'exact', head: true }).eq('status', 'open'),
+    supabase.from('saved_questions').select('*', { count: 'exact', head: true }),
     supabase.from('transactions').select('amount').eq('status', 'completed').gte('created_at', monthStart),
     supabase.from('raw_documents').select('id, filename, source, total_pages, status, created_at')
       .order('created_at', { ascending: false }).limit(10),
@@ -92,6 +99,9 @@ export async function GET() {
     noAnswerQuestions: noAnswerQuestions ?? 0,
     docsCompleted: docsCompleted ?? 0,
     needsVisualCount: needsVisualCount ?? 0,
+    aiReviewCount: aiReviewCount ?? 0,
+    openReportsCount: openReportsCount ?? 0,
+    savedQuestionsCount: savedQuestionsCount ?? 0,
     monthlyRevenue,
     recentDocs: recentDocs ?? [],
     charts: {

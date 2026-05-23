@@ -39,6 +39,8 @@ interface QuestionTutorAgentProps {
   mode: TutorMode
   contextKey: string
   context: TutorQuestionContext
+  messages?: TutorMessage[]
+  onMessagesChange?: (messages: TutorMessage[]) => void
   title?: string
   compact?: boolean
   className?: string
@@ -46,7 +48,7 @@ interface QuestionTutorAgentProps {
 
 const QUICK_PROMPTS: Record<TutorMode, string[]> = {
   practice: ['Gợi ý bước đầu', 'Vì sao em sai?', 'Tóm tắt dạng bài'],
-  exam: ['Cho em một gợi ý', 'Loại đáp án nào trước?', 'Cách làm nhanh'],
+  exam: ['Lý thuyết cơ bản của câu này là gì?', 'Gợi ý câu này', 'Loại đáp án nào trước?'],
   solve: ['Giải thích bước khó nhất', 'Có cách khác không?', 'Em chưa hiểu đáp án'],
 }
 
@@ -54,18 +56,26 @@ export default function QuestionTutorAgent({
   mode,
   contextKey,
   context,
+  messages: controlledMessages,
+  onMessagesChange,
   title = 'AI hỏi đáp câu hiện tại',
   compact = false,
   className,
 }: QuestionTutorAgentProps) {
-  const [messages, setMessages] = useState<TutorMessage[]>([])
+  const [localMessages, setLocalMessages] = useState<TutorMessage[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
+  const messages = controlledMessages ?? localMessages
+  const setMessages = (next: TutorMessage[] | ((prev: TutorMessage[]) => TutorMessage[])) => {
+    const value = typeof next === 'function' ? next(messages) : next
+    if (controlledMessages === undefined) setLocalMessages(value)
+    onMessagesChange?.(value)
+  }
 
   useEffect(() => {
-    setMessages([])
+    setLocalMessages([])
     setInput('')
     setError(null)
   }, [contextKey])
@@ -116,7 +126,7 @@ export default function QuestionTutorAgent({
   }
 
   return (
-    <section className={cn('rounded-lg border bg-background', className)}>
+    <section className={cn('min-w-0 overflow-hidden rounded-lg border bg-background', className)}>
       <div className="flex items-center justify-between gap-3 border-b px-4 py-3">
         <div className="flex min-w-0 items-center gap-2">
           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
@@ -156,7 +166,7 @@ export default function QuestionTutorAgent({
                 : 'Hỏi bất kỳ điểm nào chưa rõ trong câu này, AI sẽ giải thích theo đúng dữ kiện đang hiển thị.'}
             </p>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="grid gap-2">
             {QUICK_PROMPTS[mode].map((prompt) => (
               <Button
                 key={prompt}
@@ -164,6 +174,7 @@ export default function QuestionTutorAgent({
                 variant="outline"
                 size="sm"
                 disabled={loading}
+                className="h-auto min-h-9 w-full justify-start whitespace-normal break-words px-3 py-2 text-left leading-snug"
                 onClick={() => sendMessage(prompt)}
               >
                 {prompt}
@@ -229,7 +240,7 @@ export default function QuestionTutorAgent({
       {error && <p className="px-4 pb-2 text-sm text-destructive">{error}</p>}
 
       <form onSubmit={handleSubmit} className="border-t p-3">
-        <div className="flex gap-2">
+        <div className="flex min-w-0 gap-2">
           <Textarea
             value={input}
             onChange={(event) => setInput(event.target.value)}
@@ -241,7 +252,7 @@ export default function QuestionTutorAgent({
             }}
             placeholder={placeholder}
             disabled={loading}
-            className="min-h-10 resize-none"
+            className="min-h-10 min-w-0 resize-none"
           />
           <Button type="submit" size="icon" disabled={loading || !input.trim()} className="h-10 w-10 shrink-0">
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}

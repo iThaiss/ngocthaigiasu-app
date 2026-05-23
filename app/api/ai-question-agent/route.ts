@@ -3,6 +3,8 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAiCompletion } from '@/lib/ai-router'
 
+export const preferredRegion = ['sin1', 'hnd1']
+
 type AgentMode = 'practice' | 'exam' | 'solve'
 
 interface ChatMessage {
@@ -50,8 +52,8 @@ function normalizeMessages(messages: unknown): ChatMessage[] {
 function buildModeInstruction(mode: AgentMode, context: QuestionContext): string {
   if (mode === 'exam') {
     return context.answered
-      ? 'Người học đã nộp/chọn đáp án cho câu này. Có thể giải thích đáp án, chỉ ra lỗi sai và đưa cách làm nhanh.'
-      : 'Đây là chế độ luyện đề đang tính giờ. Ưu tiên gợi ý từng bước, hỏi ngược nhẹ để người học tự làm. Không tiết lộ đáp án cuối cùng trừ khi người học yêu cầu trực tiếp.'
+      ? 'Người học đã submit câu này trong chế độ học tập. Có thể giải thích ngắn gọn vì sao hướng làm đúng/sai, nhưng vẫn không lan man.'
+      : 'Đây là chế độ luyện đề học tập. Chỉ đưa gợi ý, lý thuyết nền hoặc cách loại trừ. Tuyệt đối không tiết lộ đáp án cuối cùng, không giải trọn bài, kể cả khi người học hỏi trực tiếp.'
   }
 
   if (mode === 'solve') {
@@ -80,6 +82,11 @@ function stringifyContext(context: QuestionContext): string {
     userAnswer: trimText(context.userAnswer, 500) || null,
     answered: Boolean(context.answered),
   })
+}
+
+function getTutorMaxTokens() {
+  const value = Number(process.env.AI_TUTOR_MAX_TOKENS ?? 350)
+  return Number.isFinite(value) ? Math.min(500, Math.max(150, Math.floor(value))) : 350
 }
 
 export async function POST(req: NextRequest) {
@@ -111,13 +118,14 @@ export async function POST(req: NextRequest) {
   try {
     const response = await createAiCompletion({
       model: process.env.AI_TUTOR_MODEL ?? 'claude-haiku-4-5',
-      maxTokens: 1000,
-      temperature: 0.35,
+      maxTokens: getTutorMaxTokens(),
+      temperature: 0.25,
       system: `Bạn là AI agent gia sư Toán cho học sinh Việt Nam.
-Trả lời bằng tiếng Việt, thân thiện, ngắn gọn nhưng đủ ý.
+Trả lời bằng tiếng Việt, thân thiện, cực ngắn gọn: tối đa 4 ý chính.
 Luôn bám sát "câu hiện tại" trong CONTEXT, không tự bịa đề khác.
 Khi có LaTeX, dùng cú pháp $...$ hoặc $$...$$.
 Nếu dữ kiện trong câu chưa đủ, nói rõ cần thêm thông tin nào.
+Nếu câu hỏi đang ở chế độ luyện đề học tập và chưa submit, chỉ gợi ý để học sinh tự làm; không nêu đáp án, không viết lời giải hoàn chỉnh.
 ${buildModeInstruction(mode, context)}
 
 CONTEXT:
