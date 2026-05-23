@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import katex from 'katex'
 import 'katex/dist/katex.min.css'
 import {
-  ArrowLeft, CheckCircle2, ChevronRight, Loader2, RotateCcw, Target, XCircle,
+  ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Layers, Loader2, RotateCcw, SlidersHorizontal, Target, XCircle,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -36,6 +36,7 @@ interface PracticeQuestion {
 interface PracticeMetadata {
   topics: string[]
   subtopics: string[]
+  subtopicsByTopic: Record<string, string[]>
   difficulties: string[]
 }
 
@@ -112,7 +113,7 @@ function normalizeNumber(value: string): number {
 }
 
 export default function PracticePage() {
-  const [metadata, setMetadata] = useState<PracticeMetadata>({ topics: [], subtopics: [], difficulties: [] })
+  const [metadata, setMetadata] = useState<PracticeMetadata>({ topics: [], subtopics: [], subtopicsByTopic: {}, difficulties: [] })
   const [topic, setTopic] = useState(ALL)
   const [subtopic, setSubtopic] = useState(ALL)
   const [difficulty, setDifficulty] = useState(ALL)
@@ -145,6 +146,7 @@ export default function PracticePage() {
         if (mounted) setMetadata({
           topics: data.topics ?? [],
           subtopics: data.subtopics ?? [],
+          subtopicsByTopic: data.subtopicsByTopic ?? {},
           difficulties: data.difficulties ?? [],
         })
       })
@@ -296,6 +298,18 @@ export default function PracticePage() {
     answered,
   } : null
 
+  const availableSubtopics = topic === ALL
+    ? metadata.subtopics
+    : metadata.subtopicsByTopic[topic] ?? []
+  const selectedTopicLabel = topic === ALL ? 'Toàn bộ chủ đề' : topic
+  const selectedSubtopicLabel = subtopic === ALL ? 'Mọi dạng bài' : subtopic
+  const selectedDifficultyLabel = difficulty === ALL ? 'Mọi độ khó' : difficulty
+
+  const handleTopicChange = (value: string) => {
+    setTopic(value)
+    setSubtopic(ALL)
+  }
+
   if (loading) {
     return (
       <div className="flex h-64 items-center justify-center">
@@ -353,66 +367,113 @@ export default function PracticePage() {
 
   if (!current) {
     return (
-      <div className="mx-auto max-w-5xl space-y-6">
-        <div>
-          <h1 className="text-2xl font-bold">Luyện tập thông minh</h1>
-          <p className="mt-1 text-sm text-muted-foreground">Chọn phạm vi câu hỏi, làm một phiên ngắn, rồi xem phần cần ôn lại.</p>
+      <div className="mx-auto max-w-6xl space-y-6">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <Target className="h-5 w-5" />
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold">Luyện tập thông minh</h1>
+                <p className="mt-1 text-sm text-muted-foreground">Chọn đúng phạm vi, luyện một phiên ngắn, rồi xem phần cần ôn lại.</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-2 rounded-xl border bg-muted/30 p-2 text-center text-xs">
+            <div className="rounded-lg bg-background px-3 py-2">
+              <p className="font-semibold">{metadata.topics.length}</p>
+              <p className="text-muted-foreground">chủ đề</p>
+            </div>
+            <div className="rounded-lg bg-background px-3 py-2">
+              <p className="font-semibold">{availableSubtopics.length}</p>
+              <p className="text-muted-foreground">dạng bài</p>
+            </div>
+            <div className="rounded-lg bg-background px-3 py-2">
+              <p className="font-semibold">{limit}</p>
+              <p className="text-muted-foreground">câu</p>
+            </div>
+          </div>
         </div>
 
-        <Card>
-          <CardHeader>
+        <Card className="overflow-hidden border-primary/20 shadow-sm">
+          <CardHeader className="border-b bg-gradient-to-r from-primary/10 via-background to-emerald-500/10">
             <CardTitle className="flex items-center gap-2 text-base">
-              <Target className="h-4 w-4" /> Thiết lập phiên luyện
+              <SlidersHorizontal className="h-4 w-4 text-primary" /> Thiết lập phiên luyện
             </CardTitle>
+            <div className="flex flex-wrap gap-2 pt-2">
+              <Badge variant="secondary" className="gap-1"><BookOpen className="h-3 w-3" /> {selectedTopicLabel}</Badge>
+              <Badge variant="secondary" className="gap-1"><Layers className="h-3 w-3" /> {selectedSubtopicLabel}</Badge>
+              <Badge variant="outline">{selectedDifficultyLabel}</Badge>
+            </div>
           </CardHeader>
-          <CardContent className="grid gap-4 md:grid-cols-2">
-            <div className="space-y-2">
-              <p className="text-sm font-medium">Chủ đề</p>
-              <Select value={topic} onValueChange={setTopic}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
+          <CardContent className="grid gap-6 p-5 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="space-y-5">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-sm font-semibold">Chủ đề</p>
+                  <span className="text-xs text-muted-foreground">Chọn trước để lọc dạng bài</span>
+                </div>
+                <Select value={topic} onValueChange={handleTopicChange}>
+                  <SelectTrigger className="h-12 rounded-lg border-primary/20 bg-background text-base"><SelectValue placeholder="Chọn chủ đề" /></SelectTrigger>
+                  <SelectContent className="max-h-80">
                   <SelectItem value={ALL}>Tất cả chủ đề</SelectItem>
                   {metadata.topics.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                </SelectContent>
-              </Select>
-            </div>
+                  </SelectContent>
+                </Select>
+              </div>
 
-            <div className="space-y-2">
-              <p className="text-sm font-medium">Dạng bài</p>
-              <Select value={subtopic} onValueChange={setSubtopic}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-sm font-semibold">Dạng bài</p>
+                  <span className="text-xs text-muted-foreground">
+                    {topic === ALL ? 'Đang hiện tất cả dạng bài' : `${availableSubtopics.length} dạng thuộc chủ đề đã chọn`}
+                  </span>
+                </div>
+                <Select value={subtopic} onValueChange={setSubtopic} disabled={topic !== ALL && availableSubtopics.length === 0}>
+                  <SelectTrigger className="h-12 rounded-lg border-emerald-500/20 bg-background text-base"><SelectValue placeholder="Chọn dạng bài" /></SelectTrigger>
+                  <SelectContent className="max-h-80">
                   <SelectItem value={ALL}>Tất cả dạng bài</SelectItem>
-                  {metadata.subtopics.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                </SelectContent>
-              </Select>
+                  {availableSubtopics.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <p className="text-sm font-medium">Độ khó</p>
-              <Select value={difficulty} onValueChange={setDifficulty}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
-                  <SelectItem value={ALL}>Tất cả độ khó</SelectItem>
-                  {metadata.difficulties.map((item) => <SelectItem key={item} value={item}>{item}</SelectItem>)}
-                </SelectContent>
-              </Select>
+            <div className="space-y-5 rounded-xl border bg-muted/20 p-4">
+              <div className="space-y-2">
+                <p className="text-sm font-semibold">Độ khó</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <button type="button" onClick={() => setDifficulty(ALL)} className={cn('rounded-lg border px-3 py-2 text-left text-sm transition-colors', difficulty === ALL ? 'border-primary bg-primary/10 text-primary' : 'bg-background hover:bg-accent')}>Tất cả</button>
+                  {metadata.difficulties.map((item) => (
+                    <button key={item} type="button" onClick={() => setDifficulty(item)} className={cn('rounded-lg border px-3 py-2 text-left text-sm transition-colors', difficulty === item ? 'border-primary bg-primary/10 text-primary' : 'bg-background hover:bg-accent')}>
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-sm font-semibold">Số câu</p>
+                <div className="grid grid-cols-4 gap-2">
+                  {SESSION_SIZES.map((size) => (
+                    <button key={size} type="button" onClick={() => setLimit(String(size))} className={cn('rounded-lg border px-2 py-2 text-sm font-medium transition-colors', limit === String(size) ? 'border-primary bg-primary text-primary-foreground' : 'bg-background hover:bg-accent')}>
+                      {size}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-dashed bg-background p-3 text-xs text-muted-foreground">
+                Phiên luyện sẽ lấy câu đã publish, có đáp án đầy đủ và không dùng câu AI chưa duyệt.
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <p className="text-sm font-medium">Số câu</p>
-              <Select value={limit} onValueChange={setLimit}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
-                <SelectContent>
-                  {SESSION_SIZES.map((size) => <SelectItem key={size} value={String(size)}>{size} câu</SelectItem>)}
-                </SelectContent>
-              </Select>
-            </div>
+            {error && <p className="lg:col-span-2 rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2 text-sm text-destructive">{error}</p>}
 
-            {error && <p className="md:col-span-2 text-sm text-destructive">{error}</p>}
-
-            <div className="md:col-span-2 flex justify-end">
-              <Button onClick={startSession} disabled={starting} className="gap-2">
+            <div className="lg:col-span-2 flex flex-wrap items-center justify-between gap-3 border-t pt-4">
+              <p className="text-sm text-muted-foreground">Sẵn sàng luyện: <span className="font-medium text-foreground">{selectedTopicLabel}</span> · <span className="font-medium text-foreground">{selectedSubtopicLabel}</span></p>
+              <Button onClick={startSession} disabled={starting} size="lg" className="gap-2 px-6">
                 {starting && <Loader2 className="h-4 w-4 animate-spin" />}
                 Bắt đầu luyện
               </Button>

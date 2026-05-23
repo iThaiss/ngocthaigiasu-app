@@ -39,11 +39,22 @@ export async function GET(req: NextRequest) {
     const readyData = (data ?? []).filter((question) => isQuestionStudentReady(question))
     const topics = Array.from(new Set(readyData.map((q) => q.topic).filter(Boolean))).sort()
     const subtopics = Array.from(new Set(readyData.map((q) => q.subtopic).filter(Boolean))).sort()
+    const subtopicsByTopic = readyData.reduce<Record<string, string[]>>((acc, question) => {
+      if (!question.topic || !question.subtopic) return acc
+      acc[question.topic] = acc[question.topic] ?? []
+      if (!acc[question.topic].includes(question.subtopic)) acc[question.topic].push(question.subtopic)
+      return acc
+    }, {})
+
+    for (const topic of Object.keys(subtopicsByTopic)) {
+      subtopicsByTopic[topic].sort()
+    }
     const difficulties = DIFFICULTIES.filter((d) => readyData.some((q) => q.difficulty === d))
 
     return NextResponse.json({
       topics,
       subtopics,
+      subtopicsByTopic,
       difficulties: difficulties.length ? difficulties : DIFFICULTIES,
     })
   }
