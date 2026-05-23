@@ -4,7 +4,7 @@ import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
+const FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 
 function pick<T>(arr: T[]): T {
@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
       .eq('is_published', true)
       .ilike(field, `%${normalizedValue}%`)
       .eq('difficulty', difficulty)
-      .or('needs_visual.eq.false,visual_image_url.not.is.null')
+      .or('needs_visual.is.null,needs_visual.eq.false,visual_image_url.not.is.null,image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
       .limit(40)
     if (excludeIds.length > 0) {

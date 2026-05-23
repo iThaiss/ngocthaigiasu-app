@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
     const { data: questions, error: questionsError } = await supabase
       .schema('standard_exam')
       .from('questions')
-      .select('id, question_type, question_text, option_a, option_b, option_c, option_d, correct_answer, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, topic, subtopic, canonical_topic_title, canonical_subtopic_title, difficulty, needs_visual, image_url, visual_image_url')
+      .select('id, question_type, question_text, option_a, option_b, option_c, option_d, correct_answer, statements, numeric_answer, explanation, topic, subtopic, canonical_topic_title, canonical_subtopic_title, difficulty, needs_visual, image_url, visual_image_url')
       .in('id', ids)
 
     if (questionsError) {

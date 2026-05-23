@@ -342,7 +342,7 @@ export async function POST(req: NextRequest) {
   console.log('=== STEP 5: Find related questions ===')
   console.log('[solve] topic:', solution.topic, '| subtopic:', solution.subtopic)
 
-  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
+  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 
   let relatedQuestions: unknown[] = []
   try {
@@ -352,7 +352,7 @@ export async function POST(req: NextRequest) {
       .select(QUESTION_FIELDS)
       .eq('is_published', true)
       .ilike('subtopic', `%${solution.subtopic}%`)
-      .or('needs_visual.eq.false,visual_image_url.not.is.null')
+      .or('needs_visual.is.null,needs_visual.eq.false,visual_image_url.not.is.null,image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
       .order('difficulty', { ascending: true })
       .limit(20)
@@ -367,7 +367,7 @@ export async function POST(req: NextRequest) {
         .select(QUESTION_FIELDS)
         .eq('is_published', true)
         .ilike('topic', `%${solution.topic}%`)
-        .or('needs_visual.eq.false,visual_image_url.not.is.null')
+        .or('needs_visual.is.null,needs_visual.eq.false,visual_image_url.not.is.null,image_url.not.is.null')
         .neq('answer_source', 'AI_generated')
         .order('difficulty', { ascending: true })
         .limit(20)

@@ -4,7 +4,7 @@ import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
+const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 const DIFFICULTIES = ['Nhận biết', 'Thông hiểu', 'Vận dụng', 'Vận dụng cao']
 
 function parseLimit(value: string | null): number {
@@ -28,15 +28,15 @@ export async function GET(req: NextRequest) {
   if (mode === 'metadata') {
     const { data, error } = await supabase
       .from('questions')
-      .select('topic, subtopic, difficulty')
+      .select('topic, subtopic, difficulty, needs_visual, visual_image_url, image_url')
       .eq('is_published', true)
-      .or('needs_visual.eq.false,visual_image_url.not.is.null')
+      .or('needs_visual.is.null,needs_visual.eq.false,visual_image_url.not.is.null,image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
       .limit(1000)
 
     if (error) return NextResponse.json({ error: 'Failed to load practice filters' }, { status: 500 })
 
-    const readyData = (data ?? []).filter((question) => isQuestionStudentReady(question))
+    const readyData = (data ?? []).filter((question) => isQuestionStudentReady({ ...question, correct_answer: 'metadata-only' }))
     const topics = Array.from(new Set(readyData.map((q) => q.topic).filter(Boolean))).sort()
     const subtopics = Array.from(new Set(readyData.map((q) => q.subtopic).filter(Boolean))).sort()
     const subtopicsByTopic = readyData.reduce<Record<string, string[]>>((acc, question) => {
@@ -70,7 +70,7 @@ export async function GET(req: NextRequest) {
     .from('questions')
     .select(QUESTION_FIELDS)
     .eq('is_published', true)
-    .or('needs_visual.eq.false,visual_image_url.not.is.null')
+    .or('needs_visual.is.null,needs_visual.eq.false,visual_image_url.not.is.null,image_url.not.is.null')
     .neq('answer_source', 'AI_generated')
     .limit(Math.max(limit * 6, 60))
 

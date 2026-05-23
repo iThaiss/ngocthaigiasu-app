@@ -37,7 +37,7 @@ export async function POST() {
   const { data: questions, error: questionsError } = await supabase
     .schema('standard_exam')
     .from('questions')
-    .select('id, question_type, question_text, topic, subtopic, canonical_topic_title, canonical_subtopic_title, difficulty, correct_answer, numeric_answer, answer_a, answer_b, answer_c, answer_d, needs_visual, image_url, visual_image_url')
+    .select('id, question_type, question_text, topic, subtopic, canonical_topic_title, canonical_subtopic_title, difficulty, correct_answer, numeric_answer, needs_visual, image_url, visual_image_url')
     .in('id', questionIds)
 
   if (questionsError) {
