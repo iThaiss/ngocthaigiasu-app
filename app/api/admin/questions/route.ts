@@ -19,6 +19,10 @@ export async function GET(req: NextRequest) {
   const subtopic = searchParams.get('subtopic') ?? ''
   const part = searchParams.get('part') ?? ''
   const needsVisual = searchParams.get('needsVisual') ?? ''
+  const visualType = searchParams.get('visualType') ?? ''
+  const needsReview = searchParams.get('needsReview') ?? ''
+  const answerSource = searchParams.get('answerSource') ?? ''
+  const published = searchParams.get('published') ?? ''
 
   const supabase = createAdminClient()
   let query = supabase.from('questions').select('*', { count: 'exact' })
@@ -33,6 +37,12 @@ export async function GET(req: NextRequest) {
   if (part) query = query.eq('part', part)
   if (needsVisual === 'true') query = query.eq('needs_visual', true)
   if (needsVisual === 'false') query = query.eq('needs_visual', false)
+  if (visualType) query = query.eq('visual_type', visualType)
+  if (needsReview === 'true') query = query.eq('needs_review', true)
+  if (needsReview === 'false') query = query.eq('needs_review', false)
+  if (answerSource) query = query.eq('answer_source', answerSource)
+  if (published === 'true') query = query.eq('is_published', true)
+  if (published === 'false') query = query.eq('is_published', false)
 
   query = query.order('created_at', { ascending: false }).range(offset, offset + limit - 1)
 

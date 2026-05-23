@@ -2,13 +2,7 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-
-function getLimit(isVip: boolean, vipExpiresAt: string | null): number {
-  if (!isVip) return 3
-  const expiresAt = vipExpiresAt ? new Date(vipExpiresAt) : null
-  const daysLeft = expiresAt ? (expiresAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24) : 0
-  return daysLeft > 200 ? 50 : 20
-}
+import { getSolveLimit } from '@/lib/plans'
 
 export async function GET() {
   const session = await getServerSession(authOptions)
@@ -16,7 +10,7 @@ export async function GET() {
 
   const userId = session.user.id
   const today = new Date().toISOString().slice(0, 10)
-  const limit = getLimit(session.user.isVip, session.user.vipExpiresAt)
+  const limit = getSolveLimit(session.user.isVip, session.user.vipExpiresAt)
   const supabase = createAdminClient()
 
   const { data: dailyRow } = await supabase

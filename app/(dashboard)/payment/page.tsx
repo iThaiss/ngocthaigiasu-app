@@ -17,6 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { useToast } from '@/components/ui/use-toast'
 import { formatCurrency } from '@/lib/utils'
+import { VIP_PLANS } from '@/lib/plans'
 
 interface TopupInfo {
   txId: string
@@ -32,8 +33,8 @@ interface TopupInfo {
 const PLANS = [
   {
     id: 'monthly',
-    name: 'Gói Tháng',
-    points: 69,
+    name: VIP_PLANS.monthly.displayName,
+    points: VIP_PLANS.monthly.costPoints,
     period: '/ 30 ngày',
     features: [
       'Không giới hạn giải toán AI',
@@ -45,8 +46,8 @@ const PLANS = [
   },
   {
     id: 'yearly',
-    name: 'Gói Năm Học',
-    points: 699,
+    name: VIP_PLANS.yearly.displayName,
+    points: VIP_PLANS.yearly.costPoints,
     period: '/ 365 ngày',
     badge: 'Tiết kiệm nhất',
     features: [
@@ -458,7 +459,7 @@ export default function PaymentPage() {
             })}
           </div>
 
-          {!loadingPoints && (points ?? 0) < 69 && (
+          {!loadingPoints && (points ?? 0) < VIP_PLANS.monthly.costPoints && (
             <div className="flex items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm text-blue-700 dark:bg-blue-950/30 dark:border-blue-800 dark:text-blue-300">
               <Info className="h-4 w-4 shrink-0" />
               Chưa đủ điểm. Chuyển sang tab <strong className="mx-1">Nạp điểm</strong> để nạp thêm (1.000đ = 1 điểm).

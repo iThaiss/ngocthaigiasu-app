@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   LayoutDashboard, User, Brain, FileText, Bell, CreditCard,
-  Users, BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
-  Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap, Target,
+  BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
+  Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap, Target, BookmarkCheck,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -28,13 +28,14 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
   { href: '/practice', label: 'Luyện tập', icon: Target },
   { href: '/exam', label: 'Thi thử', icon: FileText },
-  { href: '/questions', label: 'Câu hỏi', icon: BookOpen, roles: ['teacher', 'admin'] },
-  { href: '/notifications', label: 'Thông báo', icon: Bell },
+  { href: '/saved-questions', label: 'Câu cần ôn', icon: BookmarkCheck },
   { href: '/payment', label: 'Nâng cấp VIP', icon: CreditCard },
-  { href: '/affiliate', label: 'Hoa hồng', icon: GitBranch },
   { href: '/documents', label: 'Tài liệu', icon: Library },
   { href: '/schedule', label: 'Lịch học', icon: CalendarDays },
   { href: '/chat', label: 'Chat cộng đồng', icon: MessageCircle },
+  { href: '/questions', label: 'Câu hỏi', icon: BookOpen, roles: ['teacher', 'admin'] },
+  { href: '/notifications', label: 'Thông báo', icon: Bell },
+  { href: '/affiliate', label: 'Hoa hồng', icon: GitBranch },
   { href: '/contact', label: 'Liên hệ', icon: Phone },
   { href: '/profile', label: 'Hồ sơ', icon: User },
 ]

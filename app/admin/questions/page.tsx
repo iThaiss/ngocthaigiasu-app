@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import {
-  Search, ChevronLeft, ChevronRight, Edit, Trash2, Loader2, CheckSquare, Square, ImageOff,
+  Search, ChevronLeft, ChevronRight, Edit, Trash2, Loader2, CheckSquare, Square, ImageOff, CheckCircle,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -39,6 +39,9 @@ interface Question {
   answer_d: boolean | null
   numeric_answer: number | null
   source: string | null
+  answer_source: string | null
+  needs_review: boolean
+  is_published: boolean
   needs_visual: boolean
   visual_description: string | null
   has_image: boolean
@@ -71,6 +74,8 @@ export default function AdminQuestionsPage() {
   const [sourceFilter, setSourceFilter] = useState('')
   const [noAnswer, setNoAnswer] = useState(false)
   const [needsVisualFilter, setNeedsVisualFilter] = useState('')
+  const [reviewFilter, setReviewFilter] = useState('')
+  const [publishedFilter, setPublishedFilter] = useState('')
 
   // Edit modal
   const [editQ, setEditQ] = useState<Question | null>(null)
@@ -102,6 +107,10 @@ export default function AdminQuestionsPage() {
         ...(sourceFilter && { source: sourceFilter }),
         ...(noAnswer && { noAnswer: 'true' }),
         ...(needsVisualFilter && { needsVisual: needsVisualFilter }),
+        ...(reviewFilter === 'ai_review' && { answerSource: 'AI_generated', needsReview: 'true' }),
+        ...(reviewFilter === 'review' && { needsReview: 'true' }),
+        ...(reviewFilter === 'ai' && { answerSource: 'AI_generated' }),
+        ...(publishedFilter && { published: publishedFilter }),
       })
       const res = await fetch(`/api/admin/questions?${params}`)
       const data = await res.json()
@@ -111,7 +120,7 @@ export default function AdminQuestionsPage() {
     } finally {
       setLoading(false)
     }
-  }, [page, search, typeFilter, diffFilter, gradeFilter, partFilter, subtopicFilter, sourceFilter, noAnswer, needsVisualFilter])
+  }, [page, search, typeFilter, diffFilter, gradeFilter, partFilter, subtopicFilter, sourceFilter, noAnswer, needsVisualFilter, reviewFilter, publishedFilter])
 
   useEffect(() => { fetchQuestions() }, [fetchQuestions])
 
@@ -170,6 +179,42 @@ export default function AdminQuestionsPage() {
       toast({ title: 'Lỗi khi xóa', variant: 'destructive' })
     } finally {
       setDeleting(false)
+    }
+  }
+
+  async function handleReviewDecision(action: 'approve' | 'reject') {
+    if (!editQ) return
+    if (action === 'reject') {
+      await handleDelete()
+      return
+    }
+
+    setSaving(true)
+    try {
+      const res = await fetch(`/api/admin/questions/${editQ.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...editForm,
+          needs_review: false,
+          is_published: true,
+        }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => null)
+        throw new Error(data?.error ?? 'Không duyệt được câu hỏi')
+      }
+      toast({ title: 'Đã duyệt và publish câu hỏi' })
+      setEditQ(null)
+      fetchQuestions()
+    } catch (error) {
+      toast({
+        title: 'Lỗi khi duyệt câu hỏi',
+        description: error instanceof Error ? error.message : 'Câu hỏi chưa đủ dữ liệu để publish.',
+        variant: 'destructive',
+      })
+    } finally {
+      setSaving(false)
     }
   }
 
@@ -293,6 +338,25 @@ export default function AdminQuestionsPage() {
           <option value="true">Cần hình</option>
           <option value="false">Không cần hình</option>
         </select>
+        <select
+          value={reviewFilter}
+          onChange={(e) => { setReviewFilter(e.target.value); setPage(1) }}
+          className="rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100"
+        >
+          <option value="">Tất cả duyệt</option>
+          <option value="ai_review">AI cần duyệt</option>
+          <option value="review">Tất cả cần duyệt</option>
+          <option value="ai">Tất cả câu AI</option>
+        </select>
+        <select
+          value={publishedFilter}
+          onChange={(e) => { setPublishedFilter(e.target.value); setPage(1) }}
+          className="rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100"
+        >
+          <option value="">Tất cả publish</option>
+          <option value="true">Đã publish</option>
+          <option value="false">Chưa publish</option>
+        </select>
         <label className="flex items-center gap-2 text-sm text-zinc-300 cursor-pointer px-3 py-2 border border-zinc-700 rounded-md bg-zinc-900">
           <input type="checkbox" checked={noAnswer} onChange={(e) => { setNoAnswer(e.target.checked); setPage(1) }} />
           Thiếu đáp án
@@ -399,6 +463,19 @@ export default function AdminQuestionsPage() {
                   <td className="px-3 py-2.5 text-zinc-500">{(page - 1) * 20 + idx + 1}</td>
                   <td className="px-3 py-2.5 text-zinc-200 max-w-xs">
                     <p className="line-clamp-2 text-xs">{q.question_text}</p>
+                    <div className="mt-1 flex flex-wrap gap-1">
+                      {q.answer_source === 'AI_generated' && (
+                        <span className="rounded-full bg-purple-500/15 px-1.5 py-0.5 text-[10px] font-medium text-purple-300">AI</span>
+                      )}
+                      {q.needs_review && (
+                        <span className="rounded-full bg-orange-500/15 px-1.5 py-0.5 text-[10px] font-medium text-orange-300">Cần duyệt</span>
+                      )}
+                      {q.is_published ? (
+                        <span className="rounded-full bg-green-500/15 px-1.5 py-0.5 text-[10px] font-medium text-green-300">Published</span>
+                      ) : (
+                        <span className="rounded-full bg-zinc-700 px-1.5 py-0.5 text-[10px] font-medium text-zinc-300">Draft</span>
+                      )}
+                    </div>
                   </td>
                   <td className="px-3 py-2.5 max-w-[120px]">
                     {q.source ? <p className="truncate text-xs text-zinc-300">{q.source}</p> : <span className="text-zinc-600">—</span>}
@@ -473,6 +550,19 @@ export default function AdminQuestionsPage() {
               <div className="rounded-lg bg-zinc-800 p-3 max-h-32 overflow-y-auto">
                 <p className="text-zinc-300 text-xs leading-relaxed">{editQ.question_text}</p>
               </div>
+
+              {(editQ.answer_source === 'AI_generated' || editQ.needs_review || !editQ.is_published) && (
+                <div className="rounded-lg border border-purple-500/30 bg-purple-500/10 p-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    {editQ.answer_source === 'AI_generated' && <span className="rounded-full bg-purple-500/20 px-2 py-0.5 text-xs font-medium text-purple-200">AI-generated</span>}
+                    {editQ.needs_review && <span className="rounded-full bg-orange-500/20 px-2 py-0.5 text-xs font-medium text-orange-200">Cần duyệt</span>}
+                    <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${editQ.is_published ? 'bg-green-500/20 text-green-200' : 'bg-zinc-700 text-zinc-200'}`}>
+                      {editQ.is_published ? 'Đã publish' : 'Chưa publish'}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-xs text-zinc-300">Kiểm tra đề, đáp án, phân loại và hình ảnh trước khi duyệt để đưa câu vào kho luyện tập.</p>
+                </div>
+              )}
 
               {/* Source / Topic / Subtopic */}
               <div className="space-y-1.5">
@@ -631,14 +721,26 @@ export default function AdminQuestionsPage() {
           )}
 
           <DialogFooter className="gap-2">
+            {editQ?.needs_review && (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => handleReviewDecision('approve')}
+                disabled={saving || deleting}
+                className="border-green-500/40 text-green-300 hover:bg-green-500/10"
+              >
+                {saving ? <Loader2 className="mr-1 h-3 w-3 animate-spin" /> : <CheckCircle className="mr-1 h-3.5 w-3.5" />}
+                Duyệt & publish
+              </Button>
+            )}
             <Button
               variant="destructive"
               size="sm"
-              onClick={handleDelete}
+              onClick={() => editQ?.needs_review ? handleReviewDecision('reject') : handleDelete()}
               disabled={deleting || saving}
             >
               {deleting && <Loader2 className="mr-1 h-3 w-3 animate-spin" />}
-              <Trash2 className="mr-1 h-3.5 w-3.5" /> Xóa
+              <Trash2 className="mr-1 h-3.5 w-3.5" /> {editQ?.needs_review ? 'Từ chối' : 'Xóa'}
             </Button>
             <Button size="sm" onClick={handleSave} disabled={saving || deleting}>
               {saving && <Loader2 className="mr-1 h-3 w-3 animate-spin" />}

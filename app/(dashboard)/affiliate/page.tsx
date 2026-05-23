@@ -12,10 +12,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { useAuth } from '@/lib/auth-context'
 import { useToast } from '@/components/ui/use-toast'
 import { formatDateShort } from '@/lib/utils'
+import { VIP_PLANS } from '@/lib/plans'
 
 const MILESTONES = [
-  { count: 5, label: '+1 tháng VIP miễn phí', points: 69, icon: '🎁' },
-  { count: 12, label: '+3 tháng VIP miễn phí', points: 207, icon: '🎉' },
+  { count: 5, label: '+1 tháng VIP miễn phí', points: VIP_PLANS.monthly.costPoints, icon: '🎁' },
+  { count: 12, label: '+3 tháng VIP miễn phí', points: VIP_PLANS.monthly.costPoints * 3, icon: '🎉' },
   { count: 20, label: 'VIP vĩnh viễn', points: null, icon: '👑' },
 ]
 
@@ -104,10 +105,13 @@ export default function AffiliatePage() {
 
       {/* Banner placeholder */}
       <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 }}>
-        <div className="relative w-full overflow-hidden rounded-xl bg-muted" style={{ aspectRatio: '16/5' }}>
-          <div className="flex h-full w-full items-center justify-center text-muted-foreground">
-            <ImageIcon className="mr-2 h-8 w-8" />
-            <span>Banner quảng cáo</span>
+        <div className="relative w-full overflow-hidden rounded-xl border border-green-500/20 bg-gradient-to-r from-green-500/10 via-emerald-500/10 to-blue-500/10" style={{ aspectRatio: '16/5' }}>
+          <div className="flex h-full flex-col justify-center px-6">
+            <div className="flex items-center gap-2 text-green-600 dark:text-green-400">
+              <ImageIcon className="h-5 w-5" />
+              <span className="text-sm font-medium">Chia sẻ ngocthaigiasu</span>
+            </div>
+            <p className="mt-2 max-w-md text-sm text-muted-foreground">Mời bạn bè học thử, theo dõi lượt giới thiệu và nhận điểm hoa hồng khi họ nâng cấp VIP.</p>
           </div>
         </div>
       </motion.div>

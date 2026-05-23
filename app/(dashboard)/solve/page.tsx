@@ -503,7 +503,7 @@ export default function SolvePage() {
               {/* Warning banner */}
               <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-3 space-y-1">
                 <p className="text-sm text-amber-700 dark:text-amber-400">⚠️ Chỉ upload <strong>1 câu hỏi</strong> mỗi lần để AI giải chính xác nhất</p>
-                <p className="text-xs text-muted-foreground">🤖 Kết quả AI có thể sai. Nếu phát hiện lỗi, vui lòng báo cáo qua: <strong>[số điện thoại/email của admin]</strong></p>
+                <p className="text-xs text-muted-foreground">🤖 Kết quả AI có thể sai. Nếu phát hiện lỗi, hãy gửi phản hồi ở mục Liên hệ để đội ngũ kiểm tra lại.</p>
               </div>
               <Dropzone onFileAccepted={handleFileAccepted} disabled={solving || isLimitReached} />
               <Button

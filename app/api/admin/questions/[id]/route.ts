@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
+import { isQuestionStudentReady } from '@/lib/question-readiness'
 
 export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
   const guard = await requireAdmin()
@@ -12,7 +13,8 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   const supabase = createAdminClient()
   const { difficulty, correct_answer, statement_a, statement_b, statement_c, statement_d,
     answer_a, answer_b, answer_c, answer_d, numeric_answer,
-    topic, subtopic, source, grade, part, needs_visual, visual_image_url } = body
+    topic, subtopic, source, grade, part, needs_visual, visual_image_url, image_url, has_image,
+    needs_review, is_published, answer_source } = body
 
   const updates: Record<string, unknown> = {}
   if (difficulty !== undefined) updates.difficulty = difficulty || null
@@ -33,6 +35,26 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   if (part !== undefined) updates.part = part || null
   if (needs_visual !== undefined) updates.needs_visual = needs_visual
   if (visual_image_url !== undefined) updates.visual_image_url = visual_image_url || null
+  if (image_url !== undefined) updates.image_url = image_url || null
+  if (has_image !== undefined) updates.has_image = Boolean(has_image)
+  if (needs_review !== undefined) updates.needs_review = Boolean(needs_review)
+  if (is_published !== undefined) updates.is_published = Boolean(is_published)
+  if (answer_source !== undefined) updates.answer_source = answer_source || null
+
+  let mergedQuestion: Record<string, unknown> | null = null
+  if (updates.is_published === true) {
+    const { data: current, error: currentError } = await supabase
+      .from('questions')
+      .select('*')
+      .eq('id', params.id)
+      .single()
+
+    if (currentError || !current) return NextResponse.json({ error: 'Question not found' }, { status: 404 })
+    mergedQuestion = { ...current, ...updates }
+    if (!isQuestionStudentReady(mergedQuestion)) {
+      return NextResponse.json({ error: 'Question is missing required answer or visual before publishing' }, { status: 400 })
+    }
+  }
 
   const { data, error } = await supabase
     .from('questions')

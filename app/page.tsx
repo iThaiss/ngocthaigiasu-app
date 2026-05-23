@@ -7,21 +7,22 @@ import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { VIP_PLANS } from '@/lib/plans'
 
 const FEATURES = [
   { icon: Brain, title: 'AI Giải Toán', desc: 'Upload ảnh bài toán, AI phân tích và giải từng bước chi tiết với LaTeX.', color: 'text-purple-500' },
   { icon: Trophy, title: 'Thi Thử Thực Chiến', desc: '50 câu hỏi, 90 phút, bảng xếp hạng real-time — y như thi THPT Quốc Gia.', color: 'text-yellow-500' },
   { icon: BookOpen, title: 'Ngân Hàng Câu Hỏi', desc: 'Hàng nghìn câu hỏi chất lượng cao được phân loại theo độ khó và chủ đề.', color: 'text-blue-500' },
-  { icon: Users, title: 'Cộng Đồng Học Tập', desc: 'Kết nối với hàng nghìn học sinh, chia sẻ kinh nghiệm và kiếm hoa hồng.', color: 'text-green-500' },
+  { icon: Users, title: 'Cộng Đồng Học Tập', desc: 'Trao đổi kinh nghiệm, lưu câu cần ôn và theo dõi tiến độ học tập.', color: 'text-green-500' },
   { icon: Zap, title: 'Học Mọi Lúc', desc: 'Responsive hoàn toàn — học trên điện thoại, máy tính bảng hay laptop.', color: 'text-orange-500' },
   { icon: Shield, title: 'Bảo Mật Tuyệt Đối', desc: 'Đăng nhập Google OAuth, dữ liệu được mã hóa và bảo vệ nghiêm ngặt.', color: 'text-red-500' },
 ]
 
 const STATS = [
-  { value: '10,000+', label: 'Học sinh' },
-  { value: '50,000+', label: 'Bài đã giải' },
-  { value: '5,000+', label: 'Câu hỏi' },
-  { value: '98%', label: 'Hài lòng' },
+  { value: 'AI', label: 'Giải bài từng bước' },
+  { value: '50', label: 'Câu / đề thi thử' },
+  { value: '90', label: 'Phút luyện áp lực thi' },
+  { value: '24/7', label: 'Tự học mọi lúc' },
 ]
 
 const TESTIMONIALS = [
@@ -77,7 +78,7 @@ export default function LandingPage() {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Chụp ảnh bài toán — AI giải ngay. Thi thử với bảng xếp hạng real-time.
-              Học cùng cộng đồng hàng nghìn học sinh trên toàn quốc.
+              Luyện tập, lưu câu cần ôn và theo dõi tiến độ trong cùng một nơi.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link href="/login">
@@ -85,9 +86,9 @@ export default function LandingPage() {
                   Học miễn phí ngay <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
-              <Link href="/login">
+              <Link href="/solve">
                 <Button variant="outline" size="lg" className="text-base px-8">
-                  Xem demo
+                  Xem công cụ giải bài
                 </Button>
               </Link>
             </div>
@@ -182,7 +183,7 @@ export default function LandingPage() {
               </Link>
               <Link href="/payment">
                 <Button variant="outline" size="lg" className="gap-2">
-                  <Trophy className="h-4 w-4" /> Nâng cấp VIP — 99k/tháng
+                  <Trophy className="h-4 w-4" /> Nâng cấp VIP — {VIP_PLANS.monthly.costPoints} điểm/tháng
                 </Button>
               </Link>
             </div>

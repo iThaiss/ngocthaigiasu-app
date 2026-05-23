@@ -3,20 +3,8 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { createAiCompletion, type RouterMessage } from '@/lib/ai-router'
-
-interface ModelConfig {
-  model: string
-  limit: number
-  label: string
-}
-
-function getModelConfig(isVip: boolean, vipExpiresAt: string | null): ModelConfig {
-  if (!isVip) return { model: 'claude-haiku-4-5', limit: 3, label: 'Claude Haiku' }
-  const expiresAt = vipExpiresAt ? new Date(vipExpiresAt) : null
-  const daysLeft = expiresAt ? (expiresAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24) : 0
-  if (daysLeft > 200) return { model: 'claude-sonnet-4-6', limit: 50, label: 'Claude Sonnet (VIP Năm)' }
-  return { model: 'claude-sonnet-4-6', limit: 20, label: 'Claude Sonnet (VIP Tháng)' }
-}
+import { isQuestionStudentReady } from '@/lib/question-readiness'
+import { getModelConfig } from '@/lib/plans'
 
 const SOLVE_PROMPT = `Bạn là gia sư Toán chuyên nghiệp tại Việt Nam.
 Đọc bài toán trong ảnh và giải chi tiết từng bước bằng tiếng Việt.
@@ -354,7 +342,7 @@ export async function POST(req: NextRequest) {
   console.log('=== STEP 5: Find related questions ===')
   console.log('[solve] topic:', solution.topic, '| subtopic:', solution.subtopic)
 
-  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, numeric_answer, explanation'
+  const QUESTION_FIELDS = 'id, question_text, difficulty, topic, subtopic, question_type, correct_answer, option_a, option_b, option_c, option_d, statements, answer_a, answer_b, answer_c, answer_d, numeric_answer, explanation, needs_visual, visual_image_url, image_url'
 
   let relatedQuestions: unknown[] = []
   try {
@@ -367,10 +355,11 @@ export async function POST(req: NextRequest) {
       .or('needs_visual.eq.false,visual_image_url.not.is.null')
       .neq('answer_source', 'AI_generated')
       .order('difficulty', { ascending: true })
-      .limit(5)
+      .limit(20)
 
-    if (bySubtopic && bySubtopic.length >= 3) {
-      relatedQuestions = bySubtopic
+    const readyBySubtopic = (bySubtopic ?? []).filter((question) => isQuestionStudentReady(question))
+    if (readyBySubtopic.length >= 3) {
+      relatedQuestions = readyBySubtopic.slice(0, 5)
     } else {
       // Fallback: topic match
       const { data: byTopic } = await supabase
@@ -381,8 +370,9 @@ export async function POST(req: NextRequest) {
         .or('needs_visual.eq.false,visual_image_url.not.is.null')
         .neq('answer_source', 'AI_generated')
         .order('difficulty', { ascending: true })
-        .limit(5)
-      relatedQuestions = byTopic ?? bySubtopic ?? []
+        .limit(20)
+      const readyByTopic = (byTopic ?? []).filter((question) => isQuestionStudentReady(question))
+      relatedQuestions = (readyByTopic.length ? readyByTopic : readyBySubtopic).slice(0, 5)
     }
     console.log('[solve] related questions count:', relatedQuestions.length)
   } catch (err) {

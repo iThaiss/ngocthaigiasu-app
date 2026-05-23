@@ -2,9 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-
-const PLAN_COSTS: Record<string, number> = { monthly: 69, yearly: 699 }
-const PLAN_NAMES: Record<string, string> = { monthly: 'Tháng', yearly: 'Năm Học' }
+import { getPlanCost, getPlanName, isPlanId, VIP_PLANS } from '@/lib/plans'
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions)
@@ -22,14 +20,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
   }
 
-  if (planId !== 'monthly' && planId !== 'yearly') {
+  if (!isPlanId(planId)) {
     return NextResponse.json({ error: 'Invalid planId' }, { status: 400 })
   }
 
-  const baseCost = PLAN_COSTS[planId]
+  const baseCost = getPlanCost(planId)
   let cost = baseCost
   let couponId: string | null = null
-  const planName = PLAN_NAMES[planId]
+  const planName = getPlanName(planId)
   const supabase = createAdminClient()
   const userId = session.user.id
 
@@ -192,7 +190,7 @@ export async function POST(req: NextRequest) {
     const count = commissionsCount ?? 0
 
     if (count === 5) {
-      const bonus = 69
+      const bonus = VIP_PLANS.monthly.costPoints
       await supabase
         .from('wallets')
         .update({ points: refPoints + commissionPoints + bonus })
@@ -206,11 +204,11 @@ export async function POST(req: NextRequest) {
       await supabase.from('notifications').insert({
         user_id: referral.referrer_id,
         title: 'Thành tích đặc biệt!',
-        content: 'Bạn đã giới thiệu 5 người thành công! Nhận thêm 69 điểm (1 tháng VIP miễn phí).',
+        content: `Bạn đã giới thiệu 5 người thành công! Nhận thêm ${VIP_PLANS.monthly.costPoints} điểm (1 tháng VIP miễn phí).`,
         type: 'milestone',
       })
     } else if (count === 12) {
-      const bonus = 207
+      const bonus = VIP_PLANS.monthly.costPoints * 3
       await supabase
         .from('wallets')
         .update({ points: refPoints + commissionPoints + bonus })
@@ -224,7 +222,7 @@ export async function POST(req: NextRequest) {
       await supabase.from('notifications').insert({
         user_id: referral.referrer_id,
         title: 'Thành tích siêu đặc biệt!',
-        content: 'Bạn đã giới thiệu 12 người thành công! Nhận thêm 207 điểm (3 tháng VIP miễn phí).',
+        content: `Bạn đã giới thiệu 12 người thành công! Nhận thêm ${VIP_PLANS.monthly.costPoints * 3} điểm (3 tháng VIP miễn phí).`,
         type: 'milestone',
       })
     } else if (count === 20) {

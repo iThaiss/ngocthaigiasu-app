@@ -16,6 +16,7 @@ import { Progress } from '@/components/ui/progress'
 import { useAuth } from '@/lib/auth-context'
 import { useSession } from 'next-auth/react'
 import { useToast } from '@/components/ui/use-toast'
+import { VIP_PLANS } from '@/lib/plans'
 
 const PROVINCES = [
   'An Giang', 'Bạc Liêu', 'Bắc Ninh', 'Cà Mau',
@@ -363,7 +364,7 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
           <>
             <div className="flex items-center justify-between">
               <Badge variant="secondary">Chưa kích hoạt</Badge>
-              <span className="text-xs text-muted-foreground">Từ 69 điểm / tháng</span>
+              <span className="text-xs text-muted-foreground">Từ {VIP_PLANS.monthly.costPoints} điểm / tháng</span>
             </div>
             <p className="text-sm text-muted-foreground">Nâng cấp VIP để mở khóa toàn bộ tính năng học tập.</p>
             <Button size="sm" className="w-full gap-2" asChild>

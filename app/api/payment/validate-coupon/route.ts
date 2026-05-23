@@ -2,8 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-
-const PLAN_COSTS: Record<string, number> = { monthly: 69, yearly: 699 }
+import { getPlanCost, isPlanId } from '@/lib/plans'
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions)
@@ -16,8 +15,8 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'code and planId required' }, { status: 400 })
   }
 
-  const baseCost = PLAN_COSTS[body.planId]
-  if (!baseCost) return NextResponse.json({ error: 'Invalid planId' }, { status: 400 })
+  if (!isPlanId(body.planId)) return NextResponse.json({ error: 'Invalid planId' }, { status: 400 })
+  const baseCost = getPlanCost(body.planId)
 
   const supabase = createAdminClient()
   const code = body.code.trim().toUpperCase()
