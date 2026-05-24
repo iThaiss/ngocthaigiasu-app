@@ -1,28 +1,61 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { CheckCircle, ChevronLeft, ChevronRight, ImageOff, Loader2, Trash2, Upload } from 'lucide-react'
+import { CheckCircle, ChevronLeft, ChevronRight, Edit3, Eye, ImageOff, Loader2, Save, Trash2, Upload } from 'lucide-react'
 import ReactCrop, { type Crop, type PixelCrop } from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Switch } from '@/components/ui/switch'
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { useToast } from '@/components/ui/use-toast'
+
+type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'
+type Difficulty = 'Nhận biết' | 'Thông hiểu' | 'Vận dụng' | 'Vận dụng cao'
 
 interface VisualQuestion {
   id: string
   question_text: string
-  question_type: string
+  question_type: QuestionType
   topic: string | null
   subtopic: string | null
   grade: number | null
   part: string | null
+  difficulty: Difficulty | null
+  correct_answer: string | null
+  option_a: string | null
+  option_b: string | null
+  option_c: string | null
+  option_d: string | null
+  statement_a: string | null
+  statement_b: string | null
+  statement_c: string | null
+  statement_d: string | null
+  answer_a: boolean | null
+  answer_b: boolean | null
+  answer_c: boolean | null
+  answer_d: boolean | null
+  numeric_answer: number | null
+  explanation: string | null
+  source: string | null
   visual_type: string | null
   visual_description: string | null
   visual_image_url: string | null
+  image_url: string | null
+  has_image: boolean | null
   source_file: string | null
   source_hint: string | null
   page_number: number | null
+  answer_source: string | null
+  needs_visual: boolean | null
+  needs_review: boolean | null
+  is_published: boolean | null
 }
+
+type VisualQuestionForm = Partial<VisualQuestion>
+
+const DIFFICULTIES: Difficulty[] = ['Nhận biết', 'Thông hiểu', 'Vận dụng', 'Vận dụng cao']
 
 const VISUAL_TYPE_LABEL: Record<string, string> = {
   bang_bien_thien: 'Bảng biến thiên',
@@ -50,6 +83,9 @@ export default function VisualReviewPage() {
   const [deletingImage, setDeletingImage] = useState<string | null>(null)
   const [deletingQuestion, setDeletingQuestion] = useState<string | null>(null)
   const [activeUploadId, setActiveUploadId] = useState<string | null>(null)
+  const [editingQuestion, setEditingQuestion] = useState<VisualQuestion | null>(null)
+  const [editForm, setEditForm] = useState<VisualQuestionForm>({})
+  const [savingQuestion, setSavingQuestion] = useState(false)
   const [cropFile, setCropFile] = useState<File | null>(null)
   const [cropImageUrl, setCropImageUrl] = useState<string | null>(null)
   const [cropFromExisting, setCropFromExisting] = useState(false)
@@ -81,6 +117,69 @@ export default function VisualReviewPage() {
   function triggerUpload(id: string) {
     setActiveUploadId(id)
     fileInputRef.current?.click()
+  }
+
+  function openEdit(question: VisualQuestion) {
+    setEditingQuestion(question)
+    setEditForm({
+      question_text: question.question_text,
+      question_type: question.question_type,
+      topic: question.topic,
+      subtopic: question.subtopic,
+      grade: question.grade,
+      part: question.part,
+      difficulty: question.difficulty,
+      correct_answer: question.correct_answer,
+      option_a: question.option_a,
+      option_b: question.option_b,
+      option_c: question.option_c,
+      option_d: question.option_d,
+      statement_a: question.statement_a,
+      statement_b: question.statement_b,
+      statement_c: question.statement_c,
+      statement_d: question.statement_d,
+      answer_a: question.answer_a,
+      answer_b: question.answer_b,
+      answer_c: question.answer_c,
+      answer_d: question.answer_d,
+      numeric_answer: question.numeric_answer,
+      explanation: question.explanation,
+      source: question.source,
+      visual_type: question.visual_type,
+      visual_description: question.visual_description,
+      source_file: question.source_file,
+      source_hint: question.source_hint,
+      page_number: question.page_number,
+      needs_visual: question.needs_visual ?? true,
+      needs_review: question.needs_review ?? false,
+      is_published: question.is_published ?? false,
+      answer_source: question.answer_source,
+    })
+  }
+
+  async function saveQuestion() {
+    if (!editingQuestion) return
+    setSavingQuestion(true)
+    try {
+      const res = await fetch(`/api/admin/questions/${editingQuestion.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(editForm),
+      })
+      const data = await res.json().catch(() => null)
+      if (!res.ok) throw new Error(data?.error ?? 'Không lưu được câu hỏi')
+      toast({ title: 'Đã lưu câu hỏi' })
+      setEditingQuestion(null)
+      fetchQuestions()
+    } catch (error) {
+      toast({
+        title: 'Lỗi khi lưu câu hỏi',
+        description: error instanceof Error ? error.message : 'Không lưu được câu hỏi',
+        variant: 'destructive',
+      })
+    } finally {
+      setSavingQuestion(false)
+    }
   }
 
   function cropExisting(question: VisualQuestion) {
@@ -274,7 +373,22 @@ export default function VisualReviewPage() {
               {question.topic && (
                 <p className="text-xs text-zinc-400">{question.topic}{question.subtopic ? ` › ${question.subtopic}` : ''}</p>
               )}
-              <p className="line-clamp-3 text-xs leading-relaxed text-zinc-200">{question.question_text}</p>
+              <p className="line-clamp-4 text-xs leading-relaxed text-zinc-200">{question.question_text}</p>
+
+              <div className="grid grid-cols-3 gap-2 rounded-lg border border-zinc-800 bg-zinc-950 p-2 text-[10px] text-zinc-400">
+                <div>
+                  <p className="text-zinc-500">Độ khó</p>
+                  <p className="mt-0.5 font-medium text-zinc-200">{question.difficulty ?? 'Chưa có'}</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500">Đáp án</p>
+                  <p className="mt-0.5 font-medium text-zinc-200">{question.question_type === 'short_answer' ? question.numeric_answer ?? 'Thiếu' : question.correct_answer ?? 'Thiếu'}</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500">Trạng thái</p>
+                  <p className="mt-0.5 font-medium text-zinc-200">{question.is_published ? 'Published' : 'Draft'}</p>
+                </div>
+              </div>
 
               {question.visual_description && (
                 <div className="rounded-lg border border-orange-500/20 bg-orange-500/5 p-2.5">
@@ -310,6 +424,16 @@ export default function VisualReviewPage() {
               )}
 
               <div className="mt-auto grid gap-2">
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  className="w-full"
+                  disabled={uploading === question.id || deletingImage === question.id || deletingQuestion === question.id}
+                  onClick={() => openEdit(question)}
+                >
+                  <Edit3 className="mr-2 h-3.5 w-3.5" />
+                  Sửa chi tiết câu hỏi
+                </Button>
                 {question.visual_image_url ? (
                   <div className="grid grid-cols-2 gap-2">
                     <Button
@@ -401,6 +525,203 @@ export default function VisualReviewPage() {
             <Button onClick={() => uploadCrop(false)} disabled={!!uploading}>
               {uploading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Upload ảnh đã crop
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+
+      <Dialog open={!!editingQuestion} onOpenChange={(open) => !open && setEditingQuestion(null)}>
+        <DialogContent className="max-h-[92vh] max-w-5xl overflow-y-auto border-zinc-800 bg-zinc-900 text-zinc-100">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-base">
+              <Edit3 className="h-4 w-4 text-primary" /> Sửa chi tiết câu hỏi
+            </DialogTitle>
+          </DialogHeader>
+
+          {editingQuestion && (
+            <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+              <div className="space-y-4">
+                <div className="space-y-1.5">
+                  <label className="text-xs font-medium text-zinc-400">Nội dung câu hỏi</label>
+                  <Textarea
+                    value={editForm.question_text ?? ''}
+                    onChange={(event) => setEditForm((form) => ({ ...form, question_text: event.target.value }))}
+                    className="min-h-[150px] border-zinc-700 bg-zinc-950 text-zinc-100"
+                  />
+                </div>
+
+                {editForm.question_type === 'multiple_choice' && (
+                  <div className="space-y-3 rounded-lg border border-zinc-800 bg-zinc-950 p-3">
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-xs font-medium text-zinc-300">Đáp án trắc nghiệm</p>
+                      <select
+                        value={editForm.correct_answer ?? ''}
+                        onChange={(event) => setEditForm((form) => ({ ...form, correct_answer: event.target.value || null }))}
+                        className="rounded-md border border-zinc-700 bg-zinc-900 px-2 py-1.5 text-xs text-zinc-100"
+                      >
+                        <option value="">Chưa có</option>
+                        {['A', 'B', 'C', 'D'].map((item) => <option key={item} value={item}>{item}</option>)}
+                      </select>
+                    </div>
+                    {(['a', 'b', 'c', 'd'] as const).map((letter) => {
+                      const key = `option_${letter}` as keyof VisualQuestionForm
+                      return (
+                        <div key={letter} className="grid grid-cols-[28px_1fr] items-start gap-2">
+                          <span className="pt-2 text-xs font-bold uppercase text-zinc-400">{letter}</span>
+                          <Textarea
+                            value={(editForm[key] as string | null) ?? ''}
+                            onChange={(event) => setEditForm((form) => ({ ...form, [key]: event.target.value || null }))}
+                            className="min-h-[54px] border-zinc-700 bg-zinc-900 text-zinc-100"
+                          />
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+
+                {editForm.question_type === 'true_false' && (
+                  <div className="space-y-3 rounded-lg border border-zinc-800 bg-zinc-950 p-3">
+                    <p className="text-xs font-medium text-zinc-300">Mệnh đề đúng/sai</p>
+                    {(['a', 'b', 'c', 'd'] as const).map((letter) => {
+                      const statementKey = `statement_${letter}` as keyof VisualQuestionForm
+                      const answerKey = `answer_${letter}` as keyof VisualQuestionForm
+                      return (
+                        <div key={letter} className="grid gap-2 rounded-md border border-zinc-800 p-2">
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="text-xs font-bold uppercase text-zinc-400">{letter}</span>
+                            <label className="flex items-center gap-2 text-xs text-zinc-300">
+                              <Switch
+                                checked={editForm[answerKey] === true}
+                                onCheckedChange={(checked) => setEditForm((form) => ({ ...form, [answerKey]: checked }))}
+                              />
+                              Đúng
+                            </label>
+                          </div>
+                          <Textarea
+                            value={(editForm[statementKey] as string | null) ?? ''}
+                            onChange={(event) => setEditForm((form) => ({ ...form, [statementKey]: event.target.value || null }))}
+                            className="min-h-[58px] border-zinc-700 bg-zinc-900 text-zinc-100"
+                          />
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
+
+                {editForm.question_type === 'short_answer' && (
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-medium text-zinc-400">Đáp số</label>
+                    <Input
+                      type="number"
+                      step="any"
+                      value={editForm.numeric_answer ?? ''}
+                      onChange={(event) => setEditForm((form) => ({ ...form, numeric_answer: event.target.value ? Number(event.target.value) : null }))}
+                      className="border-zinc-700 bg-zinc-950 text-zinc-100"
+                    />
+                  </div>
+                )}
+
+                <div className="space-y-1.5">
+                  <label className="text-xs font-medium text-zinc-400">Lời giải</label>
+                  <Textarea
+                    value={editForm.explanation ?? ''}
+                    onChange={(event) => setEditForm((form) => ({ ...form, explanation: event.target.value || null }))}
+                    className="min-h-[120px] border-zinc-700 bg-zinc-950 text-zinc-100"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-medium text-zinc-400">Loại câu</label>
+                    <select
+                      value={editForm.question_type ?? 'multiple_choice'}
+                      onChange={(event) => setEditForm((form) => ({ ...form, question_type: event.target.value as QuestionType }))}
+                      className="h-10 w-full rounded-md border border-zinc-700 bg-zinc-950 px-3 text-sm text-zinc-100"
+                    >
+                      <option value="multiple_choice">Trắc nghiệm</option>
+                      <option value="true_false">Đúng/Sai</option>
+                      <option value="short_answer">Trả lời ngắn</option>
+                    </select>
+                  </div>
+                  <div className="space-y-1.5">
+                    <label className="text-xs font-medium text-zinc-400">Độ khó</label>
+                    <select
+                      value={editForm.difficulty ?? ''}
+                      onChange={(event) => setEditForm((form) => ({ ...form, difficulty: (event.target.value || null) as Difficulty | null }))}
+                      className="h-10 w-full rounded-md border border-zinc-700 bg-zinc-950 px-3 text-sm text-zinc-100"
+                    >
+                      <option value="">Chưa phân loại</option>
+                      {DIFFICULTIES.map((item) => <option key={item} value={item}>{item}</option>)}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3">
+                  <Input value={editForm.topic ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, topic: event.target.value || null }))} placeholder="Chủ đề" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  <Input value={editForm.subtopic ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, subtopic: event.target.value || null }))} placeholder="Dạng bài" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  <Input type="number" value={editForm.grade ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, grade: event.target.value ? Number(event.target.value) : null }))} placeholder="Lớp" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  <Input value={editForm.part ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, part: event.target.value || null }))} placeholder="Phần" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                </div>
+
+                <Input value={editForm.source ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, source: event.target.value || null }))} placeholder="Nguồn đề" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+
+                <div className="space-y-3 rounded-lg border border-orange-500/25 bg-orange-500/5 p-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-xs font-medium text-orange-200">Thông tin hình ảnh</p>
+                      <p className="text-[11px] text-zinc-500">Dùng để lọc danh sách cần crop/upload.</p>
+                    </div>
+                    <label className="flex items-center gap-2 text-xs text-zinc-300">
+                      <Switch
+                        checked={editForm.needs_visual === true}
+                        onCheckedChange={(checked) => setEditForm((form) => ({ ...form, needs_visual: checked }))}
+                      />
+                      Cần hình
+                    </label>
+                  </div>
+                  <select
+                    value={editForm.visual_type ?? ''}
+                    onChange={(event) => setEditForm((form) => ({ ...form, visual_type: event.target.value || null }))}
+                    className="h-10 w-full rounded-md border border-zinc-700 bg-zinc-950 px-3 text-sm text-zinc-100"
+                  >
+                    <option value="">Chưa phân loại hình</option>
+                    {Object.entries(VISUAL_TYPE_LABEL).map(([value, label]) => <option key={value} value={value}>{label}</option>)}
+                  </select>
+                  <Textarea value={editForm.visual_description ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, visual_description: event.target.value || null }))} placeholder="Mô tả hình cần có" className="min-h-[76px] border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  <Input value={editForm.source_file ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, source_file: event.target.value || null }))} placeholder="File nguồn" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  <div className="grid grid-cols-[1fr_120px] gap-3">
+                    <Input value={editForm.source_hint ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, source_hint: event.target.value || null }))} placeholder="Gợi ý tìm ảnh" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                    <Input type="number" value={editForm.page_number ?? ''} onChange={(event) => setEditForm((form) => ({ ...form, page_number: event.target.value ? Number(event.target.value) : null }))} placeholder="Trang" className="border-zinc-700 bg-zinc-950 text-zinc-100" />
+                  </div>
+                </div>
+
+                <div className="grid gap-2 rounded-lg border border-zinc-800 bg-zinc-950 p-3">
+                  <label className="flex items-center justify-between gap-3 text-xs text-zinc-300">
+                    <span>Publish vào kho luyện tập</span>
+                    <Switch checked={editForm.is_published === true} onCheckedChange={(checked) => setEditForm((form) => ({ ...form, is_published: checked }))} />
+                  </label>
+                  <label className="flex items-center justify-between gap-3 text-xs text-zinc-300">
+                    <span>Cần duyệt lại</span>
+                    <Switch checked={editForm.needs_review === true} onCheckedChange={(checked) => setEditForm((form) => ({ ...form, needs_review: checked }))} />
+                  </label>
+                  {editingQuestion.visual_image_url && (
+                    <Button type="button" variant="outline" size="sm" onClick={() => cropExisting(editingQuestion)} className="justify-start">
+                      <Eye className="mr-2 h-3.5 w-3.5" /> Crop ảnh hiện tại
+                    </Button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
+          <DialogFooter className="gap-2">
+            <Button variant="outline" onClick={() => setEditingQuestion(null)} disabled={savingQuestion}>Hủy</Button>
+            <Button onClick={saveQuestion} disabled={savingQuestion}>
+              {savingQuestion ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
+              Lưu câu hỏi
             </Button>
           </DialogFooter>
         </DialogContent>
