@@ -168,9 +168,10 @@ export default function VisualReviewPage() {
       })
       const data = await res.json().catch(() => null)
       if (!res.ok) throw new Error(data?.error ?? 'Không lưu được câu hỏi')
-      toast({ title: 'Đã lưu câu hỏi' })
+      toast({ title: '✓ Đã lưu', duration: 1500 })
+      // Optimistic: update question in list, no refetch
+      setQuestions((current) => current.map((q) => q.id === editingQuestion.id ? { ...q, ...editForm } : q))
       setEditingQuestion(null)
-      fetchQuestions()
     } catch (error) {
       toast({
         title: 'Lỗi khi lưu câu hỏi',
@@ -239,19 +240,22 @@ export default function VisualReviewPage() {
 
   async function uploadCrop(useOriginal = false) {
     if (!activeUploadId || (!cropFile && useOriginal)) return
-    setUploading(activeUploadId)
+    const uploadingId = activeUploadId
+    setUploading(uploadingId)
     try {
       const file = useOriginal ? cropFile : await buildCroppedFile()
       if (!file) throw new Error('crop failed')
       const fd = new FormData()
       fd.append('file', file)
-      fd.append('questionId', activeUploadId)
+      fd.append('questionId', uploadingId)
       const res = await fetch('/api/admin/questions/upload-image', { method: 'POST', body: fd })
       const data = await res.json().catch(() => null)
       if (!res.ok) throw new Error(data?.error ?? 'Upload failed')
-      toast({ title: 'Đã upload hình thành công' })
+      // Optimistic: remove from list immediately, update count — no refetch needed
+      setQuestions((current) => current.filter((q) => q.id !== uploadingId))
+      setTotal((current) => Math.max(0, current - 1))
+      toast({ title: '✓ Đã lưu', duration: 1500 })
       closeCropDialog()
-      fetchQuestions()
     } catch (error) {
       toast({
         title: 'Lỗi upload hình',
@@ -496,9 +500,12 @@ export default function VisualReviewPage() {
       )}
 
       <Dialog open={!!cropImageUrl} onOpenChange={(open) => !open && closeCropDialog()}>
-        <DialogContent className="max-w-4xl border-zinc-800 bg-zinc-900 text-zinc-100">
+        <DialogContent
+          className="max-w-4xl border-zinc-800 bg-zinc-900 text-zinc-100"
+          onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey && !uploading) { e.preventDefault(); uploadCrop(false) } }}
+        >
           <DialogHeader>
-            <DialogTitle>Crop ảnh trước khi upload</DialogTitle>
+            <DialogTitle>Crop ảnh — <span className="text-xs font-normal text-zinc-400">Enter để lưu</span></DialogTitle>
           </DialogHeader>
           {cropImageUrl && (
             <div className="space-y-3">
