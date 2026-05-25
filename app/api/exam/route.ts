@@ -67,7 +67,7 @@ export async function GET(req: NextRequest) {
       .from('exam_sets')
       .select('id, title, subject, exam_type, exam_index, expected_question_count, expected_item_count, extracted_question_count, max_score, status, audit_json, created_at')
       .eq('status', 'ready')
-      .order('created_at', { ascending: false })
+      .order('title', { ascending: true })
 
     if (setsError) {
       console.error('[exam] metadata sets error:', setsError)
