@@ -24,6 +24,50 @@ function repairLatexCommands(math: string): string {
     .replace(/\\vec\s+([a-z])/g, '\\vec{$1}')
 }
 
+
+function protectDelimitedMath(text: string) {
+  const tokens: string[] = []
+  const protectedText = text
+    .replace(/\\\[([\s\S]*?)\\\]/g, (match) => {
+      const key = `@@MATH_${tokens.length}@@`
+      tokens.push(match)
+      return key
+    })
+    .replace(/\\\(([\s\S]*?)\\\)/g, (match) => {
+      const key = `@@MATH_${tokens.length}@@`
+      tokens.push(match)
+      return key
+    })
+    .replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
+      const key = `@@MATH_${tokens.length}@@`
+      tokens.push(match)
+      return key
+    })
+    .replace(/\$([^$\n]+?)\$/g, (match) => {
+      const key = `@@MATH_${tokens.length}@@`
+      tokens.push(match)
+      return key
+    })
+  return { protectedText, tokens }
+}
+
+function restoreDelimitedMath(text: string, tokens: string[]) {
+  return text.replace(/@@MATH_(\d+)@@/g, (_, index) => tokens[Number(index)] ?? '')
+}
+
+function autoWrapLooseMath(text: string): string {
+  const { protectedText, tokens } = protectDelimitedMath(text)
+  const commandPattern = String.raw`(?:\\?(?:frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec\s*(?:\{[^{}]+\}|[a-z])|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
+  const equationPattern = new RegExp(String.raw`((?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern}(?:\s*,\s*(?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern})*)`, 'g')
+  const commandOnlyPattern = new RegExp(String.raw`(^|[\s([,;:=])(${commandPattern})`, 'g')
+
+  const wrapped = protectedText
+    .replace(equationPattern, (match) => `$${repairLatexCommands(match)}$`)
+    .replace(commandOnlyPattern, (match, prefix, math) => `${prefix}$${repairLatexCommands(math)}$`)
+
+  return restoreDelimitedMath(wrapped, tokens)
+}
+
 export function normalizeMathText(text: string): string {
   if (!text) return ''
   return text
@@ -41,7 +85,7 @@ function renderMath(math: string, displayMode = false) {
 
 export function renderLatex(text: string, displayClass = 'my-2 overflow-x-auto py-1'): string {
   if (!text) return ''
-  let result = normalizeMathText(text)
+  let result = autoWrapLooseMath(normalizeMathText(text))
   result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
     try { return `<div class="${displayClass}">${renderMath(math, true)}</div>` } catch { return math }
   })
