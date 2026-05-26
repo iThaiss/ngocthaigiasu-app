@@ -57,7 +57,7 @@ function restoreDelimitedMath(text: string, tokens: string[]) {
 
 function autoWrapLooseMath(text: string): string {
   const { protectedText, tokens } = protectDelimitedMath(text)
-  const commandPattern = String.raw`(?:\\?(?:frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec\s*(?:\{[^{}]+\}|[a-z])|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
+  const commandPattern = String.raw`(?:\\?(?:frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec(?:\s*\{[^{}]+\}|\s+[a-z](?![A-Za-zÀ-ỹ])|\{[^{}]+\})|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
   const equationPattern = new RegExp(String.raw`((?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern}(?:\s*,\s*(?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern})*)`, 'g')
   const commandOnlyPattern = new RegExp(String.raw`(^|[\s([,;:=])(${commandPattern})`, 'g')
 

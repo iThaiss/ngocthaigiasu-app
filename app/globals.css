@@ -68,3 +68,21 @@
 .math-block {
   @apply font-mono bg-muted/50 rounded-lg p-3 my-2 text-sm overflow-x-auto;
 }
+
+/* Keep KaTeX radicals and vector arrows visible in tight question cards. */
+.katex {
+  line-height: 1.35;
+}
+.katex .vlist,
+.katex .vlist-r,
+.katex .vlist-t,
+.katex .svg-align,
+.katex .hide-tail,
+.katex .accent-body,
+.katex .overlay {
+  overflow: visible;
+}
+.katex svg {
+  fill: currentColor;
+  overflow: visible;
+}
