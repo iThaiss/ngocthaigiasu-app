@@ -2,8 +2,7 @@
 
 import { useState, useRef } from 'react'
 import confetti from 'canvas-confetti'
-import katex from 'katex'
-import 'katex/dist/katex.min.css'
+import { renderLatex } from '@/lib/math-render'
 import {
   Dialog, DialogContent, DialogHeader, DialogTitle,
 } from '@/components/ui/dialog'
@@ -35,22 +34,6 @@ export interface QuestionPracticeModalProps {
 }
 
 // ─── LaTeX renderer ───────────────────────────────────────────────────────────
-
-function renderLatex(text: string): string {
-  if (!text) return ''
-  let result = text
-  result = result.replace(/\$\$([^$]+)\$\$/g, (_, math) => {
-    try {
-      return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>`
-    } catch { return math }
-  })
-  result = result.replace(/\$([^$\n]+)\$/g, (_, math) => {
-    try {
-      return katex.renderToString(math.trim(), { throwOnError: false, displayMode: false })
-    } catch { return math }
-  })
-  return result.replace(/\n/g, '<br/>')
-}
 
 function LatexText({ text, className }: { text: string; className?: string }) {
   return (

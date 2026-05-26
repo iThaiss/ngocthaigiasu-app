@@ -1,8 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
-import katex from 'katex'
-import 'katex/dist/katex.min.css'
+import { renderLatex } from '@/lib/math-render'
 import {
   ArrowLeft, BookOpen, CheckCircle2, ChevronRight, Layers, Loader2, RotateCcw, SlidersHorizontal, Target, XCircle,
 } from 'lucide-react'
@@ -56,40 +55,6 @@ const DIFF_COLOR: Record<string, string> = {
   'Thông hiểu': 'bg-blue-500/15 text-blue-600 dark:text-blue-400',
   'Vận dụng': 'bg-yellow-500/15 text-yellow-700 dark:text-yellow-400',
   'Vận dụng cao': 'bg-red-500/15 text-red-600 dark:text-red-400',
-}
-
-function renderLatex(text: string): string {
-  if (!text) return ''
-  let result = text
-  result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
-    try {
-      return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>`
-    } catch {
-      return math
-    }
-  })
-  result = result.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => {
-    try {
-      return katex.renderToString(math.trim(), { throwOnError: false })
-    } catch {
-      return math
-    }
-  })
-  result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_, math) => {
-    try {
-      return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>`
-    } catch {
-      return math
-    }
-  })
-  result = result.replace(/\$([^$\n]+?)\$/g, (_, math) => {
-    try {
-      return katex.renderToString(math.trim(), { throwOnError: false })
-    } catch {
-      return math
-    }
-  })
-  return result.replace(/\n/g, '<br/>')
 }
 
 function LatexText({ text, className }: { text: string; className?: string }) {

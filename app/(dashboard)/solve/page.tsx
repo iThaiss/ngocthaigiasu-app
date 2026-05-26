@@ -9,8 +9,7 @@ import {
   ChevronRight, Loader2, Lightbulb,
 } from 'lucide-react'
 import PracticeModal, { type PracticeQuestion } from '@/components/PracticeModal'
-import katex from 'katex'
-import 'katex/dist/katex.min.css'
+import { renderLatex } from '@/lib/math-render'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -125,37 +124,6 @@ interface Status {
 }
 
 // ─── LaTeX Renderer ──────────────────────────────────────────────────────────
-
-function renderLatex(text: string): string {
-  if (!text) return ''
-  let result = text
-  // Handle \[...\] display math
-  result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
-    try {
-      return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })}</div>`
-    } catch { return math }
-  })
-  // Handle \(...\) inline math
-  result = result.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => {
-    try {
-      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false })
-    } catch { return math }
-  })
-  // Handle $$...$$ display math
-  result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_, math) => {
-    try {
-      return `<div class="my-3 overflow-x-auto py-1">${katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })}</div>`
-    } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
-  })
-  // Handle $...$ inline math
-  result = result.replace(/\$([^$\n]+?)\$/g, (_, math) => {
-    try {
-      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false })
-    } catch { return `<span class="font-mono text-sm bg-muted px-1 rounded">${math}</span>` }
-  })
-  result = result.replace(/\n/g, '<br/>')
-  return result
-}
 
 function LatexText({ text, className }: { text: string; className?: string }) {
   return (

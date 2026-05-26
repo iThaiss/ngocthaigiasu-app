@@ -2,8 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import katex from 'katex'
-import 'katex/dist/katex.min.css'
+import { normalizeMathText, renderLatex } from '@/lib/math-render'
 import {
   BarChart3, CheckCircle, ChevronLeft, ChevronRight, Clock, FileText,
   Flag, Loader2, RotateCcw, Sparkles, Target, Trophy, XCircle, Bookmark,
@@ -105,36 +104,6 @@ const REPORT_TYPES = [
   { value: 'typo', label: 'Lỗi chính tả/ký hiệu' },
   { value: 'other', label: 'Vấn đề khác' },
 ]
-
-function normalizeMathText(text: string): string {
-  if (!text) return ''
-  return text
-    .replace(/\*\*/g, '')
-    .replace(/__+/g, '')
-    .replace(/\\overline\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
-    .replace(/\\overrightarrow\{([a-z])\}/g, '\\vec{$1}')
-    .replace(/\\vec\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
-    .replace(/\\sqrt\s+([A-Za-z0-9]+)/g, '\\sqrt{$1}')
-    .replace(/\\vec\s+([a-z])/g, '\\vec{$1}')
-}
-
-function renderLatex(text: string): string {
-  if (!text) return ''
-  let result = normalizeMathText(text)
-  result = result.replace(/\\\[([\s\S]*?)\\\]/g, (_, math) => {
-    try { return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>` } catch { return math }
-  })
-  result = result.replace(/\\\(([\s\S]*?)\\\)/g, (_, math) => {
-    try { return katex.renderToString(math.trim(), { throwOnError: false }) } catch { return math }
-  })
-  result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_, math) => {
-    try { return `<div class="my-2 overflow-x-auto py-1">${katex.renderToString(math.trim(), { throwOnError: false, displayMode: true })}</div>` } catch { return math }
-  })
-  result = result.replace(/\$([^$\n]+?)\$/g, (_, math) => {
-    try { return katex.renderToString(math.trim(), { throwOnError: false }) } catch { return math }
-  })
-  return result.replace(/\n/g, '<br/>')
-}
 
 function LatexText({ text, className }: { text: string; className?: string }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
