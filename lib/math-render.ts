@@ -16,7 +16,8 @@ function repairLatexCommands(math: string): string {
     .replace(/\\?sqrt\s*\{\s*([^{}]+?)\s*\}/g, '\\sqrt{$1}')
     .replace(/\\?sqrt\s+([A-Za-z0-9]+)/g, '\\sqrt{$1}')
     .replace(/\\?sqrt([0-9]+)/g, '\\sqrt{$1}')
-    .replace(/\\?frac\s*\{\s*([^{}]+?)\s*\}\s*\{\s*([^{}]+?)\s*\}/g, '\\frac{$1}{$2}')
+    .replace(/\\?dfrac\s*\{\s*([^{}]+?)\s*\}\s*\{\s*([^{}]+?)\s*\}/g, '\\dfrac{$1}{$2}')
+    .replace(/(?<!d)\\?frac\s*\{\s*([^{}]+?)\s*\}\s*\{\s*([^{}]+?)\s*\}/g, '\\frac{$1}{$2}')
     .replace(/(^|[^\\A-Za-z])dfrac(?=\s*\{)/g, '$1\\dfrac')
     .replace(/(^|[^\\A-Za-z])frac(?=\s*\{)/g, '$1\\frac')
     .replace(/(^|[^\\A-Za-z])begin(?=\s*\{)/g, '$1\\begin')
@@ -60,7 +61,7 @@ function restoreDelimitedMath(text: string, tokens: string[]) {
 
 function autoWrapLooseMath(text: string): string {
   const { protectedText, tokens } = protectDelimitedMath(text)
-  const commandPattern = String.raw`(?:\\?(?:frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec(?:\s*\{[^{}]+\}|\s+[a-z](?![A-Za-zÀ-ỹ])|\{[^{}]+\})|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
+  const commandPattern = String.raw`(?:\\?(?:dfrac\s*\{[^{}]+\}\s*\{[^{}]+\}|frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec(?:\s*\{[^{}]+\}|\s+[a-z](?![A-Za-zÀ-ỹ])|\{[^{}]+\})|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
   const equationPattern = new RegExp(String.raw`((?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern}(?:\s*,\s*(?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern})*)`, 'g')
   const commandOnlyPattern = new RegExp(String.raw`(^|[\s([,;:=])(${commandPattern})`, 'g')
 
