@@ -1,29 +1,32 @@
 import katex from 'katex'
 
-const LATEX_COMMANDS = [
-  'frac', 'sqrt', 'vec', 'overrightarrow', 'overleftarrow', 'overline', 'widehat', 'hat', 'bar',
-  'sin', 'cos', 'tan', 'cot', 'log', 'ln', 'lim', 'sum', 'int', 'left', 'right', 'cdot', 'times',
-  'leq', 'geq', 'neq', 'infty', 'pi', 'alpha', 'beta', 'gamma', 'Delta', 'theta', 'varphi',
-]
-
 function repairLatexCommands(math: string): string {
   let result = math.replace(/\\+/g, '\\')
 
-  for (const command of LATEX_COMMANDS) {
-    result = result.replace(
-      new RegExp(`(^|[^\\\\A-Za-z])${command}(?=\\s*(?:\\{|[A-Za-z0-9\\\\]))`, 'g'),
-      `$1\\${command}`,
-    )
-  }
-
   return result
-    .replace(/\\overline\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
-    .replace(/\\overrightarrow\{([a-z])\}/g, '\\vec{$1}')
-    .replace(/\\vec\{([A-Z][A-Z0-9']*)\}/g, '\\overrightarrow{$1}')
-    .replace(/\\sqrt\s+([A-Za-z0-9]+)/g, '\\sqrt{$1}')
-    .replace(/\\vec\s+([a-z])/g, '\\vec{$1}')
+    // OCR/data sometimes writes Vietnamese "vectơ/vecto" as if it were a LaTeX command.
+    .replace(/\\?vect[ơo]\s*\{?([a-z])\}?/giu, '\\vec{$1}')
+    .replace(/\\?vect[ơo]\s*\{?([A-Z][A-Z0-9']*)\}?/gu, '\\overrightarrow{$1}')
+    .replace(/\\?overline\s*\{\s*([A-Z][A-Z0-9']*)\s*\}/g, '\\overrightarrow{$1}')
+    .replace(/\\?overrightarrow\s*\{\s*([a-z])\s*\}/g, '\\vec{$1}')
+    .replace(/\\?overrightarrow\s*\{\s*([A-Z][A-Z0-9']*)\s*\}/g, '\\overrightarrow{$1}')
+    .replace(/\\?vec\s*\{\s*([a-z])\s*\}/g, '\\vec{$1}')
+    .replace(/\\?vec\s+([a-z])(?![A-Za-zÀ-ỹ])/g, '\\vec{$1}')
+    .replace(/\\?vec\s*\{\s*([A-Z][A-Z0-9']*)\s*\}/g, '\\overrightarrow{$1}')
+    .replace(/\\?sqrt\s*\{\s*([^{}]+?)\s*\}/g, '\\sqrt{$1}')
+    .replace(/\\?sqrt\s+([A-Za-z0-9]+)/g, '\\sqrt{$1}')
+    .replace(/\\?sqrt([0-9]+)/g, '\\sqrt{$1}')
+    .replace(/\\?frac\s*\{\s*([^{}]+?)\s*\}\s*\{\s*([^{}]+?)\s*\}/g, '\\frac{$1}{$2}')
+    .replace(/(^|[^\\A-Za-z])dfrac(?=\s*\{)/g, '$1\\dfrac')
+    .replace(/(^|[^\\A-Za-z])frac(?=\s*\{)/g, '$1\\frac')
+    .replace(/(^|[^\\A-Za-z])begin(?=\s*\{)/g, '$1\\begin')
+    .replace(/(^|[^\\A-Za-z])end(?=\s*\{)/g, '$1\\end')
+    .replace(/(^|[^\\A-Za-z])mathbb(?=\s*\{)/g, '$1\\mathbb')
+    .replace(/(^|[^\\A-Za-z])text(?=\s*\{)/g, '$1\\text')
+    .replace(/(^|[^\\A-Za-z])left(?=\s*[({[|])/g, '$1\\left')
+    .replace(/(^|[^\\A-Za-z])right(?=\s*[)}\]|])/g, '$1\\right')
+    .replace(/(^|[^\\A-Za-z])(sin|cos|tan|cot|log|ln|lim|sum|int|cdot|times|leq|geq|neq|infty|pi|alpha|beta|gamma|Delta|theta|varphi)(?![A-Za-zÀ-ỹ])/g, '$1\\$2')
 }
-
 
 function protectDelimitedMath(text: string) {
   const tokens: string[] = []
