@@ -43,7 +43,8 @@
     "react-markdown": "^10.1.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "ts-fsrs": "^5.4.1"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -6,6 +6,7 @@ import { useAuth } from '@/lib/auth-context'
 import Sidebar from '@/components/layout/Sidebar'
 import Header from '@/components/layout/Header'
 import ProfileCompletionModal from '@/components/ProfileCompletionModal'
+import DictionaryPopup from '@/components/vocabulary/DictionaryPopup'
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { isLoading } = useAuth()
@@ -57,6 +58,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         onClose={() => setShowProfileModal(false)}
         userName={session?.user?.name ?? ''}
       />
+
+      {/* Global dictionary popup — active on any text selection across the app */}
+      <DictionaryPopup />
     </div>
   )
 }
