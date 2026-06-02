@@ -4,8 +4,9 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { jobId: string } }
+  context: { params: Promise<{ jobId: string }> }
 ) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

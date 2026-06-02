@@ -7,8 +7,9 @@ import { createAdminClient } from '@/lib/supabase'
 // Returns set details, words, questions, and user progress
 export async function GET(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  context: { params: Promise<{ setId: string }> }
 ) {
+  const params = await context.params
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
@@ -82,8 +83,9 @@ export async function GET(
 // PATCH /api/vocabulary/[setId] — toggle public, update metadata
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  context: { params: Promise<{ setId: string }> }
 ) {
+  const params = await context.params
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
@@ -123,8 +125,9 @@ export async function PATCH(
 // DELETE /api/vocabulary/[setId] — delete own set
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  context: { params: Promise<{ setId: string }> }
 ) {
+  const params = await context.params
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 

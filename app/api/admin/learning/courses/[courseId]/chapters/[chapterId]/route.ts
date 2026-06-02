@@ -4,8 +4,9 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function DELETE(
   _req: NextRequest,
-  { params }: { params: { courseId: string; chapterId: string } }
+  context: { params: Promise<{ courseId: string; chapterId: string }> }
 ) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

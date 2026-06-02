@@ -2,7 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 
-export async function POST(req: NextRequest, { params }: { params: { id: string } }) {
+export async function POST(req: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

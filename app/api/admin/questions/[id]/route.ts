@@ -3,7 +3,10 @@ import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(req: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -85,7 +88,10 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   return NextResponse.json({ success: true, question: data })
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(_req: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

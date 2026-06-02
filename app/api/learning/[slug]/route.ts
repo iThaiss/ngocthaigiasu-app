@@ -5,8 +5,9 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  context: { params: Promise<{ slug: string }> }
 ) {
+  const params = await context.params
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 

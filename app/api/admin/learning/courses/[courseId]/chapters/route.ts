@@ -4,8 +4,9 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { courseId: string } }
+  context: { params: Promise<{ courseId: string }> }
 ) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -33,8 +34,9 @@ export async function GET(
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { courseId: string } }
+  context: { params: Promise<{ courseId: string }> }
 ) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

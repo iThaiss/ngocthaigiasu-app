@@ -4,8 +4,9 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function PATCH(
   _req: NextRequest,
-  { params }: { params: { id: string } },
+  context: { params: Promise<{ id: string }> },
 ) {
+  const params = await context.params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 

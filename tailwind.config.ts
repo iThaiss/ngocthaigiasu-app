@@ -16,6 +16,7 @@ const config: Config = {
     },
     extend: {
       colors: {
+        /* Shadcn compatibility — mapped to CSS vars */
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -49,11 +50,24 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        /* Losan surface scale */
+        surface: {
+          DEFAULT: 'hsl(var(--surface-bg))',
+          1: 'hsl(var(--surface-1))',
+          2: 'hsl(var(--surface-2))',
+          3: 'hsl(var(--surface-3))',
+          hover: 'hsl(var(--surface-hover))',
+        },
+        sidebar: 'hsl(var(--sidebar-hsl))',
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        '2xl': '1.25rem',
+        xl:  '1rem',
+        lg:  'var(--radius)',         /* 0.75rem = 12px */
+        md:  'calc(var(--radius) - 2px)',
+        sm:  'calc(var(--radius) - 4px)',
+        xs:  '4px',
+        pill: '9999px',
       },
       keyframes: {
         'accordion-down': {
@@ -68,11 +82,35 @@ const config: Config = {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
         },
+        fadeUp: {
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-7px)' },
+        },
+        glowPulse: {
+          '0%, 100%': { boxShadow: '0 0 18px rgba(244,63,94,0.15)' },
+          '50%': { boxShadow: '0 0 36px rgba(244,63,94,0.32)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         shimmer: 'shimmer 2s linear infinite',
+        'fade-up': 'fadeUp 0.4s ease both',
+        float: 'float 3s ease-in-out infinite',
+        'glow-pulse': 'glowPulse 2.5s ease-in-out infinite',
+      },
+      backgroundImage: {
+        'gradient-rose': 'linear-gradient(135deg, #f43f5e, #e11d48)',
+        'gradient-rose-soft': 'linear-gradient(135deg, #fb7185, #f43f5e)',
+      },
+      boxShadow: {
+        glow: '0 0 28px rgba(244,63,94,0.22)',
+        'glow-sm': '0 0 14px rgba(244,63,94,0.16)',
+        'surface': '0 4px 20px rgba(0,0,0,0.6)',
       },
     },
   },
