@@ -1,7 +1,9 @@
 import katex from 'katex'
 
 function repairLatexCommands(math: string): string {
-  let result = math.replace(/\\+/g, '\\')
+  // Reduce 2+ backslashes only when followed by a letter (command name).
+  // This fixes OCR artifacts like \\frac → \frac while preserving \\ (LaTeX line breaks).
+  let result = math.replace(/\\{2,}(?=[A-Za-z])/g, '\\')
 
   return result
     // OCR/data sometimes writes Vietnamese "vectơ/vecto" as if it were a LaTeX command.
@@ -61,7 +63,8 @@ function restoreDelimitedMath(text: string, tokens: string[]) {
 
 function autoWrapLooseMath(text: string): string {
   const { protectedText, tokens } = protectDelimitedMath(text)
-  const commandPattern = String.raw`(?:\\?(?:dfrac\s*\{[^{}]+\}\s*\{[^{}]+\}|frac\s*\{[^{}]+\}\s*\{[^{}]+\}|sqrt\s*(?:\{[^{}]+\}|[A-Za-z0-9]+)|vec(?:\s*\{[^{}]+\}|\s+[a-z](?![A-Za-zÀ-ỹ])|\{[^{}]+\})|overrightarrow\s*\{[^{}]+\}|overline\s*\{[^{}]+\}))`
+  const brace = String.raw`(?:[^{}]|\{[^{}]*\})+`
+  const commandPattern = String.raw`(?:\\?(?:dfrac\s*\{${brace}\}\s*\{${brace}\}|frac\s*\{${brace}\}\s*\{${brace}\}|sqrt\s*(?:\{${brace}\}|[A-Za-z0-9]+)|vec(?:\s*\{${brace}\}|\s+[a-z](?![A-Za-zÀ-ỹ])|\{${brace}\})|overrightarrow\s*\{${brace}\}|overline\s*\{${brace}\}))`
   const equationPattern = new RegExp(String.raw`((?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern}(?:\s*,\s*(?:[A-Z][A-Z0-9']*\s*=\s*)+${commandPattern})*)`, 'g')
   const commandOnlyPattern = new RegExp(String.raw`(^|[\s([,;:=])(${commandPattern})`, 'g')
 
