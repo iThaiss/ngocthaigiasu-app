@@ -4,8 +4,10 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { jobId: string } }
+  { params }: { params: Promise<{ jobId: string }> }
 ) {
+  const { jobId } = await params
+
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -13,7 +15,7 @@ export async function GET(
   const { data, error } = await supabase
     .from('ai_jobs')
     .select('id, status, result, error, completed_at')
-    .eq('id', params.jobId)
+    .eq('id', jobId)
     .single()
 
   if (error || !data) {

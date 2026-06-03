@@ -5,8 +5,10 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
+  const { slug } = await params
+
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
@@ -15,7 +17,7 @@ export async function GET(
   const { data: course, error } = await supabase
     .from('courses')
     .select('*')
-    .eq('slug', params.slug)
+    .eq('slug', slug)
     .eq('is_active', true)
     .single()
 

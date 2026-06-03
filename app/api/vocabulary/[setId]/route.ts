@@ -7,14 +7,14 @@ import { createAdminClient } from '@/lib/supabase'
 // Returns set details, words, questions, and user progress
 export async function GET(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  { params }: { params: Promise<{ setId: string }> }
 ) {
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const supabase = createAdminClient()
   const userId = session.user.id
-  const { setId } = params
+  const { setId } = await params
 
   // Fetch set metadata
   const { data: set, error: setError } = await supabase
@@ -49,7 +49,7 @@ export async function GET(
   // Fetch user's progress for this set
   const { data: progress } = await supabase
     .from('vocab_progress')
-    .select('word, state, due, stability, reps, lapses, last_review')
+    .select('word, state, due, stability, difficulty_fsrs, elapsed_days, scheduled_days, reps, lapses, last_review')
     .eq('user_id', userId)
     .eq('set_id', setId)
 
@@ -82,14 +82,14 @@ export async function GET(
 // PATCH /api/vocabulary/[setId] — toggle public, update metadata
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  { params }: { params: Promise<{ setId: string }> }
 ) {
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const supabase = createAdminClient()
   const userId = session.user.id
-  const { setId } = params
+  const { setId } = await params
   const body = await req.json()
 
   const { data: set } = await supabase
@@ -123,14 +123,14 @@ export async function PATCH(
 // DELETE /api/vocabulary/[setId] — delete own set
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { setId: string } }
+  { params }: { params: Promise<{ setId: string }> }
 ) {
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const supabase = createAdminClient()
   const userId = session.user.id
-  const { setId } = params
+  const { setId } = await params
 
   const { data: set } = await supabase
     .from('vocab_sets')

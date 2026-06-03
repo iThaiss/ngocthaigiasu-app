@@ -5,14 +5,14 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { txId: string } }
+  { params }: { params: Promise<{ txId: string }> }
 ) {
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const { txId } = params
+  const { txId } = await params
 
   const supabase = createAdminClient()
   const { data, error } = await supabase

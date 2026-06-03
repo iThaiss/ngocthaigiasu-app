@@ -3,7 +3,7 @@ import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -11,6 +11,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   if (!body) return NextResponse.json({ error: 'Invalid body' }, { status: 400 })
 
   const supabase = createAdminClient()
+  const { id } = await params
   const {
     question_text, question_type, difficulty, correct_answer,
     option_a, option_b, option_c, option_d,
@@ -64,7 +65,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
     const { data: current, error: currentError } = await supabase
       .from('questions')
       .select('*')
-      .eq('id', params.id)
+      .eq('id', id)
       .single()
 
     if (currentError || !current) return NextResponse.json({ error: 'Question not found' }, { status: 404 })
@@ -77,7 +78,7 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   const { data, error } = await supabase
     .from('questions')
     .update(updates)
-    .eq('id', params.id)
+    .eq('id', id)
     .select()
     .single()
 
@@ -85,12 +86,13 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   return NextResponse.json({ success: true, question: data })
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
   const supabase = createAdminClient()
-  const { error } = await supabase.from('questions').delete().eq('id', params.id)
+  const { error } = await supabase.from('questions').delete().eq('id', id)
   if (error) return NextResponse.json({ error: 'Failed to delete' }, { status: 500 })
   return NextResponse.json({ success: true })
 }

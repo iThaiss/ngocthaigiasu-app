@@ -4,8 +4,10 @@ import { createAdminClient } from '@/lib/supabase'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { courseId: string } }
+  { params }: { params: Promise<{ courseId: string }> }
 ) {
+  const { courseId } = await params
+
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -13,7 +15,7 @@ export async function GET(
   const { data, error } = await supabase
     .from('chapters')
     .select('*')
-    .eq('course_id', params.courseId)
+    .eq('course_id', courseId)
     .order('order_index')
 
   if (error) return NextResponse.json({ error: 'Failed to fetch' }, { status: 500 })
@@ -33,8 +35,10 @@ export async function GET(
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { courseId: string } }
+  { params }: { params: Promise<{ courseId: string }> }
 ) {
+  const { courseId } = await params
+
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -46,11 +50,11 @@ export async function POST(
   const { count } = await supabase
     .from('chapters')
     .select('id', { count: 'exact', head: true })
-    .eq('course_id', params.courseId)
+    .eq('course_id', courseId)
 
   const { data, error } = await supabase
     .from('chapters')
-    .insert({ course_id: params.courseId, name, subject, description, order_index: (count ?? 0) + 1 })
+    .insert({ course_id: courseId, name, subject, description, order_index: (count ?? 0) + 1 })
     .select()
     .single()
 

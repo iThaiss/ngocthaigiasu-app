@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 
-export async function POST(req: NextRequest, { params }: { params: { id: string } }) {
+export async function POST(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const guard = await requireAdmin()
   if (!guard.ok) return guard.res
 
@@ -12,6 +12,7 @@ export async function POST(req: NextRequest, { params }: { params: { id: string 
   const points = parseInt(body.points)
   const reason = body.reason?.trim() ?? ''
 
+  const { id } = await params
   if (!points || points <= 0) {
     return NextResponse.json({ error: 'Số điểm phải lớn hơn 0' }, { status: 400 })
   }
@@ -20,7 +21,7 @@ export async function POST(req: NextRequest, { params }: { params: { id: string 
   }
 
   const supabase = createAdminClient()
-  const studentId = params.id
+  const studentId = id
 
   const { data: wallet } = await supabase
     .from('wallets')
