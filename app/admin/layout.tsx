@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { signOut, useSession } from 'next-auth/react'
 import {
   LayoutDashboard, HelpCircle, FileText, Users, CreditCard, Ticket,
-  LogOut, Shield, Menu, X, ChevronRight, GraduationCap, ImageOff, MessageSquareWarning, FileStack, BookmarkCheck, Bot,
+  LogOut, Shield, Menu, X, ChevronRight, GraduationCap, ImageOff, MessageSquareWarning, FileStack, BookmarkCheck, Bot, Layers,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -19,6 +19,7 @@ const NAV = [
   { href: '/admin/question-reports', label: 'Báo lỗi câu', icon: MessageSquareWarning },
   { href: '/admin/saved-questions', label: 'Câu HS lưu', icon: BookmarkCheck },
   { href: '/admin/visual-review', label: 'Review hình', icon: ImageOff },
+  { href: '/admin/question-review', label: 'Swipe Duyệt', icon: Layers },
   { href: '/admin/documents', label: 'Tài liệu', icon: FileText },
   { href: '/admin/students', label: 'Học sinh', icon: Users },
   { href: '/admin/transactions', label: 'Giao dịch', icon: CreditCard },
