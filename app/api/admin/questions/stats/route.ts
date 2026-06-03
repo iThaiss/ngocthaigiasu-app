@@ -7,11 +7,22 @@ export async function GET() {
   if (!guard.ok) return guard.res
 
   const supabase = createAdminClient()
-  const { data, error } = await supabase
-    .from('questions')
-    .select('topic, subtopic, is_published')
 
-  if (error) return NextResponse.json({ error: 'Failed to fetch stats' }, { status: 500 })
+  // Fetch all rows in batches (Supabase default limit is 1000)
+  const BATCH = 1000
+  let allRows: { topic: string | null; subtopic: string | null; is_published: boolean }[] = []
+  let offset = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('questions')
+      .select('topic, subtopic, is_published')
+      .range(offset, offset + BATCH - 1)
+    if (error) return NextResponse.json({ error: 'Failed to fetch stats' }, { status: 500 })
+    if (!data || data.length === 0) break
+    allRows = allRows.concat(data as typeof allRows)
+    if (data.length < BATCH) break
+    offset += BATCH
+  }
 
   type TopicAgg = {
     pending: number
@@ -22,7 +33,7 @@ export async function GET() {
 
   const topicMap = new Map<string | null, TopicAgg>()
 
-  for (const row of data ?? []) {
+  for (const row of allRows) {
     const topic = row.topic ?? null
     const subtopic = row.subtopic ?? null
     const isPending = !row.is_published
