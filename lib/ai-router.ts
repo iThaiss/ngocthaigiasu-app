@@ -292,17 +292,49 @@ async function callAnthropicFallback(params: AiCompletionParams) {
 }
 
 export async function createAiCompletion(params: AiCompletionParams) {
-  // Vision requests: route to Gemini (DeepSeek/most routers don't support images)
+  // Vision requests: route to Gemini or OpenRouter
   if (hasImageContent(params.messages)) {
-    try {
-      const text = await callGeminiVision(params)
-      if (text) return { text, provider: 'gemini' as const, model: process.env.AI_VISION_MODEL ?? 'gemini-2.0-flash' }
-    } catch (err) {
-      console.error('[ai-router] Gemini vision failed:', err)
-      // Fall through to try Anthropic
-      const fallbackText = await callAnthropicFallback(params)
-      return { text: fallbackText, provider: 'anthropic' as const, model: params.model }
+    const visionProvider = process.env.AI_VISION_PROVIDER ?? 'gemini'
+    const router = getRouterConfig()
+    const visionModel = process.env.AI_VISION_MODEL ?? 'google/gemini-2.0-flash'
+
+    if (visionProvider === 'openrouter' || visionProvider === 'router') {
+      try {
+        const text = await callOpenAiCompatible(params, {
+          baseUrl: router.baseUrl ?? 'https://openrouter.ai/api/v1',
+          apiKey: router.apiKey,
+          model: visionModel,
+        })
+        if (text) return { text, provider: 'router' as const, model: visionModel }
+      } catch (err) {
+        console.error('[ai-router] OpenRouter vision failed:', err)
+      }
+    } else {
+      // Try Gemini direct (API Key Rotation) first
+      try {
+        const text = await callGeminiVision(params)
+        if (text) return { text, provider: 'gemini' as const, model: visionModel }
+      } catch (err) {
+        console.error('[ai-router] Gemini direct vision failed, trying Router fallback:', err)
+        // Try Router fallback if configured
+        if (router.baseUrl && router.apiKey) {
+          try {
+            const text = await callOpenAiCompatible(params, {
+              baseUrl: router.baseUrl,
+              apiKey: router.apiKey,
+              model: visionModel,
+            })
+            if (text) return { text, provider: 'router' as const, model: visionModel }
+          } catch (routerErr) {
+            console.error('[ai-router] Router vision fallback failed:', routerErr)
+          }
+        }
+      }
     }
+
+    // Fall back to Anthropic
+    const fallbackText = await callAnthropicFallback(params)
+    return { text: fallbackText, provider: 'anthropic' as const, model: params.model }
   }
 
   const router = getRouterConfig()
