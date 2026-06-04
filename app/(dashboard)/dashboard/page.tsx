@@ -6,12 +6,19 @@ import { motion } from 'framer-motion'
 import {
   Brain, Trophy, Bell, ArrowRight, Clock, Target, Flame,
   Wallet, BookmarkCheck, Crown, AlertCircle, Loader2, GraduationCap,
+  BookOpen, Languages, Headphones, Repeat,
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Progress } from '@/components/ui/progress'
 import { useAuth } from '@/lib/auth-context'
+
+interface EnglishStats {
+  vocab: { mastered: number; dueToday: number; setsStarted: number }
+  grammar: { mastered: number; attempted: number; total: number }
+  reading: { completed: number; total: number; avgScore: number }
+}
 
 interface DashboardData {
   stats: {
@@ -126,6 +133,7 @@ function formatVipDate(dateStr: string | null) {
 export default function DashboardPage() {
   const { user, isVip } = useAuth()
   const [data, setData] = useState<DashboardData | null>(null)
+  const [englishStats, setEnglishStats] = useState<EnglishStats | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -135,10 +143,16 @@ export default function DashboardPage() {
       setLoading(true)
       setError('')
       try {
-        const res = await fetch('/api/dashboard')
-        if (!res.ok) throw new Error('Không thể tải dữ liệu dashboard')
-        const json = await res.json()
-        if (!cancelled) setData(json)
+        const [dashRes, engRes] = await Promise.all([
+          fetch('/api/dashboard'),
+          fetch('/api/english-stats'),
+        ])
+        if (!dashRes.ok) throw new Error('Không thể tải dữ liệu dashboard')
+        const [dashJson, engJson] = await Promise.all([dashRes.json(), engRes.ok ? engRes.json() : null])
+        if (!cancelled) {
+          setData(dashJson)
+          setEnglishStats(engJson)
+        }
       } catch (err) {
         if (!cancelled) setError(err instanceof Error ? err.message : 'Không thể tải dữ liệu dashboard')
       } finally {
@@ -433,6 +447,98 @@ export default function DashboardPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* English Learning Progress */}
+      <div>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-lg font-semibold flex items-center gap-2">
+            <Languages className="h-5 w-5 text-rose-500" />
+            Tiến độ Tiếng Anh
+          </h2>
+          <Link href="/vocabulary">
+            <Button variant="ghost" size="sm" className="h-7 text-xs gap-1">
+              Học ngay <ArrowRight className="h-3 w-3" />
+            </Button>
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          {[
+            {
+              label: 'Từ vựng đã học',
+              value: englishStats?.vocab.mastered ?? 0,
+              sub: `${englishStats?.vocab.setsStarted ?? 0} bộ đang học`,
+              icon: BookOpen,
+              color: 'text-rose-500',
+              bg: 'bg-rose-500/10',
+              href: '/vocabulary',
+            },
+            {
+              label: 'Ngữ pháp nắm vững',
+              value: `${englishStats?.grammar.mastered ?? 0}/${englishStats?.grammar.total ?? 50}`,
+              sub: `${englishStats?.grammar.attempted ?? 0} bài đã thử`,
+              icon: GraduationCap,
+              color: 'text-violet-500',
+              bg: 'bg-violet-500/10',
+              href: '/grammar',
+            },
+            {
+              label: 'Bài đọc hoàn thành',
+              value: `${englishStats?.reading.completed ?? 0}/${englishStats?.reading.total ?? 0}`,
+              sub: englishStats?.reading.avgScore ? `Điểm TB ${englishStats.reading.avgScore}%` : 'Chưa có bài nào',
+              icon: Headphones,
+              color: 'text-sky-500',
+              bg: 'bg-sky-500/10',
+              href: '/reading',
+            },
+          ].map((stat, i) => (
+            <motion.div key={stat.label} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 + i * 0.07 }}>
+              <Link href={stat.href}>
+                <Card className="hover:shadow-md hover:border-primary/30 transition-all cursor-pointer h-full">
+                  <CardContent className="pt-5 pb-5">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <p className="text-sm text-muted-foreground">{stat.label}</p>
+                        <p className={`text-2xl font-bold mt-1 ${stat.color}`}>
+                          {loading ? <Loader2 className="h-6 w-6 animate-spin" /> : stat.value}
+                        </p>
+                        <p className="text-xs text-muted-foreground mt-1">{stat.sub}</p>
+                      </div>
+                      <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${stat.bg}`}>
+                        <stat.icon className={`h-5 w-5 ${stat.color}`} />
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Due today vocab card */}
+        {(englishStats?.vocab.dueToday ?? 0) > 0 && (
+          <Link href="/vocabulary">
+            <Card className="border-rose-500/20 hover:border-rose-500/40 transition-colors cursor-pointer">
+              <CardContent className="flex items-center gap-4 pt-4 pb-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-500/10">
+                  <Repeat className="h-5 w-5 text-rose-500" />
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-sm">
+                    {englishStats!.vocab.dueToday} từ cần ôn hôm nay
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Ôn lại để không quên — spaced repetition FSRS
+                  </p>
+                </div>
+                <Button size="sm" variant="outline" className="shrink-0 border-rose-500/30 text-rose-500 hover:bg-rose-500/10">
+                  Ôn ngay <ArrowRight className="h-3.5 w-3.5 ml-1" />
+                </Button>
+              </CardContent>
+            </Card>
+          </Link>
+        )}
+      </div>
     </div>
   )
 }
