@@ -1,27 +1,40 @@
-import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
-import Anthropic from '@anthropic-ai/sdk'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
 export const maxDuration = 60
 
-const anthropic = new Anthropic({
-  baseURL: process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com',
-  apiKey: process.env.ANTHROPIC_API_KEY!,
-})
+function getAiConfig() {
+  const baseUrl = (
+    process.env.AI_ROUTER_BASE_URL ??
+    process.env.AI_BASE_URL ??
+    process.env.OPENROUTER_BASE_URL
+  )?.replace(/\/$/, '')
+
+  const apiKey =
+    process.env.AI_ROUTER_API_KEY ??
+    process.env.AI_API_KEY ??
+    process.env.OPENROUTER_API_KEY ??
+    process.env.ANTHROPIC_API_KEY
+
+  const model =
+    process.env.AI_FEEDBACK_MODEL ??
+    process.env.AI_TUTOR_MODEL ??
+    process.env.AI_ROUTER_MODEL ??
+    'deepseek-v4-flash'
+
+  return { baseUrl, apiKey, model }
+}
 
 export async function POST() {
   const session = await getServerSession(authOptions)
   if (!session?.user?.id) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401 })
   }
 
   const userId = session.user.id
-  const now = new Date().toISOString()
   const supabase = createAdminClient()
 
-  // Fetch all learning data in parallel
   const [
     grammarProgressRes,
     grammarLessonsRes,
@@ -35,24 +48,15 @@ export async function POST() {
       .select('lesson_id, mastered, best_score, attempts, last_practiced')
       .eq('user_id', userId)
       .gt('attempts', 0),
-    supabase
-      .from('grammar_lessons')
-      .select('id, title, title_vi, topic_group, level'),
+    supabase.from('grammar_lessons').select('id, title, title_vi, topic_group, level'),
     supabase
       .from('reading_progress')
       .select('passage_id, completed, score, total, completed_at')
       .eq('user_id', userId)
       .eq('completed', true),
-    supabase
-      .from('reading_passages')
-      .select('id, title, topic, level'),
-    supabase
-      .from('vocab_progress')
-      .select('set_id, state, lapses, word')
-      .eq('user_id', userId),
-    supabase
-      .from('vocab_sets')
-      .select('id, name, topic'),
+    supabase.from('reading_passages').select('id, title, topic, level'),
+    supabase.from('vocab_progress').select('set_id, state, lapses, word').eq('user_id', userId),
+    supabase.from('vocab_sets').select('id, name, topic'),
   ])
 
   const grammarProgress = grammarProgressRes.data ?? []
@@ -62,12 +66,13 @@ export async function POST() {
   const vocabProgress = vocabProgressRes.data ?? []
   const vocabSets = vocabSetsRes.data ?? []
 
-  // No data at all — skip AI call
   if (grammarProgress.length === 0 && readingProgress.length === 0 && vocabProgress.length === 0) {
-    return NextResponse.json({ error: 'Chưa có đủ dữ liệu học để phân tích. Hãy thử làm một số bài tập trước!' }, { status: 400 })
+    return new Response(
+      JSON.stringify({ error: 'Chưa có đủ dữ liệu học để phân tích. Hãy thử làm một số bài tập trước!' }),
+      { status: 400 }
+    )
   }
 
-  // --- Build grammar summary ---
   const lessonMap = new Map(grammarLessons.map((l) => [l.id, l]))
   const grammarMastered = grammarProgress.filter((p) => p.mastered).length
   const grammarStruggling = grammarProgress
@@ -78,7 +83,6 @@ export async function POST() {
       const lesson = lessonMap.get(p.lesson_id)
       return `  - ${lesson?.title ?? 'Unknown'} (${lesson?.level ?? ''}): điểm cao nhất ${p.best_score}%, thử ${p.attempts} lần`
     })
-
   const grammarGood = grammarProgress
     .filter((p) => p.mastered || p.best_score >= 80)
     .slice(0, 4)
@@ -87,7 +91,6 @@ export async function POST() {
       return `  - ${lesson?.title ?? 'Unknown'} (${lesson?.level ?? ''}): ${p.best_score}%`
     })
 
-  // --- Build reading summary ---
   const passageMap = new Map(readingPassages.map((p) => [p.id, p]))
   const readingScored = readingProgress.map((p) => ({
     ...p,
@@ -107,14 +110,10 @@ export async function POST() {
     .slice(0, 3)
     .map((r) => `  - ${r.passage?.title ?? 'Unknown'} (${r.passage?.topic ?? ''}): ${r.pct}%`)
 
-  // --- Build vocab summary ---
   const setMap = new Map(vocabSets.map((s) => [s.id, s]))
   const setsStarted = new Set(vocabProgress.map((v) => v.set_id)).size
   const vocabMastered = vocabProgress.filter((v) => v.state === 'review').length
-  const vocabDueToday = vocabProgress.filter((v) => {
-    // Rough estimate: state is 'learning' or 'relearning' with due <= now
-    return v.state === 'learning' || v.state === 'relearning'
-  }).length
+  const vocabDueToday = vocabProgress.filter((v) => v.state === 'learning' || v.state === 'relearning').length
   const highLapseWords = vocabProgress
     .filter((v) => v.lapses >= 2)
     .sort((a, b) => b.lapses - a.lapses)
@@ -124,7 +123,6 @@ export async function POST() {
       return `"${v.word}" (${setName}, quên ${v.lapses} lần)`
     })
 
-  // --- Compose prompt ---
   const userName = session.user.name?.split(' ').pop() ?? 'bạn'
 
   const dataBlock = `
@@ -161,23 +159,149 @@ Hãy viết nhận xét cá nhân hóa bằng tiếng Việt theo cấu trúc:
 
 Yêu cầu: thân thiện như gia sư, cụ thể (có số liệu), không nói chung chung, tổng cộng khoảng 400-500 từ.`
 
-  // Stream response
+  const systemPrompt = 'Bạn là gia sư tiếng Anh AI thân thiện và chuyên nghiệp dành cho học sinh THPT Việt Nam. Bạn phân tích dữ liệu học và đưa ra nhận xét cá nhân hóa, động viên học sinh, và gợi ý bước tiếp theo thực tế.'
+
+  const { baseUrl, apiKey, model } = getAiConfig()
+
+  if (!apiKey) {
+    return new Response('❌ Chưa cấu hình AI API key.', {
+      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+    })
+  }
+
   const enc = new TextEncoder()
+
+  // OpenAI-compatible streaming (DeepSeek, OpenRouter, etc.)
+  if (baseUrl && !apiKey.startsWith('sk-ant-')) {
+    const url = baseUrl.endsWith('/v1')
+      ? `${baseUrl}/chat/completions`
+      : `${baseUrl}/chat/completions`
+
+    const readableStream = new ReadableStream({
+      async start(controller) {
+        try {
+          const res = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${apiKey}`,
+            },
+            body: JSON.stringify({
+              model,
+              max_tokens: 1500,
+              temperature: 0.7,
+              stream: true,
+              messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: userPrompt },
+              ],
+            }),
+          })
+
+          if (!res.ok || !res.body) {
+            const err = await res.text().catch(() => '')
+            controller.enqueue(enc.encode(`❌ Lỗi khi tạo nhận xét: AI API ${res.status}: ${err.slice(0, 200)}`))
+            controller.close()
+            return
+          }
+
+          const reader = res.body.getReader()
+          const decoder = new TextDecoder()
+          let buffer = ''
+
+          while (true) {
+            const { done, value } = await reader.read()
+            if (done) break
+
+            buffer += decoder.decode(value, { stream: true })
+            const lines = buffer.split('\n')
+            buffer = lines.pop() ?? ''
+
+            for (const line of lines) {
+              const trimmed = line.trim()
+              if (!trimmed.startsWith('data: ')) continue
+              const data = trimmed.slice(6)
+              if (data === '[DONE]') continue
+              try {
+                const parsed = JSON.parse(data)
+                const content = parsed.choices?.[0]?.delta?.content
+                if (content) controller.enqueue(enc.encode(content))
+              } catch {
+                // ignore malformed SSE lines
+              }
+            }
+          }
+        } catch (err) {
+          const msg = err instanceof Error ? err.message : 'Lỗi không xác định'
+          controller.enqueue(enc.encode(`\n\n❌ Lỗi khi tạo nhận xét: ${msg}`))
+        } finally {
+          controller.close()
+        }
+      },
+    })
+
+    return new Response(readableStream, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Transfer-Encoding': 'chunked',
+        'X-Content-Type-Options': 'nosniff',
+      },
+    })
+  }
+
+  // Fallback: Anthropic direct streaming
+  const anthropicBase = (process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com').replace(/\/$/, '')
+
   const readableStream = new ReadableStream({
     async start(controller) {
       try {
-        const stream = anthropic.messages.stream({
-          model: 'claude-haiku-4-5',
-          max_tokens: 1500,
-          system: 'Bạn là gia sư tiếng Anh AI thân thiện và chuyên nghiệp dành cho học sinh THPT Việt Nam. Bạn phân tích dữ liệu học và đưa ra nhận xét cá nhân hóa, động viên học sinh, và gợi ý bước tiếp theo thực tế.',
-          messages: [{ role: 'user', content: userPrompt }],
+        const res = await fetch(`${anthropicBase}/v1/messages`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': apiKey,
+            'anthropic-version': '2023-06-01',
+          },
+          body: JSON.stringify({
+            model: process.env.AI_FEEDBACK_MODEL ?? 'claude-haiku-4-5',
+            max_tokens: 1500,
+            stream: true,
+            system: systemPrompt,
+            messages: [{ role: 'user', content: userPrompt }],
+          }),
         })
-        for await (const chunk of stream) {
-          if (
-            chunk.type === 'content_block_delta' &&
-            chunk.delta.type === 'text_delta'
-          ) {
-            controller.enqueue(enc.encode(chunk.delta.text))
+
+        if (!res.ok || !res.body) {
+          const err = await res.text().catch(() => '')
+          controller.enqueue(enc.encode(`❌ Lỗi khi tạo nhận xét: Anthropic API ${res.status}: ${err.slice(0, 200)}`))
+          controller.close()
+          return
+        }
+
+        const reader = res.body.getReader()
+        const decoder = new TextDecoder()
+        let buffer = ''
+
+        while (true) {
+          const { done, value } = await reader.read()
+          if (done) break
+
+          buffer += decoder.decode(value, { stream: true })
+          const lines = buffer.split('\n')
+          buffer = lines.pop() ?? ''
+
+          for (const line of lines) {
+            const trimmed = line.trim()
+            if (!trimmed.startsWith('data: ')) continue
+            const data = trimmed.slice(6)
+            try {
+              const parsed = JSON.parse(data)
+              if (parsed.type === 'content_block_delta' && parsed.delta?.type === 'text_delta') {
+                controller.enqueue(enc.encode(parsed.delta.text))
+              }
+            } catch {
+              // ignore
+            }
           }
         }
       } catch (err) {
