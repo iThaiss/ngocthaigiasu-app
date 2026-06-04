@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import {
   ArrowLeft, BookOpen, CheckCircle2, XCircle, ChevronRight,
   ChevronLeft, Star, Loader2, AlertCircle, RotateCcw, Target,
@@ -197,8 +198,17 @@ export default function GrammarLessonPage() {
       {tab === 'theory' && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           {lesson.content_md ? (
-            <div className="prose prose-sm dark:prose-invert max-w-none">
-              <ReactMarkdown>{lesson.content_md}</ReactMarkdown>
+            <div className="prose prose-sm dark:prose-invert max-w-none
+              prose-headings:font-bold prose-headings:text-foreground
+              prose-h2:text-base prose-h2:mt-5 prose-h2:mb-2
+              prose-h3:text-sm prose-h3:mt-4 prose-h3:mb-1.5
+              prose-p:text-sm prose-p:leading-relaxed prose-p:text-foreground
+              prose-strong:text-foreground prose-strong:font-semibold
+              prose-code:text-primary prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-xs prose-code:font-mono
+              prose-ul:text-sm prose-li:text-sm
+              prose-table:text-sm prose-th:bg-muted prose-th:font-semibold
+              prose-blockquote:border-primary prose-blockquote:text-muted-foreground">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{lesson.content_md}</ReactMarkdown>
             </div>
           ) : (
             <div className="text-center py-12 text-muted-foreground">
