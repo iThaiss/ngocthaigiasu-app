@@ -4,6 +4,8 @@ import Anthropic from '@anthropic-ai/sdk'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
+export const maxDuration = 60
+
 const anthropic = new Anthropic({
   baseURL: process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com',
   apiKey: process.env.ANTHROPIC_API_KEY!,
@@ -160,24 +162,27 @@ Hãy viết nhận xét cá nhân hóa bằng tiếng Việt theo cấu trúc:
 Yêu cầu: thân thiện như gia sư, cụ thể (có số liệu), không nói chung chung, tổng cộng khoảng 400-500 từ.`
 
   // Stream response
-  const stream = anthropic.messages.stream({
-    model: 'claude-haiku-4-5',
-    max_tokens: 1500,
-    system: 'Bạn là gia sư tiếng Anh AI thân thiện và chuyên nghiệp dành cho học sinh THPT Việt Nam. Bạn phân tích dữ liệu học và đưa ra nhận xét cá nhân hóa, động viên học sinh, và gợi ý bước tiếp theo thực tế.',
-    messages: [{ role: 'user', content: userPrompt }],
-  })
-
+  const enc = new TextEncoder()
   const readableStream = new ReadableStream({
     async start(controller) {
       try {
+        const stream = anthropic.messages.stream({
+          model: 'claude-haiku-4-5',
+          max_tokens: 1500,
+          system: 'Bạn là gia sư tiếng Anh AI thân thiện và chuyên nghiệp dành cho học sinh THPT Việt Nam. Bạn phân tích dữ liệu học và đưa ra nhận xét cá nhân hóa, động viên học sinh, và gợi ý bước tiếp theo thực tế.',
+          messages: [{ role: 'user', content: userPrompt }],
+        })
         for await (const chunk of stream) {
           if (
             chunk.type === 'content_block_delta' &&
             chunk.delta.type === 'text_delta'
           ) {
-            controller.enqueue(new TextEncoder().encode(chunk.delta.text))
+            controller.enqueue(enc.encode(chunk.delta.text))
           }
         }
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : 'Lỗi không xác định'
+        controller.enqueue(enc.encode(`\n\n❌ Lỗi khi tạo nhận xét: ${msg}`))
       } finally {
         controller.close()
       }
