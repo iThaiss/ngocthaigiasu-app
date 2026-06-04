@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState, use } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
 import {
   ArrowLeft, BookOpen, CheckCircle2, XCircle, ChevronRight,
   ChevronLeft, Star, Loader2, AlertCircle, RotateCcw, Target,
@@ -54,8 +54,8 @@ const LEVEL_COLOR: Record<string, string> = {
 
 const OPTIONS = ['A', 'B', 'C', 'D'] as const
 
-export default function GrammarLessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
-  const { lessonId } = use(params)
+export default function GrammarLessonPage() {
+  const { lessonId } = useParams<{ lessonId: string }>()
   const [tab, setTab] = useState<'theory' | 'practice' | 'summary'>('theory')
   const [lesson, setLesson] = useState<Lesson | null>(null)
   const [exercises, setExercises] = useState<Exercise[]>([])
@@ -198,7 +198,7 @@ export default function GrammarLessonPage({ params }: { params: Promise<{ lesson
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           {lesson.content_md ? (
             <div className="prose prose-sm dark:prose-invert max-w-none">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{lesson.content_md}</ReactMarkdown>
+              <ReactMarkdown>{lesson.content_md}</ReactMarkdown>
             </div>
           ) : (
             <div className="text-center py-12 text-muted-foreground">

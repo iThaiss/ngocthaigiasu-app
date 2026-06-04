@@ -1,6 +1,7 @@
 'use client'
 
-import { useEffect, useState, use } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import {
@@ -58,8 +59,8 @@ const Q_TYPE_LABEL: Record<string, string> = {
   vocab_in_context: '📖 Từ vựng',
 }
 
-export default function ReadingPassagePage({ params }: { params: Promise<{ passageId: string }> }) {
-  const { passageId } = use(params)
+export default function ReadingPassagePage() {
+  const { passageId } = useParams<{ passageId: string }>()
   const [passage, setPassage] = useState<Passage | null>(null)
   const [questions, setQuestions] = useState<Question[]>([])
   const [progress, setProgress] = useState<ReadingProgress | null>(null)
