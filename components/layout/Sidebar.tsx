@@ -8,7 +8,7 @@ import {
   LayoutDashboard, User, Brain, FileText, Bell, CreditCard,
   BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
   Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap,
-  Target, BookmarkCheck, Languages, Sparkles, Users, BookMarked,
+  Target, BookmarkCheck, Languages, Sparkles, Users, BookMarked, BotMessageSquare,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -46,6 +46,7 @@ const NAV_GROUPS: NavGroup[] = [
       { href: '/vocabulary', label: 'Từ vựng', icon: Languages },
       { href: '/grammar', label: 'Ngữ pháp', icon: BookOpen },
       { href: '/reading', label: 'Đọc hiểu', icon: BookMarked },
+      { href: '/english-feedback', label: 'Nhận xét AI', icon: BotMessageSquare },
       { href: '/vocabulary/ai', label: 'AI Tạo từ vựng', icon: Sparkles },
       { href: '/vocabulary/community', label: 'Cộng đồng', icon: Users },
     ],

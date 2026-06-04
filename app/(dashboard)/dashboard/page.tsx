@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import {
   Brain, Trophy, Bell, ArrowRight, Clock, Target, Flame,
   Wallet, BookmarkCheck, Crown, AlertCircle, Loader2, GraduationCap,
-  BookOpen, Languages, Headphones, Repeat,
+  BookOpen, Languages, Headphones, Repeat, Sparkles,
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -518,7 +518,7 @@ export default function DashboardPage() {
         {/* Due today vocab card */}
         {(englishStats?.vocab.dueToday ?? 0) > 0 && (
           <Link href="/vocabulary">
-            <Card className="border-rose-500/20 hover:border-rose-500/40 transition-colors cursor-pointer">
+            <Card className="border-rose-500/20 hover:border-rose-500/40 transition-colors cursor-pointer mb-3">
               <CardContent className="flex items-center gap-4 pt-4 pb-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-500/10">
                   <Repeat className="h-5 w-5 text-rose-500" />
@@ -538,6 +538,24 @@ export default function DashboardPage() {
             </Card>
           </Link>
         )}
+
+        {/* AI Feedback CTA */}
+        <Link href="/english-feedback">
+          <Card className="border-dashed border-rose-500/30 hover:border-rose-500/60 hover:bg-rose-500/5 transition-all cursor-pointer">
+            <CardContent className="flex items-center gap-4 pt-4 pb-4">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500/20 to-violet-500/20">
+                <Sparkles className="h-5 w-5 text-rose-500" />
+              </div>
+              <div className="flex-1">
+                <p className="font-semibold text-sm">Nhận xét AI cá nhân hóa</p>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  AI phân tích điểm mạnh, điểm yếu và lập kế hoạch học tập cho bạn
+                </p>
+              </div>
+              <ArrowRight className="h-4 w-4 text-muted-foreground shrink-0" />
+            </CardContent>
+          </Card>
+        </Link>
       </div>
     </div>
   )
