@@ -33,6 +33,7 @@ export interface TutorQuestionContext {
   solutionSteps?: Array<{ step: number; title: string; content: string }>
   userAnswer?: string | null
   answered?: boolean
+  imageUrl?: string | null
 }
 
 interface QuestionTutorAgentProps {

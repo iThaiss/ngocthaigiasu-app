@@ -652,6 +652,7 @@ export default function ExamPage() {
     explanation: q.explanation,
     userAnswer: answers[current] ?? null,
     answered: isCurrentSubmitted,
+    imageUrl: q.image_url,
   } : null
 
   if (loadingMeta) {

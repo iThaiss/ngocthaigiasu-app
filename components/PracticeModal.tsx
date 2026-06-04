@@ -26,6 +26,8 @@ export interface PracticeQuestion {
   statements: Array<{ label: string; text: string; answer: boolean }> | null
   numeric_answer: number | null
   explanation: string | null
+  image_url?: string | null
+  visual_image_url?: string | null
 }
 
 export interface PracticeModalProps {
@@ -163,6 +165,7 @@ export default function PracticeModal({
     explanation: currentQuestion.explanation,
     userAnswer: currentUserAnswer,
     answered,
+    imageUrl: currentQuestion.image_url || currentQuestion.visual_image_url,
   }
 
   // ── helpers ────────────────────────────────────────────────────────────────

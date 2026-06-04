@@ -21,6 +21,7 @@ interface AiCompletionParams {
 
 let routerKeyCursor = 0
 let anthropicKeyCursor = 0
+let geminiKeyCursor = 0
 
 class AiRouterError extends Error {
   status: number
@@ -205,6 +206,68 @@ function shouldUseAnthropicRouter(protocol: string | undefined, apiKey: string) 
   return protocol === 'anthropic' || apiKey.startsWith('sk-ant-')
 }
 
+function hasImageContent(messages: RouterMessage[]): boolean {
+  return messages.some(
+    (msg) => Array.isArray(msg.content) && msg.content.some((part) => part.type === 'image')
+  )
+}
+
+async function callGeminiVisionWithKey(params: AiCompletionParams, apiKey: string): Promise<string> {
+  const model = process.env.AI_VISION_MODEL ?? 'gemini-2.0-flash'
+  // Gemini provides an OpenAI-compatible endpoint
+  const url = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model,
+      max_tokens: params.maxTokens ?? 4000,
+      temperature: params.temperature ?? 0.2,
+      messages: [
+        { role: 'system', content: params.system },
+        ...params.messages.map((message) => ({
+          role: message.role,
+          content: anthropicContentToOpenAi(message.content),
+        })),
+      ],
+    }),
+  })
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => '')
+    throw new AiRouterError(res.status, `Gemini API ${res.status}: ${text.slice(0, 300)}`)
+  }
+
+  const data = await res.json()
+  return String(data.choices?.[0]?.message?.content ?? '').trim()
+}
+
+async function callGeminiVision(params: AiCompletionParams): Promise<string> {
+  const apiKeys = getEnvList('GEMINI_API_KEYS') ?? (process.env.GEMINI_API_KEY ? [process.env.GEMINI_API_KEY] : [])
+  if (!apiKeys.length) throw new Error('GEMINI_API_KEY not set')
+
+  const start = geminiKeyCursor % apiKeys.length
+  const orderedKeys = [...apiKeys.slice(start), ...apiKeys.slice(0, start)]
+  let lastError: unknown = null
+
+  for (let index = 0; index < orderedKeys.length; index += 1) {
+    try {
+      const text = await callGeminiVisionWithKey(params, orderedKeys[index])
+      geminiKeyCursor = (start + index + 1) % apiKeys.length
+      return text
+    } catch (error) {
+      lastError = error
+      if (!shouldTryNextRouterKey(error)) break
+    }
+  }
+
+  throw lastError instanceof Error ? lastError : new Error('Gemini API call failed')
+}
+
 async function callAnthropicFallback(params: AiCompletionParams) {
   const config = getFallbackConfig()
   const apiKeys = config.apiKeys ?? (config.apiKey ? [config.apiKey] : [])
@@ -229,6 +292,19 @@ async function callAnthropicFallback(params: AiCompletionParams) {
 }
 
 export async function createAiCompletion(params: AiCompletionParams) {
+  // Vision requests: route to Gemini (DeepSeek/most routers don't support images)
+  if (hasImageContent(params.messages)) {
+    try {
+      const text = await callGeminiVision(params)
+      if (text) return { text, provider: 'gemini' as const, model: process.env.AI_VISION_MODEL ?? 'gemini-2.0-flash' }
+    } catch (err) {
+      console.error('[ai-router] Gemini vision failed:', err)
+      // Fall through to try Anthropic
+      const fallbackText = await callAnthropicFallback(params)
+      return { text: fallbackText, provider: 'anthropic' as const, model: params.model }
+    }
+  }
+
   const router = getRouterConfig()
   const preferRouter = process.env.AI_ROUTER_ENABLED === 'true' || Boolean(router.baseUrl)
 

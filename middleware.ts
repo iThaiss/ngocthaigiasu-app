@@ -37,6 +37,7 @@ export default withAuth(
 export const config = {
   matcher: [
     '/dashboard/:path*',
+    '/select',
     '/solve/:path*',
     '/practice/:path*',
     '/exam/:path*',

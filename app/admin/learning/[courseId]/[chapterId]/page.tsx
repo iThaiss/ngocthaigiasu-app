@@ -4,8 +4,8 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import {
-  ChevronRight, ChevronLeft, Plus, Trash2, Loader2, Brain,
-  Video, CheckCircle2, Circle, Download, Clock,
+  ChevronRight, ChevronLeft, Plus, Trash2, Loader2,
+  Video, CheckCircle2, Circle, Download,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -36,13 +36,6 @@ interface Chapter {
   course_id: string
 }
 
-type JobStatus = 'pending' | 'processing' | 'completed' | 'failed'
-
-interface ActiveJob {
-  jobId: string
-  lessonId: string
-  status: JobStatus
-}
 
 export default function AdminLessonsPage() {
   const params = useParams()
@@ -58,16 +51,6 @@ export default function AdminLessonsPage() {
   const [createOpen, setCreateOpen] = useState(false)
   const [lessonForm, setLessonForm] = useState({ title: '', topic: '', video_url: '', is_published: false })
   const [creating, setCreating] = useState(false)
-
-  // Generate plan
-  const [genOpen, setGenOpen] = useState(false)
-  const [genLesson, setGenLesson] = useState<Lesson | null>(null)
-  const [genPrompt, setGenPrompt] = useState('')
-  const [submitting, setSubmitting] = useState(false)
-
-  // Active jobs polling
-  const [activeJobs, setActiveJobs] = useState<ActiveJob[]>([])
-  const pollingRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   // Delete
   const [deleting, setDeleting] = useState<string | null>(null)
@@ -94,41 +77,6 @@ export default function AdminLessonsPage() {
 
   useEffect(() => { fetchData() }, [fetchData])
 
-  // Poll active jobs every 10s
-  useEffect(() => {
-    if (activeJobs.length === 0) {
-      if (pollingRef.current) clearInterval(pollingRef.current)
-      return
-    }
-
-    const poll = async () => {
-      const remaining: ActiveJob[] = []
-      for (const job of activeJobs) {
-        try {
-          const res = await fetch(`/api/admin/learning/job-status/${job.jobId}`)
-          const data = await res.json()
-          if (data.status === 'completed') {
-            toast({ title: 'Giáo án đã tạo xong!', description: 'Danh sách bài đã được cập nhật.' })
-            fetchData()
-          } else if (data.status === 'failed') {
-            toast({ title: 'Tạo giáo án thất bại', description: data.error ?? 'Thử lại sau', variant: 'destructive' })
-          } else {
-            remaining.push({ ...job, status: data.status as JobStatus })
-          }
-        } catch {
-          remaining.push(job)
-        }
-      }
-      setActiveJobs(remaining)
-    }
-
-    pollingRef.current = setInterval(poll, 10000)
-    return () => { if (pollingRef.current) clearInterval(pollingRef.current) }
-  }, [activeJobs, fetchData, toast])
-
-  function getLessonJobStatus(lessonId: string): JobStatus | null {
-    return activeJobs.find((j) => j.lessonId === lessonId)?.status ?? null
-  }
 
   async function handleCreateLesson() {
     if (!lessonForm.title) return
@@ -179,44 +127,7 @@ export default function AdminLessonsPage() {
     }
   }
 
-  function openGenModal(lesson: Lesson) {
-    setGenLesson(lesson)
-    setGenPrompt(
-      lesson.topic
-        ? `Tạo giáo án bài "${lesson.title}" về chủ đề ${lesson.topic} lớp 12, thời lượng 90 phút`
-        : `Tạo giáo án bài "${lesson.title}" lớp 12, thời lượng 90 phút`
-    )
-    setGenOpen(true)
-  }
 
-  async function handleGenerate() {
-    if (!genLesson || !genPrompt) return
-    setSubmitting(true)
-    try {
-      const res = await fetch('/api/admin/learning/generate-plan', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          lessonId: genLesson.id,
-          prompt: genPrompt,
-          topic: genLesson.topic ?? genLesson.title,
-        }),
-      })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error ?? 'Lỗi')
-
-      setActiveJobs((prev) => [
-        ...prev,
-        { jobId: data.jobId, lessonId: genLesson.id, status: 'pending' },
-      ])
-      toast({ title: 'Yêu cầu đã được gửi!', description: 'Giáo án đang được tạo, bạn sẽ được thông báo khi xong.' })
-      setGenOpen(false)
-    } catch (err: unknown) {
-      toast({ title: 'Lỗi gửi yêu cầu', description: err instanceof Error ? err.message : 'Thử lại sau', variant: 'destructive' })
-    } finally {
-      setSubmitting(false)
-    }
-  }
 
   async function handleExportPdf(lessonId: string) {
     setExporting(lessonId)
@@ -294,7 +205,6 @@ export default function AdminLessonsPage() {
                 </td>
               </tr>
             ) : lessons.map((lesson) => {
-              const jobStatus = getLessonJobStatus(lesson.id)
               return (
                 <tr key={lesson.id} className="hover:bg-zinc-800/30 transition-colors">
                   <td className="px-4 py-3 text-zinc-200 max-w-xs">
@@ -308,11 +218,7 @@ export default function AdminLessonsPage() {
                     }
                   </td>
                   <td className="px-4 py-3 text-center">
-                    {jobStatus === 'pending' || jobStatus === 'processing' ? (
-                      <Badge variant="outline" className="text-yellow-400 border-yellow-700 gap-1 text-[10px]">
-                        <Loader2 className="h-2.5 w-2.5 animate-spin" /> Đang tạo...
-                      </Badge>
-                    ) : lesson.lesson_plan ? (
+                    {lesson.lesson_plan ? (
                       <Badge variant="outline" className="text-green-400 border-green-800 gap-1 text-[10px]">
                         <CheckCircle2 className="h-2.5 w-2.5" /> Có giáo án
                       </Badge>
@@ -333,19 +239,6 @@ export default function AdminLessonsPage() {
                   </td>
                   <td className="px-4 py-3">
                     <div className="flex items-center justify-center gap-1">
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="h-7 px-2 text-xs text-violet-400 hover:text-violet-300"
-                        onClick={() => openGenModal(lesson)}
-                        disabled={jobStatus === 'pending' || jobStatus === 'processing'}
-                        title="Tạo giáo án AI"
-                      >
-                        {jobStatus === 'pending' || jobStatus === 'processing'
-                          ? <Clock className="h-3.5 w-3.5" />
-                          : <Brain className="h-3.5 w-3.5" />
-                        }
-                      </Button>
                       {lesson.lesson_plan && (
                         <Button
                           size="sm"
@@ -434,50 +327,7 @@ export default function AdminLessonsPage() {
         </DialogContent>
       </Dialog>
 
-      {/* Generate plan dialog */}
-      <Dialog open={genOpen} onOpenChange={(o) => { if (!submitting) setGenOpen(o) }}>
-        <DialogContent className="max-w-lg bg-zinc-900 border-zinc-800 text-zinc-100">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
-              <Brain className="h-5 w-5 text-violet-400" />
-              Tạo giáo án AI — {genLesson?.title}
-            </DialogTitle>
-          </DialogHeader>
 
-          <div className="space-y-4">
-            <p className="text-xs text-zinc-400">
-              AI sẽ tạo giáo án trong nền. Bạn có thể đóng dialog và tiếp tục làm việc, giáo án sẽ tự cập nhật khi xong.
-            </p>
-            <div className="space-y-1.5">
-              <label className="text-xs text-zinc-400">Prompt cho AI</label>
-              <Textarea
-                value={genPrompt}
-                onChange={(e) => setGenPrompt(e.target.value)}
-                rows={4}
-                className="bg-zinc-800 border-zinc-700 text-zinc-100 resize-none font-mono text-sm"
-                placeholder="Tạo giáo án bài Tích phân từng phần lớp 12, thời lượng 90 phút..."
-              />
-            </div>
-
-            <Button
-              onClick={handleGenerate}
-              disabled={submitting || !genPrompt}
-              className="w-full gap-2"
-            >
-              {submitting
-                ? <><Loader2 className="h-4 w-4 animate-spin" /> Đang gửi yêu cầu...</>
-                : <><Brain className="h-4 w-4" /> Tạo giáo án</>
-              }
-            </Button>
-          </div>
-
-          <DialogFooter>
-            <Button variant="ghost" onClick={() => setGenOpen(false)} className="text-zinc-400" disabled={submitting}>
-              Đóng
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </div>
   )
 }

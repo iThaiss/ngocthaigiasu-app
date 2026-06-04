@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "npm:@anthropic-ai/sdk": "https://esm.sh/@anthropic-ai/sdk",
-    "npm:@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js"
-  }
-}

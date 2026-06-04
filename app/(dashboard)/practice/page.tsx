@@ -30,6 +30,8 @@ interface PracticeQuestion {
   statements: Array<{ label: string; text: string; answer: boolean }> | string | null
   numeric_answer: number | null
   explanation: string | null
+  image_url?: string | null
+  visual_image_url?: string | null
 }
 
 interface PracticeMetadata {
@@ -261,6 +263,7 @@ export default function PracticePage() {
     explanation: current.explanation,
     userAnswer: currentUserAnswer,
     answered,
+    imageUrl: current.image_url || current.visual_image_url,
   } : null
 
   const availableSubtopics = topic === ALL

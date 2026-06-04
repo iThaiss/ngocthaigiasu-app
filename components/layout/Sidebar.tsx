@@ -1,78 +1,56 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  LayoutDashboard, User, Brain, FileText, Bell, CreditCard,
-  BookOpen, Library, LogOut, ChevronLeft, ChevronRight, Menu, X,
-  Crown, GitBranch, CalendarDays, MessageCircle, Phone, GraduationCap,
-  Target, BookmarkCheck, Languages, Sparkles, Users, BookMarked, BotMessageSquare,
+  LayoutDashboard, User, Brain, FileText,
+  BookOpen, LogOut, ChevronLeft, ChevronRight, Menu, X,
+  Crown, GraduationCap, Target, Languages, Sparkles, Users, BookMarked, BotMessageSquare,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 
 interface NavItem {
   href: string
   label: string
   icon: React.ElementType
-  roles?: string[]
-  badge?: string
 }
 
-interface NavGroup {
-  label: string
-  items: NavItem[]
-}
-
-const NAV_GROUPS: NavGroup[] = [
-  {
-    label: 'TOÁN HỌC',
-    items: [
-      { href: '/dashboard', label: 'Tổng quan', icon: LayoutDashboard },
-      { href: '/learning', label: 'Học Tập', icon: GraduationCap },
-      { href: '/solve', label: 'Giải toán AI', icon: Brain },
-      { href: '/practice', label: 'Luyện tập', icon: Target },
-      { href: '/exam', label: 'Thi thử', icon: FileText },
-    ],
-  },
-  {
-    label: 'TIẾNG ANH',
-    items: [
-      { href: '/vocabulary', label: 'Từ vựng', icon: Languages },
-      { href: '/grammar', label: 'Ngữ pháp', icon: BookOpen },
-      { href: '/reading', label: 'Đọc hiểu', icon: BookMarked },
-      { href: '/english-feedback', label: 'Nhận xét AI', icon: BotMessageSquare },
-      { href: '/vocabulary/ai', label: 'AI Tạo từ vựng', icon: Sparkles },
-      { href: '/vocabulary/community', label: 'Cộng đồng', icon: Users },
-    ],
-  },
-  {
-    label: 'CHUNG',
-    items: [
-      { href: '/saved-questions', label: 'Câu cần ôn', icon: BookmarkCheck },
-      { href: '/payment', label: 'Nâng cấp VIP', icon: CreditCard },
-      { href: '/documents', label: 'Tài liệu', icon: Library },
-      { href: '/schedule', label: 'Lịch học', icon: CalendarDays },
-      { href: '/chat', label: 'Chat cộng đồng', icon: MessageCircle },
-      { href: '/questions', label: 'Câu hỏi', icon: BookOpen, roles: ['teacher', 'admin'] },
-      { href: '/notifications', label: 'Thông báo', icon: Bell },
-      { href: '/affiliate', label: 'Hoa hồng', icon: GitBranch },
-      { href: '/contact', label: 'Liên hệ', icon: Phone },
-      { href: '/profile', label: 'Hồ sơ', icon: User },
-    ],
-  },
+const MATH_ITEMS: NavItem[] = [
+  { href: '/dashboard/math', label: 'Tổng quan', icon: LayoutDashboard },
+  { href: '/learning', label: 'Học Tập', icon: GraduationCap },
+  { href: '/solve', label: 'Giải toán AI', icon: Brain },
+  { href: '/practice', label: 'Luyện tập', icon: Target },
+  { href: '/exam', label: 'Thi thử', icon: FileText },
 ]
 
-export default function Sidebar() {
+const ENGLISH_ITEMS: NavItem[] = [
+  { href: '/dashboard/english', label: 'Tổng quan', icon: LayoutDashboard },
+  { href: '/vocabulary', label: 'Từ vựng', icon: Languages },
+  { href: '/grammar', label: 'Ngữ pháp', icon: BookOpen },
+  { href: '/reading', label: 'Đọc hiểu', icon: BookMarked },
+  { href: '/english-feedback', label: 'Nhận xét AI', icon: BotMessageSquare },
+  { href: '/vocabulary/ai', label: 'AI Tạo từ vựng', icon: Sparkles },
+  { href: '/vocabulary/community', label: 'Cộng đồng', icon: Users },
+]
+
+interface SidebarProps {
+  subject: 'math' | 'english' | null
+}
+
+export default function Sidebar({ subject }: SidebarProps) {
   const pathname = usePathname()
   const { user, role, isVip, logout } = useAuth()
   const [collapsed, setCollapsed] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+
+  // Default to Math if subject is not explicitly set (e.g. on general settings page)
+  const activeSubject = subject || 'math'
+  const navItems = activeSubject === 'english' ? ENGLISH_ITEMS : MATH_ITEMS
 
   const SidebarContent = () => (
     <div className="flex h-full flex-col">
@@ -91,71 +69,55 @@ export default function Sidebar() {
 
       {/* Nav */}
       <nav className="flex-1 overflow-y-auto p-2 space-y-1">
-        {NAV_GROUPS.map((group) => {
-          const visibleItems = group.items.filter(
-            (item) => !item.roles || item.roles.includes(role)
-          )
-          if (visibleItems.length === 0) return null
-          return (
-            <div key={group.label} className="mb-1">
-              {!collapsed && (
-                <p className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
-                  {group.label}
-                </p>
-              )}
-              {collapsed && <div className="my-1 border-t border-border/40" />}
-              {visibleItems.map((item) => {
-                const Icon = item.icon
-                const active = pathname === item.href || pathname.startsWith(item.href + '/')
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={cn(
-                      'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground',
-                      active ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : 'text-muted-foreground',
-                      collapsed && 'justify-center px-2'
-                    )}
-                  >
-                    <Icon className="h-4 w-4 shrink-0" />
-                    {!collapsed && (
-                      <span className="flex-1 truncate">{item.label}</span>
-                    )}
-                    {!collapsed && item.badge && (
-                      <Badge variant="secondary" className="ml-auto text-[10px] px-1.5 py-0 h-4 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-0">
-                        {item.badge}
-                      </Badge>
-                    )}
-                  </Link>
-                )
-              })}
-            </div>
-          )
-        })}
+        <div className="mb-1">
+          {!collapsed && (
+            <p className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
+              {activeSubject === 'english' ? 'TIẾNG ANH' : 'TOÁN HỌC'}
+            </p>
+          )}
+          {collapsed && <div className="my-1 border-t border-border/40" />}
+          {navItems.map((item) => {
+            const Icon = item.icon
+            const active = pathname === item.href || pathname.startsWith(item.href + '/')
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={cn(
+                  'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground',
+                  active ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : 'text-muted-foreground',
+                  collapsed && 'justify-center px-2'
+                )}
+              >
+                <Icon className="h-4 w-4 shrink-0" />
+                {!collapsed && (
+                  <span className="flex-1 truncate">{item.label}</span>
+                )}
+              </Link>
+            )
+          })}
+        </div>
       </nav>
 
-      {/* User */}
-      <div className={cn('flex items-center gap-3 p-3 border-t border-border', collapsed && 'justify-center')}>
-        <Avatar className="h-8 w-8 shrink-0">
-          <AvatarImage src={user?.image ?? undefined} alt={user?.name ?? ''} />
-          <AvatarFallback>{user?.name?.charAt(0)}</AvatarFallback>
-        </Avatar>
-        {!collapsed && (
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-1">
-              <p className="text-sm font-medium truncate">{user?.name}</p>
-              {isVip && <Crown className="h-3 w-3 text-yellow-500 shrink-0" />}
+      {/* User Info (Footer) */}
+      <Link href="/profile" onClick={() => setMobileOpen(false)}>
+        <div className={cn('flex items-center gap-3 p-3 border-t border-border hover:bg-accent/50 cursor-pointer transition-colors', collapsed && 'justify-center')}>
+          <Avatar className="h-8 w-8 shrink-0">
+            <AvatarImage src={user?.image ?? undefined} alt={user?.name ?? ''} />
+            <AvatarFallback>{user?.name?.charAt(0)}</AvatarFallback>
+          </Avatar>
+          {!collapsed && (
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-1">
+                <p className="text-sm font-medium truncate">{user?.name}</p>
+                {isVip && <Crown className="h-3 w-3 text-yellow-500 shrink-0" />}
+              </div>
+              <p className="text-xs text-muted-foreground truncate capitalize">{role}</p>
             </div>
-            <p className="text-xs text-muted-foreground truncate capitalize">{role}</p>
-          </div>
-        )}
-        {!collapsed && (
-          <Button variant="ghost" size="icon" className="h-7 w-7 shrink-0" onClick={logout}>
-            <LogOut className="h-3.5 w-3.5" />
-          </Button>
-        )}
-      </div>
+          )}
+        </div>
+      </Link>
     </div>
   )
 
