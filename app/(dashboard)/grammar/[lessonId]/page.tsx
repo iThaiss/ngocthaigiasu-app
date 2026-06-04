@@ -29,6 +29,7 @@ interface Exercise {
 interface Lesson {
   id: string
   topic_group: string
+  topic_group_en: string
   topic_group_icon: string
   title: string
   title_vi: string
