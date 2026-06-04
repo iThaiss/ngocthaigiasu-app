@@ -17,8 +17,8 @@ export interface VipPlanConfig {
 }
 
 export const FREE_SOLVE_LIMIT = 3
-export const FREE_MODEL = 'claude-haiku-4-5'
-export const FREE_MODEL_LABEL = 'Claude Haiku'
+export const FREE_MODEL = 'google/gemini-2.0-flash:free'
+export const FREE_MODEL_LABEL = 'Gemini Flash'
 
 export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
   monthly: {
@@ -28,8 +28,8 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     costPoints: 69,
     durationDays: 30,
     solveLimit: 20,
-    model: 'claude-sonnet-4-6',
-    modelLabel: 'Claude Sonnet (VIP Tháng)',
+    model: 'google/gemini-2.0-flash',
+    modelLabel: 'Gemini Flash (VIP Tháng)',
   },
   yearly: {
     id: 'yearly',
@@ -38,8 +38,8 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     costPoints: 699,
     durationDays: 365,
     solveLimit: 50,
-    model: 'claude-sonnet-4-6',
-    modelLabel: 'Claude Sonnet (VIP Năm)',
+    model: 'google/gemini-2.0-flash',
+    modelLabel: 'Gemini Flash (VIP Năm)',
   },
 }
 

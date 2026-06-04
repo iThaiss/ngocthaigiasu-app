@@ -299,16 +299,36 @@ export async function createAiCompletion(params: AiCompletionParams) {
     const visionModel = process.env.AI_VISION_MODEL ?? 'google/gemini-2.0-flash'
 
     if (visionProvider === 'openrouter' || visionProvider === 'router') {
-      try {
-        const text = await callOpenAiCompatible(params, {
-          baseUrl: router.baseUrl ?? 'https://openrouter.ai/api/v1',
-          apiKey: router.apiKey,
-          model: visionModel,
-        })
-        if (text) return { text, provider: 'router' as const, model: visionModel }
-      } catch (err) {
-        console.error('[ai-router] OpenRouter vision failed:', err)
+      // Try free model first, then fallback to paid model via OpenRouter
+      const freeModel = visionModel.endsWith(':free') ? visionModel : `${visionModel}:free`
+      const paidModel = visionModel.replace(/:free$/, '')
+      const modelsToTry = [freeModel, paidModel].filter((v, i, arr) => arr.indexOf(v) === i)
+
+      let lastErr: unknown = null
+      for (const model of modelsToTry) {
+        try {
+          const text = await callOpenAiCompatible(params, {
+            baseUrl: router.baseUrl ?? 'https://openrouter.ai/api/v1',
+            apiKey: router.apiKey,
+            model,
+          })
+          if (text) return { text, provider: 'router' as const, model }
+        } catch (err) {
+          lastErr = err
+          console.error(`[ai-router] OpenRouter vision failed (model=${model}):`, err)
+        }
       }
+      // Also try Gemini direct as last resort
+      const geminiKeys = getEnvList('GEMINI_API_KEYS') ?? (process.env.GEMINI_API_KEY ? [process.env.GEMINI_API_KEY] : [])
+      if (geminiKeys.length) {
+        try {
+          const text = await callGeminiVision(params)
+          if (text) return { text, provider: 'gemini' as const, model: 'gemini-2.0-flash' }
+        } catch (geminiErr) {
+          console.error('[ai-router] Gemini direct vision fallback also failed:', geminiErr)
+        }
+      }
+      throw lastErr ?? new Error('All vision providers failed')
     } else {
       // Try Gemini direct (API Key Rotation) first
       try {
@@ -327,14 +347,20 @@ export async function createAiCompletion(params: AiCompletionParams) {
             if (text) return { text, provider: 'router' as const, model: visionModel }
           } catch (routerErr) {
             console.error('[ai-router] Router vision fallback failed:', routerErr)
+            throw routerErr
           }
         }
+        throw err
       }
     }
 
-    // Fall back to Anthropic
-    const fallbackText = await callAnthropicFallback(params)
-    return { text: fallbackText, provider: 'anthropic' as const, model: params.model }
+    // Anthropic fallback only if no image providers work
+    const fallbackConfig = getFallbackConfig()
+    if (fallbackConfig.apiKey || fallbackConfig.apiKeys?.length) {
+      const fallbackText = await callAnthropicFallback(params)
+      return { text: fallbackText, provider: 'anthropic' as const, model: params.model }
+    }
+    throw new Error('No vision AI provider available')
   }
 
   const router = getRouterConfig()
