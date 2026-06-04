@@ -34,16 +34,16 @@ const LEVEL_COLOR: Record<string, string> = {
 }
 
 const GROUP_ACCENT: Record<string, { accent: string; bg: string; border: string }> = {
-  'Thì động từ':        { accent: 'text-violet-500', bg: 'bg-violet-500/8 hover:bg-violet-500/12',  border: 'border-violet-200 dark:border-violet-800' },
-  'Câu điều kiện':      { accent: 'text-blue-500',   bg: 'bg-blue-500/8 hover:bg-blue-500/12',      border: 'border-blue-200 dark:border-blue-800' },
-  'Câu bị động':        { accent: 'text-emerald-500', bg: 'bg-emerald-500/8 hover:bg-emerald-500/12', border: 'border-emerald-200 dark:border-emerald-800' },
-  'Mệnh đề quan hệ':    { accent: 'text-cyan-500',    bg: 'bg-cyan-500/8 hover:bg-cyan-500/12',      border: 'border-cyan-200 dark:border-cyan-800' },
-  'Modal Verbs':        { accent: 'text-amber-500',   bg: 'bg-amber-500/8 hover:bg-amber-500/12',    border: 'border-amber-200 dark:border-amber-800' },
-  'Câu tường thuật':    { accent: 'text-rose-500',    bg: 'bg-rose-500/8 hover:bg-rose-500/12',      border: 'border-rose-200 dark:border-rose-800' },
-  'V-ing vs Infinitive':{ accent: 'text-indigo-500',  bg: 'bg-indigo-500/8 hover:bg-indigo-500/12',  border: 'border-indigo-200 dark:border-indigo-800' },
-  'Giới từ & Mạo từ':   { accent: 'text-teal-500',    bg: 'bg-teal-500/8 hover:bg-teal-500/12',      border: 'border-teal-200 dark:border-teal-800' },
-  'Từ nối & Liên từ':   { accent: 'text-pink-500',    bg: 'bg-pink-500/8 hover:bg-pink-500/12',      border: 'border-pink-200 dark:border-pink-800' },
-  'Cấu trúc đặc biệt':  { accent: 'text-orange-500',  bg: 'bg-orange-500/8 hover:bg-orange-500/12',  border: 'border-orange-200 dark:border-orange-800' },
+  'Verb Tenses':         { accent: 'text-violet-500', bg: 'bg-violet-500/8 hover:bg-violet-500/12',  border: 'border-violet-200 dark:border-violet-800' },
+  'Conditionals':        { accent: 'text-blue-500',   bg: 'bg-blue-500/8 hover:bg-blue-500/12',      border: 'border-blue-200 dark:border-blue-800' },
+  'Passive Voice':       { accent: 'text-emerald-500', bg: 'bg-emerald-500/8 hover:bg-emerald-500/12', border: 'border-emerald-200 dark:border-emerald-800' },
+  'Relative Clauses':    { accent: 'text-cyan-500',    bg: 'bg-cyan-500/8 hover:bg-cyan-500/12',      border: 'border-cyan-200 dark:border-cyan-800' },
+  'Modal Verbs':         { accent: 'text-amber-500',   bg: 'bg-amber-500/8 hover:bg-amber-500/12',    border: 'border-amber-200 dark:border-amber-800' },
+  'Reported Speech':     { accent: 'text-rose-500',    bg: 'bg-rose-500/8 hover:bg-rose-500/12',      border: 'border-rose-200 dark:border-rose-800' },
+  'Infinitive & Gerund': { accent: 'text-indigo-500',  bg: 'bg-indigo-500/8 hover:bg-indigo-500/12',  border: 'border-indigo-200 dark:border-indigo-800' },
+  'Articles & Prepositions':{ accent: 'text-teal-500', bg: 'bg-teal-500/8 hover:bg-teal-500/12',      border: 'border-teal-200 dark:border-teal-800' },
+  'Conjunctions & Linking':{ accent: 'text-pink-500',  bg: 'bg-pink-500/8 hover:bg-pink-500/12',      border: 'border-pink-200 dark:border-pink-800' },
+  'Advanced Structures': { accent: 'text-orange-500',  bg: 'bg-orange-500/8 hover:bg-orange-500/12',  border: 'border-orange-200 dark:border-orange-800' },
 }
 
 function LessonCard({ lesson, index }: { lesson: GrammarLesson; index: number }) {
@@ -57,11 +57,10 @@ function LessonCard({ lesson, index }: { lesson: GrammarLesson; index: number })
           <CardContent className="p-4">
             <div className="flex items-start gap-2 mb-1.5">
               <h3 className="flex-1 font-semibold text-sm leading-tight line-clamp-2 group-hover:text-primary transition-colors">
-                {lesson.title_vi}
+                {lesson.title}
               </h3>
               {mastered && <Star className="h-3.5 w-3.5 shrink-0 text-yellow-500 fill-yellow-500 mt-0.5" />}
             </div>
-            <p className="text-xs text-muted-foreground mb-2 line-clamp-1">{lesson.title}</p>
 
             <div className="flex items-center gap-2 flex-wrap">
               <Badge variant="secondary" className={cn('text-[10px] px-1.5 py-0 h-4 border-0', lc)}>
@@ -172,16 +171,17 @@ export default function GrammarPage() {
   const filtered = lessons.filter((l) => {
     if (!search) return true
     const q = search.toLowerCase()
-    return l.title.toLowerCase().includes(q) || l.title_vi.toLowerCase().includes(q) || l.topic_group.toLowerCase().includes(q)
+    return l.title.toLowerCase().includes(q) || l.topic_group_en.toLowerCase().includes(q)
   })
 
-  // Group by topic_group preserving insertion order
+  // Group by topic_group_en (English) preserving insertion order
   const groupMap = new Map<string, { icon: string; lessons: GrammarLesson[] }>()
   for (const l of filtered) {
-    if (!groupMap.has(l.topic_group)) {
-      groupMap.set(l.topic_group, { icon: l.topic_group_icon ?? '📐', lessons: [] })
+    const groupKey = l.topic_group_en || l.topic_group
+    if (!groupMap.has(groupKey)) {
+      groupMap.set(groupKey, { icon: l.topic_group_icon ?? '📐', lessons: [] })
     }
-    groupMap.get(l.topic_group)!.lessons.push(l)
+    groupMap.get(groupKey)!.lessons.push(l)
   }
   const groups = Array.from(groupMap.entries())
 

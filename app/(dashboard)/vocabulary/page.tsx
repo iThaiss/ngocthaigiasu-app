@@ -60,32 +60,32 @@ interface GroupConfig {
 }
 
 const GROUPS: GroupConfig[] = [
-  { key: 'Con người & Xã hội', label: 'Con người & Xã hội', icon: '🧑‍🤝‍🧑',
+  { key: 'Con người & Xã hội', label: 'People & Society', icon: '🧑‍🤝‍🧑',
     accent: 'text-violet-500', bg: 'bg-violet-500/8 hover:bg-violet-500/12', border: 'border-violet-200 dark:border-violet-800',
     topics: ['Family & Relationships','Education & Learning','Work & Career','Health & Medicine',
              'Emotions & Personality','Gender & Equality','Community & Social Issues','Culture & Traditions',
              'Law & Justice','Mental Health & Well-being','Migration & Refugees'] },
-  { key: 'Thế giới tự nhiên', label: 'Thế giới tự nhiên', icon: '🌿',
+  { key: 'Thế giới tự nhiên', label: 'Nature & World', icon: '🌿',
     accent: 'text-emerald-500', bg: 'bg-emerald-500/8 hover:bg-emerald-500/12', border: 'border-emerald-200 dark:border-emerald-800',
     topics: ['Environment & Climate Change','Nature & Wildlife','Natural Disasters',
              'Food & Nutrition','Energy & Natural Resources','Agriculture & Farming'] },
-  { key: 'Khoa học & Công nghệ', label: 'Khoa học & Công nghệ', icon: '🔬',
+  { key: 'Khoa học & Công nghệ', label: 'Science & Technology', icon: '🔬',
     accent: 'text-blue-500', bg: 'bg-blue-500/8 hover:bg-blue-500/12', border: 'border-blue-200 dark:border-blue-800',
     topics: ['Science & Research','Technology & Innovation','Digital & Internet',
              'Space & Astronomy','Medicine & Biotechnology','Artificial Intelligence & Robots','Engineering & Infrastructure'] },
-  { key: 'Kinh tế & Chính trị', label: 'Kinh tế & Chính trị', icon: '💼',
+  { key: 'Kinh tế & Chính trị', label: 'Economy & Politics', icon: '💼',
     accent: 'text-amber-500', bg: 'bg-amber-500/8 hover:bg-amber-500/12', border: 'border-amber-200 dark:border-amber-800',
     topics: ['Business & Economics','Politics & Government','Globalization & Trade',
              'Media & Journalism','Finance & Banking','International Relations'] },
-  { key: 'Cuộc sống hàng ngày', label: 'Cuộc sống hàng ngày', icon: '🏡',
+  { key: 'Cuộc sống hàng ngày', label: 'Daily Life', icon: '🏡',
     accent: 'text-rose-500', bg: 'bg-rose-500/8 hover:bg-rose-500/12', border: 'border-rose-200 dark:border-rose-800',
     topics: ['Travel & Transport','Housing & Urban Life','Sports & Recreation',
              'Arts & Entertainment','Shopping & Consumerism','Fashion & Lifestyle','Music & Performing Arts'] },
-  { key: 'Tư duy & Ngôn ngữ', label: 'Tư duy & Ngôn ngữ', icon: '🧠',
+  { key: 'Tư duy & Ngôn ngữ', label: 'Thought & Language', icon: '🧠',
     accent: 'text-cyan-500', bg: 'bg-cyan-500/8 hover:bg-cyan-500/12', border: 'border-cyan-200 dark:border-cyan-800',
     topics: ['Communication & Language','Philosophy & Ethics','History & Civilization',
              'Psychology & Behavior','Academic & Formal Language','Literature & Writing','Religion & Beliefs'] },
-  { key: 'Kỹ năng từ vựng', label: 'Kỹ năng từ vựng thi', icon: '📝',
+  { key: 'Kỹ năng từ vựng', label: 'Exam Vocabulary Skills', icon: '📝',
     accent: 'text-indigo-500', bg: 'bg-indigo-500/8 hover:bg-indigo-500/12', border: 'border-indigo-200 dark:border-indigo-800',
     topics: ['Collocations in Context','Phrasal Verbs','Synonyms & Antonyms in Context',
              'Word Formation & Word Form','Discourse Markers & Linking Words','Prepositions & Fixed Phrases'] },
@@ -115,7 +115,7 @@ function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
           <CardContent className="p-4 flex flex-col gap-2">
             <div className="flex items-start justify-between gap-2">
               <h3 className="font-semibold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors flex-1">
-                {set.name}
+                {set.is_system && set.topic ? set.topic : set.name}
               </h3>
               {set.featured && (
                 <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 bg-yellow-500/15 text-yellow-600 dark:text-yellow-400 border-0 shrink-0">⭐</Badge>

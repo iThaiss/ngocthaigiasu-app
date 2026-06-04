@@ -141,11 +141,11 @@ export default function GrammarLessonPage() {
       <div className="flex items-center gap-2">
         <Link href="/grammar">
           <Button variant="ghost" size="sm" className="gap-1.5">
-            <ArrowLeft className="h-4 w-4" /> Ngữ pháp
+            <ArrowLeft className="h-4 w-4" /> Grammar
           </Button>
         </Link>
         <ChevronRight className="h-3.5 w-3.5 text-muted-foreground" />
-        <span className="text-sm text-muted-foreground line-clamp-1">{lesson.topic_group}</span>
+        <span className="text-sm text-muted-foreground line-clamp-1">{lesson.topic_group_en || lesson.topic_group}</span>
       </div>
 
       {/* Header */}
@@ -153,8 +153,8 @@ export default function GrammarLessonPage() {
         <div className="flex items-start gap-3">
           <span className="text-3xl">{lesson.topic_group_icon}</span>
           <div className="flex-1 min-w-0">
-            <h1 className="text-xl font-bold leading-snug">{lesson.title_vi}</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">{lesson.title}</p>
+            <h1 className="text-xl font-bold leading-snug">{lesson.title}</h1>
+            <p className="text-sm text-muted-foreground mt-0.5">{lesson.title_vi}</p>
             <div className="flex items-center gap-2 mt-2 flex-wrap">
               <Badge variant="secondary" className={cn('text-xs border-0', lc)}>{lesson.level}</Badge>
               {lesson.exercise_count > 0 && (
@@ -175,9 +175,9 @@ export default function GrammarLessonPage() {
       {/* Tabs */}
       <div className="flex gap-1 border-b pb-0">
         {([
-          { key: 'theory',   label: '📖 Lý thuyết' },
-          { key: 'practice', label: `✏️ Bài tập${exercises.length > 0 ? ` (${exercises.length})` : ''}` },
-          { key: 'summary',  label: '📌 Tóm tắt' },
+          { key: 'theory',   label: '📖 Theory' },
+          { key: 'practice', label: `✏️ Exercises${exercises.length > 0 ? ` (${exercises.length})` : ''}` },
+          { key: 'summary',  label: '📌 Summary' },
         ] as { key: typeof tab; label: string }[]).map(({ key, label }) => (
           <button
             key={key}
