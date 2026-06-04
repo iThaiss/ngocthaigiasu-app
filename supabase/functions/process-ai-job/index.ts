@@ -1,7 +1,5 @@
-import Anthropic from 'npm:@anthropic-ai/sdk'
 import { createClient } from 'npm:@supabase/supabase-js'
 
-const anthropic = new Anthropic({ apiKey: Deno.env.get('ANTHROPIC_API_KEY') })
 const supabase = createClient(
   Deno.env.get('SUPABASE_URL')!,
   Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
@@ -23,6 +21,92 @@ function parseResponse(text: string) {
     summary: getSection('SUMMARY'),
     tips: getSection('TIPS'),
   }
+}
+
+async function callAI(system: string, userContent: string): Promise<string> {
+  const baseUrl = (
+    Deno.env.get('AI_ROUTER_BASE_URL') ??
+    Deno.env.get('AI_BASE_URL') ??
+    Deno.env.get('OPENROUTER_BASE_URL')
+  )?.replace(/\/$/, '')
+
+  const apiKey =
+    Deno.env.get('AI_ROUTER_API_KEY') ??
+    Deno.env.get('AI_API_KEY') ??
+    Deno.env.get('OPENROUTER_API_KEY')
+
+  const model =
+    Deno.env.get('AI_ROUTER_MODEL') ??
+    Deno.env.get('AI_MODEL') ??
+    Deno.env.get('OPENROUTER_MODEL') ??
+    'deepseek-chat'
+
+  if (baseUrl && apiKey) {
+    const url = baseUrl.endsWith('/chat/completions')
+      ? baseUrl
+      : baseUrl.endsWith('/v1')
+        ? `${baseUrl}/chat/completions`
+        : `${baseUrl}/v1/chat/completions`
+
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model,
+        max_tokens: 8000,
+        temperature: 0.3,
+        messages: [
+          { role: 'system', content: system },
+          { role: 'user', content: userContent },
+        ],
+      }),
+    })
+
+    if (!res.ok) {
+      const err = await res.text().catch(() => '')
+      throw new Error(`AI API ${res.status}: ${err.slice(0, 200)}`)
+    }
+
+    const data = await res.json()
+    return String(data.choices?.[0]?.message?.content ?? '').trim()
+  }
+
+  // Fallback: Anthropic direct
+  const anthropicKey =
+    Deno.env.get('ANTHROPIC_API_KEY') ??
+    Deno.env.get('ANTHROPIC_API_KEYS')?.split(',')[0]?.trim()
+
+  if (!anthropicKey) throw new Error('No AI API key configured')
+
+  const anthropicBase = (Deno.env.get('ANTHROPIC_BASE_URL') ?? 'https://api.anthropic.com').replace(/\/$/, '')
+  const anthropicModel = Deno.env.get('AI_LESSON_MODEL') ?? 'claude-sonnet-4-5'
+
+  const res = await fetch(`${anthropicBase}/v1/messages`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': anthropicKey,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: anthropicModel,
+      max_tokens: 8000,
+      temperature: 0.3,
+      system,
+      messages: [{ role: 'user', content: userContent }],
+    }),
+  })
+
+  if (!res.ok) {
+    const err = await res.text().catch(() => '')
+    throw new Error(`Anthropic API ${res.status}: ${err.slice(0, 200)}`)
+  }
+
+  const data = await res.json()
+  return String(data.content?.find((p: { type?: string; text?: string }) => p.type === 'text')?.text ?? '').trim()
 }
 
 Deno.serve(async (req) => {
@@ -51,13 +135,9 @@ Deno.serve(async (req) => {
       `CÂU ${i + 1} (${q.difficulty ?? 'Vận dụng'}):\nĐề: ${q.question_text}\nA. ${q.option_a}\nB. ${q.option_b}\nC. ${q.option_c}\nD. ${q.option_d}\nĐáp án: ${q.correct_answer}\nLời giải: (từ database)`
     ).join('\n\n')
 
-    const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-5',
-      max_tokens: 8000,
-      system: 'Bạn là chuyên gia soạn giáo án Toán 12. Trả lời theo đúng format được yêu cầu.',
-      messages: [{
-        role: 'user',
-        content: `Tạo giáo án: ${prompt}
+    const text = await callAI(
+      'Bạn là chuyên gia soạn giáo án Toán 12. Trả lời theo đúng format được yêu cầu.',
+      `Tạo giáo án: ${prompt}
 
 Tài liệu tham khảo:
 ${theoryData?.map((t: { content: string }) => t.content).join('\n') || 'Không có'}
@@ -118,11 +198,9 @@ Lời giải: [lời giải]
 
 ###TIPS###
 [mẹo nhớ công thức]`,
-      }],
-    })
+    )
 
-    const text = response.content[0].type === 'text' ? response.content[0].text : ''
-    if (!text) throw new Error('Empty response from Claude API')
+    if (!text) throw new Error('Empty response from AI API')
 
     const lessonPlan = parseResponse(text)
 

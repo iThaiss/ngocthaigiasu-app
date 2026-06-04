@@ -1,11 +1,9 @@
 type TextPart = { type: 'text'; text: string }
 type ImagePart = {
   type: 'image'
-  source: {
-    type: 'base64'
-    media_type: 'image/jpeg' | 'image/png' | 'image/webp'
-    data: string
-  }
+  source:
+    | { type: 'base64'; media_type: 'image/jpeg' | 'image/png' | 'image/webp'; data: string }
+    | { type: 'url'; url: string }
 }
 
 export interface RouterMessage {
@@ -108,12 +106,11 @@ function anthropicContentToOpenAi(content: RouterMessage['content']) {
   if (typeof content === 'string') return content
   return content.map((part) => {
     if (part.type === 'text') return { type: 'text', text: part.text }
-    return {
-      type: 'image_url',
-      image_url: {
-        url: `data:${part.source.media_type};base64,${part.source.data}`,
-      },
-    }
+    const url =
+      part.source.type === 'url'
+        ? part.source.url
+        : `data:${part.source.media_type};base64,${part.source.data}`
+    return { type: 'image_url', image_url: { url } }
   })
 }
 

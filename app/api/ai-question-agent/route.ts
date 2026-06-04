@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
-import { createAiCompletion } from '@/lib/ai-router'
+import { createAiCompletion, RouterMessage } from '@/lib/ai-router'
 
 export const preferredRegion = ['sin1', 'hnd1']
 
@@ -27,6 +27,7 @@ interface QuestionContext {
   solutionSteps?: Array<{ step: number; title: string; content: string }>
   userAnswer?: string | null
   answered?: boolean
+  imageUrl?: string | null
 }
 
 function trimText(value: unknown, max = 6000): string {
@@ -115,9 +116,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Thiếu câu hỏi của học sinh' }, { status: 400 })
   }
 
+  const hasImage = !!(context.imageUrl)
+  const model = hasImage
+    ? (process.env.AI_VISION_MODEL ?? process.env.AI_TUTOR_MODEL ?? 'claude-haiku-4-5')
+    : (process.env.AI_TUTOR_MODEL ?? 'claude-haiku-4-5')
+
+  const routerMessages: RouterMessage[] = messages.map((message, i) => {
+    if (i === messages.length - 1 && message.role === 'user' && context.imageUrl) {
+      return {
+        role: message.role,
+        content: [
+          { type: 'text' as const, text: message.content },
+          { type: 'image' as const, source: { type: 'url' as const, url: context.imageUrl } },
+        ],
+      }
+    }
+    return { role: message.role, content: message.content }
+  })
+
   try {
     const response = await createAiCompletion({
-      model: process.env.AI_TUTOR_MODEL ?? 'claude-haiku-4-5',
+      model,
       maxTokens: getTutorMaxTokens(),
       temperature: 0.25,
       system: `Bạn là AI agent gia sư Toán cho học sinh Việt Nam.
@@ -130,7 +149,7 @@ ${buildModeInstruction(mode, context)}
 
 CONTEXT:
 ${stringifyContext(context)}`,
-      messages: messages.map((message) => ({ role: message.role, content: message.content })),
+      messages: routerMessages,
     })
 
     const answer = response.text

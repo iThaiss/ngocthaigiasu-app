@@ -1,14 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
-import Anthropic from '@anthropic-ai/sdk'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { getPlanLimits } from '@/lib/plans'
-
-const anthropic = new Anthropic({
-  baseURL: process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com',
-  apiKey: process.env.ANTHROPIC_API_KEY!,
-})
+import { createAiCompletion } from '@/lib/ai-router'
 
 const SYSTEM_PROMPT = `Bạn là chuyên gia từ vựng tiếng Anh dành cho học sinh THPT Việt Nam luyện thi.
 Hãy tạo bộ từ vựng theo yêu cầu của học sinh và trả về ĐÚNG định dạng JSON sau (không thêm markdown hay text khác):
@@ -115,22 +110,16 @@ export async function POST(req: NextRequest) {
   const requestId = requestLog?.id
 
   try {
-    // Call Claude API
-    const message = await anthropic.messages.create({
-      model: 'claude-haiku-4-5',
-      max_tokens: 4096,
+    const response = await createAiCompletion({
+      model: process.env.AI_VOCAB_MODEL ?? 'claude-haiku-4-5',
+      maxTokens: 4096,
       system: SYSTEM_PROMPT,
-      messages: [
-        {
-          role: 'user',
-          content: `Tạo ${safeWordCount} từ vựng: ${prompt.trim()}`,
-        },
-      ],
+      messages: [{ role: 'user', content: `Tạo ${safeWordCount} từ vựng: ${prompt.trim()}` }],
     })
 
-    const rawContent = message.content[0]?.type === 'text' ? message.content[0].text : ''
+    const rawContent = response.text
 
-    // Parse JSON (Claude should return pure JSON per system prompt)
+    // Parse JSON — AI should return pure JSON per system prompt
     let parsed: {
       set_name: string
       description: string
