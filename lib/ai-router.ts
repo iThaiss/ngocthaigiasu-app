@@ -212,9 +212,9 @@ function hasImageContent(messages: RouterMessage[]): boolean {
   )
 }
 
-async function callGeminiVisionWithKey(params: AiCompletionParams, apiKey: string): Promise<string> {
+async function callGeminiWithKey(params: AiCompletionParams, apiKey: string, modelOverride?: string): Promise<string> {
   // Gemini direct API uses model name WITHOUT 'google/' prefix
-  const rawModel = process.env.AI_VISION_MODEL ?? 'gemini-2.5-flash-lite'
+  const rawModel = modelOverride ?? process.env.AI_VISION_MODEL ?? 'gemini-2.5-flash-lite'
   const model = rawModel.replace(/^google\//, '')
   // Gemini provides an OpenAI-compatible endpoint
   const url = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
@@ -248,7 +248,7 @@ async function callGeminiVisionWithKey(params: AiCompletionParams, apiKey: strin
   return String(data.choices?.[0]?.message?.content ?? '').trim()
 }
 
-async function callGeminiVision(params: AiCompletionParams): Promise<string> {
+async function callGeminiDirect(params: AiCompletionParams, modelOverride?: string): Promise<string> {
   const apiKeys = getEnvList('GEMINI_API_KEYS') ?? (process.env.GEMINI_API_KEY ? [process.env.GEMINI_API_KEY] : [])
   if (!apiKeys.length) throw new Error('GEMINI_API_KEY not set')
 
@@ -258,7 +258,7 @@ async function callGeminiVision(params: AiCompletionParams): Promise<string> {
 
   for (let index = 0; index < orderedKeys.length; index += 1) {
     try {
-      const text = await callGeminiVisionWithKey(params, orderedKeys[index])
+      const text = await callGeminiWithKey(params, orderedKeys[index], modelOverride)
       geminiKeyCursor = (start + index + 1) % apiKeys.length
       return text
     } catch (error) {
@@ -327,7 +327,7 @@ export async function createAiCompletion(params: AiCompletionParams) {
       const geminiKeys = getEnvList('GEMINI_API_KEYS') ?? (process.env.GEMINI_API_KEY ? [process.env.GEMINI_API_KEY] : [])
       if (geminiKeys.length) {
         try {
-          const text = await callGeminiVision(params)
+          const text = await callGeminiDirect(params)
           if (text) return { text, provider: 'gemini' as const, model: 'gemini-2.0-flash' }
         } catch (geminiErr) {
           console.error('[ai-router] Gemini direct vision fallback also failed:', geminiErr)
@@ -337,7 +337,7 @@ export async function createAiCompletion(params: AiCompletionParams) {
     } else {
       // Try Gemini direct (API Key Rotation) first
       try {
-        const text = await callGeminiVision(params)
+        const text = await callGeminiDirect(params)
         if (text) return { text, provider: 'gemini' as const, model: visionModel }
       } catch (err) {
         console.error('[ai-router] Gemini direct vision failed, trying Router fallback:', err)
@@ -401,10 +401,23 @@ export async function createAiCompletion(params: AiCompletionParams) {
         }
       }
 
-      console.error('[ai-router] router failed, falling back to Anthropic:', lastError)
+      console.error('[ai-router] router failed, falling back to Anthropic/Gemini:', lastError)
     }
   }
 
-  const text = await callAnthropicFallback(params)
-  return { text, provider: 'anthropic' as const, model: params.model }
+  // Try Anthropic fallback
+  const anthropicConfig = getFallbackConfig()
+  if (anthropicConfig.apiKey || anthropicConfig.apiKeys?.length) {
+    try {
+      const text = await callAnthropicFallback(params)
+      return { text, provider: 'anthropic' as const, model: params.model }
+    } catch (anthropicErr) {
+      console.error('[ai-router] Anthropic fallback failed, trying Gemini direct:', anthropicErr)
+    }
+  }
+
+  // Last resort: Gemini direct for text
+  const textModel = (process.env.AI_TUTOR_MODEL ?? process.env.AI_VISION_MODEL ?? 'gemini-2.5-flash-lite').replace(/^google\//, '')
+  const text = await callGeminiDirect(params, textModel)
+  return { text, provider: 'gemini' as const, model: textModel }
 }
