@@ -162,151 +162,127 @@ Yêu cầu: thân thiện như gia sư, cụ thể (có số liệu), không nó
   const systemPrompt = 'Bạn là gia sư tiếng Anh AI thân thiện và chuyên nghiệp dành cho học sinh THPT Việt Nam. Bạn phân tích dữ liệu học và đưa ra nhận xét cá nhân hóa, động viên học sinh, và gợi ý bước tiếp theo thực tế.'
 
   const { baseUrl, apiKey, model } = getAiConfig()
-
-  if (!apiKey) {
-    return new Response('❌ Chưa cấu hình AI API key.', {
-      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
-    })
-  }
-
   const enc = new TextEncoder()
 
-  // OpenAI-compatible streaming (DeepSeek, OpenRouter, etc.)
-  if (baseUrl && !apiKey.startsWith('sk-ant-')) {
-    const url = baseUrl.endsWith('/v1')
-      ? `${baseUrl}/chat/completions`
-      : `${baseUrl}/v1/chat/completions`
+  // Helper: stream from any OpenAI-compatible SSE endpoint, returns true if succeeded
+  async function tryOpenAiStream(
+    controller: ReadableStreamDefaultController,
+    fetchUrl: string,
+    fetchKey: string,
+    fetchModel: string,
+  ): Promise<boolean> {
+    const res = await fetch(fetchUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${fetchKey}` },
+      body: JSON.stringify({
+        model: fetchModel,
+        max_tokens: 1500,
+        temperature: 0.7,
+        stream: true,
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: userPrompt },
+        ],
+      }),
+    })
+    if (!res.ok || !res.body) return false
 
-    const readableStream = new ReadableStream({
-      async start(controller) {
+    const reader = res.body.getReader()
+    const decoder = new TextDecoder()
+    let buffer = ''
+    while (true) {
+      const { done, value } = await reader.read()
+      if (done) break
+      buffer += decoder.decode(value, { stream: true })
+      const lines = buffer.split('\n')
+      buffer = lines.pop() ?? ''
+      for (const line of lines) {
+        const trimmed = line.trim()
+        if (!trimmed.startsWith('data: ')) continue
+        const data = trimmed.slice(6)
+        if (data === '[DONE]') continue
         try {
-          const res = await fetch(url, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${apiKey}`,
-            },
-            body: JSON.stringify({
-              model,
-              max_tokens: 1500,
-              temperature: 0.7,
-              stream: true,
-              messages: [
-                { role: 'system', content: systemPrompt },
-                { role: 'user', content: userPrompt },
-              ],
-            }),
-          })
-
-          if (!res.ok || !res.body) {
-            const err = await res.text().catch(() => '')
-            controller.enqueue(enc.encode(`❌ Lỗi khi tạo nhận xét: AI API ${res.status}: ${err.slice(0, 200)}`))
-            controller.close()
-            return
-          }
-
-          const reader = res.body.getReader()
-          const decoder = new TextDecoder()
-          let buffer = ''
-
-          while (true) {
-            const { done, value } = await reader.read()
-            if (done) break
-
-            buffer += decoder.decode(value, { stream: true })
-            const lines = buffer.split('\n')
-            buffer = lines.pop() ?? ''
-
-            for (const line of lines) {
-              const trimmed = line.trim()
-              if (!trimmed.startsWith('data: ')) continue
-              const data = trimmed.slice(6)
-              if (data === '[DONE]') continue
-              try {
-                const parsed = JSON.parse(data)
-                const content = parsed.choices?.[0]?.delta?.content
-                if (content) controller.enqueue(enc.encode(content))
-              } catch {
-                // ignore malformed SSE lines
-              }
-            }
-          }
-        } catch (err) {
-          const msg = err instanceof Error ? err.message : 'Lỗi không xác định'
-          controller.enqueue(enc.encode(`\n\n❌ Lỗi khi tạo nhận xét: ${msg}`))
-        } finally {
-          controller.close()
-        }
-      },
-    })
-
-    return new Response(readableStream, {
-      headers: {
-        'Content-Type': 'text/plain; charset=utf-8',
-        'Transfer-Encoding': 'chunked',
-        'X-Content-Type-Options': 'nosniff',
-      },
-    })
+          const parsed = JSON.parse(data)
+          const content = parsed.choices?.[0]?.delta?.content
+          if (content) controller.enqueue(enc.encode(content))
+        } catch { /* ignore malformed SSE */ }
+      }
+    }
+    return true
   }
-
-  // Fallback: Anthropic direct streaming
-  const anthropicBase = (process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com').replace(/\/$/, '')
 
   const readableStream = new ReadableStream({
     async start(controller) {
       try {
-        const res = await fetch(`${anthropicBase}/v1/messages`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': apiKey,
-            'anthropic-version': '2023-06-01',
-          },
-          body: JSON.stringify({
-            model: process.env.AI_FEEDBACK_MODEL ?? 'claude-haiku-4-5',
-            max_tokens: 1500,
-            stream: true,
-            system: systemPrompt,
-            messages: [{ role: 'user', content: userPrompt }],
-          }),
-        })
-
-        if (!res.ok || !res.body) {
-          const err = await res.text().catch(() => '')
-          controller.enqueue(enc.encode(`❌ Lỗi khi tạo nhận xét: Anthropic API ${res.status}: ${err.slice(0, 200)}`))
-          controller.close()
-          return
+        // 1. Try OpenRouter / custom router
+        if (baseUrl && apiKey && !apiKey.startsWith('sk-ant-')) {
+          const url = baseUrl.endsWith('/v1')
+            ? `${baseUrl}/chat/completions`
+            : `${baseUrl}/v1/chat/completions`
+          const ok = await tryOpenAiStream(controller, url, apiKey, model)
+          if (ok) return
+          console.error('[english-feedback] OpenRouter failed, trying Gemini direct')
         }
 
-        const reader = res.body.getReader()
-        const decoder = new TextDecoder()
-        let buffer = ''
+        // 2. Gemini direct fallback (OpenAI-compatible endpoint)
+        const geminiKeys = process.env.GEMINI_API_KEYS
+          ?.split(',').map(k => k.trim()).filter(Boolean)
+          ?? (process.env.GEMINI_API_KEY ? [process.env.GEMINI_API_KEY] : [])
 
-        while (true) {
-          const { done, value } = await reader.read()
-          if (done) break
+        if (geminiKeys.length) {
+          const geminiModel = (process.env.AI_FEEDBACK_MODEL ?? process.env.AI_TUTOR_MODEL ?? 'gemini-2.5-flash-lite').replace(/^google\//, '')
+          const geminiUrl = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
+          for (const gKey of geminiKeys) {
+            const ok = await tryOpenAiStream(controller, geminiUrl, gKey, geminiModel)
+            if (ok) return
+          }
+          console.error('[english-feedback] Gemini direct also failed')
+        }
 
-          buffer += decoder.decode(value, { stream: true })
-          const lines = buffer.split('\n')
-          buffer = lines.pop() ?? ''
-
-          for (const line of lines) {
-            const trimmed = line.trim()
-            if (!trimmed.startsWith('data: ')) continue
-            const data = trimmed.slice(6)
-            try {
-              const parsed = JSON.parse(data)
-              if (parsed.type === 'content_block_delta' && parsed.delta?.type === 'text_delta') {
-                controller.enqueue(enc.encode(parsed.delta.text))
+        // 3. Anthropic fallback
+        const anthropicKey = process.env.ANTHROPIC_API_KEY
+        if (anthropicKey) {
+          const anthropicBase = (process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com').replace(/\/$/, '')
+          const res = await fetch(`${anthropicBase}/v1/messages`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-api-key': anthropicKey, 'anthropic-version': '2023-06-01' },
+            body: JSON.stringify({
+              model: process.env.AI_FEEDBACK_MODEL ?? 'claude-haiku-4-5',
+              max_tokens: 1500,
+              stream: true,
+              system: systemPrompt,
+              messages: [{ role: 'user', content: userPrompt }],
+            }),
+          })
+          if (res.ok && res.body) {
+            const reader = res.body.getReader()
+            const decoder = new TextDecoder()
+            let buffer = ''
+            while (true) {
+              const { done, value } = await reader.read()
+              if (done) break
+              buffer += decoder.decode(value, { stream: true })
+              const lines = buffer.split('\n')
+              buffer = lines.pop() ?? ''
+              for (const line of lines) {
+                const trimmed = line.trim()
+                if (!trimmed.startsWith('data: ')) continue
+                try {
+                  const parsed = JSON.parse(trimmed.slice(6))
+                  if (parsed.type === 'content_block_delta' && parsed.delta?.type === 'text_delta') {
+                    controller.enqueue(enc.encode(parsed.delta.text))
+                  }
+                } catch { /* ignore */ }
               }
-            } catch {
-              // ignore
             }
+            return
           }
         }
+
+        controller.enqueue(enc.encode('❌ Không kết nối được AI. Vui lòng thử lại sau.'))
       } catch (err) {
         const msg = err instanceof Error ? err.message : 'Lỗi không xác định'
-        controller.enqueue(enc.encode(`\n\n❌ Lỗi khi tạo nhận xét: ${msg}`))
+        controller.enqueue(enc.encode(`\n\n❌ Lỗi: ${msg}`))
       } finally {
         controller.close()
       }
