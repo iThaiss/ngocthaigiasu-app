@@ -17,8 +17,8 @@ export interface VipPlanConfig {
 }
 
 export const FREE_SOLVE_LIMIT = 3
-export const FREE_MODEL = 'google/gemini-2.0-flash:free'
-export const FREE_MODEL_LABEL = 'Gemini Flash'
+export const FREE_MODEL = 'google/gemini-2.5-flash-lite'
+export const FREE_MODEL_LABEL = 'Gemini 2.5 Flash Lite'
 
 export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
   monthly: {
@@ -28,8 +28,8 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     costPoints: 69,
     durationDays: 30,
     solveLimit: 20,
-    model: 'google/gemini-2.0-flash',
-    modelLabel: 'Gemini Flash (VIP Tháng)',
+    model: 'google/gemini-2.5-flash',
+    modelLabel: 'Gemini 2.5 Flash (VIP Tháng)',
   },
   yearly: {
     id: 'yearly',
@@ -38,8 +38,8 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     costPoints: 699,
     durationDays: 365,
     solveLimit: 50,
-    model: 'google/gemini-2.0-flash',
-    modelLabel: 'Gemini Flash (VIP Năm)',
+    model: 'google/gemini-2.5-flash',
+    modelLabel: 'Gemini 2.5 Flash (VIP Năm)',
   },
 }
 

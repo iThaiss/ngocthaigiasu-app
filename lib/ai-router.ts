@@ -86,7 +86,7 @@ function getRouterConfig() {
 
   return {
     baseUrl: baseUrl?.replace(/\/$/, ''),
-    apiKey,
+    apiKey: apiKey?.trim(),
     apiKeys: getRouterApiKeys(),
     model,
     protocol: process.env.AI_ROUTER_PROTOCOL,
@@ -296,16 +296,28 @@ export async function createAiCompletion(params: AiCompletionParams) {
   if (hasImageContent(params.messages)) {
     const visionProvider = process.env.AI_VISION_PROVIDER ?? 'gemini'
     const router = getRouterConfig()
-    const visionModel = process.env.AI_VISION_MODEL ?? 'google/gemini-2.0-flash'
+    const visionModel = process.env.AI_VISION_MODEL ?? 'google/gemini-2.5-flash-lite'
 
     if (visionProvider === 'openrouter' || visionProvider === 'router') {
-      // Try free model first, then fallback to paid model via OpenRouter
-      const freeModel = visionModel.endsWith(':free') ? visionModel : `${visionModel}:free`
-      const paidModel = visionModel.replace(/:free$/, '')
-      const modelsToTry = [freeModel, paidModel].filter((v, i, arr) => arr.indexOf(v) === i)
+      // Build a smart list of models to try
+      const modelsToTry: string[] = []
+      if (visionModel) {
+        modelsToTry.push(visionModel)
+      }
+      if (visionModel.endsWith(':free')) {
+        modelsToTry.push(visionModel.replace(/:free$/, ''))
+      } else {
+        modelsToTry.push(`${visionModel}:free`)
+      }
+      modelsToTry.push('google/gemini-2.5-flash-lite')
+      modelsToTry.push('google/gemini-2.5-flash')
+      modelsToTry.push('google/gemini-2.0-flash')
+      modelsToTry.push('google/gemma-4-31b-it:free')
+
+      const uniqueModels = modelsToTry.filter((v, i, arr) => arr.indexOf(v) === i)
 
       let lastErr: unknown = null
-      for (const model of modelsToTry) {
+      for (const model of uniqueModels) {
         try {
           const text = await callOpenAiCompatible(params, {
             baseUrl: router.baseUrl ?? 'https://openrouter.ai/api/v1',
