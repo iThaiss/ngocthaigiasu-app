@@ -21,7 +21,7 @@ function getAiConfig() {
     process.env.AI_FEEDBACK_MODEL ??
     process.env.AI_TUTOR_MODEL ??
     process.env.AI_ROUTER_MODEL ??
-    'deepseek-v4-flash'
+    'google/gemini-2.0-flash:free'
 
   return { baseUrl, apiKey, model }
 }
@@ -175,7 +175,7 @@ Yêu cầu: thân thiện như gia sư, cụ thể (có số liệu), không nó
   if (baseUrl && !apiKey.startsWith('sk-ant-')) {
     const url = baseUrl.endsWith('/v1')
       ? `${baseUrl}/chat/completions`
-      : `${baseUrl}/chat/completions`
+      : `${baseUrl}/v1/chat/completions`
 
     const readableStream = new ReadableStream({
       async start(controller) {
