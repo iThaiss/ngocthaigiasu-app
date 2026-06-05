@@ -416,8 +416,8 @@ export async function createAiCompletion(params: AiCompletionParams) {
     }
   }
 
-  // Last resort: Gemini direct for text
-  const textModel = (process.env.AI_TUTOR_MODEL ?? process.env.AI_VISION_MODEL ?? 'gemini-2.5-flash-lite').replace(/^google\//, '')
-  const text = await callGeminiDirect(params, textModel)
-  return { text, provider: 'gemini' as const, model: textModel }
+  // Last resort: Gemini direct for text — always use a Gemini model, not OpenRouter model names
+  const geminiTextModel = (process.env.AI_VISION_MODEL ?? 'google/gemini-2.5-flash-lite').replace(/^google\//, '').replace(/:free$/, '')
+  const text = await callGeminiDirect(params, geminiTextModel)
+  return { text, provider: 'gemini' as const, model: geminiTextModel }
 }
