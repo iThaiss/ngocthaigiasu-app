@@ -213,7 +213,9 @@ function hasImageContent(messages: RouterMessage[]): boolean {
 }
 
 async function callGeminiVisionWithKey(params: AiCompletionParams, apiKey: string): Promise<string> {
-  const model = process.env.AI_VISION_MODEL ?? 'gemini-2.0-flash'
+  // Gemini direct API uses model name WITHOUT 'google/' prefix
+  const rawModel = process.env.AI_VISION_MODEL ?? 'gemini-2.5-flash-lite'
+  const model = rawModel.replace(/^google\//, '')
   // Gemini provides an OpenAI-compatible endpoint
   const url = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions'
 
@@ -299,20 +301,11 @@ export async function createAiCompletion(params: AiCompletionParams) {
     const visionModel = process.env.AI_VISION_MODEL ?? 'google/gemini-2.5-flash-lite'
 
     if (visionProvider === 'openrouter' || visionProvider === 'router') {
-      // Build a smart list of models to try
+      // Build fallback list — no :free suffix (OpenRouter removed free Gemini tiers)
       const modelsToTry: string[] = []
-      if (visionModel) {
-        modelsToTry.push(visionModel)
-      }
-      if (visionModel.endsWith(':free')) {
-        modelsToTry.push(visionModel.replace(/:free$/, ''))
-      } else {
-        modelsToTry.push(`${visionModel}:free`)
-      }
+      if (visionModel) modelsToTry.push(visionModel.replace(/:free$/, ''))
       modelsToTry.push('google/gemini-2.5-flash-lite')
       modelsToTry.push('google/gemini-2.5-flash')
-      modelsToTry.push('google/gemini-2.0-flash')
-      modelsToTry.push('google/gemma-4-31b-it:free')
 
       const uniqueModels = modelsToTry.filter((v, i, arr) => arr.indexOf(v) === i)
 
