@@ -915,12 +915,17 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
                 </div>
               )}
 
-              {/* FSRS stats */}
+              {/* Learning status — friendly, no FSRS jargon */}
               {rec && !isNewWord && (
-                <div className="flex gap-3 text-[10px] text-muted-foreground pt-1 border-t flex-wrap">
-                  <span>⚡ Ổn định: {rec.stability.toFixed(1)} ngày</span>
-                  <span>🔁 Đã ôn: {rec.reps} lần</span>
-                  {rec.lapses > 0 && <span className="text-red-400">💔 Quên: {rec.lapses} lần</span>}
+                <div className="flex gap-2 pt-1 border-t flex-wrap">
+                  <span className="text-[11px] text-muted-foreground bg-muted/60 rounded-full px-2 py-0.5">
+                    🔁 Đã ôn {rec.reps} lần
+                  </span>
+                  {rec.lapses > 0 && (
+                    <span className="text-[11px] text-red-400 bg-red-500/10 rounded-full px-2 py-0.5">
+                      💔 Từng quên {rec.lapses} lần
+                    </span>
+                  )}
                 </div>
               )}
             </motion.div>
@@ -935,32 +940,77 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
-            className="space-y-2"
+            className="space-y-3"
           >
-            <p className="text-xs text-center text-muted-foreground">Bạn nhớ từ này đến mức nào?</p>
-            <div className="grid grid-cols-4 gap-2">
-              {RATING_CONFIG.map(({ key, label, emoji, color }) => (
-                <button
-                  key={key}
-                  disabled={loading}
-                  onClick={() => handleRate(key)}
-                  className={cn(
-                    'flex flex-col items-center gap-1 rounded-xl border-2 py-2.5 px-1 transition-all font-medium text-xs',
-                    'hover:-translate-y-0.5 hover:shadow-sm active:scale-95 disabled:opacity-50',
-                    color
-                  )}
-                >
-                  {loading
-                    ? <Loader2 className="h-4 w-4 animate-spin" />
-                    : <span className="text-lg leading-none">{emoji}</span>
-                  }
-                  <span className="leading-tight">{label}</span>
-                  {intervals[key] && (
-                    <span className="text-[10px] opacity-70">{intervals[key]}</span>
-                  )}
-                </button>
-              ))}
+            <p className="text-xs text-center text-muted-foreground font-medium">Bạn nhớ từ này đến mức nào?</p>
+
+            {/* Two zones: Chưa nhớ | Đã nhớ */}
+            <div className="grid grid-cols-2 gap-2.5">
+              {/* Zone: Chưa nhớ */}
+              <div className="space-y-1.5">
+                <p className="text-[10px] font-semibold text-center text-red-500/80 uppercase tracking-widest">✗ Chưa nhớ</p>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {RATING_CONFIG.slice(0, 2).map(({ key, label, emoji, color }) => (
+                    <button
+                      key={key}
+                      disabled={loading}
+                      onClick={() => handleRate(key)}
+                      className={cn(
+                        'flex flex-col items-center gap-1.5 rounded-xl border-2 py-3 px-1 transition-all',
+                        'hover:-translate-y-0.5 hover:shadow-md active:scale-95 disabled:opacity-50',
+                        color
+                      )}
+                    >
+                      {loading
+                        ? <Loader2 className="h-4 w-4 animate-spin" />
+                        : <span className="text-2xl leading-none">{emoji}</span>
+                      }
+                      <span className="text-xs font-semibold leading-tight">{label}</span>
+                      {intervals[key] && (
+                        <span className="text-[11px] font-medium opacity-80">
+                          {intervals[key]}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Zone: Đã nhớ */}
+              <div className="space-y-1.5">
+                <p className="text-[10px] font-semibold text-center text-emerald-500/80 uppercase tracking-widest">✓ Đã nhớ</p>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {RATING_CONFIG.slice(2, 4).map(({ key, label, emoji, color }) => (
+                    <button
+                      key={key}
+                      disabled={loading}
+                      onClick={() => handleRate(key)}
+                      className={cn(
+                        'flex flex-col items-center gap-1.5 rounded-xl border-2 py-3 px-1 transition-all',
+                        'hover:-translate-y-0.5 hover:shadow-md active:scale-95 disabled:opacity-50',
+                        color
+                      )}
+                    >
+                      {loading
+                        ? <Loader2 className="h-4 w-4 animate-spin" />
+                        : <span className="text-2xl leading-none">{emoji}</span>
+                      }
+                      <span className="text-xs font-semibold leading-tight">{label}</span>
+                      {intervals[key] && (
+                        <span className="text-[11px] font-medium opacity-80">
+                          {intervals[key]}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            {/* Hint: what each zone means */}
+            <p className="text-[10px] text-center text-muted-foreground/70">
+              Thời gian hiển thị = lần ôn tiếp theo
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
