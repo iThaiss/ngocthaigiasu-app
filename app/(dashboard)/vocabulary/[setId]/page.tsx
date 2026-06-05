@@ -676,7 +676,10 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
         for (const { key, label } of RATING_CONFIG) {
           const ratingVal = Rating[key]
           const result = f.next(card as Parameters<typeof f.next>[0], now, ratingVal)
-          newIntervals[key] = formatInterval(result.card.scheduled_days)
+          // Use actual due-time diff, not scheduled_days (which is 0 for learning steps)
+          const diffMs = result.card.due.getTime() - now.getTime()
+          const diffDays = diffMs / (1000 * 60 * 60 * 24)
+          newIntervals[key] = formatInterval(Math.max(0, diffDays))
         }
         setIntervals(newIntervals)
       } catch (e) {
