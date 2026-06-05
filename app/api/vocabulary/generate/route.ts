@@ -112,7 +112,7 @@ export async function POST(req: NextRequest) {
   try {
     const response = await createAiCompletion({
       model: process.env.AI_VOCAB_MODEL ?? 'claude-haiku-4-5',
-      maxTokens: 4096,
+      maxTokens: 8192,
       system: SYSTEM_PROMPT,
       messages: [{ role: 'user', content: `Tạo ${safeWordCount} từ vựng: ${prompt.trim()}` }],
     })
@@ -129,11 +129,15 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      // Strip potential markdown code blocks
-      const jsonText = rawContent.replace(/```json?\n?/g, '').replace(/```\n?/g, '').trim()
+      // Strip markdown code fences, then find outermost JSON object
+      let jsonText = rawContent.replace(/```json?\n?/g, '').replace(/```\n?/g, '').trim()
+      const start = jsonText.indexOf('{')
+      const end = jsonText.lastIndexOf('}')
+      if (start !== -1 && end !== -1) jsonText = jsonText.substring(start, end + 1)
       parsed = JSON.parse(jsonText)
     } catch {
-      throw new Error('Claude không trả về JSON hợp lệ')
+      console.error('[vocab/generate] raw AI response:', rawContent.slice(0, 500))
+      throw new Error('AI không trả về JSON hợp lệ. Vui lòng thử lại.')
     }
 
     if (!parsed.words?.length) {
