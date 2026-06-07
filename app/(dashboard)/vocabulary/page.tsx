@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Languages, Sparkles, Users, BookOpen, Target, Brain,
   Clock, CheckCircle2, Loader2, Search, Plus, ChevronDown,
-  Flame, GraduationCap,
+  Flame,
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -341,35 +341,6 @@ export default function VocabularyPage() {
         })}
       </div>
 
-      {/* Level description */}
-      {levelTab !== 'all' && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          {levelTab === 'B1' && (
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-green-500/8 border border-green-200 dark:border-green-800">
-              <GraduationCap className="h-4 w-4 text-green-600 shrink-0" />
-              <p className="text-xs text-green-700 dark:text-green-300">
-                <strong>B1 — Nền tảng:</strong> Từ vựng cơ bản cho thi tốt nghiệp THPT. Phù hợp học sinh lớp 10–11.
-              </p>
-            </div>
-          )}
-          {levelTab === 'B2' && (
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-yellow-500/8 border border-yellow-200 dark:border-yellow-800">
-              <GraduationCap className="h-4 w-4 text-yellow-600 shrink-0" />
-              <p className="text-xs text-yellow-700 dark:text-yellow-300">
-                <strong>B2 — Nâng cao:</strong> Từ vựng thi HSA/SPT và đề thi tốt nghiệp khó. Phù hợp học sinh lớp 12.
-              </p>
-            </div>
-          )}
-          {levelTab === 'C1' && (
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-orange-500/8 border border-orange-200 dark:border-orange-800">
-              <GraduationCap className="h-4 w-4 text-orange-600 shrink-0" />
-              <p className="text-xs text-orange-700 dark:text-orange-300">
-                <strong>C1–C2 — Chuyên sâu:</strong> Từ vựng học thuật cao cấp, chuẩn bị SPT và IELTS 7.0+.
-              </p>
-            </div>
-          )}
-        </motion.div>
-      )}
 
       {/* Search */}
       <div className="relative">
