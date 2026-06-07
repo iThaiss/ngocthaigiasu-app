@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Languages, Sparkles, Users, BookOpen, Target, Brain,
-  Clock, CheckCircle2, Loader2, Search, Plus, ChevronDown,
-  Flame,
+  Clock, CheckCircle2, Search, Plus, ChevronDown,
+  Flame, Heart, AlertCircle, RotateCw,
 } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -41,15 +41,16 @@ const LEVEL_TABS: { key: LevelKey; label: string; sublabel: string; color: strin
   { key: 'C1',  label: 'C1–C2',        sublabel: 'Chuyên sâu', color: 'text-orange-600',    bg: 'bg-orange-500/10' },
 ]
 
-/** Extract primary level from description "...— B2-C1 —..." */
+/** Extract primary level from description, e.g. "...— B2-C1 —..." or a single "B1". */
 function getPrimaryLevel(description: string | null): LevelKey {
   if (!description) return 'B2'
-  const m = description.match(/([ABC][12])-([ABC][12])/)
-  if (!m) return 'B2'
-  const start = m[1] // e.g. "B1", "B2", "C1"
-  if (start === 'B1') return 'B1'
+  // Prefer a range like "B1-B2"; otherwise fall back to the first standalone CEFR token.
+  const range = description.match(/([ABC][12])-([ABC][12])/)
+  const start = range ? range[1] : description.match(/\b([ABC][12])\b/)?.[1]
+  if (!start) return 'B2'
+  if (start === 'A1' || start === 'A2' || start === 'B1') return 'B1'
   if (start === 'B2') return 'B2'
-  return 'C1' // C1-C2
+  return 'C1' // C1 / C2
 }
 
 // ── Topic → Group config ───────────────────────────────────────
@@ -137,6 +138,11 @@ function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
                   <Flame className="h-3 w-3" />{set.progress.due_today} cần ôn
                 </span>
               )}
+              {!set.is_system && set.likes > 0 && (
+                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                  <Heart className="h-3 w-3" />{set.likes}
+                </span>
+              )}
             </div>
 
             {set.progress.total > 0 && (
@@ -156,8 +162,10 @@ function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
 }
 
 // ── Folder accordion ───────────────────────────────────────────
-function FolderSection({ group, sets, defaultOpen = false }: { group: GroupConfig; sets: VocabSet[]; defaultOpen?: boolean }) {
+function FolderSection({ group, sets, defaultOpen = false, forceOpen = false }: { group: GroupConfig; sets: VocabSet[]; defaultOpen?: boolean; forceOpen?: boolean }) {
   const [open, setOpen] = useState(defaultOpen)
+  // While searching the parent forces every folder open so matches aren't hidden.
+  const isOpen = forceOpen || open
   const totalWords = sets.reduce((a, s) => a + s.word_count, 0)
   const totalMastered = sets.reduce((a, s) => a + s.progress.mastered, 0)
   const totalDue = sets.reduce((a, s) => a + s.progress.due_today, 0)
@@ -165,12 +173,13 @@ function FolderSection({ group, sets, defaultOpen = false }: { group: GroupConfi
 
   return (
     <div className={cn('rounded-xl border overflow-hidden', group.border)}>
-      <button onClick={() => setOpen(v => !v)}
+      <button onClick={() => setOpen(v => !v)} aria-expanded={isOpen}
         className={cn('w-full flex items-center gap-3 px-4 py-3 text-left transition-colors', group.bg)}>
-        <span className="text-xl">{group.icon}</span>
+        <span className="text-xl" aria-hidden>{group.icon}</span>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className={cn('font-semibold text-sm', group.accent)}>{group.label}</span>
+            <span className={cn('font-semibold text-sm', group.accent)}>{group.key}</span>
+            <span className="text-[10px] text-muted-foreground">{group.label}</span>
             <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 border-0">{sets.length} bộ</Badge>
             <span className="text-xs text-muted-foreground">{totalWords.toLocaleString()} từ</span>
             {totalDue > 0 && (
@@ -186,11 +195,11 @@ function FolderSection({ group, sets, defaultOpen = false }: { group: GroupConfi
             </div>
           )}
         </div>
-        <ChevronDown className={cn('h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200', open && 'rotate-180')} />
+        <ChevronDown className={cn('h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200', isOpen && 'rotate-180')} />
       </button>
 
       <AnimatePresence initial={false}>
-        {open && (
+        {isOpen && (
           <motion.div key="content"
             initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.22, ease: 'easeInOut' }}
@@ -209,33 +218,47 @@ function FolderSection({ group, sets, defaultOpen = false }: { group: GroupConfi
 export default function VocabularyPage() {
   const [sets, setSets] = useState<VocabSet[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
   const [search, setSearch] = useState('')
   const [levelTab, setLevelTab] = useState<LevelKey>('all')
 
   const fetchSets = useCallback(async () => {
     setLoading(true)
+    setError(false)
     try {
       const res = await fetch('/api/vocabulary?filter=all')
+      if (!res.ok) throw new Error(`Request failed: ${res.status}`)
       const data = await res.json()
       setSets(data.sets ?? [])
-    } catch { /* ignore */ }
+    } catch {
+      setError(true)
+    }
     finally { setLoading(false) }
   }, [])
 
   useEffect(() => { fetchSets() }, [fetchSets])
 
-  // Filter by search
+  const isSearching = search.trim().length > 0
+
+  // Filter by search — matches name, topic, description and the Vietnamese group label.
   const searchFiltered = sets.filter((s) => {
-    if (!search) return true
-    const q = search.toLowerCase()
-    return s.name.toLowerCase().includes(q) || (s.topic ?? '').toLowerCase().includes(q)
+    if (!isSearching) return true
+    const q = search.toLowerCase().trim()
+    const groupLabel = s.topic ? (TOPIC_TO_GROUP[s.topic] ?? '') : ''
+    return (
+      s.name.toLowerCase().includes(q) ||
+      (s.topic ?? '').toLowerCase().includes(q) ||
+      (s.description ?? '').toLowerCase().includes(q) ||
+      groupLabel.toLowerCase().includes(q)
+    )
   })
 
   const systemSets = searchFiltered.filter(s => s.is_system)
   const otherSets  = searchFiltered.filter(s => !s.is_system)
 
-  // Filter system sets by level tab
-  const levelFiltered = levelTab === 'all'
+  // Filter system sets by level tab — but while searching we show every level so
+  // matches in other levels aren't silently dropped.
+  const levelFiltered = (levelTab === 'all' || isSearching)
     ? systemSets
     : systemSets.filter(s => getPrimaryLevel(s.description) === levelTab)
 
@@ -248,10 +271,12 @@ export default function VocabularyPage() {
 
   const ungroupedSystem = levelFiltered.filter(s => !s.topic || !groupedTopics.has(s.topic))
 
-  // Stats (all sets, ignoring level filter)
-  const totalWords    = sets.reduce((a, s) => a + s.word_count, 0)
-  const totalMastered = sets.reduce((a, s) => a + s.progress.mastered, 0)
-  const totalDue      = sets.reduce((a, s) => a + s.progress.due_today, 0)
+  // Stats reflect the sets currently in view (after search + level filter) so the
+  // numbers stay consistent with the list below.
+  const visibleSets   = [...levelFiltered, ...otherSets]
+  const totalWords    = visibleSets.reduce((a, s) => a + s.word_count, 0)
+  const totalMastered = visibleSets.reduce((a, s) => a + s.progress.mastered, 0)
+  const totalDue      = visibleSets.reduce((a, s) => a + s.progress.due_today, 0)
 
   // Count per level for tab badges
   const levelCount = (lk: LevelKey) =>
@@ -282,7 +307,7 @@ export default function VocabularyPage() {
       </motion.div>
 
       {/* Stats bar */}
-      {!loading && (
+      {!loading && !error && (
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-3 gap-3">
           {[
             { icon: BookOpen,     label: 'Tổng từ vựng',    value: totalWords.toLocaleString(), color: 'text-blue-500' },
@@ -303,7 +328,7 @@ export default function VocabularyPage() {
       )}
 
       {/* Level tabs */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         {LEVEL_TABS.map((tab) => {
           const active = levelTab === tab.key
           const count = levelCount(tab.key)
@@ -311,6 +336,7 @@ export default function VocabularyPage() {
             <button
               key={tab.key}
               onClick={() => setLevelTab(tab.key)}
+              aria-pressed={active}
               className={cn(
                 'flex flex-col items-center justify-center rounded-xl border px-3 py-2.5 transition-all text-center',
                 active
@@ -341,21 +367,40 @@ export default function VocabularyPage() {
         })}
       </div>
 
-
       {/* Search */}
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input placeholder="Tìm bộ từ vựng…" value={search}
+        <Input placeholder="Tìm theo tên, chủ đề…" aria-label="Tìm bộ từ vựng" value={search}
           onChange={(e) => setSearch(e.target.value)} className="pl-9" />
       </div>
 
       {loading && (
-        <div className="flex justify-center py-12">
-          <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+        <div className="space-y-3" aria-busy="true">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="rounded-xl border bg-card/50 px-4 py-3 animate-pulse">
+              <div className="flex items-center gap-3">
+                <div className="h-6 w-6 rounded bg-muted" />
+                <div className="h-4 w-40 rounded bg-muted" />
+              </div>
+            </div>
+          ))}
         </div>
       )}
 
-      {!loading && (
+      {!loading && error && (
+        <div className="flex flex-col items-center gap-3 py-12 text-center">
+          <AlertCircle className="h-10 w-10 text-rose-500/70" />
+          <div>
+            <p className="font-medium">Không tải được danh sách từ vựng</p>
+            <p className="text-sm text-muted-foreground">Vui lòng kiểm tra kết nối và thử lại.</p>
+          </div>
+          <Button size="sm" variant="outline" onClick={fetchSets} className="gap-1.5">
+            <RotateCw className="h-4 w-4" />Thử lại
+          </Button>
+        </div>
+      )}
+
+      {!loading && !error && (
         <div className="space-y-3">
           {/* System sets grouped by topic folders */}
           {levelFiltered.length > 0 && (
@@ -368,7 +413,7 @@ export default function VocabularyPage() {
               </div>
 
               {groupsWithSets.map(({ group, sets: gSets }, idx) => (
-                <FolderSection key={group.key} group={group} sets={gSets} defaultOpen={idx === 0} />
+                <FolderSection key={group.key} group={group} sets={gSets} defaultOpen={idx === 0} forceOpen={isSearching} />
               ))}
 
               {ungroupedSystem.length > 0 && (
@@ -379,7 +424,7 @@ export default function VocabularyPage() {
             </section>
           )}
 
-          {levelFiltered.length === 0 && !search && (
+          {levelFiltered.length === 0 && !isSearching && (
             <div className="text-center py-10 text-muted-foreground">
               <BookOpen className="h-10 w-10 mx-auto mb-3 opacity-30" />
               <p>Chưa có bộ từ vựng nào ở trình độ này.</p>
@@ -410,7 +455,7 @@ export default function VocabularyPage() {
             </section>
           )}
 
-          {search && levelFiltered.length === 0 && otherSets.length === 0 && (
+          {isSearching && levelFiltered.length === 0 && otherSets.length === 0 && (
             <div className="text-center py-12 text-muted-foreground">
               <BookOpen className="h-10 w-10 mx-auto mb-3 opacity-30" />
               <p>Không tìm thấy &ldquo;{search}&rdquo;</p>
