@@ -62,17 +62,26 @@ async function getGoogleAccessTokenByRefreshToken(clientId: string, clientSecret
   return data.access_token
 }
 
+function cleanEnvVar(val: string | undefined): string | undefined {
+  if (!val) return val
+  return val.replace(/^["']|["']$/g, '').trim()
+}
+
+function getCalendarId(): string {
+  return cleanEnvVar(process.env.GOOGLE_CALENDAR_ID) || 'primary'
+}
+
 async function getAccessToken(): Promise<string> {
-  const clientId = process.env.GOOGLE_CLIENT_ID
-  const clientSecret = process.env.GOOGLE_CLIENT_SECRET
-  const refreshToken = process.env.GOOGLE_REFRESH_TOKEN
+  const clientId = cleanEnvVar(process.env.GOOGLE_CLIENT_ID)
+  const clientSecret = cleanEnvVar(process.env.GOOGLE_CLIENT_SECRET)
+  const refreshToken = cleanEnvVar(process.env.GOOGLE_REFRESH_TOKEN)
 
   if (clientId && clientSecret && refreshToken) {
     return await getGoogleAccessTokenByRefreshToken(clientId, clientSecret, refreshToken)
   }
 
-  const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
-  const privateKey = process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY
+  const serviceAccountEmail = cleanEnvVar(process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL)
+  const privateKey = cleanEnvVar(process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY)
 
   if (!serviceAccountEmail || !privateKey) {
     throw new Error('Google Calendar credentials (OAuth or Service Account) are not configured.')
@@ -82,7 +91,7 @@ async function getAccessToken(): Promise<string> {
 }
 
 export async function inviteVIPStudentToMeet(eventId: string, studentEmail: string) {
-  const calendarId = process.env.GOOGLE_CALENDAR_ID || 'primary'
+  const calendarId = getCalendarId()
 
   try {
     const token = await getAccessToken()
@@ -135,7 +144,7 @@ export async function inviteVIPStudentToMeet(eventId: string, studentEmail: stri
 }
 
 export async function findEventIdByMeetUrl(meetUrl: string): Promise<string | null> {
-  const calendarId = process.env.GOOGLE_CALENDAR_ID || 'primary'
+  const calendarId = getCalendarId()
 
   try {
     const token = await getAccessToken()
@@ -188,7 +197,7 @@ export async function createCalendarEventAndMeet(
   startTime: string,
   endTime: string
 ): Promise<{ eventId: string; meetUrl: string }> {
-  const calendarId = process.env.GOOGLE_CALENDAR_ID || 'primary'
+  const calendarId = getCalendarId()
 
   const token = await getAccessToken()
 
