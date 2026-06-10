@@ -72,9 +72,9 @@ function getCalendarId(): string {
 }
 
 async function getAccessToken(): Promise<string> {
-  const clientId = cleanEnvVar(process.env.GOOGLE_CLIENT_ID)
-  const clientSecret = cleanEnvVar(process.env.GOOGLE_CLIENT_SECRET)
-  const refreshToken = cleanEnvVar(process.env.GOOGLE_REFRESH_TOKEN)
+  const clientId = cleanEnvVar(process.env.GOOGLE_CALENDAR_CLIENT_ID) || cleanEnvVar(process.env.GOOGLE_CLIENT_ID)
+  const clientSecret = cleanEnvVar(process.env.GOOGLE_CALENDAR_CLIENT_SECRET) || cleanEnvVar(process.env.GOOGLE_CLIENT_SECRET)
+  const refreshToken = cleanEnvVar(process.env.GOOGLE_CALENDAR_REFRESH_TOKEN) || cleanEnvVar(process.env.GOOGLE_REFRESH_TOKEN)
 
   if (clientId && clientSecret && refreshToken) {
     return await getGoogleAccessTokenByRefreshToken(clientId, clientSecret, refreshToken)
