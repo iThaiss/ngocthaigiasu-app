@@ -34,8 +34,7 @@ export async function POST(req: NextRequest) {
       } catch (err: any) {
         console.error('Failed to create calendar event automatically:', err)
         return NextResponse.json({ 
-          error: 'Không thể tạo phòng học Google Meet tự động. Vui lòng kiểm tra cấu hình tài khoản Google.', 
-          details: err.message || err 
+          error: `Không thể tạo phòng học Google Meet tự động: ${err.message || err}`
         }, { status: 500 })
       }
     } else if (!resolvedEventId) {
@@ -96,8 +95,7 @@ export async function PUT(req: NextRequest) {
       } catch (err: any) {
         console.error('Failed to create calendar event automatically on edit:', err)
         return NextResponse.json({ 
-          error: 'Không thể tạo phòng học Google Meet tự động. Vui lòng kiểm tra cấu hình tài khoản Google.', 
-          details: err.message || err 
+          error: `Không thể tạo phòng học Google Meet tự động: ${err.message || err}`
         }, { status: 500 })
       }
     } else if (!resolvedEventId) {
