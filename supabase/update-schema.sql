@@ -21,3 +21,7 @@ ALTER TABLE point_transactions ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "Users view own points" ON point_transactions
   FOR SELECT USING (auth.uid() = user_id);
+
+-- Thêm cột last_free_vip_claimed_at vào users
+ALTER TABLE users ADD COLUMN IF NOT EXISTS last_free_vip_claimed_at TIMESTAMPTZ;
+

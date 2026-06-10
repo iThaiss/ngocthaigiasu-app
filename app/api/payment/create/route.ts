@@ -4,7 +4,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 
-const MIN_AMOUNT = 10000
+const MIN_AMOUNT = 20000
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions)

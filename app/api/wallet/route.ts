@@ -10,14 +10,22 @@ export async function GET() {
   }
 
   const supabase = createAdminClient()
-  const { data } = await supabase
-    .from('wallets')
-    .select('points, balance')
-    .eq('user_id', session.user.id)
-    .single()
+  const [{ data: wallet }, { data: user }] = await Promise.all([
+    supabase
+      .from('wallets')
+      .select('points, balance')
+      .eq('user_id', session.user.id)
+      .single(),
+    supabase
+      .from('users')
+      .select('last_free_vip_claimed_at')
+      .eq('id', session.user.id)
+      .single()
+  ])
 
   return NextResponse.json({
-    points: data?.points ?? 0,
-    balance: data?.balance ?? 0,
+    points: wallet?.points ?? 0,
+    balance: wallet?.balance ?? 0,
+    lastFreeVipClaimedAt: user?.last_free_vip_claimed_at ?? null,
   })
 }

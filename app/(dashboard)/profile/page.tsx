@@ -314,7 +314,7 @@ export default function ProfilePage() {
 function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
   isVip: boolean
   vipExpiresAt: string | null
-  vipPlan: 'monthly' | 'yearly' | null
+  vipPlan: string | null
 }) {
   const fmt = (d: Date) =>
     d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
@@ -326,7 +326,17 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
     const expires = new Date(vipExpiresAt)
     const today = new Date()
     daysRemaining = Math.max(0, Math.ceil((expires.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)))
-    const totalDays = vipPlan === 'yearly' ? 365 : 30
+    
+    let totalDays = 30
+    if (vipPlan) {
+      if (vipPlan.includes('yearly') || vipPlan === 'yearly') totalDays = 365
+      else if (vipPlan.includes('3months')) totalDays = 90
+      else if (vipPlan.includes('monthly') || vipPlan === 'monthly') totalDays = 30
+      else if (vipPlan.includes('1week')) totalDays = 7
+      else if (vipPlan.includes('3days')) totalDays = 3
+      else if (vipPlan.includes('1day')) totalDays = 1
+    }
+    
     const daysUsed = totalDays - daysRemaining
     progressPercent = Math.max(0, Math.min(100, (daysUsed / totalDays) * 100))
   }

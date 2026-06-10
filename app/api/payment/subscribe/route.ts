@@ -95,16 +95,15 @@ export async function POST(req: NextRequest) {
     ? new Date(currentExpiry)
     : new Date()
 
-  const vipExpiresAt = new Date(baseDate)
-  if (planId === 'yearly') {
-    vipExpiresAt.setFullYear(vipExpiresAt.getFullYear() + 1)
-  } else {
-    vipExpiresAt.setMonth(vipExpiresAt.getMonth() + 1)
-  }
+  const vipExpiresAt = new Date(baseDate.getTime() + VIP_PLANS[planId].durationDays * 24 * 60 * 60 * 1000)
 
   const { error: vipErr } = await supabase
     .from('users')
-    .update({ is_vip: true, vip_expires_at: vipExpiresAt.toISOString() })
+    .update({
+      is_vip: true,
+      vip_expires_at: vipExpiresAt.toISOString(),
+      vip_plan: VIP_PLANS[planId].vipPlanValue,
+    })
     .eq('id', userId)
 
   if (vipErr) {
