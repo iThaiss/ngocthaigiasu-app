@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Crown, Check, Loader2, CheckCircle, Copy, Shield, Zap, Star,
   Plus, Gift, Sparkles, RefreshCw, AlertCircle, HelpCircle,
-  CreditCard, Wallet, ArrowRight, ArrowLeftRight
+  CreditCard, Wallet, ArrowRight, BookOpen
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -39,32 +39,55 @@ const DURATIONS = [
     id: '1day',
     label: '1 Ngày',
     badge: 'Cấp tốc',
-    features: ['Giải toán AI 20 câu', 'Xem tài liệu lý thuyết', 'Phù hợp làm bài tập gấp'],
   },
   {
     id: '1week',
     label: '1 Tuần',
     badge: 'Ôn thi',
-    features: ['Giải toán AI 30 câu/ngày', 'Thi thử tốt nghiệp THPT', 'Ôn thi giữa kỳ/cuối kỳ cực tốt'],
   },
   {
     id: 'monthly',
     label: '1 Tháng',
     badge: 'Tự học',
-    features: ['Giải toán AI không giới hạn', 'Spaced repetition học từ vựng', 'Popup từ điển nâng cao'],
   },
   {
     id: '3months',
     label: '3 Tháng',
     badge: 'Khuyên dùng',
-    features: ['Toàn bộ tính năng gói Tháng', 'Luyện thi Đánh giá năng lực', 'Tiết kiệm đến 30% chi phí'],
     highlight: true,
   },
   {
     id: 'yearly',
     label: '1 Năm',
     badge: 'Đồng hành',
-    features: ['Mở khóa tất cả tính năng', 'Báo cáo học tập chuyên sâu', 'Huy hiệu VIP nổi bật trọn đời'],
+  },
+]
+
+// Unified VIP benefits
+const VIP_BENEFITS = [
+  {
+    icon: Zap,
+    title: 'Trợ lý AI Giải Toán',
+    description: 'Giải toán siêu tốc bằng mô hình Gemini 2.5 Flash cao cấp, giải thích chi tiết từng bước làm bài.',
+    color: 'text-purple-400 bg-purple-500/10 border-purple-500/20',
+  },
+  {
+    icon: Sparkles,
+    title: 'Học Anh Văn Thông Minh',
+    description: 'Mở khóa phương pháp Lặp lại ngắt quãng (Spaced Repetition) học từ vựng và tra cứu từ điển nâng cao.',
+    color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20',
+  },
+  {
+    icon: BookOpen,
+    title: 'Luyện Đề Bứt Phá',
+    description: 'Mở khóa toàn bộ kho đề thi tốt nghiệp THPT Quốc gia và đề Đánh giá năng lực có lời giải chi tiết.',
+    color: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
+  },
+  {
+    icon: Shield,
+    title: 'Trải Nghiệm Tập Trung 100%',
+    description: 'Không quảng cáo, không bị gián đoạn, bảo mật và đồng bộ tiến độ học tập trên mọi thiết bị.',
+    color: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
   },
 ]
 
@@ -295,7 +318,7 @@ export default function PaymentPage() {
             }
           }
         } catch {}
-      }, 5000)
+      }, 5500)
     } catch (err) {
       toast({ title: 'Không thể tạo giao dịch', description: err instanceof Error ? err.message : 'Thử lại sau.', variant: 'destructive' })
       setDialogOpen(false)
@@ -473,7 +496,7 @@ export default function PaymentPage() {
         </TabsList>
 
         {/* Tab: Đăng ký gói */}
-        <TabsContent value="subscribe" className="mt-8 space-y-6">
+        <TabsContent value="subscribe" className="mt-8 space-y-8">
           
           {/* Holographic free claim VIP voucher */}
           <motion.div
@@ -572,8 +595,8 @@ export default function PaymentPage() {
             </div>
           </div>
 
-          {/* Pricing Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          {/* Pricing Grid - Highly Minimalistic Redesign */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {DURATIONS.map((dur) => {
               const durationKey = dur.id
               const planId = (subjectCategory === 'combo'
@@ -588,6 +611,10 @@ export default function PaymentPage() {
               const isSubscribing = subscribing === planId
               const isHighlighted = dur.highlight
               const isYearly = durationKey === 'yearly'
+
+              // Calculate daily cost dynamically for student preview
+              const dailyCostVnd = Math.round((effectiveCost * 1000) / planConfig.durationDays)
+              const dailyCostFormatted = dailyCostVnd >= 1000 ? (dailyCostVnd / 1000).toFixed(1).replace('.0', '') + 'k' : dailyCostVnd + 'đ'
 
               return (
                 <motion.div
@@ -614,12 +641,12 @@ export default function PaymentPage() {
                     </span>
                   </div>
 
-                  <div className="space-y-4 mt-2">
-                    <div className="text-center">
-                      <span className="text-sm font-extrabold text-slate-200">{dur.label}</span>
+                  <div className="space-y-4 mt-2 text-center">
+                    <div>
+                      <span className="text-base font-extrabold text-slate-200">{dur.label}</span>
                     </div>
 
-                    <div className="flex items-baseline gap-1 justify-center py-2.5 border-y border-slate-900/80">
+                    <div className="flex flex-col items-center justify-center py-2.5 border-y border-slate-900/80 gap-1">
                       {couponApplied && effectiveCost !== planConfig.costPoints ? (
                         <div className="flex flex-col items-center">
                           <span className="text-xs line-through text-slate-600 font-mono">{planConfig.costPoints}đ</span>
@@ -628,23 +655,16 @@ export default function PaymentPage() {
                       ) : (
                         <span className="text-3xl font-black text-amber-400 font-mono tracking-tight">{planConfig.costPoints}</span>
                       )}
-                      <span className="text-[10px] text-slate-500 font-bold">điểm</span>
+                      <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">điểm cước</span>
                     </div>
 
-                    {/* Features checklist */}
-                    <ul className="space-y-2 text-[10px] text-slate-400">
-                      {dur.features.map((feat, idx) => (
-                        <li key={idx} className="flex items-start gap-1.5">
-                          <Check className={`h-3.5 w-3.5 shrink-0 mt-0.5 ${
-                            isYearly ? 'text-amber-400' : 'text-green-500'
-                          }`} />
-                          <span className="line-clamp-3 leading-relaxed">{feat}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    {/* Cost per day helper - very clear value proposition */}
+                    <div className="text-[11px] text-slate-400 font-medium">
+                      Tương đương <span className="font-extrabold text-slate-300">{dailyCostFormatted}</span> / ngày
+                    </div>
                   </div>
 
-                  <div className="pt-5 mt-auto">
+                  <div className="pt-5">
                     <Button
                       className={`w-full text-xs font-extrabold h-10 transition-all rounded-xl ${
                         isYearly
@@ -668,6 +688,30 @@ export default function PaymentPage() {
                 </motion.div>
               )
             })}
+          </div>
+
+          {/* Unified VIP Benefits Showcase */}
+          <div className="space-y-4 pt-8 border-t border-slate-900/60">
+            <div className="text-center space-y-1">
+              <h2 className="text-lg font-black tracking-tight text-white flex items-center justify-center gap-2">
+                <Sparkles className="h-5 w-5 text-purple-400" /> Đặc Quyền Khi Kích Hoạt VIP
+              </h2>
+              <p className="text-xs text-slate-400">Tất cả các gói cước trên đều kích hoạt trọn vẹn quyền lợi VIP dưới đây</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+              {VIP_BENEFITS.map((benefit, idx) => (
+                <div key={idx} className="rounded-2xl border border-slate-900 bg-slate-900/10 p-4.5 space-y-3 backdrop-blur-md hover:border-slate-800/60 hover:bg-slate-900/20 transition-all duration-300">
+                  <div className={`h-10 w-10 rounded-xl flex items-center justify-center shrink-0 border ${benefit.color}`}>
+                    <benefit.icon className="h-5.5 w-5.5" />
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-xs font-extrabold text-slate-200">{benefit.title}</h3>
+                    <p className="text-[10px] text-slate-400 leading-relaxed">{benefit.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
         </TabsContent>
@@ -822,7 +866,7 @@ export default function PaymentPage() {
             </Button>
             <Button
               onClick={handleConfirmSubscribe}
-              className="flex-1 h-10 text-xs font-black bg-purple-650 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
+              className="flex-1 h-10 text-xs font-black bg-purple-655 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
             >
               Xác nhận
             </Button>
@@ -970,7 +1014,7 @@ export default function PaymentPage() {
             </Button>
             <Button
               onClick={() => createTopup(confirmTopupAmount!, null)}
-              className="flex-1 h-10 text-xs font-black bg-purple-650 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
+              className="flex-1 h-10 text-xs font-black bg-purple-655 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
             >
               Khởi tạo QR
             </Button>
