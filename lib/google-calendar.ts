@@ -183,4 +183,63 @@ export async function findEventIdByMeetUrl(meetUrl: string): Promise<string | nu
   }
 }
 
+export async function createCalendarEventAndMeet(
+  title: string,
+  startTime: string,
+  endTime: string
+): Promise<{ eventId: string; meetUrl: string }> {
+  const calendarId = process.env.GOOGLE_CALENDAR_ID || 'primary'
+
+  const token = await getAccessToken()
+
+  const body = {
+    summary: title,
+    start: {
+      dateTime: new Date(startTime).toISOString(),
+      timeZone: 'Asia/Ho_Chi_Minh',
+    },
+    end: {
+      dateTime: new Date(endTime).toISOString(),
+      timeZone: 'Asia/Ho_Chi_Minh',
+    },
+    conferenceData: {
+      createRequest: {
+        requestId: `create-meet-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+        conferenceSolutionKey: {
+          type: 'hangoutsMeet',
+        },
+      },
+    },
+  }
+
+  // We must set conferenceDataVersion=1 query parameter to allow conference creation
+  const response = await fetch(
+    `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?conferenceDataVersion=1`,
+    {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+      cache: 'no-store',
+    }
+  )
+
+  if (!response.ok) {
+    const errText = await response.text()
+    throw new Error(`Failed to create Google Calendar Event: ${errText}`)
+  }
+
+  const data = await response.json()
+  const eventId = data.id
+  const meetUrl = data.hangoutLink || (data.conferenceData?.entryPoints?.find((ep: any) => ep.entryPointType === 'video')?.uri)
+
+  if (!meetUrl) {
+    throw new Error('Google Calendar event created, but Google Meet link was not generated.')
+  }
+
+  return { eventId, meetUrl }
+}
+
 

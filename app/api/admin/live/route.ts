@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-import { findEventIdByMeetUrl } from '@/lib/google-calendar'
+import { findEventIdByMeetUrl, createCalendarEventAndMeet } from '@/lib/google-calendar'
 
 // Helper to check admin role
 async function checkAdmin() {
@@ -19,14 +19,27 @@ export async function POST(req: NextRequest) {
     const body = await req.json()
     const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, document_url } = body
 
-    if (!title || !teacher || !start_time || !end_time || !meet_url || !subject) {
+    if (!title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
     }
 
-    // Resolve event ID automatically if not provided explicitly
+    let finalMeetUrl = meet_url || null
     let resolvedEventId = external_event_id || null
-    if (!resolvedEventId && meet_url) {
-      resolvedEventId = await findEventIdByMeetUrl(meet_url)
+
+    if (!finalMeetUrl) {
+      try {
+        const result = await createCalendarEventAndMeet(title, start_time, end_time)
+        finalMeetUrl = result.meetUrl
+        resolvedEventId = result.eventId
+      } catch (err: any) {
+        console.error('Failed to create calendar event automatically:', err)
+        return NextResponse.json({ 
+          error: 'Không thể tạo phòng học Google Meet tự động. Vui lòng kiểm tra cấu hình tài khoản Google.', 
+          details: err.message || err 
+        }, { status: 500 })
+      }
+    } else if (!resolvedEventId) {
+      resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
     }
 
     const supabaseAdmin = createAdminClient()
@@ -39,7 +52,7 @@ export async function POST(req: NextRequest) {
         end_time,
         status: status || 'upcoming',
         subject,
-        meet_url,
+        meet_url: finalMeetUrl,
         external_event_id: resolvedEventId,
         recording_url: recording_url || null,
         document_url: document_url || null,
@@ -68,14 +81,27 @@ export async function PUT(req: NextRequest) {
     const body = await req.json()
     const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, document_url } = body
 
-    if (!id || !title || !teacher || !start_time || !end_time || !meet_url || !subject) {
+    if (!id || !title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
     }
 
-    // Resolve event ID automatically if not provided explicitly
+    let finalMeetUrl = meet_url || null
     let resolvedEventId = external_event_id || null
-    if (!resolvedEventId && meet_url) {
-      resolvedEventId = await findEventIdByMeetUrl(meet_url)
+
+    if (!finalMeetUrl) {
+      try {
+        const result = await createCalendarEventAndMeet(title, start_time, end_time)
+        finalMeetUrl = result.meetUrl
+        resolvedEventId = result.eventId
+      } catch (err: any) {
+        console.error('Failed to create calendar event automatically on edit:', err)
+        return NextResponse.json({ 
+          error: 'Không thể tạo phòng học Google Meet tự động. Vui lòng kiểm tra cấu hình tài khoản Google.', 
+          details: err.message || err 
+        }, { status: 500 })
+      }
+    } else if (!resolvedEventId) {
+      resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
     }
 
     const supabaseAdmin = createAdminClient()
@@ -88,7 +114,7 @@ export async function PUT(req: NextRequest) {
         end_time,
         status,
         subject,
-        meet_url,
+        meet_url: finalMeetUrl,
         external_event_id: resolvedEventId,
         recording_url: recording_url || null,
         document_url: document_url || null,

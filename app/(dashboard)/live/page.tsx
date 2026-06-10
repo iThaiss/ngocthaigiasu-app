@@ -114,7 +114,7 @@ export default function LiveClassPage() {
   const [formEndTime, setFormEndTime] = useState('')
   const [formStatus, setFormStatus] = useState<'upcoming' | 'live' | 'ended'>('upcoming')
   const [formSubject, setFormSubject] = useState<'math' | 'english'>('math')
-  const [formMeetUrl, setFormMeetUrl] = useState('https://meet.google.com/')
+  const [formMeetUrl, setFormMeetUrl] = useState('')
   const [formRecordingUrl, setFormRecordingUrl] = useState('')
   const [formDocumentUrl, setFormDocumentUrl] = useState('')
   const [saving, setSaving] = useState(false)
@@ -154,7 +154,7 @@ export default function LiveClassPage() {
     setFormEndTime('')
     setFormStatus('upcoming')
     setFormSubject(activeTab)
-    setFormMeetUrl('https://meet.google.com/')
+    setFormMeetUrl('')
     setFormRecordingUrl('')
     setFormDocumentUrl('')
     setIsOpenDialog(true)
@@ -182,7 +182,7 @@ export default function LiveClassPage() {
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!formTitle || !formStartTime || !formEndTime || !formMeetUrl) {
+    if (!formTitle || !formStartTime || !formEndTime) {
       toast({
         variant: 'destructive',
         title: 'Điền thiếu thông tin',
@@ -199,7 +199,7 @@ export default function LiveClassPage() {
       end_time: new Date(formEndTime).toISOString(),
       status: formStatus,
       subject: formSubject,
-      meet_url: formMeetUrl,
+      meet_url: formMeetUrl || null,
       recording_url: formRecordingUrl || null,
       document_url: formDocumentUrl || null,
     }
@@ -668,14 +668,13 @@ export default function LiveClassPage() {
               </div>
 
               <div className="col-span-2 space-y-1">
-                <label className="text-xs font-bold text-muted-foreground uppercase">Google Meet URL *</label>
+                <label className="text-xs font-bold text-muted-foreground uppercase">Google Meet URL (Để trống để tự tạo)</label>
                 <input
                   type="url"
                   value={formMeetUrl}
                   onChange={(e) => setFormMeetUrl(e.target.value)}
                   placeholder="https://meet.google.com/..."
                   className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  required
                 />
               </div>
             </div>
