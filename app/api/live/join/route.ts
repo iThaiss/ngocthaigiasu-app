@@ -55,8 +55,12 @@ export async function GET(req: NextRequest) {
             console.error('Failed to update resolved event ID in DB:', updateErr)
           }
         }
-      } catch (lookupErr) {
+      } catch (lookupErr: any) {
         console.error('On-the-fly event lookup error:', lookupErr)
+        return NextResponse.json({
+          error: 'Lỗi tra cứu sự kiện Google Calendar',
+          message: lookupErr.message || lookupErr
+        }, { status: 500 })
       }
     }
 

@@ -179,7 +179,7 @@ export async function findEventIdByMeetUrl(meetUrl: string): Promise<string | nu
     return null
   } catch (error) {
     console.error('findEventIdByMeetUrl error:', error)
-    return null
+    throw error
   }
 }
 
