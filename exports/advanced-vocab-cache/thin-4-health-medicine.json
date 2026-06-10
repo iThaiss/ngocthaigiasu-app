@@ -1,0 +1,389 @@
+{
+  "words": [
+    {
+      "word": "pathogen",
+      "pronunciation": "/ˈpæθədʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "tác nhân gây bệnh (vi khuẩn, virus, nấm, ký sinh trùng)",
+      "definition_en": "a microorganism or substance that causes disease",
+      "level": "B2",
+      "synonyms": [
+        "disease-causing agent",
+        "infectious agent"
+      ],
+      "antonyms": [],
+      "example_sentence": "Researchers identified the pathogen responsible for the outbreak within weeks of the first confirmed case."
+    },
+    {
+      "word": "susceptible to",
+      "pronunciation": "/səˈseptəbl tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dễ bị (bệnh, tác động), có khả năng mắc",
+      "definition_en": "easily affected by or likely to suffer from something",
+      "level": "B2",
+      "synonyms": [
+        "vulnerable to",
+        "prone to"
+      ],
+      "antonyms": [
+        "resistant to",
+        "immune to"
+      ],
+      "example_sentence": "Elderly individuals are more susceptible to severe respiratory infections due to weakened immune systems."
+    },
+    {
+      "word": "incidence rate",
+      "pronunciation": "/ˈɪnsɪdəns reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ mắc bệnh mới trong một khoảng thời gian nhất định",
+      "definition_en": "the number of new cases of a disease occurring in a population during a specific period",
+      "level": "C1",
+      "synonyms": [
+        "occurrence rate",
+        "new case rate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The incidence rate of type 2 diabetes has doubled over the past two decades in developed nations."
+    },
+    {
+      "word": "inflammation",
+      "pronunciation": "/ˌɪnfləˈmeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "phản ứng viêm của cơ thể (sưng, đỏ, nóng, đau)",
+      "definition_en": "a localized physical condition with heat, swelling, and often pain as a reaction to injury or infection",
+      "level": "B2",
+      "synonyms": [
+        "swelling",
+        "inflammatory response"
+      ],
+      "antonyms": [],
+      "example_sentence": "Chronic inflammation in the joints is a hallmark feature of rheumatoid arthritis and requires long-term management."
+    },
+    {
+      "word": "metabolic disorder",
+      "pronunciation": "/meˌtæbɒlɪk dɪsˈɔːrdər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "rối loạn chuyển hóa (rối loạn quá trình hóa học trong cơ thể)",
+      "definition_en": "a condition affecting the body's chemical processes for converting food into energy",
+      "level": "C1",
+      "synonyms": [
+        "metabolic disease",
+        "endocrine disorder"
+      ],
+      "antonyms": [],
+      "example_sentence": "Obesity is often associated with multiple metabolic disorders including insulin resistance and dyslipidemia."
+    },
+    {
+      "word": "vaccine efficacy",
+      "pronunciation": "/vækˈsiːn ɪˈfɪkəsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiệu quả của vắc-xin trong việc ngăn ngừa bệnh",
+      "definition_en": "the ability of a vaccine to prevent disease in vaccinated individuals under ideal conditions",
+      "level": "C1",
+      "synonyms": [
+        "vaccine effectiveness",
+        "protective efficacy"
+      ],
+      "antonyms": [],
+      "example_sentence": "Clinical trials demonstrated that the new vaccine had an efficacy rate exceeding 95% against the target strain."
+    },
+    {
+      "word": "genetic predisposition",
+      "pronunciation": "/dʒəˈnetɪk ˌpredɪspəˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khuynh hướng di truyền (có gen làm tăng nguy cơ mắc bệnh)",
+      "definition_en": "an inherited tendency to develop a particular disease or condition",
+      "level": "C1",
+      "synonyms": [
+        "genetic susceptibility",
+        "hereditary risk"
+      ],
+      "antonyms": [],
+      "example_sentence": "Individuals with a genetic predisposition to breast cancer should undergo regular screening and consider preventive measures."
+    },
+    {
+      "word": "side effect",
+      "pronunciation": "/ˈsaɪd ɪˌfekt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tác dụng phụ (phản ứng không mong muốn từ thuốc)",
+      "definition_en": "an unintended reaction to a medication or treatment",
+      "level": "B2",
+      "synonyms": [
+        "adverse reaction",
+        "unwanted effect"
+      ],
+      "antonyms": [],
+      "example_sentence": "Patients should be informed about potential side effects before starting any new medication regimen."
+    },
+    {
+      "word": "sedentary lifestyle",
+      "pronunciation": "/ˈsedəntəri ˈlaɪfstaɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lối sống ít vận động, thiếu hoạt động thể chất",
+      "definition_en": "a way of life involving little physical activity or exercise",
+      "level": "B2",
+      "synonyms": [
+        "inactive lifestyle",
+        "physically inactive behavior"
+      ],
+      "antonyms": [
+        "active lifestyle",
+        "physically active routine"
+      ],
+      "example_sentence": "A sedentary lifestyle is a major risk factor for cardiovascular disease, obesity, and metabolic syndrome."
+    },
+    {
+      "word": "nutrient deficiency",
+      "pronunciation": "/ˈnjuːtriənt dɪˈfɪʃənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiếu hụt chất dinh dưỡng (không đủ vitamin, khoáng chất)",
+      "definition_en": "insufficient intake or absorption of essential vitamins and minerals",
+      "level": "B2",
+      "synonyms": [
+        "malnutrition",
+        "nutritional insufficiency"
+      ],
+      "antonyms": [],
+      "example_sentence": "Iron deficiency and vitamin B12 deficiency are common nutrient deficiencies affecting cognitive development in children."
+    },
+    {
+      "word": "mental health crisis",
+      "pronunciation": "/ˈmentəl helθ ˈkraɪsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng khủng hoảng sức khỏe tâm thần (cấp tính, nguy hiểm)",
+      "definition_en": "an acute situation involving severe psychological distress or risk of self-harm",
+      "level": "C1",
+      "synonyms": [
+        "psychiatric emergency",
+        "psychological emergency"
+      ],
+      "antonyms": [],
+      "example_sentence": "Healthcare systems must develop rapid response protocols for mental health crises to prevent tragic outcomes."
+    },
+    {
+      "word": "holistic approach",
+      "pronunciation": "/hoʊˈlɪstɪk əˈproʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp toàn diện (xem xét cả thể chất, tâm lý, xã hội)",
+      "definition_en": "a treatment method considering the whole person rather than just isolated symptoms",
+      "level": "C1",
+      "synonyms": [
+        "comprehensive approach",
+        "integrated treatment"
+      ],
+      "antonyms": [
+        "reductionist approach",
+        "symptomatic treatment"
+      ],
+      "example_sentence": "Modern medicine increasingly adopts a holistic approach that integrates physical, mental, and social dimensions of health."
+    },
+    {
+      "word": "biomarker",
+      "pronunciation": "/ˈbaɪoʊˌmɑːrkər/",
+      "part_of_speech": "noun",
+      "definition_vi": "chỉ dấu sinh học (chất chỉ thị bệnh trong máu, mô)",
+      "definition_en": "a measurable biological indicator of disease or health status",
+      "level": "C1",
+      "synonyms": [
+        "biological marker",
+        "diagnostic indicator"
+      ],
+      "antonyms": [],
+      "example_sentence": "Recent research identified novel biomarkers that could enable earlier detection of Alzheimer's disease before symptom onset."
+    },
+    {
+      "word": "preventive medicine",
+      "pronunciation": "/prɪˈventɪv ˈmedɪsən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "y học phòng ngừa (tập trung vào ngăn chặn bệnh)",
+      "definition_en": "medical practice focused on preventing disease rather than treating it after onset",
+      "level": "C1",
+      "synonyms": [
+        "preventive care",
+        "disease prevention"
+      ],
+      "antonyms": [
+        "curative medicine",
+        "treatment-focused care"
+      ],
+      "example_sentence": "Preventive medicine emphasizes vaccination, screening, and lifestyle modifications to reduce disease burden."
+    },
+    {
+      "word": "antimicrobial resistance",
+      "pronunciation": "/ˌæntɪmaɪˈkroʊbɪəl rɪˈzɪstəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kháng thuốc kháng sinh (vi khuẩn không bị tiêu diệt bởi thuốc)",
+      "definition_en": "the ability of microorganisms to resist the effects of antimicrobial drugs",
+      "level": "C1",
+      "synonyms": [
+        "antibiotic resistance",
+        "drug resistance"
+      ],
+      "antonyms": [],
+      "example_sentence": "Antimicrobial resistance poses a global health threat, with some bacteria now resistant to multiple classes of antibiotics."
+    },
+    {
+      "word": "cognitive decline",
+      "pronunciation": "/ˈkɒɡnɪtɪv dɪˈklaɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "suy giảm nhận thức (giảm khả năng tư duy, trí nhớ)",
+      "definition_en": "a gradual loss of mental abilities such as memory, attention, and reasoning",
+      "level": "C1",
+      "synonyms": [
+        "mental deterioration",
+        "loss of cognitive function"
+      ],
+      "antonyms": [
+        "cognitive improvement",
+        "mental enhancement"
+      ],
+      "example_sentence": "Early intervention with cognitive training and physical exercise may slow cognitive decline in aging populations."
+    },
+    {
+      "word": "respiratory tract infection",
+      "pronunciation": "/rɪˈspɪrətəri trækt ɪnˈfekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhiễm trùng đường hô hấp (cảm lạnh, viêm phế quản)",
+      "definition_en": "an infection affecting the nose, throat, or lungs",
+      "level": "B2",
+      "synonyms": [
+        "upper respiratory infection",
+        "lower respiratory infection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Respiratory tract infections are among the most common reasons for antibiotic prescription in primary care settings."
+    },
+    {
+      "word": "cardiovascular risk factor",
+      "pronunciation": "/ˌkɑːrdioʊˈvæskjələr ˈrɪsk ˌfæktər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "yếu tố nguy cơ tim mạch (huyết áp cao, cholesterol cao)",
+      "definition_en": "a characteristic that increases the likelihood of developing heart or blood vessel disease",
+      "level": "C1",
+      "synonyms": [
+        "cardiac risk factor",
+        "heart disease risk"
+      ],
+      "antonyms": [],
+      "example_sentence": "Multiple cardiovascular risk factors including hypertension, diabetes, and smoking significantly increase mortality risk."
+    },
+    {
+      "word": "clinical outcome",
+      "pronunciation": "/ˈklɪnɪkəl ˈaʊtkəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết quả lâm sàng (kết quả điều trị, tiên lượng bệnh)",
+      "definition_en": "the result or effect of medical treatment or intervention on a patient's health status",
+      "level": "C1",
+      "synonyms": [
+        "treatment outcome",
+        "patient outcome"
+      ],
+      "antonyms": [],
+      "example_sentence": "Researchers analyzed clinical outcomes across multiple hospitals to identify best practices for sepsis management."
+    },
+    {
+      "word": "organ transplant",
+      "pronunciation": "/ˈɔːrɡən ˈtrænzplænt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ghép tạng (chuyển tạng từ người này sang người khác)",
+      "definition_en": "a surgical procedure to transfer an organ from a donor to a recipient",
+      "level": "B2",
+      "synonyms": [
+        "transplantation",
+        "organ graft"
+      ],
+      "antonyms": [],
+      "example_sentence": "Organ transplant recipients must take immunosuppressive medications for life to prevent rejection of the donor organ."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a pathogen in the context of infectious disease?",
+      "option_a": "A substance that strengthens the immune system against infection",
+      "option_b": "A microorganism or agent that causes disease in a host",
+      "option_c": "A type of white blood cell that fights infection",
+      "option_d": "A medication used to treat bacterial infections",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Pathogen là tác nhân gây bệnh (vi khuẩn, virus, nấm). A sai vì nó là chức năng của hệ miễn dịch, không phải pathogen. C sai vì đó là thành phần của hệ miễn dịch. D sai vì đó là thuốc, không phải tác nhân gây bệnh."
+    },
+    {
+      "question_text": "Patients with a genetic predisposition to heart disease should _____ regular health screenings and lifestyle modifications.",
+      "option_a": "avoid",
+      "option_b": "undergo",
+      "option_c": "postpone",
+      "option_d": "refuse",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Undergo\" (trải qua, tiến hành) là động từ phù hợp với \"screenings\" (kiểm tra). Avoid (tránh), postpone (hoãn), refuse (từ chối) đều không hợp lý vì bệnh nhân cần kiểm tra, không tránh hay từ chối."
+    },
+    {
+      "question_text": "The incidence rate of type 2 diabetes has increased significantly, primarily due to rising rates of _____ and poor dietary habits.",
+      "option_a": "sedentary lifestyle",
+      "option_b": "mental health crisis",
+      "option_c": "respiratory tract infection",
+      "option_d": "nutrient deficiency",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sedentary lifestyle (lối sống ít vận động) là nguyên nhân chính của tiểu đường type 2. B, C, D không liên quan trực tiếp đến nguy cơ tiểu đường type 2."
+    },
+    {
+      "question_text": "Which phrase best completes this sentence: \"Chronic inflammation can lead to various health complications, making anti-inflammatory treatment a key component of _____\"?",
+      "option_a": "preventive medicine",
+      "option_b": "organ transplant",
+      "option_c": "vaccine efficacy",
+      "option_d": "antimicrobial resistance",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Preventive medicine (y học phòng ngừa) bao gồm các biện pháp ngăn chặn bệnh, trong đó có kiểm soát viêm. B là phẫu thuật, C là hiệu quả vắc-xin, D là kháng thuốc—đều không phù hợp."
+    },
+    {
+      "question_text": "What is the primary difference between vaccine efficacy and vaccine effectiveness in clinical practice?",
+      "option_a": "Efficacy measures real-world performance while effectiveness measures laboratory conditions",
+      "option_b": "Efficacy measures performance under ideal conditions while effectiveness measures real-world performance",
+      "option_c": "There is no meaningful difference between the two terms",
+      "option_d": "Efficacy applies only to viral vaccines while effectiveness applies to bacterial vaccines",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Vaccine efficacy (hiệu quả trong điều kiện lý tưởng) khác với effectiveness (hiệu quả trong thực tế). A sai vì ngược lại. C sai vì có sự khác biệt rõ ràng. D sai vì không phân biệt theo loại vắc-xin."
+    },
+    {
+      "question_text": "A holistic approach to treating chronic disease emphasizes which of the following?",
+      "option_a": "Using only pharmaceutical interventions to eliminate symptoms",
+      "option_b": "Considering physical, mental, and social dimensions of the patient's health",
+      "option_c": "Focusing exclusively on laboratory test results and diagnostic imaging",
+      "option_d": "Avoiding preventive measures in favor of treatment after disease onset",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Holistic approach (phương pháp toàn diện) xem xét toàn bộ khía cạnh sức khỏe của bệnh nhân. A, C, D đều là phương pháp hẹp, không toàn diện."
+    },
+    {
+      "question_text": "Antimicrobial resistance has become a critical global health concern because _____.",
+      "option_a": "vaccines are no longer effective against any infectious disease",
+      "option_b": "microorganisms develop the ability to survive antimicrobial drugs, making infections harder to treat",
+      "option_c": "all antibiotics have been banned by international health organizations",
+      "option_d": "patients refuse to take prescribed medications for infections",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Antimicrobial resistance (kháng thuốc kháng sinh) xảy ra khi vi khuẩn phát triển khả năng chống lại thuốc. A sai vì vắc-xin vẫn hiệu quả. C sai vì kháng sinh chưa bị cấm. D sai vì đó không phải nguyên nhân chính."
+    },
+    {
+      "question_text": "Which of the following is most likely to be a biomarker for early detection of Alzheimer's disease?",
+      "option_a": "A measurable biological indicator present in blood or cerebrospinal fluid before symptom onset",
+      "option_b": "A type of medication that prevents cognitive decline",
+      "option_c": "A lifestyle factor that causes dementia in elderly individuals",
+      "option_d": "A surgical procedure used to treat advanced Alzheimer's disease",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Biomarker (chỉ dấu sinh học) là chỉ số sinh học có thể đo được để phát hiện bệnh sớm. B là thuốc, C là yếu tố nguy cơ, D là phẫu thuật—đều không phải biomarker."
+    }
+  ]
+}

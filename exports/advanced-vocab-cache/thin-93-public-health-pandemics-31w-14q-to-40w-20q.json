@@ -1,0 +1,214 @@
+{
+  "words": [
+    {
+      "word": "nosocomial infection",
+      "pronunciation": "/ˌnɒsəˈkəʊmiəl ɪnˈfekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nhiễm trùng mắc phải trong bệnh viện hoặc cơ sở y tế, không có trước khi nhập viện; còn gọi là bệnh viện mắc phải.",
+      "definition_en": "An infection acquired during hospitalization or healthcare facility visit, not present at admission.",
+      "level": "C1",
+      "synonyms": [
+        "hospital-acquired infection",
+        "healthcare-associated infection"
+      ],
+      "antonyms": [
+        "community-acquired infection"
+      ],
+      "example_sentence": "Nosocomial infections remain a significant challenge in intensive care units, particularly among immunocompromised patients requiring prolonged hospitalization."
+    },
+    {
+      "word": "zoonotic disease",
+      "pronunciation": "/ˌzəʊənɒtɪk dɪˈziːz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bệnh lây từ động vật sang người, thường do vi khuẩn, virus hoặc ký sinh trùng gây ra.",
+      "definition_en": "An infectious disease that can be transmitted from animals to humans, caused by pathogens such as bacteria, viruses, or parasites.",
+      "level": "C1",
+      "synonyms": [
+        "animal-borne disease",
+        "zoonosis"
+      ],
+      "antonyms": [],
+      "example_sentence": "The emergence of zoonotic diseases like COVID-19 and avian influenza has prompted governments to strengthen surveillance systems at the human-animal interface."
+    },
+    {
+      "word": "seroprevalence",
+      "pronunciation": "/ˌsɪərəʊˈprevələns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tỷ lệ phần trăm người trong một quần thể có kháng thể đặc hiệu trong huyết thanh, chỉ ra họ đã tiếp xúc với một tác nhân bệnh.",
+      "definition_en": "The proportion of individuals in a population who have specific antibodies in their serum, indicating prior exposure to a pathogen.",
+      "level": "C1",
+      "synonyms": [
+        "antibody prevalence",
+        "serological prevalence"
+      ],
+      "antonyms": [],
+      "example_sentence": "Seroprevalence studies conducted during the pandemic revealed that actual infection rates were significantly higher than confirmed case numbers suggested."
+    },
+    {
+      "word": "comorbidity",
+      "pronunciation": "/ˌkəʊmɔːˈbɪdɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự hiện diện đồng thời của hai hay nhiều bệnh lý trong cùng một bệnh nhân, làm tăng nguy cơ biến chứng.",
+      "definition_en": "The simultaneous presence of two or more chronic diseases or conditions in a patient, increasing risk of severe outcomes.",
+      "level": "B2",
+      "synonyms": [
+        "concurrent disease",
+        "coexisting condition"
+      ],
+      "antonyms": [],
+      "example_sentence": "Patients with underlying comorbidities such as diabetes and hypertension faced substantially higher mortality rates during the COVID-19 pandemic."
+    },
+    {
+      "word": "superspreader event",
+      "pronunciation": "/ˈsuːpəˌspredər ɪˈvent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự kiện hoặc tập hợp nơi một số ít người lây nhiễm bệnh cho số lượng lớn người khác, thường do điều kiện môi trường hoặc hành vi.",
+      "definition_en": "An event or gathering where a small number of infected individuals transmit disease to a large number of others, often due to environmental or behavioral factors.",
+      "level": "C1",
+      "synonyms": [
+        "mass transmission event",
+        "cluster outbreak"
+      ],
+      "antonyms": [],
+      "example_sentence": "Epidemiologists identified several superspreader events in crowded indoor venues that accelerated disease transmission across multiple communities."
+    },
+    {
+      "word": "genomic sequencing",
+      "pronunciation": "/dʒɪˈnɒmɪk ˈsiːkwənsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kỹ thuật xác định trình tự DNA của một sinh vật, được sử dụng để theo dõi sự tiến hóa của virus và xác định các biến thể mới.",
+      "definition_en": "The process of determining the complete DNA sequence of an organism, used to track viral evolution and identify emerging variants.",
+      "level": "C1",
+      "synonyms": [
+        "genetic sequencing",
+        "whole-genome sequencing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Rapid genomic sequencing enabled public health authorities to detect and respond to new virus variants within weeks of their emergence."
+    },
+    {
+      "word": "excess mortality",
+      "pronunciation": "/ɪkˈses mɔːˈtælɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Số ca tử vong vượt quá mức dự kiến dựa trên dữ liệu lịch sử, thường được sử dụng để đánh giá tác động thực tế của dịch bệnh.",
+      "definition_en": "The number of deaths exceeding the expected baseline based on historical data, used to assess the true impact of a health crisis.",
+      "level": "C1",
+      "synonyms": [
+        "excess death",
+        "mortality surplus"
+      ],
+      "antonyms": [],
+      "example_sentence": "Studies on excess mortality during the pandemic revealed that indirect deaths from delayed medical care significantly exceeded official COVID-19 death counts."
+    },
+    {
+      "word": "risk stratification",
+      "pronunciation": "/rɪsk ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình phân loại bệnh nhân thành các nhóm rủi ro khác nhau dựa trên các yếu tố lâm sàng, để hướng dẫn quyết định điều trị.",
+      "definition_en": "The process of categorizing patients into different risk groups based on clinical factors to guide treatment and resource allocation decisions.",
+      "level": "C1",
+      "synonyms": [
+        "risk categorization",
+        "risk assessment"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective risk stratification protocols allowed healthcare systems to prioritize limited resources toward patients with the highest probability of severe illness."
+    },
+    {
+      "word": "epidemiological curve",
+      "pronunciation": "/ˌepɪˌdiːmiəˈlɒdʒɪkəl kɜːv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Biểu đồ thể hiện số ca bệnh theo thời gian, giúp trực quan hóa xu hướng lây lan và hiệu quả của các biện pháp can thiệp.",
+      "definition_en": "A graph displaying the number of cases over time, visualizing transmission trends and the effectiveness of intervention measures.",
+      "level": "B2",
+      "synonyms": [
+        "epidemic curve",
+        "disease curve"
+      ],
+      "antonyms": [],
+      "example_sentence": "The epidemiological curve flattened significantly after the implementation of strict social distancing measures, demonstrating the effectiveness of early intervention."
+    },
+    {
+      "word": "sentinel surveillance",
+      "pronunciation": "/ˈsentɪnəl sərˈveɪləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống giám sát sử dụng một số lượng nhỏ các cơ sở y tế được chọn để phát hiện sớm các xu hướng bệnh tật mới nổi.",
+      "definition_en": "A surveillance system using selected healthcare facilities to detect early trends in emerging diseases and monitor disease patterns.",
+      "level": "C1",
+      "synonyms": [
+        "targeted surveillance",
+        "indicator-based surveillance"
+      ],
+      "antonyms": [],
+      "example_sentence": "Sentinel surveillance networks in major hospitals provided early warning signals of unusual respiratory illness clusters before widespread community transmission occurred."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a nosocomial infection in the context of public health?",
+      "option_a": "An infection transmitted from animals to humans in natural settings.",
+      "option_b": "An infection acquired within a healthcare facility that was not present upon admission.",
+      "option_c": "An infection that spreads rapidly through a community without medical intervention.",
+      "option_d": "An infection caused exclusively by antibiotic-resistant bacteria.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nosocomial infection (hay healthcare-associated infection) là nhiễm trùng mắc phải trong bệnh viện/cơ sở y tế, không có trước khi nhập viện. Đáp án A là zoonotic disease, C là community transmission, D là sai vì không phải chỉ kháng thuốc."
+    },
+    {
+      "question_text": "The epidemiological curve showed a sharp decline after the government implemented containment measures. What does this pattern most likely indicate?",
+      "option_a": "The disease has mutated into a less severe form.",
+      "option_b": "The intervention measures were effective in reducing transmission rates.",
+      "option_c": "The population has achieved natural herd immunity.",
+      "option_d": "Testing capacity has decreased significantly.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Epidemiological curve giảm mạnh sau can thiệp chỉ ra biện pháp hiệu quả trong giảm lây truyền. A sai (không liên quan đến biến thể), C sai (herd immunity cần thời gian dài), D sai (giảm testing sẽ làm số ca giảm nhưng không phải do hiệu quả thực)."
+    },
+    {
+      "question_text": "Seroprevalence studies revealed that the actual infection rate was three times higher than confirmed cases. What does this finding suggest?",
+      "option_a": "The testing methodology was fundamentally flawed.",
+      "option_b": "Many infections went undetected or unreported in official statistics.",
+      "option_c": "The vaccine was ineffective at preventing infection.",
+      "option_d": "Healthcare workers were deliberately underreporting cases.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Seroprevalence (tỷ lệ có kháng thể) cao hơn confirmed cases cho thấy nhiều ca nhiễm không được phát hiện/báo cáo. A sai (methodology không phải vấn đề chính), C sai (không liên quan vaccine), D sai (không có bằng chứng)."
+    },
+    {
+      "question_text": "Patients with multiple comorbidities were identified as a priority group for early vaccination. Why is this risk stratification approach justified?",
+      "option_a": "Comorbidities increase the likelihood of vaccine side effects.",
+      "option_b": "Individuals with concurrent chronic diseases face substantially higher risk of severe outcomes.",
+      "option_c": "Comorbidities prevent the immune system from responding to vaccines.",
+      "option_d": "Vaccination is less effective in patients with underlying conditions.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Risk stratification ưu tiên bệnh nhân có comorbidities vì họ có nguy cơ cao hơn biến chứng nặng. A sai (không phải tăng side effects), C sai (không ngăn miễn dịch), D sai (vaccine vẫn hiệu quả)."
+    },
+    {
+      "question_text": "A superspreader event at a crowded indoor venue resulted in hundreds of confirmed cases within two weeks. Which factor was most likely responsible for this rapid transmission?",
+      "option_a": "The venue had inadequate ventilation and high population density.",
+      "option_b": "The infected individuals had a more contagious variant.",
+      "option_c": "The attendees had lower vaccination rates than the general population.",
+      "option_d": "The testing capacity in the region was insufficient.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Superspreader event xảy ra do điều kiện môi trường (thông gió kém, mật độ cao) và hành vi. B, C, D có thể là yếu tố phụ nhưng A là nguyên nhân trực tiếp nhất cho sự lây truyền nhanh chóng."
+    },
+    {
+      "question_text": "Genomic sequencing enabled researchers to track the emergence of new virus variants within weeks. What is the primary advantage of this technology in pandemic response?",
+      "option_a": "It allows rapid identification of genetic changes that may affect transmissibility or severity.",
+      "option_b": "It eliminates the need for clinical trials of new vaccines.",
+      "option_c": "It prevents the virus from mutating into new forms.",
+      "option_d": "It provides immediate treatment options for infected patients.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Genomic sequencing cho phép phát hiện nhanh các thay đổi di truyền ảnh hưởng đến khả năng lây truyền/mức độ nghiêm trọng. B sai (không loại bỏ clinical trials), C sai (không ngăn chặn đột biến), D sai (không cung cấp điều trị ngay lập tức)."
+    }
+  ]
+}

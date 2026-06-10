@@ -1,0 +1,344 @@
+{
+  "words": [
+    {
+      "word": "metacognition",
+      "pronunciation": "/ˌmetəkɒɡˈnɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng nhận thức về chính quá trình tư duy của bản thân; sự tự nhận thức về cách mình suy nghĩ, học tập và giải quyết vấn đề",
+      "definition_en": "awareness and understanding of one's own thought processes and cognitive strategies",
+      "level": "C1",
+      "synonyms": [
+        "self-awareness",
+        "reflective thinking"
+      ],
+      "antonyms": [
+        "unreflective thinking"
+      ],
+      "example_sentence": "Developing strong metacognition enables students to monitor their learning progress and adjust study strategies accordingly."
+    },
+    {
+      "word": "anchoring bias",
+      "pronunciation": "/ˈæŋkərɪŋ ˈbaɪəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng dựa quá nhiều vào thông tin đầu tiên (mỏi neo) khi đưa ra quyết định, làm cho các thông tin sau đó ít ảnh hưởng hơn",
+      "definition_en": "tendency to rely too heavily on an initial piece of information when making subsequent judgments",
+      "level": "C1",
+      "synonyms": [
+        "first impression effect"
+      ],
+      "antonyms": [],
+      "example_sentence": "Anchoring bias explains why the initial price of a product significantly influences consumers' perception of its value."
+    },
+    {
+      "word": "hedonic adaptation",
+      "pronunciation": "/hɪˈdɒnɪk ˌædəpˈteɪʃən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hiện tượng con người nhanh chóng thích nghi với những thay đổi tích cực hoặc tiêu cực, trở lại mức độ hạnh phúc cơ bản ban đầu",
+      "definition_en": "tendency to return to a baseline level of happiness despite positive or negative life changes",
+      "level": "C2",
+      "synonyms": [
+        "hedonic treadmill",
+        "adaptation level theory"
+      ],
+      "antonyms": [],
+      "example_sentence": "Hedonic adaptation suggests that lottery winners experience temporary euphoria before returning to their previous happiness levels."
+    },
+    {
+      "word": "saliency bias",
+      "pronunciation": "/səˈleɪənsi ˈbaɪəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng ghi nhớ và ưu tiên những sự kiện hoặc thông tin nổi bật, dễ nhớ hơn những thông tin ít gây chú ý",
+      "definition_en": "cognitive bias where memorable or emotionally striking information disproportionately influences judgment",
+      "level": "C1",
+      "synonyms": [
+        "availability heuristic"
+      ],
+      "antonyms": [],
+      "example_sentence": "Saliency bias causes people to overestimate the frequency of plane crashes because such incidents are widely publicized."
+    },
+    {
+      "word": "ego depletion",
+      "pronunciation": "/ˈiːɡoʊ dɪˈpliːʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự suy giảm khả năng tự kiểm soát và ý chí sau khi thực hiện các hoạt động đòi hỏi sự tập trung cao độ hoặc kiềm chế",
+      "definition_en": "reduced capacity for self-control and willpower following mentally demanding tasks",
+      "level": "C1",
+      "synonyms": [
+        "willpower depletion",
+        "self-control fatigue"
+      ],
+      "antonyms": [],
+      "example_sentence": "Ego depletion theory explains why students struggle to maintain focus during late-night study sessions after a demanding day."
+    },
+    {
+      "word": "implementation intention",
+      "pronunciation": "/ˌɪmpləmenˈteɪʃən ɪnˈtenʃən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "kế hoạch cụ thể, chi tiết về cách và khi nào thực hiện một hành động nhằm tăng khả năng hoàn thành mục tiêu",
+      "definition_en": "specific plan detailing when, where, and how one will execute a desired behavior to achieve goals",
+      "level": "C1",
+      "synonyms": [
+        "action plan",
+        "behavioral contract"
+      ],
+      "antonyms": [],
+      "example_sentence": "Research shows that forming implementation intentions significantly increases the likelihood of habit formation and goal attainment."
+    },
+    {
+      "word": "social facilitation",
+      "pronunciation": "/ˈsoʊʃəl fəˌsɪlɪˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "hiện tượng sự hiện diện của người khác làm tăng hiệu suất trong các nhiệm vụ đơn giản nhưng giảm hiệu suất trong các nhiệm vụ phức tạp",
+      "definition_en": "phenomenon where presence of others enhances performance on simple tasks but impairs performance on complex ones",
+      "level": "C1",
+      "synonyms": [
+        "audience effect"
+      ],
+      "antonyms": [],
+      "example_sentence": "Social facilitation explains why athletes perform better in familiar sports but may choke under pressure in unfamiliar situations."
+    },
+    {
+      "word": "conformity pressure",
+      "pronunciation": "/kənˈfɔːrmɪti ˈpreʃər/",
+      "part_of_speech": "collocation",
+      "definition_vi": "áp lực xã hội buộc cá nhân phải tuân theo chuẩn mực và hành vi của nhóm, thường dẫn đến việc từ bỏ quan điểm cá nhân",
+      "definition_en": "social pressure compelling individuals to align their behavior and beliefs with group norms",
+      "level": "C1",
+      "synonyms": [
+        "peer pressure",
+        "normative influence"
+      ],
+      "antonyms": [
+        "individuality",
+        "autonomy"
+      ],
+      "example_sentence": "Conformity pressure in adolescent peer groups often leads teenagers to engage in risky behaviors despite personal reservations."
+    },
+    {
+      "word": "extinction burst",
+      "pronunciation": "/ɪkˈstɪŋkʃən bɜːrst/",
+      "part_of_speech": "collocation",
+      "definition_vi": "sự gia tăng đột ngột tần suất hoặc cường độ của một hành vi không mong muốn ngay trước khi nó biến mất hoàn toàn",
+      "definition_en": "sudden increase in frequency or intensity of an unwanted behavior immediately before it is completely eliminated",
+      "level": "C2",
+      "synonyms": [
+        "behavioral rebound"
+      ],
+      "antonyms": [],
+      "example_sentence": "Parents implementing behavioral extinction may observe an extinction burst where the child's tantrums intensify before gradually ceasing."
+    },
+    {
+      "word": "priming effect",
+      "pronunciation": "/ˈpraɪmɪŋ ɪˈfekt/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hiện tượng tiếp xúc trước với một kích thích nào đó làm ảnh hưởng đến cách xử lý thông tin hoặc hành vi sau đó",
+      "definition_en": "phenomenon where prior exposure to a stimulus influences subsequent perception or behavior",
+      "level": "C1",
+      "synonyms": [
+        "priming",
+        "implicit activation"
+      ],
+      "antonyms": [],
+      "example_sentence": "The priming effect demonstrates that exposure to words related to aging causes people to walk more slowly afterward."
+    },
+    {
+      "word": "self-serving bias",
+      "pronunciation": "/ˌself ˈsɜːrvɪŋ ˈbaɪəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng quy kết thành công cho bản thân nhưng quy kết thất bại cho hoàn cảnh bên ngoài, bảo vệ tự ái",
+      "definition_en": "tendency to attribute personal successes to internal factors and failures to external circumstances",
+      "level": "C1",
+      "synonyms": [
+        "actor-observer bias"
+      ],
+      "antonyms": [],
+      "example_sentence": "Self-serving bias leads employees to credit their promotion to personal merit while blaming external factors for missed opportunities."
+    },
+    {
+      "word": "behavioral momentum",
+      "pronunciation": "/bɪˈheɪvjərəl moʊˈmentəm/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hiện tượng một hành vi được thực hiện liên tục sẽ tiếp tục được thực hiện với xác suất cao hơn, tạo nên một quán tính hành vi",
+      "definition_en": "principle that repeated performance of a behavior increases the likelihood of its continuation",
+      "level": "C2",
+      "synonyms": [
+        "behavioral inertia"
+      ],
+      "antonyms": [],
+      "example_sentence": "Behavioral momentum explains why establishing a morning exercise routine makes it easier to maintain the habit long-term."
+    },
+    {
+      "word": "attentional bias",
+      "pronunciation": "/əˈtenʃənəl ˈbaɪəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng chọn lọc chú ý đến những thông tin phù hợp với quan điểm hoặc trạng thái cảm xúc hiện tại của bản thân",
+      "definition_en": "selective attention to information consistent with one's beliefs, emotions, or expectations",
+      "level": "C1",
+      "synonyms": [
+        "selective attention"
+      ],
+      "antonyms": [],
+      "example_sentence": "Attentional bias in anxiety disorders causes individuals to preferentially notice threat-related stimuli in their environment."
+    },
+    {
+      "word": "reciprocity norm",
+      "pronunciation": "/ˌresɪˈprɒsɪti nɔːrm/",
+      "part_of_speech": "collocation",
+      "definition_vi": "chuẩn mực xã hội mạnh mẽ yêu cầu con người phải đáp lại những hành động tốt của người khác bằng những hành động tương tự",
+      "definition_en": "social norm obligating individuals to reciprocate favors and kindness received from others",
+      "level": "C1",
+      "synonyms": [
+        "reciprocal altruism"
+      ],
+      "antonyms": [],
+      "example_sentence": "The reciprocity norm is a powerful persuasion technique used in marketing where free samples increase purchase likelihood."
+    },
+    {
+      "word": "cognitive reappraisal",
+      "pronunciation": "/ˌkɒɡnɪtɪv riːəˈpreɪzəl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "kỹ thuật điều chỉnh cảm xúc bằng cách thay đổi cách diễn giải hoặc hiểu một tình huống để thay đổi phản ứng cảm xúc",
+      "definition_en": "emotion regulation strategy involving reinterpretation of a situation to change its emotional impact",
+      "level": "C1",
+      "synonyms": [
+        "reframing",
+        "perspective shift"
+      ],
+      "antonyms": [],
+      "example_sentence": "Cognitive reappraisal, such as viewing a challenging exam as an opportunity rather than a threat, reduces anxiety and improves performance."
+    },
+    {
+      "word": "in-group bias",
+      "pronunciation": "/ˈɪn ɡruːp ˈbaɪəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng ưu tiên, đánh giá cao hơn và tin tưởng hơn những người thuộc cùng nhóm với bản thân so với những người ngoài nhóm",
+      "definition_en": "tendency to favor, trust, and evaluate members of one's own group more positively than outsiders",
+      "level": "C1",
+      "synonyms": [
+        "ingroup favoritism",
+        "parochialism"
+      ],
+      "antonyms": [
+        "out-group bias"
+      ],
+      "example_sentence": "In-group bias explains why sports fans are more forgiving of their own team's poor performance than rival teams' similar conduct."
+    },
+    {
+      "word": "temporal discounting",
+      "pronunciation": "/ˈtempərəl dɪsˈkaʊntɪŋ/",
+      "part_of_speech": "collocation",
+      "definition_vi": "xu hướng coi những phần thưởng hoặc hậu quả gần trong tương lai là có giá trị cao hơn những phần thưởng xa hơn trong tương lai",
+      "definition_en": "tendency to value immediate rewards more highly than delayed rewards of greater magnitude",
+      "level": "C2",
+      "synonyms": [
+        "delay discounting",
+        "present bias"
+      ],
+      "antonyms": [],
+      "example_sentence": "Temporal discounting explains why individuals struggle with long-term financial planning despite understanding its importance."
+    },
+    {
+      "word": "bystander effect",
+      "pronunciation": "/ˈbaɪstændər ɪˈfekt/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hiện tượng con người ít có khả năng giúp đỡ nạn nhân khi có nhiều người chứng kiến sự việc, do sự phân tán trách nhiệm",
+      "definition_en": "phenomenon where individuals are less likely to help in emergency situations when others are present",
+      "level": "C1",
+      "synonyms": [
+        "diffusion of responsibility"
+      ],
+      "antonyms": [],
+      "example_sentence": "The bystander effect demonstrates that crowded urban environments paradoxically reduce helping behavior due to diffused responsibility."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which cognitive bias best explains why a job candidate who receives an initial salary offer of $80,000 perceives a subsequent offer of $75,000 as significantly lower in value?",
+      "option_a": "Saliency bias",
+      "option_b": "Anchoring bias",
+      "option_c": "Temporal discounting",
+      "option_d": "In-group bias",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Anchoring bias là xu hướng dựa quá nhiều vào thông tin đầu tiên (mỏi neo). Ở đây, mức lương $80,000 ban đầu trở thành điểm tham chiếu, làm cho mức $75,000 có vẻ thấp hơn so với nó. Các lựa chọn khác không giải thích được hiện tượng này."
+    },
+    {
+      "question_text": "A student who has consistently attended morning classes for three weeks finds it increasingly difficult to skip class, even when tempted. This phenomenon is best described as:",
+      "option_a": "Behavioral momentum",
+      "option_b": "Ego depletion",
+      "option_c": "Hedonic adaptation",
+      "option_d": "Extinction burst",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Behavioral momentum là nguyên tắc rằng hành vi được thực hiện liên tục sẽ tiếp tục được thực hiện với xác suất cao hơn. Việc đi học liên tục tạo nên quán tính hành vi. Ego depletion liên quan đến sự suy giảm ý chí, không phải sự tăng cường hành vi."
+    },
+    {
+      "question_text": "When a manager attributes her team's project success to her leadership skills but blames external market conditions for failure, she is demonstrating:",
+      "option_a": "Conformity pressure",
+      "option_b": "Self-serving bias",
+      "option_c": "Priming effect",
+      "option_d": "Attentional bias",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Self-serving bias là xu hướng quy kết thành công cho bản thân nhưng quy kết thất bại cho hoàn cảnh bên ngoài. Đây là ví dụ điển hình của sự bảo vệ tự ái. Các lựa chọn khác không liên quan đến cách quy kết nguyên nhân."
+    },
+    {
+      "question_text": "A therapist teaches her client to view a job interview as an exciting challenge rather than a threatening ordeal. This intervention exemplifies:",
+      "option_a": "Cognitive reappraisal",
+      "option_b": "Implementation intention",
+      "option_c": "Metacognition",
+      "option_d": "Temporal discounting",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Cognitive reappraisal là kỹ thuật thay đổi cách diễn giải một tình huống để thay đổi phản ứng cảm xúc. Việc xem phỏng vấn là cơ hội thay vì mối đe dọa là ví dụ điển hình. Implementation intention liên quan đến kế hoạch hành động cụ thể."
+    },
+    {
+      "question_text": "Research shows that people are more likely to help a stranger in an empty street than in a crowded shopping mall. This observation is primarily explained by:",
+      "option_a": "In-group bias",
+      "option_b": "Bystander effect",
+      "option_c": "Social facilitation",
+      "option_d": "Reciprocity norm",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bystander effect là hiện tượng con người ít có khả năng giúp đỡ khi có nhiều người chứng kiến, do sự phân tán trách nhiệm. Ở đây, sự hiện diện của nhiều người trong trung tâm mua sắm giảm khả năng giúp đỡ. Social facilitation liên quan đến hiệu suất, không phải hành vi giúp đỡ."
+    },
+    {
+      "question_text": "A person who has just completed a difficult mental task finds it harder to resist eating dessert. This is best explained by:",
+      "option_a": "Hedonic adaptation",
+      "option_b": "Ego depletion",
+      "option_c": "Saliency bias",
+      "option_d": "Behavioral momentum",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Ego depletion là sự suy giảm khả năng tự kiểm soát sau khi thực hiện các hoạt động đòi hỏi sự tập trung cao độ. Nhiệm vụ khó khăn tiêu hao tài nguyên tâm lý, làm giảm khả năng kiềm chế. Hedonic adaptation liên quan đến sự thích nghi với hạnh phúc, không phải kiểm soát bản thân."
+    },
+    {
+      "question_text": "When a student develops a specific plan to study at 7 PM every evening in the library, she is creating an:",
+      "option_a": "Attentional bias",
+      "option_b": "Implementation intention",
+      "option_c": "Metacognition strategy",
+      "option_d": "Priming effect",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Implementation intention là kế hoạch cụ thể chi tiết về khi nào, ở đâu, và cách thức thực hiện một hành động. Việc xác định thời gian (7 PM) và địa điểm (thư viện) cụ thể là ví dụ điển hình. Metacognition là sự tự nhận thức về quá trình tư duy, không phải lập kế hoạch hành động."
+    },
+    {
+      "question_text": "A child's tantrum intensifies significantly before it completely disappears when parents consistently ignore the behavior. This phenomenon is called:",
+      "option_a": "Extinction burst",
+      "option_b": "Conformity pressure",
+      "option_c": "Hedonic adaptation",
+      "option_d": "Temporal discounting",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Extinction burst là sự gia tăng đột ngột tần suất hoặc cường độ của hành vi không mong muốn ngay trước khi nó biến mất hoàn toàn. Đây là hiện tượng phổ biến trong quá trình loại bỏ hành vi thông qua extinction. Các lựa chọn khác không mô tả hiện tượng này."
+    }
+  ]
+}

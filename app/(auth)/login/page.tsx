@@ -67,9 +67,16 @@ export default function LoginPage() {
 
         <Card className="shadow-xl">
           <CardHeader className="text-center pb-4">
-            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold text-lg">
-              NT
-            </div>
+            <img
+              src="/logo-light.png"
+              className="mx-auto mb-4 h-16 w-auto object-contain block dark:hidden"
+              alt="Logo"
+            />
+            <img
+              src="/logo-dark.png"
+              className="mx-auto mb-4 h-16 w-auto object-contain hidden dark:block"
+              alt="Logo"
+            />
             <CardTitle className="text-2xl">Đăng nhập</CardTitle>
             <CardDescription>Sử dụng tài khoản Google của bạn để tiếp tục</CardDescription>
           </CardHeader>

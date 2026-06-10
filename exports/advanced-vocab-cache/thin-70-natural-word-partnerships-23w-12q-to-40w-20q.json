@@ -1,0 +1,397 @@
+{
+  "words": [
+    {
+      "word": "shed light on",
+      "pronunciation": "/ʃed laɪt ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng một vấn đề hoặc hiện tượng",
+      "definition_en": "to clarify or explain something that was previously unclear or mysterious",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "elucidate",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "Recent studies have shed light on the relationship between social media use and mental health in teenagers."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "/brɪŋ əˈbaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, tạo ra, dẫn đến (một sự thay đổi hoặc kết quả)",
+      "definition_en": "to cause something to happen; to produce a result or change",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "trigger",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "stop"
+      ],
+      "example_sentence": "Technological innovations have brought about significant transformations in the education sector over the past decade."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "/teɪk ˈɪntə əˈkaʊnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xem xét, tính đến, lưu ý đến một yếu tố nào đó",
+      "definition_en": "to consider or include something as part of a decision or calculation",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "factor in",
+        "account for"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "When evaluating climate change policies, governments must take into account both economic and environmental impacts."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "/pɔɪnt aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chỉ ra, nhấn mạnh, lưu ý đến một điều gì đó",
+      "definition_en": "to draw attention to something; to indicate or mention something important",
+      "level": "C1",
+      "synonyms": [
+        "highlight",
+        "indicate",
+        "mention"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The report points out that renewable energy sources could reduce carbon emissions by up to 50% by 2050."
+    },
+    {
+      "word": "come down to",
+      "pronunciation": "/kʌm daʊn tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy về, rút gọn lại, bản chất là (một điều gì đó)",
+      "definition_en": "to be essentially or fundamentally about something; to reduce to a basic point",
+      "level": "B2",
+      "synonyms": [
+        "boil down to",
+        "amount to",
+        "reduce to"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the end, the success of any educational reform comes down to the commitment and training of teachers."
+    },
+    {
+      "word": "set apart",
+      "pronunciation": "/set əˈpɑːrt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân biệt, làm nổi bật, tách biệt (khác biệt với những cái khác)",
+      "definition_en": "to make someone or something different or special compared to others",
+      "level": "B2",
+      "synonyms": [
+        "distinguish",
+        "differentiate",
+        "separate"
+      ],
+      "antonyms": [
+        "unite",
+        "combine"
+      ],
+      "example_sentence": "What sets apart successful entrepreneurs from others is their ability to adapt quickly to market changes."
+    },
+    {
+      "word": "bear in mind",
+      "pronunciation": "/beər ɪn maɪnd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ghi nhớ, lưu ý, tính đến (một điều quan trọng)",
+      "definition_en": "to remember or keep in mind; to not forget something important",
+      "level": "B2",
+      "synonyms": [
+        "remember",
+        "keep in mind",
+        "note"
+      ],
+      "antonyms": [
+        "forget",
+        "overlook"
+      ],
+      "example_sentence": "Bear in mind that climate change impacts vary significantly across different geographical regions."
+    },
+    {
+      "word": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, dẫn đến, tạo ra (một kết quả hoặc hiện tượng)",
+      "definition_en": "to cause something to happen or exist; to be the reason for something",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "eliminate"
+      ],
+      "example_sentence": "The rapid urbanization of developing nations has given rise to numerous environmental and social challenges."
+    },
+    {
+      "word": "hold true",
+      "pronunciation": "/hoʊld truː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đúng, có giá trị, áp dụng được (một nguyên tắc hoặc tuyên bố)",
+      "definition_en": "to be valid or correct; to remain accurate or applicable",
+      "level": "B2",
+      "synonyms": [
+        "remain valid",
+        "apply",
+        "be correct"
+      ],
+      "antonyms": [
+        "be false",
+        "be invalid"
+      ],
+      "example_sentence": "The principle that education is a fundamental right holds true across most developed and developing nations."
+    },
+    {
+      "word": "call for",
+      "pronunciation": "/kɔːl fɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đòi hỏi, yêu cầu, cần thiết (một hành động hoặc điều kiện)",
+      "definition_en": "to demand or require something; to make an appeal for action",
+      "level": "B2",
+      "synonyms": [
+        "demand",
+        "require",
+        "request"
+      ],
+      "antonyms": [
+        "discourage",
+        "prevent"
+      ],
+      "example_sentence": "Environmental experts call for stricter regulations on industrial emissions to combat air pollution."
+    },
+    {
+      "word": "stand out",
+      "pronunciation": "/stænd aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nổi bật, đáng chú ý, khác biệt rõ ràng",
+      "definition_en": "to be noticeably different or better than others; to be conspicuous",
+      "level": "C1",
+      "synonyms": [
+        "be prominent",
+        "be distinctive",
+        "excel"
+      ],
+      "antonyms": [
+        "blend in",
+        "be ordinary"
+      ],
+      "example_sentence": "Among the various renewable energy sources, solar power stands out as the most rapidly growing technology."
+    },
+    {
+      "word": "put forward",
+      "pronunciation": "/pʊt ˈfɔːrwərd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đề xuất, trình bày, đưa ra (một ý kiến hoặc lý thuyết)",
+      "definition_en": "to present or propose an idea, theory, or suggestion for consideration",
+      "level": "B2",
+      "synonyms": [
+        "propose",
+        "suggest",
+        "present"
+      ],
+      "antonyms": [
+        "withdraw",
+        "retract"
+      ],
+      "example_sentence": "Scientists have put forward compelling evidence that artificial intelligence will reshape the job market significantly."
+    },
+    {
+      "word": "run counter to",
+      "pronunciation": "/rʌn ˈkaʊntər tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trái ngược với, mâu thuẫn với, đi ngược lại",
+      "definition_en": "to be in opposition to; to contradict or go against something",
+      "level": "B2",
+      "synonyms": [
+        "contradict",
+        "oppose",
+        "conflict with"
+      ],
+      "antonyms": [
+        "align with",
+        "support"
+      ],
+      "example_sentence": "Some traditional practices run counter to modern scientific understanding of health and nutrition."
+    },
+    {
+      "word": "draw a distinction",
+      "pronunciation": "/drɔː ə dɪˈstɪŋkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân biệt, làm rõ sự khác biệt giữa hai điều",
+      "definition_en": "to show or explain the difference between two things",
+      "level": "B2",
+      "synonyms": [
+        "differentiate",
+        "distinguish",
+        "separate"
+      ],
+      "antonyms": [
+        "conflate",
+        "equate"
+      ],
+      "example_sentence": "It is important to draw a distinction between correlation and causation when interpreting statistical data."
+    },
+    {
+      "word": "lend credence to",
+      "pronunciation": "/lend ˈkredəns tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho có tính tin cậy, hỗ trợ, tăng độ tin cậy của (một ý kiến)",
+      "definition_en": "to make something seem more believable or trustworthy; to support a claim",
+      "level": "B2",
+      "synonyms": [
+        "support",
+        "validate",
+        "substantiate"
+      ],
+      "antonyms": [
+        "discredit",
+        "undermine"
+      ],
+      "example_sentence": "Recent archaeological discoveries lend credence to the theory that ancient civilizations had more advanced knowledge than previously believed."
+    },
+    {
+      "word": "pave the way for",
+      "pronunciation": "/peɪv ðə weɪ fɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở đường, tạo điều kiện thuận lợi cho (một sự phát triển hoặc thay đổi)",
+      "definition_en": "to make it possible for something to happen; to create favorable conditions",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "facilitate",
+        "prepare"
+      ],
+      "antonyms": [
+        "obstruct",
+        "hinder"
+      ],
+      "example_sentence": "The invention of the internet paved the way for the digital revolution and transformed global communication."
+    },
+    {
+      "word": "cast doubt on",
+      "pronunciation": "/kɑːst daʊt ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đặt câu hỏi, làm cho có nghi ngờ, phản bác (một tuyên bố hoặc lý thuyết)",
+      "definition_en": "to make something seem uncertain or questionable; to express skepticism about",
+      "level": "B2",
+      "synonyms": [
+        "question",
+        "challenge",
+        "dispute"
+      ],
+      "antonyms": [
+        "confirm",
+        "validate"
+      ],
+      "example_sentence": "New research has cast doubt on the effectiveness of some traditional medical treatments previously considered reliable."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The recent discovery of new fossil records has _____ the theory that dinosaurs and early mammals coexisted during the Mesozoic Era.",
+      "option_a": "cast doubt on",
+      "option_b": "paved the way for",
+      "option_c": "lent credence to",
+      "option_d": "called for",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Cần chọn cụm từ có nghĩa 'làm cho có tính tin cậy, hỗ trợ'. 'Lent credence to' (hỗ trợ, làm tin cậy) phù hợp vì khám phá mới làm cho lý thuyết trở nên đáng tin cậy hơn. 'Cast doubt on' (đặt câu hỏi) là trái ngược. 'Paved the way for' (mở đường) và 'called for' (đòi hỏi) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The government's new environmental policy _____ the need for immediate action to reduce carbon emissions in industrial sectors.",
+      "option_a": "stands out",
+      "option_b": "calls for",
+      "option_c": "comes down to",
+      "option_d": "sets apart",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Calls for' (đòi hỏi, yêu cầu) là cụm từ chính xác để chỉ chính sách yêu cầu hành động. 'Stands out' (nổi bật) không phù hợp. 'Comes down to' (quy về) và 'sets apart' (phân biệt) không có ý nghĩa đúng trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'The research findings _____ that artificial intelligence will significantly impact the job market within the next decade.'?",
+      "option_a": "put forward",
+      "option_b": "bear in mind",
+      "option_c": "shed light on",
+      "option_d": "give rise to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Put forward' (đề xuất, trình bày) là cụm từ chính xác để chỉ các phát hiện nghiên cứu được trình bày. 'Shed light on' (làm sáng tỏ) có thể gây nhầm lẫn nhưng không chính xác bằng 'put forward'. 'Bear in mind' (ghi nhớ) và 'give rise to' (gây ra) không phù hợp."
+    },
+    {
+      "question_text": "The author _____ that while economic growth is important, it should not come at the expense of environmental protection.",
+      "option_a": "points out",
+      "option_b": "draws a distinction",
+      "option_c": "runs counter to",
+      "option_d": "holds true",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Points out' (chỉ ra, nhấn mạnh) là cụm từ phù hợp để chỉ tác giả nhấn mạnh một điểm quan trọng. 'Draws a distinction' (phân biệt) không phù hợp vì không có sự so sánh hai điều. 'Runs counter to' (trái ngược) và 'holds true' (đúng) không thích hợp."
+    },
+    {
+      "question_text": "What does the phrase 'shed light on' most likely mean in academic writing?",
+      "option_a": "To make something physically brighter",
+      "option_b": "To clarify or explain something that was previously unclear",
+      "option_c": "To criticize someone's ideas harshly",
+      "option_d": "To postpone a decision indefinitely",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Shed light on' là cụm từ thành ngữ có nghĩa 'làm sáng tỏ, giải thích rõ ràng'. Đáp án A là nghĩa đen không đúng trong ngữ cảnh học thuật. C và D là những ý nghĩa hoàn toàn sai lệch."
+    },
+    {
+      "question_text": "The technological innovations of the 21st century have _____ significant changes in how people communicate and work globally.",
+      "option_a": "brought about",
+      "option_b": "taken into account",
+      "option_c": "set apart",
+      "option_d": "cast doubt on",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Brought about' (gây ra, tạo ra) là cụm từ chính xác để chỉ các công nghệ tạo ra những thay đổi. 'Taken into account' (xem xét) không phù hợp. 'Set apart' (phân biệt) và 'cast doubt on' (đặt câu hỏi) không có ý nghĩa đúng."
+    },
+    {
+      "question_text": "In evaluating climate change policies, policymakers must _____ both short-term economic benefits and long-term environmental sustainability.",
+      "option_a": "hold true",
+      "option_b": "take into account",
+      "option_c": "come down to",
+      "option_d": "lend credence to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Take into account' (xem xét, tính đến) là cụm từ chính xác để chỉ cần xem xét nhiều yếu tố. 'Hold true' (đúng) không phù hợp. 'Come down to' (quy về) và 'lend credence to' (hỗ trợ) không có ý nghĩa đúng trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which of the following best explains the difference between 'bring about' and 'give rise to'?",
+      "option_a": "They are completely opposite in meaning",
+      "option_b": "They are synonymous and can be used interchangeably in most contexts",
+      "option_c": "'Bring about' implies intentional action while 'give rise to' can be either intentional or unintentional",
+      "option_d": "'Give rise to' is only used in scientific writing",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "'Bring about' và 'give rise to' đều có nghĩa 'gây ra, tạo ra' và có thể sử dụng thay thế cho nhau trong hầu hết các ngữ cảnh. Đáp án A sai vì chúng không trái ngược. C là sự phân biệt quá tinh tế không phải là lý do chính. D sai vì cả hai đều được dùng trong nhiều loại văn bản."
+    }
+  ]
+}

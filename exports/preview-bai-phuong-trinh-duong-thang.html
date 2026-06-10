@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preview - Phương trình đường thẳng trong Oxyz</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050814;
+      --panel: #0b1220;
+      --line: #26354d;
+      --text: #f7f9fd;
+      --muted: #a9b7ca;
+      --blue: #60a5fa;
+      --cyan: #67e8f9;
+      --green: #34d399;
+      --amber: #fbbf24;
+      --red: #fb7185;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #10213f 0, #050814 360px);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 72px;
+    }
+    .breadcrumb { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+    .hero {
+      border: 1px solid var(--line);
+      background: rgba(8, 15, 29, .94);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    h1 { margin: 6px 0 10px; font-size: 32px; line-height: 1.2; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 21px; line-height: 1.3; letter-spacing: 0; }
+    h3 { margin: 18px 0 8px; font-size: 17px; letter-spacing: 0; }
+    p { margin: 10px 0; }
+    ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+    li { margin: 6px 0; }
+    .lead { color: #d3deee; max-width: 800px; margin: 0; font-size: 17px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .pill {
+      border: 1px solid var(--line);
+      background: #101a2c;
+      color: #dbeafe;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+    }
+    .lesson { display: grid; gap: 14px; }
+    .block {
+      border: 1px solid var(--line);
+      background: rgba(11, 18, 32, .96);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .block-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #0a1324;
+    }
+    .badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: grid;
+      place-items: center;
+      background: #17355c;
+      color: #bfdbfe;
+      font-weight: 900;
+      flex: none;
+    }
+    .block-body { padding: 18px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 18px;
+      align-items: start;
+    }
+    .teacher {
+      border-left: 3px solid var(--blue);
+      background: #0a1a30;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      color: #dbeafe;
+    }
+    .student {
+      border-left: 3px solid var(--amber);
+      background: #1c1608;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      color: #fdecc1;
+    }
+    .conclude {
+      border: 1px solid #1f5f4a;
+      background: #071b16;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .warning {
+      border: 1px solid #733044;
+      background: #1a0d17;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    .figure {
+      border: 1px solid #2b3d58;
+      background: #070c18;
+      border-radius: 8px;
+      padding: 14px;
+      position: sticky;
+      top: 14px;
+    }
+    .figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 8px;
+    }
+    .caption { margin-top: 10px; color: var(--muted); font-size: 13px; }
+    .observe {
+      margin-top: 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--cyan);
+      color: #cffafe;
+      font-size: 14px;
+    }
+    .formula {
+      border: 1px solid #394968;
+      background: #080f1d;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: #091120;
+      border-radius: 8px;
+      padding: 13px;
+    }
+    .card b { display: block; color: var(--green); margin-bottom: 6px; }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+    }
+    .table th, .table td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .table th { background: #0f1d33; color: #dbeafe; }
+    .table td { background: #08111f; }
+    .example {
+      border: 1px solid #34425e;
+      background: #080f1d;
+      border-radius: 8px;
+      padding: 14px;
+      margin: 12px 0;
+    }
+    .why { color: #fde68a; font-weight: 800; }
+    .answer { color: #bbf7d0; font-weight: 800; }
+    @media (max-width: 860px) {
+      .two-col, .split { grid-template-columns: 1fr; }
+      .figure { position: static; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="breadcrumb">Học tập / Kiến thức nền tảng / Oxyz</div>
+
+    <header class="hero">
+      <div class="eyebrow">Bài mẫu - hình học trước, công thức sau</div>
+      <h1>Phương trình tham số và chính tắc của đường thẳng trong Oxyz</h1>
+      <p class="lead">Đừng bắt đầu bằng công thức. Hãy bắt đầu bằng câu hỏi: muốn xác định một đường thẳng trong không gian, ta cần biết nó đi qua đâu và đi theo hướng nào.</p>
+      <div class="meta">
+        <span class="pill">Trọng tâm: điểm + hướng</span>
+        <span class="pill">TikZ: 2 hình đúng bài</span>
+        <span class="pill">Mức độ: nhận biết</span>
+      </div>
+    </header>
+
+    <div class="lesson">
+      <section class="block">
+        <div class="block-title"><div class="badge">1</div><h2>Một đường thẳng cần những gì?</h2></div>
+        <div class="block-body two-col">
+          <div>
+            <p>Trong không gian, nếu chỉ nói “có một đường thẳng” thì ta chưa biết nó nằm ở đâu. Cần ít nhất hai thông tin:</p>
+            <div class="split">
+              <div class="card"><b>Một điểm neo</b>Ví dụ $A(x_0,y_0,z_0)$ nằm trên đường thẳng.</div>
+              <div class="card"><b>Một hướng đi</b>Ví dụ vectơ $\vec u=(a,b,c)$ chỉ hướng của đường thẳng.</div>
+              <div class="card"><b>Đi dọc theo hướng đó</b>Từ $A$, tiến hoặc lùi theo $\vec u$ sẽ tạo ra toàn bộ đường thẳng.</div>
+            </div>
+
+            <div class="teacher"><b>Hỏi học sinh:</b> Nếu em đứng tại điểm $A$ và có một mũi tên chỉ hướng $\vec u$, em có vẽ được đường thẳng không?</div>
+            <div class="student"><b>Trả lời mong đợi:</b> Có. Kẻ đường đi qua $A$ và song song với mũi tên $\vec u$.</div>
+
+            <div class="conclude">
+              Câu chốt của bài: <b>đường thẳng = một điểm thuộc đường + một vectơ chỉ phương.</b>
+            </div>
+          </div>
+
+          <aside class="figure">
+            <img src="../public/math-diagrams/line-oxyz-point-direction.svg" alt="Đường thẳng trong Oxyz đi qua điểm và có vectơ chỉ phương" />
+            <div class="caption">Hình 1. Đường thẳng $d$ đi qua $A(x_0,y_0,z_0)$ và nhận $\vec u=(a,b,c)$ làm vectơ chỉ phương.</div>
+            <div class="observe"><b>Nhìn hình:</b> điểm $A$ cho vị trí, vectơ $\vec u$ cho hướng nghiêng của đường thẳng.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">2</div><h2>Tham số $t$ nghĩa là gì?</h2></div>
+        <div class="block-body two-col">
+          <div>
+            <p>Tham số $t$ không phải thứ bí hiểm. Nó chỉ là số lần ta đi theo hướng $\vec u$ từ điểm $A$.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Giá trị $t$</th>
+                  <th>Ý nghĩa hình học</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$t=0$</td>
+                  <td>Đứng nguyên tại điểm $A$.</td>
+                </tr>
+                <tr>
+                  <td>$t=1$</td>
+                  <td>Đi từ $A$ thêm đúng một vectơ $\vec u$.</td>
+                </tr>
+                <tr>
+                  <td>$t=2$</td>
+                  <td>Đi thêm hai lần vectơ $\vec u$.</td>
+                </tr>
+                <tr>
+                  <td>$t=-1$</td>
+                  <td>Đi ngược hướng $\vec u$ một lần.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="formula">
+              Nếu $A(x_0,y_0,z_0)$ và $\vec u=(a,b,c)$, thì điểm bất kỳ trên đường thẳng có dạng:
+              $$M(t)=A+t\vec u.$$
+            </div>
+          </div>
+
+          <aside class="figure">
+            <img src="../public/math-diagrams/line-oxyz-parameter.svg" alt="Ý nghĩa tham số t trên đường thẳng" />
+            <div class="caption">Hình 2. Khi $t$ thay đổi, điểm $M(t)$ chạy dọc trên đường thẳng.</div>
+            <div class="observe"><b>Nhìn hình:</b> $t$ là nút kéo vị trí, không phải tọa độ mới.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">3</div><h2>Từ hình sang phương trình tham số</h2></div>
+        <div class="block-body">
+          <p>Từ $M(t)=A+t\vec u$, ta bung từng tọa độ ra:</p>
+          <div class="formula">
+            $$\begin{cases}
+            x=x_0+at\\
+            y=y_0+bt\\
+            z=z_0+ct
+            \end{cases}\quad (t\in\mathbb R).$$
+          </div>
+
+          <div class="teacher"><b>Hỏi học sinh:</b> Trong công thức này, đâu là điểm ban đầu? Đâu là hướng đi?</div>
+          <div class="student"><b>Trả lời mong đợi:</b> $(x_0,y_0,z_0)$ là điểm ban đầu; $(a,b,c)$ là vectơ chỉ phương.</div>
+
+          <div class="warning">
+            <b>Bẫy nhỏ:</b> nhiều bạn học thuộc công thức nhưng không nhìn ra “tọa độ điểm” và “tọa độ vectơ”. Khi làm bài, hãy gạch chân hai thứ này trước.
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">4</div><h2>Khi nào viết được phương trình chính tắc?</h2></div>
+        <div class="block-body">
+          <p>Từ phương trình tham số:</p>
+          <div class="formula">
+            $$x=x_0+at,\quad y=y_0+bt,\quad z=z_0+ct.$$
+          </div>
+          <p>Nếu $a,b,c$ đều khác $0$, ta rút $t$ ra từ từng dòng:</p>
+          <div class="formula">
+            $$t=\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}.$$
+          </div>
+          <p>Vậy phương trình chính tắc là:</p>
+          <div class="formula">
+            $$\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}.$$
+          </div>
+
+          <div class="warning">
+            <b>Cực kỳ quan trọng:</b> nếu một trong $a,b,c$ bằng $0$, không được viết mẫu số bằng $0$. Khi đó giữ dạng tham số, hoặc viết riêng tọa độ cố định.
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">5</div><h2>Cách làm bài nhận biết</h2></div>
+        <div class="block-body">
+          <p>Khi đề yêu cầu viết phương trình đường thẳng, đừng lao vào công thức ngay. Làm theo 3 bước:</p>
+          <div class="split">
+            <div class="card">
+              <b>1. Tìm một điểm</b>
+              Điểm có thể được cho trực tiếp: $A(1,-2,3)$.
+            </div>
+            <div class="card">
+              <b>2. Tìm một hướng</b>
+              Hướng là vectơ chỉ phương $\vec u=(a,b,c)$. Nếu có hai điểm $A,B$, lấy $\vec{AB}$.
+            </div>
+            <div class="card">
+              <b>3. Viết phương trình</b>
+              Dùng tham số trước. Chỉ đổi sang chính tắc nếu không có mẫu bằng $0$.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">6</div><h2>Ví dụ mẫu có dẫn dắt</h2></div>
+        <div class="block-body">
+          <div class="example">
+            <h3>Ví dụ 1. Đường thẳng qua $A(1,-2,3)$ và có $\vec u=(2,1,-4)$</h3>
+            <p><span class="why">Ta có gì?</span> Một điểm neo $A(1,-2,3)$ và một hướng $\vec u=(2,1,-4)$.</p>
+            <p>Phương trình tham số:</p>
+            <div class="formula">
+              $$\begin{cases}
+              x=1+2t\\
+              y=-2+t\\
+              z=3-4t
+              \end{cases}\quad (t\in\mathbb R).$$
+            </div>
+            <p>Vì $2,1,-4$ đều khác $0$, viết được chính tắc:</p>
+            <div class="formula">
+              $$\frac{x-1}{2}=\frac{y+2}{1}=\frac{z-3}{-4}.$$
+            </div>
+          </div>
+
+          <div class="example">
+            <h3>Ví dụ 2. Đường thẳng qua $A(2,1,-1)$ và $B(5,7,3)$</h3>
+            <p><span class="why">Chưa có vectơ chỉ phương thì lấy từ đâu?</span> Lấy vectơ nối hai điểm:</p>
+            <div class="formula">
+              $$\vec{AB}=(5-2,\ 7-1,\ 3-(-1))=(3,6,4).$$
+            </div>
+            <p>Phương trình tham số qua $A$:</p>
+            <div class="formula">
+              $$\begin{cases}
+              x=2+3t\\
+              y=1+6t\\
+              z=-1+4t
+              \end{cases}.$$
+            </div>
+          </div>
+
+          <div class="example">
+            <h3>Ví dụ 3. Qua $M(3,-1,2)$, vectơ chỉ phương $\vec u=(0,5,-2)$</h3>
+            <p><span class="why">Chỗ nào dễ sai?</span> Thành phần đầu của $\vec u$ bằng $0$, nên $x$ không đổi.</p>
+            <div class="formula">
+              $$\begin{cases}
+              x=3\\
+              y=-1+5t\\
+              z=2-2t
+              \end{cases}.$$
+            </div>
+            <p><span class="answer">Không viết</span> $\frac{x-3}{0}=\frac{y+1}{5}=\frac{z-2}{-2}$ vì không được chia cho $0$.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">7</div><h2>Bẫy hay gặp</h2></div>
+        <div class="block-body">
+          <div class="warning"><b>Nhầm điểm với vectơ:</b> $A(1,-2,3)$ là nơi đường thẳng đi qua; $\vec u=(2,1,-4)$ là hướng đi. Hai thứ này không cùng vai trò.</div>
+          <div class="warning"><b>Quên dấu khi thay tọa độ:</b> nếu $y_0=-2$ thì $y-y_0=y+2$, không phải $y-2$.</div>
+          <div class="warning"><b>Chia cho $0$:</b> phương trình chính tắc chỉ viết đủ ba phân thức khi $a,b,c$ đều khác $0$.</div>
+          <div class="warning"><b>Tưởng vectơ chỉ phương là duy nhất:</b> $(2,1,-4)$ và $(-2,-1,4)$ cùng chỉ một hướng đường thẳng, chỉ ngược chiều nhau.</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">8</div><h2>Chốt bài trong 30 giây</h2></div>
+        <div class="block-body">
+          <ul>
+            <li>Muốn viết đường thẳng, tìm <b>một điểm</b> và <b>một vectơ chỉ phương</b>.</li>
+            <li>Phương trình tham số là cách viết an toàn nhất.</li>
+            <li>Phương trình chính tắc chỉ viết khi không chia cho $0$.</li>
+            <li>Nếu đường thẳng qua hai điểm $A,B$, vectơ chỉ phương tự nhiên là $\vec{AB}$.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

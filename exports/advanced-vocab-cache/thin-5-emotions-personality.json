@@ -1,0 +1,467 @@
+{
+  "words": [
+    {
+      "word": "temperamental",
+      "pronunciation": "/ˌtɛmpərəˈmɛntəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Dễ thay đổi tâm trạng, hay nổi nóng; hoặc (về máy móc) hay bị hỏng, không ổn định",
+      "definition_en": "Prone to sudden changes of mood; unreliable or unpredictable in behavior or function",
+      "level": "C1",
+      "synonyms": [
+        "moody",
+        "unpredictable",
+        "irritable"
+      ],
+      "antonyms": [
+        "stable",
+        "reliable"
+      ],
+      "example_sentence": "The temperamental artist refused to perform unless the lighting conditions were perfect, frustrating the entire production team."
+    },
+    {
+      "word": "candid",
+      "pronunciation": "/ˈkændɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Thẳng thắn, chân thành, không che giấu ý kiến hoặc cảm xúc",
+      "definition_en": "Truthful and straightforward in expression; frank and honest without concealment",
+      "level": "B2",
+      "synonyms": [
+        "frank",
+        "forthright",
+        "honest"
+      ],
+      "antonyms": [
+        "evasive",
+        "deceptive"
+      ],
+      "example_sentence": "In her candid interview, the politician admitted her previous mistakes and outlined her vision for reform."
+    },
+    {
+      "word": "petulant",
+      "pronunciation": "/ˈpɛtʃələnt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Hay cáu kỉnh, dễ bực bội, thường phàn nàn về những điều nhỏ nhặt",
+      "definition_en": "Childishly sulky or bad-tempered; prone to complaining about trivial matters",
+      "level": "C1",
+      "synonyms": [
+        "sulky",
+        "peevish",
+        "querulous"
+      ],
+      "antonyms": [
+        "patient",
+        "good-natured"
+      ],
+      "example_sentence": "The petulant teenager's constant complaints about dinner made family meals increasingly uncomfortable."
+    },
+    {
+      "word": "gregarious",
+      "pronunciation": "/ɡrɪˈɡɛriəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Thích ở với mọi người, yêu thích giao tiếp xã hội; (động vật) sống thành đàn",
+      "definition_en": "Fond of being in company; enjoying the company of others; social and outgoing",
+      "level": "C1",
+      "synonyms": [
+        "sociable",
+        "outgoing",
+        "convivial"
+      ],
+      "antonyms": [
+        "solitary",
+        "withdrawn"
+      ],
+      "example_sentence": "Her gregarious nature made her the perfect host; she thrived on organizing social gatherings and bringing people together."
+    },
+    {
+      "word": "stoic",
+      "pronunciation": "/ˈstoʊɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Chịu đựng khó khăn một cách bình tĩnh, không than phiền; không biểu lộ cảm xúc",
+      "definition_en": "Enduring pain or hardship without complaint; showing little or no emotion",
+      "level": "B2",
+      "synonyms": [
+        "impassive",
+        "unflappable",
+        "composed"
+      ],
+      "antonyms": [
+        "emotional",
+        "reactive"
+      ],
+      "example_sentence": "Despite losing his job, he maintained a stoic demeanor and immediately began searching for new opportunities."
+    },
+    {
+      "word": "truculent",
+      "pronunciation": "/ˈtrʌkjələnt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Hung hăng, hay cãi cọ, thích gây sự cố; có thái độ đe dọa hoặc thù địch",
+      "definition_en": "Eager or quick to argue, fight, or cause trouble; aggressively defiant",
+      "level": "C1",
+      "synonyms": [
+        "belligerent",
+        "aggressive",
+        "combative"
+      ],
+      "antonyms": [
+        "peaceful",
+        "cooperative"
+      ],
+      "example_sentence": "The truculent tone of his email suggested he was looking for a confrontation rather than a constructive dialogue."
+    },
+    {
+      "word": "sanguine",
+      "pronunciation": "/ˈsæŋɡwɪn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Lạc quan, tin tưởng vào kết quả tốt; (cổ) có màu đỏ hoặc máu",
+      "definition_en": "Optimistic or positive, especially in an unrealistic way; confident about the future",
+      "level": "C1",
+      "synonyms": [
+        "optimistic",
+        "hopeful",
+        "positive"
+      ],
+      "antonyms": [
+        "pessimistic",
+        "gloomy"
+      ],
+      "example_sentence": "Despite mounting evidence of the project's failure, the manager remained sanguine about its eventual success."
+    },
+    {
+      "word": "circumspect",
+      "pronunciation": "/ˈsɜːrkəmspɛkt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Cẩn trọng, thận trọng, xem xét kỹ lưỡng trước khi hành động",
+      "definition_en": "Wary and unwilling to take risks; careful to consider all circumstances and consequences",
+      "level": "C1",
+      "synonyms": [
+        "cautious",
+        "prudent",
+        "wary"
+      ],
+      "antonyms": [
+        "reckless",
+        "impulsive"
+      ],
+      "example_sentence": "The circumspect investor studied market trends for months before committing to any major financial decisions."
+    },
+    {
+      "word": "acerbic",
+      "pronunciation": "/əˈsɜːrbɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Cay đắng, chế nhạo, sắc sảo (về lời nói hoặc cách phê bình); có vị chua",
+      "definition_en": "Sharp and forthright, especially in a way that is hurtful or critical; bitter in taste or tone",
+      "level": "C1",
+      "synonyms": [
+        "caustic",
+        "biting",
+        "sardonic"
+      ],
+      "antonyms": [
+        "gentle",
+        "kind"
+      ],
+      "example_sentence": "The critic's acerbic review of the film was so scathing that it discouraged many potential viewers."
+    },
+    {
+      "word": "benign",
+      "pronunciation": "/bɪˈnaɪn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Tốt bụng, nhân hậu, không gây hại; (y học) không nguy hiểm",
+      "definition_en": "Kind and gentle; not harmful or malignant; showing goodwill",
+      "level": "B2",
+      "synonyms": [
+        "kind",
+        "gentle",
+        "harmless"
+      ],
+      "antonyms": [
+        "malicious",
+        "harmful"
+      ],
+      "example_sentence": "The benign elderly woman spent her retirement volunteering at the local community center."
+    },
+    {
+      "word": "diffident",
+      "pronunciation": "/ˈdɪfɪdənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Thiếu tự tin, e thẹn, không dám khẳng định bản thân",
+      "definition_en": "Lacking confidence in one's own abilities; shy or modest to an excessive degree",
+      "level": "C1",
+      "synonyms": [
+        "shy",
+        "timid",
+        "self-doubting"
+      ],
+      "antonyms": [
+        "confident",
+        "assertive"
+      ],
+      "example_sentence": "Despite her exceptional qualifications, her diffident nature prevented her from applying for the leadership position."
+    },
+    {
+      "word": "obstinate",
+      "pronunciation": "/ˈɑːbstɪnət/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Cứng đầu, bướng bỉnh, không chịu thay đổi ý kiến hoặc hành động",
+      "definition_en": "Stubbornly refusing to change one's opinion or course of action; difficult to manage or influence",
+      "level": "B2",
+      "synonyms": [
+        "stubborn",
+        "headstrong",
+        "intransigent"
+      ],
+      "antonyms": [
+        "flexible",
+        "compliant"
+      ],
+      "example_sentence": "His obstinate refusal to accept modern technology made it difficult for him to adapt to the digital workplace."
+    },
+    {
+      "word": "magnanimous",
+      "pronunciation": "/mæɡˈnænɪməs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Cao thượng, rộng lượng, không tính toán nhỏ nhen; hào phóng và khoan dung",
+      "definition_en": "Generous and forgiving, especially toward a rival or someone less powerful; noble in spirit",
+      "level": "C1",
+      "synonyms": [
+        "generous",
+        "gracious",
+        "noble"
+      ],
+      "antonyms": [
+        "petty",
+        "vindictive"
+      ],
+      "example_sentence": "The magnanimous victor offered his defeated opponent a position in his new administration."
+    },
+    {
+      "word": "laconic",
+      "pronunciation": "/ləˈkɑːnɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Ngắn gọn, tức tưởi, nói ít lời nhưng đầy ý nghĩa",
+      "definition_en": "Using very few words; brief and concise in speech or writing",
+      "level": "C1",
+      "synonyms": [
+        "terse",
+        "concise",
+        "brief"
+      ],
+      "antonyms": [
+        "verbose",
+        "loquacious"
+      ],
+      "example_sentence": "The CEO's laconic response to the journalist's question left everyone wanting more details."
+    },
+    {
+      "word": "sanguine outlook",
+      "pronunciation": "/ˈsæŋɡwɪn ˈaʊtlʊk/",
+      "part_of_speech": "collocation",
+      "definition_vi": "Quan điểm lạc quan, kỳ vọng tích cực về tương lai",
+      "definition_en": "An optimistic or hopeful perspective on future events or outcomes",
+      "level": "C1",
+      "synonyms": [
+        "optimistic perspective",
+        "hopeful view"
+      ],
+      "antonyms": [
+        "pessimistic outlook",
+        "gloomy forecast"
+      ],
+      "example_sentence": "Despite economic challenges, analysts maintain a sanguine outlook for the technology sector next year."
+    },
+    {
+      "word": "emotional resilience",
+      "pronunciation": "/ɪˈmoʊʃənəl rɪˈzɪliəns/",
+      "part_of_speech": "collocation",
+      "definition_vi": "Khả năng phục hồi cảm xúc, vượt qua những khó khăn mà không bị tổn thương lâu dài",
+      "definition_en": "The capacity to recover quickly from emotional difficulties and adapt to stress",
+      "level": "C1",
+      "synonyms": [
+        "emotional strength",
+        "psychological resilience"
+      ],
+      "antonyms": [
+        "emotional fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "Building emotional resilience in adolescents requires consistent support from family and mentors."
+    },
+    {
+      "word": "moral compass",
+      "pronunciation": "/ˈmɔːrəl ˈkʌmpəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "Hệ thống giá trị đạo đức cá nhân; khả năng phân biệt đúng sai",
+      "definition_en": "A person's internal sense of right and wrong that guides their ethical decisions",
+      "level": "B2",
+      "synonyms": [
+        "ethical framework",
+        "sense of morality"
+      ],
+      "antonyms": [
+        "moral ambiguity",
+        "ethical confusion"
+      ],
+      "example_sentence": "The whistleblower's strong moral compass compelled her to expose the company's illegal practices."
+    },
+    {
+      "word": "put on a brave face",
+      "pronunciation": "/pʊt ɑːn ə breɪv feɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giả vờ mạnh mẽ, che giấu nỗi sợ hãi hoặc buồn bã; cố gắng trông bình tĩnh",
+      "definition_en": "To appear courageous or confident despite feeling afraid, sad, or worried",
+      "level": "B2",
+      "synonyms": [
+        "keep a stiff upper lip",
+        "maintain composure"
+      ],
+      "antonyms": [
+        "show vulnerability",
+        "break down"
+      ],
+      "example_sentence": "After receiving the diagnosis, she put on a brave face for her children while privately struggling with fear."
+    },
+    {
+      "word": "wear one's heart on one's sleeve",
+      "pronunciation": "/wɛr wʌnz hɑːrt ɑːn wʌnz sliːv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Để lộ cảm xúc, không che giấu những gì mình cảm thấy; thẳng thắn về tình cảm",
+      "definition_en": "To openly display one's emotions or feelings without trying to hide them",
+      "level": "B2",
+      "synonyms": [
+        "be transparent",
+        "show vulnerability"
+      ],
+      "antonyms": [
+        "hide emotions",
+        "remain guarded"
+      ],
+      "example_sentence": "Unlike her reserved colleagues, she wears her heart on her sleeve, making her feelings immediately apparent to everyone."
+    },
+    {
+      "word": "lose one's temper",
+      "pronunciation": "/luːz wʌnz ˈtɛmpər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mất kiểm soát, nổi cơn giận, bộc phát cơn tức giận",
+      "definition_en": "To become suddenly angry and lose emotional control",
+      "level": "C1",
+      "synonyms": [
+        "get angry",
+        "blow up",
+        "fly into a rage"
+      ],
+      "antonyms": [
+        "stay calm",
+        "keep composure"
+      ],
+      "example_sentence": "When the referee made that controversial call, the coach nearly lost his temper and was ejected from the game."
+    },
+    {
+      "word": "come to terms with",
+      "pronunciation": "/kʌm tu tɜːrmz wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chấp nhận, thích nghi với một tình huống khó khăn hoặc mất mát",
+      "definition_en": "To accept and deal with something difficult or unpleasant; to reach an understanding about",
+      "level": "B2",
+      "synonyms": [
+        "accept",
+        "reconcile oneself to",
+        "make peace with"
+      ],
+      "antonyms": [
+        "reject",
+        "resist"
+      ],
+      "example_sentence": "It took her years to come to terms with her childhood trauma, but therapy eventually helped her heal."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which word best describes someone who is prone to sudden mood changes and unpredictable behavior?",
+      "option_a": "Temperamental",
+      "option_b": "Benign",
+      "option_c": "Laconic",
+      "option_d": "Circumspect",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Temperamental có nghĩa là dễ thay đổi tâm trạng, hay nổi nóng. Benign = tốt bụng, Laconic = ngắn gọn, Circumspect = cẩn trọng. Chỉ A phù hợp với mô tả."
+    },
+    {
+      "question_text": "The politician's _____ admission of her past mistakes earned her respect from voters who valued honesty.",
+      "option_a": "temperamental",
+      "option_b": "candid",
+      "option_c": "petulant",
+      "option_d": "stoic",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Candid = thẳng thắn, chân thành. Ngữ cảnh yêu cầu từ chỉ sự thẳng thắn trong việc thừa nhận lỗi lầm. Temperamental = hay nổi nóng, petulant = cáu kỉnh, stoic = bình tĩnh không phù hợp."
+    },
+    {
+      "question_text": "Which of the following is closest in meaning to 'truculent'?",
+      "option_a": "Peaceful and cooperative",
+      "option_b": "Shy and withdrawn",
+      "option_c": "Aggressively defiant and eager to argue",
+      "option_d": "Calm and composed",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Truculent = hung hăng, hay cãi cọ, thích gây sự cố. C là định nghĩa chính xác. A, B, D đều là antonyms hoặc không liên quan."
+    },
+    {
+      "question_text": "Despite mounting evidence of failure, the manager's _____ attitude prevented her from acknowledging the project's problems.",
+      "option_a": "circumspect",
+      "option_b": "sanguine",
+      "option_c": "diffident",
+      "option_d": "acerbic",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sanguine = lạc quan (thường quá lạc quan). Ngữ cảnh chỉ ra rằng mặc dù có bằng chứng thất bại, người quản lý vẫn lạc quan. Circumspect = cẩn trọng, diffident = thiếu tự tin, acerbic = cay đắng không phù hợp."
+    },
+    {
+      "question_text": "The _____ investor studied every detail before making any financial commitment, refusing to take unnecessary risks.",
+      "option_a": "gregarious",
+      "option_b": "circumspect",
+      "option_c": "obstinate",
+      "option_d": "petulant",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Circumspect = cẩn trọng, xem xét kỹ lưỡng. Phù hợp với hành động 'studied every detail' và 'refusing to take unnecessary risks'. Gregarious = thích giao tiếp, obstinate = cứng đầu, petulant = cáu kỉnh không phù hợp."
+    },
+    {
+      "question_text": "What is the opposite of 'magnanimous'?",
+      "option_a": "Generous and forgiving",
+      "option_b": "Petty and vindictive",
+      "option_c": "Confident and assertive",
+      "option_d": "Shy and withdrawn",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Magnanimous = cao thượng, rộng lượng. Antonym là petty (nhỏ nhen) và vindictive (thù địch). A là định nghĩa của magnanimous, C và D không liên quan."
+    },
+    {
+      "question_text": "The CEO's _____ response to the journalist's question—just three words—left everyone wanting more information.",
+      "option_a": "gregarious",
+      "option_b": "benign",
+      "option_c": "laconic",
+      "option_d": "magnanimous",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Laconic = ngắn gọn, tức tưởi. 'Just three words' là gợi ý rõ ràng cho từ này. Gregarious = thích giao tiếp, benign = tốt bụng, magnanimous = cao thượng không phù hợp."
+    },
+    {
+      "question_text": "Which phrase means to openly display one's emotions without trying to hide them?",
+      "option_a": "Put on a brave face",
+      "option_b": "Wear one's heart on one's sleeve",
+      "option_c": "Come to terms with",
+      "option_d": "Lose one's temper",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Wear one's heart on one's sleeve = để lộ cảm xúc, không che giấu. A = giả vờ mạnh mẽ (ngược lại), C = chấp nhận, D = nổi giận. Chỉ B phù hợp."
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "words": [
+    {
+      "word": "urban sprawl",
+      "pronunciation": "/ˈɜːrbən sprɔːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự mở rộng không kiểm soát của các khu đô thị vào vùng ngoại ô và nông thôn, gây lãng phí đất đai và tài nguyên.",
+      "definition_en": "Uncontrolled expansion of urban areas into surrounding countryside, causing inefficient land use.",
+      "level": "B2",
+      "synonyms": [
+        "urban expansion",
+        "city growth"
+      ],
+      "antonyms": [
+        "compact development",
+        "urban densification"
+      ],
+      "example_sentence": "Urban sprawl in Southeast Asian cities has consumed vast agricultural lands and increased transportation costs for residents."
+    },
+    {
+      "word": "mixed-use development",
+      "pronunciation": "/ˌmɪkst ˈjuːs dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Dự án phát triển kết hợp nhiều chức năng như ở, thương mại, văn phòng và giải trí trong cùng một khu vực.",
+      "definition_en": "A development combining residential, commercial, office, and recreational spaces in one area.",
+      "level": "B2",
+      "synonyms": [
+        "integrated development",
+        "multi-functional complex"
+      ],
+      "antonyms": [
+        "single-use zoning",
+        "segregated development"
+      ],
+      "example_sentence": "Modern mixed-use developments encourage walkability and reduce the need for long commutes."
+    },
+    {
+      "word": "dwelling",
+      "pronunciation": "/ˈdwelɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Nơi ở, nhà cửa; bất kỳ cấu trúc nào được xây dựng để con người sống trong đó.",
+      "definition_en": "A place where someone lives; any structure built for human habitation.",
+      "level": "B2",
+      "synonyms": [
+        "residence",
+        "abode",
+        "habitat"
+      ],
+      "antonyms": [
+        "workplace",
+        "commercial space"
+      ],
+      "example_sentence": "The government aims to provide adequate dwellings for low-income families within the next five years."
+    },
+    {
+      "word": "urban renewal",
+      "pronunciation": "/ˈɜːrbən rɪˈnjuːəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình cải tạo, hiện đại hóa các khu vực đô thị cũ kỹ, thường bao gồm phá dỡ và xây dựng lại.",
+      "definition_en": "The process of redeveloping and modernizing deteriorated urban areas, often involving demolition and reconstruction.",
+      "level": "B2",
+      "synonyms": [
+        "urban regeneration",
+        "redevelopment"
+      ],
+      "antonyms": [
+        "urban decay",
+        "abandonment"
+      ],
+      "example_sentence": "Urban renewal projects in downtown areas have attracted young professionals and boosted local economies."
+    },
+    {
+      "word": "zoning regulation",
+      "pronunciation": "/ˈzoʊnɪŋ ˌreɡjəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quy định pháp lý xác định cách sử dụng đất đai trong các khu vực khác nhau của thành phố (dân cư, thương mại, công nghiệp).",
+      "definition_en": "Legal rules determining how land can be used in different city areas (residential, commercial, industrial).",
+      "level": "B2",
+      "synonyms": [
+        "land-use regulation",
+        "zoning law"
+      ],
+      "antonyms": [
+        "unrestricted development",
+        "free-for-all building"
+      ],
+      "example_sentence": "Strict zoning regulations prevent factories from being built in residential neighborhoods."
+    },
+    {
+      "word": "pedestrian-friendly",
+      "pronunciation": "/pəˈdestriən ˈfrendli/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Được thiết kế để dễ dàng và an toàn cho người đi bộ, với vỉa hè rộng, đèn giao thông, và ít ô tô.",
+      "definition_en": "Designed to be safe and convenient for people walking, with wide sidewalks, traffic lights, and reduced vehicle traffic.",
+      "level": "B2",
+      "synonyms": [
+        "walkable",
+        "pedestrian-oriented"
+      ],
+      "antonyms": [
+        "car-dependent",
+        "vehicle-centric"
+      ],
+      "example_sentence": "Copenhagen is renowned for its pedestrian-friendly streets and extensive cycling infrastructure."
+    },
+    {
+      "word": "property value",
+      "pronunciation": "/ˈprɒpərti ˈvæljuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giá trị tiền tệ của một bất động sản, được xác định bởi vị trí, kích thước, tình trạng và thị trường.",
+      "definition_en": "The monetary worth of a property, determined by location, size, condition, and market demand.",
+      "level": "C1",
+      "synonyms": [
+        "real estate value",
+        "property price"
+      ],
+      "antonyms": [
+        "depreciation",
+        "devaluation"
+      ],
+      "example_sentence": "Property values in city centers have increased significantly due to improved public transportation."
+    },
+    {
+      "word": "urban density",
+      "pronunciation": "/ˈɜːrbən ˈdensəti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ tập trung dân số và xây dựng trong một khu vực đô thị, thường được đo bằng số người trên một đơn vị diện tích.",
+      "definition_en": "The concentration of population and buildings in an urban area, typically measured as people per unit area.",
+      "level": "B2",
+      "synonyms": [
+        "population density",
+        "building density"
+      ],
+      "antonyms": [
+        "sparse settlement",
+        "low density"
+      ],
+      "example_sentence": "High urban density in Tokyo requires efficient public transportation systems and vertical housing solutions."
+    },
+    {
+      "word": "housing shortage",
+      "pronunciation": "/ˈhaʊzɪŋ ˈʃɔːrtɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng thiếu hụt nhà ở so với nhu cầu của dân cư, dẫn đến giá thuê cao và khó tìm nhà.",
+      "definition_en": "A situation where the supply of housing is insufficient to meet population demand, causing high rents and housing scarcity.",
+      "level": "B2",
+      "synonyms": [
+        "housing deficit",
+        "housing crisis"
+      ],
+      "antonyms": [
+        "housing surplus",
+        "housing abundance"
+      ],
+      "example_sentence": "Many developed countries face severe housing shortages, making it difficult for young people to buy homes."
+    },
+    {
+      "word": "urban planner",
+      "pronunciation": "/ˈɜːrbən ˈplænər/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chuyên gia lập kế hoạch phát triển đô thị, thiết kế bố cục thành phố, giao thông, và sử dụng đất đai.",
+      "definition_en": "A professional who designs city layouts, transportation systems, and land use to improve urban living.",
+      "level": "C1",
+      "synonyms": [
+        "city planner",
+        "urban designer"
+      ],
+      "antonyms": [
+        "developer",
+        "contractor"
+      ],
+      "example_sentence": "Urban planners are increasingly focusing on creating sustainable and livable cities for future generations."
+    },
+    {
+      "word": "slum area",
+      "pronunciation": "/ˈslʌm ˈeəriə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khu vực đô thị nghèo, tập trung dân cư mật độ cao, với nhà ở tồi tàn, thiếu cơ sở hạ tầng cơ bản.",
+      "definition_en": "A densely populated urban area characterized by poverty, poor housing, and inadequate basic services.",
+      "level": "B2",
+      "synonyms": [
+        "shantytown",
+        "impoverished neighborhood"
+      ],
+      "antonyms": [
+        "affluent district",
+        "upscale neighborhood"
+      ],
+      "example_sentence": "Governments must invest in slum area improvements to provide better living conditions and reduce inequality."
+    },
+    {
+      "word": "co-living space",
+      "pronunciation": "/ˌkoʊ ˈlɪvɪŋ speɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Không gian sống chung được thiết kế cho nhiều cư dân độc lập, có phòng riêng nhưng chia sẻ các khu vực công cộng.",
+      "definition_en": "A shared living arrangement where residents have private rooms but share common areas like kitchens and lounges.",
+      "level": "B2",
+      "synonyms": [
+        "shared housing",
+        "communal living"
+      ],
+      "antonyms": [
+        "private residence",
+        "single-family home"
+      ],
+      "example_sentence": "Co-living spaces have become increasingly popular among young professionals in expensive cities."
+    },
+    {
+      "word": "urban heat island",
+      "pronunciation": "/ˈɜːrbən ˈhiːt ˈaɪlənd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiện tượng các khu vực đô thị có nhiệt độ cao hơn vùng ngoại ô do mật độ xây dựng và thiếu cây xanh.",
+      "definition_en": "A phenomenon where urban areas are significantly warmer than surrounding rural areas due to dense construction and lack of vegetation.",
+      "level": "B2",
+      "synonyms": [
+        "heat effect",
+        "thermal anomaly"
+      ],
+      "antonyms": [
+        "cool zone",
+        "natural cooling"
+      ],
+      "example_sentence": "Urban heat islands increase energy consumption for air conditioning and pose health risks during summer months."
+    },
+    {
+      "word": "housing development",
+      "pronunciation": "/ˈhaʊzɪŋ dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Dự án xây dựng nhà ở quy mô lớn, thường bao gồm nhiều căn hộ hoặc nhà riêng được xây dựng cùng một lúc.",
+      "definition_en": "A large-scale construction project involving multiple residential units built simultaneously in a planned area.",
+      "level": "C1",
+      "synonyms": [
+        "residential project",
+        "housing complex"
+      ],
+      "antonyms": [
+        "individual construction",
+        "scattered building"
+      ],
+      "example_sentence": "New housing developments on the city outskirts offer affordable options for middle-class families."
+    },
+    {
+      "word": "urban mobility",
+      "pronunciation": "/ˈɜːrbən moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng di chuyển của người dân trong thành phố thông qua các phương tiện giao thông công cộng hoặc cá nhân.",
+      "definition_en": "The ability of people to move around a city using public transportation, private vehicles, or active transport.",
+      "level": "B2",
+      "synonyms": [
+        "transportation access",
+        "movement capability"
+      ],
+      "antonyms": [
+        "immobility",
+        "transport isolation"
+      ],
+      "example_sentence": "Improving urban mobility through better bus networks and bike lanes reduces traffic congestion and pollution."
+    },
+    {
+      "word": "vertical farming",
+      "pronunciation": "/ˈvɜːrtɪkəl ˈfɑːrmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp trồng trọt trong các tòa nhà cao tầng hoặc không gian đứng, giúp tiết kiệm đất và nước.",
+      "definition_en": "A method of growing crops in vertically stacked layers within buildings, saving land and water resources.",
+      "level": "B2",
+      "synonyms": [
+        "indoor farming",
+        "vertical agriculture"
+      ],
+      "antonyms": [
+        "traditional farming",
+        "horizontal cultivation"
+      ],
+      "example_sentence": "Vertical farming is becoming a viable solution for food production in densely populated urban areas."
+    },
+    {
+      "word": "smart city",
+      "pronunciation": "/ˈsmɑːrt ˈsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thành phố sử dụng công nghệ thông tin và dữ liệu để cải thiện hiệu quả dịch vụ công cộng và chất lượng sống.",
+      "definition_en": "A city that uses technology and data to improve public services, infrastructure, and quality of life.",
+      "level": "B2",
+      "synonyms": [
+        "digital city",
+        "connected city"
+      ],
+      "antonyms": [
+        "traditional city",
+        "analog city"
+      ],
+      "example_sentence": "Singapore is a leading example of a smart city, using IoT sensors to optimize traffic flow and energy consumption."
+    },
+    {
+      "word": "housing crisis",
+      "pronunciation": "/ˈhaʊzɪŋ ˈkraɪsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng khẩn cấp về nhà ở khi giá thuê/mua quá cao hoặc thiếu hụt nghiêm trọng so với nhu cầu.",
+      "definition_en": "A critical situation where housing prices are unaffordable or supply is severely insufficient for demand.",
+      "level": "B2",
+      "synonyms": [
+        "housing emergency",
+        "housing deficit"
+      ],
+      "antonyms": [
+        "housing stability",
+        "housing abundance"
+      ],
+      "example_sentence": "The housing crisis in major cities has forced governments to implement rent control policies and build more affordable units."
+    },
+    {
+      "word": "urban decay",
+      "pronunciation": "/ˈɜːrbən dɪˈkeɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình suy thoái của các khu vực đô thị cũ, với nhà cửa tồi tàn, dân cư giảm, và kinh tế yếu.",
+      "definition_en": "The gradual deterioration of urban areas characterized by abandoned buildings, population loss, and economic decline.",
+      "level": "B2",
+      "synonyms": [
+        "urban deterioration",
+        "neighborhood decline"
+      ],
+      "antonyms": [
+        "urban renewal",
+        "revitalization"
+      ],
+      "example_sentence": "Urban decay in industrial cities has been reversed through targeted investment in cultural attractions and new businesses."
+    },
+    {
+      "word": "transit-oriented development",
+      "pronunciation": "/ˈtrænzɪt ˈɔːrɪentɪd dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mô hình phát triển đô thị tập trung xây dựng nhà ở và dịch vụ gần các trạm giao thông công cộng.",
+      "definition_en": "Urban development focused on building residential and commercial areas near public transportation stations.",
+      "level": "B2",
+      "synonyms": [
+        "TOD",
+        "transit-focused development"
+      ],
+      "antonyms": [
+        "car-dependent sprawl",
+        "dispersed development"
+      ],
+      "example_sentence": "Transit-oriented development reduces car dependency and encourages residents to use public transportation."
+    },
+    {
+      "word": "housing affordability",
+      "pronunciation": "/ˈhaʊzɪŋ əˌfɔːrdəˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng của người dân mua hoặc thuê nhà với giá hợp lý so với thu nhập của họ.",
+      "definition_en": "The ability of residents to purchase or rent housing at prices proportional to their income.",
+      "level": "B2",
+      "synonyms": [
+        "housing accessibility",
+        "price reasonableness"
+      ],
+      "antonyms": [
+        "housing unaffordability",
+        "excessive pricing"
+      ],
+      "example_sentence": "Governments are implementing policies to improve housing affordability for low and middle-income families."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a mixed-use development?",
+      "option_a": "A residential area exclusively for apartment buildings",
+      "option_b": "A development combining residential, commercial, office, and recreational spaces in one area",
+      "option_c": "A shopping mall with multiple retail stores",
+      "option_d": "A suburban neighborhood with single-family homes",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Mixed-use development kết hợp nhiều chức năng khác nhau (ở, thương mại, văn phòng, giải trí) trong cùng một khu vực. Các đáp án khác chỉ mô tả một loại công trình hoặc khu vực duy nhất."
+    },
+    {
+      "question_text": "The government is implementing zoning regulations to _____ industrial factories from residential neighborhoods.",
+      "option_a": "separate",
+      "option_b": "integrate",
+      "option_c": "combine",
+      "option_d": "merge",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Zoning regulation được dùng để tách biệt (separate) các loại công trình khác nhau. 'Integrate', 'combine', 'merge' đều có nghĩa là kết hợp, trái ngược với mục đích của quy định này."
+    },
+    {
+      "question_text": "What is the primary consequence of urban heat islands in cities?",
+      "option_a": "Increased vegetation and green spaces",
+      "option_b": "Higher energy consumption for air conditioning and health risks during summer",
+      "option_c": "Reduced construction costs for buildings",
+      "option_d": "Improved public transportation efficiency",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Urban heat island dẫn đến tăng nhiệt độ, gây tăng tiêu thụ năng lượng cho điều hòa và rủi ro sức khỏe. Các đáp án khác không liên quan đến hậu quả của hiện tượng này."
+    },
+    {
+      "question_text": "Transit-oriented development encourages residents to _____ public transportation instead of driving personal vehicles.",
+      "option_a": "avoid",
+      "option_b": "utilize",
+      "option_c": "abandon",
+      "option_d": "ignore",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Transit-oriented development được thiết kế để khuyến khích người dân sử dụng (utilize) giao thông công cộng. 'Avoid', 'abandon', 'ignore' đều có nghĩa là tránh, trái ngược với mục đích của mô hình này."
+    },
+    {
+      "question_text": "Which term best describes the process of redeveloping and modernizing deteriorated urban areas?",
+      "option_a": "Urban sprawl",
+      "option_b": "Urban decay",
+      "option_c": "Urban renewal",
+      "option_d": "Urban density",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Urban renewal là quá trình cải tạo và hiện đại hóa các khu vực đô thị cũ. Urban sprawl là mở rộng không kiểm soát, urban decay là suy thoái, urban density là mật độ dân cư."
+    },
+    {
+      "question_text": "Co-living spaces have become popular because they _____ housing costs while providing community interaction.",
+      "option_a": "increase",
+      "option_b": "eliminate",
+      "option_c": "reduce",
+      "option_d": "stabilize",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Co-living spaces giúp giảm (reduce) chi phí nhà ở bằng cách chia sẻ không gian chung. 'Increase' là tăng, 'eliminate' là loại bỏ hoàn toàn, 'stabilize' là ổn định - không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "A housing crisis typically occurs when _____ prices are unaffordable or supply is insufficient for demand.",
+      "option_a": "property",
+      "option_b": "transportation",
+      "option_c": "commercial",
+      "option_d": "industrial",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Housing crisis liên quan đến giá bất động sản (property prices) quá cao hoặc thiếu hụt nhà ở. Các đáp án khác không liên quan đến vấn đề nhà ở."
+    }
+  ]
+}

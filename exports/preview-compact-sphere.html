@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phương trình mặt cầu và tương giao</title>
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+:root{color-scheme:dark;--bg:#050814;--panel:#0b1220;--line:#26354d;--text:#f7f9fd;--muted:#a9b7ca;--blue:#60a5fa;--cyan:#67e8f9;--green:#34d399;--amber:#fbbf24;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#10213f 0,#050814 360px);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
+.page{width:min(1080px,calc(100% - 32px));margin:0 auto;padding:28px 0 72px}.breadcrumb{color:var(--muted);font-size:14px;margin-bottom:12px}.hero{border:1px solid var(--line);background:rgba(8,15,29,.94);border-radius:8px;padding:24px;margin-bottom:18px}.eyebrow{color:var(--cyan);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}h1{margin:6px 0 10px;font-size:32px;line-height:1.2;letter-spacing:0}.lead{color:#d3deee;max-width:800px;margin:0;font-size:17px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.pill{border:1px solid var(--line);background:#101a2c;color:#dbeafe;border-radius:999px;padding:5px 10px;font-size:13px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:18px;align-items:start}.content{border:1px solid var(--line);background:rgba(11,18,32,.96);border-radius:8px;padding:20px;overflow:hidden}.content h2{font-size:21px;margin:28px 0 10px;padding-top:18px;border-top:1px solid var(--line);letter-spacing:0}.content h2:first-child{margin-top:0;padding-top:0;border-top:0}.content h3{font-size:17px;margin:18px 0 8px}.content p{margin:10px 0}.content table{width:100%;border-collapse:collapse;margin:12px 0}.content th,.content td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}.content th{background:#0f1d33;color:#dbeafe}.content td{background:#08111f}.content blockquote{border-left:3px solid var(--blue);background:#0a1a30;margin:12px 0;padding:12px 14px;border-radius:0 8px 8px 0;color:#dbeafe}.content code{background:#111827;border:1px solid #283243;border-radius:4px;padding:1px 5px}.figure{border:1px solid #2b3d58;background:#070c18;border-radius:8px;padding:14px;position:sticky;top:14px}.figure img{width:100%;height:auto;display:block;background:#f8fafc;border-radius:6px;padding:8px}.caption{margin-top:10px;color:var(--muted);font-size:13px}.observe{margin-top:12px;padding-left:12px;border-left:3px solid var(--cyan);color:#cffafe;font-size:14px}.rules{border:1px solid var(--line);background:#091120;border-radius:8px;padding:16px;margin-top:18px}.rules h2{font-size:18px;margin:0 0 8px;border:0;padding:0}@media(max-width:900px){.layout{grid-template-columns:1fr}.figure{position:static}h1{font-size:26px}}
+</style>
+</head>
+<body>
+  <main class="page">
+    <div class="breadcrumb">Preview / Sinh từ scripts/import_math.py / Phương trình và hình học Oxyz</div>
+    <header class="hero">
+      <div class="eyebrow">Generated teaching guide</div>
+      <h1>Phương trình mặt cầu và tương giao</h1>
+      <p class="lead">Bản này được sinh bằng prompt mới trong <code>scripts/import_math.py</code>, chưa ghi database và chưa deploy.</p>
+      <div class="meta">
+        <span class="pill">Model output thật</span>
+        <span class="pill">Có marker hình nếu cần</span>
+        <span class="pill">nhan_biet</span>
+      </div>
+    </header>
+
+    <section class="layout">
+      <article class="content" id="content"></article>
+
+      <aside class="figure">
+        <img src="../public/math-diagrams/plane-sphere.svg" alt="TikZ minh họa mặt cầu" />
+        <div class="caption">Hình TikZ gắn với marker hình trong nội dung.</div>
+        <div class="observe"><b>Mô tả từ model:</b> Hệ trục Oxyz có một mặt cầu tâm I, một mặt phẳng cắt mặt cầu tạo đường tròn, một đường thẳng lần lượt ở ba vị trí: cắt mặt cầu tại hai điểm, tiếp xúc tại một điểm, và không cắt; học sinh cần quan sát việc so sánh khoảng cách với bán kính</div>
+      </aside>
+
+    </section>
+
+    <section class="content rules">
+      <h2>Key rules</h2>
+      <ul><li>Biết tâm và bán kính thì dùng ngay dạng chính tắc của mặt cầu.</li><li>Dạng khai triển: tâm là đối của các hệ số theo mẫu $2ux,2vy,2wz$.</li><li>Muốn xét mặt cầu cắt mặt phẳng, so sánh $d(I,(P))$ với $R$.</li><li>Muốn xét mặt cầu cắt đường thẳng, thế tham số đường thẳng vào phương trình mặt cầu.</li><li>Luôn kiểm tra $R^2&gt;0$ để tránh nhầm phương trình không phải mặt cầu thật.</li></ul>
+      <h2>Common mistakes</h2>
+      <ul><li>Sai: Xác định tâm của $x^2+y^2+z^2+2x-4y+6z+1=0$ là $(2,-4,6)$ -&gt; Đúng: Tâm là $(-1,2,-3)$.</li><li>Sai: Thấy $R^2=0$ hoặc $R^2&lt;0$ vẫn kết luận là mặt cầu -&gt; Đúng: Chỉ khi $R^2&gt;0$ mới là mặt cầu thật.</li><li>Sai: Xét tương giao mặt cầu - mặt phẳng bằng cách giải hệ ngay -&gt; Đúng: Nên tính $d(I,(P))$ rồi so với $R$.</li><li>Sai: Thế thiếu một tọa độ của đường thẳng vào phương trình mặt cầu -&gt; Đúng: Phải thay đủ $x,y,z$ theo cùng một tham số.</li></ul>
+    </section>
+  </main>
+  <script>
+    const markdown = "## 1. Công thức trọng tâm\n\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $$(x-a)^2+(y-b)^2+(z-c)^2=R^2$$ | Biết tâm $I(a,b,c)$ và bán kính $R$ | Tâm là $I(a,b,c)$, bán kính $R>0$ |\n| $$x^2+y^2+z^2+2ux+2vy+2wz+d=0$$ | Gặp phương trình mặt cầu dạng khai triển | Tâm $I(-u,-v,-w)$, $R^2=u^2+v^2+w^2-d$ |\n| $$R^2>0$$ | Kiểm tra một phương trình có là mặt cầu thật hay không | $R^2=0$ là mặt cầu suy biến, $R^2<0$ không có mặt cầu |\n| $$d(I,(P))=\\frac{|Ax_I+By_I+Cz_I+D|}{\\sqrt{A^2+B^2+C^2}}$$ | Xét tương giao mặt cầu và mặt phẳng $(P)$ | So sánh $d$ với $R$ |\n| So sánh $d$ và $R$ | Kết luận $(S)\\cap(P)$ | $d<R$: cắt theo đường tròn; $d=R$: tiếp xúc; $d>R$: không cắt |\n| Thế phương trình đường thẳng vào mặt cầu | Xét tương giao mặt cầu và đường thẳng | Thu được phương trình bậc hai theo tham số |\n| Xét biệt thức $\\Delta$ | Kết luận $(S)\\cap d$ | $\\Delta>0$: 2 điểm; $\\Delta=0$: tiếp xúc; $\\Delta<0$: không cắt |\n\n## 2. Hiểu nhanh công thức\n\n- Mặt cầu là tập hợp các điểm $M(x,y,z)$ cách đều tâm $I(a,b,c)$ một khoảng không đổi $R$.\n- Dạng chính tắc cho ta đọc ngay tâm và bán kính.\n- Dạng khai triển thường xuất hiện sau khi biến đổi đề bài; muốn nhận ra tâm, chỉ cần lấy đối của các hệ số đi kèm $x,y,z$ sau khi chia đúng về hệ số chuẩn.\n- Với tương giao mặt cầu - mặt phẳng, bản chất là so khoảng cách từ tâm đến mặt phẳng với bán kính.\n- Với tương giao mặt cầu - đường thẳng, bản chất là tìm các điểm trên đường thẳng đồng thời thuộc mặt cầu.\n\n\n## 3. Khi nào dùng?\n\n- Đề cho tâm và bán kính $\\Rightarrow$ viết ngay dạng chính tắc.\n- Đề cho phương trình khai triển $\\Rightarrow$ xác định tâm, bán kính bằng cách nhóm hạng tử.\n- Đề hỏi mặt cầu đi qua điểm $A$ và có tâm $I$ $\\Rightarrow$ tính $R=IA$ rồi lập phương trình.\n- Đề hỏi mặt phẳng cắt, tiếp xúc hay không cắt mặt cầu $\\Rightarrow$ tính $d(I,(P))$.\n- Đề hỏi giao điểm của đường thẳng với mặt cầu $\\Rightarrow$ tham số hóa đường thẳng rồi thế vào phương trình mặt cầu.\n- Đề hỏi số giao điểm $\\Rightarrow$ ưu tiên xét $d$ hoặc $\\Delta$ thay vì giải dài.\n\n## 4. Ví dụ mẫu\n\n**Ví dụ 1.** Lập phương trình mặt cầu tâm $I(1,-2,3)$ đi qua $A(2,0,4)$.\n\nVì đề cho tâm và một điểm thuộc mặt cầu, ta dùng dạng chính tắc và tính bán kính từ $IA$.\n\n- Tính $R^2=IA^2=(2-1)^2+(0+2)^2+(4-3)^2=6$.\n- Suy ra $R=\\sqrt{6}$.\n- Phương trình mặt cầu là\n$$\n(x-1)^2+(y+2)^2+(z-3)^2=6.\n$$\n\n**Ví dụ 2.** Xét tương giao của mặt cầu\n$$\n(S):(x-1)^2+(y+2)^2+(z-3)^2=9\n$$\nvà mặt phẳng\n$$\n(P):x+2y+2z-6=0.\n$$\n\nVì đề hỏi tương giao mặt cầu - mặt phẳng, ta dùng khoảng cách từ tâm đến mặt phẳng.\n\n- Tâm mặt cầu là $I(1,-2,3)$, bán kính $R=3$.\n- Tính\n$$\nd(I,(P))=\\frac{|1+2(-2)+2\\cdot 3-6|}{\\sqrt{1^2+2^2+2^2}}=\\frac{3}{3}=1.\n$$\n- Vì $d=1<3=R$, mặt phẳng cắt mặt cầu theo một đường tròn.\n\n**Ví dụ 3.** Xét tương giao của mặt cầu\n$$\n(S):x^2+y^2+z^2=9\n$$\nvà đường thẳng\n$$\nd:\\begin{cases}\nx=1+t\\\\\ny=2t\\\\\nz=2\n\\end{cases}\n$$\n\nVì đề cho đường thẳng dưới dạng tham số, ta thế trực tiếp vào phương trình mặt cầu.\n\n- Thế vào $(S)$:\n$$\n(1+t)^2+(2t)^2+2^2=9.\n$$\n- Rút gọn được\n$$\n5t^2+2t-4=0.\n$$\n- Có $\\Delta=2^2-4\\cdot 5\\cdot (-4)=84>0$.\n- Suy ra đường thẳng cắt mặt cầu tại hai điểm phân biệt.\n\n## 5. Lưu ý & lỗi sai\n\n- Sai: Nhìn $x^2+y^2+z^2+2x-4y+6z+1=0$ rồi kết luận tâm là $(2,-4,6)$.\n  Vì sao sai: Tâm phải lấy đối các hệ số của $x,y,z$ sau dạng chuẩn $2ux,2vy,2wz$.\n  Sửa: Tâm là $(-1,2,-3)$.\n\n- Sai: Có phương trình mặt cầu nhưng không kiểm tra $R^2$.\n  Vì sao sai: Có thể thu được $R^2\\le 0$, khi đó không phải mặt cầu thật.\n  Sửa: Luôn tính và xét điều kiện $R^2>0$.\n\n- Sai: Với mặt phẳng, thấy có phương trình là đi giải hệ ngay.\n  Vì sao sai: Mất thời gian và dễ sai đại số.\n  Sửa: Trước tiên so sánh $d(I,(P))$ với $R$ để biết kiểu tương giao.\n\n- Sai: Với đường thẳng, quên thay đủ cả $x,y,z$ theo tham số.\n  Vì sao sai: Phương trình bậc hai theo $t$ bị sai nên kết luận sai số giao điểm.\n  Sửa: Viết rõ $x,y,z$ theo $t$ rồi mới thế từng biểu thức.\n\n## 6. Chốt nhanh\n\n- Dạng chính tắc giúp đọc ngay tâm và bán kính của mặt cầu.\n- Dạng khai triển cần đưa về đúng mẫu để tìm tâm $I(-u,-v,-w)$.\n- Tương giao mặt cầu - mặt phẳng: so sánh $d(I,(P))$ với $R$.\n- Tương giao mặt cầu - đường thẳng: thế tham số vào mặt cầu, xét phương trình bậc hai.\n- Làm xong luôn kiểm tra điều kiện $R^2>0$ và kết luận số giao điểm rõ ràng.";
+    marked.setOptions({ gfm: true, breaks: true });
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+    if (window.MathJax) window.MathJax.typesetPromise();
+  </script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+{
+  "words": [
+    {
+      "word": "problem",
+      "pronunciation": "/ˈprɒbləm/",
+      "part_of_speech": "noun",
+      "definition_vi": "vấn đề cần giải quyết, thường có tính chất khó khăn, phức tạp hoặc gây khó chịu",
+      "definition_en": "a difficult situation or matter that needs to be solved or dealt with",
+      "level": "B1",
+      "synonyms": [
+        "issue",
+        "difficulty"
+      ],
+      "antonyms": [
+        "solution",
+        "answer"
+      ],
+      "example_sentence": "The main problem with this approach is that it requires significant financial investment and long-term commitment."
+    },
+    {
+      "word": "issue",
+      "pronunciation": "/ˈɪʃuː/",
+      "part_of_speech": "noun",
+      "definition_vi": "vấn đề cần thảo luận, tranh cãi hoặc xem xét; thường mang tính chính trị, xã hội hoặc học thuật",
+      "definition_en": "a topic or problem that is being discussed or debated, especially in politics or society",
+      "level": "B1",
+      "synonyms": [
+        "matter",
+        "topic"
+      ],
+      "antonyms": [
+        "agreement",
+        "consensus"
+      ],
+      "example_sentence": "Environmental issues have become increasingly important in recent political campaigns and public discourse."
+    },
+    {
+      "word": "matter",
+      "pronunciation": "/ˈmætə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "vấn đề, sự việc cần quan tâm; trung lập hơn, không nhất thiết phức tạp hay gây tranh cãi",
+      "definition_en": "a subject or situation that is being dealt with or considered; a neutral term for any topic",
+      "level": "B1",
+      "synonyms": [
+        "issue",
+        "concern"
+      ],
+      "antonyms": [],
+      "example_sentence": "It is a matter of personal preference whether students prefer online or face-to-face learning environments."
+    },
+    {
+      "word": "chance",
+      "pronunciation": "/tʃɑːns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng xảy ra, may mắn; không có sự chuẩn bị hay lên kế hoạch trước",
+      "definition_en": "the possibility of something happening, often by luck or accident rather than by planning",
+      "level": "B1",
+      "synonyms": [
+        "luck",
+        "fortune"
+      ],
+      "antonyms": [
+        "certainty",
+        "guarantee"
+      ],
+      "example_sentence": "By chance, the researcher discovered a new compound while conducting routine laboratory experiments."
+    },
+    {
+      "word": "opportunity",
+      "pronunciation": "/ˌɒpə(r)ˈtjuːnəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "cơ hội thuận lợi để làm gì đó; có sự chuẩn bị, lên kế hoạch hoặc tìm kiếm chủ động",
+      "definition_en": "a favorable time or set of circumstances that makes it possible to do something you want",
+      "level": "B1",
+      "synonyms": [
+        "prospect",
+        "opening"
+      ],
+      "antonyms": [
+        "obstacle",
+        "barrier"
+      ],
+      "example_sentence": "The scholarship program provides an excellent opportunity for talented students from disadvantaged backgrounds."
+    },
+    {
+      "word": "possibility",
+      "pronunciation": "/ˌpɒsəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều có thể xảy ra được; mang tính lý thuyết, không nhất thiết là tích cực hay có lợi",
+      "definition_en": "something that might happen or be true; a potential outcome without judgment of value",
+      "level": "B1",
+      "synonyms": [
+        "potential",
+        "likelihood"
+      ],
+      "antonyms": [
+        "impossibility",
+        "certainty"
+      ],
+      "example_sentence": "Scientists are exploring the possibility that climate change could accelerate species extinction rates."
+    },
+    {
+      "word": "affect",
+      "pronunciation": "/əˈfekt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tác động đến, ảnh hưởng đến (thường là kết quả trực tiếp, cụ thể)",
+      "definition_en": "to have an influence on someone or something; to cause a change in someone or something",
+      "level": "B1",
+      "synonyms": [
+        "influence",
+        "impact"
+      ],
+      "antonyms": [],
+      "example_sentence": "Rising temperatures directly affect the migration patterns of many bird species across different continents."
+    },
+    {
+      "word": "influence",
+      "pronunciation": "/ˈɪnfluəns/",
+      "part_of_speech": "verb",
+      "definition_vi": "tác động gián tiếp, ảnh hưởng (thường là qua sự thuyết phục, gợi ý hoặc tác động tinh tế)",
+      "definition_en": "to have an effect on someone or something, often indirectly or subtly",
+      "level": "B1",
+      "synonyms": [
+        "sway",
+        "shape"
+      ],
+      "antonyms": [],
+      "example_sentence": "Media coverage significantly influences public opinion on controversial social and political matters."
+    },
+    {
+      "word": "impact",
+      "pronunciation": "/ˈɪmpækt/",
+      "part_of_speech": "noun",
+      "definition_vi": "tác động mạnh mẽ, ảnh hưởng lớn (danh từ); có tác động lớn lên (động từ)",
+      "definition_en": "a strong effect or influence; to have a strong effect on something",
+      "level": "B1",
+      "synonyms": [
+        "effect",
+        "consequence"
+      ],
+      "antonyms": [],
+      "example_sentence": "The economic impact of the pandemic was severe and affected millions of workers globally."
+    },
+    {
+      "word": "concern",
+      "pronunciation": "/kənˈsɜːn/",
+      "part_of_speech": "noun",
+      "definition_vi": "lo lắng, quan tâm; vấn đề gây lo ngại (danh từ); liên quan đến, ảnh hưởng đến (động từ)",
+      "definition_en": "worry or anxiety about something; a matter that affects or interests someone",
+      "level": "B1",
+      "synonyms": [
+        "worry",
+        "issue"
+      ],
+      "antonyms": [
+        "indifference",
+        "apathy"
+      ],
+      "example_sentence": "Environmental concerns have prompted governments to implement stricter regulations on industrial emissions."
+    },
+    {
+      "word": "challenge",
+      "pronunciation": "/ˈtʃæləndʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "thách thức, khó khăn cần vượt qua; thường mang tính tích cực, là cơ hội phát triển",
+      "definition_en": "a difficult task or problem that tests someone's abilities; to question or dispute something",
+      "level": "B1",
+      "synonyms": [
+        "difficulty",
+        "obstacle"
+      ],
+      "antonyms": [
+        "ease",
+        "simplicity"
+      ],
+      "example_sentence": "The main challenge facing renewable energy adoption is the high initial infrastructure and installation costs."
+    },
+    {
+      "word": "obstacle",
+      "pronunciation": "/ˈɒbstəkl/",
+      "part_of_speech": "noun",
+      "definition_vi": "trở ngại, vật cản; thường mang tính tiêu cực, cần tránh hoặc loại bỏ",
+      "definition_en": "something that blocks your way or prevents you from achieving something",
+      "level": "B1",
+      "synonyms": [
+        "barrier",
+        "hindrance"
+      ],
+      "antonyms": [
+        "aid",
+        "help"
+      ],
+      "example_sentence": "Lack of funding remains a significant obstacle to the development of new medical treatments."
+    },
+    {
+      "word": "factor",
+      "pronunciation": "/ˈfæktə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "yếu tố, thành phần; trung lập, không mang giá trị tích cực hay tiêu cực",
+      "definition_en": "one of several things that influence or cause a particular result",
+      "level": "B1",
+      "synonyms": [
+        "element",
+        "component"
+      ],
+      "antonyms": [],
+      "example_sentence": "Economic factors, including inflation and unemployment rates, significantly influence consumer spending behavior."
+    },
+    {
+      "word": "aspect",
+      "pronunciation": "/ˈæspekt/",
+      "part_of_speech": "noun",
+      "definition_vi": "khía cạnh, mặt của vấn đề; chỉ một phần hoặc góc nhìn cụ thể",
+      "definition_en": "a particular part or feature of something; one way of looking at something",
+      "level": "B1",
+      "synonyms": [
+        "facet",
+        "dimension"
+      ],
+      "antonyms": [],
+      "example_sentence": "The cultural aspect of globalization has led to increased exchange of ideas and artistic traditions."
+    },
+    {
+      "word": "consequence",
+      "pronunciation": "/ˈkɒnsɪkwəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "hậu quả, kết quả; thường là kết quả sau một hành động hoặc sự kiện",
+      "definition_en": "a result or effect of an action or decision, often negative or serious",
+      "level": "B1",
+      "synonyms": [
+        "result",
+        "outcome"
+      ],
+      "antonyms": [
+        "cause",
+        "origin"
+      ],
+      "example_sentence": "The consequences of deforestation include soil erosion, loss of biodiversity, and increased carbon emissions."
+    },
+    {
+      "word": "outcome",
+      "pronunciation": "/ˈaʊtkʌm/",
+      "part_of_speech": "noun",
+      "definition_vi": "kết quả cuối cùng; trung lập, không nhất thiết tích cực hay tiêu cực",
+      "definition_en": "the final result or conclusion of something; what happens at the end",
+      "level": "B1",
+      "synonyms": [
+        "result",
+        "conclusion"
+      ],
+      "antonyms": [],
+      "example_sentence": "The outcome of the research study suggests that regular exercise improves both physical and mental health."
+    },
+    {
+      "word": "effect",
+      "pronunciation": "/ɪˈfekt/",
+      "part_of_speech": "noun",
+      "definition_vi": "tác dụng, ảnh hưởng (danh từ); gây ra, thực hiện (động từ); thường là kết quả cụ thể, đo lường được",
+      "definition_en": "a change that is a result of an action; to bring about or cause something to happen",
+      "level": "B1",
+      "synonyms": [
+        "result",
+        "impact"
+      ],
+      "antonyms": [
+        "cause"
+      ],
+      "example_sentence": "The positive effects of meditation on stress reduction have been demonstrated in numerous scientific studies."
+    },
+    {
+      "word": "benefit",
+      "pronunciation": "/ˈbenɪfɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "lợi ích, lợi thế; tác động tích cực, có lợi",
+      "definition_en": "an advantage or profit gained from something; to receive advantage or profit",
+      "level": "B1",
+      "synonyms": [
+        "advantage",
+        "gain"
+      ],
+      "antonyms": [
+        "disadvantage",
+        "harm"
+      ],
+      "example_sentence": "The benefits of bilingual education include improved cognitive development and enhanced career opportunities."
+    },
+    {
+      "word": "drawback",
+      "pronunciation": "/ˈdrɔːbæk/",
+      "part_of_speech": "noun",
+      "definition_vi": "nhược điểm, bất lợi; tác động tiêu cực, không có lợi",
+      "definition_en": "a disadvantage or problem that makes something less attractive or effective",
+      "level": "B1",
+      "synonyms": [
+        "disadvantage",
+        "downside"
+      ],
+      "antonyms": [
+        "advantage",
+        "benefit"
+      ],
+      "example_sentence": "A major drawback of remote work is the difficulty in maintaining team cohesion and informal communication."
+    },
+    {
+      "word": "contribute to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "góp phần vào, đóng góp cho; chỉ sự tham gia hoặc ảnh hưởng tích cực",
+      "definition_en": "to help cause something to happen; to give something as a share of a total",
+      "level": "B1",
+      "synonyms": [
+        "add to",
+        "help cause"
+      ],
+      "antonyms": [
+        "detract from"
+      ],
+      "example_sentence": "Regular physical activity contributes to improved cardiovascular health and reduced risk of chronic diseases."
+    },
+    {
+      "word": "lead to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra; chỉ kết quả hoặc hậu quả, không nhất thiết tích cực",
+      "definition_en": "to cause something to happen as a result; to result in",
+      "level": "B1",
+      "synonyms": [
+        "result in",
+        "cause"
+      ],
+      "antonyms": [
+        "prevent"
+      ],
+      "example_sentence": "Poor sleep quality can lead to decreased productivity, weakened immune function, and mood disorders."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, tạo ra; thường chỉ sự thay đổi hoặc kết quả được mong muốn",
+      "definition_en": "to cause something to happen; to make something occur",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "create"
+      ],
+      "antonyms": [
+        "prevent"
+      ],
+      "example_sentence": "Technological innovation has brought about significant changes in how people communicate and work globally."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xuất phát từ, có nguồn gốc từ; chỉ nguyên nhân hoặc nguồn gốc",
+      "definition_en": "to have something as a source or cause; to originate from",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many social problems stem from inadequate access to education and limited economic opportunities."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Winning the scholarship gave Linh the _____ to study environmental science at an international university.",
+      "option_a": "chance",
+      "option_b": "opportunity",
+      "option_c": "possibility",
+      "option_d": "occasion",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Opportunity = c? h?i thu?n l?i ?? l?m ?i?u g?, th??ng c? gi? tr? v? c? th? t?n d?ng. Chance thi?n v? kh? n?ng/may r?i; possibility l? kh? n?ng x?y ra; occasion l? d?p/s? ki?n."
+    },
+    {
+      "question_text": "Environmental _____ such as climate change and pollution have become central to political debates worldwide.",
+      "option_a": "problems",
+      "option_b": "issues",
+      "option_c": "matters",
+      "option_d": "concerns",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Issues\" là lựa chọn đúng vì nó chỉ các vấn đề được tranh cãi và thảo luận trong chính trị. \"Problems\" quá chung chung; \"matters\" trung lập; \"concerns\" chỉ lo lắng chứ không phải vấn đề tranh cãi."
+    },
+    {
+      "question_text": "It is a _____ of personal choice whether to pursue higher education immediately after high school.",
+      "option_a": "problem",
+      "option_b": "issue",
+      "option_c": "matter",
+      "option_d": "challenge",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Matter\" là từ trung lập nhất, phù hợp cho sự lựa chọn cá nhân. \"Problem\" chỉ khó khăn; \"issue\" chỉ vấn đề tranh cãi; \"challenge\" chỉ thách thức."
+    },
+    {
+      "question_text": "By pure _____, the scientist found a new compound while cleaning the laboratory equipment.",
+      "option_a": "opportunity",
+      "option_b": "possibility",
+      "option_c": "chance",
+      "option_d": "luck",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Chance\" là từ đúng vì nó chỉ sự may mắn, không có sự chuẩn bị. \"Opportunity\" chỉ cơ hội được lên kế hoạch; \"possibility\" chỉ khả năng lý thuyết; \"luck\" là danh từ không đếm được."
+    },
+    {
+      "question_text": "The scholarship program offers an excellent _____ for talented students from low-income families.",
+      "option_a": "chance",
+      "option_b": "possibility",
+      "option_c": "opportunity",
+      "option_d": "prospect",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Opportunity\" là từ chính xác vì nó chỉ cơ hội thuận lợi được tìm kiếm chủ động. \"Chance\" chỉ may mắn; \"possibility\" chỉ khả năng lý thuyết; \"prospect\" ít phù hợp trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Rising sea levels directly _____ coastal communities and threaten their long-term survival.",
+      "option_a": "influence",
+      "option_b": "affect",
+      "option_c": "impact",
+      "option_d": "concern",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Affect\" là động từ phù hợp nhất, chỉ tác động trực tiếp cụ thể. \"Influence\" chỉ tác động gián tiếp; \"impact\" là danh từ hoặc động từ nhưng ít tự nhiên; \"concern\" không phải động từ thích hợp."
+    },
+    {
+      "question_text": "Media coverage significantly _____ public opinion on controversial political matters.",
+      "option_a": "affects",
+      "option_b": "influences",
+      "option_c": "impacts",
+      "option_d": "concerns",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Influences\" là từ đúng vì nó chỉ tác động gián tiếp, tinh tế qua thông tin. \"Affects\" chỉ tác động trực tiếp; \"impacts\" quá mạnh mẽ; \"concerns\" không phù hợp."
+    },
+    {
+      "question_text": "The economic _____ of the pandemic was severe and affected millions of workers across the globe.",
+      "option_a": "effect",
+      "option_b": "impact",
+      "option_c": "consequence",
+      "option_d": "outcome",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Impact\" là từ phù hợp nhất để chỉ tác động mạnh mẽ, lớn lao. \"Effect\" quá chung chung; \"consequence\" chỉ hậu quả; \"outcome\" chỉ kết quả cuối cùng."
+    },
+    {
+      "question_text": "One major _____ of remote work is the difficulty in maintaining strong team relationships and informal communication.",
+      "option_a": "challenge",
+      "option_b": "obstacle",
+      "option_c": "drawback",
+      "option_d": "concern",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Drawback\" là từ chính xác vì nó chỉ nhược điểm, bất lợi của một hệ thống. \"Challenge\" chỉ thách thức; \"obstacle\" chỉ trở ngại; \"concern\" chỉ lo lắng."
+    },
+    {
+      "question_text": "Regular physical exercise _____ to improved cardiovascular health and reduced risk of chronic diseases.",
+      "option_a": "leads",
+      "option_b": "contributes",
+      "option_c": "brings",
+      "option_d": "stems",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Contributes to\" là cụm từ đúng vì nó chỉ sự tham gia tích cực vào một kết quả tốt. \"Leads to\" trung lập; \"brings about\" chỉ tạo ra thay đổi; \"stems from\" chỉ nguồn gốc."
+    },
+    {
+      "question_text": "Poor sleep quality can _____ to decreased productivity, weakened immunity, and mood disorders.",
+      "option_a": "contribute",
+      "option_b": "lead",
+      "option_c": "bring",
+      "option_d": "stem",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Lead to\" là cụm từ đúng vì nó chỉ kết quả hoặc hậu quả của một nguyên nhân. \"Contribute to\" chỉ sự tham gia tích cực; \"bring about\" chỉ tạo ra; \"stem from\" chỉ nguồn gốc."
+    },
+    {
+      "question_text": "Technological innovation has _____ significant changes in how people communicate and work in the modern world.",
+      "option_a": "led to",
+      "option_b": "contributed to",
+      "option_c": "brought about",
+      "option_d": "stemmed from",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Brought about\" là cụm từ phù hợp nhất vì nó chỉ sự tạo ra thay đổi tích cực được mong muốn. \"Led to\" trung lập; \"contributed to\" chỉ sự tham gia; \"stemmed from\" chỉ nguồn gốc."
+    }
+  ]
+}

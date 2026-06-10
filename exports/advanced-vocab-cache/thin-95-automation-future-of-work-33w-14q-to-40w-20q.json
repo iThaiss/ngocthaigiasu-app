@@ -1,0 +1,242 @@
+{
+  "words": [
+    {
+      "word": "technological displacement",
+      "pronunciation": "/ˌteknəˈlɒdʒɪkəl dɪsˈpleɪsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay thế công nhân bằng công nghệ; hiện tượng mất việc do máy móc hoặc phần mềm thay thế lao động con người",
+      "definition_en": "the replacement of workers by technological systems, leading to job loss in specific sectors",
+      "level": "C1",
+      "synonyms": [
+        "technological unemployment",
+        "labor substitution"
+      ],
+      "antonyms": [
+        "job creation",
+        "employment growth"
+      ],
+      "example_sentence": "Technological displacement in manufacturing has prompted governments to invest in retraining programs for affected workers."
+    },
+    {
+      "word": "human-machine collaboration",
+      "pronunciation": "/ˌhjuːmən məˈʃiːn ˌkɒləˈbreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự hợp tác giữa con người và máy móc/hệ thống tự động; mô hình làm việc kết hợp khả năng của cả hai",
+      "definition_en": "a working model where humans and machines work together, leveraging the strengths of each",
+      "level": "C1",
+      "synonyms": [
+        "human-AI partnership",
+        "collaborative automation"
+      ],
+      "antonyms": [
+        "full automation",
+        "human replacement"
+      ],
+      "example_sentence": "The future of work increasingly depends on effective human-machine collaboration rather than complete automation."
+    },
+    {
+      "word": "occupational obsolescence",
+      "pronunciation": "/ˌɒkjuˈpeɪʃənəl ˌɒbsəˈlesəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng một nghề nghiệp trở nên lỗi thời hoặc không còn cần thiết do thay đổi công nghệ hoặc thị trường",
+      "definition_en": "the process by which certain professions become outdated or unnecessary due to technological or market changes",
+      "level": "C1",
+      "synonyms": [
+        "skill obsolescence",
+        "professional irrelevance"
+      ],
+      "antonyms": [
+        "career sustainability",
+        "job relevance"
+      ],
+      "example_sentence": "Occupational obsolescence threatens traditional roles in data entry and basic accounting as AI systems become more sophisticated."
+    },
+    {
+      "word": "workforce agility",
+      "pronunciation": "/ˈwɜːkfɔːs ˈædʒɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của lực lượng lao động thích ứng nhanh chóng với những thay đổi công nghệ, thị trường và nhu cầu công việc",
+      "definition_en": "the capacity of workers to quickly adapt to technological changes and shifting job market demands",
+      "level": "C1",
+      "synonyms": [
+        "labor flexibility",
+        "adaptive capacity"
+      ],
+      "antonyms": [
+        "workforce rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "Workforce agility has become a critical competitive advantage for organizations navigating rapid technological change."
+    },
+    {
+      "word": "sectoral transformation",
+      "pronunciation": "/ˌsektərəl ˌtrænsfərˈmeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi cơ bản trong cấu trúc và hoạt động của một ngành kinh tế do công nghệ hoặc các yếu tố khác",
+      "definition_en": "fundamental restructuring of an economic sector due to technological innovation or market forces",
+      "level": "C1",
+      "synonyms": [
+        "industry restructuring",
+        "sectoral change"
+      ],
+      "antonyms": [
+        "sectoral stability",
+        "status quo"
+      ],
+      "example_sentence": "Sectoral transformation in retail has accelerated due to e-commerce and automation of warehouse operations."
+    },
+    {
+      "word": "skill atrophy",
+      "pronunciation": "/skɪl ˈætrəfi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự suy giảm hoặc mất đi kỹ năng do không sử dụng hoặc do những kỹ năng đó trở nên lỗi thời",
+      "definition_en": "the deterioration or loss of professional skills due to disuse or technological obsolescence",
+      "level": "B2",
+      "synonyms": [
+        "skill degradation",
+        "competency decline"
+      ],
+      "antonyms": [
+        "skill development",
+        "continuous learning"
+      ],
+      "example_sentence": "Skill atrophy is a significant concern for mid-career professionals who fail to update their technical knowledge."
+    },
+    {
+      "word": "labor market polarization",
+      "pronunciation": "/ˈleɪbər ˈmɑːkɪt ˌpoʊlərɪˈzeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng thị trường lao động chia thành hai nhóm: việc làm kỹ năng cao/lương cao và việc làm kỹ năng thấp/lương thấp, với việc làm trung bình giảm",
+      "definition_en": "the division of the labor market into high-skill, high-wage jobs and low-skill, low-wage jobs, with middle-skill positions declining",
+      "level": "C1",
+      "synonyms": [
+        "job polarization",
+        "wage inequality"
+      ],
+      "antonyms": [
+        "labor market equilibrium",
+        "wage convergence"
+      ],
+      "example_sentence": "Labor market polarization has widened income inequality as automation eliminates many middle-skill positions."
+    },
+    {
+      "word": "contingent workforce",
+      "pronunciation": "/kənˈtɪndʒənt ˈwɜːkfɔːs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lực lượng lao động không chính thức, bao gồm nhân viên bán thời gian, hợp đồng, tự do nghề; không có việc làm cố định",
+      "definition_en": "workers employed on a temporary, part-time, or contract basis without permanent employment status",
+      "level": "B2",
+      "synonyms": [
+        "flexible workforce",
+        "temporary labor"
+      ],
+      "antonyms": [
+        "permanent workforce",
+        "full-time employment"
+      ],
+      "example_sentence": "The rise of the contingent workforce reflects both employer demand for flexibility and workers' desire for autonomy."
+    },
+    {
+      "word": "digital divide",
+      "pronunciation": "/ˈdɪdʒɪtəl dɪˈvaɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khoảng cách giữa những người có quyền truy cập công nghệ số và những người không có; bất bình đẳng trong tiếp cận công nghệ",
+      "definition_en": "the gap between those with access to digital technology and those without, creating inequality in opportunities",
+      "level": "B2",
+      "synonyms": [
+        "technological inequality",
+        "access gap"
+      ],
+      "antonyms": [
+        "digital inclusion",
+        "universal access"
+      ],
+      "example_sentence": "The digital divide threatens to exacerbate unemployment disparities if underprivileged communities lack access to online training."
+    },
+    {
+      "word": "employability enhancement",
+      "pronunciation": "/ɪmˌplɔɪəˈbɪləti ɪnˈhɑːnsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp, chương trình nhằm nâng cao khả năng tìm kiếm và giữ việc làm của một người; cải thiện tính cạnh tranh trên thị trường lao động",
+      "definition_en": "initiatives and programs designed to improve an individual's ability to secure and maintain employment",
+      "level": "C1",
+      "synonyms": [
+        "career development",
+        "employment readiness"
+      ],
+      "antonyms": [
+        "employability decline",
+        "job vulnerability"
+      ],
+      "example_sentence": "Employability enhancement programs should focus on both technical skills and soft skills like critical thinking and communication."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'labor market polarization' in the context of automation?",
+      "option_a": "The equal distribution of jobs across all skill levels",
+      "option_b": "The division of the labor market into high-skill, high-wage jobs and low-skill, low-wage jobs, with middle-skill positions declining",
+      "option_c": "The complete elimination of all manufacturing jobs",
+      "option_d": "The increase in part-time employment opportunities for all workers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Labor market polarization là hiện tượng thị trường lao động chia thành hai cực: việc làm cao cấp (lương cao) và việc làm thấp cấp (lương thấp), trong khi việc làm trung bình giảm. Đáp án A sai vì nó mô tả sự bình đẳng, không phải phân cực. C và D quá cực đoan và không chính xác."
+    },
+    {
+      "question_text": "What is the primary concern regarding 'skill atrophy' for professionals in rapidly changing industries?",
+      "option_a": "Workers earn too much money",
+      "option_b": "The deterioration of professional skills due to disuse or technological obsolescence",
+      "option_c": "Employees work too many hours",
+      "option_d": "Companies hire too many new graduates",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Skill atrophy là sự suy giảm kỹ năng do không sử dụng hoặc do công nghệ thay đổi làm cho kỹ năng cũ trở nên lỗi thời. Đây là mối lo ngại chính cho những chuyên gia không cập nhật kiến thức. A, C, D không liên quan đến khái niệm này."
+    },
+    {
+      "question_text": "In the context of future employment, 'human-machine collaboration' suggests that:",
+      "option_a": "Machines will completely replace all human workers",
+      "option_b": "Humans and machines work together, leveraging the strengths of each",
+      "option_c": "Humans should resist technological advancement",
+      "option_d": "Only highly educated workers will have jobs",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Human-machine collaboration là mô hình làm việc kết hợp, nơi con người và máy móc cùng làm việc, mỗi bên phát huy điểm mạnh của mình. A sai vì nó nói về thay thế hoàn toàn. C và D không phản ánh bản chất của sự hợp tác này."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'To address the _____, governments must ensure all citizens have access to digital technology and training programs.'",
+      "option_a": "digital divide",
+      "option_b": "contingent workforce",
+      "option_c": "sectoral transformation",
+      "option_d": "occupational obsolescence",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Digital divide (khoảng cách số) là khái niệm phù hợp nhất vì nó nói về sự bất bình đẳng trong tiếp cận công nghệ. B, C, D không phù hợp với ngữ cảnh về quyền truy cập công nghệ và đào tạo."
+    },
+    {
+      "question_text": "What does 'technological displacement' primarily refer to in labor economics?",
+      "option_a": "Workers moving to different geographic locations",
+      "option_b": "The replacement of workers by technological systems, leading to job loss in specific sectors",
+      "option_c": "Employees changing their career paths voluntarily",
+      "option_d": "Companies relocating their headquarters",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Technological displacement là sự thay thế công nhân bằng công nghệ, dẫn đến mất việc. A nói về di chuyển địa lý, C nói về thay đổi sự nghiệp tự nguyện, D nói về chuyển dịch công ty - tất cả đều không chính xác."
+    },
+    {
+      "question_text": "Which of the following is a key aspect of 'employability enhancement' programs?",
+      "option_a": "Guaranteeing permanent employment for all participants",
+      "option_b": "Improving an individual's ability to secure and maintain employment through skill development",
+      "option_c": "Eliminating the need for further education",
+      "option_d": "Replacing workers with automated systems",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Employability enhancement là các chương trình nhằm nâng cao khả năng tìm kiếm và giữ việc làm thông qua phát triển kỹ năng. A sai vì không thể đảm bảo việc làm vĩnh viễn. C sai vì các chương trình này không loại bỏ nhu cầu học tập. D hoàn toàn trái ngược với mục đích."
+    }
+  ]
+}

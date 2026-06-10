@@ -41,7 +41,12 @@ export interface PracticeModalProps {
 // ─── LaTeX renderer ───────────────────────────────────────────────────────────
 
 function LatexText({ text, className }: { text: string; className?: string }) {
-  return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
+  return (
+    <span
+      className={`inline-block max-w-full min-w-0 overflow-x-auto align-bottom scrollbar-none ${className || ''}`}
+      dangerouslySetInnerHTML={{ __html: renderLatex(text) }}
+    />
+  )
 }
 
 // ─── Statement switch (Đ/S slider) ───────────────────────────────────────────
@@ -283,7 +288,7 @@ export default function PracticeModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => { if (!open) handleClose() }}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="w-[95vw] sm:max-w-2xl max-h-[90vh] overflow-y-auto p-4 sm:p-6">
         <DialogHeader>
           <div className="flex items-start justify-between gap-3 pr-6">
             <DialogTitle className="text-base leading-tight">

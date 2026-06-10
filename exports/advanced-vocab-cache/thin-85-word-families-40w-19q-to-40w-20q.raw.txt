@@ -1,0 +1,73 @@
+```json
+{
+  "words": [],
+  "questions": [
+    {
+      "question_text": "The company's _____ approach to customer service has earned them numerous awards, whereas their competitors remain indifferent to client feedback.",
+      "option_a": "responsive",
+      "option_b": "response",
+      "option_c": "responsibly",
+      "option_d": "responsibility",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần tính từ để bổ sung cho danh từ 'approach'. 'Responsive' (phản ứng nhanh, chủ động) là tính từ phù hợp. 'Response' là danh từ, 'responsibly' là trạng từ, 'responsibility' là danh từ—đều sai về loại từ."
+    },
+    {
+      "question_text": "Which word best completes the sentence? The _____ of the ancient temple makes it a significant archaeological site.",
+      "option_a": "historic",
+      "option_b": "historical",
+      "option_c": "history",
+      "option_d": "historian",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần tính từ sau 'the'. 'Historical' (liên quan đến lịch sử, có tính chất lịch sử) phù hợp hơn 'historic' (nổi tiếng trong lịch sử). Dù cả hai đều là tính từ, nhưng 'historical significance' là collocation chuẩn trong học thuật."
+    },
+    {
+      "question_text": "The manager's _____ decision to postpone the project was based on careful analysis of market conditions.",
+      "option_a": "judicious",
+      "option_b": "judicial",
+      "option_c": "judgmental",
+      "option_d": "judged",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Judicious' (sáng suốt, cân nhắc kỹ) là tính từ chỉ quyết định thông minh. 'Judicial' (thuộc tòa án), 'judgmental' (hay phán xét), 'judged' (quá khứ) đều không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The _____ between the two research findings suggests that further investigation is needed to clarify the discrepancy.",
+      "option_a": "discrepancy",
+      "option_b": "discrepant",
+      "option_c": "discrepantly",
+      "option_d": "discrepancies",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần danh từ số ít sau 'the'. 'Discrepancy' (sự không phù hợp, mâu thuẫn) là danh từ đúng. 'Discrepant' là tính từ, 'discrepantly' là trạng từ, 'discrepancies' là số nhiều—không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The government's _____ policies aim to reduce inflation and stabilize the economy.",
+      "option_a": "monetary",
+      "option_b": "money",
+      "option_c": "monied",
+      "option_d": "moneyed",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Monetary' (liên quan đến tiền tệ, tài chính) là tính từ chuyên ngành kinh tế. 'Money' là danh từ, 'monied/moneyed' (có tiền, giàu có) không phù hợp ngữ cảnh chính sách kinh tế."
+    },
+    {
+      "question_text": "The _____ of the new software has been questioned by several experts who doubt its ability to perform under stress.",
+      "option_a": "viability",
+      "option_b": "viable",
+      "option_c": "viably",
+      "option_d": "vivacity",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Cần danh từ sau 'the'. 'Viability' (khả năng tồn tại, khả thi) là danh từ chỉ tính chất. 'Viable' là tính từ, 'viably' là trạng từ, 'vivacity' (sự sôi nổi) là danh từ khác nghĩa hoàn toàn."
+    }
+  ]
+}
+```

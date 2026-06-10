@@ -1,0 +1,182 @@
+{
+  "words": [
+    {
+      "word": "seminal",
+      "pronunciation": "/ˈsɛmɪnəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tính chất nền tảng, mang tính khởi đầu; (của tác phẩm, ý tưởng) có ảnh hưởng sâu rộng và lâu dài đến lĩnh vực nó thuộc về",
+      "definition_en": "highly influential and important, especially as the origin of something new or significant",
+      "level": "C1",
+      "synonyms": [
+        "foundational",
+        "groundbreaking",
+        "pioneering"
+      ],
+      "antonyms": [
+        "derivative",
+        "trivial"
+      ],
+      "example_sentence": "Darwin's seminal work on evolution fundamentally transformed our understanding of biological diversity and human origins."
+    },
+    {
+      "word": "dichotomy",
+      "pronunciation": "/daɪˈkɒtəmi/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự chia tách thành hai phần đối lập hoặc mâu thuẫn; sự phân chia nhị nguyên",
+      "definition_en": "a division or contrast between two things that are represented as being completely opposite or irreconcilable",
+      "level": "C1",
+      "synonyms": [
+        "division",
+        "contrast",
+        "opposition"
+      ],
+      "antonyms": [
+        "unity",
+        "synthesis"
+      ],
+      "example_sentence": "The false dichotomy between nature and nurture has long hindered psychological research into human development."
+    },
+    {
+      "word": "confluence",
+      "pronunciation": "/ˈkɒnfluəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự hội tụ, sự gặp nhau của nhiều dòng chảy, ý tưởng hoặc sự kiện; điểm giao hội",
+      "definition_en": "the flowing together of two or more streams; a coming together of people or things",
+      "level": "C1",
+      "synonyms": [
+        "convergence",
+        "junction",
+        "meeting"
+      ],
+      "antonyms": [
+        "divergence",
+        "separation"
+      ],
+      "example_sentence": "The confluence of technological innovation and social demand has accelerated the digital transformation of education."
+    },
+    {
+      "word": "attest",
+      "pronunciation": "/əˈtɛst/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác nhận tính chân thực của điều gì; làm bằng chứng cho",
+      "definition_en": "to provide or serve as clear evidence of; to declare that something is true or genuine",
+      "level": "C1",
+      "synonyms": [
+        "testify",
+        "verify",
+        "confirm"
+      ],
+      "antonyms": [
+        "deny",
+        "refute"
+      ],
+      "example_sentence": "Multiple archaeological findings attest to the existence of an advanced civilization in this region thousands of years ago."
+    },
+    {
+      "word": "salient",
+      "pronunciation": "/ˈseɪliənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nổi bật, dễ nhận thấy; có tính chất đáng chú ý nhất trong một tập hợp các yếu tố",
+      "definition_en": "most noticeable or important; standing out prominently",
+      "level": "C1",
+      "synonyms": [
+        "prominent",
+        "striking",
+        "conspicuous"
+      ],
+      "antonyms": [
+        "inconspicuous",
+        "obscure"
+      ],
+      "example_sentence": "The salient features of climate change include rising global temperatures and increasingly severe weather patterns."
+    },
+    {
+      "word": "trajectory",
+      "pronunciation": "/trəˈdʒɛktəri/",
+      "part_of_speech": "noun",
+      "definition_vi": "quỹ đạo, hướng phát triển; con đường hoặc hướng mà một sự vật hoặc hiện tượng đi theo",
+      "definition_en": "the path followed by a moving object; the general direction or tendency of development",
+      "level": "C1",
+      "synonyms": [
+        "path",
+        "course",
+        "direction"
+      ],
+      "antonyms": [],
+      "example_sentence": "The trajectory of economic growth in Southeast Asia demonstrates the region's increasing importance in global markets."
+    },
+    {
+      "word": "delineate",
+      "pronunciation": "/dɪˈlɪnieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "vạch rõ, mô tả chi tiết; xác định ranh giới hoặc đặc điểm của cái gì",
+      "definition_en": "to describe or portray something precisely; to mark or draw the outline of something",
+      "level": "C1",
+      "synonyms": [
+        "outline",
+        "describe",
+        "define"
+      ],
+      "antonyms": [
+        "obscure",
+        "blur"
+      ],
+      "example_sentence": "The research paper delineates the key differences between traditional and contemporary approaches to language acquisition."
+    },
+    {
+      "word": "substantive",
+      "pronunciation": "/ˈsʌbstəntɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có nội dung thực chất, đáng kể; liên quan đến bản chất hoặc nội dung chính yếu",
+      "definition_en": "having a firm basis in reality and therefore important, meaningful, or considerable",
+      "level": "C1",
+      "synonyms": [
+        "significant",
+        "meaningful",
+        "material"
+      ],
+      "antonyms": [
+        "superficial",
+        "trivial"
+      ],
+      "example_sentence": "The committee made substantive changes to the curriculum to better align with international educational standards."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực; cung cấp bằng chứng bổ sung để hỗ trợ một tuyên bố hoặc lý thuyết",
+      "definition_en": "to confirm or give support to a statement, theory, or finding by providing additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "validate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Recent studies corroborate the hypothesis that early childhood education significantly impacts long-term academic achievement."
+    },
+    {
+      "word": "nuanced",
+      "pronunciation": "/ˈnjuːɑːnst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tinh tế, có sắc thái; thể hiện sự hiểu biết sâu sắc về những khác biệt nhỏ và phức tạp",
+      "definition_en": "characterized by subtle shades of meaning or expression; showing careful attention to detail and complexity",
+      "level": "C1",
+      "synonyms": [
+        "subtle",
+        "sophisticated",
+        "refined"
+      ],
+      "antonyms": [
+        "crude",
+        "simplistic"
+      ],
+      "example_sentence": "A nuanced understanding of cultural differences is essential for effective international diplomacy and cross-cultural communication."
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,161 @@
+{
+  "words": [
+    {
+      "word": "moral reductionism",
+      "pronunciation": "/ˈmɒrəl rɪˈdʌkʃənɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "quan điểm cho rằng các khái niệm đạo đức có thể được rút gọn thành các khái niệm phi đạo đức (như tâm lý học hoặc sinh học); xu hướng giải thích hiện tượng đạo đức qua các yếu tố cơ bản hơn",
+      "definition_en": "the philosophical position that moral concepts can be reduced to non-moral concepts or that ethical phenomena can be explained by more fundamental factors",
+      "level": "C2",
+      "synonyms": [
+        "moral naturalism",
+        "ethical reductionism"
+      ],
+      "antonyms": [
+        "moral irreducibility",
+        "non-naturalism"
+      ],
+      "example_sentence": "Critics argue that moral reductionism fails to capture the unique normative force of ethical judgments that cannot be derived from purely descriptive facts."
+    },
+    {
+      "word": "moral demandingness objection",
+      "pronunciation": "/ˈmɒrəl dɪˈmɑːndɪŋnəs əbˈdʒekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lập luận chỉ ra rằng một lý thuyết đạo đức yêu cầu quá nhiều từ các tác nhân đạo đức, vượt quá khả năng thực hiện của con người bình thường",
+      "definition_en": "a philosophical objection claiming that an ethical theory imposes excessive moral requirements that exceed what ordinary agents can reasonably be expected to fulfill",
+      "level": "C2",
+      "synonyms": [
+        "demandingness problem",
+        "excessive moral burden"
+      ],
+      "antonyms": [
+        "moral permissiveness"
+      ],
+      "example_sentence": "The demandingness objection has been leveled against certain versions of utilitarianism, which seem to require agents to sacrifice their own projects for marginal gains in overall welfare."
+    },
+    {
+      "word": "moral particularism",
+      "pronunciation": "/ˈmɒrəl pɑːˈtɪkjʊlərizəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "lý thuyết đạo đức cho rằng các quyết định đạo đức phải dựa trên các chi tiết cụ thể của từng tình huống, chứ không phải trên các nguyên tắc đạo đức chung",
+      "definition_en": "an ethical theory asserting that moral judgments should be based on the particular facts of individual cases rather than on universal moral principles or rules",
+      "level": "C1",
+      "synonyms": [
+        "situational ethics",
+        "case-by-case morality"
+      ],
+      "antonyms": [
+        "moral universalism",
+        "principalism"
+      ],
+      "example_sentence": "Moral particularists contend that rigid adherence to universal rules often obscures the morally relevant features that distinguish one situation from another."
+    },
+    {
+      "word": "moral phenomenology",
+      "pronunciation": "/ˈmɒrəl ˌfɛnəmɪˈnɒlədʒi/",
+      "part_of_speech": "noun",
+      "definition_vi": "lĩnh vực triết học nghiên cứu cấu trúc của trải nghiệm đạo đức chủ quan, bao gồm cảm giác tội lỗi, xấu hổ, và cảm giác trách nhiệm",
+      "definition_en": "the philosophical study of the structure and nature of subjective moral experience, including feelings of guilt, shame, and moral responsibility",
+      "level": "C2",
+      "synonyms": [
+        "ethics of experience",
+        "moral consciousness studies"
+      ],
+      "antonyms": [],
+      "example_sentence": "A comprehensive moral phenomenology must account for the distinctive emotional and cognitive dimensions of moral agency that distinguish ethical deliberation from other forms of reasoning."
+    },
+    {
+      "word": "moral encroachment",
+      "pronunciation": "/ˈmɒrəl ɪnˈkroʊtʃmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "quan điểm cho rằng các cân nhắc đạo đức có thể ảnh hưởng đến tiêu chuẩn bằng chứng cần thiết để chứng minh một khẳng định; ý tưởng rằng những gì đúng đắn về mặt đạo đức có thể ảnh hưởng đến những gì chúng ta biết",
+      "definition_en": "the thesis that moral considerations can affect the standards of evidence required for justified belief, or that what is morally right can influence what counts as knowledge",
+      "level": "C2",
+      "synonyms": [
+        "moral influence on epistemology"
+      ],
+      "antonyms": [
+        "epistemic independence"
+      ],
+      "example_sentence": "The doctrine of moral encroachment suggests that in high-stakes situations where the consequences of error are severe, we may require stronger evidence before asserting knowledge."
+    },
+    {
+      "word": "moral standing",
+      "pronunciation": "/ˈmɒrəl ˈstændɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tư cách hoặc quyền của một người để phê bình, lên án, hoặc yêu cầu bồi thường từ người khác về hành động sai trái; vị trí đạo đức cho phép ai đó có quyền phán xét",
+      "definition_en": "the moral authority or right of a person to criticize, condemn, or demand reparation from another for wrongdoing; the position that entitles someone to make moral judgments",
+      "level": "C1",
+      "synonyms": [
+        "moral authority",
+        "moral legitimacy"
+      ],
+      "antonyms": [
+        "moral disqualification"
+      ],
+      "example_sentence": "Some philosophers argue that victims of injustice have special moral standing to demand accountability from perpetrators in ways that third parties do not."
+    },
+    {
+      "word": "moral residue",
+      "pronunciation": "/ˈmɒrəl ˈrezɪdjuː/",
+      "part_of_speech": "noun",
+      "definition_vi": "cảm giác tội lỗi, hối tiếc, hoặc mất mát đạo đức vẫn tồn tại ngay cả sau khi một hành động được coi là đúng đắc hoặc được phép về mặt đạo đức",
+      "definition_en": "the lingering sense of guilt, regret, or moral loss that persists even after an action has been deemed morally right or permissible",
+      "level": "C2",
+      "synonyms": [
+        "moral remainder",
+        "ethical aftereffect"
+      ],
+      "antonyms": [],
+      "example_sentence": "The concept of moral residue acknowledges that choosing the lesser of two evils may still leave an agent with justified feelings of moral discomfort or regret."
+    },
+    {
+      "word": "moral bootstrapping",
+      "pronunciation": "/ˈmɒrəl ˈbuːtstrænɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình tự tạo ra hoặc tự củng cố các tiêu chuẩn đạo đức thông qua hành động và cam kết, chứ không phải dựa trên các nguyên tắc đạo đức sẵn có",
+      "definition_en": "the process of creating or reinforcing moral standards through one's own actions and commitments rather than deriving them from pre-existing moral principles",
+      "level": "C2",
+      "synonyms": [
+        "self-constituting morality"
+      ],
+      "antonyms": [
+        "moral foundationalism"
+      ],
+      "example_sentence": "Some constructivists argue that moral values emerge through a process of moral bootstrapping, where agents' commitments and practices gradually establish ethical norms."
+    },
+    {
+      "word": "moral transparency",
+      "pronunciation": "/ˈmɒrəl trænˈspærənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "quan điểm cho rằng các sự kiện đạo đức hoặc tính chất đạo đức có thể được biết trực tiếp thông qua nhận thức hoặc trực giác, mà không cần suy luận phức tạp",
+      "definition_en": "the philosophical view that moral facts or properties are directly knowable through perception or intuition without requiring complex inference",
+      "level": "C2",
+      "synonyms": [
+        "moral directness",
+        "moral intuitionism"
+      ],
+      "antonyms": [
+        "moral opacity"
+      ],
+      "example_sentence": "Proponents of moral transparency argue that we can recognize wrongness in cruelty as immediately as we perceive color, without needing elaborate justification."
+    },
+    {
+      "word": "moral fictionalism",
+      "pronunciation": "/ˈmɒrəl ˈfɪkʃənəlɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "lý thuyết cho rằng các phát biểu đạo đức nên được coi như những tuyên bố về những thứ không thực sự tồn tại, tương tự như các tuyên bố về nhân vật hư cấu",
+      "definition_en": "a metaethical position holding that moral statements should be understood as claims about things that do not actually exist, analogous to statements about fictional characters",
+      "level": "C2",
+      "synonyms": [
+        "moral anti-realism",
+        "moral pretense theory"
+      ],
+      "antonyms": [
+        "moral realism"
+      ],
+      "example_sentence": "Moral fictionalists suggest that we can meaningfully engage in moral discourse and reasoning even if moral properties do not exist in the world independently of human practice."
+    }
+  ],
+  "questions": []
+}

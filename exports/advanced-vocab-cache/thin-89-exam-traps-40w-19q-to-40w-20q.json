@@ -1,0 +1,71 @@
+{
+  "words": [],
+  "questions": [
+    {
+      "question_text": "The company's decision to _____ the old factory was controversial, as many workers lost their jobs.",
+      "option_a": "close down",
+      "option_b": "close in",
+      "option_c": "close off",
+      "option_d": "close out",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Close down\" có nghĩa là đóng cửa (công ty, cơ sở). \"Close in\" = tiến lại gần, \"close off\" = chặn lối vào, \"close out\" = thanh lý hàng. Bẫy là nhầm lẫn các phrasal verbs có \"close\"."
+    },
+    {
+      "question_text": "The researcher's findings were _____ by the discovery of new evidence that contradicted the original conclusions.",
+      "option_a": "undermined",
+      "option_b": "underestimated",
+      "option_c": "overlooked",
+      "option_d": "overturned",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "\"Undermined\" = làm suy yếu, phá vỡ niềm tin vào. \"Underestimated\" = đánh giá thấp, \"overlooked\" = bỏ qua, \"overturned\" = lật ngược. Bẫy là chọn \"overturned\" vì nó cũng liên quan đến thay đổi, nhưng không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The government's _____ approach to environmental regulation has drawn criticism from both industry and conservation groups.",
+      "option_a": "lenient",
+      "option_b": "lax",
+      "option_c": "slack",
+      "option_d": "loose",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "\"Lax\" = không nghiêm khắc, không chặt chẽ (về chính sách/quy định). \"Lenient\" = khoan dung (về hình phạt), \"slack\" = lỏng lẻo (về công việc cá nhân), \"loose\" = không chặt chẽ (vật lý). Bẫy là \"lenient\" gần nghĩa nhưng dùng cho hình phạt, không phải chính sách."
+    },
+    {
+      "question_text": "The witness's account was so _____ that the jury struggled to determine which details were accurate.",
+      "option_a": "vague",
+      "option_b": "obscured",
+      "option_c": "muddled",
+      "option_d": "cryptic",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Muddled\" = lẫn lộn, không rõ ràng (về lời khai). \"Vague\" = mơ hồ nhưng thường dùng cho ý tưởng, \"obscured\" = bị che khuất (cần agent), \"cryptic\" = bí ẩn, khó hiểu. Bẫy là \"vague\" cũng có thể dùng nhưng \"muddled\" tự nhiên hơn với \"account\"."
+    },
+    {
+      "question_text": "The CEO's _____ remarks about the company's financial troubles only _____ investor confidence further.",
+      "option_a": "candid / eroded",
+      "option_b": "frank / bolstered",
+      "option_c": "blunt / restored",
+      "option_d": "evasive / reinforced",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Candid\" (thẳng thắn) + \"eroded\" (làm suy yếu) = logic: lời thẳng thắn về vấn đề tài chính làm suy yếu niềm tin. \"Frank\" cũng đúng nhưng \"bolstered\" (tăng cường) mâu thuẫn. \"Evasive\" (tránh né) + \"reinforced\" (tăng cường) cũng mâu thuẫn logic."
+    },
+    {
+      "question_text": "The author's _____ style makes the scientific concepts accessible to general readers, without sacrificing accuracy.",
+      "option_a": "lucid",
+      "option_b": "verbose",
+      "option_c": "pedantic",
+      "option_d": "convoluted",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "\"Lucid\" = rõ ràng, dễ hiểu. \"Verbose\" = dài dòng, \"pedantic\" = cứng nhắc, học hành, \"convoluted\" = phức tạp, khó hiểu. Bẫy là \"verbose\" vì nó cũng liên quan đến cách viết nhưng có nghĩa tiêu cực."
+    }
+  ]
+}

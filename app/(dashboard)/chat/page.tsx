@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { Loader2, MessageCircle, RefreshCw, Send, Trash2 } from 'lucide-react'
+import { Loader2, MessageCircle, RefreshCw, Send, Trash2, ArrowLeft } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -93,6 +93,7 @@ export default function ChatPage() {
   const [messagesLoading, setMessagesLoading] = useState(false)
   const [sending, setSending] = useState(false)
   const [error, setError] = useState('')
+  const [mobileShowChat, setMobileShowChat] = useState(false)
   const bottomRef = useRef<HTMLDivElement>(null)
   const isAdmin = role === 'admin'
 
@@ -247,7 +248,7 @@ export default function ChatPage() {
       )}
 
       <div className="grid flex-1 gap-4 md:grid-cols-4" style={{ minHeight: 'calc(100vh - 230px)' }}>
-        <Card className="flex flex-col overflow-hidden md:col-span-1">
+        <Card className={cn("flex flex-col overflow-hidden md:col-span-1", mobileShowChat && "hidden md:flex")}>
           <div className="border-b border-border p-3">
             <p className="text-sm font-semibold text-muted-foreground">Phòng chat</p>
           </div>
@@ -264,7 +265,10 @@ export default function ChatPage() {
               <button
                 key={room.id}
                 type="button"
-                onClick={() => setActiveRoomId(room.id)}
+                onClick={() => {
+                  setActiveRoomId(room.id)
+                  setMobileShowChat(true)
+                }}
                 className={cn(
                   'w-full rounded-lg px-3 py-2.5 text-left text-sm font-medium transition-all',
                   activeRoomId === room.id
@@ -293,9 +297,18 @@ export default function ChatPage() {
           </div>
         </Card>
 
-        <Card className="flex min-h-0 flex-col overflow-hidden md:col-span-3">
+        <Card className={cn("flex min-h-0 flex-col overflow-hidden md:col-span-3", !mobileShowChat && "hidden md:flex")}>
           <div className="flex items-center gap-2 border-b border-border p-3">
-            <MessageCircle className="h-4 w-4 text-muted-foreground" />
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setMobileShowChat(false)}
+              className="md:hidden gap-1 px-2 h-8 text-muted-foreground hover:text-foreground shrink-0"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span className="text-xs">Phòng</span>
+            </Button>
+            <MessageCircle className="h-4 w-4 text-muted-foreground shrink-0" />
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-semibold"># {currentRoom?.name ?? 'Phòng chat'}</p>
               {currentRoom?.description && (

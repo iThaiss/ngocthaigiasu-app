@@ -1,0 +1,172 @@
+{
+  "words": [
+    {
+      "word": "come down to",
+      "pronunciation": "/kʌm daʊn tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "rút gọn lại, quy về (một vấn đề cơ bản); phụ thuộc vào",
+      "definition_en": "to be reduced to a basic or essential point; to depend on",
+      "level": "B2",
+      "synonyms": [
+        "boil down to",
+        "amount to"
+      ],
+      "antonyms": [],
+      "example_sentence": "The success of the project comes down to careful planning and team coordination."
+    },
+    {
+      "word": "get rid of",
+      "pronunciation": "/ɡet rɪd əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "loại bỏ, thoát khỏi, giải phóng khỏi",
+      "definition_en": "to remove or dispose of something unwanted; to free oneself from",
+      "level": "C1",
+      "synonyms": [
+        "dispose of",
+        "eliminate"
+      ],
+      "antonyms": [
+        "keep",
+        "retain"
+      ],
+      "example_sentence": "The government implemented policies to get rid of plastic waste in urban areas."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "/teɪk ɪntə əˈkaʊnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính đến, xem xét, lưu ý đến",
+      "definition_en": "to consider or include something as an important factor in a decision",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "factor in"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "When designing sustainable cities, planners must take into account climate change and population growth."
+    },
+    {
+      "word": "bring in",
+      "pronunciation": "/brɪŋ ɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đưa vào, giới thiệu, mang lại (lợi nhuận, doanh thu)",
+      "definition_en": "to introduce something new; to generate income or profit",
+      "level": "B2",
+      "synonyms": [
+        "introduce",
+        "generate"
+      ],
+      "antonyms": [
+        "remove",
+        "withdraw"
+      ],
+      "example_sentence": "The company decided to bring in new technologies to improve productivity and bring in higher revenues."
+    },
+    {
+      "word": "put up with",
+      "pronunciation": "/pʊt ʌp wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chịu đựng, chấp nhận (điều khó chịu)",
+      "definition_en": "to tolerate or accept something unpleasant without complaint",
+      "level": "C1",
+      "synonyms": [
+        "tolerate",
+        "endure"
+      ],
+      "antonyms": [
+        "reject",
+        "refuse"
+      ],
+      "example_sentence": "Workers in developing countries often have to put up with poor working conditions and low wages."
+    },
+    {
+      "word": "look out for",
+      "pronunciation": "/lʊk aʊt fɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chú ý, cảnh báo, tìm kiếm, chăm sóc",
+      "definition_en": "to watch carefully for something; to be alert to danger; to care for someone",
+      "level": "B2",
+      "synonyms": [
+        "watch for",
+        "be alert to"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Environmental scientists look out for signs of climate change in ocean temperature data."
+    },
+    {
+      "word": "go without",
+      "pronunciation": "/ɡoʊ wɪðˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "không có, thiếu, từ bỏ",
+      "definition_en": "to manage without something; to do without a necessity or comfort",
+      "level": "B2",
+      "synonyms": [
+        "do without",
+        "forgo"
+      ],
+      "antonyms": [
+        "have",
+        "possess"
+      ],
+      "example_sentence": "Many families in rural areas go without access to clean water and electricity."
+    },
+    {
+      "word": "call for",
+      "pronunciation": "/kɔːl fɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "yêu cầu, kêu gọi, đòi hỏi, cần thiết",
+      "definition_en": "to demand or require something; to appeal for action or support",
+      "level": "B2",
+      "synonyms": [
+        "demand",
+        "require"
+      ],
+      "antonyms": [
+        "reject",
+        "refuse"
+      ],
+      "example_sentence": "The report calls for immediate action to reduce carbon emissions and combat global warming."
+    },
+    {
+      "word": "take off",
+      "pronunciation": "/teɪk ɔːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cất cánh (máy bay); bắt đầu thành công; bỏ đi",
+      "definition_en": "to leave the ground (aircraft); to become successful; to remove",
+      "level": "C1",
+      "synonyms": [
+        "depart",
+        "succeed"
+      ],
+      "antonyms": [
+        "land",
+        "fail"
+      ],
+      "example_sentence": "The startup's innovative app took off rapidly after receiving positive reviews from tech influencers."
+    },
+    {
+      "word": "make out",
+      "pronunciation": "/meɪk aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiểu rõ, phân biệt; lập danh sách; tuyên bố",
+      "definition_en": "to understand or perceive something; to write out a document; to claim or suggest",
+      "level": "B2",
+      "synonyms": [
+        "discern",
+        "understand"
+      ],
+      "antonyms": [
+        "misunderstand",
+        "confuse"
+      ],
+      "example_sentence": "Researchers make out that renewable energy sources will become more cost-effective than fossil fuels within the next decade."
+    }
+  ],
+  "questions": []
+}

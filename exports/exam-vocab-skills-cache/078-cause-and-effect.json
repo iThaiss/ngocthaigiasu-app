@@ -1,0 +1,468 @@
+{
+  "words": [
+    {
+      "word": "therefore",
+      "pronunciation": "/ˈðɛrfɔːr/",
+      "part_of_speech": "connector",
+      "definition_vi": "do đó, vì vậy (nối kết quả từ nguyên nhân trước đó)",
+      "definition_en": "for that reason; as a result of something previously stated",
+      "level": "B1",
+      "synonyms": [
+        "consequently",
+        "thus",
+        "so"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company lost market share; therefore, it had to reduce production costs significantly."
+    },
+    {
+      "word": "consequently",
+      "pronunciation": "/ˈkɒnsɪkwəntli/",
+      "part_of_speech": "connector",
+      "definition_vi": "do đó, theo đó (chỉ kết quả tất yếu của nguyên nhân)",
+      "definition_en": "as a result; therefore",
+      "level": "B1",
+      "synonyms": [
+        "therefore",
+        "thus",
+        "as a result"
+      ],
+      "antonyms": [],
+      "example_sentence": "Fossil fuel emissions trap heat in the atmosphere; consequently, global temperatures continue to rise."
+    },
+    {
+      "word": "as a result",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết quả là, do đó (chỉ kết quả trực tiếp của nguyên nhân)",
+      "definition_en": "because of something that has just been mentioned",
+      "level": "B1",
+      "synonyms": [
+        "consequently",
+        "therefore",
+        "thus"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government implemented strict environmental regulations; as a result, air quality improved dramatically."
+    },
+    {
+      "word": "due to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do, vì (chỉ nguyên nhân trực tiếp, thường dùng với danh từ)",
+      "definition_en": "caused by; because of",
+      "level": "B1",
+      "synonyms": [
+        "because of",
+        "owing to",
+        "caused by"
+      ],
+      "antonyms": [],
+      "example_sentence": "Due to unexpected weather conditions, the outdoor event was postponed to next weekend."
+    },
+    {
+      "word": "owing to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do, vì (chỉ nguyên nhân, tương tự 'due to', hơi trang trọng)",
+      "definition_en": "because of; on account of",
+      "level": "B2",
+      "synonyms": [
+        "due to",
+        "because of",
+        "on account of"
+      ],
+      "antonyms": [],
+      "example_sentence": "Owing to the shortage of skilled workers, the construction project fell behind schedule."
+    },
+    {
+      "word": "as a consequence",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết quả là, do đó (chỉ kết quả, tương tự 'as a result')",
+      "definition_en": "as a result; therefore",
+      "level": "B2",
+      "synonyms": [
+        "as a result",
+        "consequently",
+        "therefore"
+      ],
+      "antonyms": [],
+      "example_sentence": "The factory closed down permanently; as a consequence, hundreds of workers lost their jobs."
+    },
+    {
+      "word": "thus",
+      "pronunciation": "/ðʌs/",
+      "part_of_speech": "connector",
+      "definition_vi": "như vậy, do đó (nối kết quả, hơi trang trọng)",
+      "definition_en": "therefore; in this way",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "consequently",
+        "so"
+      ],
+      "antonyms": [],
+      "example_sentence": "The research demonstrated a clear link between smoking and lung disease; thus, public health campaigns intensified."
+    },
+    {
+      "word": "lead to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra (chỉ nguyên nhân gây ra kết quả)",
+      "definition_en": "to cause something to happen as a result",
+      "level": "B1",
+      "synonyms": [
+        "cause",
+        "result in",
+        "bring about"
+      ],
+      "antonyms": [],
+      "example_sentence": "Poor diet and lack of exercise lead to serious health problems in many developed countries."
+    },
+    {
+      "word": "result in",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra (chỉ kết quả của nguyên nhân)",
+      "definition_en": "to cause something to happen; to have as a consequence",
+      "level": "B1",
+      "synonyms": [
+        "lead to",
+        "cause",
+        "bring about"
+      ],
+      "antonyms": [],
+      "example_sentence": "The merger of the two companies resulted in significant job losses across multiple departments."
+    },
+    {
+      "word": "cause",
+      "pronunciation": "/kɔːz/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra, làm cho (chỉ nguyên nhân trực tiếp)",
+      "definition_en": "to make something happen",
+      "level": "B1",
+      "synonyms": [
+        "lead to",
+        "result in",
+        "bring about"
+      ],
+      "antonyms": [],
+      "example_sentence": "Deforestation causes habitat loss and threatens the survival of endangered species worldwide."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, tạo ra (chỉ nguyên nhân gây ra thay đổi lớn)",
+      "definition_en": "to cause something to happen; to make something occur",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "result in"
+      ],
+      "antonyms": [],
+      "example_sentence": "Technological innovation has brought about revolutionary changes in how people communicate globally."
+    },
+    {
+      "word": "because of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "vì, do (chỉ nguyên nhân, có thể dùng với danh từ hoặc cụm danh từ)",
+      "definition_en": "on account of; caused by",
+      "level": "B1",
+      "synonyms": [
+        "due to",
+        "owing to",
+        "on account of"
+      ],
+      "antonyms": [],
+      "example_sentence": "Because of rising sea levels, many coastal communities face increased flooding and erosion risks."
+    },
+    {
+      "word": "on account of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "vì, do (chỉ nguyên nhân, trang trọng hơn 'because of')",
+      "definition_en": "because of; due to",
+      "level": "B2",
+      "synonyms": [
+        "because of",
+        "due to",
+        "owing to"
+      ],
+      "antonyms": [],
+      "example_sentence": "On account of the pandemic, many schools shifted to online learning for an extended period."
+    },
+    {
+      "word": "hence",
+      "pronunciation": "/hens/",
+      "part_of_speech": "connector",
+      "definition_vi": "do đó, vì vậy (nối kết quả, hơi cổ điển)",
+      "definition_en": "for this reason; therefore",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "thus",
+        "consequently"
+      ],
+      "antonyms": [],
+      "example_sentence": "The new policy requires all employees to work remotely; hence, the company reduced office space significantly."
+    },
+    {
+      "word": "so",
+      "pronunciation": "/soʊ/",
+      "part_of_speech": "connector",
+      "definition_vi": "vì vậy, do đó (nối kết quả, thường dùng trong nói chuyện)",
+      "definition_en": "therefore; for that reason",
+      "level": "B1",
+      "synonyms": [
+        "therefore",
+        "thus",
+        "consequently"
+      ],
+      "antonyms": [],
+      "example_sentence": "The experiment failed to produce expected results, so the researchers decided to modify their methodology."
+    },
+    {
+      "word": "as",
+      "pronunciation": "/æz/",
+      "part_of_speech": "connector",
+      "definition_vi": "vì, bởi vì (chỉ nguyên nhân, thường ở đầu câu hoặc mệnh đề)",
+      "definition_en": "because; since",
+      "level": "B1",
+      "synonyms": [
+        "because",
+        "since",
+        "as long as"
+      ],
+      "antonyms": [],
+      "example_sentence": "As climate change accelerates, governments worldwide are investing more in renewable energy sources."
+    },
+    {
+      "word": "since",
+      "pronunciation": "/sɪns/",
+      "part_of_speech": "connector",
+      "definition_vi": "vì, bởi vì (chỉ nguyên nhân, thường ở đầu câu)",
+      "definition_en": "because; for the reason that",
+      "level": "B1",
+      "synonyms": [
+        "because",
+        "as",
+        "given that"
+      ],
+      "antonyms": [],
+      "example_sentence": "Since the company lacks sufficient capital, it cannot expand its operations to new markets."
+    },
+    {
+      "word": "given that",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "vì, bởi vì (chỉ nguyên nhân, thường ở đầu câu, trang trọng)",
+      "definition_en": "considering that; because",
+      "level": "B2",
+      "synonyms": [
+        "since",
+        "because",
+        "as"
+      ],
+      "antonyms": [],
+      "example_sentence": "Given that unemployment rates remain high, the government must implement new job creation programs."
+    },
+    {
+      "word": "trigger",
+      "pronunciation": "/ˈtrɪɡər/",
+      "part_of_speech": "verb",
+      "definition_vi": "kích hoạt, gây ra (chỉ nguyên nhân gây ra phản ứng nhanh)",
+      "definition_en": "to cause something to start or happen suddenly",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "spark",
+        "provoke"
+      ],
+      "antonyms": [],
+      "example_sentence": "The announcement of new regulations triggered a sharp decline in stock market prices."
+    },
+    {
+      "word": "spark",
+      "pronunciation": "/spɑːrk/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra, khơi dậy (chỉ nguyên nhân khơi dậy cảm xúc hoặc hành động)",
+      "definition_en": "to trigger or provoke a reaction or event",
+      "level": "B2",
+      "synonyms": [
+        "trigger",
+        "provoke",
+        "ignite"
+      ],
+      "antonyms": [],
+      "example_sentence": "The documentary sparked widespread debate about environmental conservation among viewers."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xuất phát từ, bắt nguồn từ (chỉ nguyên nhân gốc rễ)",
+      "definition_en": "to originate from; to have as a source",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from",
+        "come from"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many social problems stem from inadequate education and limited economic opportunities."
+    },
+    {
+      "word": "arise from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phát sinh từ, bắt nguồn từ (chỉ nguyên nhân, tương tự 'stem from')",
+      "definition_en": "to originate from; to result from",
+      "level": "B2",
+      "synonyms": [
+        "stem from",
+        "originate from",
+        "come from"
+      ],
+      "antonyms": [],
+      "example_sentence": "The conflict arose from disagreements over resource distribution and territorial boundaries."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The factory released toxic chemicals into the river; _______, fish populations declined dramatically within weeks.",
+      "option_a": "therefore",
+      "option_b": "because",
+      "option_c": "although",
+      "option_d": "meanwhile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Cần connector nối kết quả từ nguyên nhân. 'Therefore' là đáp án đúng vì nó nối hai mệnh đề độc lập với mối quan hệ nguyên nhân-kết quả. 'Because' dùng để giới thiệu nguyên nhân, không phù hợp ở đây. 'Although' chỉ sự tương phản, 'meanwhile' chỉ thời gian."
+    },
+    {
+      "question_text": "_______ the government implemented strict environmental regulations, air quality in major cities improved significantly.",
+      "option_a": "Due to",
+      "option_b": "Therefore",
+      "option_c": "Consequently",
+      "option_d": "Thus",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Due to' là cụm giới từ dùng để giới thiệu nguyên nhân trước danh từ 'government implemented'. 'Therefore', 'consequently', 'thus' là các connector nối hai mệnh đề độc lập, không phù hợp ở vị trí này."
+    },
+    {
+      "question_text": "The company's poor financial management _______ significant losses and forced it to declare bankruptcy.",
+      "option_a": "led to",
+      "option_b": "resulted from",
+      "option_c": "stemmed from",
+      "option_d": "arose from",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Led to' (lead to) chỉ nguyên nhân gây ra kết quả. Ở đây 'poor financial management' là nguyên nhân gây ra 'losses'. 'Resulted from', 'stemmed from', 'arose from' đều chỉ kết quả bắt nguồn từ nguyên nhân, không phù hợp với cấu trúc câu."
+    },
+    {
+      "question_text": "Owing to _______ in the supply chain, production delays affected the entire industry.",
+      "option_a": "disruptions",
+      "option_b": "therefore",
+      "option_c": "consequently",
+      "option_d": "as a result",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Owing to' là cụm giới từ cần theo sau bằng danh từ hoặc cụm danh từ. 'Disruptions' là danh từ phù hợp. Các lựa chọn khác là connector hoặc phrase không thể dùng sau 'owing to'."
+    },
+    {
+      "question_text": "The research demonstrated a clear link between smoking and lung disease; _______, public health campaigns intensified.",
+      "option_a": "thus",
+      "option_b": "because of",
+      "option_c": "due to",
+      "option_d": "owing to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Thus' là connector nối hai mệnh đề độc lập với mối quan hệ nguyên nhân-kết quả. Dấu chấm phẩy trước chỗ trống yêu cầu một connector. 'Because of', 'due to', 'owing to' là giới từ cần theo sau bằng danh từ, không phù hợp ở đây."
+    },
+    {
+      "question_text": "_______ the pandemic, many businesses were forced to adopt remote work policies permanently.",
+      "option_a": "On account of",
+      "option_b": "Therefore",
+      "option_c": "Consequently",
+      "option_d": "Thus",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'On account of' là cụm giới từ dùng để giới thiệu nguyên nhân trước danh từ 'the pandemic'. 'Therefore', 'consequently', 'thus' là connector nối hai mệnh đề độc lập, không phù hợp ở vị trí này."
+    },
+    {
+      "question_text": "The new technology _______ revolutionary changes in the manufacturing industry.",
+      "option_a": "brought about",
+      "option_b": "resulted in",
+      "option_c": "led to",
+      "option_d": "all of the above",
+      "correct_answer": "D",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Cả ba phrasal verb 'brought about', 'resulted in', 'led to' đều có thể dùng để chỉ nguyên nhân gây ra kết quả. Tuy nhiên, 'brought about' thường dùng cho những thay đổi lớn, 'resulted in' và 'led to' có ý nghĩa tương tự nhưng 'led to' phổ biến hơn trong văn nói."
+    },
+    {
+      "question_text": "The conflict _______ disagreements over resource distribution and territorial boundaries.",
+      "option_a": "sparked",
+      "option_b": "triggered",
+      "option_c": "arose from",
+      "option_d": "resulted in",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Arose from' (arise from) chỉ kết quả bắt nguồn từ nguyên nhân. Ở đây 'the conflict' là kết quả bắt nguồn từ 'disagreements'. 'Sparked' và 'triggered' chỉ nguyên nhân gây ra kết quả (đảo chiều). 'Resulted in' cũng không phù hợp vì nó chỉ nguyên nhân gây ra kết quả."
+    },
+    {
+      "question_text": "What is the primary function of the word 'therefore' in academic writing?",
+      "option_a": "To introduce a new topic unrelated to the previous sentence",
+      "option_b": "To connect a cause with its direct consequence",
+      "option_c": "To show contrast between two ideas",
+      "option_d": "To provide additional information about the same topic",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Therefore' là connector dùng để nối kết quả từ nguyên nhân trước đó. Nó không dùng để giới thiệu chủ đề mới (A), không chỉ sự tương phản (C), và không chỉ thêm thông tin bổ sung (D)."
+    },
+    {
+      "question_text": "Which phrase is most appropriate to use when explaining why something happened, followed by a noun?",
+      "option_a": "As a result",
+      "option_b": "Consequently",
+      "option_c": "Due to",
+      "option_d": "Therefore",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Due to' là cụm giới từ có thể dùng trước danh từ để giới thiệu nguyên nhân. 'As a result', 'consequently', 'therefore' là connector nối hai mệnh đề độc lập, không thể dùng trước danh từ."
+    },
+    {
+      "question_text": "The difference between 'lead to' and 'stem from' is that:",
+      "option_a": "'Lead to' shows cause → effect, while 'stem from' shows effect ← cause",
+      "option_b": "'Lead to' is used only in formal writing, while 'stem from' is informal",
+      "option_c": "'Lead to' requires a noun, while 'stem from' requires a verb",
+      "option_d": "They are completely synonymous with no difference in meaning",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Lead to' chỉ nguyên nhân gây ra kết quả (A → B). 'Stem from' chỉ kết quả bắt nguồn từ nguyên nhân (B ← A). Chúng có hướng ngược nhau. Cả hai đều có thể dùng trong văn trang trọng hoặc bình thường, và cả hai đều có thể theo sau bằng danh từ hoặc động từ."
+    },
+    {
+      "question_text": "In the sentence 'Given that climate change is accelerating, governments must act now,' the phrase 'given that' functions as:",
+      "option_a": "A connector showing contrast",
+      "option_b": "A phrase introducing a cause or reason",
+      "option_c": "A phrase showing time sequence",
+      "option_d": "A phrase indicating addition of information",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Given that' là cụm từ dùng để giới thiệu nguyên nhân hoặc lý do cho hành động hoặc kết luận tiếp theo. Nó không chỉ sự tương phản (A), không chỉ thời gian (C), và không chỉ thêm thông tin (D)."
+    }
+  ]
+}

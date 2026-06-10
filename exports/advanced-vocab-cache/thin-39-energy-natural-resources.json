@@ -1,0 +1,235 @@
+{
+  "words": [
+    {
+      "word": "energy transition",
+      "pronunciation": "/ˈɛnədʒi trænˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình chuyển đổi từ các nguồn năng lượng truyền thống (dầu, khí, than) sang các nguồn năng lượng sạch và tái tạo",
+      "definition_en": "the shift from conventional energy sources to cleaner, renewable alternatives",
+      "level": "C1",
+      "synonyms": [
+        "energy shift",
+        "decarbonization"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many developed nations are accelerating their energy transition to meet climate targets by 2050."
+    },
+    {
+      "word": "grid infrastructure",
+      "pronunciation": "/ɡrɪd ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống lưới điện phân phối điện năng từ các nhà máy phát điện đến người tiêu dùng",
+      "definition_en": "the network of power lines and facilities that distribute electricity across regions",
+      "level": "B2",
+      "synonyms": [
+        "power grid",
+        "electrical network"
+      ],
+      "antonyms": [],
+      "example_sentence": "Upgrading grid infrastructure is essential to accommodate intermittent renewable energy sources."
+    },
+    {
+      "word": "energy security",
+      "pronunciation": "/ˈɛnədʒi sɪˈkjʊrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một quốc gia hoặc khu vực đảm bảo cung cấp năng lượng ổn định, giá cả hợp lý và không phụ thuộc quá nhiều vào nhập khẩu",
+      "definition_en": "a nation's ability to secure reliable, affordable energy supplies without excessive import dependence",
+      "level": "C1",
+      "synonyms": [
+        "energy independence",
+        "supply stability"
+      ],
+      "antonyms": [
+        "energy vulnerability"
+      ],
+      "example_sentence": "Developing domestic renewable resources strengthens a country's energy security and reduces geopolitical risks."
+    },
+    {
+      "word": "intermittency",
+      "pronunciation": "/ɪnˈtɜːmɪtənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính chất không liên tục, không ổn định của nguồn năng lượng (như năng lượng mặt trời và gió phụ thuộc vào thời tiết)",
+      "definition_en": "the irregular, variable nature of renewable energy generation dependent on weather conditions",
+      "level": "C1",
+      "synonyms": [
+        "variability",
+        "unpredictability"
+      ],
+      "antonyms": [
+        "consistency",
+        "stability"
+      ],
+      "example_sentence": "Battery storage systems help mitigate the intermittency problem of wind and solar power plants."
+    },
+    {
+      "word": "carbon intensity",
+      "pronunciation": "/ˈkɑːrbən ɪnˈtɛnsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lượng khí thải carbon dioxide trên một đơn vị năng lượng hoặc sản phẩm được sản xuất",
+      "definition_en": "the amount of CO₂ emissions produced per unit of energy or output",
+      "level": "C1",
+      "synonyms": [
+        "emission rate",
+        "carbon coefficient"
+      ],
+      "antonyms": [],
+      "example_sentence": "Industrial nations are committed to reducing carbon intensity across all economic sectors."
+    },
+    {
+      "word": "energy poverty",
+      "pronunciation": "/ˈɛnədʒi ˈpɒvərti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng thiếu tiếp cận đến các dịch vụ năng lượng hiện đại, an toàn và giá cả phải chăng, ảnh hưởng đến chất lượng cuộc sống",
+      "definition_en": "lack of access to modern, safe, and affordable energy services affecting living standards",
+      "level": "C1",
+      "synonyms": [
+        "energy deprivation",
+        "fuel poverty"
+      ],
+      "antonyms": [
+        "energy abundance"
+      ],
+      "example_sentence": "Expanding electrification in rural areas is crucial to alleviating energy poverty in developing regions."
+    },
+    {
+      "word": "stranded assets",
+      "pronunciation": "/ˈstrændɪd ˈæsets/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các tài sản (nhà máy, thiết bị) của ngành năng lượng truyền thống trở nên không có giá trị do chuyển đổi năng lượng",
+      "definition_en": "energy infrastructure and assets that lose economic value due to the shift away from fossil fuels",
+      "level": "C1",
+      "synonyms": [
+        "obsolete assets",
+        "stranded capital"
+      ],
+      "antonyms": [],
+      "example_sentence": "Investors increasingly worry about stranded assets in coal and oil industries as renewable energy expands."
+    },
+    {
+      "word": "load balancing",
+      "pronunciation": "/ləʊd ˈbælənsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quản lý phân phối nhu cầu điện năng trên lưới điện để tránh quá tải và đảm bảo ổn định",
+      "definition_en": "the management of electricity demand distribution across the grid to prevent overload and maintain stability",
+      "level": "B2",
+      "synonyms": [
+        "demand management",
+        "grid stabilization"
+      ],
+      "antonyms": [],
+      "example_sentence": "Smart meters enable better load balancing by allowing utilities to manage peak consumption periods."
+    },
+    {
+      "word": "energy mix",
+      "pronunciation": "/ˈɛnədʒi mɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ các loại nguồn năng lượng khác nhau (than, dầu, khí, điện hạt nhân, tái tạo) trong tổng cung cấp năng lượng",
+      "definition_en": "the proportion of different energy sources (coal, oil, gas, nuclear, renewables) in total energy supply",
+      "level": "B2",
+      "synonyms": [
+        "energy portfolio",
+        "fuel composition"
+      ],
+      "antonyms": [],
+      "example_sentence": "Denmark has one of the cleanest energy mixes in Europe, with wind power accounting for over 80% of electricity."
+    },
+    {
+      "word": "embodied energy",
+      "pronunciation": "/ɪmˈbɒdɪd ˈɛnədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tổng lượng năng lượng tiêu thụ trong toàn bộ vòng đời của một sản phẩm, từ khai thác nguyên liệu đến sản xuất và vận chuyển",
+      "definition_en": "the total energy consumed throughout a product's lifecycle, from raw material extraction to manufacturing and transport",
+      "level": "C1",
+      "synonyms": [
+        "lifecycle energy",
+        "cumulative energy"
+      ],
+      "antonyms": [],
+      "example_sentence": "Solar panels have high embodied energy during production, but offset it through decades of clean electricity generation."
+    },
+    {
+      "word": "demand-side management",
+      "pronunciation": "/dɪˈmɑːnd saɪd ˈmænɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các chiến lược giảm hoặc điều chỉnh nhu cầu năng lượng của người tiêu dùng thay vì chỉ tăng cung cấp",
+      "definition_en": "strategies to reduce or shift consumer energy demand rather than solely increasing energy supply",
+      "level": "C1",
+      "synonyms": [
+        "demand reduction",
+        "consumption management"
+      ],
+      "antonyms": [
+        "supply-side expansion"
+      ],
+      "example_sentence": "Demand-side management programs encourage industries to reduce peak-hour electricity consumption through incentives."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'energy transition' in the context of modern energy policy?",
+      "option_a": "The temporary fluctuation of energy prices in global markets",
+      "option_b": "The shift from conventional fossil fuels to cleaner, renewable energy sources",
+      "option_c": "The process of extracting and refining crude oil more efficiently",
+      "option_d": "The construction of new power plants in developing countries",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Energy transition là quá trình chuyển đổi từ năng lượng truyền thống sang năng lượng sạch. A sai vì nói về giá cả, C sai vì nói về khai thác dầu, D sai vì chỉ nói về xây dựng nhà máy mà không nhấn mạnh loại năng lượng."
+    },
+    {
+      "question_text": "The problem of _______ in renewable energy systems refers to the unpredictable nature of wind and solar generation.",
+      "option_a": "intermittency",
+      "option_b": "carbon intensity",
+      "option_c": "energy poverty",
+      "option_d": "load balancing",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Intermittency là tính không ổn định của năng lượng tái tạo phụ thuộc thời tiết. B là lượng khí thải, C là thiếu tiếp cận năng lượng, D là quản lý nhu cầu điện."
+    },
+    {
+      "question_text": "What does 'stranded assets' refer to in the energy sector?",
+      "option_a": "Renewable energy facilities that are geographically isolated",
+      "option_b": "Energy infrastructure that loses value due to the transition away from fossil fuels",
+      "option_c": "Temporary storage facilities for excess electricity",
+      "option_d": "Government subsidies for coal and oil industries",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Stranded assets là các tài sản năng lượng truyền thống mất giá trị do chuyển đổi năng lượng. A sai vì nói về vị trí địa lý, C sai vì nói về lưu trữ, D sai vì nói về trợ cấp."
+    },
+    {
+      "question_text": "Which term best describes a country's ability to secure reliable and affordable energy without excessive import dependence?",
+      "option_a": "Energy poverty",
+      "option_b": "Grid infrastructure",
+      "option_c": "Energy security",
+      "option_d": "Demand-side management",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Energy security là khả năng đảm bảo cung cấp năng lượng ổn định và giá cả hợp lý. A là thiếu tiếp cận năng lượng, B là hệ thống lưới điện, D là quản lý nhu cầu."
+    },
+    {
+      "question_text": "The _______ of a nation's electricity system determines what proportion comes from coal, natural gas, nuclear, and renewables.",
+      "option_a": "embodied energy",
+      "option_b": "energy mix",
+      "option_c": "carbon intensity",
+      "option_d": "load balancing",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Energy mix là tỷ lệ các loại nguồn năng lượng khác nhau. A là năng lượng tiêu thụ trong vòng đời sản phẩm, C là lượng khí thải trên đơn vị năng lượng, D là quản lý nhu cầu điện."
+    },
+    {
+      "question_text": "Which strategy focuses on reducing consumer energy consumption rather than simply increasing energy supply?",
+      "option_a": "Grid infrastructure development",
+      "option_b": "Load balancing optimization",
+      "option_c": "Demand-side management",
+      "option_d": "Energy mix diversification",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Demand-side management là chiến lược giảm nhu cầu năng lượng của người tiêu dùng. A là phát triển lưới điện, B là cân bằng nhu cầu điện, D là đa dạng hóa nguồn năng lượng."
+    }
+  ]
+}

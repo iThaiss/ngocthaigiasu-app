@@ -731,10 +731,22 @@ export default function AdminStandardExamsPage() {
           {cropImageUrl && (
             <div className="space-y-3">
               <p className="text-sm text-zinc-400">Kéo chuột để khoanh đúng vùng hình cần giữ lại.</p>
-              <div className="flex justify-center overflow-auto rounded-lg border border-zinc-800 bg-zinc-950 p-3">
-                <ReactCrop crop={crop} onChange={(nextCrop) => setCrop(nextCrop)} onComplete={(nextCrop) => setCompletedCrop(nextCrop)}>
+              <div className="flex justify-center overflow-hidden max-w-full rounded-lg border border-zinc-800 bg-zinc-950 p-3">
+                <ReactCrop
+                  crop={crop}
+                  onChange={(nextCrop) => setCrop(nextCrop)}
+                  onComplete={(nextCrop) => setCompletedCrop(nextCrop)}
+                  className="max-w-full"
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img ref={imgRef} src={cropImageUrl} alt="Crop ảnh câu chuẩn" className="max-h-[65vh] max-w-full object-contain" crossOrigin="anonymous" />
+                  <img
+                    ref={imgRef}
+                    src={cropImageUrl}
+                    alt="Crop ảnh câu chuẩn"
+                    className="w-full h-auto max-h-[60vh] object-contain"
+                    style={{ maxHeight: '60vh', maxWidth: '100%', height: 'auto', display: 'block' }}
+                    crossOrigin="anonymous"
+                  />
                 </ReactCrop>
               </div>
             </div>

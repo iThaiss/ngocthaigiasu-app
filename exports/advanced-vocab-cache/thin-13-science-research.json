@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (một sự kiện, lý thuyết) thông qua bằng chứng độc lập hoặc nhân chứng khác",
+      "definition_en": "to confirm or give support to (a statement, theory, or finding) with additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "contradict"
+      ],
+      "example_sentence": "Multiple independent studies corroborate the link between climate change and rising sea levels."
+    },
+    {
+      "word": "extrapolate",
+      "pronunciation": "/ɪkˈstræpəleɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "suy rộng, mở rộng (kết luận từ dữ liệu hiện có sang những trường hợp chưa được kiểm chứng)",
+      "definition_en": "to estimate or conclude something by assuming that existing trends or patterns will continue",
+      "level": "C1",
+      "synonyms": [
+        "infer",
+        "project",
+        "extend"
+      ],
+      "antonyms": [
+        "restrict",
+        "limit"
+      ],
+      "example_sentence": "Researchers extrapolated their findings from a small sample to predict outcomes for the entire population."
+    },
+    {
+      "word": "confound",
+      "pronunciation": "/kənˈfaʊnd/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm phức tạp, gây nhầm lẫn (trong nghiên cứu: khi một biến số khác tác động làm ảnh hưởng đến kết quả)",
+      "definition_en": "to make (a situation or problem) more confused or complicated; in research, to have an unwanted influence on results",
+      "level": "C1",
+      "synonyms": [
+        "complicate",
+        "obscure",
+        "muddy"
+      ],
+      "antonyms": [
+        "clarify",
+        "simplify"
+      ],
+      "example_sentence": "Age and socioeconomic status confound the relationship between education level and health outcomes."
+    },
+    {
+      "word": "rigorous",
+      "pronunciation": "/ˈrɪɡərəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chặt chẽ, nghiêm ngặt, tuân thủ đầy đủ các tiêu chuẩn khoa học cao nhất",
+      "definition_en": "extremely thorough, careful, and precise; adhering strictly to high standards of accuracy",
+      "level": "B2",
+      "synonyms": [
+        "strict",
+        "meticulous",
+        "stringent"
+      ],
+      "antonyms": [
+        "lax",
+        "careless"
+      ],
+      "example_sentence": "The study employed rigorous methodology to minimize bias and ensure reliable conclusions."
+    },
+    {
+      "word": "discrepancy",
+      "pronunciation": "/dɪˈskrepənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự không trùng khớp, mâu thuẫn giữa hai hoặc nhiều thứ (đặc biệt trong dữ liệu hoặc kết quả)",
+      "definition_en": "a difference or inconsistency between two or more things that should be the same",
+      "level": "B2",
+      "synonyms": [
+        "inconsistency",
+        "discordance",
+        "variance"
+      ],
+      "antonyms": [
+        "consistency",
+        "agreement"
+      ],
+      "example_sentence": "The researchers identified significant discrepancies between the reported data and the actual measurements."
+    },
+    {
+      "word": "elucidate",
+      "pronunciation": "/ɪˈluːsɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng (một vấn đề phức tạp hoặc khó hiểu)",
+      "definition_en": "to make (something obscure or unclear) clear and easy to understand",
+      "level": "C1",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The recent findings elucidate the mechanisms by which certain genes influence disease susceptibility."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cung cấp bằng chứng hoặc lý do chính đáng để hỗ trợ một tuyên bố hoặc lý thuyết",
+      "definition_en": "to provide evidence or proof to support or justify (a claim or assertion)",
+      "level": "C1",
+      "synonyms": [
+        "corroborate",
+        "validate",
+        "support"
+      ],
+      "antonyms": [
+        "disprove",
+        "refute"
+      ],
+      "example_sentence": "The experimental data substantiate the theoretical predictions made by the research team."
+    },
+    {
+      "word": "inconclusive",
+      "pronunciation": "/ˌɪnkənˈkluːsɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không đủ để rút ra kết luận chắc chắn; không quyết định được",
+      "definition_en": "not leading to a definite conclusion; not providing clear or decisive evidence",
+      "level": "B2",
+      "synonyms": [
+        "indeterminate",
+        "ambiguous",
+        "unclear"
+      ],
+      "antonyms": [
+        "conclusive",
+        "definitive"
+      ],
+      "example_sentence": "The initial results were inconclusive, necessitating further investigation and larger sample sizes."
+    },
+    {
+      "word": "delineate",
+      "pronunciation": "/dɪˈlɪnieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "mô tả chi tiết, phác thảo rõ ràng (ranh giới, phạm vi, đặc điểm của cái gì đó)",
+      "definition_en": "to describe or portray (something) precisely in words or lines; to mark out the boundaries of",
+      "level": "C1",
+      "synonyms": [
+        "outline",
+        "describe",
+        "delineate"
+      ],
+      "antonyms": [
+        "obscure",
+        "blur"
+      ],
+      "example_sentence": "The paper delineates the scope of the research and clearly defines all key variables."
+    },
+    {
+      "word": "aggregate",
+      "pronunciation": "/ˈæɡrɪɡət/ (noun/adj) /əˈɡreɪɡət/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "tập hợp, gộp lại (dữ liệu từ nhiều nguồn); tổng thể, toàn bộ",
+      "definition_en": "to combine or collect (data or information) from multiple sources into a single total or group",
+      "level": "B2",
+      "synonyms": [
+        "combine",
+        "compile",
+        "accumulate"
+      ],
+      "antonyms": [
+        "separate",
+        "divide"
+      ],
+      "example_sentence": "When researchers aggregate data from multiple trials, they obtain a more robust estimate of the treatment effect."
+    }
+  ],
+  "questions": []
+}

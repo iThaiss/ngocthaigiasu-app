@@ -1,0 +1,414 @@
+{
+  "words": [
+    {
+      "word": "interdisciplinary",
+      "pronunciation": "/ˌɪntədɪˈsɪplɪneri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến nhiều lĩnh vực học thuật hoặc chuyên môn khác nhau; kết hợp kiến thức từ các ngành học khác nhau",
+      "definition_en": "involving or combining different academic disciplines or fields of study",
+      "level": "C1",
+      "synonyms": [
+        "multidisciplinary",
+        "cross-disciplinary"
+      ],
+      "antonyms": [
+        "specialized",
+        "monodisciplinary"
+      ],
+      "example_sentence": "The university launched an interdisciplinary research program combining biology, chemistry, and environmental science to address climate change."
+    },
+    {
+      "word": "proliferate",
+      "pronunciation": "/prəˈlɪfəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng nhanh về số lượng; lan rộng, phát triển nhanh chóng",
+      "definition_en": "to increase rapidly in number; to spread or multiply quickly",
+      "level": "B2",
+      "synonyms": [
+        "multiply",
+        "expand",
+        "flourish"
+      ],
+      "antonyms": [
+        "decline",
+        "diminish"
+      ],
+      "example_sentence": "Social media platforms have proliferated over the past decade, fundamentally changing how people communicate and share information."
+    },
+    {
+      "word": "tangible",
+      "pronunciation": "/ˈtændʒəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể cảm nhận được, chứng minh được; thực tế, cụ thể (không trừu tượng)",
+      "definition_en": "able to be perceived by touch; real and concrete rather than abstract",
+      "level": "B2",
+      "synonyms": [
+        "concrete",
+        "physical",
+        "palpable"
+      ],
+      "antonyms": [
+        "intangible",
+        "abstract"
+      ],
+      "example_sentence": "The government's new education policy has produced tangible results, with test scores improving significantly in rural schools."
+    },
+    {
+      "word": "underutilized",
+      "pronunciation": "/ˌʌndərˈjuːtɪlaɪzd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không được sử dụng đầy đủ; không khai thác hết tiềm năng",
+      "definition_en": "not used to full capacity or potential; underexploited",
+      "level": "B2",
+      "synonyms": [
+        "underexploited",
+        "underused"
+      ],
+      "antonyms": [
+        "fully utilized",
+        "maximized"
+      ],
+      "example_sentence": "Many developing countries have underutilized natural resources that could generate significant economic growth if properly managed."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm tồi tệ hơn; làm trầm trọng thêm (một vấn đề)",
+      "definition_en": "to make a problem or situation worse; to aggravate",
+      "level": "C1",
+      "synonyms": [
+        "aggravate",
+        "worsen",
+        "intensify"
+      ],
+      "antonyms": [
+        "alleviate",
+        "improve"
+      ],
+      "example_sentence": "Lack of investment in infrastructure has exacerbated the urban-rural divide, creating deeper economic disparities between regions."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, bẩm sinh; là một phần tự nhiên của cái gì đó",
+      "definition_en": "existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "There is an inherent risk in any investment strategy, but diversification can help minimize potential losses."
+    },
+    {
+      "word": "circumvent",
+      "pronunciation": "/ˌsɜːkəmˈvent/",
+      "part_of_speech": "verb",
+      "definition_vi": "tìm cách vượt qua, tránh (một quy tắc, luật lệ); đi vòng quanh",
+      "definition_en": "to find a way around an obstacle or rule; to avoid or bypass",
+      "level": "C1",
+      "synonyms": [
+        "bypass",
+        "evade",
+        "skirt"
+      ],
+      "antonyms": [
+        "comply",
+        "obey"
+      ],
+      "example_sentence": "Some companies attempt to circumvent environmental regulations by relocating their factories to countries with weaker enforcement."
+    },
+    {
+      "word": "juxtapose",
+      "pronunciation": "/ˌdʒʌkstəˈpoʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "đặt cạnh nhau để so sánh; đối chiếu",
+      "definition_en": "to place two things side by side for contrasting effect or comparison",
+      "level": "C1",
+      "synonyms": [
+        "contrast",
+        "compare",
+        "place side by side"
+      ],
+      "antonyms": [
+        "separate",
+        "distance"
+      ],
+      "example_sentence": "The documentary juxtaposes scenes of pristine natural landscapes with images of industrial pollution to highlight environmental degradation."
+    },
+    {
+      "word": "paradigm shift",
+      "pronunciation": "/ˈpærədaɪm ʃɪft/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi cơ bản trong cách suy nghĩ hoặc tiếp cận một vấn đề; thay đổi mô hình tư duy",
+      "definition_en": "a fundamental change in the basic concepts and practices of a discipline or field",
+      "level": "C1",
+      "synonyms": [
+        "fundamental change",
+        "conceptual revolution"
+      ],
+      "antonyms": [
+        "continuity",
+        "status quo"
+      ],
+      "example_sentence": "The shift from fossil fuels to renewable energy represents a paradigm shift in how societies approach energy production and sustainability."
+    },
+    {
+      "word": "empirical evidence",
+      "pronunciation": "/ɪmˈpɪrɪkəl ˈevɪdəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bằng chứng dựa trên quan sát, thí nghiệm hoặc dữ liệu thực tế; không dựa trên lý thuyết",
+      "definition_en": "evidence based on observation, experience, or experiment rather than theory",
+      "level": "C1",
+      "synonyms": [
+        "experimental data",
+        "observational evidence"
+      ],
+      "antonyms": [
+        "theoretical",
+        "hypothetical"
+      ],
+      "example_sentence": "Recent empirical evidence suggests that early childhood education significantly improves long-term academic and social outcomes."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɑːbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (một sự kiện hoặc tuyên bố) bằng bằng chứng bổ sung",
+      "definition_en": "to confirm or give support to a statement or finding with additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple independent studies have corroborated the findings that air pollution significantly impacts respiratory health in urban populations."
+    },
+    {
+      "word": "dichotomy",
+      "pronunciation": "/daɪˈkɑːtəmi/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự chia tách thành hai phần đối lập; sự phân chia rõ ràng thành hai nhóm",
+      "definition_en": "a division or contrast between two things that are represented as being completely opposite",
+      "level": "C1",
+      "synonyms": [
+        "division",
+        "contrast",
+        "split"
+      ],
+      "antonyms": [
+        "unity",
+        "integration"
+      ],
+      "example_sentence": "The false dichotomy between economic development and environmental protection has hindered progress on sustainable growth policies."
+    },
+    {
+      "word": "confluence",
+      "pronunciation": "/ˈkɑːnfluəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự hội tụ, gặp nhau (của các dòng sông, ý tưởng, sự kiện); điểm giao nhập",
+      "definition_en": "the meeting or flowing together of two or more things; a convergence",
+      "level": "C1",
+      "synonyms": [
+        "convergence",
+        "junction",
+        "meeting point"
+      ],
+      "antonyms": [
+        "divergence",
+        "separation"
+      ],
+      "example_sentence": "The financial crisis resulted from a confluence of factors including reckless lending practices, inadequate regulation, and speculative investment."
+    },
+    {
+      "word": "nuanced",
+      "pronunciation": "/ˈnuːɑːnst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có sắc thái tinh tế; phức tạp với những khác biệt nhỏ nhưng quan trọng",
+      "definition_en": "characterized by subtle differences in meaning, tone, or expression; sophisticated and detailed",
+      "level": "B2",
+      "synonyms": [
+        "subtle",
+        "sophisticated",
+        "refined"
+      ],
+      "antonyms": [
+        "simplistic",
+        "crude"
+      ],
+      "example_sentence": "A nuanced understanding of cultural differences is essential for effective international diplomacy and cross-cultural communication."
+    },
+    {
+      "word": "trajectory",
+      "pronunciation": "/trəˈdʒektəri/",
+      "part_of_speech": "noun",
+      "definition_vi": "quỹ đạo, hướng phát triển; con đường hoặc hướng mà cái gì đó đang tiến tới",
+      "definition_en": "the path or direction that something follows; a course of development",
+      "level": "B2",
+      "synonyms": [
+        "path",
+        "course",
+        "direction"
+      ],
+      "antonyms": [
+        "stagnation",
+        "regression"
+      ],
+      "example_sentence": "If current trends continue, the trajectory of global carbon emissions will exceed the targets set by the Paris Climate Agreement."
+    },
+    {
+      "word": "bifurcate",
+      "pronunciation": "/baɪˈfɜːrkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chia thành hai nhánh; tách ra thành hai phần",
+      "definition_en": "to divide into two branches or parts; to split",
+      "level": "C1",
+      "synonyms": [
+        "split",
+        "divide",
+        "branch"
+      ],
+      "antonyms": [
+        "merge",
+        "unite"
+      ],
+      "example_sentence": "The political landscape has bifurcated into two opposing ideological camps, making consensus on policy increasingly difficult."
+    },
+    {
+      "word": "precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra, kích hoạt (một sự kiện hoặc tình huống); làm xảy ra đột ngột",
+      "definition_en": "to cause something to happen suddenly or unexpectedly; to trigger",
+      "level": "C1",
+      "synonyms": [
+        "trigger",
+        "cause",
+        "provoke"
+      ],
+      "antonyms": [
+        "prevent",
+        "delay"
+      ],
+      "example_sentence": "The assassination of Archduke Franz Ferdinand precipitated a chain of events that led to World War I."
+    },
+    {
+      "word": "ameliorate",
+      "pronunciation": "/əˈmiːliəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cải thiện, làm tốt hơn; giảm bớt (một vấn đề hoặc tình trạng xấu)",
+      "definition_en": "to make something better or improve a difficult situation",
+      "level": "C1",
+      "synonyms": [
+        "improve",
+        "enhance",
+        "better"
+      ],
+      "antonyms": [
+        "worsen",
+        "deteriorate"
+      ],
+      "example_sentence": "Governments are implementing policies to ameliorate poverty and reduce income inequality in developing nations."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the meaning of 'proliferate' in the context of technology adoption?",
+      "option_a": "To decrease in popularity and usage",
+      "option_b": "To increase rapidly in number and spread widely",
+      "option_c": "To remain stable without significant change",
+      "option_d": "To be carefully controlled and limited",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Proliferate có nghĩa là tăng nhanh về số lượng, lan rộng. Trong bối cảnh công nghệ, nó chỉ sự phát triển nhanh chóng của các ứng dụng, thiết bị. Các đáp án khác đều ngược lại hoặc không phù hợp."
+    },
+    {
+      "question_text": "The company's decision to _____ environmental regulations by moving operations overseas has drawn criticism from activist groups.",
+      "option_a": "comply with",
+      "option_b": "circumvent",
+      "option_c": "implement",
+      "option_d": "enforce",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Circumvent có nghĩa là tìm cách vượt qua, tránh (quy tắc). Phù hợp với ngữ cảnh công ty cố gắng tránh các quy định môi trường. Comply with (tuân thủ), implement (thực hiện), enforce (thi hành) đều không phù hợp."
+    },
+    {
+      "question_text": "Which word is most similar in meaning to 'inherent'?",
+      "option_a": "Acquired",
+      "option_b": "Intrinsic",
+      "option_c": "Temporary",
+      "option_d": "External",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Inherent (vốn có, bẩm sinh) đồng nghĩa với intrinsic (nội tại, bẩm sinh). Acquired (học được), temporary (tạm thời), external (bên ngoài) đều không phù hợp."
+    },
+    {
+      "question_text": "The documentary _____ images of pristine forests with scenes of deforestation to emphasize the environmental crisis.",
+      "option_a": "separated",
+      "option_b": "juxtaposed",
+      "option_c": "isolated",
+      "option_d": "distinguished",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Juxtapose (đặt cạnh nhau để so sánh) là từ chính xác để mô tả việc đặt hai hình ảnh đối lập cạnh nhau. Separated, isolated, distinguished không thể hiện được ý định so sánh/tương phản."
+    },
+    {
+      "question_text": "Recent studies have _____ the theory that early childhood education improves long-term academic outcomes.",
+      "option_a": "contradicted",
+      "option_b": "refuted",
+      "option_c": "corroborated",
+      "option_d": "disputed",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Corroborate (xác nhận, chứng thực) là động từ chính xác khi nói về việc các nghiên cứu hỗ trợ/xác nhận một lý thuyết. Contradicted, refuted, disputed đều có nghĩa phản bác, không phù hợp."
+    },
+    {
+      "question_text": "The false _____ between economic growth and environmental protection has prevented comprehensive policy solutions.",
+      "option_a": "integration",
+      "option_b": "dichotomy",
+      "option_c": "synthesis",
+      "option_d": "harmony",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Dichotomy (sự chia tách thành hai phần đối lập) là từ chính xác để chỉ sự phân chia sai lầm thành hai khía cạnh đối lập. Integration, synthesis, harmony đều chỉ sự hợp nhất, không phù hợp."
+    },
+    {
+      "question_text": "Which statement best explains what 'paradigm shift' means in academic discourse?",
+      "option_a": "A minor adjustment to existing theories",
+      "option_b": "A fundamental change in how a field approaches and understands problems",
+      "option_c": "A temporary trend that will eventually fade",
+      "option_d": "An increase in the number of researchers in a field",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Paradigm shift (thay đổi mô hình tư duy) là sự thay đổi cơ bản trong cách tiếp cận và hiểu biết của một lĩnh vực, không phải chỉ điều chỉnh nhỏ hay xu hướng tạm thời."
+    },
+    {
+      "question_text": "The government's new policies aim to _____ the living conditions of low-income families through improved access to education and healthcare.",
+      "option_a": "exacerbate",
+      "option_b": "ameliorate",
+      "option_c": "precipitate",
+      "option_d": "bifurcate",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Ameliorate (cải thiện, làm tốt hơn) là động từ chính xác khi nói về việc cải thiện điều kiện sống. Exacerbate (làm tồi tệ hơn), precipitate (gây ra đột ngột), bifurcate (chia thành hai) đều không phù hợp."
+    }
+  ]
+}

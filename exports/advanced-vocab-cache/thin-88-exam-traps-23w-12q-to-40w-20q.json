@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "apparent",
+      "pronunciation": "/əˈpærənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "rõ ràng, hiển nhiên; tuy nhiên có thể không phải là sự thật (false cognate: không phải 'tương ứng')",
+      "definition_en": "clearly visible or understood; seeming to be true but possibly not actually so",
+      "level": "B2",
+      "synonyms": [
+        "obvious",
+        "evident",
+        "clear"
+      ],
+      "antonyms": [
+        "hidden",
+        "unclear"
+      ],
+      "example_sentence": "It was apparent that the government's policy had failed to address the root causes of poverty."
+    },
+    {
+      "word": "considerable",
+      "pronunciation": "/kənˈsɪdərəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, lớn, đủ lớn để chú ý (không phải 'cân nhắc')",
+      "definition_en": "large in amount or importance; worthy of attention",
+      "level": "B2",
+      "synonyms": [
+        "substantial",
+        "significant",
+        "notable"
+      ],
+      "antonyms": [
+        "negligible",
+        "insignificant"
+      ],
+      "example_sentence": "The research revealed considerable differences in educational outcomes between urban and rural regions."
+    },
+    {
+      "word": "undertake",
+      "pronunciation": "/ˌʌndərˈteɪk/",
+      "part_of_speech": "verb",
+      "definition_vi": "thực hiện, tiến hành (một công việc, dự án); cam kết làm gì (không phải 'hiểu')",
+      "definition_en": "to commit oneself to and begin (an enterprise or responsibility)",
+      "level": "B2",
+      "synonyms": [
+        "conduct",
+        "perform",
+        "execute"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "The organization undertook a comprehensive study to evaluate the effectiveness of climate change initiatives."
+    },
+    {
+      "word": "persist",
+      "pronunciation": "/pərˈsɪst/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiếp tục, kiên trì; tồn tại lâu dài (không phải 'bền vững' đơn thuần)",
+      "definition_en": "to continue firmly or obstinately in a course of action despite difficulty",
+      "level": "B2",
+      "synonyms": [
+        "persevere",
+        "continue",
+        "endure"
+      ],
+      "antonyms": [
+        "cease",
+        "abandon"
+      ],
+      "example_sentence": "Despite numerous obstacles, the team persisted in their efforts to develop sustainable energy solutions."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, bẩm sinh, nội tại (không phải 'thừa kế')",
+      "definition_en": "existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "There are inherent risks in any investment strategy that investors must carefully evaluate."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện, giúp dễ dàng (không phải 'tạo điều kiện' theo nghĩa cơ bản)",
+      "definition_en": "to make (an action or process) easy or easier",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Technology has facilitated communication between researchers across different continents."
+    },
+    {
+      "word": "compelling",
+      "pronunciation": "/kəmˈpelɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thuyết phục, hấp dẫn, buộc phải chú ý (không phải 'bắt buộc' theo nghĩa pháp lý)",
+      "definition_en": "evoking interest, attention, or admiration in a powerfully irresistible way",
+      "level": "B2",
+      "synonyms": [
+        "convincing",
+        "persuasive",
+        "captivating"
+      ],
+      "antonyms": [
+        "unconvincing",
+        "dull"
+      ],
+      "example_sentence": "The documentary presented compelling evidence that challenged conventional wisdom about human evolution."
+    },
+    {
+      "word": "paradox",
+      "pronunciation": "/ˈpærədɒks/",
+      "part_of_speech": "noun",
+      "definition_vi": "nghịch lý, mâu thuẫn tưởng chừng (không phải 'sự mâu thuẫn' đơn giản)",
+      "definition_en": "a seemingly contradictory statement that may nonetheless be true",
+      "level": "B2",
+      "synonyms": [
+        "contradiction",
+        "inconsistency",
+        "anomaly"
+      ],
+      "antonyms": [
+        "consistency",
+        "logic"
+      ],
+      "example_sentence": "The paradox of modern society is that increased connectivity often leads to greater isolation."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, không rõ ràng, có thể hiểu theo nhiều cách (không phải 'tham vọng')",
+      "definition_en": "open to more than one interpretation; unclear in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The government's statement on environmental policy was deliberately ambiguous to avoid controversy."
+    },
+    {
+      "word": "depict",
+      "pronunciation": "/dɪˈpɪkt/",
+      "part_of_speech": "verb",
+      "definition_vi": "mô tả, thể hiện (qua hình ảnh, lời nói); không phải 'lập dự toán'",
+      "definition_en": "to represent or describe in words or pictures",
+      "level": "B2",
+      "synonyms": [
+        "portray",
+        "illustrate",
+        "represent"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The film depicts the struggles of immigrant families adapting to life in a new country."
+    },
+    {
+      "word": "fluctuate",
+      "pronunciation": "/ˈflʌktʃueɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "biến động, dao động (không phải 'chảy chảy')",
+      "definition_en": "to rise and fall irregularly; to vary",
+      "level": "B2",
+      "synonyms": [
+        "vary",
+        "oscillate",
+        "waver"
+      ],
+      "antonyms": [
+        "stabilize",
+        "remain constant"
+      ],
+      "example_sentence": "Stock market prices fluctuate daily based on investor sentiment and economic indicators."
+    },
+    {
+      "word": "encompass",
+      "pronunciation": "/ɪnˈkʌmpəs/",
+      "part_of_speech": "verb",
+      "definition_vi": "bao gồm, chứa đựng, bao quanh (không phải 'la bàn')",
+      "definition_en": "to include or contain as a component or part",
+      "level": "B2",
+      "synonyms": [
+        "include",
+        "contain",
+        "comprise"
+      ],
+      "antonyms": [
+        "exclude",
+        "omit"
+      ],
+      "example_sentence": "The curriculum encompasses a wide range of subjects from science to humanities."
+    },
+    {
+      "word": "unprecedented",
+      "pronunciation": "/ʌnˈpresɪdentɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chưa từng có, không có tiền lệ (không phải 'không có tổng thống')",
+      "definition_en": "never done or known before; having no precedent",
+      "level": "B2",
+      "synonyms": [
+        "novel",
+        "unique",
+        "extraordinary"
+      ],
+      "antonyms": [
+        "common",
+        "typical"
+      ],
+      "example_sentence": "The pandemic created unprecedented challenges for healthcare systems worldwide."
+    },
+    {
+      "word": "substantial",
+      "pronunciation": "/səbˈstænʃl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, lớn, thực chất (không phải 'chất liệu')",
+      "definition_en": "of considerable importance, size, or worth",
+      "level": "B2",
+      "synonyms": [
+        "significant",
+        "considerable",
+        "substantial"
+      ],
+      "antonyms": [
+        "negligible",
+        "trivial"
+      ],
+      "example_sentence": "The research provided substantial evidence supporting the effectiveness of the new treatment."
+    },
+    {
+      "word": "attribute to",
+      "pronunciation": "/əˈtrɪbjuːt tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy cho, cho rằng là do (không phải 'đặc tính')",
+      "definition_en": "to regard something as being caused by or resulting from",
+      "level": "B2",
+      "synonyms": [
+        "ascribe to",
+        "credit to",
+        "blame on"
+      ],
+      "antonyms": [
+        "deny",
+        "disclaim"
+      ],
+      "example_sentence": "Scientists attribute the rise in global temperatures primarily to increased greenhouse gas emissions."
+    },
+    {
+      "word": "prone to",
+      "pronunciation": "/prəʊn tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dễ bị, có khuynh hướng (không phải 'nằm sấp')",
+      "definition_en": "having a tendency to suffer from or do something undesirable",
+      "level": "B2",
+      "synonyms": [
+        "susceptible to",
+        "inclined to",
+        "liable to"
+      ],
+      "antonyms": [
+        "resistant to",
+        "immune to"
+      ],
+      "example_sentence": "Elderly individuals are more prone to developing chronic diseases without proper preventive care."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm trầm trọng, làm tệ hơn (không phải 'cực kỳ')",
+      "definition_en": "to make (a problem, bad situation, or negative feeling) worse",
+      "level": "B2",
+      "synonyms": [
+        "worsen",
+        "aggravate",
+        "intensify"
+      ],
+      "antonyms": [
+        "alleviate",
+        "improve"
+      ],
+      "example_sentence": "Poor economic policies exacerbated the financial crisis and deepened social inequality."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The report's findings were _______ to many observers, as they contradicted the official narrative presented by government officials.",
+      "option_a": "apparent",
+      "option_b": "apparent to",
+      "option_c": "apparent of",
+      "option_d": "apparently",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A đúng. 'Apparent' là tính từ, dùng sau động từ 'were' để mô tả tính chất của findings. 'Apparent to' là cấu trúc sai vì 'apparent' không cần giới từ 'to'. Đáp án D (apparently) là trạng từ, không phù hợp ngữ pháp."
+    },
+    {
+      "question_text": "Which word best completes the sentence: 'The organization will _______ a major initiative to reduce carbon emissions by 2030.'?",
+      "option_a": "undertake",
+      "option_b": "understand",
+      "option_c": "undertone",
+      "option_d": "undermine",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (undertake) đúng, có nghĩa 'thực hiện, tiến hành'. Đây là bẫy từ vựng phổ biến vì 'undertake' dễ nhầm với 'understand' (hiểu). 'Undertone' (âm sắc ẩn), 'undermine' (phá hoại) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "What is the best synonym for 'inherent' in the context: 'There are inherent risks in cryptocurrency investments'?",
+      "option_a": "inherited",
+      "option_b": "intrinsic",
+      "option_c": "inherited from",
+      "option_d": "internal",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (intrinsic) đúng. 'Inherent' = 'intrinsic' (vốn có, nội tại). Bẫy: 'inherited' (thừa kế) có hình thức tương tự nhưng nghĩa khác hoàn toàn. 'Internal' (nội bộ) không chính xác về sắc thái."
+    },
+    {
+      "question_text": "The new technology has _______ communication between remote teams, making collaboration more efficient.",
+      "option_a": "facilitated",
+      "option_b": "facility",
+      "option_c": "facilities",
+      "option_d": "facile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (facilitated) đúng, là động từ quá khứ phù hợp ngữ pháp. Bẫy: 'facility' (cơ sở), 'facilities' (các cơ sở) là danh từ, 'facile' (dễ dàng, hời hợt) là tính từ, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Which statement best explains the paradox mentioned in the article about modern technology?",
+      "option_a": "Technology is always beneficial to society.",
+      "option_b": "Technology creates contradictory effects: increased connectivity yet greater isolation.",
+      "option_c": "Technology is too complex for most people to understand.",
+      "option_d": "Technology companies are dishonest about their products.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B đúng. 'Paradox' là nghịch lý - tình huống tưởng chừng mâu thuẫn nhưng lại có thể đúng. Các đáp án khác không phản ánh bản chất của paradox (sự mâu thuẫn tưởng chừng)."
+    },
+    {
+      "question_text": "The government's statement on environmental policy was deliberately _______, allowing different groups to interpret it according to their own interests.",
+      "option_a": "ambiguous",
+      "option_b": "ambitious",
+      "option_c": "amphibious",
+      "option_d": "ambivalent",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (ambiguous) đúng, có nghĩa 'mơ hồ, không rõ ràng'. Bẫy: 'ambitious' (tham vọng), 'amphibious' (lưỡng cư), 'ambivalent' (lưỡng lự) có hình thức tương tự nhưng nghĩa khác. Chỉ 'ambiguous' phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The documentary _______ the daily struggles of workers in developing countries, revealing harsh working conditions and low wages.",
+      "option_a": "depicts",
+      "option_b": "depicts of",
+      "option_c": "depict",
+      "option_d": "depiction",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (depicts) đúng - động từ chia ở ngôi thứ ba số ít. 'Depicts of' sai ngữ pháp (depict không cần giới từ 'of'). 'Depict' là dạng nguyên mẫu, 'depiction' là danh từ, không phù hợp ngữ pháp."
+    },
+    {
+      "question_text": "Which phrase best completes: 'The company's profits _______ significantly due to market volatility and changing consumer preferences'?",
+      "option_a": "fluctuated",
+      "option_b": "fluctuate",
+      "option_c": "fluctuation",
+      "option_d": "fluctuating",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (fluctuated) đúng - động từ quá khứ phù hợp với ngữ cảnh quá khứ. 'Fluctuate' (hiện tại), 'fluctuation' (danh từ), 'fluctuating' (hiện tại phân từ) không phù hợp ngữ pháp hoặc ngữ cảnh thời gian."
+    }
+  ]
+}

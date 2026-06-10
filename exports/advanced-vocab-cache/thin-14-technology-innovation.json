@@ -1,0 +1,433 @@
+{
+  "words": [
+    {
+      "word": "proprietary technology",
+      "pronunciation": "/prəˈpraɪətəri tekˈnɒlədʒi/",
+      "part_of_speech": "collocation",
+      "definition_vi": "công nghệ độc quyền, được sở hữu riêng bởi một công ty và không được phép sử dụng bởi các đối thủ cạnh tranh",
+      "definition_en": "technology owned exclusively by a company and protected from use by competitors",
+      "level": "C1",
+      "synonyms": [
+        "proprietary system",
+        "exclusive technology"
+      ],
+      "antonyms": [
+        "open-source technology",
+        "public domain"
+      ],
+      "example_sentence": "Apple's proprietary technology in chip design gives the company a significant competitive advantage in the smartphone market."
+    },
+    {
+      "word": "seamless integration",
+      "pronunciation": "/ˈsiːmləs ˌɪntɪˈɡreɪʃən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "sự kết hợp mượt mà, không có sự gián đoạn hoặc khó khăn giữa các hệ thống hoặc thành phần khác nhau",
+      "definition_en": "smooth combination of different systems or components without disruption or difficulty",
+      "level": "B2",
+      "synonyms": [
+        "smooth integration",
+        "frictionless connection"
+      ],
+      "antonyms": [
+        "fragmented system",
+        "incompatible interface"
+      ],
+      "example_sentence": "The new software update enables seamless integration between mobile devices and desktop computers, allowing users to switch between them effortlessly."
+    },
+    {
+      "word": "infrastructure",
+      "pronunciation": "/ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "cơ sở hạ tầng, hệ thống các công trình, thiết bị cơ bản cần thiết để hoạt động của một hệ thống công nghệ",
+      "definition_en": "basic systems and facilities needed for the operation of a society or organization",
+      "level": "B2",
+      "synonyms": [
+        "framework",
+        "foundation",
+        "backbone"
+      ],
+      "antonyms": [
+        "superstructure"
+      ],
+      "example_sentence": "Building robust digital infrastructure is essential for developing countries to participate in the global technology economy."
+    },
+    {
+      "word": "interoperability",
+      "pronunciation": "/ˌɪntərɒpərəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng tương tác, khả năng của các hệ thống khác nhau hoạt động cùng nhau một cách hiệu quả",
+      "definition_en": "the ability of different systems or devices to work together effectively",
+      "level": "C1",
+      "synonyms": [
+        "compatibility",
+        "interconnectivity"
+      ],
+      "antonyms": [
+        "incompatibility",
+        "isolation"
+      ],
+      "example_sentence": "The lack of interoperability between different medical devices has hindered the development of comprehensive patient monitoring systems in hospitals."
+    },
+    {
+      "word": "scalability",
+      "pronunciation": "/ˌskeɪləˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng mở rộng, khả năng của một hệ thống để tăng quy mô hoặc xử lý lượng công việc lớn hơn mà không giảm hiệu suất",
+      "definition_en": "the ability of a system to handle increased workload or growth without loss of performance",
+      "level": "C1",
+      "synonyms": [
+        "expandability",
+        "flexibility"
+      ],
+      "antonyms": [
+        "rigidity",
+        "limitation"
+      ],
+      "example_sentence": "Cloud-based solutions offer superior scalability, allowing startups to expand their operations without significant infrastructure investment."
+    },
+    {
+      "word": "legacy system",
+      "pronunciation": "/ˈleɡəsi ˈsɪstəm/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hệ thống cũ, hệ thống công nghệ lỗi thời vẫn đang được sử dụng nhưng khó khăn trong việc cập nhật hoặc thay thế",
+      "definition_en": "outdated technology systems that are still in use but difficult to update or replace",
+      "level": "C1",
+      "synonyms": [
+        "outdated system",
+        "legacy infrastructure"
+      ],
+      "antonyms": [
+        "modern system",
+        "state-of-the-art system"
+      ],
+      "example_sentence": "Many financial institutions struggle with integrating new fintech solutions into their legacy systems, which were built decades ago."
+    },
+    {
+      "word": "machine learning",
+      "pronunciation": "/məˈʃiːn ˈlɜːrnɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "học máy, lĩnh vực của trí tuệ nhân tạo cho phép máy tính học từ dữ liệu mà không được lập trình rõ ràng",
+      "definition_en": "a subset of artificial intelligence that enables computers to learn from data without explicit programming",
+      "level": "B2",
+      "synonyms": [
+        "automated learning",
+        "computational learning"
+      ],
+      "antonyms": [
+        "manual programming"
+      ],
+      "example_sentence": "Machine learning algorithms are increasingly used in recommendation systems to predict user preferences and personalize content delivery."
+    },
+    {
+      "word": "end-user experience",
+      "pronunciation": "/ˌend ˈjuːzər ɪkˈspɪəriəns/",
+      "part_of_speech": "collocation",
+      "definition_vi": "trải nghiệm người dùng cuối, cách mà người sử dụng cuối cùng tương tác với và cảm nhận về một sản phẩm hoặc dịch vụ",
+      "definition_en": "the way in which end users interact with and perceive a product or service",
+      "level": "B2",
+      "synonyms": [
+        "user experience",
+        "customer experience"
+      ],
+      "antonyms": [
+        "backend experience"
+      ],
+      "example_sentence": "Improving end-user experience should be the primary focus when designing new software applications, as it directly impacts user satisfaction and retention."
+    },
+    {
+      "word": "agile methodology",
+      "pronunciation": "/ˈædʒaɪl məˈθɒdələdʒi/",
+      "part_of_speech": "collocation",
+      "definition_vi": "phương pháp agile, cách tiếp cận phát triển phần mềm linh hoạt, tập trung vào sự hợp tác và phản hồi nhanh chóng",
+      "definition_en": "a flexible software development approach emphasizing collaboration, rapid feedback, and iterative improvement",
+      "level": "C1",
+      "synonyms": [
+        "agile development",
+        "iterative approach"
+      ],
+      "antonyms": [
+        "waterfall methodology",
+        "rigid approach"
+      ],
+      "example_sentence": "Tech companies have increasingly adopted agile methodology to accelerate product development cycles and respond quickly to market changes."
+    },
+    {
+      "word": "api (application programming interface)",
+      "pronunciation": "/ˌeɪ piː ˈaɪ/",
+      "part_of_speech": "noun",
+      "definition_vi": "giao diện lập trình ứng dụng, bộ quy tắc cho phép các ứng dụng khác nhau giao tiếp và chia sẻ dữ liệu",
+      "definition_en": "a set of rules that allows different applications to communicate and share data with each other",
+      "level": "B2",
+      "synonyms": [
+        "interface",
+        "connection protocol"
+      ],
+      "antonyms": [
+        "isolated system"
+      ],
+      "example_sentence": "Developers use APIs to integrate third-party services into their applications, enabling features like payment processing and social media sharing."
+    },
+    {
+      "word": "data breach",
+      "pronunciation": "/ˈdeɪtə briːtʃ/",
+      "part_of_speech": "collocation",
+      "definition_vi": "vi phạm dữ liệu, sự truy cập trái phép hoặc rò rỉ thông tin nhạy cảm của người dùng",
+      "definition_en": "unauthorized access to or disclosure of sensitive user information",
+      "level": "B2",
+      "synonyms": [
+        "data leak",
+        "security breach"
+      ],
+      "antonyms": [
+        "data protection",
+        "secure system"
+      ],
+      "example_sentence": "The massive data breach at the retail company exposed millions of customers' personal information, resulting in significant financial penalties and reputational damage."
+    },
+    {
+      "word": "user interface (ui)",
+      "pronunciation": "/ˈjuːzər ˈɪntərfeɪs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "giao diện người dùng, các yếu tố trực quan mà người dùng tương tác với để sử dụng một ứng dụng hoặc thiết bị",
+      "definition_en": "the visual elements and controls through which users interact with an application or device",
+      "level": "B2",
+      "synonyms": [
+        "interface",
+        "visual design"
+      ],
+      "antonyms": [
+        "backend",
+        "command line"
+      ],
+      "example_sentence": "A well-designed user interface should be intuitive and minimize the learning curve for new users."
+    },
+    {
+      "word": "deployment",
+      "pronunciation": "/dɪˈplɔɪmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "triển khai, quá trình đưa một ứng dụng hoặc hệ thống vào sử dụng thực tế sau khi phát triển",
+      "definition_en": "the process of putting an application or system into actual use after development",
+      "level": "C1",
+      "synonyms": [
+        "implementation",
+        "launch",
+        "release"
+      ],
+      "antonyms": [
+        "development",
+        "testing"
+      ],
+      "example_sentence": "The deployment of the new enterprise software was carefully planned to minimize disruption to business operations."
+    },
+    {
+      "word": "bug fix",
+      "pronunciation": "/ˈbʌɡ fɪks/",
+      "part_of_speech": "collocation",
+      "definition_vi": "sửa lỗi, quá trình xác định và khắc phục các lỗi trong phần mềm hoặc ứng dụng",
+      "definition_en": "the process of identifying and correcting errors or defects in software",
+      "level": "B2",
+      "synonyms": [
+        "error correction",
+        "debugging"
+      ],
+      "antonyms": [
+        "bug introduction"
+      ],
+      "example_sentence": "The development team released a critical bug fix to address a security vulnerability that could compromise user data."
+    },
+    {
+      "word": "convergence",
+      "pronunciation": "/kənˈvɜːrdʒəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự hội tụ, quá trình các công nghệ khác nhau kết hợp lại để tạo thành một hệ thống tích hợp",
+      "definition_en": "the process of different technologies combining to create integrated systems",
+      "level": "C1",
+      "synonyms": [
+        "integration",
+        "merger",
+        "combination"
+      ],
+      "antonyms": [
+        "divergence",
+        "separation"
+      ],
+      "example_sentence": "The convergence of telecommunications, computing, and media technologies has transformed how people consume information and communicate."
+    },
+    {
+      "word": "latency",
+      "pronunciation": "/ˈleɪtənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "độ trễ, khoảng thời gian chậm trễ giữa khi một lệnh được gửi và khi kết quả được nhận",
+      "definition_en": "the delay between sending a command and receiving a response",
+      "level": "C1",
+      "synonyms": [
+        "delay",
+        "response time"
+      ],
+      "antonyms": [
+        "immediacy",
+        "real-time"
+      ],
+      "example_sentence": "High latency in online gaming can significantly impact player performance and create a frustrating experience."
+    },
+    {
+      "word": "bandwidth",
+      "pronunciation": "/ˈbændwɪdθ/",
+      "part_of_speech": "noun",
+      "definition_vi": "băng thông, lượng dữ liệu tối đa có thể được truyền qua một kết nối trong một khoảng thời gian nhất định",
+      "definition_en": "the maximum amount of data that can be transmitted over a connection in a given time period",
+      "level": "B2",
+      "synonyms": [
+        "data capacity",
+        "transmission capacity"
+      ],
+      "antonyms": [
+        "limitation",
+        "bottleneck"
+      ],
+      "example_sentence": "Streaming high-definition video requires sufficient bandwidth to ensure smooth playback without buffering."
+    },
+    {
+      "word": "open-source software",
+      "pronunciation": "/ˌəʊpən ˈsɔːrs ˈsɒftweər/",
+      "part_of_speech": "collocation",
+      "definition_vi": "phần mềm mã nguồn mở, phần mềm có mã nguồn công khai cho phép bất kỳ ai cũng có thể xem, sửa đổi và phân phối",
+      "definition_en": "software with publicly available source code that anyone can view, modify, and distribute",
+      "level": "B2",
+      "synonyms": [
+        "free software",
+        "community-driven software"
+      ],
+      "antonyms": [
+        "proprietary software",
+        "closed-source software"
+      ],
+      "example_sentence": "Many organizations prefer open-source software because it reduces licensing costs and allows for customization to meet specific needs."
+    },
+    {
+      "word": "encryption",
+      "pronunciation": "/ɪnˈkrɪpʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "mã hóa, quá trình chuyển đổi thông tin thành mã để bảo vệ nó khỏi truy cập trái phép",
+      "definition_en": "the process of converting information into code to protect it from unauthorized access",
+      "level": "B2",
+      "synonyms": [
+        "encoding",
+        "cryptography"
+      ],
+      "antonyms": [
+        "decryption",
+        "plaintext"
+      ],
+      "example_sentence": "End-to-end encryption ensures that only the sender and recipient can read messages, protecting privacy from third-party surveillance."
+    },
+    {
+      "word": "iteration",
+      "pronunciation": "/ˌɪtəˈreɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "lặp lại, quá trình lặp đi lặp lại một quy trình để cải thiện kết quả dần dần",
+      "definition_en": "the process of repeating a procedure to improve results gradually",
+      "level": "C1",
+      "synonyms": [
+        "repetition",
+        "cycle",
+        "version"
+      ],
+      "antonyms": [
+        "single attempt",
+        "one-time action"
+      ],
+      "example_sentence": "Through multiple iterations of user testing and feedback, the design team refined the application interface to maximize usability."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the main advantage of open-source software compared to proprietary solutions?",
+      "option_a": "It is always faster and more efficient than proprietary alternatives",
+      "option_b": "It allows users to view, modify, and distribute the code, reducing costs and enabling customization",
+      "option_c": "It guarantees better security and protection against data breaches",
+      "option_d": "It requires no technical knowledge to implement and maintain",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Phần mềm mã nguồn mở cho phép người dùng xem, sửa đổi và phân phối mã, giảm chi phí cấp phép và cho phép tùy chỉnh. Các lựa chọn khác là những khẳng định sai hoặc quá tuyệt đối."
+    },
+    {
+      "question_text": "In the context of software development, what does 'seamless integration' primarily refer to?",
+      "option_a": "The process of fixing bugs and errors in the code",
+      "option_b": "The smooth combination of different systems or components without disruption",
+      "option_c": "The rapid deployment of software to production environments",
+      "option_d": "The continuous monitoring of system performance metrics",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Seamless integration có nghĩa là sự kết hợp mượt mà giữa các hệ thống khác nhau mà không gây gián đoạn. Các đáp án khác đề cập đến các khía cạnh khác của phát triển phần mềm."
+    },
+    {
+      "question_text": "A company experiences high _____ in its network, causing delays between user requests and server responses. Which term best completes this sentence?",
+      "option_a": "bandwidth",
+      "option_b": "latency",
+      "option_c": "encryption",
+      "option_d": "deployment",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Latency là độ trễ giữa khi một lệnh được gửi và khi kết quả được nhận. Bandwidth là dung lượng dữ liệu, encryption là mã hóa, deployment là triển khai - không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of agile methodology in software development?",
+      "option_a": "Emphasis on rapid feedback and iterative improvement",
+      "option_b": "Strict adherence to a predetermined plan with minimal changes",
+      "option_c": "Strong collaboration between team members and stakeholders",
+      "option_d": "Flexibility to respond quickly to changing requirements",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Agile methodology nhấn mạnh tính linh hoạt và phản hồi nhanh chóng, không tuân theo một kế hoạch cứng nhắc. Lựa chọn B mô tả phương pháp Waterfall, đối lập với Agile."
+    },
+    {
+      "question_text": "What is the primary purpose of an API (Application Programming Interface) in modern software systems?",
+      "option_a": "To encrypt sensitive data and protect it from unauthorized access",
+      "option_b": "To allow different applications to communicate and share data with each other",
+      "option_c": "To monitor system performance and identify potential bottlenecks",
+      "option_d": "To manage user authentication and access control",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "API là bộ quy tắc cho phép các ứng dụng khác nhau giao tiếp và chia sẻ dữ liệu. Các lựa chọn khác mô tả các chức năng khác của hệ thống phần mềm."
+    },
+    {
+      "question_text": "A financial institution struggles to integrate new fintech solutions into systems built decades ago. These outdated systems are referred to as _____.",
+      "option_a": "proprietary technology",
+      "option_b": "legacy systems",
+      "option_c": "infrastructure",
+      "option_d": "convergence",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Legacy system là hệ thống cũ, lỗi thời vẫn đang được sử dụng nhưng khó khăn trong việc cập nhật. Các lựa chọn khác không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "Which term best describes the ability of a system to handle increased workload or growth without loss of performance?",
+      "option_a": "Interoperability",
+      "option_b": "Scalability",
+      "option_c": "Convergence",
+      "option_d": "Latency",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Scalability là khả năng mở rộng của một hệ thống để xử lý lượng công việc lớn hơn mà không giảm hiệu suất. Interoperability là khả năng tương tác, convergence là sự hội tụ, latency là độ trễ."
+    },
+    {
+      "question_text": "The development team released a critical _____ to address a security vulnerability that could compromise user data. Which term best completes this sentence?",
+      "option_a": "deployment",
+      "option_b": "iteration",
+      "option_c": "bug fix",
+      "option_d": "data breach",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Bug fix là sửa lỗi, quá trình khắc phục các lỗi trong phần mềm. Deployment là triển khai, iteration là lặp lại, data breach là vi phạm dữ liệu - không phù hợp với ngữ cảnh."
+    }
+  ]
+}

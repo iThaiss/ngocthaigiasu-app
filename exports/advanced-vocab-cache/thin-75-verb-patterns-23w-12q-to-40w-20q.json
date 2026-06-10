@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "break down",
+      "pronunciation": "/breɪk daʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân tích chi tiết; bị hỏng; sụp đổ (về cảm xúc hoặc hệ thống)",
+      "definition_en": "to analyze into components; to stop functioning; to lose emotional control",
+      "level": "C1",
+      "synonyms": [
+        "analyze",
+        "collapse",
+        "malfunction"
+      ],
+      "antonyms": [
+        "assemble",
+        "function"
+      ],
+      "example_sentence": "The government broke down the budget into specific spending categories for public scrutiny."
+    },
+    {
+      "word": "break into",
+      "pronunciation": "/breɪk ˈɪntə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đột nhập; bắt đầu hoạt động trong lĩnh vực mới; bất ngờ bắt đầu làm gì",
+      "definition_en": "to enter forcibly; to start a career in a new field; to suddenly begin doing something",
+      "level": "C1",
+      "synonyms": [
+        "enter forcibly",
+        "commence",
+        "start"
+      ],
+      "antonyms": [
+        "exit",
+        "leave"
+      ],
+      "example_sentence": "Many young actors struggle to break into the film industry without proper connections."
+    },
+    {
+      "word": "break out",
+      "pronunciation": "/breɪk aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bùng nổ; phá thoát; xuất hiện đột ngột (bệnh tật, xung đột)",
+      "definition_en": "to escape; to emerge suddenly; to occur abruptly (disease, conflict)",
+      "level": "C1",
+      "synonyms": [
+        "escape",
+        "erupt",
+        "emerge"
+      ],
+      "antonyms": [
+        "contain",
+        "suppress"
+      ],
+      "example_sentence": "A measles outbreak broke out in the school, forcing authorities to implement vaccination campaigns."
+    },
+    {
+      "word": "break up",
+      "pronunciation": "/breɪk ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chia tay; tan rã; kết thúc; phá vỡ thành nhiều mảnh",
+      "definition_en": "to end a relationship; to disperse; to separate into pieces",
+      "level": "C1",
+      "synonyms": [
+        "separate",
+        "dissolve",
+        "terminate"
+      ],
+      "antonyms": [
+        "unite",
+        "combine"
+      ],
+      "example_sentence": "The couple decided to break up after realizing their long-term goals were incompatible."
+    },
+    {
+      "word": "call off",
+      "pronunciation": "/kɔːl ɔːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hủy bỏ; dừng lại; gọi lại (chó, người)",
+      "definition_en": "to cancel; to stop; to summon back",
+      "level": "C1",
+      "synonyms": [
+        "cancel",
+        "abandon",
+        "postpone"
+      ],
+      "antonyms": [
+        "proceed",
+        "continue"
+      ],
+      "example_sentence": "The outdoor concert was called off due to severe weather warnings."
+    },
+    {
+      "word": "call for",
+      "pronunciation": "/kɔːl fɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "yêu cầu; đòi hỏi; cần thiết; đến lấy",
+      "definition_en": "to demand; to require; to go and collect; to necessitate",
+      "level": "C1",
+      "synonyms": [
+        "demand",
+        "require",
+        "necessitate"
+      ],
+      "antonyms": [
+        "offer",
+        "provide"
+      ],
+      "example_sentence": "Environmental activists call for stricter regulations on industrial emissions."
+    },
+    {
+      "word": "cut back",
+      "pronunciation": "/kʌt bæk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cắt giảm; giảm bớt; rút lại",
+      "definition_en": "to reduce; to decrease spending or consumption",
+      "level": "C1",
+      "synonyms": [
+        "reduce",
+        "decrease",
+        "diminish"
+      ],
+      "antonyms": [
+        "increase",
+        "expand"
+      ],
+      "example_sentence": "The company had to cut back on employee benefits during the economic recession."
+    },
+    {
+      "word": "cut off",
+      "pronunciation": "/kʌt ɔːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cắt đứt; ngắt kết nối; cô lập; cắt ngắn",
+      "definition_en": "to disconnect; to isolate; to interrupt; to sever",
+      "level": "C1",
+      "synonyms": [
+        "disconnect",
+        "isolate",
+        "sever"
+      ],
+      "antonyms": [
+        "connect",
+        "join"
+      ],
+      "example_sentence": "The remote village was cut off from the main road after the landslide."
+    },
+    {
+      "word": "cut down",
+      "pronunciation": "/kʌt daʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cắt hạ; giảm bớt; tiêu diệt",
+      "definition_en": "to reduce; to fell trees; to kill or injure",
+      "level": "C1",
+      "synonyms": [
+        "reduce",
+        "fell",
+        "diminish"
+      ],
+      "antonyms": [
+        "increase",
+        "plant"
+      ],
+      "example_sentence": "Health experts recommend cutting down on sugar intake to prevent obesity."
+    },
+    {
+      "word": "draw up",
+      "pronunciation": "/drɔː ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "soạn thảo; lập kế hoạch; dừng lại (xe)",
+      "definition_en": "to prepare a document; to formulate; to come to a stop",
+      "level": "B2",
+      "synonyms": [
+        "draft",
+        "prepare",
+        "formulate"
+      ],
+      "antonyms": [
+        "discard",
+        "abandon"
+      ],
+      "example_sentence": "The legal team drew up a comprehensive contract outlining all terms and conditions."
+    },
+    {
+      "word": "fill in",
+      "pronunciation": "/fɪl ɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "điền vào; thay thế tạm thời; cung cấp thông tin",
+      "definition_en": "to complete a form; to substitute temporarily; to provide information",
+      "level": "C1",
+      "synonyms": [
+        "complete",
+        "substitute",
+        "inform"
+      ],
+      "antonyms": [
+        "leave blank",
+        "remove"
+      ],
+      "example_sentence": "Please fill in all required fields on the application form before submission."
+    },
+    {
+      "word": "fill out",
+      "pronunciation": "/fɪl aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "điền đầy đủ (mẫu); phát triển; trở nên đầy đủ hơn",
+      "definition_en": "to complete thoroughly; to develop; to become fuller",
+      "level": "C1",
+      "synonyms": [
+        "complete",
+        "develop",
+        "expand"
+      ],
+      "antonyms": [
+        "empty",
+        "shrink"
+      ],
+      "example_sentence": "Applicants must fill out the registration form with accurate personal information."
+    },
+    {
+      "word": "find out",
+      "pronunciation": "/faɪnd aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phát hiện; tìm ra; biết được",
+      "definition_en": "to discover; to learn; to determine",
+      "level": "C1",
+      "synonyms": [
+        "discover",
+        "learn",
+        "determine"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "Scientists found out that regular exercise significantly reduces cardiovascular disease risk."
+    },
+    {
+      "word": "get away with",
+      "pronunciation": "/ɡet əˈweɪ wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thoát khỏi hình phạt; làm điều gì mà không bị phạt",
+      "definition_en": "to escape punishment; to do something without facing consequences",
+      "level": "B2",
+      "synonyms": [
+        "escape punishment",
+        "evade",
+        "avoid consequences"
+      ],
+      "antonyms": [
+        "face consequences",
+        "be punished"
+      ],
+      "example_sentence": "Corrupt officials often get away with embezzlement due to weak enforcement mechanisms."
+    },
+    {
+      "word": "get back to",
+      "pronunciation": "/ɡet bæk tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quay lại; tiếp tục làm; trả lời lại",
+      "definition_en": "to return to; to resume; to contact again later",
+      "level": "C1",
+      "synonyms": [
+        "return to",
+        "resume",
+        "contact later"
+      ],
+      "antonyms": [
+        "abandon",
+        "ignore"
+      ],
+      "example_sentence": "The manager promised to get back to the client with a detailed proposal by Friday."
+    },
+    {
+      "word": "hold up",
+      "pronunciation": "/hoʊld ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trì hoãn; cướp; chống đỡ; giữ vững",
+      "definition_en": "to delay; to rob; to support; to remain strong",
+      "level": "B2",
+      "synonyms": [
+        "delay",
+        "rob",
+        "support"
+      ],
+      "antonyms": [
+        "accelerate",
+        "drop"
+      ],
+      "example_sentence": "The construction project was held up by unexpected supply chain disruptions."
+    },
+    {
+      "word": "knock out",
+      "pronunciation": "/nɑːk aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh hạ; làm mất ý thức; loại khỏi cuộc thi; gây ấn tượng mạnh",
+      "definition_en": "to render unconscious; to eliminate from competition; to impress greatly",
+      "level": "B2",
+      "synonyms": [
+        "eliminate",
+        "impress",
+        "stun"
+      ],
+      "antonyms": [
+        "revive",
+        "include"
+      ],
+      "example_sentence": "The innovative design knocked out the judges and won first prize in the competition."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government decided to _____ on public spending to address the budget deficit.",
+      "option_a": "cut back",
+      "option_b": "cut off",
+      "option_c": "cut down",
+      "option_d": "cut out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Cut back\" có nghĩa là giảm bớt chi tiêu hoặc tiêu thụ. \"Cut off\" (ngắt kết nối), \"cut down\" (cắt hạ/giảm), \"cut out\" (cắt bỏ) không phù hợp với ngữ cảnh về chi tiêu công."
+    },
+    {
+      "question_text": "Which phrasal verb means 'to discover or learn something'?",
+      "option_a": "find out",
+      "option_b": "figure out",
+      "option_c": "work out",
+      "option_d": "sort out",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "\"Find out\" là cụm động từ chính xác để diễn tả 'phát hiện hoặc tìm ra'. Các lựa chọn khác có nghĩa khác: \"figure out\" (hiểu), \"work out\" (tính toán/giải quyết), \"sort out\" (sắp xếp)."
+    },
+    {
+      "question_text": "The outdoor festival was _____ due to severe weather conditions.",
+      "option_a": "called off",
+      "option_b": "called for",
+      "option_c": "called on",
+      "option_d": "called out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Call off\" có nghĩa là hủy bỏ sự kiện. \"Call for\" (yêu cầu), \"call on\" (yêu cầu ai đó), \"call out\" (gọi to) không phù hợp với ngữ cảnh hủy bỏ sự kiện."
+    },
+    {
+      "question_text": "The lawyer was asked to _____ a detailed contract for the business merger.",
+      "option_a": "draw up",
+      "option_b": "draw out",
+      "option_c": "draw in",
+      "option_d": "draw back",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Draw up\" có nghĩa là soạn thảo hoặc lập kế hoạch. \"Draw out\" (kéo dài), \"draw in\" (thu hút), \"draw back\" (rút lại) không phù hợp với ngữ cảnh soạn thảo hợp đồng."
+    },
+    {
+      "question_text": "What is the best synonym for 'break into' in the context of starting a new career?",
+      "option_a": "commence",
+      "option_b": "enter forcibly",
+      "option_c": "begin a career in",
+      "option_d": "interrupt",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "\"Break into\" trong ngữ cảnh sự nghiệp có nghĩa là 'bắt đầu hoạt động trong lĩnh vực mới'. Các lựa chọn khác không thể hiện đúng ý nghĩa chuyên môn này."
+    },
+    {
+      "question_text": "The company had to _____ several employees due to financial difficulties.",
+      "option_a": "hold up",
+      "option_b": "hold back",
+      "option_c": "hold off",
+      "option_d": "hold on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Hold back\" có nghĩa là giữ lại hoặc không cho phép. \"Hold up\" (trì hoãn), \"hold off\" (chống lại), \"hold on\" (chờ đợi) không phù hợp với ngữ cảnh giữ lại nhân viên."
+    },
+    {
+      "question_text": "The boxer was _____ in the third round, ending the match prematurely.",
+      "option_a": "knocked out",
+      "option_b": "knocked down",
+      "option_c": "knocked off",
+      "option_d": "knocked over",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Knock out\" có nghĩa là đánh hạ hoặc làm mất ý thức trong boxing. \"Knock down\" (đánh ngã), \"knock off\" (dừng làm việc), \"knock over\" (làm ngã) không phù hợp với ngữ cảnh kết thúc trận đấu."
+    },
+    {
+      "question_text": "Environmental groups _____ stronger regulations on industrial pollution.",
+      "option_a": "call for",
+      "option_b": "call off",
+      "option_c": "call on",
+      "option_d": "call out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Call for\" có nghĩa là yêu cầu hoặc đòi hỏi. \"Call off\" (hủy bỏ), \"call on\" (yêu cầu ai đó), \"call out\" (gọi to) không phù hợp với ngữ cảnh đòi hỏi quy định."
+    }
+  ]
+}

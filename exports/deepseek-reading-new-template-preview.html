@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Template Reading Preview</title>
+  <style>
+    :root{--bg:#f8fafc;--paper:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--blue:#2563eb;--rose:#e11d48;--amber:#d97706}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.58}
+    .wrap{max-width:1320px;margin:0 auto;padding:28px 18px 64px}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}
+    h1{margin:0;font-size:30px;line-height:1.15}.sub{margin-top:6px;color:var(--muted)}.stats{display:flex;gap:8px;flex-wrap:wrap}
+    .stat{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:112px}.stat b{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+    .passage{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-top:18px;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+    .passage-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;padding:18px;border-bottom:1px solid var(--line)}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+    h2{font-size:22px;margin:6px 0 3px;line-height:1.25}.vi{color:#475569;margin:0}.meta,.chips{display:flex;gap:6px;flex-wrap:wrap}
+    .badge,.chips span,.chips strong{display:inline-flex;align-items:center;min-height:24px;border-radius:999px;background:#f1f5f9;color:#475569;padding:3px 8px;font-size:12px;font-weight:800}
+    .q8{background:rgba(37,99,235,.1);color:var(--blue)}.q10{background:rgba(225,29,72,.1);color:var(--rose)}.marker,.evidence{background:rgba(217,119,6,.1);color:var(--amber)}
+    .columns{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(440px,.98fr);gap:0}.reading{padding:18px;border-right:1px solid var(--line);background:#fff}.questions{padding:18px;background:#fbfdff}
+    .block-title{font-size:15px;margin:0 0 12px;color:#334155}.para{font-size:14px;margin:0 0 14px;text-align:justify}
+    .para mark{border-radius:5px;background:#fde68a;color:#78350f;font-weight:800;padding:1px 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+    .para mark.long{background:#fef3c7;font-weight:500;text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:#d97706;text-underline-offset:3px}
+    .translation-box{margin-top:18px;border-top:1px solid var(--line);padding-top:16px;background:#f8fafc;border-radius:10px;padding:16px}
+    .translation-para{font-size:13px;line-height:1.72;color:#334155;margin:0 0 12px;text-align:justify}
+    .pno{font-size:11px;font-weight:900;color:var(--muted);background:#f1f5f9;border-radius:6px;padding:2px 6px;margin-right:7px}.question{border:1px solid var(--line);background:#fff;border-radius:10px;padding:14px;margin-bottom:12px}
+    .qtop{display:flex;gap:10px;align-items:flex-start}.qindex{width:26px;height:26px;border-radius:999px;background:#eff6ff;color:var(--blue);display:grid;place-items:center;font-size:12px;font-weight:900;flex:0 0 auto}
+    .question h3{font-size:14px;line-height:1.45;margin:1px 0 8px}.option{border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin-top:7px;font-size:13px;background:#fff}
+    .option.correct{border-color:rgba(5,150,105,.45);background:rgba(5,150,105,.08);color:#047857}.explain{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;color:#475569;font-size:13px;line-height:1.62}
+    @media(max-width:980px){.top,.passage-head{display:block}.stats{margin-top:12px}.columns{grid-template-columns:1fr}.reading{border-right:0;border-bottom:1px solid var(--line)}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1>New Template Reading Preview</h1>
+        <p class="sub">Only targets explicitly mentioned in the questions are highlighted; Vietnamese titles and explanations follow the Supabase reading format.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>2</b><span>Trial passages</span></div>
+        <div class="stat"><b>1</b><span>8-question set</span></div>
+        <div class="stat"><b>1</b><span>10-question set</span></div>
+        <div class="stat"><b>9</b><span>Highlights</span></div>
+      </div>
+    </header>
+    
+    <section class="passage">
+      <div class="passage-head">
+        <div>
+          <div class="kicker">New-template trial 1 / </div>
+          <h2>Digital Learning and the Challenge of Student Attention</h2>
+          <p class="vi">Học tập kỹ thuật số và thách thức về sự tập trung của học sinh</p>
+        </div>
+        <div class="meta">
+          <span class="badge q8">8 questions</span>
+          <span class="badge"></span>
+          <span class="badge"> words</span>
+          <span class="badge evidence">3 highlighted targets</span>
+          
+        </div>
+      </div>
+      <div class="columns">
+        <div class="reading">
+          <h3 class="block-title">Passage Text</h3>
+          <p class="para"><span class="pno">P1</span>The rapid expansion of digital learning platforms has transformed classrooms worldwide, offering unprecedented access to educational resources. While these tools promise greater engagement through interactive content, a growing body of research suggests <mark>they</mark> may also fragment student attention in ways that traditional materials do not. <mark class="long">The very design features that make digital platforms appealing—instant feedback, multimedia elements, and personalized pathways—can simultaneously create an environment where sustained focus becomes increasingly difficult to maintain</mark>.</p><p class="para"><span class="pno">P2</span>Studies comparing reading comprehension across media have yielded consistent findings. When students read complex academic texts on screens, they tend to skim more and retain less detailed information than when reading the same material in print. One controlled experiment found that participants who read a lengthy article on a laptop scored significantly lower on inference questions than those who read it on paper, even though both groups spent roughly the same amount of time on the task. Researchers attribute this <mark>discrepancy</mark> to the &#x27;shallowing hypothesis,&#x27; which proposes that digital reading habits, shaped by the rapid browsing typical of online environments, gradually reduce our capacity for deep, reflective thought.</p><p class="para"><span class="pno">P3</span>However, the relationship between digital learning and attention is not uniformly negative. Certain types of digital tools, particularly those designed with cognitive load theory in mind, can actually support focused learning. Adaptive learning systems that adjust difficulty based on student performance, for instance, help maintain an optimal challenge level that prevents both boredom and cognitive overload. Moreover, well-structured instructional videos that segment content into manageable chunks and incorporate periodic retrieval questions have been shown to improve retention compared to passive lecture formats. The key distinction appears to lie not in the medium itself, but in how deliberately the technology is designed to manage attention rather than exploit it.</p><p class="para"><span class="pno">P4</span>Educators and policymakers must therefore approach digital integration with careful nuance. Rather than wholesale adoption or rejection of technology, the evidence points toward a balanced strategy that pairs digital tools with explicit instruction in self-regulated learning. Teaching students to monitor their own attention, set specific learning goals, and recognize when digital distractions are undermining their comprehension may prove more effective than simply restricting device use. As learning environments continue to evolve, the central challenge will be cultivating the metacognitive skills that enable students to harness digital resources without being overwhelmed by them.</p>
+          <div class="translation-box">
+            <h3 class="block-title">Bản dịch tiếng Việt</h3>
+            <p class="translation-para"><span class="pno">P1</span>Sự mở rộng nhanh chóng của các nền tảng học tập kỹ thuật số đã làm thay đổi lớp học trên toàn thế giới, mang lại khả năng tiếp cận chưa từng có với các nguồn tài liệu giáo dục. Mặc dù các công cụ này hứa hẹn tăng mức độ tham gia thông qua nội dung tương tác, ngày càng nhiều nghiên cứu cho rằng chúng cũng có thể làm phân tán sự chú ý của học sinh theo những cách mà tài liệu truyền thống không gây ra. Chính các đặc điểm thiết kế khiến nền tảng số trở nên hấp dẫn như phản hồi tức thì, yếu tố đa phương tiện và lộ trình cá nhân hóa lại có thể đồng thời tạo ra một môi trường khiến việc duy trì sự tập trung lâu dài ngày càng khó khăn.</p><p class="translation-para"><span class="pno">P2</span>Các nghiên cứu so sánh khả năng đọc hiểu trên các phương tiện khác nhau đã đưa ra những phát hiện khá nhất quán. Khi học sinh đọc các văn bản học thuật phức tạp trên màn hình, các em có xu hướng đọc lướt nhiều hơn và ghi nhớ ít chi tiết hơn so với khi đọc cùng văn bản trên giấy. Một thí nghiệm có kiểm soát cho thấy những người đọc một bài viết dài trên máy tính xách tay đạt điểm thấp hơn đáng kể ở các câu hỏi suy luận so với những người đọc trên giấy, dù hai nhóm dành gần như cùng một lượng thời gian cho nhiệm vụ. Các nhà nghiên cứu cho rằng sự khác biệt này liên quan đến giả thuyết &#x27;shallowing&#x27;, theo đó thói quen đọc kỹ thuật số, được định hình bởi kiểu lướt nhanh phổ biến trên môi trường trực tuyến, dần làm giảm khả năng tư duy sâu và phản tỉnh của chúng ta.</p><p class="translation-para"><span class="pno">P3</span>Tuy nhiên, mối quan hệ giữa học tập kỹ thuật số và sự chú ý không hoàn toàn tiêu cực. Một số loại công cụ số, đặc biệt là những công cụ được thiết kế dựa trên lý thuyết tải nhận thức, thực ra có thể hỗ trợ việc học tập tập trung. Chẳng hạn, các hệ thống học thích ứng điều chỉnh độ khó dựa trên kết quả của học sinh giúp duy trì mức thử thách phù hợp, tránh cả sự nhàm chán lẫn quá tải nhận thức. Ngoài ra, các video hướng dẫn được cấu trúc tốt, chia nội dung thành từng phần vừa sức và lồng ghép câu hỏi gợi nhớ định kỳ, đã được chứng minh là cải thiện khả năng ghi nhớ so với hình thức nghe giảng thụ động. Điểm khác biệt cốt lõi dường như không nằm ở bản thân phương tiện, mà ở việc công nghệ được thiết kế có chủ đích để quản lý sự chú ý thay vì khai thác nó.</p><p class="translation-para"><span class="pno">P4</span>Vì vậy, các nhà giáo dục và nhà hoạch định chính sách cần tiếp cận việc tích hợp công nghệ số một cách thận trọng và tinh tế. Thay vì chấp nhận hoặc bác bỏ công nghệ một cách tuyệt đối, bằng chứng cho thấy cần một chiến lược cân bằng, kết hợp công cụ số với việc hướng dẫn rõ ràng về học tập tự điều chỉnh. Dạy học sinh theo dõi sự chú ý của chính mình, đặt mục tiêu học tập cụ thể và nhận ra khi nào sự xao nhãng kỹ thuật số đang làm suy giảm khả năng hiểu bài có thể hiệu quả hơn việc chỉ đơn giản hạn chế sử dụng thiết bị. Khi môi trường học tập tiếp tục thay đổi, thách thức trung tâm sẽ là bồi dưỡng các kỹ năng siêu nhận thức giúp học sinh tận dụng tài nguyên số mà không bị chúng lấn át.</p>
+          </div>
+        </div>
+        <div class="questions"><h3 class="block-title">Questions, Answer Key, Lời giải chi tiết</h3>
+            <article class="question">
+              <div class="qtop"><span class="qindex">1</span><div>
+                <h3>The word &#x27;they&#x27; in paragraph 1 refers to ______.</h3>
+                <div class="chips"><span>reference</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> traditional materials</div><div class="option correct"><b>B.</b> digital learning platforms</div><div class="option"><b>C.</b> educational resources</div><div class="option"><b>D.</b> classrooms</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đại từ &#x27;they&#x27; trong câu &#x27;a growing body of research suggests they may also fragment student attention&#x27; thay thế cho chủ ngữ của mệnh đề trước đó. Đọc lại câu đầu đoạn 1: &#x27;The rapid expansion of digital learning platforms has transformed classrooms...&#x27; và câu tiếp theo &#x27;While these tools promise greater engagement...&#x27; cho thấy &#x27;they&#x27; chỉ &#x27;digital learning platforms&#x27;. Các phương án khác không phù hợp vì &#x27;traditional materials&#x27; là tân ngữ so sánh, &#x27;educational resources&#x27; là đối tượng được truy cập, và &#x27;classrooms&#x27; là nơi diễn ra sự chuyển đổi.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">2</span><div>
+                <h3>The word &#x27;discrepancy&#x27; in paragraph 2 is closest in meaning to ______.</h3>
+                <div class="chips"><span>vocab_meaning</span><strong>Answer: C</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> similarity</div><div class="option"><b>B.</b> improvement</div><div class="option correct"><b>C.</b> difference</div><div class="option"><b>D.</b> weakness</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Từ &#x27;discrepancy&#x27; trong câu &#x27;Researchers attribute this discrepancy to the shallowing hypothesis&#x27; có nghĩa là sự khác biệt hoặc không nhất quán. Đoạn văn mô tả hai nhóm đọc cùng một bài nhưng nhóm đọc trên máy tính đạt điểm thấp hơn về câu hỏi suy luận, tạo ra một sự khác biệt trong kết quả. &#x27;Difference&#x27; là từ đồng nghĩa phù hợp nhất. &#x27;Similarity&#x27; (sự giống nhau) trái nghĩa; &#x27;improvement&#x27; (sự cải thiện) và &#x27;weakness&#x27; (điểm yếu) không phản ánh đúng mối quan hệ so sánh giữa hai nhóm.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">3</span><div>
+                <h3>Which of the following best paraphrases the sentence &#x27;The very design features that make digital platforms appealing—instant feedback, multimedia elements, and personalized pathways—can simultaneously create an environment where sustained focus becomes increasingly difficult to maintain&#x27; in paragraph 1?</h3>
+                <div class="chips"><span>sentence_paraphrase</span><strong>Answer: A</strong></div>
+              </div></div>
+              <div class="options"><div class="option correct"><b>A.</b> Digital platforms are appealing because they offer instant feedback and multimedia, but these features also make it harder for students to stay focused for long periods.</div><div class="option"><b>B.</b> The instant feedback and personalized pathways of digital platforms are designed to help students maintain sustained focus during learning activities.</div><div class="option"><b>C.</b> Although digital platforms include appealing features like multimedia elements, they fail to create an environment suitable for any form of learning.</div><div class="option"><b>D.</b> Sustained focus is difficult to maintain because digital platforms lack the instant feedback and personalized pathways that make learning appealing.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Câu gốc nêu rằng chính những đặc điểm thiết kế hấp dẫn của nền tảng số (phản hồi tức thì, đa phương tiện, lộ trình cá nhân hóa) đồng thời tạo ra môi trường khiến việc duy trì tập trung lâu dài trở nên khó khăn. Phương án A diễn đạt đúng ý này: nền tảng số hấp dẫn nhờ các tính năng đó, nhưng chính chúng lại gây khó khăn cho sự tập trung. Phương án B sai vì nói rằng các tính năng này được thiết kế để giúp duy trì tập trung (ngược với ý đoạn văn). Phương án C sai vì nói &#x27;fail to create an environment suitable for any form of learning&#x27; – quá cực đoan, đoạn văn không khẳng định điều này. Phương án D đảo ngược mối quan hệ nhân quả: nền tảng số có các tính năng đó, không phải thiếu chúng.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">4</span><div>
+                <h3>The word &#x27;sustained&#x27; in paragraph 1 is opposite in meaning to ______.</h3>
+                <div class="chips"><span>vocab_antonym</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> continuous</div><div class="option correct"><b>B.</b> temporary</div><div class="option"><b>C.</b> intense</div><div class="option"><b>D.</b> voluntary</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> &#x27;Sustained&#x27; có nghĩa là được duy trì liên tục trong một khoảng thời gian dài. Từ trái nghĩa phù hợp nhất là &#x27;temporary&#x27; (tạm thời, ngắn hạn). &#x27;Continuous&#x27; (liên tục) là từ đồng nghĩa; &#x27;intense&#x27; (mãnh liệt) chỉ mức độ chứ không chỉ thời gian; &#x27;voluntary&#x27; (tự nguyện) không liên quan đến khía cạnh thời gian của &#x27;sustained&#x27;.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">5</span><div>
+                <h3>According to paragraph 2, which of the following is NOT mentioned as a finding related to reading on screens?</h3>
+                <div class="chips"><span>detail_except</span><strong>Answer: C</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> Students tend to skim when reading academic texts on screens.</div><div class="option"><b>B.</b> Screen readers retain less detailed information than print readers.</div><div class="option correct"><b>C.</b> Screen readers spend significantly less time on reading tasks than print readers.</div><div class="option"><b>D.</b> Screen readers perform worse on inference questions compared to print readers.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 2 nêu rõ: &#x27;students... tend to skim more and retain less detailed information&#x27; (phương án A và B được đề cập) và &#x27;participants who read... on a laptop scored significantly lower on inference questions&#x27; (phương án D được đề cập). Tuy nhiên, đoạn văn khẳng định &#x27;both groups spent roughly the same amount of time on the task&#x27;, nghĩa là thời gian đọc của hai nhóm tương đương nhau. Do đó, phương án C (&#x27;screen readers spend significantly less time&#x27;) là thông tin không được đề cập và thực tế trái với dữ liệu trong bài.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">6</span><div>
+                <h3>According to the passage, which of the following is TRUE?</h3>
+                <div class="chips"><span>true_statement</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> All digital learning tools inevitably reduce students&#x27; capacity for deep thinking.</div><div class="option correct"><b>B.</b> Adaptive learning systems can help maintain an optimal challenge level for students.</div><div class="option"><b>C.</b> The shallowing hypothesis has been disproven by recent controlled experiments.</div><div class="option"><b>D.</b> Restricting device use is the most effective way to improve student comprehension.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 3 nêu: &#x27;Adaptive learning systems that adjust difficulty based on student performance... help maintain an optimal challenge level&#x27;. Phương án B diễn đạt chính xác thông tin này. Phương án A sai vì từ &#x27;all&#x27; quá tuyệt đối – đoạn 3 chỉ ra một số công cụ số có thể hỗ trợ học tập. Phương án C sai vì &#x27;shallowing hypothesis&#x27; được nêu như một lời giải thích cho các phát hiện, không bị bác bỏ. Phương án D sai vì đoạn cuối cho rằng dạy kỹ năng tự điều chỉnh &#x27;may prove more effective than simply restricting device use&#x27;, ngụ ý hạn chế thiết bị không phải là cách hiệu quả nhất.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">7</span><div>
+                <h3>In which paragraph does the author discuss digital tools that are designed to manage cognitive load effectively?</h3>
+                <div class="chips"><span>paragraph_location</span><strong>Answer: C</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> Paragraph 1</div><div class="option"><b>B.</b> Paragraph 2</div><div class="option correct"><b>C.</b> Paragraph 3</div><div class="option"><b>D.</b> Paragraph 4</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 3 thảo luận về các công cụ số được thiết kế để quản lý tải nhận thức hiệu quả: &#x27;certain types of digital tools, particularly those designed with cognitive load theory in mind, can actually support focused learning&#x27;. Đoạn này cũng đề cập đến &#x27;adaptive learning systems&#x27; và &#x27;well-structured instructional videos&#x27; như những ví dụ cụ thể. Các đoạn khác không đề cập đến khái niệm &#x27;cognitive load&#x27;.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">8</span><div>
+                <h3>In which paragraph does the author mention the importance of teaching students to recognize when digital distractions affect their learning?</h3>
+                <div class="chips"><span>paragraph_location</span><strong>Answer: D</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> Paragraph 1</div><div class="option"><b>B.</b> Paragraph 2</div><div class="option"><b>C.</b> Paragraph 3</div><div class="option correct"><b>D.</b> Paragraph 4</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 4 đề cập đến việc dạy học sinh &#x27;recognize when digital distractions are undermining their comprehension&#x27; như một phần của chiến lược tự điều chỉnh học tập. Câu đầy đủ: &#x27;Teaching students to monitor their own attention, set specific learning goals, and recognize when digital distractions are undermining their comprehension may prove more effective...&#x27;. Các đoạn khác không đề cập đến ý này.</div>
+            </article>
+            </div>
+      </div>
+    </section>
+    
+    <section class="passage">
+      <div class="passage-head">
+        <div>
+          <div class="kicker">New-template trial 2 / </div>
+          <h2>Artificial Intelligence in Schools: Promise and Pitfalls</h2>
+          <p class="vi">Trí tuệ nhân tạo trong trường học: Hứa hẹn và cạm bẫy</p>
+        </div>
+        <div class="meta">
+          <span class="badge q10">10 questions</span>
+          <span class="badge"></span>
+          <span class="badge"> words</span>
+          <span class="badge evidence">6 highlighted targets</span>
+          <span class="badge marker">Markers: [I] [II] [III] [IV]</span>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="reading">
+          <h3 class="block-title">Passage Text</h3>
+          <p class="para"><span class="pno">P1</span>The integration of artificial intelligence into educational settings has accelerated in recent years, sparking both enthusiasm and concern among educators and policymakers. Proponents argue that AI-powered tools can personalise learning, automate administrative tasks, and provide real-time feedback to students. For instance, adaptive learning platforms analyse individual performance data to adjust the difficulty of exercises, allowing learners to progress at their own pace. <mark>[I]</mark> Such systems, advocates claim, could help bridge achievement gaps by offering targeted support to students who might otherwise fall behind. However, the rapid adoption of these technologies has outpaced the development of clear guidelines, leaving many schools to navigate uncharted territory.</p><p class="para"><span class="pno">P2</span>Despite the optimism, a growing body of research highlights significant limitations in current AI applications. A 2023 study by the International Journal of Educational Technology found that while AI tutors improved test scores in mathematics by an average of 12 percent, the gains were concentrated among students who already possessed strong self-regulation skills. <mark>[II]</mark> <mark class="long">Learners who struggled with motivation or lacked digital literacy saw minimal improvement, and in some cases their performance declined</mark>. Furthermore, algorithmic bias remains a persistent challenge; several widely used assessment tools have been shown to disadvantage students from non-English-speaking backgrounds, raising questions about fairness and equity.</p><p class="para"><span class="pno">P3</span>Beyond technical shortcomings, the social and ethical dimensions of AI in classrooms demand careful scrutiny. Teachers have reported feeling deskilled when algorithms take over lesson planning and grading, potentially eroding the professional judgment that is central to effective teaching. <mark>[III]</mark> There are also unresolved privacy concerns, as many AI platforms collect vast amounts of sensitive student data, from keystroke patterns to facial expressions, often without transparent consent processes. Critics warn that an overreliance on automated systems could reduce education to a series of measurable transactions, neglecting the relational and emotional aspects of learning that human instructors uniquely provide.</p><p class="para"><span class="pno">P4</span>Looking ahead, a balanced approach appears essential if schools are to harness AI’s benefits while mitigating its risks. Policymakers must establish robust regulatory frameworks that prioritise data protection and algorithmic accountability. <mark>[IV]</mark> At the same time, professional development programmes should equip teachers to use AI as a complement to, rather than a replacement for, <mark>their</mark> expertise. Ultimately, the goal should not be to create classrooms run by machines, but to thoughtfully integrate technology in ways that enhance human connection and foster deeper learning for all students.</p>
+          <div class="translation-box">
+            <h3 class="block-title">Bản dịch tiếng Việt</h3>
+            <p class="translation-para"><span class="pno">P1</span>Việc tích hợp trí tuệ nhân tạo vào môi trường giáo dục đã tăng tốc trong những năm gần đây, tạo ra cả sự hào hứng lẫn lo ngại trong giới giáo viên và nhà hoạch định chính sách. Những người ủng hộ cho rằng các công cụ sử dụng AI có thể cá nhân hóa việc học, tự động hóa các nhiệm vụ hành chính và cung cấp phản hồi theo thời gian thực cho học sinh. Ví dụ, các nền tảng học thích ứng phân tích dữ liệu kết quả của từng cá nhân để điều chỉnh độ khó của bài tập, cho phép người học tiến bộ theo tốc độ riêng của mình. [I] Những hệ thống như vậy, theo những người ủng hộ, có thể giúp thu hẹp khoảng cách thành tích bằng cách hỗ trợ đúng trọng tâm cho những học sinh có nguy cơ bị tụt lại phía sau. Tuy nhiên, việc áp dụng nhanh các công nghệ này đã vượt trước quá trình xây dựng các hướng dẫn rõ ràng, khiến nhiều trường phải tự xoay xở trong một vùng còn nhiều điều chưa biết.</p><p class="translation-para"><span class="pno">P2</span>Bất chấp sự lạc quan, ngày càng nhiều nghiên cứu chỉ ra những hạn chế đáng kể trong các ứng dụng AI hiện nay. Một nghiên cứu năm 2023 của International Journal of Educational Technology cho thấy mặc dù gia sư AI giúp điểm toán tăng trung bình 12 phần trăm, mức cải thiện chủ yếu tập trung ở những học sinh vốn đã có kỹ năng tự điều chỉnh tốt. [II] Những người học thiếu động lực hoặc thiếu năng lực số chỉ cải thiện rất ít, và trong một số trường hợp kết quả của họ còn giảm sút. Hơn nữa, thiên vị thuật toán vẫn là một thách thức dai dẳng; một số công cụ đánh giá được sử dụng rộng rãi đã bị chứng minh là gây bất lợi cho học sinh đến từ môi trường không nói tiếng Anh, làm dấy lên các câu hỏi về công bằng và bình đẳng.</p><p class="translation-para"><span class="pno">P3</span>Bên cạnh các hạn chế kỹ thuật, những khía cạnh xã hội và đạo đức của AI trong lớp học cũng cần được xem xét cẩn trọng. Giáo viên cho biết họ cảm thấy bị suy giảm vai trò chuyên môn khi thuật toán đảm nhận việc lập kế hoạch bài học và chấm điểm, từ đó có thể làm xói mòn khả năng phán đoán nghề nghiệp vốn rất quan trọng đối với việc giảng dạy hiệu quả. [III] Ngoài ra còn có những lo ngại chưa được giải quyết về quyền riêng tư, vì nhiều nền tảng AI thu thập lượng lớn dữ liệu nhạy cảm của học sinh, từ mẫu gõ phím đến biểu cảm khuôn mặt, thường không có quy trình xin ý kiến minh bạch. Các nhà phê bình cảnh báo rằng việc phụ thuộc quá mức vào hệ thống tự động có thể biến giáo dục thành một chuỗi giao dịch có thể đo lường, bỏ qua các khía cạnh quan hệ và cảm xúc của việc học mà chỉ người dạy mới có thể mang lại.</p><p class="translation-para"><span class="pno">P4</span>Nhìn về phía trước, một cách tiếp cận cân bằng là điều cần thiết nếu các trường muốn tận dụng lợi ích của AI đồng thời giảm thiểu rủi ro. Các nhà hoạch định chính sách phải xây dựng khung quy định vững chắc, ưu tiên bảo vệ dữ liệu và trách nhiệm giải trình của thuật toán. [IV] Đồng thời, các chương trình phát triển chuyên môn cần trang bị cho giáo viên khả năng sử dụng AI như một công cụ bổ trợ, chứ không phải sự thay thế cho chuyên môn của họ. Cuối cùng, mục tiêu không nên là tạo ra những lớp học do máy móc vận hành, mà là tích hợp công nghệ một cách có suy nghĩ để tăng cường kết nối con người và nuôi dưỡng việc học sâu hơn cho tất cả học sinh.</p>
+          </div>
+        </div>
+        <div class="questions"><h3 class="block-title">Questions, Answer Key, Lời giải chi tiết</h3>
+            <article class="question">
+              <div class="qtop"><span class="qindex">1</span><div>
+                <h3>According to paragraph 1, what is one claimed benefit of AI-powered tools in education?</h3>
+                <div class="chips"><span>detail</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> They can eliminate the need for human teachers.</div><div class="option correct"><b>B.</b> They can help reduce disparities in student achievement.</div><div class="option"><b>C.</b> They have already replaced traditional textbooks.</div><div class="option"><b>D.</b> They guarantee higher test scores for all learners.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 1 nêu rằng các hệ thống AI &#x27;could help bridge achievement gaps by offering targeted support to students who might otherwise fall behind&#x27; (có thể giúp thu hẹp khoảng cách thành tích). Điều này tương ứng với việc giảm sự chênh lệch trong kết quả học tập của học sinh, do đó đáp án B đúng. Các đáp án khác không được đề cập hoặc bị phóng đại: A nói loại bỏ giáo viên, C nói thay thế sách giáo khoa, D nói đảm bảo điểm cao hơn cho mọi học sinh.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">2</span><div>
+                <h3>The word &#x27;declined&#x27; in paragraph 2 is OPPOSITE in meaning to ________.</h3>
+                <div class="chips"><span>vocab_antonym</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> worsened</div><div class="option correct"><b>B.</b> improved</div><div class="option"><b>C.</b> weakened</div><div class="option"><b>D.</b> dropped</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Từ &#x27;declined&#x27; trong ngữ cảnh &#x27;their performance declined&#x27; có nghĩa là giảm sút, đi xuống. Từ trái nghĩa phù hợp là &#x27;improved&#x27; (cải thiện, tăng lên). Các đáp án A, C, D đều mang nghĩa tương tự &#x27;declined&#x27; (xấu đi, suy yếu, tụt giảm).</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">3</span><div>
+                <h3>Which of the following best summarises paragraph 2?</h3>
+                <div class="chips"><span>paragraph_summary</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> AI tutors are equally effective for all types of students regardless of their background.</div><div class="option correct"><b>B.</b> Research indicates that AI tools have clear benefits but also reveal significant shortcomings related to learner differences and bias.</div><div class="option"><b>C.</b> The main problem with AI in education is that it collects too much personal data from students.</div><div class="option"><b>D.</b> A 2023 study proved that AI cannot improve test scores in any subject.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 2 trình bày cả lợi ích (cải thiện điểm toán 12%) và hạn chế (chỉ hiệu quả với học sinh có kỹ năng tự điều chỉnh tốt, thiên vị thuật toán với học sinh không nói tiếng Anh). Do đó, đáp án B tóm tắt chính xác nhất. A sai vì đoạn văn nói công cụ không hiệu quả đồng đều. C sai vì vấn đề dữ liệu được đề cập ở đoạn 3. D sai vì nghiên cứu cho thấy có cải thiện điểm số.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">4</span><div>
+                <h3>According to paragraph 3, what is one concern about teachers when AI handles lesson planning and grading?</h3>
+                <div class="chips"><span>detail</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> They may lose their jobs entirely.</div><div class="option correct"><b>B.</b> They might feel that their professional skills are being undermined.</div><div class="option"><b>C.</b> They are forced to work longer hours.</div><div class="option"><b>D.</b> They receive higher salaries but less respect.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 3 nói: &#x27;Teachers have reported feeling deskilled when algorithms take over lesson planning and grading, potentially eroding the professional judgment...&#x27; (Giáo viên cảm thấy bị mất kỹ năng, làm xói mòn phán đoán chuyên môn). Điều này khớp với đáp án B: kỹ năng chuyên môn của họ bị suy yếu. A, C, D không được đề cập trong đoạn.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">5</span><div>
+                <h3>The word &#x27;their&#x27; in paragraph 4 refers to ________.</h3>
+                <div class="chips"><span>reference</span><strong>Answer: C</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> policymakers</div><div class="option"><b>B.</b> regulatory frameworks</div><div class="option correct"><b>C.</b> teachers</div><div class="option"><b>D.</b> students</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Trong câu &#x27;professional development programmes should equip teachers to use AI as a complement to, rather than a replacement for, their expertise&#x27;, đại từ &#x27;their&#x27; quy chiếu đến &#x27;teachers&#x27; – chuyên môn của giáo viên. Các đáp án khác không phù hợp về mặt ngữ pháp và ngữ nghĩa.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">6</span><div>
+                <h3>Which of the following best paraphrases the sentence: &#x27;Learners who struggled with motivation or lacked digital literacy saw minimal improvement, and in some cases their performance declined&#x27;?</h3>
+                <div class="chips"><span>sentence_paraphrase</span><strong>Answer: A</strong></div>
+              </div></div>
+              <div class="options"><div class="option correct"><b>A.</b> Students with low motivation or poor digital skills experienced little progress, and occasionally their results worsened.</div><div class="option"><b>B.</b> All students who lacked motivation failed to improve their performance significantly.</div><div class="option"><b>C.</b> Digital literacy was the only factor that determined whether students improved or declined.</div><div class="option"><b>D.</b> Motivated students always outperformed those with strong digital literacy skills.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Câu gốc nói rằng những học sinh thiếu động lực hoặc kỹ năng số &#x27;saw minimal improvement&#x27; (thấy ít tiến bộ) và đôi khi &#x27;performance declined&#x27; (kết quả giảm sút). Đáp án A diễn đạt đúng ý này: &#x27;experienced little progress, and occasionally their results worsened&#x27;. B sai vì nói &#x27;tất cả học sinh thiếu động lực đều thất bại&#x27;. C sai vì nói kỹ năng số là yếu tố duy nhất. D sai vì so sánh không có trong câu gốc.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">7</span><div>
+                <h3>What can be inferred from paragraph 3 about the author&#x27;s view on AI in classrooms?</h3>
+                <div class="chips"><span>detail</span><strong>Answer: C</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> AI should completely replace traditional teaching methods.</div><div class="option"><b>B.</b> The author believes privacy concerns are exaggerated.</div><div class="option correct"><b>C.</b> The author thinks human interaction remains a vital part of education.</div><div class="option"><b>D.</b> Teachers are generally in favour of automated grading systems.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Đoạn 3 cảnh báo rằng phụ thuộc quá nhiều vào AI có thể &#x27;neglecting the relational and emotional aspects of learning that human instructors uniquely provide&#x27; (bỏ qua khía cạnh quan hệ và cảm xúc mà chỉ người dạy mới mang lại). Từ đó suy ra tác giả coi trọng tương tác con người trong giáo dục. A và B trái ngược với nội dung đoạn. D không được đề cập.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">8</span><div>
+                <h3>Which of the following can be inferred from the passage as a whole?</h3>
+                <div class="chips"><span>passage_inference</span><strong>Answer: B</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> AI will soon solve all major problems in education.</div><div class="option correct"><b>B.</b> The use of AI in schools requires careful management to avoid negative consequences.</div><div class="option"><b>C.</b> Most countries have already banned AI from classrooms.</div><div class="option"><b>D.</b> Teachers are the main obstacle to successful AI integration.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Toàn bài nêu cả lợi ích lẫn hạn chế của AI và kết luận rằng cần cách tiếp cận cân bằng, có quy định và đào tạo giáo viên. Suy ra rằng việc sử dụng AI cần được quản lý cẩn thận (đáp án B). A quá lạc quan và không được ủng hộ. C không có trong bài. D sai vì bài không nói giáo viên là trở ngại chính.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">9</span><div>
+                <h3>The following sentence would best fit in which position in the passage? &#x27;Without such measures, the digital divide could widen rather than narrow.&#x27;</h3>
+                <div class="chips"><span>sentence_insertion</span><strong>Answer: D</strong></div>
+              </div></div>
+              <div class="options"><div class="option"><b>A.</b> [I]</div><div class="option"><b>B.</b> [II]</div><div class="option"><b>C.</b> [III]</div><div class="option correct"><b>D.</b> [IV]</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Câu cần chèn nói về nguy cơ khoảng cách số mở rộng nếu không có biện pháp. Vị trí [IV] nằm trong đoạn cuối, ngay sau câu kêu gọi thiết lập khung pháp lý mạnh mẽ. Việc chèn vào đây tạo liên kết logic: nếu không có các biện pháp đó (such measures), khoảng cách số sẽ tăng. Các vị trí khác không có &#x27;measures&#x27; nào được đề cập trước đó để quy chiếu.</div>
+            </article>
+            
+            <article class="question">
+              <div class="qtop"><span class="qindex">10</span><div>
+                <h3>Which of the following best summarises the passage?</h3>
+                <div class="chips"><span>passage_summary</span><strong>Answer: A</strong></div>
+              </div></div>
+              <div class="options"><div class="option correct"><b>A.</b> AI in education offers personalised learning but faces technical and ethical challenges, requiring a balanced and regulated approach.</div><div class="option"><b>B.</b> Artificial intelligence has been proven to be a complete failure in school environments and should be abandoned.</div><div class="option"><b>C.</b> The main benefit of AI in schools is that it reduces the workload of teachers without any significant drawbacks.</div><div class="option"><b>D.</b> Policymakers have successfully addressed all concerns related to AI in education through new regulations.</div></div>
+              <div class="explain"><b>Lời giải chi tiết:</b> Bài đọc trình bày cả hứa hẹn (cá nhân hóa học tập) lẫn thách thức (thiên vị, đạo đức, kỹ năng giáo viên) và kết luận cần cách tiếp cận cân bằng, có quy định. Đáp án A tóm tắt đầy đủ nhất. B sai vì bài không nói AI hoàn toàn thất bại. C sai vì bài nêu nhiều hạn chế đáng kể. D sai vì bài nói các quy định vẫn đang cần được thiết lập, chưa giải quyết xong.</div>
+            </article>
+            </div>
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>

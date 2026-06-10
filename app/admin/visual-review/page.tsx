@@ -510,18 +510,20 @@ export default function VisualReviewPage() {
           {cropImageUrl && (
             <div className="space-y-3">
               <p className="text-sm text-zinc-400">Kéo chuột để khoanh đúng vùng hình/bảng/đồ thị cần giữ lại.</p>
-              <div className="flex justify-center overflow-auto rounded-lg border border-zinc-800 bg-zinc-950 p-3">
+              <div className="flex justify-center overflow-hidden max-w-full rounded-lg border border-zinc-800 bg-zinc-950 p-3">
                 <ReactCrop
                   crop={crop}
                   onChange={(nextCrop) => setCrop(nextCrop)}
                   onComplete={(nextCrop) => setCompletedCrop(nextCrop)}
+                  className="max-w-full"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     ref={imgRef}
                     src={cropImageUrl}
                     alt="Ảnh cần crop"
-                    className="max-h-[62vh] max-w-full select-none object-contain"
+                    className="w-full h-auto max-h-[60vh] object-contain select-none"
+                    style={{ maxHeight: '60vh', maxWidth: '100%', height: 'auto', display: 'block' }}
                   />
                 </ReactCrop>
               </div>

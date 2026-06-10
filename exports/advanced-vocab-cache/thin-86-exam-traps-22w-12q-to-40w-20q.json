@@ -1,0 +1,418 @@
+{
+  "words": [
+    {
+      "word": "scrutinize",
+      "pronunciation": "/ˈskruːtɪnaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "Kiểm tra kỹ lưỡng, xem xét chi tiết; thường dùng trong bối cảnh học thuật hoặc chính thức",
+      "definition_en": "To examine or inspect something very carefully and thoroughly",
+      "level": "B2",
+      "synonyms": [
+        "examine",
+        "inspect",
+        "analyze"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Examiners will scrutinize your essay for grammatical errors and logical coherence."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Có nhiều ý nghĩa, không rõ ràng, gây nhầm lẫn; là bẫy từ vựng phổ biến",
+      "definition_en": "Open to more than one interpretation; unclear or uncertain in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The question's wording was deliberately ambiguous to test students' critical reading skills."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Cung cấp bằng chứng, chứng minh; thường yêu cầu trong bài luận học thuật",
+      "definition_en": "To provide evidence or proof to support a claim or statement",
+      "level": "B2",
+      "synonyms": [
+        "verify",
+        "confirm",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "You must substantiate your arguments with credible sources in academic writing."
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "/præɡˈmætɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Thực tế, thiết thực, dựa trên kết quả thực tế chứ không lý thuyết",
+      "definition_en": "Dealing with things in a practical, realistic way based on actual circumstances",
+      "level": "B2",
+      "synonyms": [
+        "practical",
+        "realistic",
+        "sensible"
+      ],
+      "antonyms": [
+        "idealistic",
+        "theoretical"
+      ],
+      "example_sentence": "A pragmatic approach to language learning involves daily practice rather than memorization alone."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Vốn có, tự nhiên mang theo; là từ bẫy vì dễ nhầm với 'inherit'",
+      "definition_en": "Existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "There is an inherent risk in any investment strategy that students should understand."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Giảm nhẹ, làm giảm bớt (tác hại, mức độ); từ bẫy vì dễ nhầm 'migrate'",
+      "definition_en": "To make something less severe, serious, or painful; to reduce the impact of",
+      "level": "B2",
+      "synonyms": [
+        "alleviate",
+        "reduce",
+        "ease"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "Governments implement policies to mitigate the effects of climate change on vulnerable communities."
+    },
+    {
+      "word": "paradox",
+      "pronunciation": "/ˈpærədɒks/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mâu thuẫn, điều tưởng chừng vô lý nhưng lại có thể đúng; thường xuất hiện trong bài đọc triết học",
+      "definition_en": "A statement or situation that seems contradictory but may reveal a deeper truth",
+      "level": "B2",
+      "synonyms": [
+        "contradiction",
+        "anomaly",
+        "puzzle"
+      ],
+      "antonyms": [
+        "consistency",
+        "logic"
+      ],
+      "example_sentence": "The paradox of modern technology is that it connects us globally yet isolates us personally."
+    },
+    {
+      "word": "concise",
+      "pronunciation": "/kənˈsaɪs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Ngắn gọn, súc tích, không dài dòng; từ bẫy vì dễ nhầm 'precise'",
+      "definition_en": "Brief and clear; expressing much in few words without unnecessary detail",
+      "level": "C1",
+      "synonyms": [
+        "brief",
+        "succinct",
+        "compact"
+      ],
+      "antonyms": [
+        "verbose",
+        "lengthy"
+      ],
+      "example_sentence": "Effective exam answers are concise yet comprehensive, avoiding irrelevant information."
+    },
+    {
+      "word": "diverge",
+      "pronunciation": "/daɪˈvɜːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "Tách ra, đi theo hướng khác nhau; thường dùng để chỉ sự khác biệt giữa các ý kiến",
+      "definition_en": "To separate and go in different directions; to differ or deviate from a course",
+      "level": "B2",
+      "synonyms": [
+        "separate",
+        "branch off",
+        "differ"
+      ],
+      "antonyms": [
+        "converge",
+        "merge"
+      ],
+      "example_sentence": "The two researchers' conclusions diverge significantly on the causes of economic inequality."
+    },
+    {
+      "word": "coherent",
+      "pronunciation": "/koʊˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Mạch lạc, logic, có liên kết chặt chẽ; từ bẫy vì dễ nhầm 'cohesive'",
+      "definition_en": "Logical, consistent, and easy to understand; forming a unified whole",
+      "level": "B2",
+      "synonyms": [
+        "logical",
+        "consistent",
+        "clear"
+      ],
+      "antonyms": [
+        "incoherent",
+        "disjointed"
+      ],
+      "example_sentence": "A coherent essay requires clear topic sentences and smooth transitions between paragraphs."
+    },
+    {
+      "word": "arbitrary",
+      "pronunciation": "/ˈɑːrbɪtreri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Tùy tiện, không có cơ sở logic; từ bẫy vì dễ nhầm 'arbitrary' với 'arbiter'",
+      "definition_en": "Based on random choice or personal whim rather than reason or system",
+      "level": "B2",
+      "synonyms": [
+        "random",
+        "capricious",
+        "whimsical"
+      ],
+      "antonyms": [
+        "logical",
+        "justified"
+      ],
+      "example_sentence": "The teacher's grading system seemed arbitrary until she explained her detailed rubric."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Xác nhận, chứng thực (thông tin); từ bẫy vì dễ nhầm 'collaborate'",
+      "definition_en": "To confirm or give support to a statement, theory, or finding with evidence",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple studies corroborate the hypothesis that regular exercise improves mental health."
+    },
+    {
+      "word": "suppress",
+      "pronunciation": "/səˈpres/",
+      "part_of_speech": "verb",
+      "definition_vi": "Dập tắt, che giấu, ngăn chặn; từ bẫy vì dễ nhầm 'oppress'",
+      "definition_en": "To forcibly prevent something from happening; to keep something hidden or secret",
+      "level": "B2",
+      "synonyms": [
+        "repress",
+        "inhibit",
+        "conceal"
+      ],
+      "antonyms": [
+        "reveal",
+        "express"
+      ],
+      "example_sentence": "Authoritarian regimes often suppress freedom of speech and press to maintain control."
+    },
+    {
+      "word": "elicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Kéo ra, lôi ra (thông tin, phản ứng); từ bẫy vì dễ nhầm 'illicit'",
+      "definition_en": "To draw out or bring forth information, a response, or a reaction from someone",
+      "level": "B2",
+      "synonyms": [
+        "extract",
+        "evoke",
+        "draw out"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "Good interview questions elicit detailed responses rather than simple yes-or-no answers."
+    },
+    {
+      "word": "ostensible",
+      "pronunciation": "/ɒˈstensəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Tưởng chừng, biểu面上; từ bẫy vì dễ nhầm 'possible' hoặc 'sensible'",
+      "definition_en": "Appearing to be true or real on the surface, but possibly concealing something different",
+      "level": "B2",
+      "synonyms": [
+        "apparent",
+        "seeming",
+        "purported"
+      ],
+      "antonyms": [
+        "genuine",
+        "actual"
+      ],
+      "example_sentence": "The ostensible reason for the policy change was budget constraints, but political pressure was the real cause."
+    },
+    {
+      "word": "nuance",
+      "pronunciation": "/ˈnjuːɑːns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sắc thái, chi tiết tinh tế; từ bẫy vì dễ nhầm 'nuisance'",
+      "definition_en": "A subtle difference or distinction in meaning, expression, or tone",
+      "level": "B2",
+      "synonyms": [
+        "subtlety",
+        "shade",
+        "gradation"
+      ],
+      "antonyms": [
+        "obviousness",
+        "bluntness"
+      ],
+      "example_sentence": "Understanding the nuances of English vocabulary is crucial for distinguishing between similar words."
+    },
+    {
+      "word": "bolster",
+      "pronunciation": "/ˈboʊlstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "Tăng cường, hỗ trợ, làm mạnh hơn; từ bẫy vì dễ nhầm 'bluster'",
+      "definition_en": "To strengthen, support, or reinforce something; to make it more confident or secure",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "reinforce",
+        "support"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "Recent economic data bolsters the government's claim that the recovery is sustainable."
+    },
+    {
+      "word": "juxtapose",
+      "pronunciation": "/ˌdʒʌkstəˈpoʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đặt cạnh nhau để so sánh; từ bẫy vì dễ nhầm 'compose' hoặc 'suppose'",
+      "definition_en": "To place two things side by side, especially for the purpose of comparison or contrast",
+      "level": "B2",
+      "synonyms": [
+        "compare",
+        "contrast",
+        "place together"
+      ],
+      "antonyms": [
+        "separate",
+        "distance"
+      ],
+      "example_sentence": "The author juxtaposes traditional and modern values to highlight the cultural conflict in the novel."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's ostensible commitment to environmental protection is contradicted by its approval of new coal mines. What does 'ostensible' mean in this context?",
+      "option_a": "Genuine and sincere",
+      "option_b": "Appearing to be true on the surface but possibly concealing something different",
+      "option_c": "Temporary and subject to change",
+      "option_d": "Legally binding and enforceable",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Ostensible = tưởng chừng, biểu面上. Bẫy là nhầm với 'genuine' (A) hoặc 'temporary' (C). Câu này cho thấy rõ ràng sự mâu thuẫn giữa lời nói và hành động, chứng tỏ 'ostensible' chỉ cái tưởng chừng, không thực sự."
+    },
+    {
+      "question_text": "Which word is closest in meaning to 'elicit' in the sentence: 'The detective's skillful questioning elicited a confession from the suspect'?",
+      "option_a": "Provoked",
+      "option_b": "Drew out or extracted",
+      "option_c": "Permitted",
+      "option_d": "Documented",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Elicit = kéo ra, lôi ra (thông tin). Bẫy là 'provoked' (A) có ý nghĩa khác, và 'illicit' (phát âm giống) có nghĩa bất hợp pháp. 'Drew out' là đáp án chính xác nhất."
+    },
+    {
+      "question_text": "The two economists' analyses of inflation diverge on several key points. Which statement best explains what 'diverge' means here?",
+      "option_a": "They reach the same conclusion through different methods",
+      "option_b": "They separate and go in different directions; their views differ significantly",
+      "option_c": "They discuss the topic in a friendly manner",
+      "option_d": "They combine their expertise to solve the problem",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Diverge = tách ra, đi theo hướng khác nhau. Bẫy là (A) 'reach the same conclusion' mâu thuẫn với ý nghĩa của diverge. (D) 'combine' là antonym. Chỉ (B) đúng."
+    },
+    {
+      "question_text": "The researcher's findings are corroborated by three independent studies. What does 'corroborated' mean?",
+      "option_a": "Contradicted or disproven",
+      "option_b": "Confirmed or supported with evidence",
+      "option_c": "Collaborated on or jointly produced",
+      "option_d": "Criticized or challenged",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Corroborate = xác nhận, chứng thực. Bẫy là (C) 'collaborated' (phát âm giống) nhưng nghĩa khác. (A) và (D) là antonyms. Chỉ (B) đúng."
+    },
+    {
+      "question_text": "Which of the following is an antonym of 'mitigate'?",
+      "option_a": "Alleviate",
+      "option_b": "Reduce",
+      "option_c": "Aggravate",
+      "option_d": "Ease",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Mitigate = giảm nhẹ, làm giảm bớt. (A), (B), (D) đều là synonyms. (C) 'aggravate' = làm tệ hơn, là antonym chính xác. Bẫy là nhầm mitigate với migrate."
+    },
+    {
+      "question_text": "The author juxtaposes the wealthy protagonist with a poor servant to emphasize social inequality. What technique is being used?",
+      "option_a": "Metaphor",
+      "option_b": "Placing two contrasting elements side by side for comparison",
+      "option_c": "Foreshadowing",
+      "option_d": "Irony",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Juxtapose = đặt cạnh nhau để so sánh. Bẫy là nhầm với các kỹ thuật văn học khác. (B) là định nghĩa chính xác của juxtaposition."
+    },
+    {
+      "question_text": "The government's new regulations aim to suppress dissent among opposition parties. In this context, 'suppress' most nearly means ___.",
+      "option_a": "Support or encourage",
+      "option_b": "Forcibly prevent or keep hidden",
+      "option_c": "Discuss openly",
+      "option_d": "Oppress or dominate",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Suppress = dập tắt, che giấu, ngăn chặn. Bẫy là (D) 'oppress' (phát âm giống) nhưng có sắc thái khác. (A) là antonym. Chỉ (B) chính xác."
+    },
+    {
+      "question_text": "The essay lacks coherence because the arguments are disconnected and poorly organized. Which word could replace 'coherence' without changing the meaning?",
+      "option_a": "Cohesion",
+      "option_b": "Consistency",
+      "option_c": "Logical flow and unity",
+      "option_d": "Conciseness",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Coherence = mạch lạc, logic, có liên kết chặt chẽ. Bẫy là (A) 'cohesion' (từ liên quan nhưng khác) và (D) 'conciseness' (ngắn gọn, không liên quan). (C) là paraphrase chính xác nhất."
+    }
+  ]
+}

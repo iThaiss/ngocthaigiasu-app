@@ -1,0 +1,170 @@
+{
+  "words": [
+    {
+      "word": "precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra hoặc làm nhanh chóng xảy ra (một sự kiện, tình huống); đẩy nhanh tiến trình",
+      "definition_en": "to cause something to happen suddenly or sooner than expected",
+      "level": "C1",
+      "synonyms": [
+        "trigger",
+        "hasten",
+        "accelerate"
+      ],
+      "antonyms": [
+        "delay",
+        "postpone"
+      ],
+      "example_sentence": "The economic crisis precipitated a series of political reforms across the nation."
+    },
+    {
+      "word": "hence",
+      "pronunciation": "/hens/",
+      "part_of_speech": "adverb",
+      "definition_vi": "vì vậy, do đó; từ đây, từ lúc này (chỉ thời gian); từ nơi này",
+      "definition_en": "for this reason; therefore; from this place or time",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "thus",
+        "so"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government implemented stricter environmental regulations; hence, carbon emissions decreased significantly."
+    },
+    {
+      "word": "attributable to",
+      "pronunciation": "/əˈtrɪbjətəbl tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có thể quy cho, có thể gán cho (nguyên nhân, lý do); được cho là do",
+      "definition_en": "able to be ascribed or assigned to a particular cause or source",
+      "level": "C1",
+      "synonyms": [
+        "due to",
+        "caused by",
+        "traceable to"
+      ],
+      "antonyms": [],
+      "example_sentence": "The rise in teenage depression is largely attributable to increased social media usage and academic pressure."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "/ɪn ˈlaɪt əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xét đến, dựa trên, với sự xem xét đến (thông tin, sự kiện mới)",
+      "definition_en": "considering; taking into account; in view of",
+      "level": "B2",
+      "synonyms": [
+        "given",
+        "considering",
+        "in view of"
+      ],
+      "antonyms": [],
+      "example_sentence": "In light of recent scientific evidence, the health ministry revised its dietary guidelines."
+    },
+    {
+      "word": "culminate in",
+      "pronunciation": "/ˈkʌlmɪneɪt ɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết thúc bằng, đạt đỉnh điểm ở; dẫn đến kết quả cuối cùng",
+      "definition_en": "to reach a final or climactic point; to end in a particular way",
+      "level": "B2",
+      "synonyms": [
+        "result in",
+        "lead to",
+        "end in"
+      ],
+      "antonyms": [
+        "begin with",
+        "start from"
+      ],
+      "example_sentence": "Years of research and development culminated in the launch of a revolutionary medical device."
+    },
+    {
+      "word": "contingent upon",
+      "pronunciation": "/kənˈtɪndʒənt əˈpɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc vào, tùy thuộc vào (điều kiện); có điều kiện là",
+      "definition_en": "dependent on; conditional upon; subject to",
+      "level": "C1",
+      "synonyms": [
+        "dependent on",
+        "conditional on",
+        "subject to"
+      ],
+      "antonyms": [
+        "independent of",
+        "unconditional"
+      ],
+      "example_sentence": "The success of the project is contingent upon securing adequate funding and skilled personnel."
+    },
+    {
+      "word": "ensue",
+      "pronunciation": "/ɪnˈsuː/",
+      "part_of_speech": "verb",
+      "definition_vi": "xảy ra sau đó, diễn ra tiếp theo; kế tiếp",
+      "definition_en": "to happen or occur afterward; to follow as a consequence",
+      "level": "B2",
+      "synonyms": [
+        "follow",
+        "result",
+        "occur"
+      ],
+      "antonyms": [
+        "precede",
+        "anticipate"
+      ],
+      "example_sentence": "The announcement of the merger sparked investor interest, and a sharp rise in stock prices ensued."
+    },
+    {
+      "word": "predicated on",
+      "pronunciation": "/ˈpredɪkeɪtɪd ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dựa trên, có cơ sở là; được xây dựng trên nền tảng",
+      "definition_en": "based on; founded on; dependent on as a basis",
+      "level": "C1",
+      "synonyms": [
+        "based on",
+        "founded on",
+        "grounded in"
+      ],
+      "antonyms": [],
+      "example_sentence": "Modern educational reform is predicated on the belief that every student deserves equal opportunities."
+    },
+    {
+      "word": "thereby",
+      "pronunciation": "/ðɛəˈbaɪ/",
+      "part_of_speech": "adverb",
+      "definition_vi": "bằng cách đó, nhờ vậy, do đó; qua đó",
+      "definition_en": "by that means; as a result of that; in that way",
+      "level": "B2",
+      "synonyms": [
+        "thus",
+        "so",
+        "consequently"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company invested heavily in automation, thereby reducing production costs and increasing efficiency."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác nhận (bằng bằng chứng); làm cho có thực chất",
+      "definition_en": "to provide evidence or proof for; to support with facts",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "confirm",
+        "corroborate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researcher's hypothesis was substantiated by extensive experimental data collected over five years."
+    }
+  ],
+  "questions": []
+}

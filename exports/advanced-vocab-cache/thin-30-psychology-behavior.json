@@ -1,0 +1,174 @@
+{
+  "words": [
+    {
+      "word": "affective regulation",
+      "pronunciation": "/əˈfektɪv ˌreɡjuˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng kiểm soát và điều chỉnh các cảm xúc, trạng thái tâm lý để đạt mục tiêu hoặc thích ứng với môi trường",
+      "definition_en": "the ability to manage and modulate emotional responses in adaptive ways",
+      "level": "C1",
+      "synonyms": [
+        "emotional control",
+        "mood management"
+      ],
+      "antonyms": [
+        "emotional dysregulation",
+        "affective instability"
+      ],
+      "example_sentence": "Adolescents with poor affective regulation often struggle to manage stress during high-stakes examinations."
+    },
+    {
+      "word": "dispositional optimism",
+      "pronunciation": "/ˌdɪspəˈzɪʃənəl ˈɒptɪmɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xu hướng tính cách của một người luôn kỳ vọng kết quả tích cực trong tương lai, bất kể hoàn cảnh",
+      "definition_en": "a stable personality trait characterized by generalized positive expectations about future outcomes",
+      "level": "C2",
+      "synonyms": [
+        "trait optimism",
+        "positive expectancy"
+      ],
+      "antonyms": [
+        "dispositional pessimism",
+        "negative outlook"
+      ],
+      "example_sentence": "Research demonstrates that dispositional optimism correlates strongly with better health outcomes and psychological well-being."
+    },
+    {
+      "word": "mentalizing",
+      "pronunciation": "/ˈmentəlaɪzɪŋ/",
+      "part_of_speech": "verb",
+      "definition_vi": "khả năng suy luận về các trạng thái tâm lý của bản thân và người khác, bao gồm niềm tin, mong muốn, ý định",
+      "definition_en": "the capacity to understand and interpret mental states—one's own and others'—including beliefs, desires, and intentions",
+      "level": "C2",
+      "synonyms": [
+        "theory of mind",
+        "mind-reading"
+      ],
+      "antonyms": [
+        "mind-blindness"
+      ],
+      "example_sentence": "Children with autism spectrum disorder often exhibit deficits in mentalizing, affecting their social interaction patterns."
+    },
+    {
+      "word": "approach-avoidance conflict",
+      "pronunciation": "/əˈproʊtʃ əˈveɪdəns ˈkɒnflɪkt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng tâm lý khi một đối tượng hoặc tình huống vừa có tính hấp dẫn vừa có tính đe dọa, gây ra sự do dự",
+      "definition_en": "a psychological state where a single goal or stimulus has both attractive and repulsive properties, creating ambivalence",
+      "level": "C1",
+      "synonyms": [
+        "ambivalence",
+        "mixed motivation"
+      ],
+      "antonyms": [
+        "clear motivation",
+        "unambiguous goal"
+      ],
+      "example_sentence": "Students often experience approach-avoidance conflict when considering demanding academic programs with high career prospects."
+    },
+    {
+      "word": "interpersonal synchrony",
+      "pronunciation": "/ˌɪntərˈpɜːrsənəl ˈsɪŋkrəni/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự phối hợp tự nhiên giữa các hành động, cử chỉ, tôn giọng và nhịp độ của hai người trong tương tác xã hội",
+      "definition_en": "the natural coordination of behaviors, gestures, vocal patterns, and rhythms between interacting individuals",
+      "level": "C2",
+      "synonyms": [
+        "behavioral synchrony",
+        "nonverbal mirroring"
+      ],
+      "antonyms": [
+        "asynchrony",
+        "behavioral mismatch"
+      ],
+      "example_sentence": "Therapists who achieve high interpersonal synchrony with clients demonstrate improved therapeutic outcomes and stronger alliance."
+    },
+    {
+      "word": "emotion contagion",
+      "pronunciation": "/ɪˈmoʊʃən kənˈteɪdʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng cảm xúc của một người lan truyền sang người khác thông qua các cơ chế tự động như bắt chước hoặc đồng cảm",
+      "definition_en": "the automatic transfer of emotions from one individual to others through mimicry and empathic processes",
+      "level": "C1",
+      "synonyms": [
+        "emotional transmission",
+        "mood spreading"
+      ],
+      "antonyms": [
+        "emotional isolation",
+        "affective detachment"
+      ],
+      "example_sentence": "Emotion contagion in social media environments can rapidly amplify both positive and negative sentiments across large populations."
+    },
+    {
+      "word": "narrative identity",
+      "pronunciation": "/ˈnærətɪv aɪˈdentɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách mà một người xây dựng và duy trì ý thức về bản thân thông qua các câu chuyện về cuộc sống và kinh nghiệm của họ",
+      "definition_en": "the internalized and evolving story of the self that integrates past, present, and anticipated future experiences",
+      "level": "C2",
+      "synonyms": [
+        "life story",
+        "autobiographical narrative"
+      ],
+      "antonyms": [
+        "fragmented identity",
+        "narrative incoherence"
+      ],
+      "example_sentence": "Psychotherapy often involves reconstructing narrative identity to help clients integrate traumatic experiences into a coherent self-concept."
+    },
+    {
+      "word": "inhibitory control",
+      "pronunciation": "/ɪnˈhɪbɪtəri kənˈtroʊl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng chặn hoặc triệt tiêu những phản ứng tự động, xung động hoặc hành vi không mong muốn để đạt mục tiêu",
+      "definition_en": "the executive function that suppresses prepotent or automatic responses in favor of goal-directed behavior",
+      "level": "C1",
+      "synonyms": [
+        "response inhibition",
+        "impulse control"
+      ],
+      "antonyms": [
+        "impulsivity",
+        "disinhibition"
+      ],
+      "example_sentence": "Weak inhibitory control in childhood predicts higher rates of behavioral problems and academic underachievement."
+    },
+    {
+      "word": "social baseline theory",
+      "pronunciation": "/ˈsoʊʃəl ˈbeɪslaɪn ˈθiːəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lý thuyết cho rằng sự hiện diện của những người thân thiết làm giảm mức độ kích hoạt sinh lý và căng thẳng của cơ thể",
+      "definition_en": "a theoretical framework proposing that proximity to close others reduces physiological arousal and stress reactivity",
+      "level": "C2",
+      "synonyms": [
+        "attachment regulation",
+        "co-regulation"
+      ],
+      "antonyms": [
+        "social isolation stress",
+        "hyperarousal"
+      ],
+      "example_sentence": "Social baseline theory explains why patients recover faster when family members remain present during hospitalization."
+    },
+    {
+      "word": "behavioral disinhibition",
+      "pronunciation": "/bɪˈheɪvjərəl ˌdɪsɪnˈhɪbɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự mất kiểm soát hành vi, dẫn đến những hành động bốc đồng, thiếu suy xét hoặc không phù hợp xã hội",
+      "definition_en": "the loss of behavioral restraint resulting in impulsive, unfiltered, or socially inappropriate actions",
+      "level": "C1",
+      "synonyms": [
+        "impulse dyscontrol",
+        "behavioral release"
+      ],
+      "antonyms": [
+        "behavioral inhibition",
+        "self-restraint"
+      ],
+      "example_sentence": "Alcohol-induced behavioral disinhibition increases risk-taking and aggression through suppression of prefrontal cortex function."
+    }
+  ],
+  "questions": []
+}

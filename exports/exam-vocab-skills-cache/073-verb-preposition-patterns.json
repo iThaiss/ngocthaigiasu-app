@@ -1,0 +1,505 @@
+{
+  "words": [
+    {
+      "word": "depend on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phụ thuộc vào, dựa vào; có liên quan đến điều gì",
+      "definition_en": "to rely on someone or something; to be determined by",
+      "level": "B1",
+      "synonyms": [
+        "rely on",
+        "count on"
+      ],
+      "antonyms": [
+        "be independent of"
+      ],
+      "example_sentence": "The success of the project depends on careful planning and teamwork from all members."
+    },
+    {
+      "word": "refer to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "đề cập đến, nhắc đến; tìm kiếm thông tin từ (tài liệu, người)",
+      "definition_en": "to mention or allude to something; to consult a source for information",
+      "level": "B1",
+      "synonyms": [
+        "mention",
+        "allude to"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The author refers to historical events to support her argument about social change."
+    },
+    {
+      "word": "contribute to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "góp phần vào, đóng góp cho; làm cho điều gì xảy ra",
+      "definition_en": "to give or add something to a cause; to help cause something to happen",
+      "level": "B1",
+      "synonyms": [
+        "add to",
+        "help cause"
+      ],
+      "antonyms": [
+        "detract from",
+        "hinder"
+      ],
+      "example_sentence": "Regular exercise contributes to better physical health and mental well-being."
+    },
+    {
+      "word": "suffer from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chịu đựng, bị ảnh hưởng bởi (bệnh tật, khó khăn); trải qua điều xấu",
+      "definition_en": "to experience pain, illness, or difficulty; to be affected negatively by",
+      "level": "B1",
+      "synonyms": [
+        "be afflicted by",
+        "endure"
+      ],
+      "antonyms": [
+        "benefit from",
+        "enjoy"
+      ],
+      "example_sentence": "Many developing countries suffer from inadequate access to clean water and healthcare."
+    },
+    {
+      "word": "object to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phản đối, không đồng ý với; có ý kiến trái chiều",
+      "definition_en": "to express disagreement or disapproval of something",
+      "level": "B1",
+      "synonyms": [
+        "oppose",
+        "protest against"
+      ],
+      "antonyms": [
+        "agree with",
+        "support"
+      ],
+      "example_sentence": "Several environmental groups object to the construction of the new highway."
+    },
+    {
+      "word": "focus on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tập trung vào, chú ý đến; làm trọng tâm",
+      "definition_en": "to concentrate attention or effort on something specific",
+      "level": "B1",
+      "synonyms": [
+        "concentrate on",
+        "center on"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The research focuses on understanding how climate change affects marine ecosystems."
+    },
+    {
+      "word": "result in",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra; có kết quả là",
+      "definition_en": "to cause something to happen as a consequence",
+      "level": "B1",
+      "synonyms": [
+        "lead to",
+        "cause"
+      ],
+      "antonyms": [
+        "prevent",
+        "avoid"
+      ],
+      "example_sentence": "The policy changes resulted in significant improvements in student performance."
+    },
+    {
+      "word": "account for",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chiếm, đạt tới (một tỷ lệ); giải thích, làm rõ",
+      "definition_en": "to represent a proportion of something; to explain or provide reasons for",
+      "level": "B2",
+      "synonyms": [
+        "explain",
+        "represent"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "Renewable energy sources now account for nearly 30% of the country's total electricity."
+    },
+    {
+      "word": "deal with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xử lý, giải quyết; có liên quan đến",
+      "definition_en": "to handle or manage a problem; to be concerned with a topic",
+      "level": "B1",
+      "synonyms": [
+        "handle",
+        "manage"
+      ],
+      "antonyms": [
+        "avoid",
+        "ignore"
+      ],
+      "example_sentence": "The government must deal with rising unemployment through education and job training programs."
+    },
+    {
+      "word": "consist of",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bao gồm, được cấu thành từ; gồm có",
+      "definition_en": "to be made up of or composed of",
+      "level": "B1",
+      "synonyms": [
+        "comprise",
+        "be made up of"
+      ],
+      "antonyms": [],
+      "example_sentence": "The committee consists of five experts from different academic disciplines."
+    },
+    {
+      "word": "benefit from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "được lợi từ, hưởng lợi từ; có lợi ích từ",
+      "definition_en": "to gain advantage or profit from something",
+      "level": "B1",
+      "synonyms": [
+        "profit from",
+        "gain from"
+      ],
+      "antonyms": [
+        "suffer from",
+        "lose from"
+      ],
+      "example_sentence": "Students benefit from interactive learning methods that encourage critical thinking."
+    },
+    {
+      "word": "apply to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "áp dụng cho, có liên quan đến; nộp đơn xin vào",
+      "definition_en": "to be relevant or suitable for; to submit a formal request",
+      "level": "B1",
+      "synonyms": [
+        "relate to",
+        "pertain to"
+      ],
+      "antonyms": [
+        "exclude",
+        "exempt"
+      ],
+      "example_sentence": "These safety regulations apply to all employees regardless of their position."
+    },
+    {
+      "word": "lead to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra; có kết quả là",
+      "definition_en": "to cause something to happen; to result in a consequence",
+      "level": "B1",
+      "synonyms": [
+        "result in",
+        "cause"
+      ],
+      "antonyms": [
+        "prevent",
+        "stop"
+      ],
+      "example_sentence": "Poor diet and lack of exercise lead to serious health problems in many populations."
+    },
+    {
+      "word": "relate to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "có liên quan đến; có thể hiểu được, đồng cảm với",
+      "definition_en": "to have a connection with; to understand or empathize with",
+      "level": "B2",
+      "synonyms": [
+        "connect to",
+        "pertain to"
+      ],
+      "antonyms": [
+        "disconnect from",
+        "differ from"
+      ],
+      "example_sentence": "The novel's themes relate to contemporary issues of identity and belonging."
+    },
+    {
+      "word": "insist on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "khăng khăng yêu cầu, nhất định muốn; kiên quyết đòi",
+      "definition_en": "to demand something firmly; to maintain something strongly",
+      "level": "B2",
+      "synonyms": [
+        "demand",
+        "require"
+      ],
+      "antonyms": [
+        "waive",
+        "relinquish"
+      ],
+      "example_sentence": "The union insists on better working conditions and fair wages for all members."
+    },
+    {
+      "word": "rely on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dựa vào, phụ thuộc vào; tin tưởng vào",
+      "definition_en": "to depend on someone or something; to trust in",
+      "level": "B1",
+      "synonyms": [
+        "depend on",
+        "count on"
+      ],
+      "antonyms": [
+        "distrust",
+        "doubt"
+      ],
+      "example_sentence": "Developing nations rely on international aid to fund their healthcare and education systems."
+    },
+    {
+      "word": "engage in",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tham gia vào, bắt tay vào; tham dự hoạt động nào",
+      "definition_en": "to participate in or become involved with an activity",
+      "level": "B2",
+      "synonyms": [
+        "participate in",
+        "take part in"
+      ],
+      "antonyms": [
+        "abstain from",
+        "refrain from"
+      ],
+      "example_sentence": "Students are encouraged to engage in community service projects throughout the year."
+    },
+    {
+      "word": "aim at",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nhằm vào, hướng tới; có mục đích là",
+      "definition_en": "to direct effort toward a goal; to intend to achieve",
+      "level": "B2",
+      "synonyms": [
+        "target",
+        "aim for"
+      ],
+      "antonyms": [
+        "abandon",
+        "give up"
+      ],
+      "example_sentence": "The new policy aims at reducing carbon emissions by 50% within the next decade."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh; làm cho ai nhận thấy",
+      "definition_en": "to indicate or draw attention to something; to mention something important",
+      "level": "B1",
+      "synonyms": [
+        "indicate",
+        "highlight"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The researcher points out that previous studies overlooked important environmental factors."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính đến, xem xét; cân nhắc trong quyết định",
+      "definition_en": "to consider something as an important factor in a decision",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "account for"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "When planning urban development, authorities must take into account the needs of local communities."
+    },
+    {
+      "word": "come down to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "quy về, về cơ bản là; phụ thuộc vào",
+      "definition_en": "to be essentially or fundamentally about something; to depend on",
+      "level": "B2",
+      "synonyms": [
+        "boil down to",
+        "amount to"
+      ],
+      "antonyms": [],
+      "example_sentence": "Success in business comes down to understanding customer needs and delivering quality products."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, dẫn đến; làm cho xảy ra",
+      "definition_en": "to cause something to happen; to produce a result",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "stop"
+      ],
+      "example_sentence": "Technological innovation has brought about significant changes in how people communicate globally."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The success of any organization _______ on the commitment and dedication of its employees.",
+      "option_a": "depends",
+      "option_b": "refers",
+      "option_c": "contributes",
+      "option_d": "objects",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Đáp án A (depends on) là đúng vì diễn tả 'phụ thuộc vào'. Các đáp án khác không phù hợp về nghĩa: refers to (đề cập đến), contributes (góp phần), objects (phản đối) không hợp lý trong ngữ cảnh này."
+    },
+    {
+      "question_text": "The article _______ several studies that demonstrate the link between social media use and mental health.",
+      "option_a": "objects to",
+      "option_b": "refers to",
+      "option_c": "suffers from",
+      "option_d": "focuses on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Đáp án B (refers to) là đúng vì 'đề cập đến, nhắc đến các nghiên cứu'. Option A (phản đối), C (chịu đựng), D (tập trung vào) không phù hợp với cấu trúc 'mention studies'."
+    },
+    {
+      "question_text": "Regular physical activity _______ improved cardiovascular health and reduced risk of chronic diseases.",
+      "option_a": "objects to",
+      "option_b": "suffers from",
+      "option_c": "contributes to",
+      "option_d": "refers to",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Đáp án C (contributes to) là đúng vì 'góp phần vào, làm cho xảy ra'. Các đáp án khác không phù hợp: objects to (phản đối), suffers from (chịu đựng), refers to (đề cập đến) không hợp lý."
+    },
+    {
+      "question_text": "Many developing countries _______ inadequate infrastructure and limited access to quality education.",
+      "option_a": "depend on",
+      "option_b": "suffer from",
+      "option_c": "contribute to",
+      "option_d": "apply to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Đáp án B (suffer from) là đúng vì 'chịu đựng, bị ảnh hưởng bởi'. Các đáp án khác không phù hợp: depend on (phụ thuộc vào), contribute to (góp phần vào), apply to (áp dụng cho) không hợp lý trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Environmental groups _______ the construction of the new coal plant, citing concerns about air pollution.",
+      "option_a": "focus on",
+      "option_b": "account for",
+      "option_c": "object to",
+      "option_d": "benefit from",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án C (object to) là đúng vì 'phản đối'. Các đáp án khác không phù hợp: focus on (tập trung vào), account for (chiếm/giải thích), benefit from (hưởng lợi từ) không hợp lý với ngữ cảnh phản đối."
+    },
+    {
+      "question_text": "The research _______ how climate change affects agricultural productivity in tropical regions.",
+      "option_a": "deals with",
+      "option_b": "insists on",
+      "option_c": "comes down to",
+      "option_d": "applies to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (deals with) là đúng vì 'xử lý, có liên quan đến'. Các đáp án khác không phù hợp: insists on (khăng khăng yêu cầu), comes down to (về cơ bản là), applies to (áp dụng cho) không hợp lý với 'research focuses on a topic'."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence? 'The committee _______ five experts from different fields.'",
+      "option_a": "consists of",
+      "option_b": "results in",
+      "option_c": "engages in",
+      "option_d": "aims at",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "Đáp án A (consists of) là đúng vì 'bao gồm, được cấu thành từ'. Các đáp án khác không phù hợp: results in (dẫn đến), engages in (tham gia vào), aims at (nhằm vào) không hợp lý với cấu trúc 'committee + members'."
+    },
+    {
+      "question_text": "Students _______ interactive learning methods that encourage critical thinking and problem-solving skills.",
+      "option_a": "rely on",
+      "option_b": "benefit from",
+      "option_c": "point out",
+      "option_d": "bring about",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (benefit from) là đúng vì 'được lợi từ, hưởng lợi từ'. Các đáp án khác không phù hợp: rely on (dựa vào), point out (chỉ ra), bring about (gây ra) không hợp lý với ngữ cảnh 'students + learning methods'."
+    },
+    {
+      "question_text": "The new regulations _______ all employees in the organization, regardless of their department.",
+      "option_a": "take into account",
+      "option_b": "apply to",
+      "option_c": "lead to",
+      "option_d": "relate to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (apply to) là đúng vì 'áp dụng cho, có liên quan đến'. Các đáp án khác không phù hợp: take into account (tính đến), lead to (dẫn đến), relate to (có liên quan đến) không hợp lý với 'regulations + employees'."
+    },
+    {
+      "question_text": "The government _______ the construction of new highways to reduce traffic congestion in urban areas.",
+      "option_a": "aims at",
+      "option_b": "suffers from",
+      "option_c": "objects to",
+      "option_d": "accounts for",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (aims at) là đúng vì 'nhằm vào, có mục đích là'. Các đáp án khác không phù hợp: suffers from (chịu đựng), objects to (phản đối), accounts for (chiếm/giải thích) không hợp lý với ngữ cảnh 'government + construction project'."
+    },
+    {
+      "question_text": "The researcher _______ that previous studies had overlooked important variables in their analysis.",
+      "option_a": "brings about",
+      "option_b": "points out",
+      "option_c": "engages in",
+      "option_d": "comes down to",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (points out) là đúng vì 'chỉ ra, nhấn mạnh'. Các đáp án khác không phù hợp: brings about (gây ra), engages in (tham gia vào), comes down to (về cơ bản là) không hợp lý với 'researcher + criticism of previous studies'."
+    },
+    {
+      "question_text": "When making important decisions, managers must _______ the impact on all stakeholders.",
+      "option_a": "bring about",
+      "option_b": "take into account",
+      "option_c": "insist on",
+      "option_d": "refer to",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B (take into account) là đúng vì 'tính đến, xem xét'. Các đáp án khác không phù hợp: bring about (gây ra), insist on (khăng khăng yêu cầu), refer to (đề cập đến) không hợp lý với 'consider impact in decision-making'."
+    }
+  ]
+}

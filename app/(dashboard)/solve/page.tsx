@@ -128,7 +128,7 @@ interface Status {
 function LatexText({ text, className }: { text: string; className?: string }) {
   return (
     <span
-      className={className}
+      className={`inline-block max-w-full min-w-0 overflow-x-auto align-bottom scrollbar-none ${className || ''}`}
       dangerouslySetInnerHTML={{ __html: renderLatex(text) }}
     />
   )
@@ -168,7 +168,7 @@ function HistoryModal({ item, onClose }: { item: HistoryItem; onClose: () => voi
   const sol = item.solution
   return (
     <Dialog open onOpenChange={(open) => { if (!open) onClose() }}>
-      <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+      <DialogContent className="w-[95vw] sm:max-w-2xl max-h-[85vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 flex-wrap">
             <span>Chi tiết bài giải</span>
@@ -401,7 +401,7 @@ export default function SolvePage() {
       <div className="grid lg:grid-cols-2 gap-6">
 
         {/* ─── Left: Upload ─── */}
-        <div className="space-y-4">
+        <div className="space-y-4 min-w-0">
           {/* Status bar */}
           <Card className="border-purple-500/20">
             <CardContent className="pt-4 pb-4">
@@ -496,13 +496,13 @@ export default function SolvePage() {
           </Card>
 
           {/* History */}
-          <Card>
+          <Card className="w-full min-w-0 overflow-hidden">
             <CardHeader className="pb-3">
               <CardTitle className="text-base flex items-center gap-2">
                 <History className="h-4 w-4" /> Lịch sử giải gần đây
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-0 p-0">
+            <CardContent className="space-y-0 p-0 w-full min-w-0 overflow-hidden">
               {loadingStatus ? (
                 <div className="p-4 space-y-3">
                   {[1, 2, 3].map((i) => <Skeleton key={i} className="h-12 w-full" />)}
@@ -510,12 +510,15 @@ export default function SolvePage() {
               ) : (status?.history ?? []).length === 0 ? (
                 <p className="text-sm text-muted-foreground text-center py-6">Chưa có bài giải nào</p>
               ) : (
-                <div className="divide-y divide-border">
+                <div className="divide-y divide-border w-full min-w-0 overflow-hidden">
                   {(status?.history ?? []).map((item) => (
-                    <button
+                    <div
                       key={item.id}
+                      role="button"
+                      tabIndex={0}
                       onClick={() => setHistoryModal(item)}
-                      className="w-full flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors text-left"
+                      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setHistoryModal(item) }}
+                      className="w-full flex items-start gap-3 px-4 py-3 hover:bg-muted/30 transition-colors text-left cursor-pointer select-none min-w-0 overflow-hidden"
                     >
                       {item.image_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
@@ -537,7 +540,7 @@ export default function SolvePage() {
                         </div>
                       </div>
                       <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 mt-1" />
-                    </button>
+                    </div>
                   ))}
                 </div>
               )}
@@ -546,7 +549,7 @@ export default function SolvePage() {
         </div>
 
         {/* ─── Right: Result ─── */}
-        <div className="space-y-4">
+        <div className="space-y-4 min-w-0">
           <AnimatePresence mode="wait">
             {solving ? (
               <motion.div key="loading" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -718,24 +721,31 @@ export default function SolvePage() {
       {/* Crop dialog */}
       {cropSrc && (
         <Dialog open onOpenChange={(open) => { if (!open) handleCropSkip() }}>
-          <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="w-[95vw] sm:max-w-2xl max-h-[90vh] overflow-y-auto">
             <DialogHeader>
               <DialogTitle>Chọn vùng bài toán cần giải</DialogTitle>
             </DialogHeader>
             <p className="text-sm text-muted-foreground">Kéo để khoanh vùng 1 câu hỏi, sau đó nhấn &quot;Xác nhận crop&quot;.</p>
-            <div className="flex justify-center overflow-auto">
+            <div className="flex justify-center overflow-hidden max-w-full">
               <ReactCrop
                 crop={crop}
                 onChange={(c) => setCrop(c)}
                 onComplete={(c) => setCompletedCrop(c)}
+                className="max-w-full"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img ref={imgRef} src={cropSrc} alt="crop preview" style={{ maxHeight: '55vh', maxWidth: '100%' }} />
+                <img
+                  ref={imgRef}
+                  src={cropSrc}
+                  alt="crop preview"
+                  className="w-full h-auto max-h-[50vh] object-contain"
+                  style={{ maxHeight: '50vh', maxWidth: '100%', height: 'auto', display: 'block' }}
+                />
               </ReactCrop>
             </div>
-            <div className="flex gap-3 justify-end pt-2">
-              <Button variant="outline" onClick={handleCropSkip}>Bỏ qua crop</Button>
-              <Button onClick={handleCropConfirm}>Xác nhận crop</Button>
+            <div className="flex flex-col-reverse sm:flex-row gap-2 sm:justify-end pt-2">
+              <Button variant="outline" onClick={handleCropSkip} className="w-full sm:w-auto">Bỏ qua crop</Button>
+              <Button onClick={handleCropConfirm} className="w-full sm:w-auto">Xác nhận crop</Button>
             </div>
           </DialogContent>
         </Dialog>

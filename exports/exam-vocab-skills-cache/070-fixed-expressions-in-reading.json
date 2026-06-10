@@ -1,0 +1,507 @@
+{
+  "words": [
+    {
+      "word": "in terms of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "về mặt, xét theo, dưới góc độ (dùng để chỉ rõ khía cạnh nào của vấn đề)",
+      "definition_en": "used to specify which aspect or perspective of something is being discussed",
+      "level": "B1",
+      "synonyms": [
+        "regarding",
+        "concerning",
+        "as far as...is concerned"
+      ],
+      "antonyms": [],
+      "example_sentence": "In terms of environmental impact, renewable energy is far superior to fossil fuels."
+    },
+    {
+      "word": "with regard to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "liên quan đến, về vấn đề, đối với (chính thức hơn 'about')",
+      "definition_en": "concerning or relating to a particular matter; formal alternative to 'about'",
+      "level": "B2",
+      "synonyms": [
+        "concerning",
+        "regarding",
+        "as for"
+      ],
+      "antonyms": [],
+      "example_sentence": "With regard to the recent policy changes, the government has provided detailed explanations to stakeholders."
+    },
+    {
+      "word": "for the sake of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "vì lợi ích của, vì mục đích của, để giữ gìn (thường chỉ sự hy sinh hoặc ưu tiên)",
+      "definition_en": "in order to help, support, or achieve something; often implying sacrifice or priority",
+      "level": "B1",
+      "synonyms": [
+        "for the benefit of",
+        "in the interest of",
+        "to preserve"
+      ],
+      "antonyms": [],
+      "example_sentence": "For the sake of national security, the government implemented stricter border controls."
+    },
+    {
+      "word": "by means of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "bằng cách, thông qua, nhờ vào (chỉ phương tiện, công cụ)",
+      "definition_en": "using something as a method or tool to achieve a goal",
+      "level": "B1",
+      "synonyms": [
+        "through",
+        "via",
+        "using"
+      ],
+      "antonyms": [],
+      "example_sentence": "Scientists discovered the ancient civilization by means of advanced archaeological techniques."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "xét theo, dựa trên, nhận thức được (dùng khi có thông tin mới ảnh hưởng đến quyết định)",
+      "definition_en": "taking into account new information or circumstances that affect understanding or decision",
+      "level": "B2",
+      "synonyms": [
+        "considering",
+        "given",
+        "in view of"
+      ],
+      "antonyms": [],
+      "example_sentence": "In light of recent economic data, the central bank decided to raise interest rates."
+    },
+    {
+      "word": "in the context of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trong bối cảnh, trong hoàn cảnh (chỉ điều kiện hoặc môi trường xung quanh)",
+      "definition_en": "within the circumstances, conditions, or background that surround something",
+      "level": "B2",
+      "synonyms": [
+        "within the framework of",
+        "against the backdrop of",
+        "in the setting of"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the context of global warming, coastal cities face unprecedented challenges."
+    },
+    {
+      "word": "on the basis of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "dựa trên, trên cơ sở (chỉ lý do, bằng chứng hoặc tiêu chí)",
+      "definition_en": "using something as a foundation, reason, or criterion for a decision or judgment",
+      "level": "B2",
+      "synonyms": [
+        "based on",
+        "on the grounds of",
+        "according to"
+      ],
+      "antonyms": [],
+      "example_sentence": "The university rejected the application on the basis of insufficient academic qualifications."
+    },
+    {
+      "word": "in accordance with",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "phù hợp với, theo, tuân theo (chỉ sự tuân thủ quy tắc, luật lệ)",
+      "definition_en": "in agreement with or following a rule, law, or standard",
+      "level": "B2",
+      "synonyms": [
+        "in compliance with",
+        "according to",
+        "in line with"
+      ],
+      "antonyms": [
+        "in violation of",
+        "contrary to"
+      ],
+      "example_sentence": "All construction projects must proceed in accordance with environmental protection regulations."
+    },
+    {
+      "word": "as a result of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do kết quả của, vì (chỉ nguyên nhân dẫn đến hậu quả)",
+      "definition_en": "caused by or following from something; indicating cause and effect",
+      "level": "B1",
+      "synonyms": [
+        "due to",
+        "because of",
+        "owing to"
+      ],
+      "antonyms": [],
+      "example_sentence": "As a result of the pandemic, many companies shifted to remote work arrangements."
+    },
+    {
+      "word": "in the event of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trong trường hợp, nếu xảy ra (dùng để nói về tình huống giả định)",
+      "definition_en": "if something happens; used to discuss hypothetical or contingency situations",
+      "level": "B2",
+      "synonyms": [
+        "if",
+        "should",
+        "in case of"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the event of a natural disaster, emergency protocols must be activated immediately."
+    },
+    {
+      "word": "by virtue of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhờ vào, do có (chỉ lý do là một đặc tính hoặc vị trí)",
+      "definition_en": "because of a particular quality, position, or right that someone possesses",
+      "level": "B2",
+      "synonyms": [
+        "because of",
+        "due to",
+        "on account of"
+      ],
+      "antonyms": [],
+      "example_sentence": "By virtue of her extensive experience, she was promoted to senior management."
+    },
+    {
+      "word": "in spite of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặc dù, bất chấp (chỉ sự đối lập hoặc khó khăn không ngăn cản kết quả)",
+      "definition_en": "despite something that might be expected to prevent or hinder something else",
+      "level": "B1",
+      "synonyms": [
+        "despite",
+        "notwithstanding",
+        "regardless of"
+      ],
+      "antonyms": [
+        "because of",
+        "due to"
+      ],
+      "example_sentence": "In spite of numerous obstacles, the research team successfully completed the project on schedule."
+    },
+    {
+      "word": "with a view to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "với mục đích, nhằm (chỉ ý định hoặc mục tiêu của một hành động)",
+      "definition_en": "with the intention or purpose of achieving something",
+      "level": "B2",
+      "synonyms": [
+        "in order to",
+        "so as to",
+        "with the aim of"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government introduced new policies with a view to reducing unemployment rates."
+    },
+    {
+      "word": "in the absence of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trong sự vắng mặt của, khi không có (chỉ thiếu vắng hoặc không có cái gì)",
+      "definition_en": "when something is not present or available; lacking something",
+      "level": "B2",
+      "synonyms": [
+        "without",
+        "lacking",
+        "in the lack of"
+      ],
+      "antonyms": [
+        "in the presence of",
+        "with"
+      ],
+      "example_sentence": "In the absence of clear evidence, the court could not convict the defendant."
+    },
+    {
+      "word": "in addition to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoài ra, thêm vào (dùng để thêm thông tin hoặc yếu tố khác)",
+      "definition_en": "as well as; used to add another item or piece of information",
+      "level": "B1",
+      "synonyms": [
+        "besides",
+        "furthermore",
+        "moreover"
+      ],
+      "antonyms": [],
+      "example_sentence": "In addition to technical skills, the position requires strong communication abilities."
+    },
+    {
+      "word": "in contrast to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trái ngược với, khác với (dùng để so sánh hai điều khác nhau)",
+      "definition_en": "compared with something different or opposite; showing differences",
+      "level": "B1",
+      "synonyms": [
+        "unlike",
+        "as opposed to",
+        "in comparison with"
+      ],
+      "antonyms": [
+        "similar to",
+        "like"
+      ],
+      "example_sentence": "In contrast to traditional methods, digital marketing offers faster and more measurable results."
+    },
+    {
+      "word": "with the exception of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoại trừ, trừ (chỉ loại trừ một hoặc vài trường hợp khỏi quy tắc chung)",
+      "definition_en": "excluding or not including something; all except for",
+      "level": "B2",
+      "synonyms": [
+        "except for",
+        "apart from",
+        "excluding"
+      ],
+      "antonyms": [
+        "including",
+        "with"
+      ],
+      "example_sentence": "With the exception of the director, all employees must follow the new dress code."
+    },
+    {
+      "word": "in the long run",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "về lâu dài, cuối cùng (chỉ kết quả hoặc ảnh hưởng sau một thời gian dài)",
+      "definition_en": "over a long period of time; considering the ultimate or final outcome",
+      "level": "B1",
+      "synonyms": [
+        "eventually",
+        "ultimately",
+        "in the end"
+      ],
+      "antonyms": [
+        "in the short term",
+        "immediately"
+      ],
+      "example_sentence": "Although the investment requires significant capital, it will be profitable in the long run."
+    },
+    {
+      "word": "at the expense of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "với giá là, bằng cách hy sinh (chỉ sự mất mát hoặc tổn hại để đạt được cái khác)",
+      "definition_en": "with the loss or sacrifice of something; at the cost of something",
+      "level": "B2",
+      "synonyms": [
+        "at the cost of",
+        "to the detriment of",
+        "sacrificing"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company expanded rapidly at the expense of employee welfare and safety standards."
+    },
+    {
+      "word": "in the face of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trước mặt, đối mặt với (chỉ phải đương đầu với khó khăn hoặc thách thức)",
+      "definition_en": "when confronted with or facing a difficult situation or challenge",
+      "level": "B2",
+      "synonyms": [
+        "when faced with",
+        "confronted with",
+        "in the presence of"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the face of rising inflation, consumers are forced to adjust their spending habits."
+    },
+    {
+      "word": "by and large",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói chung, nhìn chung (chỉ kết luận tổng quát, không tuyệt đối)",
+      "definition_en": "on the whole; generally speaking; mostly true with few exceptions",
+      "level": "B2",
+      "synonyms": [
+        "generally",
+        "mostly",
+        "on the whole"
+      ],
+      "antonyms": [
+        "specifically",
+        "in particular"
+      ],
+      "example_sentence": "By and large, the new educational reforms have been well-received by teachers and parents."
+    },
+    {
+      "word": "in the final analysis",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuối cùng, sau cùng (dùng để kết luận hoặc nêu quan điểm cuối cùng)",
+      "definition_en": "when all factors are considered; ultimately; in conclusion",
+      "level": "B2",
+      "synonyms": [
+        "ultimately",
+        "in the end",
+        "after all"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the final analysis, the success of any project depends on effective team collaboration."
+    },
+    {
+      "word": "in keeping with",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "phù hợp với, thích hợp với (chỉ sự hài hòa hoặc tương thích)",
+      "definition_en": "in agreement or harmony with; consistent with",
+      "level": "B2",
+      "synonyms": [
+        "in line with",
+        "consistent with",
+        "in accordance with"
+      ],
+      "antonyms": [
+        "contrary to",
+        "inconsistent with"
+      ],
+      "example_sentence": "The company's new sustainability initiatives are in keeping with global environmental standards."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government implemented new tax policies _____ reducing the budget deficit and stimulating economic growth.",
+      "option_a": "with a view to",
+      "option_b": "in spite of",
+      "option_c": "at the expense of",
+      "option_d": "in the absence of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"With a view to\" có nghĩa là \"với mục đích\" hoặc \"nhằm\", phù hợp với ngữ cảnh nêu ý định của chính sách. \"In spite of\" (mặc dù), \"at the expense of\" (với giá là), và \"in the absence of\" (khi không có) không phù hợp về mặt logic."
+    },
+    {
+      "question_text": "_____ environmental concerns, the factory continued its operations without implementing proper waste management systems.",
+      "option_a": "In light of",
+      "option_b": "In spite of",
+      "option_c": "By means of",
+      "option_d": "In accordance with",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"In spite of\" (mặc dù) thể hiện sự đối lập giữa mối quan tâm về môi trường và hành động tiếp tục hoạt động. \"In light of\" (xét theo) sẽ ngụ ý thay đổi quyết định, không phù hợp. \"By means of\" (bằng cách) và \"in accordance with\" (theo) cũng không thích hợp."
+    },
+    {
+      "question_text": "The researcher analyzed the data _____ three different statistical methods to ensure accuracy.",
+      "option_a": "in terms of",
+      "option_b": "by means of",
+      "option_c": "with regard to",
+      "option_d": "in the context of",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"By means of\" (bằng cách, thông qua) chỉ phương tiện hoặc công cụ được sử dụng. \"In terms of\" (về mặt), \"with regard to\" (liên quan đến), và \"in the context of\" (trong bối cảnh) không phù hợp để nói về phương pháp thực hiện."
+    },
+    {
+      "question_text": "_____ the recent technological advances, traditional industries are facing unprecedented competition.",
+      "option_a": "In the absence of",
+      "option_b": "In light of",
+      "option_c": "For the sake of",
+      "option_d": "In the event of",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"In light of\" (xét theo, dựa trên) dùng khi có thông tin mới ảnh hưởng đến hiểu biết. \"In the absence of\" (khi không có) sai về logic. \"For the sake of\" (vì lợi ích của) và \"in the event of\" (nếu xảy ra) không phù hợp."
+    },
+    {
+      "question_text": "The company achieved its sales targets _____ investing heavily in digital marketing and customer service.",
+      "option_a": "in spite of",
+      "option_b": "by means of",
+      "option_c": "in the absence of",
+      "option_d": "at the expense of",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"By means of\" (bằng cách, thông qua) chỉ phương tiện để đạt được mục tiêu. \"In spite of\" (mặc dù) sai về logic. \"In the absence of\" (khi không có) và \"at the expense of\" (với giá là) cũng không phù hợp."
+    },
+    {
+      "question_text": "_____ the economic downturn, the government maintained its commitment to social welfare programs.",
+      "option_a": "In spite of",
+      "option_b": "In accordance with",
+      "option_c": "In the context of",
+      "option_d": "With the exception of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"In spite of\" (mặc dù) thể hiện sự đối lập giữa khó khăn kinh tế và cam kết duy trì chương trình. \"In accordance with\" (theo), \"in the context of\" (trong bối cảnh), và \"with the exception of\" (ngoại trừ) không phù hợp về mặt ngữ pháp và logic."
+    },
+    {
+      "question_text": "The university's admission policy, _____ academic performance, also considers extracurricular activities and community service.",
+      "option_a": "in addition to",
+      "option_b": "in contrast to",
+      "option_c": "with the exception of",
+      "option_d": "in the long run",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"In addition to\" (ngoài ra, thêm vào) dùng để thêm yếu tố khác vào tiêu chí. \"In contrast to\" (trái ngược với) sai về logic. \"With the exception of\" (ngoại trừ) và \"in the long run\" (về lâu dài) không phù hợp."
+    },
+    {
+      "question_text": "The new environmental regulations require all factories to reduce emissions _____ international standards.",
+      "option_a": "in accordance with",
+      "option_b": "in the absence of",
+      "option_c": "at the expense of",
+      "option_d": "in the event of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"In accordance with\" (phù hợp với, theo) chỉ sự tuân thủ quy tắc hoặc tiêu chuẩn. \"In the absence of\" (khi không có), \"at the expense of\" (với giá là), và \"in the event of\" (nếu xảy ra) không phù hợp."
+    },
+    {
+      "question_text": "_____, the project was completed successfully despite facing multiple challenges and budget constraints.",
+      "option_a": "By and large",
+      "option_b": "In the final analysis",
+      "option_c": "In the long run",
+      "option_d": "In the face of",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"In the final analysis\" (cuối cùng, sau cùng) dùng để kết luận tổng thể về thành công của dự án. \"By and large\" (nói chung) quá mơ hồ. \"In the long run\" (về lâu dài) không phù hợp. \"In the face of\" (đối mặt với) có thể dùng nhưng không tự nhiên bằng."
+    },
+    {
+      "question_text": "The study examined climate change _____ its impact on agricultural productivity in developing nations.",
+      "option_a": "in terms of",
+      "option_b": "with a view to",
+      "option_c": "in keeping with",
+      "option_d": "by virtue of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"In terms of\" (về mặt, xét theo) dùng để chỉ rõ khía cạnh cụ thể của vấn đề được nghiên cứu. \"With a view to\" (với mục đích) sai về logic. \"In keeping with\" (phù hợp với) và \"by virtue of\" (nhờ vào) không phù hợp."
+    },
+    {
+      "question_text": "The company's decision to relocate its headquarters _____ the rising costs in the city center.",
+      "option_a": "in the absence of",
+      "option_b": "as a result of",
+      "option_c": "in the context of",
+      "option_d": "with the exception of",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"As a result of\" (do kết quả của, vì) chỉ nguyên nhân dẫn đến hậu quả. \"In the absence of\" (khi không có), \"in the context of\" (trong bối cảnh), và \"with the exception of\" (ngoại trừ) không phù hợp để nêu nguyên nhân."
+    },
+    {
+      "question_text": "The government introduced stricter regulations _____ protecting consumers from fraudulent business practices.",
+      "option_a": "for the sake of",
+      "option_b": "in the event of",
+      "option_c": "in contrast to",
+      "option_d": "in the absence of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"For the sake of\" (vì lợi ích của, vì mục đích của) chỉ ý định bảo vệ người tiêu dùng. \"In the event of\" (nếu xảy ra), \"in contrast to\" (trái ngược với), và \"in the absence of\" (khi không có) không phù hợp."
+    }
+  ]
+}

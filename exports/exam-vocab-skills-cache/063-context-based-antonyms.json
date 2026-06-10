@@ -1,0 +1,534 @@
+{
+  "words": [
+    {
+      "word": "enhance",
+      "pronunciation": "/ɪnˈhɑːns/",
+      "part_of_speech": "verb",
+      "definition_vi": "cải thiện, nâng cao chất lượng hoặc giá trị của cái gì",
+      "definition_en": "to improve the quality, value, or attractiveness of something",
+      "level": "B1",
+      "synonyms": [
+        "improve",
+        "strengthen",
+        "boost"
+      ],
+      "antonyms": [
+        "diminish",
+        "weaken"
+      ],
+      "example_sentence": "The new technology will enhance productivity and reduce operational costs significantly."
+    },
+    {
+      "word": "diminish",
+      "pronunciation": "/dɪˈmɪnɪʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm bớt, làm cho nhỏ lại hoặc yếu đi",
+      "definition_en": "to make or become smaller or less in size, amount, or importance",
+      "level": "B1",
+      "synonyms": [
+        "reduce",
+        "decrease",
+        "weaken"
+      ],
+      "antonyms": [
+        "enhance",
+        "increase"
+      ],
+      "example_sentence": "Pollution continues to diminish air quality in urban areas across the country."
+    },
+    {
+      "word": "abundant",
+      "pronunciation": "/əˈbʌndənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dồi dào, có nhiều, phong phú",
+      "definition_en": "existing or available in large quantities; plentiful",
+      "level": "B1",
+      "synonyms": [
+        "plentiful",
+        "copious",
+        "ample"
+      ],
+      "antonyms": [
+        "scarce",
+        "limited"
+      ],
+      "example_sentence": "The region has abundant natural resources that support its growing economy."
+    },
+    {
+      "word": "scarce",
+      "pronunciation": "/skeərs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hiếm, khan hiếm, không đủ",
+      "definition_en": "not enough or available in only small quantities",
+      "level": "B1",
+      "synonyms": [
+        "limited",
+        "rare",
+        "insufficient"
+      ],
+      "antonyms": [
+        "abundant",
+        "plentiful"
+      ],
+      "example_sentence": "Fresh water is becoming increasingly scarce in many developing nations."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện, giúp dễ dàng hơn, thúc đẩy",
+      "definition_en": "to make something easier or help it happen more smoothly",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Digital platforms facilitate communication between researchers worldwide."
+    },
+    {
+      "word": "hinder",
+      "pronunciation": "/ˈhɪndər/",
+      "part_of_speech": "verb",
+      "definition_vi": "cản trở, gây khó khăn, làm chậm lại",
+      "definition_en": "to create difficulties that prevent or slow down progress",
+      "level": "B2",
+      "synonyms": [
+        "obstruct",
+        "impede",
+        "block"
+      ],
+      "antonyms": [
+        "facilitate",
+        "promote"
+      ],
+      "example_sentence": "Lack of funding hindered the research team's ability to complete the project."
+    },
+    {
+      "word": "promote",
+      "pronunciation": "/prəˈmoʊt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thúc đẩy, khuyến khích, nâng cao vị trí",
+      "definition_en": "to encourage or support the development or popularity of something",
+      "level": "B1",
+      "synonyms": [
+        "advance",
+        "encourage",
+        "boost"
+      ],
+      "antonyms": [
+        "suppress",
+        "discourage"
+      ],
+      "example_sentence": "The government promotes sustainable practices to protect the environment."
+    },
+    {
+      "word": "suppress",
+      "pronunciation": "/səˈpres/",
+      "part_of_speech": "verb",
+      "definition_vi": "đàn áp, che giấu, ngăn chặn",
+      "definition_en": "to prevent something from being known, expressed, or developed",
+      "level": "B2",
+      "synonyms": [
+        "repress",
+        "conceal",
+        "inhibit"
+      ],
+      "antonyms": [
+        "promote",
+        "reveal"
+      ],
+      "example_sentence": "The regime attempted to suppress freedom of speech and media."
+    },
+    {
+      "word": "explicit",
+      "pronunciation": "/ɪkˈsplɪsɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "rõ ràng, minh bạch, không ẩn chứa",
+      "definition_en": "stated clearly and in detail, leaving no room for confusion",
+      "level": "B2",
+      "synonyms": [
+        "clear",
+        "direct",
+        "unambiguous"
+      ],
+      "antonyms": [
+        "implicit",
+        "vague"
+      ],
+      "example_sentence": "The contract contains explicit instructions regarding payment terms and conditions."
+    },
+    {
+      "word": "implicit",
+      "pronunciation": "/ɪmˈplɪsɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "ẩn chứa, không nói rõ nhưng được hiểu",
+      "definition_en": "suggested or understood without being directly stated",
+      "level": "B2",
+      "synonyms": [
+        "implied",
+        "indirect",
+        "suggested"
+      ],
+      "antonyms": [
+        "explicit",
+        "clear"
+      ],
+      "example_sentence": "There is an implicit agreement between the parties regarding confidentiality."
+    },
+    {
+      "word": "fragile",
+      "pronunciation": "/ˈfrædʒəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ vỡ, yếu ớt, không bền vững",
+      "definition_en": "easily broken, damaged, or destroyed; delicate",
+      "level": "B1",
+      "synonyms": [
+        "delicate",
+        "brittle",
+        "weak"
+      ],
+      "antonyms": [
+        "robust",
+        "durable"
+      ],
+      "example_sentence": "The ecosystem is fragile and requires careful protection from human activities."
+    },
+    {
+      "word": "robust",
+      "pronunciation": "/roʊˈbʌst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vững chắc, bền bỉ, mạnh mẽ",
+      "definition_en": "strong, solid, and able to withstand pressure or difficult conditions",
+      "level": "B2",
+      "synonyms": [
+        "strong",
+        "durable",
+        "sturdy"
+      ],
+      "antonyms": [
+        "fragile",
+        "weak"
+      ],
+      "example_sentence": "The new framework provides a robust foundation for sustainable development."
+    },
+    {
+      "word": "accelerate",
+      "pronunciation": "/əkˈseləreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng tốc, đẩy nhanh, làm nhanh lên",
+      "definition_en": "to increase in speed or cause something to happen faster",
+      "level": "B1",
+      "synonyms": [
+        "speed up",
+        "quicken",
+        "hasten"
+      ],
+      "antonyms": [
+        "decelerate",
+        "slow down"
+      ],
+      "example_sentence": "Climate change is accelerating the melting of polar ice caps."
+    },
+    {
+      "word": "decelerate",
+      "pronunciation": "/diːˈseləreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm tốc, làm chậm lại",
+      "definition_en": "to reduce in speed or slow down",
+      "level": "B2",
+      "synonyms": [
+        "slow down",
+        "reduce speed",
+        "brake"
+      ],
+      "antonyms": [
+        "accelerate",
+        "speed up"
+      ],
+      "example_sentence": "Economic growth is expected to decelerate in the coming quarters."
+    },
+    {
+      "word": "expand",
+      "pronunciation": "/ɪkˈspænd/",
+      "part_of_speech": "verb",
+      "definition_vi": "mở rộng, phát triển, tăng kích thước",
+      "definition_en": "to increase in size, volume, or scope",
+      "level": "B1",
+      "synonyms": [
+        "enlarge",
+        "extend",
+        "grow"
+      ],
+      "antonyms": [
+        "contract",
+        "shrink"
+      ],
+      "example_sentence": "The company plans to expand its operations into three new markets."
+    },
+    {
+      "word": "contract",
+      "pronunciation": "/ˈkɑːntrækt/",
+      "part_of_speech": "verb",
+      "definition_vi": "co lại, giảm kích thước, rút gọn",
+      "definition_en": "to become smaller or reduce in size, volume, or scope",
+      "level": "B1",
+      "synonyms": [
+        "shrink",
+        "reduce",
+        "decrease"
+      ],
+      "antonyms": [
+        "expand",
+        "enlarge"
+      ],
+      "example_sentence": "The manufacturing sector contracted significantly during the economic recession."
+    },
+    {
+      "word": "transparent",
+      "pronunciation": "/trænsˈpærənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "minh bạch, rõ ràng, không che giấu",
+      "definition_en": "open and honest; allowing information to be seen or understood clearly",
+      "level": "B2",
+      "synonyms": [
+        "clear",
+        "open",
+        "honest"
+      ],
+      "antonyms": [
+        "opaque",
+        "obscure"
+      ],
+      "example_sentence": "Transparent governance practices build public trust in institutions."
+    },
+    {
+      "word": "opaque",
+      "pronunciation": "/oʊˈpeɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mờ ám, không rõ ràng, che giấu",
+      "definition_en": "not clear or transparent; difficult to understand or see through",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "obscure",
+        "murky"
+      ],
+      "antonyms": [
+        "transparent",
+        "clear"
+      ],
+      "example_sentence": "The company's opaque financial reporting raised concerns among investors."
+    },
+    {
+      "word": "consolidate",
+      "pronunciation": "/kənˈsɑːlɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "củng cố, gộp lại, làm chắc chắn",
+      "definition_en": "to combine or strengthen separate elements into a unified whole",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "unite",
+        "merge"
+      ],
+      "antonyms": [
+        "disperse",
+        "fragment"
+      ],
+      "example_sentence": "The merger will consolidate the company's position as market leader."
+    },
+    {
+      "word": "disperse",
+      "pronunciation": "/dɪˈspɜːrs/",
+      "part_of_speech": "verb",
+      "definition_vi": "phân tán, rải rác, tán ra",
+      "definition_en": "to spread out or scatter in different directions",
+      "level": "B2",
+      "synonyms": [
+        "scatter",
+        "spread",
+        "distribute"
+      ],
+      "antonyms": [
+        "consolidate",
+        "gather"
+      ],
+      "example_sentence": "Seeds are dispersed by wind and animals across vast distances."
+    },
+    {
+      "word": "sustain",
+      "pronunciation": "/səˈsteɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "duy trì, hỗ trợ, giữ vững",
+      "definition_en": "to maintain or support something over a long period",
+      "level": "B2",
+      "synonyms": [
+        "maintain",
+        "support",
+        "uphold"
+      ],
+      "antonyms": [
+        "abandon",
+        "discontinue"
+      ],
+      "example_sentence": "Renewable energy sources can sustain economic growth without harming the environment."
+    },
+    {
+      "word": "abandon",
+      "pronunciation": "/əˈbændən/",
+      "part_of_speech": "verb",
+      "definition_vi": "bỏ rơi, từ bỏ, thôi không tiếp tục",
+      "definition_en": "to leave or give up something completely, often without intention to return",
+      "level": "B1",
+      "synonyms": [
+        "desert",
+        "forsake",
+        "discontinue"
+      ],
+      "antonyms": [
+        "sustain",
+        "maintain"
+      ],
+      "example_sentence": "The project was abandoned due to insufficient funding and resources."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's new policy aims to _____ economic growth while maintaining environmental standards. Which word best fits this context?",
+      "option_a": "suppress",
+      "option_b": "promote",
+      "option_c": "hinder",
+      "option_d": "diminish",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Promote (thúc đẩy) là từ phù hợp vì chính sách nhằm khuyến khích tăng trưởng kinh tế. Suppress (đàn áp), hinder (cản trở), và diminish (giảm bớt) đều mang nghĩa ngược lại với mục tiêu của chính sách."
+    },
+    {
+      "question_text": "The contract contains _____ terms that leave no room for misinterpretation. What is the opposite meaning of this word?",
+      "option_a": "implicit",
+      "option_b": "vague",
+      "option_c": "unclear",
+      "option_d": "ambiguous",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Explicit (rõ ràng) có nghĩa ngược với implicit (ẩn chứa). Vague, unclear, ambiguous đều là từ đồng nghĩa với implicit, không phải trái nghĩa của explicit."
+    },
+    {
+      "question_text": "The ecosystem is so _____ that even small changes can cause significant damage. Which word best completes this sentence?",
+      "option_a": "robust",
+      "option_b": "durable",
+      "option_c": "fragile",
+      "option_d": "strong",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Fragile (dễ vỡ, yếu ớt) phù hợp với ngữ cảnh rằng những thay đổi nhỏ có thể gây hại lớn. Robust, durable, strong đều mang nghĩa vững chắc, trái ngược với ý nghĩa cần thiết."
+    },
+    {
+      "question_text": "The new technology will _____ productivity, whereas outdated systems tend to _____ efficiency. Which pair of antonyms completes this sentence?",
+      "option_a": "enhance / diminish",
+      "option_b": "reduce / increase",
+      "option_c": "weaken / strengthen",
+      "option_d": "limit / expand",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Enhance (cải thiện) và diminish (giảm bớt) là cặp trái nghĩa hoàn hảo. Enhance phù hợp với công nghệ mới, diminish phù hợp với hệ thống lỗi thời. Các cặp khác không tạo sự tương phản rõ ràng."
+    },
+    {
+      "question_text": "The government's decision to _____ free speech was widely criticized by human rights organizations. What is the opposite of this action?",
+      "option_a": "promote",
+      "option_b": "encourage",
+      "option_c": "advance",
+      "option_d": "facilitate",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Suppress (đàn áp) có trái nghĩa là promote (thúc đẩy). Encourage, advance, facilitate đều là từ đồng nghĩa với promote, không phải trái nghĩa của suppress."
+    },
+    {
+      "question_text": "The region has _____ natural resources, but water remains _____ in many areas. Which pair of antonyms best completes this sentence?",
+      "option_a": "limited / abundant",
+      "option_b": "abundant / scarce",
+      "option_c": "scarce / plentiful",
+      "option_d": "insufficient / ample",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "basic",
+      "explanation": "Abundant (dồi dào) và scarce (khan hiếm) là cặp trái nghĩa hoàn hảo. Câu nói rằng vùng này có nhiều tài nguyên nhưng nước lại thiếu. Các cặp khác không tạo sự tương phản logic."
+    },
+    {
+      "question_text": "Digital platforms _____ communication between researchers, while language barriers _____ collaboration. Which pair of antonyms fits this context?",
+      "option_a": "hinder / facilitate",
+      "option_b": "facilitate / hinder",
+      "option_c": "promote / suppress",
+      "option_d": "obstruct / enable",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Facilitate (tạo điều kiện) và hinder (cản trở) là cặp trái nghĩa. Nền tảng kỹ thuật số tạo điều kiện giao tiếp, trong khi rào cản ngôn ngữ cản trở hợp tác. Cặp A đảo ngược thứ tự."
+    },
+    {
+      "question_text": "The company plans to _____ its operations into new markets, whereas competitors are expected to _____ their presence. Which pair of antonyms completes this sentence?",
+      "option_a": "contract / expand",
+      "option_b": "expand / contract",
+      "option_c": "shrink / grow",
+      "option_d": "reduce / increase",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Expand (mở rộng) và contract (co lại) là cặp trái nghĩa hoàn hảo. Công ty mở rộng hoạt động, trong khi đối thủ co lại sự hiện diện. Cặp A đảo ngược thứ tự."
+    },
+    {
+      "question_text": "The organization's _____ financial practices build public trust, whereas _____ reporting raises concerns. Which pair of antonyms best fits?",
+      "option_a": "transparent / opaque",
+      "option_b": "clear / unclear",
+      "option_c": "honest / deceptive",
+      "option_d": "open / closed",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Transparent (minh bạch) và opaque (mờ ám) là cặp trái nghĩa chính xác trong ngữ cảnh báo cáo tài chính. Transparent xây dựng niềm tin, opaque gây lo ngại. Các cặp khác không chính xác về ngữ cảnh học thuật."
+    },
+    {
+      "question_text": "The merger will _____ the company's market position, while the breakup will _____ its influence. Which pair of antonyms completes this sentence?",
+      "option_a": "strengthen / weaken",
+      "option_b": "consolidate / disperse",
+      "option_c": "unite / separate",
+      "option_d": "merge / divide",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Consolidate (củng cố) và disperse (phân tán) là cặp trái nghĩa chính xác. Sáp nhập củng cố vị trí, tách rời phân tán ảnh hưởng. Các cặp khác mặc dù có liên quan nhưng không chính xác về ngữ cảnh kinh doanh."
+    },
+    {
+      "question_text": "The government's decision to _____ the project disappointed many stakeholders who hoped to _____ it indefinitely. Which pair of antonyms fits this context?",
+      "option_a": "sustain / abandon",
+      "option_b": "abandon / sustain",
+      "option_c": "discontinue / maintain",
+      "option_d": "support / oppose",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Abandon (bỏ rơi) và sustain (duy trì) là cặp trái nghĩa. Chính phủ bỏ rơi dự án, nhưng các bên liên quan muốn duy trì nó. Cặp A đảo ngược thứ tự."
+    },
+    {
+      "question_text": "The new regulations aim to _____ economic growth, but critics argue they will _____ business development. Which pair of antonyms best completes this sentence?",
+      "option_a": "promote / hinder",
+      "option_b": "hinder / promote",
+      "option_c": "encourage / discourage",
+      "option_d": "support / oppose",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Promote (thúc đẩy) và hinder (cản trở) là cặp trái nghĩa hoàn hảo. Quy định nhằm thúc đẩy tăng trưởng, nhưng nhà phê bình cho rằng sẽ cản trở phát triển kinh doanh. Cặp B đảo ngược thứ tự."
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "words": [
+    {
+      "word": "evocative",
+      "pronunciation": "/ɪˈvɒkətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "gợi lên cảm xúc, ký ức hoặc hình ảnh mạnh mẽ; có khả năng làm người ta nhớ lại điều gì đó",
+      "definition_en": "evoking strong feelings or images; bringing memories or emotions to mind",
+      "level": "B2",
+      "synonyms": [
+        "suggestive",
+        "stirring",
+        "moving"
+      ],
+      "antonyms": [
+        "bland",
+        "uninspiring"
+      ],
+      "example_sentence": "The artist's evocative paintings of rural landscapes transported viewers back to their childhood memories."
+    },
+    {
+      "word": "poignant",
+      "pronunciation": "/ˈpɔɪnjənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đau xót, cảm động sâu sắc; gây cảm giác buồn nhưng đẹp đẽ",
+      "definition_en": "evoking a keen sense of sadness or regret; deeply moving",
+      "level": "B2",
+      "synonyms": [
+        "touching",
+        "affecting",
+        "bittersweet"
+      ],
+      "antonyms": [
+        "cheerful",
+        "lighthearted"
+      ],
+      "example_sentence": "The final scene of the film was particularly poignant, leaving many audience members in tears."
+    },
+    {
+      "word": "avant-garde",
+      "pronunciation": "/ˌævɑːntˈɡɑːrd/",
+      "part_of_speech": "noun",
+      "definition_vi": "tiên phong, đi trước thời đại; những tác phẩm/nghệ sĩ thử nghiệm, đổi mới phong cách",
+      "definition_en": "experimental and innovative in style; artists or works that push boundaries",
+      "level": "B2",
+      "synonyms": [
+        "experimental",
+        "innovative",
+        "unconventional"
+      ],
+      "antonyms": [
+        "traditional",
+        "conventional"
+      ],
+      "example_sentence": "The museum's new exhibition showcases avant-garde sculptures that challenge conventional notions of beauty."
+    },
+    {
+      "word": "nuanced",
+      "pronunciation": "/ˈnjuːɑːnst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tinh tế, có nhiều sắc thái; thể hiện những khác biệt nhỏ nhưng quan trọng",
+      "definition_en": "showing subtle differences or variations; sophisticated in detail",
+      "level": "B2",
+      "synonyms": [
+        "subtle",
+        "refined",
+        "sophisticated"
+      ],
+      "antonyms": [
+        "crude",
+        "simplistic"
+      ],
+      "example_sentence": "The actor delivered a nuanced performance that captured the character's internal conflict beautifully."
+    },
+    {
+      "word": "satirical",
+      "pronunciation": "/səˈtɪrɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "châm biếm, mỉa mai; dùng hài hước để chỉ trích xã hội hoặc con người",
+      "definition_en": "using humor or irony to criticize or mock something",
+      "level": "B2",
+      "synonyms": [
+        "mocking",
+        "ironic",
+        "sarcastic"
+      ],
+      "antonyms": [
+        "sincere",
+        "earnest"
+      ],
+      "example_sentence": "The comedian's satirical sketch about social media addiction resonated with the younger audience."
+    },
+    {
+      "word": "ethereal",
+      "pronunciation": "/ɪˈθɪəriəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhẹ nhàng, mơ mộng, như thiên thần; không có thực chất vật lý",
+      "definition_en": "extremely delicate and light; heavenly or spiritual in quality",
+      "level": "B2",
+      "synonyms": [
+        "airy",
+        "delicate",
+        "celestial"
+      ],
+      "antonyms": [
+        "heavy",
+        "earthly"
+      ],
+      "example_sentence": "The ballet dancer's ethereal movements seemed to defy gravity as she glided across the stage."
+    },
+    {
+      "word": "vibrant",
+      "pronunciation": "/ˈvaɪbrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "sống động, rực rỡ; đầy năng lượng và sự sống",
+      "definition_en": "full of energy and enthusiasm; bright and striking in color",
+      "level": "C1",
+      "synonyms": [
+        "lively",
+        "vivid",
+        "energetic"
+      ],
+      "antonyms": [
+        "dull",
+        "lifeless"
+      ],
+      "example_sentence": "The street art festival displayed vibrant murals that transformed the urban landscape."
+    },
+    {
+      "word": "whimsical",
+      "pronunciation": "/ˈwɪmzɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "kỳ quặc, tùy tiện, đầy tính chất hài hước; không theo logic thông thường",
+      "definition_en": "playfully quaint or fanciful; amusingly odd",
+      "level": "B2",
+      "synonyms": [
+        "fanciful",
+        "playful",
+        "quirky"
+      ],
+      "antonyms": [
+        "serious",
+        "logical"
+      ],
+      "example_sentence": "The children's book illustrations were whimsical, featuring talking animals and floating castles."
+    },
+    {
+      "word": "orchestrate",
+      "pronunciation": "/ˈɔːrkɪstreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "sắp xếp, tổ chức; sáng tác cho dàn nhạc; điều phối các yếu tố",
+      "definition_en": "to arrange or coordinate elements; to compose for an orchestra",
+      "level": "B2",
+      "synonyms": [
+        "arrange",
+        "coordinate",
+        "organize"
+      ],
+      "antonyms": [
+        "disorganize",
+        "scatter"
+      ],
+      "example_sentence": "The director orchestrated every detail of the production to create a seamless theatrical experience."
+    },
+    {
+      "word": "resonate",
+      "pronunciation": "/ˈrezəneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "vang vọng, gây cảm tính; tạo ra sự liên kết cảm xúc với người khác",
+      "definition_en": "to produce a deep, clear sound; to strike a chord emotionally",
+      "level": "B2",
+      "synonyms": [
+        "echo",
+        "reverberate",
+        "strike a chord"
+      ],
+      "antonyms": [
+        "silence",
+        "muffle"
+      ],
+      "example_sentence": "The film's message about environmental conservation resonated deeply with viewers worldwide."
+    },
+    {
+      "word": "juxtapose",
+      "pronunciation": "/ˌdʒʌkstəˈpoʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "đặt cạnh nhau để so sánh; tạo ra sự tương phản bằng cách xếp cạnh nhau",
+      "definition_en": "to place two things side by side for contrasting effect",
+      "level": "B2",
+      "synonyms": [
+        "contrast",
+        "compare",
+        "place side by side"
+      ],
+      "antonyms": [
+        "separate",
+        "distance"
+      ],
+      "example_sentence": "The artist juxtaposed traditional and modern elements in the installation to challenge viewers' perceptions."
+    },
+    {
+      "word": "rendition",
+      "pronunciation": "/renˈdɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách thể hiện, diễn tả; phiên bản của một tác phẩm âm nhạc hoặc văn học",
+      "definition_en": "a performance or interpretation of a piece of music or drama",
+      "level": "B2",
+      "synonyms": [
+        "interpretation",
+        "version",
+        "performance"
+      ],
+      "antonyms": [
+        "original",
+        "source"
+      ],
+      "example_sentence": "Her rendition of the classic jazz standard was both respectful and innovative."
+    },
+    {
+      "word": "tableau",
+      "pronunciation": "/tæˈbloʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "bức tranh sống; cảnh tượng tĩnh lặng được sắp xếp như một bức tranh",
+      "definition_en": "a striking and vivid description or representation; a silent motionless group",
+      "level": "B2",
+      "synonyms": [
+        "scene",
+        "picture",
+        "arrangement"
+      ],
+      "antonyms": [
+        "chaos",
+        "disorder"
+      ],
+      "example_sentence": "The opening scene presented a beautiful tableau of the Renaissance period with actors in period costumes."
+    },
+    {
+      "word": "motif",
+      "pronunciation": "/moʊˈtiːf/",
+      "part_of_speech": "noun",
+      "definition_vi": "chủ đề lặp lại; yếu tố trang trí hoặc âm nhạc được lặp lại trong tác phẩm",
+      "definition_en": "a dominant theme or pattern that recurs throughout a work of art",
+      "level": "B2",
+      "synonyms": [
+        "theme",
+        "pattern",
+        "element"
+      ],
+      "antonyms": [
+        "variation",
+        "deviation"
+      ],
+      "example_sentence": "The floral motif appears throughout the textile design, creating visual harmony."
+    },
+    {
+      "word": "parodic",
+      "pronunciation": "/pəˈrɒdɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mang tính chất parody; bắt chước để chế giễu hoặc hài hước",
+      "definition_en": "relating to or characteristic of a parody; mocking imitation",
+      "level": "B2",
+      "synonyms": [
+        "satirical",
+        "mocking",
+        "imitative"
+      ],
+      "antonyms": [
+        "sincere",
+        "genuine"
+      ],
+      "example_sentence": "The film took a parodic approach to superhero conventions, making audiences laugh at familiar tropes."
+    },
+    {
+      "word": "aesthetic appeal",
+      "pronunciation": "/esˈθetɪk əˈpiːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sức hấp dẫn về mặt thẩm mỹ; khả năng gây thích thú về hình thức và vẻ đẹp",
+      "definition_en": "the quality of being visually or artistically pleasing",
+      "level": "B2",
+      "synonyms": [
+        "visual appeal",
+        "artistic charm",
+        "beauty"
+      ],
+      "antonyms": [
+        "ugliness",
+        "unattractiveness"
+      ],
+      "example_sentence": "The interior design of the gallery enhances the aesthetic appeal of the artworks on display."
+    },
+    {
+      "word": "break the fourth wall",
+      "pronunciation": "/breɪk ðə ˈfɔːrθ wɔːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phá vỡ bức tường thứ tư; nhân vật trong tác phẩm tương tác trực tiếp với khán giả",
+      "definition_en": "when a performer acknowledges the audience directly, breaking the illusion of the performance",
+      "level": "B2",
+      "synonyms": [
+        "address the audience",
+        "acknowledge viewers"
+      ],
+      "antonyms": [
+        "maintain illusion",
+        "stay in character"
+      ],
+      "example_sentence": "The comedian breaks the fourth wall by making eye contact and commenting on the audience's reactions."
+    },
+    {
+      "word": "artistic merit",
+      "pronunciation": "/ɑːrˈtɪstɪk ˈmerɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giá trị nghệ thuật; chất lượng và tầm quan trọng của một tác phẩm từ góc độ nghệ thuật",
+      "definition_en": "the quality and value of a work of art based on artistic standards",
+      "level": "B2",
+      "synonyms": [
+        "artistic value",
+        "creative worth",
+        "aesthetic quality"
+      ],
+      "antonyms": [
+        "lack of value",
+        "mediocrity"
+      ],
+      "example_sentence": "Critics debated the artistic merit of the controversial installation at the contemporary art museum."
+    },
+    {
+      "word": "visual storytelling",
+      "pronunciation": "/ˈvɪʒuəl ˈstɔːritɛlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kể chuyện bằng hình ảnh; truyền đạt câu chuyện thông qua các yếu tố hình ảnh",
+      "definition_en": "the art of conveying a narrative through images and visual elements",
+      "level": "B2",
+      "synonyms": [
+        "visual narrative",
+        "pictorial storytelling"
+      ],
+      "antonyms": [
+        "verbal narration",
+        "dialogue-based"
+      ],
+      "example_sentence": "The director's masterful use of visual storytelling allowed the film to transcend language barriers."
+    },
+    {
+      "word": "cultural commentary",
+      "pronunciation": "/ˈkʌltʃərəl ˈkɒməntəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bình luận về văn hóa; nhận xét hoặc phê bình các khía cạnh của xã hội và văn hóa",
+      "definition_en": "critical observation or discussion of cultural phenomena and social issues",
+      "level": "B2",
+      "synonyms": [
+        "social critique",
+        "cultural criticism",
+        "social commentary"
+      ],
+      "antonyms": [
+        "apolitical",
+        "neutral"
+      ],
+      "example_sentence": "The play serves as cultural commentary on modern consumerism and its impact on human relationships."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The artist's latest collection is characterized by its _____ use of color and form, evoking strong emotional responses from viewers.",
+      "option_a": "vibrant",
+      "option_b": "monotonous",
+      "option_c": "dull",
+      "option_d": "muted",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Từ 'vibrant' (sống động, rực rỡ) phù hợp với ngữ cảnh mô tả một bộ sưu tập gây cảm xúc mạnh mẽ. Các đáp án khác (monotonous, dull, muted) đều có nghĩa trái ngược, không phù hợp với ý muốn gây cảm xúc."
+    },
+    {
+      "question_text": "Which word best describes a performance that brings memories and emotions vividly to mind?",
+      "option_a": "Forgettable",
+      "option_b": "Evocative",
+      "option_c": "Routine",
+      "option_d": "Mechanical",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Evocative' (gợi lên cảm xúc, ký ức) chính xác mô tả một buổi biểu diễn gây cảm xúc và ký ức. Các đáp án khác không có ý nghĩa này: forgettable (dễ quên), routine (thường lệ), mechanical (máy móc)."
+    },
+    {
+      "question_text": "The film's _____ approach to social issues made it both entertaining and thought-provoking, using humor to critique modern society.",
+      "option_a": "satirical",
+      "option_b": "literal",
+      "option_c": "straightforward",
+      "option_d": "documentary",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Satirical' (châm biếm) phù hợp với ngữ cảnh sử dụng hài hước để chỉ trích xã hội. Literal, straightforward, và documentary không thể hiện được tính chất châm biếm và hài hước."
+    },
+    {
+      "question_text": "The dancer's _____ movements seemed almost weightless, creating an otherworldly quality that captivated the entire audience.",
+      "option_a": "heavy",
+      "option_b": "clumsy",
+      "option_c": "ethereal",
+      "option_d": "rigid",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Ethereal' (nhẹ nhàng, mơ mộng, như thiên thần) mô tả chuyển động không có trọng lượng và có chất lượng siêu nhiên. Các đáp án khác (heavy, clumsy, rigid) đều trái ngược với ý tưởng này."
+    },
+    {
+      "question_text": "What is the primary purpose of _____ in art, where an artist places contrasting elements side by side to create a striking effect?",
+      "option_a": "Blending",
+      "option_b": "Juxtaposition",
+      "option_c": "Layering",
+      "option_d": "Merging",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Juxtaposition' (đặt cạnh nhau để so sánh) chính xác mô tả kỹ thuật đặt các yếu tố tương phản cạnh nhau. Blending (trộn), layering (xếp lớp), merging (hợp nhất) đều ngược lại với ý tưởng tạo sự tương phản."
+    },
+    {
+      "question_text": "The novel's recurring _____ of lost love appears in every chapter, reinforcing the central theme of the story.",
+      "option_a": "motif",
+      "option_b": "climax",
+      "option_c": "resolution",
+      "option_d": "epilogue",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Motif' (chủ đề lặp lại) là từ chính xác để mô tả một yếu tố lặp lại xuyên suốt tác phẩm. Climax (cao trào), resolution (kết thúc), epilogue (lời kết) không phù hợp với ngữ cảnh 'lặp lại trong mỗi chương'."
+    },
+    {
+      "question_text": "The director's _____ of every element in the production—from lighting to music to actor positioning—resulted in a cohesive and powerful theatrical experience.",
+      "option_a": "neglect",
+      "option_b": "orchestration",
+      "option_c": "improvisation",
+      "option_d": "delegation",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Orchestration' (sắp xếp, tổ chức) mô tả việc điều phối tất cả các yếu tố để tạo ra một trải nghiệm thống nhất. Neglect (bỏ bê), improvisation (tức thời), delegation (giao phó) không phù hợp với ý tưởng kiểm soát chi tiết."
+    }
+  ]
+}

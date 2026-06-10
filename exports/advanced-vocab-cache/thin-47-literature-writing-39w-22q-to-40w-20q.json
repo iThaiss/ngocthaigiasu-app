@@ -1,0 +1,154 @@
+{
+  "words": [
+    {
+      "word": "stylistic device",
+      "pronunciation": "/staɪˈlɪstɪk dɪˈvaɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kỹ thuật văn phong; công cụ biểu đạt được tác giả sử dụng để tạo hiệu ứng nghệ thuật (ẩn dụ, so sánh, lặp lại, v.v.)",
+      "definition_en": "a technique or tool used by a writer to create a particular effect or enhance meaning in a text",
+      "level": "B2",
+      "synonyms": [
+        "literary device",
+        "rhetorical technique"
+      ],
+      "antonyms": [],
+      "example_sentence": "The author employs various stylistic devices to convey the protagonist's inner turmoil throughout the novel."
+    },
+    {
+      "word": "tone",
+      "pronunciation": "/toʊn/",
+      "part_of_speech": "noun",
+      "definition_vi": "giọng điệu, thái độ của tác giả thể hiện qua cách lựa chọn từ ngữ và cách diễn đạt (ví dụ: châm biếm, trang trọng, buồn bã)",
+      "definition_en": "the attitude or mood conveyed by the writer through word choice and expression",
+      "level": "B2",
+      "synonyms": [
+        "mood",
+        "voice"
+      ],
+      "antonyms": [],
+      "example_sentence": "The somber tone of the poem reflects the author's despair about the loss of innocence."
+    },
+    {
+      "word": "compelling narrative",
+      "pronunciation": "/kəmˈpɛlɪŋ ˈnærətɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "câu chuyện hấp dẫn, cuốn hút; một tác phẩm văn học có khả năng giữ chú ý độc giả từ đầu đến cuối",
+      "definition_en": "a story that is engaging and holds the reader's attention throughout",
+      "level": "B2",
+      "synonyms": [
+        "gripping story",
+        "engaging tale"
+      ],
+      "antonyms": [
+        "tedious narrative",
+        "dull story"
+      ],
+      "example_sentence": "The author crafts a compelling narrative that explores the moral complexities of war."
+    },
+    {
+      "word": "linguistic nuance",
+      "pronunciation": "/lɪŋˈɡwɪstɪk ˈnuːɑːns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sắc thái ngôn ngữ; những khác biệt tinh tế trong cách sử dụng từ ngữ, cú pháp hoặc âm thanh để tạo ý nghĩa đặc biệt",
+      "definition_en": "subtle variations in language use that convey specific meanings or effects",
+      "level": "C1",
+      "synonyms": [
+        "semantic subtlety",
+        "linguistic precision"
+      ],
+      "antonyms": [],
+      "example_sentence": "The translator struggled to preserve the linguistic nuances of the original French text in English."
+    },
+    {
+      "word": "narrative perspective",
+      "pronunciation": "/ˈnærətɪv pərˈspɛktɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "góc nhìn kể chuyện; cách thức tác giả trình bày câu chuyện (ngôi thứ nhất, thứ ba, v.v.) và vị trí của người kể chuyện",
+      "definition_en": "the point of view from which a story is told, including the narrator's position and relationship to events",
+      "level": "B2",
+      "synonyms": [
+        "point of view",
+        "narrative stance"
+      ],
+      "antonyms": [],
+      "example_sentence": "The shift in narrative perspective from first-person to third-person creates distance between the reader and the character."
+    },
+    {
+      "word": "textual analysis",
+      "pronunciation": "/ˈtɛkstʃuəl əˈnæləsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân tích văn bản; quá trình kiểm tra chi tiết các yếu tố của một tác phẩm viết (từ ngữ, cấu trúc, hình ảnh) để hiểu ý nghĩa sâu sắc",
+      "definition_en": "the detailed examination of a written work's elements to understand its meaning and effect",
+      "level": "C1",
+      "synonyms": [
+        "close reading",
+        "critical examination"
+      ],
+      "antonyms": [],
+      "example_sentence": "A thorough textual analysis reveals how the author uses color imagery to symbolize the character's emotional journey."
+    },
+    {
+      "word": "authorial intent",
+      "pronunciation": "/ɔːˈθɔːriəl ɪnˈtɛnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ý định của tác giả; những gì tác giả muốn truyền đạt hoặc đạt được thông qua tác phẩm của mình",
+      "definition_en": "the purpose or meaning the author intended to convey through their work",
+      "level": "C1",
+      "synonyms": [
+        "author's purpose",
+        "intended meaning"
+      ],
+      "antonyms": [],
+      "example_sentence": "Scholars debate whether the ambiguous ending reflects the author's deliberate choice or a departure from authorial intent."
+    },
+    {
+      "word": "figurative language",
+      "pronunciation": "/ˈfɪɡərətɪv ˈlæŋɡwɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngôn ngữ hình ảnh; cách sử dụng từ ngữ không theo nghĩa đen mà để tạo hình ảnh hoặc ý nghĩa mới (ẩn dụ, so sánh, nhân hóa)",
+      "definition_en": "language that uses words in non-literal ways to create imagery or convey meaning beyond the surface level",
+      "level": "B2",
+      "synonyms": [
+        "non-literal language",
+        "imaginative expression"
+      ],
+      "antonyms": [
+        "literal language",
+        "denotative language"
+      ],
+      "example_sentence": "The poet's use of figurative language transforms abstract emotions into concrete, vivid images."
+    },
+    {
+      "word": "coherence",
+      "pronunciation": "/koʊˈhɪrəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính mạch lạc, liên kết; sự liên hệ logic và hài hòa giữa các phần của một tác phẩm viết, giúp độc giả dễ theo dõi ý tưởng",
+      "definition_en": "the logical connection and unity of ideas in a text that makes it easy to follow",
+      "level": "C1",
+      "synonyms": [
+        "unity",
+        "consistency"
+      ],
+      "antonyms": [
+        "incoherence",
+        "fragmentation"
+      ],
+      "example_sentence": "The essay lacks coherence because the arguments jump between different topics without clear transitions."
+    },
+    {
+      "word": "literary convention",
+      "pronunciation": "/ˈlɪtəreri kənˈvɛnʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy ước văn học; những tiêu chuẩn, kỳ vọng hoặc phương pháp được chấp nhận rộng rãi trong một thể loại hoặc thời kỳ văn học",
+      "definition_en": "an accepted standard, technique, or expectation in literature that writers and readers understand and follow",
+      "level": "C1",
+      "synonyms": [
+        "literary tradition",
+        "established practice"
+      ],
+      "antonyms": [],
+      "example_sentence": "The author subverts the literary convention of the happy ending by concluding the novel with ambiguity and loss."
+    }
+  ],
+  "questions": []
+}

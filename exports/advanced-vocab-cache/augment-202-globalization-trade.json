@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "trade friction",
+      "pronunciation": "/treɪd ˈfrɪkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Căng thẳng thương mại giữa các quốc gia, thường dẫn đến tranh chấp hoặc biện pháp trả đũa",
+      "definition_en": "Tension or conflict between trading nations, often resulting in disputes or retaliatory measures",
+      "level": "C1",
+      "synonyms": [
+        "trade tension",
+        "commercial dispute"
+      ],
+      "antonyms": [
+        "trade harmony",
+        "commercial cooperation"
+      ],
+      "example_sentence": "Rising trade friction between the US and China has disrupted global supply networks and forced multinational corporations to reassess their sourcing strategies."
+    },
+    {
+      "word": "value chain fragmentation",
+      "pronunciation": "/ˈvæljuː tʃeɪn ˌfrægmənˈteɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự phân tán các khâu sản xuất và phân phối của một sản phẩm trên nhiều quốc gia khác nhau",
+      "definition_en": "The dispersion of production and distribution stages of a product across multiple countries",
+      "level": "C1",
+      "synonyms": [
+        "production dispersal",
+        "global value distribution"
+      ],
+      "antonyms": [
+        "vertical integration",
+        "domestic consolidation"
+      ],
+      "example_sentence": "Value chain fragmentation in the automotive industry has made it difficult for governments to implement localization policies without disrupting manufacturing efficiency."
+    },
+    {
+      "word": "reshoring",
+      "pronunciation": "/ˌriːˈʃɔːrɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình đưa sản xuất hoặc dịch vụ từ nước ngoài trở lại quốc gia gốc",
+      "definition_en": "The process of relocating manufacturing or service operations back to the home country",
+      "level": "C1",
+      "synonyms": [
+        "backshoring",
+        "domestic relocation"
+      ],
+      "antonyms": [
+        "offshoring",
+        "outsourcing"
+      ],
+      "example_sentence": "Recent geopolitical tensions have accelerated reshoring initiatives among Western manufacturers seeking to reduce dependence on Asian production hubs."
+    },
+    {
+      "word": "economic decoupling",
+      "pronunciation": "/ˌɛkəˈnɒmɪk diːˈkʌplɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình giảm sự phụ thuộc kinh tế lẫn nhau giữa các quốc gia hoặc khối kinh tế",
+      "definition_en": "The process of reducing mutual economic interdependence between nations or economic blocs",
+      "level": "C2",
+      "synonyms": [
+        "economic disengagement",
+        "strategic autonomy"
+      ],
+      "antonyms": [
+        "economic integration",
+        "interdependence"
+      ],
+      "example_sentence": "The concept of economic decoupling between developed and emerging markets reflects growing concerns about supply chain vulnerability and geopolitical risk."
+    },
+    {
+      "word": "non-tariff barriers",
+      "pronunciation": "/nɒn-ˈtærɪf ˈbæriərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các biện pháp hạn chế thương mại không phải là thuế, như tiêu chuẩn kỹ thuật hoặc quy định vệ sinh",
+      "definition_en": "Trade restrictions other than tariffs, such as technical standards, health regulations, or licensing requirements",
+      "level": "C1",
+      "synonyms": [
+        "regulatory barriers",
+        "technical obstacles"
+      ],
+      "antonyms": [
+        "tariff reduction",
+        "trade liberalization"
+      ],
+      "example_sentence": "The EU's stringent environmental standards function as non-tariff barriers that effectively limit market access for products from countries with less rigorous regulations."
+    },
+    {
+      "word": "trade diversion",
+      "pronunciation": "/treɪd daɪˈvɜːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thay đổi luồng thương mại từ nhà cung cấp hiệu quả sang nhà cung cấp kém hiệu quả do các hiệp định thương mại",
+      "definition_en": "The shift of trade flows from efficient suppliers to less efficient ones due to trade agreements or barriers",
+      "level": "C2",
+      "synonyms": [
+        "trade redirection",
+        "import substitution"
+      ],
+      "antonyms": [
+        "trade creation",
+        "comparative advantage"
+      ],
+      "example_sentence": "Critics argue that regional trade blocs often result in trade diversion, where member states purchase higher-cost goods from each other rather than from the most competitive global suppliers."
+    },
+    {
+      "word": "strategic autonomy",
+      "pronunciation": "/strəˈtiːdʒɪk ɔːˈtɒnəmi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng của một quốc gia hoặc khối kinh tế hoạt động độc lập mà không phụ thuộc vào các nước khác",
+      "definition_en": "The capacity of a nation or economic bloc to operate independently without reliance on external actors",
+      "level": "C2",
+      "synonyms": [
+        "economic sovereignty",
+        "self-sufficiency"
+      ],
+      "antonyms": [
+        "economic dependence",
+        "interdependence"
+      ],
+      "example_sentence": "The European Union's emphasis on strategic autonomy in critical sectors such as semiconductors and pharmaceuticals reflects a shift away from globalized supply chains."
+    },
+    {
+      "word": "regulatory arbitrage",
+      "pronunciation": "/ˌreɡjələtəri ˈɑːrbɪtrɑːʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khai thác sự khác biệt về quy định giữa các quốc gia để tối đa hóa lợi nhuận hoặc giảm chi phí",
+      "definition_en": "The exploitation of regulatory differences between jurisdictions to maximize profits or minimize costs",
+      "level": "C2",
+      "synonyms": [
+        "regulatory shopping",
+        "jurisdiction arbitrage"
+      ],
+      "antonyms": [
+        "regulatory harmonization",
+        "standardization"
+      ],
+      "example_sentence": "Multinational corporations engage in regulatory arbitrage by establishing subsidiaries in jurisdictions with lenient environmental or labor standards to reduce operational costs."
+    },
+    {
+      "word": "nearshoring",
+      "pronunciation": "/ˈnɪərʃɔːrɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chuyển dịch sản xuất hoặc dịch vụ sang các nước lân cận thay vì các nước xa xôi",
+      "definition_en": "The relocation of manufacturing or services to nearby countries rather than distant ones",
+      "level": "C1",
+      "synonyms": [
+        "regional outsourcing",
+        "proximate offshoring"
+      ],
+      "antonyms": [
+        "offshoring",
+        "distant outsourcing"
+      ],
+      "example_sentence": "Many North American companies are adopting nearshoring strategies by moving production to Mexico and Central America to reduce logistics costs and supply chain complexity."
+    },
+    {
+      "word": "trade creation",
+      "pronunciation": "/treɪd kriːˈeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự gia tăng thương mại giữa các nước do loại bỏ rào cản thương mại, dẫn đến hiệu quả kinh tế tổng thể",
+      "definition_en": "The increase in trade between nations resulting from the removal of trade barriers, leading to overall economic efficiency",
+      "level": "C2",
+      "synonyms": [
+        "trade expansion",
+        "welfare improvement"
+      ],
+      "antonyms": [
+        "trade diversion",
+        "trade contraction"
+      ],
+      "example_sentence": "Economic analysis of regional trade agreements typically distinguishes between trade creation, which benefits consumers, and trade diversion, which may harm third parties."
+    },
+    {
+      "word": "supply chain resilience",
+      "pronunciation": "/səˈplaɪ tʃeɪn rɪˈzɪliəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng của chuỗi cung ứng chịu đựng và phục hồi từ các cú sốc hoặc gián đoạn",
+      "definition_en": "The capacity of a supply chain to withstand and recover from disruptions or shocks",
+      "level": "C1",
+      "synonyms": [
+        "supply chain robustness",
+        "operational flexibility"
+      ],
+      "antonyms": [
+        "supply chain fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "The COVID-19 pandemic exposed the lack of supply chain resilience in many industries, prompting companies to diversify suppliers and maintain strategic inventory buffers."
+    },
+    {
+      "word": "economic sanctions regime",
+      "pronunciation": "/ˌɛkəˈnɒmɪk ˈsæŋkʃənz ˈreʒiːm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống các biện pháp hạn chế kinh tế áp dụng bởi một quốc gia hoặc nhóm quốc gia đối với một quốc gia khác",
+      "definition_en": "A system of economic restrictions imposed by one or more nations against another country",
+      "level": "C2",
+      "synonyms": [
+        "sanctions framework",
+        "economic restrictions"
+      ],
+      "antonyms": [
+        "trade normalization",
+        "economic cooperation"
+      ],
+      "example_sentence": "The comprehensive economic sanctions regime imposed on Russia following its invasion of Ukraine has disrupted global energy markets and accelerated the search for alternative suppliers."
+    },
+    {
+      "word": "comparative advantage",
+      "pronunciation": "/kəmˈpærətɪv ədˈvɑːntɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lợi thế của một quốc gia trong sản xuất một hàng hóa với chi phí cơ hội thấp hơn so với các quốc gia khác",
+      "definition_en": "The ability of a nation to produce a good at a lower opportunity cost than other countries",
+      "level": "C1",
+      "synonyms": [
+        "relative efficiency",
+        "cost advantage"
+      ],
+      "antonyms": [
+        "absolute disadvantage",
+        "competitive weakness"
+      ],
+      "example_sentence": "David Ricardo's theory of comparative advantage explains why countries benefit from specialization and trade even when one nation is more efficient at producing all goods."
+    },
+    {
+      "word": "intellectual property rights enforcement",
+      "pronunciation": "/ˌɪntəˈlɛktʃuəl ˈprɒpəti raɪts ɪnˈfɔːsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Việc thực thi các quyền bảo vệ sáng chế, bản quyền và thương hiệu trong thương mại quốc tế",
+      "definition_en": "The implementation of protections for patents, copyrights, and trademarks in international commerce",
+      "level": "C2",
+      "synonyms": [
+        "IP protection",
+        "patent enforcement"
+      ],
+      "antonyms": [
+        "IP infringement",
+        "counterfeiting"
+      ],
+      "example_sentence": "Weak intellectual property rights enforcement in some developing nations has become a contentious issue in trade negotiations, with developed countries demanding stronger protections for their innovations."
+    },
+    {
+      "word": "trade-weighted exchange rate",
+      "pronunciation": "/treɪd-ˈweɪtɪd ɪksˈtʃeɪndʒ reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tỷ giá hối đoái được tính bằng cách tính trọng số dựa trên tầm quan trọng thương mại của các đối tác",
+      "definition_en": "An exchange rate index weighted by the importance of trade partners in a nation's commerce",
+      "level": "C2",
+      "synonyms": [
+        "effective exchange rate",
+        "weighted currency index"
+      ],
+      "antonyms": [
+        "bilateral exchange rate",
+        "nominal rate"
+      ],
+      "example_sentence": "Central banks monitor the trade-weighted exchange rate to assess the competitiveness of their exports and the impact of currency movements on the overall trade balance."
+    },
+    {
+      "word": "sectoral integration",
+      "pronunciation": "/ˌsɛktərəl ˌɪntɪˈɡreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự hợp nhất các ngành công nghiệp cụ thể giữa các quốc gia thông qua hiệp định thương mại hoặc hợp tác kinh tế",
+      "definition_en": "The integration of specific industries between nations through trade agreements or economic cooperation",
+      "level": "C1",
+      "synonyms": [
+        "industry integration",
+        "sectoral cooperation"
+      ],
+      "antonyms": [
+        "sectoral isolation",
+        "protectionism"
+      ],
+      "example_sentence": "The ASEAN Free Trade Area has promoted sectoral integration in automotive and electronics manufacturing, creating regional production networks that enhance competitiveness."
+    },
+    {
+      "word": "terms of trade",
+      "pronunciation": "/tɜːmz əv treɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tỷ lệ giữa giá xuất khẩu và giá nhập khẩu của một quốc gia, phản ánh lợi ích từ thương mại",
+      "definition_en": "The ratio of export prices to import prices for a nation, reflecting the benefits gained from trade",
+      "level": "C2",
+      "synonyms": [
+        "trade ratio",
+        "price ratio"
+      ],
+      "antonyms": [
+        "trade deficit",
+        "unfavorable exchange"
+      ],
+      "example_sentence": "Developing nations often experience deteriorating terms of trade as commodity prices decline relative to manufactured goods, reducing their purchasing power in international markets."
+    },
+    {
+      "word": "global value network",
+      "pronunciation": "/ˈɡloʊbəl ˈvæljuː ˈnetwɜːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mạng lưới các công ty và quốc gia tham gia vào sản xuất và phân phối một sản phẩm trên toàn cầu",
+      "definition_en": "A network of firms and countries engaged in the production and distribution of a product globally",
+      "level": "C1",
+      "synonyms": [
+        "global production network",
+        "international value system"
+      ],
+      "antonyms": [
+        "domestic production",
+        "isolated economy"
+      ],
+      "example_sentence": "The smartphone industry exemplifies a complex global value network where design, manufacturing, and assembly occur across dozens of countries, each contributing specialized expertise."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'trade creation' in the context of regional trade agreements?",
+      "option_a": "The shift of trade flows from efficient suppliers to less efficient ones due to preferential tariffs",
+      "option_b": "The increase in trade between member nations resulting from the removal of trade barriers, leading to overall economic efficiency",
+      "option_c": "The imposition of additional tariffs on non-member countries to protect domestic industries",
+      "option_d": "The relocation of manufacturing operations to countries with lower labor costs",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Trade creation là sự gia tăng thương mại do loại bỏ rào cào, dẫn đến hiệu quả kinh tế. Option A mô tả trade diversion (sai). Option C là protectionism (sai). Option D là outsourcing (sai)."
+    },
+    {
+      "question_text": "The European Union's push for 'strategic autonomy' in semiconductors and pharmaceuticals primarily aims to achieve which of the following?",
+      "option_a": "Reduce trade with non-EU countries and increase internal consumption",
+      "option_b": "Decrease reliance on external suppliers and enhance independent decision-making capacity",
+      "option_c": "Eliminate all forms of international cooperation in critical sectors",
+      "option_d": "Maximize profits from exporting these products to developing nations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Strategic autonomy là khả năng hoạt động độc lập mà không phụ thuộc vào các nước khác. Option B chính xác nhất. Option A quá cực đoan (sai). Option C không phản ánh mục đích (sai). Option D không liên quan (sai)."
+    },
+    {
+      "question_text": "Companies engaging in 'regulatory arbitrage' typically exploit differences in _____ to minimize operational costs or maximize profits.",
+      "option_a": "exchange rates and currency fluctuations",
+      "option_b": "labor productivity and technological innovation",
+      "option_c": "regulations and standards across different jurisdictions",
+      "option_d": "consumer preferences and market demand patterns",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Regulatory arbitrage là khai thác sự khác biệt về quy định giữa các quốc gia. Option C là đáp án chính xác. Option A liên quan đến currency (sai). Option B liên quan đến productivity (sai). Option D liên quan đến consumer behavior (sai)."
+    },
+    {
+      "question_text": "The COVID-19 pandemic exposed vulnerabilities in global supply chains, prompting companies to pursue 'nearshoring' strategies. What is the primary advantage of nearshoring compared to distant offshoring?",
+      "option_a": "It guarantees lower labor costs and unlimited production capacity",
+      "option_b": "It reduces logistics complexity, lead times, and supply chain vulnerability",
+      "option_c": "It eliminates the need for quality control and regulatory compliance",
+      "option_d": "It allows companies to completely avoid international trade regulations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nearshoring là chuyển sản xuất sang các nước lân cận, giảm độ phức tạp logistics và thời gian vận chuyển. Option B chính xác. Option A không đúng (nearshoring không đảm bảo chi phí thấp nhất). Option C sai (vẫn cần kiểm soát chất lượng). Option D sai (vẫn phải tuân thủ quy định)."
+    },
+    {
+      "question_text": "When economists refer to 'terms of trade' deteriorating for developing nations, they mean that:",
+      "option_a": "Export prices are rising faster than import prices, improving purchasing power",
+      "option_b": "Import prices are declining while export prices remain stable",
+      "option_c": "Export prices are falling relative to import prices, reducing purchasing power",
+      "option_d": "Trade agreements are becoming more restrictive and protectionist",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Terms of trade là tỷ lệ giữa giá xuất khẩu và giá nhập khẩu. Deteriorating terms of trade có nghĩa giá xuất khẩu giảm so với giá nhập khẩu. Option C chính xác. Option A là improving terms (sai). Option B không đủ chính xác. Option D không liên quan."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of 'non-tariff barriers' in international trade?",
+      "option_a": "Technical standards and safety regulations that restrict market access",
+      "option_b": "Health and sanitary requirements for imported products",
+      "option_c": "Direct taxes imposed on imported goods at the border",
+      "option_d": "Licensing requirements and certification procedures for foreign suppliers",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Non-tariff barriers là các biện pháp hạn chế thương mại không phải là thuế. Option C mô tả tariff (thuế), không phải non-tariff barrier. Option A, B, D đều là non-tariff barriers."
+    },
+    {
+      "question_text": "The concept of 'value chain fragmentation' in global manufacturing refers to:",
+      "option_a": "The breakdown of production into stages dispersed across multiple countries",
+      "option_b": "The consolidation of all manufacturing operations within a single nation",
+      "option_c": "The elimination of intermediate suppliers in the production process",
+      "option_d": "The reduction of product quality due to international outsourcing",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Value chain fragmentation là sự phân tán các khâu sản xuất trên nhiều quốc gia. Option A chính xác. Option B là vertical integration (sai). Option C không đúng. Option D là một hệ quả tiêu cực có thể xảy ra nhưng không phải định nghĩa (sai)."
+    },
+    {
+      "question_text": "Which term best describes the shift of manufacturing operations from distant countries back to the home country due to geopolitical concerns?",
+      "option_a": "Nearshoring",
+      "option_b": "Reshoring",
+      "option_c": "Economic decoupling",
+      "option_d": "Trade diversion",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Reshoring là quá trình đưa sản xuất từ nước ngoài trở lại quốc gia gốc. Option B chính xác. Option A là nearshoring (sang nước lân cận, không phải về nhà). Option C là giảm phụ thuộc kinh tế (sai). Option D là thay đổi luồng thương mại (sai)."
+    }
+  ]
+}

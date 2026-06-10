@@ -1,0 +1,415 @@
+{
+  "words": [
+    {
+      "word": "bridge the gap",
+      "pronunciation": "/brɪdʒ ðə ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thu hẹp khoảng cách, giải quyết sự khác biệt giữa hai bên hoặc hai nhóm",
+      "definition_en": "to reduce or eliminate the difference between two things or groups",
+      "level": "B2",
+      "synonyms": [
+        "close the gap",
+        "narrow the divide"
+      ],
+      "antonyms": [
+        "widen the gap",
+        "deepen the divide"
+      ],
+      "example_sentence": "Education programs aim to bridge the gap between rich and poor communities in urban areas."
+    },
+    {
+      "word": "shed light on",
+      "pronunciation": "/ʃed laɪt ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng một vấn đề hoặc tình huống phức tạp",
+      "definition_en": "to clarify or explain something that was previously unclear or mysterious",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "elucidate",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "Recent scientific studies have shed light on the causes of climate change and its environmental impact."
+    },
+    {
+      "word": "strike a balance",
+      "pronunciation": "/straɪk ə ˈbæləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tìm được sự cân bằng, đạt được sự hòa hợp giữa hai điều đối lập",
+      "definition_en": "to find a satisfactory middle position between two opposing things",
+      "level": "B2",
+      "synonyms": [
+        "find equilibrium",
+        "achieve harmony"
+      ],
+      "antonyms": [
+        "lose balance",
+        "tip the scales"
+      ],
+      "example_sentence": "Working parents must strike a balance between career ambitions and family responsibilities."
+    },
+    {
+      "word": "turn a blind eye",
+      "pronunciation": "/tɜːn ə blaɪnd aɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cố tình bỏ qua, giả vờ không thấy hoặc không biết về điều gì",
+      "definition_en": "to deliberately ignore something wrong or unpleasant",
+      "level": "B2",
+      "synonyms": [
+        "ignore",
+        "overlook",
+        "disregard"
+      ],
+      "antonyms": [
+        "acknowledge",
+        "confront"
+      ],
+      "example_sentence": "Governments cannot turn a blind eye to corruption within their institutions any longer."
+    },
+    {
+      "word": "grasp the concept",
+      "pronunciation": "/ɡrɑːsp ðə ˈkɒnsept/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiểu rõ khái niệm, nắm bắt được ý tưởng chính của một vấn đề",
+      "definition_en": "to understand and comprehend a difficult idea or principle",
+      "level": "B2",
+      "synonyms": [
+        "understand",
+        "comprehend",
+        "grasp the idea"
+      ],
+      "antonyms": [
+        "misunderstand",
+        "fail to grasp"
+      ],
+      "example_sentence": "Students who grasp the concept of photosynthesis early will excel in advanced biology courses."
+    },
+    {
+      "word": "bear fruit",
+      "pronunciation": "/beə fruːt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mang lại kết quả, thành công sau một thời gian chờ đợi hoặc nỗ lực",
+      "definition_en": "to produce positive results or success after effort or investment",
+      "level": "B2",
+      "synonyms": [
+        "yield results",
+        "pay off",
+        "succeed"
+      ],
+      "antonyms": [
+        "fail",
+        "backfire"
+      ],
+      "example_sentence": "The company's investment in renewable energy research is finally beginning to bear fruit."
+    },
+    {
+      "word": "break the ice",
+      "pronunciation": "/breɪk ðə aɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phá vỡ sự im lặng hoặc bối rối ban đầu, bắt đầu cuộc trò chuyện",
+      "definition_en": "to initiate conversation or interaction in an awkward or tense situation",
+      "level": "B2",
+      "synonyms": [
+        "start a conversation",
+        "ease tension"
+      ],
+      "antonyms": [
+        "maintain silence",
+        "deepen awkwardness"
+      ],
+      "example_sentence": "The teacher used an icebreaker game to break the ice on the first day of class."
+    },
+    {
+      "word": "come to terms with",
+      "pronunciation": "/kʌm tə tɜːmz wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chấp nhận, thích nghi với một tình huống khó khăn hoặc không mong muốn",
+      "definition_en": "to accept and deal with something difficult or unpleasant",
+      "level": "B2",
+      "synonyms": [
+        "accept",
+        "reconcile oneself to",
+        "adapt to"
+      ],
+      "antonyms": [
+        "reject",
+        "resist"
+      ],
+      "example_sentence": "After the accident, the athlete had to come to terms with a permanent disability."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "/teɪk ˈɪntə əˈkaʊnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xem xét, tính đến một yếu tố hoặc thông tin khi đưa ra quyết định",
+      "definition_en": "to consider or include something as a factor in a decision or calculation",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "factor in",
+        "account for"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Urban planners must take into account the needs of elderly residents when designing public spaces."
+    },
+    {
+      "word": "run counter to",
+      "pronunciation": "/rʌn ˈkaʊntə tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trái ngược với, mâu thuẫn với một ý tưởng hoặc nguyên tắc",
+      "definition_en": "to be in opposition or contradiction to something",
+      "level": "C1",
+      "synonyms": [
+        "contradict",
+        "oppose",
+        "conflict with"
+      ],
+      "antonyms": [
+        "align with",
+        "support"
+      ],
+      "example_sentence": "The new policy runs counter to the company's stated commitment to environmental sustainability."
+    },
+    {
+      "word": "pave the way",
+      "pronunciation": "/peɪv ðə weɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở đường, tạo điều kiện thuận lợi cho sự phát triển hoặc thành công",
+      "definition_en": "to create favorable conditions or opportunities for something to happen",
+      "level": "B2",
+      "synonyms": [
+        "facilitate",
+        "enable",
+        "prepare the ground"
+      ],
+      "antonyms": [
+        "obstruct",
+        "hinder"
+      ],
+      "example_sentence": "The invention of the internet paved the way for the digital revolution in the 21st century."
+    },
+    {
+      "word": "cast doubt on",
+      "pronunciation": "/kɑːst daʊt ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho ai đó nghi ngờ, đặt câu hỏi về tính xác thực hoặc độ tin cậy",
+      "definition_en": "to make someone question the truth or reliability of something",
+      "level": "B2",
+      "synonyms": [
+        "question",
+        "challenge",
+        "dispute"
+      ],
+      "antonyms": [
+        "confirm",
+        "validate"
+      ],
+      "example_sentence": "The leaked documents cast doubt on the government's official explanation of the incident."
+    },
+    {
+      "word": "hold sway",
+      "pronunciation": "/həʊld sweɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có ảnh hưởng, kiểm soát hoặc chi phối một tình huống hoặc nhóm người",
+      "definition_en": "to have significant influence or control over something or someone",
+      "level": "C1",
+      "synonyms": [
+        "exert influence",
+        "dominate",
+        "prevail"
+      ],
+      "antonyms": [
+        "lose influence",
+        "surrender control"
+      ],
+      "example_sentence": "Traditional values still hold sway in many rural communities despite rapid urbanization."
+    },
+    {
+      "word": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, dẫn đến sự xuất hiện của một hiện tượng hoặc vấn đề mới",
+      "definition_en": "to cause or lead to the emergence or creation of something",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "result in"
+      ],
+      "antonyms": [
+        "prevent",
+        "suppress"
+      ],
+      "example_sentence": "The rapid growth of social media has given rise to new forms of cyberbullying among teenagers."
+    },
+    {
+      "word": "stand the test of time",
+      "pronunciation": "/stænd ðə test əv taɪm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tồn tại lâu dài, chứng tỏ giá trị hoặc hiệu quả qua nhiều năm",
+      "definition_en": "to remain valuable, relevant, or effective over a long period",
+      "level": "B2",
+      "synonyms": [
+        "endure",
+        "persist",
+        "remain relevant"
+      ],
+      "antonyms": [
+        "fade away",
+        "become obsolete"
+      ],
+      "example_sentence": "Shakespeare's plays have stood the test of time and continue to captivate audiences worldwide."
+    },
+    {
+      "word": "fall prey to",
+      "pronunciation": "/fɔːl preɪ tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trở thành nạn nhân của, bị tổn hại bởi một điều gì đó có hại",
+      "definition_en": "to become a victim of something harmful or undesirable",
+      "level": "B2",
+      "synonyms": [
+        "succumb to",
+        "become victim to",
+        "be vulnerable to"
+      ],
+      "antonyms": [
+        "resist",
+        "avoid"
+      ],
+      "example_sentence": "Many young people fall prey to online scams because they lack awareness of digital security."
+    },
+    {
+      "word": "gain momentum",
+      "pronunciation": "/ɡeɪn ˈmoʊmentəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tăng tốc độ, phát triển mạnh mẽ hơn, thu hút sự chú ý ngày càng nhiều",
+      "definition_en": "to increase in speed, strength, or support; to become more powerful or popular",
+      "level": "B2",
+      "synonyms": [
+        "accelerate",
+        "build up",
+        "intensify"
+      ],
+      "antonyms": [
+        "lose momentum",
+        "slow down"
+      ],
+      "example_sentence": "The climate change movement has gained momentum globally as more countries commit to carbon neutrality."
+    },
+    {
+      "word": "lay the groundwork",
+      "pronunciation": "/leɪ ðə ˈɡraʊndwɜːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chuẩn bị nền tảng, tạo điều kiện cơ bản cho sự phát triển hoặc thành công",
+      "definition_en": "to establish the basic foundation or preparation for future development or success",
+      "level": "B2",
+      "synonyms": [
+        "prepare the foundation",
+        "establish basics",
+        "set the stage"
+      ],
+      "antonyms": [
+        "neglect preparation",
+        "skip fundamentals"
+      ],
+      "example_sentence": "Early childhood education lays the groundwork for academic success in later years."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new trade agreement is expected to _____ the way for increased economic cooperation between the two nations.",
+      "option_a": "pave",
+      "option_b": "bridge",
+      "option_c": "strike",
+      "option_d": "cast",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Pave the way\" có nghĩa là tạo điều kiện thuận lợi cho điều gì đó xảy ra. Các đáp án khác không tạo thành collocation hợp lệ với \"the way\". \"Bridge the gap\" (thu hẹp khoảng cách), \"strike a balance\" (tìm sự cân bằng), \"cast doubt\" (đặt câu hỏi) đều có cấu trúc khác."
+    },
+    {
+      "question_text": "Scientists have _____ light on the mechanisms of how vaccines strengthen the immune system.",
+      "option_a": "cast",
+      "option_b": "shed",
+      "option_c": "throw",
+      "option_d": "turn",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Shed light on\" là collocation chính xác để nói về việc làm sáng tỏ hoặc giải thích một vấn đề. \"Cast light\" không phải collocation tiêu chuẩn; \"throw light\" ít phổ biến hơn; \"turn light\" không hợp lệ trong ngữ cảnh này."
+    },
+    {
+      "question_text": "The government has decided to _____ a blind eye to the environmental violations committed by large corporations.",
+      "option_a": "close",
+      "option_b": "shut",
+      "option_c": "turn",
+      "option_d": "cover",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Turn a blind eye\" là collocation chuẩn để chỉ cố tình bỏ qua hoặc giả vờ không thấy điều gì. \"Close a blind eye\", \"shut a blind eye\", \"cover a blind eye\" đều không phải collocations chính xác."
+    },
+    {
+      "question_text": "The recent scandal has _____ doubt on the credibility of the organization's leadership.",
+      "option_a": "raised",
+      "option_b": "cast",
+      "option_c": "thrown",
+      "option_d": "placed",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Cast doubt on\" là collocation chính xác. Mặc dù \"raise doubt\" cũng có thể dùng, nhưng \"cast doubt on\" là cách diễn đạt học thuật và chính thức hơn. \"Throw doubt\" và \"place doubt\" không phải collocations tiêu chuẩn."
+    },
+    {
+      "question_text": "The invention of antibiotics _____ rise to a revolution in modern medicine and public health.",
+      "option_a": "gave",
+      "option_b": "brought",
+      "option_c": "caused",
+      "option_d": "led",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Give rise to\" là collocation chính xác để nói về việc gây ra hoặc dẫn đến sự xuất hiện của điều gì. \"Brought rise to\", \"caused rise to\", \"led rise to\" đều không phải collocations hợp lệ."
+    },
+    {
+      "question_text": "Despite facing numerous challenges, the startup has _____ momentum and is now valued at over one billion dollars.",
+      "option_a": "built",
+      "option_b": "gained",
+      "option_c": "increased",
+      "option_d": "accelerated",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"Gain momentum\" là collocation chuẩn để chỉ sự phát triển mạnh mẽ hoặc tăng tốc độ. \"Build momentum\" cũng có thể dùng nhưng \"gain momentum\" là cách diễn đạt phổ biến hơn. \"Increased momentum\" và \"accelerated momentum\" không phải collocations chính xác."
+    },
+    {
+      "question_text": "Traditional customs continue to _____ sway in many indigenous communities despite globalization.",
+      "option_a": "maintain",
+      "option_b": "keep",
+      "option_c": "hold",
+      "option_d": "exercise",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"Hold sway\" là collocation chính xác để chỉ có ảnh hưởng hoặc kiểm soát. \"Maintain sway\", \"keep sway\", \"exercise sway\" đều không phải collocations tiêu chuẩn. \"Hold sway\" là cách diễn đạt học thuật và chính thức."
+    },
+    {
+      "question_text": "The foundation's educational initiatives have _____ the groundwork for sustainable development in rural areas.",
+      "option_a": "prepared",
+      "option_b": "established",
+      "option_c": "laid",
+      "option_d": "set",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Lay the groundwork\" là collocation chính xác để chỉ chuẩn bị nền tảng hoặc tạo điều kiện cơ bản. \"Prepared the groundwork\", \"established the groundwork\", \"set the groundwork\" đều không phải collocations chuẩn. \"Lay\" là động từ đúng trong cụm này."
+    }
+  ]
+}

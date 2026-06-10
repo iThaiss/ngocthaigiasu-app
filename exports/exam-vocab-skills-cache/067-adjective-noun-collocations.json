@@ -1,0 +1,512 @@
+{
+  "words": [
+    {
+      "word": "strong evidence",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "bằng chứng mạnh mẽ, thuyết phục; dữ liệu/sự kiện rõ ràng chứng minh điều gì",
+      "definition_en": "clear and convincing proof or facts that support a claim",
+      "level": "B1",
+      "synonyms": [
+        "solid evidence",
+        "compelling proof"
+      ],
+      "antonyms": [
+        "weak evidence",
+        "flimsy proof"
+      ],
+      "example_sentence": "The researchers presented strong evidence that climate change is accelerating global warming significantly."
+    },
+    {
+      "word": "major concern",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "mối lo ngại lớn, vấn đề quan trọng cần chú ý; điều gây lo lắng chính",
+      "definition_en": "a significant worry or important issue that needs attention",
+      "level": "B1",
+      "synonyms": [
+        "serious concern",
+        "primary worry"
+      ],
+      "antonyms": [
+        "minor issue",
+        "trivial matter"
+      ],
+      "example_sentence": "Environmental pollution remains a major concern for governments worldwide seeking sustainable solutions."
+    },
+    {
+      "word": "sustainable development",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "phát triển bền vững; tăng trưởng kinh tế vừa đáp ứng nhu cầu hiện tại vừa bảo vệ tài nguyên tương lai",
+      "definition_en": "economic growth that meets present needs without harming future generations' resources",
+      "level": "B2",
+      "synonyms": [
+        "green development",
+        "eco-friendly growth"
+      ],
+      "antonyms": [
+        "unsustainable growth",
+        "destructive development"
+      ],
+      "example_sentence": "Many Asian countries are investing in renewable energy to achieve sustainable development goals."
+    },
+    {
+      "word": "fierce competition",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cuộc cạnh tranh gay gắt, khốc liệt; sự tranh giành mạnh mẽ giữa các đối thủ",
+      "definition_en": "intense and aggressive rivalry between competitors",
+      "level": "B1",
+      "synonyms": [
+        "intense rivalry",
+        "stiff competition"
+      ],
+      "antonyms": [
+        "mild competition",
+        "weak rivalry"
+      ],
+      "example_sentence": "The smartphone market faces fierce competition as companies constantly innovate to attract consumers."
+    },
+    {
+      "word": "critical issue",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "vấn đề tới hạn, cấp bách; sự việc rất quan trọng và cần giải quyết ngay",
+      "definition_en": "a serious and urgent problem that requires immediate attention",
+      "level": "B2",
+      "synonyms": [
+        "pressing issue",
+        "urgent matter"
+      ],
+      "antonyms": [
+        "trivial issue",
+        "minor problem"
+      ],
+      "example_sentence": "Water scarcity has become a critical issue in developing nations affecting millions of people."
+    },
+    {
+      "word": "profound impact",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tác động sâu sắc, ảnh hưởng lớn; sự thay đổi mạnh mẽ và có ý nghĩa",
+      "definition_en": "a deep and significant effect or influence on something",
+      "level": "B2",
+      "synonyms": [
+        "deep influence",
+        "major effect"
+      ],
+      "antonyms": [
+        "superficial impact",
+        "minor effect"
+      ],
+      "example_sentence": "The industrial revolution had a profound impact on society, transforming how people lived and worked."
+    },
+    {
+      "word": "widespread adoption",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "sự chấp nhận rộng rãi; việc áp dụng/sử dụng phổ biến ở nhiều nơi",
+      "definition_en": "broad acceptance and use of something across many places or groups",
+      "level": "B2",
+      "synonyms": [
+        "broad acceptance",
+        "mass adoption"
+      ],
+      "antonyms": [
+        "limited adoption",
+        "narrow acceptance"
+      ],
+      "example_sentence": "The widespread adoption of smartphones has revolutionized communication and business practices globally."
+    },
+    {
+      "word": "fundamental principle",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nguyên tắc cơ bản, nền tảng; quy tắc hoặc ý tưởng chính yếu nhất",
+      "definition_en": "a basic rule or essential idea that forms the foundation of something",
+      "level": "B2",
+      "synonyms": [
+        "basic principle",
+        "core concept"
+      ],
+      "antonyms": [
+        "secondary principle",
+        "minor rule"
+      ],
+      "example_sentence": "Democracy is built on the fundamental principle that all citizens have equal rights and voice."
+    },
+    {
+      "word": "remarkable achievement",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thành tích đáng chú ý, nổi bật; kết quả ấn tượng đạt được",
+      "definition_en": "a notable and impressive accomplishment or success",
+      "level": "B2",
+      "synonyms": [
+        "outstanding achievement",
+        "impressive feat"
+      ],
+      "antonyms": [
+        "ordinary result",
+        "mediocre outcome"
+      ],
+      "example_sentence": "Landing humans on the moon was a remarkable achievement that demonstrated technological advancement."
+    },
+    {
+      "word": "inherent risk",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "rủi ro vốn có, nguy hiểm tự nhiên; mối nguy hiểm nằm sẵn trong bản chất của cái gì",
+      "definition_en": "a danger or hazard that is naturally present or built-in",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic risk",
+        "built-in danger"
+      ],
+      "antonyms": [
+        "external risk",
+        "avoidable danger"
+      ],
+      "example_sentence": "Medical procedures carry inherent risks that doctors must discuss with patients before treatment."
+    },
+    {
+      "word": "acute shortage",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tình trạng thiếu hụt cấp bách, tức thời; sự khan hiếm nghiêm trọng",
+      "definition_en": "a severe and immediate lack or scarcity of something needed",
+      "level": "B2",
+      "synonyms": [
+        "severe shortage",
+        "critical scarcity"
+      ],
+      "antonyms": [
+        "abundant supply",
+        "surplus availability"
+      ],
+      "example_sentence": "The pandemic created an acute shortage of medical supplies in hospitals worldwide."
+    },
+    {
+      "word": "strategic importance",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tầm quan trọng chiến lược; giá trị then chốt trong kế hoạch dài hạn",
+      "definition_en": "significant value or relevance in achieving long-term goals or plans",
+      "level": "B2",
+      "synonyms": [
+        "crucial importance",
+        "vital significance"
+      ],
+      "antonyms": [
+        "minor importance",
+        "negligible value"
+      ],
+      "example_sentence": "The location of the port has strategic importance for international trade and regional security."
+    },
+    {
+      "word": "chronic problem",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "vấn đề mãn tính, kéo dài; sự cố tồn tại lâu dài khó giải quyết",
+      "definition_en": "a persistent and long-lasting difficulty that is hard to solve",
+      "level": "B2",
+      "synonyms": [
+        "persistent problem",
+        "long-standing issue"
+      ],
+      "antonyms": [
+        "temporary problem",
+        "acute issue"
+      ],
+      "example_sentence": "Unemployment remains a chronic problem in many developing countries affecting economic stability."
+    },
+    {
+      "word": "optimal solution",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "giải pháp tối ưu, hoàn hảo nhất; cách giải quyết tốt nhất có thể",
+      "definition_en": "the best possible answer or method to solve a problem",
+      "level": "B2",
+      "synonyms": [
+        "best solution",
+        "ideal approach"
+      ],
+      "antonyms": [
+        "poor solution",
+        "suboptimal approach"
+      ],
+      "example_sentence": "Engineers worked to find the optimal solution for reducing energy consumption in buildings."
+    },
+    {
+      "word": "tangible benefit",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "lợi ích cụ thể, hữu hình; kết quả tích cực có thể nhận thấy rõ",
+      "definition_en": "a real and concrete advantage that can be clearly observed or measured",
+      "level": "B2",
+      "synonyms": [
+        "concrete benefit",
+        "measurable advantage"
+      ],
+      "antonyms": [
+        "intangible benefit",
+        "abstract advantage"
+      ],
+      "example_sentence": "The new training program provided tangible benefits by increasing employee productivity significantly."
+    },
+    {
+      "word": "volatile situation",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tình huống bất ổn, dễ thay đổi; hoàn cảnh không ổn định và có thể xấu đi",
+      "definition_en": "an unstable condition that can change suddenly and unpredictably",
+      "level": "B2",
+      "synonyms": [
+        "unstable situation",
+        "precarious condition"
+      ],
+      "antonyms": [
+        "stable situation",
+        "predictable condition"
+      ],
+      "example_sentence": "The political situation in the region remains volatile with ongoing tensions between neighboring countries."
+    },
+    {
+      "word": "comprehensive approach",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "phương pháp toàn diện, bao quát; cách tiếp cận xem xét tất cả các khía cạnh",
+      "definition_en": "a thorough method that considers all aspects or elements of a problem",
+      "level": "B2",
+      "synonyms": [
+        "holistic approach",
+        "all-encompassing method"
+      ],
+      "antonyms": [
+        "partial approach",
+        "narrow method"
+      ],
+      "example_sentence": "Addressing climate change requires a comprehensive approach involving government, business, and individuals."
+    },
+    {
+      "word": "marginal difference",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "sự khác biệt nhỏ, không đáng kể; chênh lệch rất ít",
+      "definition_en": "a small or insignificant variation between two things",
+      "level": "B2",
+      "synonyms": [
+        "slight difference",
+        "minimal variation"
+      ],
+      "antonyms": [
+        "significant difference",
+        "major gap"
+      ],
+      "example_sentence": "There was only a marginal difference in test scores between the two student groups."
+    },
+    {
+      "word": "stringent requirement",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "yêu cầu nghiêm ngặt, khắt khe; tiêu chuẩn cao và bắt buộc phải tuân thủ",
+      "definition_en": "a strict and demanding standard that must be met",
+      "level": "B2",
+      "synonyms": [
+        "strict requirement",
+        "rigorous standard"
+      ],
+      "antonyms": [
+        "lenient requirement",
+        "flexible standard"
+      ],
+      "example_sentence": "International safety standards impose stringent requirements on pharmaceutical companies before product approval."
+    },
+    {
+      "word": "unprecedented growth",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "sự tăng trưởng chưa từng có, kỷ lục; sự phát triển vượt bất kỳ mức nào trước đây",
+      "definition_en": "expansion or increase that has never happened before or exceeded all previous records",
+      "level": "B2",
+      "synonyms": [
+        "record growth",
+        "extraordinary expansion"
+      ],
+      "antonyms": [
+        "declining growth",
+        "stagnation"
+      ],
+      "example_sentence": "The tech industry experienced unprecedented growth during the digital transformation decade."
+    },
+    {
+      "word": "latent potential",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tiềm năng tiềm ẩn, chưa khai thác; khả năng tồn tại nhưng chưa được phát huy",
+      "definition_en": "hidden or undeveloped capability that exists but has not yet been realized",
+      "level": "C1",
+      "synonyms": [
+        "hidden potential",
+        "untapped capability"
+      ],
+      "antonyms": [
+        "realized potential",
+        "developed capacity"
+      ],
+      "example_sentence": "Many developing nations possess latent potential for economic growth if they invest in education."
+    },
+    {
+      "word": "ambiguous statement",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "phát biểu mơ hồ, không rõ ràng; lời nói có thể hiểu theo nhiều cách khác nhau",
+      "definition_en": "a declaration or claim that can be interpreted in multiple ways or is unclear",
+      "level": "B2",
+      "synonyms": [
+        "unclear statement",
+        "vague claim"
+      ],
+      "antonyms": [
+        "clear statement",
+        "explicit declaration"
+      ],
+      "example_sentence": "The politician's ambiguous statement left voters confused about his actual position on the issue."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government presented _______ that pollution levels have decreased significantly over the past five years.",
+      "option_a": "strong evidence",
+      "option_b": "weak evidence",
+      "option_c": "strong argument",
+      "option_d": "weak argument",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Strong evidence\" là collocation đúng để chỉ bằng chứng thuyết phục. \"Weak evidence\" sai về nghĩa (trái ngược). \"Strong/weak argument\" không phù hợp vì câu nói về dữ liệu cụ thể, không phải lập luận."
+    },
+    {
+      "question_text": "Climate change is considered a _______ that requires immediate international cooperation.",
+      "option_a": "major concern",
+      "option_b": "major problem",
+      "option_c": "serious concern",
+      "option_d": "critical concern",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Major concern\" là collocation chuẩn. \"Major problem\" không sai nhưng không phải collocation tự nhiên. \"Serious/critical concern\" có thể dùng nhưng \"major concern\" là cụm phổ biến nhất trong bài thi."
+    },
+    {
+      "question_text": "The company committed to _______ by reducing carbon emissions and investing in renewable energy.",
+      "option_a": "sustainable development",
+      "option_b": "sustainable growth",
+      "option_c": "sustainable progress",
+      "option_d": "sustainable improvement",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Sustainable development\" là cụm chuẩn trong ngữ cảnh môi trường và kinh tế. Các lựa chọn khác không phải collocation tiêu chuẩn trong bài thi."
+    },
+    {
+      "question_text": "The smartphone market experiences _______ as companies constantly innovate and compete for market share.",
+      "option_a": "fierce competition",
+      "option_b": "fierce rivalry",
+      "option_c": "strong competition",
+      "option_d": "intense competition",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Fierce competition\" là collocation chính xác. \"Fierce rivalry\" cũng đúng nhưng \"fierce competition\" phổ biến hơn. \"Strong/intense competition\" không phải collocation tự nhiên."
+    },
+    {
+      "question_text": "Water pollution has become a _______ in many developing countries, affecting public health.",
+      "option_a": "critical issue",
+      "option_b": "critical problem",
+      "option_c": "serious issue",
+      "option_d": "urgent issue",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Critical issue\" là collocation chuẩn. \"Critical problem\" cũng đúng nhưng \"issue\" tự nhiên hơn. \"Serious/urgent issue\" không phải collocation tiêu chuẩn."
+    },
+    {
+      "question_text": "The invention of the internet had a _______ on global communication and commerce.",
+      "option_a": "profound impact",
+      "option_b": "profound effect",
+      "option_c": "deep impact",
+      "option_d": "strong impact",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Profound impact\" là collocation chuẩn. \"Profound effect\" cũng đúng nhưng \"impact\" phổ biến hơn. \"Deep/strong impact\" không phải collocation tự nhiên."
+    },
+    {
+      "question_text": "The _______ of electric vehicles in developed countries has reduced carbon emissions significantly.",
+      "option_a": "widespread adoption",
+      "option_b": "widespread use",
+      "option_c": "broad adoption",
+      "option_d": "mass adoption",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Widespread adoption\" là collocation chuẩn. \"Widespread use\" cũng đúng nhưng \"adoption\" chính xác hơn. \"Broad/mass adoption\" không phải collocation tiêu chuẩn."
+    },
+    {
+      "question_text": "Freedom of speech is a _______ of democratic societies worldwide.",
+      "option_a": "fundamental principle",
+      "option_b": "basic principle",
+      "option_c": "core principle",
+      "option_d": "essential principle",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Fundamental principle\" là collocation chuẩn. \"Basic/core/essential principle\" cũng có thể dùng nhưng \"fundamental\" là từ phổ biến nhất trong bài thi."
+    },
+    {
+      "question_text": "The discovery of antibiotics was a _______ that revolutionized modern medicine.",
+      "option_a": "remarkable achievement",
+      "option_b": "remarkable success",
+      "option_c": "outstanding achievement",
+      "option_d": "impressive achievement",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Remarkable achievement\" là collocation chuẩn. \"Remarkable success\" cũng đúng nhưng \"achievement\" chính xác hơn. \"Outstanding/impressive achievement\" không phải collocation tiêu chuẩn."
+    },
+    {
+      "question_text": "All financial investments carry _______ that investors must carefully consider before committing funds.",
+      "option_a": "inherent risk",
+      "option_b": "inherent danger",
+      "option_c": "intrinsic risk",
+      "option_d": "built-in risk",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"Inherent risk\" là collocation chuẩn trong ngữ cảnh tài chính. \"Inherent danger\" không phù hợp. \"Intrinsic/built-in risk\" cũng đúng nhưng \"inherent\" phổ biến hơn."
+    },
+    {
+      "question_text": "The pandemic caused an _______ of medical supplies, forcing hospitals to ration resources.",
+      "option_a": "acute shortage",
+      "option_b": "acute scarcity",
+      "option_c": "severe shortage",
+      "option_d": "critical shortage",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Acute shortage\" là collocation chuẩn. \"Acute scarcity\" cũng đúng nhưng \"shortage\" phổ biến hơn. \"Severe/critical shortage\" không phải collocation tiêu chuẩn."
+    },
+    {
+      "question_text": "The Suez Canal has _______ for international trade, connecting Europe and Asia.",
+      "option_a": "strategic importance",
+      "option_b": "strategic value",
+      "option_c": "crucial importance",
+      "option_d": "vital importance",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"Strategic importance\" là collocation chuẩn. \"Strategic value\" cũng đúng nhưng \"importance\" phổ biến hơn. \"Crucial/vital importance\" không phải collocation tiêu chuẩn."
+    }
+  ]
+}

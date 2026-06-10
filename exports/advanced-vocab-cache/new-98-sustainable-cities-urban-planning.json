@@ -1,0 +1,725 @@
+{
+  "words": [
+    {
+      "word": "sustainable city",
+      "pronunciation": "/səˈsteɪnəbl ˈsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thành phố phát triển bền vững, cân bằng giữa kinh tế, xã hội và môi trường",
+      "definition_en": "a city designed to meet present needs without compromising future generations' ability to meet theirs",
+      "level": "B2",
+      "synonyms": [
+        "eco-city",
+        "green city"
+      ],
+      "antonyms": [
+        "sprawling metropolis"
+      ],
+      "example_sentence": "Copenhagen is recognized as a sustainable city due to its extensive cycling infrastructure and renewable energy investments."
+    },
+    {
+      "word": "urban sprawl",
+      "pronunciation": "/ˈɜːrbən sprɔːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự mở rộng không kiểm soát của thành phố vào vùng ngoại ô, tiêu tốn đất nông nghiệp",
+      "definition_en": "uncontrolled expansion of urban areas into surrounding countryside",
+      "level": "B2",
+      "synonyms": [
+        "suburban expansion",
+        "unplanned growth"
+      ],
+      "antonyms": [
+        "compact development",
+        "infill development"
+      ],
+      "example_sentence": "Rapid urban sprawl in Southeast Asian cities has led to increased traffic congestion and loss of agricultural land."
+    },
+    {
+      "word": "smart city",
+      "pronunciation": "/smɑːrt ˈsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thành phố thông minh sử dụng công nghệ IoT, AI để tối ưu hóa dịch vụ công cộng",
+      "definition_en": "a city that uses digital technology and data analytics to improve urban services and quality of life",
+      "level": "B2",
+      "synonyms": [
+        "digital city",
+        "connected city"
+      ],
+      "antonyms": [
+        "analog city"
+      ],
+      "example_sentence": "Singapore's smart city initiatives include intelligent traffic management systems and real-time air quality monitoring."
+    },
+    {
+      "word": "public transport",
+      "pronunciation": "/ˈpʌblɪk ˈtrænspɔːrt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống giao thông công cộng phục vụ đa số dân cư (xe buýt, tàu điện, tàu điện ngầm)",
+      "definition_en": "transportation systems available to the general public, such as buses, trains, and metro systems",
+      "level": "B2",
+      "synonyms": [
+        "mass transit",
+        "public transportation"
+      ],
+      "antonyms": [
+        "private transport"
+      ],
+      "example_sentence": "Investing in reliable public transport reduces car dependency and decreases urban air pollution significantly."
+    },
+    {
+      "word": "green space",
+      "pronunciation": "/ɡriːn speɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khu vực xanh trong thành phố như công viên, vườn cây, giúp cải thiện chất lượng không khí",
+      "definition_en": "areas of vegetation such as parks, gardens, and forests within urban environments",
+      "level": "B2",
+      "synonyms": [
+        "urban park",
+        "vegetation area"
+      ],
+      "antonyms": [
+        "concrete jungle",
+        "built-up area"
+      ],
+      "example_sentence": "Cities with abundant green spaces report lower rates of mental health issues and better air quality."
+    },
+    {
+      "word": "urban density",
+      "pronunciation": "/ˈɜːrbən ˈdensɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mật độ dân cư hoặc xây dựng trong thành phố, tính bằng số người/công trình trên một đơn vị diện tích",
+      "definition_en": "the concentration of population or buildings per unit area in an urban region",
+      "level": "B2",
+      "synonyms": [
+        "population density",
+        "building density"
+      ],
+      "antonyms": [
+        "low density",
+        "sparse settlement"
+      ],
+      "example_sentence": "High urban density in Tokyo requires innovative vertical farming and multi-level transportation networks."
+    },
+    {
+      "word": "mixed-use development",
+      "pronunciation": "/ˈmɪkst juːs dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khu phát triển kết hợp nhiều chức năng: cư dân, thương mại, văn phòng, giải trí",
+      "definition_en": "urban development combining residential, commercial, and recreational spaces in one area",
+      "level": "C1",
+      "synonyms": [
+        "integrated development",
+        "multi-functional district"
+      ],
+      "antonyms": [
+        "single-use zoning"
+      ],
+      "example_sentence": "Mixed-use developments reduce commute times and create vibrant neighborhoods with 24-hour activity."
+    },
+    {
+      "word": "pedestrian zone",
+      "pronunciation": "/pəˈdestrɪən zoʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khu vực dành riêng cho người đi bộ, cấm hoặc hạn chế xe cơ giới",
+      "definition_en": "an area designated exclusively or primarily for foot traffic, restricting vehicle access",
+      "level": "B2",
+      "synonyms": [
+        "car-free zone",
+        "walking area"
+      ],
+      "antonyms": [
+        "traffic zone"
+      ],
+      "example_sentence": "The expansion of pedestrian zones in European city centers has increased retail sales and social interaction."
+    },
+    {
+      "word": "carbon footprint",
+      "pronunciation": "/ˈkɑːrbən ˈfʊtprɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lượng khí thải carbon dioxide từ hoạt động của thành phố hoặc cá nhân",
+      "definition_en": "the total amount of greenhouse gases produced by urban activities and residents",
+      "level": "B2",
+      "synonyms": [
+        "emissions",
+        "carbon emissions"
+      ],
+      "antonyms": [
+        "carbon neutral"
+      ],
+      "example_sentence": "Cities are implementing renewable energy policies to reduce their carbon footprint and meet climate targets."
+    },
+    {
+      "word": "gentrification",
+      "pronunciation": "/ˌdʒentrɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình cải tạo khu vực cũ, dẫn đến tăng giá bất động sản và dân cư gốc bị đẩy ra ngoài",
+      "definition_en": "the process of urban renewal that often displaces lower-income residents due to rising property values",
+      "level": "C1",
+      "synonyms": [
+        "urban renewal",
+        "neighborhood transformation"
+      ],
+      "antonyms": [
+        "community preservation"
+      ],
+      "example_sentence": "Rapid gentrification in Brooklyn has raised concerns about affordable housing and cultural displacement."
+    },
+    {
+      "word": "transit-oriented development",
+      "pronunciation": "/ˈtrænzɪt ˈɔːrɪentɪd dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phát triển đô thị tập trung quanh các trạm giao thông công cộng để giảm phụ thuộc vào ô tô",
+      "definition_en": "urban planning that concentrates development around public transportation hubs to reduce car dependency",
+      "level": "C1",
+      "synonyms": [
+        "TOD",
+        "transit-focused development"
+      ],
+      "antonyms": [
+        "car-dependent sprawl"
+      ],
+      "example_sentence": "Transit-oriented development around metro stations in Seoul has created walkable, vibrant neighborhoods."
+    },
+    {
+      "word": "urban heat island",
+      "pronunciation": "/ˈɜːrbən hiːt ˈaɪlənd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng thành phố nóng hơn vùng ngoại ô do mật độ xây dựng cao và ít cây xanh",
+      "definition_en": "the phenomenon where urban areas experience significantly higher temperatures than surrounding rural areas",
+      "level": "C1",
+      "synonyms": [
+        "thermal island",
+        "heat effect"
+      ],
+      "antonyms": [
+        "cool zone"
+      ],
+      "example_sentence": "Planting more trees and using reflective roofing materials can mitigate urban heat island effects."
+    },
+    {
+      "word": "infrastructure",
+      "pronunciation": "/ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống cơ sở hạ tầng cơ bản của thành phố: đường xá, cấp nước, điện, viễn thông",
+      "definition_en": "basic physical systems and facilities needed for urban operation, including roads, utilities, and communications",
+      "level": "B2",
+      "synonyms": [
+        "basic facilities",
+        "public works"
+      ],
+      "antonyms": [
+        "superstructure"
+      ],
+      "example_sentence": "Aging infrastructure in many cities requires substantial investment to support growing populations."
+    },
+    {
+      "word": "zoning regulation",
+      "pronunciation": "/ˈzoʊnɪŋ ˌreɡjuˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy định pháp luật chia thành phố thành các khu vực với mục đích sử dụng khác nhau",
+      "definition_en": "legal rules that designate specific areas for residential, commercial, industrial, or recreational use",
+      "level": "C1",
+      "synonyms": [
+        "land use regulation",
+        "zoning law"
+      ],
+      "antonyms": [
+        "unrestricted development"
+      ],
+      "example_sentence": "Flexible zoning regulations allow cities to adapt to changing economic and social needs more effectively."
+    },
+    {
+      "word": "affordable housing",
+      "pronunciation": "/əˈfɔːrdəbl ˈhaʊzɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhà ở giá rẻ phù hợp với thu nhập của người lao động và gia đình có thu nhập thấp",
+      "definition_en": "residential properties priced within the financial reach of low to moderate-income households",
+      "level": "B2",
+      "synonyms": [
+        "low-cost housing",
+        "social housing"
+      ],
+      "antonyms": [
+        "luxury housing"
+      ],
+      "example_sentence": "Cities must balance development with policies ensuring affordable housing remains accessible to working families."
+    },
+    {
+      "word": "congestion pricing",
+      "pronunciation": "/kənˈdʒestʃən ˈpraɪsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách tính phí cho xe vào khu vực trung tâm thành phố vào giờ cao điểm để giảm ùn tắc",
+      "definition_en": "a traffic management strategy charging vehicles to enter congested urban areas during peak hours",
+      "level": "C1",
+      "synonyms": [
+        "road pricing",
+        "congestion charge"
+      ],
+      "antonyms": [
+        "free access"
+      ],
+      "example_sentence": "London's congestion pricing scheme has reduced traffic by 21% while funding public transport improvements."
+    },
+    {
+      "word": "bike lane",
+      "pronunciation": "/baɪk leɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làn đường dành riêng cho xe đạp, tách biệt với giao thông ô tô",
+      "definition_en": "a designated pathway on roads reserved exclusively for bicycles",
+      "level": "B2",
+      "synonyms": [
+        "cycling path",
+        "bicycle lane"
+      ],
+      "antonyms": [
+        "car lane"
+      ],
+      "example_sentence": "Expanding bike lane networks encourages cycling as a sustainable commuting option in urban areas."
+    },
+    {
+      "word": "vertical farming",
+      "pronunciation": "/ˈvɜːrtɪkəl ˈfɑːrmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nông nghiệp theo chiều dọc trong các tòa nhà cao tầng, sử dụng công nghệ LED và nước tái chế",
+      "definition_en": "growing crops in vertically stacked layers within controlled indoor environments using advanced technology",
+      "level": "C1",
+      "synonyms": [
+        "indoor farming",
+        "controlled environment agriculture"
+      ],
+      "antonyms": [
+        "traditional farming"
+      ],
+      "example_sentence": "Vertical farming in urban centers reduces transportation emissions and provides fresh produce year-round."
+    },
+    {
+      "word": "smart grid",
+      "pronunciation": "/smɑːrt ɡrɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống điện thông minh sử dụng công nghệ số để quản lý cung cấp và tiêu thụ điện hiệu quả",
+      "definition_en": "an intelligent electrical system that uses digital technology to optimize energy distribution and consumption",
+      "level": "C1",
+      "synonyms": [
+        "intelligent grid",
+        "digital power system"
+      ],
+      "antonyms": [
+        "conventional grid"
+      ],
+      "example_sentence": "Smart grids enable cities to integrate renewable energy sources and reduce peak demand efficiently."
+    },
+    {
+      "word": "water management",
+      "pronunciation": "/ˈwɔːtər ˈmænɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quản lý cấp nước, xử lý nước thải và tái sử dụng nước mưa trong thành phố",
+      "definition_en": "systems and practices for supplying, treating, and conserving water resources in urban areas",
+      "level": "B2",
+      "synonyms": [
+        "water conservation",
+        "water treatment"
+      ],
+      "antonyms": [
+        "water waste"
+      ],
+      "example_sentence": "Effective water management through rainwater harvesting reduces urban flooding and water scarcity."
+    },
+    {
+      "word": "livability index",
+      "pronunciation": "/ˈlaɪvəbɪlɪti ˈɪndeks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chỉ số đo lường chất lượng cuộc sống trong thành phố dựa trên nhiều tiêu chí",
+      "definition_en": "a measurement system evaluating urban quality of life based on factors like safety, healthcare, and culture",
+      "level": "C1",
+      "synonyms": [
+        "quality of life index",
+        "urban livability score"
+      ],
+      "antonyms": [
+        "deprivation index"
+      ],
+      "example_sentence": "Vienna consistently ranks high on global livability indices due to excellent public services and cultural amenities."
+    },
+    {
+      "word": "community engagement",
+      "pronunciation": "/kəˈmjuːnɪti ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tham gia của cộng đồng địa phương vào quá trình lập kế hoạch và quyết định đô thị",
+      "definition_en": "active participation of residents in urban planning decisions and community development initiatives",
+      "level": "B2",
+      "synonyms": [
+        "public participation",
+        "citizen involvement"
+      ],
+      "antonyms": [
+        "top-down planning"
+      ],
+      "example_sentence": "Successful urban projects require strong community engagement to ensure local needs are addressed."
+    },
+    {
+      "word": "brownfield site",
+      "pronunciation": "/ˈbraʊnfiːld saɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khu vực công nghiệp cũ bị ô nhiễm, cần cải tạo trước khi phát triển lại",
+      "definition_en": "abandoned or underutilized industrial land that may be contaminated and requires remediation before redevelopment",
+      "level": "C1",
+      "synonyms": [
+        "contaminated site",
+        "industrial wasteland"
+      ],
+      "antonyms": [
+        "greenfield site"
+      ],
+      "example_sentence": "Revitalizing brownfield sites through remediation and redevelopment creates new housing and employment opportunities."
+    },
+    {
+      "word": "urban resilience",
+      "pronunciation": "/ˈɜːrbən rɪˈzɪliəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của thành phố chống chịu và phục hồi từ các thảm họa tự nhiên hoặc khủng hoảng",
+      "definition_en": "a city's capacity to withstand and recover from natural disasters, climate change, and other crises",
+      "level": "C1",
+      "synonyms": [
+        "disaster resilience",
+        "adaptive capacity"
+      ],
+      "antonyms": [
+        "vulnerability"
+      ],
+      "example_sentence": "Building urban resilience requires investing in flood defenses, emergency services, and community preparedness."
+    },
+    {
+      "word": "social equity",
+      "pronunciation": "/ˈsoʊʃəl ˈekwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "công bằng xã hội trong phân bổ tài nguyên, dịch vụ và cơ hội trong thành phố",
+      "definition_en": "fair and just distribution of urban resources, services, and opportunities across all population groups",
+      "level": "C1",
+      "synonyms": [
+        "fairness",
+        "equal opportunity"
+      ],
+      "antonyms": [
+        "inequality",
+        "discrimination"
+      ],
+      "example_sentence": "Sustainable cities prioritize social equity by ensuring all residents have access to quality housing and services."
+    },
+    {
+      "word": "circular economy",
+      "pronunciation": "/ˈsɜːrkjələr ɪˈkɑːnəmi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mô hình kinh tế tái chế, giảm thiểu chất thải bằng cách tái sử dụng và tái chế vật liệu",
+      "definition_en": "an economic model focused on reducing waste through reuse, recycling, and sustainable resource management",
+      "level": "C1",
+      "synonyms": [
+        "zero-waste economy",
+        "regenerative economy"
+      ],
+      "antonyms": [
+        "linear economy"
+      ],
+      "example_sentence": "Amsterdam's circular economy initiatives have reduced municipal waste by 50% through innovative recycling programs."
+    },
+    {
+      "word": "air quality monitoring",
+      "pronunciation": "/ɛr ˈkwɑːlɪti ˈmɑːnɪtərɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo dõi chất lượng không khí bằng các thiết bị cảm biến để phát hiện ô nhiễm",
+      "definition_en": "continuous measurement and tracking of air pollutants using sensors and data analysis systems",
+      "level": "B2",
+      "synonyms": [
+        "pollution tracking",
+        "air quality assessment"
+      ],
+      "antonyms": [
+        "air quality neglect"
+      ],
+      "example_sentence": "Real-time air quality monitoring helps cities implement emergency measures during pollution episodes."
+    },
+    {
+      "word": "inclusive design",
+      "pronunciation": "/ɪnˈkluːsɪv dɪˈzaɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiết kế đô thị phù hợp với tất cả mọi người, bao gồm người khuyết tật và người cao tuổi",
+      "definition_en": "urban design that ensures accessibility and usability for people of all abilities and ages",
+      "level": "C1",
+      "synonyms": [
+        "universal design",
+        "accessible design"
+      ],
+      "antonyms": [
+        "exclusive design"
+      ],
+      "example_sentence": "Inclusive design principles ensure public spaces are accessible to elderly residents and people with disabilities."
+    },
+    {
+      "word": "urban renewal",
+      "pronunciation": "/ˈɜːrbən rɪˈnjuːəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cải tạo, hiện đại hóa các khu vực cũ kỹ của thành phố để nâng cao chất lượng sống",
+      "definition_en": "the process of revitalizing deteriorated urban areas through renovation and modernization",
+      "level": "B2",
+      "synonyms": [
+        "urban regeneration",
+        "neighborhood revitalization"
+      ],
+      "antonyms": [
+        "urban decay"
+      ],
+      "example_sentence": "Urban renewal projects in Manchester have transformed abandoned industrial areas into vibrant cultural districts."
+    },
+    {
+      "word": "commute time",
+      "pronunciation": "/ˈkɑːmjuːt taɪm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thời gian di chuyển từ nhà đến nơi làm việc hoặc học tập",
+      "definition_en": "the duration of travel from residence to workplace or educational institution",
+      "level": "B2",
+      "synonyms": [
+        "travel time",
+        "journey duration"
+      ],
+      "antonyms": [
+        "instant arrival"
+      ],
+      "example_sentence": "Reducing commute times through improved public transport increases worker productivity and quality of life."
+    },
+    {
+      "word": "urban agriculture",
+      "pronunciation": "/ˈɜːrbən ˈæɡrɪkʌltʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nông nghiệp trong thành phố như vườn cộng đồng, trồng rau trên mái nhà",
+      "definition_en": "farming and food production activities within urban areas, including community gardens and rooftop farms",
+      "level": "B2",
+      "synonyms": [
+        "urban farming",
+        "city farming"
+      ],
+      "antonyms": [
+        "rural agriculture"
+      ],
+      "example_sentence": "Urban agriculture initiatives provide fresh produce, improve food security, and strengthen community bonds."
+    },
+    {
+      "word": "noise pollution",
+      "pronunciation": "/nɔɪz pəˈluːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ô nhiễm tiếng ồn từ giao thông, công trường, ảnh hưởng đến sức khỏe cư dân",
+      "definition_en": "excessive or harmful noise from traffic, construction, and industrial activities affecting urban residents",
+      "level": "B2",
+      "synonyms": [
+        "sound pollution",
+        "acoustic pollution"
+      ],
+      "antonyms": [
+        "silence",
+        "quiet environment"
+      ],
+      "example_sentence": "Implementing noise barriers and traffic regulations reduces noise pollution in residential neighborhoods."
+    },
+    {
+      "word": "walkability",
+      "pronunciation": "/ˌwɔːkəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ thuận tiện cho người đi bộ, dựa trên khoảng cách đến dịch vụ và an toàn giao thông",
+      "definition_en": "the degree to which an area is pedestrian-friendly, measured by proximity to amenities and safety",
+      "level": "C1",
+      "synonyms": [
+        "pedestrian-friendliness",
+        "foot-traffic potential"
+      ],
+      "antonyms": [
+        "car-dependency"
+      ],
+      "example_sentence": "Cities with high walkability scores report better public health outcomes and stronger neighborhood communities."
+    },
+    {
+      "word": "retrofit",
+      "pronunciation": "/ˈretrəfɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "cải tạo, nâng cấp các tòa nhà cũ để tiết kiệm năng lượng hoặc cải thiện chức năng",
+      "definition_en": "to upgrade or modify existing buildings with new technology or features for improved efficiency",
+      "level": "C1",
+      "synonyms": [
+        "upgrade",
+        "modernize"
+      ],
+      "antonyms": [
+        "demolish"
+      ],
+      "example_sentence": "Retrofitting older buildings with insulation and solar panels significantly reduces energy consumption."
+    },
+    {
+      "word": "stakeholder",
+      "pronunciation": "/ˈsteɪkhoʊldər/",
+      "part_of_speech": "noun",
+      "definition_vi": "những người có quyền lợi hoặc ảnh hưởng trong dự án phát triển đô thị (cư dân, doanh nghiệp, chính phủ)",
+      "definition_en": "individuals or groups with an interest or investment in urban development decisions and outcomes",
+      "level": "B2",
+      "synonyms": [
+        "interested party",
+        "participant"
+      ],
+      "antonyms": [
+        "bystander"
+      ],
+      "example_sentence": "Successful urban projects require collaboration among all stakeholders including residents, businesses, and government."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary goal of transit-oriented development?",
+      "option_a": "To increase the number of private vehicles in urban areas",
+      "option_b": "To concentrate residential and commercial development around public transportation hubs",
+      "option_c": "To expand highways and road networks",
+      "option_d": "To reduce the cost of public transportation services",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Transit-oriented development (TOD) tập trung phát triển quanh các trạm giao thông công cộng để giảm phụ thuộc vào ô tô. Các lựa chọn A, C, D đều trái ngược với mục tiêu của TOD."
+    },
+    {
+      "question_text": "What is the main environmental concern associated with urban sprawl?",
+      "option_a": "Increased public transportation usage",
+      "option_b": "Loss of agricultural land and increased car dependency",
+      "option_c": "Reduction in housing costs",
+      "option_d": "Improved air quality in rural areas",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Urban sprawl dẫn đến mất đất nông nghiệp và tăng phụ thuộc vào ô tô. Các lựa chọn A, C, D không phải là mối quan tâm chính của urban sprawl."
+    },
+    {
+      "question_text": "In the context of sustainable cities, what does 'carbon footprint' primarily refer to?",
+      "option_a": "The physical size of a city's buildings",
+      "option_b": "The total greenhouse gas emissions produced by urban activities",
+      "option_c": "The number of pedestrians walking in the city",
+      "option_d": "The amount of green space per capita",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Carbon footprint là lượng khí thải carbon dioxide từ hoạt động của thành phố. Các lựa chọn khác không liên quan đến khí thải hoặc phát thải."
+    },
+    {
+      "question_text": "Which urban planning strategy is most effective in reducing traffic congestion and emissions?",
+      "option_a": "Building more highways and roads",
+      "option_b": "Implementing congestion pricing and improving public transport",
+      "option_c": "Increasing parking spaces in city centers",
+      "option_d": "Promoting private vehicle ownership",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Congestion pricing và cải thiện giao thông công cộng là những chiến lược hiệu quả nhất. Các lựa chọn A, C, D sẽ làm tăng ùn tắc và phát thải."
+    },
+    {
+      "question_text": "What is the primary purpose of establishing pedestrian zones in city centers?",
+      "option_a": "To increase vehicle traffic flow",
+      "option_b": "To reduce air pollution and encourage walking and social interaction",
+      "option_c": "To decrease retail sales in downtown areas",
+      "option_d": "To eliminate public transportation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Pedestrian zones giảm ô nhiễm không khí, khuyến khích đi bộ và tương tác xã hội. Các lựa chọn A, C, D đều sai."
+    },
+    {
+      "question_text": "The term 'gentrification' in urban planning typically refers to _____ that often results in displacement of lower-income residents.",
+      "option_a": "economic decline and property devaluation",
+      "option_b": "urban renewal and rising property values",
+      "option_c": "increased affordable housing availability",
+      "option_d": "reduction in commercial activity",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Gentrification là quá trình cải tạo khu vực cũ dẫn đến tăng giá bất động sản và dân cư gốc bị đẩy ra. Các lựa chọn A, C, D không phản ánh đúng ý nghĩa."
+    },
+    {
+      "question_text": "Which of the following is a characteristic feature of a smart city?",
+      "option_a": "Minimal use of technology in urban services",
+      "option_b": "Use of digital technology and data analytics to optimize urban services",
+      "option_c": "Elimination of all public transportation",
+      "option_d": "Reduction of green spaces for development",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Smart city sử dụng công nghệ số và phân tích dữ liệu để tối ưu hóa dịch vụ đô thị. Các lựa chọn A, C, D không phải là đặc điểm của smart city."
+    },
+    {
+      "question_text": "The 'urban heat island' phenomenon occurs primarily due to _____ and lack of vegetation.",
+      "option_a": "excessive rainfall and flooding",
+      "option_b": "high building density, dark surfaces, and limited green spaces",
+      "option_c": "increased public transportation usage",
+      "option_d": "expansion of pedestrian zones",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Urban heat island xảy ra do mật độ xây dựng cao, bề mặt tối và ít cây xanh. Các lựa chọn A, C, D không phải là nguyên nhân chính."
+    },
+    {
+      "question_text": "What is the main advantage of mixed-use development in urban planning?",
+      "option_a": "It increases traffic congestion in residential areas",
+      "option_b": "It reduces commute times and creates vibrant, diverse neighborhoods",
+      "option_c": "It eliminates the need for public transportation",
+      "option_d": "It decreases property values and investment",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Mixed-use development kết hợp cư dân, thương mại, văn phòng giảm thời gian đi lại và tạo khu vực sôi động. Các lựa chọn A, C, D sai."
+    },
+    {
+      "question_text": "Vertical farming in urban centers primarily contributes to sustainability by _____ and reducing transportation emissions.",
+      "option_a": "increasing water consumption significantly",
+      "option_b": "producing fresh food locally with minimal land use",
+      "option_c": "eliminating the need for traditional agriculture entirely",
+      "option_d": "reducing employment opportunities in rural areas",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Vertical farming sản xuất thực phẩm tươi địa phương với sử dụng đất tối thiểu, giảm phát thải vận chuyển. Các lựa chọn A, C, D không chính xác."
+    },
+    {
+      "question_text": "Which strategy is most effective for addressing the problem of affordable housing in rapidly developing cities?",
+      "option_a": "Allowing unlimited gentrification without regulation",
+      "option_b": "Implementing zoning regulations and policies that preserve affordable housing",
+      "option_c": "Eliminating all housing regulations",
+      "option_d": "Focusing exclusively on luxury property development",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Quy định zoning và chính sách bảo vệ nhà ở giá rẻ là hiệu quả nhất. Các lựa chọn A, C, D sẽ làm tăng vấn đề nhà ở."
+    },
+    {
+      "question_text": "What does 'urban resilience' primarily measure in the context of sustainable city planning?",
+      "option_a": "The speed of economic growth in a city",
+      "option_b": "A city's capacity to withstand and recover from disasters and crises",
+      "option_c": "The number of tourists visiting the city annually",
+      "option_d": "The efficiency of retail shopping centers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Urban resilience đo khả năng chống chịu và phục hồi từ thảm họa của thành phố. Các lựa chọn A, C, D không liên quan."
+    },
+    {
+      "question_text": "The concept of 'circular economy' in urban planning emphasizes _____ to minimize waste and environmental impact.",
+      "option_a": "linear production and consumption patterns",
+      "option_b": "reuse, recycling, and sustainable resource management",
+      "option_c": "maximum extraction of natural resources",
+      "option_d": "disposal of waste in landfills",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Circular economy nhấn mạnh tái sử dụng, tái chế và quản lý tài nguyên bền vững. Các lựa chọn A, C, D trái ngược với nguyên tắc circular economy."
+    },
+    {
+      "question_text": "Which of the following best describes 'walkability' in urban design?",
+      "option_a": "The total number of sidewalks in a city",
+      "option_b": "The degree to which an area is pedestrian-friendly with proximity to amenities and safety",
+      "option_c": "The speed at which pedestrians can walk",
+      "option_d": "The number of walking clubs in a city",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Walkability là mức độ thuận tiện cho người đi bộ dựa trên khoảng cách đến dịch vụ và an toàn. Các lựa chọn A, C, D không chính xác."
+    }
+  ]
+}

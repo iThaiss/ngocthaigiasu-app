@@ -1,19 +1,40 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import {
-  Languages, Sparkles, Users, BookOpen, Target, Brain,
-  Clock, CheckCircle2, Search, Plus, ChevronDown,
-  Flame, Heart, AlertCircle, RotateCw,
+  AlertCircle,
+  BookOpen,
+  Brain,
+  CheckCircle2,
+  ChevronDown,
+  Clock,
+  Flame,
+  Heart,
+  Languages,
+  Plus,
+  RotateCw,
+  Search,
+  Sparkles,
+  Target,
+  Users,
 } from 'lucide-react'
-import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
+import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
 import { cn } from '@/lib/utils'
+import {
+  getGroupForTopic,
+  getPrimaryLevel,
+  GroupConfig,
+  LEVEL_TABS,
+  LevelKey,
+  TOPIC_TO_GROUP,
+  VOCAB_GROUPS,
+} from '@/lib/vocabulary-taxonomy'
 
 interface VocabSet {
   id: string
@@ -31,115 +52,117 @@ interface VocabSet {
   progress: { total: number; mastered: number; due_today: number }
 }
 
-// ── Level tab config ───────────────────────────────────────────
-type LevelKey = 'all' | 'B1' | 'B2' | 'C1'
-
-const LEVEL_TABS: { key: LevelKey; label: string; sublabel: string; color: string; bg: string }[] = [
-  { key: 'all', label: 'Tất cả',       sublabel: '',           color: 'text-foreground',    bg: 'bg-muted' },
-  { key: 'B1',  label: 'B1',           sublabel: 'Nền tảng',   color: 'text-green-600',     bg: 'bg-green-500/10' },
-  { key: 'B2',  label: 'B2',           sublabel: 'Nâng cao',   color: 'text-yellow-600',    bg: 'bg-yellow-500/10' },
-  { key: 'C1',  label: 'C1–C2',        sublabel: 'Chuyên sâu', color: 'text-orange-600',    bg: 'bg-orange-500/10' },
-]
-
-/** Extract primary level from description, e.g. "...— B2-C1 —..." or a single "B1". */
-function getPrimaryLevel(description: string | null): LevelKey {
-  if (!description) return 'B2'
-  // Prefer a range like "B1-B2"; otherwise fall back to the first standalone CEFR token.
-  const range = description.match(/([ABC][12])-([ABC][12])/)
-  const start = range ? range[1] : description.match(/\b([ABC][12])\b/)?.[1]
-  if (!start) return 'B2'
-  if (start === 'A1' || start === 'A2' || start === 'B1') return 'B1'
-  if (start === 'B2') return 'B2'
-  return 'C1' // C1 / C2
-}
-
-// ── Topic → Group config ───────────────────────────────────────
-interface GroupConfig {
-  key: string; label: string; icon: string
-  accent: string; bg: string; border: string
-  topics: string[]
-}
-
-const GROUPS: GroupConfig[] = [
-  { key: 'Con người & Xã hội', label: 'People & Society', icon: '🧑‍🤝‍🧑',
-    accent: 'text-violet-500', bg: 'bg-violet-500/8 hover:bg-violet-500/12', border: 'border-violet-200 dark:border-violet-800',
-    topics: ['Family & Relationships','Education & Learning','Work & Career','Health & Medicine',
-             'Emotions & Personality','Gender & Equality','Community & Social Issues','Culture & Traditions',
-             'Law & Justice','Mental Health & Well-being','Migration & Refugees'] },
-  { key: 'Thế giới tự nhiên', label: 'Nature & World', icon: '🌿',
-    accent: 'text-emerald-500', bg: 'bg-emerald-500/8 hover:bg-emerald-500/12', border: 'border-emerald-200 dark:border-emerald-800',
-    topics: ['Environment & Climate Change','Nature & Wildlife','Natural Disasters',
-             'Food & Nutrition','Energy & Natural Resources','Agriculture & Farming'] },
-  { key: 'Khoa học & Công nghệ', label: 'Science & Technology', icon: '🔬',
-    accent: 'text-blue-500', bg: 'bg-blue-500/8 hover:bg-blue-500/12', border: 'border-blue-200 dark:border-blue-800',
-    topics: ['Science & Research','Technology & Innovation','Digital & Internet',
-             'Space & Astronomy','Medicine & Biotechnology','Artificial Intelligence & Robots','Engineering & Infrastructure'] },
-  { key: 'Kinh tế & Chính trị', label: 'Economy & Politics', icon: '💼',
-    accent: 'text-amber-500', bg: 'bg-amber-500/8 hover:bg-amber-500/12', border: 'border-amber-200 dark:border-amber-800',
-    topics: ['Business & Economics','Politics & Government','Globalization & Trade',
-             'Media & Journalism','Finance & Banking','International Relations'] },
-  { key: 'Cuộc sống hàng ngày', label: 'Daily Life', icon: '🏡',
-    accent: 'text-rose-500', bg: 'bg-rose-500/8 hover:bg-rose-500/12', border: 'border-rose-200 dark:border-rose-800',
-    topics: ['Travel & Transport','Housing & Urban Life','Sports & Recreation',
-             'Arts & Entertainment','Shopping & Consumerism','Fashion & Lifestyle','Music & Performing Arts'] },
-  { key: 'Tư duy & Ngôn ngữ', label: 'Thought & Language', icon: '🧠',
-    accent: 'text-cyan-500', bg: 'bg-cyan-500/8 hover:bg-cyan-500/12', border: 'border-cyan-200 dark:border-cyan-800',
-    topics: ['Communication & Language','Philosophy & Ethics','History & Civilization',
-             'Psychology & Behavior','Academic & Formal Language','Literature & Writing','Religion & Beliefs'] },
-  { key: 'Kỹ năng từ vựng', label: 'Exam Vocabulary Skills', icon: '📝',
-    accent: 'text-indigo-500', bg: 'bg-indigo-500/8 hover:bg-indigo-500/12', border: 'border-indigo-200 dark:border-indigo-800',
-    topics: ['Collocations in Context','Phrasal Verbs','Synonyms & Antonyms in Context',
-             'Word Formation & Word Form','Discourse Markers & Linking Words','Prepositions & Fixed Phrases'] },
-]
-
-const TOPIC_TO_GROUP: Record<string, string> = {}
-for (const g of GROUPS) for (const t of g.topics) TOPIC_TO_GROUP[t] = g.key
+type LaneKey = 'continue' | 'foundation' | 'advanced' | 'exam' | 'expert'
 
 const LEVEL_COLOR: Record<LevelKey, string> = {
   all: '',
-  B1:  'bg-green-500/15 text-green-700 dark:text-green-400',
-  B2:  'bg-yellow-500/15 text-yellow-700 dark:text-yellow-400',
-  C1:  'bg-orange-500/15 text-orange-700 dark:text-orange-400',
+  B1: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300',
+  B2: 'bg-sky-500/15 text-sky-700 dark:text-sky-300',
+  C1: 'bg-rose-500/15 text-rose-700 dark:text-rose-300',
 }
 
-// ── Set card ───────────────────────────────────────────────────
-function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
+const LEARNING_LANES: {
+  key: LaneKey
+  title: string
+  description: string
+  icon: typeof BookOpen
+  pick: (set: VocabSet) => boolean
+}[] = [
+  {
+    key: 'continue',
+    title: 'Học tiếp hôm nay',
+    description: 'Ưu tiên các bộ đang có từ cần ôn hoặc đã học dở.',
+    icon: Clock,
+    pick: (set) => set.progress.due_today > 0 || set.progress.total > 0,
+  },
+  {
+    key: 'foundation',
+    title: 'Nền tảng chắc',
+    description: 'B1 đến đầu B2: từ phổ biến, dễ dùng trong đọc hiểu và viết câu.',
+    icon: BookOpen,
+    pick: (set) => getPrimaryLevel(set.description) === 'B1',
+  },
+  {
+    key: 'advanced',
+    title: 'Mở rộng học thuật',
+    description: 'B2: chủ đề xã hội, khoa học, kinh tế, công nghệ.',
+    icon: Brain,
+    pick: (set) => getPrimaryLevel(set.description) === 'B2',
+  },
+  {
+    key: 'exam',
+    title: 'Kỹ năng làm đề',
+    description: 'Collocation, phrasal verb, word family, connectors, traps.',
+    icon: Target,
+    pick: (set) => {
+      const group = getGroupForTopic(set.topic)
+      return Boolean(group && ['contextual-meaning', 'word-partnerships', 'verb-patterns', 'connectors-logic', 'word-families', 'exam-traps'].includes(group.key))
+    },
+  },
+  {
+    key: 'expert',
+    title: 'C1-C2 chuyên sâu',
+    description: 'Từ học thuật khó, sắc thái nghĩa và chủ đề nâng cao.',
+    icon: Sparkles,
+    pick: (set) => getPrimaryLevel(set.description) === 'C1',
+  },
+]
+
+function displayTitle(set: VocabSet) {
+  return set.name
+}
+
+function displaySubtitle(set: VocabSet) {
+  if (set.topic && set.topic !== set.name) return set.topic
+  return set.description
+}
+
+function VocabSetCard({ set, index, compact = false }: { set: VocabSet; index: number; compact?: boolean }) {
   const level = getPrimaryLevel(set.description)
   const lc = LEVEL_COLOR[level]
-  const progressPct = set.word_count > 0
-    ? Math.round((set.progress.mastered / set.word_count) * 100) : 0
+  const progressPct = set.word_count > 0 ? Math.round((set.progress.mastered / set.word_count) * 100) : 0
+  const group = getGroupForTopic(set.topic)
 
   return (
-    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.03 }}>
+    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.025 }}>
       <Link href={`/vocabulary/${set.id}`}>
-        <Card className="group cursor-pointer border bg-card hover:shadow-md hover:-translate-y-0.5 transition-all h-full">
-          <CardContent className="p-4 flex flex-col gap-2">
+        <Card className="group h-full cursor-pointer border bg-card transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
+          <CardContent className={cn('flex h-full flex-col gap-3', compact ? 'p-3' : 'p-4')}>
             <div className="flex items-start justify-between gap-2">
-              <h3 className="font-semibold text-sm leading-snug line-clamp-2 group-hover:text-primary transition-colors flex-1">
-                {set.is_system && set.topic ? set.topic : set.name}
-              </h3>
-              {set.featured && (
-                <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 bg-yellow-500/15 text-yellow-600 dark:text-yellow-400 border-0 shrink-0">⭐</Badge>
-              )}
+              <div className="min-w-0 flex-1">
+                <h3 className="line-clamp-2 text-sm font-semibold leading-snug transition-colors group-hover:text-primary">
+                  {displayTitle(set)}
+                </h3>
+                {displaySubtitle(set) && (
+                  <p className="mt-1 line-clamp-1 text-xs text-muted-foreground">{displaySubtitle(set)}</p>
+                )}
+              </div>
+              {set.progress.due_today > 0 ? (
+                <Badge variant="secondary" className="shrink-0 border-0 bg-orange-500/15 px-1.5 py-0 text-[10px] text-orange-600 dark:text-orange-300">
+                  {set.progress.due_today} ôn
+                </Badge>
+              ) : set.featured ? (
+                <Badge variant="secondary" className="shrink-0 border-0 bg-yellow-500/15 px-1.5 py-0 text-[10px] text-yellow-700 dark:text-yellow-300">
+                  Nổi bật
+                </Badge>
+              ) : null}
             </div>
 
-            <div className="flex items-center gap-2 flex-wrap mt-auto">
-              <Badge variant="secondary" className={cn('text-[10px] px-1.5 py-0 h-4 border-0', lc)}>
+            <div className="mt-auto flex flex-wrap items-center gap-2">
+              <Badge variant="secondary" className={cn('h-5 border-0 px-1.5 py-0 text-[10px]', lc)}>
                 {level === 'C1' ? 'C1-C2' : level}
               </Badge>
-              <span className="text-xs text-muted-foreground flex items-center gap-1">
+              {group && (
+                <span className={cn('text-xs font-medium', group.accent)}>{group.label}</span>
+              )}
+              <span className="flex items-center gap-1 text-xs text-muted-foreground">
                 <BookOpen className="h-3 w-3" />{set.word_count} từ
               </span>
-              <span className="text-xs text-muted-foreground flex items-center gap-1">
+              <span className="flex items-center gap-1 text-xs text-muted-foreground">
                 <Target className="h-3 w-3" />{set.question_count} câu
               </span>
-              {set.progress.due_today > 0 && (
-                <span className="flex items-center gap-1 text-orange-500 font-medium text-xs">
-                  <Flame className="h-3 w-3" />{set.progress.due_today} cần ôn
-                </span>
-              )}
               {!set.is_system && set.likes > 0 && (
-                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                <span className="flex items-center gap-1 text-xs text-muted-foreground">
                   <Heart className="h-3 w-3" />{set.likes}
                 </span>
               )}
@@ -147,7 +170,7 @@ function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
 
             {set.progress.total > 0 && (
               <div>
-                <div className="flex justify-between text-[10px] text-muted-foreground mb-1">
+                <div className="mb-1 flex justify-between text-[10px] text-muted-foreground">
                   <span>{set.progress.mastered}/{set.word_count} đã học</span>
                   <span>{progressPct}%</span>
                 </div>
@@ -161,51 +184,97 @@ function VocabSetCard({ set, index }: { set: VocabSet; index: number }) {
   )
 }
 
-// ── Folder accordion ───────────────────────────────────────────
-function FolderSection({ group, sets, defaultOpen = false, forceOpen = false }: { group: GroupConfig; sets: VocabSet[]; defaultOpen?: boolean; forceOpen?: boolean }) {
+function LearningLane({ title, description, icon: Icon, sets }: {
+  title: string
+  description: string
+  icon: typeof BookOpen
+  sets: VocabSet[]
+}) {
+  if (sets.length === 0) return null
+
+  return (
+    <section className="space-y-2.5">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex min-w-0 items-start gap-2">
+          <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+            <Icon className="h-4 w-4 text-primary" />
+          </div>
+          <div>
+            <h2 className="text-sm font-semibold">{title}</h2>
+            <p className="text-xs text-muted-foreground">{description}</p>
+          </div>
+        </div>
+        <Badge variant="secondary" className="shrink-0 border-0 text-[10px]">{sets.length} bộ</Badge>
+      </div>
+      <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
+        {sets.slice(0, 6).map((set, index) => (
+          <VocabSetCard key={set.id} set={set} index={index} compact />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function FolderSection({ group, sets, defaultOpen = false, forceOpen = false }: {
+  group: GroupConfig
+  sets: VocabSet[]
+  defaultOpen?: boolean
+  forceOpen?: boolean
+}) {
   const [open, setOpen] = useState(defaultOpen)
-  // While searching the parent forces every folder open so matches aren't hidden.
   const isOpen = forceOpen || open
   const totalWords = sets.reduce((a, s) => a + s.word_count, 0)
   const totalMastered = sets.reduce((a, s) => a + s.progress.mastered, 0)
   const totalDue = sets.reduce((a, s) => a + s.progress.due_today, 0)
   const groupPct = totalWords > 0 ? Math.round((totalMastered / totalWords) * 100) : 0
+  const Icon = group.icon
 
   return (
-    <div className={cn('rounded-xl border overflow-hidden', group.border)}>
-      <button onClick={() => setOpen(v => !v)} aria-expanded={isOpen}
-        className={cn('w-full flex items-center gap-3 px-4 py-3 text-left transition-colors', group.bg)}>
-        <span className="text-xl" aria-hidden>{group.icon}</span>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className={cn('font-semibold text-sm', group.accent)}>{group.key}</span>
-            <span className="text-[10px] text-muted-foreground">{group.label}</span>
-            <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 border-0">{sets.length} bộ</Badge>
+    <div className={cn('overflow-hidden rounded-xl border bg-card', group.border)}>
+      <button
+        onClick={() => setOpen((value) => !value)}
+        aria-expanded={isOpen}
+        className={cn('flex w-full items-center gap-3 px-4 py-3 text-left transition-colors', group.bg)}
+      >
+        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-background/70">
+          <Icon className={cn('h-4 w-4', group.accent)} />
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className={cn('text-sm font-semibold', group.accent)}>{group.label}</span>
+            <Badge variant="secondary" className="h-5 border-0 px-1.5 py-0 text-[10px]">{sets.length} bộ</Badge>
             <span className="text-xs text-muted-foreground">{totalWords.toLocaleString()} từ</span>
             {totalDue > 0 && (
-              <span className="flex items-center gap-0.5 text-xs text-orange-500 font-medium">
+              <span className="flex items-center gap-0.5 text-xs font-medium text-orange-500">
                 <Flame className="h-3 w-3" />{totalDue} cần ôn
               </span>
             )}
           </div>
+          <p className="mt-0.5 line-clamp-1 text-xs text-muted-foreground">{group.description}</p>
           {totalMastered > 0 && (
-            <div className="flex items-center gap-2 mt-1">
-              <Progress value={groupPct} className="h-1 flex-1 max-w-[120px]" />
+            <div className="mt-1 flex items-center gap-2">
+              <Progress value={groupPct} className="h-1 max-w-[120px] flex-1" />
               <span className="text-[10px] text-muted-foreground">{groupPct}%</span>
             </div>
           )}
         </div>
-        <ChevronDown className={cn('h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200', isOpen && 'rotate-180')} />
+        <ChevronDown className={cn('h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200', isOpen && 'rotate-180')} />
       </button>
 
       <AnimatePresence initial={false}>
         {isOpen && (
-          <motion.div key="content"
-            initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.22, ease: 'easeInOut' }}
-            className="overflow-hidden">
-            <div className="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-              {sets.map((s, i) => <VocabSetCard key={s.id} set={s} index={i} />)}
+          <motion.div
+            key="content"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className="overflow-hidden"
+          >
+            <div className="grid grid-cols-1 gap-2.5 p-3 sm:grid-cols-2 lg:grid-cols-3">
+              {sets.map((set, index) => (
+                <VocabSetCard key={set.id} set={set} index={index} compact />
+              ))}
             </div>
           </motion.div>
         )}
@@ -214,7 +283,6 @@ function FolderSection({ group, sets, defaultOpen = false, forceOpen = false }: 
   )
 }
 
-// ── Main page ──────────────────────────────────────────────────
 export default function VocabularyPage() {
   const [sets, setSets] = useState<VocabSet[]>([])
   const [loading, setLoading] = useState(true)
@@ -232,73 +300,68 @@ export default function VocabularyPage() {
       setSets(data.sets ?? [])
     } catch {
       setError(true)
+    } finally {
+      setLoading(false)
     }
-    finally { setLoading(false) }
   }, [])
 
   useEffect(() => { fetchSets() }, [fetchSets])
 
   const isSearching = search.trim().length > 0
-
-  // Filter by search — matches name, topic, description and the Vietnamese group label.
-  const searchFiltered = sets.filter((s) => {
-    if (!isSearching) return true
+  const searchFiltered = useMemo(() => {
     const q = search.toLowerCase().trim()
-    const groupLabel = s.topic ? (TOPIC_TO_GROUP[s.topic] ?? '') : ''
-    return (
-      s.name.toLowerCase().includes(q) ||
-      (s.topic ?? '').toLowerCase().includes(q) ||
-      (s.description ?? '').toLowerCase().includes(q) ||
-      groupLabel.toLowerCase().includes(q)
-    )
-  })
+    if (!q) return sets
+    return sets.filter((set) => {
+      const group = getGroupForTopic(set.topic)
+      return (
+        set.name.toLowerCase().includes(q) ||
+        (set.topic ?? '').toLowerCase().includes(q) ||
+        (set.description ?? '').toLowerCase().includes(q) ||
+        (group?.label ?? '').toLowerCase().includes(q)
+      )
+    })
+  }, [sets, search])
 
-  const systemSets = searchFiltered.filter(s => s.is_system)
-  const otherSets  = searchFiltered.filter(s => !s.is_system)
-
-  // Filter system sets by level tab — but while searching we show every level so
-  // matches in other levels aren't silently dropped.
-  const levelFiltered = (levelTab === 'all' || isSearching)
+  const systemSets = searchFiltered.filter((set) => set.is_system)
+  const otherSets = searchFiltered.filter((set) => !set.is_system)
+  const levelFiltered = levelTab === 'all' || isSearching
     ? systemSets
-    : systemSets.filter(s => getPrimaryLevel(s.description) === levelTab)
+    : systemSets.filter((set) => getPrimaryLevel(set.description) === levelTab)
 
-  // Build folder groups
-  const groupedTopics = new Set(GROUPS.flatMap(g => g.topics))
-  const groupsWithSets = GROUPS.map(g => ({
-    group: g,
-    sets: levelFiltered.filter(s => s.topic && TOPIC_TO_GROUP[s.topic] === g.key),
-  })).filter(g => g.sets.length > 0)
+  const groupedTopics = new Set(VOCAB_GROUPS.flatMap((group) => group.topics))
+  const groupsWithSets = VOCAB_GROUPS.map((group) => ({
+    group,
+    sets: levelFiltered.filter((set) => set.topic && TOPIC_TO_GROUP[set.topic] === group.key),
+  })).filter(({ sets }) => sets.length > 0)
+  const ungroupedSystem = levelFiltered.filter((set) => !set.topic || !groupedTopics.has(set.topic))
 
-  const ungroupedSystem = levelFiltered.filter(s => !s.topic || !groupedTopics.has(s.topic))
+  const visibleSets = [...levelFiltered, ...otherSets]
+  const totalWords = visibleSets.reduce((a, set) => a + set.word_count, 0)
+  const totalMastered = visibleSets.reduce((a, set) => a + set.progress.mastered, 0)
+  const totalDue = visibleSets.reduce((a, set) => a + set.progress.due_today, 0)
+  const levelCount = (key: LevelKey) => key === 'all' ? systemSets.length : systemSets.filter((set) => getPrimaryLevel(set.description) === key).length
 
-  // Stats reflect the sets currently in view (after search + level filter) so the
-  // numbers stay consistent with the list below.
-  const visibleSets   = [...levelFiltered, ...otherSets]
-  const totalWords    = visibleSets.reduce((a, s) => a + s.word_count, 0)
-  const totalMastered = visibleSets.reduce((a, s) => a + s.progress.mastered, 0)
-  const totalDue      = visibleSets.reduce((a, s) => a + s.progress.due_today, 0)
-
-  // Count per level for tab badges
-  const levelCount = (lk: LevelKey) =>
-    lk === 'all' ? systemSets.length : systemSets.filter(s => getPrimaryLevel(s.description) === lk).length
+  const laneBaseSets = levelTab === 'all' || isSearching ? systemSets : levelFiltered
+  const laneSets = LEARNING_LANES.map((lane) => ({
+    ...lane,
+    sets: laneBaseSets.filter(lane.pick),
+  })).filter((lane) => lane.key === 'continue' ? lane.sets.length > 0 : true)
 
   return (
-    <div className="max-w-5xl mx-auto space-y-5">
-      {/* Header */}
-      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
-        className="flex items-center justify-between flex-wrap gap-4">
+    <div className="mx-auto max-w-6xl space-y-5">
+      <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/10">
-            <Languages className="h-5 w-5 text-emerald-500" />
+            <Languages className="h-5 w-5 text-emerald-600 dark:text-emerald-300" />
           </div>
           <div>
             <h1 className="text-2xl font-bold">Từ vựng Tiếng Anh</h1>
-            <p className="text-sm text-muted-foreground">Học theo trình độ & chủ đề, luyện tập với AI</p>
+            <p className="text-sm text-muted-foreground">Chọn một lộ trình nhỏ, học theo bộ, rồi ôn lại đúng hạn.</p>
           </div>
         </div>
         <div className="flex gap-2">
           <Link href="/vocabulary/ai">
-            <Button size="sm" className="gap-1.5"><Sparkles className="h-4 w-4" />AI Tạo từ vựng</Button>
+            <Button size="sm" className="gap-1.5"><Sparkles className="h-4 w-4" />AI tạo bộ</Button>
           </Link>
           <Link href="/vocabulary/community">
             <Button size="sm" variant="outline" className="gap-1.5"><Users className="h-4 w-4" />Cộng đồng</Button>
@@ -306,16 +369,15 @@ export default function VocabularyPage() {
         </div>
       </motion.div>
 
-      {/* Stats bar */}
       {!loading && !error && (
-        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-3 gap-3">
+        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {[
-            { icon: BookOpen,     label: 'Tổng từ vựng',    value: totalWords.toLocaleString(), color: 'text-blue-500' },
-            { icon: CheckCircle2, label: 'Đã học',           value: totalMastered.toLocaleString(), color: 'text-emerald-500' },
-            { icon: Clock,        label: 'Cần ôn hôm nay',  value: totalDue.toString(), color: totalDue > 0 ? 'text-orange-500' : 'text-muted-foreground' },
+            { icon: BookOpen, label: 'Từ trong màn này', value: totalWords.toLocaleString(), color: 'text-sky-600 dark:text-sky-300' },
+            { icon: CheckCircle2, label: 'Đã nắm vững', value: totalMastered.toLocaleString(), color: 'text-emerald-600 dark:text-emerald-300' },
+            { icon: Clock, label: 'Cần ôn hôm nay', value: totalDue.toString(), color: totalDue > 0 ? 'text-orange-500' : 'text-muted-foreground' },
           ].map(({ icon: Icon, label, value, color }) => (
             <Card key={label} className="border">
-              <CardContent className="p-3 flex items-center gap-2">
+              <CardContent className="flex items-center gap-3 p-3">
                 <Icon className={cn('h-5 w-5 shrink-0', color)} />
                 <div>
                   <p className="text-lg font-bold leading-tight">{value}</p>
@@ -327,8 +389,7 @@ export default function VocabularyPage() {
         </motion.div>
       )}
 
-      {/* Level tabs */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {LEVEL_TABS.map((tab) => {
           const active = levelTab === tab.key
           const count = levelCount(tab.key)
@@ -338,49 +399,39 @@ export default function VocabularyPage() {
               onClick={() => setLevelTab(tab.key)}
               aria-pressed={active}
               className={cn(
-                'flex flex-col items-center justify-center rounded-xl border px-3 py-2.5 transition-all text-center',
-                active
-                  ? cn('border-2 shadow-sm', tab.key === 'all' ? 'border-foreground/30 bg-foreground/5' : tab.bg, 'border-current')
-                  : 'border-border hover:bg-accent'
+                'rounded-xl border px-3 py-2.5 text-center transition-all',
+                active ? cn('border-current shadow-sm', tab.key === 'all' ? 'bg-foreground/5 text-foreground' : tab.bg, tab.color) : 'border-border text-muted-foreground hover:bg-accent'
               )}
             >
-              {tab.key !== 'all' && (
-                <span className={cn('text-lg font-black leading-none', active ? tab.color : 'text-muted-foreground')}>
-                  {tab.label}
-                </span>
-              )}
-              {tab.key === 'all' && (
-                <span className={cn('text-xs font-semibold', active ? 'text-foreground' : 'text-muted-foreground')}>
-                  Tất cả
-                </span>
-              )}
-              {tab.sublabel && (
-                <span className={cn('text-[10px] mt-0.5', active ? tab.color : 'text-muted-foreground')}>
-                  {tab.sublabel}
-                </span>
-              )}
-              <span className={cn('text-[10px] mt-1 font-medium', active ? 'text-foreground' : 'text-muted-foreground/60')}>
-                {count} bộ
-              </span>
+              <span className="block text-sm font-bold leading-tight">{tab.label}</span>
+              <span className="mt-0.5 block text-[10px]">{tab.sublabel}</span>
+              <span className="mt-1 block text-[10px] font-medium">{count} bộ</span>
             </button>
           )
         })}
       </div>
 
-      {/* Search */}
       <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-        <Input placeholder="Tìm theo tên, chủ đề…" aria-label="Tìm bộ từ vựng" value={search}
-          onChange={(e) => setSearch(e.target.value)} className="pl-9" />
+        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+        <Input
+          placeholder="Tìm tên bộ, chủ đề, nhóm kỹ năng..."
+          aria-label="Tìm bộ từ vựng"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+          className="pl-9"
+        />
       </div>
 
       {loading && (
         <div className="space-y-3" aria-busy="true">
-          {[0, 1, 2].map((i) => (
-            <div key={i} className="rounded-xl border bg-card/50 px-4 py-3 animate-pulse">
+          {[0, 1, 2].map((index) => (
+            <div key={index} className="rounded-xl border bg-card/50 px-4 py-3 animate-pulse">
               <div className="flex items-center gap-3">
-                <div className="h-6 w-6 rounded bg-muted" />
-                <div className="h-4 w-40 rounded bg-muted" />
+                <div className="h-8 w-8 rounded bg-muted" />
+                <div className="space-y-2">
+                  <div className="h-4 w-44 rounded bg-muted" />
+                  <div className="h-3 w-64 rounded bg-muted" />
+                </div>
               </div>
             </div>
           ))}
@@ -401,53 +452,58 @@ export default function VocabularyPage() {
       )}
 
       {!loading && !error && (
-        <div className="space-y-3">
-          {/* System sets grouped by topic folders */}
+        <div className="space-y-7">
+          {!isSearching && (
+            <section className="space-y-5">
+              {laneSets.map((lane) => (
+                <LearningLane key={lane.key} title={lane.title} description={lane.description} icon={lane.icon} sets={lane.sets} />
+              ))}
+            </section>
+          )}
+
           {levelFiltered.length > 0 && (
-            <section className="space-y-2.5">
+            <section className="space-y-3">
               <div className="flex items-center gap-2">
-                <Brain className="h-4 w-4 text-violet-500" />
-                <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                  {levelTab === 'all' ? `${levelFiltered.length} bộ từ vựng` : `${levelFiltered.length} bộ · ${levelTab === 'C1' ? 'C1–C2' : levelTab}`}
+                <Brain className="h-4 w-4 text-primary" />
+                <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+                  {isSearching ? 'Kết quả tìm kiếm' : 'Khám phá theo nhóm'}
                 </h2>
+                <Badge variant="secondary" className="border-0 text-[10px]">{levelFiltered.length} bộ</Badge>
               </div>
 
-              {groupsWithSets.map(({ group, sets: gSets }, idx) => (
-                <FolderSection key={group.key} group={group} sets={gSets} defaultOpen={idx === 0} forceOpen={isSearching} />
+              {groupsWithSets.map(({ group, sets: groupSets }, index) => (
+                <FolderSection key={group.key} group={group} sets={groupSets} defaultOpen={isSearching || index < 2} forceOpen={isSearching} />
               ))}
 
               {ungroupedSystem.length > 0 && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                  {ungroupedSystem.map((s, i) => <VocabSetCard key={s.id} set={s} index={i} />)}
+                <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
+                  {ungroupedSystem.map((set, index) => <VocabSetCard key={set.id} set={set} index={index} compact />)}
                 </div>
               )}
             </section>
           )}
 
           {levelFiltered.length === 0 && !isSearching && (
-            <div className="text-center py-10 text-muted-foreground">
-              <BookOpen className="h-10 w-10 mx-auto mb-3 opacity-30" />
+            <div className="py-10 text-center text-muted-foreground">
+              <BookOpen className="mx-auto mb-3 h-10 w-10 opacity-30" />
               <p>Chưa có bộ từ vựng nào ở trình độ này.</p>
             </div>
           )}
 
-          {/* AI / Community sets */}
           {otherSets.length > 0 && (
-            <section>
-              <div className="flex items-center gap-2 mb-2.5">
+            <section className="space-y-2.5">
+              <div className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-emerald-500" />
-                <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
-                  Bộ từ do AI tạo & cộng đồng
-                </h2>
+                <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Bộ do AI tạo & cộng đồng</h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                {otherSets.map((s, i) => <VocabSetCard key={s.id} set={s} index={i} />)}
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
+                {otherSets.map((set, index) => <VocabSetCard key={set.id} set={set} index={index} compact />)}
                 <Link href="/vocabulary/ai">
-                  <Card className="h-full border-dashed border-2 cursor-pointer hover:border-primary/50 hover:bg-accent/30 transition-all">
-                    <CardContent className="p-4 flex flex-col items-center justify-center gap-2 min-h-[120px] text-muted-foreground">
+                  <Card className="h-full cursor-pointer border-2 border-dashed transition-all hover:border-primary/50 hover:bg-accent/30">
+                    <CardContent className="flex min-h-[120px] flex-col items-center justify-center gap-2 p-4 text-muted-foreground">
                       <Plus className="h-6 w-6" />
                       <p className="text-sm font-medium">Tạo bộ từ mới</p>
-                      <p className="text-xs text-center">Dùng AI tạo từ vựng theo chủ đề bạn muốn</p>
+                      <p className="text-center text-xs">Dùng AI tạo từ vựng theo chủ đề bạn muốn</p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -456,8 +512,8 @@ export default function VocabularyPage() {
           )}
 
           {isSearching && levelFiltered.length === 0 && otherSets.length === 0 && (
-            <div className="text-center py-12 text-muted-foreground">
-              <BookOpen className="h-10 w-10 mx-auto mb-3 opacity-30" />
+            <div className="py-12 text-center text-muted-foreground">
+              <BookOpen className="mx-auto mb-3 h-10 w-10 opacity-30" />
               <p>Không tìm thấy &ldquo;{search}&rdquo;</p>
             </div>
           )}

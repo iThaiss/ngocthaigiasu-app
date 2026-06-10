@@ -1,0 +1,252 @@
+{
+  "words": [
+    {
+      "word": "cascading failure",
+      "pronunciation": "/kæˈskeɪdɪŋ ˈfeɪljər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự hỏng hóc liên tầng, khi một hệ thống bị sự cố dẫn đến những sự cố khác theo chuỗi, thường gặp trong cơ sở hạ tầng và mạng lưới",
+      "definition_en": "a sequence of failures in interconnected systems where one failure triggers subsequent failures across multiple sectors",
+      "level": "C1",
+      "synonyms": [
+        "domino effect",
+        "chain reaction",
+        "systemic failure"
+      ],
+      "antonyms": [
+        "system stability",
+        "operational continuity"
+      ],
+      "example_sentence": "The earthquake triggered a cascading failure in power grids, water supply, and communication networks across the region."
+    },
+    {
+      "word": "exposure",
+      "pronunciation": "/ɪkˈspoʊʒər/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ tiếp xúc hoặc bị ảnh hưởng của con người, tài sản, hoặc hệ thống với nguy hiểm tiềm tàng; yếu tố quyết định rủi ro thảm họa",
+      "definition_en": "the degree to which people, assets, or systems are subject to hazardous events and their potential impacts",
+      "level": "B2",
+      "synonyms": [
+        "susceptibility",
+        "liability",
+        "risk factor"
+      ],
+      "antonyms": [
+        "protection",
+        "insulation"
+      ],
+      "example_sentence": "Coastal communities have high exposure to typhoons due to their geographic location and population density."
+    },
+    {
+      "word": "loss and damage",
+      "pronunciation": "/lɔːs ənd ˈdæmɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tổng thiệt hại kinh tế và phi kinh tế gây ra bởi thảm họa, bao gồm cả những tác động không thể phục hồi hoặc bù đắp được",
+      "definition_en": "economic and non-economic harm resulting from disaster impacts, including irreversible consequences",
+      "level": "C1",
+      "synonyms": [
+        "disaster impact",
+        "economic loss",
+        "harm assessment"
+      ],
+      "antonyms": [
+        "recovery",
+        "restoration"
+      ],
+      "example_sentence": "The IPCC report emphasizes that loss and damage from climate-induced disasters will exceed adaptation capacity in many regions."
+    },
+    {
+      "word": "early action",
+      "pronunciation": "/ˈɜːrli ˈækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp phòng ngừa hoặc ứng phó được thực hiện trước khi thảm họa xảy ra dựa trên dự báo rủi ro, nhằm giảm thiệt hại",
+      "definition_en": "proactive interventions triggered by forecast-based warnings to prevent or reduce disaster impacts before hazards occur",
+      "level": "C1",
+      "synonyms": [
+        "anticipatory action",
+        "preventive measure",
+        "forecast-based response"
+      ],
+      "antonyms": [
+        "reactive response",
+        "post-disaster action"
+      ],
+      "example_sentence": "Early action protocols enabled authorities to evacuate 50,000 residents before the cyclone made landfall, preventing significant casualties."
+    },
+    {
+      "word": "coping mechanism",
+      "pronunciation": "/ˈkoʊpɪŋ ˈmɛkənɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách thức hoặc chiến lược mà cá nhân, gia đình hoặc cộng đồng sử dụng để ứng phó với áp lực, tổn thất hoặc khó khăn sau thảm họa",
+      "definition_en": "strategies and behaviors individuals or communities employ to manage stress, loss, and hardship during and after disasters",
+      "level": "B2",
+      "synonyms": [
+        "adaptive strategy",
+        "survival tactic",
+        "resilience behavior"
+      ],
+      "antonyms": [
+        "maladaptation",
+        "helplessness"
+      ],
+      "example_sentence": "Communities developed diverse coping mechanisms, from informal savings groups to collective farming, to withstand repeated flooding."
+    },
+    {
+      "word": "anticipatory governance",
+      "pronunciation": "/ænˈtɪsəpeɪtɔːri ˈɡʌvərnəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hình thức quản lý công cộng dự phòng, dự đoán và chuẩn bị cho các rủi ro tương lai thay vì chỉ phản ứng với sự kiện hiện tại",
+      "definition_en": "forward-looking governance systems that anticipate future risks and implement preventive policies rather than reactive responses",
+      "level": "C1",
+      "synonyms": [
+        "proactive governance",
+        "foresight-based management",
+        "preventive administration"
+      ],
+      "antonyms": [
+        "reactive governance",
+        "crisis management"
+      ],
+      "example_sentence": "Singapore's anticipatory governance framework integrates climate projections into urban planning and infrastructure investment decisions."
+    },
+    {
+      "word": "livelihood asset",
+      "pronunciation": "/ˈlaɪvlihʊd ˈæset/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tài sản, kỹ năng, hoặc nguồn lực (vật chất, con người, xã hội, tự nhiên) mà cộng đồng sử dụng để kiếm sống và duy trì cuộc sống",
+      "definition_en": "tangible and intangible resources—including skills, social networks, and natural resources—that enable people to earn a living",
+      "level": "C1",
+      "synonyms": [
+        "productive asset",
+        "livelihood resource",
+        "capital stock"
+      ],
+      "antonyms": [
+        "asset loss",
+        "deprivation"
+      ],
+      "example_sentence": "Disaster-induced displacement often destroys livelihood assets such as fishing boats, agricultural land, and market access for vulnerable populations."
+    },
+    {
+      "word": "slow-onset hazard",
+      "pronunciation": "/sloʊ ˈoʊnset ˈhæzərd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguy hiểm phát triển dần dần theo thời gian (như hạn hán, suy thoái đất, nước biển dâng) thay vì xảy ra đột ngột như động đất",
+      "definition_en": "gradual-onset disasters such as drought, desertification, and sea-level rise that develop over extended periods",
+      "level": "C1",
+      "synonyms": [
+        "gradual hazard",
+        "chronic risk",
+        "creeping disaster"
+      ],
+      "antonyms": [
+        "sudden-onset hazard",
+        "acute disaster"
+      ],
+      "example_sentence": "Slow-onset hazards like salinization of agricultural land require long-term adaptation strategies and sustained policy commitment."
+    },
+    {
+      "word": "disaster risk financing",
+      "pronunciation": "/dɪˈzæstər rɪsk ˈfaɪnænsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các cơ chế tài chính (bảo hiểm, trái phiếu thảm họa, quỹ dự phòng) giúp chính phủ và cộng đồng huy động vốn để ứng phó và phục hồi sau thảm họa",
+      "definition_en": "financial instruments and mechanisms including insurance, catastrophe bonds, and reserve funds to fund disaster response and recovery",
+      "level": "C1",
+      "synonyms": [
+        "disaster insurance",
+        "risk transfer",
+        "financial protection"
+      ],
+      "antonyms": [
+        "financial vulnerability",
+        "uninsured risk"
+      ],
+      "example_sentence": "Developing nations increasingly adopt disaster risk financing mechanisms to reduce fiscal strain and accelerate post-disaster reconstruction."
+    },
+    {
+      "word": "social capital",
+      "pronunciation": "/ˈsoʊʃəl ˈkæpɪtəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mạng lưới quan hệ, sự tin tưởng, và chuẩn mực xã hội trong cộng đồng; yếu tố quan trọng giúp cộng đồng hợp tác và phục hồi sau thảm họa",
+      "definition_en": "networks of relationships, trust, and social norms that enable communities to cooperate and recover more effectively from disasters",
+      "level": "B2",
+      "synonyms": [
+        "community cohesion",
+        "social trust",
+        "collective efficacy"
+      ],
+      "antonyms": [
+        "social fragmentation",
+        "distrust"
+      ],
+      "example_sentence": "Communities with strong social capital demonstrated faster recovery and better resource-sharing mechanisms following the flood disaster."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a cascading failure in the context of disaster management?",
+      "option_a": "A single hazard event that affects only one infrastructure system at a time",
+      "option_b": "A sequence of failures in interconnected systems where one failure triggers subsequent failures across multiple sectors",
+      "option_c": "The gradual deterioration of infrastructure over decades without external triggers",
+      "option_d": "A temporary disruption that resolves automatically without intervention",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cascading failure mô tả hiện tượng một sự cố trong hệ thống này gây ra sự cố trong hệ thống khác theo chuỗi. Đáp án A sai vì nó chỉ ảnh hưởng một hệ thống. C sai vì nó không liên quan đến sự kiện kích hoạt. D sai vì cascading failure không tự giải quyết."
+    },
+    {
+      "question_text": "In disaster risk assessment, 'exposure' primarily refers to ___.",
+      "option_a": "the degree to which people and assets are subject to hazardous events",
+      "option_b": "the psychological impact of witnessing a disaster",
+      "option_c": "the media coverage of disaster events",
+      "option_d": "the financial compensation provided after a disaster",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Exposure là khái niệm kỹ thuật trong quản lý rủi ro thảm họa, chỉ mức độ tiếp xúc của con người, tài sản với nguy hiểm. B, C, D là các ý nghĩa khác của 'exposure' nhưng không phù hợp trong bối cảnh này."
+    },
+    {
+      "question_text": "Early action protocols are most effective when they are triggered by ___.",
+      "option_a": "post-disaster assessments and damage reports",
+      "option_b": "forecast-based warnings and risk predictions before hazards occur",
+      "option_c": "government announcements after evacuation is complete",
+      "option_d": "international humanitarian organizations' requests",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Early action được định nghĩa là các biện pháp dự phòng kích hoạt bởi dự báo rủi ro TRƯỚC khi thảm họa xảy ra. A sai vì nó là phản ứng sau sự kiện. C và D không phải là cơ chế kích hoạt chính thức."
+    },
+    {
+      "question_text": "Which statement best illustrates the concept of 'loss and damage' in climate-related disasters?",
+      "option_a": "Only the immediate physical destruction of buildings and infrastructure",
+      "option_b": "Economic and non-economic harm including irreversible consequences that cannot be fully recovered or compensated",
+      "option_c": "The temporary displacement of people during evacuation",
+      "option_d": "The cost of insurance premiums paid by disaster-prone communities",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Loss and damage bao gồm cả tổn thất kinh tế (vật chất) và phi kinh tế (mất mát văn hóa, tính mạng), đặc biệt những hậu quả không thể phục hồi. A quá hẹp. C và D không phải là loss and damage."
+    },
+    {
+      "question_text": "Communities with strong ___ are typically able to recover more quickly and effectively from disaster impacts.",
+      "option_a": "financial reserves",
+      "option_b": "social capital",
+      "option_c": "government subsidies",
+      "option_d": "international aid",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Social capital (mạng lưới quan hệ, sự tin tưởng cộng đồng) là yếu tố then chốt giúp cộng đồng hợp tác và phục hồi nhanh. A, C, D là các yếu tố tài chính nhưng không phải là khái niệm chính trong câu hỏi này."
+    },
+    {
+      "question_text": "Anticipatory governance differs from traditional disaster management in that it ___.",
+      "option_a": "focuses exclusively on emergency response during active disasters",
+      "option_b": "anticipates future risks and implements preventive policies rather than only reacting to current crises",
+      "option_c": "relies solely on international cooperation and external funding",
+      "option_d": "prioritizes reconstruction over risk reduction",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Anticipatory governance là hình thức quản lý dự phòng, dự đoán rủi ro tương lai và chuẩn bị trước. A sai vì nó không chỉ phản ứng. C và D không phải là đặc điểm của anticipatory governance."
+    }
+  ]
+}

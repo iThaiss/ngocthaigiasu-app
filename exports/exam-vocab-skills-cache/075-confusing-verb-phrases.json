@@ -1,0 +1,552 @@
+{
+  "words": [
+    {
+      "word": "bring up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nuôi dạy (trẻ em); đề cập, nêu ra (vấn đề)",
+      "definition_en": "to raise a child; to mention or introduce a topic",
+      "level": "B1",
+      "synonyms": [
+        "raise",
+        "mention",
+        "introduce"
+      ],
+      "antonyms": [
+        "ignore",
+        "suppress"
+      ],
+      "example_sentence": "Her parents brought her up in a strict environment, teaching her the importance of discipline and respect."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, dẫn đến (kết quả, thay đổi)",
+      "definition_en": "to cause something to happen; to produce a result or change",
+      "level": "B1",
+      "synonyms": [
+        "cause",
+        "create",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "avoid"
+      ],
+      "example_sentence": "The new government policies brought about significant economic reforms that transformed the country's financial sector."
+    },
+    {
+      "word": "bring in",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "mang vào, đưa vào; kiếm được (tiền, doanh thu)",
+      "definition_en": "to introduce or import something; to earn or generate income",
+      "level": "B1",
+      "synonyms": [
+        "introduce",
+        "earn",
+        "generate"
+      ],
+      "antonyms": [
+        "remove",
+        "take out"
+      ],
+      "example_sentence": "The company brought in new technology to improve production efficiency and bring in more revenue."
+    },
+    {
+      "word": "take off",
+      "pronunciation": "/teɪk ɔːf/",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "cất cánh (máy bay); bỏ đi, rời khỏi; trở nên phổ biến, thành công",
+      "definition_en": "to depart by air; to leave hastily; to become successful or popular",
+      "level": "B1",
+      "synonyms": [
+        "depart",
+        "leave",
+        "succeed"
+      ],
+      "antonyms": [
+        "land",
+        "stay"
+      ],
+      "example_sentence": "The startup's innovative app took off within months, attracting millions of users and significant investment."
+    },
+    {
+      "word": "take over",
+      "pronunciation": "/teɪk ˈəʊvə/",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tiếp quản, nắm quyền; thay thế ai đó",
+      "definition_en": "to assume control or responsibility; to replace someone in a position",
+      "level": "B1",
+      "synonyms": [
+        "assume",
+        "control",
+        "replace"
+      ],
+      "antonyms": [
+        "relinquish",
+        "surrender"
+      ],
+      "example_sentence": "When the CEO retired, his deputy took over the company and implemented new strategic directions."
+    },
+    {
+      "word": "take up",
+      "pronunciation": "/teɪk ʌp/",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bắt đầu học/làm (sở thích, công việc); chiếm chỗ, chiếm thời gian",
+      "definition_en": "to begin a hobby, job, or activity; to occupy space or time",
+      "level": "B1",
+      "synonyms": [
+        "begin",
+        "start",
+        "occupy"
+      ],
+      "antonyms": [
+        "abandon",
+        "quit"
+      ],
+      "example_sentence": "She decided to take up painting as a hobby, spending several hours each week in her studio."
+    },
+    {
+      "word": "carry out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thực hiện, tiến hành (kế hoạch, nghiên cứu)",
+      "definition_en": "to perform or execute a task, plan, or investigation",
+      "level": "B1",
+      "synonyms": [
+        "perform",
+        "execute",
+        "conduct"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "Researchers carried out a comprehensive study to examine the effects of climate change on marine ecosystems."
+    },
+    {
+      "word": "carry on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tiếp tục; hành xử, cư xử",
+      "definition_en": "to continue doing something; to behave in a particular way",
+      "level": "B1",
+      "synonyms": [
+        "continue",
+        "proceed",
+        "behave"
+      ],
+      "antonyms": [
+        "stop",
+        "cease"
+      ],
+      "example_sentence": "Despite the difficulties, the team carried on with their project, determined to meet the deadline."
+    },
+    {
+      "word": "put off",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "hoãn lại, trì hoãn; làm ai mất hứng thú",
+      "definition_en": "to postpone something; to discourage or make someone lose interest",
+      "level": "B1",
+      "synonyms": [
+        "postpone",
+        "delay",
+        "discourage"
+      ],
+      "antonyms": [
+        "advance",
+        "encourage"
+      ],
+      "example_sentence": "The bad weather put off the outdoor event, so organizers rescheduled it for the following weekend."
+    },
+    {
+      "word": "put up with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chịu đựng, chấp nhận (điều khó chịu)",
+      "definition_en": "to tolerate or accept something unpleasant",
+      "level": "B1",
+      "synonyms": [
+        "tolerate",
+        "endure",
+        "accept"
+      ],
+      "antonyms": [
+        "reject",
+        "refuse"
+      ],
+      "example_sentence": "She had to put up with noisy neighbors for months before they finally moved out."
+    },
+    {
+      "word": "set up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thiết lập, lập ra; sắp xếp, chuẩn bị",
+      "definition_en": "to establish or create something; to arrange or prepare",
+      "level": "B1",
+      "synonyms": [
+        "establish",
+        "create",
+        "arrange"
+      ],
+      "antonyms": [
+        "dismantle",
+        "remove"
+      ],
+      "example_sentence": "The organization set up a new training program to help employees develop their professional skills."
+    },
+    {
+      "word": "come across",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tình cờ gặp, tìm thấy; tạo ấn tượng (tốt/xấu)",
+      "definition_en": "to meet or find someone/something by chance; to give an impression",
+      "level": "B1",
+      "synonyms": [
+        "encounter",
+        "find",
+        "appear"
+      ],
+      "antonyms": [
+        "miss",
+        "overlook"
+      ],
+      "example_sentence": "While researching, I came across an interesting article that provided valuable insights into the topic."
+    },
+    {
+      "word": "come up with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nghĩ ra, đưa ra (ý tưởng, giải pháp)",
+      "definition_en": "to produce or suggest an idea, solution, or plan",
+      "level": "B1",
+      "synonyms": [
+        "suggest",
+        "propose",
+        "invent"
+      ],
+      "antonyms": [
+        "reject",
+        "dismiss"
+      ],
+      "example_sentence": "The team came up with an innovative solution that reduced production costs by thirty percent."
+    },
+    {
+      "word": "deal with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xử lý, giải quyết (vấn đề); chịu đựng",
+      "definition_en": "to handle or manage a problem; to cope with something",
+      "level": "B1",
+      "synonyms": [
+        "handle",
+        "manage",
+        "cope"
+      ],
+      "antonyms": [
+        "ignore",
+        "avoid"
+      ],
+      "example_sentence": "The government must deal with rising unemployment by implementing effective economic policies."
+    },
+    {
+      "word": "look into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "điều tra, tìm hiểu (vấn đề)",
+      "definition_en": "to investigate or examine something carefully",
+      "level": "B1",
+      "synonyms": [
+        "investigate",
+        "examine",
+        "research"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The committee will look into the allegations to determine whether any violations occurred."
+    },
+    {
+      "word": "look after",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chăm sóc, trông coi; quản lý",
+      "definition_en": "to care for or take responsibility for someone or something",
+      "level": "B1",
+      "synonyms": [
+        "care for",
+        "tend",
+        "manage"
+      ],
+      "antonyms": [
+        "neglect",
+        "ignore"
+      ],
+      "example_sentence": "She looks after her elderly parents while managing her full-time job and family responsibilities."
+    },
+    {
+      "word": "run into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tình cờ gặp; gặp phải (vấn đề, khó khăn)",
+      "definition_en": "to meet someone by chance; to encounter a problem or difficulty",
+      "level": "B1",
+      "synonyms": [
+        "encounter",
+        "meet",
+        "face"
+      ],
+      "antonyms": [
+        "avoid",
+        "miss"
+      ],
+      "example_sentence": "During the project, the team ran into unexpected technical issues that delayed the completion date."
+    },
+    {
+      "word": "run out of",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "hết, cạn kiệt (tài nguyên, thời gian)",
+      "definition_en": "to use up all of something; to have no more of something available",
+      "level": "B1",
+      "synonyms": [
+        "exhaust",
+        "deplete",
+        "consume"
+      ],
+      "antonyms": [
+        "replenish",
+        "supply"
+      ],
+      "example_sentence": "The company ran out of raw materials, forcing them to halt production temporarily."
+    },
+    {
+      "word": "give up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "từ bỏ, bỏ cuộc; thôi (thói quen)",
+      "definition_en": "to stop trying; to quit a habit or activity",
+      "level": "B1",
+      "synonyms": [
+        "abandon",
+        "quit",
+        "surrender"
+      ],
+      "antonyms": [
+        "persist",
+        "continue"
+      ],
+      "example_sentence": "He gave up smoking after twenty years, determined to improve his health and save money."
+    },
+    {
+      "word": "go through",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "trải qua, trải nghiệm; xem xét kỹ lưỡng",
+      "definition_en": "to experience something; to examine or review carefully",
+      "level": "B1",
+      "synonyms": [
+        "experience",
+        "endure",
+        "examine"
+      ],
+      "antonyms": [
+        "skip",
+        "ignore"
+      ],
+      "example_sentence": "Students must go through a rigorous selection process before being admitted to the prestigious university."
+    },
+    {
+      "word": "turn down",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "từ chối; giảm âm lượng/cường độ",
+      "definition_en": "to reject an offer or request; to reduce volume or intensity",
+      "level": "B1",
+      "synonyms": [
+        "reject",
+        "refuse",
+        "reduce"
+      ],
+      "antonyms": [
+        "accept",
+        "increase"
+      ],
+      "example_sentence": "She turned down the job offer because it required relocating to another country."
+    },
+    {
+      "word": "turn out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "hóa ra, kết quả là; sản xuất, tạo ra",
+      "definition_en": "to happen or result in a particular way; to produce or manufacture",
+      "level": "B1",
+      "synonyms": [
+        "result",
+        "happen",
+        "produce"
+      ],
+      "antonyms": [
+        "fail",
+        "disappoint"
+      ],
+      "example_sentence": "The event turned out to be more successful than organizers had anticipated, attracting thousands of participants."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh; lưu ý",
+      "definition_en": "to indicate or draw attention to something; to mention or highlight",
+      "level": "B1",
+      "synonyms": [
+        "indicate",
+        "highlight",
+        "mention"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The professor pointed out several grammatical errors in the student's essay during the feedback session."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new manager _______ the company last month and has already implemented several changes to improve efficiency.",
+      "option_a": "brought in",
+      "option_b": "took over",
+      "option_c": "brought about",
+      "option_d": "took up",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (took over) là đúng vì nói về việc nắm quyền/tiếp quản công ty. 'Brought in' (mang vào/kiếm được), 'brought about' (gây ra), 'took up' (bắt đầu học/làm) đều không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The researchers _______ a detailed study to examine the impact of social media on teenagers' mental health.",
+      "option_a": "carried out",
+      "option_b": "carried on",
+      "option_c": "came across",
+      "option_d": "came up with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Carried out' (thực hiện) là đúng vì nói về việc tiến hành nghiên cứu. 'Carried on' (tiếp tục), 'came across' (tình cờ gặp), 'came up with' (nghĩ ra) không phù hợp."
+    },
+    {
+      "question_text": "What does 'bring up' mean in the sentence: 'Her parents brought her up to be independent and responsible'?",
+      "option_a": "to mention a topic in conversation",
+      "option_b": "to raise and educate a child",
+      "option_c": "to increase the volume of something",
+      "option_d": "to introduce new ideas",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Bring up' trong ngữ cảnh này có nghĩa là nuôi dạy trẻ em. Đáp án A là nghĩa khác của 'bring up' nhưng không phù hợp với câu này."
+    },
+    {
+      "question_text": "The government's new policies _______ significant economic growth and improved living standards for citizens.",
+      "option_a": "took off",
+      "option_b": "brought about",
+      "option_c": "set up",
+      "option_d": "dealt with",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Brought about' (gây ra, dẫn đến) là đúng vì nói về kết quả của chính sách. 'Took off' (cất cánh/thành công), 'set up' (thiết lập), 'dealt with' (xử lý) không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb means 'to postpone or delay something'?",
+      "option_a": "put up with",
+      "option_b": "put off",
+      "option_c": "turn down",
+      "option_d": "turn out",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Put off' có nghĩa là hoãn lại/trì hoãn. 'Put up with' (chịu đựng), 'turn down' (từ chối), 'turn out' (hóa ra) có nghĩa khác."
+    },
+    {
+      "question_text": "The startup's innovative product _______ quickly in the market, attracting millions of customers within the first year.",
+      "option_a": "took over",
+      "option_b": "took up",
+      "option_c": "took off",
+      "option_d": "turned down",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Took off' (trở nên phổ biến/thành công) là đúng vì nói về sự thành công của sản phẩm. 'Took over' (tiếp quản), 'took up' (bắt đầu), 'turned down' (từ chối) không phù hợp."
+    },
+    {
+      "question_text": "She decided to _______ painting as a hobby after retiring from her job.",
+      "option_a": "take up",
+      "option_b": "take over",
+      "option_c": "take off",
+      "option_d": "look after",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Take up' (bắt đầu học/làm sở thích) là đúng. 'Take over' (tiếp quản), 'take off' (cất cánh), 'look after' (chăm sóc) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "What is the meaning of 'come up with' in the context: 'The team came up with a creative solution to reduce costs'?",
+      "option_a": "to encounter a problem",
+      "option_b": "to produce or suggest an idea",
+      "option_c": "to meet someone by chance",
+      "option_d": "to approach someone",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Come up with' có nghĩa là nghĩ ra/đưa ra ý tưởng hoặc giải pháp. Đáp án A, C, D là các nghĩa khác hoặc sai."
+    },
+    {
+      "question_text": "The committee will _______ the complaints to determine whether any violations of company policy occurred.",
+      "option_a": "look into",
+      "option_b": "look after",
+      "option_c": "run into",
+      "option_d": "go through",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Look into' (điều tra, tìm hiểu) là đúng vì nói về việc xem xét các khiếu nại. 'Look after' (chăm sóc), 'run into' (gặp phải), 'go through' (trải qua) không phù hợp."
+    },
+    {
+      "question_text": "During the project, the team _______ several unexpected technical problems that required immediate attention.",
+      "option_a": "ran into",
+      "option_b": "ran out of",
+      "option_c": "gave up",
+      "option_d": "turned out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Ran into' (gặp phải vấn đề) là đúng. 'Ran out of' (hết), 'gave up' (từ bỏ), 'turned out' (hóa ra) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The professor _______ several important points during the lecture that students should pay attention to.",
+      "option_a": "pointed out",
+      "option_b": "turned down",
+      "option_c": "set up",
+      "option_d": "dealt with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Pointed out' (chỉ ra, nhấn mạnh) là đúng vì nói về việc giáo sư nhấn mạnh các điểm quan trọng. Các đáp án khác không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb means 'to investigate or examine something carefully'?",
+      "option_a": "look into",
+      "option_b": "look after",
+      "option_c": "come across",
+      "option_d": "go through",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Look into' có nghĩa là điều tra/tìm hiểu kỹ lưỡng. 'Look after' (chăm sóc), 'come across' (tình cờ gặp), 'go through' (trải qua) có nghĩa khác."
+    }
+  ]
+}

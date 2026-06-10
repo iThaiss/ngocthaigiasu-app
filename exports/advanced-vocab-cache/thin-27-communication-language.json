@@ -1,0 +1,441 @@
+{
+  "words": [
+    {
+      "word": "circumlocution",
+      "pronunciation": "/ˌsɜːkəmləˈkjuːʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách nói vòng vo, dùng nhiều từ để diễn tả một ý tưởng thay vì nói thẳng; tránh nói trực tiếp",
+      "definition_en": "the use of many words to express an idea that could be expressed in fewer words; indirect speech",
+      "level": "C1",
+      "synonyms": [
+        "periphrasis",
+        "roundabout expression"
+      ],
+      "antonyms": [
+        "directness",
+        "plainness"
+      ],
+      "example_sentence": "The politician's circumlocution during the interview frustrated journalists who wanted a straightforward answer about the scandal."
+    },
+    {
+      "word": "verbosity",
+      "pronunciation": "/vɜːrˈbɒsɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính chất dùng quá nhiều từ; lời nói dài dòng,啰嗦; thiếu súc tích",
+      "definition_en": "the quality of using more words than necessary; wordiness",
+      "level": "C1",
+      "synonyms": [
+        "wordiness",
+        "prolixity"
+      ],
+      "antonyms": [
+        "brevity",
+        "conciseness"
+      ],
+      "example_sentence": "Academic writing should avoid verbosity; every sentence must contribute meaningfully to the argument."
+    },
+    {
+      "word": "intonation",
+      "pronunciation": "/ˌɪntəˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách thay đổi cao độ giọng nói khi nói; nhịp điệu, âm điệu của lời nói",
+      "definition_en": "the pattern of rise and fall in the pitch of the voice when speaking",
+      "level": "B2",
+      "synonyms": [
+        "pitch",
+        "tone"
+      ],
+      "antonyms": [],
+      "example_sentence": "Native speakers use intonation to express questions, emotions, and emphasis, which non-native learners often struggle to master."
+    },
+    {
+      "word": "enunciate",
+      "pronunciation": "/ɪˈnʌnsieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "phát âm rõ ràng từng âm tiết; nói rõ lời; công bố chính thức",
+      "definition_en": "to pronounce words clearly and distinctly; to state or announce formally",
+      "level": "B2",
+      "synonyms": [
+        "articulate",
+        "pronounce"
+      ],
+      "antonyms": [
+        "mumble",
+        "slur"
+      ],
+      "example_sentence": "The teacher asked students to enunciate each syllable carefully to improve their pronunciation skills."
+    },
+    {
+      "word": "rapport",
+      "pronunciation": "/ræˈpɔːr/",
+      "part_of_speech": "noun",
+      "definition_vi": "mối quan hệ hòa thuận, thân thiết giữa các người; sự hiểu biết lẫn nhau",
+      "definition_en": "a close and harmonious relationship in which people understand each other well",
+      "level": "B2",
+      "synonyms": [
+        "connection",
+        "understanding"
+      ],
+      "antonyms": [
+        "discord",
+        "friction"
+      ],
+      "example_sentence": "Building rapport with clients is essential for successful business communication and long-term partnerships."
+    },
+    {
+      "word": "misconstrue",
+      "pronunciation": "/ˌmɪskənˈstruː/",
+      "part_of_speech": "verb",
+      "definition_vi": "hiểu sai, diễn giải sai ý nghĩa của lời nói hoặc hành động",
+      "definition_en": "to interpret something incorrectly or misunderstand its meaning",
+      "level": "C1",
+      "synonyms": [
+        "misinterpret",
+        "misunderstand"
+      ],
+      "antonyms": [
+        "understand",
+        "comprehend"
+      ],
+      "example_sentence": "His casual remark was misconstrued as criticism, leading to unnecessary conflict among team members."
+    },
+    {
+      "word": "coherence",
+      "pronunciation": "/koʊˈhɪrəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính liên kết, mạch lạc; sự kết nối logic giữa các ý tưởng trong văn bản hoặc lời nói",
+      "definition_en": "the quality of being logical and consistent; the way ideas connect and flow together",
+      "level": "B2",
+      "synonyms": [
+        "consistency",
+        "logical flow"
+      ],
+      "antonyms": [
+        "incoherence",
+        "confusion"
+      ],
+      "example_sentence": "Good essays maintain coherence by using transition words and ensuring each paragraph supports the main thesis."
+    },
+    {
+      "word": "articulation",
+      "pronunciation": "/ɑːrˌtɪkjuˈleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách phát âm, cách nói rõ ràng; khả năng diễn đạt ý tưởng một cách rõ ràng",
+      "definition_en": "the production of clear, distinct sounds in speech; the ability to express ideas clearly",
+      "level": "C1",
+      "synonyms": [
+        "pronunciation",
+        "enunciation"
+      ],
+      "antonyms": [
+        "mumbling",
+        "slurring"
+      ],
+      "example_sentence": "Clear articulation is crucial in public speaking; poor articulation can undermine even the most compelling message."
+    },
+    {
+      "word": "vernacular",
+      "pronunciation": "/vərˈnækjələr/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngôn ngữ thường dùng hàng ngày của một nhóm người; tiếng địa phương, tiếng dân gian",
+      "definition_en": "the everyday language spoken by ordinary people in a particular region or group",
+      "level": "B2",
+      "synonyms": [
+        "dialect",
+        "local language"
+      ],
+      "antonyms": [
+        "formal language",
+        "standard language"
+      ],
+      "example_sentence": "The author uses vernacular speech in dialogue to make characters feel authentic and relatable to local audiences."
+    },
+    {
+      "word": "elucidate",
+      "pronunciation": "/ɪˈluːsɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng; làm cho dễ hiểu hơn",
+      "definition_en": "to make something clear or easier to understand by explaining it",
+      "level": "C1",
+      "synonyms": [
+        "clarify",
+        "explain"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The professor took time to elucidate the complex theory, providing concrete examples that helped students grasp the concept."
+    },
+    {
+      "word": "linguistic competence",
+      "pronunciation": "/lɪŋˈɡwɪstɪk ˈkɒmpɪtəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng hiểu và sử dụng ngôn ngữ một cách chính xác theo các quy tắc ngữ pháp",
+      "definition_en": "the ability to understand and produce grammatically correct sentences in a language",
+      "level": "C1",
+      "synonyms": [
+        "language proficiency",
+        "grammatical knowledge"
+      ],
+      "antonyms": [
+        "linguistic incompetence"
+      ],
+      "example_sentence": "Linguistic competence differs from linguistic performance; a speaker may have competence but make errors due to fatigue or distraction."
+    },
+    {
+      "word": "register",
+      "pronunciation": "/ˈredʒɪstər/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ tính chính thức của ngôn ngữ; cách nói phù hợp với hoàn cảnh cụ thể",
+      "definition_en": "the level of formality or style of language used in a particular context or situation",
+      "level": "B2",
+      "synonyms": [
+        "style",
+        "tone"
+      ],
+      "antonyms": [],
+      "example_sentence": "Students must learn to adjust their register when writing formal essays versus texting friends; using slang in academic papers is inappropriate."
+    },
+    {
+      "word": "idiomatic expression",
+      "pronunciation": "/ˌɪdiəˈmætɪk ɪkˈspreʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cụm từ hoặc câu có ý nghĩa không thể hiểu được từ từng từ riêng lẻ; thành ngữ",
+      "definition_en": "a phrase or expression whose meaning cannot be understood from the individual words; a fixed expression",
+      "level": "B2",
+      "synonyms": [
+        "idiom",
+        "fixed phrase"
+      ],
+      "antonyms": [
+        "literal expression"
+      ],
+      "example_sentence": "Learning idiomatic expressions is challenging for non-native speakers because 'raining cats and dogs' has nothing to do with actual animals."
+    },
+    {
+      "word": "syntax",
+      "pronunciation": "/ˈsɪntæks/",
+      "part_of_speech": "noun",
+      "definition_vi": "quy tắc sắp xếp từ và cụm từ để tạo thành câu đúng; cấu trúc câu",
+      "definition_en": "the rules governing the arrangement of words and phrases to form grammatically correct sentences",
+      "level": "B2",
+      "synonyms": [
+        "grammar",
+        "sentence structure"
+      ],
+      "antonyms": [],
+      "example_sentence": "English syntax requires the subject to come before the verb in most cases, unlike some other languages with more flexible word order."
+    },
+    {
+      "word": "semantics",
+      "pronunciation": "/səˈmæntɪks/",
+      "part_of_speech": "noun",
+      "definition_vi": "lĩnh vực nghiên cứu ý nghĩa của từ, cụm từ và câu; ý nghĩa ngôn ngữ",
+      "definition_en": "the study of meaning in language; the relationship between words and what they represent",
+      "level": "C1",
+      "synonyms": [
+        "meaning",
+        "interpretation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Semantics explains why 'book' can mean both a physical object and the act of reserving something, depending on context."
+    },
+    {
+      "word": "phonetics",
+      "pronunciation": "/fəˈnetɪks/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngành học về âm thanh trong ngôn ngữ; cách phát âm các âm tiết",
+      "definition_en": "the study of speech sounds and how they are produced and perceived",
+      "level": "B2",
+      "synonyms": [
+        "pronunciation study",
+        "sound system"
+      ],
+      "antonyms": [],
+      "example_sentence": "Phonetics helps language teachers understand why certain sounds are difficult for learners whose native language lacks those sounds."
+    },
+    {
+      "word": "digress",
+      "pronunciation": "/daɪˈɡres/",
+      "part_of_speech": "verb",
+      "definition_vi": "lạc đề, nói chệch khỏi chủ đề chính; rẽ ra khỏi con đường chính",
+      "definition_en": "to depart from the main subject or topic being discussed",
+      "level": "B2",
+      "synonyms": [
+        "deviate",
+        "stray"
+      ],
+      "antonyms": [
+        "focus",
+        "concentrate"
+      ],
+      "example_sentence": "The speaker began to digress into personal anecdotes, losing the audience's attention and delaying the main presentation."
+    },
+    {
+      "word": "expound",
+      "pronunciation": "/ɪkˈspaʊnd/",
+      "part_of_speech": "verb",
+      "definition_vi": "giải thích chi tiết, trình bày rõ ràng; phát biểu lâu dài về một chủ đề",
+      "definition_en": "to explain or describe something in detail; to set forth systematically",
+      "level": "C1",
+      "synonyms": [
+        "explain",
+        "elaborate"
+      ],
+      "antonyms": [
+        "condense",
+        "summarize"
+      ],
+      "example_sentence": "The philosopher expounded on the nature of consciousness for over an hour, providing rigorous arguments and thought experiments."
+    },
+    {
+      "word": "interjection",
+      "pronunciation": "/ˌɪntərˈdʒekʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "từ hoặc cụm từ được xen vào câu để biểu lộ cảm xúc; tiếng thốt",
+      "definition_en": "a word or phrase inserted into a sentence to express emotion or reaction, often standing alone",
+      "level": "B2",
+      "synonyms": [
+        "exclamation",
+        "ejaculation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Interjections like 'wow,' 'ouch,' and 'alas' add emotional color to speech but are rarely used in formal academic writing."
+    },
+    {
+      "word": "modulate",
+      "pronunciation": "/ˈmɒdjuleɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thay đổi âm lượng, cao độ hoặc tông giọng khi nói; điều chỉnh một cách mượt mà",
+      "definition_en": "to vary the tone, pitch, or volume of the voice; to adjust smoothly",
+      "level": "C1",
+      "synonyms": [
+        "adjust",
+        "vary"
+      ],
+      "antonyms": [
+        "maintain",
+        "fix"
+      ],
+      "example_sentence": "Skilled orators modulate their voices to maintain audience engagement and emphasize key points throughout their speeches."
+    },
+    {
+      "word": "linguistic relativity",
+      "pronunciation": "/lɪŋˈɡwɪstɪk rɪˈlætɪvɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giả thuyết rằng cấu trúc ngôn ngữ ảnh hưởng đến cách người nói nhận thức và suy nghĩ về thế giới",
+      "definition_en": "the hypothesis that the structure of a language influences how its speakers perceive and think about the world",
+      "level": "C1",
+      "synonyms": [
+        "Sapir-Whorf hypothesis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Linguistic relativity suggests that speakers of languages with many color terms may perceive color distinctions differently than speakers of languages with fewer terms."
+    },
+    {
+      "word": "pragmatics",
+      "pronunciation": "/præɡˈmætɪks/",
+      "part_of_speech": "noun",
+      "definition_vi": "lĩnh vực ngôn ngữ học nghiên cứu cách sử dụng ngôn ngữ trong bối cảnh thực tế; ý nghĩa thực tiễn",
+      "definition_en": "the study of how language is used in real-world contexts and how meaning depends on context",
+      "level": "C1",
+      "synonyms": [
+        "contextual meaning",
+        "language use"
+      ],
+      "antonyms": [],
+      "example_sentence": "Pragmatics explains why 'Can you pass the salt?' is understood as a request rather than a question about ability."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The politician's lengthy and roundabout explanation frustrated the journalists. Which word best describes this communication style?",
+      "option_a": "circumlocution",
+      "option_b": "coherence",
+      "option_c": "articulation",
+      "option_d": "intonation",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Circumlocution là cách nói vòng vo, dùng nhiều từ để tránh nói thẳng. Coherence là tính liên kết logic, articulation là cách phát âm rõ ràng, intonation là nhịp điệu giọng nói—không phù hợp với bối cảnh."
+    },
+    {
+      "question_text": "The author's writing is filled with unnecessary words and repetitive phrases. This demonstrates excessive ___.",
+      "option_a": "vernacular",
+      "option_b": "verbosity",
+      "option_c": "register",
+      "option_d": "syntax",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Verbosity là tính chất dùng quá nhiều từ, lời nói dài dòng. Vernacular là tiếng địa phương, register là mức độ tính chính thức, syntax là cấu trúc câu—không liên quan đến việc dùng quá nhiều từ."
+    },
+    {
+      "question_text": "Which of the following best illustrates the concept of linguistic competence?",
+      "option_a": "A non-native speaker makes grammatical errors when tired.",
+      "option_b": "A speaker understands and can produce grammatically correct sentences according to language rules.",
+      "option_c": "A person speaks with a strong accent that makes them hard to understand.",
+      "option_d": "A student memorizes vocabulary words but cannot use them in sentences.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Linguistic competence là khả năng hiểu và sử dụng ngôn ngữ theo quy tắc ngữ pháp. A là linguistic performance (lỗi do mệt mỏi), C là pronunciation issue, D là thiếu khả năng áp dụng."
+    },
+    {
+      "question_text": "The speaker began to _____ into personal stories, losing focus on the main argument.",
+      "option_a": "modulate",
+      "option_b": "elucidate",
+      "option_c": "digress",
+      "option_d": "enunciate",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Digress là lạc đề, nói chệch khỏi chủ đề chính. Modulate là thay đổi giọng nói, elucidate là giải thích rõ ràng, enunciate là phát âm rõ—không phù hợp với bối cảnh mất tập trung."
+    },
+    {
+      "question_text": "The phrase 'raining cats and dogs' is an example of a(n) _____ because its meaning cannot be understood from individual words.",
+      "option_a": "interjection",
+      "option_b": "idiomatic expression",
+      "option_c": "phonetic pattern",
+      "option_d": "semantic rule",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Idiomatic expression là cụm từ có ý nghĩa không thể hiểu từ từng từ riêng lẻ. Interjection là tiếng thốt, phonetic pattern là mẫu âm thanh, semantic rule là quy tắc ý nghĩa—không phù hợp."
+    },
+    {
+      "question_text": "His comment was _____ as an insult, though he intended it as constructive criticism.",
+      "option_a": "modulated",
+      "option_b": "expounded",
+      "option_c": "misconstrued",
+      "option_d": "enunciated",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Misconstrue là hiểu sai, diễn giải sai ý nghĩa. Modulate là thay đổi giọng, expound là giải thích chi tiết, enunciate là phát âm rõ—không phù hợp với bối cảnh hiểu lầm."
+    },
+    {
+      "question_text": "According to the Sapir-Whorf hypothesis, or _____, the structure of a language influences how speakers perceive reality.",
+      "option_a": "linguistic competence",
+      "option_b": "linguistic relativity",
+      "option_c": "linguistic performance",
+      "option_d": "linguistic register",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Linguistic relativity là giả thuyết rằng cấu trúc ngôn ngữ ảnh hưởng đến cách nhận thức. Linguistic competence là khả năng sử dụng ngôn ngữ, performance là thực hiện, register là mức độ tính chính thức."
+    },
+    {
+      "question_text": "The teacher asked students to _____ each word carefully to improve their pronunciation and be understood clearly.",
+      "option_a": "digress",
+      "option_b": "modulate",
+      "option_c": "enunciate",
+      "option_d": "expound",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Enunciate là phát âm rõ ràng từng âm tiết. Digress là lạc đề, modulate là thay đổi giọng, expound là giải thích chi tiết—không liên quan đến cách phát âm rõ ràng."
+    }
+  ]
+}

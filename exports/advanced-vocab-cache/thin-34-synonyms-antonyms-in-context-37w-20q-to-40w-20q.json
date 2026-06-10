@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "word": "consolidate",
+      "pronunciation": "/kənˈsɒlɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "củng cố, làm chắc chắn; gộp lại thành một khối; tập trung quyền lực/tài sản",
+      "definition_en": "to strengthen or make more secure; to combine into one",
+      "level": "C1",
+      "synonyms": [
+        "strengthen",
+        "reinforce",
+        "unify"
+      ],
+      "antonyms": [
+        "fragment",
+        "disperse"
+      ],
+      "example_sentence": "The government consolidated its power by merging several agencies into a single ministry."
+    },
+    {
+      "word": "erode",
+      "pronunciation": "/ɪˈroʊd/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm mòn, làm hủy hoại dần dần; suy yếu từng chút một (niềm tin, quyền lực)",
+      "definition_en": "to gradually wear away or weaken; to destroy slowly",
+      "level": "C1",
+      "synonyms": [
+        "corrode",
+        "undermine",
+        "weaken"
+      ],
+      "antonyms": [
+        "strengthen",
+        "reinforce"
+      ],
+      "example_sentence": "Constant criticism eroded public confidence in the institution over several years."
+    },
+    {
+      "word": "burgeoning",
+      "pronunciation": "/ˈbɜːrdʒənɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "phát triển nhanh chóng, nảy nở; tăng trưởng mạnh mẽ",
+      "definition_en": "growing, flourishing, or expanding rapidly",
+      "level": "C2",
+      "synonyms": [
+        "flourishing",
+        "thriving",
+        "expanding"
+      ],
+      "antonyms": [
+        "declining",
+        "stagnant"
+      ],
+      "example_sentence": "The burgeoning tech industry in Southeast Asia has attracted billions in foreign investment."
+    },
+    {
+      "word": "stagnant",
+      "pronunciation": "/ˈstæɡnənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "trì trệ, không phát triển; đình trệ; (nước) không chảy, ứ đọng",
+      "definition_en": "showing no growth, development, or improvement; motionless",
+      "level": "C1",
+      "synonyms": [
+        "static",
+        "dormant",
+        "inactive"
+      ],
+      "antonyms": [
+        "dynamic",
+        "burgeoning"
+      ],
+      "example_sentence": "The stagnant economy forced policymakers to implement aggressive stimulus measures."
+    },
+    {
+      "word": "vindictive",
+      "pronunciation": "/vɪnˈdɪktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tính trả thù, báo thù; mang tính trừng phạt hơn là công bằng",
+      "definition_en": "seeking to harm someone in return for perceived injury; vengeful",
+      "level": "C1",
+      "synonyms": [
+        "vengeful",
+        "retaliatory",
+        "spiteful"
+      ],
+      "antonyms": [
+        "forgiving",
+        "magnanimous"
+      ],
+      "example_sentence": "The court ruled that the punitive damages were vindictive rather than compensatory."
+    },
+    {
+      "word": "magnanimous",
+      "pronunciation": "/mæɡˈnænɪməs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cao thượng, hào phóng; rộng lượng, không tính toán nhỏ nhen",
+      "definition_en": "generous and forgiving; noble in spirit",
+      "level": "C2",
+      "synonyms": [
+        "generous",
+        "gracious",
+        "noble"
+      ],
+      "antonyms": [
+        "vindictive",
+        "petty"
+      ],
+      "example_sentence": "Despite his rival's harsh attacks, the leader remained magnanimous and offered reconciliation."
+    },
+    {
+      "word": "fervid",
+      "pronunciation": "/ˈfɜːrvɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhiệt tình, sôi nổi; đam mê sâu sắc; (cảm xúc) mãnh liệt",
+      "definition_en": "intensely enthusiastic or passionate; ardent",
+      "level": "C2",
+      "synonyms": [
+        "passionate",
+        "ardent",
+        "zealous"
+      ],
+      "antonyms": [
+        "apathetic",
+        "indifferent"
+      ],
+      "example_sentence": "The fervid supporters of the movement organized rallies across the nation."
+    },
+    {
+      "word": "apathetic",
+      "pronunciation": "/ˌæpəˈθetɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thờ ơ, vô cảm; không quan tâm, thiếu hứng thú",
+      "definition_en": "lacking interest, enthusiasm, or concern; indifferent",
+      "level": "C1",
+      "synonyms": [
+        "indifferent",
+        "uninterested",
+        "detached"
+      ],
+      "antonyms": [
+        "fervid",
+        "passionate"
+      ],
+      "example_sentence": "The apathetic response from voters suggested declining trust in political institutions."
+    },
+    {
+      "word": "incisive",
+      "pronunciation": "/ɪnˈsaɪsɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "sắc sảo, nhạy bén; có tính thấu đáo, sâu sắc; (phê bình) chỉ trích sắc bén",
+      "definition_en": "intelligently analytical and clear-thinking; sharp and penetrating",
+      "level": "C1",
+      "synonyms": [
+        "sharp",
+        "penetrating",
+        "astute"
+      ],
+      "antonyms": [
+        "dull",
+        "superficial"
+      ],
+      "example_sentence": "The journalist's incisive analysis of the scandal exposed systemic corruption."
+    },
+    {
+      "word": "superficial",
+      "pronunciation": "/ˌsuːpərˈfɪʃəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bề ngoài, hời hợt; không sâu sắc, không đi vào bản chất; chỉ ở mặt ngoài",
+      "definition_en": "existing or occurring on the surface; lacking depth or substance",
+      "level": "C1",
+      "synonyms": [
+        "shallow",
+        "cursory",
+        "trivial"
+      ],
+      "antonyms": [
+        "incisive",
+        "profound"
+      ],
+      "example_sentence": "The report provided only a superficial examination of the underlying causes."
+    }
+  ],
+  "questions": []
+}

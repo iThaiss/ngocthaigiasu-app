@@ -1,0 +1,259 @@
+{
+  "words": [
+    {
+      "word": "arable land",
+      "pronunciation": "/ˈærəbl lænd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đất canh tác, đất có thể trồng trọt được (thường là đất bằng phẳng, màu mỡ)",
+      "definition_en": "land suitable for growing crops; cultivable land",
+      "level": "B2",
+      "synonyms": [
+        "cultivable land",
+        "farmland"
+      ],
+      "antonyms": [
+        "barren land",
+        "wasteland"
+      ],
+      "example_sentence": "The government aims to preserve arable land by restricting urban expansion into agricultural zones."
+    },
+    {
+      "word": "crop failure",
+      "pronunciation": "/krɒp ˈfeɪljər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mất mùa, thất bại trong việc thu hoạch do bệnh, thời tiết xấu hoặc các yếu tố khác",
+      "definition_en": "the failure of a crop to grow or produce a good harvest due to disease, weather, or other factors",
+      "level": "B2",
+      "synonyms": [
+        "harvest failure",
+        "poor harvest"
+      ],
+      "antonyms": [
+        "bumper crop",
+        "abundant harvest"
+      ],
+      "example_sentence": "Crop failure in Southeast Asia last year forced many farmers to seek government compensation."
+    },
+    {
+      "word": "subsistence farming",
+      "pronunciation": "/səbˈsɪstəns ˈfɑːrmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nông nghiệp tự cấp, canh tác để tự nuôi sống gia đình chứ không phải để bán",
+      "definition_en": "farming that produces enough food for the farmer's family but not much surplus for sale",
+      "level": "B2",
+      "synonyms": [
+        "subsistence agriculture",
+        "small-scale farming"
+      ],
+      "antonyms": [
+        "commercial farming",
+        "agribusiness"
+      ],
+      "example_sentence": "Many rural communities in developing nations still rely on subsistence farming as their primary livelihood."
+    },
+    {
+      "word": "monoculture",
+      "pronunciation": "/ˈmɒnəʊkʌltʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "trồng một loại cây duy nhất trên một diện tích lớn; hệ thống canh tác đơn nhất",
+      "definition_en": "the practice of growing only one type of crop repeatedly on the same land",
+      "level": "B2",
+      "synonyms": [
+        "monocropping",
+        "single-crop farming"
+      ],
+      "antonyms": [
+        "polyculture",
+        "crop diversity"
+      ],
+      "example_sentence": "Monoculture in banana plantations has depleted soil nutrients and increased vulnerability to disease outbreaks."
+    },
+    {
+      "word": "fallow",
+      "pronunciation": "/ˈfæləʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "đất để hoang (không trồng để phục hồi độ màu mỡ); để đất hoang",
+      "definition_en": "land left unplanted for a season to restore fertility; to leave land unplanted",
+      "level": "B2",
+      "synonyms": [
+        "uncultivated",
+        "idle"
+      ],
+      "antonyms": [
+        "cultivated",
+        "planted"
+      ],
+      "example_sentence": "Farmers often leave fields fallow for one season to naturally replenish soil nutrients."
+    },
+    {
+      "word": "animal husbandry",
+      "pronunciation": "/ˈænɪml ˈhʌzbəndri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chăn nuôi gia súc, quản lý và chăm sóc động vật nông trại",
+      "definition_en": "the care and breeding of farm animals",
+      "level": "B2",
+      "synonyms": [
+        "livestock farming",
+        "stock raising"
+      ],
+      "antonyms": [
+        "crop production",
+        "arable farming"
+      ],
+      "example_sentence": "Modern animal husbandry practices emphasize animal welfare and disease prevention."
+    },
+    {
+      "word": "yield per hectare",
+      "pronunciation": "/jiːld pər ˈhektɑːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "năng suất trên một hecta; lượng sản phẩm thu hoạch được trên một đơn vị diện tích",
+      "definition_en": "the amount of crop produced per unit area of land",
+      "level": "B2",
+      "synonyms": [
+        "productivity",
+        "output per hectare"
+      ],
+      "antonyms": [
+        "low productivity",
+        "poor output"
+      ],
+      "example_sentence": "The introduction of improved seeds increased yield per hectare by 40% in the region."
+    },
+    {
+      "word": "agro-industry",
+      "pronunciation": "/ˌæɡrəʊ ˈɪndəstri/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngành công nghiệp nông nghiệp; các hoạt động chế biến, bảo quản và phân phối sản phẩm nông sản",
+      "definition_en": "the industry involved in processing, storing, and distributing agricultural products",
+      "level": "B2",
+      "synonyms": [
+        "agricultural industry",
+        "food processing industry"
+      ],
+      "antonyms": [
+        "primary agriculture",
+        "raw farming"
+      ],
+      "example_sentence": "Vietnam's agro-industry has grown significantly, creating employment and adding value to agricultural exports."
+    },
+    {
+      "word": "crop diversification",
+      "pronunciation": "/krɒp ˌdaɪvɜːsɪfɪˈkeɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đa dạng hóa cây trồng; trồng nhiều loại cây khác nhau để giảm rủi ro",
+      "definition_en": "growing a variety of different crops to reduce risk and improve soil health",
+      "level": "B2",
+      "synonyms": [
+        "crop variety",
+        "polyculture"
+      ],
+      "antonyms": [
+        "monoculture",
+        "single-crop farming"
+      ],
+      "example_sentence": "Crop diversification helps farmers adapt to climate change and market fluctuations."
+    },
+    {
+      "word": "mechanized farming",
+      "pronunciation": "/ˈmekənaɪzd ˈfɑːrmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nông nghiệp cơ giới hóa; sử dụng máy móc để thay thế lao động thủ công",
+      "definition_en": "farming that uses machines and equipment instead of manual labor",
+      "level": "B2",
+      "synonyms": [
+        "industrial farming",
+        "machine-based agriculture"
+      ],
+      "antonyms": [
+        "manual farming",
+        "traditional farming"
+      ],
+      "example_sentence": "Mechanized farming has increased productivity but also raised concerns about environmental sustainability."
+    },
+    {
+      "word": "food security",
+      "pronunciation": "/fuːd sɪˈkjʊərɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "an ninh lương thực; đảm bảo mọi người có đủ thực phẩm an toàn, bổ dưỡng",
+      "definition_en": "the state of having reliable access to sufficient, safe, and nutritious food",
+      "level": "B2",
+      "synonyms": [
+        "food stability",
+        "nutritional security"
+      ],
+      "antonyms": [
+        "food insecurity",
+        "food shortage"
+      ],
+      "example_sentence": "Improving agricultural productivity is essential for achieving global food security in the face of population growth."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'arable land'?",
+      "option_a": "Land that is permanently covered with forests and vegetation",
+      "option_b": "Land that is suitable for growing crops and can be cultivated",
+      "option_c": "Land that has been abandoned due to soil degradation",
+      "option_d": "Land that is used exclusively for raising livestock",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Arable land là đất có thể canh tác được, phù hợp để trồng trọt. Các đáp án khác mô tả các loại đất khác: A là đất rừng, C là đất bỏ hoang, D là đất chăn nuôi."
+    },
+    {
+      "question_text": "A farmer decides to leave a field _____ for one season to restore its fertility. Which word completes this sentence?",
+      "option_a": "fallow",
+      "option_b": "barren",
+      "option_c": "dormant",
+      "option_d": "idle",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Fallow là thuật ngữ nông nghiệp chính xác để chỉ đất để hoang phục hồi độ màu mỡ. Barren (cằn cỗi), dormant (ngủ đông), idle (không hoạt động) không phải là thuật ngữ nông nghiệp chuyên dụng."
+    },
+    {
+      "question_text": "What is the primary disadvantage of monoculture farming mentioned in agricultural studies?",
+      "option_a": "It requires more water than other farming methods",
+      "option_b": "It depletes soil nutrients and increases vulnerability to pests and diseases",
+      "option_c": "It is more expensive than traditional farming",
+      "option_d": "It produces lower quality crops compared to diversified farming",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Monoculture làm cạn kiệt dinh dưỡng đất và tăng nguy hiểm từ sâu bệnh vì thiếu đa dạng sinh học. A, C, D không phải là nhược điểm chính được ghi nhận trong các nghiên cứu nông nghiệp."
+    },
+    {
+      "question_text": "Which farming practice is most directly associated with improving food security in developing nations?",
+      "option_a": "Subsistence farming that focuses on self-sufficiency",
+      "option_b": "Monoculture production for export markets",
+      "option_c": "Crop diversification combined with improved agricultural techniques",
+      "option_d": "Reducing the use of mechanized equipment",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Crop diversification kết hợp với kỹ thuật nông nghiệp cải tiến giúp tăng an ninh lương thực bằng cách giảm rủi ro và tăng năng suất. Subsistence farming (A) chỉ tự cấp, monoculture (B) có rủi ro cao, giảm máy móc (D) không tăng năng suất."
+    },
+    {
+      "question_text": "The term 'animal husbandry' in agricultural contexts refers to _____.",
+      "option_a": "the breeding of wild animals for conservation purposes",
+      "option_b": "the care, breeding, and management of farm animals",
+      "option_c": "the study of animal behavior in natural ecosystems",
+      "option_d": "the use of animals as a source of renewable energy",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Animal husbandry là chăn nuôi gia súc, bao gồm chăm sóc, lai tạo và quản lý động vật nông trại. A là bảo tồn động vật hoang dã, C là sinh thái học, D là năng lượng tái tạo."
+    },
+    {
+      "question_text": "Which statement best explains why 'yield per hectare' is a critical metric in modern agriculture?",
+      "option_a": "It measures the total amount of land a farmer owns",
+      "option_b": "It indicates how efficiently a farmer uses land to produce crops, essential for feeding growing populations",
+      "option_c": "It determines the price of agricultural products in global markets",
+      "option_d": "It shows the environmental impact of farming practices",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Yield per hectare đo lường hiệu suất sử dụng đất để sản xuất cây trồng, rất quan trọng để nuôi dân số tăng. A là diện tích đất sở hữu, C là giá cả thị trường, D là tác động môi trường—không phải ý nghĩa chính của chỉ số này."
+    }
+  ]
+}

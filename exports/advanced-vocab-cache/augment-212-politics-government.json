@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "institutional accountability",
+      "pronunciation": "/ɪnˈstɪtjuʃənəl əˌkaʊntəˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trách nhiệm của các cơ quan chính phủ phải giải trình hành động và quyết định của mình trước công chúng và các cơ quan giám sát",
+      "definition_en": "the obligation of government institutions to explain and justify their actions to the public and oversight bodies",
+      "level": "C1",
+      "synonyms": [
+        "answerability",
+        "responsibility"
+      ],
+      "antonyms": [
+        "opacity",
+        "unaccountability"
+      ],
+      "example_sentence": "Institutional accountability mechanisms ensure that public officials cannot act with impunity when making decisions affecting citizens' rights."
+    },
+    {
+      "word": "technocratic governance",
+      "pronunciation": "/ˌteknoʊˈkrætɪk ˈɡʌvərnəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống quản lý nhà nước dựa trên chuyên môn kỹ thuật và kiến thức chuyên sâu hơn là quyết định chính trị truyền thống",
+      "definition_en": "a system of governance where technical experts and specialists hold significant decision-making power",
+      "level": "C1",
+      "synonyms": [
+        "expert-led governance",
+        "meritocratic rule"
+      ],
+      "antonyms": [
+        "populism",
+        "democratic consensus"
+      ],
+      "example_sentence": "Some economists advocate for technocratic governance in monetary policy to insulate central banks from short-term political pressures."
+    },
+    {
+      "word": "civic disengagement",
+      "pronunciation": "/ˈsɪvɪk ˌdɪsɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự rút lui của công dân khỏi các hoạt động chính trị, bỏ phiếu, và tham gia vào các vấn đề công cộng",
+      "definition_en": "the withdrawal of citizens from political participation, voting, and involvement in public affairs",
+      "level": "C1",
+      "synonyms": [
+        "political apathy",
+        "voter abstention"
+      ],
+      "antonyms": [
+        "civic engagement",
+        "political participation"
+      ],
+      "example_sentence": "Rising civic disengagement among young voters poses a significant challenge to democratic legitimacy and policy implementation."
+    },
+    {
+      "word": "regulatory capture",
+      "pronunciation": "/ˈreɡjələtɔːri ˈkæptʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng các cơ quan quản lý bị ảnh hưởng hoặc kiểm soát bởi các tập đoàn mà chúng được giao nhiệm vụ giám sát",
+      "definition_en": "a situation where regulatory agencies become influenced by or serve the interests of the industries they are supposed to regulate",
+      "level": "C2",
+      "synonyms": [
+        "agency capture",
+        "regulatory corruption"
+      ],
+      "antonyms": [
+        "regulatory independence",
+        "impartial oversight"
+      ],
+      "example_sentence": "Environmental groups warn that regulatory capture has allowed fossil fuel companies to weaken emissions standards through lobbying."
+    },
+    {
+      "word": "policy trade-off",
+      "pronunciation": "/ˈpɑːləsi ˈtreɪd-ɔːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự cân bằng giữa hai mục tiêu chính sách mâu thuẫn, nơi việc đạt được một mục tiêu có thể yêu cầu từ bỏ một phần mục tiêu khác",
+      "definition_en": "a situation where achieving one policy objective requires sacrificing or compromising another",
+      "level": "C1",
+      "synonyms": [
+        "policy compromise",
+        "strategic concession"
+      ],
+      "antonyms": [
+        "win-win solution",
+        "complementary goals"
+      ],
+      "example_sentence": "Governments face a critical policy trade-off between economic growth and environmental protection when regulating industrial emissions."
+    },
+    {
+      "word": "erosion of public trust",
+      "pronunciation": "/ɪˈroʊʒən əv ˈpʌblɪk trʌst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự suy giảm dần dần của niềm tin của công dân đối với các cơ quan chính phủ và các nhà lãnh đạo chính trị",
+      "definition_en": "the gradual decline of citizens' confidence in government institutions and political leaders",
+      "level": "C1",
+      "synonyms": [
+        "loss of confidence",
+        "declining legitimacy"
+      ],
+      "antonyms": [
+        "restoration of trust",
+        "renewed confidence"
+      ],
+      "example_sentence": "The erosion of public trust in electoral systems has prompted governments to invest in cybersecurity and transparent vote-counting procedures."
+    },
+    {
+      "word": "executive overreach",
+      "pronunciation": "/ɪɡˈzekjətɪv ˈoʊvərriːtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng quyền hành pháp vượt quá giới hạn quyền lực được giao, xâm phạm vào lĩnh vực của các nhánh chính phủ khác",
+      "definition_en": "the exercise of executive power beyond constitutional or legal limits, encroaching on other branches of government",
+      "level": "C1",
+      "synonyms": [
+        "abuse of power",
+        "executive aggrandizement"
+      ],
+      "antonyms": [
+        "constitutional restraint",
+        "separation of powers"
+      ],
+      "example_sentence": "Critics argue that the president's emergency decrees constitute executive overreach that undermines legislative authority."
+    },
+    {
+      "word": "consensus-building",
+      "pronunciation": "/kənˈsensəs ˈbɪldɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình tạo ra sự đồng ý chung giữa các bên có quan điểm khác nhau thông qua đối thoại và thỏa hiệp",
+      "definition_en": "the process of achieving broad agreement among diverse stakeholders through dialogue and compromise",
+      "level": "C1",
+      "synonyms": [
+        "coalition-forming",
+        "negotiated agreement"
+      ],
+      "antonyms": [
+        "polarization",
+        "confrontation"
+      ],
+      "example_sentence": "Effective consensus-building on climate policy requires engaging both environmental advocates and business leaders in substantive negotiations."
+    },
+    {
+      "word": "democratic backsliding",
+      "pronunciation": "/ˌdeməˈkrætɪk ˈbækˌslaɪdɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình suy thoái của các thể chế dân chủ, bao gồm hạn chế tự do báo chí, độc lập tư pháp, và quyền bầu cử",
+      "definition_en": "a gradual deterioration of democratic institutions, including restrictions on press freedom, judicial independence, and voting rights",
+      "level": "C2",
+      "synonyms": [
+        "democratic erosion",
+        "authoritarian drift"
+      ],
+      "antonyms": [
+        "democratic consolidation",
+        "institutional strengthening"
+      ],
+      "example_sentence": "International observers have documented democratic backsliding in several nations where executive powers have expanded at the expense of legislative oversight."
+    },
+    {
+      "word": "fiscal sustainability",
+      "pronunciation": "/ˈfɪskəl səˌsteɪnəˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của chính phủ duy trì chi tiêu công và doanh thu thuế ở mức cân bằng lâu dài mà không gây ra khủng hoảng nợ",
+      "definition_en": "the government's ability to maintain public spending and tax revenues in balance over the long term without creating debt crises",
+      "level": "C1",
+      "synonyms": [
+        "budgetary stability",
+        "long-term solvency"
+      ],
+      "antonyms": [
+        "fiscal deficit",
+        "unsustainable debt"
+      ],
+      "example_sentence": "Policymakers must balance social welfare expansion with fiscal sustainability to prevent intergenerational burden of public debt."
+    },
+    {
+      "word": "patronage system",
+      "pronunciation": "/ˈpeɪtrənɪdʒ ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống phân phối công việc, hợp đồng, hoặc lợi ích chính phủ dựa trên mối quan hệ chính trị hơn là năng lực hoặc xứng đáng",
+      "definition_en": "a system of distributing government jobs, contracts, or benefits based on political connections rather than merit",
+      "level": "C1",
+      "synonyms": [
+        "nepotism",
+        "cronyism"
+      ],
+      "antonyms": [
+        "meritocracy",
+        "impartial selection"
+      ],
+      "example_sentence": "Reformers argue that dismantling the patronage system is essential for improving government efficiency and reducing corruption."
+    },
+    {
+      "word": "supranational governance",
+      "pronunciation": "/ˌsuːprəˈnæʃənəl ˈɡʌvərnəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống quản lý vượt quá ranh giới quốc gia, nơi các quyết định được đưa ra bởi các tổ chức quốc tế hoặc liên minh",
+      "definition_en": "a system of governance that transcends national boundaries, where decisions are made by international organizations or unions",
+      "level": "C2",
+      "synonyms": [
+        "transnational governance",
+        "multilateral authority"
+      ],
+      "antonyms": [
+        "national sovereignty",
+        "unilateral control"
+      ],
+      "example_sentence": "The European Union exemplifies supranational governance, where member states delegate certain regulatory powers to Brussels institutions."
+    },
+    {
+      "word": "political polarization",
+      "pronunciation": "/pəˌlɪtɪkəl ˌpoʊlərɪˈzeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự phân chia sâu sắc của xã hội thành các nhóm chính trị đối lập với ít hoặc không có điểm chung, làm giảm khả năng hợp tác",
+      "definition_en": "the division of society into opposing political camps with minimal common ground, reducing capacity for cooperation",
+      "level": "C1",
+      "synonyms": [
+        "partisan divide",
+        "ideological fragmentation"
+      ],
+      "antonyms": [
+        "political consensus",
+        "bipartisan cooperation"
+      ],
+      "example_sentence": "Increasing political polarization has made it difficult for legislators to pass comprehensive reforms on healthcare and taxation."
+    },
+    {
+      "word": "asymmetric information",
+      "pronunciation": "/ˌæsɪˈmetrɪk ˌɪnfərˈmeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng một bên trong giao dịch hoặc quyết định chính sách có thông tin đầy đủ hơn bên kia, dẫn đến bất cân xứng quyền lực",
+      "definition_en": "a situation where one party in a transaction or policy decision has more or better information than the other, creating power imbalance",
+      "level": "C2",
+      "synonyms": [
+        "information disparity",
+        "knowledge gap"
+      ],
+      "antonyms": [
+        "transparency",
+        "full disclosure"
+      ],
+      "example_sentence": "Asymmetric information between government agencies and the public can undermine informed democratic decision-making on complex policy issues."
+    },
+    {
+      "word": "stakeholder engagement",
+      "pronunciation": "/ˈsteɪkˌhoʊldər ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình tương tác và tham vấn với các nhóm có lợi ích trong một quyết định chính sách, bao gồm cộng đồng, doanh nghiệp, và tổ chức xã hội",
+      "definition_en": "the process of consulting and involving groups with interests in a policy decision, including communities, businesses, and civil society",
+      "level": "C1",
+      "synonyms": [
+        "public consultation",
+        "participatory governance"
+      ],
+      "antonyms": [
+        "top-down decision-making",
+        "exclusionary policy"
+      ],
+      "example_sentence": "Successful stakeholder engagement on infrastructure projects requires transparent communication and genuine consideration of community concerns."
+    },
+    {
+      "word": "institutional inertia",
+      "pronunciation": "/ɪnˈstɪtjuʃənəl ɪˈnɜːrʃə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xu hướng của các cơ quan chính phủ kháng cự thay đổi và duy trì các quy trình, cấu trúc cũ ngay cả khi chúng không còn hiệu quả",
+      "definition_en": "the tendency of government institutions to resist change and maintain existing procedures and structures despite reduced effectiveness",
+      "level": "C2",
+      "synonyms": [
+        "bureaucratic resistance",
+        "organizational stagnation"
+      ],
+      "antonyms": [
+        "institutional reform",
+        "adaptive governance"
+      ],
+      "example_sentence": "Institutional inertia often prevents rapid implementation of digital governance reforms despite clear evidence of their efficiency benefits."
+    },
+    {
+      "word": "social contract",
+      "pronunciation": "/ˈsoʊʃəl ˈkɑːntrækt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thỏa thuận ngầm giữa công dân và chính phủ, nơi công dân chấp nhận quyền lực nhà nước để đổi lấy bảo vệ quyền và phúc lợi công cộng",
+      "definition_en": "an implicit agreement between citizens and government where citizens accept state authority in exchange for protection of rights and public welfare",
+      "level": "C1",
+      "synonyms": [
+        "civic compact",
+        "political agreement"
+      ],
+      "antonyms": [
+        "state of nature",
+        "anarchism"
+      ],
+      "example_sentence": "The social contract is tested when governments fail to provide essential services or protect citizens' fundamental rights and freedoms."
+    },
+    {
+      "word": "rent-seeking behavior",
+      "pronunciation": "/ˈrent ˈsiːkɪŋ bɪˈheɪvjər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hành động của các cá nhân hoặc tập đoàn sử dụng ảnh hưởng chính trị để tăng lợi nhuận mà không tạo ra giá trị kinh tế thực sự",
+      "definition_en": "the practice of individuals or groups using political influence to increase profits without creating genuine economic value",
+      "level": "C2",
+      "synonyms": [
+        "special interest seeking",
+        "unproductive profit-taking"
+      ],
+      "antonyms": [
+        "value creation",
+        "productive investment"
+      ],
+      "example_sentence": "Economists warn that rent-seeking behavior by monopolies, enabled by weak antitrust enforcement, reduces overall economic efficiency and innovation."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the phenomenon where regulatory agencies become influenced by the industries they oversee?",
+      "option_a": "Institutional accountability",
+      "option_b": "Regulatory capture",
+      "option_c": "Technocratic governance",
+      "option_d": "Stakeholder engagement",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Regulatory capture là hiện tượng các cơ quan quản lý bị ảnh hưởng bởi các tập đoàn mà chúng được giao nhiệm vụ giám sát. Các lựa chọn khác không phản ánh khái niệm này: accountability là trách nhiệm giải trình, technocratic governance là quản lý dựa trên chuyên gia, stakeholder engagement là tham vấn các bên liên quan."
+    },
+    {
+      "question_text": "The government's inability to maintain balanced budgets over time without creating debt crises is a failure of ___________.",
+      "option_a": "fiscal sustainability",
+      "option_b": "consensus-building",
+      "option_c": "institutional accountability",
+      "option_d": "civic disengagement",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Fiscal sustainability là khả năng duy trì chi tiêu công và doanh thu thuế ở mức cân bằng lâu dài. Khi chính phủ không thể làm điều này, nó là thất bại của fiscal sustainability. Các lựa chọn khác liên quan đến các khía cạnh khác của quản lý chính phủ."
+    },
+    {
+      "question_text": "When citizens withdraw from voting and political participation, this trend is referred to as ___________.",
+      "option_a": "democratic backsliding",
+      "option_b": "civic disengagement",
+      "option_c": "political polarization",
+      "option_d": "executive overreach",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Civic disengagement là sự rút lui của công dân khỏi các hoạt động chính trị và bỏ phiếu. Democratic backsliding là suy thoái của các thể chế dân chủ, political polarization là phân chia chính trị, executive overreach là vượt quá quyền hành pháp."
+    },
+    {
+      "question_text": "Which phrase best describes the gradual deterioration of democratic institutions, including restrictions on press freedom and judicial independence?",
+      "option_a": "Institutional inertia",
+      "option_b": "Democratic backsliding",
+      "option_c": "Supranational governance",
+      "option_d": "Patronage system",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Democratic backsliding là quá trình suy thoái của các thể chế dân chủ, bao gồm hạn chế tự do báo chí và độc lập tư pháp. Institutional inertia là kháng cự thay đổi, supranational governance là quản lý vượt quốc gia, patronage system là phân phối công việc dựa trên mối quan hệ."
+    },
+    {
+      "question_text": "A government that distributes public jobs and contracts based on political connections rather than merit operates through a ___________.",
+      "option_a": "social contract",
+      "option_b": "consensus-building mechanism",
+      "option_c": "patronage system",
+      "option_d": "stakeholder engagement process",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Patronage system là hệ thống phân phối công việc và hợp đồng dựa trên mối quan hệ chính trị hơn là năng lực. Social contract là thỏa thuận giữa công dân và chính phủ, consensus-building là tạo sự đồng ý chung, stakeholder engagement là tham vấn các bên liên quan."
+    },
+    {
+      "question_text": "When one party in a policy negotiation possesses significantly more information than the other, this creates a situation of ___________.",
+      "option_a": "asymmetric information",
+      "option_b": "institutional accountability",
+      "option_c": "policy trade-off",
+      "option_d": "rent-seeking behavior",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Asymmetric information là tình trạng một bên có thông tin đầy đủ hơn bên kia. Policy trade-off là cân bằng giữa các mục tiêu mâu thuẫn, institutional accountability là trách nhiệm giải trình, rent-seeking behavior là tăng lợi nhuận thông qua ảnh hưởng chính trị."
+    },
+    {
+      "question_text": "Which of the following best exemplifies supranational governance in practice?",
+      "option_a": "A national parliament passing domestic legislation",
+      "option_b": "The European Union where member states delegate regulatory powers to Brussels institutions",
+      "option_c": "A president exercising emergency executive powers",
+      "option_d": "Local communities engaging in consensus-building on municipal issues",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Supranational governance là quản lý vượt quốc gia, nơi các quyết định được đưa ra bởi các tổ chức quốc tế. EU là ví dụ điển hình khi các quốc gia ủy thác quyền lực cho các cơ quan Brussels. Các lựa chọn khác đều là quản lý ở cấp quốc gia hoặc địa phương."
+    },
+    {
+      "question_text": "Economists warn that __________ by monopolies, enabled by weak antitrust enforcement, reduces overall economic efficiency and innovation.",
+      "option_a": "institutional inertia",
+      "option_b": "civic disengagement",
+      "option_c": "rent-seeking behavior",
+      "option_d": "policy trade-offs",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Rent-seeking behavior là hành động sử dụng ảnh hưởng chính trị để tăng lợi nhuận mà không tạo giá trị kinh tế thực sự. Các lựa chọn khác không liên quan đến việc độc quyền tăng lợi nhuận thông qua ảnh hưởng chính trị."
+    }
+  ]
+}

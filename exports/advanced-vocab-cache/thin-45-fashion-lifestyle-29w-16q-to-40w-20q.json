@@ -1,0 +1,250 @@
+{
+  "words": [
+    {
+      "word": "sartorial",
+      "pronunciation": "/sɑːrˈtɔːriəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến nghề may mặc hoặc cách ăn mặc; thường dùng để chỉ phong cách thời trang tinh tế, có kiến thức sâu về quần áo",
+      "definition_en": "relating to tailoring, clothes, or the art of dressing well with refined taste",
+      "level": "C1",
+      "synonyms": [
+        "fashion-related",
+        "style-conscious"
+      ],
+      "antonyms": [
+        "unkempt",
+        "slovenly"
+      ],
+      "example_sentence": "Her sartorial choices reflect a deep understanding of color theory and fabric composition."
+    },
+    {
+      "word": "garment",
+      "pronunciation": "/ˈɡɑːrmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "một bộ quần áo hoặc một mảnh vải được may thành quần áo; thuật ngữ chính thức trong ngành thời trang",
+      "definition_en": "a piece of clothing; a formal term for any item of apparel",
+      "level": "B2",
+      "synonyms": [
+        "garb",
+        "apparel",
+        "clothing"
+      ],
+      "antonyms": [],
+      "example_sentence": "The designer carefully selected premium fabrics for each garment in the collection."
+    },
+    {
+      "word": "silhouette",
+      "pronunciation": "/ˌsɪluˈet/",
+      "part_of_speech": "noun",
+      "definition_vi": "hình dáng hoặc đường nét tổng thể của một bộ quần áo; cách một trang phục tạo hình dáng cho cơ thể",
+      "definition_en": "the outline or general shape of a garment or how clothing fits the body",
+      "level": "B2",
+      "synonyms": [
+        "outline",
+        "contour",
+        "shape"
+      ],
+      "antonyms": [],
+      "example_sentence": "The A-line silhouette of the dress flatters various body types and remains timeless."
+    },
+    {
+      "word": "fabric composition",
+      "pronunciation": "/ˈfæbrɪk ˌkɒmpəˈzɪʃən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "thành phần vật liệu của một loại vải; tỷ lệ các sợi (cotton, polyester, silk, v.v.) tạo nên vải",
+      "definition_en": "the blend of fibers and materials that make up a textile",
+      "level": "B2",
+      "synonyms": [
+        "fiber content",
+        "material blend"
+      ],
+      "antonyms": [],
+      "example_sentence": "The fabric composition of 60% cotton and 40% polyester ensures durability and comfort."
+    },
+    {
+      "word": "drape",
+      "pronunciation": "/dreɪp/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách vải rơi hoặc xếp nếp tự nhiên trên cơ thể; hoặc làm cho vải rơi một cách thanh lịch",
+      "definition_en": "the way fabric falls and folds on the body; to arrange fabric elegantly",
+      "level": "B2",
+      "synonyms": [
+        "hang",
+        "fall",
+        "flow"
+      ],
+      "antonyms": [
+        "stiffen",
+        "tighten"
+      ],
+      "example_sentence": "The silk fabric's natural drape creates an elegant, flowing effect that enhances movement."
+    },
+    {
+      "word": "palette",
+      "pronunciation": "/ˈpælət/",
+      "part_of_speech": "noun",
+      "definition_vi": "bộ sưu tập các màu sắc được sử dụng trong một bộ sưu tập thời trang hoặc trang phục",
+      "definition_en": "a range of colors used in a fashion collection or outfit",
+      "level": "B2",
+      "synonyms": [
+        "color scheme",
+        "color range"
+      ],
+      "antonyms": [],
+      "example_sentence": "The designer's autumn palette features rich jewel tones and earthy neutrals."
+    },
+    {
+      "word": "embellishment",
+      "pronunciation": "/ɪmˈbeləʃmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "chi tiết trang trí được thêm vào quần áo như hạt, ren, thêu, v.v.",
+      "definition_en": "decorative details added to garments such as beads, lace, embroidery, or sequins",
+      "level": "B2",
+      "synonyms": [
+        "decoration",
+        "ornamentation",
+        "trim"
+      ],
+      "antonyms": [
+        "plainness",
+        "simplicity"
+      ],
+      "example_sentence": "The gown's intricate embellishments of hand-sewn crystals elevate its luxury appeal."
+    },
+    {
+      "word": "bespoke",
+      "pronunciation": "/bɪˈspoʊk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "được làm riêng theo yêu cầu của khách hàng; thường dùng cho quần áo cao cấp được may đo",
+      "definition_en": "custom-made according to individual specifications; tailored to personal requirements",
+      "level": "C1",
+      "synonyms": [
+        "custom-made",
+        "bespoken",
+        "made-to-order"
+      ],
+      "antonyms": [
+        "ready-made",
+        "off-the-rack"
+      ],
+      "example_sentence": "Bespoke tailoring allows clients to select fabrics, cuts, and finishes that match their preferences."
+    },
+    {
+      "word": "aesthetic",
+      "pronunciation": "/esˈθetɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "nguyên tắc hoặc tiêu chuẩn về vẻ đẹp; phong cách hoặc hình ảnh tổng thể mà ai đó theo đuổi",
+      "definition_en": "a set of principles about beauty and style; the overall visual appearance someone cultivates",
+      "level": "B2",
+      "synonyms": [
+        "style",
+        "appearance",
+        "look"
+      ],
+      "antonyms": [],
+      "example_sentence": "Her minimalist aesthetic emphasizes clean lines, neutral colors, and functional design."
+    },
+    {
+      "word": "proportion",
+      "pronunciation": "/prəˈpɔːrʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "mối quan hệ giữa các phần khác nhau của một bộ trang phục; cách các yếu tố được cân bằng với nhau",
+      "definition_en": "the relationship between different parts of an outfit; how elements are balanced",
+      "level": "B2",
+      "synonyms": [
+        "balance",
+        "ratio",
+        "relationship"
+      ],
+      "antonyms": [
+        "disproportion",
+        "imbalance"
+      ],
+      "example_sentence": "Good proportion in fashion means balancing a voluminous top with fitted bottoms."
+    },
+    {
+      "word": "versatile piece",
+      "pronunciation": "/ˈvɜːrsətaɪl piːs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "một bộ quần áo có thể kết hợp với nhiều trang phục khác nhau; đa năng và linh hoạt",
+      "definition_en": "a garment that can be styled in multiple ways and paired with various outfits",
+      "level": "B2",
+      "synonyms": [
+        "multi-purpose garment",
+        "flexible piece"
+      ],
+      "antonyms": [
+        "limited-use item"
+      ],
+      "example_sentence": "A white button-down shirt is a versatile piece that works for both casual and formal occasions."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the term 'sartorial' in fashion contexts?",
+      "option_a": "Relating to mass-produced clothing sold in department stores",
+      "option_b": "Concerning the art of tailoring and refined dressing with sophisticated taste",
+      "option_c": "Describing clothing that is comfortable but lacks style",
+      "option_d": "Referring to seasonal fashion trends that change rapidly",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Sartorial liên quan đến nghề may mặc và phong cách ăn mặc tinh tế. Đáp án A sai vì không nhấn mạnh khía cạnh 'refined taste'; C sai vì sartorial ngược lại với thiếu phong cách; D sai vì không liên quan đến xu hướng tạm thời."
+    },
+    {
+      "question_text": "The designer's use of _____ in the collection—combining silk, cotton, and linen—creates both durability and breathability.",
+      "option_a": "silhouette",
+      "option_b": "drape",
+      "option_c": "fabric composition",
+      "option_d": "embellishment",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Fabric composition là thành phần vật liệu của vải. Silhouette là hình dáng tổng thể; drape là cách vải rơi; embellishment là chi tiết trang trí—không phù hợp với ngữ cảnh về sợi vải."
+    },
+    {
+      "question_text": "What is the primary advantage of choosing a garment with good drape?",
+      "option_a": "It requires less frequent washing and maintenance",
+      "option_b": "It creates an elegant, flowing appearance that flatters the body",
+      "option_c": "It is always more affordable than stiff fabrics",
+      "option_d": "It prevents wrinkles from forming during storage",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Drape tốt tạo ra vẻ ngoài thanh lịch, chảy mượt mà. A sai vì không liên quan đến bảo trì; C sai vì giá không phụ thuộc vào drape; D sai vì drape không ngăn chặn nhăn."
+    },
+    {
+      "question_text": "A bespoke suit differs from ready-made clothing primarily in that it is _____ to the client's exact measurements and preferences.",
+      "option_a": "mass-produced",
+      "option_b": "custom-made",
+      "option_c": "discounted",
+      "option_d": "imported",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Bespoke = custom-made (được làm riêng theo yêu cầu). A sai vì bespoke là ngược lại của mass-produced; C và D không liên quan đến định nghĩa của bespoke."
+    },
+    {
+      "question_text": "Which statement best explains why a white button-down shirt is considered a versatile piece?",
+      "option_a": "It is the most expensive item in any wardrobe",
+      "option_b": "It can be styled in multiple ways and paired with various outfits for different occasions",
+      "option_c": "It is only suitable for formal business environments",
+      "option_d": "It requires special care and professional dry cleaning",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Versatile piece là trang phục có thể kết hợp với nhiều bộ trang phục khác nhau. A sai vì giá không liên quan; C sai vì nó dùng được cho cả casual lẫn formal; D sai vì không phải tất cả button-down đều cần dry cleaning."
+    },
+    {
+      "question_text": "The designer's autumn palette of jewel tones and earthy neutrals demonstrates a commitment to _____ that appeals to a sophisticated audience.",
+      "option_a": "mass production",
+      "option_b": "aesthetic coherence and visual harmony",
+      "option_c": "rapid trend-chasing",
+      "option_d": "budget-conscious design",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Palette (bộ màu sắc) được chọn cẩn thận thể hiện sự nhất quán thẩm mỹ. A sai vì không liên quan đến lựa chọn màu sắc; C sai vì palette được lên kế hoạch, không phải theo xu hướng tạm thời; D sai vì không liên quan đến chi phí."
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "words": [
+    {
+      "word": "moreover",
+      "pronunciation": "/mɔːrˈoʊvər/",
+      "part_of_speech": "connector",
+      "definition_vi": "hơn nữa, thêm vào đó (dùng để thêm thông tin quan trọng, thường ở đầu câu)",
+      "definition_en": "in addition to what has been said; furthermore",
+      "level": "B1",
+      "synonyms": [
+        "furthermore",
+        "besides"
+      ],
+      "antonyms": [
+        "however",
+        "nevertheless"
+      ],
+      "example_sentence": "The project is cost-effective and saves time. Moreover, it reduces environmental impact significantly."
+    },
+    {
+      "word": "furthermore",
+      "pronunciation": "/ˌfɜːrðərˈmɔːr/",
+      "part_of_speech": "connector",
+      "definition_vi": "hơn nữa, thêm vào đó (tương tự moreover, thường dùng trong văn bản chính thức)",
+      "definition_en": "in addition; moreover; what is more",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "additionally"
+      ],
+      "antonyms": [
+        "however",
+        "conversely"
+      ],
+      "example_sentence": "The new policy improves efficiency. Furthermore, it provides better support for employees."
+    },
+    {
+      "word": "in addition",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoài ra, thêm vào đó (cụm từ thêm thông tin, có thể dùng ở đầu hoặc giữa câu)",
+      "definition_en": "as well as; also; furthermore",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "besides"
+      ],
+      "antonyms": [
+        "instead",
+        "rather"
+      ],
+      "example_sentence": "The course covers mathematics and science. In addition, students learn practical skills."
+    },
+    {
+      "word": "not only that",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "không chỉ vậy, không những thế (nhấn mạnh thêm điều gì đó bất ngờ hoặc quan trọng hơn)",
+      "definition_en": "and as if that were not enough; moreover",
+      "level": "B2",
+      "synonyms": [
+        "what is more",
+        "furthermore"
+      ],
+      "antonyms": [
+        "on the other hand",
+        "however"
+      ],
+      "example_sentence": "The company increased profits. Not only that, it also expanded into three new markets."
+    },
+    {
+      "word": "above all",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trên hết, quan trọng nhất là (dùng để nhấn mạnh điều quan trọng nhất trong danh sách)",
+      "definition_en": "most importantly; chiefly",
+      "level": "B1",
+      "synonyms": [
+        "most importantly",
+        "primarily"
+      ],
+      "antonyms": [
+        "least of all",
+        "insignificantly"
+      ],
+      "example_sentence": "The university offers excellent facilities and experienced teachers. Above all, it maintains high academic standards."
+    },
+    {
+      "word": "in fact",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "thực tế là, thực ra (dùng để nhấn mạnh hoặc làm rõ điều vừa nói)",
+      "definition_en": "actually; in reality; to tell the truth",
+      "level": "B1",
+      "synonyms": [
+        "actually",
+        "indeed"
+      ],
+      "antonyms": [
+        "supposedly",
+        "allegedly"
+      ],
+      "example_sentence": "The project seemed difficult. In fact, the team completed it ahead of schedule."
+    },
+    {
+      "word": "what is more",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "hơn nữa, thêm vào đó (cụm từ thêm thông tin, thường dùng trong văn bản trang trọng)",
+      "definition_en": "furthermore; moreover; in addition",
+      "level": "B2",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [
+        "on the contrary",
+        "however"
+      ],
+      "example_sentence": "The solution is practical and affordable. What is more, it can be implemented immediately."
+    },
+    {
+      "word": "additionally",
+      "pronunciation": "/əˈdɪʃənəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "ngoài ra, thêm vào đó (dùng để thêm thông tin bổ sung)",
+      "definition_en": "in addition; also; as well",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [
+        "instead",
+        "rather"
+      ],
+      "example_sentence": "The software improves productivity. Additionally, it reduces operational costs by 20 percent."
+    },
+    {
+      "word": "besides",
+      "pronunciation": "/bɪˈsaɪdz/",
+      "part_of_speech": "adverb",
+      "definition_vi": "ngoài ra, hơn nữa (dùng để thêm lý do hoặc thông tin bổ sung)",
+      "definition_en": "in addition to; moreover; furthermore",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [
+        "instead",
+        "rather"
+      ],
+      "example_sentence": "The job offers good salary. Besides, it provides excellent career development opportunities."
+    },
+    {
+      "word": "as well as",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cũng như, không chỉ...mà còn (dùng để liệt kê hoặc thêm thông tin)",
+      "definition_en": "in addition to; and also",
+      "level": "B1",
+      "synonyms": [
+        "and",
+        "plus"
+      ],
+      "antonyms": [
+        "instead of",
+        "rather than"
+      ],
+      "example_sentence": "The program teaches English as well as mathematics to international students."
+    },
+    {
+      "word": "not to mention",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "chưa kể, không kể (dùng để thêm thông tin bổ sung, thường là điều hiển nhiên)",
+      "definition_en": "and also; not forgetting; let alone",
+      "level": "B2",
+      "synonyms": [
+        "not forgetting",
+        "let alone"
+      ],
+      "antonyms": [
+        "excluding",
+        "except"
+      ],
+      "example_sentence": "The city has museums and galleries, not to mention its beautiful parks and historic landmarks."
+    },
+    {
+      "word": "in the same way",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách tương tự, theo cách tương tự (dùng để so sánh hoặc thêm thông tin tương tự)",
+      "definition_en": "similarly; in a similar manner",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "antonyms": [
+        "differently",
+        "conversely"
+      ],
+      "example_sentence": "Students must submit assignments on time. In the same way, teachers must return grades promptly."
+    },
+    {
+      "word": "likewise",
+      "pronunciation": "/ˈlaɪkwaɪz/",
+      "part_of_speech": "adverb",
+      "definition_vi": "tương tự, cách tương tự (dùng để thêm thông tin song song hoặc tương tự)",
+      "definition_en": "in the same way; similarly; also",
+      "level": "B1",
+      "synonyms": [
+        "similarly",
+        "in the same way"
+      ],
+      "antonyms": [
+        "differently",
+        "conversely"
+      ],
+      "example_sentence": "The first experiment succeeded. Likewise, the second experiment produced positive results."
+    },
+    {
+      "word": "to add to this",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "thêm vào đó, ngoài ra (dùng để thêm thông tin bổ sung)",
+      "definition_en": "in addition to what has been said; furthermore",
+      "level": "B2",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [
+        "instead",
+        "rather"
+      ],
+      "example_sentence": "The company improved sales by 30 percent. To add to this, it expanded its market share significantly."
+    },
+    {
+      "word": "equally important",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cũng quan trọng như vậy (dùng để nhấn mạnh điều tiếp theo có tầm quan trọng ngang bằng)",
+      "definition_en": "of equal importance; just as important",
+      "level": "B2",
+      "synonyms": [
+        "just as important",
+        "equally significant"
+      ],
+      "antonyms": [
+        "less important",
+        "insignificant"
+      ],
+      "example_sentence": "The research improved treatment methods. Equally important, it reduced patient recovery time."
+    },
+    {
+      "word": "in particular",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "đặc biệt là, nói riêng (dùng để nhấn mạnh hoặc làm rõ một điểm cụ thể)",
+      "definition_en": "especially; specifically; in particular",
+      "level": "B1",
+      "synonyms": [
+        "especially",
+        "specifically"
+      ],
+      "antonyms": [
+        "generally",
+        "broadly"
+      ],
+      "example_sentence": "The report discusses environmental issues. In particular, it focuses on climate change impacts."
+    },
+    {
+      "word": "for instance",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ví dụ như, chẳng hạn (dùng để đưa ra ví dụ cụ thể)",
+      "definition_en": "for example; as an example",
+      "level": "B1",
+      "synonyms": [
+        "for example",
+        "such as"
+      ],
+      "antonyms": [
+        "generally",
+        "broadly"
+      ],
+      "example_sentence": "Many countries have improved education. For instance, Vietnam has increased school enrollment rates."
+    },
+    {
+      "word": "such as",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "như, chẳng hạn như (dùng để đưa ra ví dụ hoặc liệt kê)",
+      "definition_en": "for example; like",
+      "level": "B1",
+      "synonyms": [
+        "for example",
+        "like"
+      ],
+      "antonyms": [
+        "excluding",
+        "except"
+      ],
+      "example_sentence": "The program includes various subjects such as mathematics, science, and literature."
+    },
+    {
+      "word": "by the same token",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo cách tương tự, cũng vậy (dùng để thêm thông tin song song hoặc tương tự)",
+      "definition_en": "in the same way; similarly; likewise",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "antonyms": [
+        "conversely",
+        "on the other hand"
+      ],
+      "example_sentence": "The first policy was successful. By the same token, the second policy achieved similar results."
+    },
+    {
+      "word": "along with",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cùng với, kèm theo (dùng để liệt kê hoặc thêm thông tin)",
+      "definition_en": "together with; in addition to",
+      "level": "B1",
+      "synonyms": [
+        "with",
+        "together with"
+      ],
+      "antonyms": [
+        "instead of",
+        "rather than"
+      ],
+      "example_sentence": "The package includes software along with comprehensive user documentation."
+    },
+    {
+      "word": "on top of that",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoài ra, thêm vào đó (dùng để thêm thông tin bổ sung, thường là bất ngờ)",
+      "definition_en": "in addition to that; furthermore; moreover",
+      "level": "B2",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [
+        "instead",
+        "rather"
+      ],
+      "example_sentence": "The project was completed on time. On top of that, it came in under budget."
+    },
+    {
+      "word": "to be sure",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "chắc chắn là, đúng là (dùng để nhấn mạnh hoặc thừa nhận điều gì đó)",
+      "definition_en": "certainly; admittedly; it is true that",
+      "level": "B2",
+      "synonyms": [
+        "certainly",
+        "admittedly"
+      ],
+      "antonyms": [
+        "doubtfully",
+        "questionably"
+      ],
+      "example_sentence": "To be sure, the plan has some challenges, but the benefits outweigh the drawbacks."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new technology is efficient and cost-effective. _____, it also reduces environmental pollution significantly.",
+      "option_a": "Moreover",
+      "option_b": "However",
+      "option_c": "Instead",
+      "option_d": "Nevertheless",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Câu cần một từ nối để thêm thông tin bổ sung. 'Moreover' (hơn nữa) là đáp án đúng. 'However', 'Instead', 'Nevertheless' đều dùng để chỉ sự tương phản, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The university offers excellent facilities and experienced faculty. _____, it maintains the highest academic standards in the region.",
+      "option_a": "Above all",
+      "option_b": "Instead",
+      "option_c": "On the other hand",
+      "option_d": "In contrast",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Above all' (trên hết) dùng để nhấn mạnh điều quan trọng nhất. Các đáp án khác chỉ sự tương phản, không phù hợp với ngữ cảnh nhấn mạnh."
+    },
+    {
+      "question_text": "The project improved productivity by 25 percent. _____, it enhanced employee satisfaction significantly.",
+      "option_a": "Furthermore",
+      "option_b": "However",
+      "option_c": "Yet",
+      "option_d": "Although",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Furthermore' (hơn nữa) thêm thông tin bổ sung. 'However', 'Yet', 'Although' đều chỉ sự tương phản, không phù hợp."
+    },
+    {
+      "question_text": "The report discusses economic growth. _____, it analyzes social development and environmental sustainability.",
+      "option_a": "In addition",
+      "option_b": "Instead",
+      "option_c": "Rather",
+      "option_d": "But",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'In addition' (ngoài ra) dùng để thêm thông tin. Các đáp án khác chỉ sự thay thế hoặc tương phản."
+    },
+    {
+      "question_text": "The solution is practical and affordable. _____, it can be implemented within two weeks.",
+      "option_a": "What is more",
+      "option_b": "On the contrary",
+      "option_c": "Conversely",
+      "option_d": "However",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'What is more' (hơn nữa) thêm thông tin quan trọng. Các đáp án khác chỉ sự tương phản."
+    },
+    {
+      "question_text": "The program teaches mathematics and science. _____, students develop critical thinking skills.",
+      "option_a": "Additionally",
+      "option_b": "Nevertheless",
+      "option_c": "Still",
+      "option_d": "Yet",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Additionally' (ngoài ra) thêm thông tin bổ sung. Các đáp án khác chỉ sự tương phản."
+    },
+    {
+      "question_text": "The job offers competitive salary. _____, it provides excellent health insurance and retirement benefits.",
+      "option_a": "Besides",
+      "option_b": "However",
+      "option_c": "Yet",
+      "option_d": "Although",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Besides' (ngoài ra) thêm thông tin bổ sung. Các đáp án khác chỉ sự tương phản."
+    },
+    {
+      "question_text": "Which phrase is used to emphasize the most important point in a list of ideas?",
+      "option_a": "In addition",
+      "option_b": "Above all",
+      "option_c": "For instance",
+      "option_d": "In particular",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Above all' (trên hết) dùng để nhấn mạnh điều quan trọng nhất. 'In addition' thêm thông tin, 'For instance' đưa ví dụ, 'In particular' làm rõ một điểm cụ thể."
+    },
+    {
+      "question_text": "The first experiment succeeded. _____, the second experiment produced similar positive results.",
+      "option_a": "Likewise",
+      "option_b": "Instead",
+      "option_c": "Rather",
+      "option_d": "But",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Likewise' (tương tự) dùng để thêm thông tin song song. Các đáp án khác chỉ sự thay thế hoặc tương phản."
+    },
+    {
+      "question_text": "What is the main function of 'not only that' in academic writing?",
+      "option_a": "To provide an example",
+      "option_b": "To show contrast",
+      "option_c": "To add surprising or important additional information",
+      "option_d": "To conclude an argument",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Not only that' (không chỉ vậy) dùng để thêm thông tin bất ngờ hoặc quan trọng hơn. Các đáp án khác không phù hợp với chức năng của cụm từ này."
+    },
+    {
+      "question_text": "The research improved treatment methods. _____, it reduced patient recovery time by 40 percent.",
+      "option_a": "Equally important",
+      "option_b": "Instead",
+      "option_c": "However",
+      "option_d": "Yet",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Equally important' (cũng quan trọng như vậy) nhấn mạnh điều tiếp theo có tầm quan trọng ngang bằng. Các đáp án khác chỉ sự tương phản."
+    },
+    {
+      "question_text": "The program includes various subjects _____ mathematics, science, and literature.",
+      "option_a": "such as",
+      "option_b": "instead of",
+      "option_c": "rather than",
+      "option_d": "except for",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Such as' (như, chẳng hạn như) dùng để đưa ra ví dụ. Các đáp án khác chỉ sự loại trừ hoặc thay thế."
+    }
+  ]
+}

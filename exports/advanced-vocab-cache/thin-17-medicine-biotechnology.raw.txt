@@ -1,0 +1,117 @@
+```json
+{
+  "words": [
+    {
+      "word": "nosocomial",
+      "pronunciation": "/ˌnɒsəˈkəʊmiəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến bệnh hoặc nhiễm trùng phát sinh trong bệnh viện hoặc cơ sở y tế, không phải do bệnh nhân mang theo khi nhập viện.",
+      "definition_en": "Relating to disease or infection acquired in a hospital or healthcare facility, not present at admission.",
+      "level": "C1",
+      "synonyms": ["hospital-acquired", "healthcare-associated"],
+      "antonyms": ["community-acquired"],
+      "example_sentence": "The hospital implemented strict hygiene protocols to reduce nosocomial infection rates among immunocompromised patients."
+    },
+    {
+      "word": "etiology",
+      "pronunciation": "/ˌiːtiˈɒlədʒi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Nguyên nhân hoặc tập hợp các nguyên nhân gây ra một bệnh hoặc tình trạng bệnh lý cụ thể.",
+      "definition_en": "The cause or set of causes responsible for the origin of a disease or pathological condition.",
+      "level": "C1",
+      "synonyms": ["causation", "origin", "root cause"],
+      "antonyms": [],
+      "example_sentence": "Understanding the etiology of Alzheimer's disease remains one of neuroscience's greatest challenges, though amyloid-beta accumulation is implicated."
+    },
+    {
+      "word": "morbidity",
+      "pronunciation": "/mɔːrˈbɪdɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tỷ lệ hoặc số lượng các trường hợp bệnh tật trong một quần thể nhất định; mức độ bệnh tật trong cộng đồng.",
+      "definition_en": "The rate or number of disease cases in a given population; the state of being diseased or unhealthy.",
+      "level": "C1",
+      "synonyms": ["disease incidence", "illness rate"],
+      "antonyms": ["health", "wellness"],
+      "example_sentence": "The study examined morbidity patterns across different socioeconomic groups to identify disparities in chronic disease prevalence."
+    },
+    {
+      "word": "sequela",
+      "pronunciation": "/sɪˈkwɛlə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hậu quả hoặc biến chứng lâu dài phát sinh sau một bệnh hoặc chấn thương; thường dùng ở dạng số nhiều 'sequelae'.",
+      "definition_en": "A consequence or long-term complication arising from a disease or injury; typically used in plural form 'sequelae'.",
+      "level": "C2",
+      "synonyms": ["aftermath", "consequence", "complication"],
+      "antonyms": [],
+      "example_sentence": "Post-COVID sequelae, including persistent fatigue and cognitive dysfunction, have emerged as significant public health concerns."
+    },
+    {
+      "word": "pathognomonic",
+      "pronunciation": "/ˌpæθɒɡnəˈmɒnɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Đặc trưng hoặc chỉ định duy nhất cho một bệnh cụ thể; là dấu hiệu hoặc triệu chứng chẩn đoán xác định.",
+      "definition_en": "Characteristic or indicative of a particular disease; a sign or symptom that is diagnostic of a specific condition.",
+      "level": "C2",
+      "synonyms": ["diagnostic", "characteristic", "distinctive"],
+      "antonyms": ["nonspecific", "ambiguous"],
+      "example_sentence": "The cherry-red spot on the macula is pathognomonic for central retinal artery occlusion in acute presentations."
+    },
+    {
+      "word": "iatrogenic",
+      "pronunciation": "/ˌaɪətrəˈdʒɛnɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Được gây ra hoặc tạo ra bởi các can thiệp y tế hoặc điều trị; bệnh hoặc tình trạng do bác sĩ hoặc điều trị gây ra.",
+      "definition_en": "Caused or produced by medical intervention or treatment; disease or condition induced by physician or therapy.",
+      "level": "C1",
+      "synonyms": ["treatment-induced", "physician-caused"],
+      "antonyms": ["natural", "spontaneous"],
+      "example_sentence": "Iatrogenic complications from prolonged antibiotic use include Clostridioides difficile infection and fungal overgrowth."
+    },
+    {
+      "word": "virulence",
+      "pronunciation": "/ˈvɪrjʊləns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mức độ độc hại hoặc khả năng gây bệnh của một tác nhân bệnh (vi khuẩn, virus); sức mạnh của một bệnh gây ra bệnh nặng.",
+      "definition_en": "The degree of pathogenicity or disease-causing ability of a pathogenic agent; the severity of illness produced.",
+      "level": "C1",
+      "synonyms": ["pathogenicity", "infectivity", "toxicity"],
+      "antonyms": ["avirulence", "benignity"],
+      "example_sentence": "The virulence of SARS-CoV-2 variants has been linked to mutations in the spike protein affecting transmissibility and immune evasion."
+    },
+    {
+      "word": "prophylaxis",
+      "pronunciation": "/ˌprɒfɪˈlæksɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các biện pháp hoặc điều trị nhằm ngăn ngừa bệnh tật hoặc nhiễm trùng; phòng chống bệnh trước khi nó xảy ra.",
+      "definition_en": "Measures or treatment intended to prevent disease or infection; preventive medical intervention before disease onset.",
+      "level": "C1",
+      "synonyms": ["prevention", "preventive treatment", "precaution"],
+      "antonyms": ["treatment", "cure"],
+      "example_sentence": "Antimicrobial prophylaxis is routinely administered before surgical procedures to reduce the risk of surgical site infections."
+    },
+    {
+      "word": "dysregulation",
+      "pronunciation": "/ˌdɪsˌreɡjʊˈleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự mất cân bằng hoặc rối loạn trong điều hòa bình thường của một quá trình sinh học; mất kiểm soát hoạt động sinh lý.",
+      "definition_en": "Abnormal or impaired regulation of a biological process; loss of normal control over physiological function.",
+      "level": "C1",
+      "synonyms": ["deregulation", "imbalance", "malfunction"],
+      "antonyms": ["regulation", "homeostasis"],
+      "example_sentence": "Immune dysregulation in autoimmune diseases results in aberrant T-cell activation and loss of self-tolerance mechanisms."
+    },
+    {
+      "word": "senescence",
+      "pronunciation": "/sɪˈnɛsəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình lão hóa hoặc suy giảm chức năng ở mức tế bào hoặc sinh vật; trạng thái già nua hoặc suy thoái.",
+      "definition_en": "The process of aging or functional decline at cellular or organismal level; the state of growing old or deteriorating.",
+      "level": "C2",
+      "synonyms": ["aging", "deterioration", "decline"],
+      "antonyms": ["rejuvenation", "renewal"],
+      "example_sentence": "Cellular senescence, characterized by telomere shortening and p53 activation, is implicated in aging-related diseases and cancer prevention."
+    }
+  ],
+  "questions": []
+}
+```

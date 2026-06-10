@@ -1,0 +1,445 @@
+{
+  "words": [
+    {
+      "word": "play a role",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đóng vai trò, có ảnh hưởng đến cái gì",
+      "definition_en": "to have an effect or influence on something; to be involved in something",
+      "level": "B1",
+      "synonyms": [
+        "contribute to",
+        "have an impact on"
+      ],
+      "antonyms": [],
+      "example_sentence": "Technology plays a crucial role in modern education, helping students access information more easily."
+    },
+    {
+      "word": "provide insight",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cung cấp cái nhìn sâu sắc, giúp hiểu rõ hơn",
+      "definition_en": "to give a clear and deep understanding of something",
+      "level": "B2",
+      "synonyms": [
+        "shed light on",
+        "clarify"
+      ],
+      "antonyms": [],
+      "example_sentence": "Recent studies provide insight into how climate change affects ocean ecosystems and marine life."
+    },
+    {
+      "word": "reach a conclusion",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đi đến kết luận, rút ra kết luận",
+      "definition_en": "to arrive at a final decision or judgment after considering evidence",
+      "level": "B1",
+      "synonyms": [
+        "draw a conclusion",
+        "come to a conclusion"
+      ],
+      "antonyms": [],
+      "example_sentence": "After analyzing the data, researchers reached a conclusion that exercise improves mental health significantly."
+    },
+    {
+      "word": "have implications",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "có hàm ý, có ảnh hưởng, có hệ quả",
+      "definition_en": "to have possible effects or consequences that are not directly stated",
+      "level": "B2",
+      "synonyms": [
+        "have consequences",
+        "suggest"
+      ],
+      "antonyms": [],
+      "example_sentence": "The discovery of new renewable energy sources has significant implications for global environmental policy."
+    },
+    {
+      "word": "draw a distinction",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "phân biệt, làm rõ sự khác biệt",
+      "definition_en": "to show or explain the difference between two things",
+      "level": "B2",
+      "synonyms": [
+        "differentiate",
+        "distinguish"
+      ],
+      "antonyms": [],
+      "example_sentence": "The author draws a distinction between traditional and digital marketing strategies in the report."
+    },
+    {
+      "word": "shed light on",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "làm sáng tỏ, giải thích rõ",
+      "definition_en": "to help explain or make something clearer and easier to understand",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "elucidate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The documentary sheds light on the historical factors that shaped modern society."
+    },
+    {
+      "word": "raise awareness",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nâng cao nhận thức, tăng cảnh báo",
+      "definition_en": "to make people more informed or conscious about an issue",
+      "level": "B1",
+      "synonyms": [
+        "increase understanding",
+        "promote knowledge"
+      ],
+      "antonyms": [],
+      "example_sentence": "Environmental campaigns raise awareness about plastic pollution and its effects on wildlife."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tính đến, xem xét, tính toán",
+      "definition_en": "to consider something as part of a decision or calculation",
+      "level": "B1",
+      "synonyms": [
+        "consider",
+        "account for"
+      ],
+      "antonyms": [],
+      "example_sentence": "When planning urban development, city officials must take into account the needs of local communities."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh, lưu ý",
+      "definition_en": "to direct attention to something; to mention something important",
+      "level": "B1",
+      "synonyms": [
+        "highlight",
+        "emphasize"
+      ],
+      "antonyms": [],
+      "example_sentence": "The researcher points out that previous studies overlooked the psychological impact of social media."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, dẫn đến, tạo ra",
+      "definition_en": "to cause something to happen; to produce a result",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to"
+      ],
+      "antonyms": [],
+      "example_sentence": "Technological innovations have brought about significant changes in how people communicate globally."
+    },
+    {
+      "word": "account for",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giải thích, chiếm, đáp ứng",
+      "definition_en": "to explain the reason for something; to represent a particular amount or percentage",
+      "level": "B2",
+      "synonyms": [
+        "explain",
+        "constitute"
+      ],
+      "antonyms": [],
+      "example_sentence": "Renewable energy sources now account for approximately 30% of the country's total electricity production."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bắt nguồn từ, xuất phát từ",
+      "definition_en": "to originate from; to have something as a cause or source",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many modern health problems stem from sedentary lifestyles and poor dietary habits."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "dựa trên, xét đến, với sự xem xét",
+      "definition_en": "considering; taking into account; because of new information",
+      "level": "B2",
+      "synonyms": [
+        "given",
+        "considering"
+      ],
+      "antonyms": [],
+      "example_sentence": "In light of recent economic data, policymakers are reconsidering their approach to inflation control."
+    },
+    {
+      "word": "by and large",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "nói chung, hầu như, phần lớn",
+      "definition_en": "in general; mostly; on the whole",
+      "level": "B2",
+      "synonyms": [
+        "generally",
+        "mostly"
+      ],
+      "antonyms": [],
+      "example_sentence": "By and large, students who study consistently perform better on standardized tests than those who cram."
+    },
+    {
+      "word": "it is worth noting",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đáng chú ý, cần lưu ý",
+      "definition_en": "it is important to mention or remember something",
+      "level": "B2",
+      "synonyms": [
+        "notably",
+        "significantly"
+      ],
+      "antonyms": [],
+      "example_sentence": "It is worth noting that the survey included participants from diverse socioeconomic backgrounds."
+    },
+    {
+      "word": "be conducive to",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thuận lợi cho, tạo điều kiện cho",
+      "definition_en": "to provide conditions that make something likely to happen or succeed",
+      "level": "B2",
+      "synonyms": [
+        "promote",
+        "facilitate"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "A quiet study environment is conducive to better concentration and academic performance."
+    },
+    {
+      "word": "come to light",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "bị phát hiện, được tiết lộ, nổi lên",
+      "definition_en": "to become known or discovered; to be revealed",
+      "level": "B2",
+      "synonyms": [
+        "emerge",
+        "be revealed"
+      ],
+      "antonyms": [
+        "remain hidden"
+      ],
+      "example_sentence": "New evidence about the historical event came to light after researchers examined previously classified documents."
+    },
+    {
+      "word": "in the long run",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "về lâu dài, cuối cùng",
+      "definition_en": "over a long period of time; eventually; ultimately",
+      "level": "B1",
+      "synonyms": [
+        "eventually",
+        "ultimately"
+      ],
+      "antonyms": [
+        "in the short term"
+      ],
+      "example_sentence": "Although the project is expensive now, it will save money in the long run through increased efficiency."
+    },
+    {
+      "word": "be at odds with",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "mâu thuẫn với, không phù hợp với",
+      "definition_en": "to disagree with; to be in conflict with",
+      "level": "B2",
+      "synonyms": [
+        "contradict",
+        "conflict with"
+      ],
+      "antonyms": [
+        "align with",
+        "agree with"
+      ],
+      "example_sentence": "The government's new policy is at odds with environmental protection goals established in previous legislation."
+    },
+    {
+      "word": "call into question",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đặt câu hỏi, nghi ngờ, thách thức",
+      "definition_en": "to make someone doubt or question the validity of something",
+      "level": "B2",
+      "synonyms": [
+        "challenge",
+        "doubt"
+      ],
+      "antonyms": [
+        "confirm",
+        "validate"
+      ],
+      "example_sentence": "The recent scandal calls into question the credibility of the institution and its leadership."
+    },
+    {
+      "word": "be indicative of",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "là dấu hiệu của, chỉ ra, phản ánh",
+      "definition_en": "to be a sign or indication of something; to suggest",
+      "level": "B2",
+      "synonyms": [
+        "suggest",
+        "indicate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The sharp decline in test scores is indicative of deeper problems within the education system."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The study _______ that regular exercise significantly improves cardiovascular health and reduces stress levels.",
+      "option_a": "provides insight",
+      "option_b": "raises awareness",
+      "option_c": "draws a distinction",
+      "option_d": "sheds light on",
+      "correct_answer": "D",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Cả A và D đều có thể dùng, nhưng 'sheds light on' (làm sáng tỏ) phù hợp nhất khi nói về việc giải thích/làm rõ một vấn đề. 'Provides insight' cũng đúng nhưng 'sheds light on' tự nhiên hơn trong ngữ cảnh này. Đáp án D là tự nhiên nhất."
+    },
+    {
+      "question_text": "After reviewing all the evidence, the committee _______ that the proposed merger would benefit both companies.",
+      "option_a": "drew a conclusion",
+      "option_b": "reached a conclusion",
+      "option_c": "came to light",
+      "option_d": "pointed out",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Reached a conclusion' là cụm chính xác để nói về việc đi đến kết luận sau khi xem xét bằng chứng. 'Drew a conclusion' cũng đúng nhưng ít tự nhiên hơn. 'Came to light' (được phát hiện) và 'pointed out' (chỉ ra) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The discovery of new antibiotics _______ significant implications for treating drug-resistant infections in the future.",
+      "option_a": "has",
+      "option_b": "makes",
+      "option_c": "brings",
+      "option_d": "carries",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Have implications' là cụm cố định để nói về hệ quả/ảnh hưởng. 'Makes', 'brings', 'carries' không tạo thành cụm tự nhiên với 'implications' trong ngữ cảnh học thuật."
+    },
+    {
+      "question_text": "The author _______ between theoretical knowledge and practical application in the field of engineering.",
+      "option_a": "sheds light on",
+      "option_b": "draws a distinction",
+      "option_c": "raises awareness",
+      "option_d": "accounts for",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Draws a distinction' (phân biệt) là cụm chính xác khi nói về việc làm rõ sự khác biệt giữa hai khái niệm. Các đáp án khác không phù hợp với ý nghĩa này."
+    },
+    {
+      "question_text": "Environmental organizations _______ about the dangers of plastic pollution through social media campaigns.",
+      "option_a": "raise awareness",
+      "option_b": "provide insight",
+      "option_c": "call into question",
+      "option_d": "account for",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Raise awareness' (nâng cao nhận thức) là cụm đúng khi nói về việc giáo dục công chúng về một vấn đề. Các đáp án khác không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "When making investment decisions, financial advisors must _______ the current market conditions and economic forecasts.",
+      "option_a": "take into account",
+      "option_b": "bring about",
+      "option_c": "stem from",
+      "option_d": "be conducive to",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Take into account' (tính đến, xem xét) là cụm chính xác để nói về việc xem xét các yếu tố trong quyết định. 'Bring about' (gây ra), 'stem from' (bắt nguồn), 'be conducive to' (thuận lợi cho) không phù hợp."
+    },
+    {
+      "question_text": "The researcher _______ that previous studies had ignored the cultural factors affecting consumer behavior.",
+      "option_a": "brought about",
+      "option_b": "pointed out",
+      "option_c": "accounted for",
+      "option_d": "came to light",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Pointed out' (chỉ ra, nhấn mạnh) là phrasal verb đúng khi nói về việc nhắc đến một điểm quan trọng. Các đáp án khác không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The industrial revolution _______ dramatic changes in society, including urbanization and technological advancement.",
+      "option_a": "accounted for",
+      "option_b": "brought about",
+      "option_c": "stemmed from",
+      "option_d": "was conducive to",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Brought about' (gây ra, dẫn đến) là phrasal verb chính xác để nói về việc tạo ra những thay đổi lớn. 'Accounted for' (giải thích), 'stemmed from' (bắt nguồn), 'was conducive to' (thuận lợi cho) không phù hợp."
+    },
+    {
+      "question_text": "Renewable energy sources now _______ approximately 25% of the country's total electricity generation.",
+      "option_a": "account for",
+      "option_b": "take into account",
+      "option_c": "bring about",
+      "option_d": "point out",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Account for' (chiếm, đáp ứng) là phrasal verb đúng khi nói về tỷ lệ phần trăm hoặc lượng. 'Take into account' (xem xét), 'bring about' (gây ra), 'point out' (chỉ ra) không phù hợp."
+    },
+    {
+      "question_text": "Many modern health issues _______ sedentary lifestyles and excessive consumption of processed foods.",
+      "option_a": "stem from",
+      "option_b": "account for",
+      "option_c": "bring about",
+      "option_d": "are conducive to",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Stem from' (bắt nguồn từ) là phrasal verb chính xác để nói về nguồn gốc hoặc nguyên nhân của vấn đề. Các đáp án khác không phù hợp."
+    },
+    {
+      "question_text": "_______ the recent economic downturn, the government has implemented new fiscal policies to stimulate growth.",
+      "option_a": "In light of",
+      "option_b": "By and large",
+      "option_c": "In the long run",
+      "option_d": "It is worth noting",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'In light of' (dựa trên, xét đến) là connector đúng để giới thiệu lý do hoặc bối cảnh cho một hành động. 'By and large' (nói chung), 'In the long run' (về lâu dài), 'It is worth noting' (đáng chú ý) không phù hợp."
+    },
+    {
+      "question_text": "The new policy is _______ environmental protection goals established in the previous administration.",
+      "option_a": "at odds with",
+      "option_b": "conducive to",
+      "option_c": "indicative of",
+      "option_d": "in light of",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "'At odds with' (mâu thuẫn với) là cụm chính xác để nói về sự xung đột giữa hai chính sách. 'Conducive to' (thuận lợi cho), 'indicative of' (là dấu hiệu của), 'in light of' (dựa trên) không phù hợp ngữ cảnh."
+    }
+  ]
+}

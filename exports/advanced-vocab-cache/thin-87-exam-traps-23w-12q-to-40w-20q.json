@@ -1,0 +1,380 @@
+{
+  "words": [
+    {
+      "word": "bear on",
+      "pronunciation": "/beər ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có liên quan đến, ảnh hưởng đến (thường dùng trong văn bản chính thức); khác với 'affect' ở chỗ nhấn mạnh mối liên hệ logic hơn tác động trực tiếp",
+      "definition_en": "to be relevant to or have a connection with something; to exert pressure or influence on",
+      "level": "B2",
+      "synonyms": [
+        "relate to",
+        "pertain to"
+      ],
+      "antonyms": [
+        "be irrelevant to"
+      ],
+      "example_sentence": "The new environmental regulations bear on the manufacturing sector's operational costs and profitability."
+    },
+    {
+      "word": "hinge on",
+      "pronunciation": "/hɪndʒ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc hoàn toàn vào, quyết định bởi; khác 'depend on' ở tính quyết định tuyệt đối và không thể thay đổi",
+      "definition_en": "to depend entirely on something; to turn or pivot on a critical factor",
+      "level": "B2",
+      "synonyms": [
+        "depend on",
+        "rest on"
+      ],
+      "antonyms": [
+        "be independent of"
+      ],
+      "example_sentence": "The success of the climate agreement hinges on whether developed nations commit to reducing carbon emissions by 2030."
+    },
+    {
+      "word": "entail",
+      "pronunciation": "/ɪnˈteɪl/",
+      "part_of_speech": "verb",
+      "definition_vi": "kéo theo, bao gồm (một hệ quả hay yêu cầu cần thiết); khác 'involve' ở tính bắt buộc và không thể tránh",
+      "definition_en": "to involve something as a necessary or inevitable part or consequence",
+      "level": "B2",
+      "synonyms": [
+        "involve",
+        "require"
+      ],
+      "antonyms": [
+        "exclude"
+      ],
+      "example_sentence": "Pursuing a medical degree entails years of rigorous study and substantial financial investment."
+    },
+    {
+      "word": "precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra đột ngột, làm xảy ra nhanh chóng (thường không mong muốn); khác 'cause' ở tính bất ngờ và tốc độ",
+      "definition_en": "to cause something to happen suddenly or unexpectedly; to hasten the occurrence of",
+      "level": "C1",
+      "synonyms": [
+        "trigger",
+        "provoke"
+      ],
+      "antonyms": [
+        "delay",
+        "prevent"
+      ],
+      "example_sentence": "The assassination of Archduke Franz Ferdinand precipitated the outbreak of World War I in 1914."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm trầm trọng hơn, làm tệ hơn; khác 'worsen' ở tính chuyên môn và mức độ làm tăng cường tính tiêu cực",
+      "definition_en": "to make a problem, situation, or condition worse or more severe",
+      "level": "C1",
+      "synonyms": [
+        "aggravate",
+        "intensify"
+      ],
+      "antonyms": [
+        "alleviate",
+        "improve"
+      ],
+      "example_sentence": "Inadequate water management policies have exacerbated the drought crisis in sub-Saharan Africa."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm giảm bớt (tác hại hay mức độ nghiêm trọng); khác 'reduce' ở tính chủ động và mục đích giảm thiểu hậu quả",
+      "definition_en": "to make something less severe, serious, or painful; to reduce the impact of",
+      "level": "C1",
+      "synonyms": [
+        "alleviate",
+        "ease"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "Renewable energy investments can mitigate the adverse effects of climate change on future generations."
+    },
+    {
+      "word": "undermine",
+      "pronunciation": "/ˌʌndərˈmaɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm suy yếu, phá hoại từ từ (thường không rõ ràng); khác 'weaken' ở tính âm thầm và từng bước",
+      "definition_en": "to gradually weaken or damage something, especially by subtle or indirect means",
+      "level": "B2",
+      "synonyms": [
+        "weaken",
+        "erode"
+      ],
+      "antonyms": [
+        "strengthen",
+        "support"
+      ],
+      "example_sentence": "Persistent misinformation on social media undermines public trust in scientific institutions and health authorities."
+    },
+    {
+      "word": "bolster",
+      "pronunciation": "/ˈboʊlstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, làm mạnh hơn; khác 'strengthen' ở tính chủ động và thường dùng trong ngữ cảnh hỗ trợ tâm lý hay chính sách",
+      "definition_en": "to strengthen or support something; to make it more confident or secure",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "reinforce"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "Government subsidies for renewable energy aim to bolster the transition toward sustainable power sources."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cung cấp bằng chứng, chứng minh (một tuyên bố hay lý thuyết); khác 'prove' ở tính chính thức và yêu cầu bằng chứng cụ thể",
+      "definition_en": "to provide evidence or proof for a claim; to support with facts or documentation",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "corroborate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The research team failed to substantiate their hypothesis with sufficient empirical data from the field study."
+    },
+    {
+      "word": "contend",
+      "pronunciation": "/kənˈtend/",
+      "part_of_speech": "verb",
+      "definition_vi": "khẳng định, chủ trương (một quan điểm); khác 'claim' ở tính chính thức và thường dùng trong tranh luận học thuật",
+      "definition_en": "to assert or maintain a position or argument; to compete or struggle",
+      "level": "B2",
+      "synonyms": [
+        "argue",
+        "assert"
+      ],
+      "antonyms": [
+        "concede",
+        "deny"
+      ],
+      "example_sentence": "Environmental scientists contend that immediate action on carbon reduction is essential to prevent catastrophic climate shifts."
+    },
+    {
+      "word": "paradoxically",
+      "pronunciation": "/ˌpærəˈdɒksɪkli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách mâu thuẫn, trái ngược với logic thông thường; khác 'surprisingly' ở tính logic mâu thuẫn nội tại",
+      "definition_en": "in a way that seems contradictory or absurd, yet may be true",
+      "level": "C1",
+      "synonyms": [
+        "contradictorily",
+        "ironically"
+      ],
+      "antonyms": [
+        "logically",
+        "consistently"
+      ],
+      "example_sentence": "Paradoxically, increased automation in manufacturing has created new job categories while eliminating traditional roles."
+    },
+    {
+      "word": "ostensibly",
+      "pronunciation": "/ɒˈstensəbli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "hình như, theo lý do chính thức (nhưng có thể không phải sự thật); khác 'apparently' ở tính nghi ngờ ẩn chứa",
+      "definition_en": "apparently or seemingly; as appears to be true on the surface, though possibly not in reality",
+      "level": "C1",
+      "synonyms": [
+        "apparently",
+        "seemingly"
+      ],
+      "antonyms": [
+        "genuinely",
+        "actually"
+      ],
+      "example_sentence": "The corporation ostensibly committed to environmental sustainability, yet continued to expand operations in protected ecosystems."
+    },
+    {
+      "word": "pervasive",
+      "pronunciation": "/pərˈveɪsɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "lan tỏa rộng rãi, phổ biến khắp nơi; khác 'widespread' ở tính thâm nhập sâu và khó loại bỏ",
+      "definition_en": "spreading widely throughout an area or group; present everywhere",
+      "level": "B2",
+      "synonyms": [
+        "widespread",
+        "ubiquitous"
+      ],
+      "antonyms": [
+        "localized",
+        "limited"
+      ],
+      "example_sentence": "The pervasive influence of digital technology on education has fundamentally transformed teaching methodologies and student engagement."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, bẩm sinh (là một phần tự nhiên của cái gì); khác 'natural' ở tính không thể tách rời",
+      "definition_en": "existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "The inherent risks of deep-sea exploration require advanced technology and rigorous safety protocols."
+    },
+    {
+      "word": "curtail",
+      "pronunciation": "/kɜːrˈteɪl/",
+      "part_of_speech": "verb",
+      "definition_vi": "cắt giảm, hạn chế (thường một cách đột ngột); khác 'reduce' ở tính quyết định và thường không mong muốn",
+      "definition_en": "to reduce, limit, or cut short something; to restrict the extent or duration of",
+      "level": "B2",
+      "synonyms": [
+        "reduce",
+        "restrict"
+      ],
+      "antonyms": [
+        "expand",
+        "extend"
+      ],
+      "example_sentence": "Budget constraints forced the government to curtail funding for public health initiatives during the economic recession."
+    },
+    {
+      "word": "compelling",
+      "pronunciation": "/kəmˈpelɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thuyết phục, hấp dẫn mạnh mẽ (về lý do hay bằng chứng); khác 'interesting' ở tính bắt buộc phải chú ý",
+      "definition_en": "evoking interest, attention, or admiration in a powerfully irresistible way; convincing",
+      "level": "B2",
+      "synonyms": [
+        "convincing",
+        "persuasive"
+      ],
+      "antonyms": [
+        "unconvincing",
+        "weak"
+      ],
+      "example_sentence": "The documentary presented compelling evidence that industrial pollution directly correlates with rising respiratory disease rates in urban populations."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, có thể hiểu theo nhiều cách; khác 'unclear' ở tính có nhiều giải thích hợp lệ",
+      "definition_en": "open to more than one interpretation; unclear or uncertain in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The policy statement was ambiguous regarding whether remote workers would receive the same benefits as office-based employees."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new regulations _____ on industrial emissions standards, requiring companies to reduce pollution levels by 40% within five years.",
+      "option_a": "bear",
+      "option_b": "depend",
+      "option_c": "focus",
+      "option_d": "concentrate",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Bear on\" có nghĩa là 'có liên quan đến' hoặc 'ảnh hưởng đến' trong ngữ cảnh chính thức. Các lựa chọn khác không phù hợp về mặt ngữ pháp hoặc ý nghĩa. \"Depend\" cần giới từ \"on\" nhưng không tạo thành cụm động từ phù hợp. \"Focus\" và \"concentrate\" không thể dùng với \"on\" theo cách này."
+    },
+    {
+      "question_text": "Which word best completes the sentence? The success of the merger _____ on securing regulatory approval from at least three government agencies.",
+      "option_a": "rests",
+      "option_b": "hinges",
+      "option_c": "relies",
+      "option_d": "depends",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Hinge on\" nhấn mạnh sự phụ thuộc tuyệt đối và quyết định, phù hợp với ngữ cảnh 'thành công hay thất bại'. \"Rests on\" cũng có thể dùng nhưng \"hinges on\" mạnh mẽ hơn. \"Relies\" và \"depends\" quá chung chung và không thể hiện tính quyết định tuyệt đối."
+    },
+    {
+      "question_text": "Adopting a zero-waste manufacturing process _____ significant investment in new equipment and employee retraining programs.",
+      "option_a": "involves",
+      "option_b": "entails",
+      "option_c": "requires",
+      "option_d": "demands",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Entail\" có nghĩa là 'kéo theo một hệ quả cần thiết' và thường dùng trong văn bản chính thức. Mặc dù \"involves\" và \"requires\" cũng có thể dùng, nhưng \"entails\" nhấn mạnh tính bắt buộc và không thể tránh khỏi. \"Demands\" quá mạnh và không phù hợp về ngữ cảnh."
+    },
+    {
+      "question_text": "The sudden withdrawal of foreign investment _____ a severe economic crisis that lasted for over a decade.",
+      "option_a": "caused",
+      "option_b": "triggered",
+      "option_c": "precipitated",
+      "option_d": "initiated",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Precipitate\" có nghĩa là 'gây ra đột ngột' và thường dùng trong ngữ cảnh lịch sử hay khoa học. Nó nhấn mạnh tính bất ngờ và tốc độ hơn \"caused\". \"Triggered\" cũng có thể dùng nhưng \"precipitated\" chính thức hơn. \"Initiated\" không phù hợp vì không thể hiện tính đột ngột."
+    },
+    {
+      "question_text": "What is the best synonym for \"exacerbate\" in this context: \"Poor air quality _____ respiratory diseases in densely populated urban areas.\"",
+      "option_a": "reduces",
+      "option_b": "aggravates",
+      "option_c": "alleviates",
+      "option_d": "stabilizes",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "\"Exacerbate\" có nghĩa là 'làm trầm trọng hơn'. \"Aggravates\" là từ đồng nghĩa chính xác nhất. \"Reduces\" và \"alleviates\" là antonyms. \"Stabilizes\" không liên quan."
+    },
+    {
+      "question_text": "The government implemented new policies to _____ the negative effects of industrial pollution on public health.",
+      "option_a": "mitigate",
+      "option_b": "eliminate",
+      "option_c": "ignore",
+      "option_d": "delay",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Mitigate\" có nghĩa là 'giảm nhẹ hay làm giảm bớt tác hại'. Nó phù hợp với ngữ cảnh chính sách công cộng. \"Eliminate\" quá tuyệt đối. \"Ignore\" và \"delay\" không phù hợp về ý nghĩa."
+    },
+    {
+      "question_text": "Critics argue that the lack of transparency in corporate governance _____ investor confidence and market stability.",
+      "option_a": "strengthens",
+      "option_b": "undermines",
+      "option_c": "supports",
+      "option_d": "enhances",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Undermine\" có nghĩa là 'làm suy yếu từ từ'. Nó phù hợp với ngữ cảnh 'thiếu minh bạch làm suy yếu niềm tin'. Các lựa chọn khác có ý nghĩa ngược lại hoặc không phù hợp."
+    },
+    {
+      "question_text": "Which sentence uses \"ostensibly\" correctly to suggest doubt about the stated reason?",
+      "option_a": "The company ostensibly invested in renewable energy because it genuinely cares about the environment.",
+      "option_b": "The company ostensibly invested in renewable energy to reduce costs, though critics suspect profit motives.",
+      "option_c": "The company ostensibly invested in renewable energy, which was a transparent and honest decision.",
+      "option_d": "The company ostensibly invested in renewable energy, and this was confirmed by independent auditors.",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Ostensibly\" có nghĩa là 'hình như' hoặc 'theo lý do chính thức' nhưng ẩn chứa sự nghi ngờ. Chỉ lựa chọn B thể hiện đúng cách dùng từ này với sự nghi ngờ ẩn chứa (\"though critics suspect\"). Các lựa chọn khác không thể hiện được tính nghi ngờ này."
+    }
+  ]
+}

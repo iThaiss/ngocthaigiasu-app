@@ -1,0 +1,381 @@
+{
+  "words": [
+    {
+      "word": "epistemic uncertainty",
+      "pronunciation": "/ɪˌpɪsˈtemɪk ʌnˈsɜːrtnti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự không chắc chắn phát sinh từ kiến thức không đầy đủ hoặc hạn chế của con người về một hiện tượng, có thể giảm qua nghiên cứu thêm.",
+      "definition_en": "Uncertainty arising from incomplete or limited knowledge about a phenomenon, potentially reducible through further investigation.",
+      "level": "C2",
+      "synonyms": [
+        "knowledge uncertainty",
+        "reducible uncertainty"
+      ],
+      "antonyms": [
+        "aleatoric uncertainty"
+      ],
+      "example_sentence": "The researchers acknowledged epistemic uncertainty in their climate model predictions, noting that improved data collection could narrow the confidence intervals."
+    },
+    {
+      "word": "replication crisis",
+      "pronunciation": "/ˌrepləˈkeɪʃn ˈkraɪsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng mà nhiều kết quả nghiên cứu được công bố không thể tái tạo lại khi các nhà khoa học khác cố gắng lặp lại thí nghiệm.",
+      "definition_en": "A situation where published research findings cannot be reproduced when other scientists attempt to replicate the experiments.",
+      "level": "C1",
+      "synonyms": [
+        "reproducibility crisis",
+        "replicability problem"
+      ],
+      "antonyms": [
+        "robust findings"
+      ],
+      "example_sentence": "The replication crisis in psychology has prompted journals to demand more rigorous statistical reporting and pre-registration of studies."
+    },
+    {
+      "word": "confounding variable",
+      "pronunciation": "/kənˈfaʊndɪŋ ˈveəriəbl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một biến số không được kiểm soát trong thí nghiệm mà có thể ảnh hưởng đến kết quả và làm sai lệch mối quan hệ nhân quả giữa các biến được nghiên cứu.",
+      "definition_en": "An uncontrolled variable in an experiment that may influence the outcome and distort the causal relationship between studied variables.",
+      "level": "C1",
+      "synonyms": [
+        "lurking variable",
+        "extraneous variable"
+      ],
+      "antonyms": [
+        "controlled variable"
+      ],
+      "example_sentence": "The study failed to account for socioeconomic status as a confounding variable, leading to misleading conclusions about the treatment's efficacy."
+    },
+    {
+      "word": "publication bias",
+      "pronunciation": "/ˌpʌblɪˈkeɪʃn ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Xu hướng các tạp chí khoa học ưu tiên công bố những kết quả có ý nghĩa thống kê tích cực, trong khi bỏ qua những kết quả âm tính hoặc không có ý nghĩa.",
+      "definition_en": "The tendency of journals to preferentially publish studies with statistically significant positive results while rejecting null or negative findings.",
+      "level": "C1",
+      "synonyms": [
+        "selective reporting",
+        "file drawer problem"
+      ],
+      "antonyms": [
+        "transparent reporting"
+      ],
+      "example_sentence": "Publication bias skews the scientific literature, as unsuccessful experiments remain unpublished and unavailable for meta-analysis."
+    },
+    {
+      "word": "p-hacking",
+      "pronunciation": "/ˈpiː ˌhækɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thực hành thử nghiệm nhiều phương pháp phân tích thống kê khác nhau cho đến khi tìm được kết quả có ý nghĩa thống kê, làm tăng tỷ lệ dương tính giả.",
+      "definition_en": "The practice of testing multiple statistical analyses until finding significant results, inflating false positive rates.",
+      "level": "C2",
+      "synonyms": [
+        "data dredging",
+        "HARKing"
+      ],
+      "antonyms": [
+        "pre-registered analysis"
+      ],
+      "example_sentence": "Critics argue that p-hacking undermines the integrity of research by allowing researchers to cherry-pick favorable statistical outcomes."
+    },
+    {
+      "word": "effect size",
+      "pronunciation": "/ɪˈfekt ˌsaɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Độ lớn của hiệu ứng hoặc mối quan hệ được quan sát trong một nghiên cứu, độc lập với kích thước mẫu và thường được báo cáo bằng các chỉ số như Cohen's d.",
+      "definition_en": "The magnitude of an observed effect or relationship in a study, independent of sample size, often reported using metrics like Cohen's d.",
+      "level": "C1",
+      "synonyms": [
+        "practical significance",
+        "magnitude of effect"
+      ],
+      "antonyms": [
+        "statistical significance alone"
+      ],
+      "example_sentence": "Although the study achieved statistical significance, the effect size was negligible, suggesting limited practical importance for clinical applications."
+    },
+    {
+      "word": "heterogeneity",
+      "pronunciation": "/ˌhetərəˈdʒiːnɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự khác biệt đáng kể giữa các kết quả của các nghiên cứu riêng lẻ trong một phân tích tổng hợp (meta-analysis), chỉ ra rằng các nghiên cứu không đo lường cùng một hiệu ứng.",
+      "definition_en": "Significant variation among results of individual studies in a meta-analysis, indicating that studies do not measure the same effect.",
+      "level": "C2",
+      "synonyms": [
+        "variability",
+        "inconsistency"
+      ],
+      "antonyms": [
+        "homogeneity"
+      ],
+      "example_sentence": "The meta-analysis revealed substantial heterogeneity across trials, necessitating subgroup analysis to identify sources of variation."
+    },
+    {
+      "word": "selection bias",
+      "pronunciation": "/sɪˈlekʃn ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sai lệch xảy ra khi cách chọn mẫu hoặc tuyển chọn đối tượng tham gia không ngẫu nhiên, dẫn đến mẫu không đại diện cho quần thể.",
+      "definition_en": "Bias arising when the method of selecting participants or samples is non-random, resulting in an unrepresentative sample.",
+      "level": "C1",
+      "synonyms": [
+        "sampling bias",
+        "recruitment bias"
+      ],
+      "antonyms": [
+        "random selection"
+      ],
+      "example_sentence": "The study suffered from selection bias because participants were recruited only from university hospitals, excluding patients treated in rural clinics."
+    },
+    {
+      "word": "triangulation",
+      "pronunciation": "/traɪˌæŋɡjəˈleɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phương pháp sử dụng nhiều nguồn dữ liệu, phương pháp, hoặc lý thuyết khác nhau để xác minh và tăng cường độ tin cậy của kết quả nghiên cứu.",
+      "definition_en": "A method using multiple data sources, methods, or theories to verify and strengthen the credibility of research findings.",
+      "level": "C1",
+      "synonyms": [
+        "mixed methods",
+        "convergent validation"
+      ],
+      "antonyms": [
+        "single-method approach"
+      ],
+      "example_sentence": "The researchers employed triangulation by combining interviews, surveys, and observational data to validate their conclusions about organizational culture."
+    },
+    {
+      "word": "null hypothesis",
+      "pronunciation": "/ˈnʌl haɪˈpɒθəsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giả thuyết thống kê phát biểu rằng không có mối quan hệ hoặc khác biệt có ý nghĩa giữa các biến, được kiểm định để xác định xem có bằng chứng đủ để bác bỏ nó.",
+      "definition_en": "A statistical hypothesis stating that there is no significant relationship or difference between variables, tested to determine if sufficient evidence exists to reject it.",
+      "level": "C1",
+      "synonyms": [
+        "no-effect hypothesis"
+      ],
+      "antonyms": [
+        "alternative hypothesis"
+      ],
+      "example_sentence": "The researchers failed to reject the null hypothesis, indicating insufficient evidence that the new treatment differed from the placebo."
+    },
+    {
+      "word": "inter-rater reliability",
+      "pronunciation": "/ˌɪntərˈreɪtər rɪˌlaɪəˈbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ mà các nhà đánh giá hoặc quan sát viên khác nhau đồng ý trong việc đánh giá cùng một hiện tượng, được đo bằng các chỉ số như Cohen's kappa.",
+      "definition_en": "The degree to which different raters or observers agree in assessing the same phenomenon, measured by indices such as Cohen's kappa.",
+      "level": "C1",
+      "synonyms": [
+        "observer agreement",
+        "rater agreement"
+      ],
+      "antonyms": [
+        "rater disagreement"
+      ],
+      "example_sentence": "The study achieved high inter-rater reliability (κ = 0.87), demonstrating that the coding scheme was consistently applied across all evaluators."
+    },
+    {
+      "word": "longitudinal study",
+      "pronunciation": "/lɒŋɡɪˈtjuːdɪnl ˈstʌdi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một loại nghiên cứu quan sát theo dõi cùng một nhóm đối tượng qua một khoảng thời gian dài để theo dõi sự thay đổi và phát triển.",
+      "definition_en": "A type of observational study that follows the same group of subjects over an extended period to track changes and development.",
+      "level": "C1",
+      "synonyms": [
+        "prospective study",
+        "follow-up study"
+      ],
+      "antonyms": [
+        "cross-sectional study"
+      ],
+      "example_sentence": "The longitudinal study tracked cognitive decline in aging adults over 15 years, revealing patterns not visible in cross-sectional research."
+    },
+    {
+      "word": "external validity",
+      "pronunciation": "/ɪkˌstɜːnl vəˈlɪdɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ mà kết quả của một nghiên cứu có thể được khái quát hóa hoặc áp dụng cho các quần thể, bối cảnh, hoặc tình huống khác ngoài phạm vi nghiên cứu.",
+      "definition_en": "The extent to which research findings can be generalized or applied to populations, contexts, or situations beyond the study scope.",
+      "level": "C1",
+      "synonyms": [
+        "generalizability",
+        "ecological validity"
+      ],
+      "antonyms": [
+        "internal validity"
+      ],
+      "example_sentence": "The laboratory experiment had high internal validity but limited external validity because participants were college students in artificial conditions."
+    },
+    {
+      "word": "systematic review",
+      "pronunciation": "/sɪsˈtemætɪk rɪˈvjuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một phương pháp nghiên cứu toàn diện sử dụng các tiêu chí xác định trước để tìm kiếm, đánh giá, và tổng hợp tất cả các nghiên cứu liên quan đến một câu hỏi cụ thể.",
+      "definition_en": "A comprehensive research method using predetermined criteria to identify, appraise, and synthesize all relevant studies addressing a specific question.",
+      "level": "C1",
+      "synonyms": [
+        "evidence synthesis",
+        "literature synthesis"
+      ],
+      "antonyms": [
+        "narrative review"
+      ],
+      "example_sentence": "The systematic review identified 47 randomized controlled trials and concluded that cognitive behavioral therapy was effective for anxiety disorders."
+    },
+    {
+      "word": "construct validity",
+      "pronunciation": "/ˈkɒnstrʌkt vəˈlɪdɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ mà một công cụ đo lường (như một bài kiểm tra hoặc thang đo) thực sự đo lường khái niệm lý thuyết mà nó được thiết kế để đo lường.",
+      "definition_en": "The degree to which a measurement instrument actually measures the theoretical construct it is designed to measure.",
+      "level": "C2",
+      "synonyms": [
+        "conceptual validity",
+        "theoretical validity"
+      ],
+      "antonyms": [
+        "construct invalidity"
+      ],
+      "example_sentence": "Researchers questioned the construct validity of the depression scale, arguing that it conflated depressive symptoms with general distress."
+    },
+    {
+      "word": "pre-registration",
+      "pronunciation": "/ˌpriːˌredʒɪˈstreɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thực hành công khai khai báo kế hoạch nghiên cứu, giả thuyết, và phương pháp phân tích trước khi tiến hành nghiên cứu, nhằm giảm p-hacking và tăng tính minh bạch.",
+      "definition_en": "The practice of publicly declaring research plans, hypotheses, and analysis methods before conducting the study to reduce p-hacking and increase transparency.",
+      "level": "C1",
+      "synonyms": [
+        "prospective registration",
+        "study registration"
+      ],
+      "antonyms": [
+        "post-hoc analysis"
+      ],
+      "example_sentence": "The journal now requires pre-registration of all studies on the Open Science Framework to combat selective reporting and enhance research credibility."
+    },
+    {
+      "word": "blinding",
+      "pronunciation": "/ˈblaɪndɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một kỹ thuật trong thiết kế nghiên cứu mà các đối tượng tham gia, nhà nghiên cứu, hoặc cả hai không biết ai nhận được can thiệp nào, nhằm giảm thiểu sai lệch.",
+      "definition_en": "A technique in research design where participants, researchers, or both are unaware of which intervention is being administered to reduce bias.",
+      "level": "C1",
+      "synonyms": [
+        "masking",
+        "concealment"
+      ],
+      "antonyms": [
+        "open-label design"
+      ],
+      "example_sentence": "The double-blind design ensured that neither participants nor assessors knew treatment allocation, minimizing expectancy effects and observer bias."
+    },
+    {
+      "word": "power analysis",
+      "pronunciation": "/ˈpaʊər əˈnæləsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một phương pháp thống kê để xác định kích thước mẫu cần thiết để phát hiện một hiệu ứng có ý nghĩa thống kê với xác suất nhất định, tránh các nghiên cứu thiếu sức mạnh.",
+      "definition_en": "A statistical method to determine the sample size needed to detect a statistically significant effect with a specified probability, avoiding underpowered studies.",
+      "level": "C2",
+      "synonyms": [
+        "sample size calculation",
+        "statistical power"
+      ],
+      "antonyms": [
+        "underpowered study"
+      ],
+      "example_sentence": "The researchers conducted a power analysis and determined that 250 participants per group were required to achieve 80% power to detect a medium effect size."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "A researcher discovers that her study's findings cannot be reproduced by independent laboratories. Which term best describes this situation?",
+      "option_a": "Publication bias",
+      "option_b": "Replication crisis",
+      "option_c": "Selection bias",
+      "option_d": "Epistemic uncertainty",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Replication crisis (B) mô tả tình trạng khi các kết quả không thể tái tạo lại. Publication bias (A) liên quan đến xu hướng công bố, selection bias (C) là vấn đề chọn mẫu, và epistemic uncertainty (D) là sự không chắc chắn từ kiến thức không đầy đủ."
+    },
+    {
+      "question_text": "In a clinical trial examining a new medication, researchers failed to account for patients' baseline health status when analyzing outcomes. What is this uncontrolled factor called?",
+      "option_a": "Confounding variable",
+      "option_b": "Dependent variable",
+      "option_c": "Independent variable",
+      "option_d": "Moderating variable",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Confounding variable (A) là biến không được kiểm soát ảnh hưởng đến kết quả. Dependent variable (B) là biến được đo lường, independent variable (C) là biến được thao tác, moderating variable (D) ảnh hưởng đến mối quan hệ giữa hai biến khác."
+    },
+    {
+      "question_text": "A meta-analysis of 30 studies on a treatment showed highly inconsistent results, with some studies reporting large benefits and others showing minimal effects. This inconsistency is termed ___.",
+      "option_a": "Publication bias",
+      "option_b": "Heterogeneity",
+      "option_c": "Selection bias",
+      "option_d": "Construct invalidity",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Heterogeneity (B) chỉ sự khác biệt đáng kể giữa các kết quả nghiên cứu. Publication bias (A) liên quan đến việc công bố chọn lọc, selection bias (C) là vấn đề chọn mẫu, construct invalidity (D) liên quan đến công cụ đo lường."
+    },
+    {
+      "question_text": "To strengthen the credibility of her qualitative findings, a researcher combined interviews, focus groups, and document analysis. This approach is known as ___.",
+      "option_a": "Blinding",
+      "option_b": "Triangulation",
+      "option_c": "Pre-registration",
+      "option_d": "Power analysis",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Triangulation (B) là sử dụng nhiều phương pháp để xác minh kết quả. Blinding (A) là che giấu thông tin can thiệp, pre-registration (C) là khai báo kế hoạch trước, power analysis (D) là tính toán kích thước mẫu."
+    },
+    {
+      "question_text": "A researcher tested 50 different statistical models on the same dataset until finding one with p < 0.05. This problematic practice is called ___.",
+      "option_a": "P-hacking",
+      "option_b": "Triangulation",
+      "option_c": "Blinding",
+      "option_d": "Systematic review",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "P-hacking (A) là thử nhiều phương pháp phân tích để tìm kết quả có ý nghĩa. Triangulation (B) là sử dụng nhiều phương pháp để xác minh, blinding (C) là che giấu thông tin, systematic review (D) là tổng hợp tài liệu có hệ thống."
+    },
+    {
+      "question_text": "A study examining the effect of a new teaching method was conducted only in elite private schools with highly motivated students. This limitation primarily affects the study's ___.",
+      "option_a": "Internal validity",
+      "option_b": "Construct validity",
+      "option_c": "External validity",
+      "option_d": "Statistical significance",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "External validity (C) liên quan đến khả năng khái quát hóa kết quả cho các quần thể khác. Internal validity (A) liên quan đến mối quan hệ nhân quả trong nghiên cứu, construct validity (B) liên quan đến công cụ đo lường, statistical significance (D) liên quan đến ý nghĩa thống kê."
+    },
+    {
+      "question_text": "Before conducting a randomized controlled trial, researchers must determine how many participants are needed to detect a meaningful treatment effect. This calculation is called ___.",
+      "option_a": "Effect size",
+      "option_b": "Power analysis",
+      "option_c": "Inter-rater reliability",
+      "option_d": "Null hypothesis",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Power analysis (B) là tính toán kích thước mẫu cần thiết. Effect size (A) là độ lớn của hiệu ứng, inter-rater reliability (C) là mức độ đồng ý giữa các đánh giá viên, null hypothesis (D) là giả thuyết không có khác biệt."
+    },
+    {
+      "question_text": "A depression assessment scale was criticized because it measured general psychological distress rather than depression specifically. This represents a problem with the scale's ___.",
+      "option_a": "Inter-rater reliability",
+      "option_b": "External validity",
+      "option_c": "Construct validity",
+      "option_d": "Statistical significance",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Construct validity (C) liên quan đến việc công cụ có thực sự đo lường khái niệm dự định. Inter-rater reliability (A) là mức độ đồng ý giữa các đánh giá viên, external validity (B) là khả năng khái quát hóa, statistical significance (D) là ý nghĩa thống kê."
+    }
+  ]
+}

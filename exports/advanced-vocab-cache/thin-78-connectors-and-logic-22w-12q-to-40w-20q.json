@@ -1,0 +1,418 @@
+{
+  "words": [
+    {
+      "word": "precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra hoặc làm tăng tốc độ một sự kiện, thường là không mong muốn; đẩy nhanh tiến trình",
+      "definition_en": "to cause something to happen suddenly or sooner than expected, especially something undesirable",
+      "level": "C1",
+      "synonyms": [
+        "hasten",
+        "accelerate",
+        "prompt"
+      ],
+      "antonyms": [
+        "delay",
+        "postpone"
+      ],
+      "example_sentence": "The economic crisis precipitated widespread unemployment and social unrest across the nation."
+    },
+    {
+      "word": "engender",
+      "pronunciation": "/ɪnˈdʒendə/",
+      "part_of_speech": "verb",
+      "definition_vi": "sinh ra, tạo ra, gây nên (cảm xúc, tình huống, vấn đề)",
+      "definition_en": "to cause or produce something, especially a feeling, situation, or type of behavior",
+      "level": "C1",
+      "synonyms": [
+        "generate",
+        "produce",
+        "create"
+      ],
+      "antonyms": [
+        "eliminate",
+        "suppress"
+      ],
+      "example_sentence": "The government's new policies engendered considerable debate among environmental activists."
+    },
+    {
+      "word": "conducive to",
+      "pronunciation": "/kənˈdjuːsɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thuận lợi cho, tạo điều kiện thuận lợi cho; có khả năng dẫn đến",
+      "definition_en": "providing conditions that make something likely to happen or be successful",
+      "level": "B2",
+      "synonyms": [
+        "favorable to",
+        "beneficial to",
+        "advantageous to"
+      ],
+      "antonyms": [
+        "detrimental to",
+        "harmful to"
+      ],
+      "example_sentence": "A quiet study environment is conducive to better concentration and academic performance."
+    },
+    {
+      "word": "attributable to",
+      "pronunciation": "/əˈtrɪbjətəbl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có thể quy cho, có thể gán cho; được coi là kết quả của",
+      "definition_en": "able to be explained or caused by something; ascribable to",
+      "level": "B2",
+      "synonyms": [
+        "ascribable to",
+        "traceable to",
+        "imputable to"
+      ],
+      "antonyms": [
+        "unrelated to",
+        "independent of"
+      ],
+      "example_sentence": "The company's success is largely attributable to its innovative marketing strategies and customer service."
+    },
+    {
+      "word": "ramification",
+      "pronunciation": "/ˌræmɪfɪˈkeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "hậu quả, ảnh hưởng (thường là phức tạp hoặc không mong muốn); sự phân nhánh",
+      "definition_en": "a consequence or result of an action or decision, especially one that is complex or unwelcome",
+      "level": "C1",
+      "synonyms": [
+        "consequence",
+        "implication",
+        "repercussion"
+      ],
+      "antonyms": [
+        "cause",
+        "origin"
+      ],
+      "example_sentence": "The political scandal had far-reaching ramifications for the entire government administration."
+    },
+    {
+      "word": "precipitous",
+      "pronunciation": "/prɪˈsɪpɪtəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "xảy ra đột ngột, nhanh chóng; dốc cao, nguy hiểm (về địa hình)",
+      "definition_en": "sudden and unexpected; or very steep",
+      "level": "C1",
+      "synonyms": [
+        "abrupt",
+        "sudden",
+        "steep"
+      ],
+      "antonyms": [
+        "gradual",
+        "gentle"
+      ],
+      "example_sentence": "The stock market experienced a precipitous decline following the announcement of poor quarterly earnings."
+    },
+    {
+      "word": "contingent on/upon",
+      "pronunciation": "/kənˈtɪndʒənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc vào, tùy thuộc vào; có điều kiện là",
+      "definition_en": "dependent on something else happening or being true; conditional upon",
+      "level": "B2",
+      "synonyms": [
+        "dependent on",
+        "conditional on",
+        "subject to"
+      ],
+      "antonyms": [
+        "independent of",
+        "unconditional"
+      ],
+      "example_sentence": "The success of the project is contingent upon securing adequate funding from investors."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm trầm trọng hơn, làm tệ hơn, làm cấp tính hơn",
+      "definition_en": "to make a problem, situation, or feeling worse",
+      "level": "C1",
+      "synonyms": [
+        "worsen",
+        "aggravate",
+        "intensify"
+      ],
+      "antonyms": [
+        "alleviate",
+        "improve"
+      ],
+      "example_sentence": "Climate change is expected to exacerbate water scarcity in arid regions worldwide."
+    },
+    {
+      "word": "underpin",
+      "pronunciation": "/ˌʌndəˈpɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "là nền tảng của, hỗ trợ từ dưới; cung cấp cơ sở cho",
+      "definition_en": "to be the foundation or basis for something; to support or strengthen from below",
+      "level": "C1",
+      "synonyms": [
+        "support",
+        "sustain",
+        "strengthen"
+      ],
+      "antonyms": [
+        "undermine",
+        "weaken"
+      ],
+      "example_sentence": "Scientific research underpins the development of new medical treatments and therapies."
+    },
+    {
+      "word": "cascade",
+      "pronunciation": "/kæˈskeɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "chuỗi sự kiện liên tiếp; dòng nước chảy từng bậc; sự lan truyền liên tiếp",
+      "definition_en": "a series of events or processes that happen one after another; a waterfall or series of waterfalls",
+      "level": "B2",
+      "synonyms": [
+        "sequence",
+        "chain",
+        "succession"
+      ],
+      "antonyms": [
+        "isolation",
+        "disconnection"
+      ],
+      "example_sentence": "One small mistake can cascade into a series of problems throughout the entire system."
+    },
+    {
+      "word": "impetus",
+      "pronunciation": "/ˈɪmpɪtəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "động lực, sức thúc đẩy; lý do khiến cái gì xảy ra",
+      "definition_en": "the force or energy that makes something happen or happen faster; a driving force",
+      "level": "B2",
+      "synonyms": [
+        "momentum",
+        "stimulus",
+        "incentive"
+      ],
+      "antonyms": [
+        "hindrance",
+        "obstacle"
+      ],
+      "example_sentence": "The environmental crisis provided the impetus for governments to adopt stricter pollution regulations."
+    },
+    {
+      "word": "correlate with",
+      "pronunciation": "/ˈkɒrəleɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có mối liên hệ với, có tương quan với; thay đổi cùng nhau",
+      "definition_en": "to have a mutual relationship or connection; to vary together",
+      "level": "B2",
+      "synonyms": [
+        "correspond with",
+        "relate to",
+        "connect with"
+      ],
+      "antonyms": [
+        "diverge from",
+        "differ from"
+      ],
+      "example_sentence": "Research shows that regular exercise correlates with improved mental health and reduced stress levels."
+    },
+    {
+      "word": "repercussion",
+      "pronunciation": "/ˌrepəˈkʌʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "hậu quả, ảnh hưởng (thường là tiêu cực); phản ứng dây chuyền",
+      "definition_en": "an unintended consequence or side effect of an action or event",
+      "level": "B2",
+      "synonyms": [
+        "consequence",
+        "effect",
+        "aftermath"
+      ],
+      "antonyms": [
+        "cause",
+        "origin"
+      ],
+      "example_sentence": "The company's decision to cut wages had serious repercussions on employee morale and productivity."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện cho, giúp dễ dàng hơn; thúc đẩy",
+      "definition_en": "to make something easier or more likely to happen; to help progress",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Technology has facilitated communication between people across different continents."
+    },
+    {
+      "word": "culminate in",
+      "pronunciation": "/ˈkʌlmɪneɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết thúc bằng, đạt đỉnh điểm ở; dẫn đến kết quả cuối cùng",
+      "definition_en": "to reach a final point or result; to end or finish in a particular way",
+      "level": "B2",
+      "synonyms": [
+        "end in",
+        "result in",
+        "finish with"
+      ],
+      "antonyms": [
+        "begin with",
+        "start from"
+      ],
+      "example_sentence": "Years of scientific research culminated in the discovery of a revolutionary vaccine."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác nhận bằng bằng chứng; làm cho có thực chất",
+      "definition_en": "to provide evidence or proof for something; to support with facts",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "confirm",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The witness's testimony helped substantiate the defendant's alibi in the criminal case."
+    },
+    {
+      "word": "propitious",
+      "pronunciation": "/prəˈpɪʃəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thuận lợi, may mắn; có dấu hiệu tốt; thích hợp",
+      "definition_en": "giving or indicating a good chance of success; favorable or auspicious",
+      "level": "C1",
+      "synonyms": [
+        "favorable",
+        "auspicious",
+        "advantageous"
+      ],
+      "antonyms": [
+        "unfavorable",
+        "inauspicious"
+      ],
+      "example_sentence": "The economic indicators suggest a propitious environment for business expansion and investment."
+    },
+    {
+      "word": "incur",
+      "pronunciation": "/ɪnˈkɜː/",
+      "part_of_speech": "verb",
+      "definition_vi": "phải chịu, gánh chịu (hậu quả, chi phí); mắc phải",
+      "definition_en": "to become subject to something unwelcome or unpleasant as a result of one's actions",
+      "level": "B2",
+      "synonyms": [
+        "suffer",
+        "sustain",
+        "experience"
+      ],
+      "antonyms": [
+        "avoid",
+        "escape"
+      ],
+      "example_sentence": "Companies that violate environmental regulations may incur substantial fines and legal penalties."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The sudden announcement of the merger _____ a cascade of resignations among senior management, ultimately destabilizing the entire organization.",
+      "option_a": "precipitated",
+      "option_b": "facilitated",
+      "option_c": "substantiated",
+      "option_d": "correlated with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Precipitate (gây ra đột ngột) là từ chính xác để mô tả cách thông báo gây ra chuỗi sự kiện liên tiếp. Facilitate (tạo điều kiện) mang ý tích cực, không phù hợp. Substantiated (chứng minh) và correlated with (có tương quan) không phù hợp về ngữ cảnh."
+    },
+    {
+      "question_text": "Which of the following best explains why the government's new tax policy is likely to _____ economic inequality?",
+      "option_a": "underpin",
+      "option_b": "exacerbate",
+      "option_c": "facilitate",
+      "option_d": "culminate in",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Exacerbate (làm trầm trọng hơn) là từ phù hợp để chỉ làm tệ hơn bất bình đẳng. Underpin (là nền tảng) không phù hợp. Facilitate (tạo điều kiện) mang ý tích cực. Culminate in (kết thúc bằng) không phù hợp về cấu trúc."
+    },
+    {
+      "question_text": "The success of the renewable energy project is _____ securing sufficient government subsidies and public support.",
+      "option_a": "contingent upon",
+      "option_b": "attributable to",
+      "option_c": "conducive to",
+      "option_d": "correlated with",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Contingent upon (phụ thuộc vào) chỉ điều kiện cần thiết. Attributable to (quy cho) dùng để giải thích nguyên nhân đã xảy ra. Conducive to (thuận lợi cho) không chỉ điều kiện bắt buộc. Correlated with (có tương quan) không phù hợp."
+    },
+    {
+      "question_text": "The environmental report _____ the connection between industrial pollution and respiratory diseases in urban populations.",
+      "option_a": "engendered",
+      "option_b": "substantiated",
+      "option_c": "incurred",
+      "option_d": "cascaded",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Substantiated (chứng minh bằng bằng chứng) là từ chính xác khi báo cáo xác nhận mối liên hệ. Engendered (sinh ra) không phù hợp. Incurred (phải chịu) dùng cho hậu quả tiêu cực. Cascaded (xảy ra liên tiếp) không phù hợp."
+    },
+    {
+      "question_text": "The policy reform was _____ by widespread public dissatisfaction with the existing system, providing the necessary momentum for change.",
+      "option_a": "impetus",
+      "option_b": "ramification",
+      "option_c": "repercussion",
+      "option_d": "propitious",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Impetus (động lực, sức thúc đẩy) là danh từ chỉ lý do khiến cái gì xảy ra. Ramification (hậu quả) và repercussion (ảnh hưởng) là kết quả, không phải nguyên nhân. Propitious (thuận lợi) là tính từ, không phù hợp cấu trúc."
+    },
+    {
+      "question_text": "The research team's findings _____ the theoretical framework that had been proposed a decade earlier, validating years of academic work.",
+      "option_a": "exacerbated",
+      "option_b": "underpin",
+      "option_c": "substantiated",
+      "option_d": "incurred",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Substantiated (chứng minh, xác nhận) là động từ chính xác để chỉ xác nhận lý thuyết. Exacerbated (làm trầm trọng) không phù hợp. Underpin (là nền tảng) là động từ nhưng không phù hợp ngữ cảnh. Incurred (phải chịu) không phù hợp."
+    },
+    {
+      "question_text": "The economic downturn had serious _____ for employment rates, affecting millions of workers across multiple sectors.",
+      "option_a": "impetus",
+      "option_b": "repercussions",
+      "option_c": "propitious",
+      "option_d": "cascade",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Repercussions (hậu quả, ảnh hưởng) là danh từ chỉ kết quả tiêu cực. Impetus (động lực) chỉ nguyên nhân tích cực. Propitious (thuận lợi) là tính từ. Cascade (chuỗi sự kiện) có thể dùng nhưng repercussions phù hợp hơn."
+    },
+    {
+      "question_text": "The new technology is _____ to increased productivity and efficiency in manufacturing processes, making it an attractive investment for companies.",
+      "option_a": "conducive",
+      "option_b": "precipitous",
+      "option_c": "attributable",
+      "option_d": "contingent",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Conducive (thuận lợi cho) là tính từ dùng với 'to' để chỉ điều kiện tạo thuận lợi. Precipitous (đột ngột) không phù hợp. Attributable (quy cho) dùng với 'to' nhưng chỉ nguyên nhân. Contingent (phụ thuộc) không phù hợp."
+    }
+  ]
+}

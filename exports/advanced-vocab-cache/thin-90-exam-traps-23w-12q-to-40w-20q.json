@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "to elicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "khai thác, lôi kéo (thông tin, phản ứng, cảm xúc) từ ai đó, thường bằng cách hỏi hoặc khuyến khích",
+      "definition_en": "to draw out or bring forth (information, a response, or emotion) from someone",
+      "level": "B2",
+      "synonyms": [
+        "to extract",
+        "to evoke",
+        "to draw out"
+      ],
+      "antonyms": [
+        "to conceal",
+        "to suppress"
+      ],
+      "example_sentence": "The journalist's probing questions elicited candid responses from the government official about the scandal."
+    },
+    {
+      "word": "to precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra, kích hoạt (một sự kiện, tình huống) một cách đột ngột hoặc không mong muốn",
+      "definition_en": "to cause something to happen suddenly or unexpectedly",
+      "level": "B2",
+      "synonyms": [
+        "to trigger",
+        "to provoke",
+        "to spark"
+      ],
+      "antonyms": [
+        "to prevent",
+        "to delay"
+      ],
+      "example_sentence": "The economic crisis was precipitated by a series of poor policy decisions and market speculation."
+    },
+    {
+      "word": "to bolster",
+      "pronunciation": "/ˈboʊlstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, củng cố, làm mạnh hơn (niềm tin, lập luận, vị trí)",
+      "definition_en": "to strengthen or support (confidence, an argument, or a position)",
+      "level": "B2",
+      "synonyms": [
+        "to strengthen",
+        "to reinforce",
+        "to support"
+      ],
+      "antonyms": [
+        "to weaken",
+        "to undermine"
+      ],
+      "example_sentence": "Recent scientific evidence bolsters the argument that climate change poses an unprecedented threat to biodiversity."
+    },
+    {
+      "word": "to curtail",
+      "pronunciation": "/kɜːrˈteɪl/",
+      "part_of_speech": "verb",
+      "definition_vi": "cắt giảm, hạn chế, rút ngắn (quyền, chi tiêu, hoạt động)",
+      "definition_en": "to reduce, limit, or cut short (rights, spending, or activities)",
+      "level": "B2",
+      "synonyms": [
+        "to reduce",
+        "to limit",
+        "to restrict"
+      ],
+      "antonyms": [
+        "to expand",
+        "to extend"
+      ],
+      "example_sentence": "The government decided to curtail public spending on infrastructure to address the budget deficit."
+    },
+    {
+      "word": "to proliferate",
+      "pronunciation": "/prəˈlɪfəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng nhanh về số lượng, lan rộng, nhân rộng (thường dùng cho vấn đề tiêu cực)",
+      "definition_en": "to increase rapidly in number or spread widely",
+      "level": "B2",
+      "synonyms": [
+        "to multiply",
+        "to spread",
+        "to flourish"
+      ],
+      "antonyms": [
+        "to diminish",
+        "to decline"
+      ],
+      "example_sentence": "Misinformation has proliferated on social media platforms, making it difficult for users to distinguish fact from fiction."
+    },
+    {
+      "word": "to circumvent",
+      "pronunciation": "/ˌsɜːrkəmˈvent/",
+      "part_of_speech": "verb",
+      "definition_vi": "vòng qua, tránh (luật, quy tắc, khó khăn) bằng cách thông minh hoặc tinh ranh",
+      "definition_en": "to find a way around (a rule, law, or difficulty) cleverly or indirectly",
+      "level": "B2",
+      "synonyms": [
+        "to bypass",
+        "to evade",
+        "to skirt"
+      ],
+      "antonyms": [
+        "to comply",
+        "to obey"
+      ],
+      "example_sentence": "Some companies attempt to circumvent environmental regulations by relocating their factories to countries with laxer standards."
+    },
+    {
+      "word": "to jeopardize",
+      "pronunciation": "/ˈdʒepərdaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "đặt vào nguy hiểm, làm mất an toàn, đe dọa (thành công, sức khỏe, mối quan hệ)",
+      "definition_en": "to put at risk or endanger (success, health, or a relationship)",
+      "level": "B2",
+      "synonyms": [
+        "to endanger",
+        "to threaten",
+        "to risk"
+      ],
+      "antonyms": [
+        "to protect",
+        "to safeguard"
+      ],
+      "example_sentence": "Failing to invest in education could jeopardize the nation's long-term economic competitiveness."
+    },
+    {
+      "word": "to reconcile",
+      "pronunciation": "/ˈrekənsaɪl/",
+      "part_of_speech": "verb",
+      "definition_vi": "hòa giải, làm hòa, điều hòa (hai quan điểm, sự kiện mâu thuẫn); khiến chúng tương thích",
+      "definition_en": "to restore harmony between conflicting parties or to make two seemingly contradictory things compatible",
+      "level": "B2",
+      "synonyms": [
+        "to harmonize",
+        "to resolve",
+        "to settle"
+      ],
+      "antonyms": [
+        "to divide",
+        "to estrange"
+      ],
+      "example_sentence": "The peace treaty aimed to reconcile the two nations after decades of bitter conflict."
+    },
+    {
+      "word": "to deplete",
+      "pronunciation": "/dɪˈpliːt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cạn kiệt, làm hết, làm giảm đáng kể (tài nguyên, năng lượng, quỹ)",
+      "definition_en": "to use up or reduce significantly (resources, energy, or funds)",
+      "level": "B2",
+      "synonyms": [
+        "to exhaust",
+        "to drain",
+        "to consume"
+      ],
+      "antonyms": [
+        "to replenish",
+        "to restore"
+      ],
+      "example_sentence": "Overfishing has depleted fish stocks in many coastal regions, threatening the livelihoods of fishing communities."
+    },
+    {
+      "word": "to scrutinize",
+      "pronunciation": "/ˈskruːtɪnaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "kiểm tra kỹ lưỡng, xem xét chi tiết, phân tích sâu sắc",
+      "definition_en": "to examine carefully and thoroughly, often looking for flaws or hidden details",
+      "level": "B2",
+      "synonyms": [
+        "to examine",
+        "to inspect",
+        "to analyze"
+      ],
+      "antonyms": [
+        "to overlook",
+        "to ignore"
+      ],
+      "example_sentence": "Auditors scrutinized the company's financial records and discovered evidence of fraudulent accounting practices."
+    },
+    {
+      "word": "to ameliorate",
+      "pronunciation": "/əˈmɪliəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cải thiện, làm tốt hơn, giảm nhẹ (tình trạng xấu, vấn đề)",
+      "definition_en": "to make something better or improve a difficult situation",
+      "level": "C1",
+      "synonyms": [
+        "to improve",
+        "to enhance",
+        "to better"
+      ],
+      "antonyms": [
+        "to worsen",
+        "to deteriorate"
+      ],
+      "example_sentence": "The government introduced new policies to ameliorate poverty and reduce income inequality in rural areas."
+    },
+    {
+      "word": "to obfuscate",
+      "pronunciation": "/ˈɑːbfəskeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm mờ đi, che giấu, làm khó hiểu (sự thật, ý định) một cách cố ý",
+      "definition_en": "to deliberately make something unclear or difficult to understand",
+      "level": "C1",
+      "synonyms": [
+        "to obscure",
+        "to confuse",
+        "to muddy"
+      ],
+      "antonyms": [
+        "to clarify",
+        "to illuminate"
+      ],
+      "example_sentence": "Critics argue that the politician's vague statements obfuscate the real issues and mislead the public."
+    },
+    {
+      "word": "to vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "minh oan, chứng minh là đúng, bảo vệ (danh dự, quan điểm) khỏi lời chỉ trích",
+      "definition_en": "to prove or justify that someone or something was right, especially after being doubted or criticized",
+      "level": "C1",
+      "synonyms": [
+        "to justify",
+        "to exonerate",
+        "to clear"
+      ],
+      "antonyms": [
+        "to condemn",
+        "to incriminate"
+      ],
+      "example_sentence": "The new research findings vindicated the scientist's controversial hypothesis that had been rejected for years."
+    },
+    {
+      "word": "to galvanize",
+      "pronunciation": "/ˈɡælvənaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "kích thích, thúc đẩy mạnh mẽ (hành động, phong trào) từ trạng thái bất động",
+      "definition_en": "to shock or excite someone into taking action; to stimulate or energize",
+      "level": "C1",
+      "synonyms": [
+        "to stimulate",
+        "to energize",
+        "to spur"
+      ],
+      "antonyms": [
+        "to paralyze",
+        "to stagnate"
+      ],
+      "example_sentence": "The environmental disaster galvanized citizens into demanding stricter regulations on industrial pollution."
+    },
+    {
+      "word": "to permeate",
+      "pronunciation": "/ˈpɜːrmieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thấm vào, lan tỏa khắp, thâm nhập (ý tưởng, thái độ, chất lỏng) vào mọi phần",
+      "definition_en": "to spread throughout or penetrate every part of something",
+      "level": "C1",
+      "synonyms": [
+        "to pervade",
+        "to penetrate",
+        "to saturate"
+      ],
+      "antonyms": [
+        "to isolate",
+        "to contain"
+      ],
+      "example_sentence": "A culture of innovation permeates the company, encouraging employees at all levels to propose creative solutions."
+    },
+    {
+      "word": "to usurp",
+      "pronunciation": "/juːˈzɜːrp/",
+      "part_of_speech": "verb",
+      "definition_vi": "chiếm đoạt, lấy trái phép (quyền lực, vị trí, tài sản) của người khác",
+      "definition_en": "to seize power or position illegally or without right",
+      "level": "C1",
+      "synonyms": [
+        "to seize",
+        "to appropriate",
+        "to commandeer"
+      ],
+      "antonyms": [
+        "to relinquish",
+        "to surrender"
+      ],
+      "example_sentence": "The military coup usurped the democratically elected government, sparking international condemnation."
+    },
+    {
+      "word": "to languish",
+      "pronunciation": "/ˈlæŋɡwɪʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "suy yếu, trì trệ, chậm phát triển (kinh tế, sức khỏe, dự án) trong thời gian dài",
+      "definition_en": "to become weak or fail to make progress; to suffer from neglect or lack of attention",
+      "level": "C1",
+      "synonyms": [
+        "to decline",
+        "to stagnate",
+        "to wither"
+      ],
+      "antonyms": [
+        "to flourish",
+        "to thrive"
+      ],
+      "example_sentence": "The rural economy has languished for decades due to lack of investment and brain drain to urban centers."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The detective's skillful interrogation _____ crucial information from the suspect that ultimately solved the case.",
+      "option_a": "elicited",
+      "option_b": "suppressed",
+      "option_c": "obscured",
+      "option_d": "concealed",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (elicited) là đúng vì có nghĩa 'khai thác, lôi kéo thông tin'. Các đáp án khác (suppressed, obscured, concealed) đều mang nghĩa che giấu, trái ngược với việc lấy thông tin từ nghi phạm."
+    },
+    {
+      "question_text": "Which word best describes the effect of the sudden policy change that caused widespread unrest?",
+      "option_a": "mitigated",
+      "option_b": "precipitated",
+      "option_c": "facilitated",
+      "option_d": "alleviated",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Precipitated (gây ra, kích hoạt) là đáp án chính xác vì chỉ sự kiện xảy ra đột ngột. Mitigated, alleviated (giảm nhẹ) và facilitated (tạo điều kiện) không phù hợp với 'gây ra bất ổn'."
+    },
+    {
+      "question_text": "The new evidence _____ the defendant's claim of innocence, leading to his acquittal.",
+      "option_a": "jeopardized",
+      "option_b": "vindicated",
+      "option_c": "circumvented",
+      "option_d": "depleted",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Vindicated (minh oan, chứng minh là đúng) là đáp án duy nhất phù hợp. Jeopardized (đe dọa), circumvented (vòng qua), depleted (cạn kiệt) đều không có ý nghĩa hỗ trợ lời khai của bị cáo."
+    },
+    {
+      "question_text": "Environmental groups were _____ by the government's commitment to reduce carbon emissions, leading to increased activism.",
+      "option_a": "obfuscated",
+      "option_b": "galvanized",
+      "option_c": "usurped",
+      "option_d": "languished",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Galvanized (kích thích, thúc đẩy mạnh mẽ) là đáp án chính xác. Obfuscated (làm mờ đi), usurped (chiếm đoạt), languished (suy yếu) không phù hợp với bối cảnh các nhóm môi trường tăng cường hoạt động."
+    },
+    {
+      "question_text": "The scandal _____ the company's reputation and market value, forcing executives to resign.",
+      "option_a": "bolstered",
+      "option_b": "reconciled",
+      "option_c": "jeopardized",
+      "option_d": "ameliorated",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Jeopardized (đặt vào nguy hiểm, đe dọa) là đáp án đúng vì chỉ tác hại của bê bối. Bolstered (tăng cường), reconciled (hòa giải), ameliorated (cải thiện) đều mang ý nghĩa tích cực, trái ngược với hậu quả tiêu cực."
+    },
+    {
+      "question_text": "Which of the following is closest in meaning to 'to permeate'?",
+      "option_a": "to isolate completely",
+      "option_b": "to penetrate throughout",
+      "option_c": "to restrict access",
+      "option_d": "to prevent entry",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Permeate có nghĩa 'thấm vào, lan tỏa khắp', do đó 'to penetrate throughout' (thâm nhập khắp nơi) là đáp án chính xác. Các đáp án khác đều mang ý nghĩa ngược lại hoặc không liên quan."
+    },
+    {
+      "question_text": "The government's attempt to _____ environmental regulations angered conservation groups who demanded stricter enforcement.",
+      "option_a": "curtail",
+      "option_b": "scrutinize",
+      "option_c": "circumvent",
+      "option_d": "ameliorate",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Circumvent (vòng qua, tránh luật) là đáp án chính xác vì chỉ hành động cố tình tránh quy định. Curtail (cắt giảm), scrutinize (kiểm tra), ameliorate (cải thiện) không phù hợp với bối cảnh 'cố gắng tránh quy định'."
+    },
+    {
+      "question_text": "The economic crisis has _____ the nation's resources, making it difficult to fund essential public services.",
+      "option_a": "proliferated",
+      "option_b": "depleted",
+      "option_c": "bolstered",
+      "option_d": "permeated",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Depleted (cạn kiệt, làm hết) là đáp án đúng vì chỉ sự thiếu hụt tài nguyên. Proliferated (tăng nhanh), bolstered (tăng cường), permeated (lan tỏa) không phù hợp với ý nghĩa 'làm hết tài nguyên'."
+    }
+  ]
+}

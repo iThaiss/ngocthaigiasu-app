@@ -1,0 +1,377 @@
+{
+  "words": [
+    {
+      "word": "digital footprint",
+      "pronunciation": "/ˈdɪdʒɪtl ˈfʊtprɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Dấu vết kỹ thuật số; tổng hợp thông tin cá nhân được lưu lại trên internet qua các hoạt động trực tuyến",
+      "definition_en": "The trail of data and information left behind by a person's online activities",
+      "level": "B2",
+      "synonyms": [
+        "online presence",
+        "digital trail"
+      ],
+      "antonyms": [],
+      "example_sentence": "Teenagers should be aware of their digital footprint and think carefully before posting on social media."
+    },
+    {
+      "word": "phishing",
+      "pronunciation": "/ˈfɪʃɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Lừa đảo trực tuyến; kỹ thuật giả mạo để lấy thông tin nhạy cảm như mật khẩu hoặc dữ liệu tài chính",
+      "definition_en": "A fraudulent attempt to obtain sensitive information by disguising communication as a trustworthy source",
+      "level": "B2",
+      "synonyms": [
+        "scam",
+        "fraud"
+      ],
+      "antonyms": [],
+      "example_sentence": "Email phishing attacks have become increasingly sophisticated, targeting both individuals and large corporations."
+    },
+    {
+      "word": "streaming",
+      "pronunciation": "/ˈstriːmɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phát trực tuyến; truyền dữ liệu âm thanh hoặc video liên tục qua internet mà không cần tải xuống hoàn toàn",
+      "definition_en": "The continuous transmission of audio or video data over the internet for immediate playback",
+      "level": "C1",
+      "synonyms": [
+        "live broadcast",
+        "on-demand playback"
+      ],
+      "antonyms": [],
+      "example_sentence": "Video streaming services like Netflix have revolutionized how people consume entertainment content."
+    },
+    {
+      "word": "algorithm",
+      "pronunciation": "/ˈælɡərɪðəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thuật toán; tập hợp các quy tắc hoặc hướng dẫn được máy tính thực hiện để giải quyết vấn đề",
+      "definition_en": "A step-by-step procedure or formula used by computers to solve problems or perform tasks",
+      "level": "B2",
+      "synonyms": [
+        "procedure",
+        "formula"
+      ],
+      "antonyms": [],
+      "example_sentence": "Social media platforms use complex algorithms to determine which content appears in users' feeds."
+    },
+    {
+      "word": "metadata",
+      "pronunciation": "/ˈmetədeɪtə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Dữ liệu về dữ liệu; thông tin mô tả các đặc tính của tệp hoặc nội dung như ngày tạo, tác giả, kích thước",
+      "definition_en": "Data that provides information about other data, such as file creation date, author, or size",
+      "level": "B2",
+      "synonyms": [
+        "file information",
+        "data attributes"
+      ],
+      "antonyms": [],
+      "example_sentence": "Photographers should be aware that metadata embedded in their images can reveal location and camera details."
+    },
+    {
+      "word": "interface",
+      "pronunciation": "/ˈɪntərfeɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Giao diện; bề mặt hoặc hệ thống cho phép người dùng tương tác với máy tính hoặc ứng dụng",
+      "definition_en": "The point of interaction between a user and a computer system or application",
+      "level": "C1",
+      "synonyms": [
+        "user interface",
+        "display"
+      ],
+      "antonyms": [],
+      "example_sentence": "A well-designed interface makes software intuitive and easy for users to navigate."
+    },
+    {
+      "word": "data breach",
+      "pronunciation": "/ˈdeɪtə briːtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Vi phạm dữ liệu; sự truy cập trái phép hoặc tiết lộ thông tin cá nhân hoặc bảo mật",
+      "definition_en": "An unauthorized access or disclosure of confidential or personal information",
+      "level": "B2",
+      "synonyms": [
+        "security breach",
+        "data leak"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company announced a major data breach affecting millions of customer accounts and personal information."
+    },
+    {
+      "word": "cybersecurity",
+      "pronunciation": "/ˌsaɪbərsiˈkjʊərɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "An ninh mạng; các biện pháp bảo vệ hệ thống máy tính và dữ liệu khỏi các cuộc tấn công trực tuyến",
+      "definition_en": "Protection of computer systems and networks from digital attacks and unauthorized access",
+      "level": "B2",
+      "synonyms": [
+        "network security",
+        "information security"
+      ],
+      "antonyms": [],
+      "example_sentence": "Organizations must invest in robust cybersecurity measures to protect sensitive business data."
+    },
+    {
+      "word": "bandwidth",
+      "pronunciation": "/ˈbændwɪdθ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Băng thông; lượng dữ liệu tối đa có thể được truyền qua một kết nối mạng trong một khoảng thời gian nhất định",
+      "definition_en": "The maximum amount of data that can be transmitted over a network connection in a given time period",
+      "level": "B2",
+      "synonyms": [
+        "data capacity",
+        "transmission speed"
+      ],
+      "antonyms": [],
+      "example_sentence": "High-definition video streaming requires significantly more bandwidth than standard definition content."
+    },
+    {
+      "word": "url",
+      "pronunciation": "/ˌjuː ɑːr ˈel/",
+      "part_of_speech": "noun",
+      "definition_vi": "Địa chỉ web; đường dẫn đầy đủ để truy cập một trang web hoặc tài nguyên trên internet",
+      "definition_en": "The web address that specifies the location of a resource on the internet",
+      "level": "C1",
+      "synonyms": [
+        "web address",
+        "link"
+      ],
+      "antonyms": [],
+      "example_sentence": "Users should verify the URL in their browser's address bar before entering sensitive information."
+    },
+    {
+      "word": "spam",
+      "pronunciation": "/spæm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thư rác; tin nhắn không mong muốn hoặc quảng cáo được gửi hàng loạt qua email hoặc mạng xã hội",
+      "definition_en": "Unsolicited or unwanted messages, typically advertisements, sent in bulk via email or messaging platforms",
+      "level": "C1",
+      "synonyms": [
+        "junk mail",
+        "unsolicited message"
+      ],
+      "antonyms": [],
+      "example_sentence": "Most email providers have spam filters to automatically detect and remove unwanted messages."
+    },
+    {
+      "word": "hyperlink",
+      "pronunciation": "/ˈhaɪpərlɪŋk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Siêu liên kết; liên kết có thể nhấp được trên trang web hoặc tài liệu dẫn đến một tài nguyên khác",
+      "definition_en": "A clickable link in a document or webpage that directs users to another resource or webpage",
+      "level": "C1",
+      "synonyms": [
+        "link",
+        "web link"
+      ],
+      "antonyms": [],
+      "example_sentence": "The article contains several hyperlinks to related research papers and external sources."
+    },
+    {
+      "word": "virtual reality",
+      "pronunciation": "/ˈvɜːtʃuəl riˈæləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thực tế ảo; môi trường được tạo bởi máy tính mô phỏng thế giới thực hoặc tưởng tượng",
+      "definition_en": "A computer-generated simulation of a three-dimensional environment that users can interact with",
+      "level": "B2",
+      "synonyms": [
+        "VR",
+        "immersive technology"
+      ],
+      "antonyms": [],
+      "example_sentence": "Virtual reality technology is increasingly used in medical training and architectural visualization."
+    },
+    {
+      "word": "augmented reality",
+      "pronunciation": "/ɔːɡˈmentɪd riˈæləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thực tế tăng cường; công nghệ kết hợp các yếu tố kỹ thuật số với thế giới thực qua thiết bị",
+      "definition_en": "Technology that overlays digital information and objects onto the real world viewed through a device",
+      "level": "B2",
+      "synonyms": [
+        "AR",
+        "mixed reality"
+      ],
+      "antonyms": [],
+      "example_sentence": "Augmented reality applications allow customers to visualize furniture in their homes before purchasing."
+    },
+    {
+      "word": "artificial intelligence",
+      "pronunciation": "/ɑːrˈtɪfɪʃl ɪnˈtelɪdʒəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Trí tuệ nhân tạo; khả năng của máy tính thực hiện các nhiệm vụ yêu cầu trí thông minh con người",
+      "definition_en": "The simulation of human intelligence processes by computer systems, including learning and problem-solving",
+      "level": "B2",
+      "synonyms": [
+        "AI",
+        "machine intelligence"
+      ],
+      "antonyms": [],
+      "example_sentence": "Artificial intelligence is transforming industries from healthcare to transportation and finance."
+    },
+    {
+      "word": "machine learning",
+      "pronunciation": "/məˈʃiːn ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Học máy; kỹ thuật cho phép máy tính học từ dữ liệu và cải thiện hiệu suất mà không cần lập trình rõ ràng",
+      "definition_en": "A subset of AI that enables systems to learn and improve from experience without explicit programming",
+      "level": "B2",
+      "synonyms": [
+        "automated learning",
+        "adaptive systems"
+      ],
+      "antonyms": [],
+      "example_sentence": "Machine learning algorithms power recommendation systems on streaming platforms and e-commerce sites."
+    },
+    {
+      "word": "cryptocurrency",
+      "pronunciation": "/ˌkrɪptoʊˈkɜːrənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tiền điện tử; tiền kỹ thuật số sử dụng mã hóa để bảo mật giao dịch và kiểm soát tạo ra các đơn vị mới",
+      "definition_en": "Digital currency that uses cryptography to secure transactions and control the creation of new units",
+      "level": "B2",
+      "synonyms": [
+        "digital currency",
+        "virtual money"
+      ],
+      "antonyms": [],
+      "example_sentence": "Bitcoin and Ethereum are among the most well-known cryptocurrencies in the global market."
+    },
+    {
+      "word": "blockchain",
+      "pronunciation": "/ˈblɑːktʃeɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chuỗi khối; công nghệ ghi lại dữ liệu trong các khối được liên kết và mã hóa, thường dùng cho tiền điện tử",
+      "definition_en": "A distributed ledger technology that records transactions in linked, cryptographically secured blocks",
+      "level": "B2",
+      "synonyms": [
+        "distributed ledger",
+        "decentralized database"
+      ],
+      "antonyms": [],
+      "example_sentence": "Blockchain technology ensures transparency and security in cryptocurrency transactions and supply chain management."
+    },
+    {
+      "word": "iot",
+      "pronunciation": "/ˌaɪ oʊ ˈtiː/",
+      "part_of_speech": "noun",
+      "definition_vi": "Internet vạn vật; mạng lưới các thiết bị vật lý được kết nối với internet để trao đổi dữ liệu",
+      "definition_en": "A network of physical devices embedded with sensors and software that connect and exchange data over the internet",
+      "level": "B2",
+      "synonyms": [
+        "Internet of Things",
+        "connected devices"
+      ],
+      "antonyms": [],
+      "example_sentence": "IoT devices such as smart home systems and wearable technology are becoming increasingly common in daily life."
+    },
+    {
+      "word": "api",
+      "pronunciation": "/ˌeɪ piː ˈaɪ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Giao diện lập trình ứng dụng; bộ quy tắc cho phép các ứng dụng khác nhau giao tiếp và chia sẻ dữ liệu",
+      "definition_en": "A set of protocols and tools that allows different software applications to communicate and share data",
+      "level": "B2",
+      "synonyms": [
+        "interface protocol",
+        "software interface"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developers use APIs to integrate third-party services and data into their applications."
+    },
+    {
+      "word": "cyberbullying",
+      "pronunciation": "/ˌsaɪbərˈbʊliɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Bắt nạt trực tuyến; hành vi qu騷rối, đe dọa hoặc xúc phạm người khác thông qua internet hoặc mạng xã hội",
+      "definition_en": "Harassment, intimidation, or abuse directed at individuals through digital platforms and online communication",
+      "level": "B2",
+      "synonyms": [
+        "online harassment",
+        "digital abuse"
+      ],
+      "antonyms": [],
+      "example_sentence": "Schools are implementing programs to educate students about the serious consequences of cyberbullying."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a 'digital footprint'?",
+      "option_a": "The physical space occupied by computer servers in a data center",
+      "option_b": "The trail of personal information and data left behind by online activities",
+      "option_c": "The password required to access a secure website",
+      "option_d": "The speed at which data travels through the internet",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Digital footprint là dấu vết kỹ thuật số - tổng hợp thông tin cá nhân được lưu lại qua các hoạt động trực tuyến. Đáp án A sai (nói về không gian vật lý), C sai (về mật khẩu), D sai (về tốc độ)."
+    },
+    {
+      "question_text": "What is the primary purpose of a 'phishing' attack?",
+      "option_a": "To improve internet connection speed",
+      "option_b": "To obtain sensitive information by deception",
+      "option_c": "To increase the storage capacity of a device",
+      "option_d": "To create a backup of important files",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Phishing là kỹ thuật lừa đảo để lấy thông tin nhạy cảm như mật khẩu hoặc dữ liệu tài chính. Các đáp án khác không liên quan đến mục đích của phishing."
+    },
+    {
+      "question_text": "In the context of digital technology, what does 'metadata' refer to?",
+      "option_a": "The main content of a digital file or document",
+      "option_b": "Information that describes the characteristics of other data",
+      "option_c": "A type of computer virus that corrupts files",
+      "option_d": "The encryption method used to protect sensitive data",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Metadata là dữ liệu về dữ liệu - thông tin mô tả các đặc tính của tệp như ngày tạo, tác giả, kích thước. A sai (nói về nội dung chính), C sai (về virus), D sai (về mã hóa)."
+    },
+    {
+      "question_text": "Which technology allows users to visualize digital objects overlaid on the real world?",
+      "option_a": "Virtual reality",
+      "option_b": "Augmented reality",
+      "option_c": "Artificial intelligence",
+      "option_d": "Blockchain",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Augmented reality (AR) kết hợp các yếu tố kỹ thuật số với thế giới thực. Virtual reality (A) tạo môi trường hoàn toàn ảo, không phải kết hợp với thế giới thực."
+    },
+    {
+      "question_text": "What is the main advantage of using 'blockchain' technology?",
+      "option_a": "It increases internet download speeds significantly",
+      "option_b": "It ensures transparency and security through cryptographic linking of records",
+      "option_c": "It eliminates the need for passwords on websites",
+      "option_d": "It automatically removes spam from email accounts",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Blockchain ghi lại dữ liệu trong các khối được liên kết và mã hóa, đảm bảo tính minh bạch và an ninh. Các đáp án khác không phải lợi ích chính của blockchain."
+    },
+    {
+      "question_text": "Which of the following is an example of 'IoT' (Internet of Things)?",
+      "option_a": "A traditional desktop computer used for office work",
+      "option_b": "A smart home device that controls lighting and temperature via the internet",
+      "option_c": "A printed book with digital annotations",
+      "option_d": "A website that provides news and information",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "IoT là mạng lưới các thiết bị vật lý kết nối với internet để trao đổi dữ liệu. Smart home device (B) là ví dụ điển hình. A là máy tính truyền thống, C không kết nối internet, D là website."
+    },
+    {
+      "question_text": "What does 'cybersecurity' primarily focus on protecting?",
+      "option_a": "Physical computer hardware from dust and damage",
+      "option_b": "Computer systems and networks from digital attacks and unauthorized access",
+      "option_c": "Users from spending too much time on the internet",
+      "option_d": "Websites from receiving too many visitors",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Cybersecurity là các biện pháp bảo vệ hệ thống máy tính và dữ liệu khỏi các cuộc tấn công trực tuyến. A sai (về bảo vệ vật lý), C sai (về thời gian sử dụng), D sai (về lưu lượng truy cập)."
+    }
+  ]
+}

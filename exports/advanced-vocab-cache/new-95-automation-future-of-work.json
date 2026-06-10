@@ -1,0 +1,674 @@
+{
+  "words": [
+    {
+      "word": "automation",
+      "pronunciation": "/ˌɔːtəˈmeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình sử dụng máy móc hoặc công nghệ để thực hiện công việc mà không cần can thiệp của con người",
+      "definition_en": "the use of machines or technology to perform tasks with minimal human intervention",
+      "level": "B2",
+      "synonyms": [
+        "mechanization",
+        "computerization"
+      ],
+      "antonyms": [
+        "manual labor",
+        "human operation"
+      ],
+      "example_sentence": "Factory automation has increased production efficiency by 40% in recent years."
+    },
+    {
+      "word": "artificial intelligence (ai)",
+      "pronunciation": "/ˌɑːrtɪˈfɪʃl ɪnˈtelɪdʒəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của máy tính hoặc hệ thống để thực hiện các nhiệm vụ yêu cầu trí thông minh con người",
+      "definition_en": "the capability of computer systems to perform tasks that typically require human intelligence",
+      "level": "B2",
+      "synonyms": [
+        "machine intelligence",
+        "computational intelligence"
+      ],
+      "antonyms": [],
+      "example_sentence": "Artificial intelligence is transforming healthcare by enabling faster disease diagnosis."
+    },
+    {
+      "word": "job displacement",
+      "pronunciation": "/dʒɑːb dɪsˈpleɪsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng mất việc làm do công nghệ hoặc tự động hóa thay thế lao động con người",
+      "definition_en": "the loss of employment caused by technological advancement or automation replacing workers",
+      "level": "C1",
+      "synonyms": [
+        "technological unemployment",
+        "labor displacement"
+      ],
+      "antonyms": [
+        "job creation",
+        "employment growth"
+      ],
+      "example_sentence": "Policymakers must address job displacement by investing in reskilling programs for affected workers."
+    },
+    {
+      "word": "reskilling",
+      "pronunciation": "/ˌriːˈskɪlɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình đào tạo lại công nhân để học những kỹ năng mới phù hợp với nhu cầu thị trường lao động",
+      "definition_en": "the process of training workers to acquire new skills for changing job market demands",
+      "level": "C1",
+      "synonyms": [
+        "retraining",
+        "skill development"
+      ],
+      "antonyms": [
+        "deskilling"
+      ],
+      "example_sentence": "Reskilling initiatives are essential to help workers transition from manufacturing to tech-related roles."
+    },
+    {
+      "word": "upskilling",
+      "pronunciation": "/ˌʌpˈskɪlɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình nâng cao kỹ năng hiện có của công nhân để thích ứng với công nghệ mới",
+      "definition_en": "the process of enhancing existing skills to adapt to new technologies and job requirements",
+      "level": "C1",
+      "synonyms": [
+        "skill enhancement",
+        "professional development"
+      ],
+      "antonyms": [],
+      "example_sentence": "Companies are investing in upskilling their workforce to remain competitive in the digital economy."
+    },
+    {
+      "word": "productivity",
+      "pronunciation": "/prɒdʌkˈtɪvɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ hiệu quả trong việc hoàn thành công việc hoặc sản xuất hàng hóa trong một khoảng thời gian nhất định",
+      "definition_en": "the effectiveness of effort measured by the rate of output per unit of input",
+      "level": "B2",
+      "synonyms": [
+        "efficiency",
+        "output"
+      ],
+      "antonyms": [
+        "inefficiency",
+        "idleness"
+      ],
+      "example_sentence": "Automation has significantly boosted productivity in the manufacturing sector."
+    },
+    {
+      "word": "workforce",
+      "pronunciation": "/ˈwɜːrkfɔːrs/",
+      "part_of_speech": "noun",
+      "definition_vi": "tổng số lao động hoặc nhân viên trong một công ty, ngành hoặc quốc gia",
+      "definition_en": "the total number of workers or employees in a company, industry, or country",
+      "level": "B2",
+      "synonyms": [
+        "labor force",
+        "employees"
+      ],
+      "antonyms": [],
+      "example_sentence": "The global workforce is increasingly adapting to remote work and digital collaboration tools."
+    },
+    {
+      "word": "digital transformation",
+      "pronunciation": "/ˈdɪdʒɪtl ˌtrænsfərˈmeɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình thay đổi toàn bộ hoạt động kinh doanh bằng cách áp dụng công nghệ số",
+      "definition_en": "the comprehensive integration of digital technology into all aspects of business operations",
+      "level": "C1",
+      "synonyms": [
+        "digitalization",
+        "digital adoption"
+      ],
+      "antonyms": [],
+      "example_sentence": "Digital transformation requires organizations to rethink their business models and employee roles."
+    },
+    {
+      "word": "robotics",
+      "pronunciation": "/roʊˈbɑːtɪks/",
+      "part_of_speech": "noun",
+      "definition_vi": "lĩnh vực công nghệ liên quan đến thiết kế, chế tạo và sử dụng các robot",
+      "definition_en": "the technology and science of designing, building, and operating robots",
+      "level": "B2",
+      "synonyms": [
+        "robot technology",
+        "automation technology"
+      ],
+      "antonyms": [],
+      "example_sentence": "Advances in robotics have revolutionized assembly lines and warehouse operations."
+    },
+    {
+      "word": "algorithm",
+      "pronunciation": "/ˈælɡərɪðəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "một tập hợp các quy tắc hoặc hướng dẫn được máy tính tuân theo để giải quyết vấn đề",
+      "definition_en": "a step-by-step procedure or formula that a computer follows to solve a problem",
+      "level": "B2",
+      "synonyms": [
+        "procedure",
+        "formula"
+      ],
+      "antonyms": [],
+      "example_sentence": "Machine learning algorithms enable computers to improve their performance without explicit programming."
+    },
+    {
+      "word": "skill gap",
+      "pronunciation": "/skɪl ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự khác biệt giữa các kỹ năng mà lao động hiện có và những kỹ năng mà nhà tuyển dụng yêu cầu",
+      "definition_en": "the disparity between the skills workers currently possess and those employers require",
+      "level": "C1",
+      "synonyms": [
+        "skills mismatch",
+        "competency gap"
+      ],
+      "antonyms": [],
+      "example_sentence": "The widening skill gap in the tech industry makes reskilling programs increasingly critical."
+    },
+    {
+      "word": "gig economy",
+      "pronunciation": "/ɡɪɡ ɪˈkɑːnəmi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nền kinh tế dựa trên công việc tạm thời, bán thời gian hoặc dự án ngắn hạn thay vì việc làm toàn thời gian",
+      "definition_en": "an economic system based on temporary, part-time, or project-based work rather than permanent employment",
+      "level": "C1",
+      "synonyms": [
+        "freelance economy",
+        "platform economy"
+      ],
+      "antonyms": [
+        "traditional employment"
+      ],
+      "example_sentence": "The gig economy offers flexibility but raises concerns about job security and worker benefits."
+    },
+    {
+      "word": "machine learning",
+      "pronunciation": "/məˈʃiːn ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một nhánh của trí tuệ nhân tạo cho phép máy tính học hỏi từ dữ liệu mà không cần lập trình rõ ràng",
+      "definition_en": "a subset of artificial intelligence that enables computers to learn from data without explicit programming",
+      "level": "C1",
+      "synonyms": [
+        "automated learning",
+        "data-driven learning"
+      ],
+      "antonyms": [],
+      "example_sentence": "Machine learning powers recommendation systems that personalize user experiences across platforms."
+    },
+    {
+      "word": "labor market",
+      "pronunciation": "/ˈleɪbər ˈmɑːrkɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thị trường nơi lao động được cung cấp và cầu cấp, nơi lương và việc làm được xác định",
+      "definition_en": "the market where labor is supplied and demanded, determining wages and employment opportunities",
+      "level": "B2",
+      "synonyms": [
+        "employment market",
+        "job market"
+      ],
+      "antonyms": [],
+      "example_sentence": "The labor market is shifting rapidly as automation eliminates routine jobs while creating new roles."
+    },
+    {
+      "word": "obsolescence",
+      "pronunciation": "/ˌɑːbsəˈlesəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng trở nên lỗi thời hoặc không còn hữu ích do công nghệ mới hoặc thay đổi nhu cầu",
+      "definition_en": "the state of becoming outdated or no longer useful due to technological advancement or changing needs",
+      "level": "C1",
+      "synonyms": [
+        "outdatedness",
+        "depreciation"
+      ],
+      "antonyms": [
+        "relevance",
+        "currency"
+      ],
+      "example_sentence": "Rapid technological change threatens the obsolescence of skills that were valuable just a decade ago."
+    },
+    {
+      "word": "adaptability",
+      "pronunciation": "/əˌdæptəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng thích ứng hoặc thay đổi để phù hợp với những điều kiện hoặc yêu cầu mới",
+      "definition_en": "the capacity to adjust or modify oneself to suit new conditions or requirements",
+      "level": "C1",
+      "synonyms": [
+        "flexibility",
+        "versatility"
+      ],
+      "antonyms": [
+        "rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "Adaptability is now considered one of the most valuable traits in the modern workforce."
+    },
+    {
+      "word": "disrupt",
+      "pronunciation": "/dɪsˈrʌpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm gián đoạn hoặc thay đổi cách hoạt động bình thường của một ngành hoặc hệ thống",
+      "definition_en": "to interrupt or fundamentally change the normal operation of an industry or system",
+      "level": "B2",
+      "synonyms": [
+        "interrupt",
+        "disturb",
+        "transform"
+      ],
+      "antonyms": [
+        "maintain",
+        "preserve"
+      ],
+      "example_sentence": "Artificial intelligence is poised to disrupt traditional business models across multiple sectors."
+    },
+    {
+      "word": "augment",
+      "pronunciation": "/ɔːɡˈment/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường hoặc cải thiện bằng cách thêm vào hoặc kết hợp với cái gì đó",
+      "definition_en": "to enhance or improve by adding to or combining with something else",
+      "level": "C1",
+      "synonyms": [
+        "enhance",
+        "supplement",
+        "strengthen"
+      ],
+      "antonyms": [
+        "diminish",
+        "reduce"
+      ],
+      "example_sentence": "Rather than replacing workers, many companies use technology to augment human capabilities."
+    },
+    {
+      "word": "stakeholder",
+      "pronunciation": "/ˈsteɪkhoʊldər/",
+      "part_of_speech": "noun",
+      "definition_vi": "người có quyền lợi hoặc ảnh hưởng trong một tổ chức hoặc quyết định nào đó",
+      "definition_en": "a person or group with an interest or concern in a particular organization or decision",
+      "level": "B2",
+      "synonyms": [
+        "interested party",
+        "participant"
+      ],
+      "antonyms": [],
+      "example_sentence": "All stakeholders—employers, workers, and policymakers—must collaborate to address automation challenges."
+    },
+    {
+      "word": "infrastructure",
+      "pronunciation": "/ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "các cơ sở vật chất, hệ thống và dịch vụ cần thiết để hỗ trợ hoạt động kinh tế",
+      "definition_en": "the basic physical systems and facilities needed to support economic activity",
+      "level": "B2",
+      "synonyms": [
+        "framework",
+        "foundation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developing digital infrastructure is essential for countries to compete in the automated economy."
+    },
+    {
+      "word": "competency",
+      "pronunciation": "/ˈkɑːmpɪtənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng hoặc kỹ năng cần thiết để thực hiện một công việc hoặc nhiệm vụ một cách hiệu quả",
+      "definition_en": "the ability or skill required to perform a job or task effectively",
+      "level": "B2",
+      "synonyms": [
+        "ability",
+        "skill",
+        "proficiency"
+      ],
+      "antonyms": [
+        "incompetence",
+        "inability"
+      ],
+      "example_sentence": "Digital competency is now a fundamental requirement for most professional positions."
+    },
+    {
+      "word": "paradigm shift",
+      "pronunciation": "/ˈpærədaɪm ʃɪft/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi cơ bản trong cách suy nghĩ hoặc cách tiếp cận một vấn đề",
+      "definition_en": "a fundamental change in the basic concepts and practices of a discipline or field",
+      "level": "C1",
+      "synonyms": [
+        "fundamental change",
+        "conceptual shift"
+      ],
+      "antonyms": [],
+      "example_sentence": "Automation represents a paradigm shift in how we conceptualize work and employment."
+    },
+    {
+      "word": "mitigation",
+      "pronunciation": "/ˌmɪtɪˈɡeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "hành động giảm nhẹ hoặc làm giảm mức độ nghiêm trọng của một vấn đề",
+      "definition_en": "the action of reducing the severity or seriousness of something",
+      "level": "C1",
+      "synonyms": [
+        "alleviation",
+        "reduction"
+      ],
+      "antonyms": [
+        "aggravation",
+        "exacerbation"
+      ],
+      "example_sentence": "Mitigation strategies for job displacement include education subsidies and income support programs."
+    },
+    {
+      "word": "transition",
+      "pronunciation": "/trænˈzɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình chuyển từ trạng thái hoặc tình huống này sang trạng thái hoặc tình huống khác",
+      "definition_en": "the process of changing from one state, condition, or situation to another",
+      "level": "B2",
+      "synonyms": [
+        "shift",
+        "change",
+        "passage"
+      ],
+      "antonyms": [
+        "stagnation",
+        "stability"
+      ],
+      "example_sentence": "A smooth transition to an automated economy requires comprehensive social safety nets."
+    },
+    {
+      "word": "leverage",
+      "pronunciation": "/ˈlevərɪdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "sử dụng một cái gì đó để đạt được lợi thế hoặc ảnh hưởng tối đa",
+      "definition_en": "to use something to maximum advantage in order to achieve a desired outcome",
+      "level": "B2",
+      "synonyms": [
+        "utilize",
+        "exploit",
+        "harness"
+      ],
+      "antonyms": [
+        "neglect",
+        "ignore"
+      ],
+      "example_sentence": "Companies should leverage automation to enhance worker productivity rather than simply reduce headcount."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng phục hồi hoặc thích ứng với khó khăn, thất bại hoặc thay đổi",
+      "definition_en": "the capacity to recover from difficulties or adapt to change",
+      "level": "C1",
+      "synonyms": [
+        "adaptability",
+        "toughness"
+      ],
+      "antonyms": [
+        "fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "Building workforce resilience through continuous learning is crucial in an automated world."
+    },
+    {
+      "word": "innovation",
+      "pronunciation": "/ˌɪnəˈveɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tạo ra hoặc giới thiệu một cái gì đó mới, đặc biệt là một ý tưởng hoặc công nghệ",
+      "definition_en": "the introduction of new ideas, methods, or technologies",
+      "level": "B2",
+      "synonyms": [
+        "invention",
+        "novelty"
+      ],
+      "antonyms": [
+        "tradition",
+        "convention"
+      ],
+      "example_sentence": "Continuous innovation in automation technology is reshaping employment landscapes globally."
+    },
+    {
+      "word": "contingency planning",
+      "pronunciation": "/kənˈtɪndʒənsi ˈplænɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình lập kế hoạch cho các tình huống có thể xảy ra trong tương lai",
+      "definition_en": "the process of preparing strategies for potential future scenarios or emergencies",
+      "level": "C1",
+      "synonyms": [
+        "contingency strategy",
+        "scenario planning"
+      ],
+      "antonyms": [],
+      "example_sentence": "Governments must engage in contingency planning to address large-scale job displacement from automation."
+    },
+    {
+      "word": "augmented reality",
+      "pronunciation": "/ɔːɡˈmentɪd riˈæləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "công nghệ cho phép kết hợp thông tin kỹ thuật số với môi trường thực tế",
+      "definition_en": "technology that overlays digital information onto the real-world environment",
+      "level": "C1",
+      "synonyms": [
+        "AR",
+        "mixed reality"
+      ],
+      "antonyms": [],
+      "example_sentence": "Augmented reality training tools are helping workers learn new skills more efficiently."
+    },
+    {
+      "word": "data analytics",
+      "pronunciation": "/ˈdeɪtə əˈnæləɪtɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình phân tích dữ liệu lớn để phát hiện các mẫu, xu hướng và thông tin hữu ích",
+      "definition_en": "the process of examining large datasets to identify patterns, trends, and insights",
+      "level": "C1",
+      "synonyms": [
+        "data analysis",
+        "business intelligence"
+      ],
+      "antonyms": [],
+      "example_sentence": "Data analytics helps organizations predict workforce needs and plan reskilling initiatives."
+    },
+    {
+      "word": "human-centric approach",
+      "pronunciation": "/ˈhjuːmən ˈsentrɪk əˈproʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp đặt con người và nhu cầu của họ ở trung tâm của quyết định và thiết kế",
+      "definition_en": "a strategy that prioritizes human needs and well-being in decision-making and design",
+      "level": "C1",
+      "synonyms": [
+        "people-first approach",
+        "human-focused strategy"
+      ],
+      "antonyms": [
+        "technology-centric approach"
+      ],
+      "example_sentence": "A human-centric approach to automation ensures that technology serves workers rather than displacing them."
+    },
+    {
+      "word": "lifelong learning",
+      "pronunciation": "/ˈlaɪflɔːŋ ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình học tập liên tục suốt cuộc đời để phát triển kỹ năng và kiến thức",
+      "definition_en": "the continuous acquisition of knowledge and skills throughout one's entire life",
+      "level": "B2",
+      "synonyms": [
+        "continuous learning",
+        "ongoing education"
+      ],
+      "antonyms": [
+        "static knowledge"
+      ],
+      "example_sentence": "Lifelong learning is becoming essential as automation accelerates the pace of workplace change."
+    },
+    {
+      "word": "social safety net",
+      "pronunciation": "/ˈsoʊʃl ˈseɪfti net/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các chương trình và dịch vụ xã hội được thiết kế để bảo vệ những người gặp khó khăn kinh tế",
+      "definition_en": "government programs and services designed to protect people from economic hardship",
+      "level": "B2",
+      "synonyms": [
+        "welfare system",
+        "social protection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strengthening social safety nets is crucial to support workers affected by automation-driven job losses."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary concern regarding automation in the labor market?",
+      "option_a": "It increases the cost of production for manufacturers.",
+      "option_b": "It may lead to job displacement and widening skill gaps among workers.",
+      "option_c": "It reduces the need for government regulation in industries.",
+      "option_d": "It eliminates the need for any form of worker training.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Job displacement là mối lo chính khi tự động hóa thay thế lao động con người. Các lựa chọn khác không phản ánh đúng mối quan tâm chính về tác động xã hội của tự động hóa."
+    },
+    {
+      "question_text": "The term 'reskilling' in the context of automation refers to ___.",
+      "option_a": "reducing the number of workers in a company",
+      "option_b": "training workers to acquire new skills for changing job market demands",
+      "option_c": "automating all manual labor processes",
+      "option_d": "eliminating the need for professional development",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Reskilling là quá trình đào tạo lại công nhân để học những kỹ năng mới. Đây là giải pháp ứng phó với sự thay đổi thị trường lao động do tự động hóa gây ra."
+    },
+    {
+      "question_text": "What is the relationship between 'upskilling' and 'adaptability' in a rapidly changing workplace?",
+      "option_a": "Upskilling eliminates the need for adaptability.",
+      "option_b": "Upskilling is a practical method for workers to develop adaptability to new technologies.",
+      "option_c": "Adaptability makes upskilling unnecessary.",
+      "option_d": "They are unrelated concepts in modern employment.",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Upskilling (nâng cao kỹ năng) là một cách cụ thể để phát triển adaptability (khả năng thích ứng). Cả hai đều quan trọng trong thế giới công việc thay đổi nhanh chóng."
+    },
+    {
+      "question_text": "According to modern labor economics, the 'skill gap' primarily refers to ___.",
+      "option_a": "the difference in salaries between skilled and unskilled workers",
+      "option_b": "the disparity between workers' current skills and those employers require",
+      "option_c": "the number of unemployed workers in a region",
+      "option_d": "the gap between job openings and job applicants",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Skill gap là sự khác biệt giữa kỹ năng hiện tại của lao động và kỹ năng mà nhà tuyển dụng yêu cầu. Đây là một thách thức chính trong bối cảnh tự động hóa."
+    },
+    {
+      "question_text": "Which statement best explains how 'digital transformation' differs from simple 'automation'?",
+      "option_a": "Digital transformation only affects manufacturing industries.",
+      "option_b": "Automation is a component of digital transformation that involves comprehensive integration of technology across all business operations.",
+      "option_c": "Digital transformation is outdated compared to automation.",
+      "option_d": "They are identical terms used interchangeably.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Digital transformation là quá trình thay đổi toàn bộ hoạt động kinh doanh, trong khi automation là một phần của nó. Digital transformation rộng hơn và toàn diện hơn."
+    },
+    {
+      "question_text": "The 'gig economy' presents both opportunities and challenges. Which is a significant challenge?",
+      "option_a": "Workers have guaranteed long-term employment contracts.",
+      "option_b": "Job security and worker benefits are often limited or absent.",
+      "option_c": "It eliminates the need for skill development.",
+      "option_d": "It guarantees stable income for all participants.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Gig economy mang lại tính linh hoạt nhưng cũng gây ra lo ngại về an ninh việc làm và quyền lợi công nhân. Đây là một thách thức chính của mô hình kinh tế này."
+    },
+    {
+      "question_text": "How does 'machine learning' enable companies to improve their automation systems?",
+      "option_a": "It requires constant manual reprogramming of all systems.",
+      "option_b": "It allows computers to learn from data and improve performance without explicit programming.",
+      "option_c": "It eliminates the need for human oversight entirely.",
+      "option_d": "It reduces the efficiency of automated processes.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Machine learning cho phép máy tính học hỏi từ dữ liệu mà không cần lập trình rõ ràng. Đây là nền tảng của nhiều hệ thống tự động hóa hiện đại."
+    },
+    {
+      "question_text": "Which of the following is the best example of how technology can 'augment' rather than 'disrupt' human work?",
+      "option_a": "Replacing all factory workers with robots.",
+      "option_b": "Using AI tools to help doctors analyze medical images while maintaining human decision-making.",
+      "option_c": "Eliminating customer service departments entirely.",
+      "option_d": "Automating all creative tasks without human involvement.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Augment (tăng cường) có nghĩa là cải thiện khả năng con người, không phải thay thế. Ví dụ B cho thấy công nghệ hỗ trợ quyết định của con người thay vì loại bỏ họ."
+    },
+    {
+      "question_text": "What does 'paradigm shift' in the context of automation and work suggest?",
+      "option_a": "Minor adjustments to existing employment practices.",
+      "option_b": "A fundamental change in how we conceptualize work and employment relationships.",
+      "option_c": "The elimination of all traditional jobs.",
+      "option_d": "A temporary trend that will soon reverse.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Paradigm shift là sự thay đổi cơ bản trong cách suy nghĩ. Trong bối cảnh tự động hóa, nó đề cập đến sự thay đổi căn bản trong khái niệm về công việc và mối quan hệ lao động."
+    },
+    {
+      "question_text": "Which mitigation strategy is most effective in addressing job displacement caused by automation?",
+      "option_a": "Banning all automation technologies.",
+      "option_b": "Investing in comprehensive reskilling and upskilling programs combined with social safety nets.",
+      "option_c": "Ignoring the problem and hoping it resolves naturally.",
+      "option_d": "Reducing wages to make human labor more competitive.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Mitigation (giảm nhẹ) hiệu quả nhất bao gồm đầu tư vào đào tạo lại và các chương trình hỗ trợ xã hội. Đây là cách tiếp cận toàn diện để giải quyết vấn đề mất việc làm."
+    },
+    {
+      "question_text": "The concept of 'lifelong learning' has become essential because ___.",
+      "option_a": "traditional education is no longer valuable.",
+      "option_b": "automation accelerates the pace of workplace change, requiring continuous skill development.",
+      "option_c": "workers no longer need formal qualifications.",
+      "option_d": "it eliminates the need for professional certifications.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Lifelong learning trở nên thiết yếu vì tự động hóa tăng tốc độ thay đổi trong nơi làm việc. Công nhân cần liên tục cập nhật kỹ năng để duy trì sự liên quan."
+    },
+    {
+      "question_text": "A 'human-centric approach' to automation prioritizes ___.",
+      "option_a": "maximizing profits regardless of worker welfare.",
+      "option_b": "eliminating all human involvement in production.",
+      "option_c": "ensuring technology serves human needs and well-being.",
+      "option_d": "rejecting all forms of technological advancement.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Human-centric approach đặt con người và nhu cầu của họ ở trung tâm. Nó đảm bảo rằng công nghệ phục vụ con người thay vì ngược lại."
+    },
+    {
+      "question_text": "Which of the following best illustrates the concept of 'technological obsolescence' in the workforce?",
+      "option_a": "A worker's salary increases over time.",
+      "option_b": "A worker's previously valuable skills become outdated due to rapid technological change.",
+      "option_c": "A worker receives regular promotions.",
+      "option_d": "A worker maintains the same job for decades without change.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Technological obsolescence xảy ra khi kỹ năng trước đây có giá trị trở nên lỗi thời do thay đổi công nghệ. Đây là một rủi ro chính trong thế giới công việc hiện đại."
+    },
+    {
+      "question_text": "How does 'workforce resilience' contribute to managing the challenges of automation?",
+      "option_a": "It eliminates the need for technological advancement.",
+      "option_b": "It enables workers to recover from disruptions and adapt to changing job requirements.",
+      "option_c": "It guarantees permanent employment for all workers.",
+      "option_d": "It prevents automation from occurring.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Workforce resilience (khả năng phục hồi) cho phép công nhân thích ứng với thay đổi. Đây là yếu tố quan trọng để quản lý những thách thức của tự động hóa."
+    }
+  ]
+}

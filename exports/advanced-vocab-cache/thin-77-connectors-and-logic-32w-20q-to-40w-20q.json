@@ -1,0 +1,175 @@
+{
+  "words": [
+    {
+      "word": "concurrently",
+      "pronunciation": "/kənˈkɜːrəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "Xảy ra hoặc diễn ra cùng lúc, đồng thời; thường dùng để chỉ hai sự kiện hoặc hành động song song mà không nhất thiết có mối quan hệ tương phản",
+      "definition_en": "At the same time; simultaneously, often used to show parallel events without direct contrast",
+      "level": "B2",
+      "synonyms": [
+        "simultaneously",
+        "at the same time"
+      ],
+      "antonyms": [
+        "sequentially",
+        "subsequently"
+      ],
+      "example_sentence": "The government implemented economic reforms concurrently with social policy changes, addressing multiple challenges at once."
+    },
+    {
+      "word": "conversely",
+      "pronunciation": "/ˈkɒnvɜːsli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "Ngược lại, theo chiều ngược; dùng để giới thiệu một ý kiến hoặc tình huống đối lập hoàn toàn với phía trước",
+      "definition_en": "In the opposite way or direction; introducing a contrasting idea or situation",
+      "level": "B2",
+      "synonyms": [
+        "inversely",
+        "oppositely"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "Urban areas experience rapid technological advancement; conversely, rural regions often lag behind in digital infrastructure."
+    },
+    {
+      "word": "paradoxically",
+      "pronunciation": "/ˌpærəˈdɒksɪkli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "Một cách mâu thuẫn, trái ngược với logic thông thường; dùng khi một sự việc vừa đúng vừa sai hoặc chứa hai ý kiến đối lập",
+      "definition_en": "In a way that seems contradictory or absurd, yet may be true; expressing a paradox",
+      "level": "B2",
+      "synonyms": [
+        "contradictorily",
+        "ironically"
+      ],
+      "antonyms": [
+        "logically",
+        "consistently"
+      ],
+      "example_sentence": "Paradoxically, increasing screen time for educational purposes has led to decreased attention spans in young learners."
+    },
+    {
+      "word": "notwithstanding",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mặc dù, bất chấp; từ cổ điển dùng để chỉ sự nhượng bộ hoặc bỏ qua một trở ngại, thường xuất hiện trong văn bản chính thức",
+      "definition_en": "In spite of; despite; a formal connector showing concession despite an obstacle",
+      "level": "B2",
+      "synonyms": [
+        "despite",
+        "in spite of"
+      ],
+      "antonyms": [
+        "because of",
+        "due to"
+      ],
+      "example_sentence": "Notwithstanding the economic downturn, the company maintained its investment in research and development."
+    },
+    {
+      "word": "albeit",
+      "pronunciation": "/ɔːlˈbiːɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mặc dù, tuy rằng; từ nối nhượng bộ nhẹ nhàng, thường dùng để thêm một điều kiện hoặc sự hạn chế vào câu trước",
+      "definition_en": "Though; although; a concessive connector that adds a qualification or limitation",
+      "level": "B2",
+      "synonyms": [
+        "though",
+        "although"
+      ],
+      "antonyms": [
+        "because",
+        "since"
+      ],
+      "example_sentence": "The project succeeded, albeit with significant delays and budget overruns."
+    },
+    {
+      "word": "conversely speaking",
+      "pronunciation": "/ˈkɒnvɜːsli ˈspiːkɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nói theo chiều ngược lại, từ góc độ đối lập; cụm từ dùng để giới thiệu một quan điểm hoàn toàn trái ngược",
+      "definition_en": "From the opposite perspective; introducing a contrasting viewpoint or argument",
+      "level": "B2",
+      "synonyms": [
+        "on the flip side",
+        "from the opposite angle"
+      ],
+      "antonyms": [
+        "similarly speaking",
+        "likewise"
+      ],
+      "example_sentence": "Developed nations prioritize environmental regulations; conversely speaking, emerging economies often prioritize rapid industrialization."
+    },
+    {
+      "word": "by the same token",
+      "pronunciation": "/baɪ ðə ˈseɪm ˈtəʊkən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Theo cách tương tự, cũng vậy; cụm từ dùng để chỉ ra rằng một lập luận hoặc tình huống áp dụng tương tự cho trường hợp khác",
+      "definition_en": "In the same way; by the same reasoning; showing parallel logic or consequence",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "antonyms": [
+        "conversely",
+        "on the other hand"
+      ],
+      "example_sentence": "If we accept that climate change requires immediate action, by the same token, we must support renewable energy investments."
+    },
+    {
+      "word": "to a certain extent",
+      "pronunciation": "/tuː ə ˈsɜːtn ɪkˈstent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ở một mức độ nào đó, phần nào; cụm từ dùng để chỉ sự nhượng bộ một phần, không hoàn toàn đồng ý hoặc không hoàn toàn phủ nhận",
+      "definition_en": "Partially; to some degree; a qualifier showing partial agreement or concession",
+      "level": "C1",
+      "synonyms": [
+        "partly",
+        "in some respects"
+      ],
+      "antonyms": [
+        "completely",
+        "entirely"
+      ],
+      "example_sentence": "To a certain extent, social media has democratized information access, though it has also spread misinformation."
+    },
+    {
+      "word": "on the flip side",
+      "pronunciation": "/ɒn ðə ˈflɪp saɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mặt khác, từ góc độ khác; cụm từ thân thiện dùng để giới thiệu một quan điểm đối lập hoặc một khía cạnh khác của vấn đề",
+      "definition_en": "On the other hand; from a different perspective; a conversational contrast connector",
+      "level": "C1",
+      "synonyms": [
+        "on the other hand",
+        "conversely"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "Remote work offers flexibility and cost savings; on the flip side, it can lead to isolation and reduced team collaboration."
+    },
+    {
+      "word": "in any case",
+      "pronunciation": "/ɪn ˈeni keɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Dù sao đi nữa, trong mọi trường hợp; cụm từ dùng để chỉ ra rằng một kết luận hoặc hành động vẫn đúng bất kể các yếu tố khác",
+      "definition_en": "Regardless; in any situation; a connector showing that a conclusion holds despite other factors",
+      "level": "C1",
+      "synonyms": [
+        "in any event",
+        "at any rate"
+      ],
+      "antonyms": [
+        "specifically",
+        "particularly"
+      ],
+      "example_sentence": "Whether the policy succeeds or fails, in any case, the government must evaluate its impact on vulnerable populations."
+    }
+  ],
+  "questions": []
+}

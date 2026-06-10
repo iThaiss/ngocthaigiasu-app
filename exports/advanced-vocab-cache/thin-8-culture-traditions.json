@@ -1,0 +1,406 @@
+{
+  "words": [
+    {
+      "word": "cultural identity",
+      "pronunciation": "/ˈkʌltʃərəl aɪˈdentɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bộ đặc điểm, giá trị, và niềm tin mà một nhóm người hoặc cộng đồng sử dụng để định nghĩa chính mình",
+      "definition_en": "the characteristics, values, and beliefs that define a group or community",
+      "level": "B2",
+      "synonyms": [
+        "cultural character",
+        "ethnic identity"
+      ],
+      "antonyms": [],
+      "example_sentence": "The younger generation struggles to maintain their cultural identity while adapting to modern society."
+    },
+    {
+      "word": "intangible heritage",
+      "pronunciation": "/ɪnˈtændʒəbl ˈherɪtɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những yếu tố văn hóa không thể chạm được như ngôn ngữ, âm nhạc, khiêu vũ, và kiến thức truyền thống",
+      "definition_en": "cultural elements that cannot be physically touched, such as language, music, and traditional knowledge",
+      "level": "B2",
+      "synonyms": [
+        "immaterial culture",
+        "non-material heritage"
+      ],
+      "antonyms": [
+        "tangible heritage"
+      ],
+      "example_sentence": "UNESCO recognizes intangible heritage as equally important as monuments and artifacts."
+    },
+    {
+      "word": "cultural assimilation",
+      "pronunciation": "/ˌkʌltʃərəl əˌsɪməˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình mà một nhóm người dần dần chấp nhận và hòa nhập vào văn hóa của một nhóm khác",
+      "definition_en": "the process by which individuals adopt the cultural traits of another group",
+      "level": "B2",
+      "synonyms": [
+        "cultural integration",
+        "acculturation"
+      ],
+      "antonyms": [
+        "cultural preservation"
+      ],
+      "example_sentence": "The debate over cultural assimilation raises questions about maintaining minority traditions."
+    },
+    {
+      "word": "oral tradition",
+      "pronunciation": "/ˈɔːrəl trəˈdɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách truyền tải kiến thức, câu chuyện, và giá trị qua lời nói từ thế hệ này sang thế hệ khác",
+      "definition_en": "the transmission of knowledge and stories through spoken word rather than written form",
+      "level": "B2",
+      "synonyms": [
+        "verbal transmission",
+        "spoken heritage"
+      ],
+      "antonyms": [
+        "written tradition"
+      ],
+      "example_sentence": "Many indigenous communities rely on oral tradition to preserve their historical narratives."
+    },
+    {
+      "word": "cultural norm",
+      "pronunciation": "/ˈkʌltʃərəl nɔːrm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những quy tắc hoặc tiêu chuẩn hành vi được xã hội chấp nhận và mong đợi",
+      "definition_en": "accepted standards of behavior within a society or culture",
+      "level": "C1",
+      "synonyms": [
+        "social convention",
+        "cultural standard"
+      ],
+      "antonyms": [
+        "cultural deviation"
+      ],
+      "example_sentence": "Greeting customs vary widely; what is a cultural norm in one country may be offensive in another."
+    },
+    {
+      "word": "syncretism",
+      "pronunciation": "/ˈsɪŋkrətɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự kết hợp các yếu tố từ các tôn giáo, triết học, hoặc nền văn hóa khác nhau thành một hệ thống mới",
+      "definition_en": "the blending of different religious, philosophical, or cultural elements into a unified system",
+      "level": "B2",
+      "synonyms": [
+        "cultural fusion",
+        "religious blending"
+      ],
+      "antonyms": [
+        "cultural purity"
+      ],
+      "example_sentence": "Brazilian Carnival demonstrates religious syncretism, combining Catholic and African traditions."
+    },
+    {
+      "word": "cultural taboo",
+      "pronunciation": "/ˈkʌltʃərəl təˈbuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những hành động, chủ đề, hoặc vật thể bị cấm hoặc tránh tránh trong một nền văn hóa vì lý do tôn giáo hoặc xã hội",
+      "definition_en": "prohibited actions or topics in a culture due to religious or social reasons",
+      "level": "B2",
+      "synonyms": [
+        "cultural prohibition",
+        "forbidden practice"
+      ],
+      "antonyms": [
+        "cultural acceptance"
+      ],
+      "example_sentence": "Discussing certain family matters remains a cultural taboo in many traditional societies."
+    },
+    {
+      "word": "rite of passage",
+      "pronunciation": "/ˈraɪt əv ˈpæsɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một nghi lễ hoặc sự kiện đánh dấu một giai đoạn quan trọng trong cuộc sống của một người, như trưởng thành",
+      "definition_en": "a ceremony or event marking an important transition in a person's life",
+      "level": "B2",
+      "synonyms": [
+        "initiation ceremony",
+        "transition ritual"
+      ],
+      "antonyms": [],
+      "example_sentence": "Coming-of-age ceremonies serve as rites of passage in many cultures worldwide."
+    },
+    {
+      "word": "cultural artifact",
+      "pronunciation": "/ˈkʌltʃərəl ˈɑːrtɪfækt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một vật thể vật chất được tạo ra bởi con người phản ánh các khía cạnh của một nền văn hóa",
+      "definition_en": "a physical object created by humans that reflects aspects of a culture",
+      "level": "B2",
+      "synonyms": [
+        "cultural object",
+        "historical artifact"
+      ],
+      "antonyms": [],
+      "example_sentence": "Museums display cultural artifacts to educate visitors about ancient civilizations."
+    },
+    {
+      "word": "cultural appropriation",
+      "pronunciation": "/ˌkʌltʃərəl ˌæprəʊˈpreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "việc một nhóm người lấy hoặc sử dụng các yếu tố của một nền văn hóa khác, thường gây tranh cãi",
+      "definition_en": "the adoption of elements from one culture by members of another, often controversial",
+      "level": "B2",
+      "synonyms": [
+        "cultural borrowing",
+        "cultural imitation"
+      ],
+      "antonyms": [
+        "cultural respect"
+      ],
+      "example_sentence": "The fashion industry faces criticism for cultural appropriation when using sacred symbols."
+    },
+    {
+      "word": "vernacular",
+      "pronunciation": "/vərˈnækjələr/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngôn ngữ hoặc phương ngữ được nói hàng ngày bởi người dân thông thường, không phải ngôn ngữ chính thức",
+      "definition_en": "the everyday language spoken by ordinary people in a region, not formal or literary",
+      "level": "B2",
+      "synonyms": [
+        "dialect",
+        "colloquial language"
+      ],
+      "antonyms": [
+        "formal language",
+        "standard language"
+      ],
+      "example_sentence": "The author uses vernacular speech to make the characters more authentic and relatable."
+    },
+    {
+      "word": "cultural relativism",
+      "pronunciation": "/ˌkʌltʃərəl rɪˈlætɪvɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quan điểm rằng các niềm tin và thực hành của một nền văn hóa nên được hiểu trong bối cảnh của chính nó, không phải theo tiêu chuẩn của nền văn hóa khác",
+      "definition_en": "the view that beliefs and practices should be understood within their own cultural context",
+      "level": "B2",
+      "synonyms": [
+        "cultural perspective",
+        "contextual understanding"
+      ],
+      "antonyms": [
+        "ethnocentrism"
+      ],
+      "example_sentence": "Anthropologists apply cultural relativism to avoid imposing their own values on other societies."
+    },
+    {
+      "word": "cultural monument",
+      "pronunciation": "/ˈkʌltʃərəl ˈmɒnjumənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một công trình kiến trúc hoặc địa điểm được công nhận có giá trị lịch sử hoặc văn hóa đặc biệt",
+      "definition_en": "a building or site recognized for its historical or cultural significance",
+      "level": "C1",
+      "synonyms": [
+        "historical monument",
+        "landmark"
+      ],
+      "antonyms": [],
+      "example_sentence": "The Great Wall of China is a cultural monument that attracts millions of visitors annually."
+    },
+    {
+      "word": "cultural ambassador",
+      "pronunciation": "/ˈkʌltʃərəl ˈæmbæsədər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một người đại diện cho nền văn hóa của mình và giúp quảng bá sự hiểu biết về nó ở các nước khác",
+      "definition_en": "a person who represents and promotes their culture to other nations",
+      "level": "B2",
+      "synonyms": [
+        "cultural representative",
+        "cultural advocate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The musician became a cultural ambassador, sharing traditional music with international audiences."
+    },
+    {
+      "word": "cultural context",
+      "pronunciation": "/ˈkʌltʃərəl ˈkɒntekst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những điều kiện, hoàn cảnh, và nền tảng văn hóa cần thiết để hiểu một sự kiện, tác phẩm, hoặc hành vi",
+      "definition_en": "the circumstances and cultural background necessary to understand something",
+      "level": "B2",
+      "synonyms": [
+        "cultural background",
+        "cultural setting"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding the cultural context is essential for interpreting ancient texts correctly."
+    },
+    {
+      "word": "cultural pluralism",
+      "pronunciation": "/ˌkʌltʃərəl ˈplʊərəlɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một xã hội hoặc hệ thống chính trị cho phép và công nhận sự tồn tại của nhiều nền văn hóa khác nhau",
+      "definition_en": "a society that recognizes and accepts the coexistence of multiple cultures",
+      "level": "B2",
+      "synonyms": [
+        "multiculturalism",
+        "cultural diversity"
+      ],
+      "antonyms": [
+        "monoculturalism"
+      ],
+      "example_sentence": "Canada is often cited as an example of cultural pluralism in action."
+    },
+    {
+      "word": "cultural transmission",
+      "pronunciation": "/ˌkʌltʃərəl trænzˈmɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình truyền tải kiến thức, giá trị, và kỹ năng từ thế hệ này sang thế hệ khác",
+      "definition_en": "the process of passing cultural knowledge and values from one generation to the next",
+      "level": "B2",
+      "synonyms": [
+        "cultural inheritance",
+        "cultural transfer"
+      ],
+      "antonyms": [
+        "cultural loss"
+      ],
+      "example_sentence": "Family gatherings play a crucial role in cultural transmission of traditions."
+    },
+    {
+      "word": "cultural stereotype",
+      "pronunciation": "/ˈkʌltʃərəl ˈsteriətaɪp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một quan niệm chung, thường không chính xác, về các đặc điểm của một nhóm văn hóa hoặc dân tộc",
+      "definition_en": "a generalized and often inaccurate belief about a cultural or ethnic group",
+      "level": "B2",
+      "synonyms": [
+        "cultural bias",
+        "prejudice"
+      ],
+      "antonyms": [
+        "cultural understanding"
+      ],
+      "example_sentence": "Media representations often reinforce harmful cultural stereotypes about minority groups."
+    },
+    {
+      "word": "cultural evolution",
+      "pronunciation": "/ˌkʌltʃərəl ˌiːvəˈluːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi và phát triển của các yếu tố văn hóa theo thời gian do ảnh hưởng của môi trường và tương tác xã hội",
+      "definition_en": "the gradual change and development of cultural elements over time",
+      "level": "B2",
+      "synonyms": [
+        "cultural change",
+        "cultural development"
+      ],
+      "antonyms": [
+        "cultural stagnation"
+      ],
+      "example_sentence": "The evolution of language demonstrates how cultures adapt and change over centuries."
+    },
+    {
+      "word": "cultural institution",
+      "pronunciation": "/ˈkʌltʃərəl ˌɪnstɪˈtjuːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một tổ chức hoặc cơ sở như bảo tàng, thư viện, hoặc nhà hát dành cho bảo vệ và quảng bá văn hóa",
+      "definition_en": "an organization dedicated to preserving and promoting cultural heritage",
+      "level": "B2",
+      "synonyms": [
+        "cultural organization",
+        "cultural center"
+      ],
+      "antonyms": [],
+      "example_sentence": "The British Museum is a major cultural institution that houses artifacts from around the world."
+    },
+    {
+      "word": "cultural significance",
+      "pronunciation": "/ˌkʌltʃərəl sɪɡˈnɪfɪkəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tầm quan trọng hoặc ý nghĩa của một sự vật, sự kiện, hoặc thực hành đối với một nền văn hóa",
+      "definition_en": "the importance or meaning of something within a particular culture",
+      "level": "B2",
+      "synonyms": [
+        "cultural importance",
+        "cultural value"
+      ],
+      "antonyms": [
+        "cultural insignificance"
+      ],
+      "example_sentence": "The dragon holds great cultural significance in many Asian societies."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'intangible heritage'?",
+      "option_a": "Physical objects like sculptures and paintings preserved in museums",
+      "option_b": "Non-material cultural elements such as music, language, and traditional knowledge",
+      "option_c": "Ancient buildings and archaeological sites",
+      "option_d": "Modern technological innovations created by contemporary artists",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intangible heritage (di sản phi vật thể) đề cập đến những yếu tố văn hóa không thể chạm được như âm nhạc, ngôn ngữ, khiêu vũ, và kiến thức truyền thống. Các lựa chọn A, C, D đều liên quan đến di sản vật thể hoặc hiện đại, không phải intangible heritage."
+    },
+    {
+      "question_text": "The concept of 'cultural relativism' suggests that we should evaluate other cultures based on ___.",
+      "option_a": "Western standards and values",
+      "option_b": "their own cultural context and values",
+      "option_c": "universal moral principles",
+      "option_d": "scientific evidence alone",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cultural relativism (chủ nghĩa tương đối văn hóa) là quan điểm rằng các niềm tin và thực hành nên được hiểu trong bối cảnh của chính nó, không phải theo tiêu chuẩn của nền văn hóa khác. Đáp án A là ethnocentrism (chủ nghĩa trung tâm dân tộc), đối lập với cultural relativism."
+    },
+    {
+      "question_text": "What is the primary purpose of a 'rite of passage' in traditional cultures?",
+      "option_a": "To entertain community members with celebrations",
+      "option_b": "To mark an important transition in a person's life and integrate them into a new social status",
+      "option_c": "To punish individuals who break cultural rules",
+      "option_d": "To establish trade relationships with neighboring communities",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Rite of passage (nghi lễ chuyển tiếp) là một nghi lễ đánh dấu giai đoạn quan trọng trong cuộc sống, như trưởng thành. Nó giúp tích hợp cá nhân vào một địa vị xã hội mới. Các lựa chọn khác không phản ánh chức năng chính của rite of passage."
+    },
+    {
+      "question_text": "The term 'cultural appropriation' is often controversial because it involves ___.",
+      "option_a": "the respectful exchange of cultural practices between communities",
+      "option_b": "the adoption of elements from one culture by another, sometimes without proper understanding or permission",
+      "option_c": "the preservation of traditional practices within their original culture",
+      "option_d": "the scientific study of different cultural practices",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cultural appropriation (lấy cắp văn hóa) là việc một nhóm người lấy hoặc sử dụng các yếu tố của một nền văn hóa khác, thường gây tranh cãi vì thiếu hiểu biết hoặc sự cho phép. Đáp án A mô tả cultural exchange (trao đổi văn hóa), không phải appropriation."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'Understanding the ___ is essential for interpreting historical documents correctly.'?",
+      "option_a": "cultural context",
+      "option_b": "cultural stereotype",
+      "option_c": "cultural taboo",
+      "option_d": "cultural evolution",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cultural context (bối cảnh văn hóa) là những điều kiện và nền tảng cần thiết để hiểu một sự vật hoặc sự kiện. Các lựa chọn khác không phù hợp với ngữ cảnh của câu."
+    },
+    {
+      "question_text": "In the context of language, 'vernacular' refers to ___.",
+      "option_a": "the formal, standardized language used in official documents",
+      "option_b": "the everyday language spoken by ordinary people in a region",
+      "option_c": "an ancient language no longer in use",
+      "option_d": "a language created for international communication",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Vernacular (tiếng địa phương/tiếng thường dân) là ngôn ngữ hoặc phương ngữ được nói hàng ngày bởi người dân thông thường, không phải ngôn ngữ chính thức. Đáp án A mô tả formal language, đối lập với vernacular."
+    },
+    {
+      "question_text": "Which of the following is an example of 'cultural transmission'?",
+      "option_a": "A government banning traditional practices",
+      "option_b": "Grandparents teaching grandchildren traditional cooking methods and family stories",
+      "option_c": "A museum displaying artifacts from different cultures",
+      "option_d": "A country adopting technology from another nation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Cultural transmission (truyền tải văn hóa) là quá trình truyền tải kiến thức, giá trị, và kỹ năng từ thế hệ này sang thế hệ khác. Đáp án B là ví dụ điển hình. Các lựa chọn khác không phản ánh quá trình truyền tải này."
+    }
+  ]
+}

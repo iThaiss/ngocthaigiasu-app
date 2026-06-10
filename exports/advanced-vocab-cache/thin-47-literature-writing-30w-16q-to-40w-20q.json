@@ -1,0 +1,228 @@
+{
+  "words": [
+    {
+      "word": "motif",
+      "pronunciation": "/moʊˈtiːf/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một chủ đề, hình ảnh hoặc ý tưởng được lặp lại nhiều lần trong một tác phẩm văn học để tạo ra ý nghĩa hoặc hiệu ứng thẩm mỹ.",
+      "definition_en": "A recurring element, image, or idea in a literary work that contributes to its overall meaning or artistic effect.",
+      "level": "C1",
+      "synonyms": [
+        "theme",
+        "pattern",
+        "leitmotif"
+      ],
+      "antonyms": [],
+      "example_sentence": "The motif of water appears throughout the novel, symbolizing both rebirth and destruction in the protagonist's journey."
+    },
+    {
+      "word": "stream of consciousness",
+      "pronunciation": "/ˈstriːm əv ˈkɑːnʃəsnəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kỹ thuật viết mô tả dòng suy nghĩ liên tục, không được sắp xếp logic, của một nhân vật, thường bao gồm cả những suy nghĩ vô thức.",
+      "definition_en": "A narrative technique that portrays the continuous flow of a character's thoughts and feelings, often unstructured and including subconscious elements.",
+      "level": "C1",
+      "synonyms": [
+        "interior monologue",
+        "free association"
+      ],
+      "antonyms": [],
+      "example_sentence": "James Joyce's Ulysses employs stream of consciousness to reveal the inner workings of Leopold Bloom's mind throughout a single day."
+    },
+    {
+      "word": "unreliable narrator",
+      "pronunciation": "/ʌnrɪˈlaɪəbl ˈnærətər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một người kể chuyện mà lời kể của họ không đáng tin cậy do sự thiên vị, điên rồ, hoặc cố ý che giấu sự thật.",
+      "definition_en": "A narrator whose account of events cannot be fully trusted due to bias, mental instability, or deliberate deception.",
+      "level": "C1",
+      "synonyms": [
+        "biased narrator",
+        "deceptive narrator"
+      ],
+      "antonyms": [
+        "omniscient narrator",
+        "objective narrator"
+      ],
+      "example_sentence": "The unreliable narrator in Gone Girl keeps readers guessing about the truth, making the twist ending particularly shocking."
+    },
+    {
+      "word": "verisimilitude",
+      "pronunciation": "/ˌverɪsɪˈmɪlɪtjuːd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chất lượng của một tác phẩm văn học hoặc nghệ thuật có vẻ như thực tế hoặc có thể xảy ra, mặc dù nó có thể là hư cấu.",
+      "definition_en": "The quality of appearing to be true or real, even if the work is fictional; the appearance of authenticity.",
+      "level": "C2",
+      "synonyms": [
+        "authenticity",
+        "realism",
+        "plausibility"
+      ],
+      "antonyms": [
+        "implausibility",
+        "artificiality"
+      ],
+      "example_sentence": "The author's meticulous attention to historical detail lends verisimilitude to the narrative, making readers believe in the fictional world."
+    },
+    {
+      "word": "pastiche",
+      "pronunciation": "/pæˈstiːʃ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một tác phẩm văn học hoặc nghệ thuật được tạo thành từ các yếu tố được mượn hoặc bắt chước từ các tác phẩm khác, thường mang tính hài hước hoặc tôn trọng.",
+      "definition_en": "A literary or artistic work composed of elements borrowed or imitated from other works, often done humorously or respectfully.",
+      "level": "C1",
+      "synonyms": [
+        "imitation",
+        "parody",
+        "homage"
+      ],
+      "antonyms": [
+        "original work"
+      ],
+      "example_sentence": "The author's latest novel is a clever pastiche of Victorian detective fiction, blending classic tropes with modern sensibilities."
+    },
+    {
+      "word": "denouement",
+      "pronunciation": "/ˌdeɪnuːˈmɑː/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phần kết thúc của một tác phẩm văn học, đặc biệt là khi các sợi dây của cốt truyện được giải quyết và mọi thứ được làm rõ.",
+      "definition_en": "The final part of a narrative in which the strands of the plot are drawn together and matters are explained or resolved.",
+      "level": "C1",
+      "synonyms": [
+        "resolution",
+        "conclusion",
+        "ending"
+      ],
+      "antonyms": [
+        "exposition",
+        "rising action"
+      ],
+      "example_sentence": "The denouement of the mystery novel reveals that the butler was innocent all along, subverting readers' expectations."
+    },
+    {
+      "word": "bildungsroman",
+      "pronunciation": "/ˈbɪldʊŋzroʊˌmɑːn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một thể loại tiểu thuyết tập trung vào sự phát triển tâm lý và đạo đức của nhân vật chính từ tuổi trẻ đến trưởng thành.",
+      "definition_en": "A novel that focuses on the psychological and moral development of the protagonist from youth to adulthood.",
+      "level": "C2",
+      "synonyms": [
+        "coming-of-age novel",
+        "novel of formation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Jane Eyre is a classic bildungsroman that traces the heroine's journey from orphaned child to independent woman."
+    },
+    {
+      "word": "metafiction",
+      "pronunciation": "/ˌmetəˈfɪkʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một tác phẩm văn học tự ý thức về bản chất hư cấu của nó, thường bằng cách tham chiếu đến chính nó hoặc quá trình viết.",
+      "definition_en": "Fiction that is self-consciously aware of its own fictional nature, often by referencing itself or the writing process.",
+      "level": "C2",
+      "synonyms": [
+        "self-referential fiction",
+        "postmodern fiction"
+      ],
+      "antonyms": [],
+      "example_sentence": "Italo Calvino's If on a winter's night a traveler is a work of metafiction that directly addresses the reader and plays with narrative conventions."
+    },
+    {
+      "word": "turn of phrase",
+      "pronunciation": "/ˈtɜːrn əv freɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một cách diễn đạt hoặc sử dụng từ ngữ đặc biệt, thường thể hiện kỹ năng hoặc phong cách viết của tác giả.",
+      "definition_en": "A particular way of expressing something in words; a distinctive use of language that reflects a writer's style.",
+      "level": "B2",
+      "synonyms": [
+        "expression",
+        "phrasing",
+        "wording"
+      ],
+      "antonyms": [],
+      "example_sentence": "The author's clever turn of phrase in describing the sunset made the ordinary scene feel extraordinary and memorable."
+    },
+    {
+      "word": "narrative arc",
+      "pronunciation": "/ˈnærətɪv ɑːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Cấu trúc tổng thể của một câu chuyện, bao gồm sự phát triển từ phơi bày, tăng lên, cao trào, giảm xuống, đến kết thúc.",
+      "definition_en": "The overall structure of a story, encompassing the progression from exposition through rising action, climax, falling action, to resolution.",
+      "level": "B2",
+      "synonyms": [
+        "plot structure",
+        "story structure"
+      ],
+      "antonyms": [],
+      "example_sentence": "The narrative arc of the trilogy spans three decades, following the protagonist's transformation from idealistic youth to disillusioned elder."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the literary technique used in the passage where the character's thoughts flow without logical order, mixing memories, sensations, and emotions?",
+      "option_a": "Stream of consciousness",
+      "option_b": "Free verse",
+      "option_c": "Epistolary narrative",
+      "option_d": "Dramatic monologue",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Stream of consciousness là kỹ thuật mô tả dòng suy nghĩ liên tục, không được sắp xếp logic của nhân vật. Free verse là thuật ngữ thơ, epistolary narrative là kể chuyện qua thư, dramatic monologue là độc thoại kịch."
+    },
+    {
+      "question_text": "The detective in the novel is revealed to be unreliable because _____ throughout the investigation.",
+      "option_a": "he solves the case too quickly",
+      "option_b": "he deliberately withholds crucial information and misrepresents events",
+      "option_c": "he uses complex vocabulary",
+      "option_d": "he interviews too many suspects",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Unreliable narrator là người kể chuyện mà lời kể không đáng tin cậy do sự thiên vị hoặc cố ý che giấu sự thật. Các lựa chọn khác không liên quan đến tính không đáng tin cậy của người kể."
+    },
+    {
+      "question_text": "The author's use of _____ in the novel—repeating the image of a broken mirror throughout—reinforces the theme of fractured identity.",
+      "option_a": "verisimilitude",
+      "option_b": "motif",
+      "option_c": "pastiche",
+      "option_d": "denouement",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Motif là một yếu tố được lặp lại nhiều lần trong tác phẩm. Verisimilitude là tính thực tế, pastiche là bắt chước từ các tác phẩm khác, denouement là phần kết thúc."
+    },
+    {
+      "question_text": "Which term best describes a novel that traces a young woman's psychological and moral development from adolescence to adulthood?",
+      "option_a": "Bildungsroman",
+      "option_b": "Metafiction",
+      "option_c": "Pastiche",
+      "option_d": "Verisimilitude",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Bildungsroman là thể loại tiểu thuyết tập trung vào sự phát triển tâm lý và đạo đức từ tuổi trẻ đến trưởng thành. Metafiction là tác phẩm tự ý thức về bản chất hư cấu, pastiche là bắt chước, verisimilitude là tính thực tế."
+    },
+    {
+      "question_text": "The postmodern novel constantly breaks the fourth wall and references its own fictional nature, making it an example of _____.",
+      "option_a": "bildungsroman",
+      "option_b": "metafiction",
+      "option_c": "stream of consciousness",
+      "option_d": "narrative arc",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Metafiction là tác phẩm tự ý thức về bản chất hư cấu của nó, thường bằng cách tham chiếu đến chính nó. Các lựa chọn khác không phù hợp với mô tả này."
+    },
+    {
+      "question_text": "The author's _____ in describing the protagonist's internal conflict—using unexpected word combinations and clever expressions—demonstrates exceptional writing skill.",
+      "option_a": "turn of phrase",
+      "option_b": "narrative arc",
+      "option_c": "verisimilitude",
+      "option_d": "unreliable narrator",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Turn of phrase là cách diễn đạt hoặc sử dụng từ ngữ đặc biệt, thể hiện phong cách viết. Narrative arc là cấu trúc câu chuyện, verisimilitude là tính thực tế, unreliable narrator là người kể không đáng tin cậy."
+    }
+  ]
+}

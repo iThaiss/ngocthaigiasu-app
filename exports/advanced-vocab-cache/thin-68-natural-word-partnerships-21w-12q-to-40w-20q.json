@@ -1,0 +1,417 @@
+{
+  "words": [
+    {
+      "word": "bear witness to",
+      "pronunciation": "/beə ˈwɪtnəs tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng kiến, làm bằng chứng cho; xác nhận sự tồn tại hoặc xảy ra của điều gì",
+      "definition_en": "to be evidence of something; to testify to the truth or existence of something",
+      "level": "B2",
+      "synonyms": [
+        "testify to",
+        "attest to",
+        "confirm"
+      ],
+      "antonyms": [
+        "deny",
+        "refute"
+      ],
+      "example_sentence": "The rapid growth of renewable energy projects bears witness to society's commitment to sustainability."
+    },
+    {
+      "word": "cut across",
+      "pronunciation": "/kʌt əˈkrɔːs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vượt qua ranh giới; cắt ngang qua; có ảnh hưởng đến nhiều lĩnh vực khác nhau",
+      "definition_en": "to go across something directly; to affect or apply to many different groups or areas",
+      "level": "B2",
+      "synonyms": [
+        "transcend",
+        "span",
+        "traverse"
+      ],
+      "antonyms": [
+        "separate",
+        "divide"
+      ],
+      "example_sentence": "Environmental concerns cut across political boundaries and unite people from different nations."
+    },
+    {
+      "word": "fall short of",
+      "pronunciation": "/fɔːl ʃɔːrt əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "không đạt được; không đủ; thất bại trong việc đạt mục tiêu",
+      "definition_en": "to fail to reach or achieve a required standard or goal",
+      "level": "C1",
+      "synonyms": [
+        "fail to meet",
+        "miss",
+        "underperform"
+      ],
+      "antonyms": [
+        "exceed",
+        "surpass"
+      ],
+      "example_sentence": "Many developing countries fall short of international education standards due to limited resources."
+    },
+    {
+      "word": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, sinh ra, dẫn đến; là nguyên nhân của",
+      "definition_en": "to cause something to happen or exist; to be the origin of",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "trigger"
+      ],
+      "antonyms": [
+        "prevent",
+        "suppress"
+      ],
+      "example_sentence": "The industrial revolution gave rise to unprecedented technological advancement and social change."
+    },
+    {
+      "word": "hold sway",
+      "pronunciation": "/hoʊld sweɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có ảnh hưởng lớn; kiểm soát; thống trị",
+      "definition_en": "to have great influence or control over something or someone",
+      "level": "B2",
+      "synonyms": [
+        "dominate",
+        "prevail",
+        "reign"
+      ],
+      "antonyms": [
+        "yield",
+        "surrender"
+      ],
+      "example_sentence": "Traditional values still hold sway in many rural communities despite rapid urbanization."
+    },
+    {
+      "word": "in the wake of",
+      "pronunciation": "/ɪn ðə weɪk əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngay sau; theo sau; như một hệ quả của",
+      "definition_en": "as a result of something; immediately after something happens",
+      "level": "B2",
+      "synonyms": [
+        "following",
+        "as a result of",
+        "in the aftermath of"
+      ],
+      "antonyms": [
+        "before",
+        "prior to"
+      ],
+      "example_sentence": "In the wake of the pandemic, remote work became a standard practice in many industries."
+    },
+    {
+      "word": "lend credence to",
+      "pronunciation": "/lend ˈkredəns tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho có vẻ đáng tin cậy; hỗ trợ tính xác thực của",
+      "definition_en": "to make something seem more believable or trustworthy",
+      "level": "B2",
+      "synonyms": [
+        "support",
+        "validate",
+        "substantiate"
+      ],
+      "antonyms": [
+        "discredit",
+        "undermine"
+      ],
+      "example_sentence": "Recent scientific studies lend credence to the theory that climate change is accelerating."
+    },
+    {
+      "word": "pave the way for",
+      "pronunciation": "/peɪv ðə weɪ fər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở đường cho; tạo điều kiện thuận lợi cho; chuẩn bị cho",
+      "definition_en": "to make it possible for something to happen; to prepare the conditions for",
+      "level": "B2",
+      "synonyms": [
+        "facilitate",
+        "enable",
+        "prepare"
+      ],
+      "antonyms": [
+        "obstruct",
+        "hinder"
+      ],
+      "example_sentence": "The invention of the internet paved the way for the digital revolution and global connectivity."
+    },
+    {
+      "word": "run counter to",
+      "pronunciation": "/rʌn ˈkaʊntər tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trái ngược với; mâu thuẫn với; đi ngược lại",
+      "definition_en": "to be in direct opposition to something; to contradict",
+      "level": "B2",
+      "synonyms": [
+        "contradict",
+        "oppose",
+        "conflict with"
+      ],
+      "antonyms": [
+        "align with",
+        "support"
+      ],
+      "example_sentence": "The government's new policy runs counter to environmental protection principles."
+    },
+    {
+      "word": "set the stage for",
+      "pronunciation": "/set ðə steɪdʒ fər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tạo điều kiện; chuẩn bị; làm tiền đề cho",
+      "definition_en": "to create conditions that make something possible or likely to happen",
+      "level": "B2",
+      "synonyms": [
+        "prepare",
+        "facilitate",
+        "enable"
+      ],
+      "antonyms": [
+        "prevent",
+        "obstruct"
+      ],
+      "example_sentence": "The economic reforms of the 1990s set the stage for Vietnam's rapid development."
+    },
+    {
+      "word": "stand out",
+      "pronunciation": "/stænd aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nổi bật; trở nên đáng chú ý; khác biệt rõ ràng",
+      "definition_en": "to be noticeably different or better than others; to be conspicuous",
+      "level": "C1",
+      "synonyms": [
+        "distinguish oneself",
+        "excel",
+        "be prominent"
+      ],
+      "antonyms": [
+        "blend in",
+        "fade away"
+      ],
+      "example_sentence": "Her research on renewable energy stands out for its innovative approach and practical applications."
+    },
+    {
+      "word": "strike a balance",
+      "pronunciation": "/straɪk ə ˈbæləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cân bằng; tìm sự cân bằng giữa hai điều",
+      "definition_en": "to find a middle ground between two opposing things; to achieve equilibrium",
+      "level": "B2",
+      "synonyms": [
+        "find equilibrium",
+        "compromise",
+        "harmonize"
+      ],
+      "antonyms": [
+        "extremism",
+        "imbalance"
+      ],
+      "example_sentence": "Sustainable development requires striking a balance between economic growth and environmental protection."
+    },
+    {
+      "word": "take precedence over",
+      "pronunciation": "/teɪk ˈpresɪdəns ˈoʊvər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ưu tiên hơn; có quyền ưu tiên; được xem là quan trọng hơn",
+      "definition_en": "to be considered more important than something else; to have priority",
+      "level": "B2",
+      "synonyms": [
+        "outweigh",
+        "supersede",
+        "override"
+      ],
+      "antonyms": [
+        "yield to",
+        "defer to"
+      ],
+      "example_sentence": "In crisis situations, public safety takes precedence over economic considerations."
+    },
+    {
+      "word": "turn a blind eye to",
+      "pronunciation": "/tɜːrn ə blaɪnd aɪ tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm ngơ; cố tình không nhìn thấy; bỏ qua",
+      "definition_en": "to deliberately ignore something; to pretend not to notice",
+      "level": "B2",
+      "synonyms": [
+        "ignore",
+        "overlook",
+        "disregard"
+      ],
+      "antonyms": [
+        "acknowledge",
+        "address"
+      ],
+      "example_sentence": "Governments cannot turn a blind eye to corruption if they want to build public trust."
+    },
+    {
+      "word": "underscore",
+      "pronunciation": "/ˌʌndərˈskɔːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh; làm nổi bật; gạch dưới tầm quan trọng của",
+      "definition_en": "to emphasize or highlight the importance of something",
+      "level": "B2",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The recent report underscores the urgent need for climate action in developing nations."
+    },
+    {
+      "word": "wield influence",
+      "pronunciation": "/wiːld ˈɪnfluəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sử dụng ảnh hưởng; có quyền lực; thao túng",
+      "definition_en": "to exercise power or control; to have significant impact",
+      "level": "B2",
+      "synonyms": [
+        "exert power",
+        "exercise authority",
+        "command"
+      ],
+      "antonyms": [
+        "surrender power",
+        "yield"
+      ],
+      "example_sentence": "International organizations wield considerable influence over global policy decisions."
+    },
+    {
+      "word": "be fraught with",
+      "pronunciation": "/bi frɔːt wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đầy rẫy; chứa đầy; tràn ngập (thường là điều tiêu cực)",
+      "definition_en": "to be full of or filled with something, usually something undesirable",
+      "level": "B2",
+      "synonyms": [
+        "full of",
+        "laden with",
+        "rife with"
+      ],
+      "antonyms": [
+        "free from",
+        "devoid of"
+      ],
+      "example_sentence": "The transition to a new economic system is fraught with challenges and uncertainties."
+    },
+    {
+      "word": "hinge on",
+      "pronunciation": "/hɪndʒ ɑːn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc vào; tùy thuộc vào; là yếu tố quyết định",
+      "definition_en": "to depend entirely on something; to be determined by",
+      "level": "B2",
+      "synonyms": [
+        "depend on",
+        "rest on",
+        "turn on"
+      ],
+      "antonyms": [
+        "be independent of"
+      ],
+      "example_sentence": "The success of the project hinges on securing adequate funding and skilled personnel."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The rapid adoption of artificial intelligence in healthcare _____ the potential to revolutionize medical diagnosis and treatment.",
+      "option_a": "bears witness to",
+      "option_b": "gives rise to",
+      "option_c": "holds sway",
+      "option_d": "falls short of",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần một cụm từ chỉ 'gây ra, dẫn đến' khả năng cách mạng hóa. 'Gives rise to' (dẫn đến) là phù hợp nhất. 'Bears witness to' (chứng kiến) không phù hợp ngữ cảnh; 'holds sway' (kiểm soát) và 'falls short of' (không đạt) cũng không hợp lý."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence? The government's decision to prioritize environmental protection _____ traditional industrial policies.",
+      "option_a": "runs counter to",
+      "option_b": "paves the way for",
+      "option_c": "sets the stage for",
+      "option_d": "strikes a balance with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Runs counter to' (trái ngược với) chỉ sự mâu thuẫn giữa bảo vệ môi trường và chính sách công nghiệp truyền thống. 'Paves the way for' (mở đường cho) và 'sets the stage for' (chuẩn bị cho) không phù hợp vì không thể hiện sự đối lập."
+    },
+    {
+      "question_text": "The discovery of new renewable energy sources _____ the transition to a sustainable economy.",
+      "option_a": "underscores",
+      "option_b": "paves the way for",
+      "option_c": "turns a blind eye to",
+      "option_d": "takes precedence over",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Paves the way for' (mở đường cho) chỉ việc khám phá năng lượng tái tạo tạo điều kiện cho sự chuyển đổi. 'Underscores' (nhấn mạnh) không phù hợp về cấu trúc; 'turns a blind eye to' (làm ngơ) và 'takes precedence over' (ưu tiên hơn) không hợp lý."
+    },
+    {
+      "question_text": "What does 'bear witness to' mean in the context of academic writing?",
+      "option_a": "To testify in court about something",
+      "option_b": "To be evidence of or confirm the existence of something",
+      "option_c": "To watch something happen without intervening",
+      "option_d": "To provide a written statement about an event",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Trong viết học thuật, 'bear witness to' có nghĩa là 'là bằng chứng của' hoặc 'xác nhận sự tồn tại của'. Các lựa chọn khác quá hẹp hoặc không chính xác về ngữ cảnh học thuật."
+    },
+    {
+      "question_text": "The success of the merger _____ on the ability of both companies to integrate their operations seamlessly.",
+      "option_a": "hinges",
+      "option_b": "stands out",
+      "option_c": "wields influence",
+      "option_d": "cuts across",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Hinges on' (phụ thuộc vào) chỉ rằng thành công của sáp nhập phụ thuộc vào khả năng tích hợp. 'Stands out' (nổi bật), 'wields influence' (sử dụng ảnh hưởng), và 'cuts across' (vượt qua ranh giới) không phù hợp ngữ pháp hoặc ngữ nghĩa."
+    },
+    {
+      "question_text": "Which phrase is closest in meaning to 'be full of difficulties'?",
+      "option_a": "be fraught with",
+      "option_b": "strike a balance",
+      "option_c": "lend credence to",
+      "option_d": "take precedence over",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Be fraught with' (đầy rẫy) có nghĩa là 'chứa đầy' hoặc 'tràn ngập', thường dùng với những điều tiêu cực như khó khăn. Các lựa chọn khác có nghĩa hoàn toàn khác."
+    },
+    {
+      "question_text": "The new regulations _____ the need for stricter environmental standards in manufacturing industries.",
+      "option_a": "turn a blind eye to",
+      "option_b": "underscore",
+      "option_c": "fall short of",
+      "option_d": "hold sway",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Underscore' (nhấn mạnh) là động từ chỉ việc làm nổi bật tầm quan trọng của tiêu chuẩn môi trường. 'Turn a blind eye to' (làm ngơ) mang ý nghĩa tiêu cực; 'fall short of' (không đạt) và 'hold sway' (kiểm soát) không phù hợp."
+    },
+    {
+      "question_text": "In the wake of the financial crisis, many countries _____ their social welfare programs to support vulnerable populations.",
+      "option_a": "cut across",
+      "option_b": "expanded",
+      "option_c": "wielded influence",
+      "option_d": "set the stage for",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'In the wake of' (ngay sau) yêu cầu một động từ chỉ hành động. 'Expanded' (mở rộng) là lựa chọn hợp lý nhất vì các quốc gia thường mở rộng chương trình phúc lợi sau khủng hoảng. Các lựa chọn khác không phù hợp về cấu trúc hoặc ý nghĩa."
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+{
+  "words": [
+    {
+      "word": "curriculum reform",
+      "pronunciation": "/kəˈrɪkjələm rɪˈfɔːrm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thay đổi toàn diện chương trình học để phù hợp với nhu cầu xã hội và công nghệ hiện đại",
+      "definition_en": "Comprehensive changes to educational programs to meet contemporary societal and technological needs",
+      "level": "B2",
+      "synonyms": [
+        "educational overhaul",
+        "pedagogical restructuring"
+      ],
+      "antonyms": [
+        "status quo",
+        "traditional approach"
+      ],
+      "example_sentence": "The government launched a curriculum reform initiative to emphasize critical thinking and digital literacy skills."
+    },
+    {
+      "word": "lifelong learning",
+      "pronunciation": "/ˈlaɪflɔːŋ ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình học tập liên tục suốt cuộc đời để phát triển kỹ năng và kiến thức",
+      "definition_en": "Continuous acquisition of knowledge and skills throughout one's entire life",
+      "level": "B2",
+      "synonyms": [
+        "continuous education",
+        "perpetual learning"
+      ],
+      "antonyms": [
+        "formal education only"
+      ],
+      "example_sentence": "Lifelong learning has become essential in the digital age where skills quickly become obsolete."
+    },
+    {
+      "word": "pedagogical approach",
+      "pronunciation": "/ˌpedəˈɡɒdʒɪkəl əˈprəʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp dạy học và chiến lược giáo dục được áp dụng trong lớp học",
+      "definition_en": "Teaching methods and educational strategies employed in classroom instruction",
+      "level": "C1",
+      "synonyms": [
+        "teaching methodology",
+        "instructional strategy"
+      ],
+      "antonyms": [],
+      "example_sentence": "Modern pedagogical approaches prioritize student-centered learning over traditional lecture-based instruction."
+    },
+    {
+      "word": "digital literacy",
+      "pronunciation": "/ˈdɪdʒɪtəl ˈlɪtərəsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng sử dụng công nghệ số và hiểu biết về thông tin trực tuyến một cách hiệu quả",
+      "definition_en": "The ability to effectively use digital technology and understand online information",
+      "level": "B2",
+      "synonyms": [
+        "technological competence",
+        "digital competency"
+      ],
+      "antonyms": [
+        "digital illiteracy"
+      ],
+      "example_sentence": "Schools must prioritize digital literacy to prepare students for careers in an increasingly technology-driven world."
+    },
+    {
+      "word": "equitable access",
+      "pronunciation": "/ɪˈkwɪtəbəl ˈækses/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Cơ hội tiếp cận giáo dục công bằng cho tất cả học sinh bất kể nền tảng kinh tế xã hội",
+      "definition_en": "Fair and equal opportunity for all students to access quality education regardless of socioeconomic background",
+      "level": "C1",
+      "synonyms": [
+        "equal opportunity",
+        "inclusive access"
+      ],
+      "antonyms": [
+        "educational inequality",
+        "disparate access"
+      ],
+      "example_sentence": "Ensuring equitable access to online learning resources remains a critical challenge in rural communities."
+    },
+    {
+      "word": "blended learning",
+      "pronunciation": "/ˈblendɪd ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mô hình học tập kết hợp giữa học trực tiếp và học trực tuyến",
+      "definition_en": "An educational model combining face-to-face instruction with online learning components",
+      "level": "B2",
+      "synonyms": [
+        "hybrid learning",
+        "mixed-mode education"
+      ],
+      "antonyms": [
+        "purely online learning",
+        "traditional classroom only"
+      ],
+      "example_sentence": "Blended learning has proven effective in accommodating diverse learning styles and schedules."
+    },
+    {
+      "word": "competency-based education",
+      "pronunciation": "/kəmˈpiːtənsi beɪst ˈedʒuːkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống giáo dục tập trung vào việc học sinh đạt được các kỹ năng cụ thể thay vì hoàn thành khóa học",
+      "definition_en": "An educational system focused on students demonstrating mastery of specific skills rather than completing courses",
+      "level": "C1",
+      "synonyms": [
+        "skills-based learning",
+        "mastery-based education"
+      ],
+      "antonyms": [
+        "time-based education"
+      ],
+      "example_sentence": "Competency-based education allows students to progress at their own pace and demonstrate real-world capabilities."
+    },
+    {
+      "word": "critical thinking",
+      "pronunciation": "/ˈkrɪtɪkəl ˈθɪŋkɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng phân tích, đánh giá và suy luận logic về thông tin một cách độc lập",
+      "definition_en": "The ability to analyze, evaluate, and reason logically about information independently",
+      "level": "B2",
+      "synonyms": [
+        "analytical thinking",
+        "logical reasoning"
+      ],
+      "antonyms": [
+        "uncritical acceptance",
+        "passive learning"
+      ],
+      "example_sentence": "Developing critical thinking skills is essential for students to navigate misinformation in the digital age."
+    },
+    {
+      "word": "adaptive learning technology",
+      "pronunciation": "/əˈdæptɪv ˈlɜːrnɪŋ tekˈnɒlədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Công nghệ giáo dục tự động điều chỉnh nội dung và tốc độ học theo nhu cầu của từng học sinh",
+      "definition_en": "Educational technology that automatically adjusts content and pacing based on individual student needs",
+      "level": "C1",
+      "synonyms": [
+        "personalized learning technology",
+        "intelligent tutoring systems"
+      ],
+      "antonyms": [
+        "one-size-fits-all instruction"
+      ],
+      "example_sentence": "Adaptive learning technology enables teachers to provide personalized instruction to students with varying abilities."
+    },
+    {
+      "word": "interdisciplinary approach",
+      "pronunciation": "/ˌɪntərdɪˈsɪplɪneri əˈprəʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp giáo dục kết hợp kiến thức từ nhiều lĩnh vực khác nhau để giải quyết vấn đề",
+      "definition_en": "An educational approach integrating knowledge from multiple disciplines to solve complex problems",
+      "level": "C1",
+      "synonyms": [
+        "cross-disciplinary learning",
+        "integrated curriculum"
+      ],
+      "antonyms": [
+        "siloed learning",
+        "subject-specific instruction"
+      ],
+      "example_sentence": "An interdisciplinary approach to environmental education connects science, economics, and social studies."
+    },
+    {
+      "word": "skill gap",
+      "pronunciation": "/skɪl ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thiếu hụt giữa các kỹ năng mà học sinh có và những kỹ năng mà thị trường lao động yêu cầu",
+      "definition_en": "The disparity between skills students possess and those required by the job market",
+      "level": "B2",
+      "synonyms": [
+        "skills mismatch",
+        "competency deficit"
+      ],
+      "antonyms": [
+        "skills alignment"
+      ],
+      "example_sentence": "Addressing the skill gap requires closer collaboration between educational institutions and industry employers."
+    },
+    {
+      "word": "formative assessment",
+      "pronunciation": "/ˈfɔːrmətɪv əˈsesmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp đánh giá học sinh trong quá trình học để cải thiện kết quả, không chỉ để chấm điểm",
+      "definition_en": "Ongoing evaluation of student learning during instruction to improve outcomes, not merely for grading",
+      "level": "C1",
+      "synonyms": [
+        "continuous assessment",
+        "diagnostic evaluation"
+      ],
+      "antonyms": [
+        "summative assessment"
+      ],
+      "example_sentence": "Formative assessment provides teachers with real-time feedback to adjust instruction and support struggling students."
+    },
+    {
+      "word": "student-centered learning",
+      "pronunciation": "/ˈstjuːdənt ˈsentərd ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mô hình giáo dục đặt học sinh ở vị trí trung tâm, khuyến khích họ chủ động tìm tòi và phát hiện",
+      "definition_en": "An educational model placing students at the center, encouraging active exploration and discovery",
+      "level": "B2",
+      "synonyms": [
+        "learner-centered education",
+        "active learning"
+      ],
+      "antonyms": [
+        "teacher-centered instruction",
+        "passive learning"
+      ],
+      "example_sentence": "Student-centered learning empowers learners to take responsibility for their own educational progress."
+    },
+    {
+      "word": "vocational training",
+      "pronunciation": "/voʊˈkeɪʃənəl ˈtreɪnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Đào tạo kỹ năng thực hành cho một nghề cụ thể, không phải giáo dục đại học truyền thống",
+      "definition_en": "Practical skills training for specific occupations, distinct from traditional academic education",
+      "level": "B2",
+      "synonyms": [
+        "technical training",
+        "occupational education"
+      ],
+      "antonyms": [
+        "academic education",
+        "theoretical learning"
+      ],
+      "example_sentence": "Vocational training programs provide students with practical skills to enter the workforce immediately after graduation."
+    },
+    {
+      "word": "inclusive education",
+      "pronunciation": "/ɪnˈkluːsɪv ˈedʒuːkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống giáo dục đảm bảo tất cả học sinh, kể cả những em khuyết tật, được học chung trong lớp",
+      "definition_en": "An educational system ensuring all students, including those with disabilities, learn together in mainstream classrooms",
+      "level": "B2",
+      "synonyms": [
+        "mainstreaming",
+        "integrated education"
+      ],
+      "antonyms": [
+        "segregated education",
+        "exclusionary practices"
+      ],
+      "example_sentence": "Inclusive education benefits all students by promoting diversity and reducing stigma associated with disabilities."
+    },
+    {
+      "word": "professional development",
+      "pronunciation": "/prəˈfeʃənəl dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các hoạt động đào tạo và phát triển kỹ năng cho giáo viên để cải thiện chất lượng dạy học",
+      "definition_en": "Training and skill-building activities for teachers to enhance teaching quality and effectiveness",
+      "level": "B2",
+      "synonyms": [
+        "teacher training",
+        "continuous professional learning"
+      ],
+      "antonyms": [],
+      "example_sentence": "Regular professional development ensures teachers stay updated with modern pedagogical practices and technology."
+    },
+    {
+      "word": "learning outcome",
+      "pronunciation": "/ˈlɜːrnɪŋ ˈaʊtkʌm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kết quả cụ thể mà học sinh dự kiến đạt được sau khi hoàn thành một khóa học hoặc chương trình",
+      "definition_en": "Specific results students are expected to achieve upon completing a course or program",
+      "level": "B2",
+      "synonyms": [
+        "educational objective",
+        "learning goal"
+      ],
+      "antonyms": [],
+      "example_sentence": "Clear learning outcomes help students understand expectations and enable teachers to measure progress effectively."
+    },
+    {
+      "word": "cognitive development",
+      "pronunciation": "/kɒɡˈnɪtɪv dɪˈveləpmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình phát triển khả năng tư duy, nhận thức và giải quyết vấn đề ở trẻ em",
+      "definition_en": "The process of developing thinking, reasoning, and problem-solving abilities in children",
+      "level": "C1",
+      "synonyms": [
+        "intellectual growth",
+        "mental development"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding cognitive development stages helps educators design age-appropriate learning activities."
+    },
+    {
+      "word": "stakeholder engagement",
+      "pronunciation": "/ˈsteɪkhoʊldər ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự tham gia của các bên liên quan như phụ huynh, giáo viên, học sinh vào quá trình cải cách giáo dục",
+      "definition_en": "Involvement of interested parties such as parents, teachers, and students in educational reform processes",
+      "level": "C1",
+      "synonyms": [
+        "community participation",
+        "stakeholder involvement"
+      ],
+      "antonyms": [
+        "top-down approach"
+      ],
+      "example_sentence": "Successful curriculum reform requires meaningful stakeholder engagement to ensure buy-in from all parties."
+    },
+    {
+      "word": "digital divide",
+      "pronunciation": "/ˈdɪdʒɪtəl dɪˈvaɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự chênh lệch trong tiếp cận công nghệ và internet giữa các nhóm dân cư khác nhau",
+      "definition_en": "The gap in access to technology and internet between different population groups",
+      "level": "B2",
+      "synonyms": [
+        "technology gap",
+        "connectivity disparity"
+      ],
+      "antonyms": [
+        "universal access"
+      ],
+      "example_sentence": "The digital divide has widened educational inequalities, particularly affecting rural and low-income students."
+    },
+    {
+      "word": "metacognition",
+      "pronunciation": "/ˌmetəˈkɒɡnɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Khả năng nhận thức về quá trình tư duy của chính mình, biết cách học hiệu quả",
+      "definition_en": "Awareness of one's own thinking processes and the ability to regulate learning strategies",
+      "level": "C1",
+      "synonyms": [
+        "self-awareness",
+        "learning awareness"
+      ],
+      "antonyms": [],
+      "example_sentence": "Teaching metacognitive strategies helps students become independent learners who can monitor their own progress."
+    },
+    {
+      "word": "standardized testing",
+      "pronunciation": "/ˈstændərdaɪzd ˈtestɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hình thức kiểm tra học sinh sử dụng các đề thi thống nhất để so sánh kết quả giữa các trường",
+      "definition_en": "Uniform testing methods used to compare student performance across schools and regions",
+      "level": "B2",
+      "synonyms": [
+        "high-stakes testing",
+        "common assessment"
+      ],
+      "antonyms": [
+        "alternative assessment",
+        "portfolio assessment"
+      ],
+      "example_sentence": "Critics argue that over-reliance on standardized testing narrows curriculum and increases student stress."
+    },
+    {
+      "word": "collaborative learning",
+      "pronunciation": "/kəˈlæbərətɪv ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp học tập mà học sinh làm việc cùng nhau trong nhóm để đạt mục tiêu chung",
+      "definition_en": "A learning approach where students work together in groups to achieve common educational goals",
+      "level": "B2",
+      "synonyms": [
+        "cooperative learning",
+        "group-based learning"
+      ],
+      "antonyms": [
+        "individual learning",
+        "competitive learning"
+      ],
+      "example_sentence": "Collaborative learning develops teamwork and communication skills essential for modern workplaces."
+    },
+    {
+      "word": "flipped classroom",
+      "pronunciation": "/flɪpt ˈklæsruːm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mô hình lớp học đảo ngược, nơi học sinh tự học lý thuyết ở nhà và làm bài tập thực hành ở lớp",
+      "definition_en": "A classroom model where students learn theory at home and practice application during class time",
+      "level": "C1",
+      "synonyms": [
+        "inverted classroom",
+        "reverse instruction"
+      ],
+      "antonyms": [
+        "traditional classroom"
+      ],
+      "example_sentence": "The flipped classroom model allows teachers to spend class time on higher-order thinking activities."
+    },
+    {
+      "word": "scaffolding",
+      "pronunciation": "/ˈskæfəldɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Kỹ thuật giáo dục cung cấp hỗ trợ tạm thời cho học sinh để họ có thể hoàn thành nhiệm vụ khó",
+      "definition_en": "An instructional technique providing temporary support to help students complete challenging tasks",
+      "level": "C1",
+      "synonyms": [
+        "guided support",
+        "instructional support"
+      ],
+      "antonyms": [
+        "unsupported learning"
+      ],
+      "example_sentence": "Effective scaffolding gradually reduces support as students develop competence and independence."
+    },
+    {
+      "word": "learning analytics",
+      "pronunciation": "/ˈlɜːrnɪŋ ænəˈlɪtɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sử dụng dữ liệu để phân tích và cải thiện quá trình học tập của học sinh",
+      "definition_en": "The use of data to analyze and improve student learning processes and outcomes",
+      "level": "C1",
+      "synonyms": [
+        "educational data analysis",
+        "learning measurement"
+      ],
+      "antonyms": [],
+      "example_sentence": "Learning analytics help educators identify at-risk students and tailor interventions accordingly."
+    },
+    {
+      "word": "soft skills",
+      "pronunciation": "/sɔːft skɪlz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các kỹ năng mềm như giao tiếp, lãnh đạo, giải quyết vấn đề, không phải kỹ năng kỹ thuật",
+      "definition_en": "Non-technical abilities such as communication, leadership, and problem-solving",
+      "level": "B2",
+      "synonyms": [
+        "transferable skills",
+        "interpersonal skills"
+      ],
+      "antonyms": [
+        "hard skills",
+        "technical skills"
+      ],
+      "example_sentence": "Employers increasingly value soft skills like teamwork and adaptability alongside technical expertise."
+    },
+    {
+      "word": "experiential learning",
+      "pronunciation": "/ɪkˌspɪriˈenʃəl ˈlɜːrnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp học tập thông qua trực tiếp trải nghiệm, thực hành và phản ánh",
+      "definition_en": "A learning approach based on direct experience, practice, and reflection",
+      "level": "C1",
+      "synonyms": [
+        "learning by doing",
+        "hands-on learning"
+      ],
+      "antonyms": [
+        "theoretical learning",
+        "passive instruction"
+      ],
+      "example_sentence": "Experiential learning through internships and field projects helps students apply classroom knowledge to real situations."
+    },
+    {
+      "word": "assessment rubric",
+      "pronunciation": "/əˈsesmənt ˈruːbrɪk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bảng tiêu chí chi tiết để đánh giá chất lượng công việc của học sinh một cách khách quan",
+      "definition_en": "A detailed scoring guide with criteria for objectively evaluating student work quality",
+      "level": "C1",
+      "synonyms": [
+        "scoring guide",
+        "evaluation criteria"
+      ],
+      "antonyms": [],
+      "example_sentence": "Clear assessment rubrics help students understand expectations and enable consistent grading across teachers."
+    },
+    {
+      "word": "differentiated instruction",
+      "pronunciation": "/ˌdɪfəˈrenʃieɪtɪd ɪnˈstrʌkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp dạy học điều chỉnh nội dung, quá trình và sản phẩm để phù hợp với nhu cầu của từng học sinh",
+      "definition_en": "An instructional approach that modifies content, process, and products to meet individual student needs",
+      "level": "C1",
+      "synonyms": [
+        "personalized instruction",
+        "individualized learning"
+      ],
+      "antonyms": [
+        "one-size-fits-all instruction"
+      ],
+      "example_sentence": "Differentiated instruction allows teachers to address diverse learning styles and ability levels within the same classroom."
+    },
+    {
+      "word": "open educational resources",
+      "pronunciation": "/ˈoʊpən ˌedʒuːˈkeɪʃənəl ˈrɪsɔːrsɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tài liệu giáo dục miễn phí, có sẵn công khai để sử dụng, sửa đổi và chia sẻ",
+      "definition_en": "Free educational materials publicly available for use, modification, and sharing",
+      "level": "C1",
+      "synonyms": [
+        "OER",
+        "free learning materials"
+      ],
+      "antonyms": [
+        "proprietary resources"
+      ],
+      "example_sentence": "Open educational resources democratize access to quality learning materials for students worldwide."
+    },
+    {
+      "word": "growth mindset",
+      "pronunciation": "/ɡroʊθ ˈmaɪndset/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Niềm tin rằng khả năng có thể phát triển thông qua nỗ lực, không cố định từ lúc sinh ra",
+      "definition_en": "The belief that abilities can be developed through effort rather than being fixed at birth",
+      "level": "B2",
+      "synonyms": [
+        "developmental mindset",
+        "learning orientation"
+      ],
+      "antonyms": [
+        "fixed mindset"
+      ],
+      "example_sentence": "Fostering a growth mindset encourages students to embrace challenges and persist through difficulties."
+    },
+    {
+      "word": "competency framework",
+      "pronunciation": "/kəmˈpiːtənsi ˈfreɪmwɜːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khung chuẩn xác định các kỹ năng và kiến thức cần thiết cho một lĩnh vực hoặc công việc cụ thể",
+      "definition_en": "A structured framework defining required skills and knowledge for specific fields or occupations",
+      "level": "C1",
+      "synonyms": [
+        "skills framework",
+        "competency model"
+      ],
+      "antonyms": [],
+      "example_sentence": "A comprehensive competency framework guides curriculum design and helps align education with industry needs."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the main purpose of formative assessment in modern education?",
+      "option_a": "To assign final grades at the end of a course",
+      "option_b": "To provide ongoing feedback during instruction to improve student learning",
+      "option_c": "To compare student performance across different schools",
+      "option_d": "To identify students who should be excluded from mainstream classes",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Formative assessment là đánh giá trong quá trình học để cải thiện kết quả, không phải chỉ để chấm điểm cuối cùng. Đáp án A sai vì đó là summative assessment. C và D không phải mục đích của formative assessment."
+    },
+    {
+      "question_text": "The digital divide has become a major concern in education reform because it _____ students' opportunities to access quality learning resources.",
+      "option_a": "enhances",
+      "option_b": "expands",
+      "option_c": "exacerbates",
+      "option_d": "facilitates",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Exacerbate = làm trầm trọng thêm. Digital divide làm trầm trọng thêm sự bất bình đẳng trong tiếp cận tài nguyên học tập. Enhance, expand, facilitate đều có nghĩa tích cực, không phù hợp với ngữ cảnh tiêu cực của digital divide."
+    },
+    {
+      "question_text": "What is the primary advantage of blended learning compared to purely online education?",
+      "option_a": "It eliminates the need for classroom interaction entirely",
+      "option_b": "It combines face-to-face instruction with online components to accommodate diverse learning needs",
+      "option_c": "It reduces the workload for teachers significantly",
+      "option_d": "It guarantees higher test scores for all students",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Blended learning kết hợp học trực tiếp và trực tuyến để phù hợp với các nhu cầu học tập khác nhau. A sai vì blended learning vẫn có tương tác trực tiếp. C và D là những khẳng định không chính xác."
+    },
+    {
+      "question_text": "In the context of education reform, 'equitable access' primarily refers to _____ for all students regardless of their socioeconomic background.",
+      "option_a": "equal punishment",
+      "option_b": "fair and equal opportunity to access quality education",
+      "option_c": "identical teaching methods",
+      "option_d": "standardized test scores",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Equitable access = cơ hội tiếp cận công bằng. Nó đề cập đến cơ hội bình đẳng trong giáo dục cho tất cả học sinh. A, C, D không phải ý nghĩa chính xác của equitable access."
+    },
+    {
+      "question_text": "Which pedagogical approach emphasizes that students should take responsibility for their own learning rather than passively receiving information?",
+      "option_a": "Teacher-centered instruction",
+      "option_b": "Lecture-based learning",
+      "option_c": "Student-centered learning",
+      "option_d": "Standardized testing",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Student-centered learning đặt học sinh ở trung tâm, khuyến khích họ chủ động tìm tòi. A và B là teacher-centered. D không phải phương pháp dạy học mà là hình thức đánh giá."
+    },
+    {
+      "question_text": "The concept of 'skill gap' in education reform refers to the mismatch between _____ and the competencies required by employers.",
+      "option_a": "student age and grade level",
+      "option_b": "school location and student demographics",
+      "option_c": "skills students currently possess",
+      "option_d": "teacher qualifications and student performance",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Skill gap = sự thiếu hụt giữa kỹ năng học sinh có và kỹ năng thị trường lao động yêu cầu. Chỉ đáp án C phù hợp với định nghĩa này."
+    },
+    {
+      "question_text": "Which of the following is an example of adaptive learning technology?",
+      "option_a": "A textbook that remains unchanged for all students",
+      "option_b": "Software that adjusts difficulty and content based on individual student performance",
+      "option_c": "A standardized test administered to all students simultaneously",
+      "option_d": "A traditional classroom lecture delivered to a large group",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Adaptive learning technology tự động điều chỉnh nội dung theo nhu cầu từng học sinh. Chỉ đáp án B mô tả đặc điểm này. A, C, D là các phương pháp truyền thống không thích ứng."
+    },
+    {
+      "question_text": "Metacognition in education refers to students' ability to _____ their own thinking processes and learning strategies.",
+      "option_a": "ignore",
+      "option_b": "criticize",
+      "option_c": "monitor and regulate",
+      "option_d": "avoid",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Metacognition = nhận thức về quá trình tư duy của chính mình, biết cách điều chỉnh chiến lược học. Monitor and regulate là ý nghĩa chính xác. A, B, D không phù hợp."
+    },
+    {
+      "question_text": "The 'flipped classroom' model differs from traditional instruction primarily in that it _____ the location where theoretical learning and practical application occur.",
+      "option_a": "eliminates",
+      "option_b": "reverses",
+      "option_c": "duplicates",
+      "option_d": "simplifies",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Flipped classroom đảo ngược: học sinh tự học lý thuyết ở nhà, làm bài tập ở lớp. Reverse = đảo ngược là từ chính xác. A, C, D không phù hợp."
+    },
+    {
+      "question_text": "Scaffolding in education is best understood as a technique that _____ support to help students complete challenging tasks independently.",
+      "option_a": "permanently provides",
+      "option_b": "gradually reduces",
+      "option_c": "completely eliminates",
+      "option_d": "continuously increases",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Scaffolding cung cấp hỗ trợ tạm thời, dần dần giảm khi học sinh phát triển năng lực. Gradually reduces là đặc điểm chính của scaffolding. A, C, D không chính xác."
+    },
+    {
+      "question_text": "Which statement best explains why 'soft skills' have become increasingly important in modern education reform?",
+      "option_a": "They are easier to teach than technical skills",
+      "option_b": "Employers value communication, teamwork, and adaptability alongside technical expertise",
+      "option_c": "They replace the need for traditional academic knowledge",
+      "option_d": "They are only relevant for students pursuing business careers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Soft skills (giao tiếp, lãnh đạo, giải quyết vấn đề) ngày càng quan trọng vì nhà tuyển dụng cần cả kỹ năng mềm và kỹ năng kỹ thuật. A sai vì soft skills khó dạy. C và D là khẳng định sai."
+    },
+    {
+      "question_text": "Experiential learning differs from traditional classroom instruction because it emphasizes _____ and reflection rather than passive reception of information.",
+      "option_a": "memorization",
+      "option_b": "direct experience and practice",
+      "option_c": "standardized testing",
+      "option_d": "lecture notes",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Experiential learning = học thông qua trực tiếp trải nghiệm, thực hành và phản ánh. Direct experience and practice là đặc điểm chính. A, C, D không phù hợp."
+    },
+    {
+      "question_text": "Differentiated instruction allows teachers to _____ content, process, and products to meet the diverse needs of individual students.",
+      "option_a": "standardize",
+      "option_b": "simplify",
+      "option_c": "modify",
+      "option_d": "eliminate",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Differentiated instruction điều chỉnh nội dung, quá trình và sản phẩm để phù hợp với nhu cầu từng học sinh. Modify = điều chỉnh là từ chính xác. A, B, D không phù hợp."
+    },
+    {
+      "question_text": "Open educational resources (OER) have become significant in education reform because they _____ access to quality learning materials for students worldwide.",
+      "option_a": "restrict",
+      "option_b": "democratize",
+      "option_c": "commercialize",
+      "option_d": "monopolize",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Open educational resources là tài liệu miễn phí, công khai, giúp dân chủ hóa tiếp cận giáo dục. Democratize = dân chủ hóa là từ chính xác. A, C, D có ý nghĩa ngược lại hoặc không phù hợp."
+    }
+  ]
+}

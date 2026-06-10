@@ -1,0 +1,242 @@
+{
+  "words": [
+    {
+      "word": "grid decentralization",
+      "pronunciation": "/ɡrɪd ˌdiːˌsentrəlaɪˈzeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình phân tán quyền kiểm soát và sản xuất điện từ các nhà máy tập trung sang các nguồn phân tán nhỏ hơn gần nơi tiêu thụ.",
+      "definition_en": "The process of distributing electricity generation and control from centralized power plants to smaller, localized renewable sources.",
+      "level": "C1",
+      "synonyms": [
+        "distributed control",
+        "localized generation"
+      ],
+      "antonyms": [
+        "centralization",
+        "grid concentration"
+      ],
+      "example_sentence": "Grid decentralization enables communities to generate their own renewable electricity and reduce dependence on distant power stations."
+    },
+    {
+      "word": "stranded assets",
+      "pronunciation": "/ˈstrændɪd ˈæsets/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các tài sản (nhất là nhà máy điện) mất giá trị do thay đổi chính sách hoặc công nghệ, không thể sử dụng hiệu quả trong tương lai.",
+      "definition_en": "Assets, particularly fossil fuel infrastructure, that lose economic value prematurely due to policy shifts or technological obsolescence.",
+      "level": "C1",
+      "synonyms": [
+        "obsolete assets",
+        "depreciated infrastructure"
+      ],
+      "antonyms": [
+        "productive assets",
+        "viable investments"
+      ],
+      "example_sentence": "Coal power plants risk becoming stranded assets as governments accelerate the transition to renewable energy sources."
+    },
+    {
+      "word": "grid parity",
+      "pronunciation": "/ɡrɪd ˈpærɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Điểm mà chi phí điện từ năng lượng tái tạo bằng hoặc thấp hơn chi phí điện từ lưới điện truyền thống.",
+      "definition_en": "The point at which the cost of electricity from renewable sources equals or falls below the cost of grid electricity.",
+      "level": "C1",
+      "synonyms": [
+        "cost competitiveness",
+        "price parity"
+      ],
+      "antonyms": [
+        "cost premium",
+        "price disadvantage"
+      ],
+      "example_sentence": "Solar energy has achieved grid parity in many regions, making it economically competitive without subsidies."
+    },
+    {
+      "word": "sectoral coupling",
+      "pronunciation": "/ˈsektərəl ˈkʌplɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kết nối các ngành công nghiệp khác nhau (điện, vận tải, sưởi ấm) để tối ưu hóa sử dụng năng lượng tái tạo.",
+      "definition_en": "The integration of different energy sectors (electricity, transport, heating) to optimize renewable energy utilization across industries.",
+      "level": "C1",
+      "synonyms": [
+        "cross-sector integration",
+        "multi-sector coordination"
+      ],
+      "antonyms": [
+        "sector isolation",
+        "fragmented systems"
+      ],
+      "example_sentence": "Sectoral coupling allows excess renewable electricity to power electric vehicles and heat buildings, improving overall energy efficiency."
+    },
+    {
+      "word": "energy transition pathway",
+      "pronunciation": "/ˈɛnərdʒi trænˈzɪʃən ˈpæθweɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lộ trình cụ thể, có mục tiêu thời gian, để chuyển từ năng lượng hóa thạch sang năng lượng tái tạo.",
+      "definition_en": "A strategic roadmap with defined milestones and timelines for shifting from fossil fuels to renewable energy sources.",
+      "level": "C1",
+      "synonyms": [
+        "transition strategy",
+        "decarbonization roadmap"
+      ],
+      "antonyms": [
+        "status quo",
+        "business as usual"
+      ],
+      "example_sentence": "The EU's energy transition pathway aims to achieve climate neutrality by 2050 through phased renewable deployment."
+    },
+    {
+      "word": "green hydrogen",
+      "pronunciation": "/ɡriːn ˈhaɪdrədʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hydro được sản xuất bằng cách điện phân nước sử dụng điện từ năng lượng tái tạo, không phát thải carbon.",
+      "definition_en": "Hydrogen produced through electrolysis of water using renewable electricity, with zero carbon emissions.",
+      "level": "B2",
+      "synonyms": [
+        "renewable hydrogen",
+        "clean hydrogen"
+      ],
+      "antonyms": [
+        "grey hydrogen",
+        "brown hydrogen"
+      ],
+      "example_sentence": "Green hydrogen is emerging as a crucial energy carrier for decarbonizing heavy industry and long-distance transport."
+    },
+    {
+      "word": "power-to-x",
+      "pronunciation": "/ˈpaʊər tuː ɛks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Công nghệ chuyển đổi điện dư thừa từ năng lượng tái tạo thành các dạng năng lượng khác (khí, nhiên liệu, nhiệt).",
+      "definition_en": "Technology that converts excess renewable electricity into alternative energy forms such as gas, synthetic fuels, or heat.",
+      "level": "C1",
+      "synonyms": [
+        "power conversion",
+        "energy transformation"
+      ],
+      "antonyms": [
+        "direct consumption",
+        "immediate use"
+      ],
+      "example_sentence": "Power-to-X technologies enable storage and utilization of surplus wind and solar energy in industrial processes."
+    },
+    {
+      "word": "just transition",
+      "pronunciation": "/dʒʌst trænˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình chuyển đổi năng lượng đảm bảo công bằng xã hội, bảo vệ công nhân và cộng đồng phụ thuộc vào nhiên liệu hóa thạch.",
+      "definition_en": "An equitable energy transition that protects workers and communities dependent on fossil fuel industries from economic hardship.",
+      "level": "C1",
+      "synonyms": [
+        "fair transition",
+        "equitable shift"
+      ],
+      "antonyms": [
+        "abrupt transition",
+        "inequitable change"
+      ],
+      "example_sentence": "A just transition requires retraining programs and economic support for coal miners transitioning to renewable energy sectors."
+    },
+    {
+      "word": "variable renewable energy",
+      "pronunciation": "/ˈvɛriəbəl rɪˈnjuːəbəl ˈɛnərdʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Năng lượng tái tạo có sản lượng không ổn định theo thời gian (gió, mặt trời) khác với năng lượng có sẵn liên tục.",
+      "definition_en": "Renewable energy sources with intermittent output that fluctuates based on weather conditions, such as wind and solar.",
+      "level": "B2",
+      "synonyms": [
+        "intermittent renewable",
+        "weather-dependent energy"
+      ],
+      "antonyms": [
+        "dispatchable energy",
+        "stable power"
+      ],
+      "example_sentence": "Managing variable renewable energy requires advanced forecasting and flexible backup systems to maintain grid stability."
+    },
+    {
+      "word": "energy security",
+      "pronunciation": "/ˈɛnərdʒi sɪˈkjʊrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng của một quốc gia hoặc khu vực đảm bảo cung cấp năng lượng đủ, giá cả hợp lý và bền vững cho nhu cầu kinh tế.",
+      "definition_en": "A nation's ability to ensure reliable, affordable, and sustainable energy supply to meet economic and social needs.",
+      "level": "B2",
+      "synonyms": [
+        "energy independence",
+        "supply reliability"
+      ],
+      "antonyms": [
+        "energy vulnerability",
+        "supply insecurity"
+      ],
+      "example_sentence": "Transitioning to renewable energy enhances energy security by reducing dependence on imported fossil fuels and volatile global markets."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'stranded assets' in the context of energy transition?",
+      "option_a": "Assets that are physically relocated to new locations for renewable energy projects.",
+      "option_b": "Infrastructure that loses economic value due to policy changes or technological obsolescence in the energy sector.",
+      "option_c": "Temporary storage facilities for renewable energy during peak production periods.",
+      "option_d": "Assets that are strategically held in reserve for future energy demand.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Stranded assets là những tài sản (thường là nhà máy điện hóa thạch) mất giá trị do chính sách hoặc công nghệ thay đổi. Đáp án A sai vì không liên quan đến địa điểm. C sai vì nó là cơ sở lưu trữ, không phải tài sản mất giá. D sai vì stranded assets không được giữ lại có mục đích."
+    },
+    {
+      "question_text": "What does 'grid parity' signify in renewable energy markets?",
+      "option_a": "Equal distribution of renewable energy across all regions of a country.",
+      "option_b": "The point at which renewable energy costs become competitive with or cheaper than conventional grid electricity.",
+      "option_c": "A regulatory requirement for utilities to purchase equal amounts of renewable and fossil fuel energy.",
+      "option_d": "The technical standard ensuring all renewable sources operate at the same frequency.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Grid parity là thời điểm chi phí điện từ năng lượng tái tạo bằng hoặc thấp hơn chi phí điện từ lưới truyền thống. A sai vì không liên quan đến phân bố địa lý. C sai vì không phải yêu cầu quy định. D sai vì không liên quan đến tần số kỹ thuật."
+    },
+    {
+      "question_text": "In the context of energy transition, 'sectoral coupling' primarily aims to ___.",
+      "option_a": "Separate electricity generation from heating and transportation sectors to reduce complexity.",
+      "option_b": "Integrate different energy sectors to optimize the use of renewable electricity across industries.",
+      "option_c": "Establish partnerships between renewable energy companies and fossil fuel producers.",
+      "option_d": "Create new regulatory bodies to oversee each energy sector independently.",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sectoral coupling là kết nối các ngành công nghiệp khác nhau (điện, vận tải, sưởi ấm) để tối ưu hóa năng lượng tái tạo. A sai vì nó tìm cách kết nối, không tách rời. C sai vì không liên quan đến hợp tác với nhiên liệu hóa thạch. D sai vì không phải về cơ quan quản lý."
+    },
+    {
+      "question_text": "Which statement best explains the importance of 'just transition' in renewable energy policies?",
+      "option_a": "It ensures that renewable energy projects are completed on schedule without delays.",
+      "option_b": "It guarantees that all citizens have equal access to renewable energy technology.",
+      "option_c": "It protects workers and communities dependent on fossil fuel industries from economic hardship during the shift to renewables.",
+      "option_d": "It requires all countries to transition to renewable energy at the same pace.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Just transition là quá trình chuyển đổi năng lượng đảm bảo công bằng xã hội, bảo vệ công nhân và cộng đồng phụ thuộc vào nhiên liệu hóa thạch. A sai vì không liên quan đến lịch trình dự án. B sai vì không phải về tiếp cận công nghệ. D sai vì không bắt buộc tốc độ chuyển đổi giống nhau."
+    },
+    {
+      "question_text": "What is the primary challenge associated with 'variable renewable energy' in grid management?",
+      "option_a": "It is more expensive to produce than fossil fuel electricity.",
+      "option_b": "Its output fluctuates based on weather conditions, requiring flexible backup systems and advanced forecasting.",
+      "option_c": "It cannot be transmitted over long distances without significant losses.",
+      "option_d": "It requires more land area than conventional power plants.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Variable renewable energy có sản lượng không ổn định theo thời tiết (gió, mặt trời), đòi hỏi hệ thống dự phòng linh hoạt. A sai vì chi phí đã giảm đáng kể. C sai vì không phải vấn đề truyền tải riêng biệt. D sai vì không phải đặc điểm chính của biến động."
+    },
+    {
+      "question_text": "Which of the following is NOT a primary benefit of 'energy security' achieved through renewable energy transition?",
+      "option_a": "Reduced dependence on imported fossil fuels and volatile global energy markets.",
+      "option_b": "Increased domestic energy production capacity and economic resilience.",
+      "option_c": "Guaranteed elimination of all energy-related conflicts between nations.",
+      "option_d": "Enhanced protection against supply disruptions and price shocks.",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Energy security từ năng lượng tái tạo giúp giảm phụ thuộc nhập khẩu, tăng sản xuất trong nước, và bảo vệ khỏi gián đoạn cung cấp. Tuy nhiên, nó không thể đảm bảo loại bỏ hoàn toàn tất cả xung đột liên quan đến năng lượng giữa các quốc gia (C là quá tuyệt đối)."
+    }
+  ]
+}

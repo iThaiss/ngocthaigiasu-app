@@ -469,7 +469,7 @@ export default function PaymentPage() {
       </Tabs>
 
       {/* Trust badges */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {[
           { icon: Shield, label: 'Thanh toán an toàn' },
           { icon: Zap, label: 'Kích hoạt ngay lập tức' },

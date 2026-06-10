@@ -1,0 +1,407 @@
+{
+  "lesson_id": "99f843ed-c4ac-542a-a8d9-524ead617a1d",
+  "title": "Các quy tắc tính đạo hàm cơ bản, đạo hàm hàm hợp và đạo hàm cấp hai",
+  "title_vi": "Quy tắc tính đạo hàm, đạo hàm hàm hợp và cấp hai",
+  "topic": "Kiến thức tiền đề",
+  "level": "nhan_biet",
+  "theory": {
+    "title": "Các quy tắc tính đạo hàm cơ bản, đạo hàm hàm hợp và đạo hàm cấp hai",
+    "title_vi": "Quy tắc tính đạo hàm, đạo hàm hàm hợp và cấp hai",
+    "content_md": "## 1. Tóm tắt 30 giây\nBài này giúp tính nhanh đạo hàm của tổng, tích, thương, hàm hợp và đạo hàm cấp hai.  \nKhi làm trắc nghiệm, cần nhìn dạng biểu thức để chọn đúng quy tắc trước, rồi rút gọn cẩn thận.\n\n## 2. Công thức cần nhớ\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $(u\\pm v)'=u'\\pm v'$ | Tổng, hiệu | Lấy đạo hàm từng phần |\n| $(uv)'=u'v+uv'$ | Tích hai hàm | Không nhân đạo hàm trực tiếp |\n| $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$ | Thương | $v\\ne 0$ |\n| $(f(g(x)))'=f'(g(x))\\cdot g'(x)$ | Hàm hợp | Đạo hàm ngoài, giữ trong |\n| $y''=(y')'$ | Đạo hàm cấp hai | Đạo hàm thêm lần nữa |\n\n## 3. Khi nào dùng?\n- Có ngoặc kiểu $(3x^2+1)^5$, $\\sin(2x)$: nghĩ đến **hàm hợp**.\n- Có dấu nhân giữa hai biểu thức chứa $x$: dùng **quy tắc tích**.\n- Có phân thức chứa $x$ ở tử và mẫu: dùng **quy tắc thương**.\n- Đề hỏi gia tốc, độ cong, chiều biến thiên nhanh chậm: thường cần **$y''$**.\n- Sau khi có $y'$, nếu đề hỏi tiếp “đạo hàm cấp hai” thì lấy đạo hàm thêm lần nữa.\n\n## 4. Ví dụ mẫu cực ngắn\nTính $y'$ với $y=(2x-1)^3$.\n\n- Vì đề cho hàm có dạng lũy thừa của biểu thức, ta dùng **đạo hàm hàm hợp**.\n- Đặt $u=2x-1$, khi đó $y=u^3 \\Rightarrow y'=3u^2\\cdot u'$.\n- Suy ra $u'=2$, nên $y'=3(2x-1)^2\\cdot 2=6(2x-1)^2$.\n\n## 5. Lỗi sai hay gặp\n- Sai: $(uv)'=u'v'$ -> Đúng: $(uv)'=u'v+uv'$.\n- Sai: $[(g(x))^n]'=n(g(x))^{n-1}$ -> Đúng: phải nhân thêm $g'(x)$.\n- Sai: $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'}{v'}$ -> Đúng: dùng quy tắc thương.\n- Sai: $y''=(y)^2$ -> Đúng: $y''=(y')'$, là đạo hàm lần hai.",
+    "key_rules": [
+      "Nhìn ngoặc lồng nhau như $(ax+b)^n$, $\\sin(ux)$ thì ưu tiên quy tắc hàm hợp.",
+      "Gặp tích $uv$ dùng $(uv)'=u'v+uv'$, không lấy đạo hàm từng thừa số rồi nhân.",
+      "Gặp thương $u/v$ dùng $\\dfrac{u'v-uv'}{v^2}$ và nhớ điều kiện mẫu khác $0$.",
+      "Đạo hàm cấp hai là lấy đạo hàm của $y'$ thêm một lần nữa.",
+      "Làm xong nên rút gọn để tránh sai dấu và sai hệ số."
+    ],
+    "common_mistakes": [
+      "Sai: $(uv)'=u'v'$ -> Đúng: $(uv)'=u'v+uv'$.",
+      "Sai: $[(3x+1)^4]'=4(3x+1)^3$ -> Đúng: $[(3x+1)^4]'=12(3x+1)^3$.",
+      "Sai: $\\left(\\dfrac{x^2+1}{x}\\right)'=\\dfrac{2x}{1}$ -> Đúng: phải dùng quy tắc thương hoặc rút gọn trước rồi mới đạo hàm.",
+      "Sai: $y''=2y'$ -> Đúng: $y''$ là đạo hàm của $y'$, không có công thức cố định như vậy."
+    ],
+    "flashcards": [
+      {
+        "card_kind": "formula",
+        "front": "Điền khuyết: $(u+v)'=\\;?$",
+        "back": "$(u+v)'=u'+v'$",
+        "hint": "Tổng thành tổng",
+        "explanation": "Đạo hàm của tổng bằng tổng các đạo hàm."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Công thức đạo hàm tích $uv$ là gì?",
+        "back": "$(uv)'=u'v+uv'$",
+        "hint": "Có 2 hạng tử",
+        "explanation": "Không được lấy đạo hàm từng thừa số rồi nhân với nhau."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Công thức đạo hàm thương $\\dfrac{u}{v}$?",
+        "back": "$\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$, $v\\ne 0$",
+        "hint": "Tử: trước đạo hàm sau trừ trước sau đạo hàm",
+        "explanation": "Đây là công thức chuẩn cần nhớ chính xác dấu trừ."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Điền khuyết: $(f(g(x)))'=\\;?$",
+        "back": "$(f(g(x)))'=f'(g(x))\\cdot g'(x)$",
+        "hint": "Ngoài rồi trong",
+        "explanation": "Đạo hàm hàm hợp bằng đạo hàm hàm ngoài tại biểu thức trong, nhân đạo hàm biểu thức trong."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Đạo hàm cấp hai $y''$ được tính thế nào?",
+        "back": "$y''=(y')'$",
+        "hint": "Lấy đạo hàm thêm 1 lần",
+        "explanation": "Tức là đạo hàm lần hai của hàm số."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Điền khuyết: $[(u)^n]'=\\;?$",
+        "back": "$[(u)^n]'=n u^{n-1}\\cdot u'$",
+        "hint": "Hàm hợp với lũy thừa",
+        "explanation": "Nếu $u$ phụ thuộc vào $x$ thì phải nhân thêm $u'$."
+      },
+      {
+        "card_kind": "concept",
+        "front": "Ký hiệu $y'$ có ý nghĩa gì?",
+        "back": "Là đạo hàm cấp một của $y$ theo $x$.",
+        "hint": "Đạo hàm lần đầu",
+        "explanation": "Thường dùng để xét tốc độ biến thiên tức thời."
+      },
+      {
+        "card_kind": "concept",
+        "front": "Ký hiệu $y''$ là gì?",
+        "back": "Là đạo hàm cấp hai của $y$ theo $x$.",
+        "hint": "Đạo hàm của $y'$",
+        "explanation": "Tính bằng cách lấy đạo hàm của $y'$ thêm một lần nữa."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Nhìn dạng $(3x-2)^5$ thì nên nghĩ đến quy tắc nào?",
+        "back": "Quy tắc đạo hàm hàm hợp.",
+        "hint": "Lũy thừa của biểu thức",
+        "explanation": "Vì bên trong còn có hàm $3x-2$ nên phải nhân thêm đạo hàm của phần trong."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Khi nào nên dùng quy tắc tích?",
+        "back": "Khi biểu thức là tích của hai hàm cùng phụ thuộc vào $x$.",
+        "hint": "Có dấu nhân",
+        "explanation": "Ví dụ $x^2\\sin x$."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Khi nào nên dùng quy tắc thương?",
+        "back": "Khi tử và mẫu đều là biểu thức chứa $x$.",
+        "hint": "Có phân thức",
+        "explanation": "Ví dụ $\\dfrac{x^2+1}{x-1}$."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Đề hỏi đạo hàm cấp hai thì làm gì sau khi có $y'$?",
+        "back": "Lấy đạo hàm của $y'$ một lần nữa.",
+        "hint": "Thêm 1 bước đạo hàm",
+        "explanation": "Đó chính là cách tìm $y''$."
+      },
+      {
+        "card_kind": "mistake",
+        "front": "Sai ở đâu: $(uv)'=u'v'$?",
+        "back": "Thiếu hai hạng tử đúng. Phải là $(uv)'=u'v+uv'$.",
+        "hint": "Tích không thành tích",
+        "explanation": "Đây là lỗi rất hay gặp khi làm nhanh."
+      },
+      {
+        "card_kind": "mistake",
+        "front": "Điền lỗi cần tránh: $[(2x+1)^4]'=4(2x+1)^3$ thiếu gì?",
+        "back": "Thiếu nhân với $(2x+1)'=2$.",
+        "hint": "Thiếu đạo hàm bên trong",
+        "explanation": "Kết quả đúng là $8(2x+1)^3$."
+      },
+      {
+        "card_kind": "mistake",
+        "front": "Sai ở đâu: $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'}{v'}$?",
+        "back": "Đó không phải quy tắc thương. Phải dùng $\\dfrac{u'v-uv'}{v^2}$.",
+        "hint": "Nhớ mẫu bình phương",
+        "explanation": "Không được đạo hàm tử và mẫu riêng rồi chia."
+      },
+      {
+        "card_kind": "mini_example",
+        "front": "Tính nhanh: $[(x^2+1)^3]'=?$",
+        "back": "$3(x^2+1)^2\\cdot 2x=6x(x^2+1)^2$",
+        "hint": "Hàm hợp",
+        "explanation": "Ngoài là lũy thừa bậc 3, trong là $x^2+1$."
+      },
+      {
+        "card_kind": "mini_example",
+        "front": "Tính nhanh: nếu $y=x^3$ thì $y''=?$",
+        "back": "$y'=3x^2$, nên $y''=6x$.",
+        "hint": "Đạo hàm hai lần",
+        "explanation": "Lấy đạo hàm lần 1 rồi lần 2."
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "question_text": "Đạo hàm của hàm số $y=x^3-2x+1$ là",
+      "question_type": "multiple_choice",
+      "difficulty": "Nhận biết",
+      "option_a": "$y'=3x^2-2$",
+      "option_b": "$y'=3x^2+2$",
+      "option_c": "$y'=x^2-2$",
+      "option_d": "$y'=3x-2$",
+      "correct_answer": "A",
+      "statements": [
+        {
+          "label": "A",
+          "text": "",
+          "answer": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "answer": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "answer": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "answer": false
+        }
+      ],
+      "numeric_answer": 1,
+      "explanation": "Dùng quy tắc đạo hàm cơ bản: $(x^3)'=3x^2$, $(-2x)'=-2$, $(1)'=0$ nên $y'=3x^2-2$."
+    },
+    {
+      "question_text": "Cho hàm số $y=\\sin(2x)$. Đạo hàm cấp hai của hàm số là",
+      "question_type": "multiple_choice",
+      "difficulty": "Nhận biết",
+      "option_a": "$y''=-4\\sin(2x)$",
+      "option_b": "$y''=4\\sin(2x)$",
+      "option_c": "$y''=-2\\sin(2x)$",
+      "option_d": "$y''=4\\cos(2x)$",
+      "correct_answer": "A",
+      "statements": [
+        {
+          "label": "A",
+          "text": "",
+          "answer": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "answer": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "answer": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "answer": false
+        }
+      ],
+      "numeric_answer": 1,
+      "explanation": "Ta có $y'=(\\sin(2x))'=2\\cos(2x)$. Suy ra $y''=(2\\cos(2x))'=-4\\sin(2x)$."
+    },
+    {
+      "question_text": "Tính đạo hàm của hàm số $y=(3x^2-1)^4$.",
+      "question_type": "multiple_choice",
+      "difficulty": "Thông hiểu",
+      "option_a": "$y'=8x(3x^2-1)^3$",
+      "option_b": "$y'=12x(3x^2-1)^3$",
+      "option_c": "$y'=24x(3x^2-1)^4$",
+      "option_d": "$y'=4(3x^2-1)^3$",
+      "correct_answer": "B",
+      "statements": [
+        {
+          "label": "A",
+          "text": "$y'=8x(3x^2-1)^3$",
+          "answer": false
+        },
+        {
+          "label": "B",
+          "text": "$y'=12x(3x^2-1)^3$",
+          "answer": true
+        },
+        {
+          "label": "C",
+          "text": "$y'=24x(3x^2-1)^4$",
+          "answer": false
+        },
+        {
+          "label": "D",
+          "text": "$y'=4(3x^2-1)^3$",
+          "answer": false
+        }
+      ],
+      "numeric_answer": 1,
+      "explanation": "Dùng quy tắc hàm hợp: $y'=4(3x^2-1)^3\\cdot 6x=24x(3x^2-1)^3$."
+    },
+    {
+      "question_text": "Cho hàm số $y=x^3-3x$. Mệnh đề nào đúng về đạo hàm cấp hai của hàm số này?",
+      "question_type": "multiple_choice",
+      "difficulty": "Thông hiểu",
+      "option_a": "$y''=6x$",
+      "option_b": "$y''=6x-3$",
+      "option_c": "$y''=6$",
+      "option_d": "$y''=3x^2-3$",
+      "correct_answer": "C",
+      "statements": [
+        {
+          "label": "A",
+          "text": "$y''=6x$",
+          "answer": false
+        },
+        {
+          "label": "B",
+          "text": "$y''=6x-3$",
+          "answer": false
+        },
+        {
+          "label": "C",
+          "text": "$y''=6$",
+          "answer": true
+        },
+        {
+          "label": "D",
+          "text": "$y''=3x^2-3$",
+          "answer": false
+        }
+      ],
+      "numeric_answer": 1,
+      "explanation": "Ta có $y'=3x^2-3$, nên $y''=6$."
+    },
+    {
+      "question_text": "Xét hàm số $f(x)=x^3-2x^2+5x-1$. Hãy xác định tính đúng sai của các khẳng định sau.",
+      "question_type": "true_false",
+      "difficulty": "Thông hiểu",
+      "statements": [
+        {
+          "label": "A",
+          "text": "$f'(x)=3x^2-4x+5$.",
+          "answer": true
+        },
+        {
+          "label": "B",
+          "text": "$f'(1)=4$.",
+          "answer": true
+        },
+        {
+          "label": "C",
+          "text": "$f''(x)=6x-4$.",
+          "answer": true
+        },
+        {
+          "label": "D",
+          "text": "$f''(1)=0$.",
+          "answer": false
+        }
+      ],
+      "explanation": "Ta có $f'(x)=3x^2-4x+5$, nên $f'(1)=3-4+5=4$. Tiếp theo $f''(x)=6x-4$ và $f''(1)=2\\ne 0$."
+    },
+    {
+      "question_text": "Xét hàm số $y=(2x-1)^5$. Hãy xác định tính đúng sai của các khẳng định sau.",
+      "question_type": "true_false",
+      "difficulty": "Thông hiểu",
+      "statements": [
+        {
+          "label": "A",
+          "text": "$y'=5(2x-1)^4$.",
+          "answer": false
+        },
+        {
+          "label": "B",
+          "text": "$y'=10(2x-1)^4$.",
+          "answer": true
+        },
+        {
+          "label": "C",
+          "text": "$y''=80(2x-1)^3$.",
+          "answer": true
+        },
+        {
+          "label": "D",
+          "text": "$y''(1)=80$.",
+          "answer": false
+        }
+      ],
+      "explanation": "Dùng quy tắc đạo hàm hàm hợp: $y'=5(2x-1)^4\\cdot 2=10(2x-1)^4$. Suy ra $y''=10\\cdot 4(2x-1)^3\\cdot 2=80(2x-1)^3$, nên $y''(1)=80$."
+    },
+    {
+      "question_text": "Xét hàm số $g(x)=\\dfrac{1}{x^2+1}=(x^2+1)^{-1}$. Hãy xác định tính đúng sai của các khẳng định sau.",
+      "question_type": "true_false",
+      "difficulty": "Thông hiểu",
+      "statements": [
+        {
+          "label": "A",
+          "text": "$g'(x)=-\\dfrac{2x}{(x^2+1)^2}$.",
+          "answer": true
+        },
+        {
+          "label": "B",
+          "text": "$g'(0)=1$.",
+          "answer": false
+        },
+        {
+          "label": "C",
+          "text": "$g''(0)=-2$.",
+          "answer": true
+        },
+        {
+          "label": "D",
+          "text": "$g''(x)=\\dfrac{6x^2-2}{(x^2+1)^3}$.",
+          "answer": true
+        }
+      ],
+      "explanation": "Ta có $g'(x)=-(x^2+1)^{-2}\\cdot 2x=-\\dfrac{2x}{(x^2+1)^2}$ nên $g'(0)=0$. Lấy tiếp đạo hàm, được $g''(x)=\\dfrac{6x^2-2}{(x^2+1)^3}$, do đó $g''(0)=-2$."
+    },
+    {
+      "question_text": "Tính giá trị đạo hàm của hàm số $y=(3x^2-2x+1)(x-4)$ tại $x=2$.",
+      "question_type": "short_answer",
+      "difficulty": "Vận dụng",
+      "option_a": "",
+      "option_b": "",
+      "option_c": "",
+      "option_d": "",
+      "correct_answer": "",
+      "statements": [],
+      "numeric_answer": -1,
+      "explanation": "Dùng quy tắc tích: $y'=(6x-2)(x-4)+(3x^2-2x+1)$. Tại $x=2$: $y'(2)=(12-2)(-2)+(12-4+1)=-20+9=-1$."
+    },
+    {
+      "question_text": "Cho hàm số $y=(2x+1)^5$. Tính giá trị của $y'$ tại $x=0$.",
+      "question_type": "short_answer",
+      "difficulty": "Vận dụng",
+      "option_a": "",
+      "option_b": "",
+      "option_c": "",
+      "option_d": "",
+      "correct_answer": "",
+      "statements": [],
+      "numeric_answer": 10,
+      "explanation": "Dùng quy tắc đạo hàm hàm hợp: $y'=5(2x+1)^4\\cdot 2=10(2x+1)^4$. Tại $x=0$: $y'(0)=10$."
+    },
+    {
+      "question_text": "Cho hàm số $y=x^3-3x^2+2x$. Tính giá trị của đạo hàm cấp hai $y''$ tại $x=1$.",
+      "question_type": "short_answer",
+      "difficulty": "Vận dụng",
+      "option_a": "",
+      "option_b": "",
+      "option_c": "",
+      "option_d": "",
+      "correct_answer": "",
+      "statements": [],
+      "numeric_answer": 0,
+      "explanation": "Ta có $y'=3x^2-6x+2$, suy ra $y''=6x-6$. Tại $x=1$: $y''(1)=6-6=0$."
+    }
+  ]
+}

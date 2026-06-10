@@ -1,0 +1,87 @@
+{
+  "title": "Digital Learning and the Challenge of Student Attention",
+  "title_vi": "Học tập kỹ thuật số và thách thức về sự tập trung của học sinh",
+  "content": "The rapid expansion of digital learning platforms has transformed classrooms worldwide, offering unprecedented access to educational resources. While these tools promise greater engagement through interactive content, a growing body of research suggests they may also fragment student attention in ways that traditional materials do not. The very design features that make digital platforms appealing—instant feedback, multimedia elements, and personalized pathways—can simultaneously create an environment where sustained focus becomes increasingly difficult to maintain.\n\nStudies comparing reading comprehension across media have yielded consistent findings. When students read complex academic texts on screens, they tend to skim more and retain less detailed information than when reading the same material in print. One controlled experiment found that participants who read a lengthy article on a laptop scored significantly lower on inference questions than those who read it on paper, even though both groups spent roughly the same amount of time on the task. Researchers attribute this discrepancy to the 'shallowing hypothesis,' which proposes that digital reading habits, shaped by the rapid browsing typical of online environments, gradually reduce our capacity for deep, reflective thought.\n\nHowever, the relationship between digital learning and attention is not uniformly negative. Certain types of digital tools, particularly those designed with cognitive load theory in mind, can actually support focused learning. Adaptive learning systems that adjust difficulty based on student performance, for instance, help maintain an optimal challenge level that prevents both boredom and cognitive overload. Moreover, well-structured instructional videos that segment content into manageable chunks and incorporate periodic retrieval questions have been shown to improve retention compared to passive lecture formats. The key distinction appears to lie not in the medium itself, but in how deliberately the technology is designed to manage attention rather than exploit it.\n\nEducators and policymakers must therefore approach digital integration with careful nuance. Rather than wholesale adoption or rejection of technology, the evidence points toward a balanced strategy that pairs digital tools with explicit instruction in self-regulated learning. Teaching students to monitor their own attention, set specific learning goals, and recognize when digital distractions are undermining their comprehension may prove more effective than simply restricting device use. As learning environments continue to evolve, the central challenge will be cultivating the metacognitive skills that enable students to harness digital resources without being overwhelmed by them.",
+  "questions": [
+    {
+      "question_text": "The word 'they' in paragraph 1 refers to ______.",
+      "option_a": "traditional materials",
+      "option_b": "digital learning platforms",
+      "option_c": "educational resources",
+      "option_d": "classrooms",
+      "correct_answer": "B",
+      "question_type": "reference",
+      "explanation": "Đại từ 'they' trong câu 'a growing body of research suggests they may also fragment student attention' thay thế cho chủ ngữ của mệnh đề trước đó. Đọc lại câu đầu đoạn 1: 'The rapid expansion of digital learning platforms has transformed classrooms...' và câu tiếp theo 'While these tools promise greater engagement...' cho thấy 'they' chỉ 'digital learning platforms'. Các phương án khác không phù hợp vì 'traditional materials' là tân ngữ so sánh, 'educational resources' là đối tượng được truy cập, và 'classrooms' là nơi diễn ra sự chuyển đổi."
+    },
+    {
+      "question_text": "The word 'discrepancy' in paragraph 2 is closest in meaning to ______.",
+      "option_a": "similarity",
+      "option_b": "improvement",
+      "option_c": "difference",
+      "option_d": "weakness",
+      "correct_answer": "C",
+      "question_type": "vocab_meaning",
+      "explanation": "Từ 'discrepancy' trong câu 'Researchers attribute this discrepancy to the shallowing hypothesis' có nghĩa là sự khác biệt hoặc không nhất quán. Đoạn văn mô tả hai nhóm đọc cùng một bài nhưng nhóm đọc trên máy tính đạt điểm thấp hơn về câu hỏi suy luận, tạo ra một sự khác biệt trong kết quả. 'Difference' là từ đồng nghĩa phù hợp nhất. 'Similarity' (sự giống nhau) trái nghĩa; 'improvement' (sự cải thiện) và 'weakness' (điểm yếu) không phản ánh đúng mối quan hệ so sánh giữa hai nhóm."
+    },
+    {
+      "question_text": "Which of the following best paraphrases the sentence 'The very design features that make digital platforms appealing—instant feedback, multimedia elements, and personalized pathways—can simultaneously create an environment where sustained focus becomes increasingly difficult to maintain' in paragraph 1?",
+      "option_a": "Digital platforms are appealing because they offer instant feedback and multimedia, but these features also make it harder for students to stay focused for long periods.",
+      "option_b": "The instant feedback and personalized pathways of digital platforms are designed to help students maintain sustained focus during learning activities.",
+      "option_c": "Although digital platforms include appealing features like multimedia elements, they fail to create an environment suitable for any form of learning.",
+      "option_d": "Sustained focus is difficult to maintain because digital platforms lack the instant feedback and personalized pathways that make learning appealing.",
+      "correct_answer": "A",
+      "question_type": "sentence_paraphrase",
+      "explanation": "Câu gốc nêu rằng chính những đặc điểm thiết kế hấp dẫn của nền tảng số (phản hồi tức thì, đa phương tiện, lộ trình cá nhân hóa) đồng thời tạo ra môi trường khiến việc duy trì tập trung lâu dài trở nên khó khăn. Phương án A diễn đạt đúng ý này: nền tảng số hấp dẫn nhờ các tính năng đó, nhưng chính chúng lại gây khó khăn cho sự tập trung. Phương án B sai vì nói rằng các tính năng này được thiết kế để giúp duy trì tập trung (ngược với ý đoạn văn). Phương án C sai vì nói 'fail to create an environment suitable for any form of learning' – quá cực đoan, đoạn văn không khẳng định điều này. Phương án D đảo ngược mối quan hệ nhân quả: nền tảng số có các tính năng đó, không phải thiếu chúng."
+    },
+    {
+      "question_text": "The word 'sustained' in paragraph 1 is opposite in meaning to ______.",
+      "option_a": "continuous",
+      "option_b": "temporary",
+      "option_c": "intense",
+      "option_d": "voluntary",
+      "correct_answer": "B",
+      "question_type": "vocab_antonym",
+      "explanation": "'Sustained' có nghĩa là được duy trì liên tục trong một khoảng thời gian dài. Từ trái nghĩa phù hợp nhất là 'temporary' (tạm thời, ngắn hạn). 'Continuous' (liên tục) là từ đồng nghĩa; 'intense' (mãnh liệt) chỉ mức độ chứ không chỉ thời gian; 'voluntary' (tự nguyện) không liên quan đến khía cạnh thời gian của 'sustained'."
+    },
+    {
+      "question_text": "According to paragraph 2, which of the following is NOT mentioned as a finding related to reading on screens?",
+      "option_a": "Students tend to skim when reading academic texts on screens.",
+      "option_b": "Screen readers retain less detailed information than print readers.",
+      "option_c": "Screen readers spend significantly less time on reading tasks than print readers.",
+      "option_d": "Screen readers perform worse on inference questions compared to print readers.",
+      "correct_answer": "C",
+      "question_type": "detail_except",
+      "explanation": "Đoạn 2 nêu rõ: 'students... tend to skim more and retain less detailed information' (phương án A và B được đề cập) và 'participants who read... on a laptop scored significantly lower on inference questions' (phương án D được đề cập). Tuy nhiên, đoạn văn khẳng định 'both groups spent roughly the same amount of time on the task', nghĩa là thời gian đọc của hai nhóm tương đương nhau. Do đó, phương án C ('screen readers spend significantly less time') là thông tin không được đề cập và thực tế trái với dữ liệu trong bài."
+    },
+    {
+      "question_text": "According to the passage, which of the following is TRUE?",
+      "option_a": "All digital learning tools inevitably reduce students' capacity for deep thinking.",
+      "option_b": "Adaptive learning systems can help maintain an optimal challenge level for students.",
+      "option_c": "The shallowing hypothesis has been disproven by recent controlled experiments.",
+      "option_d": "Restricting device use is the most effective way to improve student comprehension.",
+      "correct_answer": "B",
+      "question_type": "true_statement",
+      "explanation": "Đoạn 3 nêu: 'Adaptive learning systems that adjust difficulty based on student performance... help maintain an optimal challenge level'. Phương án B diễn đạt chính xác thông tin này. Phương án A sai vì từ 'all' quá tuyệt đối – đoạn 3 chỉ ra một số công cụ số có thể hỗ trợ học tập. Phương án C sai vì 'shallowing hypothesis' được nêu như một lời giải thích cho các phát hiện, không bị bác bỏ. Phương án D sai vì đoạn cuối cho rằng dạy kỹ năng tự điều chỉnh 'may prove more effective than simply restricting device use', ngụ ý hạn chế thiết bị không phải là cách hiệu quả nhất."
+    },
+    {
+      "question_text": "In which paragraph does the author discuss digital tools that are designed to manage cognitive load effectively?",
+      "option_a": "Paragraph 1",
+      "option_b": "Paragraph 2",
+      "option_c": "Paragraph 3",
+      "option_d": "Paragraph 4",
+      "correct_answer": "C",
+      "question_type": "paragraph_location",
+      "explanation": "Đoạn 3 thảo luận về các công cụ số được thiết kế để quản lý tải nhận thức hiệu quả: 'certain types of digital tools, particularly those designed with cognitive load theory in mind, can actually support focused learning'. Đoạn này cũng đề cập đến 'adaptive learning systems' và 'well-structured instructional videos' như những ví dụ cụ thể. Các đoạn khác không đề cập đến khái niệm 'cognitive load'."
+    },
+    {
+      "question_text": "In which paragraph does the author mention the importance of teaching students to recognize when digital distractions affect their learning?",
+      "option_a": "Paragraph 1",
+      "option_b": "Paragraph 2",
+      "option_c": "Paragraph 3",
+      "option_d": "Paragraph 4",
+      "correct_answer": "D",
+      "question_type": "paragraph_location",
+      "explanation": "Đoạn 4 đề cập đến việc dạy học sinh 'recognize when digital distractions are undermining their comprehension' như một phần của chiến lược tự điều chỉnh học tập. Câu đầy đủ: 'Teaching students to monitor their own attention, set specific learning goals, and recognize when digital distractions are undermining their comprehension may prove more effective...'. Các đoạn khác không đề cập đến ý này."
+    }
+  ]
+}

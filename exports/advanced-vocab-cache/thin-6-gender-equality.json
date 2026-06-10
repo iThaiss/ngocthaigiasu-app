@@ -1,0 +1,423 @@
+{
+  "words": [
+    {
+      "word": "gender parity",
+      "pronunciation": "/ˈdʒendə ˈpærɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự bình đẳng về số lượng và quyền lợi giữa các giới tính trong các lĩnh vực xã hội, kinh tế, chính trị.",
+      "definition_en": "Equal representation and rights between genders across social, economic, and political spheres.",
+      "level": "C1",
+      "synonyms": [
+        "gender balance",
+        "gender equity"
+      ],
+      "antonyms": [
+        "gender imbalance",
+        "gender disproportion"
+      ],
+      "example_sentence": "The UN has set ambitious targets to achieve gender parity in leadership positions by 2030."
+    },
+    {
+      "word": "underrepresentation",
+      "pronunciation": "/ˌʌndərˌreprɪˈzenteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng một nhóm người (đặc biệt là phụ nữ) có số lượng hoặc ảnh hưởng thấp hơn so với tỷ lệ dân số của họ.",
+      "definition_en": "The state of being inadequately represented in a particular field or position relative to population proportion.",
+      "level": "B2",
+      "synonyms": [
+        "underrepresentation",
+        "low representation"
+      ],
+      "antonyms": [
+        "overrepresentation",
+        "adequate representation"
+      ],
+      "example_sentence": "The underrepresentation of women in STEM fields remains a persistent challenge in higher education."
+    },
+    {
+      "word": "gender-blind",
+      "pronunciation": "/ˈdʒendə blaɪnd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Không nhận thức hoặc bỏ qua sự khác biệt và vấn đề liên quan đến giới tính; coi mọi người như nhau mà không xem xét bối cảnh xã hội.",
+      "definition_en": "Failing to recognize or account for gender-specific issues and differences; treating all people identically without considering social context.",
+      "level": "C1",
+      "synonyms": [
+        "gender-neutral",
+        "gender-insensitive"
+      ],
+      "antonyms": [
+        "gender-aware",
+        "gender-sensitive"
+      ],
+      "example_sentence": "A gender-blind approach to policy-making often overlooks the specific needs of marginalized communities."
+    },
+    {
+      "word": "occupational segregation",
+      "pronunciation": "/ˌɒkjuˈpeɪʃənəl ˌsegɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiện tượng nam và nữ tập trung vào các ngành nghề khác nhau, thường dẫn đến chênh lệch lương và cơ hội.",
+      "definition_en": "The concentration of men and women in different occupations, often resulting in wage and opportunity gaps.",
+      "level": "C1",
+      "synonyms": [
+        "job segregation",
+        "occupational clustering"
+      ],
+      "antonyms": [
+        "occupational integration",
+        "mixed workforce"
+      ],
+      "example_sentence": "Occupational segregation by gender has historically limited women's access to high-paying technical roles."
+    },
+    {
+      "word": "implicit bias",
+      "pronunciation": "/ɪmˈplɪsɪt ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Những định kiến vô thức về giới tính mà mọi người có thể không nhận ra nhưng ảnh hưởng đến quyết định và hành vi của họ.",
+      "definition_en": "Unconscious prejudices about gender that influence decisions and behavior without conscious awareness.",
+      "level": "C1",
+      "synonyms": [
+        "unconscious bias",
+        "hidden prejudice"
+      ],
+      "antonyms": [
+        "explicit bias",
+        "conscious awareness"
+      ],
+      "example_sentence": "Implicit bias in hiring processes often disadvantages female candidates despite their qualifications."
+    },
+    {
+      "word": "intersectional feminism",
+      "pronunciation": "/ˌɪntərˈsekʃənəl ˈfemɪnɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phong trào nữ quyền xem xét cách giới tính giao thoa với các yếu tố khác như chủng tộc, lớp xã hội, và khuynh hướng tính dục.",
+      "definition_en": "A feminist approach that examines how gender intersects with race, class, sexuality, and other social categories.",
+      "level": "C1",
+      "synonyms": [
+        "intersectional approach",
+        "inclusive feminism"
+      ],
+      "antonyms": [
+        "monolithic feminism",
+        "single-axis feminism"
+      ],
+      "example_sentence": "Intersectional feminism acknowledges that women of color face compounded discrimination based on multiple identities."
+    },
+    {
+      "word": "affirmative action",
+      "pronunciation": "/əˈfɜːrmətɪv ˈækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các chính sách hoặc biện pháp nhằm tăng cơ hội cho những nhóm bị phân biệt đối xử, bao gồm phụ nữ và các nhóm thiểu số.",
+      "definition_en": "Policies or measures designed to increase opportunities for historically disadvantaged groups, including women and minorities.",
+      "level": "B2",
+      "synonyms": [
+        "positive discrimination",
+        "preferential treatment"
+      ],
+      "antonyms": [
+        "reverse discrimination",
+        "merit-based selection"
+      ],
+      "example_sentence": "Affirmative action policies have been implemented to increase female representation in corporate boards."
+    },
+    {
+      "word": "work-life balance",
+      "pronunciation": "/wɜːrk laɪf ˈbæləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự cân bằng giữa thời gian dành cho công việc và thời gian dành cho gia đình, sức khỏe, và các hoạt động cá nhân.",
+      "definition_en": "The equilibrium between time spent on professional responsibilities and personal, family, and leisure activities.",
+      "level": "B2",
+      "synonyms": [
+        "work-family balance",
+        "life balance"
+      ],
+      "antonyms": [
+        "work overload",
+        "burnout"
+      ],
+      "example_sentence": "Flexible working arrangements are essential for achieving work-life balance, particularly for working mothers."
+    },
+    {
+      "word": "reproductive rights",
+      "pronunciation": "/ˌreprəˈdʌktɪv ˈraɪts/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quyền của phụ nữ tự quyết định về sinh sản, bao gồm quyền tiếp cận tránh thai, chăm sóc sức khỏe sinh sản, và quyết định có con hay không.",
+      "definition_en": "The rights of individuals to make autonomous decisions about reproduction, including access to contraception and reproductive healthcare.",
+      "level": "C1",
+      "synonyms": [
+        "reproductive autonomy",
+        "bodily autonomy"
+      ],
+      "antonyms": [
+        "reproductive coercion",
+        "forced sterilization"
+      ],
+      "example_sentence": "Access to reproductive rights is considered fundamental to women's equality and self-determination."
+    },
+    {
+      "word": "toxic masculinity",
+      "pronunciation": "/ˈtɒksɪk ˌmæskjuˈlɪnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Những khía cạnh của nam tính truyền thống gây hại, bao gồm sự áp chế cảm xúc, hiếu thắng quá mức, và bạo lực.",
+      "definition_en": "Harmful aspects of traditional masculinity that include emotional suppression, excessive competitiveness, and aggression.",
+      "level": "C1",
+      "synonyms": [
+        "harmful masculinity",
+        "aggressive masculinity"
+      ],
+      "antonyms": [
+        "healthy masculinity",
+        "emotional intelligence"
+      ],
+      "example_sentence": "Addressing toxic masculinity in schools is crucial for creating safer environments for all students."
+    },
+    {
+      "word": "pay equity",
+      "pronunciation": "/peɪ ˈekwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nguyên tắc trả lương bằng nhau cho công việc có giá trị bằng nhau, bất kể giới tính hoặc các đặc điểm khác của nhân viên.",
+      "definition_en": "The principle of equal compensation for work of equal value, regardless of employee gender or other characteristics.",
+      "level": "B2",
+      "synonyms": [
+        "equal pay",
+        "fair compensation"
+      ],
+      "antonyms": [
+        "wage discrimination",
+        "unequal pay"
+      ],
+      "example_sentence": "Many countries have enacted legislation to enforce pay equity and reduce gender-based salary differences."
+    },
+    {
+      "word": "institutional sexism",
+      "pronunciation": "/ˌɪnstɪˈtjuːʃənəl ˈseksɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự phân biệt đối xử dựa trên giới tính được tích hợp vào các cấu trúc, chính sách, và thực hành của các tổ chức.",
+      "definition_en": "Gender-based discrimination embedded in the structures, policies, and practices of institutions.",
+      "level": "C1",
+      "synonyms": [
+        "systemic sexism",
+        "structural discrimination"
+      ],
+      "antonyms": [
+        "gender-inclusive policies",
+        "institutional reform"
+      ],
+      "example_sentence": "Institutional sexism in academia has historically prevented women from advancing to senior research positions."
+    },
+    {
+      "word": "feminist movement",
+      "pronunciation": "/ˈfemɪnɪst ˈmuːvmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phong trào xã hội và chính trị nhằm đạt được bình đẳng giới và bảo vệ quyền lợi của phụ nữ.",
+      "definition_en": "A social and political movement advocating for gender equality and women's rights.",
+      "level": "B2",
+      "synonyms": [
+        "women's movement",
+        "gender equality movement"
+      ],
+      "antonyms": [
+        "anti-feminist movement",
+        "patriarchal resistance"
+      ],
+      "example_sentence": "The feminist movement has achieved significant milestones in securing voting rights and educational access for women."
+    },
+    {
+      "word": "gender-based violence",
+      "pronunciation": "/ˈdʒendə beɪst ˈvaɪələns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bạo lực được thực hiện chống lại một người vì giới tính của họ, bao gồm bạo lực thân thể, tình dục, và tâm lý.",
+      "definition_en": "Violence perpetrated against a person because of their gender, including physical, sexual, and psychological abuse.",
+      "level": "B2",
+      "synonyms": [
+        "gender violence",
+        "intimate partner violence"
+      ],
+      "antonyms": [
+        "gender safety",
+        "protection"
+      ],
+      "example_sentence": "Addressing gender-based violence requires comprehensive legal frameworks and support services for survivors."
+    },
+    {
+      "word": "career advancement",
+      "pronunciation": "/kəˈrɪr ədˈvɑːnsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự tiến bộ trong sự nghiệp, bao gồm thăng chức, tăng lương, và nhận trách nhiệm lớn hơn.",
+      "definition_en": "Progress in one's professional life, including promotions, salary increases, and greater responsibilities.",
+      "level": "B2",
+      "synonyms": [
+        "professional growth",
+        "career progression"
+      ],
+      "antonyms": [
+        "career stagnation",
+        "demotion"
+      ],
+      "example_sentence": "Women often face barriers to career advancement due to unconscious bias and lack of mentorship opportunities."
+    },
+    {
+      "word": "quota system",
+      "pronunciation": "/ˈkwoʊtə ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống quy định tỷ lệ tối thiểu hoặc tối đa của một nhóm (ví dụ: phụ nữ) trong một vị trí hoặc tổ chức.",
+      "definition_en": "A system that mandates a minimum or maximum proportion of a group (e.g., women) in positions or organizations.",
+      "level": "B2",
+      "synonyms": [
+        "quota policy",
+        "representation quota"
+      ],
+      "antonyms": [
+        "merit-based system",
+        "unrestricted selection"
+      ],
+      "example_sentence": "Several European countries have implemented quota systems to ensure women's representation on corporate boards."
+    },
+    {
+      "word": "gender mainstreaming",
+      "pronunciation": "/ˈdʒendə ˈmeɪnstriːmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chiến lược tích hợp quan điểm bình đẳng giới vào tất cả các chính sách, chương trình, và quyết định của tổ chức.",
+      "definition_en": "A strategy to integrate gender equality perspectives into all policies, programs, and decisions of an organization.",
+      "level": "C1",
+      "synonyms": [
+        "gender integration",
+        "gender-responsive approach"
+      ],
+      "antonyms": [
+        "gender-blind approach",
+        "gender-neutral policy"
+      ],
+      "example_sentence": "Gender mainstreaming in development projects ensures that the needs of both men and women are addressed."
+    },
+    {
+      "word": "women's empowerment",
+      "pronunciation": "/ˈwɪmɪnz ɪmˈpaʊərmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình tăng cường khả năng, quyền lực, và tự tin của phụ nữ để kiểm soát cuộc sống và đạt được mục tiêu của họ.",
+      "definition_en": "The process of increasing women's capacity, power, and confidence to control their lives and achieve their goals.",
+      "level": "B2",
+      "synonyms": [
+        "women's agency",
+        "female empowerment"
+      ],
+      "antonyms": [
+        "women's oppression",
+        "disempowerment"
+      ],
+      "example_sentence": "Women's empowerment through education and economic opportunities is essential for sustainable development."
+    },
+    {
+      "word": "gender-sensitive",
+      "pronunciation": "/ˈdʒendə ˈsensɪtɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Nhạy cảm với và hiểu biết về các vấn đề, nhu cầu, và kinh nghiệm khác nhau của các giới tính.",
+      "definition_en": "Aware of and responsive to the different issues, needs, and experiences of different genders.",
+      "level": "B2",
+      "synonyms": [
+        "gender-aware",
+        "gender-conscious"
+      ],
+      "antonyms": [
+        "gender-insensitive",
+        "gender-blind"
+      ],
+      "example_sentence": "Gender-sensitive teaching methods help create inclusive classrooms where all students feel valued and supported."
+    },
+    {
+      "word": "equal opportunity",
+      "pronunciation": "/ˈiːkwəl ˌɒpərˈtuːnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nguyên tắc rằng mọi người, bất kể giới tính, chủng tộc, hoặc các đặc điểm khác, có cơ hội bình đẳng để thành công.",
+      "definition_en": "The principle that all individuals, regardless of gender, race, or other characteristics, have equal chances to succeed.",
+      "level": "B2",
+      "synonyms": [
+        "equal access",
+        "fair opportunity"
+      ],
+      "antonyms": [
+        "discrimination",
+        "unequal treatment"
+      ],
+      "example_sentence": "Ensuring equal opportunity in hiring practices requires removing biases and creating transparent selection criteria."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'implicit bias' in the context of gender equality?",
+      "option_a": "Conscious and deliberate discrimination against women in the workplace.",
+      "option_b": "Unconscious prejudices about gender that influence decisions without conscious awareness.",
+      "option_c": "Legal policies that explicitly prevent women from accessing certain positions.",
+      "option_d": "The practice of hiring only men for leadership roles.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Implicit bias là những định kiến vô thức, không phải là sự phân biệt đối xử có ý thức (A), không phải là chính sách pháp lý rõ ràng (C), và không phải là thực hành tuyển dụng cụ thể (D). Đáp án B chính xác vì nó nhấn mạnh tính vô thức của định kiến này."
+    },
+    {
+      "question_text": "The term 'occupational segregation' refers to which of the following phenomena?",
+      "option_a": "The separation of men and women into different types of jobs, often resulting in wage gaps.",
+      "option_b": "The complete elimination of gender differences in the workplace.",
+      "option_c": "The requirement that companies hire equal numbers of men and women.",
+      "option_d": "The process of training women to work in traditionally male-dominated fields.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Occupational segregation là hiện tượng nam nữ tập trung vào các ngành nghề khác nhau, dẫn đến chênh lệch lương. B sai vì nó nói về loại bỏ hoàn toàn sự khác biệt, C sai vì nó nói về yêu cầu tuyển dụng, D sai vì nó chỉ nói về đào tạo."
+    },
+    {
+      "question_text": "What is the primary purpose of implementing a 'quota system' in organizations?",
+      "option_a": "To reduce the total number of employees in a company.",
+      "option_b": "To ensure a minimum representation of underrepresented groups, such as women, in certain positions.",
+      "option_c": "To eliminate all differences between male and female employees.",
+      "option_d": "To prevent qualified candidates from being hired.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Quota system nhằm đảm bảo tỷ lệ tối thiểu đại diện cho các nhóm bị thiểu số như phụ nữ. A sai vì nó không liên quan đến giảm nhân viên, C sai vì nó không loại bỏ sự khác biệt, D sai vì nó không ngăn chặn ứng viên đủ tiêu chuẩn."
+    },
+    {
+      "question_text": "Which statement best explains the difference between 'gender-blind' and 'gender-sensitive' approaches?",
+      "option_a": "Gender-blind approaches ignore gender differences, while gender-sensitive approaches recognize and address them.",
+      "option_b": "Gender-blind approaches are more effective at achieving equality than gender-sensitive approaches.",
+      "option_c": "Gender-sensitive approaches discriminate against men, while gender-blind approaches treat everyone equally.",
+      "option_d": "Both approaches are identical in their outcomes for gender equality.",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Gender-blind bỏ qua sự khác biệt về giới tính, trong khi gender-sensitive nhận thức và giải quyết những sự khác biệt này. B sai vì gender-sensitive thường hiệu quả hơn, C sai vì gender-sensitive không phân biệt đối xử với nam giới, D sai vì hai cách tiếp cận có kết quả khác nhau."
+    },
+    {
+      "question_text": "In the context of gender equality, what does 'pay equity' specifically address?",
+      "option_a": "Ensuring that all employees receive the same salary regardless of their job position.",
+      "option_b": "Equal compensation for work of equal value, regardless of employee gender or other characteristics.",
+      "option_c": "Paying women more than men to compensate for historical discrimination.",
+      "option_d": "Eliminating all salary differences between different job levels.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Pay equity là trả lương bằng nhau cho công việc có giá trị bằng nhau, bất kể giới tính. A sai vì nó không phải là trả lương bằng nhau cho tất cả vị trí, C sai vì nó không phải là trả lương cao hơn cho phụ nữ, D sai vì nó không loại bỏ tất cả chênh lệch lương."
+    },
+    {
+      "question_text": "Which of the following is an example of 'institutional sexism'?",
+      "option_a": "A single manager refusing to promote a qualified female employee.",
+      "option_b": "Gender-based discrimination embedded in the policies and structures of an organization.",
+      "option_c": "A woman choosing not to apply for a leadership position.",
+      "option_d": "Individual prejudices that do not affect hiring decisions.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Institutional sexism là sự phân biệt đối xử được tích hợp vào cấu trúc và chính sách của tổ chức, không phải là hành động cá nhân (A), lựa chọn cá nhân (C), hoặc định kiến không ảnh hưởng (D)."
+    },
+    {
+      "question_text": "What is the main goal of 'gender mainstreaming' in policy-making?",
+      "option_a": "To exclude women from decision-making processes.",
+      "option_b": "To integrate gender equality perspectives into all policies, programs, and organizational decisions.",
+      "option_c": "To create separate policies specifically for women only.",
+      "option_d": "To eliminate the need for gender-specific support services.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Gender mainstreaming là tích hợp quan điểm bình đẳng giới vào tất cả chính sách và quyết định. A sai vì nó không loại trừ phụ nữ, C sai vì nó không tạo chính sách riêng biệt, D sai vì nó không loại bỏ các dịch vụ hỗ trợ cần thiết."
+    }
+  ]
+}

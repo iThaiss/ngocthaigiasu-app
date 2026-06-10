@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giới hạn dãy số và hàm số</title>
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+:root{color-scheme:dark;--bg:#050814;--panel:#0b1220;--line:#26354d;--text:#f7f9fd;--muted:#a9b7ca;--blue:#60a5fa;--cyan:#67e8f9;--green:#34d399;--amber:#fbbf24;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#10213f 0,#050814 360px);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
+.page{width:min(1080px,calc(100% - 32px));margin:0 auto;padding:28px 0 72px}.breadcrumb{color:var(--muted);font-size:14px;margin-bottom:12px}.hero{border:1px solid var(--line);background:rgba(8,15,29,.94);border-radius:8px;padding:24px;margin-bottom:18px}.eyebrow{color:var(--cyan);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}h1{margin:6px 0 10px;font-size:32px;line-height:1.2;letter-spacing:0}.lead{color:#d3deee;max-width:800px;margin:0;font-size:17px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.pill{border:1px solid var(--line);background:#101a2c;color:#dbeafe;border-radius:999px;padding:5px 10px;font-size:13px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:18px;align-items:start}.content{border:1px solid var(--line);background:rgba(11,18,32,.96);border-radius:8px;padding:20px;overflow:hidden}.content h2{font-size:21px;margin:28px 0 10px;padding-top:18px;border-top:1px solid var(--line);letter-spacing:0}.content h2:first-child{margin-top:0;padding-top:0;border-top:0}.content h3{font-size:17px;margin:18px 0 8px}.content p{margin:10px 0}.content table{width:100%;border-collapse:collapse;margin:12px 0}.content th,.content td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}.content th{background:#0f1d33;color:#dbeafe}.content td{background:#08111f}.content blockquote{border-left:3px solid var(--blue);background:#0a1a30;margin:12px 0;padding:12px 14px;border-radius:0 8px 8px 0;color:#dbeafe}.content code{background:#111827;border:1px solid #283243;border-radius:4px;padding:1px 5px}.figure{border:1px solid #2b3d58;background:#070c18;border-radius:8px;padding:14px;position:sticky;top:14px}.figure img{width:100%;height:auto;display:block;background:#f8fafc;border-radius:6px;padding:8px}.caption{margin-top:10px;color:var(--muted);font-size:13px}.observe{margin-top:12px;padding-left:12px;border-left:3px solid var(--cyan);color:#cffafe;font-size:14px}.rules{border:1px solid var(--line);background:#091120;border-radius:8px;padding:16px;margin-top:18px}.rules h2{font-size:18px;margin:0 0 8px;border:0;padding:0}@media(max-width:900px){.layout{grid-template-columns:1fr}.figure{position:static}h1{font-size:26px}}
+</style>
+</head>
+<body>
+  <main class="page">
+    <div class="breadcrumb">Preview / Sinh từ scripts/import_math.py / Kiến thức tiền đề</div>
+    <header class="hero">
+      <div class="eyebrow">Generated teaching guide</div>
+      <h1>Giới hạn dãy số và hàm số</h1>
+      <p class="lead">Bản này được sinh bằng prompt mới trong <code>scripts/import_math.py</code>, chưa ghi database và chưa deploy.</p>
+      <div class="meta">
+        <span class="pill">Model output thật</span>
+        <span class="pill">Có marker hình nếu cần</span>
+        <span class="pill">nhan_biet</span>
+      </div>
+    </header>
+
+    <section class="">
+      <article class="content" id="content"></article>
+
+    </section>
+
+    <section class="content rules">
+      <h2>Key rules</h2>
+      <ul><li>Thay trực tiếp chỉ dùng khi biểu thức xác định và mẫu khác 0.</li><li>Dạng 0/0 là vô định, cần rút gọn hoặc biến đổi.</li><li>Phân thức tiến vô cực: so sánh bậc cao nhất.</li><li>Quy tắc cộng, trừ, nhân, chia chỉ dùng khi giới hạn thành phần phù hợp.</li><li>Giới hạn tại một điểm không nhất thiết bằng giá trị hàm tại điểm đó.</li></ul>
+      <h2>Common mistakes</h2>
+      <ul><li>Sai: Gặp 0/0 kết luận giới hạn bằng 0 -&gt; Đúng: 0/0 là dạng vô định, phải biến đổi trước.</li><li>Sai: Áp dụng công thức thương dù giới hạn mẫu bằng 0 -&gt; Đúng: Chỉ dùng công thức thương khi giới hạn mẫu khác 0.</li><li>Sai: Tính giới hạn tại x=a bằng cách chỉ xét f(a) -&gt; Đúng: Xét giá trị f(x) khi x tiến gần a.</li><li>Sai: Với phân thức vô cực, lấy tỉ số hệ số tự do -&gt; Đúng: Lấy theo bậc cao nhất của tử và mẫu.</li></ul>
+    </section>
+  </main>
+  <script>
+    const markdown = "## 1. Công thức trọng tâm\n\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $\\lim c=c$ | Dãy/hàm hằng | Hằng số giữ nguyên |\n| $\\lim (u_n\\pm v_n)=\\lim u_n\\pm \\lim v_n$ | Hai giới hạn hữu hạn | Chỉ tách khi từng giới hạn tồn tại |\n| $\\lim (u_n v_n)=(\\lim u_n)(\\lim v_n)$ | Tích các biểu thức | Áp dụng tương tự cho hàm số |\n| $\\lim \\dfrac{u_n}{v_n}=\\dfrac{\\lim u_n}{\\lim v_n}$ | Mẫu có giới hạn khác $0$ | Không chia cho giới hạn mẫu bằng $0$ |\n| $\\lim \\dfrac{1}{n}=0$, $\\lim \\dfrac{1}{n^k}=0$ với $k>0$ | Dãy chứa lũy thừa của $n$ ở mẫu | Bậc mẫu càng cao càng tiến nhanh về $0$ |\n| $\\lim_{x\\to a} f(x)=L$ | Hàm số tiến tới giá trị $L$ khi $x$ gần $a$ | Không nhất thiết cần $f(a)$ xác định |\n| $\\lim_{x\\to \\pm\\infty}\\dfrac{P(x)}{Q(x)}$ | Phân thức đa thức | So sánh bậc tử và bậc mẫu |\n\nVới phân thức hữu tỉ $\\dfrac{P(x)}{Q(x)}$ khi $x\\to\\infty$:\n\n- Bậc tử nhỏ hơn bậc mẫu: giới hạn bằng $0$.\n- Bậc tử bằng bậc mẫu: giới hạn bằng tỉ số hệ số cao nhất.\n- Bậc tử lớn hơn bậc mẫu: giới hạn vô cực hoặc không có giới hạn hữu hạn.\n\n## 2. Hiểu nhanh công thức\n\nGiới hạn mô tả giá trị mà dãy số hoặc hàm số “tiến gần tới”, không nhất thiết phải đạt đúng giá trị đó.\n\nVới dãy số $(u_n)$, ký hiệu $\\lim u_n=L$ nghĩa là khi $n$ càng lớn thì $u_n$ càng gần $L$.\n\nVới hàm số, $\\lim_{x\\to a}f(x)=L$ nghĩa là khi $x$ tiến gần $a$ từ hai phía thì $f(x)$ tiến gần $L$. Điều quan trọng là xét quanh $a$, không phải chỉ xét tại $a$.\n\nCác quy tắc cộng, trừ, nhân, chia chỉ dùng an toàn khi các giới hạn thành phần là hữu hạn; riêng phép chia cần mẫu có giới hạn khác $0$.\n\n## 3. Khi nào dùng?\n\n- Đề có $\\lim$ của tổng, hiệu, tích, thương các biểu thức đơn giản: dùng quy tắc đại số giới hạn.\n- Dãy có $n$ ở mẫu như $\\dfrac{1}{n}$, $\\dfrac{1}{n^2}$: đưa về giới hạn $0$.\n- Phân thức theo $n$ hoặc $x$ tiến vô cực: chia cả tử và mẫu cho lũy thừa bậc cao nhất của mẫu hoặc so sánh bậc.\n- Hàm có dạng thay trực tiếp được và mẫu khác $0$: thay giá trị vào.\n- Gặp dạng $\\dfrac{0}{0}$: chưa kết luận, cần biến đổi như phân tích nhân tử, rút gọn, hoặc nhân liên hợp.\n\n## 4. Ví dụ mẫu\n\n**Ví dụ 1.** Tính $\\lim\\limits_{n\\to\\infty}\\dfrac{3n^2-2n+1}{5n^2+n-4}$.\n\nVì đề cho phân thức theo $n$ khi $n\\to\\infty$, ta dùng so sánh bậc cao nhất.\n\nBậc tử và bậc mẫu đều là $2$.\n\nHệ số của $n^2$ ở tử là $3$, ở mẫu là $5$.\n\nDo đó:\n$$\\lim_{n\\to\\infty}\\dfrac{3n^2-2n+1}{5n^2+n-4}=\\dfrac{3}{5}.$$\n\n**Ví dụ 2.** Tính $\\lim\\limits_{x\\to 2}\\dfrac{x^2-4}{x-2}$.\n\nVì thay trực tiếp được dạng $\\dfrac{0}{0}$, ta không kết luận ngay mà dùng phân tích nhân tử.\n\nTa có $x^2-4=(x-2)(x+2)$.\n\nVới $x\\ne 2$:\n$$\\dfrac{x^2-4}{x-2}=x+2.$$\n\nVậy:\n$$\\lim_{x\\to 2}\\dfrac{x^2-4}{x-2}=\\lim_{x\\to 2}(x+2)=4.$$\n\n## 5. Lưu ý & lỗi sai\n\n- Sai: Thấy $\\dfrac{0}{0}$ thì kết luận giới hạn bằng $0$.\n  Vì sao sai: $\\dfrac{0}{0}$ là dạng vô định, chưa có giá trị giới hạn.\n  Sửa: Biến đổi biểu thức trước, thường là rút gọn hoặc nhân liên hợp.\n\n- Sai: Dùng công thức thương khi $\\lim v_n=0$.\n  Vì sao sai: Quy tắc $\\lim\\dfrac{u_n}{v_n}=\\dfrac{\\lim u_n}{\\lim v_n}$ cần mẫu có giới hạn khác $0$.\n  Sửa: Kiểm tra giới hạn của mẫu trước khi chia.\n\n- Sai: Với $x\\to a$, chỉ tính $f(a)$ rồi kết luận.\n  Vì sao sai: Giới hạn xét giá trị của hàm khi $x$ tiến gần $a$, không phụ thuộc hoàn toàn vào $f(a)$.\n  Sửa: Nếu thay trực tiếp không được, cần xét biểu thức quanh $a$.\n\n- Sai: Phân thức vô cực chỉ nhìn hệ số tự do.\n  Vì sao sai: Khi $x$ hoặc $n$ lớn, hạng bậc cao nhất quyết định giới hạn.\n  Sửa: So sánh bậc và hệ số của hạng bậc cao nhất.\n\n## 6. Chốt nhanh\n\n- Giới hạn là giá trị mà dãy hoặc hàm tiến gần tới.\n- Thay trực tiếp được thì ưu tiên thay, nhưng mẫu phải khác $0$.\n- Dạng $\\dfrac{0}{0}$ là vô định, phải biến đổi trước.\n- Phân thức tiến vô cực: so sánh bậc tử và bậc mẫu.\n- Luôn kiểm tra điều kiện của phép chia trong giới hạn.";
+    marked.setOptions({ gfm: true, breaks: true });
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+    if (window.MathJax) window.MathJax.typesetPromise();
+  </script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+{
+  "words": [
+    {
+      "word": "arid",
+      "pronunciation": "/ˈærɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "khô cằn, hạn hán; (về đất đai) thiếu nước, không có mưa",
+      "definition_en": "very dry; having little or no rain",
+      "level": "B2",
+      "synonyms": [
+        "dry",
+        "parched",
+        "barren"
+      ],
+      "antonyms": [
+        "humid",
+        "wet"
+      ],
+      "example_sentence": "The arid regions of the Sahara support only specialized desert plants and animals adapted to extreme water scarcity."
+    },
+    {
+      "word": "canopy",
+      "pronunciation": "/ˈkænəpi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tán cây; lớp lá và cành trên cùng của rừng che phủ ánh sáng",
+      "definition_en": "the upper layer of branches and leaves in a forest",
+      "level": "B2",
+      "synonyms": [
+        "crown",
+        "foliage",
+        "covering"
+      ],
+      "antonyms": [
+        "understory",
+        "floor"
+      ],
+      "example_sentence": "Tropical rainforest canopy blocks up to 99% of sunlight, creating a dark environment for creatures below."
+    },
+    {
+      "word": "nocturnal",
+      "pronunciation": "/nɒkˈtɜːnəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hoạt động vào ban đêm; (động vật) sống và hoạt động chủ yếu vào đêm",
+      "definition_en": "active at night rather than during the day",
+      "level": "B2",
+      "synonyms": [
+        "night-active",
+        "night-dwelling"
+      ],
+      "antonyms": [
+        "diurnal",
+        "day-active"
+      ],
+      "example_sentence": "Many nocturnal animals such as owls and bats have evolved exceptional night vision and hearing."
+    },
+    {
+      "word": "herbivore",
+      "pronunciation": "/ˈhɜːbɪvɔːr/",
+      "part_of_speech": "noun",
+      "definition_vi": "động vật ăn cỏ/thực vật; sinh vật chỉ ăn thực vật",
+      "definition_en": "an animal that feeds only on plants",
+      "level": "B2",
+      "synonyms": [
+        "plant-eater",
+        "vegetarian"
+      ],
+      "antonyms": [
+        "carnivore",
+        "omnivore"
+      ],
+      "example_sentence": "Herbivores like elephants and giraffes play a crucial role in shaping vegetation patterns across African savannas."
+    },
+    {
+      "word": "carnivore",
+      "pronunciation": "/ˈkɑːnɪvɔːr/",
+      "part_of_speech": "noun",
+      "definition_vi": "động vật ăn thịt; sinh vật chỉ ăn thịt động vật khác",
+      "definition_en": "an animal that feeds on the flesh of other animals",
+      "level": "B2",
+      "synonyms": [
+        "meat-eater",
+        "flesh-eater"
+      ],
+      "antonyms": [
+        "herbivore",
+        "vegetarian"
+      ],
+      "example_sentence": "Top carnivores such as lions and tigers regulate prey populations and maintain ecological balance."
+    },
+    {
+      "word": "omnivore",
+      "pronunciation": "/ˈɒmnɪvɔːr/",
+      "part_of_speech": "noun",
+      "definition_vi": "động vật ăn tạp; sinh vật ăn cả thực vật lẫn thịt",
+      "definition_en": "an animal that eats both plants and meat",
+      "level": "B2",
+      "synonyms": [
+        "all-eater"
+      ],
+      "antonyms": [
+        "herbivore",
+        "carnivore"
+      ],
+      "example_sentence": "Bears are opportunistic omnivores that consume berries, fish, and small mammals depending on seasonal availability."
+    },
+    {
+      "word": "forage",
+      "pronunciation": "/ˈfɒrɪdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "tìm kiếm thức ăn; (động vật) đi tìm cỏ, thức ăn trong tự nhiên",
+      "definition_en": "to search for food in the wild",
+      "level": "B2",
+      "synonyms": [
+        "graze",
+        "browse",
+        "feed"
+      ],
+      "antonyms": [
+        "starve"
+      ],
+      "example_sentence": "Deer forage in meadows at dawn and dusk when predators are less active and vegetation is moist."
+    },
+    {
+      "word": "scavenger",
+      "pronunciation": "/ˈskævɪndʒər/",
+      "part_of_speech": "noun",
+      "definition_vi": "động vật ăn xác thối; sinh vật sống bằng cách ăn thức ăn còn sót lại",
+      "definition_en": "an animal that feeds on dead flesh or waste",
+      "level": "B2",
+      "synonyms": [
+        "carrion-eater",
+        "vulture"
+      ],
+      "antonyms": [
+        "hunter",
+        "predator"
+      ],
+      "example_sentence": "Hyenas and vultures are important scavengers that prevent disease spread by consuming carcasses in savanna ecosystems."
+    },
+    {
+      "word": "plumage",
+      "pronunciation": "/ˈpluːmɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "lông vũ; tổng thể lông của chim",
+      "definition_en": "the feathers covering a bird's body",
+      "level": "B2",
+      "synonyms": [
+        "feathers",
+        "plumes"
+      ],
+      "antonyms": [],
+      "example_sentence": "Peacocks display vibrant blue and green plumage during mating season to attract females."
+    },
+    {
+      "word": "molt",
+      "pronunciation": "/moʊlt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thay lông/lông vũ; quá trình động vật thay lông cũ",
+      "definition_en": "to shed feathers, hair, or skin periodically",
+      "level": "B2",
+      "synonyms": [
+        "shed",
+        "cast off"
+      ],
+      "antonyms": [],
+      "example_sentence": "Birds molt annually to replace damaged feathers and maintain insulation and flight capability."
+    },
+    {
+      "word": "burrow",
+      "pronunciation": "/ˈbɜːroʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "hang động; lỗ hoặc đường hầm mà động vật đào để sống",
+      "definition_en": "a hole or tunnel dug by an animal as a dwelling",
+      "level": "B2",
+      "synonyms": [
+        "hole",
+        "tunnel",
+        "den"
+      ],
+      "antonyms": [
+        "nest"
+      ],
+      "example_sentence": "Rabbits create extensive burrow systems called warrens to provide shelter and protection from predators."
+    },
+    {
+      "word": "den",
+      "pronunciation": "/den/",
+      "part_of_speech": "noun",
+      "definition_vi": "hang động; nơi ở của động vật hoang dã, đặc biệt là động vật ăn thịt",
+      "definition_en": "a small room or the lair of a wild animal",
+      "level": "B2",
+      "synonyms": [
+        "lair",
+        "cave",
+        "burrow"
+      ],
+      "antonyms": [
+        "nest"
+      ],
+      "example_sentence": "Bears retreat to their winter dens in autumn to hibernate and conserve energy during food scarcity."
+    },
+    {
+      "word": "flock",
+      "pronunciation": "/flɒk/",
+      "part_of_speech": "noun",
+      "definition_vi": "đàn chim; nhóm động vật cùng loài sống hoặc di chuyển cùng nhau",
+      "definition_en": "a group of birds or sheep moving together",
+      "level": "B2",
+      "synonyms": [
+        "herd",
+        "group",
+        "swarm"
+      ],
+      "antonyms": [],
+      "example_sentence": "Migratory bird flocks navigate thousands of kilometers using magnetic fields and celestial cues."
+    },
+    {
+      "word": "herd",
+      "pronunciation": "/hɜːrd/",
+      "part_of_speech": "noun",
+      "definition_vi": "đàn; nhóm động vật có vú cùng loài sống hoặc di chuyển cùng nhau",
+      "definition_en": "a large group of mammals living or moving together",
+      "level": "B2",
+      "synonyms": [
+        "flock",
+        "pack",
+        "group"
+      ],
+      "antonyms": [],
+      "example_sentence": "Wildebeest herds undertake annual migrations across the Serengeti in search of fresh grazing lands."
+    },
+    {
+      "word": "pack",
+      "pronunciation": "/pæk/",
+      "part_of_speech": "noun",
+      "definition_vi": "bầy; nhóm động vật ăn thịt (như sói, chó hoang) sống cùng nhau",
+      "definition_en": "a group of wild animals, especially predators, living together",
+      "level": "B2",
+      "synonyms": [
+        "herd",
+        "group",
+        "gang"
+      ],
+      "antonyms": [],
+      "example_sentence": "Wolf packs establish hierarchies with alpha males leading hunts and making territorial decisions."
+    },
+    {
+      "word": "spawn",
+      "pronunciation": "/spɔːn/",
+      "part_of_speech": "verb",
+      "definition_vi": "đẻ trứng; (cá) đẻ trứng vào mùa sinh sản",
+      "definition_en": "to produce eggs in large quantities, especially of fish",
+      "level": "B2",
+      "synonyms": [
+        "breed",
+        "reproduce",
+        "lay eggs"
+      ],
+      "antonyms": [],
+      "example_sentence": "Salmon spawn in freshwater rivers where they were born, navigating upstream against strong currents."
+    },
+    {
+      "word": "territorial",
+      "pronunciation": "/ˌterɪˈtɔːriəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến lãnh thổ; (động vật) bảo vệ và kiểm soát một khu vực nhất định",
+      "definition_en": "relating to the control and defense of an area by an animal",
+      "level": "B2",
+      "synonyms": [
+        "possessive",
+        "protective"
+      ],
+      "antonyms": [
+        "nomadic",
+        "migratory"
+      ],
+      "example_sentence": "Territorial birds sing loudly from perches to warn rivals and establish breeding boundaries."
+    },
+    {
+      "word": "camouflage",
+      "pronunciation": "/ˈkæməflɑːʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngụy trang; khả năng của động vật thay đổi màu sắc hoặc hình dáng để trốn tránh",
+      "definition_en": "the disguise or coloring that allows an animal to blend with its surroundings",
+      "level": "B2",
+      "synonyms": [
+        "disguise",
+        "concealment",
+        "mimicry"
+      ],
+      "antonyms": [
+        "visibility"
+      ],
+      "example_sentence": "Chameleons use advanced camouflage by changing skin color to match vegetation and regulate body temperature."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following animals would most likely be found foraging in an arid region?",
+      "option_a": "A hippopotamus searching for water plants",
+      "option_b": "A camel extracting moisture from desert vegetation",
+      "option_c": "A beaver building dams in streams",
+      "option_d": "A penguin hunting fish in cold waters",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Arid = khô cằn, hạn hán. Lạc đà (camel) là động vật thích nghi với vùng sa mạc khô cằn. Các đáp án khác đều liên quan đến môi trường ẩm ướt hoặc lạnh."
+    },
+    {
+      "question_text": "The rainforest canopy is crucial for wildlife because it ___.",
+      "option_a": "provides the only source of water for animals",
+      "option_b": "filters rainfall and creates a humid microclimate for specialized species",
+      "option_c": "prevents all predators from hunting below",
+      "option_d": "eliminates the need for animals to migrate",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Canopy = tán cây, lớp lá trên cùng của rừng. Nó tạo ra môi trường ẩm ướt và che phủ ánh sáng, tạo điều kiện cho các loài chuyên biệt. Các đáp án khác quá tuyệt đối hoặc sai."
+    },
+    {
+      "question_text": "Nocturnal animals have evolved special adaptations such as ___.",
+      "option_a": "bright coloration to attract mates at night",
+      "option_b": "enhanced vision and hearing to navigate in darkness",
+      "option_c": "reduced body size to hide from predators",
+      "option_d": "the ability to hibernate during daylight hours",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nocturnal = hoạt động vào ban đêm. Động vật đêm phát triển thị lực và thính lực tốt hơn để hoạt động trong bóng tối. Các đáp án khác không liên quan đến thích nghi với hoạt động đêm."
+    },
+    {
+      "question_text": "In a food chain, herbivores are essential because they ___.",
+      "option_a": "hunt and control carnivore populations",
+      "option_b": "convert plant energy into a form that carnivores can consume",
+      "option_c": "prevent plants from overgrowing and blocking sunlight",
+      "option_d": "migrate to spread seeds across different regions",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Herbivore = động vật ăn cỏ. Chúng là vòng trung gian trong chuỗi thức ăn, chuyển đổi năng lượng từ thực vật thành dạng mà thịt ăn có thể tiêu thụ. Đây là vai trò sinh thái cơ bản."
+    },
+    {
+      "question_text": "Which statement best describes the relationship between a scavenger and a carnivore?",
+      "option_a": "Scavengers are a type of carnivore that hunts live prey",
+      "option_b": "Carnivores hunt live prey while scavengers feed on already-dead animals",
+      "option_c": "Scavengers are more aggressive hunters than carnivores",
+      "option_d": "Both feed exclusively on herbivores in the ecosystem",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scavenger = động vật ăn xác thối. Khác với carnivore (ăn thịt động vật sống), scavenger ăn xác động vật đã chết. Đây là sự phân biệt quan trọng về cách kiếm sống."
+    },
+    {
+      "question_text": "A bird's plumage serves multiple functions including ___.",
+      "option_a": "only attracting mates during breeding season",
+      "option_b": "insulation, waterproofing, and display for communication",
+      "option_c": "storing fat reserves for migration",
+      "option_d": "producing sounds for territorial calls",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Plumage = lông vũ của chim. Nó có nhiều chức năng: cách nhiệt, chống nước, và giao tiếp. Đáp án A quá hạn chế, C và D không đúng về chức năng của lông vũ."
+    },
+    {
+      "question_text": "When animals molt, they are ___.",
+      "option_a": "preparing to hibernate for the winter",
+      "option_b": "shedding old feathers, hair, or skin to replace them with new growth",
+      "option_c": "changing their diet to survive seasonal changes",
+      "option_d": "migrating to warmer climates",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Molt = thay lông/lông vũ. Đây là quá trình sinh học tự nhiên để thay thế lông/vỏ cũ bằng cái mới. Các đáp án khác là các hành vi khác nhau của động vật."
+    },
+    {
+      "question_text": "Territorial animals defend their space primarily to ___.",
+      "option_a": "prevent all other species from entering the region",
+      "option_b": "secure access to food, mates, and nesting sites for their own survival and reproduction",
+      "option_c": "establish dominance over larger predators",
+      "option_d": "create barriers against climate change effects",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Territorial = bảo vệ lãnh thổ. Động vật bảo vệ lãnh thổ để đảm bảo tiếp cận thức ăn, bạn tình, và nơi sinh sản. Đáp án A quá tuyệt đối, C và D không phải lý do chính."
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "words": [
+    {
+      "word": "stopover",
+      "pronunciation": "/ˈstɒpəʊvə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Dừng chân tạm thời trong một chuyến đi dài, thường là ở một địa điểm trung gian trước khi tiếp tục hành trình",
+      "definition_en": "A brief stop during a long journey, typically at an intermediate point before continuing to the final destination",
+      "level": "B2",
+      "synonyms": [
+        "break",
+        "halt"
+      ],
+      "antonyms": [
+        "direct flight"
+      ],
+      "example_sentence": "The airline offered a complimentary stopover in Dubai for passengers traveling to Australia."
+    },
+    {
+      "word": "commute",
+      "pronunciation": "/kəˈmjuːt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Đi lại hàng ngày giữa nơi ở và nơi làm việc; hành trình đi lại này",
+      "definition_en": "To travel regularly between home and work; the journey itself",
+      "level": "C1",
+      "synonyms": [
+        "travel",
+        "journey"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many urban workers commute by public transport to avoid traffic congestion."
+    },
+    {
+      "word": "congestion",
+      "pronunciation": "/kənˈdʒestʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng tắc nghẽn, quá tải (đặc biệt là giao thông); sự tập trung quá mức",
+      "definition_en": "Overcrowding or blockage, especially of traffic; excessive accumulation",
+      "level": "B2",
+      "synonyms": [
+        "gridlock",
+        "bottleneck"
+      ],
+      "antonyms": [
+        "flow",
+        "clearance"
+      ],
+      "example_sentence": "Rush hour congestion on the highway delayed thousands of commuters by over an hour."
+    },
+    {
+      "word": "detour",
+      "pronunciation": "/ˈdiːtʊə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Đường vòng; đi theo đường khác thay vì đường chính",
+      "definition_en": "An alternative route taken to avoid the main road; to take such a route",
+      "level": "B2",
+      "synonyms": [
+        "diversion",
+        "bypass"
+      ],
+      "antonyms": [
+        "direct route"
+      ],
+      "example_sentence": "Construction work forced drivers to take a lengthy detour around the city center."
+    },
+    {
+      "word": "scenic route",
+      "pronunciation": "/ˈsiːnɪk ruːt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tuyến đường đi qua những cảnh quan đẹp, thường dài hơn nhưng hấp dẫn hơn",
+      "definition_en": "A route chosen for its beautiful views rather than speed or directness",
+      "level": "B2",
+      "synonyms": [
+        "picturesque route"
+      ],
+      "antonyms": [
+        "shortest route"
+      ],
+      "example_sentence": "Tourists prefer the scenic route along the coast despite it taking an extra hour."
+    },
+    {
+      "word": "toll",
+      "pronunciation": "/təʊl/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phí sử dụng đường cao tốc hoặc cầu; giá phải trả để sử dụng cơ sở hạ tầng",
+      "definition_en": "A charge paid for using a road, bridge, or highway",
+      "level": "C1",
+      "synonyms": [
+        "fee",
+        "charge"
+      ],
+      "antonyms": [],
+      "example_sentence": "Drivers must pay a toll to cross the bridge during peak hours."
+    },
+    {
+      "word": "pedestrian crossing",
+      "pronunciation": "/pəˈdestriən ˈkrɒsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nơi quy định để người đi bộ vượt qua đường; vạch kẻ trên đường dành cho người đi bộ",
+      "definition_en": "A designated area where pedestrians can safely cross a road",
+      "level": "C1",
+      "synonyms": [
+        "crosswalk",
+        "zebra crossing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Always use the pedestrian crossing when crossing busy streets in the city."
+    },
+    {
+      "word": "gridlock",
+      "pronunciation": "/ˈɡrɪdlɒk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng tắc đường hoàn toàn, khi các phương tiện không thể di chuyển",
+      "definition_en": "A complete traffic jam where no vehicles can move",
+      "level": "B2",
+      "synonyms": [
+        "congestion",
+        "traffic jam"
+      ],
+      "antonyms": [
+        "free flow"
+      ],
+      "example_sentence": "The city experienced severe gridlock after the accident on the main highway."
+    },
+    {
+      "word": "transit hub",
+      "pronunciation": "/ˈtrænzɪt hʌb/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Trung tâm giao thông công cộng nơi nhiều tuyến đường giao nhau; điểm trung chuyển chính",
+      "definition_en": "A central point where multiple transportation routes connect and passengers transfer",
+      "level": "B2",
+      "synonyms": [
+        "transport interchange",
+        "junction"
+      ],
+      "antonyms": [],
+      "example_sentence": "The new transit hub will connect buses, trains, and metro lines in one location."
+    },
+    {
+      "word": "charter flight",
+      "pronunciation": "/ˈtʃɑːtə(r) flaɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chuyến bay được thuê riêng cho một nhóm hoặc tổ chức, không phải chuyến bay thường lệ",
+      "definition_en": "A flight hired exclusively for a specific group or organization, not a scheduled service",
+      "level": "B2",
+      "synonyms": [
+        "private flight"
+      ],
+      "antonyms": [
+        "scheduled flight"
+      ],
+      "example_sentence": "The company arranged a charter flight for the team to attend the international conference."
+    },
+    {
+      "word": "cruise",
+      "pronunciation": "/kruːz/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chuyến du lịch bằng tàu biển; đi du lịch bằng tàu",
+      "definition_en": "A vacation trip on a ship; to travel on a ship for leisure",
+      "level": "C1",
+      "synonyms": [
+        "voyage",
+        "sailing trip"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many retirees enjoy taking a Mediterranean cruise during the summer months."
+    },
+    {
+      "word": "boarding pass",
+      "pronunciation": "/ˈbɔːdɪŋ pɑːs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thẻ lên máy bay hoặc tàu; giấy phép lên phương tiện giao thông",
+      "definition_en": "A document or ticket required to board an aircraft or ship",
+      "level": "C1",
+      "synonyms": [
+        "ticket"
+      ],
+      "antonyms": [],
+      "example_sentence": "Passengers must present their boarding pass at the gate before entering the aircraft."
+    },
+    {
+      "word": "customs clearance",
+      "pronunciation": "/ˈkʌstəmz ˈklɪərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình kiểm tra hàng hóa và giấy tờ tại biên giới; sự phê duyệt từ hải quan",
+      "definition_en": "The official process of inspecting goods and documents at a border",
+      "level": "B2",
+      "synonyms": [
+        "border inspection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Customs clearance at the airport can take several hours during peak travel times."
+    },
+    {
+      "word": "visa",
+      "pronunciation": "/ˈviːzə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Giấy phép chính thức cho phép vào, ở lại hoặc rời khỏi một quốc gia",
+      "definition_en": "An official permission stamp or document allowing entry to a country",
+      "level": "C1",
+      "synonyms": [
+        "permit",
+        "authorization"
+      ],
+      "antonyms": [],
+      "example_sentence": "Travelers from many countries require a visa to enter the United States."
+    },
+    {
+      "word": "backpacker",
+      "pronunciation": "/ˈbækpækə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Người du lịch với ngân sách hạn chế, mang ba lô và thường ở những nơi rẻ tiền",
+      "definition_en": "A budget traveler who carries a backpack and stays in inexpensive accommodations",
+      "level": "B2",
+      "synonyms": [
+        "budget traveler"
+      ],
+      "antonyms": [
+        "luxury traveler"
+      ],
+      "example_sentence": "Many backpackers explore Southeast Asia during the dry season to save money."
+    },
+    {
+      "word": "package tour",
+      "pronunciation": "/ˈpækɪdʒ tʊə(r)/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chuyến du lịch được sắp xếp sẵn bao gồm vé, khách sạn và các dịch vụ khác",
+      "definition_en": "A pre-arranged vacation that includes flights, accommodation, and activities",
+      "level": "B2",
+      "synonyms": [
+        "organized tour"
+      ],
+      "antonyms": [
+        "independent travel"
+      ],
+      "example_sentence": "Package tours are popular with first-time travelers who prefer organized itineraries."
+    },
+    {
+      "word": "layover",
+      "pronunciation": "/ˈleɪəʊvə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thời gian chờ đợi giữa hai chuyến bay hoặc phương tiện giao thông",
+      "definition_en": "A stop between flights or transportation legs, usually lasting several hours",
+      "level": "B2",
+      "synonyms": [
+        "stopover",
+        "connection"
+      ],
+      "antonyms": [
+        "direct flight"
+      ],
+      "example_sentence": "The flight has a four-hour layover in Singapore before continuing to Sydney."
+    },
+    {
+      "word": "travel insurance",
+      "pronunciation": "/ˈtrævəl ɪnˈʃʊərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bảo hiểm bảo vệ du khách khỏi các rủi ro như bệnh tật, mất hành lý, hủy chuyến",
+      "definition_en": "Insurance coverage protecting travelers against medical emergencies, lost luggage, and cancellations",
+      "level": "B2",
+      "synonyms": [
+        "trip insurance"
+      ],
+      "antonyms": [],
+      "example_sentence": "It is advisable to purchase travel insurance before booking an international trip."
+    },
+    {
+      "word": "souvenir",
+      "pronunciation": "/ˌsuːvəˈnɪə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Vật lưu niệm, đồ vật nhỏ mua lại từ nơi du lịch để nhớ lại chuyến đi",
+      "definition_en": "A small object kept as a reminder of a place visited",
+      "level": "C1",
+      "synonyms": [
+        "memento",
+        "keepsake"
+      ],
+      "antonyms": [],
+      "example_sentence": "Tourists often buy local souvenirs such as handicrafts and traditional clothing."
+    },
+    {
+      "word": "jet lag",
+      "pronunciation": "/ˈdʒet læɡ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng mệt mỏi và rối loạn sinh lý do thay đổi múi giờ khi bay xa",
+      "definition_en": "Fatigue and disorientation caused by rapid travel across time zones",
+      "level": "B2",
+      "synonyms": [
+        "time zone fatigue"
+      ],
+      "antonyms": [],
+      "example_sentence": "Travelers flying from Europe to Asia often experience severe jet lag for several days."
+    },
+    {
+      "word": "duty-free shop",
+      "pronunciation": "/ˌdjuːti ˈfriː ʃɒp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Cửa hàng bán hàng không chịu thuế, thường ở sân bay hoặc cảng",
+      "definition_en": "A retail store at airports or ports selling goods without import taxes",
+      "level": "B2",
+      "synonyms": [
+        "tax-free shop"
+      ],
+      "antonyms": [],
+      "example_sentence": "Passengers often purchase perfume and alcohol at duty-free shops before boarding."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "What is the main advantage of taking a scenic route instead of the shortest route?",
+      "option_a": "It saves time and fuel costs",
+      "option_b": "It offers beautiful views and a more enjoyable travel experience",
+      "option_c": "It avoids all traffic congestion",
+      "option_d": "It requires no toll payments",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scenic route được chọn vì những cảnh quan đẹp, không phải để tiết kiệm thời gian hay chi phí. Đáp án A sai vì scenic route thường dài hơn. C và D là những lợi ích không chắc chắn."
+    },
+    {
+      "question_text": "If a traveler experiences jet lag after flying from London to Tokyo, which of the following best describes their condition?",
+      "option_a": "They have missed their connecting flight",
+      "option_b": "They are fatigued and disoriented due to crossing multiple time zones",
+      "option_c": "They have lost their boarding pass",
+      "option_d": "They need to go through customs clearance",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Jet lag là tình trạng mệt mỏi và rối loạn sinh lý do thay đổi múi giờ. A, C, D là những vấn đề khác không liên quan đến jet lag."
+    },
+    {
+      "question_text": "Which of the following is NOT typically included in a package tour?",
+      "option_a": "Flights and accommodation",
+      "option_b": "Guided activities and meals",
+      "option_c": "Personal travel insurance and visa applications",
+      "option_d": "Transportation between destinations",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Package tour bao gồm vé, khách sạn, hoạt động và vận chuyển. Bảo hiểm du lịch và xin visa thường không được bao gồm trong gói tour tiêu chuẩn."
+    },
+    {
+      "question_text": "A passenger has a four-hour _____ in Singapore before continuing to their final destination. Which word best completes this sentence?",
+      "option_a": "detour",
+      "option_b": "layover",
+      "option_c": "commute",
+      "option_d": "stopover",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Layover là thời gian chờ giữa hai chuyến bay. Detour là đường vòng, commute là đi lại hàng ngày, stopover có thể dùng nhưng layover phù hợp hơn cho ngữ cảnh bay."
+    },
+    {
+      "question_text": "What is the primary purpose of customs clearance at international borders?",
+      "option_a": "To collect tolls from travelers",
+      "option_b": "To inspect goods and documents to ensure legal entry",
+      "option_c": "To provide travel insurance to visitors",
+      "option_d": "To arrange charter flights for tourists",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Customs clearance là quá trình kiểm tra hàng hóa và giấy tờ tại biên giới. A, C, D không phải là mục đích chính của customs clearance."
+    },
+    {
+      "question_text": "Which of the following best describes a backpacker?",
+      "option_a": "A wealthy traveler who books luxury accommodations",
+      "option_b": "A budget traveler who carries a backpack and stays in inexpensive places",
+      "option_c": "A professional tour guide leading organized groups",
+      "option_d": "A person who commutes daily for work",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Backpacker là người du lịch với ngân sách hạn chế, mang ba lô và ở những nơi rẻ tiền. A mô tả luxury traveler, C là tour guide, D là commuter."
+    },
+    {
+      "question_text": "During rush hour, the city experienced severe _____ where vehicles could not move at all. Which word best fits this context?",
+      "option_a": "congestion",
+      "option_b": "gridlock",
+      "option_c": "detour",
+      "option_d": "toll",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Gridlock mô tả tình trạng tắc đường hoàn toàn khi không có phương tiện nào có thể di chuyển. Congestion là tắc nghẽn nhưng không nhất thiết hoàn toàn. Detour là đường vòng, toll là phí."
+    },
+    {
+      "question_text": "What is the main difference between a charter flight and a scheduled flight?",
+      "option_a": "Charter flights are cheaper than scheduled flights",
+      "option_b": "Charter flights are hired exclusively for a specific group, while scheduled flights operate on fixed routes",
+      "option_c": "Charter flights only operate internationally",
+      "option_d": "Scheduled flights require more boarding passes",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Charter flight được thuê riêng cho một nhóm hoặc tổ chức, không phải chuyến bay thường lệ. A sai vì charter flight thường đắt hơn. C và D không phải là sự khác biệt chính."
+    }
+  ]
+}

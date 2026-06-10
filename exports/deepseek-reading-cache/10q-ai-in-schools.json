@@ -1,0 +1,107 @@
+{
+  "title": "Artificial Intelligence in Schools: Promise and Pitfalls",
+  "title_vi": "Trí tuệ nhân tạo trong trường học: Hứa hẹn và cạm bẫy",
+  "content": "The integration of artificial intelligence into educational settings has accelerated in recent years, sparking both enthusiasm and concern among educators and policymakers. Proponents argue that AI-powered tools can personalise learning, automate administrative tasks, and provide real-time feedback to students. For instance, adaptive learning platforms analyse individual performance data to adjust the difficulty of exercises, allowing learners to progress at their own pace. [I] Such systems, advocates claim, could help bridge achievement gaps by offering targeted support to students who might otherwise fall behind. However, the rapid adoption of these technologies has outpaced the development of clear guidelines, leaving many schools to navigate uncharted territory.\n\nDespite the optimism, a growing body of research highlights significant limitations in current AI applications. A 2023 study by the International Journal of Educational Technology found that while AI tutors improved test scores in mathematics by an average of 12 percent, the gains were concentrated among students who already possessed strong self-regulation skills. [II] Learners who struggled with motivation or lacked digital literacy saw minimal improvement, and in some cases their performance declined. Furthermore, algorithmic bias remains a persistent challenge; several widely used assessment tools have been shown to disadvantage students from non-English-speaking backgrounds, raising questions about fairness and equity.\n\nBeyond technical shortcomings, the social and ethical dimensions of AI in classrooms demand careful scrutiny. Teachers have reported feeling deskilled when algorithms take over lesson planning and grading, potentially eroding the professional judgment that is central to effective teaching. [III] There are also unresolved privacy concerns, as many AI platforms collect vast amounts of sensitive student data, from keystroke patterns to facial expressions, often without transparent consent processes. Critics warn that an overreliance on automated systems could reduce education to a series of measurable transactions, neglecting the relational and emotional aspects of learning that human instructors uniquely provide.\n\nLooking ahead, a balanced approach appears essential if schools are to harness AI’s benefits while mitigating its risks. Policymakers must establish robust regulatory frameworks that prioritise data protection and algorithmic accountability. [IV] At the same time, professional development programmes should equip teachers to use AI as a complement to, rather than a replacement for, their expertise. Ultimately, the goal should not be to create classrooms run by machines, but to thoughtfully integrate technology in ways that enhance human connection and foster deeper learning for all students.",
+  "questions": [
+    {
+      "question_text": "According to paragraph 1, what is one claimed benefit of AI-powered tools in education?",
+      "option_a": "They can eliminate the need for human teachers.",
+      "option_b": "They can help reduce disparities in student achievement.",
+      "option_c": "They have already replaced traditional textbooks.",
+      "option_d": "They guarantee higher test scores for all learners.",
+      "correct_answer": "B",
+      "question_type": "detail",
+      "explanation": "Đoạn 1 nêu rằng các hệ thống AI 'could help bridge achievement gaps by offering targeted support to students who might otherwise fall behind' (có thể giúp thu hẹp khoảng cách thành tích). Điều này tương ứng với việc giảm sự chênh lệch trong kết quả học tập của học sinh, do đó đáp án B đúng. Các đáp án khác không được đề cập hoặc bị phóng đại: A nói loại bỏ giáo viên, C nói thay thế sách giáo khoa, D nói đảm bảo điểm cao hơn cho mọi học sinh."
+    },
+    {
+      "question_text": "The word 'declined' in paragraph 2 is OPPOSITE in meaning to ________.",
+      "option_a": "worsened",
+      "option_b": "improved",
+      "option_c": "weakened",
+      "option_d": "dropped",
+      "correct_answer": "B",
+      "question_type": "vocab_antonym",
+      "explanation": "Từ 'declined' trong ngữ cảnh 'their performance declined' có nghĩa là giảm sút, đi xuống. Từ trái nghĩa phù hợp là 'improved' (cải thiện, tăng lên). Các đáp án A, C, D đều mang nghĩa tương tự 'declined' (xấu đi, suy yếu, tụt giảm)."
+    },
+    {
+      "question_text": "Which of the following best summarises paragraph 2?",
+      "option_a": "AI tutors are equally effective for all types of students regardless of their background.",
+      "option_b": "Research indicates that AI tools have clear benefits but also reveal significant shortcomings related to learner differences and bias.",
+      "option_c": "The main problem with AI in education is that it collects too much personal data from students.",
+      "option_d": "A 2023 study proved that AI cannot improve test scores in any subject.",
+      "correct_answer": "B",
+      "question_type": "paragraph_summary",
+      "explanation": "Đoạn 2 trình bày cả lợi ích (cải thiện điểm toán 12%) và hạn chế (chỉ hiệu quả với học sinh có kỹ năng tự điều chỉnh tốt, thiên vị thuật toán với học sinh không nói tiếng Anh). Do đó, đáp án B tóm tắt chính xác nhất. A sai vì đoạn văn nói công cụ không hiệu quả đồng đều. C sai vì vấn đề dữ liệu được đề cập ở đoạn 3. D sai vì nghiên cứu cho thấy có cải thiện điểm số."
+    },
+    {
+      "question_text": "According to paragraph 3, what is one concern about teachers when AI handles lesson planning and grading?",
+      "option_a": "They may lose their jobs entirely.",
+      "option_b": "They might feel that their professional skills are being undermined.",
+      "option_c": "They are forced to work longer hours.",
+      "option_d": "They receive higher salaries but less respect.",
+      "correct_answer": "B",
+      "question_type": "detail",
+      "explanation": "Đoạn 3 nói: 'Teachers have reported feeling deskilled when algorithms take over lesson planning and grading, potentially eroding the professional judgment...' (Giáo viên cảm thấy bị mất kỹ năng, làm xói mòn phán đoán chuyên môn). Điều này khớp với đáp án B: kỹ năng chuyên môn của họ bị suy yếu. A, C, D không được đề cập trong đoạn."
+    },
+    {
+      "question_text": "The word 'their' in paragraph 4 refers to ________.",
+      "option_a": "policymakers",
+      "option_b": "regulatory frameworks",
+      "option_c": "teachers",
+      "option_d": "students",
+      "correct_answer": "C",
+      "question_type": "reference",
+      "explanation": "Trong câu 'professional development programmes should equip teachers to use AI as a complement to, rather than a replacement for, their expertise', đại từ 'their' quy chiếu đến 'teachers' – chuyên môn của giáo viên. Các đáp án khác không phù hợp về mặt ngữ pháp và ngữ nghĩa."
+    },
+    {
+      "question_text": "Which of the following best paraphrases the sentence: 'Learners who struggled with motivation or lacked digital literacy saw minimal improvement, and in some cases their performance declined'?",
+      "option_a": "Students with low motivation or poor digital skills experienced little progress, and occasionally their results worsened.",
+      "option_b": "All students who lacked motivation failed to improve their performance significantly.",
+      "option_c": "Digital literacy was the only factor that determined whether students improved or declined.",
+      "option_d": "Motivated students always outperformed those with strong digital literacy skills.",
+      "correct_answer": "A",
+      "question_type": "sentence_paraphrase",
+      "explanation": "Câu gốc nói rằng những học sinh thiếu động lực hoặc kỹ năng số 'saw minimal improvement' (thấy ít tiến bộ) và đôi khi 'performance declined' (kết quả giảm sút). Đáp án A diễn đạt đúng ý này: 'experienced little progress, and occasionally their results worsened'. B sai vì nói 'tất cả học sinh thiếu động lực đều thất bại'. C sai vì nói kỹ năng số là yếu tố duy nhất. D sai vì so sánh không có trong câu gốc."
+    },
+    {
+      "question_text": "What can be inferred from paragraph 3 about the author's view on AI in classrooms?",
+      "option_a": "AI should completely replace traditional teaching methods.",
+      "option_b": "The author believes privacy concerns are exaggerated.",
+      "option_c": "The author thinks human interaction remains a vital part of education.",
+      "option_d": "Teachers are generally in favour of automated grading systems.",
+      "correct_answer": "C",
+      "question_type": "detail",
+      "explanation": "Đoạn 3 cảnh báo rằng phụ thuộc quá nhiều vào AI có thể 'neglecting the relational and emotional aspects of learning that human instructors uniquely provide' (bỏ qua khía cạnh quan hệ và cảm xúc mà chỉ người dạy mới mang lại). Từ đó suy ra tác giả coi trọng tương tác con người trong giáo dục. A và B trái ngược với nội dung đoạn. D không được đề cập."
+    },
+    {
+      "question_text": "Which of the following can be inferred from the passage as a whole?",
+      "option_a": "AI will soon solve all major problems in education.",
+      "option_b": "The use of AI in schools requires careful management to avoid negative consequences.",
+      "option_c": "Most countries have already banned AI from classrooms.",
+      "option_d": "Teachers are the main obstacle to successful AI integration.",
+      "correct_answer": "B",
+      "question_type": "passage_inference",
+      "explanation": "Toàn bài nêu cả lợi ích lẫn hạn chế của AI và kết luận rằng cần cách tiếp cận cân bằng, có quy định và đào tạo giáo viên. Suy ra rằng việc sử dụng AI cần được quản lý cẩn thận (đáp án B). A quá lạc quan và không được ủng hộ. C không có trong bài. D sai vì bài không nói giáo viên là trở ngại chính."
+    },
+    {
+      "question_text": "The following sentence would best fit in which position in the passage? 'Without such measures, the digital divide could widen rather than narrow.'",
+      "option_a": "[I]",
+      "option_b": "[II]",
+      "option_c": "[III]",
+      "option_d": "[IV]",
+      "correct_answer": "D",
+      "question_type": "sentence_insertion",
+      "explanation": "Câu cần chèn nói về nguy cơ khoảng cách số mở rộng nếu không có biện pháp. Vị trí [IV] nằm trong đoạn cuối, ngay sau câu kêu gọi thiết lập khung pháp lý mạnh mẽ. Việc chèn vào đây tạo liên kết logic: nếu không có các biện pháp đó (such measures), khoảng cách số sẽ tăng. Các vị trí khác không có 'measures' nào được đề cập trước đó để quy chiếu."
+    },
+    {
+      "question_text": "Which of the following best summarises the passage?",
+      "option_a": "AI in education offers personalised learning but faces technical and ethical challenges, requiring a balanced and regulated approach.",
+      "option_b": "Artificial intelligence has been proven to be a complete failure in school environments and should be abandoned.",
+      "option_c": "The main benefit of AI in schools is that it reduces the workload of teachers without any significant drawbacks.",
+      "option_d": "Policymakers have successfully addressed all concerns related to AI in education through new regulations.",
+      "correct_answer": "A",
+      "question_type": "passage_summary",
+      "explanation": "Bài đọc trình bày cả hứa hẹn (cá nhân hóa học tập) lẫn thách thức (thiên vị, đạo đức, kỹ năng giáo viên) và kết luận cần cách tiếp cận cân bằng, có quy định. Đáp án A tóm tắt đầy đủ nhất. B sai vì bài không nói AI hoàn toàn thất bại. C sai vì bài nêu nhiều hạn chế đáng kể. D sai vì bài nói các quy định vẫn đang cần được thiết lập, chưa giải quyết xong."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "words": [
+    {
+      "word": "intragenerational mobility",
+      "pronunciation": "/ˌɪntrədʒenəˈreɪʃənəl moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thay đổi vị trí kinh tế-xã hội của một cá nhân trong suốt cuộc đời của họ, từ khi bắt đầu sự nghiệp đến khi về hưu.",
+      "definition_en": "The change in an individual's socioeconomic status during their own lifetime, independent of their parents' position.",
+      "level": "C1",
+      "synonyms": [
+        "career mobility",
+        "lifetime earnings progression"
+      ],
+      "antonyms": [
+        "intergenerational mobility"
+      ],
+      "example_sentence": "Research shows that intragenerational mobility has declined significantly in developed economies over the past two decades."
+    },
+    {
+      "word": "precariat",
+      "pronunciation": "/prɪˈkɛəriət/",
+      "part_of_speech": "noun",
+      "definition_vi": "Lớp lao động sống trong tình trạng không ổn định, thiếu hợp đồng dài hạn, phúc lợi xã hội và bảo hiểm việc làm.",
+      "definition_en": "A class of workers living in precarious conditions with unstable employment, minimal benefits, and economic insecurity.",
+      "level": "C1",
+      "synonyms": [
+        "gig workers",
+        "contingent workforce"
+      ],
+      "antonyms": [
+        "permanent workforce",
+        "tenured employees"
+      ],
+      "example_sentence": "The rise of the precariat reflects broader shifts toward flexible labor markets and reduced employer responsibility."
+    },
+    {
+      "word": "glass ceiling",
+      "pronunciation": "/ɡlæs ˈsiːlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Rào cản vô hình ngăn cản phụ nữ và các nhóm thiểu số tiến thêm vào các vị trí lãnh đạo cao cấp, mặc dù họ có đủ năng lực.",
+      "definition_en": "An invisible barrier preventing women and minorities from advancing to senior leadership positions despite their qualifications.",
+      "level": "B2",
+      "synonyms": [
+        "invisible barrier",
+        "career ceiling"
+      ],
+      "antonyms": [
+        "equal advancement",
+        "transparent promotion"
+      ],
+      "example_sentence": "Despite comprising 40% of the workforce, women still encounter a glass ceiling in executive positions across most industries."
+    },
+    {
+      "word": "social stratification",
+      "pronunciation": "/ˌsoʊʃəl ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hệ thống phân chia xã hội thành các tầng lớp khác nhau dựa trên tiêu chí như tài sản, giáo dục, quyền lực và danh vọng.",
+      "definition_en": "The hierarchical arrangement of individuals and groups in society based on wealth, education, power, and prestige.",
+      "level": "C1",
+      "synonyms": [
+        "class hierarchy",
+        "social hierarchy"
+      ],
+      "antonyms": [
+        "egalitarianism",
+        "social equality"
+      ],
+      "example_sentence": "Social stratification in developing nations often perpetuates historical inequalities rooted in colonial legacies."
+    },
+    {
+      "word": "regressive taxation",
+      "pronunciation": "/rɪˈɡresɪv tækˈseɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống thuế trong đó tỷ lệ thuế cao hơn đối với những người có thu nhập thấp hơn, làm tăng bất bình đẳng.",
+      "definition_en": "A tax system where lower-income earners pay a higher percentage of their income in taxes than higher earners.",
+      "level": "C1",
+      "synonyms": [
+        "flat tax",
+        "sales tax"
+      ],
+      "antonyms": [
+        "progressive taxation",
+        "graduated tax"
+      ],
+      "example_sentence": "Critics argue that regressive taxation disproportionately burdens low-income families and widens wealth disparities."
+    },
+    {
+      "word": "occupational segregation",
+      "pronunciation": "/ˌɑːkjəˈpeɪʃənəl ˌseɡrɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiện tượng nhất định các nhóm dân cư (theo giới tính, chủng tộc, v.v.) tập trung vào những ngành nghề hoặc vị trí cụ thể.",
+      "definition_en": "The concentration of certain demographic groups in specific occupations or job sectors, often reflecting discrimination or structural barriers.",
+      "level": "C1",
+      "synonyms": [
+        "job segregation",
+        "workforce segregation"
+      ],
+      "antonyms": [
+        "occupational integration",
+        "workforce diversity"
+      ],
+      "example_sentence": "Occupational segregation by gender remains pronounced in STEM fields and domestic service sectors globally."
+    },
+    {
+      "word": "social capital",
+      "pronunciation": "/ˈsoʊʃəl ˈkæpɪtəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mạng lưới các mối quan hệ, tin tưởng và chuẩn mực xã hội mà cá nhân có thể khai thác để đạt được lợi ích kinh tế và xã hội.",
+      "definition_en": "Networks of relationships, trust, and social norms that individuals can leverage for economic and social advantage.",
+      "level": "C1",
+      "synonyms": [
+        "social networks",
+        "community ties"
+      ],
+      "antonyms": [
+        "social isolation",
+        "community fragmentation"
+      ],
+      "example_sentence": "Wealthy families accumulate social capital through elite educational institutions, providing their children with valuable professional networks."
+    },
+    {
+      "word": "structural barriers",
+      "pronunciation": "/ˈstrʌktʃərəl ˈbæriərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Những rào cản hệ thống trong các thể chế, chính sách hoặc quy tắc xã hội ngăn cản các nhóm nhất định tiến bộ.",
+      "definition_en": "Systemic obstacles embedded in institutions, policies, and social rules that prevent certain groups from advancing.",
+      "level": "B2",
+      "synonyms": [
+        "institutional barriers",
+        "systemic obstacles"
+      ],
+      "antonyms": [
+        "enabling structures",
+        "facilitating systems"
+      ],
+      "example_sentence": "Addressing structural barriers requires comprehensive policy reform rather than individual effort alone."
+    },
+    {
+      "word": "wage stagnation",
+      "pronunciation": "/weɪdʒ stæɡˈneɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng lương thực tế không tăng hoặc tăng rất chậm so với lạm phát, dẫn đến giảm sức mua của lao động.",
+      "definition_en": "A prolonged period where real wages fail to increase or grow slower than inflation, reducing workers' purchasing power.",
+      "level": "B2",
+      "synonyms": [
+        "wage freeze",
+        "income stagnation"
+      ],
+      "antonyms": [
+        "wage growth",
+        "salary increase"
+      ],
+      "example_sentence": "Wage stagnation in manufacturing sectors has forced many workers to seek additional employment or accept gig work."
+    },
+    {
+      "word": "meritocratic ideal",
+      "pronunciation": "/ˌmerɪtəˈkrætɪk aɪˈdiːəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quan niệm rằng thành công và vị trí xã hội nên dựa hoàn toàn trên năng lực và nỗ lực cá nhân, chứ không phải xuất thân hay đặc quyền.",
+      "definition_en": "The belief that success and social position should be determined solely by individual ability and effort, not by privilege or background.",
+      "level": "C1",
+      "synonyms": [
+        "meritocracy",
+        "equal opportunity principle"
+      ],
+      "antonyms": [
+        "nepotism",
+        "hereditary privilege"
+      ],
+      "example_sentence": "While the meritocratic ideal remains influential in education policy, empirical evidence suggests systemic advantages persist for privileged groups."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes intragenerational mobility?",
+      "option_a": "The movement of individuals between social classes within their own lifetime",
+      "option_b": "The transmission of economic status from parents to children across generations",
+      "option_c": "The decline in employment opportunities within a specific industry sector",
+      "option_d": "The concentration of wealth among the top 1% of the population",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Intragenerational mobility đề cập đến sự thay đổi vị trí kinh tế-xã hội của một cá nhân trong cuộc đời của họ. Option B mô tả intergenerational mobility (dịch chuyển giữa các thế hệ), không phải intragenerational."
+    },
+    {
+      "question_text": "The term 'precariat' refers to which group of workers?",
+      "option_a": "Highly skilled professionals with stable, long-term contracts",
+      "option_b": "Workers in precarious conditions with unstable employment and minimal benefits",
+      "option_c": "Government employees with guaranteed pension schemes",
+      "option_d": "Self-employed entrepreneurs with flexible working arrangements",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Precariat là lớp lao động sống trong tình trạng không ổn định, thiếu hợp đồng dài hạn và phúc lợi. Option A, C, D đều mô tả những nhóm có việc làm ổn định hoặc có lợi thế."
+    },
+    {
+      "question_text": "In the context of workplace inequality, a 'glass ceiling' most accurately refers to ___.",
+      "option_a": "The transparent office partitions that separate management from staff",
+      "option_b": "An invisible barrier preventing certain groups from reaching senior leadership positions",
+      "option_c": "The maximum salary cap imposed on employees in public institutions",
+      "option_d": "The physical separation between executive and operational departments",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Glass ceiling là rào cản vô hình ngăn cản phụ nữ và các nhóm thiểu số tiến thêm vào vị trí lãnh đạo cao cấp. Các option khác đều liên quan đến các rào cản vật lý hoặc chính sách cụ thể, không phải rào cản vô hình."
+    },
+    {
+      "question_text": "Which statement best explains why regressive taxation can exacerbate income inequality?",
+      "option_a": "It allows wealthy individuals to pay lower tax rates than lower-income earners",
+      "option_b": "It eliminates all forms of government spending on social programs",
+      "option_c": "It increases the total tax revenue collected by the government",
+      "option_d": "It requires all citizens to pay identical tax amounts regardless of income",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Regressive taxation làm cho những người có thu nhập thấp phải trả tỷ lệ thuế cao hơn, từ đó làm tăng bất bình đẳng. Option B, C, D không phản ánh đặc điểm chính của regressive taxation."
+    },
+    {
+      "question_text": "Social capital, as discussed in inequality studies, primarily refers to ___.",
+      "option_a": "The total monetary wealth accumulated by an individual or family",
+      "option_b": "Networks of relationships and trust that provide economic and social advantages",
+      "option_c": "Government investments in public infrastructure and services",
+      "option_d": "The physical assets and property owned by a person or organization",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Social capital là mạng lưới các mối quan hệ, tin tưởng và chuẩn mực xã hội mà cá nhân có thể khai thác. Option A, C, D đều liên quan đến các hình thức tài sản vật chất hoặc tài chính, không phải mối quan hệ xã hội."
+    },
+    {
+      "question_text": "Occupational segregation by gender is most evident when ___.",
+      "option_a": "Men and women receive equal pay for identical work",
+      "option_b": "Certain professions are dominated by one gender, reflecting historical discrimination or structural barriers",
+      "option_c": "All workers have equal access to training and professional development programs",
+      "option_d": "Companies implement transparent hiring practices based on qualifications alone",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Occupational segregation xảy ra khi các nhóm dân cư tập trung vào những ngành nghề cụ thể. Option A, C, D đều mô tả các điều kiện giảm thiểu sự phân chia theo giới tính, không phải tăng cường nó."
+    },
+    {
+      "question_text": "The meritocratic ideal assumes that social success depends primarily on ___.",
+      "option_a": "Family wealth and inherited privilege passed down through generations",
+      "option_b": "Individual ability and effort rather than background or social connections",
+      "option_c": "Access to exclusive networks and elite educational institutions",
+      "option_d": "Government subsidies and preferential treatment for disadvantaged groups",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Meritocratic ideal cho rằng thành công dựa trên năng lực và nỗ lực cá nhân, không phải xuất thân hay đặc quyền. Option A, C, D đều mô tả các yếu tố ngoài năng lực cá nhân."
+    }
+  ]
+}

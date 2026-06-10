@@ -8,6 +8,7 @@ import {
   LayoutDashboard, User, Brain, FileText,
   BookOpen, LogOut, ChevronLeft, ChevronRight, Menu, X,
   Crown, GraduationCap, Target, Languages, Sparkles, Users, BookMarked, BotMessageSquare,
+  Video,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -23,6 +24,7 @@ interface NavItem {
 const MATH_ITEMS: NavItem[] = [
   { href: '/dashboard/math', label: 'Tổng quan', icon: LayoutDashboard },
   { href: '/learning', label: 'Học Tập', icon: GraduationCap },
+  { href: '/live', label: 'Lớp học Live', icon: Video },
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
   { href: '/practice', label: 'Luyện tập', icon: Target },
   { href: '/exam', label: 'Thi thử', icon: FileText },
@@ -55,17 +57,34 @@ export default function Sidebar({ subject }: SidebarProps) {
   const SidebarContent = () => (
     <div className="flex h-full flex-col">
       {/* Logo */}
-      <div className={cn('flex items-center gap-3 p-4 border-b border-border', collapsed && 'justify-center')}>
-        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold text-sm">
-          NT
-        </div>
-        {!collapsed && (
-          <div className="min-w-0">
-            <p className="font-bold text-sm truncate">ngocthaigiasu</p>
-            <p className="text-xs text-muted-foreground truncate">.id.vn</p>
-          </div>
+      <Link
+        href="/dashboard"
+        className={cn(
+          'flex items-center justify-center border-b border-border overflow-hidden w-full cursor-pointer transition-all hover:opacity-85 active:scale-95',
+          collapsed ? 'p-2 h-16' : 'py-3 px-0 h-auto'
         )}
-      </div>
+      >
+        {collapsed ? (
+          <img
+            src="/square-logo.png"
+            className="h-10 w-10 object-contain rounded-md"
+            alt="Logo"
+          />
+        ) : (
+          <>
+            <img
+              src="/logo-light.png"
+              className="w-full h-auto object-contain block dark:hidden scale-[1.25] -translate-x-4"
+              alt="Logo"
+            />
+            <img
+              src="/logo-dark.png"
+              className="w-full h-auto object-contain hidden dark:block scale-[1.25] -translate-x-4"
+              alt="Logo"
+            />
+          </>
+        )}
+      </Link>
 
       {/* Nav */}
       <nav className="flex-1 overflow-y-auto p-2 space-y-1">
@@ -127,7 +146,10 @@ export default function Sidebar({ subject }: SidebarProps) {
       <Button
         variant="ghost"
         size="icon"
-        className="fixed top-4 left-4 z-50 md:hidden"
+        className={cn(
+          "fixed top-2.5 z-50 md:hidden transition-all duration-300",
+          mobileOpen ? "left-[272px] text-white bg-white/10 hover:bg-white/20" : "left-2.5 text-foreground"
+        )}
         onClick={() => setMobileOpen(!mobileOpen)}
       >
         {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

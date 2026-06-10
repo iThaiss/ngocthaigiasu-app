@@ -1,0 +1,408 @@
+{
+  "words": [
+    {
+      "word": "disseminate",
+      "pronunciation": "/dɪˈsemɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "phổ biến, truyền bá (thông tin, kiến thức) rộng rãi đến nhiều người",
+      "definition_en": "to spread or distribute information widely to many people",
+      "level": "C1",
+      "synonyms": [
+        "distribute",
+        "circulate",
+        "propagate"
+      ],
+      "antonyms": [
+        "suppress",
+        "conceal"
+      ],
+      "example_sentence": "The news agency disseminates daily reports to thousands of subscribers across the country."
+    },
+    {
+      "word": "narrative arc",
+      "pronunciation": "/ˈnærətɪv ɑːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cấu trúc câu chuyện từ khởi đầu đến kết thúc; cách xây dựng và phát triển một câu chuyện báo chí",
+      "definition_en": "the structure and progression of a story from beginning to end",
+      "level": "C1",
+      "synonyms": [
+        "story structure",
+        "plot development"
+      ],
+      "antonyms": [],
+      "example_sentence": "The journalist carefully crafted the narrative arc to maintain reader engagement throughout the investigation."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (thông tin) bằng bằng chứng hoặc lời khai của người khác",
+      "definition_en": "to confirm or verify information with supporting evidence or testimony",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "confirm"
+      ],
+      "antonyms": [
+        "refute",
+        "contradict"
+      ],
+      "example_sentence": "Multiple sources corroborated the reporter's claims about the government's environmental violations."
+    },
+    {
+      "word": "attribution",
+      "pronunciation": "/ˌætrɪˈbjuːʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "ghi công, ghi nguồn; việc nêu rõ nguồn gốc của thông tin hoặc phát biểu trong bài báo",
+      "definition_en": "the act of identifying the source of information or a statement in journalism",
+      "level": "B2",
+      "synonyms": [
+        "credit",
+        "acknowledgment",
+        "source citation"
+      ],
+      "antonyms": [
+        "plagiarism"
+      ],
+      "example_sentence": "Proper attribution to named sources strengthens the credibility of investigative reports."
+    },
+    {
+      "word": "off the record",
+      "pronunciation": "/ɔːf ðə ˈrekɔːrd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoài bản ghi chép; thông tin được cung cấp với điều kiện không được công bố tên nguồn hoặc không được sử dụng",
+      "definition_en": "information shared confidentially that should not be published or attributed",
+      "level": "B2",
+      "synonyms": [
+        "confidential",
+        "not for publication"
+      ],
+      "antonyms": [
+        "on the record"
+      ],
+      "example_sentence": "The minister spoke off the record about the upcoming policy changes, but the journalist could not publish his name."
+    },
+    {
+      "word": "embargo",
+      "pronunciation": "/emˈbɑːrɡoʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "lệnh cấm; thỏa thuận giữa nhà báo và nguồn tin rằng thông tin không được công bố trước một thời điểm nhất định",
+      "definition_en": "an agreement that information cannot be published before a specified time",
+      "level": "B2",
+      "synonyms": [
+        "restriction",
+        "ban",
+        "hold"
+      ],
+      "antonyms": [
+        "release"
+      ],
+      "example_sentence": "The research institute placed an embargo on the study results until the official press conference."
+    },
+    {
+      "word": "op-ed",
+      "pronunciation": "/ˌɒp ˈed/",
+      "part_of_speech": "noun",
+      "definition_vi": "bài viết ý kiến (opposite editorial); bài báo thể hiện quan điểm cá nhân của tác giả, không phải tin tức khách quan",
+      "definition_en": "a signed opinion piece expressing the author's viewpoint on a current issue",
+      "level": "B2",
+      "synonyms": [
+        "opinion piece",
+        "commentary"
+      ],
+      "antonyms": [
+        "news article",
+        "straight news"
+      ],
+      "example_sentence": "The economist published an op-ed criticizing the government's fiscal policy in the national newspaper."
+    },
+    {
+      "word": "human interest story",
+      "pronunciation": "/ˈhjuːmən ˈɪntrəst ˈstɔːri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bài báo về con người; câu chuyện tập trung vào các khía cạnh cảm xúc hoặc nhân văn của một sự kiện",
+      "definition_en": "a news story that focuses on the emotional or personal aspects of an event",
+      "level": "B2",
+      "synonyms": [
+        "feature story",
+        "soft news"
+      ],
+      "antonyms": [
+        "hard news"
+      ],
+      "example_sentence": "The journalist wrote a compelling human interest story about a refugee family rebuilding their lives."
+    },
+    {
+      "word": "source protection",
+      "pronunciation": "/sɔːrs prəˈtekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bảo vệ nguồn tin; nguyên tắc báo chí bảo vệ danh tính của những người cung cấp thông tin mật",
+      "definition_en": "the journalistic principle of protecting the identity of confidential sources",
+      "level": "C1",
+      "synonyms": [
+        "source confidentiality",
+        "shield law"
+      ],
+      "antonyms": [],
+      "example_sentence": "Source protection is fundamental to investigative journalism and allows whistleblowers to come forward safely."
+    },
+    {
+      "word": "syndication",
+      "pronunciation": "/sɪndɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "phân phối nội dung; hệ thống phân phối bài báo, cột viết hoặc chương trình cho nhiều tờ báo hoặc đài phát sóng",
+      "definition_en": "the distribution of content to multiple media outlets for simultaneous publication",
+      "level": "C1",
+      "synonyms": [
+        "distribution",
+        "licensing"
+      ],
+      "antonyms": [
+        "exclusive publication"
+      ],
+      "example_sentence": "The popular advice column reached millions through syndication across hundreds of newspapers."
+    },
+    {
+      "word": "gatekeeping",
+      "pronunciation": "/ˈɡeɪtˌkiːpɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "vai trò kiểm soát; chức năng của truyền thông trong việc quyết định thông tin nào được công bố và thông tin nào bị lọc",
+      "definition_en": "the media's role in deciding which information reaches the public and which is filtered out",
+      "level": "C1",
+      "synonyms": [
+        "editorial control",
+        "information filtering"
+      ],
+      "antonyms": [
+        "open access"
+      ],
+      "example_sentence": "Critics argue that gatekeeping by major news outlets limits public access to diverse perspectives."
+    },
+    {
+      "word": "stringer",
+      "pronunciation": "/ˈstrɪŋər/",
+      "part_of_speech": "noun",
+      "definition_vi": "phóng viên tự do; nhà báo làm việc theo hợp đồng không chính thức cho một tờ báo, thường ở địa phương hoặc nước ngoài",
+      "definition_en": "a freelance journalist who works for a news organization on a part-time or contract basis",
+      "level": "B2",
+      "synonyms": [
+        "freelancer",
+        "correspondent"
+      ],
+      "antonyms": [
+        "staff reporter"
+      ],
+      "example_sentence": "The newspaper employed stringers in remote regions to cover local stories and events."
+    },
+    {
+      "word": "dateline",
+      "pronunciation": "/ˈdeɪtˌlaɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "dòng thời gian địa điểm; dòng chữ ở đầu bài báo ghi rõ nơi và ngày viết bài",
+      "definition_en": "the line at the beginning of a news article indicating the location and date of publication",
+      "level": "B2",
+      "synonyms": [
+        "byline location",
+        "publication line"
+      ],
+      "antonyms": [],
+      "example_sentence": "The dateline 'Beijing, March 15' indicated the reporter filed the story from China."
+    },
+    {
+      "word": "press conference",
+      "pronunciation": "/pres ˈkɒnfərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc họp báo; sự kiện công khai nơi một người hoặc tổ chức cung cấp thông tin cho các nhà báo",
+      "definition_en": "a public event where officials or organizations provide information to journalists",
+      "level": "B2",
+      "synonyms": [
+        "media briefing",
+        "news conference"
+      ],
+      "antonyms": [],
+      "example_sentence": "The CEO held a press conference to announce the company's merger with a rival firm."
+    },
+    {
+      "word": "lead paragraph",
+      "pronunciation": "/led ˈpærəɡræf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đoạn mở bài; đoạn đầu tiên của bài báo chứa thông tin quan trọng nhất (who, what, when, where, why)",
+      "definition_en": "the opening paragraph of a news story containing the most essential information",
+      "level": "B2",
+      "synonyms": [
+        "lede",
+        "opening paragraph"
+      ],
+      "antonyms": [],
+      "example_sentence": "A strong lead paragraph must answer the key questions to hook readers immediately."
+    },
+    {
+      "word": "editorial board",
+      "pronunciation": "/ˌedɪˈtɔːriəl bɔːrd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ban biên tập; nhóm các biên tập viên quyết định nội dung và chính sách xuất bản của một tờ báo",
+      "definition_en": "a group of editors responsible for determining content and publication policy",
+      "level": "B2",
+      "synonyms": [
+        "editorial team",
+        "editorial staff"
+      ],
+      "antonyms": [],
+      "example_sentence": "The editorial board met weekly to discuss upcoming stories and editorial positions."
+    },
+    {
+      "word": "vetting",
+      "pronunciation": "/ˈvetɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "kiểm chứng, xác minh; quá trình kiểm tra kỹ lưỡng thông tin trước khi công bố",
+      "definition_en": "the process of carefully checking and verifying information before publication",
+      "level": "C1",
+      "synonyms": [
+        "verification",
+        "fact-checking",
+        "review"
+      ],
+      "antonyms": [
+        "oversight",
+        "negligence"
+      ],
+      "example_sentence": "Rigorous vetting of sources is essential to prevent the spread of false information."
+    },
+    {
+      "word": "newsroom",
+      "pronunciation": "/ˈnjuːzruːm/",
+      "part_of_speech": "noun",
+      "definition_vi": "phòng tin; không gian làm việc của các nhà báo và biên tập viên tại một cơ quan báo chí",
+      "definition_en": "the office where journalists and editors work to produce news content",
+      "level": "B2",
+      "synonyms": [
+        "editorial office",
+        "news desk"
+      ],
+      "antonyms": [],
+      "example_sentence": "The newsroom buzzed with activity as reporters rushed to meet the evening deadline."
+    },
+    {
+      "word": "angle",
+      "pronunciation": "/ˈæŋɡəl/",
+      "part_of_speech": "noun",
+      "definition_vi": "góc nhìn, cách tiếp cận; khía cạnh hoặc quan điểm đặc biệt mà một bài báo tập trung vào",
+      "definition_en": "a particular perspective or approach taken in reporting a story",
+      "level": "B2",
+      "synonyms": [
+        "perspective",
+        "approach",
+        "slant"
+      ],
+      "antonyms": [],
+      "example_sentence": "The reporter found a unique angle on the climate crisis by interviewing affected communities."
+    },
+    {
+      "word": "attribution of sources",
+      "pronunciation": "/ˌætrɪˈbjuːʃən əv ˈsɔːrsɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ghi rõ nguồn; thực hành nêu tên hoặc xác định rõ ràng những người cung cấp thông tin trong bài báo",
+      "definition_en": "the practice of clearly identifying and crediting the sources of information in reporting",
+      "level": "C1",
+      "synonyms": [
+        "source citation",
+        "proper attribution"
+      ],
+      "antonyms": [
+        "anonymous sourcing"
+      ],
+      "example_sentence": "Transparent attribution of sources builds reader trust and maintains journalistic standards."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the term 'disseminate' in the context of media and journalism?",
+      "option_a": "To suppress or hide information from the public",
+      "option_b": "To spread or distribute information widely to many people",
+      "option_c": "To criticize a news story for inaccuracy",
+      "option_d": "To edit and revise a manuscript before publication",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Disseminate có nghĩa là phổ biến, truyền bá thông tin rộng rãi. Option A là ngược lại (suppress), C và D không liên quan đến ý nghĩa của từ này."
+    },
+    {
+      "question_text": "In journalism, when a source provides information 'off the record,' what does this mean?",
+      "option_a": "The information can be published with the source's full name",
+      "option_b": "The information cannot be published or must be published without attribution",
+      "option_c": "The information is recorded and archived for future use",
+      "option_d": "The information is verified by multiple independent sources",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Off the record có nghĩa là thông tin được cung cấp với điều kiện không được công bố tên nguồn hoặc không được sử dụng. Option A sai vì nó là ngược lại, C và D không phù hợp."
+    },
+    {
+      "question_text": "What is the primary purpose of 'source protection' in investigative journalism?",
+      "option_a": "To prevent journalists from being sued by their sources",
+      "option_b": "To safeguard the identity of confidential sources and encourage whistleblowers to come forward",
+      "option_c": "To ensure that all sources are paid for their information",
+      "option_d": "To limit the number of sources a journalist can use in a story",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Source protection là nguyên tắc bảo vệ danh tính của những người cung cấp thông tin mật, giúp những người tố cáo có thể tiết lộ thông tin một cách an toàn. Option A, C, D đều sai."
+    },
+    {
+      "question_text": "Which term refers to the distribution of content to multiple media outlets for simultaneous publication?",
+      "option_a": "Syndication",
+      "option_b": "Attribution",
+      "option_c": "Gatekeeping",
+      "option_d": "Vetting",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Syndication là hệ thống phân phối bài báo cho nhiều tờ báo hoặc đài phát sóng. Attribution là ghi nguồn, gatekeeping là kiểm soát thông tin, vetting là kiểm chứng."
+    },
+    {
+      "question_text": "In the context of journalism, 'corroborate' most closely means ___.",
+      "option_a": "To contradict or refute a claim",
+      "option_b": "To verify or confirm information with supporting evidence",
+      "option_c": "To publish a story without proper editing",
+      "option_d": "To criticize a journalist's writing style",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Corroborate có nghĩa là xác nhận, chứng thực thông tin bằng bằng chứng. Option A là ngược lại (refute), C và D không liên quan."
+    },
+    {
+      "question_text": "What does 'gatekeeping' refer to in media studies?",
+      "option_a": "The physical security measures used to protect newspaper offices",
+      "option_b": "The media's role in deciding which information reaches the public",
+      "option_c": "The process of hiring and training new journalists",
+      "option_d": "The legal restrictions on publishing sensitive government documents",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Gatekeeping là vai trò kiểm soát của truyền thông trong việc quyết định thông tin nào được công bố. Option A, C, D đều không chính xác."
+    },
+    {
+      "question_text": "A journalist's 'lead paragraph' should primarily ___.",
+      "option_a": "Provide detailed background information about the reporter",
+      "option_b": "Contain the most essential information answering key questions",
+      "option_c": "Include advertisements and promotional content",
+      "option_d": "Summarize the editor's personal opinion on the topic",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Lead paragraph là đoạn mở bài chứa thông tin quan trọng nhất (who, what, when, where, why). Option A, C, D đều sai."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of proper 'attribution of sources' in journalism?",
+      "option_a": "Clearly identifying who provided the information",
+      "option_b": "Crediting sources transparently to build reader trust",
+      "option_c": "Using anonymous sources without any verification",
+      "option_d": "Maintaining journalistic standards through source citation",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Attribution of sources yêu cầu ghi rõ nguồn. Option C (sử dụng nguồn ẩn danh mà không xác minh) là ngược lại với nguyên tắc này. A, B, D đều là đặc điểm của attribution đúng."
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+{
+  "words": [
+    {
+      "word": "food security",
+      "pronunciation": "/fuːd sɪˈkjʊərɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng mà tất cả mọi người có quyền tiếp cận đủ thực phẩm an toàn, bổ dưỡng để sống khỏe mạnh",
+      "definition_en": "the state in which all people have reliable access to sufficient, safe, and nutritious food",
+      "level": "B2",
+      "synonyms": [
+        "food stability",
+        "nutritional security"
+      ],
+      "antonyms": [
+        "food insecurity",
+        "hunger"
+      ],
+      "example_sentence": "Climate change poses a significant threat to global food security, affecting millions of vulnerable populations."
+    },
+    {
+      "word": "supply chain",
+      "pronunciation": "/səˈplaɪ tʃeɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "chuỗi các hoạt động từ sản xuất, vận chuyển đến phân phối sản phẩm đến người tiêu dùng",
+      "definition_en": "the sequence of processes involved in the production and distribution of goods from producer to consumer",
+      "level": "B2",
+      "synonyms": [
+        "logistics network",
+        "distribution chain"
+      ],
+      "antonyms": [],
+      "example_sentence": "Disruptions in the supply chain during the pandemic exposed vulnerabilities in global food distribution systems."
+    },
+    {
+      "word": "agricultural productivity",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl prɒdʌkˈtɪvɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ hiệu quả của hoạt động nông nghiệp trong việc tạo ra sản phẩm trên một đơn vị đất đai hoặc lao động",
+      "definition_en": "the efficiency of agricultural production measured by output per unit of land or labor",
+      "level": "C1",
+      "synonyms": [
+        "crop yield",
+        "farming efficiency"
+      ],
+      "antonyms": [
+        "agricultural decline"
+      ],
+      "example_sentence": "Improving agricultural productivity through sustainable farming techniques is essential for meeting future food demands."
+    },
+    {
+      "word": "crop failure",
+      "pronunciation": "/krɒp ˈfeɪljə/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thất bại trong việc thu hoạch cây trồng do thời tiết xấu, bệnh tật hoặc các yếu tố khác",
+      "definition_en": "the loss or destruction of crops due to adverse weather, disease, or other environmental factors",
+      "level": "B2",
+      "synonyms": [
+        "harvest loss",
+        "crop loss"
+      ],
+      "antonyms": [
+        "bumper crop",
+        "abundant harvest"
+      ],
+      "example_sentence": "Severe droughts in East Africa have caused widespread crop failures, threatening the livelihoods of millions of farmers."
+    },
+    {
+      "word": "food shortage",
+      "pronunciation": "/fuːd ˈʃɔːtɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng thiếu hụt thực phẩm, không đủ lượng để cung cấp cho dân số",
+      "definition_en": "a situation where the supply of food is insufficient to meet the demand of a population",
+      "level": "B2",
+      "synonyms": [
+        "food scarcity",
+        "food deficit"
+      ],
+      "antonyms": [
+        "food abundance",
+        "food surplus"
+      ],
+      "example_sentence": "Global food shortages have been exacerbated by geopolitical tensions and climate-related disasters."
+    },
+    {
+      "word": "logistics infrastructure",
+      "pronunciation": "/ləˈdʒɪstɪks ˌɪnfrəˈstrʌktʃə/",
+      "part_of_speech": "noun",
+      "definition_vi": "các cơ sở vật chất như đường xá, cảng, kho bãi cần thiết để vận chuyển và lưu trữ hàng hóa",
+      "definition_en": "the physical facilities and systems required for the transportation and storage of goods",
+      "level": "C1",
+      "synonyms": [
+        "transport network",
+        "distribution infrastructure"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developing countries often lack adequate logistics infrastructure, hindering efficient food distribution to rural areas."
+    },
+    {
+      "word": "food waste",
+      "pronunciation": "/fuːd weɪst/",
+      "part_of_speech": "noun",
+      "definition_vi": "lượng thực phẩm bị lãng phí hoặc vứt bỏ trong quá trình sản xuất, vận chuyển hoặc tiêu dùng",
+      "definition_en": "the loss or disposal of food at any stage of the supply chain from production to consumption",
+      "level": "B2",
+      "synonyms": [
+        "food loss",
+        "food spoilage"
+      ],
+      "antonyms": [],
+      "example_sentence": "Reducing food waste is crucial for achieving food security and environmental sustainability."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng phục hồi hoặc thích ứng với những khó khăn, sốc hoặc thay đổi",
+      "definition_en": "the capacity to recover from or adapt to adversity, shocks, or changes",
+      "level": "C1",
+      "synonyms": [
+        "adaptability",
+        "robustness"
+      ],
+      "antonyms": [
+        "fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "Building resilience in food systems requires diversification of crops and strengthening of local supply networks."
+    },
+    {
+      "word": "subsistence farming",
+      "pronunciation": "/səbˈsɪstəns ˈfɑːmɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "hình thức nông nghiệp nhỏ quy mô mà nông dân chỉ sản xuất đủ để tự cấp, không bán thặng dư",
+      "definition_en": "small-scale farming where farmers produce mainly for their own consumption rather than for commercial sale",
+      "level": "C1",
+      "synonyms": [
+        "smallholder farming",
+        "self-sufficient agriculture"
+      ],
+      "antonyms": [
+        "commercial farming",
+        "industrial agriculture"
+      ],
+      "example_sentence": "Many farmers in developing regions rely on subsistence farming, making them vulnerable to climate shocks."
+    },
+    {
+      "word": "food sovereignty",
+      "pronunciation": "/fuːd ˈsɒvrɪnti/",
+      "part_of_speech": "noun",
+      "definition_vi": "quyền của các quốc gia hoặc cộng đồng tự quyết định chính sách nông nghiệp và thực phẩm của mình",
+      "definition_en": "the right of peoples to define their own food and agricultural policies without external pressure",
+      "level": "C1",
+      "synonyms": [
+        "agricultural autonomy",
+        "food independence"
+      ],
+      "antonyms": [
+        "food dependence"
+      ],
+      "example_sentence": "Developing nations advocate for food sovereignty to protect their local farming communities from global market pressures."
+    },
+    {
+      "word": "drought",
+      "pronunciation": "/draʊt/",
+      "part_of_speech": "noun",
+      "definition_vi": "thời kỳ kéo dài thiếu mưa, dẫn đến thiếu nước và ảnh hưởng đến nông nghiệp",
+      "definition_en": "a prolonged period of abnormally low rainfall, leading to a shortage of water",
+      "level": "B2",
+      "synonyms": [
+        "water scarcity",
+        "dry spell"
+      ],
+      "antonyms": [
+        "flood",
+        "deluge"
+      ],
+      "example_sentence": "Recurring droughts in sub-Saharan Africa have devastated agricultural output and deepened food insecurity."
+    },
+    {
+      "word": "commodity prices",
+      "pronunciation": "/kəˈmɒdɪti ˈpraɪsɪz/",
+      "part_of_speech": "noun",
+      "definition_vi": "giá cả của các hàng hóa cơ bản như lúa, dầu, đường trên thị trường quốc tế",
+      "definition_en": "the market prices of basic goods such as grains, oils, and other agricultural products",
+      "level": "C1",
+      "synonyms": [
+        "market prices",
+        "agricultural prices"
+      ],
+      "antonyms": [],
+      "example_sentence": "Volatile commodity prices have made it difficult for low-income countries to maintain stable food supplies."
+    },
+    {
+      "word": "food distribution network",
+      "pronunciation": "/fuːd ˌdɪstrɪˈbjuːʃən ˈnetwɜːk/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống các kênh và cơ sở để phân phối thực phẩm từ nhà sản xuất đến người tiêu dùng",
+      "definition_en": "the system of channels and facilities through which food is distributed from producers to consumers",
+      "level": "C1",
+      "synonyms": [
+        "distribution system",
+        "food logistics network"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strengthening food distribution networks in rural areas is essential for reducing regional food inequalities."
+    },
+    {
+      "word": "malnutrition",
+      "pronunciation": "/ˌmælnjuːˈtrɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng sức khỏe kém do thiếu hoặc mất cân bằng dinh dưỡng",
+      "definition_en": "a condition of poor health caused by insufficient or unbalanced nutrition",
+      "level": "B2",
+      "synonyms": [
+        "undernutrition",
+        "nutritional deficiency"
+      ],
+      "antonyms": [
+        "good nutrition",
+        "balanced diet"
+      ],
+      "example_sentence": "Child malnutrition remains a critical public health challenge in regions affected by food insecurity."
+    },
+    {
+      "word": "climate variability",
+      "pronunciation": "/ˈklaɪmət ˌveəriəˈbɪlɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thay đổi không ổn định của điều kiện khí hậu, gây khó đoán cho nông nghiệp",
+      "definition_en": "unpredictable fluctuations in climate conditions that affect agricultural planning and production",
+      "level": "C1",
+      "synonyms": [
+        "climate instability",
+        "weather unpredictability"
+      ],
+      "antonyms": [
+        "climate stability"
+      ],
+      "example_sentence": "Increasing climate variability poses unprecedented challenges to agricultural planning and food production systems."
+    },
+    {
+      "word": "food import dependency",
+      "pronunciation": "/fuːd ˈɪmpɔːt dɪˈpendənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng một quốc gia phụ thuộc vào nhập khẩu thực phẩm từ nước ngoài",
+      "definition_en": "the reliance of a country on imported food to meet its domestic consumption needs",
+      "level": "C1",
+      "synonyms": [
+        "food import reliance",
+        "import vulnerability"
+      ],
+      "antonyms": [
+        "food self-sufficiency"
+      ],
+      "example_sentence": "Many island nations face high food import dependency, making them vulnerable to global price fluctuations."
+    },
+    {
+      "word": "sustainable agriculture",
+      "pronunciation": "/səˈsteɪnəbl ˈæɡrɪkʌltʃə/",
+      "part_of_speech": "noun",
+      "definition_vi": "phương pháp nông nghiệp bảo vệ môi trường, duy trì độ ph肥đất và không gây hại lâu dài",
+      "definition_en": "farming practices that maintain environmental health, soil fertility, and long-term productivity",
+      "level": "C1",
+      "synonyms": [
+        "eco-friendly farming",
+        "regenerative agriculture"
+      ],
+      "antonyms": [
+        "industrial agriculture",
+        "conventional farming"
+      ],
+      "example_sentence": "Transitioning to sustainable agriculture is vital for ensuring long-term food security and environmental protection."
+    },
+    {
+      "word": "food price inflation",
+      "pronunciation": "/fuːd praɪs ɪnˈfleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tăng giá thực phẩm nhanh chóng, làm giảm khả năng mua của người tiêu dùng",
+      "definition_en": "rapid increases in food prices that reduce purchasing power and access to food",
+      "level": "C1",
+      "synonyms": [
+        "food price surge",
+        "rising food costs"
+      ],
+      "antonyms": [
+        "price deflation"
+      ],
+      "example_sentence": "Food price inflation in 2022 pushed millions of people into poverty and deepened global food insecurity."
+    },
+    {
+      "word": "agricultural land degradation",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl lænd ˌdeɡrəˈdeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự suy giảm chất lượng đất nông nghiệp do xói mòn, mất dinh dưỡng hoặc ô nhiễm",
+      "definition_en": "the decline in soil quality and fertility due to erosion, nutrient depletion, or contamination",
+      "level": "C1",
+      "synonyms": [
+        "soil degradation",
+        "land deterioration"
+      ],
+      "antonyms": [
+        "land restoration",
+        "soil improvement"
+      ],
+      "example_sentence": "Agricultural land degradation threatens the productive capacity of farmland and exacerbates food insecurity."
+    },
+    {
+      "word": "cold chain",
+      "pronunciation": "/koʊld tʃeɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống bảo quản lạnh liên tục từ sản xuất đến tiêu dùng để giữ tươi thực phẩm",
+      "definition_en": "a temperature-controlled supply chain that maintains the freshness and safety of perishable foods",
+      "level": "C1",
+      "synonyms": [
+        "refrigerated logistics",
+        "temperature-controlled distribution"
+      ],
+      "antonyms": [],
+      "example_sentence": "Inadequate cold chain infrastructure in developing countries results in significant post-harvest food losses."
+    },
+    {
+      "word": "food fortification",
+      "pronunciation": "/fuːd ˌfɔːrtɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình bổ sung các chất dinh dưỡng thiếu hụt vào thực phẩm để cải thiện giá trị dinh dưỡng",
+      "definition_en": "the process of adding essential nutrients to food to improve its nutritional value",
+      "level": "C1",
+      "synonyms": [
+        "nutrient enrichment",
+        "food supplementation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Food fortification programs have successfully reduced micronutrient deficiencies in vulnerable populations."
+    },
+    {
+      "word": "pest and disease management",
+      "pronunciation": "/pest ənd dɪˈziːz ˈmænɪdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "các biện pháp kiểm soát sâu bệnh để bảo vệ cây trồng và duy trì năng suất",
+      "definition_en": "strategies and practices to control agricultural pests and diseases and protect crop yields",
+      "level": "C1",
+      "synonyms": [
+        "crop protection",
+        "integrated pest control"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective pest and disease management is crucial for maintaining stable agricultural production and food security."
+    },
+    {
+      "word": "food traceability",
+      "pronunciation": "/fuːd ˌtreɪsəˈbɪlɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng theo dõi nguồn gốc và quá trình sản xuất của thực phẩm từ trang trại đến bàn ăn",
+      "definition_en": "the ability to track the origin and production history of food from farm to table",
+      "level": "C1",
+      "synonyms": [
+        "food tracking",
+        "supply chain transparency"
+      ],
+      "antonyms": [],
+      "example_sentence": "Implementing food traceability systems enhances food safety and consumer confidence in the supply chain."
+    },
+    {
+      "word": "agricultural subsidy",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl ˈsʌbsɪdi/",
+      "part_of_speech": "noun",
+      "definition_vi": "hỗ trợ tài chính từ chính phủ cho nông dân để giảm chi phí sản xuất hoặc ổn định giá",
+      "definition_en": "government financial support to farmers to reduce production costs or stabilize prices",
+      "level": "C1",
+      "synonyms": [
+        "farm subsidy",
+        "agricultural support"
+      ],
+      "antonyms": [],
+      "example_sentence": "Agricultural subsidies in developed countries often distort global markets and disadvantage farmers in developing nations."
+    },
+    {
+      "word": "food safety standards",
+      "pronunciation": "/fuːd ˈseɪfti ˈstændədz/",
+      "part_of_speech": "noun",
+      "definition_vi": "các quy chuẩn và tiêu chuẩn để đảm bảo thực phẩm an toàn, không có độc tố hoặc vi khuẩn",
+      "definition_en": "regulations and criteria to ensure food is free from contaminants and safe for consumption",
+      "level": "B2",
+      "synonyms": [
+        "food quality standards",
+        "hygiene regulations"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strict food safety standards are essential for preventing foodborne illnesses and protecting public health."
+    },
+    {
+      "word": "agricultural mechanization",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl ˌmekənɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sử dụng máy móc và công nghệ để thay thế lao động thủ công trong nông nghiệp",
+      "definition_en": "the use of machinery and technology to replace manual labor in agricultural production",
+      "level": "C1",
+      "synonyms": [
+        "farm mechanization",
+        "agricultural automation"
+      ],
+      "antonyms": [
+        "manual farming"
+      ],
+      "example_sentence": "Agricultural mechanization can increase productivity but may displace rural workers without proper social support."
+    },
+    {
+      "word": "food access",
+      "pronunciation": "/fuːd ˈækses/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng của mọi người tiếp cận được thực phẩm đủ, bất kể tình trạng kinh tế xã hội",
+      "definition_en": "the ability of individuals to obtain sufficient food regardless of their socioeconomic status",
+      "level": "B2",
+      "synonyms": [
+        "food availability",
+        "food affordability"
+      ],
+      "antonyms": [
+        "food deprivation"
+      ],
+      "example_sentence": "Improving food access for low-income households requires both increased production and equitable distribution."
+    },
+    {
+      "word": "post-harvest loss",
+      "pronunciation": "/ˌpoʊst ˈhɑːrvɪst lɔːs/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự mất mát thực phẩm sau khi thu hoạch do bảo quản kém, vận chuyển hoặc xử lý không đúng",
+      "definition_en": "the loss of food after harvest due to poor storage, transportation, or handling practices",
+      "level": "C1",
+      "synonyms": [
+        "harvest loss",
+        "post-harvest waste"
+      ],
+      "antonyms": [],
+      "example_sentence": "Reducing post-harvest losses through improved storage facilities could significantly enhance food security."
+    },
+    {
+      "word": "irrigation system",
+      "pronunciation": "/ɪˈrɪɡeɪʃən ˈsɪstəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống cấp nước nhân tạo để tưới cây trồng, đặc biệt trong vùng khô hạn",
+      "definition_en": "artificial water supply systems designed to provide water to crops in arid or semi-arid regions",
+      "level": "B2",
+      "synonyms": [
+        "water management system",
+        "watering infrastructure"
+      ],
+      "antonyms": [
+        "rain-fed agriculture"
+      ],
+      "example_sentence": "Modern irrigation systems can improve crop yields but require significant investment and water resource management."
+    },
+    {
+      "word": "food emergency",
+      "pronunciation": "/fuːd ɪˈmɜːrdʒənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình huống khẩn cấp khi thiếu thực phẩm nghiêm trọng, đe dọa tính mạng của dân cư",
+      "definition_en": "a critical situation where severe food shortage threatens the survival of a population",
+      "level": "B2",
+      "synonyms": [
+        "food crisis",
+        "famine"
+      ],
+      "antonyms": [],
+      "example_sentence": "International humanitarian organizations mobilized to address the food emergency in the conflict-affected region."
+    },
+    {
+      "word": "agricultural extension services",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl ɪkˈstenʃən ˈsɜːrvɪsɪz/",
+      "part_of_speech": "noun",
+      "definition_vi": "các dịch vụ hỗ trợ kỹ thuật và tư vấn để giúp nông dân cải thiện phương pháp canh tác",
+      "definition_en": "advisory and technical support services that help farmers improve their farming practices and productivity",
+      "level": "C1",
+      "synonyms": [
+        "farm advisory services",
+        "agricultural support programs"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strengthening agricultural extension services is crucial for disseminating modern farming techniques to smallholder farmers."
+    },
+    {
+      "word": "food system transformation",
+      "pronunciation": "/fuːd ˈsɪstəm ˌtrænsfərˈmeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thay đổi toàn diện trong cách thức sản xuất, phân phối và tiêu dùng thực phẩm",
+      "definition_en": "comprehensive changes in how food is produced, distributed, and consumed to achieve sustainability",
+      "level": "C1",
+      "synonyms": [
+        "food system reform",
+        "agricultural transformation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Food system transformation is essential for addressing climate change, inequality, and food insecurity simultaneously."
+    },
+    {
+      "word": "crop diversification",
+      "pronunciation": "/krɒp ˌdaɪvɜːsɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "việc trồng nhiều loại cây khác nhau thay vì chỉ một loại để giảm rủi ro và cải thiện dinh dưỡng",
+      "definition_en": "growing a variety of crops instead of relying on a single crop to reduce risk and improve nutrition",
+      "level": "C1",
+      "synonyms": [
+        "crop variety",
+        "agricultural diversification"
+      ],
+      "antonyms": [
+        "monoculture"
+      ],
+      "example_sentence": "Promoting crop diversification among smallholder farmers can enhance food security and improve household nutrition."
+    },
+    {
+      "word": "food sovereignty movement",
+      "pronunciation": "/fuːd ˈsɒvrɪnti ˈmuːvmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "phong trào xã hội đòi quyền tự quyết định chính sách thực phẩm và bảo vệ nông dân địa phương",
+      "definition_en": "a social movement advocating for communities' right to control their food systems and protect local farmers",
+      "level": "C1",
+      "synonyms": [
+        "food justice movement",
+        "agricultural autonomy movement"
+      ],
+      "antonyms": [],
+      "example_sentence": "The food sovereignty movement challenges corporate control of global food systems and promotes local agricultural practices."
+    },
+    {
+      "word": "food affordability",
+      "pronunciation": "/fuːd əˌfɔːrdəˈbɪlɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng của người tiêu dùng mua được thực phẩm với giá cả phù hợp với thu nhập của họ",
+      "definition_en": "the ability of consumers to purchase food at prices they can afford relative to their income",
+      "level": "B2",
+      "synonyms": [
+        "food price accessibility",
+        "purchasing power"
+      ],
+      "antonyms": [
+        "food unaffordability"
+      ],
+      "example_sentence": "Declining food affordability has forced many families to reduce food consumption and compromise nutritional intake."
+    },
+    {
+      "word": "climate-smart agriculture",
+      "pronunciation": "/ˈklaɪmət smɑːrt ˈæɡrɪkʌltʃə/",
+      "part_of_speech": "noun",
+      "definition_vi": "các phương pháp nông nghiệp được thiết kế để thích ứng với biến đổi khí hậu và giảm phát thải",
+      "definition_en": "agricultural practices designed to adapt to climate change while reducing greenhouse gas emissions",
+      "level": "C1",
+      "synonyms": [
+        "climate-resilient agriculture",
+        "sustainable farming"
+      ],
+      "antonyms": [],
+      "example_sentence": "Implementing climate-smart agriculture can help farmers adapt to climate variability while maintaining productivity."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between food security and supply chain resilience?",
+      "option_a": "Food security depends entirely on the ability of supply chains to withstand disruptions and adapt to shocks.",
+      "option_b": "Supply chain resilience is irrelevant to food security as long as production levels remain high.",
+      "option_c": "Food security is only concerned with the quantity of food produced, not how it is distributed.",
+      "option_d": "Supply chains have no impact on whether populations can access sufficient food.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Khả năng phục hồi của chuỗi cung ứng là yếu tố then chốt để đảm bảo an ninh lương thực, vì nó cho phép hệ thống thực phẩm duy trì hoạt động khi gặp khó khăn. Các đáp án khác phủ nhận tầm quan trọng của chuỗi cung ứng hoặc chỉ tập trung vào sản xuất mà bỏ qua phân phối."
+    },
+    {
+      "question_text": "What is the primary consequence of high food import dependency for developing nations?",
+      "option_a": "It guarantees stable food prices and consistent supply.",
+      "option_b": "It makes them vulnerable to global price fluctuations and supply disruptions.",
+      "option_c": "It eliminates the need for domestic agricultural development.",
+      "option_d": "It ensures food security regardless of domestic production capacity.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Phụ thuộc vào nhập khẩu thực phẩm khiến các quốc gia phát triển dễ bị tổn thương bởi biến động giá cả toàn cầu và gián đoạn chuỗi cung ứng. Các đáp án khác sai vì nhập khẩu không đảm bảo ổn định hay loại bỏ nhu cầu phát triển nông nghiệp nội địa."
+    },
+    {
+      "question_text": "Which practice is most effective in reducing post-harvest losses in developing countries?",
+      "option_a": "Increasing the volume of crops produced without improving storage facilities.",
+      "option_b": "Investing in cold chain infrastructure and improved storage technology.",
+      "option_c": "Relying solely on traditional preservation methods without modernization.",
+      "option_d": "Exporting all agricultural products immediately after harvest.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Đầu tư vào cơ sở hạ tầng chuỗi lạnh và công nghệ bảo quản hiện đại là cách hiệu quả nhất để giảm mất mát sau thu hoạch. Các đáp án khác không giải quyết vấn đề bảo quản hoặc không thực tế."
+    },
+    {
+      "question_text": "How does agricultural land degradation directly threaten food security?",
+      "option_a": "It increases the cost of farming equipment and machinery.",
+      "option_b": "It reduces soil fertility and productive capacity, lowering crop yields.",
+      "option_c": "It has no significant impact on food production systems.",
+      "option_d": "It only affects the aesthetic value of farmland.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Suy giảm đất nông nghiệp làm giảm độ ph肥đất và khả năng sản xuất, dẫn đến giảm năng suất cây trồng. Đây là mối đe dọa trực tiếp đến an ninh lương thực vì nó làm giảm sản lượng thực phẩm."
+    },
+    {
+      "question_text": "What is the main advantage of crop diversification for smallholder farmers?",
+      "option_a": "It guarantees higher prices for all crops in the market.",
+      "option_b": "It reduces risk by spreading income sources and improves household nutrition.",
+      "option_c": "It eliminates the need for pest and disease management.",
+      "option_d": "It requires less water and labor than monoculture farming.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Đa dạng hóa cây trồng giúp nông dân nhỏ giảm rủi ro bằng cách phân tán nguồn thu nhập và cải thiện dinh dưỡng gia đình. Các đáp án khác không phản ánh lợi ích thực tế của đa dạng hóa."
+    },
+    {
+      "question_text": "Which of the following is a key feature of climate-smart agriculture?",
+      "option_a": "It focuses exclusively on maximizing short-term crop yields.",
+      "option_b": "It adapts farming practices to climate change while reducing greenhouse gas emissions.",
+      "option_c": "It eliminates the need for irrigation systems in all regions.",
+      "option_d": "It relies entirely on traditional farming methods without innovation.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Nông nghiệp thông minh về khí hậu kết hợp thích ứng với biến đổi khí hậu và giảm phát thải khí nhà kính. Các đáp án khác không phản ánh bản chất của phương pháp này."
+    },
+    {
+      "question_text": "What does food traceability primarily help to achieve?",
+      "option_a": "It increases the price of all food products in the market.",
+      "option_b": "It allows consumers to track food origin and enhances food safety and transparency.",
+      "option_c": "It eliminates the need for food safety standards.",
+      "option_d": "It reduces the nutritional value of food products.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Khả năng truy xuất nguồn gốc thực phẩm cho phép người tiêu dùng theo dõi quá trình sản xuất và tăng cường an toàn thực phẩm cũng như tính minh bạch. Các đáp án khác sai vì không liên quan đến mục đích của truy xuất nguồn gốc."
+    },
+    {
+      "question_text": "How do agricultural subsidies in developed countries affect global food security?",
+      "option_a": "They have no impact on food security in developing nations.",
+      "option_b": "They distort global markets and disadvantage farmers in developing countries.",
+      "option_c": "They guarantee fair prices for all farmers worldwide.",
+      "option_d": "They eliminate the need for sustainable agriculture practices.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Trợ cấp nông nghiệp ở các nước phát triển làm méo mó thị trường toàn cầu và gây bất lợi cho nông dân ở các nước đang phát triển, vì họ không thể cạnh tranh với giá cả được hỗ trợ."
+    },
+    {
+      "question_text": "Which statement best explains the relationship between malnutrition and food insecurity?",
+      "option_a": "Malnutrition is unrelated to food insecurity and has different causes.",
+      "option_b": "Food insecurity often leads to malnutrition due to insufficient or unbalanced food intake.",
+      "option_c": "Malnutrition only affects wealthy populations with access to food.",
+      "option_d": "Food insecurity guarantees malnutrition in all cases.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Thiếu an ninh lương thực thường dẫn đến suy dinh dưỡng vì người dân không có đủ hoặc không cân bằng lượng thực phẩm tiêu thụ. Mối liên hệ này là nhân quả, không phải ngẫu nhiên."
+    },
+    {
+      "question_text": "What is the primary goal of food fortification programs?",
+      "option_a": "To increase the price of food products for consumers.",
+      "option_b": "To add essential nutrients to food and reduce micronutrient deficiencies.",
+      "option_c": "To reduce the shelf life of food products.",
+      "option_d": "To eliminate the need for diverse diets.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Các chương trình bổ sung dinh dưỡng thực phẩm nhằm mục đích bổ sung các chất dinh dưỡng thiếu hụt và giảm thiếu hụt vi chất dinh dưỡng. Đây là một biện pháp can thiệp công khai để cải thiện sức khỏe."
+    },
+    {
+      "question_text": "How does subsistence farming contribute to vulnerability in food security?",
+      "option_a": "It ensures stable income and food supply for all farmers.",
+      "option_b": "It makes farmers vulnerable to climate shocks and market fluctuations due to limited resources.",
+      "option_c": "It eliminates the need for agricultural development.",
+      "option_d": "It guarantees food security regardless of external conditions.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Nông nghiệp tự cấp làm cho nông dân dễ bị tổn thương vì họ có ít tài nguyên để ứng phó với sốc khí hậu hoặc biến động thị trường. Họ không có khả năng dự phòng hoặc đa dạng hóa."
+    },
+    {
+      "question_text": "Which of the following best describes the concept of food sovereignty?",
+      "option_a": "The right of corporations to control global food markets.",
+      "option_b": "The right of peoples to define their own food and agricultural policies without external pressure.",
+      "option_c": "The obligation of all countries to import food from developed nations.",
+      "option_d": "The elimination of all agricultural trade between nations.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Chủ quyền lương thực là quyền của các cộng đồng tự quyết định chính sách nông nghiệp và thực phẩm của mình mà không bị áp lực bên ngoài. Đây là khái niệm về tự chủ và công bằng xã hội."
+    },
+    {
+      "question_text": "What is the most significant impact of climate variability on agricultural systems?",
+      "option_a": "It has no effect on crop production or food security.",
+      "option_b": "It makes agricultural planning unpredictable and increases the risk of crop failures.",
+      "option_c": "It always results in increased crop yields.",
+      "option_d": "It eliminates the need for irrigation systems.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Biến đổi khí hậu làm cho lập kế hoạch nông nghiệp trở nên khó đoán và tăng rủi ro thất bại cây trồng. Điều này là một thách thức lớn cho an ninh lương thực vì nông dân không thể dự đoán được điều kiện thời tiết."
+    }
+  ]
+}

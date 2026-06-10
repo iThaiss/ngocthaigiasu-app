@@ -1,0 +1,229 @@
+{
+  "words": [
+    {
+      "word": "structural redundancy",
+      "pronunciation": "/strʌkˈtʃərəl rɪˈdʌndənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tính chất của một công trình có nhiều đường dẫn lực dự phòng, sao cho nếu một phần bị hỏng, các phần khác vẫn có thể chịu tải; độ dự phòng cấu trúc",
+      "definition_en": "The presence of multiple load paths in a structure so that failure of one component does not cause total collapse.",
+      "level": "C1",
+      "synonyms": [
+        "backup system",
+        "fail-safe design"
+      ],
+      "antonyms": [
+        "single-point failure"
+      ],
+      "example_sentence": "Modern bridges incorporate structural redundancy to ensure safety even if one cable or support fails unexpectedly."
+    },
+    {
+      "word": "settlement",
+      "pronunciation": "/ˈsetəlmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự ch沉dịch của nền đất hoặc công trình do nén chặt của đất; độ ch沉của móng",
+      "definition_en": "The gradual sinking or subsidence of a structure or ground due to soil compression or consolidation.",
+      "level": "B2",
+      "synonyms": [
+        "subsidence",
+        "ground subsidence"
+      ],
+      "antonyms": [
+        "uplift",
+        "heave"
+      ],
+      "example_sentence": "Engineers monitor differential settlement to prevent structural cracks and misalignment in tall buildings."
+    },
+    {
+      "word": "bearing capacity",
+      "pronunciation": "/ˈbeərɪŋ kəˈpæsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng chịu tải của nền đất; lực tối đa mà đất có thể chịu được mà không bị phá hủy",
+      "definition_en": "The maximum load per unit area that soil can support without failure or excessive settlement.",
+      "level": "B2",
+      "synonyms": [
+        "soil capacity",
+        "load-bearing strength"
+      ],
+      "antonyms": [],
+      "example_sentence": "Geotechnical surveys determine the bearing capacity of soil before designing foundations for skyscrapers."
+    },
+    {
+      "word": "compaction",
+      "pronunciation": "/kəmˈpækʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình nén chặt đất hoặc vật liệu để tăng mật độ và độ bền; sự nén chặt",
+      "definition_en": "The process of densifying soil or material by mechanical means to increase strength and reduce voids.",
+      "level": "B2",
+      "synonyms": [
+        "consolidation",
+        "densification"
+      ],
+      "antonyms": [
+        "loosening",
+        "expansion"
+      ],
+      "example_sentence": "Proper soil compaction is essential during road construction to ensure durability and prevent potholes."
+    },
+    {
+      "word": "tensile strength",
+      "pronunciation": "/ˈtensaɪl ˈstreŋθ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng chịu lực kéo của vật liệu; sức bền kéo tối đa trước khi vật liệu bị đứt",
+      "definition_en": "The maximum stress a material can withstand while being stretched before breaking or permanent deformation.",
+      "level": "B2",
+      "synonyms": [
+        "tensile capacity",
+        "pulling strength"
+      ],
+      "antonyms": [
+        "compressive strength"
+      ],
+      "example_sentence": "Steel cables used in suspension bridges must have high tensile strength to support enormous loads safely."
+    },
+    {
+      "word": "shear stress",
+      "pronunciation": "/ʃɪr stres/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ứng suất cắt; lực tác dụng song song với bề mặt vật liệu, gây ra biến dạng cắt",
+      "definition_en": "Internal force per unit area acting parallel to a surface, causing layers of material to slide relative to each other.",
+      "level": "C1",
+      "synonyms": [
+        "shear force",
+        "lateral stress"
+      ],
+      "antonyms": [
+        "normal stress"
+      ],
+      "example_sentence": "Engineers calculate shear stress in beams to prevent failure at connection points where forces change direction."
+    },
+    {
+      "word": "piling",
+      "pronunciation": "/ˈpaɪlɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hệ thống cọc; quá trình đóng cọc vào đất để tạo nền móng cho công trình",
+      "definition_en": "The process of driving long columns (piles) deep into the ground to support structures on weak or unstable soil.",
+      "level": "B2",
+      "synonyms": [
+        "pile foundation",
+        "pilings"
+      ],
+      "antonyms": [],
+      "example_sentence": "Coastal buildings often require deep piling to reach stable soil layers beneath soft sediment and water."
+    },
+    {
+      "word": "bending moment",
+      "pronunciation": "/ˈbendɪŋ ˈmoʊmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mô men uốn; lực gây ra sự uốn cong của dầm hoặc kết cấu",
+      "definition_en": "The internal moment or torque that causes a beam or structural member to bend or flex.",
+      "level": "C1",
+      "synonyms": [
+        "flexural moment",
+        "moment of bending"
+      ],
+      "antonyms": [],
+      "example_sentence": "Structural analysis software calculates bending moments at critical sections to ensure beams are adequately reinforced."
+    },
+    {
+      "word": "deformation",
+      "pronunciation": "/ˌdɛfərˈmeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự biến dạng; thay đổi hình dạng hoặc kích thước của vật liệu dưới tác dụng của lực",
+      "definition_en": "The change in shape or size of a material or structure due to applied forces or environmental factors.",
+      "level": "B2",
+      "synonyms": [
+        "distortion",
+        "warping"
+      ],
+      "antonyms": [
+        "rigidity",
+        "stability"
+      ],
+      "example_sentence": "Excessive deformation of concrete floors can indicate structural problems and requires immediate engineering assessment."
+    },
+    {
+      "word": "load distribution",
+      "pronunciation": "/loʊd ˌdɪstrɪˈbjuːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự phân bố tải trọng; cách thức tải trọng được truyền từ một phần công trình sang phần khác",
+      "definition_en": "The manner in which forces or weights are transmitted and spread throughout a structure to prevent localized failure.",
+      "level": "B2",
+      "synonyms": [
+        "force distribution",
+        "load transfer"
+      ],
+      "antonyms": [
+        "concentrated load"
+      ],
+      "example_sentence": "Proper load distribution through columns and beams is critical to prevent stress concentration and structural failure."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes structural redundancy in modern bridge design?",
+      "option_a": "The use of a single, extremely strong cable to support the entire structure",
+      "option_b": "Multiple load paths that allow the structure to remain stable even if one component fails",
+      "option_c": "The periodic replacement of worn-out structural components",
+      "option_d": "The application of extra paint and coating to prevent rust",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Structural redundancy là khái niệm về sự dự phòng trong thiết kế, có nhiều đường dẫn lực để đảm bảo an toàn. Đáp án A sai vì nó mô tả thiết kế không có dự phòng. C và D không liên quan đến khái niệm này."
+    },
+    {
+      "question_text": "In geotechnical engineering, bearing capacity refers to _____ that soil can support without failure.",
+      "option_a": "the depth of the foundation",
+      "option_b": "the maximum load per unit area",
+      "option_c": "the type of soil composition",
+      "option_d": "the rate of water drainage",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Bearing capacity là khả năng chịu tải của nền đất, được tính bằng lực tối đa trên một đơn vị diện tích. Các đáp án khác không phản ánh định nghĩa chính xác của thuật ngữ này."
+    },
+    {
+      "question_text": "Which process is most essential during road construction to prevent future potholes and surface deterioration?",
+      "option_a": "Compaction of soil and asphalt layers",
+      "option_b": "Regular painting of road markings",
+      "option_c": "Installation of drainage pipes only",
+      "option_d": "Frequent inspection of traffic signs",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Compaction là quá trình nén chặt đất để tăng mật độ và độ bền, điều này rất quan trọng để tránh lún nứt đường. Các đáp án khác không liên quan trực tiếp đến vấn đề này."
+    },
+    {
+      "question_text": "Steel cables in suspension bridges require high _____ to safely support the enormous weight of the structure and traffic.",
+      "option_a": "compressive strength",
+      "option_b": "tensile strength",
+      "option_c": "thermal resistance",
+      "option_d": "flexibility index",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Tensile strength (sức bền kéo) là khả năng chịu lực kéo, rất quan trọng cho cáp cầu treo. Compressive strength là sức bền nén, không phù hợp với chức năng của cáp kéo. Các đáp án khác không liên quan."
+    },
+    {
+      "question_text": "When engineers calculate shear stress in beams, they are primarily concerned with _____ at connection points.",
+      "option_a": "temperature changes and thermal expansion",
+      "option_b": "forces acting parallel to surfaces causing layers to slide",
+      "option_c": "the color and appearance of the material",
+      "option_d": "the cost of materials and labor",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Shear stress là ứng suất cắt, lực tác dụng song song với bề mặt gây ra sự trượt giữa các lớp vật liệu. Đây là mối quan tâm chính tại các điểm kết nối. Các đáp án khác là bẫy không liên quan."
+    },
+    {
+      "question_text": "Coastal buildings often require deep piling because _____ beneath soft sediment and water.",
+      "option_a": "the weather conditions are more severe",
+      "option_b": "stable soil layers must be reached to support the structure",
+      "option_c": "it is cheaper than other foundation methods",
+      "option_d": "local regulations always mandate this approach",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Piling được sử dụng để đạt tới các lớp đất ổn định sâu dưới đất mềm và nước. Đáp án A, C, D là những bẫy không phản ánh lý do kỹ thuật chính của việc sử dụng piling."
+    }
+  ]
+}

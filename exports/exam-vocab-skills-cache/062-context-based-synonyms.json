@@ -1,0 +1,552 @@
+{
+  "words": [
+    {
+      "word": "grasp",
+      "pronunciation": "/ɡrɑːsp/",
+      "part_of_speech": "verb",
+      "definition_vi": "hiểu rõ, nắm bắt được ý nghĩa hoặc khái niệm (không phải chỉ nắm bằng tay)",
+      "definition_en": "to understand or comprehend something fully",
+      "level": "B1",
+      "synonyms": [
+        "understand",
+        "comprehend",
+        "seize"
+      ],
+      "antonyms": [
+        "misunderstand",
+        "miss"
+      ],
+      "example_sentence": "Many students struggle to grasp the concept of quantum mechanics in their first year."
+    },
+    {
+      "word": "tackle",
+      "pronunciation": "/ˈtækəl/",
+      "part_of_speech": "verb",
+      "definition_vi": "giải quyết, xử lý (một vấn đề khó); không phải là tấn công thể chất",
+      "definition_en": "to deal with or address a difficult problem or task",
+      "level": "B1",
+      "synonyms": [
+        "address",
+        "handle",
+        "confront"
+      ],
+      "antonyms": [
+        "avoid",
+        "ignore"
+      ],
+      "example_sentence": "The government must tackle the rising issue of climate change with concrete policies."
+    },
+    {
+      "word": "pursue",
+      "pronunciation": "/pərˈsuː/",
+      "part_of_speech": "verb",
+      "definition_vi": "theo đuổi, tiếp tục (một mục tiêu, sự nghiệp); không chỉ là đuổi theo",
+      "definition_en": "to continue or engage in an activity or goal over time",
+      "level": "B1",
+      "synonyms": [
+        "follow",
+        "continue",
+        "seek"
+      ],
+      "antonyms": [
+        "abandon",
+        "quit"
+      ],
+      "example_sentence": "She decided to pursue a career in medicine after years of studying biology."
+    },
+    {
+      "word": "foster",
+      "pronunciation": "/ˈfɒstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "nuôi dưỡng, khuyến khích phát triển (tình cảm, kỹ năng, mối quan hệ)",
+      "definition_en": "to encourage or promote the development of something",
+      "level": "B2",
+      "synonyms": [
+        "encourage",
+        "promote",
+        "cultivate"
+      ],
+      "antonyms": [
+        "hinder",
+        "discourage"
+      ],
+      "example_sentence": "Schools should foster critical thinking skills in students rather than just memorizing facts."
+    },
+    {
+      "word": "undermine",
+      "pronunciation": "/ˌʌndərˈmaɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm suy yếu, phá hoại (uy tín, niềm tin, nền tảng); không phải là đào hầm",
+      "definition_en": "to weaken or damage something gradually or indirectly",
+      "level": "B2",
+      "synonyms": [
+        "weaken",
+        "damage",
+        "sabotage"
+      ],
+      "antonyms": [
+        "strengthen",
+        "support"
+      ],
+      "example_sentence": "Spreading false information can undermine public trust in scientific institutions."
+    },
+    {
+      "word": "compelling",
+      "pronunciation": "/kəmˈpelɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thuyết phục, hấp dẫn mạnh mẽ (lý do, bằng chứng); không phải là bắt buộc",
+      "definition_en": "powerfully interesting or convincing; demanding attention",
+      "level": "B2",
+      "synonyms": [
+        "convincing",
+        "persuasive",
+        "fascinating"
+      ],
+      "antonyms": [
+        "unconvincing",
+        "boring"
+      ],
+      "example_sentence": "The documentary presented compelling evidence that challenged the traditional historical narrative."
+    },
+    {
+      "word": "arbitrary",
+      "pronunciation": "/ˈɑːrbɪtreri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tùy tiện, không có lý do rõ ràng; không phải là độc lập",
+      "definition_en": "based on random choice or personal whim rather than reason or system",
+      "level": "B2",
+      "synonyms": [
+        "random",
+        "capricious",
+        "whimsical"
+      ],
+      "antonyms": [
+        "systematic",
+        "logical"
+      ],
+      "example_sentence": "The teacher's decision to fail half the class seemed arbitrary and unfair to the students."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, bẩm sinh (tính chất); không phải là thừa kế tài sản",
+      "definition_en": "existing as a natural or permanent element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "There is an inherent risk in any investment, no matter how carefully it is planned."
+    },
+    {
+      "word": "paradox",
+      "pronunciation": "/ˈpærədɒks/",
+      "part_of_speech": "noun",
+      "definition_vi": "mâu thuẫn, điều tưởng chừng vô lý nhưng có thể đúng",
+      "definition_en": "a situation or statement that seems contradictory but may be true",
+      "level": "B2",
+      "synonyms": [
+        "contradiction",
+        "inconsistency",
+        "enigma"
+      ],
+      "antonyms": [
+        "consistency",
+        "logic"
+      ],
+      "example_sentence": "The paradox of modern life is that we have more technology but less genuine human connection."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, có thể hiểu theo nhiều cách khác nhau",
+      "definition_en": "open to more than one interpretation; unclear in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "definite"
+      ],
+      "example_sentence": "The politician's statement was deliberately ambiguous to avoid offending either side of the debate."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm bớt nghiêm trọng (hậu quả, tác hại)",
+      "definition_en": "to make something less severe or serious",
+      "level": "B2",
+      "synonyms": [
+        "alleviate",
+        "reduce",
+        "ease"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "The company implemented new safety measures to mitigate the risk of workplace accidents."
+    },
+    {
+      "word": "obscure",
+      "pronunciation": "/əbˈskjʊər/",
+      "part_of_speech": "verb",
+      "definition_vi": "che khuất, làm mờ đi (sự thật, tầm nhìn); không phải là tối tăm",
+      "definition_en": "to make something unclear or hidden from view",
+      "level": "B2",
+      "synonyms": [
+        "conceal",
+        "hide",
+        "cloud"
+      ],
+      "antonyms": [
+        "clarify",
+        "reveal"
+      ],
+      "example_sentence": "The thick fog obscured the view of the mountains in the distance."
+    },
+    {
+      "word": "plausible",
+      "pronunciation": "/ˈplɔːzəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có vẻ hợp lý, có thể tin được (nhưng chưa chắc đúng)",
+      "definition_en": "seeming reasonable or probable; believable",
+      "level": "B2",
+      "synonyms": [
+        "credible",
+        "reasonable",
+        "believable"
+      ],
+      "antonyms": [
+        "implausible",
+        "unlikely"
+      ],
+      "example_sentence": "While the theory is plausible, it still requires more scientific evidence to be accepted."
+    },
+    {
+      "word": "resilient",
+      "pronunciation": "/rɪˈzɪliənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bền bỉ, có khả năng phục hồi sau khó khăn",
+      "definition_en": "able to recover quickly from difficulties; tough",
+      "level": "B2",
+      "synonyms": [
+        "tough",
+        "strong",
+        "flexible"
+      ],
+      "antonyms": [
+        "fragile",
+        "weak"
+      ],
+      "example_sentence": "The resilient community rebuilt their homes after the natural disaster with remarkable speed."
+    },
+    {
+      "word": "scrutiny",
+      "pronunciation": "/ˈskruːtəni/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự xem xét kỹ lưỡng, kiểm tra chi tiết",
+      "definition_en": "careful and detailed examination or inspection",
+      "level": "B2",
+      "synonyms": [
+        "examination",
+        "inspection",
+        "analysis"
+      ],
+      "antonyms": [
+        "neglect",
+        "oversight"
+      ],
+      "example_sentence": "The financial records came under scrutiny after the auditors discovered several discrepancies."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, cung cấp bằng chứng cho (một khẳng định)",
+      "definition_en": "to provide evidence or proof for a claim or statement",
+      "level": "B2",
+      "synonyms": [
+        "verify",
+        "confirm",
+        "support"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researcher must substantiate her hypothesis with experimental data before publishing."
+    },
+    {
+      "word": "volatile",
+      "pronunciation": "/ˈvɒlətaɪl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bất ổn định, dễ thay đổi (thị trường, tình hình, tính cách)",
+      "definition_en": "liable to change rapidly and unpredictably; unstable",
+      "level": "B2",
+      "synonyms": [
+        "unstable",
+        "unpredictable",
+        "explosive"
+      ],
+      "antonyms": [
+        "stable",
+        "steady"
+      ],
+      "example_sentence": "The stock market has been volatile this year due to economic uncertainty."
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "/præɡˈmætɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, dựa trên kết quả thực tế chứ không phải lý tưởng",
+      "definition_en": "dealing with things in a practical, realistic way based on actual circumstances",
+      "level": "B2",
+      "synonyms": [
+        "practical",
+        "realistic",
+        "sensible"
+      ],
+      "antonyms": [
+        "idealistic",
+        "theoretical"
+      ],
+      "example_sentence": "The government took a pragmatic approach to the housing crisis by focusing on affordable solutions."
+    },
+    {
+      "word": "elicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "khai thác, lôi ra (thông tin, phản ứng); không phải là gợi ý",
+      "definition_en": "to draw out or bring forth information, response, or reaction",
+      "level": "B2",
+      "synonyms": [
+        "extract",
+        "draw out",
+        "evoke"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "The interviewer's questions were designed to elicit honest responses from the candidates."
+    },
+    {
+      "word": "circumvent",
+      "pronunciation": "/ˌsɜːkəmˈvent/",
+      "part_of_speech": "verb",
+      "definition_vi": "vòng qua, tránh (luật lệ, vấn đề) bằng cách khéo léo",
+      "definition_en": "to find a way around an obstacle or rule; to avoid by going around",
+      "level": "B2",
+      "synonyms": [
+        "bypass",
+        "evade",
+        "skirt"
+      ],
+      "antonyms": [
+        "confront",
+        "face"
+      ],
+      "example_sentence": "Some companies try to circumvent environmental regulations by relocating to countries with weaker laws."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (lời khai, sự kiện) bằng bằng chứng khác",
+      "definition_en": "to confirm or support a statement or finding with additional evidence",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "support"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "The witness's testimony was corroborated by security camera footage from that night."
+    },
+    {
+      "word": "expedite",
+      "pronunciation": "/ˈekspədaɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "đẩy nhanh, tăng tốc độ (quá trình, công việc)",
+      "definition_en": "to make a process or action happen faster or more quickly",
+      "level": "B2",
+      "synonyms": [
+        "accelerate",
+        "speed up",
+        "hasten"
+      ],
+      "antonyms": [
+        "delay",
+        "slow down"
+      ],
+      "example_sentence": "The new software system will expedite the approval process for loan applications."
+    },
+    {
+      "word": "diverge",
+      "pronunciation": "/daɪˈvɜːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "phân kỳ, đi theo hướng khác nhau (ý kiến, con đường, quan điểm)",
+      "definition_en": "to separate and go in different directions; to differ in opinion or approach",
+      "level": "B2",
+      "synonyms": [
+        "separate",
+        "differ",
+        "deviate"
+      ],
+      "antonyms": [
+        "converge",
+        "agree"
+      ],
+      "example_sentence": "The two researchers' interpretations of the data diverged significantly, leading to different conclusions."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The professor's explanation was so clear that even the most complex concepts became easy to ___.",
+      "option_a": "grasp",
+      "option_b": "grab",
+      "option_c": "hold",
+      "option_d": "catch",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Grasp = hiểu rõ, nắm bắt được ý nghĩa. Grab, hold, catch đều có nghĩa vật lý (nắm bằng tay) nhưng không phù hợp ngữ cảnh 'hiểu khái niệm'."
+    },
+    {
+      "question_text": "The government announced a new initiative to _____ the problem of urban pollution through stricter regulations.",
+      "option_a": "address",
+      "option_b": "tackle",
+      "option_c": "handle",
+      "option_d": "manage",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Tackle = giải quyết, xử lý vấn đề khó. Address, handle, manage đều có thể dùng nhưng tackle là từ mạnh nhất, thể hiện sự quyết tâm giải quyết vấn đề lớn."
+    },
+    {
+      "question_text": "After graduating, she decided to _____ a career in environmental science, dedicating herself to research.",
+      "option_a": "follow",
+      "option_b": "pursue",
+      "option_c": "chase",
+      "option_d": "seek",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Pursue = theo đuổi, tiếp tục (mục tiêu, sự nghiệp). Chase có vẻ quá thô, follow không đủ mạnh, seek chỉ tìm kiếm chứ không theo đuổi lâu dài."
+    },
+    {
+      "question_text": "The school's new mentorship program aims to _____ a love of learning in young students.",
+      "option_a": "encourage",
+      "option_b": "foster",
+      "option_c": "promote",
+      "option_d": "inspire",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Foster = nuôi dưỡng, khuyến khích phát triển (tình cảm, kỹ năng). Promote quá chung chung, inspire không chỉ sự phát triển lâu dài, encourage không đủ mạnh."
+    },
+    {
+      "question_text": "Spreading misinformation can _____ public confidence in government institutions.",
+      "option_a": "weaken",
+      "option_b": "undermine",
+      "option_c": "damage",
+      "option_d": "reduce",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Undermine = làm suy yếu, phá hoại (uy tín, niềm tin) từ từ. Damage quá mạnh, weaken không chỉ sự phá hoại gián tiếp, reduce không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The documentary presented _____ evidence that forced viewers to reconsider their long-held beliefs.",
+      "option_a": "convincing",
+      "option_b": "compelling",
+      "option_c": "persuasive",
+      "option_d": "interesting",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Compelling = thuyết phục, hấp dẫn mạnh mẽ. Persuasive chỉ thuyết phục, interesting quá yếu, convincing không đủ mạnh về sức hút."
+    },
+    {
+      "question_text": "The judge criticized the decision as _____, claiming it was based on personal preference rather than legal principles.",
+      "option_a": "random",
+      "option_b": "arbitrary",
+      "option_c": "capricious",
+      "option_d": "unfair",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Arbitrary = tùy tiện, không có lý do rõ ràng. Random quá chung chung, capricious quá mạnh, unfair không chỉ tính tùy tiện."
+    },
+    {
+      "question_text": "There is an _____ risk in any financial investment, regardless of how carefully it is analyzed.",
+      "option_a": "intrinsic",
+      "option_b": "inherent",
+      "option_c": "innate",
+      "option_d": "built-in",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Inherent = vốn có, bẩm sinh (tính chất). Intrinsic, innate, built-in đều gần nghĩa nhưng inherent là từ phổ biến nhất trong ngữ cảnh học thuật."
+    },
+    {
+      "question_text": "The _____ of modern technology is that it connects us globally yet isolates us personally.",
+      "option_a": "contradiction",
+      "option_b": "paradox",
+      "option_c": "inconsistency",
+      "option_d": "enigma",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Paradox = mâu thuẫn tưởng chừng vô lý nhưng có thể đúng. Contradiction quá chung chung, inconsistency không chỉ sự mâu thuẫn logic, enigma là bí ẩn."
+    },
+    {
+      "question_text": "The politician's statement was deliberately _____ so that both supporters and critics could interpret it favorably.",
+      "option_a": "unclear",
+      "option_b": "ambiguous",
+      "option_c": "vague",
+      "option_d": "confusing",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Ambiguous = mơ hồ, có thể hiểu theo nhiều cách. Unclear quá chung chung, vague không chỉ sự đa nghĩa, confusing chỉ gây nhầm lẫn."
+    },
+    {
+      "question_text": "The new safety protocols were implemented to _____ the impact of workplace accidents on employees.",
+      "option_a": "reduce",
+      "option_b": "mitigate",
+      "option_c": "alleviate",
+      "option_d": "ease",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Mitigate = giảm nhẹ, làm bớt nghiêm trọng (hậu quả). Reduce quá chung chung, alleviate chỉ giảm đau khổ, ease không đủ chính thức."
+    },
+    {
+      "question_text": "The thick fog _____ the view of the valley, making it impossible for hikers to see the trail ahead.",
+      "option_a": "conceals",
+      "option_b": "obscures",
+      "option_c": "hides",
+      "option_d": "clouds",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Obscure = che khuất, làm mờ đi (tầm nhìn). Conceal quá mạnh, hide không chỉ làm mờ, clouds là động từ nhưng ít dùng trong ngữ cảnh này."
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "words": [
+    {
+      "word": "traverse",
+      "pronunciation": "/trəˈvɜːrs/",
+      "part_of_speech": "verb",
+      "definition_vi": "đi qua, vượt qua (một khoảng cách, địa hình); di chuyển từ đầu đến cuối",
+      "definition_en": "to travel across or through (a distance, terrain, or region)",
+      "level": "B2",
+      "synonyms": [
+        "cross",
+        "journey through",
+        "navigate"
+      ],
+      "antonyms": [
+        "avoid",
+        "bypass"
+      ],
+      "example_sentence": "Tourists must traverse the mountain pass to reach the remote village on the other side."
+    },
+    {
+      "word": "expedite",
+      "pronunciation": "/ˈekspədaɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm nhanh lên, tăng tốc độ (một quá trình); giúp việc gì đó diễn ra nhanh hơn",
+      "definition_en": "to make (a process or action) happen faster or more efficiently",
+      "level": "B2",
+      "synonyms": [
+        "accelerate",
+        "speed up",
+        "hasten"
+      ],
+      "antonyms": [
+        "delay",
+        "slow down"
+      ],
+      "example_sentence": "The travel agency expedited our visa processing to ensure we could depart on schedule."
+    },
+    {
+      "word": "diversion",
+      "pronunciation": "/daɪˈvɜːrʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự chuyển hướng; con đường thay thế khi tuyến chính bị chặn; sự lệch khỏi lộ trình ban đầu",
+      "definition_en": "an alternative route taken when the usual way is blocked or unavailable",
+      "level": "B2",
+      "synonyms": [
+        "detour",
+        "alternate route",
+        "bypass"
+      ],
+      "antonyms": [
+        "direct route",
+        "main road"
+      ],
+      "example_sentence": "Due to roadworks, the bus driver had to take a diversion that added thirty minutes to our journey."
+    },
+    {
+      "word": "berth",
+      "pronunciation": "/bɜːrθ/",
+      "part_of_speech": "noun",
+      "definition_vi": "chỗ ngủ trên tàu/máy bay; vị trí neo đậu của tàu; chỗ đỗ tàu tại cảng",
+      "definition_en": "a sleeping place on a ship or train; a mooring place for a ship at a dock",
+      "level": "B2",
+      "synonyms": [
+        "bunk",
+        "sleeping quarters",
+        "dock space"
+      ],
+      "antonyms": [],
+      "example_sentence": "We booked a berth on the overnight ferry to ensure comfortable sleeping arrangements during the crossing."
+    },
+    {
+      "word": "tarmac",
+      "pronunciation": "/ˈtɑːrmæk/",
+      "part_of_speech": "noun",
+      "definition_vi": "đường băng sân bay; mặt đường được phủ nhựa đen; khu vực cứng tại sân bay",
+      "definition_en": "the runway or taxiway at an airport; a dark asphalt surface",
+      "level": "B2",
+      "synonyms": [
+        "runway",
+        "asphalt",
+        "airstrip"
+      ],
+      "antonyms": [],
+      "example_sentence": "The aircraft sat on the tarmac for two hours before finally taking off due to weather delays."
+    },
+    {
+      "word": "itinerant",
+      "pronunciation": "/aɪˈtɪnərənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hay thay đổi nơi ở; du lịch từ nơi này sang nơi khác; không có chỗ ở cố định",
+      "definition_en": "traveling from place to place; not settling in one location",
+      "level": "B2",
+      "synonyms": [
+        "nomadic",
+        "wandering",
+        "peripatetic"
+      ],
+      "antonyms": [
+        "settled",
+        "stationary"
+      ],
+      "example_sentence": "Many backpackers adopt an itinerant lifestyle, moving between countries every few weeks."
+    },
+    {
+      "word": "berth a vessel",
+      "pronunciation": "/bɜːrθ ə ˈvesəl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "neo đậu tàu; đưa tàu vào vị trí neo tại cảng",
+      "definition_en": "to moor or dock a ship at a designated port location",
+      "level": "B2",
+      "synonyms": [
+        "dock a ship",
+        "moor a vessel",
+        "anchor"
+      ],
+      "antonyms": [
+        "cast off",
+        "set sail"
+      ],
+      "example_sentence": "The captain carefully maneuvered to berth the vessel at the crowded harbor during peak season."
+    },
+    {
+      "word": "transit lounge",
+      "pronunciation": "/ˈtrænzɪt laʊndʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "phòng chờ dành cho hành khách quá cảng; khu vực dành cho những người chuyển tiếp",
+      "definition_en": "a waiting area for passengers between connecting flights or transportation",
+      "level": "B2",
+      "synonyms": [
+        "departure lounge",
+        "waiting area",
+        "connection hall"
+      ],
+      "antonyms": [],
+      "example_sentence": "We spent four hours in the transit lounge at Singapore Airport before boarding our connecting flight."
+    },
+    {
+      "word": "conveyance",
+      "pronunciation": "/kənˈveɪəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "phương tiện vận chuyển; cách thức di chuyển; vật dụng dùng để chở người/hàng",
+      "definition_en": "a vehicle or means of transport; the act of transporting people or goods",
+      "level": "B2",
+      "synonyms": [
+        "vehicle",
+        "transport",
+        "means of transportation"
+      ],
+      "antonyms": [],
+      "example_sentence": "In rural areas, horse-drawn conveyances remain a common mode of transportation for local residents."
+    },
+    {
+      "word": "waypoint",
+      "pronunciation": "/ˈweɪpɔɪnt/",
+      "part_of_speech": "noun",
+      "definition_vi": "điểm dừng trên lộ trình; vị trí trung gian trong hành trình; điểm tham chiếu địa lý",
+      "definition_en": "a stopping point or intermediate location along a journey or route",
+      "level": "B2",
+      "synonyms": [
+        "checkpoint",
+        "stop",
+        "intermediate point"
+      ],
+      "antonyms": [
+        "origin",
+        "final destination"
+      ],
+      "example_sentence": "The tour guide marked several waypoints on the map where we would rest and refuel during the long road trip."
+    }
+  ],
+  "questions": []
+}

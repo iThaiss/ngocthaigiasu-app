@@ -143,7 +143,8 @@ Yêu cầu:
 - 1 câu hỏi suy luận (inference)
 - 1 câu hỏi từ vựng trong ngữ cảnh (vocabulary in context)
 - Distractor hợp lý, đặt đúng vị trí đề thi THPT
-- Explanation ngắn gọn, rõ ràng
+- Explanation bằng tiếng Việt, ngắn gọn, rõ ràng
+- Explanation nên chỉ ra evidence trong bài và vì sao đáp án đúng
 
 JSON thuần túy:
 {{"questions":[{{"question_text":"...","option_a":"...","option_b":"...","option_c":"...","option_d":"...","correct_answer":"A|B|C|D","explanation":"...","question_type":"main_idea|detail|inference|vocab_in_context"}}]}}"""

@@ -1,0 +1,252 @@
+{
+  "words": [
+    {
+      "word": "dogma",
+      "pronunciation": "/ˈdɒɡmə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một nguyên tắc hoặc tập hợp các nguyên tắc được công bố là tuyệt đối đúng, thường không cho phép bất kỳ sự nghi ngờ hay thảo luận nào; giáo điều cứng nhắc.",
+      "definition_en": "A principle or set of principles laid down by an authority as incontrovertibly true, especially in religious contexts.",
+      "level": "C1",
+      "synonyms": [
+        "tenet",
+        "principle",
+        "creed"
+      ],
+      "antonyms": [
+        "skepticism",
+        "doubt"
+      ],
+      "example_sentence": "The church's rigid dogma prevented many followers from questioning traditional interpretations of scripture."
+    },
+    {
+      "word": "venerate",
+      "pronunciation": "/ˈvenəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Tỏ lòng tôn kính sâu sắc hoặc sùng bái đối với ai/cái gì, đặc biệt là những người hoặc vật linh thiêng.",
+      "definition_en": "To regard or treat with great respect and reverence, especially in a religious context.",
+      "level": "C1",
+      "synonyms": [
+        "revere",
+        "honor",
+        "worship"
+      ],
+      "antonyms": [
+        "desecrate",
+        "disrespect"
+      ],
+      "example_sentence": "Many pilgrims venerate the ancient relics housed within the cathedral's inner sanctum."
+    },
+    {
+      "word": "apostle",
+      "pronunciation": "/əˈpɒsl/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một trong những người theo dõi trực tiếp của Chúa Giêsu; rộng hơn, một người ủng hộ nhiệt thành của một ý tưởng hoặc phong trào.",
+      "definition_en": "One of the twelve chief disciples of Jesus Christ; more broadly, a vigorous and pioneering advocate of a particular cause.",
+      "level": "B2",
+      "synonyms": [
+        "disciple",
+        "follower",
+        "advocate"
+      ],
+      "antonyms": [
+        "opponent",
+        "critic"
+      ],
+      "example_sentence": "The apostles spread Christianity throughout the Mediterranean region despite facing severe persecution."
+    },
+    {
+      "word": "schism",
+      "pronunciation": "/ˈskɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự chia rẽ hoặc tách rời trong một tổ chức tôn giáo, đặc biệt là khi một nhóm từ chối tuân theo quyền lực trung ương.",
+      "definition_en": "A division or split within a religious organization, typically resulting from doctrinal disagreement.",
+      "level": "C1",
+      "synonyms": [
+        "split",
+        "division",
+        "rupture"
+      ],
+      "antonyms": [
+        "unity",
+        "harmony"
+      ],
+      "example_sentence": "The Great Schism of 1054 permanently divided the Christian Church into Eastern Orthodox and Roman Catholic branches."
+    },
+    {
+      "word": "proselytize",
+      "pronunciation": "/ˈprɒsəlɪtaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "Cố gắng chuyên đổi ai đó sang một tôn giáo, quan điểm chính trị hoặc ý tưởng khác; thường mang sắc thái của sự thuyết phục mạnh mẽ.",
+      "definition_en": "To convert or attempt to convert someone from one religion, belief, or opinion to another.",
+      "level": "C1",
+      "synonyms": [
+        "evangelize",
+        "convert",
+        "recruit"
+      ],
+      "antonyms": [
+        "tolerate",
+        "accept"
+      ],
+      "example_sentence": "Missionaries were accused of proselytizing aggressively among indigenous populations during the colonial era."
+    },
+    {
+      "word": "mysticism",
+      "pronunciation": "/ˈmɪstɪsɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Niềm tin vào khả năng đạt được sự hiểu biết hoặc liên hệ trực tiếp với thần thánh hoặc thực tại tuyệt đối thông qua trực giác hoặc trải nghiệm tâm linh.",
+      "definition_en": "The belief that direct knowledge of God or ultimate reality is attainable through immediate intuition or insight rather than rational thought.",
+      "level": "C1",
+      "synonyms": [
+        "spiritualism",
+        "esotericism",
+        "transcendentalism"
+      ],
+      "antonyms": [
+        "rationalism",
+        "materialism"
+      ],
+      "example_sentence": "Sufi mysticism emphasizes personal spiritual experience and the pursuit of union with the divine."
+    },
+    {
+      "word": "iconoclasm",
+      "pronunciation": "/aɪˈkɒnəklæzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự phá hủy hoặc phản đối các biểu tượng tôn giáo hoặc những gì được coi là thánh; rộng hơn, sự phản đối mạnh mẽ chống lại các quan niệm truyền thống.",
+      "definition_en": "The destruction of religious images or opposition to their use; more broadly, vigorous opposition to established beliefs or institutions.",
+      "level": "C1",
+      "synonyms": [
+        "iconoclasm",
+        "rebellion",
+        "dissent"
+      ],
+      "antonyms": [
+        "reverence",
+        "tradition"
+      ],
+      "example_sentence": "The Protestant Reformation included periods of iconoclasm when religious artwork was destroyed as idolatry."
+    },
+    {
+      "word": "syncretism",
+      "pronunciation": "/ˈsɪŋkrətɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự kết hợp hoặc hòa trộn các yếu tố từ các tôn giáo hoặc hệ thống niềm tin khác nhau; thường xảy ra khi các nền văn hóa gặp nhau.",
+      "definition_en": "The amalgamation of different religious beliefs and practices, typically occurring when cultures come into contact.",
+      "level": "C1",
+      "synonyms": [
+        "fusion",
+        "blending",
+        "amalgamation"
+      ],
+      "antonyms": [
+        "purity",
+        "orthodoxy"
+      ],
+      "example_sentence": "Brazilian Candomblé represents a fascinating syncretism of African, Catholic, and indigenous spiritual traditions."
+    },
+    {
+      "word": "ecclesiastical",
+      "pronunciation": "/ɪˌkliːziˈæstɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến Giáo hội hoặc tổ chức tôn giáo, đặc biệt là cấu trúc, quyền lực hoặc luật lệ của nó.",
+      "definition_en": "Relating to the Christian Church or its clergy and organization.",
+      "level": "C1",
+      "synonyms": [
+        "clerical",
+        "religious",
+        "church-related"
+      ],
+      "antonyms": [
+        "secular",
+        "lay"
+      ],
+      "example_sentence": "Ecclesiastical law governed the conduct of priests and the administration of church properties throughout medieval Europe."
+    },
+    {
+      "word": "heterodoxy",
+      "pronunciation": "/ˌhetərəˈdɒksi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quan điểm hoặc niềm tin không phù hợp với những gì được chính thức công nhận hoặc được chấp nhận; sự khác biệt so với giáo điều chính thống.",
+      "definition_en": "Belief or opinion contrary to what is officially established or generally accepted, especially in religious matters.",
+      "level": "C1",
+      "synonyms": [
+        "unorthodoxy",
+        "dissent",
+        "heresy"
+      ],
+      "antonyms": [
+        "orthodoxy",
+        "conformity"
+      ],
+      "example_sentence": "Medieval scholars who embraced heterodoxy risked severe punishment from the ecclesiastical authorities."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between dogma and critical thinking in religious contexts?",
+      "option_a": "Dogma encourages followers to question and debate established principles.",
+      "option_b": "Dogma typically discourages questioning and demands acceptance of principles as absolute truth.",
+      "option_c": "Dogma is a form of scientific methodology applied to religious studies.",
+      "option_d": "Dogma has no influence on how believers approach religious knowledge.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Dogma là những nguyên tắc được công bố là tuyệt đối đúng mà không cho phép nghi ngờ hay thảo luận. Đáp án B chính xác vì nó phản ánh bản chất cứng nhắc của dogma. Các đáp án khác sai vì chúng mâu thuẫn với định nghĩa cơ bản của từ này."
+    },
+    {
+      "question_text": "The term 'venerate' in religious discourse most closely aligns with which concept?",
+      "option_a": "To criticize harshly and publicly",
+      "option_b": "To show deep respect and reverence, often toward sacred figures or objects",
+      "option_c": "To study academically without emotional attachment",
+      "option_d": "To tolerate reluctantly despite disagreement",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Venerate có nghĩa là tỏ lòng tôn kính sâu sắc hoặc sùng bái. Đáp án B là chính xác. Đáp án A (criticize) và D (tolerate reluctantly) là trái ngược với ý nghĩa. Đáp án C (study academically) thiếu yếu tố tôn kính cảm xúc."
+    },
+    {
+      "question_text": "In historical contexts, a schism within a religious organization typically results from _____ between different groups of believers.",
+      "option_a": "financial cooperation",
+      "option_b": "doctrinal disagreement or rejection of central authority",
+      "option_c": "shared cultural practices",
+      "option_d": "mutual linguistic understanding",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Schism là sự chia rẽ trong tổ chức tôn giáo, thường do bất đồng về giáo lý hoặc từ chối tuân theo quyền lực trung ương. Đáp án B là chính xác. Các đáp án khác (A, C, D) không phải là nguyên nhân chính gây ra schism."
+    },
+    {
+      "question_text": "Which statement most accurately reflects the connotation of 'proselytize' in modern usage?",
+      "option_a": "To engage in peaceful interfaith dialogue and mutual respect",
+      "option_b": "To attempt converting others to one's religion or ideology, often with aggressive persuasion",
+      "option_c": "To study comparative religion as an academic discipline",
+      "option_d": "To maintain strict neutrality regarding all belief systems",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Proselytize có nghĩa là cố gắng chuyên đổi ai đó sang một tôn giáo hoặc ý tưởng khác, thường mang sắc thái của sự thuyết phục mạnh mẽ. Đáp án B chính xác. Đáp án A quá nhẹ nhàng, C là học thuật, D là trái ngược."
+    },
+    {
+      "question_text": "Syncretism in religious practice is best exemplified by _____ of different spiritual traditions into a unified belief system.",
+      "option_a": "the complete rejection",
+      "option_b": "the violent suppression",
+      "option_c": "the blending and amalgamation",
+      "option_d": "the scholarly documentation",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Syncretism là sự kết hợp hoặc hòa trộn các yếu tố từ các tôn giáo khác nhau. Đáp án C (blending and amalgamation) là chính xác. Các đáp án khác (rejection, suppression, documentation) không phản ánh bản chất của syncretism."
+    },
+    {
+      "question_text": "The concept of 'heterodoxy' stands in direct opposition to which of the following?",
+      "option_a": "Mysticism and spiritual experience",
+      "option_b": "Orthodoxy and officially established doctrine",
+      "option_c": "Ecclesiastical authority and church hierarchy",
+      "option_d": "Interfaith cooperation and dialogue",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Heterodoxy là quan điểm không phù hợp với những gì được chính thức công nhận. Nó trái ngược trực tiếp với orthodoxy (giáo điều chính thống). Đáp án B là chính xác. Các đáp án khác không phải là đối lập trực tiếp của heterodoxy."
+    }
+  ]
+}

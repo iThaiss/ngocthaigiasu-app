@@ -1,0 +1,26 @@
+{
+  "lesson": {
+    "title": "Giới hạn dãy số và hàm số",
+    "title_vi": "Giới hạn dãy số và hàm số",
+    "level": "nhan_biet",
+    "topic": "Kiến thức tiền đề"
+  },
+  "theory": {
+    "title": "Giới hạn dãy số và hàm số",
+    "title_vi": "Giới hạn dãy số và hàm số",
+    "content_md": "## 1. Công thức trọng tâm\n\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $\\lim c=c$ | Dãy/hàm hằng | Hằng số giữ nguyên |\n| $\\lim (u_n\\pm v_n)=\\lim u_n\\pm \\lim v_n$ | Hai giới hạn hữu hạn | Chỉ tách khi từng giới hạn tồn tại |\n| $\\lim (u_n v_n)=(\\lim u_n)(\\lim v_n)$ | Tích các biểu thức | Áp dụng tương tự cho hàm số |\n| $\\lim \\dfrac{u_n}{v_n}=\\dfrac{\\lim u_n}{\\lim v_n}$ | Mẫu có giới hạn khác $0$ | Không chia cho giới hạn mẫu bằng $0$ |\n| $\\lim \\dfrac{1}{n}=0$, $\\lim \\dfrac{1}{n^k}=0$ với $k>0$ | Dãy chứa lũy thừa của $n$ ở mẫu | Bậc mẫu càng cao càng tiến nhanh về $0$ |\n| $\\lim_{x\\to a} f(x)=L$ | Hàm số tiến tới giá trị $L$ khi $x$ gần $a$ | Không nhất thiết cần $f(a)$ xác định |\n| $\\lim_{x\\to \\pm\\infty}\\dfrac{P(x)}{Q(x)}$ | Phân thức đa thức | So sánh bậc tử và bậc mẫu |\n\nVới phân thức hữu tỉ $\\dfrac{P(x)}{Q(x)}$ khi $x\\to\\infty$:\n\n- Bậc tử nhỏ hơn bậc mẫu: giới hạn bằng $0$.\n- Bậc tử bằng bậc mẫu: giới hạn bằng tỉ số hệ số cao nhất.\n- Bậc tử lớn hơn bậc mẫu: giới hạn vô cực hoặc không có giới hạn hữu hạn.\n\n## 2. Hiểu nhanh công thức\n\nGiới hạn mô tả giá trị mà dãy số hoặc hàm số “tiến gần tới”, không nhất thiết phải đạt đúng giá trị đó.\n\nVới dãy số $(u_n)$, ký hiệu $\\lim u_n=L$ nghĩa là khi $n$ càng lớn thì $u_n$ càng gần $L$.\n\nVới hàm số, $\\lim_{x\\to a}f(x)=L$ nghĩa là khi $x$ tiến gần $a$ từ hai phía thì $f(x)$ tiến gần $L$. Điều quan trọng là xét quanh $a$, không phải chỉ xét tại $a$.\n\nCác quy tắc cộng, trừ, nhân, chia chỉ dùng an toàn khi các giới hạn thành phần là hữu hạn; riêng phép chia cần mẫu có giới hạn khác $0$.\n\n## 3. Khi nào dùng?\n\n- Đề có $\\lim$ của tổng, hiệu, tích, thương các biểu thức đơn giản: dùng quy tắc đại số giới hạn.\n- Dãy có $n$ ở mẫu như $\\dfrac{1}{n}$, $\\dfrac{1}{n^2}$: đưa về giới hạn $0$.\n- Phân thức theo $n$ hoặc $x$ tiến vô cực: chia cả tử và mẫu cho lũy thừa bậc cao nhất của mẫu hoặc so sánh bậc.\n- Hàm có dạng thay trực tiếp được và mẫu khác $0$: thay giá trị vào.\n- Gặp dạng $\\dfrac{0}{0}$: chưa kết luận, cần biến đổi như phân tích nhân tử, rút gọn, hoặc nhân liên hợp.\n\n## 4. Ví dụ mẫu\n\n**Ví dụ 1.** Tính $\\lim\\limits_{n\\to\\infty}\\dfrac{3n^2-2n+1}{5n^2+n-4}$.\n\nVì đề cho phân thức theo $n$ khi $n\\to\\infty$, ta dùng so sánh bậc cao nhất.\n\nBậc tử và bậc mẫu đều là $2$.\n\nHệ số của $n^2$ ở tử là $3$, ở mẫu là $5$.\n\nDo đó:\n$$\\lim_{n\\to\\infty}\\dfrac{3n^2-2n+1}{5n^2+n-4}=\\dfrac{3}{5}.$$\n\n**Ví dụ 2.** Tính $\\lim\\limits_{x\\to 2}\\dfrac{x^2-4}{x-2}$.\n\nVì thay trực tiếp được dạng $\\dfrac{0}{0}$, ta không kết luận ngay mà dùng phân tích nhân tử.\n\nTa có $x^2-4=(x-2)(x+2)$.\n\nVới $x\\ne 2$:\n$$\\dfrac{x^2-4}{x-2}=x+2.$$\n\nVậy:\n$$\\lim_{x\\to 2}\\dfrac{x^2-4}{x-2}=\\lim_{x\\to 2}(x+2)=4.$$\n\n## 5. Lưu ý & lỗi sai\n\n- Sai: Thấy $\\dfrac{0}{0}$ thì kết luận giới hạn bằng $0$.\n  Vì sao sai: $\\dfrac{0}{0}$ là dạng vô định, chưa có giá trị giới hạn.\n  Sửa: Biến đổi biểu thức trước, thường là rút gọn hoặc nhân liên hợp.\n\n- Sai: Dùng công thức thương khi $\\lim v_n=0$.\n  Vì sao sai: Quy tắc $\\lim\\dfrac{u_n}{v_n}=\\dfrac{\\lim u_n}{\\lim v_n}$ cần mẫu có giới hạn khác $0$.\n  Sửa: Kiểm tra giới hạn của mẫu trước khi chia.\n\n- Sai: Với $x\\to a$, chỉ tính $f(a)$ rồi kết luận.\n  Vì sao sai: Giới hạn xét giá trị của hàm khi $x$ tiến gần $a$, không phụ thuộc hoàn toàn vào $f(a)$.\n  Sửa: Nếu thay trực tiếp không được, cần xét biểu thức quanh $a$.\n\n- Sai: Phân thức vô cực chỉ nhìn hệ số tự do.\n  Vì sao sai: Khi $x$ hoặc $n$ lớn, hạng bậc cao nhất quyết định giới hạn.\n  Sửa: So sánh bậc và hệ số của hạng bậc cao nhất.\n\n## 6. Chốt nhanh\n\n- Giới hạn là giá trị mà dãy hoặc hàm tiến gần tới.\n- Thay trực tiếp được thì ưu tiên thay, nhưng mẫu phải khác $0$.\n- Dạng $\\dfrac{0}{0}$ là vô định, phải biến đổi trước.\n- Phân thức tiến vô cực: so sánh bậc tử và bậc mẫu.\n- Luôn kiểm tra điều kiện của phép chia trong giới hạn.",
+    "key_rules": [
+      "Thay trực tiếp chỉ dùng khi biểu thức xác định và mẫu khác 0.",
+      "Dạng 0/0 là vô định, cần rút gọn hoặc biến đổi.",
+      "Phân thức tiến vô cực: so sánh bậc cao nhất.",
+      "Quy tắc cộng, trừ, nhân, chia chỉ dùng khi giới hạn thành phần phù hợp.",
+      "Giới hạn tại một điểm không nhất thiết bằng giá trị hàm tại điểm đó."
+    ],
+    "common_mistakes": [
+      "Sai: Gặp 0/0 kết luận giới hạn bằng 0 -> Đúng: 0/0 là dạng vô định, phải biến đổi trước.",
+      "Sai: Áp dụng công thức thương dù giới hạn mẫu bằng 0 -> Đúng: Chỉ dùng công thức thương khi giới hạn mẫu khác 0.",
+      "Sai: Tính giới hạn tại x=a bằng cách chỉ xét f(a) -> Đúng: Xét giá trị f(x) khi x tiến gần a.",
+      "Sai: Với phân thức vô cực, lấy tỉ số hệ số tự do -> Đúng: Lấy theo bậc cao nhất của tử và mẫu."
+    ]
+  }
+}

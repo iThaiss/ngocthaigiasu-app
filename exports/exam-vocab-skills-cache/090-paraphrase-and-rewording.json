@@ -1,0 +1,543 @@
+{
+  "words": [
+    {
+      "word": "to bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, làm xảy ra (một sự thay đổi, kết quả)",
+      "definition_en": "to cause something to happen or occur",
+      "level": "B1",
+      "synonyms": [
+        "to cause",
+        "to trigger",
+        "to lead to"
+      ],
+      "antonyms": [
+        "to prevent",
+        "to avoid"
+      ],
+      "example_sentence": "The new policy brought about significant changes in the company's management structure."
+    },
+    {
+      "word": "to account for",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giải thích, làm sáng tỏ (lý do); chiếm (một phần)",
+      "definition_en": "to explain or be the reason for something; to represent a proportion",
+      "level": "B1",
+      "synonyms": [
+        "to explain",
+        "to constitute",
+        "to represent"
+      ],
+      "antonyms": [],
+      "example_sentence": "The increase in online sales accounts for 40% of the company's total revenue this quarter."
+    },
+    {
+      "word": "to undermine",
+      "pronunciation": "/ˌʌndərˈmaɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm suy yếu, phá hoại (sức mạnh, niềm tin, quyền lực)",
+      "definition_en": "to weaken or damage something gradually or secretly",
+      "level": "B2",
+      "synonyms": [
+        "to weaken",
+        "to damage",
+        "to sabotage"
+      ],
+      "antonyms": [
+        "to strengthen",
+        "to support"
+      ],
+      "example_sentence": "Constant criticism from colleagues undermined her confidence in her own abilities."
+    },
+    {
+      "word": "to facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện thuận lợi, giúp dễ dàng hơn",
+      "definition_en": "to make something easier or more possible",
+      "level": "B2",
+      "synonyms": [
+        "to enable",
+        "to promote",
+        "to assist"
+      ],
+      "antonyms": [
+        "to hinder",
+        "to obstruct"
+      ],
+      "example_sentence": "Modern technology facilitates communication between people across different continents."
+    },
+    {
+      "word": "to diminish",
+      "pronunciation": "/dɪˈmɪnɪʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm bớt, suy giảm (kích thước, giá trị, tầm quan trọng)",
+      "definition_en": "to become or make something smaller or less important",
+      "level": "B2",
+      "synonyms": [
+        "to decrease",
+        "to reduce",
+        "to lessen"
+      ],
+      "antonyms": [
+        "to increase",
+        "to enhance"
+      ],
+      "example_sentence": "The value of the currency diminished significantly after the economic crisis."
+    },
+    {
+      "word": "to stem from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bắt nguồn từ, có gốc rễ từ (nguyên nhân)",
+      "definition_en": "to originate from or be caused by something",
+      "level": "B2",
+      "synonyms": [
+        "to originate from",
+        "to arise from",
+        "to result from"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many of the student's behavioral problems stem from a lack of parental guidance at home."
+    },
+    {
+      "word": "to exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm trầm trọng hơn, làm tệ hơn (tình huống, vấn đề)",
+      "definition_en": "to make a problem or bad situation worse",
+      "level": "B2",
+      "synonyms": [
+        "to worsen",
+        "to aggravate",
+        "to intensify"
+      ],
+      "antonyms": [
+        "to alleviate",
+        "to improve"
+      ],
+      "example_sentence": "The lack of investment exacerbated the existing infrastructure problems in rural areas."
+    },
+    {
+      "word": "to mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm dịu bớt (ảnh hưởng xấu, hậu quả)",
+      "definition_en": "to make something less severe or serious",
+      "level": "B2",
+      "synonyms": [
+        "to alleviate",
+        "to reduce",
+        "to ease"
+      ],
+      "antonyms": [
+        "to exacerbate",
+        "to worsen"
+      ],
+      "example_sentence": "The government implemented new policies to mitigate the effects of climate change."
+    },
+    {
+      "word": "to contradict",
+      "pronunciation": "/ˌkɒntrəˈdɪkt/",
+      "part_of_speech": "verb",
+      "definition_vi": "mâu thuẫn với, phủ nhận (một tuyên bố, ý kiến)",
+      "definition_en": "to say or do something that is opposite to what someone else has said",
+      "level": "B1",
+      "synonyms": [
+        "to deny",
+        "to refute",
+        "to dispute"
+      ],
+      "antonyms": [
+        "to confirm",
+        "to support"
+      ],
+      "example_sentence": "The witness's second statement contradicted what he said during the initial investigation."
+    },
+    {
+      "word": "to corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (một tuyên bố, sự kiện)",
+      "definition_en": "to confirm or give support to a statement or theory by providing evidence",
+      "level": "B2",
+      "synonyms": [
+        "to confirm",
+        "to verify",
+        "to substantiate"
+      ],
+      "antonyms": [
+        "to contradict",
+        "to refute"
+      ],
+      "example_sentence": "Multiple scientific studies corroborate the theory that regular exercise improves mental health."
+    },
+    {
+      "word": "to infer",
+      "pronunciation": "/ɪnˈfɜː/",
+      "part_of_speech": "verb",
+      "definition_vi": "suy luận, kết luận (từ bằng chứng hoặc dữ kiện)",
+      "definition_en": "to reach a conclusion based on evidence and reasoning rather than explicit statement",
+      "level": "B2",
+      "synonyms": [
+        "to deduce",
+        "to conclude",
+        "to gather"
+      ],
+      "antonyms": [],
+      "example_sentence": "From the author's tone and word choice, we can infer that she is skeptical about the proposal."
+    },
+    {
+      "word": "to imply",
+      "pronunciation": "/ɪmˈplaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "gợi ý, ngụ ý (không nói rõ ràng)",
+      "definition_en": "to suggest something indirectly without stating it explicitly",
+      "level": "B2",
+      "synonyms": [
+        "to suggest",
+        "to hint",
+        "to insinuate"
+      ],
+      "antonyms": [
+        "to state",
+        "to declare"
+      ],
+      "example_sentence": "The manager's comments implied that the project deadline might be extended."
+    },
+    {
+      "word": "to assert",
+      "pronunciation": "/əˈsɜːt/",
+      "part_of_speech": "verb",
+      "definition_vi": "khẳng định, tuyên bố (một cách mạnh mẽ)",
+      "definition_en": "to state something firmly and confidently as true",
+      "level": "B2",
+      "synonyms": [
+        "to claim",
+        "to declare",
+        "to maintain"
+      ],
+      "antonyms": [
+        "to deny",
+        "to refute"
+      ],
+      "example_sentence": "The researcher asserts that the new treatment is more effective than previous methods."
+    },
+    {
+      "word": "to substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, cung cấp bằng chứng (cho một tuyên bố)",
+      "definition_en": "to provide evidence or proof to support a claim or statement",
+      "level": "B2",
+      "synonyms": [
+        "to verify",
+        "to confirm",
+        "to corroborate"
+      ],
+      "antonyms": [
+        "to refute",
+        "to disprove"
+      ],
+      "example_sentence": "The company must substantiate its claims about product safety with laboratory tests."
+    },
+    {
+      "word": "to suppress",
+      "pronunciation": "/səˈpres/",
+      "part_of_speech": "verb",
+      "definition_vi": "đàn áp, ngăn chặn (một phong trào, thông tin, cảm xúc)",
+      "definition_en": "to prevent something from being known, expressed, or developed",
+      "level": "B2",
+      "synonyms": [
+        "to repress",
+        "to restrain",
+        "to inhibit"
+      ],
+      "antonyms": [
+        "to promote",
+        "to encourage"
+      ],
+      "example_sentence": "The government attempted to suppress information about the environmental disaster."
+    },
+    {
+      "word": "to amplify",
+      "pronunciation": "/ˈæmplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "phóng đại, làm tăng lên (âm thanh, ảnh hưởng, tầm quan trọng)",
+      "definition_en": "to increase the strength or effect of something; to make louder or more noticeable",
+      "level": "B2",
+      "synonyms": [
+        "to enhance",
+        "to magnify",
+        "to intensify"
+      ],
+      "antonyms": [
+        "to diminish",
+        "to reduce"
+      ],
+      "example_sentence": "Social media amplifies the spread of both accurate and false information rapidly."
+    },
+    {
+      "word": "to obscure",
+      "pronunciation": "/əbˈskjʊə/",
+      "part_of_speech": "verb",
+      "definition_vi": "che khuất, làm mờ đi (sự thật, ý nghĩa)",
+      "definition_en": "to make something unclear or difficult to understand; to hide from view",
+      "level": "B2",
+      "synonyms": [
+        "to conceal",
+        "to hide",
+        "to cloud"
+      ],
+      "antonyms": [
+        "to clarify",
+        "to reveal"
+      ],
+      "example_sentence": "The complex legal language obscures the true meaning of the contract."
+    },
+    {
+      "word": "to illuminate",
+      "pronunciation": "/ɪˈluːmɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng (một vấn đề, ý tưởng)",
+      "definition_en": "to make something clear and easy to understand; to shed light on",
+      "level": "B2",
+      "synonyms": [
+        "to clarify",
+        "to explain",
+        "to elucidate"
+      ],
+      "antonyms": [
+        "to obscure",
+        "to confuse"
+      ],
+      "example_sentence": "The professor's detailed explanation illuminated the complex scientific concept."
+    },
+    {
+      "word": "to diverge",
+      "pronunciation": "/daɪˈvɜːdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "tách rời, đi theo hướng khác nhau (ý kiến, con đường)",
+      "definition_en": "to separate and go in different directions; to differ significantly",
+      "level": "B2",
+      "synonyms": [
+        "to separate",
+        "to differ",
+        "to deviate"
+      ],
+      "antonyms": [
+        "to converge",
+        "to agree"
+      ],
+      "example_sentence": "The two researchers' interpretations of the data diverge significantly on key points."
+    },
+    {
+      "word": "to converge",
+      "pronunciation": "/kənˈvɜːdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "hội tụ, gặp nhau (từ các hướng khác nhau)",
+      "definition_en": "to come together from different directions; to meet at a point",
+      "level": "B2",
+      "synonyms": [
+        "to meet",
+        "to unite",
+        "to combine"
+      ],
+      "antonyms": [
+        "to diverge",
+        "to separate"
+      ],
+      "example_sentence": "Multiple factors converge to create the perfect conditions for economic growth."
+    },
+    {
+      "word": "to perpetuate",
+      "pronunciation": "/pəˈpetʃueɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "duy trì, kéo dài (một tình trạng, truyền thống)",
+      "definition_en": "to cause something to continue indefinitely or to preserve something",
+      "level": "B2",
+      "synonyms": [
+        "to maintain",
+        "to continue",
+        "to preserve"
+      ],
+      "antonyms": [
+        "to end",
+        "to terminate"
+      ],
+      "example_sentence": "Outdated educational methods perpetuate inequality in access to quality learning."
+    },
+    {
+      "word": "to alleviate",
+      "pronunciation": "/əˈliːvieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm dịu bớt (đau đớn, khó khăn)",
+      "definition_en": "to make something less severe or more bearable",
+      "level": "B2",
+      "synonyms": [
+        "to ease",
+        "to relieve",
+        "to mitigate"
+      ],
+      "antonyms": [
+        "to aggravate",
+        "to worsen"
+      ],
+      "example_sentence": "The new medication helps alleviate the symptoms of chronic pain in patients."
+    },
+    {
+      "word": "to validate",
+      "pronunciation": "/ˈvælɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận tính hợp lệ, chứng minh là đúng (một ý kiến, phương pháp)",
+      "definition_en": "to confirm the truth or correctness of something; to make something officially acceptable",
+      "level": "B2",
+      "synonyms": [
+        "to confirm",
+        "to verify",
+        "to authenticate"
+      ],
+      "antonyms": [
+        "to invalidate",
+        "to refute"
+      ],
+      "example_sentence": "The experimental results validate the hypothesis that was proposed by the research team."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new environmental regulations are designed to _______ the harmful effects of industrial pollution on coastal ecosystems.",
+      "option_a": "amplify",
+      "option_b": "mitigate",
+      "option_c": "perpetuate",
+      "option_d": "exacerbate",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Mitigate (giảm nhẹ) là từ đúng vì bối cảnh nói về việc giảm bớt ảnh hưởng xấu. Amplify (phóng đại) và exacerbate (làm trầm trọng) ngược lại với mục đích. Perpetuate (duy trì) không phù hợp về nghĩa."
+    },
+    {
+      "question_text": "The researcher's findings _______ the previous theory that had been accepted for decades.",
+      "option_a": "contradicted",
+      "option_b": "corroborated",
+      "option_c": "implied",
+      "option_d": "inferred",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Contradicted (mâu thuẫn) là đúng vì bối cảnh nói về việc phủ nhận lý thuyết cũ. Corroborated (xác nhận) ngược lại. Implied và inferred không phù hợp về cấu trúc ngữ pháp."
+    },
+    {
+      "question_text": "Which of the following is closest in meaning to 'to bring about'?",
+      "option_a": "to prevent from happening",
+      "option_b": "to cause something to occur",
+      "option_c": "to delay the process",
+      "option_d": "to make something unclear",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "basic",
+      "explanation": "'To bring about' có nghĩa là gây ra, làm xảy ra. Đáp án B (to cause something to occur) là đúng. A, C, D đều sai về nghĩa."
+    },
+    {
+      "question_text": "The author's tone in the passage _______ that she is doubtful about the government's ability to solve the crisis.",
+      "option_a": "asserts",
+      "option_b": "implies",
+      "option_c": "substantiates",
+      "option_d": "validates",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Implies (ngụ ý) là đúng vì nói về điều gợi ý gián tiếp qua tone. Asserts (khẳng định) quá mạnh. Substantiates (chứng minh) và validates (xác nhận) không phù hợp về nghĩa."
+    },
+    {
+      "question_text": "The economic crisis _______ from a combination of poor policy decisions and external market shocks.",
+      "option_a": "converged",
+      "option_b": "stemmed",
+      "option_c": "diverged",
+      "option_d": "facilitated",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'To stem from' (bắt nguồn từ) là đúng để nói về nguyên nhân. Converged (hội tụ) và diverged (tách rời) không phù hợp. Facilitated (tạo điều kiện) sai về nghĩa."
+    },
+    {
+      "question_text": "What does 'to account for' mean in this context: 'Online sales account for 60% of total revenue'?",
+      "option_a": "to explain the reasons for something",
+      "option_b": "to represent or constitute a proportion",
+      "option_c": "to keep financial records",
+      "option_d": "to be responsible for a mistake",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Trong bối cảnh này, 'account for' có nghĩa là chiếm, đại diện cho một phần. Đáp án B đúng. A là nghĩa khác của cụm từ, C và D sai."
+    },
+    {
+      "question_text": "The lack of transparency in the process _______ public trust in the institution.",
+      "option_a": "facilitated",
+      "option_b": "undermined",
+      "option_c": "validated",
+      "option_d": "illuminated",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Undermined (làm suy yếu) là đúng vì thiếu minh bạch làm suy yếu niềm tin. Facilitated (tạo điều kiện) ngược lại. Validated và illuminated không phù hợp."
+    },
+    {
+      "question_text": "Which word is most similar in meaning to 'to obscure'?",
+      "option_a": "to clarify",
+      "option_b": "to conceal",
+      "option_c": "to amplify",
+      "option_d": "to validate",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "basic",
+      "explanation": "'To obscure' (che khuất, làm mờ) có nghĩa tương tự 'to conceal' (che giấu). Đáp án B đúng. A là antonym, C và D sai."
+    },
+    {
+      "question_text": "The committee's decision to _______ the controversial report prevented the public from learning the truth.",
+      "option_a": "illuminate",
+      "option_b": "suppress",
+      "option_c": "corroborate",
+      "option_d": "infer",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Suppress (đàn áp, ngăn chặn) là đúng vì bối cảnh nói về việc ngăn công chúng biết sự thật. Illuminate (làm sáng tỏ) ngược lại. Corroborate và infer không phù hợp."
+    },
+    {
+      "question_text": "The professor's detailed explanation _______ the complex theory, making it easier for students to understand.",
+      "option_a": "obscured",
+      "option_b": "diminished",
+      "option_c": "illuminated",
+      "option_d": "exacerbated",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Illuminated (làm sáng tỏ) là đúng vì giải thích chi tiết giúp hiểu rõ hơn. Obscured (che khuất) ngược lại. Diminished và exacerbated không phù hợp."
+    },
+    {
+      "question_text": "The two scientists' interpretations of the data _______ on several key points, leading to different conclusions.",
+      "option_a": "converged",
+      "option_b": "perpetuated",
+      "option_c": "diverged",
+      "option_d": "alleviated",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Diverged (tách rời, khác nhau) là đúng vì hai nhà khoa học có kết luận khác nhau. Converged (hội tụ) ngược lại. Perpetuated và alleviated không phù hợp."
+    },
+    {
+      "question_text": "The experimental results _______ the hypothesis that had been proposed by the research team.",
+      "option_a": "undermined",
+      "option_b": "validated",
+      "option_c": "suppressed",
+      "option_d": "diverged",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Validated (xác nhận tính đúng đắn) là đúng vì kết quả thí nghiệm chứng minh giả thuyết. Undermined (làm suy yếu) ngược lại. Suppressed và diverged không phù hợp."
+    }
+  ]
+}

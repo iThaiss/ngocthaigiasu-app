@@ -1,0 +1,406 @@
+{
+  "words": [
+    {
+      "word": "culpability",
+      "pronunciation": "/ˌkʌlpəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "trách nhiệm pháp lý; mức độ có lỗi hoặc phải chịu trách nhiệm về hành vi vi phạm",
+      "definition_en": "the state of being responsible for wrongdoing; degree of legal responsibility",
+      "level": "C1",
+      "synonyms": [
+        "liability",
+        "responsibility",
+        "guilt"
+      ],
+      "antonyms": [
+        "innocence",
+        "exoneration"
+      ],
+      "example_sentence": "The court examined the defendant's culpability in the embezzlement scheme by analyzing financial records and communications."
+    },
+    {
+      "word": "exonerate",
+      "pronunciation": "/ɪɡˈzɒnəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tuyên bố ai đó không có lỗi; giải tội hoàn toàn",
+      "definition_en": "to declare someone free from blame or responsibility for a crime",
+      "level": "C1",
+      "synonyms": [
+        "acquit",
+        "vindicate",
+        "absolve"
+      ],
+      "antonyms": [
+        "incriminate",
+        "implicate"
+      ],
+      "example_sentence": "DNA evidence exonerated the wrongly convicted man after he had spent fifteen years in prison."
+    },
+    {
+      "word": "jurisprudence",
+      "pronunciation": "/ˌdʒʊərɪsˈpruːdəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khoa học pháp luật; hệ thống các nguyên tắc pháp lý hoặc cách giải thích luật",
+      "definition_en": "the philosophy of law; the science and study of legal principles and their application",
+      "level": "C2",
+      "synonyms": [
+        "legal philosophy",
+        "case law",
+        "legal doctrine"
+      ],
+      "antonyms": [],
+      "example_sentence": "Modern jurisprudence emphasizes the protection of individual rights while balancing societal interests in criminal justice reform."
+    },
+    {
+      "word": "adjudicate",
+      "pronunciation": "/əˈdʒuːdɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "phán xét; giải quyết tranh chấp pháp lý thông qua tòa án",
+      "definition_en": "to make a formal judgment or decision about a legal case",
+      "level": "C1",
+      "synonyms": [
+        "judge",
+        "arbitrate",
+        "determine"
+      ],
+      "antonyms": [
+        "dispute",
+        "contest"
+      ],
+      "example_sentence": "The international tribunal was established to adjudicate disputes between member nations regarding maritime boundaries."
+    },
+    {
+      "word": "statutory obligation",
+      "pronunciation": "/ˈstætʃətɔːri ɒblɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nghĩa vụ được quy định bởi luật pháp; trách nhiệm bắt buộc theo luật định",
+      "definition_en": "a legal duty or responsibility imposed by law or legislation",
+      "level": "C1",
+      "synonyms": [
+        "legal requirement",
+        "legislative duty",
+        "mandatory responsibility"
+      ],
+      "antonyms": [
+        "voluntary obligation",
+        "discretionary action"
+      ],
+      "example_sentence": "Companies have a statutory obligation to disclose financial information to regulatory authorities within specified timeframes."
+    },
+    {
+      "word": "contravene",
+      "pronunciation": "/ˌkɒntrəˈviːn/",
+      "part_of_speech": "verb",
+      "definition_vi": "vi phạm; trái với (luật, quy định); không tuân thủ",
+      "definition_en": "to violate or breach a law, rule, or agreement",
+      "level": "C1",
+      "synonyms": [
+        "violate",
+        "breach",
+        "infringe"
+      ],
+      "antonyms": [
+        "comply",
+        "observe"
+      ],
+      "example_sentence": "The corporation's labor practices contravened international human rights conventions, prompting sanctions from the UN."
+    },
+    {
+      "word": "redress",
+      "pronunciation": "/rɪˈdres/",
+      "part_of_speech": "noun",
+      "definition_vi": "bồi thường; sự khắc phục thiệt hại hoặc bất công; giải pháp pháp lý",
+      "definition_en": "compensation or remedy for a wrong or grievance; the process of correcting an injustice",
+      "level": "C1",
+      "synonyms": [
+        "compensation",
+        "remedy",
+        "reparation"
+      ],
+      "antonyms": [
+        "injustice",
+        "harm"
+      ],
+      "example_sentence": "Victims of discrimination sought legal redress through civil courts to obtain damages for lost wages and emotional distress."
+    },
+    {
+      "word": "delinquency",
+      "pronunciation": "/dɪˈlɪŋkwənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "hành vi vi phạm pháp luật; tội phạm; sự bỏ mặc trách nhiệm",
+      "definition_en": "failure to fulfill a legal obligation; criminal or antisocial behavior, especially by young people",
+      "level": "C1",
+      "synonyms": [
+        "crime",
+        "misconduct",
+        "offense"
+      ],
+      "antonyms": [
+        "compliance",
+        "obedience"
+      ],
+      "example_sentence": "Juvenile delinquency programs aim to rehabilitate young offenders through education and counseling rather than incarceration."
+    },
+    {
+      "word": "enforce compliance",
+      "pronunciation": "/ɪnˈfɔːrs kəmˈplaɪəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thực thi tuân thủ; buộc ai đó phải tuân theo luật hoặc quy định",
+      "definition_en": "to compel adherence to laws, regulations, or agreements through legal mechanisms",
+      "level": "C1",
+      "synonyms": [
+        "ensure adherence",
+        "compel obedience",
+        "implement regulations"
+      ],
+      "antonyms": [
+        "permit violation",
+        "ignore breaches"
+      ],
+      "example_sentence": "Environmental agencies enforce compliance with pollution standards by conducting inspections and imposing fines on violators."
+    },
+    {
+      "word": "indemnify",
+      "pronunciation": "/ɪnˈdemnɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "bồi thường; bảo vệ ai đó khỏi trách nhiệm pháp lý hoặc tổn thất",
+      "definition_en": "to compensate someone for loss or damage; to protect from legal liability",
+      "level": "C1",
+      "synonyms": [
+        "compensate",
+        "reimburse",
+        "protect"
+      ],
+      "antonyms": [
+        "hold liable",
+        "charge"
+      ],
+      "example_sentence": "Insurance policies indemnify policyholders against unforeseen medical expenses and legal costs arising from accidents."
+    },
+    {
+      "word": "breach of contract",
+      "pronunciation": "/briːtʃ əv ˈkɒntrækt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vi phạm hợp đồng; không thực hiện các điều khoản đã cam kết",
+      "definition_en": "failure to fulfill the terms and conditions of a legally binding agreement",
+      "level": "B2",
+      "synonyms": [
+        "contract violation",
+        "non-performance",
+        "default"
+      ],
+      "antonyms": [
+        "contract fulfillment",
+        "compliance"
+      ],
+      "example_sentence": "The supplier's failure to deliver goods on time constituted a material breach of contract, entitling the buyer to seek damages."
+    },
+    {
+      "word": "arbitration",
+      "pronunciation": "/ˌɑːbɪˈtreɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "trọng tài; phương thức giải quyết tranh chấp bởi bên thứ ba trung lập",
+      "definition_en": "a method of resolving disputes outside court by submitting to a neutral third party's binding decision",
+      "level": "C1",
+      "synonyms": [
+        "mediation",
+        "adjudication",
+        "dispute resolution"
+      ],
+      "antonyms": [
+        "litigation",
+        "court proceedings"
+      ],
+      "example_sentence": "International commercial disputes are increasingly resolved through arbitration rather than lengthy court battles in multiple jurisdictions."
+    },
+    {
+      "word": "statutory rape",
+      "pronunciation": "/ˈstætʃətɔːri reɪp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiếp dâm theo luật định; quan hệ tình dục với người dưới tuổi pháp định",
+      "definition_en": "sexual intercourse with a person below the legal age of consent, regardless of consent",
+      "level": "C1",
+      "synonyms": [
+        "sexual abuse of a minor",
+        "child sexual abuse"
+      ],
+      "antonyms": [],
+      "example_sentence": "Statutory rape laws exist to protect minors from sexual exploitation by adults in positions of authority."
+    },
+    {
+      "word": "tort law",
+      "pronunciation": "/tɔːrt lɔː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "luật dân sự về hành vi gây thiệt hại; luật về tội dân sự",
+      "definition_en": "the branch of law dealing with civil wrongs and compensation for damages caused by negligence or intentional acts",
+      "level": "C1",
+      "synonyms": [
+        "civil law",
+        "law of damages"
+      ],
+      "antonyms": [
+        "criminal law"
+      ],
+      "example_sentence": "Tort law allows individuals to seek compensation for injuries caused by another person's negligence or intentional misconduct."
+    },
+    {
+      "word": "clemency",
+      "pronunciation": "/ˈklemənsɪ/",
+      "part_of_speech": "noun",
+      "definition_vi": "khoan hồng; sự tha thứ hoặc giảm nhẹ hình phạt từ chính quyền",
+      "definition_en": "mercy or leniency shown by a government official, especially in reducing a criminal sentence",
+      "level": "C1",
+      "synonyms": [
+        "mercy",
+        "pardon",
+        "leniency"
+      ],
+      "antonyms": [
+        "severity",
+        "harshness"
+      ],
+      "example_sentence": "The governor granted clemency to the elderly prisoner after reviewing evidence of his rehabilitation and contributions to society."
+    },
+    {
+      "word": "subpoena",
+      "pronunciation": "/səˈpiːnə/",
+      "part_of_speech": "noun",
+      "definition_vi": "trát tòa; lệnh bắt buộc ai đó phải ra tòa hoặc cung cấp bằng chứng",
+      "definition_en": "a legal order requiring a person to appear in court or produce evidence",
+      "level": "C1",
+      "synonyms": [
+        "summons",
+        "court order",
+        "writ"
+      ],
+      "antonyms": [],
+      "example_sentence": "The witness received a subpoena requiring her to testify about the events she witnessed on the night of the incident."
+    },
+    {
+      "word": "legal precedent",
+      "pronunciation": "/ˈliːɡəl ˈpresɪdənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiền lệ pháp lý; quyết định tòa án trước đó dùng làm cơ sở cho các vụ tương tự",
+      "definition_en": "a court decision that serves as an authoritative example for future similar cases",
+      "level": "C1",
+      "synonyms": [
+        "case law",
+        "judicial precedent",
+        "established principle"
+      ],
+      "antonyms": [
+        "novel case",
+        "unprecedented situation"
+      ],
+      "example_sentence": "The landmark Supreme Court decision established a legal precedent that fundamentally changed how privacy rights are interpreted in digital communications."
+    },
+    {
+      "word": "malfeasance",
+      "pronunciation": "/mælˈfiːzəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "hành vi sai trái; lạm dụng quyền hạn; tội phạm công vụ",
+      "definition_en": "wrongful or illegal conduct by a public official; misconduct in office",
+      "level": "C2",
+      "synonyms": [
+        "misconduct",
+        "corruption",
+        "abuse of power"
+      ],
+      "antonyms": [
+        "integrity",
+        "honesty"
+      ],
+      "example_sentence": "The investigation into the mayor's malfeasance revealed systematic embezzlement of public funds over a five-year period."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'culpability' in criminal law?",
+      "option_a": "The physical evidence presented at trial",
+      "option_b": "The degree of legal responsibility for wrongdoing",
+      "option_c": "The right to remain silent during interrogation",
+      "option_d": "The process of appealing a court decision",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Culpability là trách nhiệm pháp lý hoặc mức độ có lỗi. Các đáp án khác liên quan đến bằng chứng, quyền im lặng, và kháng cáo, không phải khái niệm về trách nhiệm."
+    },
+    {
+      "question_text": "If new DNA evidence proves that a convicted person did not commit the crime, the court would most likely _____ them.",
+      "option_a": "indict",
+      "option_b": "exonerate",
+      "option_c": "prosecute",
+      "option_d": "sentence",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Exonerate có nghĩa là tuyên bố ai đó không có lỗi. Indict, prosecute, sentence đều liên quan đến truy tố hoặc kết án, không phải giải tội."
+    },
+    {
+      "question_text": "The company's failure to meet environmental standards _____ international pollution regulations, resulting in substantial fines.",
+      "option_a": "contravened",
+      "option_b": "indemnified",
+      "option_c": "adjudicated",
+      "option_d": "arbitrated",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Contravene = vi phạm, trái với. Indemnify = bồi thường, adjudicate = phán xét, arbitrate = trọng tài. Chỉ contravene phù hợp với ngữ cảnh vi phạm quy định."
+    },
+    {
+      "question_text": "Which phrase best completes this sentence: 'The regulatory agency's role is to _____ with environmental protection laws by conducting regular inspections.'",
+      "option_a": "enforce compliance",
+      "option_b": "grant clemency",
+      "option_c": "seek redress",
+      "option_d": "file arbitration",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Enforce compliance = thực thi tuân thủ. Grant clemency = tha thứ, seek redress = tìm bồi thường, file arbitration = nộp đơn trọng tài. Chỉ 'enforce compliance' phù hợp với vai trò của cơ quan quản lý."
+    },
+    {
+      "question_text": "In tort law, a victim of negligence can seek _____ through civil courts to recover damages for injuries sustained.",
+      "option_a": "clemency",
+      "option_b": "redress",
+      "option_c": "delinquency",
+      "option_d": "jurisprudence",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Redress = bồi thường, sự khắc phục thiệt hại. Clemency = khoan hồng (từ chính quyền), delinquency = hành vi vi phạm, jurisprudence = khoa học pháp luật. Chỉ redress phù hợp với bối cảnh tìm bồi thường."
+    },
+    {
+      "question_text": "The witness was issued a _____ requiring her to appear in court and provide testimony about the incident.",
+      "option_a": "subpoena",
+      "option_b": "statute",
+      "option_c": "covenant",
+      "option_d": "charter",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Subpoena = trát tòa, lệnh bắt buộc ra tòa. Statute = luật, covenant = hiệp ước, charter = bản hiến chương. Chỉ subpoena là lệnh bắt buộc ra tòa."
+    },
+    {
+      "question_text": "The Supreme Court's decision in this case established a _____ that would influence how similar disputes are resolved for decades.",
+      "option_a": "legal precedent",
+      "option_b": "statutory obligation",
+      "option_c": "breach of contract",
+      "option_d": "tort liability",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Legal precedent = tiền lệ pháp lý, dùng làm cơ sở cho các vụ tương tự. Statutory obligation = nghĩa vụ theo luật, breach of contract = vi phạm hợp đồng, tort liability = trách nhiệm dân sự. Chỉ legal precedent phù hợp với ảnh hưởng lâu dài."
+    },
+    {
+      "question_text": "The investigation uncovered evidence of _____ by city officials, including systematic misappropriation of public funds for personal gain.",
+      "option_a": "arbitration",
+      "option_b": "malfeasance",
+      "option_c": "indemnification",
+      "option_d": "adjudication",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Malfeasance = hành vi sai trái, lạm dụng quyền hạn của công chức. Arbitration = trọng tài, indemnification = bồi thường, adjudication = phán xét. Chỉ malfeasance mô tả hành vi sai trái của công chức."
+    }
+  ]
+}

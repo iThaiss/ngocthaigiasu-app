@@ -1,0 +1,465 @@
+{
+  "words": [
+    {
+      "word": "however",
+      "pronunciation": "/haʊˈevər/",
+      "part_of_speech": "connector",
+      "definition_vi": "tuy nhiên, nhưng (dùng để chỉ sự tương phản giữa hai ý, thường đứng đầu câu hoặc sau dấu chấm phẩy)",
+      "definition_en": "used to introduce a statement that contrasts with or seems to contradict something previously said",
+      "level": "B1",
+      "synonyms": [
+        "nevertheless",
+        "yet",
+        "still"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project was expensive; however, the company decided it was worth the investment for long-term growth."
+    },
+    {
+      "word": "nevertheless",
+      "pronunciation": "/ˌnevərðəˈles/",
+      "part_of_speech": "connector",
+      "definition_vi": "tuy vậy, dù sao đi nữa (chỉ sự tương phản mạnh, thường ở đầu câu hoặc sau dấu chấm phẩy)",
+      "definition_en": "in spite of that; however; used to introduce a contrasting statement",
+      "level": "B2",
+      "synonyms": [
+        "however",
+        "still",
+        "yet"
+      ],
+      "antonyms": [],
+      "example_sentence": "The evidence was inconclusive; nevertheless, the researchers proceeded with their hypothesis testing."
+    },
+    {
+      "word": "whereas",
+      "pronunciation": "/werˈæz/",
+      "part_of_speech": "connector",
+      "definition_vi": "trong khi đó, trái lại (dùng để so sánh hai điều khác nhau, thường ở đầu mệnh đề)",
+      "definition_en": "in contrast or comparison with the fact that; while on the other hand",
+      "level": "B2",
+      "synonyms": [
+        "while",
+        "on the other hand"
+      ],
+      "antonyms": [],
+      "example_sentence": "Whereas traditional methods require weeks to complete, the new technology can finish the task in days."
+    },
+    {
+      "word": "although",
+      "pronunciation": "/ɔːlˈðoʊ/",
+      "part_of_speech": "connector",
+      "definition_vi": "mặc dù, dù rằng (dùng để chỉ sự nhượng bộ, thường ở đầu mệnh đề phụ)",
+      "definition_en": "used to introduce a clause that mentions something that makes the main clause surprising or unexpected",
+      "level": "B1",
+      "synonyms": [
+        "though",
+        "even though"
+      ],
+      "antonyms": [],
+      "example_sentence": "Although the weather was terrible, the outdoor event attracted thousands of participants."
+    },
+    {
+      "word": "despite",
+      "pronunciation": "/dɪˈspaɪt/",
+      "part_of_speech": "connector",
+      "definition_vi": "mặc dù, bất chấp (giới từ, theo sau là danh từ hoặc V-ing, chỉ sự nhượng bộ)",
+      "definition_en": "without being affected by; in spite of",
+      "level": "B1",
+      "synonyms": [
+        "in spite of",
+        "notwithstanding"
+      ],
+      "antonyms": [],
+      "example_sentence": "Despite having limited resources, the team managed to complete the project ahead of schedule."
+    },
+    {
+      "word": "even so",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuy vậy, dù sao đi nữa (cụm từ chỉ sự tương phản, thường ở đầu câu)",
+      "definition_en": "used to introduce a statement that is surprising or contrasts with what was just said",
+      "level": "B2",
+      "synonyms": [
+        "nevertheless",
+        "still",
+        "yet"
+      ],
+      "antonyms": [],
+      "example_sentence": "The medication has some side effects; even so, doctors recommend it for severe cases."
+    },
+    {
+      "word": "in spite of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặc dù, bất chấp (cụm giới từ, theo sau là danh từ hoặc V-ing)",
+      "definition_en": "without being affected by; despite",
+      "level": "B1",
+      "synonyms": [
+        "despite",
+        "notwithstanding"
+      ],
+      "antonyms": [],
+      "example_sentence": "In spite of the criticism, the director maintained her original vision for the film."
+    },
+    {
+      "word": "yet",
+      "pronunciation": "/jet/",
+      "part_of_speech": "connector",
+      "definition_vi": "nhưng, tuy nhiên (từ nối chỉ sự tương phản, thường ở giữa câu)",
+      "definition_en": "used to introduce a statement that contrasts with what has just been said",
+      "level": "B1",
+      "synonyms": [
+        "however",
+        "still",
+        "but"
+      ],
+      "antonyms": [],
+      "example_sentence": "The plan seemed impossible, yet the team's determination made it a reality."
+    },
+    {
+      "word": "on the other hand",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặt khác, từ phía khác (cụm từ dùng để so sánh hai khía cạnh khác nhau)",
+      "definition_en": "used to introduce a contrasting or different point of view",
+      "level": "B1",
+      "synonyms": [
+        "conversely",
+        "whereas"
+      ],
+      "antonyms": [],
+      "example_sentence": "Online shopping is convenient; on the other hand, it lacks the personal touch of in-store experience."
+    },
+    {
+      "word": "still",
+      "pronunciation": "/stɪl/",
+      "part_of_speech": "connector",
+      "definition_vi": "tuy vậy, dù sao (từ nối chỉ sự tương phản, thường ở đầu câu hoặc giữa câu)",
+      "definition_en": "used to introduce a statement that contrasts with or is surprising given what was just said",
+      "level": "B1",
+      "synonyms": [
+        "nevertheless",
+        "yet",
+        "however"
+      ],
+      "antonyms": [],
+      "example_sentence": "The experiment failed multiple times; still, the scientists refused to abandon their research."
+    },
+    {
+      "word": "though",
+      "pronunciation": "/ðoʊ/",
+      "part_of_speech": "connector",
+      "definition_vi": "mặc dù, dù rằng (từ nối chỉ sự nhượng bộ, có thể ở đầu hoặc cuối câu)",
+      "definition_en": "used to introduce a clause that mentions something that makes the main clause surprising",
+      "level": "B1",
+      "synonyms": [
+        "although",
+        "even though"
+      ],
+      "antonyms": [],
+      "example_sentence": "Though the salary was lower, she accepted the job because it offered better career prospects."
+    },
+    {
+      "word": "even though",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặc dù, dù rằng (cụm từ chỉ sự nhượng bộ mạnh, thường ở đầu mệnh đề)",
+      "definition_en": "used to emphasize that something is true despite a fact that might make it seem untrue",
+      "level": "B1",
+      "synonyms": [
+        "although",
+        "though"
+      ],
+      "antonyms": [],
+      "example_sentence": "Even though she had no prior experience, she proved to be an excellent manager."
+    },
+    {
+      "word": "conversely",
+      "pronunciation": "/ˈkɑːnvɜːrsli/",
+      "part_of_speech": "connector",
+      "definition_vi": "ngược lại, trái lại (từ nối chỉ sự tương phản hoặc đảo ngược logic)",
+      "definition_en": "in a way that is the opposite or reverse of something previously stated",
+      "level": "B2",
+      "synonyms": [
+        "on the other hand",
+        "whereas"
+      ],
+      "antonyms": [],
+      "example_sentence": "Urban areas have high population density; conversely, rural regions are characterized by sparse settlement."
+    },
+    {
+      "word": "notwithstanding",
+      "pronunciation": "/ˌnɑːtwɪðˈstændɪŋ/",
+      "part_of_speech": "connector",
+      "definition_vi": "mặc dù, bất chấp (từ nối chỉ sự nhượng bộ, trang trọng hơn despite)",
+      "definition_en": "in spite of; despite; used formally to introduce a contrasting fact",
+      "level": "C1",
+      "synonyms": [
+        "despite",
+        "in spite of"
+      ],
+      "antonyms": [],
+      "example_sentence": "Notwithstanding the economic downturn, the company maintained its commitment to employee welfare."
+    },
+    {
+      "word": "by contrast",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngược lại, trái lại (cụm từ dùng để so sánh hai điều khác nhau)",
+      "definition_en": "used to emphasize the difference between two things being compared",
+      "level": "B2",
+      "synonyms": [
+        "in contrast",
+        "on the other hand"
+      ],
+      "antonyms": [],
+      "example_sentence": "The first experiment produced clear results; by contrast, the second one was inconclusive."
+    },
+    {
+      "word": "in contrast",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngược lại, trái lại (cụm từ chỉ sự tương phản rõ rệt)",
+      "definition_en": "used to show that two things are very different from each other",
+      "level": "B2",
+      "synonyms": [
+        "by contrast",
+        "whereas"
+      ],
+      "antonyms": [],
+      "example_sentence": "The old system was slow and unreliable; in contrast, the new technology is fast and dependable."
+    },
+    {
+      "word": "while",
+      "pronunciation": "/waɪl/",
+      "part_of_speech": "connector",
+      "definition_vi": "trong khi, trong lúc (từ nối chỉ sự tương phản hoặc đồng thời)",
+      "definition_en": "used to introduce a contrasting fact or to show that two things happen at the same time",
+      "level": "B1",
+      "synonyms": [
+        "whereas",
+        "although"
+      ],
+      "antonyms": [],
+      "example_sentence": "While some students prefer traditional lectures, others find online learning more effective."
+    },
+    {
+      "word": "at the same time",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cùng lúc đó, tuy nhiên (cụm từ chỉ sự tương phản hoặc đồng thời)",
+      "definition_en": "used to introduce a contrasting or additional point while acknowledging what was just said",
+      "level": "B1",
+      "synonyms": [
+        "nevertheless",
+        "still"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project was challenging; at the same time, it provided valuable learning opportunities."
+    },
+    {
+      "word": "admittedly",
+      "pronunciation": "/ədˈmɪtɪdli/",
+      "part_of_speech": "connector",
+      "definition_vi": "phải công nhân là, đúng là (từ nối chỉ sự nhượng bộ, thường ở đầu câu)",
+      "definition_en": "used to acknowledge that something is true before introducing a contrasting point",
+      "level": "B2",
+      "synonyms": [
+        "admittedly",
+        "granted"
+      ],
+      "antonyms": [],
+      "example_sentence": "Admittedly, the cost is high; however, the long-term benefits justify the investment."
+    },
+    {
+      "word": "granted",
+      "pronunciation": "/ˈɡræntɪd/",
+      "part_of_speech": "connector",
+      "definition_vi": "công nhân là, đúng là (từ nối chỉ sự nhượng bộ, thường ở đầu câu)",
+      "definition_en": "used to acknowledge that something is true before introducing a contrasting point",
+      "level": "B2",
+      "synonyms": [
+        "admittedly",
+        "true"
+      ],
+      "antonyms": [],
+      "example_sentence": "Granted that the initial results were promising, subsequent tests revealed significant flaws."
+    },
+    {
+      "word": "otherwise",
+      "pronunciation": "/ˈʌðərwaɪz/",
+      "part_of_speech": "connector",
+      "definition_vi": "nếu không thì, trái lại (từ nối chỉ sự tương phản hoặc hệ quả)",
+      "definition_en": "in different circumstances; if not; used to introduce a contrasting or alternative situation",
+      "level": "B1",
+      "synonyms": [
+        "else",
+        "or else"
+      ],
+      "antonyms": [],
+      "example_sentence": "The safety regulations must be followed strictly; otherwise, serious accidents could occur."
+    },
+    {
+      "word": "for all that",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, mặc dù vậy (cụm từ chỉ sự nhượng bộ, hơi lỗi thời)",
+      "definition_en": "in spite of that; nevertheless; used to introduce a contrasting statement",
+      "level": "C1",
+      "synonyms": [
+        "nevertheless",
+        "still"
+      ],
+      "antonyms": [],
+      "example_sentence": "For all that the critics praised the film, audiences found it disappointing."
+    },
+    {
+      "word": "be that as it may",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, tuy vậy (cụm từ chỉ sự nhượng bộ, trang trọng)",
+      "definition_en": "used to acknowledge something while indicating that it does not change the main point",
+      "level": "C1",
+      "synonyms": [
+        "nevertheless",
+        "still"
+      ],
+      "antonyms": [],
+      "example_sentence": "Be that as it may, the fundamental issue remains unresolved and requires immediate attention."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The weather forecast predicted rain; _______, the outdoor event proceeded as planned without any disruptions.",
+      "option_a": "however",
+      "option_b": "because",
+      "option_c": "therefore",
+      "option_d": "meanwhile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Cần từ nối chỉ sự tương phản. 'However' là đúng vì nó nối hai ý đối lập: dự báo mưa nhưng sự kiện vẫn diễn ra. 'Because' (vì), 'therefore' (vì vậy), 'meanwhile' (trong lúc đó) không phù hợp."
+    },
+    {
+      "question_text": "_______ the team had limited resources, they managed to develop an innovative solution to the problem.",
+      "option_a": "Because",
+      "option_b": "Although",
+      "option_c": "Therefore",
+      "option_d": "Moreover",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Although' là đúng vì nó chỉ sự nhượng bộ: mặc dù thiếu tài nguyên nhưng vẫn phát triển giải pháp. 'Because' (vì) chỉ nguyên nhân, 'therefore' (vì vậy) chỉ hệ quả, 'moreover' (hơn nữa) chỉ bổ sung."
+    },
+    {
+      "question_text": "The old system was expensive and inefficient; _______, the new technology offers better performance at lower cost.",
+      "option_a": "in contrast",
+      "option_b": "in addition",
+      "option_c": "as a result",
+      "option_d": "for example",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'In contrast' là đúng vì nó so sánh hai hệ thống khác nhau. 'In addition' (thêm vào) chỉ bổ sung, 'as a result' (kết quả là) chỉ hệ quả, 'for example' (ví dụ) chỉ minh họa."
+    },
+    {
+      "question_text": "The research showed promising initial results; _______, further investigation revealed significant limitations.",
+      "option_a": "nevertheless",
+      "option_b": "consequently",
+      "option_c": "furthermore",
+      "option_d": "similarly",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Nevertheless' là đúng vì nó chỉ sự tương phản mạnh: kết quả ban đầu tốt nhưng phát hiện hạn chế. 'Consequently' (do đó) chỉ hệ quả, 'furthermore' (hơn nữa) chỉ bổ sung, 'similarly' (tương tự) chỉ sự giống nhau."
+    },
+    {
+      "question_text": "_______ the high cost of the treatment, many patients cannot afford it and must seek alternative options.",
+      "option_a": "Despite",
+      "option_b": "Because of",
+      "option_c": "Due to",
+      "option_d": "Caused by",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Despite' là đúng vì nó chỉ sự nhượng bộ: mặc dù chi phí cao nhưng vẫn có bệnh nhân không đủ khả năng. 'Because of', 'due to', 'caused by' đều chỉ nguyên nhân, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The company's profits increased significantly; _______, employee satisfaction remained low due to poor management.",
+      "option_a": "even so",
+      "option_b": "as expected",
+      "option_c": "obviously",
+      "option_d": "certainly",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Even so' là đúng vì nó chỉ sự tương phản: lợi nhuận tăng nhưng sự hài lòng của nhân viên vẫn thấp. 'As expected' (như dự kiến), 'obviously' (rõ ràng), 'certainly' (chắc chắn) không phù hợp."
+    },
+    {
+      "question_text": "Whereas traditional agriculture relies on chemical pesticides, organic farming uses natural methods to control pests. Which word best describes the relationship between these two approaches?",
+      "option_a": "Similarity",
+      "option_b": "Contrast",
+      "option_c": "Cause and effect",
+      "option_d": "Sequence",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Whereas' chỉ sự tương phản (contrast) giữa hai phương pháp khác nhau. Nó so sánh nông nghiệp truyền thống và nông nghiệp hữu cơ."
+    },
+    {
+      "question_text": "The student studied hard for the exam; _______, he failed to achieve the desired score. What is the best connector?",
+      "option_a": "therefore",
+      "option_b": "yet",
+      "option_c": "consequently",
+      "option_d": "thus",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Yet' là đúng vì nó chỉ sự tương phản: học chăm chỉ nhưng vẫn không đạt điểm mong muốn. 'Therefore', 'consequently', 'thus' đều chỉ hệ quả logic, không phù hợp."
+    },
+    {
+      "question_text": "The medication has proven effective in clinical trials; _______, some patients experience severe side effects. Which connector fits best?",
+      "option_a": "on the other hand",
+      "option_b": "in addition",
+      "option_c": "for instance",
+      "option_d": "in particular",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'On the other hand' là đúng vì nó so sánh hai khía cạnh khác nhau: hiệu quả nhưng có tác dụng phụ. 'In addition' (thêm vào), 'for instance' (ví dụ), 'in particular' (đặc biệt) không phù hợp."
+    },
+    {
+      "question_text": "The project deadline was tight; _______, the team completed it ahead of schedule through excellent coordination.",
+      "option_a": "still",
+      "option_b": "otherwise",
+      "option_c": "meanwhile",
+      "option_d": "instead",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Still' là đúng vì nó chỉ sự tương phản: thời hạn chặt nhưng vẫn hoàn thành sớm. 'Otherwise' (nếu không thì) chỉ hệ quả, 'meanwhile' (trong lúc đó) chỉ đồng thời, 'instead' (thay vào đó) chỉ thay thế."
+    },
+    {
+      "question_text": "The evidence was inconclusive; _______, the researchers decided to proceed with their investigation. What does this sentence structure indicate?",
+      "option_a": "The evidence supports the investigation",
+      "option_b": "The evidence contradicts the investigation",
+      "option_c": "The investigation depends on conclusive evidence",
+      "option_d": "The researchers ignore the lack of clear evidence",
+      "correct_answer": "D",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cấu trúc 'inconclusive evidence; nevertheless, proceeded' chỉ rằng các nhà nghiên cứu bỏ qua sự thiếu bằng chứng rõ ràng và tiếp tục. Đây là sự nhượng bộ: mặc dù bằng chứng không rõ ràng nhưng vẫn tiếp tục."
+    },
+    {
+      "question_text": "Admittedly, the initial investment is substantial; _______, the long-term returns make it a worthwhile decision.",
+      "option_a": "however",
+      "option_b": "because",
+      "option_c": "therefore",
+      "option_d": "meanwhile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'However' là đúng vì nó nối sự nhượng bộ 'admittedly' với ý tương phản: công nhân chi phí cao nhưng lợi nhuận dài hạn lại xứng đáng. 'Because', 'therefore', 'meanwhile' không phù hợp."
+    }
+  ]
+}

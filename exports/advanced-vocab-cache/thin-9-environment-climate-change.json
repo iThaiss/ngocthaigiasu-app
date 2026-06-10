@@ -1,0 +1,147 @@
+{
+  "words": [
+    {
+      "word": "climate variability",
+      "pronunciation": "/ˈklaɪmət vɛəriˈæbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự biến thiên tự nhiên của khí hậu trong các khoảng thời gian khác nhau (năm, thập kỷ), khác với xu hướng dài hạn của biến đổi khí hậu.",
+      "definition_en": "Natural fluctuations in climate patterns over different timescales, distinct from long-term climate change trends.",
+      "level": "C1",
+      "synonyms": [
+        "climate fluctuation",
+        "climatic oscillation"
+      ],
+      "antonyms": [
+        "climate stability"
+      ],
+      "example_sentence": "Scientists distinguish between short-term climate variability caused by El Niño and long-term warming trends driven by human activities."
+    },
+    {
+      "word": "carbon intensity",
+      "pronunciation": "/ˈkɑːrbən ɪnˈtɛnsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lượng khí thải carbon dioxide trên một đơn vị sản lượng kinh tế (GDP) hoặc năng lượng được sản xuất.",
+      "definition_en": "The amount of carbon dioxide emissions per unit of economic output or energy produced.",
+      "level": "C1",
+      "synonyms": [
+        "emissions intensity",
+        "carbon efficiency"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developing nations are working to reduce their carbon intensity by investing in cleaner industrial technologies and renewable power generation."
+    },
+    {
+      "word": "climate tipping point",
+      "pronunciation": "/ˈklaɪmət ˈtɪpɪŋ pɔɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ngưỡng tới hạn mà nếu vượt qua sẽ gây ra những thay đổi bất khả đảo trong hệ thống khí hậu toàn cầu.",
+      "definition_en": "A critical threshold beyond which a climate system undergoes irreversible changes with cascading global consequences.",
+      "level": "C1",
+      "synonyms": [
+        "critical threshold",
+        "irreversible point"
+      ],
+      "antonyms": [],
+      "example_sentence": "Melting of Arctic permafrost represents a dangerous climate tipping point that could accelerate warming through methane release."
+    },
+    {
+      "word": "net-zero emissions",
+      "pronunciation": "/nɛt ˈzɪroʊ ɪˈmɪʃənz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Trạng thái mà lượng khí thải nhà kính được loại bỏ bằng hoặc vượt quá lượng được phát thải, thường thông qua kết hợp giảm phát thải và loại bỏ carbon.",
+      "definition_en": "A state where greenhouse gas emissions are balanced by removal or offset, achieved through emission reductions and carbon removal technologies.",
+      "level": "C1",
+      "synonyms": [
+        "carbon neutrality",
+        "zero emissions target"
+      ],
+      "antonyms": [],
+      "example_sentence": "The UK committed to achieving net-zero emissions by 2050, requiring substantial cuts in transport, energy, and industrial sectors."
+    },
+    {
+      "word": "climate attribution",
+      "pronunciation": "/ˈklaɪmət ætərˈbjuːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phương pháp khoa học xác định mức độ mà hoạt động con người đã gây ra một sự kiện thời tiết hoặc xu hướng khí hậu cụ thể.",
+      "definition_en": "Scientific methodology for determining the extent to which human activities have caused specific weather events or climate trends.",
+      "level": "C1",
+      "synonyms": [
+        "causal attribution",
+        "attribution analysis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Climate attribution studies have demonstrated that human-induced warming made recent heatwaves significantly more likely and intense."
+    },
+    {
+      "word": "climate-sensitive sector",
+      "pronunciation": "/ˈklaɪmət ˈsɛnsɪtɪv ˈsɛktər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ngành kinh tế hoặc lĩnh vực sản xuất bị ảnh hưởng trực tiếp và mạnh mẽ bởi những thay đổi trong điều kiện khí hậu (nông nghiệp, du lịch, năng lượng).",
+      "definition_en": "Economic sectors or industries directly and significantly impacted by changes in climate conditions, such as agriculture, tourism, and water resources.",
+      "level": "C1",
+      "synonyms": [
+        "climate-dependent sector",
+        "climate-vulnerable industry"
+      ],
+      "antonyms": [],
+      "example_sentence": "Agriculture remains a climate-sensitive sector, with crop yields and livestock productivity heavily dependent on rainfall patterns and temperature fluctuations."
+    },
+    {
+      "word": "climate finance",
+      "pronunciation": "/ˈklaɪmət ˈfaɪnæns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các nguồn tài chính từ các nước phát triển để hỗ trợ các nước đang phát triển trong việc giảm phát thải và thích ứng với biến đổi khí hậu.",
+      "definition_en": "Financial resources provided by developed nations to support developing countries in reducing emissions and adapting to climate impacts.",
+      "level": "B2",
+      "synonyms": [
+        "climate funding",
+        "climate aid"
+      ],
+      "antonyms": [],
+      "example_sentence": "International climate finance mechanisms aim to mobilize $100 billion annually to help vulnerable nations build climate resilience."
+    },
+    {
+      "word": "albedo effect",
+      "pronunciation": "/ælˈbeɪdoʊ ɪˈfɛkt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiệu ứng phản xạ ánh sáng mặt trời của bề mặt Trái Đất; khi băng tan, bề mặt tối hơn hấp thụ nhiều nhiệt hơn, tăng cường sự nóng lên.",
+      "definition_en": "The reflectivity of Earth's surface; as ice melts, darker surfaces absorb more solar radiation, amplifying warming in a feedback loop.",
+      "level": "C1",
+      "synonyms": [
+        "surface reflectivity",
+        "ice-albedo feedback"
+      ],
+      "antonyms": [],
+      "example_sentence": "The albedo effect in polar regions creates a dangerous feedback mechanism where melting ice reduces surface reflectivity and accelerates further warming."
+    },
+    {
+      "word": "climate covenant",
+      "pronunciation": "/ˈklaɪmət ˈkʌvənənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Cam kết chính thức giữa các quốc gia hoặc tổ chức về việc thực hiện các hành động cụ thể để giải quyết biến đổi khí hậu.",
+      "definition_en": "A formal commitment or agreement between nations or organizations to implement specific actions addressing climate change.",
+      "level": "C1",
+      "synonyms": [
+        "climate agreement",
+        "climate accord"
+      ],
+      "antonyms": [],
+      "example_sentence": "The Glasgow Climate Covenant represents a renewed commitment from world leaders to accelerate decarbonization efforts across all economic sectors."
+    },
+    {
+      "word": "climate-induced displacement",
+      "pronunciation": "/ˈklaɪmət ɪnˈdjuːst dɪsˈpleɪsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự di cư bắt buộc của dân số do những tác động của biến đổi khí hậu như nước biển dâng, hạn hán, hoặc thảm họa thời tiết cực đoan.",
+      "definition_en": "Forced migration of populations caused by climate impacts such as sea-level rise, droughts, or extreme weather disasters.",
+      "level": "C1",
+      "synonyms": [
+        "climate migration",
+        "climate-driven relocation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Small island nations face severe climate-induced displacement as rising sea levels threaten to submerge their territories entirely within decades."
+    }
+  ],
+  "questions": []
+}

@@ -261,10 +261,8 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 text-white text-sm font-bold shadow">
-              NT
-            </div>
-            <span className="hidden sm:block">ngocthaigiasu</span>
+            <img src="/logo-light.png" className="h-11 w-auto object-contain block dark:hidden" alt="ngocthaigiasu" />
+            <img src="/logo-dark.png" className="h-11 w-auto object-contain hidden dark:block" alt="ngocthaigiasu" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
@@ -847,10 +845,8 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-1">
               <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 text-white text-sm font-bold">
-                  NT
-                </div>
-                <span>ngocthaigiasu</span>
+                <img src="/logo-light.png" className="h-11 w-auto object-contain block dark:hidden" alt="ngocthaigiasu" />
+                <img src="/logo-dark.png" className="h-11 w-auto object-contain hidden dark:block" alt="ngocthaigiasu" />
               </Link>
               <p className="text-sm text-muted-foreground">
                 Nền tảng học Toán & Tiếng Anh thông minh dành cho học sinh Việt Nam.

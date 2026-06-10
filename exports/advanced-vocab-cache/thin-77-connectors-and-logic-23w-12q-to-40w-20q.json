@@ -1,0 +1,347 @@
+{
+  "words": [
+    {
+      "word": "concede",
+      "pronunciation": "/kənˈsiːd/",
+      "part_of_speech": "verb",
+      "definition_vi": "thừa nhận, công nhân (một điểm đúng của đối phương mặc dù không hoàn toàn đồng ý)",
+      "definition_en": "to admit or accept something as true, especially reluctantly",
+      "level": "B2",
+      "synonyms": [
+        "acknowledge",
+        "admit",
+        "grant"
+      ],
+      "antonyms": [
+        "deny",
+        "refute"
+      ],
+      "example_sentence": "The government conceded that the policy had some flaws, but maintained it was still necessary for economic growth."
+    },
+    {
+      "word": "conversely",
+      "pronunciation": "/ˈkɒnvɜːsli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "ngược lại, theo chiều ngược (dùng để chỉ điều đối lập hoặc bổ sung)",
+      "definition_en": "in a way that is the opposite or reverse of something previously stated",
+      "level": "B2",
+      "synonyms": [
+        "inversely",
+        "oppositely",
+        "vice versa"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "Urban areas have high population density; conversely, rural regions are characterized by sparse settlements and agricultural land."
+    },
+    {
+      "word": "paradoxically",
+      "pronunciation": "/ˌpærəˈdɒksɪkli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách mâu thuẫn, trái ngược với logic (dùng khi hai điều tưởng chừng không thể cùng tồn tại nhưng lại xảy ra)",
+      "definition_en": "in a way that seems contradictory or absurd but may be true",
+      "level": "C1",
+      "synonyms": [
+        "contradictorily",
+        "ironically"
+      ],
+      "antonyms": [
+        "logically",
+        "consistently"
+      ],
+      "example_sentence": "Paradoxically, the more money the charity spent on advertising, the fewer donations it received from the public."
+    },
+    {
+      "word": "albeit",
+      "pronunciation": "/ɔːlˈbiːɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "mặc dù, tuy rằng (dùng để chỉ một điều kiện hoặc hạn chế nhẹ)",
+      "definition_en": "though; although; used to introduce a concession or qualification",
+      "level": "B2",
+      "synonyms": [
+        "although",
+        "though",
+        "even if"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project was successful, albeit with some minor delays in the final phase of implementation."
+    },
+    {
+      "word": "notwithstanding",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "bất chấp, mặc dù (từ ngữ pháp cổ điển, chính thức, chỉ sự trái ngược mạnh mẽ)",
+      "definition_en": "in spite of; despite; used in formal or legal contexts",
+      "level": "C1",
+      "synonyms": [
+        "despite",
+        "in spite of",
+        "regardless of"
+      ],
+      "antonyms": [],
+      "example_sentence": "Notwithstanding the economic recession, the technology sector continued to expand at an impressive rate."
+    },
+    {
+      "word": "conversely speaking",
+      "pronunciation": "/ˈkɒnvɜːsli ˈspiːkɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói theo chiều ngược lại, từ góc độ đối lập",
+      "definition_en": "from the opposite perspective or viewpoint",
+      "level": "B2",
+      "synonyms": [
+        "on the flip side",
+        "from the opposite angle"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developed nations prioritize environmental protection; conversely speaking, developing countries often prioritize rapid industrialization."
+    },
+    {
+      "word": "by the same token",
+      "pronunciation": "/baɪ ðə ˈseɪm ˈtəʊkən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo cùng một lý do, cũng vậy (dùng để chỉ sự tương tự hoặc logic song song)",
+      "definition_en": "for the same reason; in the same way; similarly",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise",
+        "in the same way"
+      ],
+      "antonyms": [
+        "conversely",
+        "on the other hand"
+      ],
+      "example_sentence": "If we accept that climate change is real, by the same token, we must acknowledge the need for immediate action."
+    },
+    {
+      "word": "to a certain extent",
+      "pronunciation": "/tə ə ˈsɜːtn ɪkˈstent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ở một mức độ nào đó, phần nào (dùng để nhượng bộ một phần nhưng không hoàn toàn)",
+      "definition_en": "partly; to some degree; not completely",
+      "level": "C1",
+      "synonyms": [
+        "to some extent",
+        "in part",
+        "partially"
+      ],
+      "antonyms": [
+        "completely",
+        "entirely"
+      ],
+      "example_sentence": "Social media has improved communication, but to a certain extent, it has also increased social isolation among young people."
+    },
+    {
+      "word": "on the flip side",
+      "pronunciation": "/ɒn ðə ˈflɪp saɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặt khác, từ góc độ khác (dùng để chỉ sự tương phản hoặc khía cạnh đối lập)",
+      "definition_en": "from the opposite perspective; conversely; on the other hand",
+      "level": "C1",
+      "synonyms": [
+        "on the other hand",
+        "conversely",
+        "by contrast"
+      ],
+      "antonyms": [],
+      "example_sentence": "The new policy creates jobs in urban areas; on the flip side, it may disadvantage rural communities."
+    },
+    {
+      "word": "granted",
+      "pronunciation": "/ˈɡrɑːntɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "thừa nhận rằng, công nhân (dùng để bắt đầu một nhượng bộ trước khi đưa ra quan điểm chính)",
+      "definition_en": "admittedly; it is true that; used to concede a point before presenting a contrasting argument",
+      "level": "B2",
+      "synonyms": [
+        "admittedly",
+        "true",
+        "certainly"
+      ],
+      "antonyms": [],
+      "example_sentence": "Granted that technology has improved efficiency, we must still consider its negative environmental impact."
+    },
+    {
+      "word": "for all that",
+      "pronunciation": "/fɔːr ɔːl ðæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, mặc dù vậy (dùng để chỉ sự tương phản mạnh mẽ, thường ở cuối câu)",
+      "definition_en": "despite that; nevertheless; in spite of everything",
+      "level": "C1",
+      "synonyms": [
+        "nevertheless",
+        "still",
+        "yet"
+      ],
+      "antonyms": [],
+      "example_sentence": "He had all the advantages of a privileged background, but for all that, he remained humble and compassionate."
+    },
+    {
+      "word": "be that as it may",
+      "pronunciation": "/bi ðæt æz ɪt ˈmeɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, tuy vậy (dùng để chỉ rằng một sự thật không thay đổi quan điểm của người nói)",
+      "definition_en": "regardless of that; nevertheless; used to dismiss a point and move forward",
+      "level": "C1",
+      "synonyms": [
+        "nevertheless",
+        "still",
+        "for all that"
+      ],
+      "antonyms": [],
+      "example_sentence": "Be that as it may, the evidence clearly demonstrates that the original hypothesis was incorrect."
+    },
+    {
+      "word": "otherwise",
+      "pronunciation": "/ˈʌðərwaɪz/",
+      "part_of_speech": "noun",
+      "definition_vi": "nếu không thì, ngược lại (dùng để chỉ hệ quả đối lập hoặc lựa chọn khác)",
+      "definition_en": "in different circumstances; if not; or else",
+      "level": "C1",
+      "synonyms": [
+        "else",
+        "or else",
+        "if not"
+      ],
+      "antonyms": [],
+      "example_sentence": "Students must submit their assignments by Friday; otherwise, they will lose marks for late submission."
+    },
+    {
+      "word": "admittedly",
+      "pronunciation": "/ədˈmɪtɪdli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "phải công nhân là, thừa nhận rằng (dùng để bắt đầu một nhượng bộ)",
+      "definition_en": "it must be admitted; certainly; used to concede a point",
+      "level": "B2",
+      "synonyms": [
+        "granted",
+        "certainly",
+        "true"
+      ],
+      "antonyms": [],
+      "example_sentence": "Admittedly, the plan has some drawbacks, but the benefits far outweigh the disadvantages."
+    },
+    {
+      "word": "in any case",
+      "pronunciation": "/ɪn ˈeni keɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, trong mọi trường hợp (dùng để chỉ rằng kết luận không thay đổi dù có điều kiện khác)",
+      "definition_en": "regardless; in any event; no matter what",
+      "level": "C1",
+      "synonyms": [
+        "anyway",
+        "in any event",
+        "regardless"
+      ],
+      "antonyms": [],
+      "example_sentence": "The weather forecast predicts rain, but in any case, we should proceed with the outdoor event as planned."
+    },
+    {
+      "word": "all the same",
+      "pronunciation": "/ɔːl ðə ˈseɪm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuy vậy, dù sao đi nữa (dùng để chỉ sự tương phản nhẹ nhàng, thường ở đầu câu)",
+      "definition_en": "nevertheless; still; despite that",
+      "level": "B2",
+      "synonyms": [
+        "nevertheless",
+        "still",
+        "yet"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project faced numerous obstacles during development; all the same, the team managed to deliver it on schedule."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government acknowledged the environmental concerns raised by activists. _____, it proceeded with the industrial expansion project.",
+      "option_a": "Admittedly",
+      "option_b": "Notwithstanding",
+      "option_c": "Conversely",
+      "option_d": "By the same token",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Câu cần một từ chỉ sự tương phản mạnh mẽ giữa việc thừa nhận mối quan tâm và hành động đối lập. 'Notwithstanding' (bất chấp) là lựa chọn chính xác. 'Admittedly' chỉ dùng để nhượng bộ ở đầu câu. 'Conversely' dùng để chỉ điều đối lập hoàn toàn. 'By the same token' dùng để chỉ logic song song."
+    },
+    {
+      "question_text": "The study found that increased screen time correlates with higher anxiety levels in teenagers. _____, outdoor activities were associated with improved mental health.",
+      "option_a": "Paradoxically",
+      "option_b": "Conversely",
+      "option_c": "Albeit",
+      "option_d": "Otherwise",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Conversely' (ngược lại) là từ phù hợp để chỉ sự tương phản giữa hai kết quả nghiên cứu. 'Paradoxically' dùng khi hai điều tưởng chừng không thể cùng tồn tại. 'Albeit' dùng để nhượng bộ nhẹ. 'Otherwise' dùng để chỉ hệ quả đối lập."
+    },
+    {
+      "question_text": "The new technology is expensive and complex. _____, it has significantly improved productivity in the workplace.",
+      "option_a": "For all that",
+      "option_b": "To a certain extent",
+      "option_c": "In any case",
+      "option_d": "On the flip side",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'For all that' (dù sao đi nữa) là cách diễn đạt chính thức để chỉ sự tương phản mạnh mẽ giữa nhược điểm và lợi ích. 'To a certain extent' chỉ sự nhượng bộ từng phần. 'In any case' chỉ rằng kết luận không thay đổi. 'On the flip side' là cách diễn đạt bình thường hơn."
+    },
+    {
+      "question_text": "The proposal has merit, _____ it requires significant financial investment that the company cannot currently afford.",
+      "option_a": "granted",
+      "option_b": "conversely",
+      "option_c": "otherwise",
+      "option_d": "paradoxically",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Granted' (thừa nhận rằng) được dùng để bắt đầu một nhượng bộ trước khi đưa ra quan điểm đối lập. Cấu trúc: 'Granted that + mệnh đề, + câu chính'. 'Conversely' dùng để chỉ điều đối lập hoàn toàn. 'Otherwise' chỉ hệ quả. 'Paradoxically' chỉ mâu thuẫn logic."
+    },
+    {
+      "question_text": "The company claims to prioritize employee welfare. _____, workers report long hours and inadequate benefits.",
+      "option_a": "By the same token",
+      "option_b": "Be that as it may",
+      "option_c": "All the same",
+      "option_d": "Albeit",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'All the same' (tuy vậy) là cách diễn đạt tự nhiên để chỉ sự tương phản giữa lời tuyên bố và thực tế. 'By the same token' dùng để chỉ logic song song. 'Be that as it may' dùng để bác bỏ một điểm và tiếp tục. 'Albeit' dùng để nhượng bộ nhẹ."
+    },
+    {
+      "question_text": "Which phrase is most appropriate to introduce a concession before presenting the main argument?\n\nA) The research shows positive results. _____, we must consider potential long-term effects.",
+      "option_a": "Admittedly",
+      "option_b": "Conversely",
+      "option_c": "For all that",
+      "option_d": "Otherwise",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Admittedly' (phải công nhân là) được dùng ở đầu câu để bắt đầu một nhượng bộ. 'Conversely' dùng để chỉ điều đối lập hoàn toàn. 'For all that' thường ở cuối câu. 'Otherwise' chỉ hệ quả."
+    },
+    {
+      "question_text": "The economic data suggests growth is slowing. _____, the stock market continues to reach record highs.",
+      "option_a": "Paradoxically",
+      "option_b": "Albeit",
+      "option_c": "In any case",
+      "option_d": "To a certain extent",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Paradoxically' (một cách mâu thuẫn) là từ phù hợp vì hai sự kiện tưởng chừng không thể cùng xảy ra nhưng lại xảy ra. 'Albeit' dùng để nhượng bộ nhẹ. 'In any case' chỉ rằng kết luận không thay đổi. 'To a certain extent' chỉ sự nhượng bộ từng phần."
+    },
+    {
+      "question_text": "The policy is unpopular with the public. _____, the government maintains it is necessary for national security.",
+      "option_a": "By the same token",
+      "option_b": "Notwithstanding",
+      "option_c": "Conversely speaking",
+      "option_d": "Otherwise",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Notwithstanding' (bất chấp) là từ chính thức để chỉ sự tương phản mạnh mẽ giữa sự không phổ biến của chính sách và quyết định của chính phủ. 'By the same token' dùng để chỉ logic song song. 'Conversely speaking' dùng để chỉ góc độ đối lập. 'Otherwise' chỉ hệ quả."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "lesson_id": "d134563f-2c3b-5664-9099-7481e85bbb21",
+  "title": "Giới hạn của dãy số và hàm số",
+  "title_vi": "Giới hạn dãy số và hàm số",
+  "topic": "Kiến thức tiền đề",
+  "level": "nhan_biet",
+  "theory": {
+    "title": "Giới hạn của dãy số và hàm số",
+    "title_vi": "Giới hạn dãy số và hàm số",
+    "content_md": "## 1. Tóm tắt 30 giây\nBài này giúp nhận ra dãy số hoặc hàm số tiến tới một giá trị nào khi $n\\to\\infty$ hoặc $x\\to x_0,\\ \\pm\\infty$.\nCần nhớ ký hiệu, các giới hạn cơ bản và cách nhìn dạng vô định để biến đổi nhanh.\n\n## 2. Công thức cần nhớ\n\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $\\lim u_n=L$ | Dãy số tiến tới $L$ khi $n\\to\\infty$ | Xét khi chỉ số $n$ rất lớn |\n| $\\lim_{x\\to x_0}f(x)=L$ | Hàm số gần $x_0$ | Không cần $f(x_0)$ phải xác định |\n| $\\lim(c)=c$, $\\lim(cu)=c\\lim u$ | Tách hằng số | Dùng cho dãy và hàm |\n| $\\lim(u\\pm v)=\\lim u\\pm\\lim v$ | Tổng, hiệu | Chỉ dùng khi các giới hạn hữu hạn tồn tại |\n| $\\lim\\dfrac{u}{v}=\\dfrac{\\lim u}{\\lim v}$ | Phân thức | Mẫu có giới hạn khác $0$ |\n\n## 3. Khi nào dùng?\n- Đề có: \"$n\\to\\infty$\" $\\Rightarrow$ giới hạn dãy số.\n- Đề có: \"$x\\to a$, $x\\to 0$, $x\\to\\pm\\infty$\" $\\Rightarrow$ giới hạn hàm số.\n- Thấy đa thức, phân thức hữu tỉ $\\Rightarrow$ thử thế trực tiếp.\n- Thấy $\\dfrac{0}{0}$, $\\dfrac{\\infty}{\\infty}$ $\\Rightarrow$ dạng vô định, cần biến đổi.\n\n## 4. Ví dụ mẫu cực ngắn\nTính $\\lim_{x\\to 1}\\dfrac{x^2-1}{x-1}$.\n\n- Vì đề cho $x\\to 1$ và thay trực tiếp được $\\dfrac{0}{0}$, ta dùng phân tích tử.\n- $x^2-1=(x-1)(x+1)$.\n- Với $x\\ne 1$, ta có $\\dfrac{x^2-1}{x-1}=x+1$.\n- Vậy $\\lim_{x\\to 1}\\dfrac{x^2-1}{x-1}=\\lim_{x\\to 1}(x+1)=2$.\n\n## 5. Lỗi sai hay gặp\n- Sai: $\\lim_{x\\to a}f(x)=f(a)$ trong mọi trường hợp -> Đúng: chỉ đúng khi hàm liên tục tại $a$.\n- Sai: gặp $\\dfrac{0}{0}$ thì kết luận giới hạn bằng $0$ -> Đúng: đây là dạng vô định, phải biến đổi thêm.\n- Sai: $\\lim\\dfrac{u}{v}=\\dfrac{\\lim u}{\\lim v}$ dù $\\lim v=0$ -> Đúng: chỉ dùng khi mẫu có giới hạn khác $0$.\n- Sai: nhầm $x\\to\\infty$ với $x$ rất lớn nhưng hữu hạn nên bỏ qua biến đổi -> Đúng: vẫn phải xét bậc, chia bậc cao nhất nếu cần.",
+    "key_rules": [
+      "Phân biệt rõ giới hạn dãy số $n\\to\\infty$ và giới hạn hàm số $x\\to x_0,\\ \\pm\\infty$.",
+      "Ưu tiên thế trực tiếp; nếu ra dạng vô định như $0/0$, $\\infty/\\infty$ thì mới biến đổi.",
+      "Quy tắc thương chỉ dùng khi giới hạn của mẫu khác $0$.",
+      "Giới hạn tại $x\\to a$ không phụ thuộc bắt buộc vào giá trị $f(a)$.",
+      "Với phân thức hữu tỉ khi $x\\to\\pm\\infty$, thường so sánh bậc hoặc chia cho lũy thừa cao nhất."
+    ],
+    "common_mistakes": [
+      "Sai: $\\lim_{x\\to a}f(x)=f(a)$ trong mọi trường hợp -> Đúng: chỉ đúng khi hàm liên tục tại $a$.",
+      "Sai: gặp $\\dfrac{0}{0}$ thì kết luận giới hạn bằng $0$ -> Đúng: đây là dạng vô định, phải biến đổi thêm.",
+      "Sai: $\\lim\\dfrac{u}{v}=\\dfrac{\\lim u}{\\lim v}$ dù $\\lim v=0$ -> Đúng: chỉ dùng khi mẫu có giới hạn khác $0$.",
+      "Sai: giới hạn dãy số và giới hạn hàm số là một ký hiệu hoàn toàn giống nhau về cách đọc đề -> Đúng: phải nhìn biến tiến ra đâu, như $n\\to\\infty$ hay $x\\to a$."
+    ],
+    "flashcards": [
+      {
+        "card_kind": "concept",
+        "front": "Ký hiệu $\\lim u_n=L$ nghĩa là gì?",
+        "back": "Dãy số $u_n$ tiến gần đến $L$ khi $n\\to\\infty$.",
+        "hint": "Nhìn biến $n$",
+        "explanation": "Đây là giới hạn của dãy số, không phải của hàm số."
+      },
+      {
+        "card_kind": "concept",
+        "front": "Điền khuyết: $\\lim_{x\\to x_0}f(x)=L$ nghĩa là khi $x$ ... $x_0$ thì $f(x)$ ... $L$.",
+        "back": "khi $x$ gần $x_0$ thì $f(x)$ gần $L$.",
+        "hint": "Từ khóa: gần",
+        "explanation": "Không nhất thiết phải có $f(x_0)$."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Công thức giới hạn của tổng là gì?",
+        "back": "$\\lim(u+v)=\\lim u+\\lim v$ nếu các giới hạn tồn tại.",
+        "hint": null,
+        "explanation": "Áp dụng cho cả dãy số và hàm số."
+      },
+      {
+        "card_kind": "formula",
+        "front": "Khi nào dùng được $\\lim \\dfrac{u}{v}=\\dfrac{\\lim u}{\\lim v}$?",
+        "back": "Khi $\\lim v$ tồn tại và khác $0$.",
+        "hint": "Chú ý mẫu",
+        "explanation": "Nếu mẫu có giới hạn bằng $0$ thì dễ rơi vào dạng vô định."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Thấy đề cho $n\\to\\infty$ thì đang xét loại giới hạn nào?",
+        "back": "Giới hạn của dãy số.",
+        "hint": null,
+        "explanation": "Biến chạy là chỉ số $n$."
+      },
+      {
+        "card_kind": "when_to_use",
+        "front": "Thấy thay trực tiếp ra $\\dfrac{0}{0}$, nên nghĩ gì đầu tiên?",
+        "back": "Đó là dạng vô định, cần biến đổi tiếp.",
+        "hint": "Chưa kết luận được",
+        "explanation": "Có thể phân tích, quy đồng, chia bậc cao nhất..."
+      },
+      {
+        "card_kind": "mistake",
+        "front": "Sai hay đúng: Nếu $\\lim_{x\\to a}f(x)$ tồn tại thì luôn có $f(a)=\\lim_{x\\to a}f(x)$.",
+        "back": "Sai. Chỉ đúng khi hàm liên tục tại $a$.",
+        "hint": "Phân biệt giới hạn và giá trị hàm",
+        "explanation": "Hàm có thể không xác định hoặc xác định khác tại $a$."
+      },
+      {
+        "card_kind": "mini_example",
+        "front": "Tính nhanh: $\\lim_{x\\to 1}\\dfrac{x^2-1}{x-1}=?$",
+        "back": "$2$.\nVì $x^2-1=(x-1)(x+1)$ nên rút gọn còn $x+1$.",
+        "hint": "Hằng đẳng thức",
+        "explanation": "Sau khi rút gọn, thay $x=1$ được ngay."
+      }
+    ]
+  }
+}

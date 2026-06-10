@@ -1,0 +1,152 @@
+{
+  "words": [
+    {
+      "word": "concatenation",
+      "pronunciation": "/kənˌkætəˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự nối liền, ghép nối các phần tử (từ, âm tiết, ký tự) thành một đơn vị lớn hơn; quá trình kết hợp tuần tự.",
+      "definition_en": "The linking together of a series of elements, especially linguistic units, to form a larger unit.",
+      "level": "C1",
+      "synonyms": [
+        "combination",
+        "linkage",
+        "fusion"
+      ],
+      "antonyms": [
+        "separation",
+        "division"
+      ],
+      "example_sentence": "The concatenation of prefixes and roots in Germanic languages creates complex word structures that challenge learners."
+    },
+    {
+      "word": "metathesis",
+      "pronunciation": "/məˈtæθəsɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự đảo vị, hoán đổi vị trí của các âm tiết hoặc âm trong một từ; hiện tượng ngôn ngữ học.",
+      "definition_en": "The transposition of sounds or syllables within a word, resulting in a different pronunciation or spelling.",
+      "level": "C1",
+      "synonyms": [
+        "transposition",
+        "inversion"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word 'ask' underwent metathesis in some dialects, becoming 'aks', a phenomenon documented in historical linguistics."
+    },
+    {
+      "word": "portmanteau word",
+      "pronunciation": "/pɔːrtˈmæntoʊ wɜːrd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Từ ghép được tạo bằng cách kết hợp hai từ khác nhau, thường lấy một phần từ này và một phần từ kia (ví dụ: brunch = breakfast + lunch).",
+      "definition_en": "A word formed by blending two or more words, typically combining the beginning of one word with the end of another.",
+      "level": "B2",
+      "synonyms": [
+        "blend",
+        "portmanteau",
+        "fusion word"
+      ],
+      "antonyms": [],
+      "example_sentence": "The term 'COVID-19' is a portmanteau word combining 'coronavirus' and 'disease', demonstrating modern word creation in response to global events."
+    },
+    {
+      "word": "allomorph",
+      "pronunciation": "/ˈæloʊmɔːrf/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một trong các dạng khác nhau của cùng một morpheme (đơn vị ý nghĩa nhỏ nhất); các biến thể hình thái của một yếu tố từ.",
+      "definition_en": "Any of the variant forms of a morpheme that differ in form but are identical in meaning and function.",
+      "level": "C1",
+      "synonyms": [
+        "variant form",
+        "morphological variant"
+      ],
+      "antonyms": [],
+      "example_sentence": "The English plural morpheme has several allomorphs: '-s' in 'cats', '-es' in 'boxes', and '-en' in 'oxen', depending on phonetic context."
+    },
+    {
+      "word": "grapheme",
+      "pronunciation": "/ˈɡræfiːm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Đơn vị nhỏ nhất của hệ thống viết; ký tự hoặc tổ hợp ký tự đại diện cho một âm hoặc khái niệm.",
+      "definition_en": "The smallest unit of a writing system, such as a letter or combination of letters representing a single sound or meaning.",
+      "level": "C1",
+      "synonyms": [
+        "character",
+        "letter",
+        "symbol"
+      ],
+      "antonyms": [],
+      "example_sentence": "In English, the grapheme 'gh' can represent different sounds: silent in 'night', a fricative in 'rough', and a velar in 'loch'."
+    },
+    {
+      "word": "etymological transparency",
+      "pronunciation": "/ˌɛtɪməˈlɒdʒɪkəl trænˈspærənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tính chất của một từ mà người nói có thể dễ dàng nhận ra nguồn gốc và ý nghĩa của nó thông qua các thành phần cấu tạo.",
+      "definition_en": "The quality of a word whose meaning and origin are easily recognizable from its component parts.",
+      "level": "C1",
+      "synonyms": [
+        "semantic transparency",
+        "compositional clarity"
+      ],
+      "antonyms": [
+        "etymological opacity",
+        "semantic obscurity"
+      ],
+      "example_sentence": "The word 'unhappiness' has high etymological transparency because learners can identify the prefix 'un-', root 'happy', and suffix '-ness'."
+    },
+    {
+      "word": "interfixation",
+      "pronunciation": "/ˌɪntərfɪkˈseɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình chèn thêm một phần tử (interfix) vào giữa hai thành phần từ để tạo thành từ ghép; hiện tượng cấu tạo từ.",
+      "definition_en": "The insertion of a linking element between two morphemes in word formation, common in compound words.",
+      "level": "C1",
+      "synonyms": [
+        "linking element insertion"
+      ],
+      "antonyms": [],
+      "example_sentence": "In German, interfixation occurs in compounds like 'Arbeitszimmer' (work-room), where '-s-' serves as a linking element between 'Arbeit' and 'Zimmer'."
+    },
+    {
+      "word": "zero derivation",
+      "pronunciation": "/ˈzɪroʊ dɪˌreɪveɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình tạo từ mới bằng cách thay đổi loại từ mà không thêm hay bớt bất kỳ hình thái nào (ví dụ: 'run' từ danh từ thành động từ).",
+      "definition_en": "Word formation where a word changes its part of speech without the addition or removal of affixes, also called conversion.",
+      "level": "C1",
+      "synonyms": [
+        "conversion",
+        "functional shift"
+      ],
+      "antonyms": [],
+      "example_sentence": "The verb 'to google' is an example of zero derivation, where a proper noun (Google) was converted into a common verb without morphological change."
+    },
+    {
+      "word": "parasynthetic compound",
+      "pronunciation": "/ˌpærəsɪnˈθɛtɪk ˈkɒmpaʊnd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Từ ghép được tạo bằng cách kết hợp cả affixation (thêm tiền tố/hậu tố) và compounding (ghép từ) cùng lúc.",
+      "definition_en": "A compound word formed by combining two roots and adding affixes simultaneously, rather than affixing to an existing compound.",
+      "level": "C1",
+      "synonyms": [
+        "parasynthetic word"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word 'blacksmith' is a parasynthetic compound combining the adjective 'black', noun 'smith', and the suffix '-ness' in related formations like 'blacksmithing'."
+    },
+    {
+      "word": "phonotactic constraint",
+      "pronunciation": "/ˌfoʊnoʊˈtæktɪk kənˈstreɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giới hạn về cách sắp xếp các âm trong một ngôn ngữ; quy tắc chi phối những tổ hợp âm nào được phép xuất hiện.",
+      "definition_en": "A restriction on the possible combinations of sounds in a language, determining which phoneme sequences are permissible.",
+      "level": "C1",
+      "synonyms": [
+        "phonological constraint",
+        "sound pattern restriction"
+      ],
+      "antonyms": [],
+      "example_sentence": "English phonotactic constraints prevent words from beginning with 'ng' or ending with 'tsk', which influences how borrowed words are adapted into English."
+    }
+  ],
+  "questions": []
+}

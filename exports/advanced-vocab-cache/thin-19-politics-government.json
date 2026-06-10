@@ -1,0 +1,170 @@
+{
+  "words": [
+    {
+      "word": "gerrymander",
+      "pronunciation": "/ˈdʒerɪmændər/",
+      "part_of_speech": "verb",
+      "definition_vi": "Thay đổi ranh giới khu vực bầu cử một cách bất công để ưu đãi một đảng chính trị hoặc nhóm cử tri nhất định",
+      "definition_en": "To manipulate electoral district boundaries to favor a particular political party or group of voters",
+      "level": "C1",
+      "synonyms": [
+        "manipulate electoral boundaries",
+        "rig districts"
+      ],
+      "antonyms": [
+        "fair redistricting"
+      ],
+      "example_sentence": "Critics argue that the ruling party gerrymandered districts to secure electoral advantage in the upcoming general election."
+    },
+    {
+      "word": "separation of powers",
+      "pronunciation": "/ˌsepəˈreɪʃən əv ˈpaʊərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nguyên tắc chia tách quyền lực giữa ba nhánh chính phủ (hành pháp, lập pháp, tư pháp) để ngăn chặn lạm dụng quyền lực",
+      "definition_en": "The constitutional principle dividing government authority among executive, legislative, and judicial branches",
+      "level": "B2",
+      "synonyms": [
+        "checks and balances",
+        "division of authority"
+      ],
+      "antonyms": [
+        "concentration of power"
+      ],
+      "example_sentence": "The separation of powers is fundamental to democratic governance and prevents any single branch from becoming too dominant."
+    },
+    {
+      "word": "civil disobedience",
+      "pronunciation": "/ˌsɪvəl ˌdɪsəˈbiːdiəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hành động từ chối tuân theo luật pháp một cách bình tĩnh và công khai để phản đối chính sách hoặc luật lệ mà coi là bất công",
+      "definition_en": "Peaceful refusal to obey laws considered unjust, typically as a form of political protest",
+      "level": "B2",
+      "synonyms": [
+        "nonviolent resistance",
+        "peaceful protest"
+      ],
+      "antonyms": [
+        "compliance",
+        "obedience"
+      ],
+      "example_sentence": "Activists engaged in civil disobedience by blocking traffic to draw attention to climate change policies."
+    },
+    {
+      "word": "political expediency",
+      "pronunciation": "/pəˌlɪtɪkəl ɪkˈspiːdiənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Việc ưu tiên lợi ích chính trị ngắn hạn hoặc thuận tiện hơn là nguyên tắc đạo đức hoặc lợi ích công cộng lâu dài",
+      "definition_en": "The practice of prioritizing short-term political advantage over ethical principles or long-term public interest",
+      "level": "C1",
+      "synonyms": [
+        "political pragmatism",
+        "opportunism"
+      ],
+      "antonyms": [
+        "principled governance",
+        "integrity"
+      ],
+      "example_sentence": "The government's decision to delay environmental regulations was criticized as political expediency rather than sound policy."
+    },
+    {
+      "word": "electoral fraud",
+      "pronunciation": "/ɪˈlektərəl ˈfrɔːd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hành vi gian lận trong quá trình bầu cử, bao gồm giả mạo phiếu bầu, ghi danh cử tri không hợp pháp, hoặc thao túng kết quả",
+      "definition_en": "Illegal manipulation of electoral processes, including vote tampering, fraudulent voter registration, or result falsification",
+      "level": "B2",
+      "synonyms": [
+        "election fraud",
+        "voting irregularities"
+      ],
+      "antonyms": [
+        "fair election",
+        "transparent voting"
+      ],
+      "example_sentence": "International observers documented evidence of electoral fraud, including ballot stuffing and voter intimidation."
+    },
+    {
+      "word": "political asylum",
+      "pronunciation": "/pəˌlɪtɪkəl əˈsaɪləm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền được bảo vệ bởi một quốc gia khác khi bị bách hại vì quan điểm chính trị hoặc hoạt động trong nước",
+      "definition_en": "Protection granted by a country to individuals fleeing persecution for political beliefs or activities in their homeland",
+      "level": "B2",
+      "synonyms": [
+        "refugee status",
+        "political protection"
+      ],
+      "antonyms": [
+        "deportation",
+        "extradition"
+      ],
+      "example_sentence": "The dissident sought political asylum in a neighboring country after criticizing the authoritarian regime."
+    },
+    {
+      "word": "political gridlock",
+      "pronunciation": "/pəˌlɪtɪkəl ˈɡrɪdlɒk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng bế tắc chính trị khi các bên không thể đạt được thỏa thuận, dẫn đến sự chậm trễ hoặc tê liệt trong hoạt động chính phủ",
+      "definition_en": "A deadlock in political decision-making when opposing parties cannot reach agreement, resulting in governmental paralysis",
+      "level": "C1",
+      "synonyms": [
+        "political stalemate",
+        "legislative deadlock"
+      ],
+      "antonyms": [
+        "political consensus",
+        "cooperation"
+      ],
+      "example_sentence": "Political gridlock in Congress prevented the passage of critical infrastructure legislation for months."
+    },
+    {
+      "word": "due process",
+      "pronunciation": "/ˌdjuː ˈprəʊses/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền được xử lý công bằng theo quy trình pháp luật, bao gồm quyền được nghe xét xử công khai và quyền phúc thẩm",
+      "definition_en": "The legal right to fair treatment through the judicial system, including right to fair trial and appeal",
+      "level": "B2",
+      "synonyms": [
+        "legal procedure",
+        "fair trial"
+      ],
+      "antonyms": [
+        "arbitrary punishment",
+        "injustice"
+      ],
+      "example_sentence": "The defendant's lawyer argued that due process was violated when evidence was obtained without a warrant."
+    },
+    {
+      "word": "political spectrum",
+      "pronunciation": "/pəˌlɪtɪkəl ˈspektrəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phạm vi các quan điểm chính trị từ cực tả (bảo thủ) đến cực tây (tiến bộ), thể hiện sự đa dạng của ý thức hệ chính trị",
+      "definition_en": "The range of political ideologies from far-right conservative to far-left progressive positions",
+      "level": "B2",
+      "synonyms": [
+        "ideological range",
+        "political orientation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Voters across the political spectrum expressed concerns about rising inflation and healthcare accessibility."
+    },
+    {
+      "word": "executive privilege",
+      "pronunciation": "/ɪɡˈzekjətɪv ˈprɪvɪlɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền của cơ quan hành pháp (thường là tổng thống) từ chối công khai các thông tin nhạy cảm để bảo vệ an ninh quốc gia hoặc quyền riêng tư",
+      "definition_en": "The right of the executive branch to withhold sensitive information from public disclosure to protect national security or confidentiality",
+      "level": "C1",
+      "synonyms": [
+        "state secret protection",
+        "confidential privilege"
+      ],
+      "antonyms": [
+        "transparency",
+        "public disclosure"
+      ],
+      "example_sentence": "The president invoked executive privilege to prevent the release of internal communications regarding foreign policy decisions."
+    }
+  ],
+  "questions": []
+}

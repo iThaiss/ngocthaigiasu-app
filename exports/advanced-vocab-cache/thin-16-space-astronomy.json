@@ -1,0 +1,360 @@
+{
+  "words": [
+    {
+      "word": "celestial mechanics",
+      "pronunciation": "/səˈlɛʃəl məˈkænɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lĩnh vực vật lý học nghiên cứu chuyển động của các vật thể trên bầu trời dựa trên các định luật Newton và lực hấp dẫn.",
+      "definition_en": "The branch of physics dealing with the motion and gravitational effects of celestial objects.",
+      "level": "C1",
+      "synonyms": [
+        "orbital mechanics",
+        "astrodynamics"
+      ],
+      "antonyms": [],
+      "example_sentence": "Celestial mechanics enables scientists to predict planetary positions and satellite trajectories with remarkable precision."
+    },
+    {
+      "word": "accretion disk",
+      "pronunciation": "/əˈkreʃən dɪsk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Đĩa vật chất xoay quanh một vật thể có khối lượng lớn (như sao neutron hay lỗ đen), nơi vật chất rơi vào và phát sáng mạnh.",
+      "definition_en": "A rotating disk of material surrounding a massive object, where infalling matter releases energy as radiation.",
+      "level": "C1",
+      "synonyms": [
+        "accretion flow"
+      ],
+      "antonyms": [],
+      "example_sentence": "The accretion disk around the supermassive black hole at the galaxy's center emits intense X-rays."
+    },
+    {
+      "word": "redshift",
+      "pronunciation": "/ˈrɛdʃɪft/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hiện tượng ánh sáng từ các vật thể xa xôi bị dịch chuyển về phía đỏ do vật thể đó đang chuyển động ra xa hoặc vũ trụ đang giãn nở.",
+      "definition_en": "The shift of light toward longer wavelengths due to the recession of distant objects or cosmic expansion.",
+      "level": "C1",
+      "synonyms": [
+        "Doppler shift"
+      ],
+      "antonyms": [
+        "blueshift"
+      ],
+      "example_sentence": "Astronomers use redshift measurements to determine the recession velocity of distant galaxies."
+    },
+    {
+      "word": "photosphere",
+      "pronunciation": "/ˈfoʊtəsfɪr/",
+      "part_of_speech": "noun",
+      "definition_vi": "Lớp bề ngoài của Mặt Trời hoặc một ngôi sao khác, nơi ánh sáng được phát ra và có thể quan sát được từ Trái Đất.",
+      "definition_en": "The visible outer layer of a star from which light is emitted.",
+      "level": "B2",
+      "synonyms": [
+        "stellar surface"
+      ],
+      "antonyms": [],
+      "example_sentence": "Sunspots appear as dark regions on the Sun's photosphere due to intense magnetic activity."
+    },
+    {
+      "word": "chromosphere",
+      "pronunciation": "/ˈkroʊməsfɪr/",
+      "part_of_speech": "noun",
+      "definition_vi": "Lớp khí nóng nằm ngay phía trên quang cầu của Mặt Trời, có nhiệt độ cao hơn quang cầu.",
+      "definition_en": "The layer of the Sun's atmosphere above the photosphere, characterized by rising temperature.",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "During a total solar eclipse, the chromosphere becomes visible as a thin reddish ring around the Sun."
+    },
+    {
+      "word": "solar flare",
+      "pronunciation": "/ˈsoʊlər flɛr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một vụ phát nổ mạnh mẽ trên bề mặt Mặt Trời, phát ra năng lượng khổng lồ dưới dạng ánh sáng, tia X và hạt.",
+      "definition_en": "A sudden, intense burst of radiation from the Sun's surface, releasing enormous energy.",
+      "level": "B2",
+      "synonyms": [
+        "solar eruption"
+      ],
+      "antonyms": [],
+      "example_sentence": "A powerful solar flare can disrupt satellite communications and power grids on Earth."
+    },
+    {
+      "word": "coronal mass ejection",
+      "pronunciation": "/kəˈroʊnəl mæs ɪˈdʒɛkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự phát thải khối lượng lớn plasma từ vương miện Mặt Trời ra ngoài không gian, thường liên quan đến hoạt động từ tính.",
+      "definition_en": "A large expulsion of plasma from the Sun's corona into space, often associated with solar activity.",
+      "level": "C1",
+      "synonyms": [
+        "CME"
+      ],
+      "antonyms": [],
+      "example_sentence": "Coronal mass ejections can trigger geomagnetic storms that affect Earth's magnetosphere."
+    },
+    {
+      "word": "parallax",
+      "pronunciation": "/ˈpærəlæks/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự thay đổi vị trí biểu kiến của một vật thể khi quan sát từ hai vị trí khác nhau, được sử dụng để đo khoảng cách đến các sao gần.",
+      "definition_en": "The apparent shift in position of an object when viewed from two different locations, used to measure stellar distances.",
+      "level": "C1",
+      "synonyms": [
+        "stellar parallax"
+      ],
+      "antonyms": [],
+      "example_sentence": "Hipparcos satellite measurements of stellar parallax have revolutionized our understanding of cosmic distances."
+    },
+    {
+      "word": "magnitude",
+      "pronunciation": "/ˈmæɡnɪtuːd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thang đo độ sáng của một ngôi sao hoặc thiên thể, với các giá trị nhỏ hơn biểu thị độ sáng lớn hơn.",
+      "definition_en": "A measure of the brightness of a celestial object on a logarithmic scale.",
+      "level": "B2",
+      "synonyms": [
+        "brightness",
+        "luminosity"
+      ],
+      "antonyms": [],
+      "example_sentence": "The apparent magnitude of Venus can reach −4.7, making it the brightest planet visible from Earth."
+    },
+    {
+      "word": "spectroscopy",
+      "pronunciation": "/spɛkˈtrɑsəpi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Kỹ thuật phân tích ánh sáng từ các ngôi sao để xác định thành phần hóa học, nhiệt độ và chuyển động của chúng.",
+      "definition_en": "The analysis of light from celestial objects to determine their composition, temperature, and motion.",
+      "level": "C1",
+      "synonyms": [
+        "spectral analysis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Spectroscopy has revealed that distant galaxies contain the same chemical elements as our own."
+    },
+    {
+      "word": "doppler effect",
+      "pronunciation": "/ˈdɑplər ɪˈfɛkt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiện tượng tần số sóng thay đổi khi nguồn phát và người quan sát chuyển động tương đối với nhau.",
+      "definition_en": "The change in frequency of waves due to relative motion between source and observer.",
+      "level": "B2",
+      "synonyms": [
+        "Doppler shift"
+      ],
+      "antonyms": [],
+      "example_sentence": "The Doppler effect allows astronomers to measure the radial velocity of stars and galaxies."
+    },
+    {
+      "word": "habitable zone",
+      "pronunciation": "/ˈhæbɪtəbəl zoʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Vùng quanh một ngôi sao nơi điều kiện cho phép nước lỏng tồn tại trên bề mặt hành tinh, có khả năng hỗ trợ sự sống.",
+      "definition_en": "The region around a star where conditions permit liquid water to exist on a planet's surface.",
+      "level": "B2",
+      "synonyms": [
+        "Goldilocks zone",
+        "circumstellar habitable zone"
+      ],
+      "antonyms": [],
+      "example_sentence": "Proxima Centauri b orbits within the habitable zone of its star, making it a candidate for potential life."
+    },
+    {
+      "word": "exoplanet",
+      "pronunciation": "/ˈɛksoʊplænɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một hành tinh quay quanh một ngôi sao khác ngoài Hệ Mặt Trời của chúng ta.",
+      "definition_en": "A planet that orbits a star outside our solar system.",
+      "level": "B2",
+      "synonyms": [
+        "extrasolar planet"
+      ],
+      "antonyms": [],
+      "example_sentence": "Over 5,000 exoplanets have been discovered to date, expanding our understanding of planetary diversity."
+    },
+    {
+      "word": "transit method",
+      "pronunciation": "/ˈtrænzɪt ˈmɛθəd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kỹ thuật phát hiện hành tinh ngoài Hệ Mặt Trời bằng cách đo sự giảm độ sáng của ngôi sao khi hành tinh đi qua trước nó.",
+      "definition_en": "A technique for detecting exoplanets by measuring the dimming of starlight as a planet passes in front of its star.",
+      "level": "C1",
+      "synonyms": [
+        "photometric method"
+      ],
+      "antonyms": [],
+      "example_sentence": "The transit method has been responsible for discovering the majority of known exoplanets."
+    },
+    {
+      "word": "radial velocity",
+      "pronunciation": "/ˈreɪdiəl vəˈlɑsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thành phần vận tốc của một vật thể theo hướng nhìn từ Trái Đất, được xác định bằng dịch chuyển Doppler.",
+      "definition_en": "The component of an object's velocity along the line of sight, determined by Doppler shift.",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "Radial velocity measurements have enabled the detection of exoplanets around nearby stars."
+    },
+    {
+      "word": "supernova",
+      "pronunciation": "/ˌsuːpərˈnoʊvə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một vụ nổ sao cực kỳ mạnh mẽ, làm cho ngôi sao tạm thời trở nên sáng hơn cả một thiên hà.",
+      "definition_en": "An extremely powerful stellar explosion that can briefly outshine an entire galaxy.",
+      "level": "B2",
+      "synonyms": [
+        "stellar explosion"
+      ],
+      "antonyms": [],
+      "example_sentence": "Type Ia supernovae are used as standard candles to measure cosmic distances."
+    },
+    {
+      "word": "neutron star",
+      "pronunciation": "/ˈnuːtrɑn stɑr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một ngôi sao suy biến cực kỳ đặc, được tạo thành chủ yếu từ neutron, với khối lượng rất lớn trong thể tích nhỏ.",
+      "definition_en": "An extremely dense stellar remnant composed primarily of neutrons, with immense mass in a small volume.",
+      "level": "B2",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "A neutron star's density is so extreme that a teaspoon of its material would weigh billions of tons."
+    },
+    {
+      "word": "pulsar",
+      "pronunciation": "/ˈpʌlsɑr/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một ngôi sao neutron quay nhanh phát ra chùm bức xạ điện từ định kỳ, tạo ra tín hiệu xung như một ngọn hải đăng.",
+      "definition_en": "A rapidly rotating neutron star that emits periodic bursts of electromagnetic radiation.",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "The first pulsar discovered in 1967 was initially thought to be a signal from extraterrestrial intelligence."
+    },
+    {
+      "word": "white dwarf",
+      "pronunciation": "/waɪt dwɔrf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một ngôi sao suy biến nhỏ, đặc, là phần dư lại sau khi một ngôi sao giống Mặt Trời kết thúc cuộc đời của nó.",
+      "definition_en": "A small, dense stellar remnant left behind after a Sun-like star exhausts its fuel.",
+      "level": "B2",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "Sirius B, the companion of Sirius, is a white dwarf with a mass comparable to the Sun but much smaller in size."
+    },
+    {
+      "word": "hertzsprung-russell diagram",
+      "pronunciation": "/ˈhɛrtssprʊŋ ˈrʌsəl ˈdaɪəɡræm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Một biểu đồ vẽ mối quan hệ giữa độ sáng tuyệt đối và loại phổ (hay nhiệt độ) của các ngôi sao, công cụ quan trọng trong thiên văn học.",
+      "definition_en": "A diagram plotting the relationship between stellar luminosity and spectral type, fundamental to stellar classification.",
+      "level": "C1",
+      "synonyms": [
+        "H-R diagram"
+      ],
+      "antonyms": [],
+      "example_sentence": "The Hertzsprung-Russell diagram reveals the evolutionary stages of stars from birth to death."
+    },
+    {
+      "word": "main sequence",
+      "pronunciation": "/meɪn ˈsikwəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giai đoạn chính của cuộc đời một ngôi sao, khi nó đốt cháy hydro trong lõi, kéo dài hàng tỷ năm.",
+      "definition_en": "The primary stage of a star's life during which it fuses hydrogen in its core.",
+      "level": "B2",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "Our Sun is currently in the main sequence stage and will remain there for approximately 5 billion more years."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the habitable zone around a star?",
+      "option_a": "The region where stellar radiation is strongest and can destroy planetary atmospheres.",
+      "option_b": "The region where conditions permit liquid water to exist on a planet's surface.",
+      "option_c": "The region immediately surrounding a star's photosphere where temperatures exceed millions of degrees.",
+      "option_d": "The region where gravitational forces are strong enough to capture asteroids and comets.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Habitable zone (hay Goldilocks zone) là vùng quanh một ngôi sao nơi điều kiện cho phép nước lỏng tồn tại, không quá nóng cũng không quá lạnh. Các lựa chọn khác mô tả các vùng khác hoặc điều kiện không phù hợp với định nghĩa."
+    },
+    {
+      "question_text": "A distant galaxy shows a significant redshift in its light spectrum. What does this primarily indicate?",
+      "option_a": "The galaxy is moving toward Earth at high speed.",
+      "option_b": "The galaxy contains primarily old, cool stars with low surface temperatures.",
+      "option_c": "The galaxy is receding from Earth, indicating cosmic expansion.",
+      "option_d": "The galaxy's light has been absorbed by interstellar dust.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Redshift xảy ra khi vật thể chuyển động ra xa, làm dịch chuyển ánh sáng về phía đỏ (bước sóng dài hơn). Điều này chứng minh vũ trụ đang giãn nở. Lựa chọn A sai vì đó là blueshift. B và D không liên quan đến redshift."
+    },
+    {
+      "question_text": "In the context of stellar evolution, what does the Hertzsprung-Russell diagram primarily illustrate?",
+      "option_a": "The relationship between a star's mass and its rotation speed.",
+      "option_b": "The relationship between stellar luminosity and spectral type or temperature.",
+      "option_c": "The distribution of chemical elements within a star's interior.",
+      "option_d": "The rate at which a star consumes its hydrogen fuel.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Hertzsprung-Russell diagram là công cụ thiên văn học cơ bản vẽ mối quan hệ giữa độ sáng tuyệt đối (luminosity) và loại phổ/nhiệt độ (spectral type) của các ngôi sao. Các lựa chọn khác không phản ánh chính xác chức năng của biểu đồ này."
+    },
+    {
+      "question_text": "Which observational technique has been most successful in detecting exoplanets around distant stars?",
+      "option_a": "Direct imaging of planets using powerful telescopes.",
+      "option_b": "Measuring the dimming of starlight as a planet passes in front of its star.",
+      "option_c": "Detecting infrared radiation emitted by planets.",
+      "option_d": "Observing the gravitational lensing effects caused by planetary systems.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Transit method (hay phương pháp quá cảnh) đã phát hiện hơn 70% các exoplanet được biết đến. Kỹ thuật này đo sự giảm độ sáng của ngôi sao khi hành tinh đi qua trước nó. Các phương pháp khác ít hiệu quả hơn hoặc khó thực hiện hơn."
+    },
+    {
+      "question_text": "A solar flare and a coronal mass ejection are related phenomena, but they differ in that ___.",
+      "option_a": "Solar flares release energy as radiation, while CMEs expel plasma into space.",
+      "option_b": "Solar flares occur on the photosphere, while CMEs occur in the chromosphere.",
+      "option_c": "Solar flares are predictable, while CMEs are completely random.",
+      "option_d": "Solar flares affect only the Sun's surface, while CMEs affect the entire solar system.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Solar flare là vụ phát nổ phát ra năng lượng dưới dạng ánh sáng, tia X và hạt. CME là sự phát thải khối lượng plasma từ vương miện Mặt Trời. Mặc dù liên quan, chúng là hai hiện tượng khác nhau. B sai vì cả hai đều liên quan đến vương miện. C và D quá tuyệt đối."
+    },
+    {
+      "question_text": "The parallax method for measuring stellar distances relies on ___.",
+      "option_a": "The brightness of a star compared to the Sun.",
+      "option_b": "The apparent shift in a star's position when viewed from opposite sides of Earth's orbit.",
+      "option_c": "The spectral lines in a star's light spectrum.",
+      "option_d": "The rate at which a star moves across the sky.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Parallax là sự thay đổi vị trí biểu kiến của một vật thể khi quan sát từ hai vị trí khác nhau. Trong thiên văn học, nó được sử dụng bằng cách quan sát sao từ hai vị trí đối diện của quỹ đạo Trái Đất. A, C, D là các phương pháp khác không liên quan đến parallax."
+    },
+    {
+      "question_text": "Which of the following statements about neutron stars and white dwarfs is correct?",
+      "option_a": "Both are stellar remnants, but neutron stars are denser and more massive than white dwarfs.",
+      "option_b": "White dwarfs are formed from massive stars, while neutron stars form from low-mass stars.",
+      "option_c": "Neutron stars emit visible light, while white dwarfs emit only infrared radiation.",
+      "option_d": "Both objects eventually cool down and become black holes.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cả neutron star và white dwarf đều là phần dư của sao, nhưng neutron star đặc hơn nhiều (được tạo từ sao khối lượng lớn) so với white dwarf (từ sao giống Mặt Trời). B sai vì ngược lại. C sai vì cả hai đều phát ra ánh sáng. D sai vì chúng không trở thành black hole."
+    },
+    {
+      "question_text": "Spectroscopy in astronomy allows scientists to determine all of the following EXCEPT ___.",
+      "option_a": "The chemical composition of a distant star.",
+      "option_b": "The surface temperature of a celestial object.",
+      "option_c": "The radial velocity of a star or galaxy.",
+      "option_d": "The exact distance to a star in light-years.",
+      "correct_answer": "D",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Spectroscopy phân tích ánh sáng để xác định thành phần hóa học (A), nhiệt độ (B), và chuyển động (C) của các vật thể. Tuy nhiên, để xác định khoảng cách chính xác, cần sử dụng các phương pháp khác như parallax hoặc các chỉ số khoảng cách khác, không phải spectroscopy."
+    }
+  ]
+}

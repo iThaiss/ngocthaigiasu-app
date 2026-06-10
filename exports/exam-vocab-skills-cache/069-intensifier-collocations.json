@@ -1,0 +1,534 @@
+{
+  "words": [
+    {
+      "word": "highly likely",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "rất có khả năng xảy ra, gần như chắc chắn",
+      "definition_en": "very probable or almost certain to happen",
+      "level": "B1",
+      "synonyms": [
+        "very probable",
+        "almost certain",
+        "very likely"
+      ],
+      "antonyms": [
+        "unlikely",
+        "improbable"
+      ],
+      "example_sentence": "It is highly likely that climate change will impact agricultural productivity in the coming decades."
+    },
+    {
+      "word": "deeply concerned",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "rất lo lắng, quan tâm sâu sắc",
+      "definition_en": "very worried or troubled about something",
+      "level": "B1",
+      "synonyms": [
+        "very worried",
+        "greatly troubled",
+        "seriously anxious"
+      ],
+      "antonyms": [
+        "unconcerned",
+        "indifferent"
+      ],
+      "example_sentence": "Environmental scientists are deeply concerned about the rapid deforestation in tropical regions."
+    },
+    {
+      "word": "strictly prohibited",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "bị cấm hoàn toàn, không được phép dưới bất kỳ hình thức nào",
+      "definition_en": "completely forbidden or not allowed under any circumstances",
+      "level": "B1",
+      "synonyms": [
+        "absolutely forbidden",
+        "completely banned",
+        "entirely disallowed"
+      ],
+      "antonyms": [
+        "permitted",
+        "allowed"
+      ],
+      "example_sentence": "Smoking is strictly prohibited in all public buildings and transportation facilities."
+    },
+    {
+      "word": "widely accepted",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "được chấp nhận rộng rãi, được đa số công nhân",
+      "definition_en": "generally approved or recognized by most people",
+      "level": "B1",
+      "synonyms": [
+        "generally accepted",
+        "commonly recognized",
+        "broadly approved"
+      ],
+      "antonyms": [
+        "rejected",
+        "disputed"
+      ],
+      "example_sentence": "The theory of evolution is widely accepted in the scientific community worldwide."
+    },
+    {
+      "word": "strongly recommend",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đề xuất mạnh mẽ, khuyên rất nên",
+      "definition_en": "to advise someone very firmly to do something",
+      "level": "B1",
+      "synonyms": [
+        "highly recommend",
+        "earnestly suggest",
+        "strongly advise"
+      ],
+      "antonyms": [
+        "discourage",
+        "advise against"
+      ],
+      "example_sentence": "Experts strongly recommend that teenagers get at least eight hours of sleep every night."
+    },
+    {
+      "word": "fully aware",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "hoàn toàn nhận thức, biết rõ",
+      "definition_en": "completely conscious or informed about something",
+      "level": "B1",
+      "synonyms": [
+        "completely aware",
+        "fully conscious",
+        "well informed"
+      ],
+      "antonyms": [
+        "unaware",
+        "ignorant"
+      ],
+      "example_sentence": "The government is fully aware of the health risks associated with air pollution in urban areas."
+    },
+    {
+      "word": "absolutely essential",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "hoàn toàn cần thiết, không thể thiếu",
+      "definition_en": "completely necessary or vital",
+      "level": "B1",
+      "synonyms": [
+        "critically important",
+        "absolutely necessary",
+        "vitally important"
+      ],
+      "antonyms": [
+        "optional",
+        "unnecessary"
+      ],
+      "example_sentence": "Regular exercise is absolutely essential for maintaining good physical and mental health."
+    },
+    {
+      "word": "severely damaged",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "bị hư hại nặng nề, tổn thương lớn",
+      "definition_en": "badly harmed or injured to a serious degree",
+      "level": "B1",
+      "synonyms": [
+        "heavily damaged",
+        "seriously harmed",
+        "badly injured"
+      ],
+      "antonyms": [
+        "intact",
+        "undamaged"
+      ],
+      "example_sentence": "The coastal infrastructure was severely damaged by the hurricane last month."
+    },
+    {
+      "word": "extremely rare",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cực kỳ hiếm, rất ít gặp",
+      "definition_en": "very uncommon or seldom found",
+      "level": "B1",
+      "synonyms": [
+        "very rare",
+        "exceptionally uncommon",
+        "hardly ever seen"
+      ],
+      "antonyms": [
+        "common",
+        "frequent"
+      ],
+      "example_sentence": "This species of bird is extremely rare and can only be found in remote mountain regions."
+    },
+    {
+      "word": "widely recognized",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "được công nhân rộng rãi, được biết đến nhiều",
+      "definition_en": "generally known or acknowledged by many people",
+      "level": "B1",
+      "synonyms": [
+        "widely known",
+        "generally recognized",
+        "commonly acknowledged"
+      ],
+      "antonyms": [
+        "unknown",
+        "obscure"
+      ],
+      "example_sentence": "Albert Einstein is widely recognized as one of the greatest physicists of all time."
+    },
+    {
+      "word": "firmly established",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "được thiết lập vững chắc, có nền tảng chắc chắn",
+      "definition_en": "solidly set up or well-founded",
+      "level": "B2",
+      "synonyms": [
+        "well established",
+        "solidly founded",
+        "securely set"
+      ],
+      "antonyms": [
+        "unstable",
+        "uncertain"
+      ],
+      "example_sentence": "The university has firmly established itself as a leading institution for research and education."
+    },
+    {
+      "word": "deeply rooted",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "có gốc rễ sâu, có nguồn gốc lâu đời",
+      "definition_en": "having origins that go far back in time or culture",
+      "level": "B2",
+      "synonyms": [
+        "firmly rooted",
+        "deeply embedded",
+        "long-established"
+      ],
+      "antonyms": [
+        "superficial",
+        "recent"
+      ],
+      "example_sentence": "The tradition of tea drinking is deeply rooted in Asian culture and history."
+    },
+    {
+      "word": "highly competitive",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cạnh tranh gay gắt, có mức độ cạnh tranh cao",
+      "definition_en": "involving intense rivalry or strong competition",
+      "level": "B2",
+      "synonyms": [
+        "intensely competitive",
+        "fiercely competitive",
+        "highly contested"
+      ],
+      "antonyms": [
+        "uncompetitive",
+        "cooperative"
+      ],
+      "example_sentence": "The job market in technology is highly competitive, requiring advanced skills and experience."
+    },
+    {
+      "word": "broadly speaking",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nói chung, nói một cách rộng rãi",
+      "definition_en": "in general terms; considering the main points rather than details",
+      "level": "B2",
+      "synonyms": [
+        "generally speaking",
+        "in general",
+        "overall"
+      ],
+      "antonyms": [
+        "specifically",
+        "precisely"
+      ],
+      "example_sentence": "Broadly speaking, the economic situation has improved over the past two years."
+    },
+    {
+      "word": "sharply increased",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tăng đột ngột, tăng mạnh",
+      "definition_en": "rose suddenly or dramatically",
+      "level": "B2",
+      "synonyms": [
+        "dramatically increased",
+        "steeply risen",
+        "rapidly increased"
+      ],
+      "antonyms": [
+        "decreased",
+        "declined"
+      ],
+      "example_sentence": "The number of online learners has sharply increased since the pandemic began."
+    },
+    {
+      "word": "clearly evident",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "rõ ràng, hiển nhiên",
+      "definition_en": "obviously apparent or easy to see",
+      "level": "B2",
+      "synonyms": [
+        "obviously clear",
+        "plainly visible",
+        "unmistakably apparent"
+      ],
+      "antonyms": [
+        "obscure",
+        "hidden"
+      ],
+      "example_sentence": "The benefits of regular physical activity are clearly evident in improved health outcomes."
+    },
+    {
+      "word": "significantly different",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "khác biệt đáng kể, có sự khác nhau lớn",
+      "definition_en": "noticeably or importantly distinct",
+      "level": "B2",
+      "synonyms": [
+        "markedly different",
+        "substantially different",
+        "considerably different"
+      ],
+      "antonyms": [
+        "similar",
+        "identical"
+      ],
+      "example_sentence": "The results of the two experiments were significantly different, suggesting different underlying mechanisms."
+    },
+    {
+      "word": "strictly speaking",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nói một cách chặt chẽ, nói đúng nghĩa",
+      "definition_en": "in the precise or technical sense; being exact",
+      "level": "B2",
+      "synonyms": [
+        "technically speaking",
+        "precisely speaking",
+        "in strict terms"
+      ],
+      "antonyms": [
+        "loosely",
+        "approximately"
+      ],
+      "example_sentence": "Strictly speaking, a tomato is a fruit, not a vegetable, according to botanical classification."
+    },
+    {
+      "word": "highly skilled",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "có kỹ năng cao, tài giỏi",
+      "definition_en": "possessing advanced abilities or expertise",
+      "level": "B2",
+      "synonyms": [
+        "very skilled",
+        "highly trained",
+        "expertly proficient"
+      ],
+      "antonyms": [
+        "unskilled",
+        "inexperienced"
+      ],
+      "example_sentence": "The project requires highly skilled engineers with experience in renewable energy systems."
+    },
+    {
+      "word": "deeply influenced",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "bị ảnh hưởng sâu sắc, chịu tác động lớn",
+      "definition_en": "strongly affected or shaped by something",
+      "level": "B2",
+      "synonyms": [
+        "greatly influenced",
+        "strongly affected",
+        "heavily shaped"
+      ],
+      "antonyms": [
+        "unaffected",
+        "uninfluenced"
+      ],
+      "example_sentence": "Modern art was deeply influenced by the cultural movements of the early twentieth century."
+    },
+    {
+      "word": "widely available",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "có sẵn rộng rãi, dễ tìm kiếm",
+      "definition_en": "easily obtainable in many places",
+      "level": "B1",
+      "synonyms": [
+        "readily available",
+        "easily accessible",
+        "commonly found"
+      ],
+      "antonyms": [
+        "scarce",
+        "hard to find"
+      ],
+      "example_sentence": "Information about climate change is now widely available through various educational platforms."
+    },
+    {
+      "word": "strictly adhered to",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tuân thủ chặt chẽ, tuân theo nghiêm ngặt",
+      "definition_en": "followed closely and carefully without exception",
+      "level": "B2",
+      "synonyms": [
+        "closely followed",
+        "rigidly observed",
+        "strictly observed"
+      ],
+      "antonyms": [
+        "ignored",
+        "disregarded"
+      ],
+      "example_sentence": "Safety protocols must be strictly adhered to in all laboratory experiments."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new environmental regulations are _______ by most industries, though some smaller companies have raised concerns about implementation costs.",
+      "option_a": "widely accepted",
+      "option_b": "strictly prohibited",
+      "option_c": "deeply concerned",
+      "option_d": "highly likely",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Ngữ cảnh nói về các quy định được hầu hết các ngành công nghiệp chấp nhận. 'Widely accepted' (được chấp nhận rộng rãi) là phù hợp nhất. Các lựa chọn khác không phù hợp về nghĩa: 'strictly prohibited' (bị cấm hoàn toàn) mâu thuẫn với 'accepted', 'deeply concerned' (rất lo lắng) không phù hợp ngữ cảnh, 'highly likely' (rất có khả năng) không phù hợp về cấu trúc."
+    },
+    {
+      "question_text": "Scientists are _______ about the long-term effects of microplastics on marine ecosystems and human health.",
+      "option_a": "highly likely",
+      "option_b": "deeply concerned",
+      "option_c": "widely recognized",
+      "option_d": "firmly established",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Deeply concerned' (rất lo lắng) là cụm từ tự nhiên để mô tả thái độ lo lắng của các nhà khoa học. 'Highly likely' dùng cho sự kiện, 'widely recognized' dùng cho điều được biết đến, 'firmly established' dùng cho cơ sở vững chắc - đều không phù hợp."
+    },
+    {
+      "question_text": "Smoking in hospitals is _______ to protect patients and staff from secondhand smoke exposure.",
+      "option_a": "highly likely",
+      "option_b": "widely available",
+      "option_c": "strictly prohibited",
+      "option_d": "deeply rooted",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Strictly prohibited' (bị cấm hoàn toàn) là cụm từ chính xác để mô tả hành động bị cấm trong bệnh viện. Các lựa chọn khác không phù hợp: 'highly likely' dùng cho khả năng, 'widely available' dùng cho sự sẵn có, 'deeply rooted' dùng cho truyền thống."
+    },
+    {
+      "question_text": "It is _______ that artificial intelligence will continue to transform various industries in the coming years.",
+      "option_a": "strictly prohibited",
+      "option_b": "highly likely",
+      "option_c": "deeply concerned",
+      "option_d": "firmly established",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Highly likely' (rất có khả năng) là cụm từ tự nhiên để diễn tả khả năng xảy ra của một sự kiện trong tương lai. Các lựa chọn khác không phù hợp về cấu trúc và nghĩa."
+    },
+    {
+      "question_text": "Which collocation is most appropriate to complete this sentence: 'The benefits of renewable energy are _______.'",
+      "option_a": "strictly prohibited",
+      "option_b": "deeply concerned",
+      "option_c": "clearly evident",
+      "option_d": "highly likely",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Clearly evident' (rõ ràng, hiển nhiên) là cụm từ tự nhiên để mô tả những lợi ích dễ thấy. 'Strictly prohibited' không phù hợp (không cấm lợi ích), 'deeply concerned' không phù hợp (lợi ích không thể lo lắng), 'highly likely' không phù hợp về cấu trúc."
+    },
+    {
+      "question_text": "The university has _______ itself as a leading research institution through decades of academic excellence.",
+      "option_a": "deeply concerned",
+      "option_b": "widely available",
+      "option_c": "firmly established",
+      "option_d": "sharply increased",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Firmly established' (được thiết lập vững chắc) là cụm từ tự nhiên để mô tả việc xây dựng vị thế của một tổ chức. Các lựa chọn khác không phù hợp: 'deeply concerned' không phù hợp về nghĩa, 'widely available' dùng cho sự sẵn có, 'sharply increased' dùng cho sự tăng đột ngột."
+    },
+    {
+      "question_text": "Experts _______ that all employees complete mandatory safety training before starting work.",
+      "option_a": "strongly recommend",
+      "option_b": "widely accepted",
+      "option_c": "deeply rooted",
+      "option_d": "clearly evident",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Strongly recommend' (đề xuất mạnh mẽ) là cụm từ tự nhiên để mô tả lời khuyên của các chuyên gia. Các lựa chọn khác không phù hợp: 'widely accepted' dùng cho điều được chấp nhận, 'deeply rooted' dùng cho truyền thống, 'clearly evident' dùng cho điều rõ ràng."
+    },
+    {
+      "question_text": "The government is _______ of the challenges posed by climate change and has implemented several mitigation strategies.",
+      "option_a": "fully aware",
+      "option_b": "highly likely",
+      "option_c": "strictly prohibited",
+      "option_d": "widely available",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Fully aware' (hoàn toàn nhận thức) là cụm từ tự nhiên để mô tả sự hiểu biết của chính phủ. Các lựa chọn khác không phù hợp: 'highly likely' dùng cho khả năng, 'strictly prohibited' dùng cho hành động bị cấm, 'widely available' dùng cho sự sẵn có."
+    },
+    {
+      "question_text": "Which collocation best completes: 'This skill is _______ for success in international business.'",
+      "option_a": "absolutely essential",
+      "option_b": "sharply increased",
+      "option_c": "deeply influenced",
+      "option_d": "widely recognized",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Absolutely essential' (hoàn toàn cần thiết) là cụm từ tự nhiên để mô tả tầm quan trọng của một kỹ năng. 'Sharply increased' dùng cho sự tăng đột ngột, 'deeply influenced' dùng cho tác động, 'widely recognized' dùng cho sự công nhân."
+    },
+    {
+      "question_text": "The coastal region was _______ by the tsunami, requiring extensive reconstruction efforts.",
+      "option_a": "widely accepted",
+      "option_b": "severely damaged",
+      "option_c": "highly skilled",
+      "option_d": "firmly established",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Severely damaged' (bị hư hại nặng nề) là cụm từ tự nhiên để mô tả tác động của thảm họa thiên nhiên. Các lựa chọn khác không phù hợp: 'widely accepted' dùng cho sự chấp nhận, 'highly skilled' dùng cho kỹ năng, 'firmly established' dùng cho cơ sở vững chắc."
+    },
+    {
+      "question_text": "This species of plant is _______ and can only be found in one remote mountain region worldwide.",
+      "option_a": "extremely rare",
+      "option_b": "highly competitive",
+      "option_c": "deeply rooted",
+      "option_d": "strictly adhered to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Extremely rare' (cực kỳ hiếm) là cụm từ tự nhiên để mô tả sự ít gặp của một loài. Các lựa chọn khác không phù hợp: 'highly competitive' dùng cho cạnh tranh, 'deeply rooted' dùng cho truyền thống, 'strictly adhered to' dùng cho tuân thủ."
+    },
+    {
+      "question_text": "Which collocation is most appropriate: 'The results of the two studies were _______.'",
+      "option_a": "significantly different",
+      "option_b": "strictly speaking",
+      "option_c": "broadly speaking",
+      "option_d": "deeply influenced",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Significantly different' (khác biệt đáng kể) là cụm từ tự nhiên để so sánh kết quả của hai nghiên cứu. 'Strictly speaking' và 'broadly speaking' dùng để giới thiệu cách diễn đạt, 'deeply influenced' dùng cho tác động."
+    }
+  ]
+}

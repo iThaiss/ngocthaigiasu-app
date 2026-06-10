@@ -1,0 +1,224 @@
+{
+  "words": [
+    {
+      "word": "demographic transition",
+      "pronunciation": "/ˌdeməˈɡræfɪk trænˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình chuyển đổi từ tỷ lệ sinh và tử vong cao sang thấp, đặc trưng của sự phát triển kinh tế-xã hội",
+      "definition_en": "the shift from high birth and death rates to low rates as a society develops economically",
+      "level": "C1",
+      "synonyms": [
+        "population transition",
+        "epidemiological transition"
+      ],
+      "antonyms": [],
+      "example_sentence": "East Asian countries experienced rapid demographic transition over just three decades, creating unprecedented policy challenges."
+    },
+    {
+      "word": "shrinking population",
+      "pronunciation": "/ˈʃrɪŋkɪŋ ˈpɒpjəleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng số dân giảm do tỷ lệ sinh thấp hơn tỷ lệ tử vong, hoặc di cư ròng âm",
+      "definition_en": "a decline in total population due to low birth rates exceeding death rates or net emigration",
+      "level": "B2",
+      "synonyms": [
+        "population decline",
+        "negative population growth"
+      ],
+      "antonyms": [
+        "population growth",
+        "population expansion"
+      ],
+      "example_sentence": "Japan's shrinking population has forced policymakers to reconsider immigration policies and automate manufacturing sectors."
+    },
+    {
+      "word": "old-age dependency",
+      "pronunciation": "/ˌəʊld-eɪdʒ dɪˈpendənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng người cao tuổi phụ thuộc vào những người đang làm việc để hỗ trợ kinh tế",
+      "definition_en": "the economic reliance of elderly people on the working-age population for financial and social support",
+      "level": "C1",
+      "synonyms": [
+        "elderly dependency",
+        "support burden"
+      ],
+      "antonyms": [],
+      "example_sentence": "Rising old-age dependency in Europe threatens the sustainability of public pension schemes without significant tax increases."
+    },
+    {
+      "word": "sub-replacement fertility",
+      "pronunciation": "/ˌsʌb-rɪˈpleɪsmənt ˈfɜːtɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ sinh thấp hơn mức cần thiết để duy trì dân số ổn định (dưới 2,1 con/phụ nữ)",
+      "definition_en": "a birth rate below the level needed to maintain a stable population without immigration",
+      "level": "C1",
+      "synonyms": [
+        "below-replacement fertility",
+        "low fertility"
+      ],
+      "antonyms": [
+        "above-replacement fertility"
+      ],
+      "example_sentence": "Most developed nations now experience sub-replacement fertility, necessitating immigration to sustain economic growth."
+    },
+    {
+      "word": "silver economy",
+      "pronunciation": "/ˈsɪlvər ɪˈkɒnəmi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các ngành kinh tế và dịch vụ phục vụ người cao tuổi, bao gồm y tế, du lịch, công nghệ hỗ trợ",
+      "definition_en": "economic sectors and services targeting the elderly population, including healthcare, leisure, and assistive technology",
+      "level": "C1",
+      "synonyms": [
+        "grey economy",
+        "senior economy"
+      ],
+      "antonyms": [],
+      "example_sentence": "The silver economy is projected to grow faster than traditional sectors, attracting significant venture capital investment."
+    },
+    {
+      "word": "intergenerational transfer",
+      "pronunciation": "/ˌɪntərdʒenəˈreɪʃənəl ˈtrænsfɜː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự chuyển giao tài sản, kiến thức, hoặc trách nhiệm từ thế hệ này sang thế hệ khác",
+      "definition_en": "the transmission of wealth, knowledge, or responsibilities from one generation to the next",
+      "level": "C1",
+      "synonyms": [
+        "generational transfer",
+        "wealth transfer"
+      ],
+      "antonyms": [],
+      "example_sentence": "Intergenerational transfer of property and savings remains a critical mechanism for wealth inequality in aging societies."
+    },
+    {
+      "word": "youth bulge",
+      "pronunciation": "/juːθ bʌldʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng có tỷ lệ cao người trẻ tuổi trong dân số, thường gặp ở các nước đang phát triển",
+      "definition_en": "a demographic pattern where a large proportion of the population is young, common in developing countries",
+      "level": "B2",
+      "synonyms": [
+        "youth wave",
+        "young population surge"
+      ],
+      "antonyms": [
+        "aging population",
+        "greying society"
+      ],
+      "example_sentence": "Sub-Saharan Africa's youth bulge presents both opportunities for economic growth and challenges for job creation."
+    },
+    {
+      "word": "longevity risk",
+      "pronunciation": "/lɒnˈdʒevɪti rɪsk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "rủi ro tài chính khi con người sống lâu hơn dự kiến, làm cạn kiệt tiền hưu trí hoặc quỹ bảo hiểm",
+      "definition_en": "the financial risk that individuals or institutions face when people live longer than expected, depleting retirement savings",
+      "level": "C1",
+      "synonyms": [
+        "longevity exposure",
+        "survival risk"
+      ],
+      "antonyms": [],
+      "example_sentence": "Insurance companies and pension funds must carefully manage longevity risk through actuarial modeling and product innovation."
+    },
+    {
+      "word": "working-age population",
+      "pronunciation": "/ˈwɜːkɪŋ-eɪdʒ ˈpɒpjəleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm dân số trong độ tuổi có khả năng lao động, thường từ 15-64 tuổi",
+      "definition_en": "the segment of population capable of working, typically aged 15-64 years",
+      "level": "B2",
+      "synonyms": [
+        "economically active population",
+        "labor force age group"
+      ],
+      "antonyms": [
+        "dependent population"
+      ],
+      "example_sentence": "The working-age population in Europe is projected to decline by 10% over the next two decades."
+    },
+    {
+      "word": "fiscal pressure",
+      "pronunciation": "/ˈfɪskəl ˈpreʃə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "áp lực tài chính chính phủ do chi tiêu tăng (y tế, hưu trí) vượt quá doanh thu thuế",
+      "definition_en": "government financial strain caused by rising expenditures (healthcare, pensions) exceeding tax revenues",
+      "level": "C1",
+      "synonyms": [
+        "budgetary pressure",
+        "fiscal strain"
+      ],
+      "antonyms": [
+        "fiscal surplus"
+      ],
+      "example_sentence": "Aging populations create mounting fiscal pressure on governments, forcing difficult choices between taxation and benefit reductions."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a country experiencing sub-replacement fertility?",
+      "option_a": "Its birth rate is sufficient to maintain population stability without immigration",
+      "option_b": "Its birth rate is below the level needed to sustain a stable population without immigration",
+      "option_c": "Its death rate exceeds its birth rate by more than 5% annually",
+      "option_d": "Its fertility rate is higher than 2.5 children per woman",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Sub-replacement fertility (dưới mức thay thế) có nghĩa là tỷ lệ sinh không đủ để duy trì dân số ổn định. Đáp án A sai vì nó mô tả replacement fertility. C và D không chính xác về định nghĩa."
+    },
+    {
+      "question_text": "The term 'silver economy' refers to which of the following?",
+      "option_a": "The financial sector's investment in precious metals for elderly investors",
+      "option_b": "Economic sectors and services specifically targeting the elderly population",
+      "option_c": "Government spending on social security and pension programs",
+      "option_d": "The decline in consumer spending as populations age",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Silver economy là các ngành kinh tế phục vụ người cao tuổi (y tế, du lịch, công nghệ). A nhầm lẫn với đầu tư kim loại quý. C và D không phải là định nghĩa của silver economy."
+    },
+    {
+      "question_text": "In the context of demographic change, 'longevity risk' primarily concerns which stakeholders?",
+      "option_a": "Young workers who fear they will not reach retirement age",
+      "option_b": "Insurance companies and pension funds managing the financial impact of people living longer than expected",
+      "option_c": "Healthcare providers dealing with increased patient numbers",
+      "option_d": "Governments implementing immigration policies",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Longevity risk là rủi ro tài chính khi con người sống lâu hơn dự kiến, ảnh hưởng trực tiếp đến công ty bảo hiểm và quỹ hưu trí. A, C, D không phải những bên chịu rủi ro chính."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'As countries undergo _____, they typically experience declining birth rates and an aging population.'",
+      "option_a": "demographic transition",
+      "option_b": "youth bulge",
+      "option_c": "intergenerational transfer",
+      "option_d": "fiscal pressure",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Demographic transition là quá trình chuyển đổi từ tỷ lệ sinh cao sang thấp. Youth bulge (B) là ngược lại. C và D không mô tả quá trình này."
+    },
+    {
+      "question_text": "The concept of 'old-age dependency' is most directly related to which economic challenge?",
+      "option_a": "The inability of elderly people to find employment",
+      "option_b": "The financial burden on the working-age population to support retirees",
+      "option_c": "The decline in consumer spending among seniors",
+      "option_d": "The reduction in government tax revenues",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Old-age dependency là tình trạng người cao tuổi phụ thuộc vào những người đang làm việc để hỗ trợ kinh tế. B chính xác nhất. A chỉ là một khía cạnh, C và D không phải là định nghĩa trực tiếp."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of the 'silver economy'?",
+      "option_a": "Growth in healthcare and pharmaceutical services for elderly patients",
+      "option_b": "Expansion of leisure and tourism industries targeting seniors",
+      "option_c": "Development of assistive technologies and smart home solutions",
+      "option_d": "Reduction in government spending on social welfare programs",
+      "correct_answer": "D",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Silver economy bao gồm các ngành phục vụ người cao tuổi (A, B, C). D là sai vì silver economy thường đi kèm với tăng chi tiêu chính phủ, không phải giảm."
+    }
+  ]
+}

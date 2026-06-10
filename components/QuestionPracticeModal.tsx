@@ -37,7 +37,10 @@ export interface QuestionPracticeModalProps {
 
 function LatexText({ text, className }: { text: string; className?: string }) {
   return (
-    <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
+    <span
+      className={`inline-block max-w-full min-w-0 overflow-x-auto align-bottom scrollbar-none ${className || ''}`}
+      dangerouslySetInnerHTML={{ __html: renderLatex(text) }}
+    />
   )
 }
 
@@ -165,7 +168,7 @@ export default function QuestionPracticeModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => { if (!open) handleClose() }}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="w-[95vw] sm:max-w-2xl max-h-[90vh] overflow-y-auto p-4 sm:p-6">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 flex-wrap pr-6">
             <span>Luyện tập</span>

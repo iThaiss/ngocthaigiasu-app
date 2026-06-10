@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "markedly improved",
+      "pronunciation": "/ˈmɑːrkɪdli ɪmˈpruːvd/",
+      "part_of_speech": "collocation",
+      "definition_vi": "cải thiện một cách rõ rệt, đáng chú ý; có sự tiến bộ đáng kể",
+      "definition_en": "improved in a noticeable or significant way",
+      "level": "B2",
+      "synonyms": [
+        "notably improved",
+        "considerably improved"
+      ],
+      "antonyms": [
+        "slightly worsened",
+        "marginally declined"
+      ],
+      "example_sentence": "The student's academic performance markedly improved after attending the intensive tutoring program."
+    },
+    {
+      "word": "persistently high",
+      "pronunciation": "/pərˈsɪstəntli haɪ/",
+      "part_of_speech": "collocation",
+      "definition_vi": "cao một cách bền bỉ, liên tục; không giảm xuống",
+      "definition_en": "remaining high continuously over time",
+      "level": "B2",
+      "synonyms": [
+        "consistently elevated",
+        "stubbornly high"
+      ],
+      "antonyms": [
+        "temporarily elevated",
+        "fluctuating"
+      ],
+      "example_sentence": "Unemployment rates remained persistently high throughout the economic recession."
+    },
+    {
+      "word": "strikingly similar",
+      "pronunciation": "/ˈstraɪkɪŋli ˈsɪmələr/",
+      "part_of_speech": "collocation",
+      "definition_vi": "giống nhau một cách đáng chú ý, gây ấn tượng; có sự tương đồng rõ rệt",
+      "definition_en": "remarkably alike in appearance or nature",
+      "level": "B2",
+      "synonyms": [
+        "remarkably alike",
+        "notably parallel"
+      ],
+      "antonyms": [
+        "fundamentally different",
+        "vastly dissimilar"
+      ],
+      "example_sentence": "The two ancient civilizations developed strikingly similar architectural styles despite geographical isolation."
+    },
+    {
+      "word": "predominantly male",
+      "pronunciation": "/prɪˈdɒmɪnəntli meɪl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "chủ yếu là nam giới; phần lớn là nam",
+      "definition_en": "mainly or mostly consisting of males",
+      "level": "B2",
+      "synonyms": [
+        "largely male",
+        "mostly male"
+      ],
+      "antonyms": [
+        "predominantly female",
+        "gender-balanced"
+      ],
+      "example_sentence": "The engineering field remains predominantly male, though female participation has been increasing."
+    },
+    {
+      "word": "conspicuously absent",
+      "pronunciation": "/kənˈspɪkjuəsli ˈæbsənt/",
+      "part_of_speech": "collocation",
+      "definition_vi": "vắng mặt một cách rõ rệt, dễ nhận thấy; sự thiếu vắng đáng chú ý",
+      "definition_en": "noticeably or obviously not present",
+      "level": "B2",
+      "synonyms": [
+        "glaringly absent",
+        "notably missing"
+      ],
+      "antonyms": [
+        "prominently present",
+        "conspicuously visible"
+      ],
+      "example_sentence": "Environmental concerns were conspicuously absent from the government's economic policy agenda."
+    },
+    {
+      "word": "substantially increased",
+      "pronunciation": "/səbˈstænʃəli ɪnˈkriːst/",
+      "part_of_speech": "collocation",
+      "definition_vi": "tăng lên một cách đáng kể, đủ lớn; gia tăng đáng chú ý",
+      "definition_en": "increased by a large or significant amount",
+      "level": "B2",
+      "synonyms": [
+        "considerably increased",
+        "markedly risen"
+      ],
+      "antonyms": [
+        "marginally increased",
+        "slightly raised"
+      ],
+      "example_sentence": "Carbon dioxide emissions have substantially increased over the past two decades."
+    },
+    {
+      "word": "inherently unstable",
+      "pronunciation": "/ɪnˈherəntli ʌnˈsteɪbəl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "bản chất không ổn định; vốn dĩ không vững chắc",
+      "definition_en": "unstable as a natural or essential characteristic",
+      "level": "C1",
+      "synonyms": [
+        "intrinsically unstable",
+        "fundamentally volatile"
+      ],
+      "antonyms": [
+        "inherently stable",
+        "naturally balanced"
+      ],
+      "example_sentence": "The political situation in the region is inherently unstable due to competing territorial claims."
+    },
+    {
+      "word": "ostensibly neutral",
+      "pronunciation": "/ɒˈstensɪbli ˈnjuːtrəl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hình như trung lập; thoạt nhìn là trung lập nhưng thực chất không",
+      "definition_en": "appearing to be neutral but possibly not genuinely so",
+      "level": "C1",
+      "synonyms": [
+        "apparently neutral",
+        "seemingly impartial"
+      ],
+      "antonyms": [
+        "genuinely neutral",
+        "truly impartial"
+      ],
+      "example_sentence": "The mediator claimed to be ostensibly neutral, yet his previous statements revealed clear bias."
+    },
+    {
+      "word": "deceptively simple",
+      "pronunciation": "/dɪˈseptɪvli ˈsɪmpəl/",
+      "part_of_speech": "collocation",
+      "definition_vi": "đơn giản một cách đánh lừa; thoạt nhìn đơn giản nhưng thực tế phức tạp",
+      "definition_en": "appearing simple but actually complex or difficult",
+      "level": "B2",
+      "synonyms": [
+        "deceptively easy",
+        "seemingly straightforward"
+      ],
+      "antonyms": [
+        "genuinely simple",
+        "truly uncomplicated"
+      ],
+      "example_sentence": "The mathematical problem is deceptively simple; it requires advanced knowledge to solve correctly."
+    },
+    {
+      "word": "notoriously difficult",
+      "pronunciation": "/nəˈtɔːriəsli ˈdɪfɪkəlt/",
+      "part_of_speech": "collocation",
+      "definition_vi": "khó khăn một cách nổi tiếng; được biết đến là rất khó",
+      "definition_en": "famous or well-known for being difficult",
+      "level": "B2",
+      "synonyms": [
+        "infamously hard",
+        "reputedly challenging"
+      ],
+      "antonyms": [
+        "notoriously easy",
+        "famously simple"
+      ],
+      "example_sentence": "The IELTS writing section is notoriously difficult for non-native English speakers."
+    },
+    {
+      "word": "invariably true",
+      "pronunciation": "/ɪnˈveəriəbli truː/",
+      "part_of_speech": "collocation",
+      "definition_vi": "luôn luôn đúng; không bao giờ có ngoại lệ",
+      "definition_en": "always true without exception",
+      "level": "C1",
+      "synonyms": [
+        "universally true",
+        "always accurate"
+      ],
+      "antonyms": [
+        "sometimes false",
+        "occasionally incorrect"
+      ],
+      "example_sentence": "It is invariably true that economic growth requires investment in education and infrastructure."
+    },
+    {
+      "word": "patently obvious",
+      "pronunciation": "/ˈpeɪtəntli ˈɒbviəs/",
+      "part_of_speech": "collocation",
+      "definition_vi": "rõ ràng một cách hiển nhiên; dễ dàng nhận thấy",
+      "definition_en": "clearly and obviously evident to everyone",
+      "level": "B2",
+      "synonyms": [
+        "glaringly obvious",
+        "plainly evident"
+      ],
+      "antonyms": [
+        "subtly hidden",
+        "obscurely concealed"
+      ],
+      "example_sentence": "The government's corruption was patently obvious to anyone who examined the financial records."
+    },
+    {
+      "word": "chronically underfunded",
+      "pronunciation": "/ˈkrɒnɪkli ˌʌndərˈfʌndɪd/",
+      "part_of_speech": "collocation",
+      "definition_vi": "thiếu kinh phí một cách kéo dài; bị thiếu tài trợ lâu dài",
+      "definition_en": "persistently lacking sufficient financial resources",
+      "level": "C1",
+      "synonyms": [
+        "perpetually underfunded",
+        "consistently under-resourced"
+      ],
+      "antonyms": [
+        "adequately funded",
+        "well-financed"
+      ],
+      "example_sentence": "Public hospitals in developing countries are chronically underfunded, affecting patient care quality."
+    },
+    {
+      "word": "deliberately vague",
+      "pronunciation": "/dɪˈlɪbərətli veɪg/",
+      "part_of_speech": "collocation",
+      "definition_vi": "mơ hồ một cách cố ý; không rõ ràng do cố tình",
+      "definition_en": "intentionally unclear or imprecise",
+      "level": "B2",
+      "synonyms": [
+        "intentionally ambiguous",
+        "purposefully unclear"
+      ],
+      "antonyms": [
+        "deliberately clear",
+        "intentionally precise"
+      ],
+      "example_sentence": "The politician's statement was deliberately vague to avoid committing to a specific policy."
+    },
+    {
+      "word": "remarkably consistent",
+      "pronunciation": "/rɪˈmɑːrkəbli kənˈsɪstənt/",
+      "part_of_speech": "collocation",
+      "definition_vi": "nhất quán một cách đáng chú ý; giữ được sự đồng nhất đáng kể",
+      "definition_en": "maintaining the same quality or pattern in a notable way",
+      "level": "B2",
+      "synonyms": [
+        "notably uniform",
+        "strikingly steady"
+      ],
+      "antonyms": [
+        "remarkably inconsistent",
+        "notably variable"
+      ],
+      "example_sentence": "The athlete's performance has been remarkably consistent throughout the entire season."
+    },
+    {
+      "word": "undeniably effective",
+      "pronunciation": "/ˌʌndɪˈnaɪəbli ɪˈfektɪv/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hiệu quả một cách không thể phủ nhận; chắc chắn có tác dụng",
+      "definition_en": "clearly and certainly producing the desired result",
+      "level": "B2",
+      "synonyms": [
+        "indisputably effective",
+        "unquestionably successful"
+      ],
+      "antonyms": [
+        "arguably ineffective",
+        "questionably useful"
+      ],
+      "example_sentence": "Vaccination programs have proven undeniably effective in reducing infectious disease rates."
+    },
+    {
+      "word": "superficially appealing",
+      "pronunciation": "/ˌsuːpərˈfɪʃəli əˈpiːlɪŋ/",
+      "part_of_speech": "collocation",
+      "definition_vi": "hấp dẫn ở bề ngoài; trông hấp dẫn nhưng không sâu sắc",
+      "definition_en": "attractive on the surface but lacking depth or substance",
+      "level": "C1",
+      "synonyms": [
+        "superficially attractive",
+        "deceptively appealing"
+      ],
+      "antonyms": [
+        "genuinely compelling",
+        "substantively interesting"
+      ],
+      "example_sentence": "The marketing campaign was superficially appealing but failed to address consumers' actual needs."
+    },
+    {
+      "word": "demonstrably false",
+      "pronunciation": "/ˈdemənstrəbli fɔːls/",
+      "part_of_speech": "collocation",
+      "definition_vi": "sai lầm một cách có thể chứng minh; có thể chứng tỏ là không đúng",
+      "definition_en": "provably or clearly untrue",
+      "level": "C1",
+      "synonyms": [
+        "provably incorrect",
+        "verifiably untrue"
+      ],
+      "antonyms": [
+        "demonstrably true",
+        "verifiably accurate"
+      ],
+      "example_sentence": "The claim that climate change is not human-caused is demonstrably false according to scientific evidence."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company's sales figures have _____ improved since implementing the new marketing strategy.",
+      "option_a": "markedly",
+      "option_b": "vaguely",
+      "option_c": "temporarily",
+      "option_d": "partially",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Markedly (rõ rệt, đáng chú ý) là trạng từ nhấn mạnh phù hợp nhất để chỉ sự cải thiện đáng kể. Vaguely (mơ hồ), temporarily (tạm thời), và partially (một phần) không phù hợp với ngữ cảnh về sự cải thiện rõ rệt."
+    },
+    {
+      "question_text": "Which collocation best describes a situation that appears simple but is actually complex?",
+      "option_a": "deceptively simple",
+      "option_b": "notoriously difficult",
+      "option_c": "patently obvious",
+      "option_d": "inherently unstable",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Deceptively simple (đơn giản một cách đánh lừa) chính xác mô tả thứ gì đó thoạt nhìn đơn giản nhưng thực tế phức tạp. Notoriously difficult chỉ cái khó khăn nổi tiếng, patently obvious là rõ ràng hiển nhiên, inherently unstable là bản chất không ổn định."
+    },
+    {
+      "question_text": "The government's environmental policy was _____ neutral, yet it clearly favored industrial development over conservation.",
+      "option_a": "ostensibly",
+      "option_b": "undeniably",
+      "option_c": "invariably",
+      "option_d": "substantially",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Ostensibly (hình như, thoạt nhìn) là trạng từ chỉ sự giả vờ trung lập trong khi thực tế không. Undeniably (không thể phủ nhận), invariably (luôn luôn), và substantially (đáng kể) không phù hợp với ý nghĩa của câu."
+    },
+    {
+      "question_text": "The unemployment rate has remained _____ high despite government intervention programs.",
+      "option_a": "persistently",
+      "option_b": "deceptively",
+      "option_c": "superficially",
+      "option_d": "deliberately",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Persistently (bền bỉ, liên tục) chỉ tình trạng cao không giảm xuống. Deceptively (đánh lừa), superficially (bề ngoài), và deliberately (cố ý) không phù hợp với ngữ cảnh về tỷ lệ thất nghiệp."
+    },
+    {
+      "question_text": "What is the meaning of 'demonstrably false'?",
+      "option_a": "possibly untrue",
+      "option_b": "provably untrue",
+      "option_c": "arguably incorrect",
+      "option_d": "seemingly inaccurate",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Demonstrably false (sai lầm một cách có thể chứng minh) có nghĩa là có thể chứng tỏ rõ ràng là không đúng. Possibly untrue (có thể không đúng), arguably incorrect (có thể nói là sai), và seemingly inaccurate (thoạt nhìn không chính xác) đều yếu hơn và không chính xác."
+    },
+    {
+      "question_text": "The two research studies produced _____ similar results, suggesting the findings are reliable.",
+      "option_a": "strikingly",
+      "option_b": "chronically",
+      "option_c": "conspicuously",
+      "option_d": "deliberately",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Strikingly (đáng chú ý, gây ấn tượng) là trạng từ phù hợp để chỉ sự tương đồng rõ rệt giữa các kết quả. Chronically (kéo dài), conspicuously (rõ rệt), và deliberately (cố ý) không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "Which statement is NOT a characteristic of 'invariably true'?",
+      "option_a": "It is always accurate",
+      "option_b": "It has no exceptions",
+      "option_c": "It is sometimes incorrect",
+      "option_d": "It is universally valid",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Invariably true (luôn luôn đúng) có nghĩa là không bao giờ sai, không có ngoại lệ. Do đó, 'sometimes incorrect' (đôi khi không đúng) là đặc điểm KHÔNG phù hợp. A, B, D đều là đặc điểm của 'invariably true'."
+    },
+    {
+      "question_text": "The public health system is _____ underfunded, leading to chronic shortages of medical supplies and staff.",
+      "option_a": "markedly",
+      "option_b": "chronically",
+      "option_c": "strikingly",
+      "option_d": "undeniably",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Chronically (kéo dài, lâu dài) là trạng từ chính xác để chỉ tình trạng thiếu kinh phí lâu dài. Markedly (rõ rệt), strikingly (đáng chú ý), và undeniably (không thể phủ nhận) không phù hợp với ý nghĩa của 'underfunded' trong ngữ cảnh này."
+    }
+  ]
+}

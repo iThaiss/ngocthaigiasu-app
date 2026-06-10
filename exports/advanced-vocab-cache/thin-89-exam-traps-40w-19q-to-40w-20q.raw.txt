@@ -1,0 +1,73 @@
+```json
+{
+  "words": [],
+  "questions": [
+    {
+      "question_text": "The company's decision to _____ the old factory was controversial, as many workers lost their jobs.",
+      "option_a": "close down",
+      "option_b": "close in",
+      "option_c": "close out",
+      "option_d": "close up",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Close down\" có nghĩa là đóng cửa vĩnh viễn (một cơ sở kinh doanh). \"Close in\" = tiến lại gần, \"close out\" = thanh lý hàng, \"close up\" = đóng cửa tạm thời. Bẫy là các phrasal verbs khác với \"close\" dễ gây nhầm lẫn."
+    },
+    {
+      "question_text": "The researcher's findings were _____ by subsequent studies, proving the original hypothesis was correct.",
+      "option_a": "confirmed",
+      "option_b": "corroborated",
+      "option_c": "collaborated",
+      "option_d": "consolidated",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "\"Corroborated\" = được xác nhận/chứng thực bởi bằng chứng độc lập. \"Confirmed\" quá chung chung. \"Collaborated\" = hợp tác (sai nghĩa). \"Consolidated\" = hợp nhất (không phù hợp). Bẫy là từ có âm thanh tương tự nhưng nghĩa khác."
+    },
+    {
+      "question_text": "The government's _____ approach to environmental protection has disappointed many activists who demand immediate action.",
+      "option_a": "gradual",
+      "option_b": "incremental",
+      "option_c": "tentative",
+      "option_d": "hesitant",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "\"Tentative\" = thận trọng, chưa chắc chắn, không quyết đoán. \"Gradual\" = từ từ (không mang sắc thái tiêu cực). \"Incremental\" = tăng dần (trung lập). \"Hesitant\" = do dự (quá mạnh). Bẫy là các từ gần nghĩa nhưng sắc thái khác nhau."
+    },
+    {
+      "question_text": "The witness's account of the incident was so _____ that the jury struggled to determine what actually happened.",
+      "option_a": "vague",
+      "option_b": "unclear",
+      "option_c": "incoherent",
+      "option_d": "muddled",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "\"Incoherent\" = không mạch lạc, không logic (thường dùng cho lời khai/phát biểu). \"Vague\" = mơ hồ (quá chung chung). \"Unclear\" = không rõ (quá đơn giản). \"Muddled\" = lẫn lộn (không chính thức). Bẫy là từ đồng nghĩa nhưng \"incoherent\" phù hợp nhất trong ngữ cảnh pháp lý."
+    },
+    {
+      "question_text": "The author's _____ writing style makes the complex scientific concepts accessible to general readers.",
+      "option_a": "lucid",
+      "option_b": "luminous",
+      "option_c": "literal",
+      "option_d": "linear",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "\"Lucid\" = rõ ràng, dễ hiểu (về lối viết/suy nghĩ). \"Luminous\" = sáng (về ánh sáng hoặc ý tưởng sáng tạo). \"Literal\" = theo nghĩa đen. \"Linear\" = tuyến tính. Bẫy là các từ bắt đầu bằng \"lu-\" nhưng chỉ \"lucid\" phù hợp."
+    },
+    {
+      "question_text": "The new policy aims to _____ the gap between rich and poor regions by investing in infrastructure development.",
+      "option_a": "narrow",
+      "option_b": "reduce",
+      "option_c": "diminish",
+      "option_d": "bridge",
+      "correct_answer": "D",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Bridge the gap\" = thu hẹp khoảng cách (thành ngữ). \"Narrow\", \"reduce\", \"diminish\" đều có thể dùng nhưng \"bridge\" là collocation chuẩn trong ngữ cảnh kinh tế-xã hội. Bẫy là các từ đồng nghĩa nhưng không phải collocation tiêu chuẩn."
+    }
+  ]
+}
+```

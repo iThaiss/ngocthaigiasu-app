@@ -1,0 +1,71 @@
+{
+  "words": [],
+  "questions": [
+    {
+      "question_text": "The company's _____ growth strategy focuses on expanding into new markets, whereas their _____ approach to cost management ensures sustainable profitability.",
+      "option_a": "continual; continuous",
+      "option_b": "continuous; continual",
+      "option_c": "continual; continual",
+      "option_d": "continuous; continuous",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Continuous = liên tục không gián đoạn (quá trình vật lý); continual = lặp lại nhiều lần nhưng có khoảng cách. 'Continuous growth' (tăng trưởng liên tục), 'continual approach' (tiếp cận lặp lại). Đây là cặp từ dễ nhầm nhất trong tiếng Anh học thuật."
+    },
+    {
+      "question_text": "Which word best completes the sentence? 'The museum's _____ collection of artifacts spans over 3,000 years of human civilization.'",
+      "option_a": "historic",
+      "option_b": "historical",
+      "option_c": "historied",
+      "option_d": "historiographic",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Historical = liên quan đến lịch sử, có tính chất lịch sử (mô tả sự kiện/dữ liệu lịch sử). Historic = có ý nghĩa lịch sử quan trọng, đáng nhớ. 'Historical collection' (bộ sưu tập lịch sử) là cách dùng chính xác."
+    },
+    {
+      "question_text": "The _____ difference between the two experimental results was so small that researchers questioned the _____ of their measuring instruments.",
+      "option_a": "appreciable; appreciative",
+      "option_b": "appreciative; appreciable",
+      "option_c": "appreciable; credibility",
+      "option_d": "appreciative; credibility",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Appreciable = đáng kể, có thể nhận thấy (về mặt lượng/mức độ). Appreciative = biết ơn, đánh giá cao (về cảm xúc). 'Appreciable difference' (sự khác biệt đáng kể). Credibility = độ tin cậy (danh từ)."
+    },
+    {
+      "question_text": "The new employment law makes all candidates _____ for the position, regardless of their educational background, though some may find the requirements _____ to their current skills.",
+      "option_a": "eligible; illegible",
+      "option_b": "illegible; eligible",
+      "option_c": "eligible; impracticable",
+      "option_d": "ineligible; practicable",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Eligible = đủ điều kiện, có quyền. Illegible = không đọc được (về chữ viết). Impracticable = không thể thực hiện được (về kế hoạch/phương pháp). 'Eligible for the position' + 'impracticable to their skills' là cách dùng chính xác."
+    },
+    {
+      "question_text": "The architect's _____ design proved to be both aesthetically pleasing and _____ in its application, solving real-world construction challenges.",
+      "option_a": "ingenious; practical",
+      "option_b": "ingenuous; practicable",
+      "option_c": "ingenious; practicable",
+      "option_d": "ingenuous; practical",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Ingenious = thông minh, sáng tạo (về người/ý tưởng). Ingenuous = ngây thơ, chân thành (về tính cách). Practical = thực tế, có tính ứng dụng. Practicable = có thể thực hiện được (về kế hoạch). 'Ingenious design' + 'practicable in application' là cách dùng chính xác."
+    },
+    {
+      "question_text": "The witness's _____ account of the incident was so detailed that the jury found it _____, despite some inconsistencies in minor details.",
+      "option_a": "credible; credulous",
+      "option_b": "credulous; credible",
+      "option_c": "credible; incredible",
+      "option_d": "credulous; credulous",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Credible = đáng tin cậy, có thể tin được (về thông tin/người). Credulous = dễ tin, ngây thơ (về tính cách của người nghe). 'Credible account' (lời kể đáng tin cậy) + 'jury found it credible' (bồi thẩm đoàn thấy nó đáng tin)."
+    }
+  ]
+}

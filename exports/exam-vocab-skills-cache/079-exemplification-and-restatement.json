@@ -1,0 +1,467 @@
+{
+  "words": [
+    {
+      "word": "for instance",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "chẳng hạn, ví dụ như; dùng để đưa ra một ví dụ cụ thể minh họa cho ý chính",
+      "definition_en": "for example; used to introduce a specific example that illustrates a general statement",
+      "level": "B1",
+      "synonyms": [
+        "for example",
+        "such as"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many animals migrate seasonally; for instance, Arctic terns travel over 44,000 miles annually."
+    },
+    {
+      "word": "namely",
+      "pronunciation": "/ˈneɪmli/",
+      "part_of_speech": "connector",
+      "definition_vi": "cụ thể là, đó là; dùng để chỉ rõ hoặc liệt kê chi tiết những gì vừa nói",
+      "definition_en": "that is to say; used to specify or list exactly what has just been mentioned",
+      "level": "B2",
+      "synonyms": [
+        "that is",
+        "specifically"
+      ],
+      "antonyms": [],
+      "example_sentence": "Three factors influence climate change, namely greenhouse gas emissions, deforestation, and industrial pollution."
+    },
+    {
+      "word": "that is",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "tức là, nói cách khác; dùng để giải thích lại hoặc làm rõ ý vừa nói",
+      "definition_en": "in other words; used to clarify or rephrase what has just been said",
+      "level": "B1",
+      "synonyms": [
+        "namely",
+        "in other words"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company aims to achieve carbon neutrality, that is, to produce zero net greenhouse gas emissions."
+    },
+    {
+      "word": "in other words",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "nói cách khác, hay là; dùng để diễn giải lại ý chính bằng cách khác để dễ hiểu",
+      "definition_en": "expressed differently; used to restate an idea in a clearer or simpler way",
+      "level": "B1",
+      "synonyms": [
+        "that is",
+        "to put it simply"
+      ],
+      "antonyms": [],
+      "example_sentence": "Biodiversity is declining at an alarming rate; in other words, we are losing species faster than ever before."
+    },
+    {
+      "word": "to put it simply",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "nói một cách đơn giản, tóm lại; dùng để giải thích một ý phức tạp bằng cách dễ hiểu nhất",
+      "definition_en": "expressed in simple terms; used to explain something complex in the most straightforward way",
+      "level": "B1",
+      "synonyms": [
+        "in other words",
+        "simply put"
+      ],
+      "antonyms": [],
+      "example_sentence": "Photosynthesis is a biochemical process; to put it simply, plants convert sunlight into chemical energy."
+    },
+    {
+      "word": "such as",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "như, chẳng hạn như; dùng để đưa ra ví dụ minh họa cho một danh sách hoặc nhóm",
+      "definition_en": "for example; used to introduce examples of a category or group",
+      "level": "B1",
+      "synonyms": [
+        "for instance",
+        "like"
+      ],
+      "antonyms": [],
+      "example_sentence": "Renewable energy sources, such as solar and wind power, are becoming increasingly cost-effective."
+    },
+    {
+      "word": "in particular",
+      "pronunciation": "",
+      "part_of_speech": "connector",
+      "definition_vi": "đặc biệt là, cụ thể là; dùng để nhấn mạnh một ví dụ hoặc chi tiết quan trọng nhất",
+      "definition_en": "especially; used to emphasize a specific example or detail among others",
+      "level": "B2",
+      "synonyms": [
+        "especially",
+        "particularly"
+      ],
+      "antonyms": [],
+      "example_sentence": "Several countries have adopted strict environmental policies, in particular Denmark and Costa Rica."
+    },
+    {
+      "word": "specifically",
+      "pronunciation": "/spɪˈsɪfɪkli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "cụ thể, chi tiết; dùng để chỉ rõ hoặc giới hạn phạm vi của một phát biểu chung",
+      "definition_en": "in a way that is exact and clear; used to specify details of a general statement",
+      "level": "B2",
+      "synonyms": [
+        "namely",
+        "particularly"
+      ],
+      "antonyms": [
+        "generally",
+        "broadly"
+      ],
+      "example_sentence": "The study focused on developing countries, specifically those in Southeast Asia and sub-Saharan Africa."
+    },
+    {
+      "word": "to illustrate",
+      "pronunciation": "/ˈɪləstreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "minh họa, làm sáng tỏ; dùng để giải thích bằng cách đưa ra ví dụ hoặc hình ảnh",
+      "definition_en": "to explain or clarify by providing examples or visual representations",
+      "level": "B2",
+      "synonyms": [
+        "exemplify",
+        "demonstrate"
+      ],
+      "antonyms": [
+        "obscure",
+        "conceal"
+      ],
+      "example_sentence": "To illustrate the impact of climate change, scientists point to rising sea levels and melting ice caps."
+    },
+    {
+      "word": "a case in point",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "một ví dụ điển hình, một trường hợp minh họa; dùng để chỉ một ví dụ hoàn hảo cho ý vừa nói",
+      "definition_en": "a perfect example that illustrates what has just been mentioned",
+      "level": "B2",
+      "synonyms": [
+        "a prime example",
+        "a perfect example"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many tech startups have disrupted traditional industries; a case in point is how Uber transformed transportation."
+    },
+    {
+      "word": "by way of illustration",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "để minh họa, làm ví dụ; dùng để giới thiệu một ví dụ cụ thể giúp làm sáng tỏ ý chính",
+      "definition_en": "as an example; used to introduce an illustration of a point being made",
+      "level": "B2",
+      "synonyms": [
+        "for instance",
+        "to illustrate"
+      ],
+      "antonyms": [],
+      "example_sentence": "By way of illustration, consider how artificial intelligence has revolutionized medical diagnosis and treatment."
+    },
+    {
+      "word": "put another way",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói cách khác, hay là; dùng để diễn giải lại ý chính bằng một cách tiếp cận khác",
+      "definition_en": "expressed differently; used to rephrase an idea from a different angle",
+      "level": "B2",
+      "synonyms": [
+        "in other words",
+        "to put it differently"
+      ],
+      "antonyms": [],
+      "example_sentence": "Economic growth does not always lead to improved quality of life; put another way, GDP is not a complete measure of well-being."
+    },
+    {
+      "word": "in essence",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "về bản chất, tóm lại; dùng để tóm tắt hoặc nhấn mạnh ý chính của một vấn đề phức tạp",
+      "definition_en": "fundamentally; used to summarize or emphasize the core meaning of something complex",
+      "level": "B2",
+      "synonyms": [
+        "basically",
+        "fundamentally"
+      ],
+      "antonyms": [],
+      "example_sentence": "In essence, sustainable development means meeting present needs without compromising future generations' resources."
+    },
+    {
+      "word": "as an example",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ví dụ như, chẳng hạn; dùng để giới thiệu một ví dụ cụ thể minh họa cho ý chính",
+      "definition_en": "for instance; used to introduce a specific example that supports a general statement",
+      "level": "B1",
+      "synonyms": [
+        "for instance",
+        "such as"
+      ],
+      "antonyms": [],
+      "example_sentence": "As an example, Japan has successfully implemented advanced recycling systems to reduce waste."
+    },
+    {
+      "word": "clarify",
+      "pronunciation": "/ˈklærɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm rõ, giải thích; dùng để làm cho một ý tưởng trở nên rõ ràng và dễ hiểu hơn",
+      "definition_en": "to make something clear or easier to understand",
+      "level": "B2",
+      "synonyms": [
+        "explain",
+        "elucidate"
+      ],
+      "antonyms": [
+        "confuse",
+        "obscure"
+      ],
+      "example_sentence": "The professor clarified the concept by providing real-world examples from recent scientific research."
+    },
+    {
+      "word": "exemplify",
+      "pronunciation": "/ɪɡˈzemplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "là ví dụ điển hình của, minh họa; dùng để thể hiện hoặc chứng minh một ý tưởng qua ví dụ cụ thể",
+      "definition_en": "to be a typical example of something; to illustrate by example",
+      "level": "B2",
+      "synonyms": [
+        "illustrate",
+        "demonstrate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The success of renewable energy in Denmark exemplifies how countries can transition to sustainable power sources."
+    },
+    {
+      "word": "to be specific",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cụ thể là, chi tiết hơn; dùng để chuyển từ ý chung sang chi tiết cụ thể",
+      "definition_en": "to be more precise; used to move from general to specific details",
+      "level": "B2",
+      "synonyms": [
+        "specifically",
+        "to be precise"
+      ],
+      "antonyms": [],
+      "example_sentence": "Several factors contributed to the economic crisis; to be specific, excessive debt and poor regulation were primary causes."
+    },
+    {
+      "word": "in this case",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trong trường hợp này, ở đây; dùng để chỉ rõ một tình huống hoặc ví dụ cụ thể đang được thảo luận",
+      "definition_en": "in this particular situation; used to specify a particular example being discussed",
+      "level": "B1",
+      "synonyms": [
+        "in this instance",
+        "in this situation"
+      ],
+      "antonyms": [],
+      "example_sentence": "When companies fail to adapt to market changes, they lose competitiveness; in this case, Blockbuster ignored the rise of streaming."
+    },
+    {
+      "word": "take for example",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "lấy ví dụ, chẳng hạn; dùng để giới thiệu một ví dụ cụ thể để minh họa cho ý chính",
+      "definition_en": "consider as an example; used to introduce a specific instance that illustrates a point",
+      "level": "B1",
+      "synonyms": [
+        "for instance",
+        "for example"
+      ],
+      "antonyms": [],
+      "example_sentence": "Take for example the impact of social media on teenage mental health, which has become a major public health concern."
+    },
+    {
+      "word": "to elaborate",
+      "pronunciation": "/ɪˈlæbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "trình bày chi tiết, mở rộng; dùng để giải thích thêm hoặc cung cấp thêm thông tin chi tiết",
+      "definition_en": "to explain in more detail; to provide additional information or examples",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "explain"
+      ],
+      "antonyms": [
+        "simplify",
+        "condense"
+      ],
+      "example_sentence": "The researcher elaborated on the findings by presenting case studies from three different countries."
+    },
+    {
+      "word": "to cite",
+      "pronunciation": "/saɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "trích dẫn, nêu ra; dùng để đưa ra một ví dụ hoặc bằng chứng cụ thể để hỗ trợ một ý tưởng",
+      "definition_en": "to quote or refer to as an example or evidence",
+      "level": "B2",
+      "synonyms": [
+        "quote",
+        "reference"
+      ],
+      "antonyms": [],
+      "example_sentence": "The report cited several studies to demonstrate the effectiveness of early intervention programs in education."
+    },
+    {
+      "word": "consider",
+      "pronunciation": "/kənˈsɪdər/",
+      "part_of_speech": "verb",
+      "definition_vi": "xem xét, lấy ví dụ; dùng để yêu cầu người đọc chú ý đến một ví dụ hoặc trường hợp cụ thể",
+      "definition_en": "to think about; to examine as an example",
+      "level": "B1",
+      "synonyms": [
+        "think about",
+        "examine"
+      ],
+      "antonyms": [
+        "ignore",
+        "disregard"
+      ],
+      "example_sentence": "Consider the case of Singapore, which transformed from a colonial trading post into a global financial hub."
+    },
+    {
+      "word": "to demonstrate",
+      "pronunciation": "/ˈdemənstreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, thể hiện; dùng để chỉ ra hoặc làm rõ một ý tưởng thông qua ví dụ hoặc bằng chứng",
+      "definition_en": "to show or prove by example or evidence",
+      "level": "B2",
+      "synonyms": [
+        "show",
+        "prove"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "Recent data demonstrates how renewable energy adoption has accelerated in developed nations over the past decade."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company has implemented several cost-cutting measures; _____, they reduced staff by 15% and closed two regional offices.",
+      "option_a": "namely",
+      "option_b": "however",
+      "option_c": "therefore",
+      "option_d": "meanwhile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Namely\" được dùng để chỉ rõ hoặc liệt kê chi tiết những gì vừa nói. Ở đây, nó giới thiệu các ví dụ cụ thể của các biện pháp cắt giảm chi phí. \"However\" (tuy nhiên), \"therefore\" (vì vậy), và \"meanwhile\" (trong khi đó) không phù hợp vì chúng không dùng để giới thiệu ví dụ chi tiết."
+    },
+    {
+      "question_text": "Many developing nations face infrastructure challenges; _____, India struggles with inadequate transportation networks and water supply systems.",
+      "option_a": "in other words",
+      "option_b": "for instance",
+      "option_c": "in essence",
+      "option_d": "as a result",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"For instance\" được dùng để đưa ra một ví dụ cụ thể minh họa cho ý chính. Câu này cần một connector để giới thiệu ví dụ về Ấn Độ. \"In other words\" dùng để diễn giải lại, \"in essence\" dùng để tóm tắt, và \"as a result\" dùng để chỉ hệ quả, không phù hợp."
+    },
+    {
+      "question_text": "Artificial intelligence has transformed multiple industries; _____, healthcare, finance, and manufacturing have all been revolutionized by AI applications.",
+      "option_a": "to put it simply",
+      "option_b": "specifically",
+      "option_c": "on the other hand",
+      "option_d": "in addition",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Specifically\" được dùng để chỉ rõ hoặc giới hạn phạm vi của một phát biểu chung. Ở đây, nó giới thiệu các ngành cụ thể bị ảnh hưởng bởi AI. \"To put it simply\" dùng để giải thích đơn giản, \"on the other hand\" dùng để đối lập, và \"in addition\" dùng để bổ sung, không phù hợp."
+    },
+    {
+      "question_text": "The environmental crisis is multifaceted; _____, we must address climate change, biodiversity loss, and pollution simultaneously.",
+      "option_a": "that is",
+      "option_b": "in particular",
+      "option_c": "to put it simply",
+      "option_d": "nevertheless",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"To put it simply\" được dùng để giải thích một ý phức tạp bằng cách dễ hiểu nhất. Ở đây, nó giúp làm rõ ý \"multifaceted\" bằng cách liệt kê các vấn đề cụ thể. \"That is\" dùng để làm rõ, \"in particular\" dùng để nhấn mạnh một ví dụ, và \"nevertheless\" dùng để đối lập, không phù hợp."
+    },
+    {
+      "question_text": "Globalization has created both opportunities and challenges for developing economies. _____, Vietnam has benefited from foreign investment but also faces increased competition.",
+      "option_a": "To illustrate",
+      "option_b": "In contrast",
+      "option_c": "As a consequence",
+      "option_d": "Furthermore",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"To illustrate\" được dùng để giải thích bằng cách đưa ra ví dụ cụ thể. Ở đây, nó giới thiệu ví dụ về Việt Nam để minh họa tác động của toàn cầu hóa. \"In contrast\" dùng để đối lập, \"as a consequence\" dùng để chỉ hệ quả, và \"furthermore\" dùng để bổ sung, không phù hợp."
+    },
+    {
+      "question_text": "The study examined factors affecting student performance. _____, socioeconomic status, parental involvement, and school resources were identified as key variables.",
+      "option_a": "In essence",
+      "option_b": "Namely",
+      "option_c": "In other words",
+      "option_d": "As an example",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Namely\" được dùng để chỉ rõ hoặc liệt kê chi tiết những gì vừa nói. Ở đây, nó giới thiệu danh sách các yếu tố cụ thể được xác định. \"In essence\" dùng để tóm tắt, \"in other words\" dùng để diễn giải lại, và \"as an example\" dùng để đưa ra một ví dụ, không phù hợp."
+    },
+    {
+      "question_text": "Renewable energy sources offer significant environmental benefits. _____, solar panels and wind turbines produce electricity without greenhouse gas emissions.",
+      "option_a": "Put another way",
+      "option_b": "For instance",
+      "option_c": "In this case",
+      "option_d": "By contrast",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "\"For instance\" được dùng để đưa ra ví dụ cụ thể minh họa cho ý chính. Ở đây, nó giới thiệu các ví dụ về nguồn năng lượng tái tạo. \"Put another way\" dùng để diễn giải lại, \"in this case\" dùng để chỉ một tình huống cụ thể, và \"by contrast\" dùng để đối lập, không phù hợp."
+    },
+    {
+      "question_text": "The government has introduced policies to promote digital literacy. _____, free coding courses and subsidized internet access have been made available to rural communities.",
+      "option_a": "In particular",
+      "option_b": "To be specific",
+      "option_c": "Specifically",
+      "option_d": "All of the above",
+      "correct_answer": "D",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Cả ba tùy chọn A, B, và C đều có thể điền vào chỗ trống vì chúng đều được dùng để chỉ rõ hoặc giới hạn phạm vi của một phát biểu chung. \"In particular\" nhấn mạnh một ví dụ quan trọng, \"to be specific\" chuyển từ chung sang chi tiết, và \"specifically\" cũng chỉ rõ chi tiết. Tất cả đều phù hợp ngữ cảnh này."
+    },
+    {
+      "question_text": "What does the phrase \"for instance\" primarily serve to do in academic writing?",
+      "option_a": "To introduce a contrasting idea",
+      "option_b": "To provide a specific example that illustrates a general statement",
+      "option_c": "To summarize the main argument",
+      "option_d": "To indicate a cause-and-effect relationship",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "\"For instance\" được dùng để đưa ra một ví dụ cụ thể minh họa cho một phát biểu chung. Nó không dùng để đối lập (A), tóm tắt (C), hoặc chỉ mối quan hệ nhân quả (D)."
+    },
+    {
+      "question_text": "Which connector is most appropriate when you want to list specific details of what has just been mentioned?",
+      "option_a": "In other words",
+      "option_b": "Namely",
+      "option_c": "In essence",
+      "option_d": "As a result",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "\"Namely\" được dùng để chỉ rõ hoặc liệt kê chi tiết những gì vừa nói. \"In other words\" dùng để diễn giải lại, \"in essence\" dùng để tóm tắt, và \"as a result\" dùng để chỉ hệ quả."
+    },
+    {
+      "question_text": "The phrase \"to put it simply\" is used to _____ a complex idea in the most straightforward way.",
+      "option_a": "obscure",
+      "option_b": "complicate",
+      "option_c": "explain",
+      "option_d": "contradict",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "\"To put it simply\" được dùng để giải thích (explain) một ý phức tạp bằng cách dễ hiểu nhất. \"Obscure\" (làm mờ), \"complicate\" (làm phức tạp), và \"contradict\" (mâu thuẫn) đều trái ngược với chức năng của cụm từ này."
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "words": [
+    {
+      "word": "nuanced",
+      "pronunciation": "/ˈnjuːænst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có nhiều sắc thái tinh tế, không đơn giản hay tuyệt đối; thể hiện sự hiểu biết sâu sắc về các chi tiết phức tạp",
+      "definition_en": "characterized by subtle shades of meaning or expression; showing careful attention to detail and complexity",
+      "level": "B2",
+      "synonyms": [
+        "subtle",
+        "refined",
+        "sophisticated"
+      ],
+      "antonyms": [
+        "simplistic",
+        "crude"
+      ],
+      "example_sentence": "The author's nuanced portrayal of the protagonist reveals both strengths and weaknesses, avoiding black-and-white characterization."
+    },
+    {
+      "word": "undertone",
+      "pronunciation": "/ˈʌndətəʊn/",
+      "part_of_speech": "noun",
+      "definition_vi": "ý nghĩa tiềm ẩn, không được nói rõ ràng; cảm xúc hoặc thái độ ẩn chứa dưới lời nói bề ngoài",
+      "definition_en": "an underlying quality or feeling that is not directly expressed but can be detected",
+      "level": "B2",
+      "synonyms": [
+        "implication",
+        "subtext",
+        "hint"
+      ],
+      "antonyms": [
+        "explicit statement",
+        "overt meaning"
+      ],
+      "example_sentence": "Despite her polite words, there was an undertone of criticism in her remarks about the project."
+    },
+    {
+      "word": "disparaging",
+      "pronunciation": "/dɪˈspærɪdʒɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tính chất xem thường, hạ thấp; thể hiện sự không tôn trọng hoặc coi thường ai/cái gì",
+      "definition_en": "expressing a lack of respect or esteem; showing disapproval or contempt",
+      "level": "B2",
+      "synonyms": [
+        "derogatory",
+        "insulting",
+        "demeaning"
+      ],
+      "antonyms": [
+        "complimentary",
+        "respectful"
+      ],
+      "example_sentence": "The critic made disparaging comments about the film's plot, calling it predictable and uninspired."
+    },
+    {
+      "word": "conciliatory",
+      "pronunciation": "/kənˈsɪliətəri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tính chất hòa giải, làm dịu bớt mâu thuẫn; nhằm mục đích làm hòa bình hoặc giảm căng thẳng",
+      "definition_en": "intended to placate or appease; aimed at resolving conflict or reducing tension",
+      "level": "B2",
+      "synonyms": [
+        "appeasing",
+        "pacifying",
+        "reconciliatory"
+      ],
+      "antonyms": [
+        "antagonistic",
+        "provocative"
+      ],
+      "example_sentence": "After the heated argument, she adopted a conciliatory tone to rebuild trust with her colleague."
+    },
+    {
+      "word": "acerbic",
+      "pronunciation": "/əˈsɜːbɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cay đắng, sắc sảo, chứa đựng sarcasm hoặc phê phán gay gắt; có vị chua chát về cảm xúc",
+      "definition_en": "sharp and forthright, especially in manner or speech; bitter or sarcastic in tone",
+      "level": "B2",
+      "synonyms": [
+        "caustic",
+        "biting",
+        "sardonic"
+      ],
+      "antonyms": [
+        "gentle",
+        "mild"
+      ],
+      "example_sentence": "The reviewer's acerbic wit made the article entertaining, though some readers found it unnecessarily harsh."
+    },
+    {
+      "word": "equivocal",
+      "pronunciation": "/ɪˈkwɪvəkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, không rõ ràng, có thể hiểu theo nhiều cách; không cam kết rõ ràng vào một立場",
+      "definition_en": "open to more than one interpretation; ambiguous or unclear in meaning",
+      "level": "B2",
+      "synonyms": [
+        "ambiguous",
+        "unclear",
+        "indefinite"
+      ],
+      "antonyms": [
+        "clear",
+        "definitive"
+      ],
+      "example_sentence": "The government's equivocal response to the scandal left the public uncertain about its true position."
+    },
+    {
+      "word": "insinuate",
+      "pronunciation": "/ɪnˈsɪnjueɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gợi ý một cách tinh tế hoặc gián tiếp;암시하다 một điều không tốt mà không nói rõ ràng",
+      "definition_en": "to suggest or hint at something indirectly, often something negative or unpleasant",
+      "level": "B2",
+      "synonyms": [
+        "imply",
+        "suggest",
+        "hint"
+      ],
+      "antonyms": [
+        "state",
+        "declare"
+      ],
+      "example_sentence": "By asking why she was late so often, he insinuated that she was unreliable without saying so directly."
+    },
+    {
+      "word": "vindictive",
+      "pronunciation": "/vɪnˈdɪktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tính chất trả thù, muốn báo thù; tìm cách làm hại người khác vì bị tổn thương hoặc xúc phạm",
+      "definition_en": "seeking to harm someone in return for a perceived injury; vengeful and spiteful",
+      "level": "B2",
+      "synonyms": [
+        "vengeful",
+        "spiteful",
+        "retaliatory"
+      ],
+      "antonyms": [
+        "forgiving",
+        "merciful"
+      ],
+      "example_sentence": "His vindictive behavior toward former colleagues revealed a deeply resentful nature."
+    },
+    {
+      "word": "condescending",
+      "pronunciation": "/ˌkɒndɪˈsendɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thái độ coi thường, hạ mình để giao tiếp với người khác; thể hiện sự tự cho là cao hơn",
+      "definition_en": "showing an attitude of superiority; treating others as if they are inferior",
+      "level": "B2",
+      "synonyms": [
+        "patronizing",
+        "supercilious",
+        "disdainful"
+      ],
+      "antonyms": [
+        "respectful",
+        "humble"
+      ],
+      "example_sentence": "The professor's condescending remarks about students' questions discouraged participation in class."
+    },
+    {
+      "word": "sarcasm",
+      "pronunciation": "/ˈsɑːkæzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "lời nói mỉa mai, châm chọc; dùng lời lẽ trái ngược với ý thực để chế giễu hoặc phê phán",
+      "definition_en": "the use of irony to mock or convey contempt; a cutting remark made in a biting tone",
+      "level": "C1",
+      "synonyms": [
+        "irony",
+        "mockery",
+        "derision"
+      ],
+      "antonyms": [
+        "sincerity",
+        "earnestness"
+      ],
+      "example_sentence": "His comment 'Oh, great job!' was dripping with sarcasm when she spilled coffee on the report."
+    },
+    {
+      "word": "allude to",
+      "pronunciation": "/əˈluːd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gợi ý, nhắc đến một cách gián tiếp; không nói rõ ràng mà chỉ hé mở về điều gì đó",
+      "definition_en": "to make an indirect or passing reference to something; to hint at without stating explicitly",
+      "level": "B2",
+      "synonyms": [
+        "refer to",
+        "hint at",
+        "mention"
+      ],
+      "antonyms": [
+        "state explicitly",
+        "declare outright"
+      ],
+      "example_sentence": "The author alluded to political corruption without naming specific officials or incidents."
+    },
+    {
+      "word": "forthright",
+      "pronunciation": "/ˈfɔːθraɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thẳng thắn, trực tiếp, không che giấu; nói lên sự thật một cách rõ ràng và can đảm",
+      "definition_en": "direct and honest in manner or speech; frank and straightforward without evasion",
+      "level": "B2",
+      "synonyms": [
+        "frank",
+        "candid",
+        "direct"
+      ],
+      "antonyms": [
+        "evasive",
+        "indirect"
+      ],
+      "example_sentence": "Her forthright assessment of the problem, though uncomfortable, helped the team address it effectively."
+    },
+    {
+      "word": "veiled",
+      "pronunciation": "/veɪld/",
+      "part_of_speech": "adjective",
+      "definition_vi": "che giấu, ẩn giấu; không được thể hiện rõ ràng mà được che đậy dưới hình thức khác",
+      "definition_en": "concealed or hidden; not openly expressed or stated; disguised",
+      "level": "B2",
+      "synonyms": [
+        "concealed",
+        "hidden",
+        "disguised"
+      ],
+      "antonyms": [
+        "overt",
+        "explicit"
+      ],
+      "example_sentence": "The politician's veiled criticism of his opponent was understood by the audience despite the diplomatic language."
+    },
+    {
+      "word": "bristle at",
+      "pronunciation": "/ˈbrɪsəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phản ứng tức giận, bực bội; thể hiện sự không chấp nhận hoặc phẫn nộ đối với điều gì",
+      "definition_en": "to react with anger or irritation to something perceived as insulting or offensive",
+      "level": "B2",
+      "synonyms": [
+        "take offense at",
+        "react angrily to",
+        "resent"
+      ],
+      "antonyms": [
+        "accept gracefully",
+        "welcome"
+      ],
+      "example_sentence": "She bristled at the suggestion that women were less capable in technical fields."
+    },
+    {
+      "word": "overtone",
+      "pronunciation": "/ˈəʊvətəʊn/",
+      "part_of_speech": "noun",
+      "definition_vi": "ý nghĩa hoặc cảm xúc ẩn chứa bên cạnh ý chính; sắc thái phụ của một lời nói hoặc hành động",
+      "definition_en": "a subtle quality or implication accompanying the main meaning; an underlying feeling or tone",
+      "level": "B2",
+      "synonyms": [
+        "undertone",
+        "implication",
+        "nuance"
+      ],
+      "antonyms": [
+        "explicit meaning",
+        "surface meaning"
+      ],
+      "example_sentence": "The speech had patriotic overtones, appealing to national pride while discussing economic reform."
+    },
+    {
+      "word": "intonation",
+      "pronunciation": "/ˌɪntəˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "cách phát âm, nhấn giọng; sự thay đổi cao độ giọng nói để thể hiện ý nghĩa hoặc cảm xúc",
+      "definition_en": "the pattern of rise and fall in the pitch of the voice when speaking; the melody of speech",
+      "level": "B2",
+      "synonyms": [
+        "tone",
+        "inflection",
+        "cadence"
+      ],
+      "antonyms": [
+        "monotone"
+      ],
+      "example_sentence": "Her intonation made the question sound like a statement, leaving no room for negotiation."
+    },
+    {
+      "word": "loaded question",
+      "pronunciation": "/ˈləʊdɪd ˈkwestʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "câu hỏi chứa đựng giả định hoặc thiên kiến; câu hỏi được thiết kế để dẫn dắt câu trả lời theo hướng mong muốn",
+      "definition_en": "a question that contains an implicit assumption or bias; a question designed to elicit a particular answer",
+      "level": "B2",
+      "synonyms": [
+        "leading question",
+        "biased question"
+      ],
+      "antonyms": [
+        "neutral question",
+        "open-ended question"
+      ],
+      "example_sentence": "The interviewer asked a loaded question: 'Don't you agree that this policy is obviously beneficial?' which presupposed agreement."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The manager's response to the employee's complaint was deliberately equivocal. What does this suggest about her position?",
+      "option_a": "She clearly supported the employee's concerns.",
+      "option_b": "She avoided committing to a definite stance on the issue.",
+      "option_c": "She explicitly rejected the employee's claims.",
+      "option_d": "She promised immediate action to resolve the problem.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Equivocal có nghĩa là mơ hồ, không rõ ràng, có thể hiểu theo nhiều cách. Khi phản hồi 'deliberately equivocal', người quản lý cố tình tránh cam kết vào một立場cụ thể. Đáp án B là chính xác vì nó phản ánh sự không rõ ràng và tránh né. Các đáp án khác (A, C, D) đều thể hiện立場rõ ràng, trái với ý nghĩa của equivocal."
+    },
+    {
+      "question_text": "When the critic described the film as 'a masterpiece of storytelling,' but her intonation suggested doubt, what was she likely doing?",
+      "option_a": "Expressing genuine admiration for the film.",
+      "option_b": "Using sarcasm to convey the opposite of her words.",
+      "option_c": "Demonstrating her expertise in film analysis.",
+      "option_d": "Encouraging others to watch the film.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intonation (cách phát âm, nhấn giọng) là chìa khóa để hiểu ý thực. Khi lời nói tích cực nhưng giọng nói thể hiện nghi ngờ, đó là sarcasm (mỉa mai). Đáp án B chính xác vì nó nhận ra sự mâu thuẫn giữa lời nói và giọng nói. Các đáp án khác không giải thích được sự không phù hợp này."
+    },
+    {
+      "question_text": "The author's nuanced treatment of the historical event avoided simplistic judgments. Which aspect of the text does this describe?",
+      "option_a": "The use of complex vocabulary and sentence structures.",
+      "option_b": "The attention to subtle details and multiple perspectives.",
+      "option_c": "The length and comprehensiveness of the narrative.",
+      "option_d": "The emotional appeal to readers' sympathies.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nuanced có nghĩa là có nhiều sắc thái tinh tế, không đơn giản. Khi tác giả có 'nuanced treatment', điều đó có nghĩa là họ chú ý đến các chi tiết tinh tế và xem xét nhiều góc độ khác nhau, tránh những phán xét đơn giản. Đáp án B là chính xác. Đáp án A nói về từ vựng, C nói về độ dài, D nói về cảm xúc - đều không phản ánh ý nghĩa của nuanced."
+    },
+    {
+      "question_text": "The politician's speech contained several veiled references to his opponent's past mistakes. What does 'veiled' imply about these references?",
+      "option_a": "They were completely hidden and no one understood them.",
+      "option_b": "They were direct accusations stated clearly and explicitly.",
+      "option_c": "They were concealed or disguised rather than openly stated.",
+      "option_d": "They were supported by documentary evidence.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Veiled (che giấu, ẩn giấu) có nghĩa là không được thể hiện rõ ràng mà được che đậy. 'Veiled references' không phải là những lời chỉ trích trực tiếp mà là những gợi ý tinh tế, được che giấu dưới hình thức khác. Đáp án C chính xác. Đáp án A sai vì 'veiled' không có nghĩa là hoàn toàn ẩn, B sai vì nó trái ngược với ý nghĩa của veiled, D không liên quan."
+    },
+    {
+      "question_text": "Her disparaging comments about the project made the team feel undervalued. What was the likely effect of her words?",
+      "option_a": "The team felt motivated to improve their work.",
+      "option_b": "The team felt respected and appreciated.",
+      "option_c": "The team felt disrespected and demoralized.",
+      "option_d": "The team felt indifferent to her opinions.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Disparaging (xem thường, hạ thấp) có nghĩa là thể hiện sự không tôn trọng hoặc coi thường. Khi ai đó đưa ra những bình luận disparaging, họ đang xem thường công việc của người khác. Đáp án C chính xác vì disparaging comments sẽ làm cho mọi người cảm thấy bị xem thường và mất tinh thần. Các đáp án khác không phản ánh tác động tiêu cực của disparaging."
+    },
+    {
+      "question_text": "After the argument, she adopted a conciliatory tone to rebuild the relationship. What was her intention?",
+      "option_a": "To continue the conflict and prove her point.",
+      "option_b": "To ignore the disagreement and move on.",
+      "option_c": "To placate the other person and reduce tension.",
+      "option_d": "To demonstrate her superiority in the debate.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Conciliatory (hòa giải, làm dịu bớt mâu thuẫn) có nghĩa là nhằm mục đích làm hòa bình hoặc giảm căng thẳng. Khi ai đó sử dụng 'conciliatory tone', họ đang cố gắng làm dịu bớt tình hình và xin lỗi. Đáp án C chính xác. Đáp án A trái ngược hoàn toàn, B không thể hiện sự chủ động, D không liên quan đến conciliatory."
+    },
+    {
+      "question_text": "The journalist's acerbic wit in the article made readers laugh, but some found it unnecessarily harsh. What does 'acerbic' reveal about the tone?",
+      "option_a": "It was gentle and sympathetic.",
+      "option_b": "It was sharp, biting, and somewhat bitter.",
+      "option_c": "It was neutral and objective.",
+      "option_d": "It was emotional and sentimental.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Acerbic (cay đắng, sắc sảo) có nghĩa là sharp and forthright, đặc biệt là trong cách nói; bitter hoặc sarcastic. Acerbic wit là sự hài hước sắc sảo, có tính chất chế giễu. Đáp án B chính xác vì nó mô tả đúng bản chất của acerbic - sharp, biting, và bitter. Các đáp án khác không phản ánh tính chất sắc sảo và cay đắng của acerbic."
+    },
+    {
+      "question_text": "When the interviewer asked, 'Don't you think this policy is obviously beneficial?', she was asking a loaded question. Why is this problematic?",
+      "option_a": "The question is too long and complicated.",
+      "option_b": "The question contains an implicit assumption that presupposes agreement.",
+      "option_c": "The question requires too much background knowledge.",
+      "option_d": "The question is not related to the job position.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Loaded question (câu hỏi chứa đựng giả định hoặc thiên kiến) là câu hỏi được thiết kế để dẫn dắt câu trả lời theo hướng mong muốn. Câu hỏi 'Don't you think this policy is obviously beneficial?' chứa giả định rằng chính sách này rõ ràng là có lợi, dẫn dắt người trả lời phải đồng ý. Đáp án B chính xác. Các đáp án khác không giải thích được vấn đề cơ bản của loaded question."
+    }
+  ]
+}

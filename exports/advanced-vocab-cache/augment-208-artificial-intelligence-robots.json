@@ -1,0 +1,405 @@
+{
+  "words": [
+    {
+      "word": "algorithmic opacity",
+      "pronunciation": "/ˌælɡərɪðmɪk oʊˈpæsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính không minh bạch của thuật toán; khó hiểu cơ chế hoạt động của hệ thống AI do độ phức tạp",
+      "definition_en": "the lack of transparency in how algorithms make decisions, making it difficult to understand their reasoning",
+      "level": "C2",
+      "synonyms": [
+        "black box problem",
+        "interpretability gap"
+      ],
+      "antonyms": [
+        "algorithmic transparency",
+        "explainability"
+      ],
+      "example_sentence": "The algorithmic opacity of credit-scoring systems has raised serious concerns among consumer advocacy groups and regulators."
+    },
+    {
+      "word": "anthropomorphize",
+      "pronunciation": "/ˌænθrəpəˈmɔːrfaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "gán các đặc tính con người cho máy móc hoặc vật thể không phải con người; coi máy như có ý thức",
+      "definition_en": "to attribute human characteristics, emotions, or intentions to non-human entities such as machines or AI systems",
+      "level": "C1",
+      "synonyms": [
+        "personify",
+        "humanize"
+      ],
+      "antonyms": [
+        "objectify",
+        "dehumanize"
+      ],
+      "example_sentence": "Users tend to anthropomorphize chatbots, expecting them to understand emotions and intentions beyond their actual capabilities."
+    },
+    {
+      "word": "epistemic injustice",
+      "pronunciation": "/ɪˌpɪsˈtemɪk ɪnˈdʒʌstɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bất công trong lĩnh vực tri thức; khi một nhóm người bị coi là không đáng tin cậy hoặc không có khả năng nhận thức",
+      "definition_en": "a form of injustice where certain groups are systematically excluded from knowledge production or their testimony is unfairly discredited",
+      "level": "C2",
+      "synonyms": [
+        "testimonial injustice",
+        "hermeneutical injustice"
+      ],
+      "antonyms": [
+        "epistemic justice",
+        "cognitive inclusion"
+      ],
+      "example_sentence": "Algorithmic bias can perpetuate epistemic injustice by systematically devaluing the experiences and knowledge of marginalized communities."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm tệ hơn, làm trầm trọng hơn; tăng cường mức độ của vấn đề",
+      "definition_en": "to make a problem, situation, or condition worse or more severe",
+      "level": "C1",
+      "synonyms": [
+        "aggravate",
+        "worsen",
+        "intensify"
+      ],
+      "antonyms": [
+        "alleviate",
+        "mitigate"
+      ],
+      "example_sentence": "Poorly designed AI systems can exacerbate existing social inequalities by amplifying historical biases in training data."
+    },
+    {
+      "word": "instrumental rationality",
+      "pronunciation": "/ˌɪnstrəˈmentəl ræʃəˈnæləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lý trí công cụ; tập trung vào hiệu quả đạt mục đích mà không xem xét giá trị đạo đức",
+      "definition_en": "reasoning focused solely on the efficiency of means to achieve predetermined ends, without questioning the ethical value of those ends",
+      "level": "C2",
+      "synonyms": [
+        "means-end rationality",
+        "technical rationality"
+      ],
+      "antonyms": [
+        "substantive rationality",
+        "value rationality"
+      ],
+      "example_sentence": "Critics argue that purely instrumental rationality in AI development prioritizes profit and efficiency over human welfare and social justice."
+    },
+    {
+      "word": "obfuscate",
+      "pronunciation": "/ˈɒbfʌskeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "che giấu, làm mờ đi; cố tình làm cho điều gì trở nên khó hiểu",
+      "definition_en": "to deliberately make something unclear or difficult to understand, often to conceal the truth",
+      "level": "C1",
+      "synonyms": [
+        "obscure",
+        "obumbrate",
+        "cloud"
+      ],
+      "antonyms": [
+        "clarify",
+        "elucidate"
+      ],
+      "example_sentence": "Some technology companies obfuscate their algorithmic decision-making processes to protect proprietary interests, hindering public accountability."
+    },
+    {
+      "word": "proliferate",
+      "pronunciation": "/prəˈlɪfəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng nhanh về số lượng; lan rộng, phát triển nhanh chóng",
+      "definition_en": "to increase rapidly in number or amount; to spread or multiply extensively",
+      "level": "C1",
+      "synonyms": [
+        "multiply",
+        "expand",
+        "burgeon"
+      ],
+      "antonyms": [
+        "diminish",
+        "decline"
+      ],
+      "example_sentence": "As AI systems proliferate across industries, concerns about job displacement and worker retraining have become increasingly urgent."
+    },
+    {
+      "word": "reductionist",
+      "pronunciation": "/rɪˈdʌkʃənɪst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chủ nghĩa khoa học giản lược; coi hiện tượng phức tạp chỉ là tổng hợp của các phần tử đơn giản",
+      "definition_en": "an approach that explains complex phenomena by reducing them to simpler components, often oversimplifying nuanced issues",
+      "level": "C1",
+      "synonyms": [
+        "simplistic",
+        "reductive",
+        "mechanistic"
+      ],
+      "antonyms": [
+        "holistic",
+        "systemic"
+      ],
+      "example_sentence": "A reductionist view of AI ethics that focuses only on technical fixes ignores the broader social and political dimensions of algorithmic harm."
+    },
+    {
+      "word": "stakeholder engagement",
+      "pronunciation": "/ˈsteɪkhoʊldər ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tham gia của các bên liên quan; quá trình lắng nghe và hợp tác với những người bị ảnh hưởng bởi quyết định",
+      "definition_en": "the process of involving and consulting with all parties affected by a decision or policy to ensure their voices are heard",
+      "level": "C1",
+      "synonyms": [
+        "participatory design",
+        "inclusive consultation"
+      ],
+      "antonyms": [
+        "top-down imposition",
+        "unilateral decision-making"
+      ],
+      "example_sentence": "Meaningful stakeholder engagement with affected communities is essential for developing AI systems that serve the public interest."
+    },
+    {
+      "word": "tacit knowledge",
+      "pronunciation": "/ˈtæsɪt ˈnɒlɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kiến thức ngầm định; những hiểu biết khó diễn đạt bằng lời, học được qua kinh nghiệm",
+      "definition_en": "knowledge that is difficult to articulate or codify, acquired through experience and intuition rather than explicit instruction",
+      "level": "C1",
+      "synonyms": [
+        "implicit knowledge",
+        "experiential knowledge"
+      ],
+      "antonyms": [
+        "explicit knowledge",
+        "codified knowledge"
+      ],
+      "example_sentence": "Human workers possess tacit knowledge about workplace dynamics that AI systems struggle to replicate, highlighting the irreplaceable value of human judgment."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh là đúng; bảo vệ danh dự, chứng tỏ vô tội",
+      "definition_en": "to prove or justify that someone or something is right, valid, or blameless, especially after being questioned or criticized",
+      "level": "C1",
+      "synonyms": [
+        "justify",
+        "exonerate",
+        "validate"
+      ],
+      "antonyms": [
+        "condemn",
+        "incriminate"
+      ],
+      "example_sentence": "Recent studies vindicate concerns raised by AI ethics researchers about the discriminatory impacts of facial recognition technology on people of color."
+    },
+    {
+      "word": "asymmetric information",
+      "pronunciation": "/ˌæsɪˈmetrɪk ɪnfərˈmeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thông tin không đối xứng; tình trạng một bên biết nhiều hơn bên kia trong giao dịch hoặc quyết định",
+      "definition_en": "a situation where one party in a transaction or interaction has more or better information than the other, creating an imbalance of power",
+      "level": "C2",
+      "synonyms": [
+        "information asymmetry",
+        "knowledge gap"
+      ],
+      "antonyms": [
+        "symmetric information",
+        "perfect information"
+      ],
+      "example_sentence": "The asymmetric information between AI developers and users regarding algorithmic decision-making processes undermines informed consent and user autonomy."
+    },
+    {
+      "word": "deontological",
+      "pronunciation": "/ˌdiːɒntəˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến đạo đức nghĩa vụ; dựa trên nguyên tắc và quy tắc đúng sai tuyệt đối",
+      "definition_en": "relating to ethical theories that judge actions based on their adherence to rules and duties, regardless of consequences",
+      "level": "C2",
+      "synonyms": [
+        "duty-based",
+        "rule-based"
+      ],
+      "antonyms": [
+        "consequentialist",
+        "utilitarian"
+      ],
+      "example_sentence": "A deontological approach to AI ethics emphasizes that certain actions, such as violating privacy rights, are inherently wrong regardless of potential benefits."
+    },
+    {
+      "word": "distributional harm",
+      "pronunciation": "/ˌdɪstrɪˈbjuːʃənəl hɑːrm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tổn hại phân phối; khi lợi ích và gánh nặng của AI được phân chia không công bằng giữa các nhóm",
+      "definition_en": "harm that results from unfair allocation of benefits and burdens of AI systems across different social groups",
+      "level": "C2",
+      "synonyms": [
+        "allocative injustice",
+        "unfair distribution"
+      ],
+      "antonyms": [
+        "equitable distribution",
+        "fair allocation"
+      ],
+      "example_sentence": "Distributional harm occurs when AI-driven hiring systems disproportionately benefit privileged groups while excluding marginalized populations from economic opportunities."
+    },
+    {
+      "word": "hermeneutic injustice",
+      "pronunciation": "/ˌhɜːrməˈnjuːtɪk ɪnˈdʒʌstɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bất công giải thích; khi một nhóm người thiếu các khái niệm để diễn đạt trải nghiệm của họ",
+      "definition_en": "injustice that occurs when a group lacks the conceptual resources to understand and articulate their own experiences, often due to systemic exclusion",
+      "level": "C2",
+      "synonyms": [
+        "interpretive injustice",
+        "conceptual deprivation"
+      ],
+      "antonyms": [
+        "hermeneutic justice",
+        "interpretive inclusion"
+      ],
+      "example_sentence": "Hermeneutic injustice in AI discourse occurs when affected communities lack the technical vocabulary to challenge algorithmic decisions that harm them."
+    },
+    {
+      "word": "precautionary principle",
+      "pronunciation": "/prɪˈkɔːʃəneri ˈprɪnsəpəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguyên tắc phòng ngừa; khi có nguy hiểm tiềm ẩn, cần hành động cẩn trọng ngay cả khi chưa có bằng chứng đầy đủ",
+      "definition_en": "an ethical principle stating that when an activity raises threats of harm, precautionary measures should be taken even if cause-and-effect relationships are not fully established",
+      "level": "C2",
+      "synonyms": [
+        "precaution",
+        "preventive approach"
+      ],
+      "antonyms": [
+        "permissive approach",
+        "laissez-faire"
+      ],
+      "example_sentence": "Advocates for responsible AI development invoke the precautionary principle to argue for strict regulation of high-risk systems before widespread deployment."
+    },
+    {
+      "word": "sociotechnical system",
+      "pronunciation": "/ˌsoʊsioʊˈteknɪkəl ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống xã hội-kỹ thuật; sự tương tác phức tạp giữa công nghệ, con người, tổ chức và xã hội",
+      "definition_en": "an integrated system that encompasses both technological components and social elements, recognizing that technology and society are mutually shaping",
+      "level": "C2",
+      "synonyms": [
+        "socio-technical assemblage",
+        "human-technology ecosystem"
+      ],
+      "antonyms": [
+        "purely technical system",
+        "technology-neutral approach"
+      ],
+      "example_sentence": "Understanding AI as a sociotechnical system reveals how algorithmic bias emerges not just from flawed code but from organizational practices and historical inequalities."
+    },
+    {
+      "word": "value alignment",
+      "pronunciation": "/ˈvæljuː əˈlaɪnmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự phù hợp giá trị; khi mục tiêu và hành động của AI phù hợp với giá trị và mục tiêu của con người",
+      "definition_en": "the process of ensuring that AI systems' objectives and behaviors are consistent with human values and societal norms",
+      "level": "C1",
+      "synonyms": [
+        "value congruence",
+        "goal alignment"
+      ],
+      "antonyms": [
+        "value misalignment",
+        "goal divergence"
+      ],
+      "example_sentence": "Achieving value alignment in AI systems requires ongoing dialogue between technologists, ethicists, and diverse communities to clarify whose values are prioritized."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which term best describes the difficulty in understanding how a complex AI system arrives at its decisions?",
+      "option_a": "Algorithmic opacity",
+      "option_b": "Computational efficiency",
+      "option_c": "Algorithmic scalability",
+      "option_d": "Algorithmic precision",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Algorithmic opacity (A) chỉ tính không minh bạch của thuật toán - khó hiểu cơ chế hoạt động. B, C, D đều liên quan đến hiệu suất kỹ thuật, không phải vấn đề về sự hiểu biết."
+    },
+    {
+      "question_text": "When users treat chatbots as if they have genuine emotions and consciousness, they are engaging in what behavior?",
+      "option_a": "Objectification",
+      "option_b": "Anthropomorphization",
+      "option_c": "Dehumanization",
+      "option_d": "Mechanization",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Anthropomorphize (B) có nghĩa là gán các đặc tính con người cho máy móc. A là ngược lại, C là coi con người như vật, D là làm cho cơ học."
+    },
+    {
+      "question_text": "The concept of _____ refers to the systematic exclusion of certain groups from knowledge production and the devaluation of their testimony in society.",
+      "option_a": "Distributional harm",
+      "option_b": "Hermeneutic injustice",
+      "option_c": "Epistemic injustice",
+      "option_d": "Allocative injustice",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Epistemic injustice (C) là bất công trong lĩnh vực tri thức, bao gồm cả hermeneutic injustice. B chỉ một loại cụ thể, A và D liên quan đến phân phối lợi ích/gánh nặng."
+    },
+    {
+      "question_text": "Which principle suggests that precautionary measures should be taken against potential AI risks even when scientific evidence is incomplete?",
+      "option_a": "Instrumental rationality",
+      "option_b": "Precautionary principle",
+      "option_c": "Deontological ethics",
+      "option_d": "Value alignment",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Precautionary principle (B) chính là nguyên tắc hành động cẩn trọng trước nguy hiểm tiềm ẩn. A là lý trí công cụ, C là đạo đức nghĩa vụ, D là sự phù hợp giá trị."
+    },
+    {
+      "question_text": "A situation where AI developers possess significantly more information about algorithmic decision-making than users exemplifies _____ in the human-AI relationship.",
+      "option_a": "Symmetric information",
+      "option_b": "Asymmetric information",
+      "option_c": "Perfect information",
+      "option_d": "Transparent information",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Asymmetric information (B) là tình trạng một bên biết nhiều hơn bên kia. A, C, D đều chỉ tình trạng thông tin cân bằng hoặc đầy đủ."
+    },
+    {
+      "question_text": "The tendency to view AI ethics problems through only technical solutions, ignoring social and political dimensions, reflects a _____ approach.",
+      "option_a": "Holistic",
+      "option_b": "Systemic",
+      "option_c": "Reductionist",
+      "option_d": "Integrative",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Reductionist (C) là cách tiếp cận giản lược, chỉ tập trung vào các phần tử đơn giản. A, B, D đều là cách tiếp cận toàn diện, xem xét nhiều khía cạnh."
+    },
+    {
+      "question_text": "Understanding AI systems as _____ requires recognizing that technology and society mutually shape each other, rather than treating technology as neutral.",
+      "option_a": "Purely technical systems",
+      "option_b": "Sociotechnical systems",
+      "option_c": "Autonomous entities",
+      "option_d": "Deterministic processes",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sociotechnical systems (B) là hệ thống tích hợp công nghệ và xã hội. A, C, D đều coi công nghệ là độc lập hoặc trung lập với xã hội."
+    },
+    {
+      "question_text": "Recent research has _____ the concerns of AI ethicists about facial recognition bias, providing empirical evidence that these systems disproportionately misidentify people of color.",
+      "option_a": "Obfuscated",
+      "option_b": "Exacerbated",
+      "option_c": "Vindicated",
+      "option_d": "Anthropomorphized",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Vindicate (C) có nghĩa là chứng minh là đúng, bảo vệ danh dự. A là che giấu, B là làm tệ hơn, D là gán tính con người - không phù hợp ngữ cảnh."
+    }
+  ]
+}

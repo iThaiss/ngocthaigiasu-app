@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reading Preview</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --primary: #2563eb;
+      --amber: #d97706;
+      --rose: #e11d48;
+      --emerald: #059669;
+      --sky: #0284c7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 18px 56px; }
+    .header { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .icon { width: 42px; height: 42px; border-radius: 14px; background: #fef3c7; color: var(--amber); display: grid; place-items: center; font-weight: 800; }
+    h1 { font-size: 26px; margin: 0; letter-spacing: 0; }
+    p { margin: 0; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-bottom: 16px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
+    .stat { padding: 14px; display: flex; align-items: center; gap: 10px; }
+    .stat b { display: block; font-size: 20px; line-height: 1.1; }
+    .tabs { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin-bottom: 14px; }
+    .tab { padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: white; }
+    .tab.active { border-color: rgba(37,99,235,.45); background: rgba(37,99,235,.06); color: var(--primary); }
+    .tab strong { display: block; font-size: 15px; }
+    .tab span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .filters { display: flex; gap: 10px; margin-bottom: 28px; }
+    .search { flex: 1; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: white; color: var(--muted); }
+    .pill { padding: 9px 13px; border: 1px solid var(--line); border-radius: 10px; background: white; font-size: 13px; }
+    .pill.active { background: var(--text); color: white; border-color: var(--text); }
+    section { margin-top: 28px; }
+    .section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-bottom: 12px; }
+    h2 { font-size: 16px; margin: 0; }
+    .badge { display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 999px; background: #f1f5f9; color: #475569; font-size: 11px; font-weight: 700; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .passage { padding: 15px; min-height: 168px; display: flex; flex-direction: column; gap: 12px; }
+    .passage h3 { margin: 0; font-size: 15px; line-height: 1.35; }
+    .meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
+    .level { background: rgba(2,132,199,.12); color: var(--sky); }
+    .q8 { border: 1px solid rgba(37,99,235,.35); color: var(--primary); background: white; }
+    .q10 { border: 1px solid rgba(225,29,72,.35); color: var(--rose); background: white; }
+    .progress { height: 6px; border-radius: 99px; background: #e2e8f0; overflow: hidden; }
+    .progress > div { height: 100%; background: var(--emerald); width: 82%; }
+    .practice { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(380px,.95fr); gap: 18px; margin-top: 34px; }
+    .panel { padding: 18px; }
+    .passage-text { max-height: 620px; overflow: auto; font-size: 14px; line-height: 1.78; }
+    .para { margin-bottom: 14px; }
+    .pno { font-size: 11px; font-weight: 800; background: #f1f5f9; color: var(--muted); border-radius: 6px; padding: 2px 6px; margin-right: 8px; }
+    .question-card { padding: 15px; margin-bottom: 12px; }
+    .qnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+    .qnum { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: rgba(2,132,199,.1); color: var(--sky); font-size: 12px; font-weight: 800; }
+    .option { border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px; font-size: 13px; margin-top: 7px; background: white; }
+    .option.correct { border-color: rgba(5,150,105,.45); background: rgba(5,150,105,.09); color: #047857; }
+    .option.wrong { border-color: rgba(225,29,72,.45); background: rgba(225,29,72,.09); color: #be123c; }
+    .result { display: grid; grid-template-columns: 180px 1fr auto; align-items: center; gap: 14px; padding: 14px; border: 2px solid rgba(5,150,105,.35); margin-bottom: 12px; }
+    button { border: 0; background: var(--primary); color: white; padding: 10px 14px; border-radius: 10px; font-weight: 700; }
+    @media (max-width: 880px) {
+      .stats, .tabs, .grid { grid-template-columns: 1fr; }
+      .filters { flex-wrap: wrap; }
+      .practice { grid-template-columns: 1fr; }
+      .result { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="header">
+      <div class="brand">
+        <div class="icon">R</div>
+        <div>
+          <h1>Đọc hiểu Tiếng Anh</h1>
+          <p class="muted">Luyện trọn bài 8 câu và 10 câu như đề thật.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="card stat"><span>📄</span><p><b>1</b><span class="muted">Bài 8 câu</span></p></div>
+      <div class="card stat"><span>🎯</span><p><b>1</b><span class="muted">Bài 10 câu</span></p></div>
+      <div class="card stat"><span>✅</span><p><b>0</b><span class="muted">Đã hoàn thành</span></p></div>
+      <div class="card stat"><span>🏆</span><p><b>-</b><span class="muted">Điểm TB</span></p></div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active"><strong>Tất cả</strong><span>Toàn bộ bài đọc</span></div>
+      <div class="tab"><strong>8 câu</strong><span>Bài đọc chuẩn câu 23-30</span></div>
+      <div class="tab"><strong>10 câu</strong><span>Bài đọc chuẩn câu 31-40</span></div>
+    </div>
+
+    <div class="filters">
+      <div class="search">Tìm bài đọc hoặc chủ đề...</div>
+      <div class="pill active">Tất cả</div>
+      <div class="pill">B1</div>
+      <div class="pill">B2</div>
+      <div class="pill">C1</div>
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Luyện hôm nay</h2>
+          <p class="muted">Ưu tiên bài chưa làm hoặc bài cần làm lại vì điểm dưới 75%.</p>
+        </div>
+        <span class="badge">2 bài</span>
+      </div>
+      <div class="grid">
+        <div class="card passage">
+          <div>
+            <h3>Family Estrangement and Emotional Well-being</h3>
+            <p class="muted">Sức khỏe tinh thần</p>
+          </div>
+          <div class="meta"><span class="badge level">B2</span><span class="badge q8">8 câu</span><span class="badge">330 từ</span><span class="badge">11 phút</span></div>
+        </div>
+        <div class="card passage">
+          <div>
+            <h3>Fast Fashion and Its Hidden Costs</h3>
+            <p class="muted">Thời trang & Lối sống</p>
+          </div>
+          <div class="meta"><span class="badge level">B2</span><span class="badge q10">10 câu</span><span class="badge">370 từ</span><span class="badge">14 phút</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Reading 8 câu</h2>
+          <p class="muted">Tập trung detail, vocabulary, reference, paraphrase và paragraph location.</p>
+        </div>
+        <span class="badge">1 bài</span>
+      </div>
+      <div class="grid">
+        <div class="card passage">
+          <h3>Family Estrangement and Emotional Well-being</h3>
+          <p class="muted">Mental Health & Well-being</p>
+          <div class="meta"><span class="badge level">B2</span><span class="badge q8">8 câu</span><span class="badge">11 phút</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Reading 10 câu</h2>
+          <p class="muted">Có summary, inference, sentence insertion và logic toàn bài.</p>
+        </div>
+        <span class="badge">1 bài</span>
+      </div>
+      <div class="grid">
+        <div class="card passage">
+          <h3>Fast Fashion and Its Hidden Costs</h3>
+          <p class="muted">Fashion & Lifestyle</p>
+          <div class="meta"><span class="badge level">B2</span><span class="badge q10">10 câu</span><span class="badge">14 phút</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice">
+      <div class="card panel">
+        <h2>Preview màn làm bài</h2>
+        <p class="muted">Bên trái là passage, bên phải là câu hỏi. Học sinh chọn đáp án tự do, nộp một lần, rồi mới xem review.</p>
+        <div class="passage-text">
+          <p class="para"><span class="pno">P1</span>Over the past decade, fast fashion has transformed the global clothing industry by making trendy garments cheaper and more accessible than ever before. Brands release thousands of new designs each week, encouraging consumers to purchase clothing at an unprecedented rate. Although this business model has generated enormous profits and satisfied demand for inexpensive fashion, environmental organisations increasingly warn that the industry’s hidden costs are far more severe than many shoppers realise. Critics argue that companies promoting constant consumption have normalised a disposable culture in which clothing is treated as temporary rather than durable.</p>
+          <p class="para"><span class="pno">P2</span>One of the most alarming concerns involves the enormous quantity of waste generated by the industry. Millions of garments are discarded annually, many of which end up in landfills or are incinerated after only limited use. Environmental researchers explain that synthetic fabrics frequently contain plastic-based materials that shed microfibres into rivers and oceans during production and washing. In addition, textile manufacturing consumes vast amounts of water and energy while also relying heavily on chemical dyes capable of contaminating local ecosystems. As production accelerates to satisfy rapidly changing trends, the environmental burden associated with clothing consumption continues to intensify worldwide.</p>
+          <p class="para"><span class="pno">P3</span>Labour practices within the fast fashion supply chain have also attracted growing scrutiny. To maintain extremely low prices, some corporations depend on factories where workers endure exhausting schedules, inadequate wages, and unsafe conditions. Investigations have revealed that certain suppliers operate under intense pressure to produce garments at a remarkable speed, leaving employees vulnerable to exploitation. Although many major brands publicly promote ethical standards and sustainability initiatives, activists argue that transparency remains insufficient because companies rarely disclose the full environmental and social impact of their manufacturing processes.</p>
+          <p class="para"><span class="pno">P4</span>In response to these concerns, environmental groups are urging consumers to reconsider their purchasing habits and support more sustainable alternatives. Experts recommend buying fewer items, choosing higher-quality clothing, repairing garments instead of discarding them, and supporting companies with transparent supply chains. While individual choices alone may not completely transform the industry, campaigners believe public awareness and stricter regulations could eventually pressure corporations to adopt more responsible production practices. Without substantial reform, however, the long-term environmental consequences of fast fashion may continue escalating at a deeply troubling pace.</p>
+        </div>
+      </div>
+      <div>
+        <div class="card result">
+          <div><span class="muted">Kết quả</span><h1>8/10</h1><p class="muted">80% · 12:40</p></div>
+          <div><span class="badge">Summary: 1/2</span> <span class="badge">Inference: 2/2</span> <span class="badge">Vocab: 1/1</span></div>
+          <button>Làm lại</button>
+        </div>
+        <div class="card panel">
+          <div class="qnav">
+            <div class="qnum">1</div><div class="qnum">2</div><div class="qnum">3</div><div class="qnum">4</div><div class="qnum">5</div>
+            <div class="qnum">6</div><div class="qnum">7</div><div class="qnum">8</div><div class="qnum">9</div><div class="qnum">10</div>
+          </div>
+          <div class="question-card card">
+            <p><b>1.</b> Which of the following best summarises paragraph 1?</p>
+            <div class="option">A. International retailers rapidly expand seasonal collections...</div>
+            <div class="option wrong">B. Consumer culture rarely treats outfits as short-lived items...</div>
+            <div class="option correct">C. Mass-market apparel encourages excessive purchasing despite ecological concerns.</div>
+            <div class="option">D. Manufacturing companies continue earning substantial revenue...</div>
+            <p class="muted" style="margin-top:10px">Review: Paragraph 1 introduces cheap clothing, excessive consumption, and hidden environmental costs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

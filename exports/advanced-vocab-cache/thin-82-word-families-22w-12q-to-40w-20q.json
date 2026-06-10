@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "unprecedented",
+      "pronunciation": "/ʌnˈpresɪdentɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chưa từng xảy ra trước đây, không có tiền lệ",
+      "definition_en": "never done or known before; having no previous example",
+      "level": "B2",
+      "synonyms": [
+        "unparalleled",
+        "novel",
+        "extraordinary"
+      ],
+      "antonyms": [
+        "common",
+        "ordinary"
+      ],
+      "example_sentence": "The pandemic caused unprecedented economic disruption across all sectors of society."
+    },
+    {
+      "word": "unsubstantiated",
+      "pronunciation": "/ʌnsəbˈstænʃieɪtɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không có bằng chứng, không được chứng minh",
+      "definition_en": "not supported by evidence or proof",
+      "level": "B2",
+      "synonyms": [
+        "unproven",
+        "unfounded",
+        "baseless"
+      ],
+      "antonyms": [
+        "verified",
+        "proven"
+      ],
+      "example_sentence": "The journalist refused to publish the unsubstantiated claims about the politician."
+    },
+    {
+      "word": "incoherent",
+      "pronunciation": "/ɪnkəʊˈhɪərənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không mạch lạc, không rõ ràng, không liên kết logic",
+      "definition_en": "unclear and difficult to understand; lacking logical connection",
+      "level": "B2",
+      "synonyms": [
+        "disjointed",
+        "unclear",
+        "muddled"
+      ],
+      "antonyms": [
+        "coherent",
+        "clear"
+      ],
+      "example_sentence": "His incoherent speech made it difficult for the audience to follow his main argument."
+    },
+    {
+      "word": "unwarranted",
+      "pronunciation": "/ʌnˈwɒrəntɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không có lý do chính đáng, không cần thiết, vô căn cứ",
+      "definition_en": "not justified or authorized; uncalled for",
+      "level": "B2",
+      "synonyms": [
+        "unjustified",
+        "uncalled-for",
+        "undeserved"
+      ],
+      "antonyms": [
+        "justified",
+        "warranted"
+      ],
+      "example_sentence": "The teacher's unwarranted criticism of the student's work damaged her confidence."
+    },
+    {
+      "word": "disreputable",
+      "pronunciation": "/dɪsˈrepjətəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có danh tiếng xấu, không đáng tin cậy, khét tiếng",
+      "definition_en": "not respectable; having a bad reputation",
+      "level": "B2",
+      "synonyms": [
+        "dishonorable",
+        "shameful",
+        "notorious"
+      ],
+      "antonyms": [
+        "reputable",
+        "honorable"
+      ],
+      "example_sentence": "The company's disreputable practices led to its eventual bankruptcy and legal prosecution."
+    },
+    {
+      "word": "unscrupulous",
+      "pronunciation": "/ʌnˈskruːpjələs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vô đạo đức, không có nguyên tắc, lợi dụng",
+      "definition_en": "dishonest and willing to do anything to succeed",
+      "level": "B2",
+      "synonyms": [
+        "unprincipled",
+        "dishonest",
+        "unethical"
+      ],
+      "antonyms": [
+        "scrupulous",
+        "principled"
+      ],
+      "example_sentence": "Unscrupulous businessmen exploited vulnerable consumers through misleading advertising."
+    },
+    {
+      "word": "inaccurate",
+      "pronunciation": "/ɪnˈækjərət/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không chính xác, sai lệch, không đúng",
+      "definition_en": "not correct or precise",
+      "level": "C1",
+      "synonyms": [
+        "incorrect",
+        "imprecise",
+        "wrong"
+      ],
+      "antonyms": [
+        "accurate",
+        "precise"
+      ],
+      "example_sentence": "The inaccurate data in the report led to incorrect conclusions about market trends."
+    },
+    {
+      "word": "dismantle",
+      "pronunciation": "/dɪsˈmæntl/",
+      "part_of_speech": "verb",
+      "definition_vi": "tháo dỡ, phá bỏ, loại bỏ từng phần",
+      "definition_en": "to take apart or destroy a system or structure gradually",
+      "level": "B2",
+      "synonyms": [
+        "disassemble",
+        "demolish",
+        "abolish"
+      ],
+      "antonyms": [
+        "assemble",
+        "construct"
+      ],
+      "example_sentence": "The government decided to dismantle the outdated regulatory framework to promote innovation."
+    },
+    {
+      "word": "unequivocal",
+      "pronunciation": "/ʌnɪˈkwɪvəkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "rõ ràng, không có chỗ nhập nhằng, tuyệt đối",
+      "definition_en": "clear and unambiguous; leaving no doubt",
+      "level": "B2",
+      "synonyms": [
+        "unambiguous",
+        "clear",
+        "definite"
+      ],
+      "antonyms": [
+        "ambiguous",
+        "equivocal"
+      ],
+      "example_sentence": "The scientist provided unequivocal evidence that climate change is caused by human activity."
+    },
+    {
+      "word": "dissuade",
+      "pronunciation": "/dɪˈsweɪd/",
+      "part_of_speech": "verb",
+      "definition_vi": "thuyết phục ai không làm gì, ngăn cản",
+      "definition_en": "to persuade someone not to do something",
+      "level": "B2",
+      "synonyms": [
+        "discourage",
+        "deter",
+        "persuade against"
+      ],
+      "antonyms": [
+        "persuade",
+        "encourage"
+      ],
+      "example_sentence": "Despite warnings, nothing could dissuade her from pursuing her ambitious career goals."
+    },
+    {
+      "word": "indefensible",
+      "pronunciation": "/ɪndɪˈfensəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thể bảo vệ, không thể biện minh, không chính đáng",
+      "definition_en": "unable to be justified or defended",
+      "level": "B2",
+      "synonyms": [
+        "unjustifiable",
+        "inexcusable",
+        "indefensible"
+      ],
+      "antonyms": [
+        "defensible",
+        "justifiable"
+      ],
+      "example_sentence": "The company's decision to ignore safety regulations was indefensible and resulted in severe penalties."
+    },
+    {
+      "word": "unpalatable",
+      "pronunciation": "/ʌnˈpælətəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "khó chịu, không dễ chấp nhận, không thích hợp",
+      "definition_en": "unpleasant or unacceptable, especially when referring to ideas or truths",
+      "level": "B2",
+      "synonyms": [
+        "unpleasant",
+        "disagreeable",
+        "distasteful"
+      ],
+      "antonyms": [
+        "palatable",
+        "pleasant"
+      ],
+      "example_sentence": "The unpalatable truth about climate change forced policymakers to reconsider their environmental strategies."
+    },
+    {
+      "word": "disaffected",
+      "pronunciation": "/dɪsəˈfektɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mất lòng, không hài lòng, mất niềm tin",
+      "definition_en": "dissatisfied and no longer loyal or supportive",
+      "level": "B2",
+      "synonyms": [
+        "discontented",
+        "dissatisfied",
+        "alienated"
+      ],
+      "antonyms": [
+        "satisfied",
+        "loyal"
+      ],
+      "example_sentence": "Disaffected voters increasingly turned to alternative political parties in the recent election."
+    },
+    {
+      "word": "inept",
+      "pronunciation": "/ɪnˈept/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vụng về, không có kỹ năng, bất tài",
+      "definition_en": "lacking skill or competence; clumsy",
+      "level": "B2",
+      "synonyms": [
+        "incompetent",
+        "clumsy",
+        "unskilled"
+      ],
+      "antonyms": [
+        "competent",
+        "skilled"
+      ],
+      "example_sentence": "The inept handling of the crisis by management led to widespread criticism from stakeholders."
+    },
+    {
+      "word": "unmitigated",
+      "pronunciation": "/ʌnˈmɪtɪɡeɪtɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hoàn toàn, không được giảm nhẹ, tuyệt đối",
+      "definition_en": "absolute; not reduced or made less severe",
+      "level": "B2",
+      "synonyms": [
+        "absolute",
+        "complete",
+        "utter"
+      ],
+      "antonyms": [
+        "mitigated",
+        "partial"
+      ],
+      "example_sentence": "The natural disaster was an unmitigated catastrophe that devastated the entire region."
+    },
+    {
+      "word": "disclose",
+      "pronunciation": "/dɪsˈkləʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiết lộ, công khai, phát hiện",
+      "definition_en": "to reveal or make known something previously hidden",
+      "level": "C1",
+      "synonyms": [
+        "reveal",
+        "divulge",
+        "expose"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The company was required to disclose all financial information to comply with regulatory standards."
+    },
+    {
+      "word": "incapable",
+      "pronunciation": "/ɪnˈkeɪpəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không có khả năng, không thể làm được",
+      "definition_en": "unable to do something; lacking the necessary ability",
+      "level": "C1",
+      "synonyms": [
+        "unable",
+        "incompetent",
+        "unfit"
+      ],
+      "antonyms": [
+        "capable",
+        "able"
+      ],
+      "example_sentence": "The aging infrastructure proved incapable of handling the increased demand for services."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's decision to raise taxes without public consultation was widely criticized as _____ and authoritarian.",
+      "option_a": "unprecedented",
+      "option_b": "unwarranted",
+      "option_c": "incoherent",
+      "option_d": "disaffected",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Unwarranted (không có lý do chính đáng) phù hợp nhất vì nó mô tả một hành động không được biện minh. Unprecedented (chưa từng xảy ra) không phù hợp vì việc tăng thuế đã xảy ra trước đây. Incoherent (không mạch lạc) không liên quan. Disaffected (mất lòng) là tính từ mô tả cảm xúc của người dân, không phải hành động."
+    },
+    {
+      "question_text": "Which word best describes a person who is willing to use dishonest methods to achieve their goals?",
+      "option_a": "unscrupulous",
+      "option_b": "inept",
+      "option_c": "disaffected",
+      "option_d": "unequivocal",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Unscrupulous (vô đạo đức, không có nguyên tắc) là từ chính xác để mô tả người sẵn sàng dùng phương pháp bất chính. Inept (vụng về) chỉ thiếu kỹ năng. Disaffected (mất lòng) chỉ sự không hài lòng. Unequivocal (rõ ràng) là tính từ về sự rõ ràng, không liên quan."
+    },
+    {
+      "question_text": "The researcher's _____ findings were rejected by the peer review committee because they lacked sufficient evidence.",
+      "option_a": "unsubstantiated",
+      "option_b": "unprecedented",
+      "option_c": "unequivocal",
+      "option_d": "disreputable",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Unsubstantiated (không có bằng chứng) là từ đúng vì nó mô tả những phát hiện thiếu bằng chứng. Unprecedented (chưa từng xảy ra) không liên quan đến bằng chứng. Unequivocal (rõ ràng) mang nghĩa tích cực. Disreputable (khét tiếng) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The CEO's _____ speech confused the investors, who left the meeting without understanding the company's strategy.",
+      "option_a": "incoherent",
+      "option_b": "unwarranted",
+      "option_c": "disaffected",
+      "option_d": "inaccurate",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Incoherent (không mạch lạc, khó hiểu) là từ chính xác vì nó mô tả bài phát biểu gây nhầm lẫn. Unwarranted (không có lý do) không phù hợp. Disaffected (mất lòng) là tính từ mô tả cảm xúc. Inaccurate (không chính xác) không thể hiện được sự nhầm lẫn về cấu trúc."
+    },
+    {
+      "question_text": "Environmental activists tried to _____ the government from approving the controversial pipeline project.",
+      "option_a": "disclose",
+      "option_b": "dissuade",
+      "option_c": "dismantle",
+      "option_d": "incapable",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Dissuade (thuyết phục không làm gì) là động từ chính xác vì nó mô tả việc cố gắng ngăn cản quyết định. Disclose (tiết lộ) không phù hợp ngữ cảnh. Dismantle (tháo dỡ) không thích hợp. Incapable (không có khả năng) là tính từ, không phải động từ."
+    },
+    {
+      "question_text": "The company's _____ practices of exploiting workers and ignoring safety standards eventually led to its downfall.",
+      "option_a": "unprecedented",
+      "option_b": "unequivocal",
+      "option_c": "unscrupulous",
+      "option_d": "inaccurate",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Unscrupulous (vô đạo đức, không có nguyên tắc) mô tả chính xác những hành động không đạo đức. Unprecedented (chưa từng xảy ra) không phù hợp vì những hành vi này đã xảy ra trước. Unequivocal (rõ ràng) không liên quan. Inaccurate (không chính xác) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The witness's testimony was _____ and contradicted the physical evidence presented in court.",
+      "option_a": "inept",
+      "option_b": "incoherent",
+      "option_c": "inaccurate",
+      "option_d": "unpalatable",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Inaccurate (không chính xác) là từ chính xác vì nó mô tả lời khai mâu thuẫn với bằng chứng. Inept (vụng về) không phù hợp. Incoherent (không mạch lạc) không thể hiện được sự mâu thuẫn. Unpalatable (khó chịu) không liên quan."
+    },
+    {
+      "question_text": "The government's _____ decision to cut funding for education was met with strong opposition from teachers and parents alike.",
+      "option_a": "unmitigated",
+      "option_b": "disaffected",
+      "option_c": "indefensible",
+      "option_d": "unwarranted",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Unmitigated (hoàn toàn, không được giảm nhẹ) là từ chính xác vì nó nhấn mạnh tính chất tuyệt đối của quyết định xấu. Disaffected (mất lòng) mô tả cảm xúc của người dân. Indefensible (không thể biện minh) cũng có thể dùng nhưng unmitigated mạnh hơn. Unwarranted (không có lý do) ít mạnh mẽ hơn."
+    }
+  ]
+}

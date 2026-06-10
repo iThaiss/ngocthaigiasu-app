@@ -1,0 +1,755 @@
+{
+  "words": [
+    {
+      "word": "data breach",
+      "pronunciation": "/ˈdeɪtə briːtʃ/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự xâm phạm, rò rỉ dữ liệu cá nhân hoặc nhạy cảm của một tổ chức",
+      "definition_en": "unauthorized access to or disclosure of sensitive personal or organizational information",
+      "level": "B2",
+      "synonyms": [
+        "security breach",
+        "data leak"
+      ],
+      "antonyms": [
+        "data protection",
+        "secure system"
+      ],
+      "example_sentence": "The recent data breach exposed millions of customer records, prompting the company to issue public apologies and offer free credit monitoring."
+    },
+    {
+      "word": "cybersecurity",
+      "pronunciation": "/ˌsaɪbərseɪˈkjʊərɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "các biện pháp bảo vệ hệ thống máy tính, mạng và dữ liệu khỏi tấn công điện tử",
+      "definition_en": "practice of protecting computer systems, networks, and data from digital attacks",
+      "level": "B2",
+      "synonyms": [
+        "information security",
+        "cyber defense"
+      ],
+      "antonyms": [
+        "vulnerability",
+        "exposure"
+      ],
+      "example_sentence": "Companies are investing heavily in cybersecurity infrastructure to prevent ransomware attacks and protect sensitive financial information."
+    },
+    {
+      "word": "encryption",
+      "pronunciation": "/ɪnˈkrɪpʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình mã hóa dữ liệu để chỉ những người được phép mới có thể đọc được",
+      "definition_en": "conversion of data into a coded format to prevent unauthorized access",
+      "level": "B2",
+      "synonyms": [
+        "encoding",
+        "scrambling"
+      ],
+      "antonyms": [
+        "decryption",
+        "plaintext"
+      ],
+      "example_sentence": "End-to-end encryption ensures that only the sender and recipient can read messages, protecting communication from interception."
+    },
+    {
+      "word": "privacy violation",
+      "pronunciation": "/ˈprɪvəsi ˌvaɪəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hành động xâm phạm quyền riêng tư của một cá nhân hoặc tổ chức",
+      "definition_en": "unauthorized intrusion into or disclosure of someone's personal information or private affairs",
+      "level": "B2",
+      "synonyms": [
+        "privacy breach",
+        "intrusion"
+      ],
+      "antonyms": [
+        "privacy protection",
+        "confidentiality"
+      ],
+      "example_sentence": "Social media platforms face increasing criticism for privacy violations when they share user data with third-party advertisers without explicit consent."
+    },
+    {
+      "word": "malware",
+      "pronunciation": "/ˈmælwer/",
+      "part_of_speech": "noun",
+      "definition_vi": "phần mềm độc hại được thiết kế để gây hại hoặc khai thác hệ thống máy tính",
+      "definition_en": "malicious software designed to damage, disrupt, or gain unauthorized access to computer systems",
+      "level": "B2",
+      "synonyms": [
+        "virus",
+        "spyware"
+      ],
+      "antonyms": [
+        "antivirus",
+        "security software"
+      ],
+      "example_sentence": "The organization deployed advanced antivirus tools to detect and remove malware that had infiltrated employee workstations."
+    },
+    {
+      "word": "phishing",
+      "pronunciation": "/ˈfɪʃɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật lừa đảo qua mạng để lấy thông tin nhạy cảm bằng cách giả mạo các tổ chức đáng tin cậy",
+      "definition_en": "fraudulent attempt to obtain sensitive information by disguising communications as trustworthy sources",
+      "level": "B2",
+      "synonyms": [
+        "social engineering",
+        "scamming"
+      ],
+      "antonyms": [
+        "authentication",
+        "verification"
+      ],
+      "example_sentence": "Employees received training on identifying phishing emails that impersonate bank officials and request password confirmation."
+    },
+    {
+      "word": "surveillance",
+      "pronunciation": "/sərˈveɪləns/",
+      "part_of_speech": "noun",
+      "definition_vi": "hoạt động theo dõi, giám sát người hoặc hoạt động, thường bằng camera hoặc công nghệ",
+      "definition_en": "close observation or monitoring of individuals, groups, or activities, often using technology",
+      "level": "B2",
+      "synonyms": [
+        "monitoring",
+        "tracking"
+      ],
+      "antonyms": [
+        "privacy",
+        "anonymity"
+      ],
+      "example_sentence": "Government surveillance programs have sparked debates about the balance between national security and individual privacy rights."
+    },
+    {
+      "word": "password strength",
+      "pronunciation": "/ˈpɑːswɜːrd streŋθ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ khó khăn để phá vỡ một mật khẩu, phụ thuộc vào độ dài, độ phức tạp và tính ngẫu nhiên",
+      "definition_en": "measure of how resistant a password is to being guessed or cracked, based on length and complexity",
+      "level": "B2",
+      "synonyms": [
+        "password complexity",
+        "password security"
+      ],
+      "antonyms": [
+        "weak password",
+        "simple password"
+      ],
+      "example_sentence": "IT departments recommend using password strength checkers to ensure that passwords contain uppercase, lowercase, numbers, and special characters."
+    },
+    {
+      "word": "two-factor authentication",
+      "pronunciation": "/ˌtuː ˈfæktər ɔːˌθentɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp xác thực yêu cầu hai hình thức xác minh khác nhau để truy cập tài khoản",
+      "definition_en": "security method requiring two different forms of verification to access an account",
+      "level": "B2",
+      "synonyms": [
+        "2FA",
+        "multi-factor authentication"
+      ],
+      "antonyms": [
+        "single-factor authentication",
+        "password-only access"
+      ],
+      "example_sentence": "Banks now mandate two-factor authentication using SMS codes or authenticator apps to prevent unauthorized account access."
+    },
+    {
+      "word": "identity theft",
+      "pronunciation": "/aɪˈdentɪti θeft/",
+      "part_of_speech": "noun",
+      "definition_vi": "tội phạm lấy trộm thông tin cá nhân của ai đó để giả mạo danh tính và thực hiện gian lận",
+      "definition_en": "crime of stealing someone's personal information to impersonate them and commit fraud",
+      "level": "B2",
+      "synonyms": [
+        "identity fraud",
+        "impersonation"
+      ],
+      "antonyms": [
+        "identity verification",
+        "authentication"
+      ],
+      "example_sentence": "Victims of identity theft often discover fraudulent accounts opened in their names and unauthorized purchases on their credit cards."
+    },
+    {
+      "word": "consent",
+      "pronunciation": "/kənˈsent/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự đồng ý, cho phép của một người đối với việc sử dụng dữ liệu hoặc thông tin của họ",
+      "definition_en": "voluntary agreement or permission given by an individual for data collection or use",
+      "level": "B2",
+      "synonyms": [
+        "approval",
+        "permission"
+      ],
+      "antonyms": [
+        "refusal",
+        "denial"
+      ],
+      "example_sentence": "GDPR regulations require companies to obtain explicit user consent before collecting or processing personal data."
+    },
+    {
+      "word": "anonymity",
+      "pronunciation": "/əˈnɒnɪməti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng không được biết tên hoặc không thể xác định danh tính của một người",
+      "definition_en": "state of being unknown or unidentifiable",
+      "level": "B2",
+      "synonyms": [
+        "namelessness",
+        "obscurity"
+      ],
+      "antonyms": [
+        "identification",
+        "recognition"
+      ],
+      "example_sentence": "Online forums often provide anonymity to users, allowing them to express opinions without fear of personal consequences."
+    },
+    {
+      "word": "vulnerability",
+      "pronunciation": "/ˌvʌlnərəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "điểm yếu hoặc lỗ hổng trong hệ thống bảo mật có thể bị khai thác",
+      "definition_en": "weakness or flaw in a system that can be exploited by attackers",
+      "level": "B2",
+      "synonyms": [
+        "weakness",
+        "flaw"
+      ],
+      "antonyms": [
+        "strength",
+        "security"
+      ],
+      "example_sentence": "Security researchers regularly conduct penetration testing to identify vulnerabilities before malicious hackers can exploit them."
+    },
+    {
+      "word": "ransomware",
+      "pronunciation": "/ˈrænsəmwer/",
+      "part_of_speech": "noun",
+      "definition_vi": "loại phần mềm độc hại mã hóa dữ liệu của nạn nhân và yêu cầu tiền chuộc để giải mã",
+      "definition_en": "malicious software that encrypts a victim's data and demands payment for decryption",
+      "level": "C1",
+      "synonyms": [
+        "extortion malware",
+        "crypto-locker"
+      ],
+      "antonyms": [
+        "decryption tool",
+        "security software"
+      ],
+      "example_sentence": "Hospitals have become frequent targets of ransomware attacks, with cybercriminals demanding millions in cryptocurrency to restore critical patient data."
+    },
+    {
+      "word": "biometric authentication",
+      "pronunciation": "/ˌbaɪoʊˈmetrɪk ɔːˌθentɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp xác thực sử dụng các đặc điểm sinh học như vân tay hoặc nhận dạng khuôn mặt",
+      "definition_en": "security method using biological characteristics such as fingerprints or facial recognition for verification",
+      "level": "C1",
+      "synonyms": [
+        "biometric verification",
+        "biological authentication"
+      ],
+      "antonyms": [
+        "password authentication",
+        "PIN verification"
+      ],
+      "example_sentence": "Modern smartphones employ biometric authentication through facial recognition and fingerprint scanning to prevent unauthorized access."
+    },
+    {
+      "word": "data mining",
+      "pronunciation": "/ˈdeɪtə ˌmaɪnɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình trích xuất và phân tích dữ liệu lớn để tìm ra các mẫu hoặc thông tin hữu ích",
+      "definition_en": "process of extracting and analyzing large datasets to discover patterns and insights",
+      "level": "C1",
+      "synonyms": [
+        "data analysis",
+        "pattern recognition"
+      ],
+      "antonyms": [
+        "data protection",
+        "privacy preservation"
+      ],
+      "example_sentence": "Tech companies use data mining techniques to analyze user behavior and create targeted advertising profiles, raising privacy concerns."
+    },
+    {
+      "word": "firewall",
+      "pronunciation": "/ˈfaɪərwɔːl/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống bảo vệ mạng hoặc máy tính bằng cách kiểm soát lưu lượng dữ liệu vào và ra",
+      "definition_en": "network security system that monitors and controls incoming and outgoing network traffic",
+      "level": "B2",
+      "synonyms": [
+        "security barrier",
+        "network filter"
+      ],
+      "antonyms": [
+        "open network",
+        "unprotected system"
+      ],
+      "example_sentence": "Corporate firewalls block unauthorized access attempts and filter malicious content before it reaches employee computers."
+    },
+    {
+      "word": "metadata",
+      "pronunciation": "/ˈmetəˌdætə/",
+      "part_of_speech": "noun",
+      "definition_vi": "dữ liệu về dữ liệu, chẳng hạn như thời gian, địa điểm, hoặc người tạo ra nó",
+      "definition_en": "data that describes other data, such as timestamps, locations, or creator information",
+      "level": "C1",
+      "synonyms": [
+        "data information",
+        "descriptive data"
+      ],
+      "antonyms": [
+        "raw data",
+        "content"
+      ],
+      "example_sentence": "Even when messages are encrypted, metadata such as sender, recipient, and timestamp can reveal sensitive information about communication patterns."
+    },
+    {
+      "word": "zero-day exploit",
+      "pronunciation": "/ˌzɪroʊ ˈdeɪ ɪkˈsplɔɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc tấn công khai thác một lỗ hổng bảo mật chưa được phát hiện hoặc vá trước đó",
+      "definition_en": "cyberattack exploiting a previously unknown security vulnerability before developers can release a patch",
+      "level": "C1",
+      "synonyms": [
+        "zero-day attack",
+        "unpatched vulnerability"
+      ],
+      "antonyms": [
+        "patched system",
+        "known vulnerability"
+      ],
+      "example_sentence": "Cybersecurity experts warn that zero-day exploits are particularly dangerous because no defensive measures exist until the vulnerability is disclosed."
+    },
+    {
+      "word": "gdpr compliance",
+      "pronunciation": "/ˌdʒiː ˌdiː ˈpiː ˈɑːr kəmˈplaɪəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuân thủ Quy định Bảo vệ Dữ liệu Chung của EU về xử lý và bảo vệ dữ liệu cá nhân",
+      "definition_en": "adherence to the European Union's General Data Protection Regulation governing personal data handling",
+      "level": "C1",
+      "synonyms": [
+        "data protection compliance",
+        "regulatory compliance"
+      ],
+      "antonyms": [
+        "non-compliance",
+        "violation"
+      ],
+      "example_sentence": "International companies must ensure GDPR compliance by implementing privacy policies and obtaining user consent for data collection."
+    },
+    {
+      "word": "digital footprint",
+      "pronunciation": "/ˈdɪdʒɪtəl ˈfʊtprɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dấu vết kỹ thuật số mà một người để lại khi sử dụng internet, bao gồm dữ liệu cá nhân và hoạt động",
+      "definition_en": "trail of digital information left by an individual's online activities and personal data",
+      "level": "B2",
+      "synonyms": [
+        "digital trail",
+        "online presence"
+      ],
+      "antonyms": [
+        "anonymity",
+        "offline presence"
+      ],
+      "example_sentence": "Young people should be aware of their digital footprint, as information shared on social media can have long-term consequences."
+    },
+    {
+      "word": "credential stuffing",
+      "pronunciation": "/krəˈdenʃəl ˈstʌfɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật tấn công sử dụng tên người dùng và mật khẩu bị rò rỉ để truy cập các tài khoản khác",
+      "definition_en": "cyberattack technique using leaked usernames and passwords to gain unauthorized access to multiple accounts",
+      "level": "C1",
+      "synonyms": [
+        "account takeover",
+        "brute force attack"
+      ],
+      "antonyms": [
+        "account security",
+        "strong authentication"
+      ],
+      "example_sentence": "Credential stuffing attacks have become increasingly common, exploiting users who reuse passwords across multiple platforms."
+    },
+    {
+      "word": "dark web",
+      "pronunciation": "/ˈdɑːrk web/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phần của internet không thể truy cập thông qua các công cụ tìm kiếm thông thường, thường được sử dụng cho hoạt động bất hợp pháp",
+      "definition_en": "part of the internet not indexed by standard search engines, often associated with illegal activities",
+      "level": "B2",
+      "synonyms": [
+        "hidden internet",
+        "deep web"
+      ],
+      "antonyms": [
+        "surface web",
+        "public internet"
+      ],
+      "example_sentence": "Law enforcement agencies monitor the dark web to track stolen data, illegal marketplaces, and cybercriminal activities."
+    },
+    {
+      "word": "ddos attack",
+      "pronunciation": "/ˌdiː ˈdiː ˈoʊ ˈes əˈtæk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc tấn công từ chối dịch vụ phân tán, làm tê liệt máy chủ bằng cách gửi lưu lượng dữ liệu quá tải",
+      "definition_en": "distributed denial-of-service attack that overwhelms servers with excessive traffic to disrupt service",
+      "level": "C1",
+      "synonyms": [
+        "denial-of-service attack",
+        "network attack"
+      ],
+      "antonyms": [
+        "network protection",
+        "traffic filtering"
+      ],
+      "example_sentence": "Major websites have experienced DDoS attacks that temporarily rendered them inaccessible to millions of users worldwide."
+    },
+    {
+      "word": "penetration testing",
+      "pronunciation": "/ˌpenɪˈtreɪʃən ˈtestɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình kiểm tra bảo mật bằng cách mô phỏng các cuộc tấn công để tìm lỗ hổng",
+      "definition_en": "authorized security assessment where professionals simulate attacks to identify system vulnerabilities",
+      "level": "C1",
+      "synonyms": [
+        "ethical hacking",
+        "security testing"
+      ],
+      "antonyms": [
+        "passive monitoring",
+        "vulnerability scanning"
+      ],
+      "example_sentence": "Companies hire ethical hackers to conduct penetration testing and discover security weaknesses before malicious actors can exploit them."
+    },
+    {
+      "word": "data retention policy",
+      "pronunciation": "/ˈdeɪtə rɪˈtenʃən ˈpɒlɪsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách xác định thời gian một tổ chức giữ lại dữ liệu cá nhân trước khi xóa hoặc hủy",
+      "definition_en": "organizational policy specifying how long personal data is kept before deletion or destruction",
+      "level": "C1",
+      "synonyms": [
+        "data deletion policy",
+        "information lifecycle management"
+      ],
+      "antonyms": [
+        "indefinite storage",
+        "permanent retention"
+      ],
+      "example_sentence": "Hospitals must follow strict data retention policies to balance operational needs with patient privacy rights and regulatory requirements."
+    },
+    {
+      "word": "insider threat",
+      "pronunciation": "/ˈɪnsaɪdər θret/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguy hiểm bảo mật từ những người có quyền truy cập nội bộ, chẳng hạn như nhân viên hoặc cộng tác viên",
+      "definition_en": "security risk posed by individuals with internal access, such as employees or contractors",
+      "level": "C1",
+      "synonyms": [
+        "internal threat",
+        "employee risk"
+      ],
+      "antonyms": [
+        "external threat",
+        "external attack"
+      ],
+      "example_sentence": "Organizations implement strict access controls and monitoring systems to mitigate insider threats and prevent unauthorized data exfiltration."
+    },
+    {
+      "word": "api security",
+      "pronunciation": "/ˌeɪ ˈpiː ˈaɪ sɪˈkjʊərɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp bảo vệ giao diện lập trình ứng dụng khỏi truy cập trái phép và khai thác",
+      "definition_en": "protective measures for application programming interfaces against unauthorized access and exploitation",
+      "level": "C1",
+      "synonyms": [
+        "API protection",
+        "endpoint security"
+      ],
+      "antonyms": [
+        "unsecured API",
+        "open access"
+      ],
+      "example_sentence": "Developers must implement API security protocols including authentication, rate limiting, and input validation to prevent data breaches."
+    },
+    {
+      "word": "privacy by design",
+      "pronunciation": "/ˈprɪvəsi baɪ dɪˈzaɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguyên tắc tích hợp bảo vệ quyền riêng tư vào quá trình phát triển sản phẩm từ đầu",
+      "definition_en": "principle of integrating privacy protection into product development from the initial design phase",
+      "level": "C1",
+      "synonyms": [
+        "privacy-first approach",
+        "data protection by design"
+      ],
+      "antonyms": [
+        "privacy afterthought",
+        "reactive privacy"
+      ],
+      "example_sentence": "Tech companies adopting privacy by design principles minimize data collection and implement encryption at every stage of product development."
+    },
+    {
+      "word": "social engineering",
+      "pronunciation": "/ˌsoʊʃəl ˌendʒɪˈnɪrɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật lừa đảo tâm lý để khiến mọi người tiết lộ thông tin bí mật hoặc thực hiện hành động không an toàn",
+      "definition_en": "psychological manipulation technique to trick individuals into revealing confidential information or performing unsafe actions",
+      "level": "C1",
+      "synonyms": [
+        "psychological manipulation",
+        "human hacking"
+      ],
+      "antonyms": [
+        "security awareness",
+        "verification"
+      ],
+      "example_sentence": "Employees receive training to recognize social engineering tactics such as pretexting and baiting that attackers use to gain system access."
+    },
+    {
+      "word": "compliance audit",
+      "pronunciation": "/kəmˈplaɪəns ˈɔːdɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình kiểm tra xem một tổ chức có tuân thủ các quy định bảo vệ dữ liệu và bảo mật hay không",
+      "definition_en": "systematic examination to verify an organization's adherence to data protection and security regulations",
+      "level": "C1",
+      "synonyms": [
+        "security audit",
+        "regulatory review"
+      ],
+      "antonyms": [
+        "non-compliance",
+        "violation"
+      ],
+      "example_sentence": "Financial institutions undergo annual compliance audits to ensure they meet cybersecurity standards and data protection requirements."
+    },
+    {
+      "word": "incident response plan",
+      "pronunciation": "/ˈɪnsɪdənt rɪˈspɒns plæn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kế hoạch chi tiết để ứng phó với các sự cố bảo mật, bao gồm phát hiện, chứng minh và phục hồi",
+      "definition_en": "documented procedures for responding to security incidents, including detection, investigation, and recovery",
+      "level": "C1",
+      "synonyms": [
+        "crisis management plan",
+        "breach response protocol"
+      ],
+      "antonyms": [
+        "no plan",
+        "reactive response"
+      ],
+      "example_sentence": "Organizations must develop comprehensive incident response plans to minimize damage and quickly restore operations following a cyberattack."
+    },
+    {
+      "word": "threat intelligence",
+      "pronunciation": "/θret ɪnˈtelɪdʒəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thông tin về các mối đe dọa bảo mật hiện tại và tiềm ẩn được sử dụng để bảo vệ hệ thống",
+      "definition_en": "information about current and emerging security threats used to protect systems and networks",
+      "level": "C1",
+      "synonyms": [
+        "cyber intelligence",
+        "threat analysis"
+      ],
+      "antonyms": [
+        "ignorance",
+        "lack of awareness"
+      ],
+      "example_sentence": "Security teams use threat intelligence platforms to monitor emerging vulnerabilities and adjust defenses against evolving cyber threats."
+    },
+    {
+      "word": "cookie consent",
+      "pronunciation": "/ˈkʊki kənˈsent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự đồng ý của người dùng để các trang web lưu trữ và sử dụng cookie để theo dõi hoạt động",
+      "definition_en": "user agreement allowing websites to store and use cookies for tracking and personalization purposes",
+      "level": "B2",
+      "synonyms": [
+        "tracking consent",
+        "data collection permission"
+      ],
+      "antonyms": [
+        "cookie rejection",
+        "privacy protection"
+      ],
+      "example_sentence": "Websites must display cookie consent banners informing users about data collection practices and allowing them to opt out of tracking."
+    },
+    {
+      "word": "secure socket layer",
+      "pronunciation": "/sɪˈkjʊər ˈsɒkɪt ˈleɪər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giao thức mã hóa (SSL/TLS) bảo vệ dữ liệu được truyền giữa trình duyệt và máy chủ web",
+      "definition_en": "encryption protocol (SSL/TLS) protecting data transmitted between web browsers and servers",
+      "level": "C1",
+      "synonyms": [
+        "SSL/TLS",
+        "HTTPS protocol"
+      ],
+      "antonyms": [
+        "unencrypted connection",
+        "HTTP"
+      ],
+      "example_sentence": "E-commerce websites use secure socket layer encryption to protect customer payment information and login credentials from interception."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "What is the primary purpose of two-factor authentication in online security?",
+      "option_a": "To encrypt all data stored on a device",
+      "option_b": "To require two different forms of verification before granting account access",
+      "option_c": "To prevent malware from infecting a computer",
+      "option_d": "To monitor user activity on social media platforms",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Two-factor authentication yêu cầu hai hình thức xác minh khác nhau (ví dụ: mật khẩu + mã SMS) để truy cập tài khoản. Các lựa chọn khác không phản ánh chức năng chính của 2FA."
+    },
+    {
+      "question_text": "Which of the following best describes a phishing attack?",
+      "option_a": "A malware that encrypts files and demands ransom payment",
+      "option_b": "A fraudulent attempt to obtain sensitive information by impersonating a trustworthy source",
+      "option_c": "A network security system that blocks unauthorized access",
+      "option_d": "A method of encrypting data to prevent unauthorized access",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Phishing là kỹ thuật lừa đảo qua mạng để lấy thông tin nhạy cảm bằng cách giả mạo các tổ chức đáng tin cậy. Đáp án A mô tả ransomware, C là firewall, D là encryption."
+    },
+    {
+      "question_text": "A company experiences unauthorized access to customer records containing names, addresses, and payment information. This incident is best classified as a ___.",
+      "option_a": "firewall breach",
+      "option_b": "data breach",
+      "option_c": "privacy audit",
+      "option_d": "encryption failure",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Data breach là sự xâm phạm, rò rỉ dữ liệu cá nhân hoặc nhạy cảm. Các lựa chọn khác không phù hợp với tình huống mô tả."
+    },
+    {
+      "question_text": "Which security measure is most effective in preventing unauthorized access to sensitive files?",
+      "option_a": "Using a firewall to monitor network traffic",
+      "option_b": "Implementing encryption on stored data",
+      "option_c": "Conducting regular penetration testing",
+      "option_d": "Monitoring user digital footprints",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Encryption là biện pháp hiệu quả nhất để bảo vệ dữ liệu nhạy cảm khỏi truy cập trái phép. Firewall bảo vệ mạng, penetration testing là kiểm tra, digital footprint monitoring là theo dõi."
+    },
+    {
+      "question_text": "What is the main advantage of biometric authentication over traditional password-based systems?",
+      "option_a": "It is faster to implement across all devices",
+      "option_b": "It uses biological characteristics that are difficult to steal or replicate",
+      "option_c": "It eliminates the need for encryption entirely",
+      "option_d": "It prevents all types of malware infections",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Biometric authentication sử dụng các đặc điểm sinh học (vân tay, khuôn mặt) khó bị đánh cắp hoặc giả mạo hơn mật khẩu. Các lựa chọn khác không chính xác."
+    },
+    {
+      "question_text": "According to GDPR compliance requirements, companies must _____ before collecting personal data from users.",
+      "option_a": "conduct a compliance audit",
+      "option_b": "obtain explicit user consent",
+      "option_c": "implement biometric authentication",
+      "option_d": "monitor digital footprints",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "GDPR yêu cầu các công ty phải có sự đồng ý rõ ràng từ người dùng trước khi thu thập dữ liệu cá nhân. Các lựa chọn khác không phải yêu cầu bắt buộc của GDPR."
+    },
+    {
+      "question_text": "Which of the following is a characteristic of ransomware attacks?",
+      "option_a": "They monitor user activity without encryption",
+      "option_b": "They encrypt victim data and demand payment for decryption",
+      "option_c": "They create fake login pages to steal passwords",
+      "option_d": "They slowly extract data over extended periods",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Ransomware mã hóa dữ liệu của nạn nhân và yêu cầu tiền chuộc để giải mã. Đáp án A mô tả spyware, C là phishing, D là data exfiltration."
+    },
+    {
+      "question_text": "A cybersecurity team discovers that an employee has been selling customer data to competitors. This represents an _____ threat.",
+      "option_a": "external",
+      "option_b": "insider",
+      "option_c": "network-based",
+      "option_d": "malware-related",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Insider threat là nguy hiểm bảo mật từ những người có quyền truy cập nội bộ như nhân viên. Đây là trường hợp điển hình của insider threat."
+    },
+    {
+      "question_text": "What is the primary goal of a DDoS attack?",
+      "option_a": "To steal personal information from users",
+      "option_b": "To encrypt files and demand ransom",
+      "option_c": "To overwhelm servers and disrupt service availability",
+      "option_d": "To install malware on user devices",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "DDoS attack (distributed denial-of-service) nhằm làm tê liệt máy chủ bằng cách gửi lưu lượng dữ liệu quá tải. Các lựa chọn khác mô tả các loại tấn công khác."
+    },
+    {
+      "question_text": "Which practice best exemplifies 'privacy by design' in software development?",
+      "option_a": "Adding privacy features after the product is released",
+      "option_b": "Integrating data protection measures from the initial design phase",
+      "option_c": "Conducting a compliance audit before launch",
+      "option_d": "Implementing encryption only for sensitive data",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Privacy by design là nguyên tắc tích hợp bảo vệ quyền riêng tư vào quá trình phát triển từ đầu, không phải sau này. Đáp án A là phương pháp phản ứng, không phải proactive."
+    },
+    {
+      "question_text": "What does 'metadata' reveal about encrypted communications?",
+      "option_a": "The actual content of the messages",
+      "option_b": "Information such as sender, recipient, and timestamp",
+      "option_c": "The encryption algorithm used",
+      "option_d": "The location of the server storing the data",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Metadata là dữ liệu về dữ liệu, bao gồm thông tin về người gửi, người nhận, thời gian. Nó không tiết lộ nội dung thực tế của tin nhắn được mã hóa."
+    },
+    {
+      "question_text": "Which of the following best describes 'credential stuffing'?",
+      "option_a": "Creating strong passwords with multiple character types",
+      "option_b": "Using leaked usernames and passwords to access multiple accounts",
+      "option_c": "Storing passwords securely in a password manager",
+      "option_d": "Requiring users to change passwords regularly",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Credential stuffing là kỹ thuật tấn công sử dụng tên người dùng và mật khẩu bị rò rỉ để truy cập các tài khoản khác. Các lựa chọn khác là biện pháp bảo vệ, không phải tấn công."
+    },
+    {
+      "question_text": "An organization implements an incident response plan primarily to _____ following a security breach.",
+      "option_a": "prevent all future cyberattacks",
+      "option_b": "minimize damage and quickly restore operations",
+      "option_c": "eliminate the need for cybersecurity insurance",
+      "option_d": "avoid regulatory compliance requirements",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Incident response plan là kế hoạch để ứng phó với sự cố bảo mật nhằm giảm thiểu thiệt hại và phục hồi nhanh chóng. Nó không thể ngăn chặn tất cả các cuộc tấn công trong tương lai."
+    },
+    {
+      "question_text": "Which of the following is NOT a typical component of a comprehensive cybersecurity strategy?",
+      "option_a": "Regular penetration testing to identify vulnerabilities",
+      "option_b": "Employee training on social engineering tactics",
+      "option_c": "Unlimited data retention without deletion policies",
+      "option_d": "Implementation of multi-factor authentication systems",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Unlimited data retention không phải là thành phần của chiến lược bảo mật tốt. Thực tế, các chính sách giữ lại dữ liệu hạn chế là cần thiết để bảo vệ quyền riêng tư và tuân thủ quy định."
+    }
+  ]
+}

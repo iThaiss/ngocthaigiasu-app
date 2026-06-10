@@ -1,0 +1,362 @@
+{
+  "words": [
+    {
+      "word": "augmentation",
+      "pronunciation": "/ˌɔːɡmenˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tăng cường, mở rộng; quá trình làm cho cái gì đó lớn hơn hoặc đầy đủ hơn",
+      "definition_en": "the action or process of making something greater in size or quantity",
+      "level": "C1",
+      "synonyms": [
+        "expansion",
+        "enhancement",
+        "amplification"
+      ],
+      "antonyms": [
+        "reduction",
+        "diminution"
+      ],
+      "example_sentence": "The augmentation of vocabulary through systematic study improves academic writing performance significantly."
+    },
+    {
+      "word": "lexical",
+      "pronunciation": "/ˈleksɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến từ vựng hoặc từ điển; thuộc về tập hợp các từ của một ngôn ngữ",
+      "definition_en": "relating to the words or vocabulary of a language",
+      "level": "B2",
+      "synonyms": [
+        "vocabulary-related",
+        "semantic"
+      ],
+      "antonyms": [
+        "grammatical",
+        "syntactic"
+      ],
+      "example_sentence": "Lexical diversity in essays demonstrates a student's command of English and enhances overall writing quality."
+    },
+    {
+      "word": "semantic field",
+      "pronunciation": "/səˈmæntɪk fiːld/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm các từ có liên quan về nghĩa, cùng chủ đề hoặc khái niệm",
+      "definition_en": "a group of words that share related meanings within a particular conceptual domain",
+      "level": "C1",
+      "synonyms": [
+        "lexical field",
+        "word cluster"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding semantic fields helps learners organize vocabulary more effectively and recognize word relationships."
+    },
+    {
+      "word": "neologism",
+      "pronunciation": "/niːˈɒlədʒɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "từ mới được tạo ra hoặc từ cũ được sử dụng với nghĩa mới; sự tạo lập từ mới",
+      "definition_en": "a newly created word, expression, or usage; the creation of new words or expressions",
+      "level": "C1",
+      "synonyms": [
+        "new word",
+        "innovation",
+        "coinage"
+      ],
+      "antonyms": [
+        "archaism",
+        "obsolete term"
+      ],
+      "example_sentence": "The rapid development of technology has generated numerous neologisms such as 'cryptocurrency' and 'metaverse'."
+    },
+    {
+      "word": "etymological",
+      "pronunciation": "/ˌetɪməˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến nguồn gốc và lịch sử phát triển của một từ",
+      "definition_en": "relating to the origin and historical development of words",
+      "level": "C1",
+      "synonyms": [
+        "historical",
+        "linguistic"
+      ],
+      "antonyms": [],
+      "example_sentence": "Etymological analysis reveals that many English words derive from Latin and Greek roots."
+    },
+    {
+      "word": "morphological",
+      "pronunciation": "/ˌmɔːfəˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến cấu trúc và hình thái của từ; thuộc về sự kết hợp các thành phần từ",
+      "definition_en": "relating to the structure and form of words and how they are constructed",
+      "level": "C1",
+      "synonyms": [
+        "structural",
+        "formal"
+      ],
+      "antonyms": [],
+      "example_sentence": "Morphological awareness—understanding how words are built from smaller units—is crucial for vocabulary development."
+    },
+    {
+      "word": "root word",
+      "pronunciation": "/ruːt wɜːd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "từ cơ bản, từ gốc mà từ khác được tạo ra bằng cách thêm tiền tố hoặc hậu tố",
+      "definition_en": "a basic word from which other words are formed by adding prefixes or suffixes",
+      "level": "B2",
+      "synonyms": [
+        "base word",
+        "stem"
+      ],
+      "antonyms": [],
+      "example_sentence": "The root word 'happy' can be transformed into 'unhappy', 'happiness', and 'happily' through affixation."
+    },
+    {
+      "word": "word family",
+      "pronunciation": "/wɜːd ˈfæməli/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm các từ có cùng gốc hoặc từ cơ bản nhưng có dạng và chức năng khác nhau",
+      "definition_en": "a group of words that share the same root or base word but have different forms and functions",
+      "level": "B2",
+      "synonyms": [
+        "word cluster",
+        "lexical family"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word family of 'teach' includes teacher, teaching, taught, and teachable."
+    },
+    {
+      "word": "productive affix",
+      "pronunciation": "/prəˈdʌktɪv ˈæfɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiền tố hoặc hậu tố vẫn được sử dụng rộng rãi để tạo từ mới trong ngôn ngữ hiện đại",
+      "definition_en": "a prefix or suffix that is actively used to create new words in contemporary language",
+      "level": "C1",
+      "synonyms": [
+        "active affix",
+        "generative affix"
+      ],
+      "antonyms": [
+        "unproductive affix"
+      ],
+      "example_sentence": "The suffix '-ize' is a productive affix in English, allowing the creation of verbs like 'digitize' and 'customize'."
+    },
+    {
+      "word": "semantic shift",
+      "pronunciation": "/səˈmæntɪk ʃɪft/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi nghĩa của một từ theo thời gian; quá trình từ này có ý nghĩa khác đi",
+      "definition_en": "a change in the meaning of a word over time",
+      "level": "C1",
+      "synonyms": [
+        "semantic change",
+        "meaning shift"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word 'awful' has undergone a semantic shift from meaning 'full of awe' to 'very bad'."
+    },
+    {
+      "word": "word coinage",
+      "pronunciation": "/wɜːd ˈkɔɪnɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tạo ra hoặc phát minh một từ mới; quá trình đặt tên cho một khái niệm mới",
+      "definition_en": "the creation or invention of a new word or expression",
+      "level": "C1",
+      "synonyms": [
+        "neologism",
+        "word creation"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word coinage 'selfie' became so popular that it was added to major dictionaries within a few years."
+    },
+    {
+      "word": "lexicalization",
+      "pronunciation": "/ˌleksɪkəlaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình một cụm từ hoặc cấu trúc ngữ pháp trở thành một từ độc lập với ý nghĩa riêng",
+      "definition_en": "the process by which a phrase or grammatical structure becomes a single word with its own meaning",
+      "level": "C1",
+      "synonyms": [
+        "word formation",
+        "lexicalization process"
+      ],
+      "antonyms": [],
+      "example_sentence": "The lexicalization of 'breakfast' from 'break' and 'fast' demonstrates how compound phrases become single lexical items."
+    },
+    {
+      "word": "word boundary",
+      "pronunciation": "/wɜːd ˈbaʊndəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ranh giới giữa các từ; điểm phân tách một từ với từ khác trong văn bản",
+      "definition_en": "the division between one word and another in written or spoken language",
+      "level": "B2",
+      "synonyms": [
+        "word division",
+        "lexical boundary"
+      ],
+      "antonyms": [],
+      "example_sentence": "In English, word boundaries are typically marked by spaces, making it easier to identify individual words."
+    },
+    {
+      "word": "inflectional form",
+      "pronunciation": "/ɪnˈflekʃənəl fɔːm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dạng biến đổi của một từ để thể hiện số, thì, hoặc các tính chất ngữ pháp khác",
+      "definition_en": "a variant form of a word that expresses grammatical information such as tense, number, or person",
+      "level": "C1",
+      "synonyms": [
+        "inflected form",
+        "grammatical variant"
+      ],
+      "antonyms": [],
+      "example_sentence": "The inflectional forms of 'run' include runs, running, and ran, each conveying different grammatical meanings."
+    },
+    {
+      "word": "derivational morphology",
+      "pronunciation": "/ˌderɪˈveɪʃənəl mɔːˈfɒlədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhánh ngôn ngữ học nghiên cứu cách tạo từ mới bằng cách thêm tiền tố, hậu tố hoặc kết hợp từ",
+      "definition_en": "the study of how new words are formed by adding affixes or combining existing words",
+      "level": "C1",
+      "synonyms": [
+        "word formation study",
+        "derivation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Derivational morphology explains how 'happy' becomes 'unhappy' and 'happiness' through systematic word-building processes."
+    },
+    {
+      "word": "lexical item",
+      "pronunciation": "/ˈleksɪkəl ˈaɪtəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một đơn vị từ vựng; một từ hoặc cụm từ được coi là một đơn vị độc lập trong từ điển",
+      "definition_en": "a single unit of vocabulary, such as a word or phrase, treated as a distinct entry in a dictionary",
+      "level": "B2",
+      "synonyms": [
+        "vocabulary unit",
+        "lexeme"
+      ],
+      "antonyms": [],
+      "example_sentence": "Each lexical item in a dictionary is assigned a definition, pronunciation guide, and usage examples."
+    },
+    {
+      "word": "word formation process",
+      "pronunciation": "/wɜːd ˌfɔːˈmeɪʃən ˈprəʊses/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các phương pháp tạo ra từ mới trong ngôn ngữ, bao gồm ghép từ, thêm tiền/hậu tố, v.v.",
+      "definition_en": "the methods by which new words are created in a language, including compounding, affixation, and blending",
+      "level": "B2",
+      "synonyms": [
+        "word creation method",
+        "lexical formation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding word formation processes helps learners predict the meanings of unfamiliar words they encounter."
+    },
+    {
+      "word": "morpheme",
+      "pronunciation": "/ˈmɔːfiːm/",
+      "part_of_speech": "noun",
+      "definition_vi": "đơn vị ngôn ngữ nhỏ nhất có ý nghĩa; thành phần cơ bản của từ",
+      "definition_en": "the smallest unit of language that carries meaning; a basic building block of words",
+      "level": "B2",
+      "synonyms": [
+        "meaningful unit",
+        "linguistic element"
+      ],
+      "antonyms": [],
+      "example_sentence": "The word 'unhappiness' contains four morphemes: 'un-', 'happy', '-ness', each contributing to the overall meaning."
+    },
+    {
+      "word": "lexical cohesion",
+      "pronunciation": "/ˈleksɪkəl kəʊˈhɪʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự liên kết giữa các từ trong văn bản thông qua sự lặp lại từ, từ đồng nghĩa, hoặc từ liên quan",
+      "definition_en": "the connection between words in a text through repetition, synonyms, or related vocabulary",
+      "level": "C1",
+      "synonyms": [
+        "vocabulary cohesion",
+        "lexical connection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Lexical cohesion is achieved through the repetition of key terms and the use of synonyms throughout an academic essay."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between 'happy', 'happiness', 'unhappy', and 'happily'?",
+      "option_a": "They form a word family sharing the same root word.",
+      "option_b": "They are examples of semantic shift in English.",
+      "option_c": "They demonstrate productive affixes in modern English.",
+      "option_d": "They represent different lexical items with no connection.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Các từ này đều có cùng gốc 'happy' nhưng có dạng khác nhau do thêm tiền tố 'un-' và hậu tố '-ness', '-ly'. Đây là định nghĩa của word family. Đáp án B sai vì semantic shift là thay đổi nghĩa theo thời gian, không phải tạo từ mới. C sai vì không phải tất cả đều là productive affixes."
+    },
+    {
+      "question_text": "The suffix '-ize' in words like 'digitize', 'customize', and 'prioritize' is considered a _____ because it continues to be used to create new verbs.",
+      "option_a": "semantic field",
+      "option_b": "productive affix",
+      "option_c": "lexical item",
+      "option_d": "morphological boundary",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Productive affix là tiền tố hoặc hậu tố vẫn được sử dụng rộng rãi để tạo từ mới. Hậu tố '-ize' tiếp tục được dùng để tạo động từ mới, đặc biệt trong công nghệ. A sai vì semantic field là nhóm từ có liên quan về nghĩa. C sai vì lexical item là đơn vị từ vựng, không phải hậu tố."
+    },
+    {
+      "question_text": "What is the primary difference between inflectional forms and derivational forms?",
+      "option_a": "Inflectional forms change word meaning; derivational forms do not.",
+      "option_b": "Inflectional forms express grammatical information; derivational forms create new words with different meanings.",
+      "option_c": "Inflectional forms are more common in modern English than derivational forms.",
+      "option_d": "Inflectional forms use only suffixes; derivational forms use both prefixes and suffixes.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Inflectional forms (chạy, chạy, chạy) thể hiện thông tin ngữ pháp như thì, số mà không thay đổi loại từ. Derivational forms (chạy → chạy, chạy) tạo từ mới với ý nghĩa khác. A sai vì inflectional forms không thay đổi ý nghĩa cơ bản. C và D không chính xác."
+    },
+    {
+      "question_text": "The word 'awful' originally meant 'full of awe' but now typically means 'very bad'. This change in meaning over time is called a _____.",
+      "option_a": "neologism",
+      "option_b": "word coinage",
+      "option_c": "semantic shift",
+      "option_d": "lexicalization",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Semantic shift là sự thay đổi ý nghĩa của một từ theo thời gian. Đây là ví dụ điển hình. A sai vì neologism là từ mới được tạo ra. B sai vì word coinage là sự phát minh từ mới. D sai vì lexicalization là quá trình cụm từ trở thành một từ."
+    },
+    {
+      "question_text": "Which statement best explains why understanding word families is beneficial for vocabulary learning?",
+      "option_a": "It helps learners recognize that words with the same root share related meanings and can be learned together.",
+      "option_b": "It eliminates the need to study individual word definitions.",
+      "option_c": "It proves that all English words derive from Latin and Greek.",
+      "option_d": "It demonstrates that semantic fields are more important than morphological structure.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Hiểu word families giúp học sinh nhận ra các từ có cùng gốc có ý nghĩa liên quan và có thể học cùng nhau, giúp tăng hiệu quả học tập. B sai vì vẫn cần học định nghĩa. C sai vì không phải tất cả từ đều từ Latin/Greek. D sai vì cả hai đều quan trọng."
+    },
+    {
+      "question_text": "In the sentence 'The augmentation of vocabulary through systematic study improves academic writing performance significantly,' the word 'augmentation' is most closely related to which concept?",
+      "option_a": "Semantic field",
+      "option_b": "Lexical cohesion",
+      "option_c": "Word formation through affixation",
+      "option_d": "Morphological analysis",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Augmentation' được tạo từ 'augment' + hậu tố '-ation', là ví dụ điển hình của word formation through affixation. A sai vì semantic field là nhóm từ có liên quan. B sai vì lexical cohesion là liên kết từ trong văn bản. D sai vì morphological analysis là phân tích cấu trúc từ, không phải quá trình tạo từ."
+    },
+    {
+      "question_text": "Which of the following is NOT an example of a word formation process?",
+      "option_a": "Adding the prefix 'un-' to 'happy' to create 'unhappy'",
+      "option_b": "Combining 'break' and 'fast' to form 'breakfast'",
+      "option_c": "Changing the pronunciation of 'read' from /riːd/ to /red/ based on tense",
+      "option_d": "Creating 'selfie' as a new word for a self-taken photograph",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Thay đổi cách phát âm của 'read' dựa trên thì là inflection (biến đổi hình thái), không phải word formation (tạo từ mới). A là affixation, B là compounding, D là neologism/word coinage. Chỉ C không phải word formation process."
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "words": [
+    {
+      "word": "vaccination campaign",
+      "pronunciation": "/vækˈsɪneɪʃən kæmˈpeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến dịch tiêm chủng quy mô lớn nhằm tăng tỷ lệ miễn dịch trong cộng đồng",
+      "definition_en": "large-scale immunization initiative to increase population immunity",
+      "level": "B2",
+      "synonyms": [
+        "immunization drive",
+        "vaccination program"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government launched a nationwide vaccination campaign to combat the spread of measles among children."
+    },
+    {
+      "word": "herd immunity",
+      "pronunciation": "/hɜːrd ɪˈmjuːnɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tỷ lệ miễn dịch tập thể khi đủ số người được bảo vệ để ngăn chặn lây lan bệnh",
+      "definition_en": "proportion of immune individuals needed to prevent disease transmission in a population",
+      "level": "C1",
+      "synonyms": [
+        "community immunity",
+        "collective immunity"
+      ],
+      "antonyms": [],
+      "example_sentence": "Achieving herd immunity requires approximately 70-95% of the population to be vaccinated, depending on the disease's contagiousness."
+    },
+    {
+      "word": "pandemic",
+      "pronunciation": "/pænˈdemɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "dịch bệnh lan rộng trên nhiều quốc gia hoặc toàn thế giới",
+      "definition_en": "disease outbreak spreading across multiple countries or worldwide",
+      "level": "B2",
+      "synonyms": [
+        "epidemic",
+        "outbreak"
+      ],
+      "antonyms": [
+        "endemic"
+      ],
+      "example_sentence": "The COVID-19 pandemic fundamentally changed global healthcare systems and public health protocols."
+    },
+    {
+      "word": "epidemiological surveillance",
+      "pronunciation": "/ˌepɪˌdiːmiəˈlɒdʒɪkəl sərˈveɪləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống giám sát liên tục để phát hiện và theo dõi các bệnh truyền nhiễm",
+      "definition_en": "systematic monitoring system to detect and track infectious disease patterns",
+      "level": "C1",
+      "synonyms": [
+        "disease surveillance",
+        "epidemiological monitoring"
+      ],
+      "antonyms": [],
+      "example_sentence": "Robust epidemiological surveillance enabled early detection of the novel virus variant in multiple regions."
+    },
+    {
+      "word": "vaccine efficacy",
+      "pronunciation": "/vækˈsiːn ɪˈfɪkəsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ hiệu quả của vắc-xin trong việc ngăn ngừa bệnh trong điều kiện lý tưởng",
+      "definition_en": "measure of vaccine's ability to prevent disease under ideal conditions",
+      "level": "C1",
+      "synonyms": [
+        "vaccine effectiveness",
+        "immunological response"
+      ],
+      "antonyms": [],
+      "example_sentence": "Clinical trials demonstrated that the new vaccine had an efficacy rate of 94% against severe infection."
+    },
+    {
+      "word": "containment measures",
+      "pronunciation": "/kənˈteɪnmənt ˈmeʒəz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp hạn chế sự lây lan của bệnh truyền nhiễm",
+      "definition_en": "strategies implemented to limit disease transmission and spread",
+      "level": "B2",
+      "synonyms": [
+        "control measures",
+        "mitigation strategies"
+      ],
+      "antonyms": [],
+      "example_sentence": "Quarantine and isolation were among the primary containment measures adopted during the early stages of the outbreak."
+    },
+    {
+      "word": "asymptomatic transmission",
+      "pronunciation": "/ˌeɪsɪmptəˈmætɪk trænzˈmɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự lây truyền bệnh từ những người không có triệu chứng",
+      "definition_en": "disease spread by infected individuals showing no clinical symptoms",
+      "level": "C1",
+      "synonyms": [
+        "silent transmission",
+        "presymptomatic spread"
+      ],
+      "antonyms": [],
+      "example_sentence": "Asymptomatic transmission posed a significant challenge to public health authorities in controlling the pandemic's spread."
+    },
+    {
+      "word": "public health infrastructure",
+      "pronunciation": "/ˈpʌblɪk helθ ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống cơ sở vật chất và tổ chức để bảo vệ sức khỏe cộng đồng",
+      "definition_en": "system of facilities and institutions designed to protect population health",
+      "level": "C1",
+      "synonyms": [
+        "health system",
+        "healthcare infrastructure"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developing countries struggled to strengthen their public health infrastructure to respond effectively to the pandemic."
+    },
+    {
+      "word": "outbreak",
+      "pronunciation": "/ˈaʊtbreɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự xuất hiện đột ngột và lan nhanh của bệnh trong một khu vực",
+      "definition_en": "sudden occurrence and rapid spread of disease in a specific area",
+      "level": "B2",
+      "synonyms": [
+        "epidemic",
+        "flare-up"
+      ],
+      "antonyms": [],
+      "example_sentence": "The outbreak of dengue fever in the urban district prompted immediate intervention from health authorities."
+    },
+    {
+      "word": "preventive medicine",
+      "pronunciation": "/prɪˈventɪv ˈmedɪsən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lĩnh vực y học tập trung vào ngăn ngừa bệnh thay vì chữa trị",
+      "definition_en": "medical practice focused on disease prevention rather than treatment",
+      "level": "C1",
+      "synonyms": [
+        "preventative care",
+        "disease prevention"
+      ],
+      "antonyms": [
+        "curative medicine"
+      ],
+      "example_sentence": "Preventive medicine emphasizes vaccination, health education, and lifestyle modifications to reduce disease incidence."
+    },
+    {
+      "word": "transmission route",
+      "pronunciation": "/trænzˈmɪʃən ruːt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đường dẫn hoặc cách thức mà bệnh lây từ người này sang người khác",
+      "definition_en": "pathway or mechanism through which disease spreads from one person to another",
+      "level": "B2",
+      "synonyms": [
+        "mode of transmission",
+        "transmission pathway"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding the transmission route of respiratory viruses is crucial for implementing effective prevention strategies."
+    },
+    {
+      "word": "immunization rate",
+      "pronunciation": "/ˌɪmjuːnaɪˈzeɪʃən reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ phần trăm dân số được tiêm chủng",
+      "definition_en": "percentage of population that has received vaccination",
+      "level": "B2",
+      "synonyms": [
+        "vaccination coverage",
+        "vaccination rate"
+      ],
+      "antonyms": [],
+      "example_sentence": "Countries with higher immunization rates demonstrated significantly lower incidence of vaccine-preventable diseases."
+    },
+    {
+      "word": "epidemiologist",
+      "pronunciation": "/ˌepɪˌdiːmiˈɒlədʒɪst/",
+      "part_of_speech": "noun",
+      "definition_vi": "chuyên gia nghiên cứu sự phân bố và nguyên nhân của bệnh trong dân số",
+      "definition_en": "scientist who studies disease patterns and causes in populations",
+      "level": "C1",
+      "synonyms": [
+        "disease researcher",
+        "epidemiological expert"
+      ],
+      "antonyms": [],
+      "example_sentence": "Epidemiologists analyzed data from multiple hospitals to identify the source of the infection cluster."
+    },
+    {
+      "word": "incubation period",
+      "pronunciation": "/ɪnˈkjuːbeɪʃən ˈpɪəriəd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khoảng thời gian từ khi nhiễm bệnh đến khi xuất hiện triệu chứng",
+      "definition_en": "time interval between infection and appearance of disease symptoms",
+      "level": "C1",
+      "synonyms": [
+        "latency period",
+        "incubation time"
+      ],
+      "antonyms": [],
+      "example_sentence": "The incubation period for COVID-19 typically ranges from 2 to 14 days, making early detection challenging."
+    },
+    {
+      "word": "contact tracing",
+      "pronunciation": "/ˈkɒntækt ˈtreɪsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình xác định và theo dõi những người tiếp xúc với bệnh nhân",
+      "definition_en": "process of identifying and monitoring individuals exposed to infected persons",
+      "level": "B2",
+      "synonyms": [
+        "case tracking",
+        "exposure identification"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective contact tracing in the early stages of the outbreak helped prevent further transmission."
+    },
+    {
+      "word": "morbidity rate",
+      "pronunciation": "/mɔːrˈbɪdɪti reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ mắc bệnh trong một dân số nhất định trong một khoảng thời gian",
+      "definition_en": "proportion of people affected by disease in a specific population during a given period",
+      "level": "C1",
+      "synonyms": [
+        "disease incidence",
+        "prevalence rate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The morbidity rate for influenza increased significantly during winter months in temperate regions."
+    },
+    {
+      "word": "mortality rate",
+      "pronunciation": "/mɔːrˈtælɪti reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ tử vong do một bệnh nhất định trong dân số",
+      "definition_en": "proportion of deaths caused by a specific disease in a population",
+      "level": "B2",
+      "synonyms": [
+        "death rate",
+        "fatality rate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The mortality rate from the disease declined significantly after the introduction of effective treatment protocols."
+    },
+    {
+      "word": "antimicrobial resistance",
+      "pronunciation": "/ˌæntimaɪˈkrəʊbɪəl rɪˈzɪstəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của vi khuẩn chống lại tác dụng của kháng sinh",
+      "definition_en": "ability of microorganisms to resist the effects of antimicrobial drugs",
+      "level": "C1",
+      "synonyms": [
+        "antibiotic resistance",
+        "drug resistance"
+      ],
+      "antonyms": [],
+      "example_sentence": "Antimicrobial resistance has become a critical global health threat, limiting treatment options for bacterial infections."
+    },
+    {
+      "word": "quarantine",
+      "pronunciation": "/ˈkwɒrəntɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự cách ly những người có khả năng nhiễm bệnh để ngăn lây lan",
+      "definition_en": "isolation of potentially infected individuals to prevent disease transmission",
+      "level": "B2",
+      "synonyms": [
+        "isolation",
+        "confinement"
+      ],
+      "antonyms": [],
+      "example_sentence": "Travelers returning from affected regions were required to observe a 14-day quarantine period."
+    },
+    {
+      "word": "booster dose",
+      "pronunciation": "/ˈbuːstər dəʊs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "liều vắc-xin bổ sung được tiêm sau một khoảng thời gian để tăng cường miễn dịch",
+      "definition_en": "additional vaccine dose administered to reinforce immunity after initial vaccination",
+      "level": "B2",
+      "synonyms": [
+        "booster shot",
+        "reinforcing dose"
+      ],
+      "antonyms": [],
+      "example_sentence": "Health authorities recommended booster doses for elderly populations to maintain protection against the virus."
+    },
+    {
+      "word": "pathogen",
+      "pronunciation": "/ˈpæθədʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "vi sinh vật gây bệnh như vi khuẩn, virus hoặc nấm",
+      "definition_en": "microorganism capable of causing disease, such as bacteria, virus, or fungus",
+      "level": "C1",
+      "synonyms": [
+        "disease agent",
+        "infectious agent"
+      ],
+      "antonyms": [],
+      "example_sentence": "Scientists identified the novel pathogen responsible for the respiratory illness outbreak."
+    },
+    {
+      "word": "epidemiological data",
+      "pronunciation": "/ˌepɪˌdiːmiəˈlɒdʒɪkəl ˈdeɪtə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thông tin thống kê về sự phân bố và tần suất của bệnh trong dân số",
+      "definition_en": "statistical information about disease distribution and frequency in populations",
+      "level": "C1",
+      "synonyms": [
+        "disease statistics",
+        "epidemiological information"
+      ],
+      "antonyms": [],
+      "example_sentence": "Epidemiological data from multiple countries revealed concerning trends in disease transmission patterns."
+    },
+    {
+      "word": "clinical trial",
+      "pronunciation": "/ˈklɪnɪkəl ˈtraɪəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nghiên cứu khoa học kiểm tra hiệu quả và an toàn của thuốc hoặc vắc-xin trên con người",
+      "definition_en": "research study testing safety and efficacy of medical treatments on human subjects",
+      "level": "B2",
+      "synonyms": [
+        "medical trial",
+        "drug trial"
+      ],
+      "antonyms": [],
+      "example_sentence": "The vaccine underwent rigorous clinical trials involving thousands of participants before regulatory approval."
+    },
+    {
+      "word": "respiratory infection",
+      "pronunciation": "/ˈrespɪrətəri ɪnˈfekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bệnh nhiễm trùng ảnh hưởng đến hệ thống hô hấp",
+      "definition_en": "infection affecting the respiratory system and airways",
+      "level": "B2",
+      "synonyms": [
+        "airway infection",
+        "lung infection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Respiratory infections are commonly transmitted through airborne droplets in crowded environments."
+    },
+    {
+      "word": "public health policy",
+      "pronunciation": "/ˈpʌblɪk helθ ˈpɒlɪsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các quy định và chiến lược của chính phủ nhằm bảo vệ sức khỏe cộng đồng",
+      "definition_en": "government regulations and strategies designed to protect population health",
+      "level": "C1",
+      "synonyms": [
+        "health policy",
+        "public health strategy"
+      ],
+      "antonyms": [],
+      "example_sentence": "Evidence-based public health policy proved essential in controlling disease spread during the pandemic."
+    },
+    {
+      "word": "variant",
+      "pronunciation": "/ˈveəriənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "phiên bản biến thể của một virus với những đặc điểm khác nhau",
+      "definition_en": "genetic variation of a virus with distinct characteristics",
+      "level": "B2",
+      "synonyms": [
+        "strain",
+        "mutation"
+      ],
+      "antonyms": [],
+      "example_sentence": "The emergence of new virus variants complicated vaccination strategies and required updated public health responses."
+    },
+    {
+      "word": "disease surveillance system",
+      "pronunciation": "/dɪˈziːz sərˈveɪləns ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống theo dõi liên tục để phát hiện sớm các bệnh truyền nhiễm",
+      "definition_en": "systematic monitoring framework for early detection of infectious diseases",
+      "level": "C1",
+      "synonyms": [
+        "epidemiological monitoring system",
+        "disease tracking system"
+      ],
+      "antonyms": [],
+      "example_sentence": "A robust disease surveillance system enabled rapid identification of the outbreak's epicenter."
+    },
+    {
+      "word": "immunocompromised",
+      "pronunciation": "/ˌɪmjuːnəʊˈkɒmprəmaɪzd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có hệ miễn dịch suy yếu, dễ bị nhiễm bệnh",
+      "definition_en": "having weakened immune system, vulnerable to infections",
+      "level": "C1",
+      "synonyms": [
+        "immunosuppressed",
+        "immunodeficient"
+      ],
+      "antonyms": [
+        "immunocompetent"
+      ],
+      "example_sentence": "Immunocompromised individuals require additional protective measures and priority access to preventive treatments."
+    },
+    {
+      "word": "infection control",
+      "pronunciation": "/ɪnˈfekʃən kənˈtrəʊl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp và quy trình để ngăn chặn sự lây lan của bệnh nhiễm trùng",
+      "definition_en": "measures and procedures to prevent transmission of infectious diseases",
+      "level": "B2",
+      "synonyms": [
+        "disease prevention",
+        "infection prevention"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strict infection control protocols in hospitals significantly reduced healthcare-associated infection rates."
+    },
+    {
+      "word": "epidemiological trend",
+      "pronunciation": "/ˌepɪˌdiːmiəˈlɒdʒɪkəl trend/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xu hướng thay đổi về tần suất hoặc mức độ của bệnh theo thời gian",
+      "definition_en": "pattern of change in disease frequency or severity over time",
+      "level": "C1",
+      "synonyms": [
+        "disease trend",
+        "epidemiological pattern"
+      ],
+      "antonyms": [],
+      "example_sentence": "Epidemiological trends indicated a declining infection rate following the implementation of vaccination programs."
+    },
+    {
+      "word": "vaccine hesitancy",
+      "pronunciation": "/vækˈsiːn ˈhezɪtənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự do dự hoặc từ chối tiêm chủng mặc dù vắc-xin có sẵn",
+      "definition_en": "reluctance or refusal to accept vaccination despite vaccine availability",
+      "level": "C1",
+      "synonyms": [
+        "vaccination resistance",
+        "vaccine skepticism"
+      ],
+      "antonyms": [],
+      "example_sentence": "Vaccine hesitancy in certain communities undermined efforts to achieve herd immunity thresholds."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'herd immunity' in the context of disease prevention?",
+      "option_a": "The immunity developed by individuals who have survived a disease naturally",
+      "option_b": "The proportion of immune individuals needed to prevent disease transmission in a population",
+      "option_c": "The temporary immunity provided by a single vaccine dose",
+      "option_d": "The immunity that develops only in vaccinated livestock",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Herd immunity (miễn dịch tập thể) là tỷ lệ dân số được bảo vệ cần thiết để ngăn chặn lây lan bệnh. Đáp án A sai vì chỉ nói về miễn dịch cá nhân, C sai vì herd immunity không phải tạm thời, D sai vì không chỉ liên quan đến gia súc."
+    },
+    {
+      "question_text": "What is the primary purpose of 'contact tracing' during a disease outbreak?",
+      "option_a": "To identify and monitor individuals exposed to infected persons",
+      "option_b": "To provide medical treatment to all suspected cases",
+      "option_c": "To determine the genetic sequence of the pathogen",
+      "option_d": "To establish quarantine facilities for patients",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Contact tracing (truy vết tiếp xúc) là quá trình xác định những người tiếp xúc với bệnh nhân để theo dõi và ngăn lây lan. B sai vì đó là chức năng của điều trị, C sai vì đó là công việc của nhà khoa học, D sai vì đó là biện pháp cách ly."
+    },
+    {
+      "question_text": "The term 'asymptomatic transmission' refers to _____ from infected individuals showing no clinical symptoms.",
+      "option_a": "disease spread",
+      "option_b": "vaccine distribution",
+      "option_c": "medical treatment",
+      "option_d": "diagnostic testing",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Asymptomatic transmission (lây truyền không triệu chứng) là sự lây lan bệnh từ những người không có triệu chứng. Các đáp án khác không phù hợp về mặt ngữ pháp và ý nghĩa."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'The government implemented strict _____ to prevent the spread of the infectious disease.'",
+      "option_a": "vaccination campaigns",
+      "option_b": "containment measures",
+      "option_c": "clinical trials",
+      "option_d": "epidemiological surveys",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Containment measures (biện pháp hạn chế) là các chiến lược để kiểm soát sự lây lan. A là chiến dịch tiêm chủng, C là thử nghiệm lâm sàng, D là khảo sát - không phù hợp với ngữ cảnh 'ngăn chặn lây lan'."
+    },
+    {
+      "question_text": "What does 'vaccine efficacy' measure in clinical research?",
+      "option_a": "The cost-effectiveness of vaccine production",
+      "option_b": "The ability of vaccine to prevent disease under ideal conditions",
+      "option_c": "The number of people vaccinated in a campaign",
+      "option_d": "The side effects experienced by vaccinated individuals",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Vaccine efficacy (hiệu quả vắc-xin) đo lường khả năng của vắc-xin ngăn ngừa bệnh trong điều kiện lý tưởng. A sai vì đó là hiệu quả kinh tế, C sai vì đó là tỷ lệ tiêm chủng, D sai vì đó là tác dụng phụ."
+    },
+    {
+      "question_text": "The 'incubation period' is best defined as the time between _____ and the appearance of disease symptoms.",
+      "option_a": "vaccination",
+      "option_b": "infection",
+      "option_c": "recovery",
+      "option_d": "diagnosis",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Incubation period (thời gian ủ bệnh) là khoảng thời gian từ khi nhiễm bệnh đến khi xuất hiện triệu chứng. A sai vì tiêm chủng không phải lây nhiễm, C sai vì đó là sau khi bệnh, D sai vì đó là sau khi phát hiện."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'epidemiological surveillance'?",
+      "option_a": "Disease prevention education",
+      "option_b": "Systematic monitoring to detect and track infectious disease patterns",
+      "option_c": "Vaccination program administration",
+      "option_d": "Hospital infection control procedures",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Epidemiological surveillance (giám sát dịch tễ) là hệ thống theo dõi liên tục để phát hiện và theo dõi bệnh. A là giáo dục phòng ngừa, C là quản lý chương trình tiêm chủng, D là quy trình kiểm soát - không phải từ đồng nghĩa."
+    },
+    {
+      "question_text": "What is the antonym of 'immunocompromised' in medical terminology?",
+      "option_a": "Vaccinated",
+      "option_b": "Immunocompetent",
+      "option_c": "Asymptomatic",
+      "option_d": "Contagious",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Immunocompromised (suy yếu miễn dịch) có antonym là immunocompetent (miễn dịch bình thường). A là trạng thái sau tiêm chủng, C là không có triệu chứng, D là lây nhiễm - không phải antonym."
+    },
+    {
+      "question_text": "The phrase 'public health infrastructure' most closely refers to _____ designed to protect population health.",
+      "option_a": "individual medical treatments",
+      "option_b": "system of facilities and institutions",
+      "option_c": "pharmaceutical company operations",
+      "option_d": "personal hygiene practices",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Public health infrastructure (cơ sở hạ tầng y tế công cộng) là hệ thống cơ sở vật chất và tổ chức. A là điều trị cá nhân, C là hoạt động công ty dược, D là vệ sinh cá nhân - không phù hợp."
+    },
+    {
+      "question_text": "Which statement best explains the relationship between 'antimicrobial resistance' and public health?",
+      "option_a": "It improves the effectiveness of all antibiotic treatments",
+      "option_b": "It limits treatment options and poses a critical global health threat",
+      "option_c": "It reduces the need for vaccination programs",
+      "option_d": "It eliminates the risk of infectious disease transmission",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Antimicrobial resistance (kháng thuốc kháng sinh) là mối đe dọa sức khỏe toàn cầu vì giới hạn các lựa chọn điều trị. A sai vì nó làm giảm hiệu quả, C sai vì không liên quan đến tiêm chủng, D sai vì nó tăng nguy hiểm."
+    },
+    {
+      "question_text": "What does the term 'booster dose' indicate in vaccination programs?",
+      "option_a": "The first dose of vaccine given to infants",
+      "option_b": "An additional vaccine dose to reinforce immunity after initial vaccination",
+      "option_c": "A vaccine given only to immunocompromised individuals",
+      "option_d": "An emergency vaccine administered during outbreaks",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Booster dose (liều tăng cường) là liều vắc-xin bổ sung để tăng cường miễn dịch. A sai vì đó là liều đầu tiên, C sai vì booster dành cho tất cả mọi người, D sai vì không chỉ dùng trong khẩn cấp."
+    },
+    {
+      "question_text": "The concept of 'vaccine hesitancy' primarily describes _____ to accept vaccination despite vaccine availability.",
+      "option_a": "medical inability",
+      "option_b": "reluctance or refusal",
+      "option_c": "financial inability",
+      "option_d": "geographic inaccessibility",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Vaccine hesitancy (do dự tiêm chủng) là sự do dự hoặc từ chối tiêm chủng. A là vấn đề y tế, C là vấn đề tài chính, D là vấn đề địa lý - không phải nguyên nhân chính của vaccine hesitancy."
+    },
+    {
+      "question_text": "Which of the following best describes the relationship between 'epidemiological data' and public health policy?",
+      "option_a": "Epidemiological data is irrelevant to policy decisions",
+      "option_b": "Statistical information guides evidence-based public health policy decisions",
+      "option_c": "Public health policy determines what epidemiological data should be collected",
+      "option_d": "Epidemiological data only applies to historical disease analysis",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Epidemiological data (dữ liệu dịch tễ) là thông tin thống kê hướng dẫn các quyết định chính sách dựa trên bằng chứng. A sai vì dữ liệu rất quan trọng, C sai vì dữ liệu không được xác định bởi chính sách, D sai vì dữ liệu được sử dụng liên tục."
+    },
+    {
+      "question_text": "What is the primary distinction between 'morbidity rate' and 'mortality rate' in epidemiology?",
+      "option_a": "Morbidity measures deaths while mortality measures infections",
+      "option_b": "Morbidity measures disease cases while mortality measures deaths from disease",
+      "option_c": "Both terms refer to the same statistical measure",
+      "option_d": "Morbidity applies only to chronic diseases while mortality applies to acute diseases",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Morbidity rate (tỷ lệ mắc bệnh) đo lường số ca bệnh, trong khi mortality rate (tỷ lệ tử vong) đo lường số ca tử vong. A sai vì ngược lại, C sai vì chúng khác nhau, D sai vì không phân biệt theo loại bệnh."
+    }
+  ]
+}

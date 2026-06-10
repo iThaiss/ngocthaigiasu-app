@@ -1,0 +1,160 @@
+{
+  "words": [
+    {
+      "word": "discretionary spending",
+      "pronunciation": "/dɪˈskreʃəneri ˈspendɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chi tiêu tùy ý, không bắt buộc; tiền dành cho những mục đích không thiết yếu như giải trí, thời trang, du lịch",
+      "definition_en": "Money spent on non-essential goods and services that consumers choose to purchase based on personal preference rather than necessity.",
+      "level": "B2",
+      "synonyms": [
+        "optional spending",
+        "non-essential expenditure"
+      ],
+      "antonyms": [
+        "essential spending",
+        "necessary expenses"
+      ],
+      "example_sentence": "During economic downturns, households typically reduce discretionary spending on luxury items and entertainment."
+    },
+    {
+      "word": "price point",
+      "pronunciation": "/praɪs pɔɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức giá cụ thể được đặt cho một sản phẩm; điểm giá nhằm thu hút một nhóm khách hàng nhất định",
+      "definition_en": "A specific price at which a product is offered for sale, strategically set to appeal to a particular market segment.",
+      "level": "B2",
+      "synonyms": [
+        "price level",
+        "price tier"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company adjusted its price point to compete with mid-range competitors while maintaining brand prestige."
+    },
+    {
+      "word": "impulse purchase",
+      "pronunciation": "/ˈɪmpʌls ˈpɜːtʃəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mua hàng theo xung động, không có kế hoạch trước; quyết định mua sắm tức thời dưới tác động của cảm xúc",
+      "definition_en": "An unplanned purchase made spontaneously, often driven by emotional triggers or in-store marketing tactics rather than rational decision-making.",
+      "level": "B2",
+      "synonyms": [
+        "spontaneous purchase",
+        "unplanned buying"
+      ],
+      "antonyms": [
+        "planned purchase",
+        "deliberate buying"
+      ],
+      "example_sentence": "Retailers strategically place small items near checkout counters to encourage impulse purchases from customers waiting in line."
+    },
+    {
+      "word": "consumer goods",
+      "pronunciation": "/kənˈsuːmə ɡʊdz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hàng tiêu dùng; những sản phẩm được sản xuất để bán trực tiếp cho người tiêu dùng cuối cùng",
+      "definition_en": "Tangible products manufactured and sold for direct use by consumers, including food, clothing, electronics, and household items.",
+      "level": "C1",
+      "synonyms": [
+        "consumer products",
+        "retail goods"
+      ],
+      "antonyms": [
+        "capital goods",
+        "industrial goods"
+      ],
+      "example_sentence": "The consumer goods sector experienced significant growth as demand for packaged food and personal care items surged during the pandemic."
+    },
+    {
+      "word": "price-conscious",
+      "pronunciation": "/praɪs ˈkɒnʃəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Nhạy cảm với giá cả; có xu hướng chú ý đến giá và tìm kiếm giá tốt nhất trước khi mua",
+      "definition_en": "Aware of and sensitive to prices; inclined to compare costs and seek the best value before making a purchase decision.",
+      "level": "B2",
+      "synonyms": [
+        "cost-conscious",
+        "budget-aware"
+      ],
+      "antonyms": [
+        "price-insensitive",
+        "indifferent to cost"
+      ],
+      "example_sentence": "Price-conscious consumers often use mobile apps to compare prices across different retailers before completing their purchases."
+    },
+    {
+      "word": "point of sale",
+      "pronunciation": "/pɔɪnt əv seɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Điểm bán hàng; nơi giao dịch mua bán diễn ra, thường là quầy thanh toán trong cửa hàng",
+      "definition_en": "The location where a transaction between a buyer and seller occurs, typically at a checkout counter or payment terminal in a retail environment.",
+      "level": "B2",
+      "synonyms": [
+        "checkout",
+        "sales counter"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective point of sale marketing, such as eye-catching displays and promotional signage, can significantly influence last-minute purchasing decisions."
+    },
+    {
+      "word": "consumer preference",
+      "pronunciation": "/kənˈsuːmə ˈprefərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sở thích của người tiêu dùng; xu hướng lựa chọn của khách hàng đối với các sản phẩm, dịch vụ hoặc thương hiệu cụ thể",
+      "definition_en": "The tendency of consumers to choose certain products, brands, or services over others based on personal taste, values, or past experiences.",
+      "level": "B2",
+      "synonyms": [
+        "consumer choice",
+        "customer preference"
+      ],
+      "antonyms": [],
+      "example_sentence": "Recent consumer preference surveys indicate a growing shift toward sustainable and eco-friendly products among younger demographics."
+    },
+    {
+      "word": "markup",
+      "pronunciation": "/ˈmɑːrkʌp/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mức tăng giá; phần chênh lệch giữa giá vốn và giá bán của một sản phẩm",
+      "definition_en": "The amount or percentage added to the cost price of goods to determine the selling price and generate profit.",
+      "level": "B2",
+      "synonyms": [
+        "profit margin",
+        "price increase"
+      ],
+      "antonyms": [
+        "discount",
+        "reduction"
+      ],
+      "example_sentence": "Luxury retailers typically maintain a higher markup on their products compared to discount stores to cover premium positioning and exclusive services."
+    },
+    {
+      "word": "shopping cart abandonment",
+      "pronunciation": "/ˈʃɒpɪŋ kɑːrt əˈbændənmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bỏ giỏ hàng; hiện tượng khách hàng thêm sản phẩm vào giỏ nhưng không hoàn tất thanh toán",
+      "definition_en": "The situation where online shoppers add items to their digital shopping cart but leave the website without completing the purchase transaction.",
+      "level": "B2",
+      "synonyms": [
+        "cart abandonment",
+        "checkout abandonment"
+      ],
+      "antonyms": [],
+      "example_sentence": "E-commerce platforms combat shopping cart abandonment by sending reminder emails with special discounts to encourage customers to complete their purchases."
+    },
+    {
+      "word": "customer acquisition cost",
+      "pronunciation": "/ˈkʌstəmə ækwɪˈzɪʃən kɒst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chi phí để thu hút khách hàng mới; tổng chi phí marketing chia cho số khách hàng mới được thu hút",
+      "definition_en": "The total marketing and sales expenses required to acquire a new customer, calculated by dividing total acquisition spending by the number of new customers gained.",
+      "level": "C1",
+      "synonyms": [
+        "acquisition expense",
+        "customer cost"
+      ],
+      "antonyms": [],
+      "example_sentence": "Retailers must carefully balance their customer acquisition cost against the lifetime value of each customer to ensure sustainable business profitability."
+    }
+  ],
+  "questions": []
+}

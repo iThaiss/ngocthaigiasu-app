@@ -1,0 +1,128 @@
+```json
+{
+  "words": [
+    {
+      "word": "gerrymander",
+      "pronunciation": "/ˈdʒerɪmændər/",
+      "part_of_speech": "verb",
+      "definition_vi": "Vẽ lại ranh giới các khu vực bầu cử để ưu đãi một đảng phái hoặc nhóm cử tri cụ thể.",
+      "definition_en": "To redraw electoral district boundaries to favor a particular political party or group of voters.",
+      "level": "C1",
+      "synonyms": ["manipulate electoral boundaries", "rig districts"],
+      "antonyms": ["fair redistricting"],
+      "example_sentence": "Critics argue that the ruling party gerrymandered districts to secure electoral advantage in the upcoming election."
+    },
+    {
+      "word": "separation of powers",
+      "pronunciation": "/ˌsepəˈreɪʃən əv ˈpaʊərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nguyên tắc chia quyền lực giữa ba nhánh chính phủ (hành pháp, lập pháp, tư pháp) để tránh tập trung quyền lực.",
+      "definition_en": "The division of governmental authority among executive, legislative, and judicial branches to prevent concentration of power.",
+      "level": "B2",
+      "synonyms": ["checks and balances", "division of authority"],
+      "antonyms": ["concentration of power", "authoritarianism"],
+      "example_sentence": "The separation of powers is a fundamental principle designed to protect democratic governance and individual freedoms."
+    },
+    {
+      "word": "civil disobedience",
+      "pronunciation": "/ˌsɪvəl ˌdɪsəˈbiːdiəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hành động từ chối tuân theo luật pháp một cách bình tĩnh và công khai để phản đối chính sách hoặc luật lệ mà người đó cho là bất công.",
+      "definition_en": "Deliberate, peaceful violation of laws deemed unjust to effect social or political change.",
+      "level": "C1",
+      "synonyms": ["nonviolent resistance", "peaceful protest"],
+      "antonyms": ["compliance", "obedience"],
+      "example_sentence": "Civil disobedience movements throughout history have challenged unjust laws and catalyzed significant social reform."
+    },
+    {
+      "word": "populism",
+      "pronunciation": "/ˈpɒpjələrɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phong trào chính trị dựa trên sự ủng hộ của nhân dân bình thường, thường chỉ trích các精英và thể chế hiện hành.",
+      "definition_en": "A political approach that appeals to ordinary people and often criticizes established elites and institutions.",
+      "level": "B2",
+      "synonyms": ["people-centered politics", "mass appeal"],
+      "antonyms": ["elitism", "technocracy"],
+      "example_sentence": "The rise of populism in recent decades reflects widespread dissatisfaction with traditional political establishments."
+    },
+    {
+      "word": "checks and balances",
+      "pronunciation": "/ˌtʃeks ənd ˈbælənsɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống các quyền hạn và trách nhiệm được phân bổ giữa các nhánh chính phủ để ngăn chặn lạm dụng quyền lực.",
+      "definition_en": "A system of mutual restraint among branches of government to prevent any one from becoming too powerful.",
+      "level": "B2",
+      "synonyms": ["separation of powers", "mutual restraint"],
+      "antonyms": ["absolute power", "tyranny"],
+      "example_sentence": "Effective checks and balances ensure that no single branch of government can exercise unchecked authority."
+    },
+    {
+      "word": "diplomatic immunity",
+      "pronunciation": "/ˌdɪpləˈmætɪk ɪˈmjuːnɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền miễn trừ từ các quy định pháp luật của nước sở tại dành cho các nhân viên ngoại giao và đại sứ.",
+      "definition_en": "Legal exemption from prosecution granted to diplomats and embassy staff under international law.",
+      "level": "C1",
+      "synonyms": ["diplomatic privilege", "official immunity"],
+      "antonyms": ["legal liability", "prosecution"],
+      "example_sentence": "Diplomatic immunity protects foreign officials from legal action, facilitating international relations and negotiations."
+    },
+    {
+      "word": "electoral fraud",
+      "pronunciation": "/ɪˈlektərəl ˈfrɔːd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các hành vi gian lận trong quá trình bầu cử, chẳng hạn như giả mạo phiếu bầu hoặc thao túng kết quả.",
+      "definition_en": "Illegal manipulation of voting processes, including ballot tampering and result falsification.",
+      "level": "B2",
+      "synonyms": ["vote rigging", "ballot manipulation"],
+      "antonyms": ["fair election", "transparent voting"],
+      "example_sentence": "International observers were deployed to monitor the election and detect any instances of electoral fraud."
+    },
+    {
+      "word": "political asylum",
+      "pronunciation": "/pəˈlɪtɪkəl əˈsaɪləm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền được một quốc gia bảo vệ dành cho những người bị bách hại vì lý do chính trị ở đất nước của họ.",
+      "definition_en": "Protection granted by a country to individuals fleeing political persecution in their home country.",
+      "level": "B2",
+      "synonyms": ["refugee status", "political protection"],
+      "antonyms": ["deportation", "extradition"],
+      "example_sentence": "Many dissidents sought political asylum abroad after facing persecution for their opposition to the authoritarian regime."
+    },
+    {
+      "word": "coalition government",
+      "pronunciation": "/koʊˈælɪʃən ˈɡʌvərnmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chính phủ được thành lập bởi hai hoặc nhiều đảng phái kết hợp với nhau để có đủ số ghế trong quốc hội.",
+      "definition_en": "A government formed by two or more political parties joining together to secure a parliamentary majority.",
+      "level": "B2",
+      "synonyms": ["multi-party government", "alliance government"],
+      "antonyms": ["single-party government", "majority government"],
+      "example_sentence": "After the inconclusive election results, the leading parties negotiated to form a coalition government."
+    },
+    {
+      "word": "rule of law",
+      "pronunciation": "/ˌruːl əv ˈlɔː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nguyên tắc rằng tất cả mọi người, kể cả những người nắm quyền lực, đều phải tuân theo luật pháp và không ai nằm ngoài vòng pháp luật.",
+      "definition_en": "The principle that all persons and institutions are subject to and accountable under the law.",
+      "level": "C1",
+      "synonyms": ["legal equality", "constitutional governance"],
+      "antonyms": ["arbitrary rule", "despotism"],
+      "example_sentence": "A robust rule of law is essential for maintaining democratic institutions and protecting individual rights from governmental abuse."
+    },
+    {
+      "word": "political spectrum",
+      "pronunciation": "/pəˈlɪtɪkəl ˈspektrəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phạm vi các quan điểm chính trị từ cực tả đến cực phải, thường được sử dụng để phân loại các đảng phái và ý tưởng.",
+      "definition_en": "The range of political ideologies and positions, typically represented on a left-to-right scale.",
+      "level": "B2",
+      "synonyms": ["ideological range", "political orientation"],
+      "antonyms": [],
+      "example_sentence": "Candidates across the political spectrum presented diverse policy proposals addressing economic inequality and climate change."
+    }
+  ],
+  "questions": []
+}
+```

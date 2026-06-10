@@ -1,0 +1,389 @@
+{
+  "words": [
+    {
+      "word": "working capital",
+      "pronunciation": "/ˈwɜːkɪŋ ˈkæpɪtl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Vốn lưu động; số tiền doanh nghiệp sử dụng để tài trợ hoạt động hàng ngày (tài sản lưu động trừ nợ ngắn hạn)",
+      "definition_en": "The capital available for a company's day-to-day operations; current assets minus current liabilities.",
+      "level": "B2",
+      "synonyms": [
+        "operating capital",
+        "circulating capital"
+      ],
+      "antonyms": [
+        "fixed capital"
+      ],
+      "example_sentence": "The startup struggled to maintain adequate working capital during its first year of expansion."
+    },
+    {
+      "word": "economies of scale",
+      "pronunciation": "/ɪˈkɒnəmiz əv skeɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lợi thế chi phí khi sản xuất với quy mô lớn; chi phí trên mỗi đơn vị giảm khi sản lượng tăng",
+      "definition_en": "Cost advantages gained when production increases; per-unit costs decrease with higher output volumes.",
+      "level": "B2",
+      "synonyms": [
+        "mass production benefits",
+        "scale efficiency"
+      ],
+      "antonyms": [
+        "diseconomies of scale"
+      ],
+      "example_sentence": "Large pharmaceutical companies benefit from economies of scale in manufacturing and distribution networks."
+    },
+    {
+      "word": "market penetration",
+      "pronunciation": "/ˈmɑːkɪt ˌpenɪˈtreɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chiến lược tăng thị phần bằng cách bán nhiều hơn sản phẩm hiện tại trên thị trường hiện tại",
+      "definition_en": "A growth strategy focusing on selling more of existing products in existing markets.",
+      "level": "B2",
+      "synonyms": [
+        "market expansion",
+        "market share growth"
+      ],
+      "antonyms": [
+        "market withdrawal"
+      ],
+      "example_sentence": "The beverage company's market penetration strategy involved aggressive pricing and increased advertising in urban areas."
+    },
+    {
+      "word": "stakeholder",
+      "pronunciation": "/ˈsteɪkhəʊldə(r)/",
+      "part_of_speech": "noun",
+      "definition_vi": "Bất kỳ người hoặc tổ chức nào có lợi ích trong hoạt động của công ty (cổ đông, nhân viên, khách hàng, cộng đồng)",
+      "definition_en": "Any individual or organization with an interest in a company's success or failure.",
+      "level": "B2",
+      "synonyms": [
+        "shareholder",
+        "interested party"
+      ],
+      "antonyms": [],
+      "example_sentence": "The board must balance the interests of all stakeholders, including employees, investors, and customers."
+    },
+    {
+      "word": "supply chain",
+      "pronunciation": "/səˈplaɪ tʃeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chuỗi các hoạt động từ sản xuất đến phân phối sản phẩm cho người tiêu dùng cuối cùng",
+      "definition_en": "The sequence of processes involved in producing and delivering goods from manufacturer to end consumer.",
+      "level": "B2",
+      "synonyms": [
+        "distribution network",
+        "logistics chain"
+      ],
+      "antonyms": [],
+      "example_sentence": "COVID-19 disrupted global supply chains, causing shortages and delays in manufacturing sectors worldwide."
+    },
+    {
+      "word": "competitive advantage",
+      "pronunciation": "/kəmˈpetɪtɪv ədˈvɑːntɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Những yếu tố giúp công ty vượt trội hơn đối thủ (công nghệ, giá cả, chất lượng, thương hiệu)",
+      "definition_en": "Attributes that enable a company to outperform competitors in the marketplace.",
+      "level": "B2",
+      "synonyms": [
+        "competitive edge",
+        "market advantage"
+      ],
+      "antonyms": [
+        "competitive disadvantage"
+      ],
+      "example_sentence": "Apple's competitive advantage stems from its innovative design, brand loyalty, and integrated ecosystem."
+    },
+    {
+      "word": "market segmentation",
+      "pronunciation": "/ˈmɑːkɪt ˌsegmənˈteɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chia thị trường thành các nhóm khách hàng có đặc điểm, nhu cầu hoặc hành vi tương tự",
+      "definition_en": "Dividing a market into distinct groups of consumers with similar characteristics or needs.",
+      "level": "B2",
+      "synonyms": [
+        "market division",
+        "customer segmentation"
+      ],
+      "antonyms": [
+        "mass marketing"
+      ],
+      "example_sentence": "The luxury car manufacturer uses market segmentation to target high-income professionals separately from young entrepreneurs."
+    },
+    {
+      "word": "disruptive innovation",
+      "pronunciation": "/dɪsˈrʌptɪv ˌɪnəˈveɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Công nghệ hoặc sản phẩm mới làm thay đổi toàn bộ ngành công nghiệp, thường làm cho các sản phẩm cũ trở nên lỗi thời",
+      "definition_en": "A new technology or product that fundamentally transforms an industry and displaces established competitors.",
+      "level": "C1",
+      "synonyms": [
+        "game-changing innovation",
+        "paradigm shift"
+      ],
+      "antonyms": [
+        "incremental innovation"
+      ],
+      "example_sentence": "Streaming services represented a disruptive innovation that fundamentally altered the entertainment industry and traditional television."
+    },
+    {
+      "word": "value proposition",
+      "pronunciation": "/ˈvæljuː ˌprɒpəˈzɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lợi ích hoặc giá trị mà sản phẩm/dịch vụ mang lại cho khách hàng, giải thích tại sao họ nên mua",
+      "definition_en": "The unique benefits and value a product or service offers to customers compared to alternatives.",
+      "level": "C1",
+      "synonyms": [
+        "unique selling proposition",
+        "customer value"
+      ],
+      "antonyms": [],
+      "example_sentence": "Tesla's value proposition combines environmental sustainability with high performance and cutting-edge technology."
+    },
+    {
+      "word": "elasticity of demand",
+      "pronunciation": "/ɪˌlæsˈtɪsɪti əv dɪˈmɑːnd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ thay đổi lượng cầu khi giá thay đổi; đo lường độ nhạy cảm của người tiêu dùng với biến động giá",
+      "definition_en": "The responsiveness of quantity demanded to changes in price; measures consumer sensitivity to price fluctuations.",
+      "level": "C1",
+      "synonyms": [
+        "price sensitivity",
+        "demand responsiveness"
+      ],
+      "antonyms": [],
+      "example_sentence": "Essential goods like medicine typically have low elasticity of demand because consumers will purchase them regardless of price increases."
+    },
+    {
+      "word": "strategic alliance",
+      "pronunciation": "/strəˈtiːdʒɪk əˈlaɪəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hợp tác giữa hai hay nhiều công ty để đạt mục tiêu chung mà không cần sáp nhập hoàn toàn",
+      "definition_en": "A cooperative agreement between companies to achieve mutual objectives without full merger.",
+      "level": "C1",
+      "synonyms": [
+        "partnership",
+        "joint venture"
+      ],
+      "antonyms": [
+        "competition"
+      ],
+      "example_sentence": "Samsung and Apple formed a strategic alliance in component manufacturing despite being fierce competitors in the smartphone market."
+    },
+    {
+      "word": "market saturation",
+      "pronunciation": "/ˈmɑːkɪt ˌsætʃəˈreɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng thị trường đã được lấp đầy bởi sản phẩm/dịch vụ, khó có thêm tăng trưởng mới",
+      "definition_en": "A market condition where supply equals or exceeds demand, limiting further growth opportunities.",
+      "level": "C1",
+      "synonyms": [
+        "market maturity",
+        "market oversupply"
+      ],
+      "antonyms": [
+        "market growth",
+        "emerging market"
+      ],
+      "example_sentence": "The smartphone market is approaching saturation in developed countries, forcing manufacturers to focus on emerging markets."
+    },
+    {
+      "word": "consumer behavior",
+      "pronunciation": "/kənˈsuːmə bɪˈheɪvjə(r)/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các quyết định và hành động của người tiêu dùng khi mua hàng, chịu ảnh hưởng bởi tâm lý, văn hóa, kinh tế",
+      "definition_en": "The study of how consumers make purchasing decisions and what influences their choices.",
+      "level": "B2",
+      "synonyms": [
+        "purchasing behavior",
+        "consumer decision-making"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding consumer behavior is crucial for marketing teams to develop effective advertising campaigns and product positioning."
+    },
+    {
+      "word": "brand equity",
+      "pronunciation": "/brænd ˈekwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giá trị thương hiệu; sự khác biệt giữa giá bán sản phẩm có thương hiệu mạnh và sản phẩm không có thương hiệu",
+      "definition_en": "The added value a brand name gives to a product, allowing premium pricing compared to generic alternatives.",
+      "level": "C1",
+      "synonyms": [
+        "brand value",
+        "brand strength"
+      ],
+      "antonyms": [
+        "brand damage"
+      ],
+      "example_sentence": "Coca-Cola's brand equity allows it to command higher prices than generic cola brands despite similar chemical composition."
+    },
+    {
+      "word": "vertical integration",
+      "pronunciation": "/ˈvɜːtɪkl ˌɪntɪˈɡreɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chiến lược mở rộng kinh doanh bằng cách kiểm soát nhiều bước trong chuỗi cung ứng (từ nguyên liệu đến bán lẻ)",
+      "definition_en": "A strategy where a company controls multiple stages of production and distribution within its supply chain.",
+      "level": "C1",
+      "synonyms": [
+        "backward integration",
+        "forward integration"
+      ],
+      "antonyms": [
+        "horizontal integration"
+      ],
+      "example_sentence": "Tesla practices vertical integration by manufacturing batteries, components, and vehicles in-house to maintain quality control."
+    },
+    {
+      "word": "market share",
+      "pronunciation": "/ˈmɑːkɪt ʃeə(r)/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Phần trăm doanh số bán hàng của công ty so với tổng doanh số của toàn bộ ngành",
+      "definition_en": "The percentage of total sales in a market that a company controls.",
+      "level": "B2",
+      "synonyms": [
+        "market portion",
+        "competitive position"
+      ],
+      "antonyms": [],
+      "example_sentence": "Apple's market share in smartphones increased significantly after the launch of the iPhone 13 series."
+    },
+    {
+      "word": "pricing strategy",
+      "pronunciation": "/ˈpraɪsɪŋ ˈstrætədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chiến lược định giá sản phẩm dựa trên chi phí, cạnh tranh, giá trị, hoặc tâm lý người tiêu dùng",
+      "definition_en": "The approach a company uses to set prices for its products based on costs, competition, and customer perception.",
+      "level": "B2",
+      "synonyms": [
+        "price positioning",
+        "pricing model"
+      ],
+      "antonyms": [],
+      "example_sentence": "Netflix employs a tiered pricing strategy offering multiple subscription levels to capture different customer segments."
+    },
+    {
+      "word": "return on investment (roi)",
+      "pronunciation": "/rɪˈtɜːn ɒn ɪnˈvestmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tỷ suất lợi nhuận từ đầu tư; tính bằng (lợi nhuận / vốn đầu tư) × 100%",
+      "definition_en": "A metric measuring the profitability of an investment relative to its cost.",
+      "level": "B2",
+      "synonyms": [
+        "return on capital",
+        "profit ratio"
+      ],
+      "antonyms": [],
+      "example_sentence": "Investors carefully analyze the ROI of new projects before committing capital to ensure financial viability."
+    },
+    {
+      "word": "customer retention",
+      "pronunciation": "/ˈkʌstəmə rɪˈtenʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng giữ chân khách hàng hiện tại; tỷ lệ khách hàng tiếp tục mua hàng từ công ty",
+      "definition_en": "The ability to keep existing customers engaged and purchasing over time.",
+      "level": "B2",
+      "synonyms": [
+        "customer loyalty",
+        "repeat business"
+      ],
+      "antonyms": [
+        "customer churn"
+      ],
+      "example_sentence": "E-commerce companies invest heavily in customer retention programs because acquiring new customers is significantly more expensive."
+    },
+    {
+      "word": "monopoly",
+      "pronunciation": "/məˈnɒpəli/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng một công ty kiểm soát toàn bộ thị trường sản phẩm/dịch vụ, không có đối thủ cạnh tranh",
+      "definition_en": "A market structure where one company has exclusive control over the supply of a product or service.",
+      "level": "B2",
+      "synonyms": [
+        "exclusive control",
+        "market dominance"
+      ],
+      "antonyms": [
+        "competition",
+        "perfect competition"
+      ],
+      "example_sentence": "Historically, utility companies operated as natural monopolies because infrastructure duplication was economically inefficient."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "A technology startup needs to expand its operations but lacks sufficient funds for day-to-day expenses. Which financial concept is most critical to address?",
+      "option_a": "Working capital management",
+      "option_b": "Economies of scale",
+      "option_c": "Market penetration",
+      "option_d": "Brand equity",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Working capital (vốn lưu động) là số tiền cần thiết để tài trợ hoạt động hàng ngày. Các lựa chọn khác không liên quan trực tiếp đến vấn đề thiếu tiền mặt ngắn hạn."
+    },
+    {
+      "question_text": "When a company like Netflix offers Basic, Standard, and Premium subscription tiers at different price points, it is primarily employing which strategy?",
+      "option_a": "Vertical integration",
+      "option_b": "Market segmentation and pricing strategy",
+      "option_c": "Disruptive innovation",
+      "option_d": "Strategic alliance",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Netflix chia thị trường thành các nhóm khách hàng khác nhau (market segmentation) với giá khác nhau (pricing strategy). Các lựa chọn khác không phù hợp với mô hình kinh doanh này."
+    },
+    {
+      "question_text": "A pharmaceutical company discovers that demand for its new drug remains high even when prices increase significantly. This indicates the drug has _____ elasticity of demand.",
+      "option_a": "high",
+      "option_b": "low",
+      "option_c": "zero",
+      "option_d": "negative",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Low elasticity of demand (cầu không co giãn) có nghĩa là lượng cầu ít thay đổi khi giá tăng. Thuốc cứu mạng có cầu không co giãn vì người bệnh phải mua bất kể giá cả."
+    },
+    {
+      "question_text": "Which of the following best describes a company's unique benefits and reasons why customers should choose it over competitors?",
+      "option_a": "Competitive advantage",
+      "option_b": "Value proposition",
+      "option_c": "Market share",
+      "option_d": "Consumer behavior",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Value proposition là những lợi ích duy nhất mà công ty mang lại cho khách hàng. Competitive advantage rộng hơn, market share là con số, consumer behavior là hành động của khách hàng."
+    },
+    {
+      "question_text": "When Tesla manufactures its own batteries and components rather than outsourcing them, this exemplifies which business strategy?",
+      "option_a": "Horizontal integration",
+      "option_b": "Market penetration",
+      "option_c": "Vertical integration",
+      "option_d": "Disruptive innovation",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Vertical integration là kiểm soát nhiều bước trong chuỗi cung ứng từ sản xuất đến bán lẻ. Tesla tự sản xuất pin và linh kiện thay vì mua từ bên ngoài."
+    },
+    {
+      "question_text": "A smartphone manufacturer's ability to charge premium prices due to brand recognition and customer loyalty reflects its strong _____ in the market.",
+      "option_a": "market saturation",
+      "option_b": "brand equity",
+      "option_c": "supply chain",
+      "option_d": "stakeholder interest",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Brand equity (giá trị thương hiệu) cho phép công ty bán sản phẩm với giá cao hơn vì khách hàng tin tưởng thương hiệu. Các lựa chọn khác không giải thích được khả năng định giá cao."
+    },
+    {
+      "question_text": "Which scenario best illustrates a company facing market saturation?",
+      "option_a": "A new smartphone brand enters the market with innovative features.",
+      "option_b": "Mature smartphone manufacturers struggle to grow in developed countries and shift focus to emerging markets.",
+      "option_c": "A company invests heavily in research and development for next-generation products.",
+      "option_d": "A startup forms a strategic alliance with an established competitor.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Market saturation xảy ra khi thị trường đã đầy đủ sản phẩm, khó tăng trưởng thêm. Các nhà sản xuất điện thoại phải tìm kiếm thị trường mới vì thị trường phát triển đã bão hòa."
+    }
+  ]
+}

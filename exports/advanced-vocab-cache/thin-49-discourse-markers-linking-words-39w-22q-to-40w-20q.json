@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "word": "by virtue of",
+      "pronunciation": "/baɪ ˈvɜːr.tʃu əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhờ vào, bởi vì, do có (chỉ nguyên nhân hoặc cơ sở hợp pháp)",
+      "definition_en": "because of; on the basis of; by reason of",
+      "level": "C1",
+      "synonyms": [
+        "because of",
+        "owing to",
+        "due to"
+      ],
+      "antonyms": [
+        "despite",
+        "in spite of"
+      ],
+      "example_sentence": "By virtue of her extensive research background, she was appointed as the principal investigator of the project."
+    },
+    {
+      "word": "to that extent",
+      "pronunciation": "/tu ðæt ɪkˈstent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ở mức độ đó, trong phạm vi đó (dùng để giới hạn hoặc xác định mức độ của một tuyên bố)",
+      "definition_en": "to that degree; insofar as; to such a degree",
+      "level": "C1",
+      "synonyms": [
+        "to that degree",
+        "insofar as",
+        "to such an extent"
+      ],
+      "antonyms": [
+        "not at all",
+        "in no way"
+      ],
+      "example_sentence": "The government's intervention was effective, to that extent that unemployment rates decreased significantly."
+    },
+    {
+      "word": "in tandem with",
+      "pronunciation": "/ɪn ˈtæn.dəm wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cùng với, song song với, kết hợp với (chỉ sự phối hợp hoặc diễn ra đồng thời)",
+      "definition_en": "together with; in conjunction with; at the same time as",
+      "level": "B2",
+      "synonyms": [
+        "alongside",
+        "in conjunction with",
+        "together with"
+      ],
+      "antonyms": [
+        "separately from",
+        "independently of"
+      ],
+      "example_sentence": "The new curriculum was implemented in tandem with comprehensive teacher training programs."
+    },
+    {
+      "word": "to underscore",
+      "pronunciation": "/tu ˌʌn.dərˈskɔːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh, làm nổi bật (dùng trong văn bản học thuật để chỉ điểm quan trọng)",
+      "definition_en": "to emphasize; to highlight; to stress the importance of",
+      "level": "C1",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The report underscores the critical need for sustainable development policies in emerging economies."
+    },
+    {
+      "word": "in this vein",
+      "pronunciation": "/ɪn ðɪs veɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo cách tương tự, theo hướng tương tự (dùng để giới thiệu ý tưởng liên quan hoặc song song)",
+      "definition_en": "in a similar manner; in the same way; along similar lines",
+      "level": "C1",
+      "synonyms": [
+        "similarly",
+        "likewise",
+        "in the same way"
+      ],
+      "antonyms": [
+        "conversely",
+        "by contrast"
+      ],
+      "example_sentence": "Several studies have demonstrated the efficacy of cognitive therapy; in this vein, recent research confirms its long-term benefits."
+    },
+    {
+      "word": "to substantiate",
+      "pronunciation": "/səbˈstæn.ʃi.eɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác thực, cung cấp bằng chứng (dùng để chỉ việc hỗ trợ một tuyên bố bằng dữ liệu)",
+      "definition_en": "to provide evidence for; to support with facts; to verify",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "corroborate",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researchers substantiated their hypothesis with extensive empirical data collected over five years."
+    },
+    {
+      "word": "to elucidate",
+      "pronunciation": "/ɪˈluː.sɪ.deɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng (dùng để chỉ việc làm cho một vấn đề phức tạp trở nên dễ hiểu)",
+      "definition_en": "to explain clearly; to clarify; to shed light on",
+      "level": "C1",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The author elucidates the mechanisms of climate change through a series of well-structured diagrams and case studies."
+    },
+    {
+      "word": "as such",
+      "pronunciation": "/æz sʌtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "như vậy, theo như vậy, vì lý do đó (dùng để chỉ hệ quả logic hoặc để xác nhận tính chất của cái gì)",
+      "definition_en": "therefore; for that reason; in that capacity",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "consequently",
+        "thus"
+      ],
+      "antonyms": [
+        "however",
+        "nevertheless"
+      ],
+      "example_sentence": "The pandemic disrupted global supply chains; as such, many industries faced unprecedented challenges."
+    },
+    {
+      "word": "to corroborate",
+      "pronunciation": "/kəˈrɒb.ə.reɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (dùng để chỉ việc một nguồn khác hỗ trợ hoặc xác nhận một tuyên bố)",
+      "definition_en": "to confirm or give support to; to verify with additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "validate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple independent studies corroborate the findings that regular exercise significantly improves mental health outcomes."
+    },
+    {
+      "word": "in the context of",
+      "pronunciation": "/ɪn ðə ˈkɒn.tekst əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trong bối cảnh của, xét trong hoàn cảnh (dùng để giới thiệu hoặc giải thích một vấn đề trong một khuôn khổ cụ thể)",
+      "definition_en": "considering the circumstances; within the framework of; given the situation of",
+      "level": "B2",
+      "synonyms": [
+        "given",
+        "considering",
+        "in light of"
+      ],
+      "antonyms": [
+        "out of context",
+        "regardless of"
+      ],
+      "example_sentence": "In the context of rising inflation, policymakers must carefully balance economic growth with price stability."
+    }
+  ],
+  "questions": []
+}

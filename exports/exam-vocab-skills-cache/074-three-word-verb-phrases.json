@@ -1,0 +1,519 @@
+{
+  "words": [
+    {
+      "word": "come up with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nghĩ ra, đưa ra (ý tưởng, giải pháp, lời giải thích)",
+      "definition_en": "to produce or suggest an idea, plan, or solution",
+      "level": "B1",
+      "synonyms": [
+        "think of",
+        "devise",
+        "propose"
+      ],
+      "antonyms": [],
+      "example_sentence": "The research team came up with an innovative approach to reduce plastic waste in urban areas."
+    },
+    {
+      "word": "look forward to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "mong chờ, trông đợi (điều gì sắp xảy ra)",
+      "definition_en": "to feel happy or excited about something that will happen in the future",
+      "level": "B1",
+      "synonyms": [
+        "anticipate",
+        "await",
+        "expect"
+      ],
+      "antonyms": [
+        "dread",
+        "fear"
+      ],
+      "example_sentence": "Students are looking forward to the summer holidays after completing their final examinations."
+    },
+    {
+      "word": "keep up with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "theo kịp, bắt kịp (tiến độ, xu hướng, tin tức)",
+      "definition_en": "to move or progress at the same speed as someone or something; to stay informed",
+      "level": "B1",
+      "synonyms": [
+        "stay abreast of",
+        "maintain pace with",
+        "follow"
+      ],
+      "antonyms": [
+        "fall behind",
+        "lag"
+      ],
+      "example_sentence": "It is challenging for developing countries to keep up with rapid technological advancements."
+    },
+    {
+      "word": "put up with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chịu đựng, chấp nhận (điều khó chịu, bất tiện)",
+      "definition_en": "to tolerate or accept something unpleasant without complaining",
+      "level": "B1",
+      "synonyms": [
+        "tolerate",
+        "endure",
+        "bear"
+      ],
+      "antonyms": [
+        "reject",
+        "refuse"
+      ],
+      "example_sentence": "Factory workers had to put up with poor working conditions and low wages for many years."
+    },
+    {
+      "word": "run into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gặp phải (vấn đề, khó khăn); tình cờ gặp (người)",
+      "definition_en": "to encounter a problem or difficulty; to meet someone by chance",
+      "level": "B1",
+      "synonyms": [
+        "encounter",
+        "meet",
+        "face"
+      ],
+      "antonyms": [],
+      "example_sentence": "The construction project ran into unexpected delays due to unfavorable weather conditions."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, dẫn đến (kết quả, thay đổi)",
+      "definition_en": "to cause something to happen or to produce a particular result",
+      "level": "B1",
+      "synonyms": [
+        "cause",
+        "create",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "stop"
+      ],
+      "example_sentence": "The new education policy brought about significant improvements in student literacy rates."
+    },
+    {
+      "word": "deal with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xử lý, giải quyết (vấn đề, tình huống)",
+      "definition_en": "to handle or manage a problem, situation, or person",
+      "level": "B1",
+      "synonyms": [
+        "handle",
+        "manage",
+        "tackle"
+      ],
+      "antonyms": [
+        "ignore",
+        "neglect"
+      ],
+      "example_sentence": "Environmental agencies must deal with pollution issues through stricter regulations and enforcement."
+    },
+    {
+      "word": "go through",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "trải qua, trải nghiệm (khó khăn); xem xét kỹ lưỡng",
+      "definition_en": "to experience something difficult; to examine or review carefully",
+      "level": "B1",
+      "synonyms": [
+        "experience",
+        "undergo",
+        "examine"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many refugees go through traumatic experiences before reaching safety in their new countries."
+    },
+    {
+      "word": "set up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thành lập, lập ra (tổ chức, hệ thống); chuẩn bị",
+      "definition_en": "to establish or create an organization, system, or arrangement",
+      "level": "B1",
+      "synonyms": [
+        "establish",
+        "create",
+        "found"
+      ],
+      "antonyms": [
+        "dismantle",
+        "close"
+      ],
+      "example_sentence": "The government set up a new research institute to study renewable energy sources."
+    },
+    {
+      "word": "take on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nhận lấy, đảm nhận (trách nhiệm, công việc); chống lại",
+      "definition_en": "to accept responsibility or a job; to compete against",
+      "level": "B1",
+      "synonyms": [
+        "accept",
+        "undertake",
+        "assume"
+      ],
+      "antonyms": [
+        "refuse",
+        "decline"
+      ],
+      "example_sentence": "Young entrepreneurs are taking on the challenge of developing sustainable business models."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh (sự thật, chi tiết quan trọng)",
+      "definition_en": "to indicate or draw attention to something important",
+      "level": "B1",
+      "synonyms": [
+        "indicate",
+        "highlight",
+        "mention"
+      ],
+      "antonyms": [
+        "overlook",
+        "ignore"
+      ],
+      "example_sentence": "The report points out that climate change has accelerated coastal erosion in several regions."
+    },
+    {
+      "word": "carry out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thực hiện, tiến hành (kế hoạch, nghiên cứu, lệnh)",
+      "definition_en": "to perform or complete a task, plan, or instruction",
+      "level": "B1",
+      "synonyms": [
+        "perform",
+        "execute",
+        "conduct"
+      ],
+      "antonyms": [
+        "abandon",
+        "cancel"
+      ],
+      "example_sentence": "Scientists carried out extensive experiments to verify the effectiveness of the new vaccine."
+    },
+    {
+      "word": "break down",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phân tích chi tiết; hỏng hóc; sụp đổ",
+      "definition_en": "to analyze into components; to stop functioning; to collapse",
+      "level": "B1",
+      "synonyms": [
+        "analyze",
+        "fail",
+        "collapse"
+      ],
+      "antonyms": [
+        "construct",
+        "build"
+      ],
+      "example_sentence": "The economist broke down the budget into different spending categories for better understanding."
+    },
+    {
+      "word": "cut down on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giảm bớt, cắt giảm (lượng, chi phí)",
+      "definition_en": "to reduce the amount or quantity of something",
+      "level": "B1",
+      "synonyms": [
+        "reduce",
+        "decrease",
+        "minimize"
+      ],
+      "antonyms": [
+        "increase",
+        "expand"
+      ],
+      "example_sentence": "Many companies are cutting down on carbon emissions to meet international environmental standards."
+    },
+    {
+      "word": "give up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "từ bỏ, bỏ cuộc; thôi (thói quen)",
+      "definition_en": "to stop trying; to quit a habit or activity",
+      "level": "B1",
+      "synonyms": [
+        "quit",
+        "abandon",
+        "surrender"
+      ],
+      "antonyms": [
+        "persist",
+        "continue"
+      ],
+      "example_sentence": "Smokers who give up the habit significantly reduce their risk of developing serious health problems."
+    },
+    {
+      "word": "hold on to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giữ chặt, không buông; duy trì (niềm tin, hy vọng)",
+      "definition_en": "to keep or maintain something; to not let go of something",
+      "level": "B1",
+      "synonyms": [
+        "retain",
+        "maintain",
+        "keep"
+      ],
+      "antonyms": [
+        "release",
+        "abandon"
+      ],
+      "example_sentence": "Despite economic hardship, families hold on to their cultural traditions and values."
+    },
+    {
+      "word": "look into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "điều tra, tìm hiểu (vấn đề, sự việc)",
+      "definition_en": "to investigate or examine something carefully",
+      "level": "B1",
+      "synonyms": [
+        "investigate",
+        "examine",
+        "research"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The committee will look into allegations of corruption within the government agency."
+    },
+    {
+      "word": "make up for",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bù đắp, bù lại (thiệt hại, sai lầm)",
+      "definition_en": "to compensate for something lost or done wrong",
+      "level": "B1",
+      "synonyms": [
+        "compensate",
+        "offset",
+        "remedy"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company offered bonuses to make up for the delayed salary payments."
+    },
+    {
+      "word": "put off",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "hoãn lại, trì hoãn; làm mất hứng thú",
+      "definition_en": "to postpone something; to discourage or repel someone",
+      "level": "B1",
+      "synonyms": [
+        "postpone",
+        "delay",
+        "defer"
+      ],
+      "antonyms": [
+        "advance",
+        "expedite"
+      ],
+      "example_sentence": "Students should not put off their exam preparation until the last minute."
+    },
+    {
+      "word": "stand out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "nổi bật, thu hút chú ý; tỏ rõ",
+      "definition_en": "to be noticeably different or better than others; to be conspicuous",
+      "level": "B1",
+      "synonyms": [
+        "excel",
+        "distinguish",
+        "shine"
+      ],
+      "antonyms": [
+        "blend in",
+        "fade"
+      ],
+      "example_sentence": "Her innovative research methodology stands out among other studies in the field."
+    },
+    {
+      "word": "turn into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "biến thành, chuyển hóa thành",
+      "definition_en": "to change or transform into something different",
+      "level": "B1",
+      "synonyms": [
+        "transform",
+        "convert",
+        "become"
+      ],
+      "antonyms": [],
+      "example_sentence": "Renewable energy sources can turn into a viable alternative to fossil fuels."
+    },
+    {
+      "word": "work out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giải quyết, tìm ra lời giải; thành công; tập luyện",
+      "definition_en": "to solve a problem; to succeed; to exercise",
+      "level": "B1",
+      "synonyms": [
+        "solve",
+        "succeed",
+        "exercise"
+      ],
+      "antonyms": [
+        "fail",
+        "collapse"
+      ],
+      "example_sentence": "The team worked out a compromise that satisfied all stakeholders in the negotiation."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The research team _______ a groundbreaking solution to reduce plastic pollution in oceans.",
+      "option_a": "came up with",
+      "option_b": "looked forward to",
+      "option_c": "kept up with",
+      "option_d": "put up with",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Come up with\" nghĩa là 'nghĩ ra, đưa ra' (ý tưởng, giải pháp). Câu nói về việc tìm ra một giải pháp mới. \"Looked forward to\" (mong chờ), \"kept up with\" (theo kịp), \"put up with\" (chịu đựng) đều không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Students are _______ the summer break after months of intensive studying and examinations.",
+      "option_a": "putting up with",
+      "option_b": "looking forward to",
+      "option_c": "keeping up with",
+      "option_d": "coming up with",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Look forward to\" dùng để diễn tả sự mong chờ, trông đợi điều gì sắp xảy ra. Các lựa chọn khác không phù hợp: \"putting up with\" (chịu đựng), \"keeping up with\" (theo kịp), \"coming up with\" (nghĩ ra)."
+    },
+    {
+      "question_text": "Developing nations struggle to _______ rapid technological changes in the global market.",
+      "option_a": "come up with",
+      "option_b": "keep up with",
+      "option_c": "deal with",
+      "option_d": "put off",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Keep up with\" nghĩa là 'theo kịp, bắt kịp' những thay đổi nhanh chóng. \"Come up with\" (nghĩ ra), \"deal with\" (xử lý), \"put off\" (hoãn lại) không phù hợp với ngữ cảnh 'theo kịp những thay đổi'."
+    },
+    {
+      "question_text": "Factory workers had to _______ inadequate safety equipment and long working hours for decades.",
+      "option_a": "look forward to",
+      "option_b": "come up with",
+      "option_c": "put up with",
+      "option_d": "carry out",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Put up with\" nghĩa là 'chịu đựng, chấp nhận' điều khó chịu. Câu nói về việc chịu đựng những điều kiện làm việc tồi tệ. Các lựa chọn khác không phù hợp."
+    },
+    {
+      "question_text": "The government _______ new regulations to address the rising problem of air pollution.",
+      "option_a": "carried out",
+      "option_b": "set up",
+      "option_c": "looked into",
+      "option_d": "broke down",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Carry out\" nghĩa là 'thực hiện, tiến hành' (kế hoạch, chính sách). Câu nói về việc thực hiện các quy định mới. \"Set up\" (thành lập), \"looked into\" (điều tra), \"broke down\" (phân tích) không phù hợp ngữ cảnh 'áp dụng quy định'."
+    },
+    {
+      "question_text": "The economist _______ the national budget into different sectors to show spending priorities.",
+      "option_a": "broke down",
+      "option_b": "gave up",
+      "option_c": "turned into",
+      "option_d": "held on to",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Break down\" nghĩa là 'phân tích chi tiết' thành các thành phần. Câu nói về việc chia ngân sách thành các phần khác nhau. \"Gave up\" (từ bỏ), \"turned into\" (biến thành), \"held on to\" (giữ chặt) không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb best completes this sentence? \"The committee will _______ the allegations of fraud in the organization.\"",
+      "option_a": "look into",
+      "option_b": "point out",
+      "option_c": "stand out",
+      "option_d": "work out",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "\"Look into\" nghĩa là 'điều tra, tìm hiểu' vấn đề. Câu nói về việc điều tra các cáo buộc. \"Point out\" (chỉ ra), \"stand out\" (nổi bật), \"work out\" (giải quyết) không phù hợp ngữ cảnh 'điều tra'."
+    },
+    {
+      "question_text": "The new technology has _______ significant changes in how people communicate globally.",
+      "option_a": "brought about",
+      "option_b": "run into",
+      "option_c": "cut down on",
+      "option_d": "made up for",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Bring about\" nghĩa là 'gây ra, dẫn đến' (kết quả, thay đổi). Câu nói về việc công nghệ tạo ra những thay đổi. \"Run into\" (gặp phải), \"cut down on\" (giảm bớt), \"made up for\" (bù đắp) không phù hợp."
+    },
+    {
+      "question_text": "Many companies are _______ their carbon emissions to comply with environmental regulations.",
+      "option_a": "taking on",
+      "option_b": "cutting down on",
+      "option_c": "standing out",
+      "option_d": "turning into",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "\"Cut down on\" nghĩa là 'giảm bớt, cắt giảm' lượng. Câu nói về việc giảm phát thải carbon. \"Taking on\" (đảm nhận), \"standing out\" (nổi bật), \"turning into\" (biến thành) không phù hợp."
+    },
+    {
+      "question_text": "What is the meaning of \"stand out\" in this context? \"Her research methodology _______ among other studies in the field.\"",
+      "option_a": "to delay or postpone",
+      "option_b": "to be noticeably different or better than others",
+      "option_c": "to investigate carefully",
+      "option_d": "to accept responsibility",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "\"Stand out\" nghĩa là 'nổi bật, tỏ rõ' - được chú ý vì khác biệt hoặc tốt hơn. Các lựa chọn khác là nghĩa của các phrasal verb khác: \"put off\" (hoãn lại), \"look into\" (điều tra), \"take on\" (đảm nhận)."
+    },
+    {
+      "question_text": "The project _______ unexpected difficulties, but the team managed to find solutions.",
+      "option_a": "came up with",
+      "option_b": "ran into",
+      "option_c": "worked out",
+      "option_d": "pointed out",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Run into\" nghĩa là 'gặp phải' (vấn đề, khó khăn). Câu nói về việc dự án gặp phải những khó khăn bất ngờ. \"Came up with\" (nghĩ ra), \"worked out\" (giải quyết), \"pointed out\" (chỉ ra) không phù hợp ngữ cảnh 'gặp phải khó khăn'."
+    },
+    {
+      "question_text": "The company offered additional benefits to _______ the delayed salary payments to employees.",
+      "option_a": "make up for",
+      "option_b": "give up",
+      "option_c": "hold on to",
+      "option_d": "take on",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "\"Make up for\" nghĩa là 'bù đắp, bù lại' (thiệt hại, sai lầm). Câu nói về việc bù đắp cho việc trả lương trễ. \"Give up\" (từ bỏ), \"hold on to\" (giữ chặt), \"take on\" (đảm nhận) không phù hợp."
+    }
+  ]
+}

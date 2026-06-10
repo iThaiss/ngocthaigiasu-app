@@ -1,0 +1,383 @@
+{
+  "words": [
+    {
+      "word": "moral agency",
+      "pronunciation": "/ˈmɒrəl ˈeɪdʒənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một cá nhân trong việc hành động có ý thức và chịu trách nhiệm về những quyết định đạo đức của mình",
+      "definition_en": "the capacity of an individual to make conscious ethical decisions and bear responsibility for their moral choices",
+      "level": "C1",
+      "synonyms": [
+        "moral responsibility",
+        "ethical capacity"
+      ],
+      "antonyms": [
+        "moral passivity",
+        "ethical indifference"
+      ],
+      "example_sentence": "The philosopher argued that moral agency requires both cognitive ability and freedom from coercion to make genuine ethical choices."
+    },
+    {
+      "word": "normative ethics",
+      "pronunciation": "/nɔːrˈmeɪtɪv ˈeθɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhánh triết học đạo đức nghiên cứu những tiêu chuẩn hay nguyên tắc quy định hành vi đúng đắn",
+      "definition_en": "the branch of ethics concerned with establishing standards or norms for right and wrong conduct",
+      "level": "C1",
+      "synonyms": [
+        "prescriptive ethics",
+        "moral standards"
+      ],
+      "antonyms": [
+        "descriptive ethics",
+        "meta-ethics"
+      ],
+      "example_sentence": "Normative ethics seeks to answer the fundamental question: what ought we to do in morally complex situations?"
+    },
+    {
+      "word": "moral particularism",
+      "pronunciation": "/ˈmɒrəl pɑːrˈtɪkjələrɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quan điểm cho rằng các quyết định đạo đức phải dựa trên bối cảnh cụ thể của từng tình huống, chứ không phải quy tắc chung",
+      "definition_en": "the ethical view that moral judgments depend on the specific context and details of individual cases rather than universal rules",
+      "level": "C2",
+      "synonyms": [
+        "situational ethics",
+        "contextualism"
+      ],
+      "antonyms": [
+        "moral universalism",
+        "absolutism"
+      ],
+      "example_sentence": "Moral particularism challenges the assumption that ethical principles can be uniformly applied across all circumstances."
+    },
+    {
+      "word": "consequentialist reasoning",
+      "pronunciation": "/ˌkɒnsɪˈkwenʃəlɪst ˈriːzənɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp suy luận đạo đức dựa trên hậu quả của hành động, xem xét kết quả cuối cùng để đánh giá tính đúng sai",
+      "definition_en": "ethical reasoning that evaluates the morality of actions based on their outcomes and consequences",
+      "level": "C1",
+      "synonyms": [
+        "outcome-based ethics",
+        "results-oriented morality"
+      ],
+      "antonyms": [
+        "deontological reasoning",
+        "intention-based ethics"
+      ],
+      "example_sentence": "Consequentialist reasoning in medical ethics often weighs the greatest good for the greatest number when allocating limited resources."
+    },
+    {
+      "word": "moral complicity",
+      "pronunciation": "/ˈmɒrəl kəmˈplɪsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tham gia hoặc đồng lõa trong một hành động sai trái, dù không trực tiếp thực hiện",
+      "definition_en": "involvement or partnership in wrongdoing, even if indirect or passive",
+      "level": "C1",
+      "synonyms": [
+        "complicity",
+        "moral implication"
+      ],
+      "antonyms": [
+        "moral innocence",
+        "ethical detachment"
+      ],
+      "example_sentence": "The debate over moral complicity raises difficult questions about whether silence in the face of injustice constitutes ethical wrongdoing."
+    },
+    {
+      "word": "prima facie duty",
+      "pronunciation": "/ˌpriːmə ˈfeɪʃi ˈdjuːti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một nghĩa vụ đạo đức có vẻ đúng đắn thoạt nhìn, nhưng có thể bị vượt qua bởi các nghĩa vụ khác trong tình huống cụ thể",
+      "definition_en": "a moral obligation that appears binding at first glance but may be overridden by other duties in particular circumstances",
+      "level": "C2",
+      "synonyms": [
+        "apparent duty",
+        "presumptive obligation"
+      ],
+      "antonyms": [
+        "absolute duty",
+        "unconditional obligation"
+      ],
+      "example_sentence": "Ross's theory of prima facie duties suggests that we have multiple conflicting obligations, and context determines which takes precedence."
+    },
+    {
+      "word": "moral realism",
+      "pronunciation": "/ˈmɒrəl ˈriːəlɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quan điểm triết học cho rằng các sự thật đạo đức tồn tại độc lập với ý kiến hay niềm tin của con người",
+      "definition_en": "the philosophical position that moral facts exist independently of human beliefs or opinions",
+      "level": "C1",
+      "synonyms": [
+        "moral objectivism",
+        "ethical realism"
+      ],
+      "antonyms": [
+        "moral anti-realism",
+        "moral subjectivism"
+      ],
+      "example_sentence": "Moral realism contends that statements like 'torture is wrong' express objective truths, not merely subjective preferences."
+    },
+    {
+      "word": "moral permissibility",
+      "pronunciation": "/ˈmɒrəl ˌpɜːmɪsəˈbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính chất của một hành động được phép thực hiện từ góc độ đạo đức, không bị cấm hoặc yêu cầu",
+      "definition_en": "the quality of an action being ethically allowable or not forbidden by moral standards",
+      "level": "C1",
+      "synonyms": [
+        "ethical permissibility",
+        "moral acceptability"
+      ],
+      "antonyms": [
+        "moral impermissibility",
+        "ethical prohibition"
+      ],
+      "example_sentence": "The moral permissibility of genetic engineering remains contested among bioethicists with different theoretical frameworks."
+    },
+    {
+      "word": "supererogatory act",
+      "pronunciation": "/ˌsuːpərɪˈɡɒɡətəri ˈækt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một hành động vượt quá những gì được yêu cầu bởi nghĩa vụ đạo đức, là sự hy sinh hay tốt bụng vượt mức cần thiết",
+      "definition_en": "an action that goes beyond what is morally required or obligatory; an act of exceptional virtue or sacrifice",
+      "level": "C2",
+      "synonyms": [
+        "heroic action",
+        "beyond the call of duty"
+      ],
+      "antonyms": [
+        "obligatory act",
+        "required duty"
+      ],
+      "example_sentence": "Donating a kidney to a stranger is often considered a supererogatory act because it exceeds what morality demands of us."
+    },
+    {
+      "word": "moral epistemology",
+      "pronunciation": "/ˈmɒrəl ˌepɪsˈtɒmələdʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lĩnh vực triết học nghiên cứu cách chúng ta biết được những sự thật đạo đức và cơ sở của kiến thức đạo đức",
+      "definition_en": "the philosophical study of how we know moral truths and what constitutes moral knowledge",
+      "level": "C2",
+      "synonyms": [
+        "ethical knowledge theory",
+        "moral justification"
+      ],
+      "antonyms": [
+        "moral skepticism",
+        "ethical agnosticism"
+      ],
+      "example_sentence": "Moral epistemology grapples with the question of whether ethical knowledge is derived from reason, intuition, or empirical observation."
+    },
+    {
+      "word": "moral integrity",
+      "pronunciation": "/ˈmɒrəl ɪnˈteɡrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự nhất quán giữa các nguyên tắc đạo đức của một người và hành động của họ; tính chân thành trong đạo đức",
+      "definition_en": "the quality of being consistent between one's ethical principles and actions; honesty and moral uprightness",
+      "level": "C1",
+      "synonyms": [
+        "ethical consistency",
+        "moral honesty"
+      ],
+      "antonyms": [
+        "moral hypocrisy",
+        "ethical inconsistency"
+      ],
+      "example_sentence": "A leader's moral integrity is tested when their personal interests conflict with their public responsibilities."
+    },
+    {
+      "word": "moral phenomenology",
+      "pronunciation": "/ˈmɒrəl ˌfɪnɒmɪˈnɒlədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nghiên cứu về cách chúng ta trải nghiệm và cảm nhận các sự kiện đạo đức, bao gồm cảm giác tội lỗi, xấu hổ, hay lương tâm",
+      "definition_en": "the study of how we experience and perceive moral phenomena, including guilt, shame, and conscience",
+      "level": "C2",
+      "synonyms": [
+        "moral experience",
+        "ethical phenomenology"
+      ],
+      "antonyms": [
+        "moral abstraction",
+        "theoretical ethics"
+      ],
+      "example_sentence": "Moral phenomenology explores the lived experience of moral emotions and how they shape our ethical understanding."
+    },
+    {
+      "word": "moral hazard",
+      "pronunciation": "/ˈmɒrəl ˈhæzərd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình huống trong đó một bên có động cơ hành động không có trách nhiệm vì họ không phải chịu hậu quả đầy đủ",
+      "definition_en": "a situation where one party has incentive to take risks because they do not bear the full consequences of their actions",
+      "level": "C1",
+      "synonyms": [
+        "perverse incentive",
+        "adverse selection"
+      ],
+      "antonyms": [
+        "accountability",
+        "full responsibility"
+      ],
+      "example_sentence": "Moral hazard in insurance occurs when policyholders take greater risks knowing their losses are covered."
+    },
+    {
+      "word": "moral sentimentalism",
+      "pronunciation": "/ˈmɒrəl ˈsentɪməntəlɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quan điểm cho rằng các phán đoán đạo đức dựa trên cảm xúc hay cảm giác, chứ không phải lý trí thuần túy",
+      "definition_en": "the philosophical view that moral judgments are grounded in emotions or sentiments rather than pure reason",
+      "level": "C2",
+      "synonyms": [
+        "emotivism",
+        "affective ethics"
+      ],
+      "antonyms": [
+        "moral rationalism",
+        "reason-based ethics"
+      ],
+      "example_sentence": "Moral sentimentalism suggests that our sense of justice and compassion are fundamental to ethical understanding."
+    },
+    {
+      "word": "moral residue",
+      "pronunciation": "/ˈmɒrəl ˈrezɪdjuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cảm giác tội lỗi hay hối tiếc vẫn còn lại sau khi thực hiện một hành động sai trái, ngay cả khi nó là lựa chọn tốt nhất có sẵn",
+      "definition_en": "the lingering sense of guilt or regret that remains after performing a morally wrong action, even if it was the best available choice",
+      "level": "C2",
+      "synonyms": [
+        "moral remainder",
+        "ethical guilt"
+      ],
+      "antonyms": [
+        "moral satisfaction",
+        "ethical peace"
+      ],
+      "example_sentence": "The concept of moral residue acknowledges that sometimes we must choose between bad options, leaving us with justified guilt."
+    },
+    {
+      "word": "moral luck",
+      "pronunciation": "/ˈmɒrəl lʌk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng trong đó kết quả của một hành động phụ thuộc vào những yếu tố ngoài tầm kiểm soát của người hành động, ảnh hưởng đến đánh giá đạo đức",
+      "definition_en": "the phenomenon where the moral evaluation of an action depends on factors beyond the agent's control",
+      "level": "C2",
+      "synonyms": [
+        "circumstantial ethics",
+        "outcome dependency"
+      ],
+      "antonyms": [
+        "moral determinism",
+        "intention-based judgment"
+      ],
+      "example_sentence": "Moral luck raises the troubling question of whether a drunk driver who hits someone is more culpable than one who doesn't, despite identical intentions."
+    },
+    {
+      "word": "moral constructivism",
+      "pronunciation": "/ˈmɒrəl kənˈstrʌktɪvɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quan điểm cho rằng các sự thật đạo đức được xây dựng thông qua các quy trình lý trí hoặc xã hội, chứ không phải được khám phá",
+      "definition_en": "the philosophical position that moral facts are constructed through rational or social procedures rather than discovered as pre-existing truths",
+      "level": "C2",
+      "synonyms": [
+        "moral constructionism",
+        "procedural ethics"
+      ],
+      "antonyms": [
+        "moral realism",
+        "moral discovery"
+      ],
+      "example_sentence": "Moral constructivism suggests that justice is not an objective fact but rather something we construct through fair deliberative processes."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between moral agency and ethical responsibility?",
+      "option_a": "Moral agency eliminates the need for ethical responsibility in decision-making.",
+      "option_b": "Moral agency is the capacity that grounds our ability to be held responsible for ethical choices.",
+      "option_c": "Ethical responsibility exists independently of whether individuals possess moral agency.",
+      "option_d": "Moral agency and ethical responsibility are unrelated concepts in contemporary philosophy.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Moral agency là khả năng hành động có ý thức và chịu trách nhiệm, nên nó là cơ sở cho trách nhiệm đạo đức. Các lựa chọn A, C, D đều sai vì chúng phủ nhận mối liên hệ cơ bản này."
+    },
+    {
+      "question_text": "A doctor must choose between treating a patient with a rare disease using an untested drug or allowing the patient to die. This scenario best illustrates which ethical concept?",
+      "option_a": "Normative ethics, which establishes standards for right conduct",
+      "option_b": "Moral permissibility, which determines what actions are ethically allowed",
+      "option_c": "Prima facie duty, where conflicting obligations must be weighed",
+      "option_d": "Moral realism, which claims ethical facts exist objectively",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Tình huống này liên quan đến xung đột giữa các nghĩa vụ (cứu sống bệnh nhân vs. không gây hại), điều mà prima facie duty giải thích. Các lựa chọn khác không phù hợp với bối cảnh cụ thể này."
+    },
+    {
+      "question_text": "According to moral particularism, why might the same action be considered right in one context but wrong in another?",
+      "option_a": "Because moral facts change depending on cultural preferences.",
+      "option_b": "Because the specific details and circumstances of each situation determine moral judgment.",
+      "option_c": "Because universal moral rules are inherently contradictory.",
+      "option_d": "Because moral knowledge is impossible to obtain objectively.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Moral particularism nhấn mạnh rằng bối cảnh cụ thể quyết định phán đoán đạo đức, chứ không phải quy tắc chung. A sai vì nó gợi ý tính tương đối, C và D không phải là lý do chính."
+    },
+    {
+      "question_text": "A whistleblower exposes corporate fraud at great personal cost. This action is best described as _____ because it exceeds what morality strictly requires.",
+      "option_a": "a supererogatory act",
+      "option_b": "a prima facie duty",
+      "option_c": "moral complicity",
+      "option_d": "a consequentialist reasoning",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Supererogatory act là hành động vượt quá những gì được yêu cầu, thường liên quan đến hy sinh cá nhân. Các lựa chọn khác không phù hợp: B là nghĩa vụ, C là sự tham gia sai trái, D là phương pháp suy luận."
+    },
+    {
+      "question_text": "The concept of moral hazard is most relevant in which of the following scenarios?",
+      "option_a": "A person feels guilty after making a difficult ethical choice.",
+      "option_b": "An insurance company worries that insured drivers may take greater risks because losses are covered.",
+      "option_c": "A philosopher debates whether moral facts exist objectively.",
+      "option_d": "A society establishes universal ethical standards for all citizens.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Moral hazard xảy ra khi một bên có động cơ hành động không có trách nhiệm vì không chịu hậu quả đầy đủ. B là ví dụ điển hình. A liên quan đến moral residue, C đến moral realism, D đến normative ethics."
+    },
+    {
+      "question_text": "Which philosophical position claims that moral judgments are ultimately grounded in human emotions rather than rational principles?",
+      "option_a": "Moral realism",
+      "option_b": "Moral constructivism",
+      "option_c": "Moral sentimentalism",
+      "option_d": "Consequentialist reasoning",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Moral sentimentalism cho rằng phán đoán đạo đức dựa trên cảm xúc. A là realism, B là constructivism, D là phương pháp suy luận dựa trên hậu quả."
+    },
+    {
+      "question_text": "A soldier must choose between following orders that violate international law or disobeying and facing court-martial. The lingering guilt the soldier experiences regardless of their choice illustrates the concept of _____.",
+      "option_a": "moral luck",
+      "option_b": "moral residue",
+      "option_c": "moral complicity",
+      "option_d": "moral integrity",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Moral residue là cảm giác tội lỗi vẫn còn sau khi thực hiện hành động sai trái, ngay cả khi đó là lựa chọn tốt nhất. A liên quan đến yếu tố ngoài tầm kiểm soát, C là sự tham gia sai trái, D là nhất quán đạo đức."
+    },
+    {
+      "question_text": "According to moral constructivism, what is the fundamental difference between moral facts and mathematical facts?",
+      "option_a": "Moral facts are discovered through observation, while mathematical facts are constructed.",
+      "option_b": "Moral facts are constructed through rational or social procedures, while mathematical facts exist independently.",
+      "option_c": "Both are equally objective and independent of human processes.",
+      "option_d": "Moral facts are more reliable than mathematical facts because they are based on emotion.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Moral constructivism cho rằng sự thật đạo đức được xây dựng thông qua quy trình lý trí hoặc xã hội, không phải được khám phá như sự thật toán học. B là câu trả lời chính xác nhất."
+    }
+  ]
+}

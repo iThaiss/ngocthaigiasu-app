@@ -1,0 +1,261 @@
+{
+  "words": [
+    {
+      "word": "virtuoso",
+      "pronunciation": "/vɜːrˈtjuːoʊsoʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "nghệ sĩ có kỹ năng xuất sắc, đặc biệt trong âm nhạc; người thành thạo một lĩnh vực nào đó",
+      "definition_en": "a person highly skilled in music or another artistic pursuit; a master of technique",
+      "level": "B2",
+      "synonyms": [
+        "master",
+        "expert",
+        "prodigy"
+      ],
+      "antonyms": [
+        "amateur",
+        "novice"
+      ],
+      "example_sentence": "The young pianist was recognized as a virtuoso after her flawless performance at the international competition."
+    },
+    {
+      "word": "improvisation",
+      "pronunciation": "/ˌɪmprəvaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sáng tác hoặc biểu diễn ngay lập tức mà không chuẩn bị trước; sự sáng tạo tức thời",
+      "definition_en": "the creation of music, speech, or action spontaneously without prior preparation",
+      "level": "B2",
+      "synonyms": [
+        "extemporization",
+        "ad-libbing"
+      ],
+      "antonyms": [
+        "preparation",
+        "rehearsal"
+      ],
+      "example_sentence": "Jazz musicians are celebrated for their improvisation skills, creating unique melodies in real-time."
+    },
+    {
+      "word": "avant-garde",
+      "pronunciation": "/ˌɑːvɑːntˈɡɑːrd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tiên phong, đổi mới; thuộc về những tác phẩm nghệ thuật thử nghiệm, không theo truyền thống",
+      "definition_en": "experimental and innovative in style; ahead of conventional artistic trends",
+      "level": "B2",
+      "synonyms": [
+        "experimental",
+        "innovative",
+        "unconventional"
+      ],
+      "antonyms": [
+        "traditional",
+        "conventional"
+      ],
+      "example_sentence": "The contemporary dance company's avant-garde production challenged audiences with its unconventional movements and abstract storytelling."
+    },
+    {
+      "word": "crescendo",
+      "pronunciation": "/krəˈʃendoʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tăng dần âm lượng hoặc cường độ trong âm nhạc; đỉnh cao của một sự kiện",
+      "definition_en": "a gradual increase in loudness or intensity in music; a climactic point",
+      "level": "B2",
+      "synonyms": [
+        "climax",
+        "peak",
+        "intensification"
+      ],
+      "antonyms": [
+        "diminuendo",
+        "decline"
+      ],
+      "example_sentence": "The orchestra built to a dramatic crescendo in the final movement, leaving the audience breathless."
+    },
+    {
+      "word": "repertoire",
+      "pronunciation": "/ˈrepərtwɑːr/",
+      "part_of_speech": "noun",
+      "definition_vi": "tập hợp các tác phẩm, kỹ năng hoặc kiến thức mà một nghệ sĩ có thể thực hiện",
+      "definition_en": "the complete range of skills, works, or pieces that a performer or artist can execute",
+      "level": "B2",
+      "synonyms": [
+        "collection",
+        "range",
+        "stock"
+      ],
+      "antonyms": [],
+      "example_sentence": "The soprano expanded her repertoire to include contemporary opera pieces alongside classical masterworks."
+    },
+    {
+      "word": "acoustic",
+      "pronunciation": "/əˈkuːstɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến âm thanh tự nhiên không được khuếch đại; không sử dụng điện tử",
+      "definition_en": "relating to sound or hearing; produced without electronic amplification",
+      "level": "B2",
+      "synonyms": [
+        "unamplified",
+        "natural"
+      ],
+      "antonyms": [
+        "electric",
+        "amplified"
+      ],
+      "example_sentence": "The folk singer performed an intimate acoustic set with just a guitar and her voice."
+    },
+    {
+      "word": "ensemble",
+      "pronunciation": "/ɑːnˈsɑːmbəl/",
+      "part_of_speech": "noun",
+      "definition_vi": "nhóm các nghệ sĩ biểu diễn cùng nhau; sự kết hợp hài hòa của các phần tử",
+      "definition_en": "a group of performers or musicians playing together; a coordinated combination of elements",
+      "level": "B2",
+      "synonyms": [
+        "group",
+        "troupe",
+        "company"
+      ],
+      "antonyms": [
+        "soloist"
+      ],
+      "example_sentence": "The chamber ensemble delivered a polished performance of Baroque chamber music at the concert hall."
+    },
+    {
+      "word": "aesthetic",
+      "pronunciation": "/esˈθetɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến vẻ đẹp hoặc sự đánh giá vẻ đẹp; có giá trị nghệ thuật",
+      "definition_en": "concerned with beauty or the appreciation of beauty; artistic in nature",
+      "level": "B2",
+      "synonyms": [
+        "artistic",
+        "beautiful",
+        "stylistic"
+      ],
+      "antonyms": [
+        "ugly",
+        "unattractive"
+      ],
+      "example_sentence": "The director's aesthetic vision transformed the stage design into a visually stunning landscape."
+    },
+    {
+      "word": "dissonance",
+      "pronunciation": "/ˈdɪsənəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự không hòa hợp giữa các âm thanh; sự mâu thuẫn hoặc bất hòa",
+      "definition_en": "a lack of harmony between sounds; a clashing or conflicting combination",
+      "level": "B2",
+      "synonyms": [
+        "discord",
+        "clash",
+        "conflict"
+      ],
+      "antonyms": [
+        "harmony",
+        "consonance"
+      ],
+      "example_sentence": "The composer deliberately used dissonance in the piece to create tension and unease."
+    },
+    {
+      "word": "refrain",
+      "pronunciation": "/rɪˈfreɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "phần lặp lại trong bài hát; điệp khúc",
+      "definition_en": "a repeated line, phrase, or section in a song or poem",
+      "level": "B2",
+      "synonyms": [
+        "chorus",
+        "hook",
+        "repetition"
+      ],
+      "antonyms": [],
+      "example_sentence": "The catchy refrain of the pop song made it instantly memorable and easy for audiences to sing along."
+    },
+    {
+      "word": "poignant",
+      "pronunciation": "/ˈpɔɪnjənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "gây xúc động mạnh mẽ; đầy cảm xúc sâu sắc, thường là buồn",
+      "definition_en": "evoking a keen sense of sadness or regret; deeply moving or touching",
+      "level": "B2",
+      "synonyms": [
+        "touching",
+        "moving",
+        "emotional"
+      ],
+      "antonyms": [
+        "cheerful",
+        "lighthearted"
+      ],
+      "example_sentence": "The ballet's poignant final scene, depicting the protagonist's farewell, left many audience members in tears."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The jazz musician's ability to create beautiful melodies without prior planning demonstrated her exceptional _____ skills.",
+      "option_a": "improvisation",
+      "option_b": "rehearsal",
+      "option_c": "interpretation",
+      "option_d": "composition",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Improvisation (sáng tác tức thời) là đáp án đúng vì câu nói về khả năng tạo ra giai điệu mà không chuẩn bị trước. Rehearsal (tập luyện) không phù hợp vì nó ngụ ý chuẩn bị trước. Interpretation và composition không thể hiện rõ ý nghĩa 'không chuẩn bị'."
+    },
+    {
+      "question_text": "Which of the following best describes an avant-garde theatrical production?",
+      "option_a": "A traditional play that follows classical storytelling conventions",
+      "option_b": "An experimental performance that challenges conventional artistic norms",
+      "option_c": "A commercial musical designed for mainstream audiences",
+      "option_d": "A historical drama based on documented events",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Avant-garde (tiên phong, đổi mới) đặc trưng bởi tính thử nghiệm và không tuân theo truyền thống. Đáp án B chính xác vì nó nhấn mạnh tính chất thách thức và đổi mới. A, C, D đều mô tả các hình thức nghệ thuật truyền thống hoặc thương mại."
+    },
+    {
+      "question_text": "The conductor raised her baton as the orchestra began to build toward the _____, creating an intense emotional climax.",
+      "option_a": "dissonance",
+      "option_b": "crescendo",
+      "option_c": "refrain",
+      "option_d": "virtuoso",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Crescendo (sự tăng dần âm lượng/cường độ) là từ chính xác để mô tả sự xây dựng đến đỉnh cao cảm xúc. Dissonance (bất hòa) không phù hợp vì nó chỉ sự không hài hòa. Refrain (điệp khúc) là phần lặp lại. Virtuoso (nghệ sĩ tài ba) là danh từ chỉ người, không phù hợp ngữ pháp."
+    },
+    {
+      "question_text": "The pianist's extensive _____ included works from Baroque, Classical, and Romantic periods, allowing her to perform diverse styles.",
+      "option_a": "aesthetic",
+      "option_b": "ensemble",
+      "option_c": "repertoire",
+      "option_d": "crescendo",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Repertoire (tập hợp các tác phẩm/kỹ năng) là đáp án đúng vì câu nói về các tác phẩm mà một nghệ sĩ có thể thực hiện. Aesthetic (thẩm mỹ) là tính chất, không phù hợp. Ensemble (nhóm) chỉ các nhạc sĩ cùng chơi. Crescendo (sự tăng dần) không liên quan."
+    },
+    {
+      "question_text": "What is the primary difference between an acoustic performance and an electric one?",
+      "option_a": "Acoustic performances are always louder than electric ones",
+      "option_b": "Acoustic performances use natural sound without electronic amplification",
+      "option_c": "Acoustic instruments cannot produce high-quality sound",
+      "option_d": "Electric performances are more traditional than acoustic ones",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Acoustic (không được khuếch đại điện tử) đặc trưng bởi âm thanh tự nhiên. Đáp án B chính xác. A sai vì acoustic không nhất thiết to hơn. C sai vì acoustic có thể tạo âm thanh chất lượng cao. D sai vì acoustic không nhất thiết truyền thống hơn electric."
+    },
+    {
+      "question_text": "The _____ performance of the closing scene, where the character bid farewell to her homeland, moved the entire audience to tears.",
+      "option_a": "poignant",
+      "option_b": "acoustic",
+      "option_c": "avant-garde",
+      "option_d": "dissonant",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Poignant (gây xúc động mạnh mẽ, đầy cảm xúc) là từ chính xác để mô tả một cảnh khiến khán giả khóc. Acoustic (không khuếch đại) không liên quan đến cảm xúc. Avant-garde (tiên phong) không phù hợp ngữ cảnh. Dissonant (bất hòa) không thể hiện sự xúc động."
+    }
+  ]
+}

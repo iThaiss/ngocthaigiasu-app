@@ -1,0 +1,231 @@
+{
+  "words": [
+    {
+      "word": "urban sprawl mitigation",
+      "pronunciation": "/ˈɜːrbən sprɔːl ˌmɪtɪˈɡeɪʃən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "các biện pháp giảm thiểu sự mở rộng vô tổ chức của thành phố ra vùng ngoại ô, bao gồm kiểm soát quy hoạch và bảo vệ đất nông nghiệp",
+      "definition_en": "strategies and policies designed to reduce uncontrolled urban expansion into surrounding rural areas",
+      "level": "C1",
+      "synonyms": [
+        "sprawl containment",
+        "compact growth strategy"
+      ],
+      "antonyms": [
+        "uncontrolled expansion"
+      ],
+      "example_sentence": "Singapore's urban sprawl mitigation policies have successfully preserved agricultural land while accommodating rapid population growth."
+    },
+    {
+      "word": "polycentric development",
+      "pronunciation": "/ˌpɒliˈsentrɪk dɪˈveləpmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "mô hình phát triển đô thị với nhiều trung tâm kinh tế và xã hội phân tán thay vì tập trung vào một điểm duy nhất",
+      "definition_en": "urban development pattern with multiple economic and social centers distributed across a region rather than concentrated in one core",
+      "level": "C1",
+      "synonyms": [
+        "multi-nodal development",
+        "distributed growth"
+      ],
+      "antonyms": [
+        "monocentric development"
+      ],
+      "example_sentence": "Polycentric development reduces pressure on the main city center and promotes balanced regional growth across metropolitan areas."
+    },
+    {
+      "word": "last-mile connectivity",
+      "pronunciation": "/lɑːst maɪl kəˈnektɪvɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng kết nối giao thông từ các trạm vận chuyển công cộng chính đến điểm đến cuối cùng của hành khách",
+      "definition_en": "transportation solutions connecting major transit hubs to final destinations, addressing the gap between public transport and individual travel needs",
+      "level": "B2",
+      "synonyms": [
+        "first-last mile solution",
+        "end-point connectivity"
+      ],
+      "antonyms": [],
+      "example_sentence": "E-scooter sharing programs have significantly improved last-mile connectivity in dense urban areas, reducing reliance on private vehicles."
+    },
+    {
+      "word": "adaptive reuse",
+      "pronunciation": "/əˈdæptɪv ˈriːjuːz/",
+      "part_of_speech": "noun",
+      "definition_vi": "tái sử dụng các tòa nhà cũ hoặc công trình lịch sử cho những mục đích mới khác với mục đích ban đầu",
+      "definition_en": "conversion of existing buildings or structures into new functions while preserving their historical or architectural character",
+      "level": "C1",
+      "synonyms": [
+        "heritage conversion",
+        "building repurposing"
+      ],
+      "antonyms": [
+        "demolition",
+        "new construction"
+      ],
+      "example_sentence": "The adaptive reuse of abandoned warehouses into residential lofts and creative spaces has revitalized many post-industrial neighborhoods."
+    },
+    {
+      "word": "transit desert",
+      "pronunciation": "/ˈtrænzɪt ˈdezərt/",
+      "part_of_speech": "noun",
+      "definition_vi": "khu vực thành phố hoặc ngoại ô thiếu hoặc không có dịch vụ giao thông công cộng đầy đủ",
+      "definition_en": "urban or suburban area with inadequate or no access to public transportation services, forcing residents to rely on private vehicles",
+      "level": "B2",
+      "synonyms": [
+        "transit gap",
+        "underserved area"
+      ],
+      "antonyms": [
+        "transit hub",
+        "well-connected zone"
+      ],
+      "example_sentence": "Low-income neighborhoods often become transit deserts, limiting employment opportunities and perpetuating socioeconomic inequality."
+    },
+    {
+      "word": "placemaking",
+      "pronunciation": "/ˈpleɪsmeɪkɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình thiết kế và phát triển các không gian công cộng để tạo ra những địa điểm có tính cộng đồng cao, hấp dẫn và có ý nghĩa",
+      "definition_en": "collaborative process of designing and improving public spaces to create vibrant, community-oriented destinations with cultural and social significance",
+      "level": "C1",
+      "synonyms": [
+        "community space development",
+        "public realm activation"
+      ],
+      "antonyms": [
+        "neglect",
+        "privatization"
+      ],
+      "example_sentence": "Placemaking initiatives in Copenhagen have transformed underutilized public squares into thriving cultural and social hubs."
+    },
+    {
+      "word": "sponge city concept",
+      "pronunciation": "/spʌndʒ ˈsɪti ˈkɒnsept/",
+      "part_of_speech": "noun",
+      "definition_vi": "khái niệm thiết kế đô thị giúp thành phố hấp thụ, lưu trữ và xử lý nước mưa tự nhiên để giảm ngập lụt và cải thiện chất lượng nước",
+      "definition_en": "urban design approach that enables cities to absorb, store, and purify rainwater naturally, reducing flooding and improving water quality",
+      "level": "C1",
+      "synonyms": [
+        "permeable urban design",
+        "water-sensitive city planning"
+      ],
+      "antonyms": [
+        "impervious development"
+      ],
+      "example_sentence": "China's sponge city concept integrates green infrastructure and permeable surfaces to manage stormwater and enhance urban resilience."
+    },
+    {
+      "word": "15-minute city",
+      "pronunciation": "/ˌfɪfˈtiːn ˈmɪnɪt ˈsɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "mô hình đô thị nơi cư dân có thể tiếp cận các dịch vụ thiết yếu như mua sắm, y tế, giáo dục và giải trí trong vòng 15 phút đi bộ hoặc đạp xe",
+      "definition_en": "urban planning model where residents can access essential services, amenities, and employment within a 15-minute walk or bike ride",
+      "level": "B2",
+      "synonyms": [
+        "20-minute neighborhood",
+        "proximity-based urbanism"
+      ],
+      "antonyms": [
+        "car-dependent sprawl"
+      ],
+      "example_sentence": "Paris and Barcelona have adopted the 15-minute city framework to reduce car dependency and improve quality of life for residents."
+    },
+    {
+      "word": "urban metabolism",
+      "pronunciation": "/ˈɜːrbən məˈtæbəlɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "khái niệm phân tích thành phố như một hệ thống sống, theo dõi dòng chảy của năng lượng, nước, vật liệu và chất thải qua các hoạt động đô thị",
+      "definition_en": "analytical framework treating cities as living organisms, examining flows of energy, water, materials, and waste through urban systems",
+      "level": "C1",
+      "synonyms": [
+        "urban ecosystem analysis",
+        "material flow analysis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding urban metabolism helps planners identify inefficiencies and design circular systems that minimize resource consumption and waste."
+    },
+    {
+      "word": "tactical urbanism",
+      "pronunciation": "/ˈtæktɪkəl ˈɜːrbənɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "các dự án quy mô nhỏ, chi phí thấp, được thực hiện nhanh chóng để cải thiện không gian công cộng và kiểm tra ý tưởng trước khi đầu tư lớn",
+      "definition_en": "small-scale, low-cost, quick interventions in public spaces to test urban design ideas and engage communities before major investments",
+      "level": "C1",
+      "synonyms": [
+        "guerrilla urbanism",
+        "pop-up urbanism"
+      ],
+      "antonyms": [
+        "master planning"
+      ],
+      "example_sentence": "Tactical urbanism projects like parklets and pop-up parks have proven effective in revitalizing neglected urban areas with minimal budget."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary goal of polycentric development in urban planning?",
+      "option_a": "To concentrate all economic activities in a single downtown core",
+      "option_b": "To distribute economic and social centers across multiple locations to reduce congestion and promote balanced growth",
+      "option_c": "To eliminate public transportation in favor of private vehicles",
+      "option_d": "To increase population density in suburban areas exclusively",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Polycentric development nhằm phân tán các trung tâm kinh tế-xã hội thay vì tập trung vào một điểm. Đáp án A sai vì nó mô tả monocentric development. C và D không liên quan đến mục tiêu chính của polycentric development."
+    },
+    {
+      "question_text": "The city council implemented a _____ strategy to prevent uncontrolled expansion into surrounding agricultural regions.",
+      "option_a": "urban sprawl mitigation",
+      "option_b": "transit desert expansion",
+      "option_c": "adaptive reuse program",
+      "option_d": "sponge city framework",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Urban sprawl mitigation là chiến lược kiểm soát sự mở rộng vô tổ chức của thành phố. B liên quan đến thiếu giao thông công cộng, C về tái sử dụng tòa nhà, D về quản lý nước mưa—không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "What is the main advantage of adaptive reuse in sustainable urban development?",
+      "option_a": "It requires demolishing old buildings to make space for new construction",
+      "option_b": "It preserves historical character while reducing construction waste and providing new functions for existing structures",
+      "option_c": "It eliminates the need for public transportation infrastructure",
+      "option_d": "It increases urban sprawl by converting rural land into commercial zones",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Adaptive reuse bảo tồn tính lịch sử của công trình cũ, giảm chất thải xây dựng và tái sử dụng cho mục đích mới. A sai vì nó là đối lập của adaptive reuse. C và D không liên quan."
+    },
+    {
+      "question_text": "A transit desert refers to _____ that lack adequate public transportation access, forcing residents to depend on private vehicles.",
+      "option_a": "downtown business districts with high foot traffic",
+      "option_b": "urban or suburban areas with insufficient or no public transit services",
+      "option_c": "regions with extensive bike lane networks",
+      "option_d": "neighborhoods with multiple transit hubs and stations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Transit desert là khu vực thiếu dịch vụ giao thông công cộng. A mô tả khu vực có giao thông tốt, C và D là những khu vực được phục vụ tốt bởi giao thông công cộng."
+    },
+    {
+      "question_text": "The 15-minute city model emphasizes _____ by ensuring residents can access essential services within a short walk or bike ride.",
+      "option_a": "car-dependent sprawl",
+      "option_b": "proximity-based urbanism and reduced transportation time",
+      "option_c": "increased urban density without any green space",
+      "option_d": "centralized economic control in downtown areas",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "15-minute city nhấn mạnh proximity-based urbanism—cư dân có thể tiếp cận dịch vụ gần nhất. A là đối lập, C và D không phản ánh mục tiêu chính của mô hình này."
+    },
+    {
+      "question_text": "Which urban design approach treats cities as living organisms and analyzes the flow of energy, water, and materials through urban systems?",
+      "option_a": "Tactical urbanism",
+      "option_b": "Placemaking",
+      "option_c": "Urban metabolism",
+      "option_d": "Last-mile connectivity",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Urban metabolism phân tích thành phố như một hệ thống sống, theo dõi dòng chảy của năng lượng, nước, vật liệu. A là các dự án quy mô nhỏ, B là thiết kế không gian công cộng, D là kết nối giao thông cuối cùng."
+    }
+  ]
+}

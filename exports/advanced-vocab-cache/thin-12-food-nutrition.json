@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "staple food",
+      "pronunciation": "/ˈsteɪpl fuːd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thực phẩm chính, thức ăn cơ bản mà một dân tộc hoặc cộng đồng ăn thường xuyên",
+      "definition_en": "a basic food that forms the main part of a diet in a particular region or culture",
+      "level": "B2",
+      "synonyms": [
+        "staple",
+        "dietary mainstay"
+      ],
+      "antonyms": [
+        "delicacy",
+        "luxury food"
+      ],
+      "example_sentence": "Rice is the staple food for millions of people across Asia, providing essential carbohydrates daily."
+    },
+    {
+      "word": "fortified",
+      "pronunciation": "/ˈfɔːrtɪfaɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "được bổ sung thêm các chất dinh dưỡng (như vitamin, khoáng chất) để tăng giá trị dinh dưỡng",
+      "definition_en": "enriched with added nutrients such as vitamins or minerals to increase nutritional value",
+      "level": "B2",
+      "synonyms": [
+        "enriched",
+        "supplemented"
+      ],
+      "antonyms": [
+        "depleted",
+        "stripped"
+      ],
+      "example_sentence": "Many breakfast cereals are fortified with iron and B vitamins to support children's development."
+    },
+    {
+      "word": "lean meat",
+      "pronunciation": "/liːn miːt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thịt có ít chất béo, thích hợp cho chế độ ăn kiêng lành mạnh",
+      "definition_en": "meat with minimal fat content, suitable for healthy diets",
+      "level": "C1",
+      "synonyms": [
+        "low-fat meat",
+        "white meat"
+      ],
+      "antonyms": [
+        "fatty meat",
+        "marbled meat"
+      ],
+      "example_sentence": "Chicken breast is a lean meat that fitness enthusiasts prefer for building muscle without excess calories."
+    },
+    {
+      "word": "whole grain",
+      "pronunciation": "/hoʊl ɡreɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngũ cốc nguyên hạt, chứa toàn bộ phần cơm, mầm và vỏ, giàu chất xơ",
+      "definition_en": "cereal grain containing the entire kernel, including bran, germ, and endosperm; rich in fiber",
+      "level": "B2",
+      "synonyms": [
+        "unrefined grain",
+        "wholemeal"
+      ],
+      "antonyms": [
+        "refined grain",
+        "white grain"
+      ],
+      "example_sentence": "Switching to whole grain bread can significantly improve digestive health and provide sustained energy."
+    },
+    {
+      "word": "saturated fat",
+      "pronunciation": "/ˈsætʃəreɪtɪd fæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chất béo bão hòa, loại chất béo thường rắn ở nhiệt độ phòng, có liên quan đến bệnh tim",
+      "definition_en": "a type of fat that is typically solid at room temperature and linked to cardiovascular disease",
+      "level": "B2",
+      "synonyms": [
+        "saturated lipid"
+      ],
+      "antonyms": [
+        "unsaturated fat",
+        "polyunsaturated fat"
+      ],
+      "example_sentence": "Health experts recommend limiting saturated fat intake to reduce the risk of heart disease."
+    },
+    {
+      "word": "food poisoning",
+      "pronunciation": "/fuːd ˈpɔɪzənɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngộ độc thực phẩm, bệnh do ăn thực phẩm bị nhiễm vi khuẩn hoặc độc tố",
+      "definition_en": "illness caused by consuming food contaminated with harmful bacteria or toxins",
+      "level": "C1",
+      "synonyms": [
+        "foodborne illness",
+        "gastroenteritis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Proper food storage and hygiene practices are essential to prevent food poisoning outbreaks."
+    },
+    {
+      "word": "expiry date",
+      "pronunciation": "/ɪkˈspaɪəri deɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hạn sử dụng, ngày cuối cùng mà thực phẩm vẫn an toàn để tiêu thụ",
+      "definition_en": "the final date by which a food product should be consumed for safety and quality",
+      "level": "C1",
+      "synonyms": [
+        "best-before date",
+        "use-by date"
+      ],
+      "antonyms": [],
+      "example_sentence": "Always check the expiry date before purchasing dairy products to ensure freshness."
+    },
+    {
+      "word": "dietary restriction",
+      "pronunciation": "/daɪˈɛtəri rɪˈstrɪkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hạn chế ăn uống, những loại thực phẩm mà một người không thể hoặc không nên ăn",
+      "definition_en": "limitations on food intake due to health conditions, allergies, or personal beliefs",
+      "level": "B2",
+      "synonyms": [
+        "dietary limitation",
+        "food restriction"
+      ],
+      "antonyms": [],
+      "example_sentence": "Patients with celiac disease must follow strict dietary restrictions to avoid gluten-containing products."
+    },
+    {
+      "word": "food label",
+      "pronunciation": "/fuːd ˈleɪbəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhãn thực phẩm, thông tin in trên bao bì về thành phần và giá trị dinh dưỡng",
+      "definition_en": "information printed on food packaging detailing ingredients and nutritional content",
+      "level": "C1",
+      "synonyms": [
+        "nutrition label",
+        "ingredient list"
+      ],
+      "antonyms": [],
+      "example_sentence": "Reading food labels helps consumers make informed choices about their dietary intake."
+    },
+    {
+      "word": "superfood",
+      "pronunciation": "/ˈsuːpərfuːd/",
+      "part_of_speech": "noun",
+      "definition_vi": "siêu thực phẩm, thực phẩm được coi là có lợi ích sức khỏe đặc biệt cao",
+      "definition_en": "a nutrient-dense food considered to provide exceptional health benefits",
+      "level": "B2",
+      "synonyms": [
+        "functional food",
+        "health food"
+      ],
+      "antonyms": [
+        "junk food",
+        "empty calories"
+      ],
+      "example_sentence": "Blueberries and kale are often marketed as superfoods due to their high antioxidant content."
+    },
+    {
+      "word": "food waste",
+      "pronunciation": "/fuːd weɪst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lãng phí thực phẩm, thực phẩm bị vứt bỏ mà không được sử dụng",
+      "definition_en": "edible food discarded or wasted without being consumed",
+      "level": "B2",
+      "synonyms": [
+        "food loss",
+        "culinary waste"
+      ],
+      "antonyms": [],
+      "example_sentence": "Reducing food waste is crucial for environmental sustainability and addressing global hunger."
+    },
+    {
+      "word": "gluten-free",
+      "pronunciation": "/ˈɡluːtən friː/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không chứa gluten, thích hợp cho những người không dung nạp gluten",
+      "definition_en": "free from gluten, suitable for people with celiac disease or gluten sensitivity",
+      "level": "B2",
+      "synonyms": [
+        "gluten-free diet"
+      ],
+      "antonyms": [
+        "gluten-containing"
+      ],
+      "example_sentence": "The bakery now offers gluten-free options for customers with celiac disease."
+    },
+    {
+      "word": "food hygiene",
+      "pronunciation": "/fuːd ˈhaɪdʒiːn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vệ sinh thực phẩm, các biện pháp sạch sẽ trong chuẩn bị, lưu trữ và nấu ăn",
+      "definition_en": "practices and conditions that maintain food safety and prevent contamination",
+      "level": "B2",
+      "synonyms": [
+        "food safety",
+        "sanitation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Proper food hygiene in restaurants is monitored by health inspectors to protect public health."
+    },
+    {
+      "word": "seasonal produce",
+      "pronunciation": "/ˈsiːzənəl ˈprɒdjuːs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nông sản theo mùa, trái cây và rau quả được thu hoạch vào thời kỳ thích hợp trong năm",
+      "definition_en": "fruits and vegetables harvested during their natural growing season",
+      "level": "B2",
+      "synonyms": [
+        "in-season produce"
+      ],
+      "antonyms": [
+        "out-of-season produce"
+      ],
+      "example_sentence": "Buying seasonal produce supports local farmers and ensures fresher, more affordable vegetables."
+    },
+    {
+      "word": "food preservation",
+      "pronunciation": "/fuːd ˌprɛzərˈveɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bảo quản thực phẩm, các phương pháp giữ thực phẩm tươi lâu hơn",
+      "definition_en": "methods used to prevent food spoilage and extend shelf life",
+      "level": "B2",
+      "synonyms": [
+        "food storage",
+        "conservation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Traditional food preservation techniques like fermentation and smoking remain popular in many cultures."
+    },
+    {
+      "word": "trans fat",
+      "pronunciation": "/trænz fæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chất béo chuyển hóa, loại chất béo nhân tạo có hại cho sức khỏe tim mạch",
+      "definition_en": "artificial fat created through hydrogenation, harmful to cardiovascular health",
+      "level": "B2",
+      "synonyms": [
+        "trans fatty acid"
+      ],
+      "antonyms": [
+        "unsaturated fat"
+      ],
+      "example_sentence": "Many countries have banned trans fat in processed foods due to its severe health risks."
+    },
+    {
+      "word": "food intolerance",
+      "pronunciation": "/fuːd ɪnˈtɒlərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "không dung nạp thực phẩm, phản ứng tiêu hóa khi ăn một loại thực phẩm nào đó",
+      "definition_en": "difficulty digesting certain foods, causing digestive discomfort",
+      "level": "B2",
+      "synonyms": [
+        "food sensitivity"
+      ],
+      "antonyms": [
+        "food tolerance"
+      ],
+      "example_sentence": "Lactose intolerance is a common food intolerance affecting millions of people worldwide."
+    },
+    {
+      "word": "nutrient-dense",
+      "pronunciation": "/ˈnjuːtriənt dens/",
+      "part_of_speech": "adjective",
+      "definition_vi": "giàu dinh dưỡng, chứa nhiều chất dinh dưỡng so với lượng calo",
+      "definition_en": "containing high levels of nutrients relative to caloric content",
+      "level": "B2",
+      "synonyms": [
+        "nutrient-rich",
+        "wholesome"
+      ],
+      "antonyms": [
+        "nutrient-poor",
+        "empty calories"
+      ],
+      "example_sentence": "Leafy greens are nutrient-dense foods that provide vitamins and minerals with minimal calories."
+    },
+    {
+      "word": "food chain",
+      "pronunciation": "/fuːd tʃeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chuỗi thức ăn, mối quan hệ giữa các sinh vật sống dựa trên ăn uống",
+      "definition_en": "a sequence of organisms in an ecosystem where each feeds on the one below it",
+      "level": "B2",
+      "synonyms": [
+        "food web"
+      ],
+      "antonyms": [],
+      "example_sentence": "Pesticides can accumulate through the food chain, affecting larger predators more severely."
+    },
+    {
+      "word": "food additives",
+      "pronunciation": "/fuːd ˈædɪtɪvz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ gia thực phẩm, chất được thêm vào thực phẩm để cải thiện hương vị, màu sắc hoặc bảo quản",
+      "definition_en": "substances added to food to enhance flavor, color, or preservation",
+      "level": "B2",
+      "synonyms": [
+        "food preservatives",
+        "food colorants"
+      ],
+      "antonyms": [],
+      "example_sentence": "Some food additives have been linked to health concerns, prompting consumers to choose natural alternatives."
+    },
+    {
+      "word": "portion size",
+      "pronunciation": "/ˈpɔːrʃən saɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kích thước khẩu phần, lượng thực phẩm được ăn trong một lần",
+      "definition_en": "the amount of food served or consumed in a single eating occasion",
+      "level": "C1",
+      "synonyms": [
+        "serving size",
+        "helping"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding proper portion sizes is essential for maintaining a healthy weight and preventing overeating."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following is the best example of a staple food in Southeast Asia?",
+      "option_a": "Pasta and bread",
+      "option_b": "Rice and noodles",
+      "option_c": "Potatoes and corn",
+      "option_d": "Cheese and milk",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Staple food là thức ăn chính mà một cộng đồng ăn thường xuyên. Ở Đông Nam Á, cơm và mì là những thực phẩm cơ bản nhất. Các lựa chọn khác là staple của các vùng khác (A: Châu Âu, C: Nam Mỹ, D: Châu Âu)."
+    },
+    {
+      "question_text": "What does 'fortified' mean in the context of food products?",
+      "option_a": "Made stronger in taste",
+      "option_b": "Enriched with added nutrients",
+      "option_c": "Preserved with chemicals",
+      "option_d": "Packaged in stronger containers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Fortified có nghĩa là được bổ sung thêm các chất dinh dưỡng như vitamin và khoáng chất. Đây là một thuật ngữ dinh dưỡng phổ biến trong các sản phẩm ngũ cốc và sữa."
+    },
+    {
+      "question_text": "Which statement about trans fat is correct?",
+      "option_a": "It is naturally found in all foods",
+      "option_b": "It is beneficial for heart health",
+      "option_c": "It is an artificial fat harmful to cardiovascular health",
+      "option_d": "It is essential for brain development",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Trans fat là chất béo nhân tạo được tạo ra thông qua quá trình hydrogenation, có hại cho sức khỏe tim mạch. Nhiều quốc gia đã cấm sử dụng nó trong thực phẩm chế biến."
+    },
+    {
+      "question_text": "If a person has food intolerance, what is most likely to happen?",
+      "option_a": "They will have an allergic reaction immediately",
+      "option_b": "They will experience digestive discomfort",
+      "option_c": "They will never be able to eat that food again",
+      "option_d": "They will develop immunity to that food",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Food intolerance là khó tiêu hóa một loại thực phẩm nào đó, gây khó chịu ở đường tiêu hóa. Điều này khác với dị ứng thực phẩm (allergy) có thể gây phản ứng nghiêm trọng hơn."
+    },
+    {
+      "question_text": "Which of the following is a nutrient-dense food?",
+      "option_a": "Sugary soft drinks",
+      "option_b": "Fried potato chips",
+      "option_c": "Leafy green vegetables",
+      "option_d": "Candy and chocolate",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nutrient-dense food là thực phẩm chứa nhiều chất dinh dưỡng so với lượng calo. Rau lá xanh như cải bó xôi chứa nhiều vitamin và khoáng chất nhưng ít calo. Các lựa chọn khác là empty calories."
+    },
+    {
+      "question_text": "What is the primary purpose of reading food labels?",
+      "option_a": "To check the brand name",
+      "option_b": "To make informed choices about dietary intake",
+      "option_c": "To determine the price of the product",
+      "option_d": "To find the manufacturer's address",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Food label cung cấp thông tin về thành phần và giá trị dinh dưỡng, giúp người tiêu dùng đưa ra lựa chọn ăn uống thông minh. Đây là một kỹ năng quan trọng trong việc duy trì sức khỏe."
+    },
+    {
+      "question_text": "Which practice is most important for preventing food poisoning?",
+      "option_a": "Buying expensive food brands",
+      "option_b": "Proper food hygiene and storage",
+      "option_c": "Eating only raw foods",
+      "option_d": "Consuming food quickly before expiry",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Food hygiene (vệ sinh thực phẩm) bao gồm các biện pháp sạch sẽ trong chuẩn bị, lưu trữ và nấu ăn, là cách tốt nhất để phòng ngộ độc thực phẩm. Các lựa chọn khác không phải là biện pháp phòng ngừa hiệu quả."
+    }
+  ]
+}

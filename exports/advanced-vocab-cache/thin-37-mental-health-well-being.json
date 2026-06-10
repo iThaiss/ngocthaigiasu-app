@@ -1,0 +1,242 @@
+{
+  "words": [
+    {
+      "word": "psychological distress",
+      "pronunciation": "/ˌsaɪkəˈlɒdʒɪkəl dɪˈstres/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tình trạng khó chịu, đau khổ về tâm lý; sự bất ổn cảm xúc gây ảnh hưởng đến chất lượng cuộc sống",
+      "definition_en": "Emotional or mental suffering that significantly impacts daily functioning and well-being",
+      "level": "C1",
+      "synonyms": [
+        "emotional disturbance",
+        "mental anguish"
+      ],
+      "antonyms": [
+        "emotional stability",
+        "psychological well-being"
+      ],
+      "example_sentence": "Adolescents experiencing psychological distress often exhibit changes in academic performance and social behavior."
+    },
+    {
+      "word": "maladaptive behavior",
+      "pronunciation": "/ˌmæləˈdæptɪv bɪˈheɪvjər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hành vi không thích ứng; cách ứng xử không hiệu quả hoặc có hại trong việc giải quyết vấn đề hoặc căng thẳng",
+      "definition_en": "Behavioral patterns that fail to address problems effectively and may worsen psychological or social difficulties",
+      "level": "C1",
+      "synonyms": [
+        "dysfunctional behavior",
+        "counterproductive conduct"
+      ],
+      "antonyms": [
+        "adaptive behavior",
+        "constructive response"
+      ],
+      "example_sentence": "Substance abuse is often a maladaptive behavior used to escape from underlying anxiety and trauma."
+    },
+    {
+      "word": "emotional regulation",
+      "pronunciation": "/ɪˈmoʊʃənəl ˌreɡjəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng kiểm soát, điều chỉnh cảm xúc của bản thân một cách hiệu quả; quản lý phản ứng cảm xúc",
+      "definition_en": "The ability to manage and modulate emotional responses in appropriate and healthy ways",
+      "level": "B2",
+      "synonyms": [
+        "emotion management",
+        "affective control"
+      ],
+      "antonyms": [
+        "emotional dysregulation",
+        "impulsivity"
+      ],
+      "example_sentence": "Children who develop strong emotional regulation skills are better equipped to handle interpersonal conflicts."
+    },
+    {
+      "word": "rumination",
+      "pronunciation": "/ˌruːmɪˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự suy nghĩ lặp đi lặp lại, chuyên tâm vào những suy tư tiêu cực hoặc vấn đề mà không tìm được giải pháp",
+      "definition_en": "Repetitive, unproductive thinking focused on negative thoughts or problems without reaching resolution",
+      "level": "C1",
+      "synonyms": [
+        "brooding",
+        "obsessive thinking"
+      ],
+      "antonyms": [
+        "mindfulness",
+        "present-moment awareness"
+      ],
+      "example_sentence": "Rumination is a significant cognitive pattern associated with prolonged depressive episodes and anxiety disorders."
+    },
+    {
+      "word": "interpersonal conflict",
+      "pronunciation": "/ˌɪntərˈpɜːrsənəl ˈkɑːnflɪkt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Xung đột giữa các cá nhân; bất đồng, mâu thuẫn trong mối quan hệ giữa hai hay nhiều người",
+      "definition_en": "Disagreement or tension arising between individuals in personal or professional relationships",
+      "level": "B2",
+      "synonyms": [
+        "relational conflict",
+        "interpersonal tension"
+      ],
+      "antonyms": [
+        "harmony",
+        "mutual understanding"
+      ],
+      "example_sentence": "Unresolved interpersonal conflict in the workplace can escalate stress levels and diminish employee mental health."
+    },
+    {
+      "word": "psychosomatic symptom",
+      "pronunciation": "/ˌsaɪkoʊsoʊˈmætɪk ˈsɪmptəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Triệu chứng thể chất xuất phát từ nguyên nhân tâm lý; bệnh lý cơ thể do căng thẳng hoặc rối loạn tâm lý gây ra",
+      "definition_en": "Physical symptoms or bodily complaints that originate from or are exacerbated by psychological factors",
+      "level": "C1",
+      "synonyms": [
+        "mind-body symptom",
+        "functional somatic symptom"
+      ],
+      "antonyms": [
+        "organic disease",
+        "purely physical ailment"
+      ],
+      "example_sentence": "Chronic stress can manifest as psychosomatic symptoms such as headaches, muscle tension, and gastrointestinal disturbances."
+    },
+    {
+      "word": "resilience-building",
+      "pronunciation": "/rɪˈzɪliəns ˈbɪldɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình phát triển khả năng phục hồi, sức chống chịu; xây dựng năng lực vượt qua khó khăn",
+      "definition_en": "The process of developing psychological strength and capacity to recover from adversity",
+      "level": "B2",
+      "synonyms": [
+        "resilience development",
+        "capacity strengthening"
+      ],
+      "antonyms": [
+        "vulnerability increase",
+        "fragility"
+      ],
+      "example_sentence": "School-based resilience-building programs have demonstrated positive outcomes in reducing youth mental health problems."
+    },
+    {
+      "word": "cognitive distortion",
+      "pronunciation": "/ˈkɒɡnɪtɪv dɪˈstɔːrʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sai lệch trong cách suy nghĩ; những quan niệm sai lạc hoặc bóp méo thực tế dẫn đến cảm xúc tiêu cực",
+      "definition_en": "Irrational or exaggerated thinking patterns that distort reality and contribute to negative emotions",
+      "level": "C1",
+      "synonyms": [
+        "thinking error",
+        "irrational belief"
+      ],
+      "antonyms": [
+        "rational thinking",
+        "realistic perception"
+      ],
+      "example_sentence": "Cognitive distortions such as catastrophizing and black-and-white thinking are common in individuals with anxiety disorders."
+    },
+    {
+      "word": "mental health literacy",
+      "pronunciation": "/ˈmentəl helθ ˈlɪtərəsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kiến thức và hiểu biết về sức khỏe tâm thần; khả năng nhận biết, hiểu biết và ứng phó với các vấn đề tâm lý",
+      "definition_en": "Knowledge and understanding of mental health conditions, their prevention, and available treatments and support",
+      "level": "C1",
+      "synonyms": [
+        "mental health awareness",
+        "psychological knowledge"
+      ],
+      "antonyms": [
+        "mental health ignorance",
+        "psychological illiteracy"
+      ],
+      "example_sentence": "Improving mental health literacy among the general population is crucial for early identification and intervention."
+    },
+    {
+      "word": "therapeutic alliance",
+      "pronunciation": "/ˌθerəˈpjuːtɪk əˈlaɪəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mối quan hệ tin tưởng và hợp tác giữa nhà trị liệu và bệnh nhân; sự liên kết tích cực trong quá trình điều trị",
+      "definition_en": "The collaborative relationship and mutual trust between a therapist and client that facilitates healing and progress",
+      "level": "C1",
+      "synonyms": [
+        "therapeutic relationship",
+        "working alliance"
+      ],
+      "antonyms": [
+        "therapeutic rupture",
+        "mistrust"
+      ],
+      "example_sentence": "A strong therapeutic alliance is one of the most significant predictors of positive outcomes in psychotherapy."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes rumination in the context of mental health?",
+      "option_a": "A temporary feeling of sadness that resolves within hours",
+      "option_b": "Repetitive, unproductive thinking focused on negative thoughts without reaching resolution",
+      "option_c": "A physical exercise technique used to improve mood",
+      "option_d": "The process of sharing emotions with a trusted friend",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Rumination là sự suy nghĩ lặp đi lặp lại về những vấn đề tiêu cực mà không tìm được giải pháp. Đáp án A sai vì nó chỉ là cảm xúc tạm thời. Đáp án C sai vì rumination không phải là bài tập thể chất. Đáp án D sai vì nó là hành động chia sẻ, không phải suy nghĩ lặp lại."
+    },
+    {
+      "question_text": "Psychosomatic symptoms are characterized by _____ that originate from psychological rather than purely physical causes.",
+      "option_a": "behavioral changes only",
+      "option_b": "physical manifestations",
+      "option_c": "social withdrawal exclusively",
+      "option_d": "cognitive impairment",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Psychosomatic symptoms là những triệu chứng thể chất (physical manifestations) xuất phát từ nguyên nhân tâm lý. Đáp án A, C, D đều không chính xác vì chúng không phản ánh bản chất của psychosomatic symptoms là các triệu chứng thể chất có gốc tâm lý."
+    },
+    {
+      "question_text": "A therapist's ability to establish a strong _____ with clients is essential for achieving positive treatment outcomes.",
+      "option_a": "therapeutic alliance",
+      "option_b": "emotional distance",
+      "option_c": "professional boundary",
+      "option_d": "diagnostic accuracy",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Therapeutic alliance là mối quan hệ tin tưởng và hợp tác giữa nhà trị liệu và bệnh nhân, là yếu tố quan trọng nhất cho kết quả điều trị tích cực. Đáp án B (khoảng cách cảm xúc) và C (ranh giới chuyên nghiệp) là những khía cạnh khác nhưng không phải là yếu tố chính. Đáp án D không liên quan trực tiếp đến kết quả điều trị."
+    },
+    {
+      "question_text": "Which cognitive pattern is most likely to perpetuate anxiety and depression by distorting one's perception of reality?",
+      "option_a": "Emotional regulation",
+      "option_b": "Cognitive distortion",
+      "option_c": "Mental health literacy",
+      "option_d": "Resilience-building",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cognitive distortion là những sai lệch trong cách suy nghĩ làm bóp méo thực tế và gây ra cảm xúc tiêu cực. Đáp án A là khả năng kiểm soát cảm xúc (tích cực). Đáp án C là kiến thức về sức khỏe tâm thần. Đáp án D là quá trình xây dựng sức chống chịu (tích cực). Chỉ có B là mô tả một mô hình tư duy tiêu cực."
+    },
+    {
+      "question_text": "Maladaptive behaviors in response to stress often _____ the underlying psychological problems rather than resolving them.",
+      "option_a": "alleviate",
+      "option_b": "exacerbate",
+      "option_c": "clarify",
+      "option_d": "eliminate",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Maladaptive behavior là những hành vi không hiệu quả hoặc có hại, thường làm trầm trọng thêm (exacerbate) các vấn đề tâm lý. Đáp án A (giảm nhẹ), C (làm rõ), D (loại bỏ) đều không phù hợp vì maladaptive behaviors không giải quyết vấn đề mà còn làm tệ hơn."
+    },
+    {
+      "question_text": "Improving _____ among adolescents is critical for enabling early recognition of mental health issues and reducing stigma.",
+      "option_a": "interpersonal conflict",
+      "option_b": "psychological distress",
+      "option_c": "mental health literacy",
+      "option_d": "psychosomatic symptoms",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Mental health literacy (kiến thức về sức khỏe tâm thần) là yếu tố quan trọng giúp nhận biết sớm các vấn đề tâm lý và giảm kỳ thị. Đáp án A, B, D đều là các vấn đề hoặc triệu chứng cần được nhận biết, nhưng không phải là giải pháp để cải thiện nhận thức và giảm kỳ thị."
+    }
+  ]
+}

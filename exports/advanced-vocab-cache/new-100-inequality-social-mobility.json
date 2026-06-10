@@ -1,0 +1,742 @@
+{
+  "words": [
+    {
+      "word": "income inequality",
+      "pronunciation": "/ˈɪŋkʌm ɪnˈɪkwɒlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự chênh lệch về thu nhập giữa các nhóm dân cư, thường được đo bằng chỉ số Gini",
+      "definition_en": "the unequal distribution of income across a population, typically measured by the Gini coefficient",
+      "level": "B2",
+      "synonyms": [
+        "wage gap",
+        "earnings disparity"
+      ],
+      "antonyms": [
+        "income equality",
+        "wage parity"
+      ],
+      "example_sentence": "Rising income inequality in developed nations has sparked debates about progressive taxation and wealth redistribution."
+    },
+    {
+      "word": "social mobility",
+      "pronunciation": "/ˈsoʊʃəl moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một cá nhân hoặc gia đình thay đổi vị trí xã hội kinh tế, đặc biệt là từ tầng lớp thấp lên cao",
+      "definition_en": "the ability of individuals or families to move up or down the socioeconomic ladder",
+      "level": "B2",
+      "synonyms": [
+        "upward mobility",
+        "class mobility"
+      ],
+      "antonyms": [
+        "social stagnation",
+        "immobility"
+      ],
+      "example_sentence": "Countries with strong education systems tend to have higher social mobility rates, allowing disadvantaged youth to escape poverty."
+    },
+    {
+      "word": "wealth gap",
+      "pronunciation": "/welθ ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự khác biệt lớn về tài sản ròng giữa những người giàu và những người nghèo",
+      "definition_en": "the significant difference in net worth between the wealthy and the poor",
+      "level": "B2",
+      "synonyms": [
+        "wealth disparity",
+        "asset inequality"
+      ],
+      "antonyms": [
+        "wealth equality"
+      ],
+      "example_sentence": "The wealth gap has widened dramatically since the 2008 financial crisis, with the top 1% accumulating unprecedented fortunes."
+    },
+    {
+      "word": "poverty line",
+      "pronunciation": "/ˈpɑːvərti laɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức thu nhập tối thiểu được xác định bởi chính phủ để phân loại một người hoặc gia đình là nghèo",
+      "definition_en": "the official income threshold below which a person or family is classified as living in poverty",
+      "level": "B2",
+      "synonyms": [
+        "poverty threshold",
+        "subsistence level"
+      ],
+      "antonyms": [
+        "affluence threshold"
+      ],
+      "example_sentence": "In the United States, the poverty line for a family of four was approximately $27,000 in 2021."
+    },
+    {
+      "word": "intergenerational mobility",
+      "pronunciation": "/ˌɪntərˌdʒɛnəˈreɪʃənəl moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi vị trí xã hội kinh tế giữa các thế hệ, ví dụ từ cha mẹ sang con cái",
+      "definition_en": "the change in socioeconomic status between generations, such as from parents to children",
+      "level": "C1",
+      "synonyms": [
+        "cross-generational mobility",
+        "generational advancement"
+      ],
+      "antonyms": [
+        "intergenerational stagnation"
+      ],
+      "example_sentence": "Research shows that intergenerational mobility is lower in countries with less accessible education systems."
+    },
+    {
+      "word": "disadvantaged communities",
+      "pronunciation": "/ˌdɪsədˈvæntɪdʒd kəˈmjuːnɪtiz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những cộng đồng thiếu tiếp cận với tài nguyên, giáo dục, và cơ hội kinh tế",
+      "definition_en": "communities lacking adequate access to resources, education, and economic opportunities",
+      "level": "B2",
+      "synonyms": [
+        "underprivileged communities",
+        "marginalized groups"
+      ],
+      "antonyms": [
+        "affluent communities",
+        "privileged areas"
+      ],
+      "example_sentence": "Disadvantaged communities often face systemic barriers that perpetuate cycles of poverty across generations."
+    },
+    {
+      "word": "meritocracy",
+      "pronunciation": "/məˈrɪtɑːkrəsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống xã hội trong đó sự tiến bộ dựa trên năng lực và thành tích chứ không phải xuất thân hay đặc quyền",
+      "definition_en": "a system in which advancement is based on ability and achievement rather than birth or privilege",
+      "level": "C1",
+      "synonyms": [
+        "talent-based system",
+        "achievement-based advancement"
+      ],
+      "antonyms": [
+        "nepotism",
+        "aristocracy"
+      ],
+      "example_sentence": "Critics argue that true meritocracy is impossible without addressing systemic inequalities in education and opportunity."
+    },
+    {
+      "word": "socioeconomic status",
+      "pronunciation": "/ˌsoʊsioʊˌɛkəˈnɑːmɪk ˈsteɪtəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vị trí của một cá nhân hoặc gia đình trong xã hội dựa trên thu nhập, giáo dục, và nghề nghiệp",
+      "definition_en": "a person's or family's position in society based on income, education, and occupation",
+      "level": "B2",
+      "synonyms": [
+        "SES",
+        "class status"
+      ],
+      "antonyms": [],
+      "example_sentence": "Socioeconomic status is a strong predictor of health outcomes, educational achievement, and life expectancy."
+    },
+    {
+      "word": "access to opportunity",
+      "pronunciation": "/ˈækses tu ˌɑːpərˈtuːnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng tiếp cận các cơ hội như giáo dục chất lượng, việc làm tốt, và dịch vụ y tế",
+      "definition_en": "the ability to reach quality education, good employment, and essential services",
+      "level": "B2",
+      "synonyms": [
+        "equal opportunity",
+        "opportunity access"
+      ],
+      "antonyms": [
+        "opportunity denial",
+        "exclusion"
+      ],
+      "example_sentence": "Ensuring equal access to opportunity requires investment in infrastructure, education, and job training in rural areas."
+    },
+    {
+      "word": "systemic inequality",
+      "pronunciation": "/sɪˈstɛmɪk ɪnˈɪkwɒlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự bất bình đẳng được nhúng sâu trong các cơ chế và chính sách của xã hội, không chỉ là hành động cá nhân",
+      "definition_en": "inequality embedded in the structures and policies of society, not merely individual actions",
+      "level": "C1",
+      "synonyms": [
+        "structural inequality",
+        "institutional inequality"
+      ],
+      "antonyms": [
+        "individual discrimination"
+      ],
+      "example_sentence": "Addressing systemic inequality requires comprehensive reforms in education, healthcare, and criminal justice systems."
+    },
+    {
+      "word": "upward mobility",
+      "pronunciation": "/ˈʌpwərd moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tiến lên trong xã hội, từ tầng lớp thấp hơn lên tầng lớp cao hơn",
+      "definition_en": "advancement in social status, moving from a lower to a higher socioeconomic class",
+      "level": "B2",
+      "synonyms": [
+        "social advancement",
+        "class advancement"
+      ],
+      "antonyms": [
+        "downward mobility",
+        "social decline"
+      ],
+      "example_sentence": "Education is often cited as the most reliable pathway to upward mobility for individuals from low-income backgrounds."
+    },
+    {
+      "word": "wage stagnation",
+      "pronunciation": "/weɪdʒ stæɡˈneɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng lương không tăng hoặc tăng rất chậm so với lạm phát, làm giảm sức mua",
+      "definition_en": "the condition where wages fail to increase or grow slower than inflation, reducing purchasing power",
+      "level": "C1",
+      "synonyms": [
+        "wage freeze",
+        "income stagnation"
+      ],
+      "antonyms": [
+        "wage growth",
+        "salary increase"
+      ],
+      "example_sentence": "Wage stagnation in manufacturing sectors has contributed to the erosion of the middle class in many developed economies."
+    },
+    {
+      "word": "educational attainment",
+      "pronunciation": "/ˌɛdʒuˈkeɪʃənəl əˈteɪnmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ giáo dục mà một cá nhân đã hoàn thành, thường được đo bằng bằng cấp hoặc năm học",
+      "definition_en": "the level of education a person has completed, typically measured by degree or years of schooling",
+      "level": "B2",
+      "synonyms": [
+        "educational level",
+        "qualification"
+      ],
+      "antonyms": [
+        "educational deprivation"
+      ],
+      "example_sentence": "Higher educational attainment is strongly correlated with increased earning potential and career advancement opportunities."
+    },
+    {
+      "word": "income redistribution",
+      "pronunciation": "/ˈɪŋkʌm ˌriːdɪˈstrɪbjuːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách chuyển tiền từ những người giàu sang những người nghèo thông qua thuế và trợ cấp xã hội",
+      "definition_en": "the transfer of income from the wealthy to the poor through taxation and social benefits",
+      "level": "C1",
+      "synonyms": [
+        "wealth transfer",
+        "progressive taxation"
+      ],
+      "antonyms": [
+        "regressive taxation"
+      ],
+      "example_sentence": "Proponents of income redistribution argue it reduces poverty, while critics contend it discourages economic productivity."
+    },
+    {
+      "word": "social stratification",
+      "pronunciation": "/ˌsoʊʃəl ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự phân chia xã hội thành các tầng lớp khác nhau dựa trên sự khác biệt về quyền lực, tài sản, và địa vị",
+      "definition_en": "the division of society into hierarchical layers based on differences in power, wealth, and status",
+      "level": "C1",
+      "synonyms": [
+        "class hierarchy",
+        "social hierarchy"
+      ],
+      "antonyms": [
+        "social equality",
+        "egalitarianism"
+      ],
+      "example_sentence": "Social stratification in feudal societies was rigid, with little opportunity for individuals to change their class status."
+    },
+    {
+      "word": "economic disparity",
+      "pronunciation": "/ˌɛkəˈnɑːmɪk dɪˈspærɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự khác biệt lớn về tài nguyên kinh tế và cơ hội giữa các nhóm hoặc khu vực",
+      "definition_en": "significant differences in economic resources and opportunities between groups or regions",
+      "level": "C1",
+      "synonyms": [
+        "economic inequality",
+        "wealth disparity"
+      ],
+      "antonyms": [
+        "economic equality",
+        "parity"
+      ],
+      "example_sentence": "Economic disparities between urban and rural areas have widened due to unequal investment in infrastructure and services."
+    },
+    {
+      "word": "poverty alleviation",
+      "pronunciation": "/ˈpɑːvərti əˌlɛviˈeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các chương trình và chính sách nhằm giảm bớt tình trạng nghèo và cải thiện điều kiện sống của người nghèo",
+      "definition_en": "programs and policies designed to reduce poverty and improve living conditions for the poor",
+      "level": "B2",
+      "synonyms": [
+        "poverty reduction",
+        "anti-poverty measures"
+      ],
+      "antonyms": [
+        "poverty perpetuation"
+      ],
+      "example_sentence": "Effective poverty alleviation requires coordinated efforts in education, healthcare, job creation, and social safety nets."
+    },
+    {
+      "word": "marginalized groups",
+      "pronunciation": "/ˈmɑːrdʒɪnəlaɪzd ɡruːps/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những nhóm người bị đẩy ra ngoài lề xã hội, thiếu quyền lực và tiếng nói trong các quyết định",
+      "definition_en": "groups of people pushed to the edges of society, lacking power and voice in decision-making",
+      "level": "B2",
+      "synonyms": [
+        "vulnerable populations",
+        "excluded groups"
+      ],
+      "antonyms": [
+        "privileged groups",
+        "mainstream society"
+      ],
+      "example_sentence": "Marginalized groups often face discrimination in employment, housing, and access to quality education."
+    },
+    {
+      "word": "class ceiling",
+      "pronunciation": "/klæs ˈsiːlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "rào cản vô hình ngăn cản những người từ tầng lớp thấp tiến lên tầng lớp cao hơn",
+      "definition_en": "an invisible barrier preventing people from lower classes from advancing to higher socioeconomic positions",
+      "level": "C1",
+      "synonyms": [
+        "social barrier",
+        "class barrier"
+      ],
+      "antonyms": [
+        "social ladder",
+        "opportunity"
+      ],
+      "example_sentence": "The class ceiling is particularly evident in elite professions where family connections and expensive education are prerequisites."
+    },
+    {
+      "word": "generational poverty",
+      "pronunciation": "/ˌdʒɛnəˈreɪʃənəl ˈpɑːvərti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng nghèo kéo dài qua nhiều thế hệ trong một gia đình, tạo thành một chu kỳ khó thoát",
+      "definition_en": "poverty that persists across multiple generations within a family, creating a difficult cycle to escape",
+      "level": "C1",
+      "synonyms": [
+        "chronic poverty",
+        "persistent poverty"
+      ],
+      "antonyms": [
+        "temporary poverty",
+        "situational poverty"
+      ],
+      "example_sentence": "Breaking the cycle of generational poverty requires comprehensive interventions in education, healthcare, and economic opportunity."
+    },
+    {
+      "word": "equal opportunity",
+      "pronunciation": "/ˈiːkwəl ˌɑːpərˈtuːnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguyên tắc rằng mọi người đều có cơ hội bình đẳng để thành công bất kể xuất thân hoặc hoàn cảnh",
+      "definition_en": "the principle that everyone has equal chances to succeed regardless of background or circumstances",
+      "level": "B2",
+      "synonyms": [
+        "fair chance",
+        "level playing field"
+      ],
+      "antonyms": [
+        "discrimination",
+        "favoritism"
+      ],
+      "example_sentence": "Legislation promoting equal opportunity in hiring aims to eliminate discrimination based on race, gender, or age."
+    },
+    {
+      "word": "skill gap",
+      "pronunciation": "/skɪl ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự khác biệt giữa các kỹ năng mà nhà tuyển dụng yêu cầu và các kỹ năng mà lực lượng lao động sở hữu",
+      "definition_en": "the difference between the skills employers require and the skills the workforce possesses",
+      "level": "B2",
+      "synonyms": [
+        "competency gap",
+        "training gap"
+      ],
+      "antonyms": [
+        "skill match"
+      ],
+      "example_sentence": "The widening skill gap in technology sectors has created barriers for workers without advanced technical training."
+    },
+    {
+      "word": "social exclusion",
+      "pronunciation": "/ˈsoʊʃəl ɪkˈskluːʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình loại trừ những cá nhân hoặc nhóm khỏi các hoạt động xã hội, kinh tế, và chính trị",
+      "definition_en": "the process of excluding individuals or groups from social, economic, and political participation",
+      "level": "C1",
+      "synonyms": [
+        "marginalization",
+        "exclusionary practices"
+      ],
+      "antonyms": [
+        "social inclusion",
+        "integration"
+      ],
+      "example_sentence": "Social exclusion based on ethnicity or disability perpetuates cycles of disadvantage and limits economic mobility."
+    },
+    {
+      "word": "wealth concentration",
+      "pronunciation": "/welθ ˌkɑːnsənˈtreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng tài sản tập trung vào tay một số ít người hoặc gia đình, tạo ra sự bất bình đẳng lớn",
+      "definition_en": "the condition where wealth is concentrated in the hands of a small number of people or families",
+      "level": "C1",
+      "synonyms": [
+        "wealth accumulation",
+        "asset concentration"
+      ],
+      "antonyms": [
+        "wealth distribution",
+        "equitable distribution"
+      ],
+      "example_sentence": "Excessive wealth concentration can undermine democratic institutions and reduce opportunities for social mobility."
+    },
+    {
+      "word": "occupational segregation",
+      "pronunciation": "/ˌɑːkjuˈpeɪʃənəl ˌsɛɡrɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng những nhóm người khác nhau tập trung vào các ngành nghề khác nhau, thường phản ánh bất bình đẳng",
+      "definition_en": "the concentration of different groups in different occupations, often reflecting inequality",
+      "level": "C1",
+      "synonyms": [
+        "job segregation",
+        "employment segregation"
+      ],
+      "antonyms": [
+        "occupational integration"
+      ],
+      "example_sentence": "Occupational segregation by gender remains evident in STEM fields, where women are significantly underrepresented."
+    },
+    {
+      "word": "social safety net",
+      "pronunciation": "/ˈsoʊʃəl ˈseɪfti nɛt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống các chương trình xã hội như trợ cấp thất nghiệp, y tế, và hỗ trợ gia đình để bảo vệ người dân khỏi khó khăn",
+      "definition_en": "a system of social programs such as unemployment benefits, healthcare, and family assistance to protect people from hardship",
+      "level": "B2",
+      "synonyms": [
+        "welfare system",
+        "social protection"
+      ],
+      "antonyms": [
+        "laissez-faire system"
+      ],
+      "example_sentence": "A robust social safety net is essential for reducing poverty and providing security during economic downturns."
+    },
+    {
+      "word": "privilege",
+      "pronunciation": "/ˈprɪvəlɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "lợi thế hoặc quyền đặc biệt mà một số người có được do xuất thân, giới tính, chủng tộc, hoặc tình trạng kinh tế",
+      "definition_en": "a special advantage or right granted to some people due to their background, gender, race, or economic status",
+      "level": "B2",
+      "synonyms": [
+        "advantage",
+        "entitlement"
+      ],
+      "antonyms": [
+        "disadvantage",
+        "deprivation"
+      ],
+      "example_sentence": "Acknowledging one's privilege is the first step toward understanding systemic inequality and working toward social justice."
+    },
+    {
+      "word": "meritocratic ideal",
+      "pronunciation": "/məˌrɪtɑːˈkrætɪk aɪˈdɪəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khái niệm lý tưởng rằng thành công phải dựa trên năng lực và nỗ lực, không phải xuất thân hay đặc quyền",
+      "definition_en": "the ideal notion that success should be based on ability and effort, not birth or privilege",
+      "level": "C1",
+      "synonyms": [
+        "merit-based advancement",
+        "achievement-based success"
+      ],
+      "antonyms": [
+        "nepotism",
+        "inherited privilege"
+      ],
+      "example_sentence": "While the meritocratic ideal is widely promoted, research shows that family wealth and connections still heavily influence outcomes."
+    },
+    {
+      "word": "economic mobility",
+      "pronunciation": "/ˌɛkəˈnɑːmɪk moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một cá nhân thay đổi vị trí kinh tế của họ, đặc biệt là tăng thu nhập hoặc tài sản",
+      "definition_en": "the ability of an individual to change their economic position, particularly to increase income or wealth",
+      "level": "B2",
+      "synonyms": [
+        "economic advancement",
+        "financial mobility"
+      ],
+      "antonyms": [
+        "economic stagnation"
+      ],
+      "example_sentence": "Economic mobility is constrained in countries where access to quality education and capital is limited to the wealthy."
+    },
+    {
+      "word": "structural barriers",
+      "pronunciation": "/ˈstrʌktʃərəl ˈbæriərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những rào cản được nhúng sâu trong các cơ chế xã hội, kinh tế, và chính trị ngăn cản tiến bộ của nhóm nhất định",
+      "definition_en": "obstacles embedded in social, economic, and political systems that prevent certain groups from advancing",
+      "level": "C1",
+      "synonyms": [
+        "systemic barriers",
+        "institutional obstacles"
+      ],
+      "antonyms": [
+        "enabling structures"
+      ],
+      "example_sentence": "Structural barriers in the housing market, such as redlining, have historically prevented minority communities from building wealth."
+    },
+    {
+      "word": "income mobility",
+      "pronunciation": "/ˈɪŋkʌm moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một cá nhân hoặc gia đình thay đổi mức thu nhập của họ so với thế hệ trước",
+      "definition_en": "the ability of an individual or family to change their income level relative to previous generations",
+      "level": "C1",
+      "synonyms": [
+        "earnings mobility",
+        "wage mobility"
+      ],
+      "antonyms": [
+        "income stagnation"
+      ],
+      "example_sentence": "Studies indicate that income mobility has declined in recent decades, making it harder for lower-income families to advance."
+    },
+    {
+      "word": "opportunity gap",
+      "pronunciation": "/ˌɑːpərˈtuːnɪti ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự khác biệt trong cơ hội tiếp cận giáo dục, việc làm, và tài nguyên giữa các nhóm xã hội khác nhau",
+      "definition_en": "the difference in access to education, employment, and resources between different social groups",
+      "level": "B2",
+      "synonyms": [
+        "access gap",
+        "opportunity disparity"
+      ],
+      "antonyms": [
+        "equal opportunity"
+      ],
+      "example_sentence": "The opportunity gap between urban and rural students begins in primary school and widens throughout their educational journey."
+    },
+    {
+      "word": "regressive taxation",
+      "pronunciation": "/rɪˈɡrɛsɪv tækˈseɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống thuế trong đó những người có thu nhập thấp trả tỷ lệ thuế cao hơn những người có thu nhập cao",
+      "definition_en": "a tax system where lower-income earners pay a higher percentage of their income in taxes than higher earners",
+      "level": "C1",
+      "synonyms": [
+        "flat tax",
+        "proportional taxation"
+      ],
+      "antonyms": [
+        "progressive taxation"
+      ],
+      "example_sentence": "Critics argue that regressive taxation exacerbates income inequality by placing a heavier burden on the poor."
+    },
+    {
+      "word": "social capital",
+      "pronunciation": "/ˈsoʊʃəl ˈkæpɪtəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mạng lưới các mối quan hệ, tin tưởng, và quy tắn xã hội mà cá nhân có thể khai thác để đạt được lợi ích",
+      "definition_en": "networks of relationships, trust, and social norms that individuals can leverage for personal benefit",
+      "level": "C1",
+      "synonyms": [
+        "social networks",
+        "community connections"
+      ],
+      "antonyms": [
+        "social isolation"
+      ],
+      "example_sentence": "Individuals from privileged backgrounds often possess greater social capital, which facilitates access to job opportunities and mentorship."
+    },
+    {
+      "word": "downward mobility",
+      "pronunciation": "/ˈdaʊnwərd moʊˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự suy giảm trong vị trí xã hội kinh tế, từ tầng lớp cao hơn xuống tầng lớp thấp hơn",
+      "definition_en": "a decline in socioeconomic status, moving from a higher to a lower class position",
+      "level": "C1",
+      "synonyms": [
+        "social decline",
+        "class decline"
+      ],
+      "antonyms": [
+        "upward mobility",
+        "advancement"
+      ],
+      "example_sentence": "Economic recessions often trigger downward mobility, as middle-class workers lose jobs and savings."
+    },
+    {
+      "word": "equitable access",
+      "pronunciation": "/ɪˈkwɪtəbəl ˈækses/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tiếp cận công bằng và công lý đối với các tài nguyên, dịch vụ, và cơ hội cho tất cả mọi người",
+      "definition_en": "fair and just access to resources, services, and opportunities for all people",
+      "level": "C1",
+      "synonyms": [
+        "fair access",
+        "just distribution"
+      ],
+      "antonyms": [
+        "inequitable access",
+        "discriminatory access"
+      ],
+      "example_sentence": "Ensuring equitable access to quality healthcare requires addressing geographic, financial, and cultural barriers."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'intergenerational mobility'?",
+      "option_a": "The movement of individuals within the same social class throughout their lifetime",
+      "option_b": "The change in socioeconomic status between parents and their children across generations",
+      "option_c": "The ability of a person to change jobs within the same industry",
+      "option_d": "The process of immigration from one country to another",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intergenerational mobility đề cập đến sự thay đổi vị trí xã hội kinh tế giữa các thế hệ (cha mẹ và con cái). A sai vì nó mô tả chuyển động trong cùng một tầng lớp. C sai vì nó chỉ về thay đổi công việc. D sai vì nó liên quan đến di cư địa lý."
+    },
+    {
+      "question_text": "What is the primary purpose of 'income redistribution' policies?",
+      "option_a": "To increase the total wealth of a nation",
+      "option_b": "To transfer income from the wealthy to the poor through taxation and social benefits",
+      "option_c": "To eliminate all forms of employment",
+      "option_d": "To encourage wealthy individuals to invest in businesses",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Income redistribution là chính sách chuyển tiền từ những người giàu sang những người nghèo thông qua thuế và trợ cấp xã hội. A sai vì không nhất thiết tăng tổng tài sản. C và D sai vì không phải mục đích chính."
+    },
+    {
+      "question_text": "Which term refers to the invisible barriers preventing people from lower classes from advancing to higher positions?",
+      "option_a": "Social safety net",
+      "option_b": "Class ceiling",
+      "option_c": "Skill gap",
+      "option_d": "Occupational segregation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Class ceiling là rào cản vô hình ngăn cản những người từ tầng lớp thấp tiến lên. A là hệ thống bảo vệ xã hội. C là sự khác biệt kỹ năng. D là hiện tượng tập trung vào các ngành khác nhau."
+    },
+    {
+      "question_text": "The term 'systemic inequality' differs from individual discrimination in that it ___.",
+      "option_a": "only affects wealthy individuals",
+      "option_b": "is embedded in the structures and policies of society rather than individual actions",
+      "option_c": "can be easily resolved through personal effort",
+      "option_d": "applies exclusively to developing nations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Systemic inequality được nhúng sâu trong các cơ chế xã hội, không chỉ là hành động cá nhân. A, C, D đều sai vì không phản ánh đặc điểm cốt lõi của systemic inequality."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'marginalized groups'?",
+      "option_a": "Privileged communities",
+      "option_b": "Vulnerable populations",
+      "option_c": "Affluent societies",
+      "option_d": "Mainstream organizations",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Vulnerable populations (những dân số dễ bị tổn thương) là từ đồng nghĩa với marginalized groups (những nhóm bị đẩy ra ngoài lề). A, C, D đều là antonyms hoặc không liên quan."
+    },
+    {
+      "question_text": "What does 'wage stagnation' imply about workers' purchasing power?",
+      "option_a": "It increases significantly",
+      "option_b": "It remains constant over time",
+      "option_c": "It decreases due to inflation outpacing wage growth",
+      "option_d": "It is unaffected by economic changes",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Wage stagnation có nghĩa là lương không tăng hoặc tăng chậm hơn lạm phát, làm giảm sức mua. A sai vì sức mua giảm. B sai vì lạm phát ảnh hưởng. D sai vì nó bị ảnh hưởng bởi lạm phát."
+    },
+    {
+      "question_text": "Which policy approach is most directly opposed to 'regressive taxation'?",
+      "option_a": "Flat tax systems",
+      "option_b": "Sales tax increases",
+      "option_c": "Progressive taxation",
+      "option_d": "Consumption-based taxes",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Progressive taxation là đối lập với regressive taxation. Trong progressive taxation, những người có thu nhập cao trả tỷ lệ thuế cao hơn. A, B, D đều là hình thức thuế regressive hoặc tương tự."
+    },
+    {
+      "question_text": "According to the passage context, 'social capital' primarily refers to ___.",
+      "option_a": "the total amount of money in a society",
+      "option_b": "networks of relationships and trust that individuals can leverage for benefit",
+      "option_c": "government investment in public infrastructure",
+      "option_d": "the physical assets owned by a community",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Social capital là mạng lưới các mối quan hệ, tin tưởng, và quy tắc xã hội mà cá nhân có thể khai thác. A sai vì nó không phải tiền. C sai vì nó không phải đầu tư chính phủ. D sai vì nó không phải tài sản vật chất."
+    },
+    {
+      "question_text": "The 'opportunity gap' between urban and rural students is primarily caused by ___.",
+      "option_a": "differences in student intelligence",
+      "option_b": "unequal access to quality education, employment, and resources",
+      "option_c": "rural students' lack of motivation",
+      "option_d": "urban students' genetic advantages",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Opportunity gap là sự khác biệt trong cơ hội tiếp cận giáo dục, việc làm, và tài nguyên. A, C, D đều là những lý do sai hoặc không khoa học."
+    },
+    {
+      "question_text": "Which of the following best exemplifies 'generational poverty'?",
+      "option_a": "A family experiencing temporary unemployment during an economic recession",
+      "option_b": "A family that has lived in poverty for multiple generations with limited escape routes",
+      "option_c": "An individual who loses wealth due to poor investment decisions",
+      "option_d": "A community that experiences poverty for only one year",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Generational poverty là tình trạng nghèo kéo dài qua nhiều thế hệ. A sai vì tạm thời. C sai vì cá nhân. D sai vì chỉ một năm."
+    },
+    {
+      "question_text": "The concept of 'meritocracy' assumes that ___.",
+      "option_a": "success is determined by family connections and inherited wealth",
+      "option_b": "advancement is based on ability and achievement rather than birth or privilege",
+      "option_c": "only wealthy individuals can succeed in society",
+      "option_d": "systemic barriers do not affect individual outcomes",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Meritocracy giả định rằng sự tiến bộ dựa trên năng lực và thành tích, không phải xuất thân. A sai vì đó là antonym. C sai vì nó không giới hạn ở người giàu. D sai vì meritocracy lý tưởng không xét đến rào cản hệ thống."
+    },
+    {
+      "question_text": "What is the relationship between 'educational attainment' and 'upward mobility'?",
+      "option_a": "They are unrelated concepts",
+      "option_b": "Higher educational attainment typically increases opportunities for upward mobility",
+      "option_c": "Educational attainment decreases chances of upward mobility",
+      "option_d": "Upward mobility is guaranteed regardless of educational attainment",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Có mối liên hệ mạnh mẽ giữa educational attainment và upward mobility. Giáo dục cao hơn thường mở ra nhiều cơ hội tiến lên. A sai vì chúng có liên quan. C sai vì ngược lại. D sai vì không được đảm bảo."
+    },
+    {
+      "question_text": "Which statement best describes the relationship between 'structural barriers' and 'social exclusion'?",
+      "option_a": "Structural barriers are the primary mechanisms through which social exclusion occurs",
+      "option_b": "Social exclusion and structural barriers are completely independent phenomena",
+      "option_c": "Structural barriers eliminate the possibility of social exclusion",
+      "option_d": "Social exclusion causes structural barriers to develop",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Structural barriers là những cơ chế chính thông qua đó social exclusion xảy ra. Chúng là nguyên nhân của sự loại trừ xã hội. B sai vì chúng có liên quan. C sai vì structural barriers không loại bỏ social exclusion. D sai vì quan hệ nhân quả ngược lại."
+    }
+  ]
+}

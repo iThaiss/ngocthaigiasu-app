@@ -1,0 +1,175 @@
+{
+  "words": [
+    {
+      "word": "notwithstanding the fact that",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ ðə fækt ðæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặc dù sự thật là; bất chấp điều kiện nào, vẫn làm gì đó; cấu trúc chính thức hơn 'despite'",
+      "definition_en": "a formal phrase meaning 'in spite of the fact that'; used to introduce a contrasting or surprising statement",
+      "level": "C1",
+      "synonyms": [
+        "despite the fact that",
+        "in spite of the fact that"
+      ],
+      "antonyms": [
+        "because of",
+        "due to"
+      ],
+      "example_sentence": "Notwithstanding the fact that the economy was struggling, consumer spending remained surprisingly resilient throughout the quarter."
+    },
+    {
+      "word": "conversely",
+      "pronunciation": "/ˈkɒnvɜːsli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "ngược lại; đảo chiều logic; dùng để giới thiệu ý kiến hoàn toàn đối lập",
+      "definition_en": "in a way that is the opposite or reverse of something previously stated",
+      "level": "B2",
+      "synonyms": [
+        "inversely",
+        "on the other hand"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "While developed nations have seen declining birth rates, conversely, many developing countries continue to experience rapid population growth."
+    },
+    {
+      "word": "paradoxically",
+      "pronunciation": "/ˌpærəˈdɒksɪkli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách mâu thuẫn/nghịch lý; điều gì đó vừa đúng vừa sai theo logic thông thường",
+      "definition_en": "in a way that seems contradictory or absurd, yet may be true in reality",
+      "level": "C1",
+      "synonyms": [
+        "ironically",
+        "surprisingly"
+      ],
+      "antonyms": [
+        "logically",
+        "consistently"
+      ],
+      "example_sentence": "Paradoxically, the more safety regulations were introduced, the more workplace accidents occurred due to complacency among workers."
+    },
+    {
+      "word": "albeit",
+      "pronunciation": "/ɔːlˈbiːɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "mặc dù; tuy nhiên; dùng để thêm thông tin làm giảm nhẹ hoặc sửa đổi câu trước",
+      "definition_en": "though; although; used to introduce a concession or qualification to a previous statement",
+      "level": "B2",
+      "synonyms": [
+        "although",
+        "though"
+      ],
+      "antonyms": [
+        "because",
+        "since"
+      ],
+      "example_sentence": "The project was completed successfully, albeit with some delays due to unforeseen supply chain disruptions."
+    },
+    {
+      "word": "by the same token",
+      "pronunciation": "/baɪ ðə seɪm ˈtəʊkən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo cùng lý do; vì lý do tương tự; dùng để nối hai ý kiến có logic song song",
+      "definition_en": "for the same reason; in the same way; used to introduce a parallel or similar point",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "antonyms": [
+        "conversely",
+        "on the other hand"
+      ],
+      "example_sentence": "If we accept that climate change requires immediate action, by the same token, we must invest heavily in renewable energy infrastructure."
+    },
+    {
+      "word": "to a certain extent",
+      "pronunciation": "/tə ə ˈsɜːtn ɪkˈstent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ở một mức độ nào đó; phần nào; dùng để nhượng bộ một phần nhưng không hoàn toàn đồng ý",
+      "definition_en": "partly; to some degree; used to acknowledge partial truth while maintaining a contrasting position",
+      "level": "B2",
+      "synonyms": [
+        "to some degree",
+        "in part"
+      ],
+      "antonyms": [
+        "entirely",
+        "completely"
+      ],
+      "example_sentence": "While social media has improved connectivity, to a certain extent, it has also contributed to increased anxiety and mental health issues among teenagers."
+    },
+    {
+      "word": "on the flip side",
+      "pronunciation": "/ɒn ðə flɪp saɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặt khác; từ góc độ khác; dùng để giới thiệu quan điểm đối lập một cách tự nhiên",
+      "definition_en": "on the other hand; from a different perspective; used to introduce a contrasting viewpoint informally",
+      "level": "B2",
+      "synonyms": [
+        "on the other hand",
+        "conversely"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "Remote work offers flexibility and reduced commute time; on the flip side, it can blur the boundaries between professional and personal life."
+    },
+    {
+      "word": "in any case",
+      "pronunciation": "/ɪn ˈeni keɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa; trong mọi trường hợp; dùng để kết luận rằng điều gì đó đúng bất kể tình huống",
+      "definition_en": "regardless of other circumstances; in any situation; used to assert that a conclusion holds true despite preceding arguments",
+      "level": "C1",
+      "synonyms": [
+        "in any event",
+        "at any rate"
+      ],
+      "antonyms": [
+        "specifically",
+        "particularly"
+      ],
+      "example_sentence": "Whether the policy is popular or not, in any case, the government must prioritize public health and safety."
+    },
+    {
+      "word": "all the same",
+      "pronunciation": "/ɔːl ðə seɪm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuy nhiên; dù sao đi nữa; dùng để nhượng bộ nhưng vẫn duy trì quan điểm chính",
+      "definition_en": "nevertheless; despite what has been said; used to concede a point while maintaining the main argument",
+      "level": "C1",
+      "synonyms": [
+        "nevertheless",
+        "still"
+      ],
+      "antonyms": [
+        "therefore",
+        "consequently"
+      ],
+      "example_sentence": "The research has limitations, all the same, the findings provide valuable insights into consumer behavior patterns."
+    },
+    {
+      "word": "concurrently",
+      "pronunciation": "/kənˈkɜːrəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "đồng thời; cùng một lúc; dùng để chỉ hai sự việc xảy ra song song mà không nhất thiết phải tương phản",
+      "definition_en": "at the same time; simultaneously; indicating that two events or processes happen together",
+      "level": "B2",
+      "synonyms": [
+        "simultaneously",
+        "at the same time"
+      ],
+      "antonyms": [
+        "sequentially",
+        "subsequently"
+      ],
+      "example_sentence": "The company expanded into three new markets concurrently while maintaining operations in existing regions, demonstrating ambitious growth strategy."
+    }
+  ],
+  "questions": []
+}

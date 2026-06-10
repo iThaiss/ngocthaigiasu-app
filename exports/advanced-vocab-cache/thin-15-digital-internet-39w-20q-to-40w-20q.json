@@ -1,0 +1,163 @@
+{
+  "words": [
+    {
+      "word": "latency",
+      "pronunciation": "/ˈleɪtənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "độ trễ, khoảng thời gian chậm trễ giữa khi gửi dữ liệu và khi nhận được phản hồi trong mạng",
+      "definition_en": "the delay between sending a request and receiving a response in a network",
+      "level": "B2",
+      "synonyms": [
+        "delay",
+        "lag",
+        "response time"
+      ],
+      "antonyms": [
+        "speed",
+        "immediacy"
+      ],
+      "example_sentence": "High latency in online gaming can cause significant delays in player actions and reduce competitive performance."
+    },
+    {
+      "word": "bandwidth throttling",
+      "pronunciation": "/ˈbændwɪdθ ˈθrɒtəlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giới hạn tốc độ kết nối internet, thường do nhà cung cấp dịch vụ thực hiện để kiểm soát lưu lượng",
+      "definition_en": "intentional slowing of internet speed by service providers to manage network traffic",
+      "level": "B2",
+      "synonyms": [
+        "speed limiting",
+        "rate limiting"
+      ],
+      "antonyms": [
+        "speed boost",
+        "acceleration"
+      ],
+      "example_sentence": "Some internet service providers implement bandwidth throttling during peak hours to prevent network congestion."
+    },
+    {
+      "word": "metadata",
+      "pronunciation": "/ˈmetədeɪtə/",
+      "part_of_speech": "noun",
+      "definition_vi": "dữ liệu về dữ liệu, thông tin mô tả các thuộc tính của tệp như ngày tạo, kích thước, tác giả",
+      "definition_en": "data that describes and provides information about other data, such as file creation date and author",
+      "level": "B2",
+      "synonyms": [
+        "descriptive data",
+        "file information"
+      ],
+      "antonyms": [],
+      "example_sentence": "Photographers should be aware that metadata embedded in digital images can reveal sensitive location information."
+    },
+    {
+      "word": "two-factor authentication",
+      "pronunciation": "/ˌtuː ˈfæktər ɔːˌθentɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xác thực hai yếu tố, phương pháp bảo mật yêu cầu hai hình thức xác minh khác nhau để truy cập tài khoản",
+      "definition_en": "a security method requiring two different forms of verification to access an account",
+      "level": "B2",
+      "synonyms": [
+        "2FA",
+        "multi-factor authentication"
+      ],
+      "antonyms": [
+        "single-factor authentication"
+      ],
+      "example_sentence": "Banks now recommend enabling two-factor authentication on all accounts to prevent unauthorized access."
+    },
+    {
+      "word": "proxy server",
+      "pronunciation": "/ˈprɒksi ˈsɜːvər/",
+      "part_of_speech": "noun",
+      "definition_vi": "máy chủ trung gian, đứng giữa người dùng và internet để ẩn danh tính hoặc lọc nội dung",
+      "definition_en": "an intermediary server that acts as a gateway between a user and the internet",
+      "level": "B2",
+      "synonyms": [
+        "intermediary server",
+        "gateway"
+      ],
+      "antonyms": [
+        "direct connection"
+      ],
+      "example_sentence": "Companies often use proxy servers to monitor employee internet usage and block access to inappropriate websites."
+    },
+    {
+      "word": "cookie",
+      "pronunciation": "/ˈkʊki/",
+      "part_of_speech": "noun",
+      "definition_vi": "tệp nhỏ được lưu trên máy tính người dùng để ghi nhớ thông tin về phiên duyệt web",
+      "definition_en": "a small file stored on a user's device that remembers information about their browsing session",
+      "level": "C1",
+      "synonyms": [
+        "tracking file",
+        "session data"
+      ],
+      "antonyms": [],
+      "example_sentence": "Websites use cookies to remember your login information and personalize your browsing experience."
+    },
+    {
+      "word": "dns resolution",
+      "pronunciation": "/ˌdiː en ˈes rezəˈluːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình chuyển đổi tên miền thành địa chỉ IP để máy tính có thể kết nối đến máy chủ",
+      "definition_en": "the process of converting a domain name into its corresponding IP address",
+      "level": "B2",
+      "synonyms": [
+        "domain lookup",
+        "name resolution"
+      ],
+      "antonyms": [],
+      "example_sentence": "Slow DNS resolution can cause websites to load slowly even if your internet connection is fast."
+    },
+    {
+      "word": "packet loss",
+      "pronunciation": "/ˈpækɪt lɔːs/",
+      "part_of_speech": "noun",
+      "definition_vi": "mất gói dữ liệu, tình trạng một số gói dữ liệu không đến được đích trong quá trình truyền",
+      "definition_en": "the failure of data packets to reach their destination during transmission over a network",
+      "level": "B2",
+      "synonyms": [
+        "data loss",
+        "transmission failure"
+      ],
+      "antonyms": [
+        "successful transmission"
+      ],
+      "example_sentence": "Excessive packet loss during video calls can result in audio dropouts and frozen video frames."
+    },
+    {
+      "word": "vpn (virtual private network)",
+      "pronunciation": "/ˌviː piː ˈen/",
+      "part_of_speech": "noun",
+      "definition_vi": "mạng riêng ảo, công nghệ mã hóa kết nối để bảo vệ quyền riêng tư và ẩn danh tính trực tuyến",
+      "definition_en": "a secure encrypted connection that masks a user's IP address and protects online privacy",
+      "level": "B2",
+      "synonyms": [
+        "secure tunnel",
+        "encrypted connection"
+      ],
+      "antonyms": [
+        "public network",
+        "unencrypted connection"
+      ],
+      "example_sentence": "Travelers often use a VPN when connecting to public Wi-Fi networks to protect their sensitive data from hackers."
+    },
+    {
+      "word": "session timeout",
+      "pronunciation": "/ˈseʃən ˈtaɪmaʊt/",
+      "part_of_speech": "noun",
+      "definition_vi": "hết phiên, khi hệ thống tự động đăng xuất người dùng sau một khoảng thời gian không hoạt động",
+      "definition_en": "automatic disconnection of a user session after a period of inactivity",
+      "level": "B2",
+      "synonyms": [
+        "auto-logout",
+        "inactivity timeout"
+      ],
+      "antonyms": [
+        "persistent session"
+      ],
+      "example_sentence": "For security reasons, online banking platforms implement session timeout to prevent unauthorized access to unattended devices."
+    }
+  ],
+  "questions": []
+}

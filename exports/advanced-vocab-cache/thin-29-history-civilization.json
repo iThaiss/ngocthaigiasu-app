@@ -1,0 +1,420 @@
+{
+  "words": [
+    {
+      "word": "epoch",
+      "pronunciation": "/ˈɛpɒk/",
+      "part_of_speech": "noun",
+      "definition_vi": "thời kỳ lịch sử có đặc điểm riêng biệt; kỷ nguyên",
+      "definition_en": "a period of time in history or a person's life, typically one marked by notable events or characteristics",
+      "level": "B2",
+      "synonyms": [
+        "period",
+        "age",
+        "era"
+      ],
+      "antonyms": [],
+      "example_sentence": "The Renaissance epoch marked a dramatic shift from medieval to modern thinking in European culture."
+    },
+    {
+      "word": "anthropogenic",
+      "pronunciation": "/ˌænθrəpəˈdʒɛnɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "do con người gây ra; liên quan đến hoạt động của loài người",
+      "definition_en": "caused or produced by human activities, especially referring to environmental change",
+      "level": "C1",
+      "synonyms": [
+        "human-induced",
+        "man-made"
+      ],
+      "antonyms": [
+        "natural",
+        "indigenous"
+      ],
+      "example_sentence": "Anthropogenic climate change has reshaped civilizations' settlement patterns throughout the Holocene epoch."
+    },
+    {
+      "word": "geopolitical",
+      "pronunciation": "/ˌdʒiːoʊpəˈlɪtɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến chính trị dựa trên vị trí địa lý; địa chính trị",
+      "definition_en": "relating to politics and geography, especially the influence of geography on international relations and power",
+      "level": "C1",
+      "synonyms": [
+        "strategic",
+        "territorial"
+      ],
+      "antonyms": [],
+      "example_sentence": "The geopolitical significance of the Silk Road determined which empires would dominate trade and cultural exchange."
+    },
+    {
+      "word": "subsistence",
+      "pronunciation": "/səbˈsɪstəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tồn tại; cách sống tự cấp; kinh tế tự túc",
+      "definition_en": "the minimum level of income or resources needed to maintain life; a way of living at bare survival level",
+      "level": "B2",
+      "synonyms": [
+        "livelihood",
+        "survival"
+      ],
+      "antonyms": [
+        "abundance",
+        "prosperity"
+      ],
+      "example_sentence": "Early agricultural societies transitioned from hunter-gatherer subsistence to settled farming communities."
+    },
+    {
+      "word": "stratification",
+      "pronunciation": "/ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự phân tầng; sự chia thành các lớp xã hội",
+      "definition_en": "the arrangement of society into distinct layers or classes; the process of dividing into strata",
+      "level": "C1",
+      "synonyms": [
+        "hierarchy",
+        "classification"
+      ],
+      "antonyms": [
+        "equality",
+        "uniformity"
+      ],
+      "example_sentence": "Social stratification in ancient Egypt created rigid class divisions between pharaohs, nobles, and peasants."
+    },
+    {
+      "word": "tributary",
+      "pronunciation": "/ˈtrɪbjətɛri/",
+      "part_of_speech": "noun",
+      "definition_vi": "nước ngoài phải nộp thuế/tiền cho nước khác; phụ thuộc",
+      "definition_en": "a state or region that pays taxes or tribute to a more powerful state; subordinate",
+      "level": "B2",
+      "synonyms": [
+        "vassal",
+        "dependent"
+      ],
+      "antonyms": [
+        "sovereign",
+        "independent"
+      ],
+      "example_sentence": "Many Asian kingdoms became tributaries of the Chinese empire, maintaining political autonomy while acknowledging imperial supremacy."
+    },
+    {
+      "word": "diaspora",
+      "pronunciation": "/daɪˈæspərə/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tản cư; cộng đồng người cùng dân tộc sống rải rác ở nước ngoài",
+      "definition_en": "the dispersion of a people from their original homeland; communities of such dispersed people",
+      "level": "C1",
+      "synonyms": [
+        "dispersion",
+        "scattering"
+      ],
+      "antonyms": [
+        "concentration",
+        "gathering"
+      ],
+      "example_sentence": "The Jewish diaspora following the Roman destruction of Jerusalem profoundly influenced Mediterranean and Middle Eastern societies."
+    },
+    {
+      "word": "hegemony",
+      "pronunciation": "/hɪˈdʒɛməni/",
+      "part_of_speech": "noun",
+      "definition_vi": "quyền thống trị; sự thống lĩnh của một quốc gia/nhóm",
+      "definition_en": "the dominance of one social group, nation, or culture over others; leadership or supremacy",
+      "level": "C1",
+      "synonyms": [
+        "dominance",
+        "supremacy"
+      ],
+      "antonyms": [
+        "subordination",
+        "equality"
+      ],
+      "example_sentence": "British hegemony in the 19th century extended across continents through colonial expansion and naval superiority."
+    },
+    {
+      "word": "syncretic",
+      "pronunciation": "/sɪnˈkrɛtɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "kết hợp các yếu tố từ nhiều nguồn khác nhau; pha trộn",
+      "definition_en": "combining or reconciling different beliefs, practices, or traditions into a unified system",
+      "level": "C1",
+      "synonyms": [
+        "hybrid",
+        "blended"
+      ],
+      "antonyms": [
+        "pure",
+        "orthodox"
+      ],
+      "example_sentence": "Syncretic religions in Latin America blended indigenous spiritual practices with Catholic Christianity during the colonial period."
+    },
+    {
+      "word": "agrarian",
+      "pronunciation": "/əˈɡrɛriən/",
+      "part_of_speech": "noun",
+      "definition_vi": "liên quan đến nông nghiệp; người ủng hộ cải cách đất đai",
+      "definition_en": "relating to agriculture or farmers; an advocate for agricultural interests or land reform",
+      "level": "B2",
+      "synonyms": [
+        "agricultural",
+        "rural"
+      ],
+      "antonyms": [
+        "industrial",
+        "urban"
+      ],
+      "example_sentence": "The agrarian revolution of the 18th century transformed European economies through improved farming techniques and crop rotation."
+    },
+    {
+      "word": "mercantilism",
+      "pronunciation": "/mərˈkæntɪlɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "chủ nghĩa thương mại; hệ thống kinh tế coi xuất khẩu là quan trọng",
+      "definition_en": "an economic system emphasizing national wealth accumulation through trade surplus and colonial expansion",
+      "level": "C1",
+      "synonyms": [
+        "commercialism",
+        "trade-based economy"
+      ],
+      "antonyms": [
+        "free trade",
+        "laissez-faire"
+      ],
+      "example_sentence": "European mercantilism drove colonial competition in the Americas as nations sought to maximize precious metal exports."
+    },
+    {
+      "word": "secularization",
+      "pronunciation": "/ˌsɛkjələrɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình tách rời tôn giáo khỏi chính trị/xã hội; thế tục hóa",
+      "definition_en": "the process of removing religious influence from government, education, and society",
+      "level": "C1",
+      "synonyms": [
+        "laicization",
+        "desacralization"
+      ],
+      "antonyms": [
+        "sacralization",
+        "religiosity"
+      ],
+      "example_sentence": "The Enlightenment accelerated secularization in Europe, challenging religious authority and promoting rational thought."
+    },
+    {
+      "word": "nomadic",
+      "pronunciation": "/noʊˈmædɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "du mục; không có nơi cư trú cố định",
+      "definition_en": "relating to people who move from place to place rather than settling permanently in one location",
+      "level": "B2",
+      "synonyms": [
+        "itinerant",
+        "migratory"
+      ],
+      "antonyms": [
+        "sedentary",
+        "settled"
+      ],
+      "example_sentence": "Nomadic pastoral societies on the Central Asian steppes developed sophisticated trade networks connecting East and West."
+    },
+    {
+      "word": "feudalism",
+      "pronunciation": "/ˈfjuːdəlɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "chế độ phong kiến; hệ thống xã hội dựa trên mối quan hệ chủ-tôi",
+      "definition_en": "a political and economic system based on the exchange of land for military service and loyalty",
+      "level": "B2",
+      "synonyms": [
+        "feudal system",
+        "manorialism"
+      ],
+      "antonyms": [
+        "democracy",
+        "centralism"
+      ],
+      "example_sentence": "European feudalism created hierarchical social structures where vassals pledged allegiance to lords in exchange for land protection."
+    },
+    {
+      "word": "paradigm shift",
+      "pronunciation": "/ˈpærədaɪm ʃɪft/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi cơ bản trong cách suy nghĩ/hiểu biết; chuyển mô hình",
+      "definition_en": "a fundamental change in the basic concepts and practices of a discipline or society",
+      "level": "C1",
+      "synonyms": [
+        "fundamental change",
+        "conceptual revolution"
+      ],
+      "antonyms": [
+        "continuity",
+        "stasis"
+      ],
+      "example_sentence": "The Scientific Revolution represented a paradigm shift from religious authority to empirical observation in understanding the natural world."
+    },
+    {
+      "word": "sociopolitical",
+      "pronunciation": "/ˌsoʊʃioʊpəˈlɪtɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến cả xã hội lẫn chính trị; xã hội-chính trị",
+      "definition_en": "relating to both social and political factors or movements",
+      "level": "C1",
+      "synonyms": [
+        "socio-political",
+        "political-social"
+      ],
+      "antonyms": [],
+      "example_sentence": "The French Revolution was driven by complex sociopolitical tensions between the aristocracy, bourgeoisie, and peasantry."
+    },
+    {
+      "word": "infrastructure",
+      "pronunciation": "/ˈɪnfrəstrʌktʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "cơ sở hạ tầng; các công trình cơ bản của một xã hội",
+      "definition_en": "the basic physical systems and facilities needed for a society or civilization to function",
+      "level": "B2",
+      "synonyms": [
+        "framework",
+        "foundation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Roman infrastructure, including aqueducts and roads, enabled the empire to maintain control over vast territories."
+    },
+    {
+      "word": "cosmopolitan",
+      "pronunciation": "/ˌkɑːzməˈpɑːlɪtən/",
+      "part_of_speech": "noun",
+      "definition_vi": "thuộc về thế giới; không bị giới hạn bởi quốc gia; người thế giới",
+      "definition_en": "familiar with many different countries and cultures; a person with such broad experience",
+      "level": "C1",
+      "synonyms": [
+        "worldly",
+        "international"
+      ],
+      "antonyms": [
+        "provincial",
+        "parochial"
+      ],
+      "example_sentence": "Alexandria in Hellenistic Egypt became a cosmopolitan center where Greek, Egyptian, and Jewish cultures interacted."
+    },
+    {
+      "word": "demographic",
+      "pronunciation": "/ˌdɛməˈɡræfɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến dân số; nhân khẩu học",
+      "definition_en": "relating to the statistical study of human populations, including size, growth, and composition",
+      "level": "B2",
+      "synonyms": [
+        "population-related",
+        "statistical"
+      ],
+      "antonyms": [],
+      "example_sentence": "Demographic changes in medieval Europe, including plague mortality, fundamentally altered social and economic structures."
+    },
+    {
+      "word": "ideological",
+      "pronunciation": "/ˌaɪdiəˈlɑːdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến tư tưởng; ý thức hệ",
+      "definition_en": "relating to a system of ideas and beliefs that characterizes a group, movement, or society",
+      "level": "C1",
+      "synonyms": [
+        "doctrinal",
+        "philosophical"
+      ],
+      "antonyms": [
+        "pragmatic",
+        "practical"
+      ],
+      "example_sentence": "Ideological conflicts between communist and capitalist powers shaped geopolitical tensions throughout the 20th century."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between a tributary state and a dominant empire?",
+      "option_a": "The tributary state maintains complete political independence while paying taxes to the empire.",
+      "option_b": "The tributary state surrenders all sovereignty and becomes a direct colony of the empire.",
+      "option_c": "The tributary state acknowledges the empire's supremacy and pays tribute while retaining internal autonomy.",
+      "option_d": "The tributary state forms an equal alliance with the empire for mutual defense.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Một nước ngoài là nước phải công nhận sự thống trị của đế quốc và nộp thuế/tiền, nhưng vẫn giữ được tự chủ nội bộ. Đáp án A sai vì không đủ mô tả sự phụ thuộc; B sai vì nước ngoài không mất toàn bộ chủ quyền; D sai vì không phải liên minh bình đẳng."
+    },
+    {
+      "question_text": "The term 'syncretic religion' in historical contexts refers to which of the following?",
+      "option_a": "A religion that strictly adheres to its original doctrines without external influence.",
+      "option_b": "A religion that combines elements from different belief systems into a unified practice.",
+      "option_c": "A religion that rejects all forms of cultural adaptation and modernization.",
+      "option_d": "A religion that is practiced exclusively by indigenous populations.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Syncretic religion là sự kết hợp các yếu tố từ nhiều tôn giáo khác nhau. Đáp án A sai vì syncretic lại chính là sự pha trộn; C sai vì syncretic lại chính là sự thích ứng; D sai vì không liên quan đến nguồn gốc."
+    },
+    {
+      "question_text": "What does 'mercantilism' as an economic doctrine primarily emphasize?",
+      "option_a": "Free trade and minimal government intervention in commerce.",
+      "option_b": "Wealth accumulation through trade surplus and colonial resource extraction.",
+      "option_c": "Equal distribution of resources among all social classes.",
+      "option_d": "The elimination of international trade barriers.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Chủ nghĩa thương mại nhấn mạnh tích lũy của cải thông qua xuất khẩu nhiều và nhập khẩu ít, cùng khai thác thuộc địa. Đáp án A là tự do thương mại (ngược lại); C là phân phối bình đẳng; D là loại bỏ rào cản (không phải mục tiêu của mercantilism)."
+    },
+    {
+      "question_text": "In historical analysis, 'secularization' refers to _____ from government and public institutions.",
+      "option_a": "the increasing influence of religious authority",
+      "option_b": "the removal or reduction of religious influence",
+      "option_c": "the strengthening of traditional spiritual values",
+      "option_d": "the establishment of state-sponsored religions",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Secularization là quá trình loại bỏ hoặc giảm thiểu ảnh hưởng tôn giáo. Đáp án A là ngược lại; C là tăng cường giá trị tâm linh; D là thiết lập tôn giáo nhà nước (không phải secularization)."
+    },
+    {
+      "question_text": "Which term best describes the dominance of one nation or culture over others in international affairs?",
+      "option_a": "Subsistence",
+      "option_b": "Stratification",
+      "option_c": "Hegemony",
+      "option_d": "Diaspora",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Hegemony là sự thống trị/quyền thống lĩnh của một quốc gia hoặc nhóm. Subsistence là cách sống tự túc; stratification là phân tầng xã hội; diaspora là sự tản cư."
+    },
+    {
+      "question_text": "The 'Scientific Revolution' is often described as a _____ because it fundamentally changed how people understood the natural world.",
+      "option_a": "demographic shift",
+      "option_b": "paradigm shift",
+      "option_c": "geopolitical realignment",
+      "option_d": "nomadic migration",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Paradigm shift là sự thay đổi cơ bản trong cách suy nghĩ/hiểu biết. Demographic shift là thay đổi dân số; geopolitical realignment là sắp xếp lại địa chính trị; nomadic migration là di cư du mục (không phù hợp)."
+    },
+    {
+      "question_text": "Which of the following best characterizes 'anthropogenic' changes in historical civilizations?",
+      "option_a": "Natural environmental transformations unrelated to human activity.",
+      "option_b": "Changes caused or influenced by human activities and decisions.",
+      "option_c": "Spontaneous geological phenomena affecting settlement patterns.",
+      "option_d": "Cyclical climate variations independent of civilization.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Anthropogenic là do con người gây ra hoặc ảnh hưởng. Đáp án A là tự nhiên (ngược lại); C là hiện tượng địa chất; D là biến đổi khí hậu độc lập (không phải anthropogenic)."
+    },
+    {
+      "question_text": "The transition from nomadic pastoral societies to settled agricultural communities represents a fundamental _____ in human civilization.",
+      "option_a": "epoch",
+      "option_b": "tributary system",
+      "option_c": "paradigm shift",
+      "option_d": "cosmopolitan exchange",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sự chuyển đổi từ du mục sang định cư là một thay đổi cơ bản trong cách sống (paradigm shift). Epoch là thời kỳ; tributary system là hệ thống nước ngoài; cosmopolitan exchange là trao đổi thế giới (không phù hợp)."
+    }
+  ]
+}

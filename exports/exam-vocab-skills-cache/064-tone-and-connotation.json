@@ -1,0 +1,570 @@
+{
+  "words": [
+    {
+      "word": "allegedly",
+      "pronunciation": "/əˈledʒɪdli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "được cho là, theo lời khai (thường dùng khi chưa xác nhận hoàn toàn, mang tính hoài nghi)",
+      "definition_en": "claimed or asserted to be true, but not proven; supposedly",
+      "level": "B2",
+      "synonyms": [
+        "supposedly",
+        "purportedly",
+        "reputedly"
+      ],
+      "antonyms": [
+        "certainly",
+        "definitely"
+      ],
+      "example_sentence": "The suspect allegedly committed the crime, but the evidence is still being investigated by authorities."
+    },
+    {
+      "word": "dubious",
+      "pronunciation": "/ˈduːbiəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng ngờ, không chắc chắn, mang tính hoài nghi (thường có sắc thái tiêu cực)",
+      "definition_en": "not clearly true or honest; questionable in quality or authenticity",
+      "level": "B2",
+      "synonyms": [
+        "questionable",
+        "suspicious",
+        "doubtful"
+      ],
+      "antonyms": [
+        "certain",
+        "reliable"
+      ],
+      "example_sentence": "The company's claims about the product's effectiveness are dubious and lack scientific support."
+    },
+    {
+      "word": "commendable",
+      "pronunciation": "/kəˈmendəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng khen, xứng đáng được ca ngợi (sắc thái tích cực, phê phán tốt)",
+      "definition_en": "deserving praise and approval; worthy of commendation",
+      "level": "B2",
+      "synonyms": [
+        "praiseworthy",
+        "admirable",
+        "laudable"
+      ],
+      "antonyms": [
+        "blameworthy",
+        "reprehensible"
+      ],
+      "example_sentence": "Her commendable efforts to improve student literacy rates have earned recognition from the education ministry."
+    },
+    {
+      "word": "meager",
+      "pronunciation": "/ˈmiːɡər/",
+      "part_of_speech": "adjective",
+      "definition_vi": "ít ỏi, không đủ, thiếu thốn (mang sắc thái tiêu cực, chỉ sự thiếu hụt)",
+      "definition_en": "small in quantity and not enough; scanty or inadequate",
+      "level": "B2",
+      "synonyms": [
+        "scanty",
+        "sparse",
+        "insufficient"
+      ],
+      "antonyms": [
+        "abundant",
+        "plentiful"
+      ],
+      "example_sentence": "The refugee camp provided only meager supplies of food and clean water to thousands of displaced families."
+    },
+    {
+      "word": "prudent",
+      "pronunciation": "/ˈpruːdənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thận trọng, sáng suốt, cẩn trọng (sắc thái tích cực, chỉ sự khôn ngoan)",
+      "definition_en": "careful and sensible in making decisions; showing good judgment",
+      "level": "B2",
+      "synonyms": [
+        "cautious",
+        "wise",
+        "judicious"
+      ],
+      "antonyms": [
+        "reckless",
+        "imprudent"
+      ],
+      "example_sentence": "It is prudent to save a portion of your income for emergencies rather than spending everything immediately."
+    },
+    {
+      "word": "reckless",
+      "pronunciation": "/ˈrekləs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liều lĩnh, bất cẩn, không quan tâm hậu quả (sắc thái tiêu cực, chỉ sự vô trách nhiệm)",
+      "definition_en": "without care or attention to danger or consequences; careless and irresponsible",
+      "level": "B2",
+      "synonyms": [
+        "rash",
+        "careless",
+        "irresponsible"
+      ],
+      "antonyms": [
+        "cautious",
+        "prudent"
+      ],
+      "example_sentence": "The driver's reckless behavior on the highway endangered the lives of other motorists and passengers."
+    },
+    {
+      "word": "ostensibly",
+      "pronunciation": "/ɒˈstensəbli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "hình như, thoạt nhìn (mang sắc thái hoài nghi, chỉ điều không phải như vẻ ngoài)",
+      "definition_en": "apparently or seemingly; as appears to be true on the surface",
+      "level": "B2",
+      "synonyms": [
+        "apparently",
+        "seemingly",
+        "purportedly"
+      ],
+      "antonyms": [
+        "genuinely",
+        "actually"
+      ],
+      "example_sentence": "The government ostensibly supports environmental protection, yet continues to approve industrial projects that harm ecosystems."
+    },
+    {
+      "word": "scathing",
+      "pronunciation": "/ˈskeɪðɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "gay gắt, chỉ trích gay gắt (sắc thái tiêu cực, chỉ lời phê bình cực kỳ khắc nghiệt)",
+      "definition_en": "severely critical or harshly condemning; bitterly sarcastic",
+      "level": "B2",
+      "synonyms": [
+        "harsh",
+        "biting",
+        "caustic"
+      ],
+      "antonyms": [
+        "mild",
+        "gentle"
+      ],
+      "example_sentence": "The film critic delivered a scathing review of the movie, calling it a waste of time and talent."
+    },
+    {
+      "word": "benign",
+      "pronunciation": "/bɪˈnaɪn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "lành tính, không gây hại, tốt bụng (sắc thái tích cực, chỉ điều vô hại hoặc tốt)",
+      "definition_en": "not harmful or dangerous; gentle and kind in nature",
+      "level": "B2",
+      "synonyms": [
+        "harmless",
+        "kind",
+        "gentle"
+      ],
+      "antonyms": [
+        "malignant",
+        "harmful"
+      ],
+      "example_sentence": "The doctor assured the patient that the tumor was benign and would not require aggressive treatment."
+    },
+    {
+      "word": "frivolous",
+      "pronunciation": "/ˈfrɪvələs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tầm thường, vô ích, không nghiêm túc (sắc thái tiêu cực, chỉ sự thiếu trọng yếu)",
+      "definition_en": "not serious or important; trivial and lacking in seriousness",
+      "level": "B2",
+      "synonyms": [
+        "trivial",
+        "petty",
+        "superficial"
+      ],
+      "antonyms": [
+        "serious",
+        "important"
+      ],
+      "example_sentence": "The judge dismissed the frivolous lawsuit, stating that it had no legal merit whatsoever."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "minh oan, chứng minh là đúng (sắc thái tích cực, chỉ sự xóa bỏ nghi ngờ)",
+      "definition_en": "to clear someone of blame or suspicion; to prove or justify something to be correct",
+      "level": "B2",
+      "synonyms": [
+        "exonerate",
+        "justify",
+        "clear"
+      ],
+      "antonyms": [
+        "incriminate",
+        "condemn"
+      ],
+      "example_sentence": "The new evidence vindicated the defendant, proving his innocence after years of wrongful imprisonment."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, không rõ ràng, có thể hiểu theo nhiều cách (trung lập hoặc tiêu cực tùy ngữ cảnh)",
+      "definition_en": "open to more than one interpretation; unclear or uncertain in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The politician's ambiguous statement left voters confused about his actual position on the healthcare reform."
+    },
+    {
+      "word": "candid",
+      "pronunciation": "/ˈkændɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thẳng thắn, chân thành, không giấu giếm (sắc thái tích cực, chỉ sự trung thực)",
+      "definition_en": "frank, honest, and straightforward; expressing opinions freely without reservation",
+      "level": "B2",
+      "synonyms": [
+        "frank",
+        "honest",
+        "forthright"
+      ],
+      "antonyms": [
+        "evasive",
+        "dishonest"
+      ],
+      "example_sentence": "In her candid interview, the actress discussed her struggles with mental health and addiction openly."
+    },
+    {
+      "word": "deceptive",
+      "pronunciation": "/dɪˈseptɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "lừa dối, gây hiểu lầm (sắc thái tiêu cực, chỉ sự không trung thực)",
+      "definition_en": "misleading or intended to trick; giving a false impression",
+      "level": "B2",
+      "synonyms": [
+        "misleading",
+        "fraudulent",
+        "dishonest"
+      ],
+      "antonyms": [
+        "honest",
+        "truthful"
+      ],
+      "example_sentence": "The advertisement used deceptive marketing tactics to convince consumers that the product was more effective than it actually was."
+    },
+    {
+      "word": "eloquent",
+      "pronunciation": "/ˈeləkwənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hùng biện, lôi cuốn, diễn đạt tốt (sắc thái tích cực, chỉ sự biểu đạt xuất sắc)",
+      "definition_en": "fluent, persuasive, and expressive in speaking or writing",
+      "level": "B2",
+      "synonyms": [
+        "articulate",
+        "expressive",
+        "persuasive"
+      ],
+      "antonyms": [
+        "inarticulate",
+        "incoherent"
+      ],
+      "example_sentence": "The speaker's eloquent speech moved the audience to tears and inspired them to take action."
+    },
+    {
+      "word": "mundane",
+      "pronunciation": "/mʌnˈdeɪn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tầm thường, nhàm chán, bình thường (sắc thái tiêu cực hoặc trung lập, chỉ sự thiếu hứng thú)",
+      "definition_en": "ordinary, dull, and lacking excitement or interest",
+      "level": "B2",
+      "synonyms": [
+        "ordinary",
+        "dull",
+        "tedious"
+      ],
+      "antonyms": [
+        "extraordinary",
+        "exciting"
+      ],
+      "example_sentence": "Despite the mundane setting of the small town, the author created a fascinating story about its hidden secrets."
+    },
+    {
+      "word": "stringent",
+      "pronunciation": "/ˈstrɪndʒənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nghiêm ngặt, khắt khe, chặt chẽ (sắc thái trung lập hoặc tích cực, chỉ sự yêu cầu cao)",
+      "definition_en": "strict, severe, or demanding; requiring strict attention to detail",
+      "level": "B2",
+      "synonyms": [
+        "strict",
+        "rigorous",
+        "demanding"
+      ],
+      "antonyms": [
+        "lenient",
+        "flexible"
+      ],
+      "example_sentence": "The university has stringent academic standards that require students to maintain a high GPA to remain enrolled."
+    },
+    {
+      "word": "superficial",
+      "pronunciation": "/ˌsuːpərˈfɪʃl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bề ngoài, nông cạn, không sâu sắc (sắc thái tiêu cực, chỉ sự thiếu chiều sâu)",
+      "definition_en": "existing or occurring only on the surface; lacking depth or substance",
+      "level": "B2",
+      "synonyms": [
+        "shallow",
+        "cursory",
+        "trivial"
+      ],
+      "antonyms": [
+        "profound",
+        "deep"
+      ],
+      "example_sentence": "The critic argued that the novel offered only a superficial treatment of complex social issues."
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "/præɡˈmætɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, thực dụng, dựa trên thực tế (sắc thái tích cực, chỉ sự cân nhắc thực tế)",
+      "definition_en": "dealing with things in a practical, realistic way based on actual circumstances",
+      "level": "B2",
+      "synonyms": [
+        "practical",
+        "realistic",
+        "sensible"
+      ],
+      "antonyms": [
+        "idealistic",
+        "theoretical"
+      ],
+      "example_sentence": "The government took a pragmatic approach to the housing crisis by implementing affordable housing programs."
+    },
+    {
+      "word": "vindictive",
+      "pronunciation": "/vɪnˈdɪktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "báo thù, tính trả thù (sắc thái tiêu cực, chỉ sự muốn trả thù)",
+      "definition_en": "seeking to harm someone in return for perceived injury; vengeful",
+      "level": "B2",
+      "synonyms": [
+        "vengeful",
+        "spiteful",
+        "retaliatory"
+      ],
+      "antonyms": [
+        "forgiving",
+        "merciful"
+      ],
+      "example_sentence": "The vindictive former employee spread false rumors about her ex-boss to damage his professional reputation."
+    },
+    {
+      "word": "impartial",
+      "pronunciation": "/ɪmˈpɑːʃl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "công bằng, không thiên vị (sắc thái tích cực, chỉ sự trung lập và công bằng)",
+      "definition_en": "treating all sides or parties equally; not biased or prejudiced",
+      "level": "B2",
+      "synonyms": [
+        "fair",
+        "unbiased",
+        "neutral"
+      ],
+      "antonyms": [
+        "biased",
+        "prejudiced"
+      ],
+      "example_sentence": "The judge must remain impartial throughout the trial to ensure a fair verdict for both the prosecution and defense."
+    },
+    {
+      "word": "obscure",
+      "pronunciation": "/əbˈskjʊər/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mờ ám, không rõ ràng, khó hiểu (sắc thái tiêu cực hoặc trung lập, chỉ sự thiếu sáng tỏ)",
+      "definition_en": "not clearly expressed or easily understood; vague or unclear",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "cryptic"
+      ],
+      "antonyms": [
+        "clear",
+        "obvious"
+      ],
+      "example_sentence": "The author's obscure writing style made it difficult for readers to understand the main themes of the novel."
+    },
+    {
+      "word": "meticulous",
+      "pronunciation": "/məˈtɪkjələs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tỉ mỉ, cẩn thận, chính xác (sắc thái tích cực, chỉ sự chú ý chi tiết)",
+      "definition_en": "showing great attention to detail; very careful and precise",
+      "level": "B2",
+      "synonyms": [
+        "careful",
+        "precise",
+        "thorough"
+      ],
+      "antonyms": [
+        "careless",
+        "sloppy"
+      ],
+      "example_sentence": "The researcher's meticulous documentation of the experiment ensured that other scientists could replicate the results."
+    },
+    {
+      "word": "cynical",
+      "pronunciation": "/ˈsɪnɪkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hoài nghi, bi quan, không tin tưởng (sắc thái tiêu cực, chỉ sự mất niềm tin)",
+      "definition_en": "believing that people are motivated by self-interest; distrusting human sincerity",
+      "level": "B2",
+      "synonyms": [
+        "skeptical",
+        "distrustful",
+        "pessimistic"
+      ],
+      "antonyms": [
+        "optimistic",
+        "trusting"
+      ],
+      "example_sentence": "The cynical journalist questioned the politician's motives, suspecting that his charitable donations were merely for publicity."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's statement about the environmental impact was _____, leaving citizens unsure whether the project would actually harm the ecosystem.",
+      "option_a": "candid",
+      "option_b": "ambiguous",
+      "option_c": "meticulous",
+      "option_d": "pragmatic",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Ambiguous (mơ hồ, không rõ ràng) phù hợp với ngữ cảnh 'leaving citizens unsure' - chỉ sự không rõ ràng. Candid có nghĩa thẳng thắn (trái ngược), meticulous là tỉ mỉ, pragmatic là thực tế."
+    },
+    {
+      "question_text": "The company's marketing campaign was _____ in claiming that their product could cure diseases without any scientific evidence to support it.",
+      "option_a": "prudent",
+      "option_b": "deceptive",
+      "option_c": "eloquent",
+      "option_d": "stringent",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Deceptive (lừa dối, gây hiểu lầm) phù hợp với ngữ cảnh 'without scientific evidence' - chỉ sự không trung thực. Prudent là thận trọng, eloquent là hùng biện, stringent là nghiêm ngặt."
+    },
+    {
+      "question_text": "The journalist's _____ investigation revealed corruption at the highest levels of government, earning her international recognition.",
+      "option_a": "superficial",
+      "option_b": "frivolous",
+      "option_c": "meticulous",
+      "option_d": "mundane",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Meticulous (tỉ mỉ, cẩn thận) phù hợp với ngữ cảnh 'revealed corruption' - chỉ sự điều tra kỹ lưỡng. Superficial là bề ngoài, frivolous là tầm thường, mundane là nhàm chán."
+    },
+    {
+      "question_text": "The witness's _____ account of the accident was crucial to the court's decision, as she described exactly what she saw without exaggeration.",
+      "option_a": "dubious",
+      "option_b": "candid",
+      "option_c": "deceptive",
+      "option_d": "ostensibly",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Candid (thẳng thắn, chân thành) phù hợp với 'described exactly what she saw without exaggeration'. Dubious là đáng ngờ, deceptive là lừa dối, ostensibly là hình như."
+    },
+    {
+      "question_text": "The critic's _____ review of the film was so harsh that it discouraged many people from watching it.",
+      "option_a": "commendable",
+      "option_b": "benign",
+      "option_c": "scathing",
+      "option_d": "pragmatic",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scathing (gay gắt, chỉ trích khắc nghiệt) phù hợp với 'so harsh that it discouraged'. Commendable là đáng khen, benign là lành tính, pragmatic là thực tế."
+    },
+    {
+      "question_text": "The defendant _____ committed the crime, but the prosecution has not yet presented sufficient evidence to prove guilt beyond reasonable doubt.",
+      "option_a": "allegedly",
+      "option_b": "eloquently",
+      "option_c": "pragmatically",
+      "option_d": "metriculously",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Allegedly (được cho là, theo lời khai) phù hợp với ngữ cảnh 'but the prosecution has not yet presented sufficient evidence' - chỉ sự chưa xác nhận. Eloquently là hùng biện, pragmatically là thực tế, metriculously là tỉ mỉ."
+    },
+    {
+      "question_text": "Which word is closest in meaning to 'prudent' in the context of financial planning?",
+      "option_a": "reckless",
+      "option_b": "cautious",
+      "option_c": "frivolous",
+      "option_d": "vindictive",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "basic",
+      "explanation": "Cautious (cẩn thận) là từ đồng nghĩa gần nhất với prudent (thận trọng, sáng suốt). Reckless là liều lĩnh (trái ngược), frivolous là tầm thường, vindictive là báo thù."
+    },
+    {
+      "question_text": "The _____ claims made by the company about its product's benefits were later proven to be false by independent researchers.",
+      "option_a": "commendable",
+      "option_b": "dubious",
+      "option_c": "impartial",
+      "option_d": "eloquent",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Dubious (đáng ngờ, không chắc chắn) phù hợp với 'later proven to be false' - chỉ sự không đáng tin. Commendable là đáng khen, impartial là công bằng, eloquent là hùng biện."
+    },
+    {
+      "question_text": "Which word best describes someone who holds grudges and seeks revenge against those who have wronged them?",
+      "option_a": "pragmatic",
+      "option_b": "benign",
+      "option_c": "vindictive",
+      "option_d": "impartial",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Vindictive (báo thù, tính trả thù) mô tả người muốn trả thù. Pragmatic là thực tế, benign là lành tính, impartial là công bằng."
+    },
+    {
+      "question_text": "The professor's _____ explanation of the complex theory helped students understand the subject matter more clearly.",
+      "option_a": "obscure",
+      "option_b": "superficial",
+      "option_c": "eloquent",
+      "option_d": "cynical",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Eloquent (hùng biện, lôi cuốn) phù hợp với 'helped students understand more clearly'. Obscure là mờ ám, superficial là bề ngoài, cynical là hoài nghi."
+    },
+    {
+      "question_text": "Which word is most similar in meaning to 'unbiased' when discussing a fair decision-maker?",
+      "option_a": "cynical",
+      "option_b": "impartial",
+      "option_c": "stringent",
+      "option_d": "meager",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "basic",
+      "explanation": "Impartial (công bằng, không thiên vị) là từ đồng nghĩa với 'unbiased'. Cynical là hoài nghi, stringent là nghiêm ngặt, meager là ít ỏi."
+    },
+    {
+      "question_text": "The _____ approach taken by the government to address the housing shortage proved effective, as it focused on practical solutions rather than idealistic theories.",
+      "option_a": "vindictive",
+      "option_b": "superficial",
+      "option_c": "pragmatic",
+      "option_d": "cynical",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Pragmatic (thực tế, thực dụng) phù hợp với 'practical solutions rather than idealistic theories'. Vindictive là báo thù, superficial là bề ngoài, cynical là hoài nghi."
+    }
+  ]
+}

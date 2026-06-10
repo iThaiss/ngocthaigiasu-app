@@ -1,0 +1,411 @@
+{
+  "words": [
+    {
+      "word": "elucidate",
+      "pronunciation": "/ɪˈluːsɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng (một vấn đề phức tạp); làm cho dễ hiểu hơn",
+      "definition_en": "to make something clear or easy to understand by explaining it in detail",
+      "level": "C1",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The professor elucidated the complex theory by breaking it down into simpler components."
+    },
+    {
+      "word": "expound",
+      "pronunciation": "/ɪkˈspaʊnd/",
+      "part_of_speech": "verb",
+      "definition_vi": "trình bày chi tiết, giải thích kỹ lưỡng (một ý tưởng, lý thuyết); phát triển lập luận",
+      "definition_en": "to explain or describe something in detail and at length",
+      "level": "C1",
+      "synonyms": [
+        "elaborate",
+        "expound on",
+        "detail"
+      ],
+      "antonyms": [
+        "summarize",
+        "condense"
+      ],
+      "example_sentence": "The economist expounded on the causes of inflation in her research paper."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cung cấp bằng chứng, chứng minh (một khẳng định); làm cho có cơ sở vững chắc",
+      "definition_en": "to provide evidence or proof to support a claim or statement",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "validate",
+        "corroborate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researcher substantiated her hypothesis with extensive experimental data."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (thông tin từ nguồn khác); làm cho tin cậy hơn",
+      "definition_en": "to confirm or give support to a statement, theory, or finding by providing additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "confirm"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple witnesses corroborated the defendant's alibi during the trial."
+    },
+    {
+      "word": "reinforce",
+      "pronunciation": "/ˌriːɪnˈfɔːs/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm mạnh thêm, tăng cường (một ý tưởng, lập luận); hỗ trợ thêm",
+      "definition_en": "to strengthen or support an idea, argument, or structure with additional evidence or resources",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "support",
+        "bolster"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "The second example reinforces the main argument about climate change."
+    },
+    {
+      "word": "underscore",
+      "pronunciation": "/ˌʌndəˈskɔː/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh, làm nổi bật (tầm quan trọng của điều gì); gạch dưới",
+      "definition_en": "to emphasize or highlight the importance of something",
+      "level": "B2",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The statistics underscore the urgent need for educational reform."
+    },
+    {
+      "word": "amplify",
+      "pronunciation": "/ˈæmplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "mở rộng, phát triển (một ý tưởng); làm cho lớn hơn, rõ hơn",
+      "definition_en": "to make something larger, louder, or more noticeable; to expand on a point",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "enlarge",
+        "elaborate"
+      ],
+      "antonyms": [
+        "reduce",
+        "diminish"
+      ],
+      "example_sentence": "The author amplified her argument by providing additional case studies."
+    },
+    {
+      "word": "delineate",
+      "pronunciation": "/dɪˈlɪnieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "mô tả chi tiết, vạch rõ ranh giới; phác thảo (một ý tưởng)",
+      "definition_en": "to describe or portray something precisely; to outline the boundaries or characteristics of something",
+      "level": "C1",
+      "synonyms": [
+        "describe",
+        "outline",
+        "depict"
+      ],
+      "antonyms": [
+        "obscure",
+        "blur"
+      ],
+      "example_sentence": "The report delineates the key differences between the two economic models."
+    },
+    {
+      "word": "articulate",
+      "pronunciation": "/ɑːˈtɪkjuleɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "diễn đạt rõ ràng, phát biểu (một ý tưởng); nêu chi tiết",
+      "definition_en": "to express or state something clearly and coherently",
+      "level": "B2",
+      "synonyms": [
+        "express",
+        "state",
+        "voice"
+      ],
+      "antonyms": [
+        "mumble",
+        "obscure"
+      ],
+      "example_sentence": "The speaker articulated the company's vision for sustainable development."
+    },
+    {
+      "word": "expound on",
+      "pronunciation": "/ɪkˈspaʊnd ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trình bày chi tiết về (một chủ đề); phát triển lập luận về",
+      "definition_en": "to explain or discuss something in detail and at length",
+      "level": "C1",
+      "synonyms": [
+        "elaborate on",
+        "expand on",
+        "dwell on"
+      ],
+      "antonyms": [
+        "gloss over",
+        "skip"
+      ],
+      "example_sentence": "The scientist expounded on the implications of her research findings."
+    },
+    {
+      "word": "shed light on",
+      "pronunciation": "/ʃed laɪt ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm sáng tỏ, giải thích (một vấn đề); cung cấp thông tin giúp hiểu rõ hơn",
+      "definition_en": "to provide information or explanation that helps clarify something unclear",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "elucidate",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "Recent studies shed light on the causes of depression in teenagers."
+    },
+    {
+      "word": "bring to bear",
+      "pronunciation": "/brɪŋ tə beə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "áp dụng, sử dụng (kiến thức, kỹ năng) để hỗ trợ lập luận; đưa vào sử dụng",
+      "definition_en": "to apply or use something (knowledge, skills, evidence) to support an argument or achieve a goal",
+      "level": "C1",
+      "synonyms": [
+        "apply",
+        "utilize",
+        "employ"
+      ],
+      "antonyms": [
+        "withhold",
+        "neglect"
+      ],
+      "example_sentence": "The lawyer brought extensive legal precedent to bear on the case."
+    },
+    {
+      "word": "lend credence to",
+      "pronunciation": "/lend ˈkredəns tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho có tính thuyết phục, hỗ trợ (một ý tưởng); tăng độ tin cậy",
+      "definition_en": "to make something seem more believable or trustworthy; to support a claim",
+      "level": "C1",
+      "synonyms": [
+        "support",
+        "validate",
+        "substantiate"
+      ],
+      "antonyms": [
+        "undermine",
+        "discredit"
+      ],
+      "example_sentence": "The expert's testimony lends credence to the defendant's explanation."
+    },
+    {
+      "word": "bolster",
+      "pronunciation": "/ˈbəʊlstə/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, làm mạnh thêm (lập luận, niềm tin); hỗ trợ",
+      "definition_en": "to strengthen or support something, especially an argument or belief",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "reinforce",
+        "support"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "The new evidence bolsters the prosecution's case against the suspect."
+    },
+    {
+      "word": "illustrative of",
+      "pronunciation": "/ɪˈlʌstrətɪv əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "là minh chứng cho, thể hiện (một điểm); phản ánh",
+      "definition_en": "serving as an example or demonstration of something; showing or representing",
+      "level": "B2",
+      "synonyms": [
+        "exemplary of",
+        "representative of",
+        "indicative of"
+      ],
+      "antonyms": [
+        "atypical of",
+        "unrepresentative of"
+      ],
+      "example_sentence": "This case is illustrative of the broader problems in the education system."
+    },
+    {
+      "word": "attest to",
+      "pronunciation": "/əˈtest tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng minh, xác nhận (sự thật của điều gì); làm bằng chứng cho",
+      "definition_en": "to provide or serve as clear evidence of something; to confirm the truth of",
+      "level": "B2",
+      "synonyms": [
+        "testify to",
+        "confirm",
+        "verify"
+      ],
+      "antonyms": [
+        "deny",
+        "refute"
+      ],
+      "example_sentence": "The success of the program attests to the effectiveness of the new strategy."
+    },
+    {
+      "word": "bear out",
+      "pronunciation": "/beə aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng minh, xác nhận (một khẳng định); hỗ trợ (một ý tưởng)",
+      "definition_en": "to confirm or support a statement, theory, or claim with evidence",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "The research data bears out the hypothesis that exercise improves mental health."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The professor's detailed explanation served to _____ the complex theory, making it accessible to all students.",
+      "option_a": "obscure",
+      "option_b": "elucidate",
+      "option_c": "condense",
+      "option_d": "dismiss",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Elucidate (làm sáng tỏ) là từ đúng vì ngữ cảnh nói về việc giải thích chi tiết để làm cho dễ hiểu. Obscure (làm mờ) và dismiss (bác bỏ) trái ngược với ý nghĩa. Condense (rút gọn) không phù hợp vì không nói đến việc làm cho dễ hiểu."
+    },
+    {
+      "question_text": "Which of the following phrases best means 'to provide information that helps clarify something unclear'?",
+      "option_a": "bring to bear",
+      "option_b": "shed light on",
+      "option_c": "bear out",
+      "option_d": "lend credence to",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Shed light on (làm sáng tỏ) chính xác mô tả việc cung cấp thông tin để làm rõ vấn đề. Bring to bear (áp dụng), bear out (chứng minh), và lend credence to (tăng độ tin cậy) có nghĩa khác nhau."
+    },
+    {
+      "question_text": "The economist _____ on the causes of inflation, providing detailed analysis and multiple supporting arguments.",
+      "option_a": "expounded",
+      "option_b": "abbreviated",
+      "option_c": "dismissed",
+      "option_d": "ignored",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Expounded (trình bày chi tiết) là động từ chính xác cho việc giải thích kỹ lưỡng. Abbreviated (rút gọn), dismissed (bác bỏ), và ignored (bỏ qua) đều trái ngược với ý nghĩa của câu."
+    },
+    {
+      "question_text": "The researcher _____ her hypothesis with extensive experimental data, leaving no doubt about the validity of her findings.",
+      "option_a": "contradicted",
+      "option_b": "substantiated",
+      "option_c": "questioned",
+      "option_d": "weakened",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Substantiated (cung cấp bằng chứng) là từ đúng vì nó mô tả việc cung cấp dữ liệu để chứng minh. Contradicted (mâu thuẫn), questioned (đặt câu hỏi), và weakened (làm yếu) đều không phù hợp."
+    },
+    {
+      "question_text": "Multiple witnesses _____ the defendant's alibi, confirming that he was indeed at home during the crime.",
+      "option_a": "refuted",
+      "option_b": "contradicted",
+      "option_c": "corroborated",
+      "option_d": "disputed",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Corroborated (xác nhận, chứng thực) là từ đúng vì nó mô tả việc các nhân chứng xác nhận lời khai. Refuted, contradicted, và disputed đều có nghĩa phản đối hoặc bác bỏ."
+    },
+    {
+      "question_text": "The second example _____ the main argument about climate change, providing additional support for the thesis.",
+      "option_a": "undermines",
+      "option_b": "reinforces",
+      "option_c": "contradicts",
+      "option_d": "weakens",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Reinforces (tăng cường) là từ đúng vì nó mô tả việc làm mạnh thêm lập luận. Undermines, contradicts, và weakens đều có nghĩa làm yếu hoặc phản đối lập luận."
+    },
+    {
+      "question_text": "The statistics _____ the urgent need for educational reform, making the case for immediate action.",
+      "option_a": "downplay",
+      "option_b": "minimize",
+      "option_c": "underscore",
+      "option_d": "obscure",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Underscore (nhấn mạnh) là từ đúng vì nó mô tả việc làm nổi bật tầm quan trọng. Downplay, minimize, và obscure đều có nghĩa giảm nhẹ hoặc làm mờ."
+    },
+    {
+      "question_text": "The lawyer _____ extensive legal precedent to bear on the case, strengthening the defense's position.",
+      "option_a": "withheld",
+      "option_b": "brought",
+      "option_c": "neglected",
+      "option_d": "avoided",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Brought (đưa vào sử dụng) là động từ chính xác trong cụm 'bring to bear' (áp dụng). Withheld, neglected, và avoided đều có nghĩa không sử dụng hoặc tránh."
+    },
+    {
+      "question_text": "Which phrase is most similar in meaning to 'to confirm or support a statement with evidence'?",
+      "option_a": "lend credence to",
+      "option_b": "bear out",
+      "option_c": "attest to",
+      "option_d": "all of the above",
+      "correct_answer": "D",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Cả ba cụm từ 'lend credence to', 'bear out', và 'attest to' đều có nghĩa xác nhận hoặc chứng minh một khẳng định bằng bằng chứng. Đây là câu hỏi kiểm tra sự hiểu biết về các cụm từ đồng nghĩa."
+    }
+  ]
+}

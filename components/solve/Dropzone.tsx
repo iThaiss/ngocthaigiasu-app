@@ -51,7 +51,7 @@ export default function Dropzone({ onFileAccepted, disabled }: DropzoneProps) {
       <div
         {...getRootProps()}
         className={cn(
-          'relative flex flex-col items-center justify-center rounded-xl border-2 border-dashed p-8 transition-all cursor-pointer',
+          'relative flex flex-col items-center justify-center rounded-xl border-2 border-dashed p-4 sm:p-8 transition-all cursor-pointer',
           isDragActive ? 'border-primary bg-primary/5 scale-[1.01]' : 'border-border hover:border-primary/50 hover:bg-accent/50',
           disabled && 'opacity-50 cursor-not-allowed',
           preview && 'border-primary/30'

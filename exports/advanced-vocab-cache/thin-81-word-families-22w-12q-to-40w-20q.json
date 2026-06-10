@@ -1,0 +1,395 @@
+{
+  "words": [
+    {
+      "word": "adapt",
+      "pronunciation": "/əˈdæpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thích nghi, điều chỉnh để phù hợp với điều kiện mới",
+      "definition_en": "to adjust or modify to suit new conditions or environment",
+      "level": "C1",
+      "synonyms": [
+        "adjust",
+        "modify",
+        "accommodate"
+      ],
+      "antonyms": [
+        "resist",
+        "reject"
+      ],
+      "example_sentence": "Students must adapt to online learning platforms during the pandemic."
+    },
+    {
+      "word": "adaptation",
+      "pronunciation": "/ˌædæpˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thích nghi; quá trình hoặc kết quả của việc điều chỉnh",
+      "definition_en": "the process or result of adjusting to new conditions",
+      "level": "C1",
+      "synonyms": [
+        "adjustment",
+        "modification",
+        "accommodation"
+      ],
+      "antonyms": [
+        "rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "The adaptation of wildlife to climate change is a critical research area."
+    },
+    {
+      "word": "adaptive",
+      "pronunciation": "/əˈdæptɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có khả năng thích nghi; linh hoạt và có thể điều chỉnh",
+      "definition_en": "capable of adjusting to new conditions; flexible",
+      "level": "B2",
+      "synonyms": [
+        "flexible",
+        "adjustable",
+        "responsive"
+      ],
+      "antonyms": [
+        "rigid",
+        "inflexible"
+      ],
+      "example_sentence": "Adaptive management strategies help organizations respond to market changes effectively."
+    },
+    {
+      "word": "adaptability",
+      "pronunciation": "/əˌdæptəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng thích nghi; tính linh hoạt",
+      "definition_en": "the quality of being able to adjust to new conditions",
+      "level": "B2",
+      "synonyms": [
+        "flexibility",
+        "versatility",
+        "resilience"
+      ],
+      "antonyms": [
+        "rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "Adaptability is one of the most valued skills in the modern workplace."
+    },
+    {
+      "word": "sustain",
+      "pronunciation": "/səˈsteɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "duy trì, giữ vững; cung cấp đủ để tồn tại",
+      "definition_en": "to maintain or support over a long period; to provide with necessities",
+      "level": "C1",
+      "synonyms": [
+        "maintain",
+        "support",
+        "uphold"
+      ],
+      "antonyms": [
+        "abandon",
+        "discontinue"
+      ],
+      "example_sentence": "Renewable energy sources can sustain economic growth without harming the environment."
+    },
+    {
+      "word": "sustainability",
+      "pronunciation": "/səˌsteɪnəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính bền vững; khả năng duy trì lâu dài mà không làm hại môi trường",
+      "definition_en": "the ability to maintain or support something long-term without depleting resources",
+      "level": "B2",
+      "synonyms": [
+        "durability",
+        "viability",
+        "permanence"
+      ],
+      "antonyms": [
+        "depletion",
+        "exhaustion"
+      ],
+      "example_sentence": "Corporate sustainability initiatives focus on reducing carbon emissions and waste."
+    },
+    {
+      "word": "sustainable",
+      "pronunciation": "/səˈsteɪnəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bền vững; có thể duy trì lâu dài mà không gây hại",
+      "definition_en": "able to be maintained or continued without depleting resources or causing damage",
+      "level": "B2",
+      "synonyms": [
+        "viable",
+        "durable",
+        "renewable"
+      ],
+      "antonyms": [
+        "unsustainable",
+        "depleting"
+      ],
+      "example_sentence": "Sustainable agriculture practices protect soil quality while maintaining productivity."
+    },
+    {
+      "word": "sustenance",
+      "pronunciation": "/ˈsʌstənəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "thực phẩm, lương thực; những gì cần thiết để sống sót",
+      "definition_en": "food and drink regarded as a source of nourishment; support or maintenance",
+      "level": "B2",
+      "synonyms": [
+        "nourishment",
+        "food",
+        "support"
+      ],
+      "antonyms": [
+        "deprivation",
+        "starvation"
+      ],
+      "example_sentence": "The organization provides sustenance and shelter to homeless individuals."
+    },
+    {
+      "word": "promote",
+      "pronunciation": "/prəˈmoʊt/",
+      "part_of_speech": "verb",
+      "definition_vi": "quảng bá, khuyến khích; nâng cấp, thăng chức",
+      "definition_en": "to advance or encourage; to publicize or advertise; to advance in rank",
+      "level": "C1",
+      "synonyms": [
+        "encourage",
+        "advance",
+        "publicize"
+      ],
+      "antonyms": [
+        "discourage",
+        "demote"
+      ],
+      "example_sentence": "The government promotes renewable energy through tax incentives and subsidies."
+    },
+    {
+      "word": "promotion",
+      "pronunciation": "/prəˈmoʊʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự quảng bá; chiến dịch marketing; sự thăng chức",
+      "definition_en": "the act of promoting; an advertising campaign; advancement in rank or position",
+      "level": "C1",
+      "synonyms": [
+        "advancement",
+        "campaign",
+        "publicity"
+      ],
+      "antonyms": [
+        "demotion",
+        "suppression"
+      ],
+      "example_sentence": "The promotion of mental health awareness has increased significantly in recent years."
+    },
+    {
+      "word": "promotional",
+      "pronunciation": "/prəˈmoʊʃənəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến quảng bá hoặc marketing",
+      "definition_en": "relating to or used for promotion or advertising",
+      "level": "B2",
+      "synonyms": [
+        "advertising",
+        "marketing",
+        "publicity"
+      ],
+      "antonyms": [],
+      "example_sentence": "Promotional materials must comply with advertising standards and regulations."
+    },
+    {
+      "word": "promoter",
+      "pronunciation": "/prəˈmoʊtər/",
+      "part_of_speech": "noun",
+      "definition_vi": "người quảng bá; nhà tổ chức sự kiện",
+      "definition_en": "a person who promotes or organizes something, especially events or products",
+      "level": "B2",
+      "synonyms": [
+        "organizer",
+        "advocate",
+        "sponsor"
+      ],
+      "antonyms": [
+        "opponent",
+        "critic"
+      ],
+      "example_sentence": "Event promoters work closely with venues to ensure successful concerts and festivals."
+    },
+    {
+      "word": "consume",
+      "pronunciation": "/kənˈsuːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiêu thụ, sử dụng; ăn hoặc uống",
+      "definition_en": "to use up; to eat or drink; to purchase goods or services",
+      "level": "C1",
+      "synonyms": [
+        "use",
+        "eat",
+        "purchase"
+      ],
+      "antonyms": [
+        "produce",
+        "create"
+      ],
+      "example_sentence": "Developing nations consume increasing amounts of energy as their economies grow."
+    },
+    {
+      "word": "consumption",
+      "pronunciation": "/kənˈsʌmpʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tiêu thụ; lượng được sử dụng hoặc ăn uống",
+      "definition_en": "the act of consuming; the amount of something used or eaten",
+      "level": "C1",
+      "synonyms": [
+        "use",
+        "intake",
+        "expenditure"
+      ],
+      "antonyms": [
+        "production",
+        "creation"
+      ],
+      "example_sentence": "Global water consumption has doubled over the past fifty years."
+    },
+    {
+      "word": "consumer",
+      "pronunciation": "/kənˈsuːmər/",
+      "part_of_speech": "noun",
+      "definition_vi": "người tiêu dùng; khách hàng mua hàng hóa hoặc dịch vụ",
+      "definition_en": "a person who purchases goods or services for personal use",
+      "level": "C1",
+      "synonyms": [
+        "customer",
+        "buyer",
+        "purchaser"
+      ],
+      "antonyms": [
+        "producer",
+        "seller"
+      ],
+      "example_sentence": "Consumer behavior studies reveal changing preferences toward sustainable products."
+    },
+    {
+      "word": "consumerism",
+      "pronunciation": "/kənˈsuːmərɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "chủ nghĩa tiêu dùng; xu hướng mua sắm và tiêu thụ hàng hóa",
+      "definition_en": "the preoccupation with the acquisition of consumer goods; consumer culture",
+      "level": "B2",
+      "synonyms": [
+        "materialism",
+        "commercialism"
+      ],
+      "antonyms": [
+        "minimalism",
+        "asceticism"
+      ],
+      "example_sentence": "Critics argue that consumerism promotes wasteful spending and environmental degradation."
+    },
+    {
+      "word": "consumable",
+      "pronunciation": "/kənˈsuːməbəl/",
+      "part_of_speech": "noun",
+      "definition_vi": "có thể tiêu thụ được; hàng tiêu dùng (danh từ)",
+      "definition_en": "able to be consumed; goods that are used up quickly",
+      "level": "B2",
+      "synonyms": [
+        "disposable",
+        "perishable"
+      ],
+      "antonyms": [
+        "durable",
+        "permanent"
+      ],
+      "example_sentence": "Office consumables such as paper and ink cartridges represent significant annual expenses."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company's ability to _____ to changing market conditions has been crucial to its long-term success.",
+      "option_a": "adapt",
+      "option_b": "consume",
+      "option_c": "sustain",
+      "option_d": "promote",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Từ 'adapt' (thích nghi) phù hợp nhất trong ngữ cảnh nói về khả năng điều chỉnh theo điều kiện thị trường. 'Consume' (tiêu thụ), 'sustain' (duy trì), và 'promote' (quảng bá) không phù hợp về mặt ngữ pháp và ý nghĩa."
+    },
+    {
+      "question_text": "Which word best completes the sentence? 'The _____ of fossil fuels continues to rise despite efforts to promote renewable energy.'",
+      "option_a": "promotion",
+      "option_b": "consumption",
+      "option_c": "adaptation",
+      "option_d": "sustainability",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Consumption' (tiêu thụ) là danh từ chỉ lượng được sử dụng. 'Promotion' (quảng bá), 'adaptation' (thích nghi), và 'sustainability' (tính bền vững) không phù hợp về ý nghĩa trong câu này."
+    },
+    {
+      "question_text": "Environmental organizations emphasize the importance of _____ practices to protect natural resources for future generations.",
+      "option_a": "consumable",
+      "option_b": "promotional",
+      "option_c": "sustainable",
+      "option_d": "adaptive",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Sustainable' (bền vững) là tính từ chính xác để mô tả các thực hành bảo vệ tài nguyên. 'Consumable' (tiêu dùng được), 'promotional' (quảng bá), và 'adaptive' (thích nghi) không phù hợp về ý nghĩa."
+    },
+    {
+      "question_text": "What is the primary difference between 'sustain' and 'promote'?",
+      "option_a": "Sustain means to maintain over time, while promote means to advance or encourage.",
+      "option_b": "Sustain means to advertise, while promote means to support.",
+      "option_c": "Sustain means to consume, while promote means to produce.",
+      "option_d": "Sustain means to adapt, while promote means to identify.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Sustain' (duy trì) tập trung vào việc giữ vững lâu dài, trong khi 'promote' (quảng bá/khuyến khích) tập trung vào việc nâng cao hoặc khuyến khích. Các lựa chọn khác đều sai về định nghĩa."
+    },
+    {
+      "question_text": "The government's _____ of green energy initiatives has led to increased investment in solar and wind power projects.",
+      "option_a": "consumption",
+      "option_b": "adaptation",
+      "option_c": "promotion",
+      "option_d": "sustenance",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Promotion' (quảng bá/khuyến khích) là danh từ phù hợp để chỉ các nỗ lực khuyến khích năng lượng xanh. 'Consumption' (tiêu thụ), 'adaptation' (thích nghi), và 'sustenance' (lương thực) không phù hợp."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'adaptability'?",
+      "option_a": "rigidity",
+      "option_b": "flexibility",
+      "option_c": "depletion",
+      "option_d": "consumption",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Flexibility' (tính linh hoạt) là từ đồng nghĩa với 'adaptability' (khả năng thích nghi). 'Rigidity' (cứng nhắc) là từ trái nghĩa. 'Depletion' (suy giảm) và 'consumption' (tiêu thụ) không liên quan."
+    },
+    {
+      "question_text": "The term 'consumerism' most closely relates to which concept?",
+      "option_a": "the production of goods and services",
+      "option_b": "the preoccupation with acquiring material goods",
+      "option_c": "the adaptation of businesses to new markets",
+      "option_d": "the sustainability of natural resources",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Consumerism' (chủ nghĩa tiêu dùng) liên quan đến sự chú trọng vào việc mua sắm và tiêu thụ hàng hóa. Các lựa chọn khác không phản ánh đúng ý nghĩa của từ này."
+    },
+    {
+      "question_text": "Which word family is most closely associated with environmental protection and long-term resource management?",
+      "option_a": "promote, promotion, promotional",
+      "option_b": "sustain, sustainability, sustainable",
+      "option_c": "consume, consumption, consumer",
+      "option_d": "adapt, adaptation, adaptive",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Họ từ 'sustain' (duy trì, bền vững) trực tiếp liên quan đến bảo vệ môi trường và quản lý tài nguyên lâu dài. Các họ từ khác không có mối liên hệ chặt chẽ như vậy."
+    }
+  ]
+}

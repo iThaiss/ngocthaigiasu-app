@@ -1,0 +1,522 @@
+{
+  "words": [
+    {
+      "word": "issue",
+      "pronunciation": "/ˈɪʃuː/",
+      "part_of_speech": "noun",
+      "definition_vi": "Vấn đề, chủ đề tranh cãi; hoặc: phát hành, phát sóng (tài liệu, tiền tệ)",
+      "definition_en": "A topic of discussion or concern; or the act of distributing or publishing something officially",
+      "level": "B1",
+      "synonyms": [
+        "problem",
+        "topic",
+        "release"
+      ],
+      "antonyms": [
+        "solution"
+      ],
+      "example_sentence": "The government decided to issue new banknotes to address the currency shortage affecting the economy."
+    },
+    {
+      "word": "address",
+      "pronunciation": "/əˈdres/",
+      "part_of_speech": "verb",
+      "definition_vi": "Giải quyết, xử lý (vấn đề); hoặc: nói chuyện với ai, phát biểu trước đám đông",
+      "definition_en": "To deal with or discuss a problem; or to speak to an audience formally",
+      "level": "B1",
+      "synonyms": [
+        "tackle",
+        "handle",
+        "speak to"
+      ],
+      "antonyms": [
+        "ignore"
+      ],
+      "example_sentence": "The CEO will address the shareholders' concerns about declining profits in tomorrow's meeting."
+    },
+    {
+      "word": "charge",
+      "pronunciation": "/tʃɑːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "Tính tiền, yêu cầu thanh toán; hoặc: tấn công, lao vào; hoặc: giao trách nhiệm",
+      "definition_en": "To ask for payment; to rush forward; or to assign responsibility to someone",
+      "level": "B1",
+      "synonyms": [
+        "cost",
+        "attack",
+        "entrust"
+      ],
+      "antonyms": [
+        "free",
+        "retreat"
+      ],
+      "example_sentence": "The hotel charged us an extra fee for late checkout, though we were not charged for breakfast."
+    },
+    {
+      "word": "conduct",
+      "pronunciation": "/ˈkɒndʌkt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Tiến hành, thực hiện (cuộc điều tra, thí nghiệm); hoặc: chỉ huy (dàn nhạc)",
+      "definition_en": "To carry out or manage an activity; or to direct musicians or an orchestra",
+      "level": "B1",
+      "synonyms": [
+        "perform",
+        "manage",
+        "direct"
+      ],
+      "antonyms": [],
+      "example_sentence": "Scientists will conduct a comprehensive study to examine how climate change affects marine ecosystems."
+    },
+    {
+      "word": "bear",
+      "pronunciation": "/ber/",
+      "part_of_speech": "verb",
+      "definition_vi": "Chịu đựng, chịu (trách nhiệm, chi phí); hoặc: mang, vác; hoặc: sinh ra",
+      "definition_en": "To endure or accept responsibility; to carry; or to give birth to",
+      "level": "B1",
+      "synonyms": [
+        "endure",
+        "carry",
+        "produce"
+      ],
+      "antonyms": [
+        "abandon"
+      ],
+      "example_sentence": "The company must bear the costs of environmental damage caused by its manufacturing processes."
+    },
+    {
+      "word": "run",
+      "pronunciation": "/rʌn/",
+      "part_of_speech": "verb",
+      "definition_vi": "Chạy; hoặc: điều hành, quản lý; hoặc: kéo dài, tiếp tục",
+      "definition_en": "To move quickly on foot; to manage or operate; or to continue for a period",
+      "level": "B1",
+      "synonyms": [
+        "operate",
+        "manage",
+        "extend"
+      ],
+      "antonyms": [
+        "stop"
+      ],
+      "example_sentence": "The factory runs three shifts daily to meet production targets, and this schedule will run until next quarter."
+    },
+    {
+      "word": "strike",
+      "pronunciation": "/straɪk/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đánh, tấn công; hoặc: đình công; hoặc: tìm thấy, phát hiện",
+      "definition_en": "To hit or attack; to stop work as a protest; or to discover something valuable",
+      "level": "B1",
+      "synonyms": [
+        "hit",
+        "protest",
+        "discover"
+      ],
+      "antonyms": [
+        "miss"
+      ],
+      "example_sentence": "Workers decided to strike over wage disputes, while geologists struck oil in the northern region."
+    },
+    {
+      "word": "bank",
+      "pronunciation": "/bæŋk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Ngân hàng (tài chính); hoặc: bờ sông, bờ biển; hoặc: kho dự trữ",
+      "definition_en": "A financial institution; the edge of a river or sea; or a reserve supply",
+      "level": "B1",
+      "synonyms": [
+        "financial institution",
+        "shore",
+        "reserve"
+      ],
+      "antonyms": [],
+      "example_sentence": "The bank approved the loan application, and the project will be built along the river bank."
+    },
+    {
+      "word": "light",
+      "pronunciation": "/laɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Sáng, có ánh sáng; hoặc: nhẹ (trọng lượng); hoặc: nhẹ nhàng, không nặng nề",
+      "definition_en": "Bright or illuminated; not heavy; or not serious or intense",
+      "level": "B1",
+      "synonyms": [
+        "bright",
+        "lightweight",
+        "mild"
+      ],
+      "antonyms": [
+        "dark",
+        "heavy"
+      ],
+      "example_sentence": "The light traffic on the highway made the journey quick, and the light rain did not delay the outdoor event."
+    },
+    {
+      "word": "present",
+      "pronunciation": "/ˈprezənt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Trình bày, giới thiệu; hoặc: tặng, trao; hoặc: xuất hiện",
+      "definition_en": "To show or introduce something; to give as a gift; or to appear or exist",
+      "level": "B1",
+      "synonyms": [
+        "introduce",
+        "give",
+        "appear"
+      ],
+      "antonyms": [
+        "hide"
+      ],
+      "example_sentence": "The researcher will present her findings at the conference, and the results present a new perspective on climate science."
+    },
+    {
+      "word": "mark",
+      "pronunciation": "/mɑːrk/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đánh dấu, ghi chú; hoặc: chấm điểm; hoặc: để lại dấu vết",
+      "definition_en": "To make a sign or note on something; to grade or assess; or to leave a trace",
+      "level": "B1",
+      "synonyms": [
+        "indicate",
+        "grade",
+        "leave a trace"
+      ],
+      "antonyms": [
+        "erase"
+      ],
+      "example_sentence": "Teachers will mark the exam papers carefully, and the scandal marked a turning point in the company's reputation."
+    },
+    {
+      "word": "stand",
+      "pronunciation": "/stænd/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đứng; hoặc: chịu đựng, chịu; hoặc: duy trì (quan điểm); hoặc: ứng cử",
+      "definition_en": "To be in an upright position; to tolerate; to maintain a position; or to run for office",
+      "level": "B1",
+      "synonyms": [
+        "be upright",
+        "tolerate",
+        "maintain"
+      ],
+      "antonyms": [
+        "sit",
+        "abandon"
+      ],
+      "example_sentence": "He cannot stand the noise, and he decided to stand for election despite the challenges ahead."
+    },
+    {
+      "word": "break",
+      "pronunciation": "/breɪk/",
+      "part_of_speech": "verb",
+      "definition_vi": "Phá vỡ, làm gãy; hoặc: vi phạm (luật); hoặc: ngừng, tạm dừng; hoặc: phá vỡ (kỷ lục)",
+      "definition_en": "To damage or shatter; to violate a rule; to pause or stop; or to surpass a record",
+      "level": "B1",
+      "synonyms": [
+        "shatter",
+        "violate",
+        "pause"
+      ],
+      "antonyms": [
+        "repair",
+        "obey"
+      ],
+      "example_sentence": "The athlete broke the world record, but the company broke its contract with the supplier."
+    },
+    {
+      "word": "draw",
+      "pronunciation": "/drɔː/",
+      "part_of_speech": "verb",
+      "definition_vi": "Vẽ, phác họa; hoặc: kéo, lôi; hoặc: hút, hấp dẫn; hoặc: rút (tiền); hoặc: hòa (trong trò chơi)",
+      "definition_en": "To create a picture; to pull or drag; to attract; to withdraw money; or to tie in a game",
+      "level": "B1",
+      "synonyms": [
+        "sketch",
+        "pull",
+        "attract"
+      ],
+      "antonyms": [
+        "erase",
+        "push"
+      ],
+      "example_sentence": "The artist drew inspiration from nature, while the lottery draw attracted millions of participants."
+    },
+    {
+      "word": "cover",
+      "pronunciation": "/ˈkʌvər/",
+      "part_of_speech": "verb",
+      "definition_vi": "Che phủ, bao phủ; hoặc: đề cập, bao gồm; hoặc: che giấu; hoặc: đi qua (khoảng cách)",
+      "definition_en": "To place something over; to include or discuss; to conceal; or to travel a distance",
+      "level": "B1",
+      "synonyms": [
+        "conceal",
+        "include",
+        "hide"
+      ],
+      "antonyms": [
+        "uncover",
+        "expose"
+      ],
+      "example_sentence": "The report covers all aspects of the project, and the team covered fifty kilometers in one day."
+    },
+    {
+      "word": "match",
+      "pronunciation": "/mætʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "Phù hợp, tương xứng; hoặc: so sánh, đối sánh; hoặc: trận đấu (danh từ)",
+      "definition_en": "To be compatible or equal; to compare or pair; or a competitive game",
+      "level": "B1",
+      "synonyms": [
+        "suit",
+        "compare",
+        "equal"
+      ],
+      "antonyms": [
+        "differ"
+      ],
+      "example_sentence": "The colors don't match the interior design, and the tennis match attracted thousands of spectators."
+    },
+    {
+      "word": "file",
+      "pronunciation": "/faɪl/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tập tin, hồ sơ; hoặc: dụng cụ cạo, dũa; hoặc: hàng dài người",
+      "definition_en": "A document or record; a tool for smoothing surfaces; or a line of people",
+      "level": "B1",
+      "synonyms": [
+        "document",
+        "tool",
+        "line"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company filed the legal documents, and the carpenter used a file to smooth the wooden surface."
+    },
+    {
+      "word": "scale",
+      "pronunciation": "/skeɪl/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quy mô, mức độ; hoặc: cân (dụng cụ); hoặc: vảy (cá); hoặc: thang đo",
+      "definition_en": "The size or extent of something; a weighing device; fish covering; or a graduated range",
+      "level": "B1",
+      "synonyms": [
+        "extent",
+        "balance",
+        "range"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project operates on a large scale, and the fish's scales protect it from predators."
+    },
+    {
+      "word": "ring",
+      "pronunciation": "/rɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Vòng tròn, nhẫn; hoặc: tiếng chuông; hoặc: sân đấu (boxing)",
+      "definition_en": "A circular band or object; the sound of a bell; or a boxing arena",
+      "level": "B1",
+      "synonyms": [
+        "circle",
+        "sound",
+        "arena"
+      ],
+      "antonyms": [],
+      "example_sentence": "She wore a diamond ring, and the bell's ring echoed through the empty hall."
+    },
+    {
+      "word": "plant",
+      "pronunciation": "/plɑːnt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Cây cối; hoặc: nhà máy, xưởng; hoặc: cài cắm (bằng chứng giả)",
+      "definition_en": "A living organism that grows from the soil; a factory or facility; or to place something secretly",
+      "level": "B1",
+      "synonyms": [
+        "vegetation",
+        "factory",
+        "place"
+      ],
+      "antonyms": [],
+      "example_sentence": "The manufacturing plant produces thousands of units daily, and the garden is full of rare plants."
+    },
+    {
+      "word": "court",
+      "pronunciation": "/kɔːrt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tòa án; hoặc: sân (tennis, bóng rổ); hoặc: triều đình; hoặc: tìm cách chiếu lòng",
+      "definition_en": "A legal institution; a sports playing area; a royal residence; or to seek favor",
+      "level": "B1",
+      "synonyms": [
+        "tribunal",
+        "arena",
+        "palace"
+      ],
+      "antonyms": [],
+      "example_sentence": "The case was brought to court, and the tennis match took place on the grass court."
+    },
+    {
+      "word": "board",
+      "pronunciation": "/bɔːrd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Bảng, tấm gỗ; hoặc: hội đồng, ban giám đốc; hoặc: lên tàu/máy bay; hoặc: ăn ở",
+      "definition_en": "A flat piece of wood; a group of directors; to enter a vehicle; or to provide meals",
+      "level": "B1",
+      "synonyms": [
+        "plank",
+        "committee",
+        "embark"
+      ],
+      "antonyms": [
+        "disembark"
+      ],
+      "example_sentence": "The board of directors approved the budget, and passengers will board the flight in thirty minutes."
+    },
+    {
+      "word": "fair",
+      "pronunciation": "/fer/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Công bằng, công chính; hoặc: khá, tạm được; hoặc: sáng (da); hoặc: hội chợ",
+      "definition_en": "Just and impartial; reasonably good; light-colored; or a public event with entertainment",
+      "level": "B1",
+      "synonyms": [
+        "just",
+        "decent",
+        "light"
+      ],
+      "antonyms": [
+        "unfair",
+        "poor"
+      ],
+      "example_sentence": "The judge made a fair decision, and the weather was fair enough for the outdoor fair to proceed."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government decided to _____ new regulations to _____ the growing concerns about environmental pollution.",
+      "option_a": "issue; address",
+      "option_b": "address; issue",
+      "option_c": "issue; conduct",
+      "option_d": "charge; address",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Issue = phát hành (regulations); address = giải quyết (concerns). Đáp án B sai vì đảo ngược nghĩa. C sai vì conduct không phù hợp ngữ cảnh. D sai vì charge không có nghĩa phát hành."
+    },
+    {
+      "question_text": "The company was _____ a high fee for the service, but the workers decided to _____ over wage disputes.",
+      "option_a": "charged; strike",
+      "option_b": "charged; run",
+      "option_c": "conducted; strike",
+      "option_d": "issued; strike",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Charged = tính tiền; strike = đình công. B sai vì run không có nghĩa đình công. C sai vì conducted không phù hợp. D sai vì issued không có nghĩa tính tiền."
+    },
+    {
+      "question_text": "The scientist will _____ an experiment to _____ whether the new theory is correct.",
+      "option_a": "conduct; bear",
+      "option_b": "conduct; test",
+      "option_c": "run; conduct",
+      "option_d": "charge; present",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Conduct = tiến hành; test = kiểm tra (từ đồng nghĩa). A sai vì bear không phù hợp. C sai vì đảo ngược. D sai vì charge không phù hợp."
+    },
+    {
+      "question_text": "The company must _____ the costs of the accident, and the report will _____ all relevant details.",
+      "option_a": "bear; cover",
+      "option_b": "charge; address",
+      "option_c": "run; present",
+      "option_d": "stand; mark",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bear = chịu (chi phí); cover = đề cập, bao gồm. B sai vì charge không có nghĩa chịu chi phí. C sai vì run không phù hợp. D sai vì stand không phù hợp."
+    },
+    {
+      "question_text": "The factory _____ three shifts daily, and this schedule will _____ until the end of the year.",
+      "option_a": "runs; run",
+      "option_b": "conducts; stand",
+      "option_c": "operates; run",
+      "option_d": "charges; bear",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Run = điều hành (shifts); run = kéo dài (schedule). C cũng đúng về nghĩa nhưng A tự nhiên hơn. B sai vì stand không phù hợp."
+    },
+    {
+      "question_text": "The athlete _____ the world record, while the company _____ its contract with the supplier.",
+      "option_a": "broke; broke",
+      "option_b": "marked; covered",
+      "option_c": "struck; charged",
+      "option_d": "drew; filed",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Break = phá vỡ (kỷ lục); break = vi phạm (hợp đồng). Cùng một từ nhưng hai nghĩa khác nhau. B sai vì marked không có nghĩa phá vỡ kỷ lục."
+    },
+    {
+      "question_text": "The artist _____ inspiration from nature, while the lottery _____ attracted millions of participants.",
+      "option_a": "drew; draw",
+      "option_b": "drew; drawing",
+      "option_c": "drew; drew",
+      "option_d": "marked; drew",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Drew = hút, hấp dẫn (inspiration); draw = rút thăm (danh từ). B đúng vì 'lottery draw' là cụm danh từ. A sai vì 'lottery draw' không phải động từ. C sai vì nghĩa không phù hợp."
+    },
+    {
+      "question_text": "The report _____ all aspects of the project, and the team _____ fifty kilometers in one day.",
+      "option_a": "covered; covered",
+      "option_b": "addressed; covered",
+      "option_c": "presented; ran",
+      "option_d": "marked; drew",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Cover = đề cập (aspects); cover = đi qua (khoảng cách). Cùng một từ, hai nghĩa khác nhau. B sai vì addressed không có nghĩa đi qua khoảng cách."
+    },
+    {
+      "question_text": "The colors don't _____ the interior design, and the tennis _____ attracted thousands of spectators.",
+      "option_a": "match; match",
+      "option_b": "suit; match",
+      "option_c": "fit; game",
+      "option_d": "stand; event",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Match = phù hợp (colors); match = trận đấu (danh từ). A đúng vì cùng từ, hai nghĩa khác. B sai vì 'tennis match' là cụm danh từ, không phải động từ."
+    },
+    {
+      "question_text": "The company _____ the legal documents, and the carpenter used a _____ to smooth the wooden surface.",
+      "option_a": "filed; file",
+      "option_b": "filed; tool",
+      "option_c": "presented; file",
+      "option_d": "marked; duster",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Filed = nộp (documents); file = dụng cụ cạo. A đúng vì cùng từ, hai nghĩa khác. B sai vì 'tool' quá chung chung. C sai vì presented không phù hợp."
+    },
+    {
+      "question_text": "The project operates on a large _____, and the fish's _____ protect it from predators.",
+      "option_a": "scale; scales",
+      "option_b": "extent; scales",
+      "option_c": "level; fins",
+      "option_d": "size; skin",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scale = quy mô (project); scales = vảy (fish). A đúng vì cùng từ gốc, hai hình thức khác. B sai vì extent không phù hợp ngữ cảnh 'operates on a large ___'."
+    },
+    {
+      "question_text": "She wore a diamond _____, and the bell's _____ echoed through the empty hall.",
+      "option_a": "ring; ring",
+      "option_b": "band; sound",
+      "option_c": "ring; sound",
+      "option_d": "jewelry; ringing",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Ring = nhẫn (danh từ); ring = tiếng chuông (danh từ). A đúng vì cùng từ, hai nghĩa khác. C sai vì 'sound' không cụ thể bằng 'ring'."
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "words": [
+    {
+      "word": "irregular migration",
+      "pronunciation": "/ɪˈreɡjələr maɪˈɡreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Di cư không theo quy định pháp luật, thường liên quan đến việc vượt biên trái phép hoặc sử dụng tài liệu giả mạo",
+      "definition_en": "Movement across borders that does not comply with legal requirements of the countries involved",
+      "level": "C1",
+      "synonyms": [
+        "clandestine migration",
+        "unauthorized movement"
+      ],
+      "antonyms": [
+        "legal migration",
+        "documented migration"
+      ],
+      "example_sentence": "Irregular migration through Southeast Asia has increased due to economic disparities and political instability in neighboring countries."
+    },
+    {
+      "word": "host community",
+      "pronunciation": "/hoʊst kəˈmjuːnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Cộng đồng địa phương nơi người di cư hoặc tị nạn định cư và sống",
+      "definition_en": "The local population and society that receives and accommodates migrants or refugees",
+      "level": "B2",
+      "synonyms": [
+        "receiving community",
+        "local population"
+      ],
+      "antonyms": [
+        "country of origin",
+        "home country"
+      ],
+      "example_sentence": "Successful integration depends on mutual respect between refugees and the host community."
+    },
+    {
+      "word": "climate-induced displacement",
+      "pronunciation": "/ˈklaɪmət ɪnˈdjuːst dɪsˈpleɪsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự di dân bị buộc do các tác động của biến đổi khí hậu như lũ lụt, hạn hán hoặc nước biển dâng",
+      "definition_en": "Forced migration caused by climate change impacts such as flooding, drought, or rising sea levels",
+      "level": "C1",
+      "synonyms": [
+        "environmental displacement",
+        "climate migration"
+      ],
+      "antonyms": [
+        "voluntary migration"
+      ],
+      "example_sentence": "Climate-induced displacement in the Pacific Islands poses unprecedented challenges for international humanitarian law."
+    },
+    {
+      "word": "burden-sharing",
+      "pronunciation": "/ˈbɜːrdn ˈʃeərɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự chia sẻ trách nhiệm và chi phí giữa các quốc gia trong việc tiếp nhận và hỗ trợ người tị nạn",
+      "definition_en": "The equitable distribution of responsibility and costs among nations for hosting and supporting refugees",
+      "level": "C1",
+      "synonyms": [
+        "responsibility-sharing",
+        "cost-sharing"
+      ],
+      "antonyms": [
+        "unilateral action"
+      ],
+      "example_sentence": "International burden-sharing mechanisms are essential to prevent any single country from bearing disproportionate responsibility for refugee populations."
+    },
+    {
+      "word": "livelihood",
+      "pronunciation": "/ˈlaɪvlihʊd/",
+      "part_of_speech": "noun",
+      "definition_vi": "Phương tiện kiếm sống, nguồn thu nhập và các hoạt động kinh tế để duy trì cuộc sống",
+      "definition_en": "The means by which people earn income and meet their basic needs for survival",
+      "level": "B2",
+      "synonyms": [
+        "income",
+        "subsistence",
+        "means of support"
+      ],
+      "antonyms": [
+        "poverty",
+        "destitution"
+      ],
+      "example_sentence": "Many refugees struggle to rebuild their livelihoods in host countries due to language barriers and lack of credential recognition."
+    },
+    {
+      "word": "transnational family",
+      "pronunciation": "/trænzˈnæʃənəl ˈfæməli/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Gia đình có thành viên sống ở nhiều quốc gia khác nhau, thường do di cư",
+      "definition_en": "A family whose members reside in different countries, typically as a result of migration",
+      "level": "C1",
+      "synonyms": [
+        "separated family",
+        "dispersed family"
+      ],
+      "antonyms": [
+        "co-resident family"
+      ],
+      "example_sentence": "Transnational families maintain emotional bonds through digital communication despite geographical separation."
+    },
+    {
+      "word": "xenophobia",
+      "pronunciation": "/ˌzenəˈfoʊbiə/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sợ hãi, ghét bỏ hoặc định kiến mạnh mẽ đối với người nước ngoài hoặc những người khác",
+      "definition_en": "Intense fear, hatred, or prejudice against foreigners or people from other countries",
+      "level": "C1",
+      "synonyms": [
+        "anti-foreign sentiment",
+        "foreign prejudice"
+      ],
+      "antonyms": [
+        "cosmopolitanism",
+        "tolerance"
+      ],
+      "example_sentence": "Rising xenophobia in developed nations has led to stricter immigration policies and reduced refugee intake quotas."
+    },
+    {
+      "word": "skill mismatch",
+      "pronunciation": "/skɪl ˈmɪsmætʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự không phù hợp giữa kỹ năng của người lao động và yêu cầu của thị trường lao động",
+      "definition_en": "A gap between the skills migrants possess and those required by the labor market in the host country",
+      "level": "B2",
+      "synonyms": [
+        "qualification gap",
+        "competency mismatch"
+      ],
+      "antonyms": [
+        "skill alignment"
+      ],
+      "example_sentence": "Skill mismatch is a major barrier preventing qualified migrants from accessing employment commensurate with their education."
+    },
+    {
+      "word": "social cohesion",
+      "pronunciation": "/ˈsoʊʃəl koʊˈhiːʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ liên kết, hợp tác và sự hiểu biết lẫn nhau trong một xã hội hoặc cộng đồng",
+      "definition_en": "The degree of unity, cooperation, and mutual understanding within a society or community",
+      "level": "C1",
+      "synonyms": [
+        "social unity",
+        "community solidarity"
+      ],
+      "antonyms": [
+        "social fragmentation",
+        "division"
+      ],
+      "example_sentence": "Policymakers must balance refugee intake with measures to maintain social cohesion in host communities."
+    },
+    {
+      "word": "remittance corridor",
+      "pronunciation": "/rɪˈmɪtəns ˈkɔːrɪdɔːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tuyến đường chuyển tiền từ người di cư ở nước ngoài về quốc gia hoặc khu vực gốc của họ",
+      "definition_en": "A migration route along which migrants send money back to their countries or regions of origin",
+      "level": "C1",
+      "synonyms": [
+        "money transfer route",
+        "remittance pathway"
+      ],
+      "antonyms": [],
+      "example_sentence": "The India-Gulf remittance corridor is one of the world's largest, with billions of dollars flowing annually to support families."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'irregular migration'?",
+      "option_a": "Movement across borders that complies with all legal requirements of destination countries",
+      "option_b": "Movement across borders that does not comply with legal requirements, often involving undocumented entry",
+      "option_c": "The voluntary relocation of skilled workers to developed nations",
+      "option_d": "The seasonal movement of agricultural workers within a single country",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Irregular migration là di cư không tuân thủ quy định pháp luật, thường liên quan đến vượt biên trái phép. Đáp án A sai vì nó mô tả di cư hợp pháp. C và D quá hẹp và không phản ánh bản chất của irregular migration."
+    },
+    {
+      "question_text": "The concept of 'burden-sharing' in refugee policy primarily refers to ___.",
+      "option_a": "The responsibility of refugees to work and support themselves financially",
+      "option_b": "The equitable distribution of responsibility and costs among nations for hosting refugees",
+      "option_c": "The burden placed on host countries' healthcare systems by refugee populations",
+      "option_d": "The psychological burden experienced by refugees during displacement",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Burden-sharing là chia sẻ trách nhiệm và chi phí giữa các quốc gia. A sai vì nó chỉ trách nhiệm của tị nạn. C và D là hậu quả chứ không phải định nghĩa của khái niệm."
+    },
+    {
+      "question_text": "In the context of migration studies, 'skill mismatch' occurs when ___.",
+      "option_a": "Migrants possess higher qualifications than required by their jobs",
+      "option_b": "There is a gap between migrants' skills and the labor market demands of the host country",
+      "option_c": "Host countries deliberately reject migrants with advanced degrees",
+      "option_d": "Migrants refuse to accept employment below their qualification level",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Skill mismatch là sự không phù hợp giữa kỹ năng của người di cư và yêu cầu thị trường lao động. A là một trường hợp cụ thể nhưng không phải định nghĩa chung. C và D là nguyên nhân hoặc hậu quả, không phải định nghĩa."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'Climate change is increasingly recognized as a significant ___ factor, forcing millions to leave their homes due to environmental degradation.'",
+      "option_a": "pull",
+      "option_b": "push",
+      "option_c": "transnational",
+      "option_d": "irregular",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Push factor là yếu tố đẩy người dân rời khỏi quê hương (như biến đổi khí hậu). Pull factor là yếu tố kéo (như cơ hội việc làm). Transnational và irregular không phù hợp về ngữ pháp và ngữ nghĩa."
+    },
+    {
+      "question_text": "The term 'social cohesion' in the context of refugee integration refers to ___.",
+      "option_a": "The legal status granted to refugees after five years of residence",
+      "option_b": "The degree of unity, cooperation, and mutual understanding within a community",
+      "option_c": "The financial support provided by international organizations to host countries",
+      "option_d": "The process of assimilating refugees into the dominant culture",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Social cohesion là mức độ liên kết và hợp tác trong xã hội. A sai vì nó là vấn đề pháp lý. C sai vì nó là hỗ trợ tài chính. D sai vì assimilation khác với cohesion."
+    },
+    {
+      "question_text": "A 'transnational family' is characterized by ___.",
+      "option_a": "Members residing in the same country but maintaining separate households",
+      "option_b": "Family members living in different countries, typically as a result of migration",
+      "option_c": "Extended family networks that span multiple generations within one nation",
+      "option_d": "Families that have obtained citizenship in more than one country",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Transnational family là gia đình có thành viên sống ở các quốc gia khác nhau do di cư. A sai vì cùng quốc gia. C sai vì chỉ trong một quốc gia. D sai vì nó về quốc tịch, không phải về sự phân tán địa lý."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "word": "equanimity",
+      "pronunciation": "/ˌekwəˈnɪmɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự bình tĩnh, điềm tĩnh; khả năng giữ bình tĩnh trong những tình huống khó khăn hoặc căng thẳng",
+      "definition_en": "calmness and composure, especially in a difficult or stressful situation",
+      "level": "C1",
+      "synonyms": [
+        "composure",
+        "serenity",
+        "poise"
+      ],
+      "antonyms": [
+        "agitation",
+        "turbulence"
+      ],
+      "example_sentence": "The CEO faced the financial crisis with remarkable equanimity, reassuring investors and employees alike."
+    },
+    {
+      "word": "morose",
+      "pronunciation": "/məˈroʊs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "ủ rũ, buồn bã, hay cáu kỉnh; có tính chất u ám, không vui vẻ",
+      "definition_en": "gloomy, ill-tempered, and unfriendly in manner",
+      "level": "C1",
+      "synonyms": [
+        "sullen",
+        "gloomy",
+        "surly"
+      ],
+      "antonyms": [
+        "cheerful",
+        "jovial"
+      ],
+      "example_sentence": "After losing the championship, the athlete remained morose for weeks, avoiding social interactions."
+    },
+    {
+      "word": "sanguine",
+      "pronunciation": "/ˈsæŋɡwɪn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "lạc quan, tự tin; có xu hướng mong đợi những kết quả tốt đẹp",
+      "definition_en": "optimistic or positive, especially in an apparently bad or difficult situation",
+      "level": "C1",
+      "synonyms": [
+        "optimistic",
+        "hopeful",
+        "confident"
+      ],
+      "antonyms": [
+        "pessimistic",
+        "doubtful"
+      ],
+      "example_sentence": "Despite economic uncertainties, the entrepreneur remained sanguine about the company's future prospects."
+    },
+    {
+      "word": "wistful",
+      "pronunciation": "/ˈwɪstfəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mong mỏi, nhớ nhung; có vẻ buồn vì mong muốn điều gì đó không thể có được",
+      "definition_en": "feeling or expressing a longing or yearning, often tinged with sadness",
+      "level": "B2",
+      "synonyms": [
+        "yearning",
+        "nostalgic",
+        "longing"
+      ],
+      "antonyms": [
+        "content",
+        "satisfied"
+      ],
+      "example_sentence": "She gazed at old photographs with a wistful expression, remembering her childhood days abroad."
+    },
+    {
+      "word": "insouciant",
+      "pronunciation": "/ɪnˈsuːsiənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vô tư, không quan tâm; thể hiện sự thiếu quan tâm hoặc lo lắng về điều gì",
+      "definition_en": "showing a casual lack of concern; nonchalant",
+      "level": "C1",
+      "synonyms": [
+        "carefree",
+        "nonchalant",
+        "unconcerned"
+      ],
+      "antonyms": [
+        "anxious",
+        "worried"
+      ],
+      "example_sentence": "The teenager's insouciant attitude toward his failing grades frustrated his parents."
+    },
+    {
+      "word": "chagrin",
+      "pronunciation": "/ʃəˈɡrɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thất vọng, xấu hổ, khó chịu; cảm giác không vui khi bị xúc phạm hoặc thất bại",
+      "definition_en": "annoyance or embarrassment at having failed or been humiliated",
+      "level": "C1",
+      "synonyms": [
+        "mortification",
+        "embarrassment",
+        "disappointment"
+      ],
+      "antonyms": [
+        "satisfaction",
+        "pride"
+      ],
+      "example_sentence": "Much to her chagrin, she discovered that her rival had won the scholarship she desperately wanted."
+    },
+    {
+      "word": "ebullient",
+      "pronunciation": "/ɪˈbʌliənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhiệt tình, sôi nổi, tràn đầy năng lượng; thể hiện sự vui vẻ và hứng khởi mạnh mẽ",
+      "definition_en": "enthusiastic or energetic to the point of bubbling over with excitement",
+      "level": "C1",
+      "synonyms": [
+        "exuberant",
+        "enthusiastic",
+        "animated"
+      ],
+      "antonyms": [
+        "apathetic",
+        "lethargic"
+      ],
+      "example_sentence": "The newly promoted manager's ebullient personality energized the entire team."
+    },
+    {
+      "word": "acrimonious",
+      "pronunciation": "/ˌækrɪˈmoʊniəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cay đắng, thù địch; (của lời nói, cảm xúc) đầy sự tức giận và bất hòa",
+      "definition_en": "bitter, spiteful, or harsh in tone or manner",
+      "level": "C1",
+      "synonyms": [
+        "bitter",
+        "hostile",
+        "rancorous"
+      ],
+      "antonyms": [
+        "amicable",
+        "cordial"
+      ],
+      "example_sentence": "The acrimonious debate between the two politicians revealed deep ideological divisions."
+    },
+    {
+      "word": "reticent",
+      "pronunciation": "/ˈretɪsənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "kín tiếng, ít nói; không sẵn sàng tiết lộ thông tin cá nhân hoặc bày tỏ cảm xúc",
+      "definition_en": "not revealing one's thoughts or feelings readily; reserved",
+      "level": "C1",
+      "synonyms": [
+        "reserved",
+        "taciturn",
+        "uncommunicative"
+      ],
+      "antonyms": [
+        "forthcoming",
+        "talkative"
+      ],
+      "example_sentence": "The witness was reticent about the incident, providing only minimal information to investigators."
+    },
+    {
+      "word": "languish",
+      "pronunciation": "/ˈlæŋɡwɪʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "suy yếu, mất sức; trở nên yếu ớt hoặc buồn bã do thiếu sự chăm sóc hoặc hứng thú",
+      "definition_en": "to lose or lack strength and vitality; to become dispirited or depressed",
+      "level": "C1",
+      "synonyms": [
+        "decline",
+        "weaken",
+        "deteriorate"
+      ],
+      "antonyms": [
+        "flourish",
+        "thrive"
+      ],
+      "example_sentence": "The abandoned puppy began to languish until a kind family adopted it and provided proper care."
+    }
+  ],
+  "questions": []
+}

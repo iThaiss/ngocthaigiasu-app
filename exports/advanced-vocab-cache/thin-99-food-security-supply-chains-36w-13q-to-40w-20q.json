@@ -1,0 +1,244 @@
+{
+  "words": [
+    {
+      "word": "food insecurity",
+      "pronunciation": "/fuːd ɪnˈsɪkjərəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng thiếu hụt hoặc không chắc chắn về khả năng tiếp cận đủ lương thực an toàn, dinh dưỡng cho sự sống khỏe mạnh",
+      "definition_en": "The state of being without reliable access to sufficient, safe, and nutritious food",
+      "level": "B2",
+      "synonyms": [
+        "food deprivation",
+        "hunger crisis"
+      ],
+      "antonyms": [
+        "food security",
+        "nutritional stability"
+      ],
+      "example_sentence": "The World Food Programme reports that food insecurity affects over 800 million people globally, particularly in sub-Saharan Africa and South Asia."
+    },
+    {
+      "word": "supply chain disruption",
+      "pronunciation": "/səˈplaɪ tʃeɪn dɪsˈrʌpʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự gián đoạn, tắc nghẽn trong quá trình vận chuyển, phân phối hàng hóa từ sản xuất đến tiêu dùng",
+      "definition_en": "An interruption or breakdown in the flow of goods from production to consumer",
+      "level": "B2",
+      "synonyms": [
+        "logistical breakdown",
+        "distribution interruption"
+      ],
+      "antonyms": [
+        "supply chain continuity",
+        "smooth distribution"
+      ],
+      "example_sentence": "The pandemic caused unprecedented supply chain disruptions, leaving supermarket shelves empty and farmers unable to sell their produce."
+    },
+    {
+      "word": "value chain",
+      "pronunciation": "/ˈvæljuː tʃeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chuỗi các hoạt động tạo giá trị từ sản xuất nguyên liệu thô đến sản phẩm cuối cùng được tiêu thụ",
+      "definition_en": "The sequence of activities that add value to a product from raw material to final consumer",
+      "level": "C1",
+      "synonyms": [
+        "production chain",
+        "value creation process"
+      ],
+      "antonyms": [],
+      "example_sentence": "Smallholder farmers often capture only 10% of the value chain, while middlemen and retailers control the majority of profits."
+    },
+    {
+      "word": "food sovereignty",
+      "pronunciation": "/fuːd ˈsɒvrənti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền của các quốc gia, cộng đồng tự quyết định chính sách nông nghiệp, thực phẩm của mình mà không bị áp đặt từ bên ngoài",
+      "definition_en": "The right of peoples and nations to define their own food and agricultural policies independently",
+      "level": "C1",
+      "synonyms": [
+        "agricultural autonomy",
+        "self-determination in food systems"
+      ],
+      "antonyms": [
+        "food import dependency",
+        "external control"
+      ],
+      "example_sentence": "Indigenous communities advocate for food sovereignty to protect traditional farming practices and resist corporate agricultural models."
+    },
+    {
+      "word": "market volatility",
+      "pronunciation": "/ˈmɑːrkɪt vɒˈlætɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự biến động, dao động không ổn định của giá cả trên thị trường, đặc biệt là giá nông sản",
+      "definition_en": "Rapid and unpredictable fluctuations in market prices, creating uncertainty for producers and consumers",
+      "level": "C1",
+      "synonyms": [
+        "price instability",
+        "market fluctuation"
+      ],
+      "antonyms": [
+        "price stability",
+        "market equilibrium"
+      ],
+      "example_sentence": "Market volatility in grain prices has forced many developing nations to establish strategic food reserves to buffer against sudden price shocks."
+    },
+    {
+      "word": "food fortification",
+      "pronunciation": "/fuːd ˌfɔːrtɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình bổ sung các chất dinh dưỡng (vitamin, khoáng chất) vào thực phẩm để tăng giá trị dinh dưỡng",
+      "definition_en": "The process of adding essential nutrients to food to improve nutritional quality",
+      "level": "B2",
+      "synonyms": [
+        "nutrient enrichment",
+        "nutritional supplementation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many countries mandate food fortification of staple grains with iron and folic acid to combat micronutrient deficiencies in vulnerable populations."
+    },
+    {
+      "word": "traceability",
+      "pronunciation": "/ˌtreɪsəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Khả năng theo dõi, xác định nguồn gốc và lịch sử của sản phẩm thực phẩm từ trang trại đến bàn ăn",
+      "definition_en": "The ability to track the origin and history of food products throughout the supply chain",
+      "level": "C1",
+      "synonyms": [
+        "product tracking",
+        "supply chain transparency"
+      ],
+      "antonyms": [
+        "opacity",
+        "anonymity"
+      ],
+      "example_sentence": "Blockchain technology enhances food traceability, allowing consumers to verify the origin and safety of agricultural products with a single scan."
+    },
+    {
+      "word": "food desert",
+      "pronunciation": "/fuːd ˈdezərt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khu vực địa lý thiếu hụt cơ sở hạ tầng bán lẻ thực phẩm tươi, lành mạnh, khiến cư dân khó tiếp cận",
+      "definition_en": "A geographic area with limited access to affordable, nutritious food, typically lacking supermarkets or fresh produce retailers",
+      "level": "C1",
+      "synonyms": [
+        "food access gap",
+        "retail food void"
+      ],
+      "antonyms": [
+        "food-rich area",
+        "well-served community"
+      ],
+      "example_sentence": "Urban food deserts in low-income neighborhoods perpetuate health disparities, as residents rely on convenience stores selling processed foods high in sodium and sugar."
+    },
+    {
+      "word": "agricultural extension",
+      "pronunciation": "/ˌæɡrɪˈkʌltʃərəl ɪkˈstenʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hệ thống cung cấp kiến thức, kỹ thuật nông nghiệp hiện đại cho nông dân thông qua tư vấn, đào tạo",
+      "definition_en": "A system of providing farmers with technical knowledge, training, and advisory services to improve agricultural practices",
+      "level": "B2",
+      "synonyms": [
+        "agricultural advisory service",
+        "farmer training program"
+      ],
+      "antonyms": [],
+      "example_sentence": "Agricultural extension services play a crucial role in helping smallholder farmers adopt climate-resilient crop varieties and water-efficient irrigation techniques."
+    },
+    {
+      "word": "food system transformation",
+      "pronunciation": "/fuːd ˈsɪstəm ˌtrænsfərˈmeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thay đổi toàn diện trong cách thức sản xuất, phân phối, tiêu thụ thực phẩm để đạt tính bền vững và công bằng",
+      "definition_en": "Comprehensive restructuring of food production, distribution, and consumption systems toward sustainability and equity",
+      "level": "C1",
+      "synonyms": [
+        "food system reform",
+        "agricultural system overhaul"
+      ],
+      "antonyms": [
+        "status quo",
+        "system stagnation"
+      ],
+      "example_sentence": "Food system transformation requires coordinated efforts among governments, private sector, and civil society to shift from industrial monoculture toward agroecological practices."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes a 'food desert'?",
+      "option_a": "An arid region where crops cannot grow due to lack of rainfall",
+      "option_b": "A geographic area where residents have limited access to affordable, nutritious food",
+      "option_c": "A warehouse facility that stores surplus grain for emergency distribution",
+      "option_d": "A market where food prices fluctuate unpredictably due to speculation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Food desert là khu vực thiếu hụt cơ sở hạ tầng bán lẻ thực phẩm tươi, không phải vùng khô cằn địa lý. Đáp án A nhầm lẫn với khái niệm địa lý tự nhiên, C và D là các khái niệm khác trong chuỗi cung ứng."
+    },
+    {
+      "question_text": "The term 'supply chain disruption' most closely relates to which scenario?",
+      "option_a": "A farmer decides to diversify crops to reduce financial risk",
+      "option_b": "Transportation delays and logistical breakdowns prevent goods from reaching markets",
+      "option_c": "Consumers choose to buy locally-produced food instead of imported goods",
+      "option_d": "A government implements new food safety regulations for imported products",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Supply chain disruption là sự gián đoạn trong quá trình vận chuyển và phân phối. Đáp án A liên quan đến đa dạng hóa cây trồng, C là lựa chọn tiêu dùng, D là quy định an toàn thực phẩm."
+    },
+    {
+      "question_text": "What is the primary purpose of 'food fortification' in public health?",
+      "option_a": "To increase the shelf life of processed foods in supermarkets",
+      "option_b": "To add essential nutrients to food products to combat micronutrient deficiencies",
+      "option_c": "To improve the taste and texture of staple grains",
+      "option_d": "To reduce the environmental impact of agricultural production",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Food fortification là quá trình bổ sung chất dinh dưỡng vào thực phẩm để cải thiện sức khỏe. Đáp án A liên quan đến bảo quản, C là vấn đề hương vị, D là tác động môi trường."
+    },
+    {
+      "question_text": "In the context of food systems, 'traceability' enables consumers to _____ the origin and safety of agricultural products.",
+      "option_a": "subsidize",
+      "option_b": "verify",
+      "option_c": "regulate",
+      "option_d": "standardize",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Traceability cho phép người tiêu dùng xác minh (verify) nguồn gốc và an toàn của sản phẩm. Subsidize (trợ cấp), regulate (quy định), standardize (tiêu chuẩn hóa) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Which statement best reflects the concept of 'food sovereignty'?",
+      "option_a": "Nations should import all food from countries with the lowest production costs",
+      "option_b": "Peoples and nations have the right to define their own food and agricultural policies independently",
+      "option_c": "International organizations should control global food distribution systems",
+      "option_d": "Farmers must comply with standardized agricultural practices set by multinational corporations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Food sovereignty là quyền tự quyết định chính sách nông nghiệp của mình. Đáp án A, C, D đều đại diện cho sự kiểm soát từ bên ngoài, trái ngược với khái niệm này."
+    },
+    {
+      "question_text": "Market volatility in agricultural commodities can be mitigated by establishing _____ to buffer against sudden price shocks.",
+      "option_a": "strategic food reserves",
+      "option_b": "export tariffs",
+      "option_c": "consumer subsidies",
+      "option_d": "agricultural loans",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Strategic food reserves là cách phổ biến để giảm tác động của market volatility. Export tariffs (thuế xuất khẩu), consumer subsidies (trợ cấp tiêu dùng), agricultural loans (vay nông nghiệp) không trực tiếp giải quyết biến động giá."
+    },
+    {
+      "question_text": "Which of the following is a key component of 'food system transformation'?",
+      "option_a": "Increasing reliance on industrial monoculture and synthetic pesticides",
+      "option_b": "Shifting toward agroecological practices and sustainable production methods",
+      "option_c": "Consolidating food production under fewer multinational corporations",
+      "option_d": "Reducing government investment in agricultural research and development",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Food system transformation hướng tới tính bền vững và công bằng, bao gồm chuyển sang thực hành sinh thái nông nghiệp. Đáp án A, C, D đều trái ngược với mục tiêu của transformation."
+    }
+  ]
+}

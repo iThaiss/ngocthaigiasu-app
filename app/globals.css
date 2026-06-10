@@ -72,6 +72,25 @@
 /* Keep KaTeX radicals and vector arrows visible in tight question cards. */
 .katex {
   line-height: 1.35;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.katex::-webkit-scrollbar {
+  display: none;
+}
+.katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.katex-display::-webkit-scrollbar {
+  display: none;
 }
 .katex .vlist,
 .katex .vlist-r,

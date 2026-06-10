@@ -1,0 +1,571 @@
+{
+  "words": [
+    {
+      "word": "raise",
+      "pronunciation": "/reɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "nâng lên, đưa lên (vật thể); tăng (giá, mức độ); nuôi dạy (con em)",
+      "definition_en": "to lift or move something upward; to increase in amount or level; to bring up children",
+      "level": "B1",
+      "synonyms": [
+        "lift",
+        "increase",
+        "bring up"
+      ],
+      "antonyms": [
+        "lower",
+        "decrease"
+      ],
+      "example_sentence": "The government decided to raise the minimum wage to help low-income workers support their families."
+    },
+    {
+      "word": "rise",
+      "pronunciation": "/raɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "tự nâng lên, đứng dậy (không có tân ngữ); tăng lên (giá cả, nhiệt độ)",
+      "definition_en": "to move upward or stand up without external force; to increase naturally",
+      "level": "B1",
+      "synonyms": [
+        "go up",
+        "stand up",
+        "increase"
+      ],
+      "antonyms": [
+        "fall",
+        "drop"
+      ],
+      "example_sentence": "Temperatures are expected to rise significantly next week as warm air moves into the region."
+    },
+    {
+      "word": "affect",
+      "pronunciation": "/əˈfekt/",
+      "part_of_speech": "verb",
+      "definition_vi": "ảnh hưởng đến, tác động đến (sự vật, sự việc); làm thay đổi",
+      "definition_en": "to influence or change something; to have an impact on",
+      "level": "B1",
+      "synonyms": [
+        "influence",
+        "impact",
+        "change"
+      ],
+      "antonyms": [
+        "ignore"
+      ],
+      "example_sentence": "Climate change will significantly affect agricultural production in developing countries over the next decade."
+    },
+    {
+      "word": "effect",
+      "pronunciation": "/ɪˈfekt/",
+      "part_of_speech": "noun",
+      "definition_vi": "kết quả, hậu quả, tác động (danh từ); hiệu ứng",
+      "definition_en": "a change or result that is produced by an action or cause",
+      "level": "B1",
+      "synonyms": [
+        "result",
+        "consequence",
+        "impact"
+      ],
+      "antonyms": [
+        "cause"
+      ],
+      "example_sentence": "The new policy had a positive effect on student attendance and academic performance."
+    },
+    {
+      "word": "adapt",
+      "pronunciation": "/əˈdæpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thích nghi, điều chỉnh (để phù hợp với điều kiện mới); chỉnh sửa",
+      "definition_en": "to adjust or modify to suit new conditions or circumstances",
+      "level": "B1",
+      "synonyms": [
+        "adjust",
+        "modify",
+        "accustom"
+      ],
+      "antonyms": [
+        "resist"
+      ],
+      "example_sentence": "Many species have adapted to urban environments by changing their feeding and nesting behaviors."
+    },
+    {
+      "word": "adopt",
+      "pronunciation": "/əˈdɑːpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhận nuôi (trẻ em); áp dụng, chấp nhận (chính sách, phương pháp)",
+      "definition_en": "to take a child as one's own; to accept or start using a new method or policy",
+      "level": "B1",
+      "synonyms": [
+        "take on",
+        "embrace",
+        "implement"
+      ],
+      "antonyms": [
+        "reject",
+        "abandon"
+      ],
+      "example_sentence": "The company decided to adopt sustainable practices to reduce its environmental footprint."
+    },
+    {
+      "word": "assume",
+      "pronunciation": "/əˈsuːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "giả định, cho rằng (không có bằng chứng); nhận (trách nhiệm, quyền hạn)",
+      "definition_en": "to suppose something is true without proof; to take on responsibility or power",
+      "level": "B1",
+      "synonyms": [
+        "suppose",
+        "presume",
+        "take on"
+      ],
+      "antonyms": [
+        "prove",
+        "verify"
+      ],
+      "example_sentence": "We cannot assume that all students have access to reliable internet without conducting a proper survey."
+    },
+    {
+      "word": "consume",
+      "pronunciation": "/kənˈsuːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiêu thụ, sử dụng (tài nguyên, năng lượng); ăn, uống",
+      "definition_en": "to use up resources or energy; to eat or drink something",
+      "level": "B1",
+      "synonyms": [
+        "use",
+        "eat",
+        "drink"
+      ],
+      "antonyms": [
+        "produce",
+        "save"
+      ],
+      "example_sentence": "Developing nations consume increasing amounts of energy as their economies grow and living standards improve."
+    },
+    {
+      "word": "presume",
+      "pronunciation": "/prɪˈzuːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "cho rằng, giả định (dựa trên bằng chứng hoặc lý do hợp lý); dám",
+      "definition_en": "to suppose based on reasonable evidence; to dare or venture",
+      "level": "B2",
+      "synonyms": [
+        "assume",
+        "suppose",
+        "believe"
+      ],
+      "antonyms": [
+        "doubt",
+        "deny"
+      ],
+      "example_sentence": "We can presume that the author intended to criticize social inequality based on the novel's repeated themes."
+    },
+    {
+      "word": "resume",
+      "pronunciation": "/rɪˈzuːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiếp tục (sau khi dừng lại); bắt đầu lại",
+      "definition_en": "to continue something after a pause or interruption",
+      "level": "B1",
+      "synonyms": [
+        "continue",
+        "restart",
+        "recommence"
+      ],
+      "antonyms": [
+        "stop",
+        "pause"
+      ],
+      "example_sentence": "After the lunch break, the conference will resume with presentations on renewable energy technologies."
+    },
+    {
+      "word": "ensure",
+      "pronunciation": "/ɪnˈʃʊr/",
+      "part_of_speech": "verb",
+      "definition_vi": "đảm bảo, chắc chắn rằng (cái gì sẽ xảy ra); bảo vệ",
+      "definition_en": "to make certain that something happens or is true; to guarantee",
+      "level": "B1",
+      "synonyms": [
+        "guarantee",
+        "make sure",
+        "secure"
+      ],
+      "antonyms": [
+        "risk",
+        "endanger"
+      ],
+      "example_sentence": "Schools must ensure that all students receive equal access to quality educational resources regardless of background."
+    },
+    {
+      "word": "insure",
+      "pronunciation": "/ɪnˈʃʊr/",
+      "part_of_speech": "verb",
+      "definition_vi": "mua bảo hiểm; bảo vệ (tài sản) bằng bảo hiểm",
+      "definition_en": "to arrange insurance protection for property or life against loss or damage",
+      "level": "B1",
+      "synonyms": [
+        "protect",
+        "cover",
+        "underwrite"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many homeowners insure their properties against natural disasters like earthquakes and floods."
+    },
+    {
+      "word": "access",
+      "pronunciation": "/ˈækses/",
+      "part_of_speech": "noun",
+      "definition_vi": "quyền tiếp cận, sự tiếp cận; có thể tiếp cận được",
+      "definition_en": "the right or ability to enter or use something; to obtain or retrieve information",
+      "level": "B1",
+      "synonyms": [
+        "entry",
+        "approach",
+        "reach"
+      ],
+      "antonyms": [
+        "denial",
+        "restriction"
+      ],
+      "example_sentence": "Students need to have access to digital libraries and online databases to conduct comprehensive research."
+    },
+    {
+      "word": "excess",
+      "pronunciation": "/ɪkˈses/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự dư thừa, quá mức; thừa, dư thừa (tính từ)",
+      "definition_en": "an amount that is more than necessary or allowed; more than needed",
+      "level": "B1",
+      "synonyms": [
+        "surplus",
+        "overabundance",
+        "extra"
+      ],
+      "antonyms": [
+        "shortage",
+        "deficit"
+      ],
+      "example_sentence": "The excess production of plastic waste has become a critical environmental problem in coastal regions."
+    },
+    {
+      "word": "proceed",
+      "pronunciation": "/prəˈsiːd/",
+      "part_of_speech": "verb",
+      "definition_vi": "tiến hành, tiếp tục; đi tiếp",
+      "definition_en": "to continue or move forward with an action or process",
+      "level": "B1",
+      "synonyms": [
+        "continue",
+        "advance",
+        "go ahead"
+      ],
+      "antonyms": [
+        "stop",
+        "halt"
+      ],
+      "example_sentence": "The research team will proceed with the experiment once all safety protocols have been approved."
+    },
+    {
+      "word": "precede",
+      "pronunciation": "/prɪˈsiːd/",
+      "part_of_speech": "verb",
+      "definition_vi": "đi trước, xảy ra trước; dẫn đầu",
+      "definition_en": "to come or go before something in time or order",
+      "level": "B2",
+      "synonyms": [
+        "come before",
+        "go ahead of",
+        "lead"
+      ],
+      "antonyms": [
+        "follow",
+        "succeed"
+      ],
+      "example_sentence": "The introduction should precede the main body of the essay to provide necessary context for readers."
+    },
+    {
+      "word": "beside",
+      "pronunciation": "/bɪˈsaɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "bên cạnh, ở cạnh (vị trí không gian)",
+      "definition_en": "at the side of; next to in space",
+      "level": "B1",
+      "synonyms": [
+        "next to",
+        "alongside",
+        "by"
+      ],
+      "antonyms": [
+        "away from"
+      ],
+      "example_sentence": "The ancient temple stands beside a river that has flowed through the valley for thousands of years."
+    },
+    {
+      "word": "besides",
+      "pronunciation": "/bɪˈsaɪdz/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngoài ra, hơn nữa (thêm lý do); bên cạnh (ít dùng)",
+      "definition_en": "in addition to; moreover; furthermore",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "furthermore",
+        "in addition"
+      ],
+      "antonyms": [],
+      "example_sentence": "The project requires significant funding and technical expertise; besides, it demands commitment from all team members."
+    },
+    {
+      "word": "economic",
+      "pronunciation": "/ˌekəˈnɑːmɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến kinh tế; tiết kiệm, rẻ tiền",
+      "definition_en": "relating to the production and consumption of goods and services; cost-effective",
+      "level": "B1",
+      "synonyms": [
+        "financial",
+        "commercial",
+        "affordable"
+      ],
+      "antonyms": [
+        "expensive",
+        "wasteful"
+      ],
+      "example_sentence": "The government implemented economic reforms to reduce inflation and stimulate job creation."
+    },
+    {
+      "word": "economical",
+      "pronunciation": "/ˌekəˈnɑːmɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tiết kiệm, không lãng phí; hiệu quả về chi phí",
+      "definition_en": "using money, time, or resources carefully and without waste; efficient",
+      "level": "B2",
+      "synonyms": [
+        "thrifty",
+        "efficient",
+        "cost-effective"
+      ],
+      "antonyms": [
+        "wasteful",
+        "extravagant"
+      ],
+      "example_sentence": "LED lighting is more economical than traditional incandescent bulbs because it consumes less electricity."
+    },
+    {
+      "word": "historic",
+      "pronunciation": "/hɪˈstɔːrɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tầm quan trọng lịch sử; nổi tiếng trong lịch sử",
+      "definition_en": "important or famous in history; having great historical significance",
+      "level": "B1",
+      "synonyms": [
+        "momentous",
+        "significant",
+        "important"
+      ],
+      "antonyms": [
+        "insignificant",
+        "trivial"
+      ],
+      "example_sentence": "The signing of the treaty was a historic moment that changed the course of international relations."
+    },
+    {
+      "word": "historical",
+      "pronunciation": "/hɪˈstɔːrɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến lịch sử; thuộc về quá khứ",
+      "definition_en": "relating to history or past events; based on or concerned with history",
+      "level": "B1",
+      "synonyms": [
+        "past",
+        "ancient",
+        "bygone"
+      ],
+      "antonyms": [
+        "modern",
+        "contemporary"
+      ],
+      "example_sentence": "Historical records show that the city was founded in the 12th century by merchants seeking trade routes."
+    },
+    {
+      "word": "sensible",
+      "pronunciation": "/ˈsensəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hợp lý, sáng suốt; có ý thức, nhận thức được",
+      "definition_en": "reasonable and practical; aware of or conscious of something",
+      "level": "B1",
+      "synonyms": [
+        "reasonable",
+        "practical",
+        "wise"
+      ],
+      "antonyms": [
+        "foolish",
+        "unreasonable"
+      ],
+      "example_sentence": "It is sensible to invest in renewable energy sources given the long-term environmental and economic benefits."
+    },
+    {
+      "word": "sensitive",
+      "pronunciation": "/ˈsensətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhạy cảm, dễ bị tổn thương; tinh tế, cẩn trọng",
+      "definition_en": "easily affected or hurt; responsive to slight changes; requiring careful handling",
+      "level": "B1",
+      "synonyms": [
+        "delicate",
+        "tender",
+        "responsive"
+      ],
+      "antonyms": [
+        "insensitive",
+        "tough"
+      ],
+      "example_sentence": "The researcher must handle sensitive data carefully to protect participants' privacy and maintain ethical standards."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government decided to _____ the minimum wage to help workers cope with rising living costs.",
+      "option_a": "raise",
+      "option_b": "rise",
+      "option_c": "arise",
+      "option_d": "arise from",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần động từ 'raise' (nâng lên, có tân ngữ) vì chủ ngữ 'government' chủ động tăng mức lương. 'Rise' là động từ không có tân ngữ (tự nâng lên), không phù hợp. 'Arise' có nghĩa khác (phát sinh)."
+    },
+    {
+      "question_text": "Temperatures _____ significantly during the summer months in this region.",
+      "option_a": "raise",
+      "option_b": "rise",
+      "option_c": "lift",
+      "option_d": "increase up",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Rise' là động từ không có tân ngữ, phù hợp khi nhiệt độ tự tăng lên. 'Raise' cần tân ngữ (ai/cái gì được nâng lên), không thích hợp ở đây."
+    },
+    {
+      "question_text": "The new policy had a significant _____ on student enrollment and academic performance.",
+      "option_a": "affect",
+      "option_b": "effect",
+      "option_c": "influence",
+      "option_d": "impact",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần danh từ 'effect' (kết quả, hậu quả) sau 'had a significant'. 'Affect' là động từ (ảnh hưởng đến), không thích hợp trong cấu trúc này. 'Influence' và 'impact' cũng đúng nhưng 'effect' là từ được dùng phổ biến nhất."
+    },
+    {
+      "question_text": "Climate change will _____ agricultural production in developing countries over the next decade.",
+      "option_a": "effect",
+      "option_b": "affect",
+      "option_c": "impact on",
+      "option_d": "influence on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Affect' là động từ (ảnh hưởng đến) phù hợp với cấu trúc 'will + động từ'. 'Effect' là danh từ, không thể dùng sau 'will'. 'Impact on' và 'influence on' cũng đúng nhưng 'affect' là lựa chọn tự nhiên nhất."
+    },
+    {
+      "question_text": "Many species have _____ to urban environments by changing their feeding behaviors.",
+      "option_a": "adopted",
+      "option_b": "adapted",
+      "option_c": "adjusted to",
+      "option_d": "modified",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Adapted' (thích nghi) là từ chính xác để chỉ sự điều chỉnh của loài động vật. 'Adopted' (nhận nuôi, áp dụng) không phù hợp với ngữ cảnh sinh học. 'Adjusted to' và 'modified' cũng có thể dùng nhưng 'adapted' là từ chuyên ngành phù hợp nhất."
+    },
+    {
+      "question_text": "The company decided to _____ sustainable practices to reduce its environmental footprint.",
+      "option_a": "adapt",
+      "option_b": "adopt",
+      "option_c": "adapt to",
+      "option_d": "adjust",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Adopt' (chấp nhận, áp dụng) là động từ chính xác khi nói về việc áp dụng chính sách hoặc phương pháp mới. 'Adapt' (thích nghi) thường dùng khi điều chỉnh để phù hợp với điều kiện, không phù hợp ở đây."
+    },
+    {
+      "question_text": "We cannot _____ that all students have reliable internet access without conducting a proper survey.",
+      "option_a": "presume",
+      "option_b": "assume",
+      "option_c": "suppose",
+      "option_d": "believe",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Assume' (giả định mà không có bằng chứng) là từ phù hợp nhất trong ngữ cảnh này, nhấn mạnh việc không nên đưa ra kết luận vội vàng. 'Presume' cần bằng chứng hợp lý hơn. Cả hai đều có thể dùng nhưng 'assume' tự nhiên hơn."
+    },
+    {
+      "question_text": "After the lunch break, the conference will _____ with presentations on renewable energy.",
+      "option_a": "presume",
+      "option_b": "resume",
+      "option_c": "consume",
+      "option_d": "continue",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Resume' (tiếp tục sau khi dừng) là từ chính xác khi nói về việc bắt đầu lại một sự kiện sau giãn cách. 'Presume' (giả định) và 'consume' (tiêu thụ) không phù hợp. 'Continue' cũng đúng nhưng 'resume' chính xác hơn."
+    },
+    {
+      "question_text": "Schools must _____ that all students receive equal access to quality educational resources.",
+      "option_a": "insure",
+      "option_b": "ensure",
+      "option_c": "assure",
+      "option_d": "secure",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Ensure' (đảm bảo rằng cái gì sẽ xảy ra) là từ chính xác. 'Insure' (mua bảo hiểm) không phù hợp. 'Assure' (cam đoan, yên tâm ai) dùng với người, không phù hợp ở đây."
+    },
+    {
+      "question_text": "The ancient temple stands _____ a river that has flowed through the valley for centuries.",
+      "option_a": "besides",
+      "option_b": "beside",
+      "option_c": "next to",
+      "option_d": "near",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Beside' (bên cạnh, vị trí không gian) là từ chính xác. 'Besides' (ngoài ra, hơn nữa) là liên từ/trạng từ chỉ thêm thông tin, không chỉ vị trí. Hai từ này dễ nhầm lẫn."
+    },
+    {
+      "question_text": "The project requires funding and technical expertise; _____, it demands commitment from all team members.",
+      "option_a": "beside",
+      "option_b": "besides",
+      "option_c": "moreover",
+      "option_d": "furthermore",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Besides' (ngoài ra, hơn nữa) là liên từ chỉ thêm thông tin, phù hợp với ngữ cảnh. 'Beside' (bên cạnh) là giới từ chỉ vị trí, không thích hợp. 'Moreover' và 'furthermore' cũng đúng nhưng 'besides' tự nhiên hơn."
+    },
+    {
+      "question_text": "Which word best completes the sentence? 'The government implemented _____ reforms to reduce inflation and stimulate job creation.'",
+      "option_a": "economical",
+      "option_b": "economic",
+      "option_c": "economy",
+      "option_d": "economically",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Economic' (liên quan đến kinh tế) là tính từ phù hợp để mô tả 'reforms'. 'Economical' (tiết kiệm, không lãng phí) dùng để chỉ cách sử dụng tài nguyên hiệu quả, không phù hợp ở đây."
+    },
+    {
+      "question_text": "LED lighting is more _____ than traditional bulbs because it consumes less electricity.",
+      "option_a": "economic",
+      "option_b": "economical",
+      "option_c": "economy",
+      "option_d": "economically",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Economical' (tiết kiệm, hiệu quả về chi phí) là tính từ chính xác khi so sánh hiệu quả sử dụng năng lượng. 'Economic' (liên quan đến kinh tế) không phù hợp trong ngữ cảnh này."
+    }
+  ]
+}

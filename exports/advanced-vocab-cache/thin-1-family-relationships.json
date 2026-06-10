@@ -1,0 +1,405 @@
+{
+  "words": [
+    {
+      "word": "kinship",
+      "pronunciation": "/ˈkɪnʃɪp/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mối quan hệ huyết thống hoặc họ hàng; cảm giác gần gũi với ai đó dựa trên những điểm chung",
+      "definition_en": "The state of being related by blood or family; a feeling of being connected to someone",
+      "level": "B2",
+      "synonyms": [
+        "family ties",
+        "blood relation"
+      ],
+      "antonyms": [
+        "estrangement",
+        "alienation"
+      ],
+      "example_sentence": "The sense of kinship among extended family members strengthened during the holiday gathering."
+    },
+    {
+      "word": "matrimony",
+      "pronunciation": "/ˈmætrɪmoʊni/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hôn nhân; trạng thái hoặc lễ kết hôn (dùng trong ngữ cảnh trang trọng hoặc pháp lý)",
+      "definition_en": "The state of being married; marriage as a formal or legal union",
+      "level": "B2",
+      "synonyms": [
+        "marriage",
+        "wedlock"
+      ],
+      "antonyms": [
+        "bachelorhood",
+        "spinsterhood"
+      ],
+      "example_sentence": "After twenty years of matrimony, the couple still maintained a strong emotional connection."
+    },
+    {
+      "word": "paternal",
+      "pronunciation": "/pəˈtɜːrnəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến cha hoặc vai trò của cha; có tính chất bảo vệ, chăm sóc như cha",
+      "definition_en": "Relating to a father or fatherhood; showing protective or caring qualities associated with a father",
+      "level": "B2",
+      "synonyms": [
+        "fatherly",
+        "paternal instinct"
+      ],
+      "antonyms": [
+        "maternal"
+      ],
+      "example_sentence": "His paternal grandfather played a significant role in shaping his values and character."
+    },
+    {
+      "word": "maternal",
+      "pronunciation": "/məˈtɜːrnəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến mẹ hoặc vai trò của mẹ; có tính chất yêu thương, chăm sóc như mẹ",
+      "definition_en": "Relating to a mother or motherhood; showing caring or protective qualities associated with a mother",
+      "level": "B2",
+      "synonyms": [
+        "motherly",
+        "maternal instinct"
+      ],
+      "antonyms": [
+        "paternal"
+      ],
+      "example_sentence": "The maternal instinct drove her to prioritize her children's well-being above all else."
+    },
+    {
+      "word": "offspring",
+      "pronunciation": "/ˈɔːfsprɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Con cái; hậu duệ (dùng cho cả người và động vật)",
+      "definition_en": "A person's child or children; the young of an animal or plant",
+      "level": "B2",
+      "synonyms": [
+        "children",
+        "progeny"
+      ],
+      "antonyms": [
+        "parent",
+        "ancestor"
+      ],
+      "example_sentence": "The research examined how parents' educational background influences their offspring's academic performance."
+    },
+    {
+      "word": "conjugal",
+      "pronunciation": "/ˈkɒndʒʊɡəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến hôn nhân hoặc mối quan hệ giữa vợ chồng",
+      "definition_en": "Relating to marriage or the relationship between husband and wife",
+      "level": "B2",
+      "synonyms": [
+        "marital",
+        "matrimonial"
+      ],
+      "antonyms": [
+        "single",
+        "unmarried"
+      ],
+      "example_sentence": "Conjugal rights and responsibilities are clearly defined in family law."
+    },
+    {
+      "word": "kinfolk",
+      "pronunciation": "/ˈkɪnfoʊk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Những người họ hàng; các thành viên của gia đình mở rộng",
+      "definition_en": "One's relatives or family members, especially distant ones",
+      "level": "B2",
+      "synonyms": [
+        "relatives",
+        "kin"
+      ],
+      "antonyms": [
+        "strangers"
+      ],
+      "example_sentence": "During the reunion, all the kinfolk gathered to celebrate their shared heritage."
+    },
+    {
+      "word": "lineage",
+      "pronunciation": "/ˈlɪniɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Dòng dõi; hệ thống các tổ tiên hoặc hậu duệ; sự kế thừa gia đình",
+      "definition_en": "The direct descent from an ancestor; family ancestry or genealogy",
+      "level": "B2",
+      "synonyms": [
+        "ancestry",
+        "descent",
+        "genealogy"
+      ],
+      "antonyms": [
+        "unrelated"
+      ],
+      "example_sentence": "The family's lineage can be traced back to the 18th century through detailed genealogical records."
+    },
+    {
+      "word": "in-law",
+      "pronunciation": "/ˈɪn lɔː/",
+      "part_of_speech": "noun",
+      "definition_vi": "Người họ hàng bằng hôn nhân (như mẹ chồng, em dâu, v.v.)",
+      "definition_en": "A relative by marriage, such as a mother-in-law or sister-in-law",
+      "level": "C1",
+      "synonyms": [
+        "relative by marriage"
+      ],
+      "antonyms": [
+        "blood relative"
+      ],
+      "example_sentence": "Managing relationships with in-laws requires patience and clear communication."
+    },
+    {
+      "word": "domestic",
+      "pronunciation": "/dəˈmɛstɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến gia đình hoặc nhà cửa; nội bộ (đối với quốc gia)",
+      "definition_en": "Relating to the home, family, or household; internal to a country",
+      "level": "C1",
+      "synonyms": [
+        "household",
+        "family"
+      ],
+      "antonyms": [
+        "foreign",
+        "international"
+      ],
+      "example_sentence": "Domestic violence is a serious issue that affects families across all social classes."
+    },
+    {
+      "word": "cohabitation",
+      "pronunciation": "/koʊˌhæbɪˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sống chung (của hai người, đặc biệt là vợ chồng hoặc bạn tình chưa kết hôn)",
+      "definition_en": "Living together as a couple without being married",
+      "level": "B2",
+      "synonyms": [
+        "living together",
+        "cohabiting"
+      ],
+      "antonyms": [
+        "separation",
+        "living apart"
+      ],
+      "example_sentence": "Cohabitation before marriage has become increasingly common in modern societies."
+    },
+    {
+      "word": "polygamy",
+      "pronunciation": "/pəˈlɪɡəmi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng có nhiều hơn một vợ hoặc chồng cùng một lúc",
+      "definition_en": "The practice of being married to more than one person at the same time",
+      "level": "B2",
+      "synonyms": [
+        "bigamy",
+        "polygyny"
+      ],
+      "antonyms": [
+        "monogamy"
+      ],
+      "example_sentence": "Polygamy is illegal in most Western countries but remains practiced in some cultures."
+    },
+    {
+      "word": "monogamy",
+      "pronunciation": "/məˈnɑːɡəmi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng chỉ có một vợ hoặc chồng; mối quan hệ độc quyền với một người",
+      "definition_en": "The practice of being married to or having a relationship with only one person at a time",
+      "level": "B2",
+      "synonyms": [
+        "exclusive relationship"
+      ],
+      "antonyms": [
+        "polygamy",
+        "infidelity"
+      ],
+      "example_sentence": "Monogamy is the predominant form of marriage in most modern societies."
+    },
+    {
+      "word": "custody",
+      "pronunciation": "/ˈkʌstədi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quyền nuôi dạy và chăm sóc con cái (thường sau ly hôn); sự giám sát pháp lý",
+      "definition_en": "The legal right and responsibility to care for a child; guardianship",
+      "level": "B2",
+      "synonyms": [
+        "guardianship",
+        "care"
+      ],
+      "antonyms": [
+        "abandonment"
+      ],
+      "example_sentence": "The court awarded joint custody to both parents to ensure equal involvement in their children's lives."
+    },
+    {
+      "word": "alimony",
+      "pronunciation": "/ˈæləmoʊni/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tiền cấp dưỡng mà một người phải trả cho vợ/chồng sau ly hôn",
+      "definition_en": "Financial support paid by one spouse to another after separation or divorce",
+      "level": "B2",
+      "synonyms": [
+        "spousal support",
+        "maintenance"
+      ],
+      "antonyms": [],
+      "example_sentence": "The divorce settlement included provisions for alimony to be paid for five years."
+    },
+    {
+      "word": "blended family",
+      "pronunciation": "/ˈblɛndɪd ˈfæməli/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Gia đình được tạo thành từ những người từ các gia đình khác nhau, thường do tái hôn",
+      "definition_en": "A family formed when two people with children from previous relationships marry or live together",
+      "level": "B2",
+      "synonyms": [
+        "stepfamily",
+        "reconstituted family"
+      ],
+      "antonyms": [
+        "nuclear family"
+      ],
+      "example_sentence": "Blended families face unique challenges in establishing new routines and family dynamics."
+    },
+    {
+      "word": "nuclear family",
+      "pronunciation": "/ˈnuːkliər ˈfæməli/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Gia đình nhỏ gồm cha, mẹ và con cái",
+      "definition_en": "A family unit consisting of parents and their children living together",
+      "level": "B2",
+      "synonyms": [
+        "immediate family"
+      ],
+      "antonyms": [
+        "extended family"
+      ],
+      "example_sentence": "The nuclear family structure has been the dominant model in Western societies for decades."
+    },
+    {
+      "word": "extended family",
+      "pronunciation": "/ɪkˈstɛndɪd ˈfæməli/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Gia đình mở rộng bao gồm cha mẹ, con cái, và những người họ hàng khác như bà, ông, chú, cô",
+      "definition_en": "A family group that includes relatives beyond the nuclear family, such as grandparents, aunts, and uncles",
+      "level": "B2",
+      "synonyms": [
+        "kinship group"
+      ],
+      "antonyms": [
+        "nuclear family"
+      ],
+      "example_sentence": "In many Asian cultures, the extended family plays a crucial role in child-rearing and decision-making."
+    },
+    {
+      "word": "parental authority",
+      "pronunciation": "/pəˈrɛntəl ɔːˈθɒrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quyền lực và trách nhiệm của cha mẹ trong việc nuôi dạy và quản lý con cái",
+      "definition_en": "The legal and moral power of parents to make decisions and set rules for their children",
+      "level": "B2",
+      "synonyms": [
+        "parental control",
+        "parental responsibility"
+      ],
+      "antonyms": [
+        "child autonomy"
+      ],
+      "example_sentence": "Parental authority must be balanced with respect for children's growing independence and individuality."
+    },
+    {
+      "word": "spousal",
+      "pronunciation": "/ˈspaʊzəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Liên quan đến vợ hoặc chồng; thuộc về mối quan hệ vợ chồng",
+      "definition_en": "Relating to a husband or wife; concerning the relationship between spouses",
+      "level": "B2",
+      "synonyms": [
+        "marital",
+        "conjugal"
+      ],
+      "antonyms": [
+        "single"
+      ],
+      "example_sentence": "Spousal benefits include health insurance coverage and tax advantages in many countries."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the term 'kinship'?",
+      "option_a": "A legal document proving family relationships",
+      "option_b": "The state of being related by blood or family; a feeling of connection based on shared characteristics",
+      "option_c": "The process of adopting children from other families",
+      "option_d": "A formal ceremony celebrating family unity",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Kinship có nghĩa là mối quan hệ huyết thống hoặc cảm giác gần gũi dựa trên những điểm chung. Các đáp án khác đều sai: A là tài liệu pháp lý, C là quá trình nhận nuôi, D là lễ kỷ niệm."
+    },
+    {
+      "question_text": "In the context of family law, what does 'conjugal rights' primarily refer to?",
+      "option_a": "The right to inherit property from deceased relatives",
+      "option_b": "Rights and responsibilities between husband and wife in a marriage",
+      "option_c": "The legal authority to make decisions for minor children",
+      "option_d": "The obligation to provide financial support to extended family members",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Conjugal rights liên quan đến quyền và trách nhiệm giữa vợ chồng trong hôn nhân. A là quyền thừa kế, C là quyền giám hộ trẻ em, D là hỗ trợ tài chính cho gia đình mở rộng."
+    },
+    {
+      "question_text": "Which term best describes a family formed when two people with children from previous relationships marry?",
+      "option_a": "Nuclear family",
+      "option_b": "Extended family",
+      "option_c": "Blended family",
+      "option_d": "Kinship group",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Blended family là gia đình được tạo thành từ những người từ các gia đình khác nhau do tái hôn. Nuclear family chỉ gồm cha, mẹ và con cái; extended family bao gồm họ hàng xa; kinship group là nhóm người có quan hệ huyết thống."
+    },
+    {
+      "question_text": "The concept of 'lineage' is most closely associated with which of the following?",
+      "option_a": "The legal process of marriage registration",
+      "option_b": "Direct descent from ancestors; family ancestry and genealogy",
+      "option_c": "The division of property among family members",
+      "option_d": "The emotional bonds between parents and children",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Lineage có nghĩa là dòng dõi hoặc hệ thống các tổ tiên. A là đăng ký hôn nhân, C là chia tài sản, D là mối liên kết cảm xúc giữa cha mẹ và con cái."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'alimony'?",
+      "option_a": "Child support",
+      "option_b": "Spousal support",
+      "option_c": "Inheritance tax",
+      "option_d": "Custody agreement",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Alimony (tiền cấp dưỡng vợ/chồng) có từ đồng nghĩa là spousal support. Child support là hỗ trợ con cái, inheritance tax là thuế thừa kế, custody agreement là thỏa thuận giám hộ."
+    },
+    {
+      "question_text": "In modern societies, 'cohabitation' typically refers to which situation?",
+      "option_a": "Living in the same house with extended family members",
+      "option_b": "Living together as a couple without being married",
+      "option_c": "Sharing accommodation with roommates for financial reasons",
+      "option_d": "Temporary residence during a family crisis",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Cohabitation có nghĩa là sống chung của hai người (đặc biệt là vợ chồng hoặc bạn tình) chưa kết hôn. A là sống với gia đình mở rộng, C là chia sẻ chỗ ở với bạn cùng phòng, D là cư trú tạm thời."
+    },
+    {
+      "question_text": "Which term best describes the legal right and responsibility to care for a child?",
+      "option_a": "Parental authority",
+      "option_b": "Custody",
+      "option_c": "Guardianship",
+      "option_d": "All of the above",
+      "correct_answer": "D",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cả ba thuật ngữ (parental authority, custody, guardianship) đều liên quan đến quyền và trách nhiệm chăm sóc trẻ em, nhưng custody là thuật ngữ pháp lý chính thức nhất. Tuy nhiên, tất cả ba đều có thể mô tả khái niệm này trong các bối cảnh khác nhau."
+    }
+  ]
+}

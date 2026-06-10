@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "phase out",
+      "pronunciation": "/feɪz aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dần dần loại bỏ, ngừng sử dụng từng bước (sản phẩm, dịch vụ, công nghệ cũ)",
+      "definition_en": "to gradually discontinue or remove something over time",
+      "level": "B2",
+      "synonyms": [
+        "discontinue",
+        "eliminate gradually",
+        "wind down"
+      ],
+      "antonyms": [
+        "introduce",
+        "launch"
+      ],
+      "example_sentence": "The government plans to phase out single-use plastics by 2030 to reduce environmental pollution."
+    },
+    {
+      "word": "scale up",
+      "pronunciation": "/skeɪl ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở rộng quy mô, tăng sản lượng hoặc phạm vi hoạt động",
+      "definition_en": "to increase the size, scope, or production of something",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "enlarge",
+        "increase"
+      ],
+      "antonyms": [
+        "scale down",
+        "reduce"
+      ],
+      "example_sentence": "The startup successfully scaled up its operations after securing investment from venture capitalists."
+    },
+    {
+      "word": "back up",
+      "pronunciation": "/bæk ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hỗ trợ, ủng hộ; sao lưu dữ liệu; lùi lại",
+      "definition_en": "to support someone; to make a copy of data; to move backward",
+      "level": "C1",
+      "synonyms": [
+        "support",
+        "assist",
+        "corroborate"
+      ],
+      "antonyms": [
+        "abandon",
+        "betray"
+      ],
+      "example_sentence": "The research team backed up their findings with extensive data and peer-reviewed studies."
+    },
+    {
+      "word": "roll out",
+      "pronunciation": "/roʊl aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "triển khai, giới thiệu (sản phẩm, dịch vụ mới) trên thị trường",
+      "definition_en": "to introduce or launch a new product or service to the public",
+      "level": "B2",
+      "synonyms": [
+        "launch",
+        "introduce",
+        "deploy"
+      ],
+      "antonyms": [
+        "withdraw",
+        "recall"
+      ],
+      "example_sentence": "Apple will roll out its latest smartphone model in major markets across Asia next quarter."
+    },
+    {
+      "word": "opt for",
+      "pronunciation": "/ɑpt fɔr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lựa chọn, quyết định chọn (thay vì lựa chọn khác)",
+      "definition_en": "to choose or decide on something as a preference",
+      "level": "B2",
+      "synonyms": [
+        "choose",
+        "select",
+        "prefer"
+      ],
+      "antonyms": [
+        "reject",
+        "decline"
+      ],
+      "example_sentence": "Many consumers are opting for sustainable products even if they cost more than conventional alternatives."
+    },
+    {
+      "word": "weed out",
+      "pronunciation": "/wid aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "loại bỏ, sàng lọc (những cái không tốt, không phù hợp)",
+      "definition_en": "to remove or eliminate unwanted or unsuitable things or people",
+      "level": "B2",
+      "synonyms": [
+        "eliminate",
+        "filter out",
+        "remove"
+      ],
+      "antonyms": [
+        "include",
+        "retain"
+      ],
+      "example_sentence": "The hiring committee weeded out candidates who lacked the required qualifications and experience."
+    },
+    {
+      "word": "tap into",
+      "pronunciation": "/tæp ˈɪntu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khai thác, tận dụng (nguồn tài nguyên, thị trường, kiến thức)",
+      "definition_en": "to access or make use of a resource, market, or knowledge",
+      "level": "B2",
+      "synonyms": [
+        "exploit",
+        "utilize",
+        "leverage"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Tech companies are tapping into the growing demand for artificial intelligence solutions in healthcare."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "/stem frʌm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bắt nguồn từ, có gốc rễ từ (nguyên nhân, nguồn gốc)",
+      "definition_en": "to originate or result from a particular cause or source",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from",
+        "result from"
+      ],
+      "antonyms": [
+        "cause",
+        "produce"
+      ],
+      "example_sentence": "Many social problems stem from inadequate access to quality education and economic opportunities."
+    },
+    {
+      "word": "ramp up",
+      "pronunciation": "/ræmp ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tăng tốc, tăng cường, nâng cao (sản lượng, nỗ lực, hoạt động)",
+      "definition_en": "to increase or intensify something significantly",
+      "level": "B2",
+      "synonyms": [
+        "increase",
+        "intensify",
+        "boost"
+      ],
+      "antonyms": [
+        "decrease",
+        "reduce"
+      ],
+      "example_sentence": "The manufacturing plant ramped up production to meet the surge in customer orders during the holiday season."
+    },
+    {
+      "word": "zero in on",
+      "pronunciation": "/ˈzɪroʊ ɪn ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tập trung vào, hướng sự chú ý đến (vấn đề, mục tiêu cụ thể)",
+      "definition_en": "to focus attention on a specific target or issue",
+      "level": "B2",
+      "synonyms": [
+        "focus on",
+        "concentrate on",
+        "target"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Researchers are zeroing in on the genetic factors that contribute to early-onset Alzheimer's disease."
+    },
+    {
+      "word": "brush aside",
+      "pronunciation": "/brʌʃ əˈsaɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phớt lờ, bỏ qua, không quan tâm đến (lời chỉ trích, lo lắng)",
+      "definition_en": "to dismiss or ignore something without serious consideration",
+      "level": "B2",
+      "synonyms": [
+        "dismiss",
+        "disregard",
+        "overlook"
+      ],
+      "antonyms": [
+        "address",
+        "acknowledge"
+      ],
+      "example_sentence": "The politician brushed aside concerns about corruption, claiming they were merely political attacks."
+    },
+    {
+      "word": "draw on",
+      "pronunciation": "/drɔ ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sử dụng, tận dụng (kinh nghiệm, kiến thức, tài nguyên)",
+      "definition_en": "to use or utilize knowledge, experience, or resources",
+      "level": "B2",
+      "synonyms": [
+        "utilize",
+        "employ",
+        "leverage"
+      ],
+      "antonyms": [
+        "ignore",
+        "neglect"
+      ],
+      "example_sentence": "The author drew on her personal experiences to create a compelling and authentic narrative in her novel."
+    },
+    {
+      "word": "fall through",
+      "pronunciation": "/fɔl θru/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thất bại, không thành công (kế hoạch, thỏa thuận, dự án)",
+      "definition_en": "to fail to happen or be completed as planned",
+      "level": "B2",
+      "synonyms": [
+        "fail",
+        "collapse",
+        "break down"
+      ],
+      "antonyms": [
+        "succeed",
+        "materialize"
+      ],
+      "example_sentence": "The merger between the two companies fell through when shareholders rejected the proposed deal."
+    },
+    {
+      "word": "catch on",
+      "pronunciation": "/kætʃ ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trở nên phổ biến, được chấp nhận rộng rãi; hiểu được",
+      "definition_en": "to become popular or widely accepted; to understand",
+      "level": "C1",
+      "synonyms": [
+        "become popular",
+        "spread",
+        "understand"
+      ],
+      "antonyms": [
+        "fade",
+        "disappear"
+      ],
+      "example_sentence": "The new social media platform caught on quickly among teenagers, attracting millions of users worldwide."
+    },
+    {
+      "word": "clamp down on",
+      "pronunciation": "/klæmp daʊn ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đàn áp, kiểm soát chặt chẽ, tấn công (tội phạm, hành vi vi phạm)",
+      "definition_en": "to take strict measures to suppress or control something illegal or undesirable",
+      "level": "B2",
+      "synonyms": [
+        "suppress",
+        "crack down on",
+        "control"
+      ],
+      "antonyms": [
+        "tolerate",
+        "permit"
+      ],
+      "example_sentence": "Authorities are clamping down on illegal drug trafficking in major cities through increased police patrols."
+    },
+    {
+      "word": "ease off",
+      "pronunciation": "/iz ɔf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giảm bớt, làm nhẹ đi, giảm cường độ (áp lực, tốc độ, hoạt động)",
+      "definition_en": "to reduce intensity, pressure, or activity gradually",
+      "level": "B2",
+      "synonyms": [
+        "reduce",
+        "decrease",
+        "relax"
+      ],
+      "antonyms": [
+        "intensify",
+        "increase"
+      ],
+      "example_sentence": "The central bank decided to ease off interest rate hikes to prevent economic recession."
+    },
+    {
+      "word": "veer towards",
+      "pronunciation": "/vɪr ˈtɔrdz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quay hướng về, thay đổi hướng về (ý kiến, xu hướng, chính sách)",
+      "definition_en": "to change direction or tendency toward something",
+      "level": "B2",
+      "synonyms": [
+        "shift toward",
+        "turn toward",
+        "lean toward"
+      ],
+      "antonyms": [
+        "veer away from",
+        "diverge"
+      ],
+      "example_sentence": "Public opinion is veering towards stricter environmental regulations as climate change concerns intensify."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government announced plans to _____ fossil fuels and transition to renewable energy sources within the next decade.",
+      "option_a": "phase out",
+      "option_b": "scale up",
+      "option_c": "roll out",
+      "option_d": "ramp up",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Phase out = dần dần loại bỏ. Đây là ngữ cảnh về việc từng bước ngừng sử dụng nhiên liệu hóa thạch. Scale up (mở rộng quy mô), roll out (giới thiệu), ramp up (tăng cường) không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb best completes this sentence? 'The startup _____ its workforce by 300% after securing Series B funding.'",
+      "option_a": "tapped into",
+      "option_b": "scaled up",
+      "option_c": "weeded out",
+      "option_d": "eased off",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Scale up = mở rộng quy mô. Tăng 300% lực lượng lao động là mở rộng quy mô hoạt động. Tapped into (khai thác), weeded out (loại bỏ), eased off (giảm bớt) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The research team _____ extensive data and historical records to support their controversial hypothesis about climate patterns.",
+      "option_a": "drew on",
+      "option_b": "brushed aside",
+      "option_c": "stemmed from",
+      "option_d": "zeroed in on",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Draw on = sử dụng, tận dụng (kinh nghiệm, dữ liệu). Brushed aside (phớt lờ), stemmed from (bắt nguồn từ), zeroed in on (tập trung vào) không phù hợp."
+    },
+    {
+      "question_text": "What is the best synonym for 'stem from' in this context: 'Many health issues _____ poor nutrition and lack of exercise.'?",
+      "option_a": "result from",
+      "option_b": "lead to",
+      "option_c": "contribute to",
+      "option_d": "depend on",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Stem from = bắt nguồn từ, có gốc rễ từ. Result from (bắt nguồn từ) là đồng nghĩa chính xác. Lead to (dẫn đến), contribute to (góp phần), depend on (phụ thuộc vào) có nghĩa khác."
+    },
+    {
+      "question_text": "The company decided to _____ its marketing campaign to reach younger demographics in the competitive digital market.",
+      "option_a": "clamp down on",
+      "option_b": "ramp up",
+      "option_c": "fall through",
+      "option_d": "ease off",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Ramp up = tăng cường, nâng cao. Tăng cường chiến dịch marketing là ramp up. Clamp down on (đàn áp), fall through (thất bại), ease off (giảm bớt) không phù hợp."
+    },
+    {
+      "question_text": "Critics _____ the government's environmental concerns, arguing that economic growth should be the priority.",
+      "option_a": "tapped into",
+      "option_b": "backed up",
+      "option_c": "brushed aside",
+      "option_d": "caught on",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Brush aside = phớt lờ, bỏ qua không quan tâm. Tapped into (khai thác), backed up (ủng hộ), caught on (trở nên phổ biến) không phù hợp ngữ cảnh chỉ trích."
+    },
+    {
+      "question_text": "The merger agreement _____ when the regulatory authorities raised unexpected legal objections to the acquisition.",
+      "option_a": "caught on",
+      "option_b": "fell through",
+      "option_c": "veered towards",
+      "option_d": "zeroed in on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Fall through = thất bại, không thành công. Thỏa thuận sáp nhập không thành công vì phản đối của cơ quan quản lý. Caught on (phổ biến), veered towards (quay hướng), zeroed in on (tập trung) không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb is most appropriate? 'The new streaming service _____ rapidly in developing countries where internet access has recently improved.'",
+      "option_a": "caught on",
+      "option_b": "phased out",
+      "option_c": "clamped down on",
+      "option_d": "stemmed from",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Catch on = trở nên phổ biến, được chấp nhận rộng rãi. Dịch vụ streaming mới trở nên phổ biến nhanh chóng. Phased out (loại bỏ), clamped down on (đàn áp), stemmed from (bắt nguồn) không phù hợp."
+    }
+  ]
+}

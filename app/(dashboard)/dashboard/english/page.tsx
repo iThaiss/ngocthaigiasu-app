@@ -274,8 +274,8 @@ export default function EnglishDashboard() {
         <div className="space-y-4">
           <h2 className="text-lg font-bold tracking-tight">AI Đánh giá</h2>
           
-          <Link href="/english-feedback">
-            <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-rose-500/20 via-pink-500/5 to-background hover:border-rose-500/30 hover:shadow-lg transition-all duration-300 cursor-pointer h-full group">
+          <Link href="/english-feedback" className="block">
+            <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-rose-500/20 via-pink-500/5 to-background hover:border-rose-500/30 hover:shadow-lg transition-all duration-300 cursor-pointer group">
               <CardHeader className="pb-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-rose-500 to-pink-600 text-white shadow-md">
                   <Sparkles className="h-5 w-5" />
@@ -311,7 +311,7 @@ export default function EnglishDashboard() {
       <div className="space-y-3 pt-6 border-t border-border/40">
         <h2 className="text-lg font-bold tracking-tight">Tiện ích học tập</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link href="/saved-questions">
+          <Link href="/saved-questions" className="block h-full">
             <Card className="hover:shadow-md hover:border-rose-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-rose-500/10 text-rose-500 group-hover:bg-rose-500/20 transition-colors">
@@ -325,7 +325,7 @@ export default function EnglishDashboard() {
             </Card>
           </Link>
 
-          <Link href="/documents">
+          <Link href="/documents" className="block h-full">
             <Card className="hover:shadow-md hover:border-rose-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-rose-500/10 text-rose-500 group-hover:bg-rose-500/20 transition-colors">
@@ -339,7 +339,7 @@ export default function EnglishDashboard() {
             </Card>
           </Link>
 
-          <Link href="/schedule">
+          <Link href="/schedule" className="block h-full">
             <Card className="hover:shadow-md hover:border-rose-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-rose-500/10 text-rose-500 group-hover:bg-rose-500/20 transition-colors">

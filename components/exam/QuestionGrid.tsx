@@ -11,7 +11,7 @@ interface QuestionGridProps {
 
 export default function QuestionGrid({ total, current, answered, onSelect }: QuestionGridProps) {
   return (
-    <div className="grid grid-cols-10 gap-1">
+    <div className="grid grid-cols-5 sm:grid-cols-10 gap-1.5">
       {Array.from({ length: total }, (_, i) => {
         const isActive = i === current
         const isAnswered = answered.has(i)

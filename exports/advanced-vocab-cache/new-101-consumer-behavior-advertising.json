@@ -1,0 +1,714 @@
+{
+  "words": [
+    {
+      "word": "consumer behavior",
+      "pronunciation": "/kənˈsuːmə bɪˈheɪvjə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những hành động, quyết định và thói quen của người mua hàng khi chọn, mua và sử dụng sản phẩm",
+      "definition_en": "the study of individuals, groups, or organizations and the processes they use to select, secure, and dispose of products",
+      "level": "B2",
+      "synonyms": [
+        "purchasing behavior",
+        "buying habits"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding consumer behavior helps companies develop more effective marketing strategies and improve customer satisfaction."
+    },
+    {
+      "word": "impulse buying",
+      "pronunciation": "/ˈɪmpʌls ˈbaɪɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hành động mua sắm bất chợt, không có kế hoạch trước, thường do cảm xúc hoặc kích thích tức thời",
+      "definition_en": "unplanned purchasing decisions made without prior intention, often triggered by emotional or situational factors",
+      "level": "B2",
+      "synonyms": [
+        "spontaneous purchase",
+        "unplanned buying"
+      ],
+      "antonyms": [
+        "planned purchase",
+        "deliberate buying"
+      ],
+      "example_sentence": "Retailers strategically place attractive products near checkout counters to encourage impulse buying among customers."
+    },
+    {
+      "word": "brand loyalty",
+      "pronunciation": "/brænd ˈlɔɪəlti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự gắn bó, trung thành của khách hàng với một thương hiệu cụ thể, sẵn sàng mua lại và giới thiệu cho người khác",
+      "definition_en": "the tendency of consumers to continue purchasing from the same brand and recommend it to others",
+      "level": "B2",
+      "synonyms": [
+        "customer loyalty",
+        "brand affinity"
+      ],
+      "antonyms": [
+        "brand switching",
+        "disloyalty"
+      ],
+      "example_sentence": "Apple has cultivated exceptional brand loyalty by consistently delivering high-quality products and innovative design."
+    },
+    {
+      "word": "target audience",
+      "pronunciation": "/ˈtɑːrɡɪt ˈɔːdiəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm người tiêu dùng cụ thể mà một chiến dịch quảng cáo hoặc sản phẩm hướng tới",
+      "definition_en": "the specific group of consumers that a company aims to reach with its marketing and advertising efforts",
+      "level": "B2",
+      "synonyms": [
+        "target market",
+        "intended audience"
+      ],
+      "antonyms": [],
+      "example_sentence": "The luxury car manufacturer identified young professionals aged 25-40 as their primary target audience."
+    },
+    {
+      "word": "advertising campaign",
+      "pronunciation": "/ˈædvərtaɪzɪŋ kæmˈpeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một loạt các hoạt động quảng cáo được lên kế hoạch và thực hiện để quảng bá sản phẩm hoặc dịch vụ",
+      "definition_en": "a coordinated series of promotional activities designed to achieve specific marketing objectives",
+      "level": "B2",
+      "synonyms": [
+        "marketing campaign",
+        "promotional campaign"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company's latest advertising campaign successfully increased brand awareness by 45% in just three months."
+    },
+    {
+      "word": "persuasive technique",
+      "pronunciation": "/pərˈsweɪsɪv tekˈniːk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp hoặc kỹ thuật được sử dụng để thuyết phục người tiêu dùng mua sản phẩm hoặc dịch vụ",
+      "definition_en": "a method or strategy employed to convince consumers to purchase a product or adopt a particular viewpoint",
+      "level": "B2",
+      "synonyms": [
+        "persuasion strategy",
+        "influence tactic"
+      ],
+      "antonyms": [],
+      "example_sentence": "Advertisers use various persuasive techniques such as emotional appeals, celebrity endorsements, and scarcity messaging."
+    },
+    {
+      "word": "brand positioning",
+      "pronunciation": "/brænd pəˈzɪʃənɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách thức mà một thương hiệu định vị chính mình trong tâm trí của người tiêu dùng so với các đối thủ cạnh tranh",
+      "definition_en": "the strategy of establishing a unique place for a brand in the consumer's mind relative to competitors",
+      "level": "C1",
+      "synonyms": [
+        "market positioning",
+        "brand differentiation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Tesla's brand positioning emphasizes innovation and environmental sustainability, distinguishing it from traditional automakers."
+    },
+    {
+      "word": "consumer psychology",
+      "pronunciation": "/kənˈsuːmə saɪˈkɒlədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lĩnh vực nghiên cứu các yếu tố tâm lý ảnh hưởng đến quyết định mua hàng và hành vi tiêu dùng của con người",
+      "definition_en": "the study of psychological factors that influence consumer decision-making and purchasing behavior",
+      "level": "C1",
+      "synonyms": [
+        "behavioral economics",
+        "consumer motivation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Consumer psychology reveals that color, packaging design, and price anchoring significantly impact purchasing decisions."
+    },
+    {
+      "word": "emotional appeal",
+      "pronunciation": "/ɪˈmoʊʃənəl əˈpiːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp quảng cáo kích thích cảm xúc của người tiêu dùng như tình yêu, sợ hãi, hoặc niềm vui để thúc đẩy mua hàng",
+      "definition_en": "an advertising strategy that appeals to consumers' emotions rather than logic to motivate purchase decisions",
+      "level": "B2",
+      "synonyms": [
+        "emotional marketing",
+        "sentiment appeal"
+      ],
+      "antonyms": [
+        "rational appeal",
+        "logical argument"
+      ],
+      "example_sentence": "The insurance company's advertising campaign used emotional appeals about family protection to resonate with parents."
+    },
+    {
+      "word": "social proof",
+      "pronunciation": "/ˈsoʊʃəl pruːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng mà người tiêu dùng tin tưởng và mua sản phẩm hơn khi thấy nhiều người khác cũng mua hoặc đánh giá tích cực",
+      "definition_en": "the psychological phenomenon where consumers are more likely to purchase when they see others doing the same",
+      "level": "C1",
+      "synonyms": [
+        "peer influence",
+        "herd behavior"
+      ],
+      "antonyms": [],
+      "example_sentence": "E-commerce platforms display customer reviews and ratings as social proof to increase conversion rates."
+    },
+    {
+      "word": "brand awareness",
+      "pronunciation": "/brænd əˈwɛrnəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ mà người tiêu dùng biết đến và nhận ra một thương hiệu cụ thể trên thị trường",
+      "definition_en": "the extent to which consumers recognize and recall a particular brand",
+      "level": "B2",
+      "synonyms": [
+        "brand recognition",
+        "brand recall"
+      ],
+      "antonyms": [
+        "brand obscurity",
+        "anonymity"
+      ],
+      "example_sentence": "The startup invested heavily in social media advertising to increase brand awareness among millennials."
+    },
+    {
+      "word": "scarcity marketing",
+      "pronunciation": "/ˈskɛrsɪti ˈmɑːrkɪtɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kỹ thuật quảng cáo tạo cảm giác hạn chế hoặc khan hiếm sản phẩm để thúc đẩy người tiêu dùng mua nhanh",
+      "definition_en": "a marketing tactic that creates a sense of limited availability to encourage immediate purchase",
+      "level": "C1",
+      "synonyms": [
+        "urgency marketing",
+        "limited-time offer"
+      ],
+      "antonyms": [],
+      "example_sentence": "Online retailers use scarcity marketing by displaying 'Only 3 items left in stock' to accelerate purchasing decisions."
+    },
+    {
+      "word": "price anchoring",
+      "pronunciation": "/praɪs ˈæŋkərɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kỹ thuật định giá mà giá đầu tiên được trình bày ảnh hưởng đến nhận thức của người tiêu dùng về giá trị sản phẩm",
+      "definition_en": "a pricing strategy where the first price presented influences consumers' perception of value",
+      "level": "C1",
+      "synonyms": [
+        "price framing",
+        "reference pricing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Retailers display original prices crossed out next to sale prices to use price anchoring and justify discounts."
+    },
+    {
+      "word": "celebrity endorsement",
+      "pronunciation": "/səˈlɛbrɪti ɪnˈdɔːrsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "việc một người nổi tiếng hoặc có ảnh hưởng quảng cáo và ủng hộ một sản phẩm hoặc thương hiệu",
+      "definition_en": "a marketing strategy where a famous person promotes a product or brand to increase credibility and appeal",
+      "level": "B2",
+      "synonyms": [
+        "influencer marketing",
+        "testimonial"
+      ],
+      "antonyms": [],
+      "example_sentence": "Nike's celebrity endorsement deals with top athletes have significantly boosted the brand's credibility and sales."
+    },
+    {
+      "word": "consumer segmentation",
+      "pronunciation": "/kənˈsuːmə ˌsɛɡmənˈteɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình chia thị trường thành các nhóm nhỏ hơn dựa trên đặc điểm, nhu cầu hoặc hành vi tương tự",
+      "definition_en": "the process of dividing the market into distinct groups based on shared characteristics or behaviors",
+      "level": "C1",
+      "synonyms": [
+        "market segmentation",
+        "audience division"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective consumer segmentation allows companies to tailor their marketing messages to specific demographic groups."
+    },
+    {
+      "word": "brand equity",
+      "pronunciation": "/brænd ˈɛkwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giá trị tích lũy của một thương hiệu dựa trên nhận thức, lòng trung thành và danh tiếng của người tiêu dùng",
+      "definition_en": "the added value a brand brings to a product based on consumer perception and loyalty",
+      "level": "C1",
+      "synonyms": [
+        "brand value",
+        "brand strength"
+      ],
+      "antonyms": [],
+      "example_sentence": "Coca-Cola's strong brand equity allows it to command premium prices despite intense competition."
+    },
+    {
+      "word": "neuromarketing",
+      "pronunciation": "/ˌnjʊroʊˈmɑːrkɪtɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "lĩnh vực kết hợp thần kinh học và tiếp thị để hiểu cách não bộ của người tiêu dùng phản ứng với quảng cáo",
+      "definition_en": "the application of neuroscience to marketing to understand how consumers' brains respond to advertising",
+      "level": "C1",
+      "synonyms": [
+        "brain-based marketing",
+        "cognitive marketing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Neuromarketing studies using eye-tracking and brain imaging reveal which advertising elements capture attention most effectively."
+    },
+    {
+      "word": "conversion rate",
+      "pronunciation": "/kənˈvɜːrʒən reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ phần trăm của những người tiềm năng hoặc khách truy cập thực hiện hành động mong muốn như mua hàng",
+      "definition_en": "the percentage of potential customers who complete a desired action, such as making a purchase",
+      "level": "B2",
+      "synonyms": [
+        "conversion percentage",
+        "success rate"
+      ],
+      "antonyms": [],
+      "example_sentence": "E-commerce companies constantly optimize their websites to improve conversion rates and maximize revenue."
+    },
+    {
+      "word": "customer retention",
+      "pronunciation": "/ˈkʌstəmər rɪˈtenʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một công ty giữ chân khách hàng hiện tại và khuyến khích họ mua lại trong tương lai",
+      "definition_en": "the ability of a company to keep existing customers and encourage repeat purchases",
+      "level": "B2",
+      "synonyms": [
+        "customer loyalty",
+        "repeat business"
+      ],
+      "antonyms": [
+        "customer churn",
+        "attrition"
+      ],
+      "example_sentence": "Loyalty programs and personalized customer service are effective strategies for improving customer retention."
+    },
+    {
+      "word": "viral marketing",
+      "pronunciation": "/ˈvaɪrəl ˈmɑːrkɪtɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến dịch quảng cáo được thiết kế để lan truyền nhanh chóng trên mạng xã hội thông qua chia sẻ của người dùng",
+      "definition_en": "a marketing strategy designed to spread rapidly through social media sharing and word-of-mouth",
+      "level": "B2",
+      "synonyms": [
+        "word-of-mouth marketing",
+        "organic reach"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company's humorous video advertisement became viral, reaching millions of viewers without paid promotion."
+    },
+    {
+      "word": "cognitive bias",
+      "pronunciation": "/ˈkɒɡnɪtɪv ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những sai lệch trong cách suy nghĩ của con người khiến họ đưa ra quyết định không hoàn toàn hợp lý khi mua hàng",
+      "definition_en": "systematic patterns in how people think that lead to irrational decision-making in purchasing",
+      "level": "C1",
+      "synonyms": [
+        "mental bias",
+        "thinking error"
+      ],
+      "antonyms": [
+        "rational thinking",
+        "objectivity"
+      ],
+      "example_sentence": "Confirmation bias causes consumers to seek information that supports their existing brand preferences."
+    },
+    {
+      "word": "market penetration",
+      "pronunciation": "/ˈmɑːrkɪt ˌpenɪˈtreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ mà một sản phẩm hoặc thương hiệu đã chiếm được thị phần trong một thị trường cụ thể",
+      "definition_en": "the degree to which a product or brand has captured market share in a specific market",
+      "level": "C1",
+      "synonyms": [
+        "market share",
+        "market coverage"
+      ],
+      "antonyms": [],
+      "example_sentence": "The smartphone manufacturer increased market penetration by launching affordable models for developing countries."
+    },
+    {
+      "word": "consumer preference",
+      "pronunciation": "/kənˈsuːmə ˈprɛfərəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự lựa chọn hoặc xu hướng của người tiêu dùng đối với một sản phẩm, thương hiệu hoặc tính năng cụ thể",
+      "definition_en": "the tendency of consumers to favor certain products, brands, or features over others",
+      "level": "B2",
+      "synonyms": [
+        "consumer choice",
+        "brand preference"
+      ],
+      "antonyms": [],
+      "example_sentence": "Market research revealed that consumer preference has shifted toward eco-friendly and sustainable products."
+    },
+    {
+      "word": "demographic targeting",
+      "pronunciation": "/ˌdeməˈɡræfɪk ˈtɑːrɡɪtɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến lược quảng cáo hướng tới các nhóm người dựa trên tuổi, giới tính, thu nhập, giáo dục và các yếu tố nhân khẩu học khác",
+      "definition_en": "a marketing strategy that targets specific groups based on age, gender, income, education, and other demographic factors",
+      "level": "C1",
+      "synonyms": [
+        "audience targeting",
+        "demographic segmentation"
+      ],
+      "antonyms": [],
+      "example_sentence": "The luxury brand used demographic targeting to focus its advertising on high-income professionals aged 35-55."
+    },
+    {
+      "word": "product differentiation",
+      "pronunciation": "/ˈprɒdʌkt ˌdɪfərenʃiˈeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình làm cho sản phẩm của mình khác biệt với các sản phẩm cạnh tranh thông qua tính năng, chất lượng hoặc thương hiệu",
+      "definition_en": "the strategy of making a product distinct from competitors through unique features, quality, or branding",
+      "level": "C1",
+      "synonyms": [
+        "differentiation strategy",
+        "unique selling proposition"
+      ],
+      "antonyms": [
+        "commoditization",
+        "standardization"
+      ],
+      "example_sentence": "Apple's product differentiation strategy emphasizes design excellence and user experience rather than competing on price."
+    },
+    {
+      "word": "consumer trust",
+      "pronunciation": "/kənˈsuːmə trʌst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ tin tưởng của người tiêu dùng đối với một thương hiệu, sản phẩm hoặc công ty dựa trên kinh nghiệm và danh tiếng",
+      "definition_en": "the confidence consumers have in a brand or company based on past experiences and reputation",
+      "level": "B2",
+      "synonyms": [
+        "brand credibility",
+        "customer confidence"
+      ],
+      "antonyms": [
+        "distrust",
+        "skepticism"
+      ],
+      "example_sentence": "Building consumer trust requires consistent product quality, transparent communication, and excellent customer service."
+    },
+    {
+      "word": "hedonic consumption",
+      "pronunciation": "/hɪˈdɒnɪk kənˈsʌmpʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hành vi mua sắm để tìm kiếm niềm vui, thú vị hoặc thỏa mãn cảm xúc chứ không phải vì nhu cầu thực tế",
+      "definition_en": "purchasing behavior driven by the desire for pleasure, enjoyment, or emotional satisfaction rather than necessity",
+      "level": "C1",
+      "synonyms": [
+        "pleasure-seeking consumption",
+        "emotional buying"
+      ],
+      "antonyms": [
+        "utilitarian consumption",
+        "functional buying"
+      ],
+      "example_sentence": "Luxury goods and entertainment services are examples of hedonic consumption that appeal to emotional desires."
+    },
+    {
+      "word": "call to action",
+      "pronunciation": "/kɔːl tu ˈækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lời kêu gọi rõ ràng trong quảng cáo hoặc tiếp thị yêu cầu người tiêu dùng thực hiện một hành động cụ thể như mua hoặc đăng ký",
+      "definition_en": "a clear instruction in advertising that prompts consumers to take a specific action such as purchasing or signing up",
+      "level": "B2",
+      "synonyms": [
+        "CTA",
+        "action prompt"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective call to action phrases like 'Shop Now' or 'Limited Time Offer' significantly increase click-through rates."
+    },
+    {
+      "word": "brand storytelling",
+      "pronunciation": "/brænd ˈstɔːritɛlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kỹ thuật tiếp thị sử dụng câu chuyện để kết nối cảm xúc với người tiêu dùng và tạo mối liên hệ sâu sắc với thương hiệu",
+      "definition_en": "a marketing technique that uses narratives to create emotional connections between consumers and a brand",
+      "level": "C1",
+      "synonyms": [
+        "narrative marketing",
+        "brand narrative"
+      ],
+      "antonyms": [],
+      "example_sentence": "Nike's brand storytelling focuses on inspiring athletes and overcoming challenges rather than just selling shoes."
+    },
+    {
+      "word": "personalization",
+      "pronunciation": "/ˌpɜːrsənəlaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình tùy chỉnh trải nghiệm mua sắm hoặc quảng cáo dựa trên dữ liệu cá nhân và sở thích của từng khách hàng",
+      "definition_en": "the customization of marketing messages and shopping experiences based on individual customer data and preferences",
+      "level": "B2",
+      "synonyms": [
+        "customization",
+        "individualization"
+      ],
+      "antonyms": [
+        "standardization",
+        "generalization"
+      ],
+      "example_sentence": "E-commerce platforms use personalization algorithms to recommend products tailored to each customer's browsing history."
+    },
+    {
+      "word": "consumer decision-making process",
+      "pronunciation": "/kənˈsuːmə dɪˈsɪʒən ˈmeɪkɪŋ ˈprɑːses/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các bước mà người tiêu dùng trải qua từ khi nhận thức được nhu cầu cho đến khi mua hàng và đánh giá sau mua",
+      "definition_en": "the stages consumers go through from recognizing a need to making a purchase and evaluating the decision",
+      "level": "C1",
+      "synonyms": [
+        "buying process",
+        "purchase journey"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding the consumer decision-making process helps marketers identify key touchpoints to influence purchasing behavior."
+    },
+    {
+      "word": "brand recall",
+      "pronunciation": "/brænd rɪˈkɔːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của người tiêu dùng nhớ lại một thương hiệu mà không cần gợi ý hoặc hình ảnh trực tiếp",
+      "definition_en": "the ability of consumers to remember a brand without prompting or visual cues",
+      "level": "B2",
+      "synonyms": [
+        "unaided recall",
+        "brand memory"
+      ],
+      "antonyms": [
+        "brand forgetting",
+        "amnesia"
+      ],
+      "example_sentence": "Repetitive advertising and memorable slogans improve brand recall among target consumers."
+    },
+    {
+      "word": "influencer marketing",
+      "pronunciation": "/ˈɪnfluənsər ˈmɑːrkɪtɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến dịch tiếp thị sử dụng những người có ảnh hưởng lớn trên mạng xã hội để quảng bá sản phẩm cho người theo dõi của họ",
+      "definition_en": "a marketing strategy that leverages social media influencers to promote products to their followers",
+      "level": "B2",
+      "synonyms": [
+        "influencer promotion",
+        "social media marketing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Brands collaborate with micro-influencers to reach niche audiences and build authentic connections with consumers."
+    },
+    {
+      "word": "fomo (fear of missing out)",
+      "pronunciation": "/ˈfoʊmoʊ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nỗi sợ bỏ lỡ cơ hội hoặc xu hướng mà người khác đang tham gia, thường được các nhà tiếp thị khai thác để thúc đẩy mua hàng",
+      "definition_en": "the anxiety that consumers feel about missing out on opportunities or trends, often exploited in marketing",
+      "level": "C1",
+      "synonyms": [
+        "anxiety of exclusion",
+        "missing out fear"
+      ],
+      "antonyms": [],
+      "example_sentence": "Limited-edition product releases and exclusive deals leverage FOMO to create urgency and drive immediate purchases."
+    },
+    {
+      "word": "cross-selling",
+      "pronunciation": "/ˈkrɔːs ˈsɛlɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật bán hàng đề xuất sản phẩm bổ sung hoặc liên quan cho khách hàng dựa trên lịch sử mua hàng của họ",
+      "definition_en": "a sales technique that recommends complementary or related products to customers based on their purchase history",
+      "level": "B2",
+      "synonyms": [
+        "product recommendation",
+        "upselling"
+      ],
+      "antonyms": [],
+      "example_sentence": "Retailers use cross-selling strategies to suggest phone cases when customers purchase smartphones."
+    },
+    {
+      "word": "consumer empowerment",
+      "pronunciation": "/kənˈsuːmər ɪmˈpaʊərmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự trao quyền cho người tiêu dùng thông qua thông tin, công nghệ và lựa chọn để họ có thể đưa ra quyết định mua hàng tốt hơn",
+      "definition_en": "providing consumers with information, tools, and choices to make informed purchasing decisions",
+      "level": "C1",
+      "synonyms": [
+        "consumer autonomy",
+        "informed choice"
+      ],
+      "antonyms": [
+        "consumer manipulation",
+        "exploitation"
+      ],
+      "example_sentence": "Online reviews and comparison websites have increased consumer empowerment by providing transparent product information."
+    },
+    {
+      "word": "seasonal marketing",
+      "pronunciation": "/ˈsiːzənəl ˈmɑːrkɪtɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến dịch quảng cáo được thiết kế để tận dụng các mùa, lễ hội hoặc sự kiện đặc biệt trong năm",
+      "definition_en": "marketing campaigns designed to capitalize on seasonal trends, holidays, and special occasions",
+      "level": "B2",
+      "synonyms": [
+        "holiday marketing",
+        "seasonal promotion"
+      ],
+      "antonyms": [],
+      "example_sentence": "Retailers launch aggressive seasonal marketing campaigns during Christmas and New Year to maximize holiday sales."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'brand loyalty' in modern consumer behavior?",
+      "option_a": "The tendency of consumers to purchase the cheapest products available",
+      "option_b": "The willingness of customers to repeatedly purchase from the same brand and recommend it to others",
+      "option_c": "The ability of a company to advertise its products on multiple platforms",
+      "option_d": "The process of dividing the market into different customer groups",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Brand loyalty là sự gắn bó của khách hàng với một thương hiệu, sẵn sàng mua lại và giới thiệu cho người khác. Các lựa chọn khác không phản ánh đúng khái niệm này."
+    },
+    {
+      "question_text": "What is the primary purpose of 'scarcity marketing' in advertising campaigns?",
+      "option_a": "To reduce the price of products to attract more customers",
+      "option_b": "To create a sense of limited availability and encourage immediate purchase",
+      "option_c": "To increase the production capacity of the company",
+      "option_d": "To expand the target audience to include all consumers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scarcity marketing tạo cảm giác hạn chế hoặc khan hiếm sản phẩm để thúc đẩy người tiêu dùng mua nhanh. Đây là kỹ thuật tâm lý hiệu quả để tạo urgency."
+    },
+    {
+      "question_text": "Which marketing technique relies on the psychological principle that consumers are more likely to purchase when they see others doing the same?",
+      "option_a": "Price anchoring",
+      "option_b": "Social proof",
+      "option_c": "Emotional appeal",
+      "option_d": "Celebrity endorsement",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Social proof là hiện tượng mà người tiêu dùng tin tưởng hơn khi thấy nhiều người khác cũng mua. Các lựa chọn khác là những kỹ thuật quảng cáo khác nhưng không liên quan đến nguyên tắc này."
+    },
+    {
+      "question_text": "The term 'price anchoring' refers to which of the following marketing strategies?",
+      "option_a": "Offering discounts to loyal customers",
+      "option_b": "Setting prices based on competitor analysis",
+      "option_c": "Using the first price presented to influence consumers' perception of value",
+      "option_d": "Charging different prices for different customer segments",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Price anchoring là kỹ thuật mà giá đầu tiên được trình bày ảnh hưởng đến nhận thức của người tiêu dùng về giá trị. Ví dụ: hiển thị giá gốc cao rồi giảm giá."
+    },
+    {
+      "question_text": "What does 'impulse buying' primarily involve?",
+      "option_a": "Carefully planned purchases made after extensive research",
+      "option_b": "Unplanned purchasing decisions made without prior intention, often triggered by emotions",
+      "option_c": "Buying products only when they are on sale",
+      "option_d": "Purchasing items recommended by friends and family",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Impulse buying là hành động mua sắm bất chợt, không có kế hoạch trước, thường do cảm xúc hoặc kích thích tức thời. Đây là hành vi không có sự chuẩn bị."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of effective 'consumer segmentation'?",
+      "option_a": "Dividing the market into distinct groups based on shared characteristics",
+      "option_b": "Allowing companies to tailor marketing messages to specific groups",
+      "option_c": "Treating all consumers as a single homogeneous group",
+      "option_d": "Identifying unique needs and preferences of different customer groups",
+      "correct_answer": "C",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Consumer segmentation là quá trình chia thị trường thành các nhóm nhỏ hơn, không phải coi tất cả khách hàng như một nhóm duy nhất. Lựa chọn C mâu thuẫn với khái niệm này."
+    },
+    {
+      "question_text": "In the context of advertising, what does 'emotional appeal' primarily aim to do?",
+      "option_a": "Provide factual information about product specifications",
+      "option_b": "Compare prices with competitor products",
+      "option_c": "Stimulate consumers' emotions to motivate purchase decisions",
+      "option_d": "Explain the manufacturing process of the product",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Emotional appeal là phương pháp quảng cáo kích thích cảm xúc của người tiêu dùng để thúc đẩy mua hàng, chứ không phải cung cấp thông tin kỹ thuật."
+    },
+    {
+      "question_text": "Which term describes the added value a brand brings to a product based on consumer perception and loyalty?",
+      "option_a": "Market penetration",
+      "option_b": "Brand equity",
+      "option_c": "Product differentiation",
+      "option_d": "Consumer segmentation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Brand equity là giá trị tích lũy của một thương hiệu dựa trên nhận thức, lòng trung thành và danh tiếng của người tiêu dùng. Các lựa chọn khác là những khái niệm tiếp thị khác."
+    },
+    {
+      "question_text": "What is the main objective of 'neuromarketing' research?",
+      "option_a": "To increase the price of products",
+      "option_b": "To understand how consumers' brains respond to advertising",
+      "option_c": "To reduce the number of advertisements",
+      "option_d": "To eliminate competition in the market",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Neuromarketing kết hợp thần kinh học và tiếp thị để hiểu cách não bộ của người tiêu dùng phản ứng với quảng cáo. Đây là lĩnh vực nghiên cứu hiện đại."
+    },
+    {
+      "question_text": "Which marketing strategy is most likely to create a sense of urgency among consumers?",
+      "option_a": "Long-term loyalty programs",
+      "option_b": "Detailed product specifications",
+      "option_c": "Limited-time offers and scarcity messaging",
+      "option_d": "Educational content about the industry",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Limited-time offers và scarcity messaging tạo cảm giác urgency khiến người tiêu dùng mua nhanh. Các lựa chọn khác không tạo áp lực thời gian."
+    },
+    {
+      "question_text": "What does 'FOMO' (Fear of Missing Out) primarily exploit in consumer behavior?",
+      "option_a": "The desire to save money on purchases",
+      "option_b": "The anxiety about missing out on opportunities or trends",
+      "option_c": "The preference for traditional shopping methods",
+      "option_d": "The need for product warranties and guarantees",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "FOMO là nỗi sợ bỏ lỡ cơ hội hoặc xu hướng mà người khác đang tham gia. Các nhà tiếp thị khai thác tâm lý này để thúc đẩy mua hàng."
+    },
+    {
+      "question_text": "Which of the following best describes 'hedonic consumption'?",
+      "option_a": "Purchasing products solely based on their functional utility",
+      "option_b": "Buying items only when they are absolutely necessary",
+      "option_c": "Purchasing driven by the desire for pleasure and emotional satisfaction",
+      "option_d": "Choosing products based on their environmental impact",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Hedonic consumption là hành vi mua sắm để tìm kiếm niềm vui, thú vị hoặc thỏa mãn cảm xúc chứ không phải vì nhu cầu thực tế. Luxury goods là ví dụ điển hình."
+    },
+    {
+      "question_text": "In marketing, what is the primary benefit of 'personalization' for e-commerce platforms?",
+      "option_a": "It reduces the cost of advertising campaigns",
+      "option_b": "It customizes shopping experiences based on individual customer data and preferences",
+      "option_c": "It eliminates the need for customer service",
+      "option_d": "It standardizes all products for all customers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Personalization là quá trình tùy chỉnh trải nghiệm mua sắm dựa trên dữ liệu cá nhân và sở thích của từng khách hàng, giúp tăng conversion rate."
+    },
+    {
+      "question_text": "Which term refers to the strategy of making a product distinct from competitors through unique features or branding?",
+      "option_a": "Market penetration",
+      "option_b": "Consumer segmentation",
+      "option_c": "Product differentiation",
+      "option_d": "Brand awareness",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Product differentiation là quá trình làm cho sản phẩm của mình khác biệt với các sản phẩm cạnh tranh thông qua tính năng, chất lượng hoặc thương hiệu."
+    }
+  ]
+}

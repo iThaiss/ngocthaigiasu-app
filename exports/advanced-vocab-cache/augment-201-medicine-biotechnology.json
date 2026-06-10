@@ -1,0 +1,386 @@
+{
+  "words": [
+    {
+      "word": "nosocomial infection",
+      "pronunciation": "/ˌnɒsəˈkəʊmiəl ɪnˈfekʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nhiễm trùng bệnh viện; bệnh nhiễm trùng mắc phải trong quá trình điều trị tại bệnh viện, không phải do bệnh ban đầu",
+      "definition_en": "Hospital-acquired infection contracted during medical treatment, unrelated to the patient's primary condition.",
+      "level": "C1",
+      "synonyms": [
+        "healthcare-associated infection",
+        "hospital-acquired infection"
+      ],
+      "antonyms": [
+        "community-acquired infection"
+      ],
+      "example_sentence": "Nosocomial infections remain a significant challenge in intensive care units, increasing morbidity and healthcare costs."
+    },
+    {
+      "word": "translational research",
+      "pronunciation": "/trænzˈleɪʃənəl ˈriːsɜːtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Nghiên cứu chuyển hóa; quá trình chuyển đổi phát hiện khoa học cơ bản thành ứng dụng lâm sàng thực tế",
+      "definition_en": "The process of applying basic scientific discoveries to develop practical clinical applications and treatments.",
+      "level": "C1",
+      "synonyms": [
+        "bench-to-bedside research",
+        "applied research"
+      ],
+      "antonyms": [
+        "basic research",
+        "fundamental research"
+      ],
+      "example_sentence": "Translational research bridges the gap between laboratory discoveries and patient care, accelerating drug development timelines."
+    },
+    {
+      "word": "comorbidity",
+      "pronunciation": "/ˌkəʊmɔːˈbɪdɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Bệnh kèm theo; tình trạng bệnh nhân mắc hai hay nhiều bệnh lý khác nhau cùng một lúc",
+      "definition_en": "The simultaneous presence of two or more distinct medical conditions in a patient.",
+      "level": "C1",
+      "synonyms": [
+        "concurrent disease",
+        "multiple morbidity"
+      ],
+      "antonyms": [
+        "monosymptomatic condition"
+      ],
+      "example_sentence": "Patients with diabetes and hypertension comorbidity face elevated cardiovascular risk and require integrated treatment protocols."
+    },
+    {
+      "word": "informed consent",
+      "pronunciation": "/ɪnˈfɔːmd kənˈsent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự đồng ý có hiểu biết; quyền của bệnh nhân được thông báo đầy đủ về rủi ro, lợi ích và lựa chọn điều trị trước khi đồng ý",
+      "definition_en": "A patient's voluntary agreement to medical treatment after being fully informed of risks, benefits, and alternatives.",
+      "level": "C1",
+      "synonyms": [
+        "voluntary consent",
+        "autonomous decision-making"
+      ],
+      "antonyms": [
+        "coerced consent",
+        "uninformed participation"
+      ],
+      "example_sentence": "Informed consent is a cornerstone of bioethics, ensuring patients retain autonomy in clinical decision-making."
+    },
+    {
+      "word": "bioaccumulation",
+      "pronunciation": "/ˌbaɪəʊəˌkjuːmjəˈleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tích tụ sinh học; quá trình các chất độc hại tích tụ dần trong cơ thể sống qua thời gian",
+      "definition_en": "The gradual accumulation of toxic substances in living organisms over time, often increasing in concentration up the food chain.",
+      "level": "C2",
+      "synonyms": [
+        "biological accumulation",
+        "biomagnification"
+      ],
+      "antonyms": [
+        "biodegradation",
+        "elimination"
+      ],
+      "example_sentence": "Heavy metal bioaccumulation in aquatic ecosystems poses serious public health risks through contaminated seafood consumption."
+    },
+    {
+      "word": "syndromic surveillance",
+      "pronunciation": "/sɪnˈdrɒmɪk sərˈveɪləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Giám sát hội chứng; hệ thống theo dõi các triệu chứng bệnh trước khi có chẩn đoán xác định để phát hiện dịch bệnh sớm",
+      "definition_en": "Real-time monitoring of disease symptoms and clinical indicators before confirmed diagnosis to detect outbreaks early.",
+      "level": "C2",
+      "synonyms": [
+        "symptom-based surveillance",
+        "early warning system"
+      ],
+      "antonyms": [
+        "laboratory-confirmed surveillance"
+      ],
+      "example_sentence": "Syndromic surveillance systems enabled rapid detection of COVID-19 clusters in emergency departments before confirmatory testing."
+    },
+    {
+      "word": "penetrance",
+      "pronunciation": "/ˈpenɪtrəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Độ xâm nhập gen; tỷ lệ phần trăm cá thể mang gen bệnh thực sự biểu hiện bệnh",
+      "definition_en": "The proportion of individuals carrying a disease-causing gene who actually express the phenotype or disease.",
+      "level": "C2",
+      "synonyms": [
+        "gene expression rate",
+        "manifestation frequency"
+      ],
+      "antonyms": [
+        "genetic silence"
+      ],
+      "example_sentence": "BRCA1 mutations show incomplete penetrance, meaning not all carriers develop breast cancer during their lifetime."
+    },
+    {
+      "word": "pleiotropy",
+      "pronunciation": "/plaɪˈɒtrəpi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Đa tác dụng gen; hiện tượng một gen ảnh hưởng đến nhiều tính trạng khác nhau",
+      "definition_en": "A genetic phenomenon where a single gene influences multiple, seemingly unrelated phenotypic traits.",
+      "level": "C2",
+      "synonyms": [
+        "polygenic effect",
+        "multi-trait influence"
+      ],
+      "antonyms": [
+        "monogenic trait"
+      ],
+      "example_sentence": "Pleiotropy in lipid metabolism genes explains why some genetic variants simultaneously affect cholesterol and triglyceride levels."
+    },
+    {
+      "word": "epistasis",
+      "pronunciation": "/ɪˈpɪstəsɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tương tác gen; hiện tượng một gen ức chế hoặc che phủ tác dụng của gen khác",
+      "definition_en": "A genetic interaction where one gene masks or modifies the expression of another gene.",
+      "level": "C2",
+      "synonyms": [
+        "gene interaction",
+        "genetic masking"
+      ],
+      "antonyms": [
+        "independent assortment"
+      ],
+      "example_sentence": "Epistasis between tumor suppressor genes complicates cancer risk prediction in genetic counseling."
+    },
+    {
+      "word": "heterozygous advantage",
+      "pronunciation": "/ˌhetərəʊˈzaɪɡəs ˈædvəntɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lợi thế dị hợp; tình trạng cá thể mang hai alen khác nhau có sức sống cao hơn cá thể đồng hợp",
+      "definition_en": "A condition where heterozygous individuals have superior fitness compared to both homozygous genotypes.",
+      "level": "C2",
+      "synonyms": [
+        "overdominance",
+        "balanced polymorphism"
+      ],
+      "antonyms": [
+        "homozygous disadvantage"
+      ],
+      "example_sentence": "Heterozygous advantage in sickle cell trait provides malaria resistance while avoiding severe hemolytic disease."
+    },
+    {
+      "word": "pharmacogenomics",
+      "pronunciation": "/ˌfɑːməkəʊdʒɪˈnɒmɪks/",
+      "part_of_speech": "noun",
+      "definition_vi": "Dược học gen; lĩnh vực nghiên cứu ảnh hưởng của biến thể gen đến đáp ứng cá nhân với thuốc",
+      "definition_en": "The study of how genetic variations influence individual drug metabolism, efficacy, and adverse reactions.",
+      "level": "C1",
+      "synonyms": [
+        "pharmacogenetics",
+        "genetic drug response"
+      ],
+      "antonyms": [
+        "one-size-fits-all pharmacology"
+      ],
+      "example_sentence": "Pharmacogenomics testing for CYP450 variants optimizes warfarin dosing and reduces bleeding complications."
+    },
+    {
+      "word": "allosteric regulation",
+      "pronunciation": "/ˌæləˈsterɪk ˌreɡjəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Điều hòa ứng dụng; cơ chế điều khiển hoạt động enzyme bằng cách liên kết chất ở vị trí khác với vị trí hoạt động",
+      "definition_en": "Enzyme regulation through ligand binding at sites distant from the active site, modulating catalytic activity.",
+      "level": "C2",
+      "synonyms": [
+        "non-competitive inhibition",
+        "conformational regulation"
+      ],
+      "antonyms": [
+        "competitive inhibition"
+      ],
+      "example_sentence": "Allosteric regulation of phosphofructokinase by ATP and AMP controls glycolytic flux in response to cellular energy status."
+    },
+    {
+      "word": "bioavailability",
+      "pronunciation": "/ˌbaɪəʊəˌveɪləˈbɪlɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sinh khả dụng; tỷ lệ phần trăm liều lượng thuốc được hấp thụ vào máu và có sẵn để tác dụng",
+      "definition_en": "The fraction of an administered drug dose that reaches systemic circulation and is available for therapeutic action.",
+      "level": "C1",
+      "synonyms": [
+        "drug absorption rate",
+        "systemic availability"
+      ],
+      "antonyms": [
+        "poor absorption",
+        "first-pass metabolism"
+      ],
+      "example_sentence": "Oral bioavailability of certain antibiotics is significantly reduced by food interactions, requiring fasting administration."
+    },
+    {
+      "word": "zoonotic spillover",
+      "pronunciation": "/ˌzəʊənɒtɪk ˈspɪləʊvə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lây lan từ động vật; quá trình các tác nhân gây bệnh từ động vật lây sang người gây dịch bệnh mới",
+      "definition_en": "The transmission of pathogens from animal populations to humans, often initiating novel epidemic outbreaks.",
+      "level": "C1",
+      "synonyms": [
+        "animal-to-human transmission",
+        "zoonotic emergence"
+      ],
+      "antonyms": [
+        "human-to-human transmission"
+      ],
+      "example_sentence": "Zoonotic spillover of coronaviruses from bat reservoirs through intermediate hosts triggered the COVID-19 pandemic."
+    },
+    {
+      "word": "herd immunity threshold",
+      "pronunciation": "/ˈhɜːd ɪˈmjuːnɪti ˈθreʃəʊld/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ngưỡng miễn dịch cộng đồng; tỷ lệ tối thiểu dân số cần có miễn dịch để ngăn chặn lây lan bệnh",
+      "definition_en": "The minimum proportion of a population that must be immune to interrupt disease transmission and prevent outbreaks.",
+      "level": "C1",
+      "synonyms": [
+        "community immunity level",
+        "vaccination coverage target"
+      ],
+      "antonyms": [
+        "susceptible population"
+      ],
+      "example_sentence": "The herd immunity threshold for measles is approximately 95%, requiring near-universal vaccination coverage."
+    },
+    {
+      "word": "epigenetic modification",
+      "pronunciation": "/ˌepɪdʒəˈnetɪk ˌmɒdɪfɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sửa đổi trên gen; những thay đổi hóa học trên DNA hoặc histone ảnh hưởng đến biểu hiện gen mà không thay đổi trình tự DNA",
+      "definition_en": "Chemical modifications of DNA or histone proteins that alter gene expression without changing the underlying DNA sequence.",
+      "level": "C1",
+      "synonyms": [
+        "DNA methylation",
+        "histone acetylation"
+      ],
+      "antonyms": [
+        "genetic mutation"
+      ],
+      "example_sentence": "Epigenetic modifications induced by environmental toxins can silence tumor suppressor genes and promote carcinogenesis."
+    },
+    {
+      "word": "antimicrobial stewardship",
+      "pronunciation": "/ˌæntɪmaɪˈkrəʊbɪəl ˈstjuːərdʃɪp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quản lý kháng sinh; chiến lược sử dụng kháng sinh hợp lý để giảm kháng thuốc và bảo vệ sức khỏe cộng đồng",
+      "definition_en": "Coordinated interventions to optimize antibiotic use, minimize resistance development, and improve patient outcomes.",
+      "level": "C1",
+      "synonyms": [
+        "antibiotic stewardship",
+        "rational drug use"
+      ],
+      "antonyms": [
+        "indiscriminate antibiotic use"
+      ],
+      "example_sentence": "Antimicrobial stewardship programs reduce unnecessary prescriptions and slow the emergence of multidrug-resistant pathogens."
+    },
+    {
+      "word": "metabolic syndrome",
+      "pronunciation": "/meˌtæbɒlɪk ˈsɪndrəʊm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hội chứng chuyển hóa; tập hợp các rối loạn chuyển hóa bao gồm béo phì, tăng huyết áp, rối loạn lipid máu",
+      "definition_en": "A cluster of metabolic disorders including central obesity, hypertension, dyslipidemia, and insulin resistance.",
+      "level": "C1",
+      "synonyms": [
+        "insulin resistance syndrome",
+        "cardiometabolic syndrome"
+      ],
+      "antonyms": [
+        "metabolic health"
+      ],
+      "example_sentence": "Metabolic syndrome significantly increases cardiovascular disease risk and requires comprehensive lifestyle and pharmacological intervention."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "A patient admitted to the ICU develops a severe infection caused by Pseudomonas aeruginosa two weeks after surgery. Which term best describes this condition?",
+      "option_a": "Community-acquired pneumonia",
+      "option_b": "Nosocomial infection",
+      "option_c": "Primary bacteremia",
+      "option_d": "Opportunistic infection",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Nosocomial infection (nhiễm trùng bệnh viện) là bệnh nhiễm trùng mắc phải trong quá trình điều trị tại bệnh viện, không phải do bệnh ban đầu. Trường hợp này phát triển sau phẫu thuật trong bệnh viện, không phải từ cộng đồng."
+    },
+    {
+      "question_text": "A pharmaceutical company is developing a new cancer drug by converting laboratory findings into clinical applications. This process is known as ___.",
+      "option_a": "Basic research",
+      "option_b": "Translational research",
+      "option_c": "Retrospective analysis",
+      "option_d": "Meta-analysis",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Translational research (nghiên cứu chuyển hóa) là quá trình chuyển đổi phát hiện khoa học cơ bản thành ứng dụng lâm sàng thực tế, từ phòng thí nghiệm đến giường bệnh."
+    },
+    {
+      "question_text": "A 65-year-old patient has both type 2 diabetes and chronic kidney disease. The presence of these two conditions simultaneously is referred to as ___.",
+      "option_a": "Syndrome",
+      "option_b": "Comorbidity",
+      "option_c": "Sequela",
+      "option_d": "Manifestation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Comorbidity (bệnh kèm theo) là tình trạng bệnh nhân mắc hai hay nhiều bệnh lý khác nhau cùng một lúc. Đây là thuật ngữ chính xác để mô tả sự hiện diện đồng thời của nhiều bệnh."
+    },
+    {
+      "question_text": "Before enrolling in a clinical research study, participants must receive detailed information about potential risks and benefits. This ethical requirement is called ___.",
+      "option_a": "Confidentiality agreement",
+      "option_b": "Informed consent",
+      "option_c": "Institutional review",
+      "option_d": "Data protection protocol",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Informed consent (sự đồng ý có hiểu biết) là quyền của bệnh nhân được thông báo đầy đủ về rủi ro, lợi ích và lựa chọn điều trị trước khi đồng ý tham gia."
+    },
+    {
+      "question_text": "A genetic variant in the CYP450 gene affects how quickly a patient metabolizes warfarin, requiring dose adjustment. This field of study is called ___.",
+      "option_a": "Pharmacogenomics",
+      "option_b": "Pharmacokinetics",
+      "option_c": "Pharmacodynamics",
+      "option_d": "Toxicology",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Pharmacogenomics (dược học gen) nghiên cứu ảnh hưởng của biến thể gen đến đáp ứng cá nhân với thuốc, bao gồm cả sự khác biệt trong chuyển hóa thuốc."
+    },
+    {
+      "question_text": "A public health team implements a system to monitor fever and respiratory symptoms in emergency departments to detect disease outbreaks before laboratory confirmation. This surveillance approach is termed ___.",
+      "option_a": "Passive surveillance",
+      "option_b": "Syndromic surveillance",
+      "option_c": "Sentinel surveillance",
+      "option_d": "Active surveillance",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Syndromic surveillance (giám sát hội chứng) là hệ thống theo dõi các triệu chứng bệnh trước khi có chẩn đoán xác định để phát hiện dịch bệnh sớm, không cần chờ kết quả xét nghiệm."
+    },
+    {
+      "question_text": "In a population, 95% of individuals are vaccinated against measles. This percentage represents the ___.",
+      "option_a": "Vaccination efficacy rate",
+      "option_b": "Disease incidence",
+      "option_c": "Herd immunity threshold",
+      "option_d": "Attack rate",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Herd immunity threshold (ngưỡng miễn dịch cộng đồng) là tỷ lệ tối thiểu dân số cần có miễn dịch để ngăn chặn lây lan bệnh. Với sởi, ngưỡng này khoảng 95%."
+    },
+    {
+      "question_text": "A hospital implements protocols to reduce unnecessary antibiotic prescriptions and combat the emergence of drug-resistant bacteria. This initiative is an example of ___.",
+      "option_a": "Infection control",
+      "option_b": "Antimicrobial stewardship",
+      "option_c": "Epidemiological surveillance",
+      "option_d": "Quarantine procedures",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Antimicrobial stewardship (quản lý kháng sinh) là chiến lược sử dụng kháng sinh hợp lý để giảm kháng thuốc và bảo vệ sức khỏe cộng đồng thông qua các can thiệp điều phối."
+    }
+  ]
+}

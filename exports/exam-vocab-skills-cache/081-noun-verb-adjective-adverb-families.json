@@ -1,0 +1,525 @@
+{
+  "words": [
+    {
+      "word": "decide",
+      "pronunciation": "/dɪˈsaɪd/",
+      "part_of_speech": "verb",
+      "definition_vi": "quyết định, xác định (thường sau khi cân nhắc)",
+      "definition_en": "to make a choice or determination after consideration",
+      "level": "B1",
+      "synonyms": [
+        "determine",
+        "choose",
+        "resolve"
+      ],
+      "antonyms": [
+        "hesitate",
+        "waver"
+      ],
+      "example_sentence": "The committee decided to postpone the meeting until next week due to scheduling conflicts."
+    },
+    {
+      "word": "decision",
+      "pronunciation": "/dɪˈsɪʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quyết định, sự quyết định (kết quả của việc quyết định)",
+      "definition_en": "a choice or determination made after consideration",
+      "level": "B1",
+      "synonyms": [
+        "choice",
+        "determination",
+        "resolution"
+      ],
+      "antonyms": [
+        "indecision",
+        "hesitation"
+      ],
+      "example_sentence": "Her decision to study abroad was influenced by scholarship opportunities and career prospects."
+    },
+    {
+      "word": "decisive",
+      "pronunciation": "/dɪˈsaɪsɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "quyết đoán, có tính quyết định (về người hoặc hành động)",
+      "definition_en": "showing the ability to make decisions quickly and firmly; conclusive",
+      "level": "B2",
+      "synonyms": [
+        "determined",
+        "conclusive",
+        "definitive"
+      ],
+      "antonyms": [
+        "indecisive",
+        "hesitant"
+      ],
+      "example_sentence": "The CEO's decisive action in restructuring the company prevented further financial losses."
+    },
+    {
+      "word": "decisively",
+      "pronunciation": "/dɪˈsaɪsɪvli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách quyết đoán, quyết liệt",
+      "definition_en": "in a way that shows firmness and determination; conclusively",
+      "level": "B2",
+      "synonyms": [
+        "firmly",
+        "conclusively",
+        "determinedly"
+      ],
+      "antonyms": [
+        "hesitantly",
+        "uncertainly"
+      ],
+      "example_sentence": "The judge ruled decisively against the defendant, citing insufficient evidence and legal precedent."
+    },
+    {
+      "word": "analyze",
+      "pronunciation": "/ˈænəlaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "phân tích, tách rời để xem xét chi tiết",
+      "definition_en": "to examine something carefully and in detail to understand its nature or structure",
+      "level": "B1",
+      "synonyms": [
+        "examine",
+        "investigate",
+        "study"
+      ],
+      "antonyms": [
+        "synthesize",
+        "combine"
+      ],
+      "example_sentence": "Researchers analyzed the data from multiple sources to identify patterns in consumer behavior."
+    },
+    {
+      "word": "analysis",
+      "pronunciation": "/əˈnæləsɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "phân tích, sự phân tích (quá trình hoặc kết quả)",
+      "definition_en": "a detailed examination or investigation of something",
+      "level": "B1",
+      "synonyms": [
+        "examination",
+        "investigation",
+        "study"
+      ],
+      "antonyms": [
+        "synthesis",
+        "combination"
+      ],
+      "example_sentence": "The financial analysis revealed that the company's revenue had increased by fifteen percent annually."
+    },
+    {
+      "word": "analytical",
+      "pronunciation": "/ˌænəˈlɪtɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "phân tích, có tính phân tích (về phương pháp hoặc tư duy)",
+      "definition_en": "relating to or using analysis; skilled at breaking down complex information",
+      "level": "B2",
+      "synonyms": [
+        "systematic",
+        "logical",
+        "methodical"
+      ],
+      "antonyms": [
+        "intuitive",
+        "holistic"
+      ],
+      "example_sentence": "An analytical approach to problem-solving requires breaking down issues into smaller, manageable components."
+    },
+    {
+      "word": "analytically",
+      "pronunciation": "/ˌænəˈlɪtɪkəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách phân tích, theo phương pháp phân tích",
+      "definition_en": "in a way that involves careful analysis and logical reasoning",
+      "level": "B2",
+      "synonyms": [
+        "systematically",
+        "logically",
+        "methodically"
+      ],
+      "antonyms": [
+        "intuitively",
+        "holistically"
+      ],
+      "example_sentence": "Students must think analytically when interpreting literary texts and supporting their interpretations with evidence."
+    },
+    {
+      "word": "develop",
+      "pronunciation": "/dɪˈveləp/",
+      "part_of_speech": "verb",
+      "definition_vi": "phát triển, phát triển (từ trạng thái ban đầu đến hoàn thiện)",
+      "definition_en": "to grow, progress, or cause to grow and become more advanced",
+      "level": "B1",
+      "synonyms": [
+        "evolve",
+        "progress",
+        "advance"
+      ],
+      "antonyms": [
+        "decline",
+        "regress"
+      ],
+      "example_sentence": "The company developed a new marketing strategy to reach younger demographics in urban markets."
+    },
+    {
+      "word": "development",
+      "pronunciation": "/dɪˈveləpmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự phát triển, phát triển (quá trình hoặc kết quả)",
+      "definition_en": "the process of growing or improving; a new event or piece of information",
+      "level": "B1",
+      "synonyms": [
+        "growth",
+        "progress",
+        "advancement"
+      ],
+      "antonyms": [
+        "decline",
+        "regression"
+      ],
+      "example_sentence": "Recent developments in artificial intelligence have transformed industries ranging from healthcare to transportation."
+    },
+    {
+      "word": "develop into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phát triển thành, trở thành (sau một quá trình)",
+      "definition_en": "to gradually become or grow into something",
+      "level": "B2",
+      "synonyms": [
+        "evolve into",
+        "become",
+        "turn into"
+      ],
+      "antonyms": [],
+      "example_sentence": "The small startup developed into a multinational corporation within just ten years of operation."
+    },
+    {
+      "word": "developmental",
+      "pronunciation": "/dɪˌveləpˈmentəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến sự phát triển, phát triển học",
+      "definition_en": "relating to the process of growth and development",
+      "level": "B2",
+      "synonyms": [
+        "growth-related",
+        "progressive",
+        "evolutionary"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developmental psychology studies how children's cognitive and emotional abilities change throughout their lives."
+    },
+    {
+      "word": "produce",
+      "pronunciation": "/prəˈdjuːs/",
+      "part_of_speech": "verb",
+      "definition_vi": "sản xuất, tạo ra (hàng hóa, kết quả, tác phẩm)",
+      "definition_en": "to make, manufacture, or create something; to bring forth or yield",
+      "level": "B1",
+      "synonyms": [
+        "manufacture",
+        "create",
+        "generate"
+      ],
+      "antonyms": [
+        "consume",
+        "destroy"
+      ],
+      "example_sentence": "The factory produces over ten thousand units of electronic components every month for export."
+    },
+    {
+      "word": "production",
+      "pronunciation": "/prəˈdʌkʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sản xuất, sản lượng (quá trình hoặc kết quả sản xuất)",
+      "definition_en": "the process of making or manufacturing something; the total amount produced",
+      "level": "B1",
+      "synonyms": [
+        "manufacturing",
+        "output",
+        "creation"
+      ],
+      "antonyms": [
+        "consumption",
+        "destruction"
+      ],
+      "example_sentence": "Global production of renewable energy has increased significantly due to environmental concerns and technological advances."
+    },
+    {
+      "word": "productive",
+      "pronunciation": "/prəˈdʌktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "năng suất cao, hiệu quả (về người hoặc hoạt động)",
+      "definition_en": "producing or able to produce large amounts of goods or results; effective",
+      "level": "B2",
+      "synonyms": [
+        "efficient",
+        "fruitful",
+        "effective"
+      ],
+      "antonyms": [
+        "unproductive",
+        "inefficient"
+      ],
+      "example_sentence": "A productive meeting requires clear agendas, active participation, and documented action items."
+    },
+    {
+      "word": "productivity",
+      "pronunciation": "/ˌprɒdʌkˈtɪvɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "năng suất, hiệu suất (mức độ sản xuất hoặc hiệu quả)",
+      "definition_en": "the effectiveness of effort measured by the rate of output per unit of input",
+      "level": "B2",
+      "synonyms": [
+        "efficiency",
+        "output",
+        "effectiveness"
+      ],
+      "antonyms": [
+        "inefficiency",
+        "idleness"
+      ],
+      "example_sentence": "Employee productivity can be enhanced through better training, clearer goals, and improved workplace conditions."
+    },
+    {
+      "word": "establish",
+      "pronunciation": "/ɪˈstæblɪʃ/",
+      "part_of_speech": "verb",
+      "definition_vi": "thành lập, thiết lập (tạo ra hoặc xác định)",
+      "definition_en": "to create, set up, or found something; to prove or demonstrate",
+      "level": "B1",
+      "synonyms": [
+        "found",
+        "set up",
+        "create"
+      ],
+      "antonyms": [
+        "abolish",
+        "dismantle"
+      ],
+      "example_sentence": "The university established a new research center to investigate sustainable agricultural practices."
+    },
+    {
+      "word": "establishment",
+      "pronunciation": "/ɪˈstæblɪʃmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "thành lập, cơ sở (quá trình hoặc tổ chức được thành lập)",
+      "definition_en": "the act of establishing something; an institution or organization",
+      "level": "B2",
+      "synonyms": [
+        "foundation",
+        "institution",
+        "organization"
+      ],
+      "antonyms": [
+        "abolition",
+        "dissolution"
+      ],
+      "example_sentence": "The establishment of diplomatic relations between the two countries marked a significant turning point in regional politics."
+    },
+    {
+      "word": "identify",
+      "pronunciation": "/aɪˈdentɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác định, nhận dạng (tìm ra hoặc xác nhận danh tính)",
+      "definition_en": "to recognize or establish what or who someone or something is",
+      "level": "B1",
+      "synonyms": [
+        "recognize",
+        "determine",
+        "pinpoint"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "Researchers identified three main factors contributing to the decline in student enrollment rates."
+    },
+    {
+      "word": "identification",
+      "pronunciation": "/aɪˌdentɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "xác định, nhận dạng (quá trình hoặc chứng chỉ)",
+      "definition_en": "the process of recognizing or establishing the identity of someone or something",
+      "level": "B2",
+      "synonyms": [
+        "recognition",
+        "determination",
+        "verification"
+      ],
+      "antonyms": [],
+      "example_sentence": "The identification of new species in the Amazon rainforest continues to reveal the region's incredible biodiversity."
+    },
+    {
+      "word": "significant",
+      "pronunciation": "/sɪɡˈnɪfɪkənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, có ý nghĩa (quan trọng hoặc lớn)",
+      "definition_en": "important, notable, or of considerable size or effect",
+      "level": "B1",
+      "synonyms": [
+        "important",
+        "notable",
+        "substantial"
+      ],
+      "antonyms": [
+        "insignificant",
+        "trivial"
+      ],
+      "example_sentence": "The discovery of ancient artifacts provided significant insights into the daily life of early civilizations."
+    },
+    {
+      "word": "significantly",
+      "pronunciation": "/sɪɡˈnɪfɪkəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "đáng kể, một cách có ý nghĩa (ở mức độ lớn hoặc quan trọng)",
+      "definition_en": "in a sufficiently great or important way to be worthy of attention",
+      "level": "B2",
+      "synonyms": [
+        "substantially",
+        "notably",
+        "considerably"
+      ],
+      "antonyms": [
+        "insignificantly",
+        "trivially"
+      ],
+      "example_sentence": "Climate change has significantly affected agricultural yields in developing countries over the past two decades."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The board members _______ to implement new safety protocols after the incident was thoroughly investigated.",
+      "option_a": "decided",
+      "option_b": "decision",
+      "option_c": "decisive",
+      "option_d": "decisively",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần động từ ở thì quá khứ 'decided' để hoàn thành câu. 'Decision' là danh từ, 'decisive' là tính từ, 'decisively' là trạng từ - không phù hợp với cấu trúc 'members + động từ'."
+    },
+    {
+      "question_text": "The _______ to expand the business into new markets was made after careful financial analysis.",
+      "option_a": "decide",
+      "option_b": "decision",
+      "option_c": "decisive",
+      "option_d": "decisively",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần danh từ 'decision' sau 'The' để làm chủ ngữ của mệnh đề. 'Decide' là động từ, 'decisive' là tính từ, 'decisively' là trạng từ - không phù hợp."
+    },
+    {
+      "question_text": "The manager took a _______ approach to solving the problem, refusing to delay any further.",
+      "option_a": "decide",
+      "option_b": "decision",
+      "option_c": "decisive",
+      "option_d": "decisively",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Cần tính từ 'decisive' để bổ nghĩa cho danh từ 'approach'. 'Decide' là động từ, 'decision' là danh từ, 'decisively' là trạng từ - không phù hợp với vị trí này."
+    },
+    {
+      "question_text": "She spoke _______ about her plans, leaving no doubt about her commitment to the project.",
+      "option_a": "decide",
+      "option_b": "decision",
+      "option_c": "decisive",
+      "option_d": "decisively",
+      "correct_answer": "D",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Cần trạng từ 'decisively' để bổ nghĩa cho động từ 'spoke'. 'Decide' là động từ, 'decision' là danh từ, 'decisive' là tính từ - không phù hợp với vị trí này."
+    },
+    {
+      "question_text": "The research team _______ the data using statistical methods to understand consumer preferences.",
+      "option_a": "analyze",
+      "option_b": "analysis",
+      "option_c": "analytical",
+      "option_d": "analytically",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần động từ 'analyze' để hoàn thành câu. 'Analysis' là danh từ, 'analytical' là tính từ, 'analytically' là trạng từ - không phù hợp với cấu trúc 'team + động từ'."
+    },
+    {
+      "question_text": "An _______ mind is essential for scientists who need to examine complex phenomena systematically.",
+      "option_a": "analyze",
+      "option_b": "analysis",
+      "option_c": "analytical",
+      "option_d": "analytically",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Cần tính từ 'analytical' để bổ nghĩa cho danh từ 'mind'. 'Analyze' là động từ, 'analysis' là danh từ, 'analytically' là trạng từ - không phù hợp."
+    },
+    {
+      "question_text": "The _______ of the survey results showed that customer satisfaction had improved significantly.",
+      "option_a": "analyze",
+      "option_b": "analysis",
+      "option_c": "analytical",
+      "option_d": "analytically",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần danh từ 'analysis' sau 'The' để làm chủ ngữ. 'Analyze' là động từ, 'analytical' là tính từ, 'analytically' là trạng từ - không phù hợp."
+    },
+    {
+      "question_text": "The company _______ into a major corporation after investing heavily in research and development.",
+      "option_a": "develop",
+      "option_b": "development",
+      "option_c": "developed into",
+      "option_d": "developmental",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Developed into' là cụm động từ chính xác để diễn tả sự chuyển biến từ công ty nhỏ thành tập đoàn lớn. 'Develop' thiếu 'into', 'development' là danh từ, 'developmental' là tính từ - không phù hợp."
+    },
+    {
+      "question_text": "The factory _______ millions of units annually, making it one of the largest manufacturers in the region.",
+      "option_a": "produce",
+      "option_b": "production",
+      "option_c": "productive",
+      "option_d": "productivity",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần động từ 'produce' để hoàn thành câu. 'Production' là danh từ, 'productive' là tính từ, 'productivity' là danh từ - không phù hợp với cấu trúc 'factory + động từ'."
+    },
+    {
+      "question_text": "The university _______ a new scholarship program to support underprivileged students pursuing higher education.",
+      "option_a": "establish",
+      "option_b": "establishment",
+      "option_c": "established",
+      "option_d": "establishing",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần động từ ở thì quá khứ 'established' để hoàn thành câu. 'Establish' là dạng nguyên mẫu, 'establishment' là danh từ, 'establishing' là dạng -ing - không phù hợp với ngữ cảnh này."
+    },
+    {
+      "question_text": "Researchers _______ three main causes of the disease, which will help develop more effective treatments.",
+      "option_a": "identify",
+      "option_b": "identification",
+      "option_c": "identified",
+      "option_d": "identifying",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Cần động từ ở thì quá khứ 'identified' để hoàn thành câu. 'Identify' là dạng nguyên mẫu, 'identification' là danh từ, 'identifying' là dạng -ing - không phù hợp với ngữ cảnh này."
+    },
+    {
+      "question_text": "The _______ impact of climate change on agriculture cannot be ignored by policymakers and farmers.",
+      "option_a": "significant",
+      "option_b": "significantly",
+      "option_c": "significance",
+      "option_d": "signify",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Cần tính từ 'significant' để bổ nghĩa cho danh từ 'impact'. 'Significantly' là trạng từ, 'significance' là danh từ, 'signify' là động từ - không phù hợp với vị trí này."
+    }
+  ]
+}

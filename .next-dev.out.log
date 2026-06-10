@@ -1,0 +1,181 @@
+
+> ngocthaigiasu-app@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1995ms
+ ○ Compiling /vocabulary ...
+ ✓ Compiled /vocabulary in 11.2s (1827 modules)
+ GET /vocabulary 200 in 12072ms
+ ✓ Compiled in 929ms (870 modules)
+ GET /vocabulary 200 in 80ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.2s (1150 modules)
+ GET /api/auth/session 200 in 2808ms
+ GET /api/auth/session 200 in 68ms
+ ✓ Compiled /api/vocabulary in 390ms (1175 modules)
+ ✓ Compiled (1177 modules)
+ GET /api/vocabulary?filter=all 401 in 783ms
+ GET /api/notifications 401 in 794ms
+ GET /api/vocabulary?filter=all 401 in 58ms
+ GET /api/notifications 401 in 67ms
+ GET /api/vocabulary?filter=all 401 in 33ms
+ GET /api/notifications 401 in 33ms
+ ✓ Compiled in 950ms (2047 modules)
+ GET /api/vocabulary?filter=all 401 in 100ms
+ GET /api/notifications 401 in 39ms
+ GET /api/notifications 401 in 34ms
+ GET /api/notifications 401 in 52ms
+ GET /api/notifications 401 in 38ms
+ GET /api/notifications 401 in 37ms
+ GET /api/notifications 401 in 44ms
+ GET /api/notifications 401 in 49ms
+ GET /api/notifications 401 in 39ms
+ GET /api/notifications 401 in 40ms
+ GET /api/notifications 401 in 33ms
+ GET /api/notifications 401 in 22ms
+ GET /api/notifications 401 in 38ms
+ GET /api/notifications 401 in 36ms
+ GET /api/notifications 401 in 42ms
+ GET /api/notifications 401 in 54ms
+ GET /api/notifications 401 in 36ms
+ GET /api/notifications 401 in 34ms
+ GET /api/notifications 401 in 39ms
+ GET /api/notifications 401 in 38ms
+ GET /api/notifications 401 in 36ms
+ GET /api/notifications 401 in 35ms
+ GET /api/notifications 401 in 33ms
+ GET /api/notifications 401 in 24ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 39ms
+ GET /api/notifications 401 in 42ms
+ GET /api/notifications 401 in 31ms
+ GET /api/notifications 401 in 52ms
+ GET /api/notifications 401 in 26ms
+ GET /api/notifications 401 in 24ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 35ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 14ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 44ms
+ GET /api/notifications 401 in 37ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 14ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 28ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 14ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 19ms
+ ✓ Compiled in 695ms (2043 modules)
+ GET /api/notifications 401 in 101ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 24ms
+ ✓ Compiled in 591ms (2029 modules)
+ ✓ Compiled in 177ms (870 modules)
+ ✓ Compiled in 361ms (2043 modules)
+ GET /api/notifications 401 in 87ms
+ GET /api/notifications 401 in 27ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 22ms
+ ✓ Compiled in 544ms (2029 modules)
+ GET /api/notifications 401 in 73ms
+ GET /api/notifications 401 in 25ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 17ms
+ ○ Compiling /reading ...
+ ✓ Compiled /reading in 776ms (2041 modules)
+ GET /reading 200 in 1065ms
+ GET /api/notifications 401 in 76ms
+ GET /api/notifications 401 in 20ms
+ ✓ Compiled /reading/[passageId] in 351ms (2057 modules)
+ GET /reading/a81f22e1-f21b-5aab-a4ac-391003dc646f 200 in 733ms
+ GET /api/notifications 401 in 34ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 23ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 22ms
+ GET /api/notifications 401 in 14ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 24ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 22ms
+ GET /api/notifications 401 in 24ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 14ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 26ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 16ms
+ GET /api/notifications 401 in 23ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 19ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 21ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 17ms
+ GET /api/notifications 401 in 18ms
+ GET /api/notifications 401 in 22ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 20ms
+ GET /api/notifications 401 in 15ms
+ GET /api/notifications 401 in 19ms
+ GET /reading 200 in 66ms
+ ✓ Compiled /api/auth/[...nextauth] in 292ms (1182 modules)
+ GET /api/auth/session 200 in 417ms
+ GET /api/auth/session 200 in 17ms
+ GET /api/notifications 401 in 31ms
+ ✓ Compiled /api/reading in 150ms (1184 modules)
+ GET /api/reading? 401 in 297ms
+ GET /api/notifications 401 in 269ms
+ GET /api/reading? 401 in 19ms
+ GET /api/reading? 401 in 17ms
+ GET /api/reading? 401 in 14ms
+ GET /api/reading? 401 in 15ms
+ GET /api/reading? 401 in 19ms
+ GET /reading 200 in 168ms
+ GET /api/auth/session 200 in 45ms
+ GET /api/auth/session 200 in 21ms
+ GET /api/notifications 401 in 30ms
+ GET /api/reading? 401 in 42ms
+ GET /api/notifications 401 in 35ms
+ GET /api/reading? 401 in 29ms
+ GET /api/reading? 401 in 16ms
+ GET /api/reading? 401 in 15ms
+ GET /api/reading? 401 in 14ms
+ GET /api/reading? 401 in 22ms

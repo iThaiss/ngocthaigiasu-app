@@ -1,0 +1,185 @@
+{
+  "words": [
+    {
+      "word": "transform",
+      "pronunciation": "/trænsˈfɔːrm/",
+      "part_of_speech": "verb",
+      "definition_vi": "thay đổi hoàn toàn hình dạng, tính chất hoặc chức năng của cái gì; biến đổi",
+      "definition_en": "to change completely in form, nature, or function",
+      "level": "B2",
+      "synonyms": [
+        "convert",
+        "metamorphose",
+        "revolutionize"
+      ],
+      "antonyms": [
+        "preserve",
+        "maintain"
+      ],
+      "example_sentence": "Digital technology has transformed the way students access educational resources and collaborate with peers globally."
+    },
+    {
+      "word": "transformation",
+      "pronunciation": "/ˌtrænsfərˈmeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình hoặc kết quả của sự thay đổi hoàn toàn; biến đổi",
+      "definition_en": "the process or result of changing completely",
+      "level": "B2",
+      "synonyms": [
+        "conversion",
+        "metamorphosis",
+        "revolution"
+      ],
+      "antonyms": [
+        "stagnation",
+        "preservation"
+      ],
+      "example_sentence": "The transformation of rural areas into urban centers has raised concerns about environmental sustainability and cultural preservation."
+    },
+    {
+      "word": "transformative",
+      "pronunciation": "/trænsˈfɔːrmətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có khả năng hoặc tác dụng thay đổi hoàn toàn; mang tính chuyển biến",
+      "definition_en": "causing or capable of causing a complete change",
+      "level": "C1",
+      "synonyms": [
+        "revolutionary",
+        "groundbreaking",
+        "paradigm-shifting"
+      ],
+      "antonyms": [
+        "superficial",
+        "trivial"
+      ],
+      "example_sentence": "Artificial intelligence is considered a transformative technology that will reshape industries and labor markets in the coming decades."
+    },
+    {
+      "word": "contribute",
+      "pronunciation": "/kənˈtrɪbjuːt/",
+      "part_of_speech": "verb",
+      "definition_vi": "đóng góp, cung cấp một phần để giúp đạt được mục tiêu chung",
+      "definition_en": "to give or provide something as a part of a joint effort",
+      "level": "C1",
+      "synonyms": [
+        "provide",
+        "supply",
+        "donate"
+      ],
+      "antonyms": [
+        "withhold",
+        "deprive"
+      ],
+      "example_sentence": "Multiple factors contribute to climate change, including greenhouse gas emissions from industrial activities and deforestation."
+    },
+    {
+      "word": "contribution",
+      "pronunciation": "/ˌkɒntrɪˈbjuːʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều được đóng góp; phần đóng góp vào một mục tiêu chung",
+      "definition_en": "something given or provided as a part of a joint effort",
+      "level": "C1",
+      "synonyms": [
+        "donation",
+        "input",
+        "share"
+      ],
+      "antonyms": [
+        "withdrawal",
+        "deprivation"
+      ],
+      "example_sentence": "The contribution of renewable energy sources to the global energy mix has increased significantly over the past decade."
+    },
+    {
+      "word": "contribute to",
+      "pronunciation": "/kənˈtrɪbjuːt tuː/",
+      "part_of_speech": "collocation",
+      "definition_vi": "là một trong những nguyên nhân hoặc yếu tố dẫn đến kết quả nào đó",
+      "definition_en": "to be one of the causes or factors that leads to a result",
+      "level": "B2",
+      "synonyms": [
+        "lead to",
+        "result in",
+        "cause"
+      ],
+      "antonyms": [
+        "prevent",
+        "hinder"
+      ],
+      "example_sentence": "Poor diet and sedentary lifestyle contribute to the rising prevalence of obesity and cardiovascular diseases in developed nations."
+    },
+    {
+      "word": "emerge",
+      "pronunciation": "/ɪˈmɜːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "xuất hiện, nổi lên, phát sinh; trở nên rõ ràng hoặc được biết đến",
+      "definition_en": "to come into view or become apparent; to arise or develop",
+      "level": "B2",
+      "synonyms": [
+        "appear",
+        "arise",
+        "surface"
+      ],
+      "antonyms": [
+        "disappear",
+        "vanish"
+      ],
+      "example_sentence": "New social media platforms continue to emerge as younger generations seek alternative spaces for digital communication and self-expression."
+    },
+    {
+      "word": "emergence",
+      "pronunciation": "/ɪˈmɜːrdʒəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự xuất hiện, sự nổi lên; quá trình trở nên rõ ràng hoặc được biết đến",
+      "definition_en": "the process of coming into view or becoming apparent",
+      "level": "C1",
+      "synonyms": [
+        "appearance",
+        "arising",
+        "development"
+      ],
+      "antonyms": [
+        "disappearance",
+        "concealment"
+      ],
+      "example_sentence": "The emergence of artificial intelligence in healthcare has prompted ethical discussions about data privacy and algorithmic bias in medical diagnosis."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm cho dễ dàng hơn; tạo điều kiện thuận lợi cho việc gì",
+      "definition_en": "to make something easier or help it happen",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Online learning platforms facilitate access to quality education for students in remote areas who lack traditional schooling infrastructure."
+    },
+    {
+      "word": "facilitation",
+      "pronunciation": "/fəˌsɪlɪˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "hành động hoặc quá trình làm cho điều gì dễ dàng hơn; tạo điều kiện",
+      "definition_en": "the action or process of making something easier",
+      "level": "C1",
+      "synonyms": [
+        "enablement",
+        "assistance",
+        "promotion"
+      ],
+      "antonyms": [
+        "obstruction",
+        "hindrance"
+      ],
+      "example_sentence": "The facilitation of international trade agreements has reduced tariffs and increased cross-border commerce between developing and developed economies."
+    }
+  ],
+  "questions": []
+}

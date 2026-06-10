@@ -1,0 +1,449 @@
+{
+  "words": [
+    {
+      "word": "social stratification",
+      "pronunciation": "/ˈsoʊʃəl ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự phân tầng xã hội; hệ thống phân chia cộng đồng thành các lớp xã hội khác nhau dựa trên tài sản, địa vị, giáo dục",
+      "definition_en": "the hierarchical arrangement of individuals and groups in society based on wealth, status, and education",
+      "level": "C1",
+      "synonyms": [
+        "class system",
+        "social hierarchy"
+      ],
+      "antonyms": [
+        "egalitarianism",
+        "social equality"
+      ],
+      "example_sentence": "The study examined how social stratification affects educational opportunities across different demographic groups in urban areas."
+    },
+    {
+      "word": "intergenerational mobility",
+      "pronunciation": "/ˌɪntərˌdʒɛnəˈreɪʃənəl moʊˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng thay đổi vị trí xã hội giữa các thế hệ; sự di chuyển lên hoặc xuống trong xã hội từ thế hệ cha mẹ sang con cái",
+      "definition_en": "the ability of individuals to move up or down the social ladder compared to their parents' position",
+      "level": "C1",
+      "synonyms": [
+        "social mobility",
+        "class mobility"
+      ],
+      "antonyms": [
+        "social rigidity"
+      ],
+      "example_sentence": "Countries with strong education systems typically demonstrate higher intergenerational mobility, allowing children from disadvantaged backgrounds to achieve better outcomes."
+    },
+    {
+      "word": "social fragmentation",
+      "pronunciation": "/ˈsoʊʃəl ˌfrægmənˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự chia rẽ xã hội; tình trạng cộng đồng bị chia thành các nhóm riêng biệt, mất sự kết nối và thống nhất",
+      "definition_en": "the breaking apart of society into isolated groups with little interaction or shared values",
+      "level": "C1",
+      "synonyms": [
+        "social division",
+        "community breakdown"
+      ],
+      "antonyms": [
+        "social unity",
+        "community integration"
+      ],
+      "example_sentence": "Urban planners warn that inadequate public spaces contribute to social fragmentation and reduced civic participation among residents."
+    },
+    {
+      "word": "civic engagement",
+      "pronunciation": "/ˈsɪvɪk ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tham gia của công dân vào các hoạt động công cộng, chính trị, và cộng đồng",
+      "definition_en": "active participation of citizens in public affairs, community service, and democratic processes",
+      "level": "B2",
+      "synonyms": [
+        "community participation",
+        "citizen involvement"
+      ],
+      "antonyms": [
+        "apathy",
+        "disengagement"
+      ],
+      "example_sentence": "Research shows that civic engagement through volunteering strengthens social bonds and improves neighborhood safety."
+    },
+    {
+      "word": "social exclusion",
+      "pronunciation": "/ˈsoʊʃəl ɪkˈskluːʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự loại trừ xã hội; tình trạng một số người bị cô lập khỏi các cơ hội, dịch vụ, và hoạt động xã hội chính",
+      "definition_en": "the process of being shut out from full participation in society due to poverty, discrimination, or lack of access",
+      "level": "C1",
+      "synonyms": [
+        "marginalization",
+        "social isolation"
+      ],
+      "antonyms": [
+        "inclusion",
+        "integration"
+      ],
+      "example_sentence": "Addressing social exclusion requires comprehensive policies that ensure equitable access to education, employment, and healthcare services."
+    },
+    {
+      "word": "community resilience",
+      "pronunciation": "/kəˈmjuːnəti rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng của cộng đồng phục hồi và thích ứng sau các khó khăn, thảm họa, hoặc thay đổi xã hội",
+      "definition_en": "the capacity of a community to withstand and recover from adversity, crisis, or social change",
+      "level": "C1",
+      "synonyms": [
+        "adaptive capacity",
+        "community strength"
+      ],
+      "antonyms": [
+        "vulnerability",
+        "fragility"
+      ],
+      "example_sentence": "Building community resilience involves strengthening local networks, improving infrastructure, and fostering social trust among residents."
+    },
+    {
+      "word": "socioeconomic status",
+      "pronunciation": "/ˌsoʊsioʊɪˌkɑːnɑːmɪk ˈsteɪtəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng kinh tế-xã hội; vị trí của một cá nhân hoặc gia đình dựa trên thu nhập, giáo dục, và nghề nghiệp",
+      "definition_en": "a measure of an individual's or family's economic and social position based on income, education, and occupation",
+      "level": "B2",
+      "synonyms": [
+        "social class",
+        "economic standing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Students from higher socioeconomic status backgrounds tend to have greater access to educational resources and extracurricular opportunities."
+    },
+    {
+      "word": "institutional racism",
+      "pronunciation": "/ɪnˈstɪtjuʃənəl ˈreɪsɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "phân biệt chủng tộc có hệ thống; sự phân biệt được tích hợp vào các cấu trúc, chính sách, và thực hành của các tổ chức",
+      "definition_en": "systemic discrimination embedded in the policies, practices, and structures of institutions that disadvantage certain racial groups",
+      "level": "C1",
+      "synonyms": [
+        "systemic racism",
+        "structural racism"
+      ],
+      "antonyms": [
+        "racial equality",
+        "inclusion"
+      ],
+      "example_sentence": "Institutional racism in hiring practices has been documented across multiple sectors, requiring targeted reform and accountability measures."
+    },
+    {
+      "word": "social cohesion",
+      "pronunciation": "/ˈsoʊʃəl koʊˈhiːʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự gắn kết xã hội; mức độ mà các thành viên cộng đồng cảm thấy liên kết, tin tưởng lẫn nhau",
+      "definition_en": "the degree to which members of a society feel connected, trust one another, and share common values",
+      "level": "C1",
+      "synonyms": [
+        "social bonding",
+        "community unity"
+      ],
+      "antonyms": [
+        "social division",
+        "fragmentation"
+      ],
+      "example_sentence": "Multicultural societies that invest in inclusive policies and intercultural dialogue tend to maintain stronger social cohesion."
+    },
+    {
+      "word": "digital divide",
+      "pronunciation": "/ˈdɪdʒɪtəl dɪˈvaɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "khoảng cách số; sự chênh lệch trong khả năng tiếp cận công nghệ và internet giữa các nhóm dân cư khác nhau",
+      "definition_en": "the gap in access to digital technology and internet connectivity between different populations or regions",
+      "level": "B2",
+      "synonyms": [
+        "technology gap",
+        "connectivity inequality"
+      ],
+      "antonyms": [
+        "digital inclusion",
+        "universal access"
+      ],
+      "example_sentence": "The digital divide has widened during the pandemic, leaving rural and low-income students at a disadvantage in online learning."
+    },
+    {
+      "word": "gentrification",
+      "pronunciation": "/ˌdʒɛntrɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình thay đổi nhân khẩu học của một khu vực; sự cải tạo và hiện đại hóa khu vực cũ dẫn đến tăng giá bất động sản và di cư của cư dân gốc",
+      "definition_en": "the process of urban renewal that increases property values and attracts wealthier residents, often displacing original inhabitants",
+      "level": "C1",
+      "synonyms": [
+        "urban renewal",
+        "neighborhood transformation"
+      ],
+      "antonyms": [
+        "urban decay",
+        "disinvestment"
+      ],
+      "example_sentence": "Rapid gentrification in downtown areas has displaced long-term residents and small businesses, raising concerns about community preservation."
+    },
+    {
+      "word": "intersectionality",
+      "pronunciation": "/ˌɪntərˌsɛkʃəˈnæləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự giao thoa của các hình thức phân biệt; khái niệm rằng các danh tính xã hội (giới tính, chủng tộc, lớp) giao thoa và tạo ra những trải nghiệm độc đáo",
+      "definition_en": "the interconnected nature of social categories such as race, gender, and class that create overlapping systems of discrimination",
+      "level": "C1",
+      "synonyms": [
+        "intersecting identities",
+        "overlapping discrimination"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding intersectionality is crucial for developing effective social policies that address the complex needs of marginalized communities."
+    },
+    {
+      "word": "social safety net",
+      "pronunciation": "/ˈsoʊʃəl ˈseɪfti nɛt/",
+      "part_of_speech": "noun",
+      "definition_vi": "lưới an toàn xã hội; hệ thống các chương trình và dịch vụ công cộng nhằm bảo vệ những người gặp khó khăn",
+      "definition_en": "a system of government programs and services designed to provide financial and social support to vulnerable individuals and families",
+      "level": "B2",
+      "synonyms": [
+        "welfare system",
+        "social protection"
+      ],
+      "antonyms": [],
+      "example_sentence": "A robust social safety net including unemployment benefits and healthcare access helps reduce poverty and economic inequality."
+    },
+    {
+      "word": "community-based organization",
+      "pronunciation": "/kəˈmjuːnəti ˈbeɪst ˌɔːrɡənɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "tổ chức dựa trên cộng đồng; các tổ chức phi lợi nhuận hoạt động tại địa phương để giải quyết các vấn đề xã hội",
+      "definition_en": "a non-profit organization that operates at the local level to address specific community needs and social issues",
+      "level": "B2",
+      "synonyms": [
+        "grassroots organization",
+        "local NGO"
+      ],
+      "antonyms": [],
+      "example_sentence": "Community-based organizations play a vital role in providing mental health services, job training, and housing assistance to underserved populations."
+    },
+    {
+      "word": "social mobility",
+      "pronunciation": "/ˈsoʊʃəl moʊˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng di chuyển xã hội; sự thay đổi vị trí hoặc địa vị xã hội của một cá nhân hoặc nhóm trong xã hội",
+      "definition_en": "the ability of individuals or groups to move up or down the social hierarchy based on education, income, or opportunity",
+      "level": "B2",
+      "synonyms": [
+        "class mobility",
+        "upward mobility"
+      ],
+      "antonyms": [
+        "social rigidity",
+        "class immobility"
+      ],
+      "example_sentence": "Education is considered one of the most effective mechanisms for promoting social mobility and breaking cycles of poverty."
+    },
+    {
+      "word": "public health crisis",
+      "pronunciation": "/ˈpʌblɪk hɛlθ ˈkraɪsɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "khủng hoảng y tế công cộng; tình trạng khẩn cấp ảnh hưởng đến sức khỏe của một số lượng lớn dân số",
+      "definition_en": "an emergency situation affecting the health and well-being of a significant portion of the population",
+      "level": "B2",
+      "synonyms": [
+        "health emergency",
+        "epidemic"
+      ],
+      "antonyms": [],
+      "example_sentence": "The opioid crisis represents a major public health crisis affecting communities across all socioeconomic backgrounds."
+    },
+    {
+      "word": "urban sprawl",
+      "pronunciation": "/ˈɜːrbən sprɔːl/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự mở rộng thành phố không kiểm soát; sự phát triển vô tổ chức của các khu vực đô thị ra ngoài ranh giới thành phố",
+      "definition_en": "the uncontrolled expansion of urban areas into surrounding rural land, often resulting in environmental and social problems",
+      "level": "B2",
+      "synonyms": [
+        "suburban expansion",
+        "unplanned urbanization"
+      ],
+      "antonyms": [
+        "compact development",
+        "urban consolidation"
+      ],
+      "example_sentence": "Urban sprawl has increased commute times and reduced access to public transportation for residents in outer suburban areas."
+    },
+    {
+      "word": "food insecurity",
+      "pronunciation": "/ˈfuːd ɪnˈsɪkjərəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng thiếu thực phẩm; sự không chắc chắn về khả năng tiếp cận đủ thực phẩm an toàn và bổ dưỡng",
+      "definition_en": "the lack of reliable access to sufficient, safe, and nutritious food for an active and healthy life",
+      "level": "B2",
+      "synonyms": [
+        "hunger",
+        "malnutrition risk"
+      ],
+      "antonyms": [
+        "food security",
+        "nutritional stability"
+      ],
+      "example_sentence": "Food insecurity affects millions of families in developed nations, particularly those living below the poverty line."
+    },
+    {
+      "word": "mental health stigma",
+      "pronunciation": "/ˈmɛntəl hɛlθ ˈstɪɡmə/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỳ thị về sức khỏe tâm thần; sự phán xét tiêu cực và định kiến xã hội đối với những người có vấn đề sức khỏe tâm thần",
+      "definition_en": "negative attitudes and prejudice toward individuals with mental health conditions, often preventing them from seeking help",
+      "level": "B2",
+      "synonyms": [
+        "mental health discrimination",
+        "psychological stigma"
+      ],
+      "antonyms": [
+        "mental health acceptance",
+        "destigmatization"
+      ],
+      "example_sentence": "Reducing mental health stigma requires public education campaigns and increased representation of mental health issues in media."
+    },
+    {
+      "word": "homelessness",
+      "pronunciation": "/ˈhoʊmlɪsnəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng vô gia cư; sự thiếu nhà ở ổn định, thường do nghèo đói, bệnh tật, hoặc các vấn đề xã hội khác",
+      "definition_en": "the state of lacking stable housing, often resulting from poverty, mental illness, addiction, or systemic failures",
+      "level": "B2",
+      "synonyms": [
+        "housing insecurity",
+        "rough sleeping"
+      ],
+      "antonyms": [
+        "housing stability",
+        "secure accommodation"
+      ],
+      "example_sentence": "Addressing homelessness requires integrated approaches combining affordable housing, mental health services, and employment support."
+    },
+    {
+      "word": "environmental justice",
+      "pronunciation": "/ɪnˌvaɪrənˈmɛntəl ˈdʒʌstɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "công lý môi trường; nguyên tắc rằng tất cả mọi người, bất kể chủng tộc hay địa vị kinh tế, nên được bảo vệ khỏi ô nhiễm môi trường",
+      "definition_en": "the principle that all people should have equal protection from environmental hazards and equal access to environmental benefits",
+      "level": "C1",
+      "synonyms": [
+        "environmental equity",
+        "ecological justice"
+      ],
+      "antonyms": [
+        "environmental racism",
+        "environmental inequality"
+      ],
+      "example_sentence": "Environmental justice advocates argue that low-income communities disproportionately bear the burden of industrial pollution and toxic waste."
+    },
+    {
+      "word": "social cohesion index",
+      "pronunciation": "/ˈsoʊʃəl koʊˈhiːʒən ˈɪndɛks/",
+      "part_of_speech": "noun",
+      "definition_vi": "chỉ số đo lường mức độ gắn kết xã hội; công cụ đánh giá mức độ tin tưởng, hợp tác, và thống nhất trong cộng đồng",
+      "definition_en": "a measurement tool used to assess the level of social trust, cooperation, and unity within a community or nation",
+      "level": "C1",
+      "synonyms": [
+        "cohesion measure",
+        "social trust indicator"
+      ],
+      "antonyms": [],
+      "example_sentence": "International organizations use social cohesion indices to monitor trends in community integration and identify areas requiring intervention."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'intergenerational mobility' in the context of social issues?",
+      "option_a": "The movement of individuals from one country to another across generations",
+      "option_b": "The ability of people to change their social position compared to their parents' status",
+      "option_c": "The process of aging within a single social class throughout one's lifetime",
+      "option_d": "The migration of families to urban centers for employment opportunities",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intergenerational mobility đề cập đến khả năng thay đổi vị trí xã hội giữa các thế hệ. Đáp án B chính xác vì nó mô tả sự di chuyển lên hoặc xuống trong xã hội từ thế hệ cha mẹ sang con cái. A, C, D đều không phản ánh đúng khái niệm này."
+    },
+    {
+      "question_text": "The term 'social fragmentation' refers to which of the following situations?",
+      "option_a": "The division of a community into isolated groups with minimal interaction and shared values",
+      "option_b": "The rapid growth of population in urban centers",
+      "option_c": "The equal distribution of resources among all citizens",
+      "option_d": "The strengthening of cultural traditions within ethnic communities",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Social fragmentation là sự chia rẽ xã hội, khi cộng đồng bị chia thành các nhóm riêng biệt mất sự kết nối. Đáp án A đúng. B liên quan đến tăng trưởng dân số, C liên quan đến phân phối tài nguyên, D liên quan đến bảo tồn văn hóa."
+    },
+    {
+      "question_text": "What is the primary concern regarding 'gentrification' in urban communities?",
+      "option_a": "It provides new job opportunities for all residents in the area",
+      "option_b": "It improves infrastructure and increases property values, often displacing original residents",
+      "option_c": "It reduces the cost of living for low-income families",
+      "option_d": "It eliminates the need for public transportation systems",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Gentrification là quá trình cải tạo khu vực dẫn đến tăng giá bất động sản và di cư của cư dân gốc. Đáp án B chính xác vì nó phản ánh cả lợi ích (cải thiện cơ sở hạ tầng) và tác hại (di cư của cư dân gốc). A sai vì không phải tất cả cư dân được hưởng lợi, C sai vì giá tăng, D không liên quan."
+    },
+    {
+      "question_text": "Which statement best explains the relationship between 'socioeconomic status' and educational outcomes?",
+      "option_a": "Socioeconomic status has no measurable impact on student achievement",
+      "option_b": "Students from higher socioeconomic backgrounds typically have greater access to educational resources and support",
+      "option_c": "Educational outcomes depend solely on individual intelligence, regardless of economic background",
+      "option_d": "Low socioeconomic status guarantees academic success through government intervention",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Socioeconomic status ảnh hưởng đáng kể đến kết quả học tập. Đáp án B đúng vì học sinh từ gia đình có địa vị kinh tế-xã hội cao hơn thường có tiếp cận tốt hơn đến tài nguyên giáo dục. A sai (có tác động), C sai (bỏ qua yếu tố kinh tế-xã hội), D sai (không đảm bảo thành công)."
+    },
+    {
+      "question_text": "The 'digital divide' primarily refers to which inequality in modern society?",
+      "option_a": "The difference in income between technology companies and other industries",
+      "option_b": "The gap in access to digital technology and internet connectivity between different populations",
+      "option_c": "The conflict between traditional and modern educational methods",
+      "option_d": "The disparity in smartphone brands owned by different age groups",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Digital divide là khoảng cách trong khả năng tiếp cận công nghệ và internet giữa các nhóm dân cư. Đáp án B chính xác. A liên quan đến thu nhập công ty, C liên quan đến phương pháp giáo dục, D liên quan đến sở thích cá nhân."
+    },
+    {
+      "question_text": "Which of the following is a key characteristic of 'institutional racism'?",
+      "option_a": "Individual acts of prejudice committed by isolated individuals",
+      "option_b": "Systemic discrimination embedded in the policies and structures of organizations",
+      "option_c": "Voluntary segregation based on cultural preferences",
+      "option_d": "Historical events that no longer affect modern society",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Institutional racism là phân biệt chủng tộc có hệ thống được tích hợp vào cấu trúc tổ chức. Đáp án B đúng vì nó mô tả bản chất có hệ thống của vấn đề. A chỉ là phân biệt cá nhân, C là sự lựa chọn tự nguyện, D bỏ qua tác động hiện tại."
+    },
+    {
+      "question_text": "What does 'community resilience' enable a community to do?",
+      "option_a": "Completely prevent all forms of social problems and crises",
+      "option_b": "Withstand and recover from adversity, crisis, or social change",
+      "option_c": "Eliminate the need for government support and intervention",
+      "option_d": "Ensure that all residents achieve equal wealth and status",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Community resilience là khả năng của cộng đồng phục hồi và thích ứng sau khó khăn. Đáp án B đúng vì nó mô tả khả năng chịu đựng và phục hồi. A sai (không thể ngăn chặn hoàn toàn), C sai (vẫn cần hỗ trợ), D sai (không đảm bảo bình đẳng tài sản)."
+    },
+    {
+      "question_text": "Which of the following best illustrates the concept of 'intersectionality' in social analysis?",
+      "option_a": "A woman from a low-income background facing discrimination based on both gender and economic status",
+      "option_b": "A person's ability to move between different social classes",
+      "option_c": "The government's policy of equal treatment for all citizens",
+      "option_d": "The historical timeline of social movements in a country",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Intersectionality là sự giao thoa của các hình thức phân biệt (giới tính, chủng tộc, lớp). Đáp án A đúng vì nó minh họa cách nhiều danh tính xã hội giao thoa tạo ra những trải nghiệm độc đáo. B liên quan đến social mobility, C liên quan đến chính sách bình đẳng, D liên quan đến lịch sử."
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "words": [
+    {
+      "word": "continual",
+      "pronunciation": "/kənˈtɪnjuəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên tục, xảy ra nhiều lần trong một khoảng thời gian (nhưng không nhất thiết không ngừng)",
+      "definition_en": "happening repeatedly over a period of time; frequent but with interruptions",
+      "level": "B2",
+      "synonyms": [
+        "frequent",
+        "repeated",
+        "recurring"
+      ],
+      "antonyms": [
+        "occasional",
+        "intermittent"
+      ],
+      "example_sentence": "The company faced continual complaints from customers about product quality throughout the year."
+    },
+    {
+      "word": "continuous",
+      "pronunciation": "/kənˈtɪnjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên tục không ngừng, kéo dài mà không có sự gián đoạn",
+      "definition_en": "uninterrupted; lasting without a break",
+      "level": "B2",
+      "synonyms": [
+        "unbroken",
+        "uninterrupted",
+        "constant"
+      ],
+      "antonyms": [
+        "discontinuous",
+        "broken"
+      ],
+      "example_sentence": "Modern smartphones require continuous internet connectivity to function optimally."
+    },
+    {
+      "word": "adapt",
+      "pronunciation": "/əˈdæpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thích nghi, điều chỉnh để phù hợp với điều kiện mới",
+      "definition_en": "to adjust or modify to suit new conditions",
+      "level": "C1",
+      "synonyms": [
+        "adjust",
+        "modify",
+        "acclimate"
+      ],
+      "antonyms": [
+        "resist",
+        "refuse"
+      ],
+      "example_sentence": "Students must adapt their study methods when transitioning from high school to university."
+    },
+    {
+      "word": "adoptive",
+      "pronunciation": "/əˈdɒptɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến việc nhận con nuôi hoặc được nhận làm con nuôi",
+      "definition_en": "relating to adoption or an adopted child/parent",
+      "level": "B2",
+      "synonyms": [
+        "adopted"
+      ],
+      "antonyms": [
+        "biological",
+        "natural"
+      ],
+      "example_sentence": "The adoptive parents provided their child with the same love and support as biological parents would."
+    },
+    {
+      "word": "appreciable",
+      "pronunciation": "/əˈpriːʃəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, có thể nhận thấy rõ ràng (về mức độ hoặc lượng)",
+      "definition_en": "large or significant enough to be noticed or measured",
+      "level": "B2",
+      "synonyms": [
+        "considerable",
+        "significant",
+        "noticeable"
+      ],
+      "antonyms": [
+        "negligible",
+        "insignificant"
+      ],
+      "example_sentence": "The new environmental policy has resulted in an appreciable reduction in carbon emissions."
+    },
+    {
+      "word": "appreciative",
+      "pronunciation": "/əˈpriːʃətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "biết ơn, cảm thấy vui vẻ và tạ ơn vì điều gì đó",
+      "definition_en": "feeling or showing gratitude and recognition of value",
+      "level": "B2",
+      "synonyms": [
+        "grateful",
+        "thankful",
+        "recognizing"
+      ],
+      "antonyms": [
+        "ungrateful",
+        "unappreciative"
+      ],
+      "example_sentence": "The audience gave an appreciative applause after the orchestra's outstanding performance."
+    },
+    {
+      "word": "credible",
+      "pronunciation": "/ˈkredəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng tin cậy, có thể tin được (về người hoặc thông tin)",
+      "definition_en": "able to be believed or trusted; convincing",
+      "level": "B2",
+      "synonyms": [
+        "trustworthy",
+        "reliable",
+        "believable"
+      ],
+      "antonyms": [
+        "incredible",
+        "untrustworthy"
+      ],
+      "example_sentence": "The witness provided credible evidence that helped solve the criminal case."
+    },
+    {
+      "word": "credulous",
+      "pronunciation": "/ˈkredjuləs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ tin, hay tin vào những điều không có bằng chứng",
+      "definition_en": "too willing to believe things; gullible",
+      "level": "B2",
+      "synonyms": [
+        "gullible",
+        "naive",
+        "trusting"
+      ],
+      "antonyms": [
+        "skeptical",
+        "cynical"
+      ],
+      "example_sentence": "Credulous consumers often fall victim to misleading advertising and false health claims."
+    },
+    {
+      "word": "defective",
+      "pronunciation": "/dɪˈfektɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có khiếm khuyết, không hoàn hảo, bị lỗi",
+      "definition_en": "having a fault or imperfection; not working properly",
+      "level": "B2",
+      "synonyms": [
+        "faulty",
+        "broken",
+        "imperfect"
+      ],
+      "antonyms": [
+        "perfect",
+        "flawless"
+      ],
+      "example_sentence": "The manufacturer recalled thousands of defective smartphones due to battery overheating issues."
+    },
+    {
+      "word": "deficient",
+      "pronunciation": "/dɪˈfɪʃənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thiếu hụt, không đủ (về lượng hoặc chất lượng)",
+      "definition_en": "lacking something necessary; insufficient in quantity or quality",
+      "level": "B2",
+      "synonyms": [
+        "lacking",
+        "insufficient",
+        "inadequate"
+      ],
+      "antonyms": [
+        "sufficient",
+        "adequate"
+      ],
+      "example_sentence": "A diet deficient in calcium and vitamin D can lead to weakened bones and osteoporosis."
+    },
+    {
+      "word": "eligible",
+      "pronunciation": "/ˈelɪdʒəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đủ điều kiện, có quyền được xem xét (cho một vị trí, giải thưởng, v.v.)",
+      "definition_en": "qualified or entitled to be chosen or considered for something",
+      "level": "B2",
+      "synonyms": [
+        "qualified",
+        "entitled",
+        "suitable"
+      ],
+      "antonyms": [
+        "ineligible",
+        "disqualified"
+      ],
+      "example_sentence": "Only students with a minimum GPA of 3.5 are eligible to apply for the scholarship program."
+    },
+    {
+      "word": "illegible",
+      "pronunciation": "/ɪˈledʒəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thể đọc được, chữ viết không rõ ràng",
+      "definition_en": "impossible or very difficult to read",
+      "level": "B2",
+      "synonyms": [
+        "unreadable",
+        "indecipherable"
+      ],
+      "antonyms": [
+        "legible",
+        "readable"
+      ],
+      "example_sentence": "The doctor's handwriting on the prescription was so illegible that the pharmacist had to call for clarification."
+    },
+    {
+      "word": "ingenious",
+      "pronunciation": "/ɪnˈdʒeniəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tài ba, sáng tạo, có khả năng phát minh ra những điều thông minh",
+      "definition_en": "clever and original in design or invention; showing great skill",
+      "level": "B2",
+      "synonyms": [
+        "clever",
+        "inventive",
+        "brilliant"
+      ],
+      "antonyms": [
+        "stupid",
+        "unimaginative"
+      ],
+      "example_sentence": "The engineer designed an ingenious solution that reduced production costs by 40 percent."
+    },
+    {
+      "word": "ingenuous",
+      "pronunciation": "/ɪnˈdʒenjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thật thà, ngây thơ, không có ý xấu hoặc lừa dối",
+      "definition_en": "innocent and honest; frank and straightforward",
+      "level": "B2",
+      "synonyms": [
+        "naive",
+        "innocent",
+        "candid"
+      ],
+      "antonyms": [
+        "cunning",
+        "deceitful"
+      ],
+      "example_sentence": "Her ingenuous remarks about the company's problems revealed her lack of political awareness."
+    },
+    {
+      "word": "notable",
+      "pronunciation": "/ˈnoʊtəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng chú ý, nổi bật, quan trọng đủ để được nhớ đến",
+      "definition_en": "worthy of attention or notice; remarkable or significant",
+      "level": "B2",
+      "synonyms": [
+        "remarkable",
+        "significant",
+        "noteworthy"
+      ],
+      "antonyms": [
+        "insignificant",
+        "unremarkable"
+      ],
+      "example_sentence": "A notable achievement in climate science was the discovery of the ozone hole over Antarctica."
+    },
+    {
+      "word": "notorious",
+      "pronunciation": "/noʊˈtɔːriəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "khét tiếng, nổi tiếng vì những điều xấu hoặc tiêu cực",
+      "definition_en": "famous or well-known for something bad; infamous",
+      "level": "B2",
+      "synonyms": [
+        "infamous",
+        "disreputable",
+        "ill-famed"
+      ],
+      "antonyms": [
+        "reputable",
+        "honorable"
+      ],
+      "example_sentence": "The notorious criminal was finally captured after evading police for over a decade."
+    },
+    {
+      "word": "sensational",
+      "pronunciation": "/senˈseɪʃənəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "gây chú ý mạnh mẽ, kích thích cảm xúc, hoặc được thiết kế để gây ấn tượng",
+      "definition_en": "causing great public interest or excitement; designed to shock or impress",
+      "level": "B2",
+      "synonyms": [
+        "spectacular",
+        "dramatic",
+        "striking"
+      ],
+      "antonyms": [
+        "ordinary",
+        "mundane"
+      ],
+      "example_sentence": "The tabloid published sensational headlines to boost sales, often exaggerating minor incidents."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The factory experienced _____ problems with its machinery, requiring repairs almost every week throughout the production cycle.",
+      "option_a": "continual",
+      "option_b": "continuous",
+      "option_c": "continuum",
+      "option_d": "continental",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (continual) là đúng vì nó chỉ những vấn đề xảy ra nhiều lần với sự gián đoạn. 'Continuous' (B) sẽ ngụ ý máy móc bị hỏng liên tục không ngừng, điều không thực tế. Bẫy: hai từ này dễ nhầm lẫn vì cả hai đều liên quan đến sự lặp lại."
+    },
+    {
+      "question_text": "Which word best describes a person who easily believes false information without questioning its validity?",
+      "option_a": "credible",
+      "option_b": "credulous",
+      "option_c": "creditable",
+      "option_d": "credited",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (credulous) là đúng vì nó mô tả người dễ tin vào những điều không có bằng chứng. 'Credible' (A) mô tả thứ gì đó đáng tin cậy, không phải người dễ tin. Bẫy: cả hai từ đều bắt đầu bằng 'cred-' nhưng có nghĩa hoàn toàn khác nhau."
+    },
+    {
+      "question_text": "The _____ parents worked tirelessly to ensure their adopted children received the same educational opportunities as their biological siblings.",
+      "option_a": "adoptive",
+      "option_b": "adaptive",
+      "option_c": "adopted",
+      "option_d": "adopting",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (adoptive) là đúng vì nó là tính từ mô tả cha mẹ nhận con nuôi. 'Adaptive' (B) có nghĩa là khả năng thích nghi. 'Adopted' (C) dùng cho con nuôi, không phải cha mẹ. Bẫy: các từ này có cấu trúc tương tự nhưng ý nghĩa rất khác."
+    },
+    {
+      "question_text": "The report showed an _____ decrease in unemployment rates, with the figure dropping from 8% to 5% within six months.",
+      "option_a": "appreciable",
+      "option_b": "appreciative",
+      "option_c": "appreciated",
+      "option_d": "appreciating",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (appreciable) là đúng vì nó mô tả mức giảm đáng kể có thể nhận thấy rõ ràng. 'Appreciative' (B) có nghĩa là biết ơn hoặc cảm thấy vui vẻ. Bẫy: cả hai từ đều liên quan đến 'appreciate' nhưng dùng trong ngữ cảnh hoàn toàn khác."
+    },
+    {
+      "question_text": "The witness's testimony was considered _____ by the court because she had no prior criminal record and provided consistent details.",
+      "option_a": "credible",
+      "option_b": "credulous",
+      "option_c": "creditable",
+      "option_d": "credited",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (credible) là đúng vì nó mô tả lời khai đáng tin cậy và có thể tin được. 'Credulous' (B) mô tả người dễ tin vào những điều không có bằng chứng, không phải lời khai. Bẫy: hai từ này dễ nhầm lẫn nhất trong họ từ 'cred-'."
+    },
+    {
+      "question_text": "The software contained a _____ that prevented users from saving their work, making it unsuitable for commercial release.",
+      "option_a": "defect",
+      "option_b": "defective",
+      "option_c": "deficiency",
+      "option_d": "deficient",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (defect - danh từ) là đúng vì câu cần một danh từ sau 'contained'. 'Defective' (B) là tính từ. 'Deficiency' (C) chỉ sự thiếu hụt về lượng, không phải lỗi cụ thể. Bẫy: 'defective' và 'deficient' đều là tính từ nhưng có ý nghĩa khác nhau."
+    },
+    {
+      "question_text": "The engineer's _____ design for the water filtration system earned her international recognition and multiple patents.",
+      "option_a": "ingenious",
+      "option_b": "ingenuous",
+      "option_c": "indigenous",
+      "option_d": "ingenerate",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án A (ingenious) là đúng vì nó mô tả thiết kế thông minh và sáng tạo. 'Ingenuous' (B) có nghĩa là thật thà, ngây thơ. Bẫy: hai từ này rất dễ nhầm lẫn vì chỉ khác nhau một vài chữ cái nhưng ý nghĩa hoàn toàn khác."
+    }
+  ]
+}

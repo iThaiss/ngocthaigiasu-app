@@ -6,6 +6,11 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useToast } from '@/components/ui/use-toast'
 import { formatDate } from '@/lib/utils'
+import { renderLatex } from '@/lib/math-render'
+
+function LatexText({ text, className }: { text: string; className?: string }) {
+  return <span className={`inline-block max-w-full min-w-0 overflow-x-auto align-bottom scrollbar-none ${className || ''}`} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
+}
 
 interface SavedQuestion {
   id: string
@@ -168,7 +173,7 @@ export default function SavedQuestionsPage() {
                       {subtopicOf(item) && <span>/ {subtopicOf(item)}</span>}
                       <span>· Lưu {formatDate(item.created_at)}</span>
                     </div>
-                    <p className="whitespace-pre-wrap text-sm leading-relaxed">{item.question?.question_text ?? 'Không tìm thấy nội dung câu hỏi.'}</p>
+                    <div className="text-sm leading-relaxed"><LatexText text={item.question?.question_text ?? 'Không tìm thấy nội dung câu hỏi.'} /></div>
                     {item.question?.image_url && (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={item.question.image_url} alt="Hình minh họa câu hỏi" className="mt-3 max-h-56 rounded-md border object-contain" />
@@ -176,9 +181,9 @@ export default function SavedQuestionsPage() {
                     <div className="mt-3 rounded-md bg-muted/50 p-3 text-sm">
                       <p className="font-medium">Đáp án/lời giải để ôn lại</p>
                       <p className="mt-1 text-muted-foreground">
-                        Đáp án: <span className="font-mono text-foreground">{item.question?.correct_answer ?? item.question?.numeric_answer ?? '—'}</span>
+                        Đáp án: <span className="font-mono text-foreground"><LatexText text={String(item.question?.correct_answer ?? item.question?.numeric_answer ?? '—')} /></span>
                       </p>
-                      {item.question?.explanation && <p className="mt-2 whitespace-pre-wrap text-muted-foreground">{item.question.explanation}</p>}
+                      {item.question?.explanation && <div className="mt-2 text-muted-foreground"><LatexText text={item.question.explanation} /></div>}
                     </div>
                     <div className="mt-3 flex justify-end">
                       <Button variant="outline" size="sm" onClick={() => removeSaved(item)} disabled={removingId === item.id}>

@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "compound",
+      "pronunciation": "/ˈkɒmpaʊnd/",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) làm tăng/trầm trọng thêm; 2) (danh từ) hợp chất; 3) (tính từ) phức tạp, gồm nhiều phần",
+      "definition_en": "1) to make worse; 2) a substance made of two or more elements; 3) composed of multiple parts",
+      "level": "B2",
+      "synonyms": [
+        "aggravate",
+        "intensify",
+        "composite"
+      ],
+      "antonyms": [
+        "simplify",
+        "alleviate"
+      ],
+      "example_sentence": "The economic crisis was compounded by rising unemployment and inflation, creating a compound problem that required immediate government intervention."
+    },
+    {
+      "word": "yield",
+      "pronunciation": "/jiːld/",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) nhượng bộ, chịu thua; 2) (danh từ) sản lượng, năng suất; 3) (động từ) cho ra, sinh lợi",
+      "definition_en": "1) to give way; 2) the amount of product obtained; 3) to produce profit or result",
+      "level": "B2",
+      "synonyms": [
+        "surrender",
+        "produce",
+        "output"
+      ],
+      "antonyms": [
+        "resist",
+        "withstand"
+      ],
+      "example_sentence": "Farmers must yield to new agricultural regulations, though modern farming techniques yield higher crop production per hectare."
+    },
+    {
+      "word": "engage",
+      "pronunciation": "/ɪnˈɡeɪdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "1) tham gia, liên quan; 2) thu hút sự chú ý; 3) (quân sự) giao tranh; 4) cam kết",
+      "definition_en": "1) to participate; 2) to attract attention; 3) to enter into combat; 4) to pledge",
+      "level": "C1",
+      "synonyms": [
+        "participate",
+        "involve",
+        "commit"
+      ],
+      "antonyms": [
+        "disengage",
+        "withdraw"
+      ],
+      "example_sentence": "The company aims to engage customers through interactive social media campaigns while employees engage in professional development programs."
+    },
+    {
+      "word": "strain",
+      "pronunciation": "/streɪn/",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) căng thẳng, gây áp lực; 2) (danh từ) chủng loại, dòng; 3) (danh từ) sự căng thẳng, áp lực",
+      "definition_en": "1) to put pressure on; 2) a variety or breed; 3) stress or tension",
+      "level": "B2",
+      "synonyms": [
+        "stress",
+        "tension",
+        "variety"
+      ],
+      "antonyms": [
+        "relax",
+        "ease"
+      ],
+      "example_sentence": "The pandemic strained healthcare systems worldwide, while a new viral strain emerged, creating additional strain on medical resources."
+    },
+    {
+      "word": "appeal",
+      "pronunciation": "/əˈpiːl/",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) kêu gọi, yêu cầu; 2) (danh từ) sức hấp dẫn; 3) (pháp lý) kháng cáo",
+      "definition_en": "1) to make a request; 2) attractiveness or charm; 3) a legal challenge to a decision",
+      "level": "C1",
+      "synonyms": [
+        "request",
+        "attraction",
+        "charm"
+      ],
+      "antonyms": [
+        "repel",
+        "reject"
+      ],
+      "example_sentence": "The charity made an appeal for donations, and the campaign's emotional appeal resonated with donors, though the defendant filed an appeal in court."
+    },
+    {
+      "word": "subject",
+      "pronunciation": "/ˈsʌbdʒɪkt/ (noun) /səbˈdʒekt/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (danh từ) chủ đề, môn học; 2) (động từ) làm cho phải chịu; 3) (tính từ) phụ thuộc vào",
+      "definition_en": "1) a topic of study; 2) to cause to undergo; 3) dependent on or liable to",
+      "level": "C1",
+      "synonyms": [
+        "topic",
+        "expose",
+        "liable"
+      ],
+      "antonyms": [
+        "object",
+        "exempt"
+      ],
+      "example_sentence": "The history subject was made more engaging, though students were subjected to rigorous exams, and grades remained subject to teacher evaluation."
+    },
+    {
+      "word": "object",
+      "pronunciation": "/ˈɒbdʒɪkt/ (noun) /əbˈdʒekt/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (danh từ) vật thể, đối tượng; 2) (động từ) phản đối, không đồng ý",
+      "definition_en": "1) a physical thing; 2) to express disagreement",
+      "level": "C1",
+      "synonyms": [
+        "thing",
+        "oppose",
+        "protest"
+      ],
+      "antonyms": [
+        "accept",
+        "agree"
+      ],
+      "example_sentence": "The main object of the study was to understand climate change, though some scientists objected to the methodology used in the research."
+    },
+    {
+      "word": "contract",
+      "pronunciation": "/ˈkɒntrækt/ (noun) /kənˈtrækt/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (danh từ) hợp đồng; 2) (động từ) co lại, rút gọn; 3) (động từ) mắc bệnh",
+      "definition_en": "1) a legal agreement; 2) to become smaller; 3) to acquire an illness",
+      "level": "B2",
+      "synonyms": [
+        "agreement",
+        "shrink",
+        "catch"
+      ],
+      "antonyms": [
+        "expand",
+        "extend"
+      ],
+      "example_sentence": "The company signed a lucrative contract with the government, though the economy began to contract, and workers contracted COVID-19 during the pandemic."
+    },
+    {
+      "word": "lead",
+      "pronunciation": "/liːd/ (verb) /led/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) dẫn đường; 2) (danh từ) vị trí dẫn đầu; 3) (danh từ) chất chì; 4) (động từ) chỉ huy",
+      "definition_en": "1) to guide; 2) a position in front; 3) the metal element; 4) to direct",
+      "level": "C1",
+      "synonyms": [
+        "guide",
+        "direct",
+        "head"
+      ],
+      "antonyms": [
+        "follow",
+        "lag"
+      ],
+      "example_sentence": "The team leader will lead the project, maintaining their lead in the competition, while engineers removed lead from old pipes and lead poisoning became a public health concern."
+    },
+    {
+      "word": "refuse",
+      "pronunciation": "/rɪˈfjuːz/ (verb) /ˈrefjuːs/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) từ chối, không chịu; 2) (danh từ) rác thải, chất thải",
+      "definition_en": "1) to decline or reject; 2) waste material or garbage",
+      "level": "C1",
+      "synonyms": [
+        "decline",
+        "reject",
+        "waste"
+      ],
+      "antonyms": [
+        "accept",
+        "agree"
+      ],
+      "example_sentence": "The government refused to implement stricter environmental policies, while cities struggled to manage refuse disposal and recycling programs."
+    },
+    {
+      "word": "permit",
+      "pronunciation": "/pəˈmɪt/ (verb) /ˈpɜːmɪt/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) cho phép; 2) (danh từ) giấy phép, chứng chỉ",
+      "definition_en": "1) to allow; 2) an official document granting permission",
+      "level": "C1",
+      "synonyms": [
+        "allow",
+        "enable",
+        "license"
+      ],
+      "antonyms": [
+        "forbid",
+        "prohibit"
+      ],
+      "example_sentence": "The law permits citizens to vote at age eighteen, though applicants must obtain a work permit before employment, and weather conditions permit outdoor construction."
+    },
+    {
+      "word": "produce",
+      "pronunciation": "/prəˈdjuːs/ (verb) /ˈprɒdjuːs/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) sản xuất, tạo ra; 2) (danh từ) nông sản, sản phẩm nông nghiệp",
+      "definition_en": "1) to manufacture or create; 2) agricultural products",
+      "level": "C1",
+      "synonyms": [
+        "manufacture",
+        "create",
+        "crops"
+      ],
+      "antonyms": [
+        "consume",
+        "destroy"
+      ],
+      "example_sentence": "Factories produce consumer goods efficiently, while farmers produce fresh vegetables and fruits for local markets."
+    },
+    {
+      "word": "record",
+      "pronunciation": "/rɪˈkɔːd/ (verb) /ˈrekɔːd/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) ghi lại, ghi âm; 2) (danh từ) hồ sơ, kỷ lục; 3) (danh từ) đĩa nhạc",
+      "definition_en": "1) to document or capture; 2) a documented fact or achievement; 3) a vinyl disc",
+      "level": "C1",
+      "synonyms": [
+        "document",
+        "register",
+        "achievement"
+      ],
+      "antonyms": [
+        "erase",
+        "delete"
+      ],
+      "example_sentence": "Scientists record data meticulously, and the research broke a world record, while the musician released a new record album last month."
+    },
+    {
+      "word": "minute",
+      "pronunciation": "/ˈmɪnɪt/ (adjective) /ˈmɪnɪt/ (noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (tính từ) rất nhỏ, tế nhị; 2) (danh từ) phút, khoảnh khắc; 3) (danh từ) biên bản họp",
+      "definition_en": "1) extremely small; 2) a unit of time; 3) official notes of a meeting",
+      "level": "B2",
+      "synonyms": [
+        "tiny",
+        "detailed",
+        "moment"
+      ],
+      "antonyms": [
+        "huge",
+        "large"
+      ],
+      "example_sentence": "The scientist examined minute details under a microscope, taking only a minute to record the findings in the meeting minutes."
+    },
+    {
+      "word": "tear",
+      "pronunciation": "/teə/ (noun) /ter/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (danh từ) nước mắt; 2) (động từ) xé rách, rách; 3) (danh từ) vết rách",
+      "definition_en": "1) a drop of liquid from the eye; 2) to rip or damage; 3) a rip or hole",
+      "level": "C1",
+      "synonyms": [
+        "cry",
+        "rip",
+        "damage"
+      ],
+      "antonyms": [
+        "repair",
+        "mend"
+      ],
+      "example_sentence": "The emotional film brought tears to viewers' eyes, while the accident caused a tear in the fabric, and the paper began to tear easily."
+    },
+    {
+      "word": "wind",
+      "pronunciation": "/wɪnd/ (noun) /waɪnd/ (verb)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (danh từ) gió; 2) (động từ) quấn, cuộn; 3) (động từ) uốn lượn",
+      "definition_en": "1) moving air; 2) to wrap around; 3) to follow a winding path",
+      "level": "C1",
+      "synonyms": [
+        "breeze",
+        "coil",
+        "twist"
+      ],
+      "antonyms": [
+        "calm",
+        "straighten"
+      ],
+      "example_sentence": "Strong wind damaged buildings along the coast, while hikers had to wind their way up the mountain, and the road began to wind through the forest."
+    },
+    {
+      "word": "polish",
+      "pronunciation": "/ˈpɒlɪʃ/ (verb) /ˈpəʊlɪʃ/ (adjective/noun)",
+      "part_of_speech": "noun",
+      "definition_vi": "1) (động từ) đánh bóng, làm sáng; 2) (danh từ) chất đánh bóng; 3) (tính từ) liên quan đến Ba Lan; 4) (động từ) hoàn thiện",
+      "definition_en": "1) to make smooth and shiny; 2) a substance for shining; 3) relating to Poland; 4) to refine",
+      "level": "B2",
+      "synonyms": [
+        "shine",
+        "refine",
+        "perfect"
+      ],
+      "antonyms": [
+        "dull",
+        "tarnish"
+      ],
+      "example_sentence": "Workers polish the marble floors daily, while the author continued to polish her manuscript, and Polish immigrants contributed significantly to the community."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The economic crisis was compounded by rising unemployment. What does 'compounded' mean in this context?",
+      "option_a": "Made worse or more serious",
+      "option_b": "Divided into smaller parts",
+      "option_c": "Calculated with interest",
+      "option_d": "Mixed together chemically",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Trong ngữ cảnh này, 'compounded' là động từ có nghĩa 'làm tăng/trầm trọng thêm'. Các lựa chọn B, C, D là những nghĩa khác của từ này nhưng không phù hợp với bối cảnh kinh tế."
+    },
+    {
+      "question_text": "The farmer's yield increased significantly after adopting new techniques. Which word is closest in meaning to 'yield'?",
+      "option_a": "Surrender",
+      "option_b": "Production output",
+      "option_c": "Flexibility",
+      "option_d": "Resistance",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Yield' trong ngữ cảnh nông nghiệp có nghĩa 'sản lượng, năng suất'. Option A (nhượng bộ) là nghĩa khác của từ này nhưng không phù hợp ở đây."
+    },
+    {
+      "question_text": "The company refused to implement stricter environmental policies. What is the opposite of 'refused' in this sentence?",
+      "option_a": "Accepted",
+      "option_b": "Ignored",
+      "option_c": "Delayed",
+      "option_d": "Questioned",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "'Refused' (từ chối) có antonym là 'accepted' (chấp nhận). Các lựa chọn khác không phải là đối nghĩa trực tiếp."
+    },
+    {
+      "question_text": "The law permits citizens to vote at age eighteen. In this sentence, 'permits' most closely means ___.",
+      "option_a": "Requires",
+      "option_b": "Allows",
+      "option_c": "Encourages",
+      "option_d": "Suggests",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Permits' là động từ có nghĩa 'cho phép, cho phép'. Option B (allows) là đồng nghĩa chính xác nhất. Option A (requires) có nghĩa ngược lại."
+    },
+    {
+      "question_text": "The scientist examined minute details under the microscope. What does 'minute' mean here?",
+      "option_a": "Lasting sixty seconds",
+      "option_b": "Extremely small or tiny",
+      "option_c": "Official meeting notes",
+      "option_d": "Unimportant or trivial",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Minute' (phát âm /ˈmɪnɪt/) khi dùng tính từ có nghĩa 'rất nhỏ, tế nhị'. Đây là một từ nhiều nghĩa dễ gây nhầm lẫn với 'minute' (phút)."
+    },
+    {
+      "question_text": "The emotional film brought tears to viewers' eyes, while the accident caused a tear in the fabric. Which statement is correct?",
+      "option_a": "Both 'tears' have the same pronunciation",
+      "option_b": "The first 'tears' refers to liquid from eyes; the second refers to a rip",
+      "option_c": "Both 'tears' are nouns with identical meanings",
+      "option_d": "The second 'tears' is a verb meaning to damage",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Tear' là từ nhiều nghĩa: /teə/ (nước mắt) và /ter/ (xé rách). Trong câu, 'tears' đầu tiên là danh từ (nước mắt), 'tear' thứ hai là danh từ (vết rách). Đây là bẫy phổ biến trong đề thi."
+    },
+    {
+      "question_text": "The road began to wind through the forest. What is the best synonym for 'wind' in this context?",
+      "option_a": "Breeze",
+      "option_b": "Coil",
+      "option_c": "Follow a winding path",
+      "option_d": "Wrap tightly",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Wind' (phát âm /waɪnd/) khi là động từ có nghĩa 'uốn lượn, đi theo đường quanh co'. Option A là danh từ (gió), không phù hợp."
+    },
+    {
+      "question_text": "The author continued to polish her manuscript before submission. Which meaning of 'polish' is used here?",
+      "option_a": "To make smooth and shiny",
+      "option_b": "To refine or improve",
+      "option_c": "A substance for shining",
+      "option_d": "Relating to Poland",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Trong ngữ cảnh viết lách, 'polish' có nghĩa 'hoàn thiện, cải thiện'. Option A là nghĩa chữ nghĩa nhưng không phù hợp với bối cảnh này."
+    }
+  ]
+}

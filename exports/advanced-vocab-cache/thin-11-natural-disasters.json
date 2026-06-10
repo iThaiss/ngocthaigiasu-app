@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "seismic activity",
+      "pronunciation": "/ˈsaɪzmɪk ækˈtɪvɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động địa chấn; sự rung chuyển của vỏ trái đất do chuyển động của các mảng kiến tạo",
+      "definition_en": "movement and vibration of the Earth's crust caused by tectonic plate shifts",
+      "level": "C1",
+      "synonyms": [
+        "tectonic movement",
+        "ground tremor"
+      ],
+      "antonyms": [],
+      "example_sentence": "Scientists monitor seismic activity in volcanic regions to predict potential eruptions and protect nearby communities."
+    },
+    {
+      "word": "infrastructure collapse",
+      "pronunciation": "/ˌɪnfrəˈstrʌktʃər kəˈlæps/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự sụp đổ của hệ thống cơ sở hạ tầng (cầu, đường, nhà cửa, điện nước)",
+      "definition_en": "failure and breakdown of essential public systems and structures",
+      "level": "C1",
+      "synonyms": [
+        "structural failure",
+        "system breakdown"
+      ],
+      "antonyms": [
+        "infrastructure resilience"
+      ],
+      "example_sentence": "The massive earthquake triggered infrastructure collapse across the city, leaving thousands without access to clean water and electricity."
+    },
+    {
+      "word": "displacement",
+      "pronunciation": "/dɪsˈpleɪsmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự di dân, sự mất nhà cửa; tình trạng bị buộc rời khỏi nơi cư trú",
+      "definition_en": "forced movement of people from their homes due to disaster or conflict",
+      "level": "B2",
+      "synonyms": [
+        "relocation",
+        "evacuation"
+      ],
+      "antonyms": [
+        "settlement",
+        "resettlement"
+      ],
+      "example_sentence": "The flooding caused the displacement of over 50,000 residents who had to seek temporary shelter in government camps."
+    },
+    {
+      "word": "humanitarian crisis",
+      "pronunciation": "/ˌhjuːmænɪˈtɛriən ˈkraɪsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc khủng hoảng nhân đạo; tình huống khẩn cấp gây thiệt hại lớn đến đời sống con người",
+      "definition_en": "emergency situation causing widespread human suffering and requiring urgent aid",
+      "level": "C1",
+      "synonyms": [
+        "human tragedy",
+        "emergency situation"
+      ],
+      "antonyms": [],
+      "example_sentence": "The tsunami created a humanitarian crisis as international organizations rushed to provide medical aid and food supplies."
+    },
+    {
+      "word": "early warning system",
+      "pronunciation": "/ˈɜrli ˈwɔrnɪŋ ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống cảnh báo sớm; công nghệ phát hiện và thông báo nguy hiểm trước khi xảy ra",
+      "definition_en": "technology and procedures that detect and alert people to impending disasters",
+      "level": "B2",
+      "synonyms": [
+        "alert system",
+        "detection mechanism"
+      ],
+      "antonyms": [],
+      "example_sentence": "Countries in the Pacific region invested in early warning systems to minimize casualties from future tsunamis."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng phục hồi, sức chống chịu; khả năng của cộng đồng/hệ thống vượt qua khó khăn",
+      "definition_en": "ability to recover quickly and adapt after experiencing disaster or adversity",
+      "level": "C1",
+      "synonyms": [
+        "recovery capacity",
+        "adaptability"
+      ],
+      "antonyms": [
+        "fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "Building community resilience through disaster preparedness training helps reduce the impact of natural disasters."
+    },
+    {
+      "word": "vulnerable population",
+      "pronunciation": "/ˈvʌlnərəbl ˌpɑpjəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm dân cư dễ bị tổn thương; những người có khả năng chống chịu thấp trước thảm họa",
+      "definition_en": "groups of people at higher risk during disasters, such as elderly, children, and disabled persons",
+      "level": "C1",
+      "synonyms": [
+        "at-risk groups",
+        "marginalized communities"
+      ],
+      "antonyms": [],
+      "example_sentence": "Relief organizations prioritize vulnerable populations, including the elderly and disabled, during evacuation operations."
+    },
+    {
+      "word": "contamination",
+      "pronunciation": "/ˌkɑntæmɪˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự ô nhiễm; sự bẩn nhiễm của nước, đất, không khí bởi chất độc hại",
+      "definition_en": "pollution of water, soil, or air with harmful substances following a disaster",
+      "level": "B2",
+      "synonyms": [
+        "pollution",
+        "contamination"
+      ],
+      "antonyms": [
+        "purification",
+        "cleanliness"
+      ],
+      "example_sentence": "After the industrial accident triggered by the earthquake, water contamination became a serious public health concern."
+    },
+    {
+      "word": "mitigation strategy",
+      "pronunciation": "/mɪˈtɪɡeɪʃən ˈstrætədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến lược giảm thiểu; kế hoạch nhằm giảm bớt mức độ nghiêm trọng của thảm họa",
+      "definition_en": "planned actions to reduce the severity and impact of potential disasters",
+      "level": "C1",
+      "synonyms": [
+        "risk reduction",
+        "prevention measure"
+      ],
+      "antonyms": [],
+      "example_sentence": "Governments implement mitigation strategies such as building codes and reforestation to reduce disaster risks."
+    },
+    {
+      "word": "casualty",
+      "pronunciation": "/ˈkæʒuəlti/",
+      "part_of_speech": "noun",
+      "definition_vi": "nạn nhân; người bị thương hoặc thiệt mạng trong thảm họa",
+      "definition_en": "a person killed or injured in a disaster or accident",
+      "level": "B2",
+      "synonyms": [
+        "victim",
+        "fatality"
+      ],
+      "antonyms": [],
+      "example_sentence": "The storm resulted in hundreds of casualties, with rescue teams working around the clock to find survivors."
+    },
+    {
+      "word": "recovery operation",
+      "pronunciation": "/rɪˈkʌvəri ˌɑpəˈreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động phục hồi; quá trình tìm kiếm, cứu hộ và tái thiết sau thảm họa",
+      "definition_en": "coordinated efforts to search for survivors, provide aid, and rebuild after a disaster",
+      "level": "C1",
+      "synonyms": [
+        "rescue mission",
+        "reconstruction effort"
+      ],
+      "antonyms": [],
+      "example_sentence": "The recovery operation following the earthquake involved thousands of volunteers and international aid organizations."
+    },
+    {
+      "word": "environmental degradation",
+      "pronunciation": "/ɪnˌvaɪrənˈmentəl ˌdɛɡrəˈdeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự suy thoái môi trường; tình trạng môi trường bị xấu đi do thảm họa hoặc hoạt động con người",
+      "definition_en": "deterioration of natural environment caused by disasters or human activities",
+      "level": "C1",
+      "synonyms": [
+        "environmental damage",
+        "ecological decline"
+      ],
+      "antonyms": [
+        "environmental restoration"
+      ],
+      "example_sentence": "Wildfires cause severe environmental degradation, destroying ecosystems and releasing massive amounts of carbon dioxide."
+    },
+    {
+      "word": "preparedness",
+      "pronunciation": "/prɪˈpɛrdnəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự sẵn sàng; tình trạng chuẩn bị sẵn sàng để ứng phó với thảm họa",
+      "definition_en": "state of readiness and planning to respond effectively to disasters",
+      "level": "B2",
+      "synonyms": [
+        "readiness",
+        "planning"
+      ],
+      "antonyms": [
+        "unpreparedness",
+        "negligence"
+      ],
+      "example_sentence": "Disaster preparedness includes regular drills, emergency supplies, and clear evacuation routes."
+    },
+    {
+      "word": "subsidence",
+      "pronunciation": "/səbˈsaɪdəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự sụt lún; hiện tượng mặt đất hạ thấp do khai thác tài nguyên hoặc địa chất",
+      "definition_en": "gradual sinking or settling of the ground surface",
+      "level": "C1",
+      "synonyms": [
+        "ground settlement",
+        "sinking"
+      ],
+      "antonyms": [
+        "uplift",
+        "elevation"
+      ],
+      "example_sentence": "Coastal subsidence combined with rising sea levels increases the risk of flooding in low-lying areas."
+    },
+    {
+      "word": "supply chain disruption",
+      "pronunciation": "/səˈplaɪ tʃeɪn ˌdɪsrʌpˈʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự gián đoạn chuỗi cung ứng; tình trạng không thể vận chuyển hàng hóa do thảm họa",
+      "definition_en": "interruption of goods and services delivery caused by disaster damage",
+      "level": "C1",
+      "synonyms": [
+        "logistical breakdown",
+        "distribution failure"
+      ],
+      "antonyms": [
+        "supply continuity"
+      ],
+      "example_sentence": "The earthquake caused supply chain disruption, leading to shortages of food and medical supplies in affected regions."
+    },
+    {
+      "word": "tectonic plate",
+      "pronunciation": "/tekˈtɑnɪk pleɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mảng kiến tạo; các khối lớn của vỏ trái đất chuyển động và gây ra động đất",
+      "definition_en": "large sections of Earth's crust that move and interact, causing earthquakes and volcanic activity",
+      "level": "B2",
+      "synonyms": [
+        "crustal plate",
+        "lithospheric plate"
+      ],
+      "antonyms": [],
+      "example_sentence": "The collision of tectonic plates beneath the ocean floor triggered a powerful earthquake and subsequent tsunami."
+    },
+    {
+      "word": "epidemiological threat",
+      "pronunciation": "/ˌɛpɪˌdiːmiəˈlɑdʒɪkəl θrɛt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mối đe dọa dịch bệnh; nguy cơ bùng phát bệnh dịch sau thảm họa do điều kiện vệ sinh kém",
+      "definition_en": "risk of disease outbreaks following disasters due to poor sanitation and overcrowding",
+      "level": "C2",
+      "synonyms": [
+        "disease risk",
+        "epidemic threat"
+      ],
+      "antonyms": [],
+      "example_sentence": "Post-disaster epidemiological threats require immediate public health interventions to prevent cholera and other infectious diseases."
+    },
+    {
+      "word": "structural integrity",
+      "pronunciation": "/ˈstrʌktʃərəl ɪnˈtɛɡrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính toàn vẹn của kết cấu; khả năng của công trình xây dựng chịu được lực tác động",
+      "definition_en": "ability of buildings and structures to withstand forces and remain safe",
+      "level": "C1",
+      "synonyms": [
+        "structural stability",
+        "building safety"
+      ],
+      "antonyms": [
+        "structural failure"
+      ],
+      "example_sentence": "Engineers assessed the structural integrity of buildings after the earthquake to determine which were safe for occupancy."
+    },
+    {
+      "word": "psychosocial impact",
+      "pronunciation": "/ˌsaɪkoʊˈsoʊʃəl ˈɪmpækt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tác động tâm lý xã hội; ảnh hưởng đến sức khỏe tâm thần và mối quan hệ xã hội của nạn nhân",
+      "definition_en": "emotional and social effects of disasters on survivors' mental health and community relationships",
+      "level": "C1",
+      "synonyms": [
+        "psychological trauma",
+        "mental health impact"
+      ],
+      "antonyms": [],
+      "example_sentence": "Mental health professionals address the psychosocial impact of disasters through counseling and community support programs."
+    },
+    {
+      "word": "risk assessment",
+      "pronunciation": "/rɪsk əˈsɛsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh giá rủi ro; quá trình xác định mức độ nguy hiểm và khả năng xảy ra thảm họa",
+      "definition_en": "systematic evaluation of the likelihood and potential impact of disasters in a given area",
+      "level": "B2",
+      "synonyms": [
+        "hazard evaluation",
+        "threat analysis"
+      ],
+      "antonyms": [],
+      "example_sentence": "Comprehensive risk assessment helps communities prioritize disaster prevention measures and allocate resources effectively."
+    },
+    {
+      "word": "climate-induced disaster",
+      "pronunciation": "/ˈklaɪmət ɪnˈdjust dɪˈzæstər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thảm họa do biến đổi khí hậu; thảm họa tự nhiên liên quan đến sự thay đổi khí hậu toàn cầu",
+      "definition_en": "natural disaster exacerbated or caused by climate change, such as extreme weather events",
+      "level": "C1",
+      "synonyms": [
+        "climate-related disaster",
+        "weather-induced catastrophe"
+      ],
+      "antonyms": [],
+      "example_sentence": "Climate-induced disasters are becoming more frequent and severe, requiring urgent global action on carbon emissions."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'seismic activity' in the context of natural disasters?",
+      "option_a": "The movement and vibration of the Earth's crust caused by tectonic plate shifts",
+      "option_b": "The sudden release of water from underground reservoirs",
+      "option_c": "The formation of new volcanic cones in mountainous regions",
+      "option_d": "The gradual erosion of coastal areas by ocean waves",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Seismic activity (hoạt động địa chấn) chỉ sự rung chuyển của vỏ trái đất do chuyển động của các mảng kiến tạo. Các đáp án khác không liên quan đến khái niệm này."
+    },
+    {
+      "question_text": "The government implemented _____ to reduce the severity of potential disasters in coastal areas.",
+      "option_a": "casualty prevention",
+      "option_b": "mitigation strategies",
+      "option_c": "infrastructure collapse",
+      "option_d": "environmental degradation",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Mitigation strategy (chiến lược giảm thiểu) là những kế hoạch nhằm giảm bớt mức độ nghiêm trọng của thảm họa. Các đáp án khác không phù hợp về ngữ pháp và ý nghĩa."
+    },
+    {
+      "question_text": "What is the primary concern regarding 'vulnerable populations' during natural disasters?",
+      "option_a": "They have better access to emergency resources than others",
+      "option_b": "They are at higher risk and require prioritized assistance",
+      "option_c": "They can recover faster due to their adaptability",
+      "option_d": "They are responsible for early warning systems",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Vulnerable population (nhóm dân cư dễ bị tổn thương) bao gồm những người có khả năng chống chịu thấp như người già, trẻ em, người khuyết tật, cần được ưu tiên hỗ trợ."
+    },
+    {
+      "question_text": "Following the industrial accident triggered by the earthquake, _____ became a serious public health concern, requiring immediate intervention.",
+      "option_a": "water contamination",
+      "option_b": "supply chain disruption",
+      "option_c": "structural integrity",
+      "option_d": "preparedness training",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Water contamination (ô nhiễm nước) là mối lo ngại sức khỏe công cộng phổ biến sau thảm họa. Các đáp án khác không phù hợp về ngữ cảnh."
+    },
+    {
+      "question_text": "Which phrase best describes the interruption of goods and services delivery caused by disaster damage?",
+      "option_a": "Infrastructure collapse",
+      "option_b": "Supply chain disruption",
+      "option_c": "Humanitarian crisis",
+      "option_d": "Risk assessment",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Supply chain disruption (gián đoạn chuỗi cung ứng) chỉ tình trạng không thể vận chuyển hàng hóa do thảm họa. Infrastructure collapse chỉ sự sụp đổ cơ sở hạ tầng, không phải gián đoạn cung ứng."
+    },
+    {
+      "question_text": "The _____ of buildings after the earthquake was assessed by engineers to determine which structures were safe for occupancy.",
+      "option_a": "environmental degradation",
+      "option_b": "psychosocial impact",
+      "option_c": "structural integrity",
+      "option_d": "displacement",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Structural integrity (tính toàn vẹn của kết cấu) là khả năng của công trình chịu được lực tác động. Đây là điều kỹ sư cần đánh giá sau động đất để xác định an toàn."
+    },
+    {
+      "question_text": "Mental health professionals address the _____ of disasters through counseling and community support programs.",
+      "option_a": "tectonic plate movement",
+      "option_b": "psychosocial impact",
+      "option_c": "early warning system",
+      "option_d": "risk assessment",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Psychosocial impact (tác động tâm lý xã hội) chỉ ảnh hưởng đến sức khỏe tâm thần và mối quan hệ xã hội của nạn nhân, là lĩnh vực mà các chuyên gia sức khỏe tâm thần cần xử lý."
+    }
+  ]
+}

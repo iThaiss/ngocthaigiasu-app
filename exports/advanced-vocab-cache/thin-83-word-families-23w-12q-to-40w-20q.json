@@ -1,0 +1,395 @@
+{
+  "words": [
+    {
+      "word": "establishment",
+      "pronunciation": "/ɪˈstæblɪʃmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thành lập, thiết lập; tổ chức, cơ quan; lớp người có quyền lực trong xã hội",
+      "definition_en": "the act of founding or setting up; an institution or organization; the existing power structure",
+      "level": "B2",
+      "synonyms": [
+        "institution",
+        "organization",
+        "foundation"
+      ],
+      "antonyms": [
+        "dissolution",
+        "abolition"
+      ],
+      "example_sentence": "The establishment of new environmental regulations has significantly impacted industrial practices across the nation."
+    },
+    {
+      "word": "encouragement",
+      "pronunciation": "/ɪnˈkɜːrɪdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự khuyến khích, động viên; điều gì đó làm tăng cơ hội thành công",
+      "definition_en": "the action of giving support or confidence; something that promotes or stimulates action",
+      "level": "C1",
+      "synonyms": [
+        "support",
+        "motivation",
+        "incentive"
+      ],
+      "antonyms": [
+        "discouragement",
+        "deterrent"
+      ],
+      "example_sentence": "With proper encouragement from teachers, students are more likely to pursue advanced studies in STEM fields."
+    },
+    {
+      "word": "adjustment",
+      "pronunciation": "/əˈdʒʌstmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự điều chỉnh, thích nghi; sự thay đổi nhỏ để phù hợp",
+      "definition_en": "a small change made to correct or improve something; adaptation to new conditions",
+      "level": "C1",
+      "synonyms": [
+        "modification",
+        "adaptation",
+        "alteration"
+      ],
+      "antonyms": [
+        "rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "The adjustment of school curricula to include digital literacy has become essential in modern education."
+    },
+    {
+      "word": "enforcement",
+      "pronunciation": "/ɪnˈfɔːrsmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thực thi, thi hành (luật lệ); sự ép buộc tuân theo",
+      "definition_en": "the act of compelling compliance with a law or rule; implementation of regulations",
+      "level": "B2",
+      "synonyms": [
+        "implementation",
+        "execution",
+        "administration"
+      ],
+      "antonyms": [
+        "violation",
+        "breach"
+      ],
+      "example_sentence": "Strict enforcement of traffic laws has reduced accident rates in urban areas significantly."
+    },
+    {
+      "word": "engagement",
+      "pronunciation": "/ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tham gia, liên quan; mối quan hệ lâu dài; sự hứa hẹn",
+      "definition_en": "the state of being involved or committed; a promise to marry; active participation",
+      "level": "B2",
+      "synonyms": [
+        "involvement",
+        "participation",
+        "commitment"
+      ],
+      "antonyms": [
+        "detachment",
+        "disengagement"
+      ],
+      "example_sentence": "Student engagement in extracurricular activities correlates strongly with improved academic performance."
+    },
+    {
+      "word": "enlargement",
+      "pronunciation": "/ɪnˈlɑːrdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự mở rộng, phóng to; sự tăng kích thước",
+      "definition_en": "the action of making something larger; an increase in size or scope",
+      "level": "B2",
+      "synonyms": [
+        "expansion",
+        "extension",
+        "magnification"
+      ],
+      "antonyms": [
+        "reduction",
+        "diminishment"
+      ],
+      "example_sentence": "The enlargement of the university's research facilities has attracted leading scholars from around the world."
+    },
+    {
+      "word": "arrangement",
+      "pronunciation": "/əˈreɪndʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự sắp xếp, bố trí; thỏa thuận, thoả thuận; cách sắp xếp",
+      "definition_en": "the action of organizing or putting in order; a plan or agreement made in advance",
+      "level": "C1",
+      "synonyms": [
+        "organization",
+        "settlement",
+        "agreement"
+      ],
+      "antonyms": [
+        "disorder",
+        "chaos"
+      ],
+      "example_sentence": "The arrangement of classroom seating can influence student collaboration and peer learning outcomes."
+    },
+    {
+      "word": "replacement",
+      "pronunciation": "/rɪˈpleɪsmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự thay thế, thay chỗ; người/vật thay thế",
+      "definition_en": "a person or thing that takes the place of another; the action of substituting",
+      "level": "C1",
+      "synonyms": [
+        "substitute",
+        "successor",
+        "alternative"
+      ],
+      "antonyms": [
+        "original",
+        "predecessor"
+      ],
+      "example_sentence": "The replacement of outdated textbooks with digital resources has modernized the learning experience."
+    },
+    {
+      "word": "assessment",
+      "pronunciation": "/əˈsesmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự đánh giá, định giá; kết quả đánh giá; bài kiểm tra",
+      "definition_en": "the evaluation or estimation of the nature, ability, or quality of something; a test or examination",
+      "level": "B2",
+      "synonyms": [
+        "evaluation",
+        "appraisal",
+        "examination"
+      ],
+      "antonyms": [
+        "ignorance",
+        "oversight"
+      ],
+      "example_sentence": "Continuous assessment throughout the semester provides more accurate feedback than a single final examination."
+    },
+    {
+      "word": "management",
+      "pronunciation": "/ˈmænɪdʒmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự quản lý, điều hành; nhóm người quản lý; cách xử lý",
+      "definition_en": "the process of controlling and organizing business operations; the people responsible for running an organization",
+      "level": "C1",
+      "synonyms": [
+        "administration",
+        "control",
+        "supervision"
+      ],
+      "antonyms": [
+        "chaos",
+        "mismanagement"
+      ],
+      "example_sentence": "Effective time management is crucial for students balancing academic work with extracurricular activities."
+    },
+    {
+      "word": "advancement",
+      "pronunciation": "/ədˈvɑːnsmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tiến bộ, phát triển; sự thăng chức; tiền cho vay trước",
+      "definition_en": "progress or improvement; promotion to a higher position; a loan given before it is due",
+      "level": "B2",
+      "synonyms": [
+        "progress",
+        "promotion",
+        "improvement"
+      ],
+      "antonyms": [
+        "regression",
+        "demotion"
+      ],
+      "example_sentence": "Career advancement in the technology sector often requires continuous learning and skill development."
+    },
+    {
+      "word": "requirement",
+      "pronunciation": "/rɪˈkwaɪərmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "yêu cầu, điều kiện cần thiết; nhu cầu, sự cần thiết",
+      "definition_en": "something needed or demanded; a condition that must be satisfied",
+      "level": "C1",
+      "synonyms": [
+        "necessity",
+        "condition",
+        "prerequisite"
+      ],
+      "antonyms": [
+        "option",
+        "choice"
+      ],
+      "example_sentence": "University entrance requirements typically include standardized test scores and a minimum GPA."
+    },
+    {
+      "word": "achievement gap",
+      "pronunciation": "/əˈtʃiːvmənt ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khoảng cách thành tích học tập giữa các nhóm học sinh khác nhau",
+      "definition_en": "the difference in academic performance between groups of students, often based on socioeconomic status or ethnicity",
+      "level": "B2",
+      "synonyms": [
+        "performance gap",
+        "educational disparity"
+      ],
+      "antonyms": [
+        "educational equity",
+        "parity"
+      ],
+      "example_sentence": "Addressing the achievement gap requires targeted interventions and equitable resource allocation in schools."
+    },
+    {
+      "word": "skill acquisition",
+      "pronunciation": "/skɪl ˌækwɪˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình học và phát triển kỹ năng; sự có được kỹ năng",
+      "definition_en": "the process of learning and developing competencies through practice and experience",
+      "level": "B2",
+      "synonyms": [
+        "skill development",
+        "competency building"
+      ],
+      "antonyms": [
+        "skill loss",
+        "deterioration"
+      ],
+      "example_sentence": "Skill acquisition in language learning accelerates when students engage in immersive and interactive environments."
+    },
+    {
+      "word": "social integration",
+      "pronunciation": "/ˈsoʊʃəl ˌɪntɪˈɡreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự hòa nhập xã hội; quá trình các nhóm khác nhau hợp nhất",
+      "definition_en": "the process of individuals or groups becoming part of a unified society; inclusion in social structures",
+      "level": "B2",
+      "synonyms": [
+        "social cohesion",
+        "inclusion"
+      ],
+      "antonyms": [
+        "segregation",
+        "isolation"
+      ],
+      "example_sentence": "Social integration programs help immigrant students adapt to new school environments and build meaningful friendships."
+    },
+    {
+      "word": "institutional framework",
+      "pronunciation": "/ɪnˈstɪtjuːʃənəl ˈfreɪmwɜːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khung cơ chế tổ chức; hệ thống các quy tắc và cấu trúc của tổ chức",
+      "definition_en": "the system of rules, structures, and procedures that govern an organization or institution",
+      "level": "C1",
+      "synonyms": [
+        "organizational structure",
+        "institutional system"
+      ],
+      "antonyms": [
+        "chaos",
+        "disorder"
+      ],
+      "example_sentence": "The institutional framework of universities ensures quality assurance and accountability in academic programs."
+    },
+    {
+      "word": "measurable outcomes",
+      "pronunciation": "/ˈmeʒərəbəl ˈaʊtkʌmz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết quả có thể đo lường được; những thành quả cụ thể có thể định lượng",
+      "definition_en": "specific, quantifiable results that can be assessed and evaluated objectively",
+      "level": "B2",
+      "synonyms": [
+        "quantifiable results",
+        "concrete objectives"
+      ],
+      "antonyms": [
+        "vague goals",
+        "intangible results"
+      ],
+      "example_sentence": "Educational programs should establish clear measurable outcomes to demonstrate their effectiveness and impact."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's _____ of new environmental policies has faced resistance from industrial sectors concerned about increased costs.",
+      "option_a": "enforcement",
+      "option_b": "encouragement",
+      "option_c": "engagement",
+      "option_d": "enlargement",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Enforcement (sự thực thi) là từ đúng vì nó chỉ sự ép buộc tuân theo luật lệ. Encouragement (khuyến khích) không phù hợp vì chính sách được áp dụng bắt buộc, không phải khuyến khích. Engagement và enlargement không có ý nghĩa trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which word is the best synonym for 'modification' in the context of curriculum changes?",
+      "option_a": "establishment",
+      "option_b": "adjustment",
+      "option_c": "replacement",
+      "option_d": "arrangement",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Adjustment (sự điều chỉnh) là từ đồng nghĩa tốt nhất với modification. Establishment có nghĩa thành lập, replacement là thay thế hoàn toàn, arrangement là sắp xếp - tất cả đều không phù hợp bằng adjustment."
+    },
+    {
+      "question_text": "The _____ of outdated teaching methods with modern pedagogical approaches has transformed classroom dynamics.",
+      "option_a": "arrangement",
+      "option_b": "replacement",
+      "option_c": "assessment",
+      "option_d": "advancement",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Replacement (sự thay thế) là từ chính xác vì nó chỉ việc thay thế các phương pháp cũ bằng những phương pháp mới. Arrangement là sắp xếp, assessment là đánh giá, advancement là tiến bộ - không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "What does 'achievement gap' primarily refer to in educational contexts?",
+      "option_a": "The difference between planned and actual school budgets",
+      "option_b": "The disparity in academic performance between different groups of students",
+      "option_c": "The time interval between course enrollment and graduation",
+      "option_d": "The physical distance between school buildings and student residences",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Achievement gap chỉ sự chênh lệch thành tích học tập giữa các nhóm học sinh khác nhau (thường dựa trên tình trạng kinh tế xã hội hoặc dân tộc). Các đáp án khác là bẫy không liên quan đến khái niệm này."
+    },
+    {
+      "question_text": "The university's _____ of its research facilities has enabled faculty to conduct more sophisticated experiments.",
+      "option_a": "enforcement",
+      "option_b": "enlargement",
+      "option_c": "engagement",
+      "option_d": "assessment",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Enlargement (sự mở rộng) là từ đúng vì nó chỉ việc tăng kích thước cơ sở vật chất. Enforcement là thực thi, engagement là tham gia, assessment là đánh giá - không phù hợp với ngữ cảnh về mở rộng cơ sở vật chất."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic of 'institutional framework'?",
+      "option_a": "It provides structure and organization to institutions",
+      "option_b": "It establishes rules and procedures for operations",
+      "option_c": "It ensures individual freedom without any guidelines",
+      "option_d": "It creates accountability and quality assurance mechanisms",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Institutional framework (khung cơ chế tổ chức) luôn bao gồm các quy tắc và hướng dẫn, không phải tự do hoàn toàn. Đáp án C là bẫy vì nó mâu thuẫn với bản chất của institutional framework. Các đáp án A, B, D đều là đặc điểm của nó."
+    },
+    {
+      "question_text": "The school's _____ of new technology in classrooms requires significant staff training and resource allocation.",
+      "option_a": "requirement",
+      "option_b": "management",
+      "option_c": "advancement",
+      "option_d": "establishment",
+      "correct_answer": "D",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Establishment (sự thành lập, thiết lập) là từ chính xác vì nó chỉ việc đưa công nghệ mới vào trường học. Requirement là yêu cầu, management là quản lý, advancement là tiến bộ - không phù hợp với ngữ cảnh này."
+    },
+    {
+      "question_text": "Effective _____ in language learning requires consistent practice, feedback, and exposure to authentic materials.",
+      "option_a": "skill acquisition",
+      "option_b": "social integration",
+      "option_c": "measurable outcomes",
+      "option_d": "institutional framework",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Skill acquisition (sự có được kỹ năng) là cụm từ chính xác vì nó chỉ quá trình học và phát triển kỹ năng. Social integration là hòa nhập xã hội, measurable outcomes là kết quả đo lường được, institutional framework là khung cơ chế - không phù hợp với ngữ cảnh học ngôn ngữ."
+    }
+  ]
+}

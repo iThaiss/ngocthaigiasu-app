@@ -1,0 +1,749 @@
+{
+  "words": [
+    {
+      "word": "misinformation",
+      "pronunciation": "/ˌmɪsɪnˈfɔːmeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "thông tin sai lệch, không chính xác được phát tán mà không cố ý gây hại",
+      "definition_en": "false or inaccurate information, especially that which is spread unintentionally",
+      "level": "B2",
+      "synonyms": [
+        "false information",
+        "inaccuracy"
+      ],
+      "antonyms": [
+        "accurate information",
+        "fact"
+      ],
+      "example_sentence": "The rapid spread of misinformation on social media during the election campaign undermined public trust in institutions."
+    },
+    {
+      "word": "disinformation",
+      "pronunciation": "/ˌdɪsɪnˈfɔːmeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "thông tin sai lệch được phát tán một cách cố ý để gây nhầm lẫn hoặc thao túng",
+      "definition_en": "deliberately false or misleading information spread to deceive or manipulate",
+      "level": "C1",
+      "synonyms": [
+        "propaganda",
+        "deliberate falsehood"
+      ],
+      "antonyms": [
+        "truthful information",
+        "transparency"
+      ],
+      "example_sentence": "State-sponsored disinformation campaigns have been documented as attempts to influence foreign elections and sow discord."
+    },
+    {
+      "word": "fake news",
+      "pronunciation": "/feɪk njuːz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tin tức giả mạo, thường được tạo ra để gây chú ý hoặc thao túng dư luận",
+      "definition_en": "false or fabricated news stories designed to mislead or attract attention",
+      "level": "B2",
+      "synonyms": [
+        "hoax",
+        "fabrication"
+      ],
+      "antonyms": [
+        "verified news",
+        "factual reporting"
+      ],
+      "example_sentence": "Fact-checkers work tirelessly to debunk fake news that spreads rapidly across social media platforms."
+    },
+    {
+      "word": "credibility",
+      "pronunciation": "/ˌkredəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính đáng tin cậy, khả năng được tin tưởng dựa trên uy tín và độ chính xác",
+      "definition_en": "the quality of being trusted and believed; trustworthiness",
+      "level": "B2",
+      "synonyms": [
+        "reliability",
+        "trustworthiness"
+      ],
+      "antonyms": [
+        "incredibility",
+        "unreliability"
+      ],
+      "example_sentence": "The credibility of news sources has become increasingly important as citizens navigate the digital information landscape."
+    },
+    {
+      "word": "verify",
+      "pronunciation": "/ˈverɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác minh, kiểm chứng tính chính xác của thông tin",
+      "definition_en": "to check or confirm the truth or accuracy of something",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "validate"
+      ],
+      "antonyms": [
+        "disprove",
+        "refute"
+      ],
+      "example_sentence": "Before sharing information online, users should verify the source and cross-reference claims with reputable outlets."
+    },
+    {
+      "word": "source evaluation",
+      "pronunciation": "/sɔːrs ɪˌvæljuˈeɪʃn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình đánh giá độ tin cậy và chất lượng của một nguồn thông tin",
+      "definition_en": "the process of assessing the reliability and quality of information sources",
+      "level": "C1",
+      "synonyms": [
+        "source assessment",
+        "credibility check"
+      ],
+      "antonyms": [],
+      "example_sentence": "Digital literacy programs teach students source evaluation techniques to distinguish between reliable journalism and propaganda."
+    },
+    {
+      "word": "bias",
+      "pronunciation": "/ˈbaɪəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "thiên vị, xu hướng không công bằng ảnh hưởng đến cách trình bày thông tin",
+      "definition_en": "prejudice or inclination that prevents impartial judgment",
+      "level": "B2",
+      "synonyms": [
+        "prejudice",
+        "partiality"
+      ],
+      "antonyms": [
+        "objectivity",
+        "impartiality"
+      ],
+      "example_sentence": "Media outlets often exhibit political bias in their coverage, which can distort public perception of events."
+    },
+    {
+      "word": "algorithm",
+      "pronunciation": "/ˈælɡərɪðəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "thuật toán, quy trình tính toán được sử dụng để sắp xếp và hiển thị nội dung trực tuyến",
+      "definition_en": "a step-by-step procedure for solving a problem or accomplishing a task, especially by a computer",
+      "level": "B2",
+      "synonyms": [
+        "procedure",
+        "formula"
+      ],
+      "antonyms": [],
+      "example_sentence": "Social media algorithms prioritize engaging content, which can inadvertently amplify sensational or false information."
+    },
+    {
+      "word": "echo chamber",
+      "pronunciation": "/ˈekəʊ ˈtʃeɪmbə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "buồng cộng hưởng, môi trường nơi chỉ những ý kiến tương tự được lặp lại và củng cố",
+      "definition_en": "an environment where people are exposed only to opinions and information that confirm their existing beliefs",
+      "level": "C1",
+      "synonyms": [
+        "filter bubble",
+        "information silo"
+      ],
+      "antonyms": [
+        "diverse perspective",
+        "open discourse"
+      ],
+      "example_sentence": "Echo chambers on social media can reinforce misinformation and polarize communities by limiting exposure to opposing viewpoints."
+    },
+    {
+      "word": "filter bubble",
+      "pronunciation": "/ˈfɪltə ˈbʌbl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bong bóng lọc, hiện tượng khi thuật toán chỉ hiển thị nội dung phù hợp với sở thích cá nhân",
+      "definition_en": "personalized filtering that isolates users from diverse information and viewpoints",
+      "level": "C1",
+      "synonyms": [
+        "echo chamber",
+        "information bubble"
+      ],
+      "antonyms": [
+        "diverse media diet",
+        "balanced exposure"
+      ],
+      "example_sentence": "Breaking out of filter bubbles requires actively seeking news sources with different perspectives and editorial stances."
+    },
+    {
+      "word": "fact-check",
+      "pronunciation": "/ˈfækt tʃek/",
+      "part_of_speech": "noun",
+      "definition_vi": "kiểm chứng sự thật, xác minh tính chính xác của các tuyên bố hoặc tin tức",
+      "definition_en": "to verify the accuracy of claims or statements against reliable sources",
+      "level": "B2",
+      "synonyms": [
+        "verify",
+        "validate"
+      ],
+      "antonyms": [
+        "accept uncritically",
+        "ignore"
+      ],
+      "example_sentence": "Journalists and independent organizations regularly fact-check political statements to hold public figures accountable."
+    },
+    {
+      "word": "manipulation",
+      "pronunciation": "/ˌmænɪpjuˈleɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "thao túng, hành động kiểm soát hoặc ảnh hưởng đến ai đó bằng cách không trung thực",
+      "definition_en": "the action of controlling or influencing someone or something in a clever or unscrupulous way",
+      "level": "B2",
+      "synonyms": [
+        "exploitation",
+        "deception"
+      ],
+      "antonyms": [
+        "honesty",
+        "transparency"
+      ],
+      "example_sentence": "Online manipulation tactics, such as deepfakes and coordinated campaigns, pose serious threats to democratic discourse."
+    },
+    {
+      "word": "deepfake",
+      "pronunciation": "/ˈdiːpfeɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "video hoặc âm thanh giả mạo được tạo bằng công nghệ AI để làm cho người khác nói hoặc làm điều họ không làm",
+      "definition_en": "synthetic media created using artificial intelligence to convincingly depict someone saying or doing something they did not",
+      "level": "C1",
+      "synonyms": [
+        "synthetic media",
+        "AI-generated forgery"
+      ],
+      "antonyms": [
+        "authentic footage",
+        "genuine recording"
+      ],
+      "example_sentence": "Deepfakes represent an emerging threat to information integrity, as they can be used to spread false narratives about public figures."
+    },
+    {
+      "word": "viral",
+      "pronunciation": "/ˈvaɪrəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "lan truyền nhanh chóng trên mạng xã hội, được chia sẻ rộng rãi",
+      "definition_en": "spreading rapidly and widely through social media or the internet",
+      "level": "B2",
+      "synonyms": [
+        "trending",
+        "widespread"
+      ],
+      "antonyms": [
+        "obscure",
+        "niche"
+      ],
+      "example_sentence": "Viral misinformation can reach millions of people within hours, making rapid fact-checking and correction essential."
+    },
+    {
+      "word": "sensationalism",
+      "pronunciation": "/senˈseɪʃənəlɪzəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "chủ nghĩa kích động, xu hướng phóng đại hoặc làm nổi bật các yếu tố gây kích thích để thu hút chú ý",
+      "definition_en": "the use of exciting or shocking stories and language at the expense of accuracy or depth",
+      "level": "C1",
+      "synonyms": [
+        "exaggeration",
+        "sensationalization"
+      ],
+      "antonyms": [
+        "objectivity",
+        "restraint"
+      ],
+      "example_sentence": "Sensationalism in headlines often distorts the actual content of news stories and misleads readers about the significance of events."
+    },
+    {
+      "word": "propaganda",
+      "pronunciation": "/ˌprɒpəˈɡændə/",
+      "part_of_speech": "noun",
+      "definition_vi": "tuyên truyền, thông tin được phát tán để thúc đẩy một quan điểm chính trị hoặc ý thức hệ cụ thể",
+      "definition_en": "information, especially of a biased or misleading nature, used to promote a political cause or point of view",
+      "level": "B2",
+      "synonyms": [
+        "disinformation",
+        "indoctrination"
+      ],
+      "antonyms": [
+        "objective reporting",
+        "balanced information"
+      ],
+      "example_sentence": "State propaganda often employs emotional appeals and selective facts to shape public opinion in favor of government policies."
+    },
+    {
+      "word": "critical thinking",
+      "pronunciation": "/ˈkrɪtɪkl ˈθɪŋkɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tư duy phê phán, khả năng phân tích và đánh giá thông tin một cách logic và khách quan",
+      "definition_en": "the ability to analyze and evaluate information objectively rather than accepting it uncritically",
+      "level": "B2",
+      "synonyms": [
+        "analytical thinking",
+        "logical reasoning"
+      ],
+      "antonyms": [
+        "gullibility",
+        "uncritical acceptance"
+      ],
+      "example_sentence": "Developing critical thinking skills is essential for navigating the digital age and resisting manipulation through false narratives."
+    },
+    {
+      "word": "media literacy",
+      "pronunciation": "/ˈmiːdiə ˈlɪtərəsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "năng lực truyền thông, khả năng hiểu, phân tích và tạo ra nội dung truyền thông một cách hiệu quả",
+      "definition_en": "the ability to access, analyze, evaluate, and create media in a variety of forms",
+      "level": "B2",
+      "synonyms": [
+        "digital literacy",
+        "information literacy"
+      ],
+      "antonyms": [
+        "media illiteracy",
+        "information naivety"
+      ],
+      "example_sentence": "Schools increasingly emphasize media literacy programs to help students distinguish between reliable journalism and misinformation."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, cung cấp bằng chứng hoặc bằng cách khác hỗ trợ hoặc xác thực một tuyên bố",
+      "definition_en": "to confirm or give support to a statement or theory by providing evidence",
+      "level": "C1",
+      "synonyms": [
+        "confirm",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Investigative journalists corroborate their findings with multiple independent sources before publishing sensitive stories."
+    },
+    {
+      "word": "attribution",
+      "pronunciation": "/ˌætrɪˈbjuːʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "quy kết, hành động ghi công hoặc gán trách nhiệm cho ai đó hoặc cái gì đó",
+      "definition_en": "the action of regarding something as being caused or produced by someone or something",
+      "level": "C1",
+      "synonyms": [
+        "credit",
+        "assignment"
+      ],
+      "antonyms": [
+        "denial",
+        "disavowal"
+      ],
+      "example_sentence": "Proper attribution of sources is a fundamental principle of ethical journalism and academic integrity."
+    },
+    {
+      "word": "clickbait",
+      "pronunciation": "/ˈklɪkbeɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "mồi câu click, tiêu đề hoặc nội dung được thiết kế để lôi kéo người dùng nhấp chuột mà không cung cấp giá trị thực",
+      "definition_en": "sensational headlines or content designed to attract clicks without delivering substantive information",
+      "level": "B2",
+      "synonyms": [
+        "sensational headline",
+        "misleading link"
+      ],
+      "antonyms": [
+        "substantive content",
+        "honest headline"
+      ],
+      "example_sentence": "Clickbait articles often use exaggerated or misleading headlines to drive traffic, prioritizing engagement over accuracy."
+    },
+    {
+      "word": "corroboration",
+      "pronunciation": "/kəˌrɒbəˈreɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự xác nhận, bằng chứng hoặc lời khai từ nhiều nguồn độc lập xác thực một sự kiện",
+      "definition_en": "evidence or confirmation from independent sources that supports a claim or statement",
+      "level": "C1",
+      "synonyms": [
+        "confirmation",
+        "substantiation"
+      ],
+      "antonyms": [
+        "contradiction",
+        "refutation"
+      ],
+      "example_sentence": "The credibility of witness testimony increases significantly when corroboration from multiple independent sources is available."
+    },
+    {
+      "word": "editorial bias",
+      "pronunciation": "/ˌedɪˈtɔːriəl ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiên vị biên tập, xu hướng của một tờ báo hoặc ấn phẩm trong cách chọn lực và trình bày tin tức",
+      "definition_en": "the systematic preference or prejudice shown by a publication in selecting and presenting news",
+      "level": "C1",
+      "synonyms": [
+        "publication bias",
+        "media bias"
+      ],
+      "antonyms": [
+        "editorial objectivity",
+        "balanced reporting"
+      ],
+      "example_sentence": "Understanding editorial bias helps readers interpret news coverage and recognize how different outlets frame the same events."
+    },
+    {
+      "word": "bot",
+      "pronunciation": "/bɒt/",
+      "part_of_speech": "noun",
+      "definition_vi": "bot, chương trình tự động hoạt động trên mạng xã hội để phát tán thông tin hoặc tương tác giả mạo",
+      "definition_en": "an automated software program that performs repetitive tasks, often used to spread misinformation or manipulate engagement",
+      "level": "B2",
+      "synonyms": [
+        "automated account",
+        "software agent"
+      ],
+      "antonyms": [
+        "human user",
+        "authentic account"
+      ],
+      "example_sentence": "Coordinated bot networks have been identified as tools for amplifying disinformation campaigns across multiple social media platforms."
+    },
+    {
+      "word": "astroturfing",
+      "pronunciation": "/ˈæstroʊtɜːrfɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "tạo dựng dư luận giả, hành động tạo ra sự ủng hộ hoặc phản đối giả mạo để trông như là phong trào tự phát",
+      "definition_en": "the practice of creating the appearance of grassroots support for a cause or product through coordinated inauthentic efforts",
+      "level": "C1",
+      "synonyms": [
+        "manufactured consensus",
+        "fake grassroots"
+      ],
+      "antonyms": [
+        "organic movement",
+        "authentic support"
+      ],
+      "example_sentence": "Astroturfing campaigns use fake accounts and coordinated messaging to create the illusion of widespread public support for political agendas."
+    },
+    {
+      "word": "confirmation bias",
+      "pronunciation": "/ˌkɒnfərˈmeɪʃn ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiên vị xác nhận, xu hướng tìm kiếm, diễn giải và nhớ lại thông tin theo cách ủng hộ niềm tin hiện có",
+      "definition_en": "the tendency to search for, interpret, and recall information in ways that confirm one's preexisting beliefs",
+      "level": "C1",
+      "synonyms": [
+        "selective perception",
+        "belief bias"
+      ],
+      "antonyms": [
+        "open-mindedness",
+        "objectivity"
+      ],
+      "example_sentence": "Confirmation bias makes people more susceptible to misinformation that aligns with their existing worldviews and political beliefs."
+    },
+    {
+      "word": "debunk",
+      "pronunciation": "/dɪˈbʌŋk/",
+      "part_of_speech": "verb",
+      "definition_vi": "bác bỏ, chứng minh rằng một tuyên bố hoặc niềm tin là sai lệch hoặc không có cơ sở",
+      "definition_en": "to expose the falseness or hollowness of a claim or belief",
+      "level": "B2",
+      "synonyms": [
+        "refute",
+        "disprove"
+      ],
+      "antonyms": [
+        "confirm",
+        "validate"
+      ],
+      "example_sentence": "Fact-checking organizations work to debunk viral claims by providing evidence-based explanations and correcting false narratives."
+    },
+    {
+      "word": "peer review",
+      "pronunciation": "/ˈpɪə rɪˈvjuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh giá ngang hàng, quá trình kiểm tra công trình khoa học bởi các chuyên gia độc lập trước khi công bố",
+      "definition_en": "the evaluation of research or writing by experts in the same field to ensure quality and accuracy",
+      "level": "B2",
+      "synonyms": [
+        "expert review",
+        "quality control"
+      ],
+      "antonyms": [
+        "unvetted publication",
+        "self-publication"
+      ],
+      "example_sentence": "Peer review is a cornerstone of scientific integrity, ensuring that published research meets rigorous standards of evidence and methodology."
+    },
+    {
+      "word": "transparency",
+      "pronunciation": "/trænsˈpærənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính minh bạch, sự công khai và rõ ràng về các quá trình, nguồn tài chính hoặc phương pháp",
+      "definition_en": "openness and clarity about methods, sources, and decision-making processes",
+      "level": "B2",
+      "synonyms": [
+        "openness",
+        "clarity"
+      ],
+      "antonyms": [
+        "opacity",
+        "secrecy"
+      ],
+      "example_sentence": "Media organizations that prioritize transparency about their sources and editorial processes build greater credibility with audiences."
+    },
+    {
+      "word": "retraction",
+      "pronunciation": "/rɪˈtrækʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "rút lại, hành động công khai thừa nhận và sửa chữa một lỗi hoặc thông tin sai trong một bài báo đã xuất bản",
+      "definition_en": "a public withdrawal or disavowal of a previously published statement or claim",
+      "level": "C1",
+      "synonyms": [
+        "correction",
+        "withdrawal"
+      ],
+      "antonyms": [
+        "publication",
+        "affirmation"
+      ],
+      "example_sentence": "Major news outlets issue retractions when investigations reveal that published stories contained significant factual errors."
+    },
+    {
+      "word": "lateral reading",
+      "pronunciation": "/ˈlætərəl ˈriːdɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đọc ngang, kỹ thuật kiểm chứng bằng cách mở nhiều tab để tìm hiểu về tác giả và nguồn thay vì chỉ đọc một bài",
+      "definition_en": "a fact-checking technique where readers open multiple tabs to verify information about sources and claims",
+      "level": "C1",
+      "synonyms": [
+        "cross-referencing",
+        "source verification"
+      ],
+      "antonyms": [
+        "passive reading",
+        "uncritical consumption"
+      ],
+      "example_sentence": "Lateral reading is an effective strategy taught in digital literacy courses to help students evaluate source credibility quickly."
+    },
+    {
+      "word": "satire",
+      "pronunciation": "/ˈsætaɪə/",
+      "part_of_speech": "noun",
+      "definition_vi": "châm biếm, hình thức sáng tác sử dụng hài hước hoặc mỉa mai để chỉ trích hoặc phê phán",
+      "definition_en": "the use of humor, irony, or exaggeration to criticize or mock something",
+      "level": "B2",
+      "synonyms": [
+        "mockery",
+        "irony"
+      ],
+      "antonyms": [
+        "sincerity",
+        "earnestness"
+      ],
+      "example_sentence": "Satirical news sites sometimes confuse readers who mistake their ironic content for factual reporting, contributing to misinformation."
+    },
+    {
+      "word": "attribution error",
+      "pronunciation": "/ˌætrɪˈbjuːʃn ˈerə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sai lầm quy kết, lỗi tâm lý khi giải thích hành động của người khác dựa trên tính cách thay vì hoàn cảnh",
+      "definition_en": "a cognitive bias where people attribute others' actions to personal characteristics rather than situational factors",
+      "level": "C1",
+      "synonyms": [
+        "fundamental attribution error",
+        "correspondence bias"
+      ],
+      "antonyms": [
+        "situational awareness",
+        "contextual understanding"
+      ],
+      "example_sentence": "Attribution errors can lead people to misinterpret news stories by blaming individuals rather than considering systemic or contextual factors."
+    },
+    {
+      "word": "synthetic media",
+      "pronunciation": "/sɪnˈθetɪk ˈmiːdiə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương tiện tổng hợp, nội dung được tạo hoặc sửa đổi bằng công nghệ AI hoặc xử lý kỹ thuật số",
+      "definition_en": "media content created or manipulated using artificial intelligence or digital processing techniques",
+      "level": "C1",
+      "synonyms": [
+        "AI-generated content",
+        "manipulated media"
+      ],
+      "antonyms": [
+        "authentic footage",
+        "original content"
+      ],
+      "example_sentence": "The rise of synthetic media technology poses challenges for information verification and requires new approaches to authentication."
+    },
+    {
+      "word": "information ecosystem",
+      "pronunciation": "/ˌɪnfərˈmeɪʃn ˌiːkəˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ sinh thái thông tin, toàn bộ mạng lưới các nguồn, nền tảng và người tham gia trong việc tạo và phát tán thông tin",
+      "definition_en": "the complex network of sources, platforms, and actors involved in creating and distributing information",
+      "level": "C1",
+      "synonyms": [
+        "media landscape",
+        "information environment"
+      ],
+      "antonyms": [],
+      "example_sentence": "A healthy information ecosystem requires diverse sources, transparent practices, and media-literate citizens who can evaluate claims critically."
+    },
+    {
+      "word": "inoculation theory",
+      "pronunciation": "/ˌɪnɒkjuˈleɪʃn ˈθɪəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lý thuyết tiêm chủng, khái niệm rằng tiếp xúc với các lập luận yếu có thể giúp mọi người chống lại thông tin sai lệch",
+      "definition_en": "a psychological theory suggesting that exposure to weak arguments can help people resist stronger misinformation later",
+      "level": "C1",
+      "synonyms": [
+        "resistance to persuasion",
+        "cognitive defense"
+      ],
+      "antonyms": [],
+      "example_sentence": "Inoculation theory suggests that teaching people about manipulation techniques can help them recognize and resist misinformation campaigns."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best distinguishes misinformation from disinformation?",
+      "option_a": "Misinformation is always more harmful than disinformation.",
+      "option_b": "Misinformation is false information spread unintentionally, while disinformation is deliberately false.",
+      "option_c": "Disinformation only occurs in academic contexts, while misinformation spreads on social media.",
+      "option_d": "Misinformation requires fact-checking, but disinformation does not.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Sự khác biệt chính là ý định: misinformation không cố ý gây hại, trong khi disinformation được phát tán một cách cố ý để gây nhầm lẫn. Các lựa chọn khác đều sai vì không phản ánh đúng định nghĩa."
+    },
+    {
+      "question_text": "What is the primary danger of echo chambers in the context of digital literacy?",
+      "option_a": "They increase the volume of sound on social media platforms.",
+      "option_b": "They expose users to diverse perspectives and viewpoints.",
+      "option_c": "They reinforce existing beliefs and limit exposure to opposing viewpoints, making users more susceptible to misinformation.",
+      "option_d": "They require users to verify all information before sharing.",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Echo chambers tạo ra môi trường nơi chỉ những ý kiến tương tự được lặp lại, làm tăng confirmation bias. Điều này khiến người dùng dễ bị thuyết phục bởi thông tin sai lệch phù hợp với niềm tin của họ."
+    },
+    {
+      "question_text": "In the sentence 'The journalist's credibility was questioned after the publication failed to corroborate its sources,' what does 'corroborate' mean?",
+      "option_a": "To criticize harshly",
+      "option_b": "To confirm or provide evidence supporting",
+      "option_c": "To contradict or refute",
+      "option_d": "To publish or distribute",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Corroborate có nghĩa là xác nhận hoặc cung cấp bằng chứng hỗ trợ. Trong ngữ cảnh này, việc không corroborate các nguồn có nghĩa là không thể xác minh hoặc hỗ trợ các tuyên bố của họ."
+    },
+    {
+      "question_text": "Which technique is most effective for identifying clickbait articles?",
+      "option_a": "Reading only the headline without clicking the link",
+      "option_b": "Checking if the headline matches the actual content and evaluating the source's credibility",
+      "option_c": "Sharing the article immediately to warn others",
+      "option_d": "Assuming all sensational headlines are accurate",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Clickbait sử dụng tiêu đề gây chú ý nhưng nội dung thường không đáp ứng kỳ vọng. Cách tốt nhất là kiểm tra xem tiêu đề có khớp với nội dung và đánh giá uy tín của nguồn."
+    },
+    {
+      "question_text": "What role do algorithms play in the spread of misinformation on social media?",
+      "option_a": "They eliminate all false information automatically.",
+      "option_b": "They prioritize engaging content, which can amplify sensational or false information.",
+      "option_c": "They have no impact on what content users see.",
+      "option_d": "They only show verified news from reputable sources.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Các thuật toán trên mạng xã hội được thiết kế để tối đa hóa sự tương tác, không phải độ chính xác. Nội dung gây chú ý (bao gồm cả thông tin sai lệch) thường được ưu tiên, dẫn đến sự lan truyền nhanh chóng của misinformation."
+    },
+    {
+      "question_text": "Which of the following is an example of astroturfing?",
+      "option_a": "A genuine grassroots movement organized by citizens concerned about environmental policy",
+      "option_b": "A coordinated campaign using fake accounts to create the appearance of widespread support for a political candidate",
+      "option_c": "A news organization publishing factual reports about public opinion",
+      "option_d": "A social media user sharing their authentic personal views",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Astroturfing là việc tạo dựng sự ủng hộ giả mạo để trông như là phong trào tự phát. Lựa chọn B mô tả chính xác điều này với việc sử dụng các tài khoản giả để tạo ra ảo tưởng về sự hỗ trợ rộng rãi."
+    },
+    {
+      "question_text": "How does confirmation bias contribute to the spread of misinformation?",
+      "option_a": "It makes people more likely to seek out and believe information that confirms their existing beliefs.",
+      "option_b": "It prevents people from accessing social media platforms.",
+      "option_c": "It requires all information to be verified before sharing.",
+      "option_d": "It eliminates the need for fact-checking.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Confirmation bias khiến mọi người tìm kiếm, diễn giải và nhớ lại thông tin theo cách ủng hộ niềm tin hiện có. Điều này làm cho họ dễ bị thuyết phục bởi misinformation phù hợp với quan điểm của họ."
+    },
+    {
+      "question_text": "What is the primary advantage of lateral reading as a fact-checking technique?",
+      "option_a": "It allows readers to read articles faster without verifying information.",
+      "option_b": "It enables readers to quickly verify source credibility by opening multiple tabs to research the author and publication.",
+      "option_c": "It eliminates the need for critical thinking.",
+      "option_d": "It guarantees that all information is accurate.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Lateral reading là kỹ thuật mở nhiều tab để tìm hiểu về tác giả và nguồn thay vì chỉ đọc một bài. Điều này cho phép người đọc nhanh chóng đánh giá độ tin cậy của nguồn mà không cần phải hoàn toàn dựa vào nội dung bài viết."
+    },
+    {
+      "question_text": "In the context of media literacy, what does 'editorial bias' refer to?",
+      "option_a": "The personal opinions of individual readers",
+      "option_b": "The systematic preference or prejudice shown by a publication in selecting and presenting news",
+      "option_c": "The use of correct grammar and spelling in articles",
+      "option_d": "The speed at which news is published online",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Editorial bias là xu hướng của một tờ báo hoặc ấn phẩm trong cách chọn lực và trình bày tin tức. Nó phản ánh những thiên vị hệ thống của tổ chức, không phải ý kiến cá nhân của độc giả."
+    },
+    {
+      "question_text": "Which statement best explains how deepfakes pose a threat to information integrity?",
+      "option_a": "They are always immediately recognized as fake by viewers.",
+      "option_b": "They can convincingly depict people saying or doing things they did not, making it difficult to distinguish truth from fabrication.",
+      "option_c": "They only affect entertainment content and not news.",
+      "option_d": "They require no technology to create.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Deepfakes sử dụng AI để tạo ra video hoặc âm thanh giả mạo rất thuyết phục. Chúng có thể được sử dụng để phát tán những tuyên bố sai lệch về các nhân vật công chúng, gây khó khăn cho việc phân biệt sự thật từ sự giả mạo."
+    },
+    {
+      "question_text": "What is the relationship between media literacy and critical thinking in combating misinformation?",
+      "option_a": "Media literacy and critical thinking are unrelated concepts.",
+      "option_b": "Critical thinking is a component of media literacy that enables people to analyze and evaluate information objectively.",
+      "option_c": "Media literacy eliminates the need for critical thinking.",
+      "option_d": "Critical thinking only applies to academic subjects, not media consumption.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Tư duy phê phán là một thành phần quan trọng của năng lực truyền thông. Nó cho phép mọi người phân tích và đánh giá thông tin một cách logic và khách quan, giúp họ chống lại misinformation."
+    },
+    {
+      "question_text": "According to inoculation theory, how can exposure to weak arguments help people resist misinformation?",
+      "option_a": "It makes people more gullible and easier to manipulate.",
+      "option_b": "It teaches people to recognize manipulation techniques and develop cognitive defenses against stronger misinformation.",
+      "option_c": "It has no effect on people's ability to resist false information.",
+      "option_d": "It prevents people from accessing any information online.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Inoculation theory cho rằng tiếp xúc với các lập luận yếu hoặc các kỹ thuật thao túng có thể giúp mọi người phát triển khả năng chống lại misinformation mạnh hơn. Nó giống như tiêm chủng: tiếp xúc nhẹ với bệnh giúp cơ thể phát triển miễn dịch."
+    },
+    {
+      "question_text": "What is the significance of peer review in maintaining information integrity in academic and scientific contexts?",
+      "option_a": "It slows down the publication process unnecessarily.",
+      "option_b": "It ensures that published research meets rigorous standards of evidence and methodology by having experts evaluate the work.",
+      "option_c": "It prevents all research from being published.",
+      "option_d": "It is only relevant to medical research.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Peer review là quá trình kiểm tra công trình khoa học bởi các chuyên gia độc lập. Nó đảm bảo rằng công trình được xuất bản đáp ứng các tiêu chuẩn nghiêm ngặt về bằng chứng và phương pháp, giúp duy trì tính toàn vẹn của thông tin khoa học."
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "words": [
+    {
+      "word": "phase out",
+      "pronunciation": "/feɪz aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dần dần loại bỏ, ngừng sử dụng từng bước (thường là chính sách, sản phẩm, hoặc công nghệ cũ)",
+      "definition_en": "to gradually discontinue or eliminate something over time",
+      "level": "B2",
+      "synonyms": [
+        "discontinue",
+        "eliminate gradually",
+        "wind down"
+      ],
+      "antonyms": [
+        "introduce",
+        "phase in"
+      ],
+      "example_sentence": "The government plans to phase out single-use plastics by 2030 to reduce environmental pollution."
+    },
+    {
+      "word": "scale up",
+      "pronunciation": "/skeɪl ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở rộng quy mô, tăng sản lượng hoặc kích thước (của dự án, sản xuất)",
+      "definition_en": "to increase the size, scope, or production of something",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "enlarge",
+        "increase"
+      ],
+      "antonyms": [
+        "scale down",
+        "reduce"
+      ],
+      "example_sentence": "The startup successfully scaled up its operations after securing investment from venture capitalists."
+    },
+    {
+      "word": "cut back on",
+      "pronunciation": "/kʌt bæk ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giảm bớt, cắt giảm (chi tiêu, tiêu thụ, hoạt động)",
+      "definition_en": "to reduce the amount or frequency of something",
+      "level": "B2",
+      "synonyms": [
+        "reduce",
+        "decrease",
+        "curtail"
+      ],
+      "antonyms": [
+        "increase",
+        "boost"
+      ],
+      "example_sentence": "Many households are cutting back on energy consumption to lower their monthly utility bills."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "/brɪŋ əˈbaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, dẫn đến, tạo ra (thay đổi, hậu quả)",
+      "definition_en": "to cause something to happen or occur",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "trigger",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "avert"
+      ],
+      "example_sentence": "Technological innovation has brought about significant changes in how people communicate globally."
+    },
+    {
+      "word": "come up with",
+      "pronunciation": "/kʌm ʌp wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nghĩ ra, đưa ra (ý tưởng, giải pháp, kế hoạch)",
+      "definition_en": "to produce or suggest an idea, solution, or plan",
+      "level": "B2",
+      "synonyms": [
+        "devise",
+        "invent",
+        "propose"
+      ],
+      "antonyms": [
+        "reject",
+        "dismiss"
+      ],
+      "example_sentence": "The research team came up with an innovative approach to treating antibiotic-resistant bacteria."
+    },
+    {
+      "word": "draw on",
+      "pronunciation": "/drɔː ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sử dụng, khai thác (kinh nghiệm, kiến thức, tài nguyên)",
+      "definition_en": "to use or utilize knowledge, experience, or resources",
+      "level": "C1",
+      "synonyms": [
+        "utilize",
+        "employ",
+        "exploit"
+      ],
+      "antonyms": [
+        "ignore",
+        "neglect"
+      ],
+      "example_sentence": "The author drew on her extensive fieldwork experience to write a compelling ethnographic study."
+    },
+    {
+      "word": "fall back on",
+      "pronunciation": "/fɔːl bæk ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quay lại, dựa vào (khi không còn lựa chọn khác)",
+      "definition_en": "to rely on something as an alternative when other options fail",
+      "level": "B2",
+      "synonyms": [
+        "rely on",
+        "resort to",
+        "depend on"
+      ],
+      "antonyms": [
+        "abandon",
+        "discard"
+      ],
+      "example_sentence": "When the primary funding source dried up, the organization had to fall back on its emergency reserves."
+    },
+    {
+      "word": "gear towards",
+      "pronunciation": "/ɡɪr təˈwɔːdz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hướng tới, thiết kế để phục vụ (một nhóm đối tượng hoặc mục đích cụ thể)",
+      "definition_en": "to design or adapt something for a specific purpose or audience",
+      "level": "C1",
+      "synonyms": [
+        "tailor",
+        "orient",
+        "target"
+      ],
+      "antonyms": [
+        "generalize",
+        "diversify"
+      ],
+      "example_sentence": "The curriculum is geared towards developing critical thinking skills in secondary school students."
+    },
+    {
+      "word": "hinge on",
+      "pronunciation": "/hɪndʒ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc vào, tùy thuộc vào (một yếu tố quyết định)",
+      "definition_en": "to depend entirely on a single factor or condition",
+      "level": "C1",
+      "synonyms": [
+        "depend on",
+        "rest on",
+        "turn on"
+      ],
+      "antonyms": [
+        "diverge from",
+        "separate from"
+      ],
+      "example_sentence": "The success of the merger hinges on regulatory approval from the competition authority."
+    },
+    {
+      "word": "iron out",
+      "pronunciation": "/ˈaɪən aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giải quyết, san phẳng (những khó khăn, vấn đề nhỏ)",
+      "definition_en": "to resolve or eliminate problems or difficulties",
+      "level": "B2",
+      "synonyms": [
+        "resolve",
+        "settle",
+        "smooth out"
+      ],
+      "antonyms": [
+        "complicate",
+        "worsen"
+      ],
+      "example_sentence": "The negotiating teams are working to iron out remaining disagreements before signing the contract."
+    },
+    {
+      "word": "lay out",
+      "pronunciation": "/leɪ aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trình bày, sắp xếp, bố trí (ý tưởng, kế hoạch, không gian)",
+      "definition_en": "to present, arrange, or design something in a clear manner",
+      "level": "B2",
+      "synonyms": [
+        "arrange",
+        "present",
+        "design"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The architect laid out the building plans to maximize natural light and energy efficiency."
+    },
+    {
+      "word": "live up to",
+      "pronunciation": "/lɪv ʌp tə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đáp ứng, sống đúng với (kỳ vọng, tiêu chuẩn, lời hứa)",
+      "definition_en": "to meet or fulfill expectations, standards, or promises",
+      "level": "B2",
+      "synonyms": [
+        "fulfill",
+        "meet",
+        "satisfy"
+      ],
+      "antonyms": [
+        "disappoint",
+        "fail"
+      ],
+      "example_sentence": "The new policy failed to live up to the government's promises of reducing unemployment."
+    },
+    {
+      "word": "narrow down",
+      "pronunciation": "/ˈnærəʊ daʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thu hẹp, giới hạn (danh sách, lựa chọn, khả năng)",
+      "definition_en": "to reduce the number of options or possibilities",
+      "level": "B2",
+      "synonyms": [
+        "limit",
+        "restrict",
+        "reduce"
+      ],
+      "antonyms": [
+        "expand",
+        "broaden"
+      ],
+      "example_sentence": "After reviewing hundreds of applications, the committee narrowed down the candidates to five finalists."
+    },
+    {
+      "word": "opt for",
+      "pronunciation": "/ɒpt fɔː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chọn, lựa chọn (một lựa chọn thay vì những lựa chọn khác)",
+      "definition_en": "to choose or select something in preference to alternatives",
+      "level": "B2",
+      "synonyms": [
+        "choose",
+        "select",
+        "prefer"
+      ],
+      "antonyms": [
+        "reject",
+        "decline"
+      ],
+      "example_sentence": "Many consumers are opting for sustainable products despite their higher price tags."
+    },
+    {
+      "word": "pile up",
+      "pronunciation": "/paɪl ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tích tụ, chồng chất (công việc, vấn đề, nợ)",
+      "definition_en": "to accumulate or increase in quantity over time",
+      "level": "B2",
+      "synonyms": [
+        "accumulate",
+        "mount",
+        "build up"
+      ],
+      "antonyms": [
+        "decrease",
+        "diminish"
+      ],
+      "example_sentence": "Medical bills piled up after the patient's extended hospitalization, creating financial hardship."
+    },
+    {
+      "word": "ramp up",
+      "pronunciation": "/ræmp ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tăng tốc, tăng cường (sản xuất, hoạt động, nỗ lực)",
+      "definition_en": "to increase or intensify something rapidly",
+      "level": "C1",
+      "synonyms": [
+        "increase",
+        "intensify",
+        "accelerate"
+      ],
+      "antonyms": [
+        "decrease",
+        "slow down"
+      ],
+      "example_sentence": "The pharmaceutical company ramped up vaccine production to meet global demand during the pandemic."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "/stem frɒm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bắt nguồn từ, xuất phát từ (nguyên nhân, nguồn gốc)",
+      "definition_en": "to originate or result from a particular source or cause",
+      "level": "C1",
+      "synonyms": [
+        "originate from",
+        "arise from",
+        "result from"
+      ],
+      "antonyms": [
+        "lead to",
+        "cause"
+      ],
+      "example_sentence": "The researcher argued that many social inequalities stem from systemic discrimination and historical injustice."
+    },
+    {
+      "word": "take off",
+      "pronunciation": "/teɪk ɔːf/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cất cánh (máy bay); bắt đầu thành công, phát triển nhanh chóng",
+      "definition_en": "to become successful or popular; to depart (aircraft)",
+      "level": "B2",
+      "synonyms": [
+        "succeed",
+        "flourish",
+        "depart"
+      ],
+      "antonyms": [
+        "fail",
+        "decline"
+      ],
+      "example_sentence": "The startup's innovative app took off within months, attracting millions of users worldwide."
+    },
+    {
+      "word": "touch on",
+      "pronunciation": "/tʌtʃ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đề cập đến, nhắc tới (một chủ đề, vấn đề) một cách sơ lược",
+      "definition_en": "to mention or briefly discuss a topic without going into detail",
+      "level": "C1",
+      "synonyms": [
+        "mention",
+        "allude to",
+        "reference"
+      ],
+      "antonyms": [
+        "elaborate on",
+        "expand"
+      ],
+      "example_sentence": "The speaker touched on climate change but did not provide concrete policy recommendations."
+    },
+    {
+      "word": "weigh in on",
+      "pronunciation": "/weɪ ɪn ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đưa ra ý kiến, bình luận về (một vấn đề, cuộc tranh luận)",
+      "definition_en": "to express an opinion or contribute to a discussion about something",
+      "level": "C1",
+      "synonyms": [
+        "comment on",
+        "opine on",
+        "contribute"
+      ],
+      "antonyms": [
+        "remain silent",
+        "abstain"
+      ],
+      "example_sentence": "Several economists weighed in on the debate about raising the minimum wage and its economic impact."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government announced plans to _____ fossil fuels and transition to renewable energy sources over the next decade.",
+      "option_a": "phase out",
+      "option_b": "scale up",
+      "option_c": "cut back on",
+      "option_d": "opt for",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Phase out\" có nghĩa là dần dần loại bỏ theo thời gian, phù hợp với bối cảnh chính sách năng lượng dài hạn. \"Scale up\" (mở rộng quy mô), \"cut back on\" (giảm bớt), và \"opt for\" (chọn) không phù hợp về ngữ cảnh."
+    },
+    {
+      "question_text": "Which phrasal verb best completes this sentence? The success of the project _____ securing adequate funding and stakeholder support.",
+      "option_a": "hinges on",
+      "option_b": "draws on",
+      "option_c": "falls back on",
+      "option_d": "piles up",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Hinge on\" có nghĩa là phụ thuộc vào một yếu tố quyết định, hoàn toàn phù hợp. \"Draws on\" (sử dụng), \"falls back on\" (dựa vào khi không còn lựa chọn), và \"piles up\" (tích tụ) không thích hợp."
+    },
+    {
+      "question_text": "The research team _____ their extensive experience in marine biology to develop innovative conservation strategies.",
+      "option_a": "drew on",
+      "option_b": "geared towards",
+      "option_c": "touched on",
+      "option_d": "weighed in on",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Draw on\" có nghĩa là sử dụng, khai thác kinh nghiệm hoặc kiến thức. Các lựa chọn khác không phù hợp: \"geared towards\" (hướng tới), \"touched on\" (đề cập), \"weighed in on\" (đưa ra ý kiến)."
+    },
+    {
+      "question_text": "After the initial setback, the company decided to _____ its marketing budget and focus on digital advertising channels.",
+      "option_a": "iron out",
+      "option_b": "ramp up",
+      "option_c": "narrow down",
+      "option_d": "lay out",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Ramp up\" có nghĩa là tăng tốc, tăng cường. Bối cảnh cho thấy công ty muốn tăng đầu tư vào quảng cáo kỹ thuật số. \"Iron out\" (giải quyết vấn đề), \"narrow down\" (thu hẹp), \"lay out\" (trình bày) không phù hợp."
+    },
+    {
+      "question_text": "The economist's argument that rising inflation _____ excessive government spending was widely debated in academic circles.",
+      "option_a": "stems from",
+      "option_b": "brings about",
+      "option_c": "comes up with",
+      "option_d": "lives up to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Stem from\" có nghĩa là bắt nguồn từ, xuất phát từ nguyên nhân. Câu nói về mối quan hệ nhân quả giữa chi tiêu chính phủ và lạm phát. \"Brings about\" (gây ra), \"comes up with\" (nghĩ ra), \"lives up to\" (đáp ứng) không thích hợp."
+    },
+    {
+      "question_text": "What is the best synonym for the phrasal verb \"come up with\" in this context: \"The committee came up with a new proposal to address workplace discrimination.\"",
+      "option_a": "rejected",
+      "option_b": "devised",
+      "option_c": "dismissed",
+      "option_d": "ignored",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "\"Come up with\" có nghĩa là nghĩ ra, đưa ra ý tưởng. \"Devised\" (thiết kế, tạo ra) là từ đồng nghĩa chính xác. Các lựa chọn khác (rejected, dismissed, ignored) đều có nghĩa ngược lại."
+    },
+    {
+      "question_text": "The environmental report _____ several critical issues but failed to provide detailed solutions or implementation strategies.",
+      "option_a": "piled up",
+      "option_b": "touched on",
+      "option_c": "opted for",
+      "option_d": "scaled up",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Touch on\" có nghĩa là đề cập đến một cách sơ lược, không chi tiết. Câu nói rõ rằng báo cáo chỉ nhắc tới các vấn đề nhưng không đi sâu. \"Piled up\" (tích tụ), \"opted for\" (chọn), \"scaled up\" (mở rộng) không phù hợp."
+    },
+    {
+      "question_text": "Which phrasal verb is most appropriate to complete this sentence? \"Several prominent scientists _____ the debate about artificial intelligence regulation and its societal implications.\"",
+      "option_a": "fell back on",
+      "option_b": "weighed in on",
+      "option_c": "ironed out",
+      "option_d": "lived up to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Weigh in on\" có nghĩa là đưa ra ý kiến, bình luận về một vấn đề. Bối cảnh cho thấy các nhà khoa học tham gia vào cuộc tranh luận. \"Fell back on\" (dựa vào), \"ironed out\" (giải quyết), \"lived up to\" (đáp ứng) không thích hợp."
+    }
+  ]
+}

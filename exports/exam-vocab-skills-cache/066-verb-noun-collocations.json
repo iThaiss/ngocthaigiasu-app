@@ -1,0 +1,534 @@
+{
+  "words": [
+    {
+      "word": "make progress",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đạt được tiến bộ, tiến triển trong công việc hoặc học tập",
+      "definition_en": "to advance or improve in a task, project, or learning process",
+      "level": "B1",
+      "synonyms": [
+        "advance",
+        "improve",
+        "develop"
+      ],
+      "antonyms": [
+        "stagnate",
+        "regress"
+      ],
+      "example_sentence": "The students made significant progress in their English skills after attending the intensive course."
+    },
+    {
+      "word": "raise awareness",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nâng cao nhận thức, giúp mọi người hiểu biết hơn về một vấn đề",
+      "definition_en": "to increase public knowledge or understanding of an issue",
+      "level": "B2",
+      "synonyms": [
+        "promote understanding",
+        "educate",
+        "inform"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "Environmental organizations are raising awareness about climate change through social media campaigns."
+    },
+    {
+      "word": "pose a threat",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tạo ra mối đe dọa, gây nguy hiểm cho ai/cái gì",
+      "definition_en": "to present a danger or risk to someone or something",
+      "level": "B2",
+      "synonyms": [
+        "threaten",
+        "endanger",
+        "jeopardize"
+      ],
+      "antonyms": [
+        "protect",
+        "safeguard"
+      ],
+      "example_sentence": "Invasive species pose a serious threat to the biodiversity of native ecosystems."
+    },
+    {
+      "word": "conduct research",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tiến hành nghiên cứu, thực hiện các hoạt động khoa học để tìm hiểu",
+      "definition_en": "to carry out systematic investigation or study on a topic",
+      "level": "B1",
+      "synonyms": [
+        "perform research",
+        "investigate",
+        "study"
+      ],
+      "antonyms": [
+        "ignore",
+        "neglect"
+      ],
+      "example_sentence": "Scientists conduct research on renewable energy sources to develop sustainable solutions."
+    },
+    {
+      "word": "draw a conclusion",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "rút ra kết luận, đưa ra nhận định dựa trên bằng chứng",
+      "definition_en": "to make a judgment or decision based on evidence or reasoning",
+      "level": "B1",
+      "synonyms": [
+        "conclude",
+        "infer",
+        "deduce"
+      ],
+      "antonyms": [
+        "assume",
+        "speculate"
+      ],
+      "example_sentence": "Based on the experimental data, researchers drew the conclusion that the new treatment was effective."
+    },
+    {
+      "word": "take action",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thực hiện hành động, bắt tay vào làm gì đó",
+      "definition_en": "to do something in response to a situation or problem",
+      "level": "B1",
+      "synonyms": [
+        "act",
+        "intervene",
+        "respond"
+      ],
+      "antonyms": [
+        "hesitate",
+        "delay"
+      ],
+      "example_sentence": "The government took action to reduce pollution by implementing stricter environmental regulations."
+    },
+    {
+      "word": "achieve success",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đạt được thành công, hoàn thành mục tiêu",
+      "definition_en": "to accomplish a goal or reach a desired outcome",
+      "level": "B1",
+      "synonyms": [
+        "succeed",
+        "accomplish",
+        "attain"
+      ],
+      "antonyms": [
+        "fail",
+        "falter"
+      ],
+      "example_sentence": "Through hard work and dedication, the team achieved success in launching their innovative product."
+    },
+    {
+      "word": "provide evidence",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cung cấp bằng chứng, đưa ra dữ liệu để chứng minh",
+      "definition_en": "to supply facts, data, or proof to support a claim or argument",
+      "level": "B2",
+      "synonyms": [
+        "present proof",
+        "demonstrate",
+        "substantiate"
+      ],
+      "antonyms": [
+        "conceal",
+        "deny"
+      ],
+      "example_sentence": "The study provides evidence that regular exercise improves mental health significantly."
+    },
+    {
+      "word": "address a problem",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "giải quyết vấn đề, xử lý tình huống khó khăn",
+      "definition_en": "to deal with or find a solution to a difficulty or issue",
+      "level": "B2",
+      "synonyms": [
+        "solve",
+        "tackle",
+        "resolve"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The government must address the problem of unemployment by creating more job opportunities."
+    },
+    {
+      "word": "maintain balance",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "duy trì sự cân bằng, giữ ổn định",
+      "definition_en": "to keep something in a stable or equal state",
+      "level": "B2",
+      "synonyms": [
+        "preserve equilibrium",
+        "sustain",
+        "stabilize"
+      ],
+      "antonyms": [
+        "disrupt",
+        "destabilize"
+      ],
+      "example_sentence": "Students need to maintain balance between academic work and extracurricular activities."
+    },
+    {
+      "word": "set a goal",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đặt ra mục tiêu, xác định điều muốn đạt được",
+      "definition_en": "to establish a specific objective or target to achieve",
+      "level": "B1",
+      "synonyms": [
+        "establish an objective",
+        "aim",
+        "target"
+      ],
+      "antonyms": [
+        "abandon",
+        "dismiss"
+      ],
+      "example_sentence": "The company set a goal to reduce carbon emissions by fifty percent within five years."
+    },
+    {
+      "word": "carry out a plan",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thực hiện kế hoạch, thi hành những gì đã lên kế hoạch",
+      "definition_en": "to execute or implement a predetermined strategy or scheme",
+      "level": "B2",
+      "synonyms": [
+        "execute",
+        "implement",
+        "perform"
+      ],
+      "antonyms": [
+        "abandon",
+        "cancel"
+      ],
+      "example_sentence": "The project manager carried out the plan efficiently, ensuring all deadlines were met."
+    },
+    {
+      "word": "reach a decision",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đi đến quyết định, đưa ra lựa chọn sau khi cân nhắc",
+      "definition_en": "to arrive at a choice or determination after consideration",
+      "level": "B2",
+      "synonyms": [
+        "decide",
+        "determine",
+        "conclude"
+      ],
+      "antonyms": [
+        "hesitate",
+        "waver"
+      ],
+      "example_sentence": "After careful deliberation, the committee reached a decision to approve the new policy."
+    },
+    {
+      "word": "cause damage",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "gây ra thiệt hại, làm hư hỏng",
+      "definition_en": "to inflict harm or injury to something or someone",
+      "level": "B1",
+      "synonyms": [
+        "harm",
+        "injure",
+        "destroy"
+      ],
+      "antonyms": [
+        "repair",
+        "restore"
+      ],
+      "example_sentence": "The hurricane caused significant damage to the coastal communities and infrastructure."
+    },
+    {
+      "word": "offer support",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cung cấp hỗ trợ, giúp đỡ ai đó",
+      "definition_en": "to provide assistance or help to someone in need",
+      "level": "B1",
+      "synonyms": [
+        "provide assistance",
+        "help",
+        "aid"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "International organizations offer support to developing countries in building sustainable infrastructure."
+    },
+    {
+      "word": "require attention",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "cần sự chú ý, đòi hỏi được quan tâm",
+      "definition_en": "to need or demand focus and care",
+      "level": "B2",
+      "synonyms": [
+        "demand focus",
+        "need care",
+        "call for attention"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Mental health issues require attention from both healthcare professionals and society as a whole."
+    },
+    {
+      "word": "promote development",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thúc đẩy phát triển, giúp cái gì phát triển",
+      "definition_en": "to encourage or advance growth and improvement",
+      "level": "B2",
+      "synonyms": [
+        "encourage growth",
+        "advance",
+        "foster"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Education promotes development by equipping individuals with skills and knowledge for better futures."
+    },
+    {
+      "word": "generate income",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "tạo ra thu nhập, kiếm được tiền",
+      "definition_en": "to produce or create revenue or earnings",
+      "level": "B2",
+      "synonyms": [
+        "earn money",
+        "produce revenue",
+        "create profit"
+      ],
+      "antonyms": [
+        "lose money",
+        "spend"
+      ],
+      "example_sentence": "Small businesses generate income by providing services that meet local community needs."
+    },
+    {
+      "word": "reduce emissions",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "giảm lượng khí thải, hạ thấp chất ô nhiễm phát ra",
+      "definition_en": "to decrease the amount of gases or pollutants released into the atmosphere",
+      "level": "B2",
+      "synonyms": [
+        "lower pollution",
+        "decrease discharge",
+        "minimize output"
+      ],
+      "antonyms": [
+        "increase emissions",
+        "pollute"
+      ],
+      "example_sentence": "Countries are working together to reduce emissions and combat the effects of global warming."
+    },
+    {
+      "word": "enhance quality",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "nâng cao chất lượng, cải thiện mức độ tốt",
+      "definition_en": "to improve or increase the standard or excellence of something",
+      "level": "B2",
+      "synonyms": [
+        "improve quality",
+        "upgrade",
+        "elevate"
+      ],
+      "antonyms": [
+        "diminish",
+        "degrade"
+      ],
+      "example_sentence": "The company invested in new technology to enhance the quality of its products and services."
+    },
+    {
+      "word": "establish a connection",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "thiết lập mối liên hệ, tạo ra sự kết nối",
+      "definition_en": "to create a link or relationship between two or more things",
+      "level": "B2",
+      "synonyms": [
+        "create a link",
+        "form a relationship",
+        "build ties"
+      ],
+      "antonyms": [
+        "sever",
+        "disconnect"
+      ],
+      "example_sentence": "The research established a connection between poor sleep habits and decreased academic performance."
+    },
+    {
+      "word": "fulfill a requirement",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "đáp ứng yêu cầu, hoàn thành điều kiện cần thiết",
+      "definition_en": "to satisfy or complete a necessary condition or demand",
+      "level": "B2",
+      "synonyms": [
+        "meet a requirement",
+        "satisfy",
+        "complete"
+      ],
+      "antonyms": [
+        "fail to meet",
+        "neglect"
+      ],
+      "example_sentence": "Students must fulfill all graduation requirements before receiving their diplomas."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The environmental organization has been _______ about the dangers of plastic pollution through educational campaigns and social media.",
+      "option_a": "raising awareness",
+      "option_b": "making awareness",
+      "option_c": "taking awareness",
+      "option_d": "giving awareness",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Cụm từ đúng là 'raise awareness' (nâng cao nhận thức). 'Make awareness', 'take awareness', 'give awareness' không phải là collocations tự nhiên trong tiếng Anh."
+    },
+    {
+      "question_text": "Scientists _______ extensive research to understand how climate change affects marine ecosystems.",
+      "option_a": "make research",
+      "option_b": "conduct research",
+      "option_c": "do research",
+      "option_d": "perform research",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Conduct research' là collocation chính thức và tự nhiên nhất. 'Make research' không đúng; 'do research' và 'perform research' có thể dùng nhưng 'conduct' là lựa chọn tốt nhất trong ngữ cảnh học thuật."
+    },
+    {
+      "question_text": "The new factory regulations _______ a serious threat to small manufacturing businesses in the region.",
+      "option_a": "pose",
+      "option_b": "create",
+      "option_c": "make",
+      "option_d": "present",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Pose a threat' là collocation chuẩn. Mặc dù 'create' và 'present' cũng có thể dùng, nhưng 'pose' là động từ chính xác nhất với 'threat'."
+    },
+    {
+      "question_text": "Despite facing numerous obstacles, the team _______ significant progress in developing the new software.",
+      "option_a": "achieved",
+      "option_b": "made",
+      "option_c": "took",
+      "option_d": "gained",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Make progress' là collocation phổ biến và tự nhiên. 'Achieved progress' không đúng; 'took progress' và 'gained progress' không phải collocations tiêu chuẩn."
+    },
+    {
+      "question_text": "The government _______ immediate action to address the rising unemployment rate in urban areas.",
+      "option_a": "made",
+      "option_b": "took",
+      "option_c": "did",
+      "option_d": "performed",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Take action' là collocation chuẩn. 'Made action', 'did action', 'performed action' không phải cách nói tự nhiên trong tiếng Anh."
+    },
+    {
+      "question_text": "The study _______ strong evidence that regular physical activity reduces the risk of heart disease.",
+      "option_a": "gives",
+      "option_b": "shows",
+      "option_c": "provides",
+      "option_d": "presents",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Provide evidence' là collocation chính thức trong ngữ cảnh học thuật. 'Shows', 'gives', 'presents' có thể dùng nhưng 'provide' là lựa chọn tốt nhất."
+    },
+    {
+      "question_text": "The committee _______ a decision to implement new policies aimed at improving workplace safety.",
+      "option_a": "made",
+      "option_b": "took",
+      "option_c": "reached",
+      "option_d": "came",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Reach a decision' là collocation tự nhiên. 'Made a decision' cũng đúng nhưng 'reach' là lựa chọn tốt hơn trong ngữ cảnh chính thức. 'Took a decision' và 'came a decision' không đúng."
+    },
+    {
+      "question_text": "The hurricane _______ extensive damage to coastal infrastructure and displaced thousands of residents.",
+      "option_a": "made",
+      "option_b": "caused",
+      "option_c": "created",
+      "option_d": "brought",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Cause damage' là collocation chuẩn. 'Made damage', 'created damage', 'brought damage' không phải cách nói tự nhiên."
+    },
+    {
+      "question_text": "International organizations _______ financial and technical support to developing nations for infrastructure projects.",
+      "option_a": "give",
+      "option_b": "offer",
+      "option_c": "provide",
+      "option_d": "deliver",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Offer support' là collocation tự nhiên. 'Provide support' cũng đúng nhưng 'offer' là lựa chọn tốt hơn. 'Give support' và 'deliver support' ít tự nhiên hơn."
+    },
+    {
+      "question_text": "The research _______ a clear connection between social media usage and increased anxiety in teenagers.",
+      "option_a": "made",
+      "option_b": "showed",
+      "option_c": "established",
+      "option_d": "found",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Establish a connection' là collocation chính thức. 'Showed', 'found' có thể dùng nhưng 'establish' là lựa chọn tốt nhất cho 'connection'."
+    },
+    {
+      "question_text": "The company _______ ambitious goals to become carbon-neutral by 2030 and reduce waste significantly.",
+      "option_a": "made",
+      "option_b": "set",
+      "option_c": "established",
+      "option_d": "created",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "'Set a goal' là collocation chuẩn. 'Made goals', 'established goals', 'created goals' không phải cách nói tự nhiên với 'goal'."
+    },
+    {
+      "question_text": "The new technology _______ the quality of medical services by enabling faster diagnosis and treatment.",
+      "option_a": "improved",
+      "option_b": "enhanced",
+      "option_c": "increased",
+      "option_d": "raised",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "'Enhance quality' là collocation tự nhiên trong ngữ cảnh chính thức. 'Improved quality' cũng đúng nhưng 'enhance' là lựa chọn tốt hơn. 'Increased quality' và 'raised quality' ít tự nhiên hơn."
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "words": [
+    {
+      "word": "unlikely",
+      "pronunciation": "/ʌnˈlaɪkli/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không có khả năng xảy ra; không chắc chắn",
+      "definition_en": "not probable or expected to happen",
+      "level": "B1",
+      "synonyms": [
+        "improbable",
+        "doubtful"
+      ],
+      "antonyms": [
+        "likely",
+        "probable"
+      ],
+      "example_sentence": "It is unlikely that the project will be completed before the deadline given current progress."
+    },
+    {
+      "word": "uncertain",
+      "pronunciation": "/ʌnˈsɜːtn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không chắc chắn; không rõ ràng",
+      "definition_en": "not sure or confident about something",
+      "level": "B1",
+      "synonyms": [
+        "unsure",
+        "doubtful"
+      ],
+      "antonyms": [
+        "certain",
+        "sure"
+      ],
+      "example_sentence": "The economic forecast remains uncertain due to unpredictable market conditions."
+    },
+    {
+      "word": "uncomfortable",
+      "pronunciation": "/ʌnˈkʌmftəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thoải mái; khó chịu",
+      "definition_en": "causing or feeling discomfort or unease",
+      "level": "B1",
+      "synonyms": [
+        "uneasy",
+        "awkward"
+      ],
+      "antonyms": [
+        "comfortable",
+        "cozy"
+      ],
+      "example_sentence": "Many students feel uncomfortable asking questions in large lecture halls."
+    },
+    {
+      "word": "unaware",
+      "pronunciation": "/ʌnəˈweə/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không biết; không nhận thức được",
+      "definition_en": "not knowing or realizing something",
+      "level": "B1",
+      "synonyms": [
+        "ignorant",
+        "oblivious"
+      ],
+      "antonyms": [
+        "aware",
+        "conscious"
+      ],
+      "example_sentence": "The company was unaware of the environmental impact of its manufacturing process."
+    },
+    {
+      "word": "ineffective",
+      "pronunciation": "/ɪnɪˈfektɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không hiệu quả; không đạt được kết quả mong muốn",
+      "definition_en": "not producing the desired result or effect",
+      "level": "B2",
+      "synonyms": [
+        "inefficient",
+        "useless"
+      ],
+      "antonyms": [
+        "effective",
+        "efficient"
+      ],
+      "example_sentence": "Traditional teaching methods proved ineffective for students with learning disabilities."
+    },
+    {
+      "word": "inappropriate",
+      "pronunciation": "/ɪnəˈproʊpriət/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không phù hợp; không thích hợp",
+      "definition_en": "not suitable or proper for a particular situation",
+      "level": "B2",
+      "synonyms": [
+        "unsuitable",
+        "improper"
+      ],
+      "antonyms": [
+        "appropriate",
+        "suitable"
+      ],
+      "example_sentence": "Using slang in formal academic writing is considered inappropriate by most professors."
+    },
+    {
+      "word": "incomplete",
+      "pronunciation": "/ɪnkəmˈpliːt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chưa hoàn thành; không đầy đủ",
+      "definition_en": "not finished or lacking some parts",
+      "level": "B1",
+      "synonyms": [
+        "unfinished",
+        "partial"
+      ],
+      "antonyms": [
+        "complete",
+        "finished"
+      ],
+      "example_sentence": "The research data was incomplete, making it difficult to draw reliable conclusions."
+    },
+    {
+      "word": "immoral",
+      "pronunciation": "/ɪˈmɔːrəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không đạo đức; trái với đạo lý",
+      "definition_en": "not conforming to accepted standards of morality",
+      "level": "B2",
+      "synonyms": [
+        "unethical",
+        "corrupt"
+      ],
+      "antonyms": [
+        "moral",
+        "ethical"
+      ],
+      "example_sentence": "The company's decision to exploit workers was widely condemned as immoral."
+    },
+    {
+      "word": "impossible",
+      "pronunciation": "/ɪmˈpɑːsəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thể làm được; bất khả thi",
+      "definition_en": "not able to be done or achieved",
+      "level": "B1",
+      "synonyms": [
+        "unfeasible",
+        "unachievable"
+      ],
+      "antonyms": [
+        "possible",
+        "feasible"
+      ],
+      "example_sentence": "Without proper funding, completing the project in one month would be impossible."
+    },
+    {
+      "word": "irregular",
+      "pronunciation": "/ɪˈreɡjələr/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không đều; không theo quy tắc",
+      "definition_en": "not following a regular pattern or rule",
+      "level": "B2",
+      "synonyms": [
+        "inconsistent",
+        "erratic"
+      ],
+      "antonyms": [
+        "regular",
+        "consistent"
+      ],
+      "example_sentence": "The student's irregular attendance has negatively affected their academic performance."
+    },
+    {
+      "word": "irrelevant",
+      "pronunciation": "/ɪˈreləvənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không liên quan; không thích hợp với chủ đề",
+      "definition_en": "not connected or appropriate to what is being discussed",
+      "level": "B2",
+      "synonyms": [
+        "unrelated",
+        "inapplicable"
+      ],
+      "antonyms": [
+        "relevant",
+        "pertinent"
+      ],
+      "example_sentence": "The historical background, while interesting, was largely irrelevant to the main argument."
+    },
+    {
+      "word": "illogical",
+      "pronunciation": "/ɪˈlɑːdʒɪkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không hợp lý; vô lý",
+      "definition_en": "not following the rules of logic or reason",
+      "level": "B2",
+      "synonyms": [
+        "irrational",
+        "unreasonable"
+      ],
+      "antonyms": [
+        "logical",
+        "rational"
+      ],
+      "example_sentence": "The conclusion was illogical because it did not follow from the evidence presented."
+    },
+    {
+      "word": "disadvantage",
+      "pronunciation": "/ˌdɪsədˈvæntɪdʒ/",
+      "part_of_speech": "noun",
+      "definition_vi": "bất lợi; điều bất lợi",
+      "definition_en": "an unfavorable circumstance or condition",
+      "level": "B1",
+      "synonyms": [
+        "drawback",
+        "downside"
+      ],
+      "antonyms": [
+        "advantage",
+        "benefit"
+      ],
+      "example_sentence": "One major disadvantage of online learning is the lack of face-to-face interaction."
+    },
+    {
+      "word": "disagree",
+      "pronunciation": "/ˌdɪsəˈɡriː/",
+      "part_of_speech": "verb",
+      "definition_vi": "không đồng ý; có ý kiến khác",
+      "definition_en": "to have a different opinion from someone",
+      "level": "B1",
+      "synonyms": [
+        "differ",
+        "dispute"
+      ],
+      "antonyms": [
+        "agree",
+        "concur"
+      ],
+      "example_sentence": "The two researchers disagreed about the interpretation of the experimental results."
+    },
+    {
+      "word": "disappear",
+      "pronunciation": "/ˌdɪsəˈpɪr/",
+      "part_of_speech": "verb",
+      "definition_vi": "biến mất; không còn nhìn thấy",
+      "definition_en": "to cease to be visible or to stop existing",
+      "level": "B1",
+      "synonyms": [
+        "vanish",
+        "fade"
+      ],
+      "antonyms": [
+        "appear",
+        "emerge"
+      ],
+      "example_sentence": "The symptoms gradually disappeared after the patient completed the prescribed treatment."
+    },
+    {
+      "word": "dishonest",
+      "pronunciation": "/dɪsˈɑːnəst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không trung thực; gian dối",
+      "definition_en": "not truthful or fraudulent in behavior",
+      "level": "B2",
+      "synonyms": [
+        "deceitful",
+        "fraudulent"
+      ],
+      "antonyms": [
+        "honest",
+        "truthful"
+      ],
+      "example_sentence": "The dishonest practices of the corporation led to significant financial penalties."
+    },
+    {
+      "word": "disorganized",
+      "pronunciation": "/dɪsˈɔːrɡənaɪzd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không có tổ chức; lộn xộn",
+      "definition_en": "lacking order or systematic arrangement",
+      "level": "B2",
+      "synonyms": [
+        "chaotic",
+        "messy"
+      ],
+      "antonyms": [
+        "organized",
+        "systematic"
+      ],
+      "example_sentence": "The disorganized filing system made it difficult to locate important documents quickly."
+    },
+    {
+      "word": "non-profit",
+      "pronunciation": "/ˌnɑːnˈprɑːfɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không vì lợi nhuận; phi lợi nhuận",
+      "definition_en": "an organization that operates for social or charitable purposes rather than profit",
+      "level": "B2",
+      "synonyms": [
+        "charitable",
+        "philanthropic"
+      ],
+      "antonyms": [
+        "for-profit",
+        "commercial"
+      ],
+      "example_sentence": "The non-profit organization relies on donations and volunteer work to fund its programs."
+    },
+    {
+      "word": "nonsense",
+      "pronunciation": "/ˈnɑːnsens/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều vô nghĩa; chuyện ngu ngốc",
+      "definition_en": "spoken or written words that have no meaning or are absurd",
+      "level": "B1",
+      "synonyms": [
+        "rubbish",
+        "gibberish"
+      ],
+      "antonyms": [
+        "sense",
+        "logic"
+      ],
+      "example_sentence": "The conspiracy theory was pure nonsense with no credible evidence to support it."
+    },
+    {
+      "word": "unethical",
+      "pronunciation": "/ʌnˈeθɪkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không đạo đức; vi phạm đạo lý",
+      "definition_en": "not conforming to accepted principles of right and wrong behavior",
+      "level": "B2",
+      "synonyms": [
+        "immoral",
+        "corrupt"
+      ],
+      "antonyms": [
+        "ethical",
+        "moral"
+      ],
+      "example_sentence": "Publishing research without proper attribution is considered unethical in academic circles."
+    },
+    {
+      "word": "unfamiliar",
+      "pronunciation": "/ʌnfəˈmɪliər/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không quen thuộc; lạ",
+      "definition_en": "not known or recognized; strange",
+      "level": "B1",
+      "synonyms": [
+        "unknown",
+        "strange"
+      ],
+      "antonyms": [
+        "familiar",
+        "known"
+      ],
+      "example_sentence": "Students often struggle with unfamiliar vocabulary when reading academic texts."
+    },
+    {
+      "word": "unrealistic",
+      "pronunciation": "/ˌʌnriəˈlɪstɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thực tế; không hợp lý",
+      "definition_en": "not based on or accepting a realistic view of things",
+      "level": "B2",
+      "synonyms": [
+        "impractical",
+        "fanciful"
+      ],
+      "antonyms": [
+        "realistic",
+        "practical"
+      ],
+      "example_sentence": "Setting unrealistic goals often leads to disappointment and loss of motivation."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The research findings were _______ because they lacked sufficient data to support the conclusions drawn by the researchers.",
+      "option_a": "incomplete",
+      "option_b": "uncomfortable",
+      "option_c": "inappropriate",
+      "option_d": "unlikely",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Incomplete (không đầy đủ) là từ đúng vì câu nói về thiếu dữ liệu. Uncomfortable, inappropriate, unlikely không phù hợp về nghĩa trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which word is the opposite of 'honest'?",
+      "option_a": "dishonest",
+      "option_b": "disorganized",
+      "option_c": "disappear",
+      "option_d": "disadvantage",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Dishonest (không trung thực) là từ trái nghĩa trực tiếp của honest. Các từ khác không liên quan đến tính chất trung thực."
+    },
+    {
+      "question_text": "The student's _______ attendance made it hard for them to keep up with the course material.",
+      "option_a": "irregular",
+      "option_b": "irrelevant",
+      "option_c": "illogical",
+      "option_d": "immoral",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Irregular (không đều) mô tả sự vắng mặt không theo quy tắc. Irrelevant, illogical, immoral không phù hợp với bối cảnh về sự tham dự lớp học."
+    },
+    {
+      "question_text": "The company's _______ practices were exposed by investigative journalists, leading to public outrage.",
+      "option_a": "unethical",
+      "option_b": "uncertain",
+      "option_c": "unfamiliar",
+      "option_d": "unlikely",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Unethical (không đạo đức) mô tả các hành động sai trái. Uncertain, unfamiliar, unlikely không phù hợp với ngữ cảnh về hành vi công ty."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'impossible'?",
+      "option_a": "unfeasible",
+      "option_b": "uncomfortable",
+      "option_c": "unaware",
+      "option_d": "uncertain",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Unfeasible (bất khả thi) có nghĩa tương tự impossible (không thể làm được). Các từ khác có nghĩa hoàn toàn khác."
+    },
+    {
+      "question_text": "The argument presented in the essay was _______ because the conclusion did not logically follow from the evidence.",
+      "option_a": "illogical",
+      "option_b": "inappropriate",
+      "option_c": "incomplete",
+      "option_d": "ineffective",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "advanced",
+      "explanation": "Illogical (vô lý) mô tả lập luận không tuân theo logic. Inappropriate, incomplete, ineffective không phù hợp với bối cảnh về sự liên kết logic."
+    },
+    {
+      "question_text": "The _______ of public transportation in rural areas is a significant challenge for residents.",
+      "option_a": "disadvantage",
+      "option_b": "disappear",
+      "option_c": "disagree",
+      "option_d": "disorganized",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Disadvantage (bất lợi) là danh từ chỉ điều bất lợi. Disappear, disagree là động từ; disorganized là tính từ không phù hợp về nghĩa."
+    },
+    {
+      "question_text": "Many students feel _______ when they encounter new academic concepts for the first time.",
+      "option_a": "unfamiliar",
+      "option_b": "uncomfortable",
+      "option_c": "unaware",
+      "option_d": "unlikely",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Uncomfortable (khó chịu/không thoải mái) mô tả cảm xúc khi gặp khái niệm mới. Unfamiliar là tính từ nhưng không phù hợp cấu trúc ngữ pháp (feel unfamiliar sai); unaware, unlikely không phù hợp về nghĩa."
+    },
+    {
+      "question_text": "The _______ information in the report was removed during the editing process to maintain focus on the main topic.",
+      "option_a": "irrelevant",
+      "option_b": "ineffective",
+      "option_c": "immoral",
+      "option_d": "irregular",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "advanced",
+      "explanation": "Irrelevant (không liên quan) mô tả thông tin không liên quan đến chủ đề chính. Ineffective, immoral, irregular không phù hợp với bối cảnh về sự liên quan của thông tin."
+    },
+    {
+      "question_text": "The _______ organization has been providing free medical services to underprivileged communities for over twenty years.",
+      "option_a": "non-profit",
+      "option_b": "nonsense",
+      "option_c": "non-traditional",
+      "option_d": "non-essential",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Non-profit (phi lợi nhuận) mô tả tổ chức hoạt động vì mục đích từ thiện. Nonsense, non-traditional, non-essential không phù hợp với bối cảnh về loại tổ chức."
+    },
+    {
+      "question_text": "The two experts _______ about the best approach to solving the environmental crisis.",
+      "option_a": "disagreed",
+      "option_b": "disappeared",
+      "option_c": "disorganized",
+      "option_d": "dishonest",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Disagreed (không đồng ý) là động từ phù hợp với bối cảnh hai chuyên gia có ý kiến khác nhau. Disappeared, disorganized, dishonest không phù hợp về nghĩa."
+    },
+    {
+      "question_text": "Which word best describes a situation that cannot be achieved or accomplished?",
+      "option_a": "impossible",
+      "option_b": "uncertain",
+      "option_c": "unrealistic",
+      "option_d": "unlikely",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Impossible (không thể làm được) mô tả điều hoàn toàn không thể thực hiện. Uncertain, unrealistic, unlikely có nghĩa khác nhau và yếu hơn."
+    }
+  ]
+}

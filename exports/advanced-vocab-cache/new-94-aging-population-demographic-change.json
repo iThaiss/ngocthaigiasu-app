@@ -1,0 +1,618 @@
+{
+  "words": [
+    {
+      "word": "aging population",
+      "pronunciation": "/ˈeɪdʒɪŋ ˌpɒpjuˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dân số già đi, tỷ lệ người cao tuổi tăng cao trong cơ cấu dân số",
+      "definition_en": "a demographic trend where the proportion of older people in a population increases",
+      "level": "B2",
+      "synonyms": [
+        "aging society",
+        "greying population"
+      ],
+      "antonyms": [
+        "youth bulge",
+        "young population"
+      ],
+      "example_sentence": "Japan's aging population has created significant challenges for the pension system and healthcare infrastructure."
+    },
+    {
+      "word": "demographic shift",
+      "pronunciation": "/ˌdeməˈɡræfɪk ʃɪft/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự thay đổi cơ bản trong cơ cấu dân số (tuổi, giới tính, tỷ lệ sinh)",
+      "definition_en": "a significant change in the composition or structure of a population",
+      "level": "C1",
+      "synonyms": [
+        "demographic change",
+        "population transition"
+      ],
+      "antonyms": [],
+      "example_sentence": "The demographic shift towards an older workforce has prompted governments to reconsider retirement policies."
+    },
+    {
+      "word": "life expectancy",
+      "pronunciation": "/laɪf ɪkˈspektənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuổi thọ trung bình, số năm trung bình một người dự kiến sống",
+      "definition_en": "the average number of years a person is expected to live",
+      "level": "B2",
+      "synonyms": [
+        "life span",
+        "longevity"
+      ],
+      "antonyms": [
+        "mortality rate"
+      ],
+      "example_sentence": "Rising life expectancy in developed nations has extended the period of retirement, straining pension funds."
+    },
+    {
+      "word": "fertility rate",
+      "pronunciation": "/ˈfɜːtɪlɪti reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ suất sinh, số con trung bình mỗi phụ nữ sinh ra trong đời",
+      "definition_en": "the average number of children born to a woman during her lifetime",
+      "level": "B2",
+      "synonyms": [
+        "birth rate",
+        "total fertility rate"
+      ],
+      "antonyms": [
+        "mortality rate"
+      ],
+      "example_sentence": "South Korea's declining fertility rate has become a critical concern for maintaining economic growth."
+    },
+    {
+      "word": "pension system",
+      "pronunciation": "/ˈpenʃən ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống lương hưu, cơ chế cấp trợ cấp cho người về hưu",
+      "definition_en": "a structured arrangement providing regular payments to retired individuals",
+      "level": "B2",
+      "synonyms": [
+        "retirement scheme",
+        "social security system"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many European countries are reforming their pension systems to cope with longer lifespans."
+    },
+    {
+      "word": "dependency ratio",
+      "pronunciation": "/dɪˈpendənsi ˈreɪʃioʊ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ phụ thuộc, tỷ lệ giữa dân số không làm việc và dân số lao động",
+      "definition_en": "the ratio of dependents (children and elderly) to the working-age population",
+      "level": "C1",
+      "synonyms": [
+        "support ratio"
+      ],
+      "antonyms": [],
+      "example_sentence": "A rising dependency ratio means fewer workers must support more retirees, creating fiscal pressure."
+    },
+    {
+      "word": "workforce shortage",
+      "pronunciation": "/ˈwɜːrkfɔːrs ˈʃɔːrtɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiếu hụt lao động, không đủ nhân lực để đáp ứng nhu cầu kinh tế",
+      "definition_en": "insufficient number of workers to meet labor market demands",
+      "level": "B2",
+      "synonyms": [
+        "labor shortage",
+        "skills gap"
+      ],
+      "antonyms": [
+        "labor surplus",
+        "unemployment"
+      ],
+      "example_sentence": "Germany faces a workforce shortage due to its aging population and low immigration rates."
+    },
+    {
+      "word": "elderly care",
+      "pronunciation": "/ˈeldərli ker/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chăm sóc người cao tuổi, dịch vụ y tế và hỗ trợ sinh hoạt cho người già",
+      "definition_en": "services and support provided to older adults for health and daily living needs",
+      "level": "B2",
+      "synonyms": [
+        "senior care",
+        "geriatric care"
+      ],
+      "antonyms": [],
+      "example_sentence": "The demand for elderly care services has surged as the population ages rapidly."
+    },
+    {
+      "word": "social security",
+      "pronunciation": "/ˈsoʊʃəl sɪˈkjʊrɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "an toàn xã hội, hệ thống bảo vệ xã hội cung cấp trợ cấp cho người già, người khuyết tật",
+      "definition_en": "government programs providing financial protection for elderly, disabled, and unemployed individuals",
+      "level": "B2",
+      "synonyms": [
+        "welfare system",
+        "social protection"
+      ],
+      "antonyms": [],
+      "example_sentence": "Social security expenditures have become unsustainable in countries with rapidly aging populations."
+    },
+    {
+      "word": "retirement age",
+      "pronunciation": "/rɪˈtaɪrmənt eɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuổi về hưu, độ tuổi quy định khi người lao động có thể ngừng làm việc",
+      "definition_en": "the age at which a person is eligible to stop working and receive pension benefits",
+      "level": "B2",
+      "synonyms": [
+        "pensionable age"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many governments are raising the retirement age to address pension fund deficits."
+    },
+    {
+      "word": "intergenerational equity",
+      "pronunciation": "/ˌɪntərˌdʒenəˈreɪʃənəl ˈekwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "công bằng giữa các thế hệ, nguyên tắc chia sẻ công bằng tài nguyên giữa thế hệ hiện tại và tương lai",
+      "definition_en": "fairness in distributing resources and burdens between current and future generations",
+      "level": "C1",
+      "synonyms": [
+        "generational fairness"
+      ],
+      "antonyms": [],
+      "example_sentence": "Intergenerational equity concerns arise when young workers must pay high taxes to support retirees."
+    },
+    {
+      "word": "healthcare expenditure",
+      "pronunciation": "/ˈhelθker ɪkˈspendɪtʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chi tiêu y tế, tổng chi phí dành cho dịch vụ chăm sóc sức khỏe",
+      "definition_en": "the total amount of money spent on healthcare services and medical treatment",
+      "level": "C1",
+      "synonyms": [
+        "health spending",
+        "medical costs"
+      ],
+      "antonyms": [],
+      "example_sentence": "Healthcare expenditure rises significantly with an aging population requiring more chronic disease management."
+    },
+    {
+      "word": "chronic disease",
+      "pronunciation": "/ˈkrɒnɪk dɪˈziːz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bệnh mãn tính, bệnh kéo dài lâu như tiểu đường, tim mạch, ung thư",
+      "definition_en": "a long-lasting health condition that typically requires ongoing medical management",
+      "level": "B2",
+      "synonyms": [
+        "long-term illness",
+        "non-communicable disease"
+      ],
+      "antonyms": [
+        "acute disease",
+        "infectious disease"
+      ],
+      "example_sentence": "The prevalence of chronic diseases increases dramatically among elderly populations."
+    },
+    {
+      "word": "labor force participation",
+      "pronunciation": "/ˈleɪbər fɔːrs ˌpɑːrtɪsɪˈpeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ tham gia lực lượng lao động, phần trăm dân số trong độ tuổi lao động đang làm việc",
+      "definition_en": "the percentage of the working-age population that is employed or actively seeking work",
+      "level": "C1",
+      "synonyms": [
+        "employment rate"
+      ],
+      "antonyms": [
+        "unemployment rate"
+      ],
+      "example_sentence": "Labor force participation rates decline as populations age and more people retire."
+    },
+    {
+      "word": "fiscal sustainability",
+      "pronunciation": "/ˈfɪskəl ˌsuːsteɪnəˈbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính bền vững tài chính, khả năng duy trì cân bằng ngân sách dài hạn",
+      "definition_en": "the ability of a government to maintain its finances and meet obligations over the long term",
+      "level": "C1",
+      "synonyms": [
+        "financial stability"
+      ],
+      "antonyms": [
+        "fiscal crisis"
+      ],
+      "example_sentence": "Fiscal sustainability is threatened when pension and healthcare costs exceed government revenues."
+    },
+    {
+      "word": "migration",
+      "pronunciation": "/maɪˈɡreɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "di cư, sự di chuyển của dân số từ nơi này sang nơi khác",
+      "definition_en": "the movement of people from one place to another, often to seek better opportunities",
+      "level": "B2",
+      "synonyms": [
+        "immigration",
+        "emigration"
+      ],
+      "antonyms": [],
+      "example_sentence": "Immigration can help offset the effects of an aging population by bringing younger workers."
+    },
+    {
+      "word": "brain drain",
+      "pronunciation": "/breɪn dreɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chảy máu chất xám, sự di cư của những người có trình độ cao sang nước khác",
+      "definition_en": "the emigration of highly educated or skilled people from their home country",
+      "level": "C1",
+      "synonyms": [
+        "talent exodus"
+      ],
+      "antonyms": [
+        "brain gain"
+      ],
+      "example_sentence": "Brain drain exacerbates workforce shortages in aging societies losing young professionals."
+    },
+    {
+      "word": "pay-as-you-go system",
+      "pronunciation": "/ˌpeɪ əz juː ˈɡoʊ ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống trả theo từng kỳ, hệ thống lương hưu mà người lao động hiện tại trả cho người hưu trí",
+      "definition_en": "a pension system where current workers' contributions directly fund current retirees' benefits",
+      "level": "C1",
+      "synonyms": [
+        "defined benefit system"
+      ],
+      "antonyms": [
+        "funded system",
+        "defined contribution system"
+      ],
+      "example_sentence": "Pay-as-you-go systems become unsustainable when the ratio of workers to retirees declines sharply."
+    },
+    {
+      "word": "long-term care",
+      "pronunciation": "/ˌlɔːŋ tɜːrm ker/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chăm sóc dài hạn, dịch vụ hỗ trợ sinh hoạt và y tế cho người mất khả năng tự chủ",
+      "definition_en": "ongoing support services for individuals who cannot manage daily activities independently",
+      "level": "C1",
+      "synonyms": [
+        "nursing care",
+        "residential care"
+      ],
+      "antonyms": [],
+      "example_sentence": "Long-term care facilities are becoming increasingly necessary as life expectancy extends."
+    },
+    {
+      "word": "demographic dividend",
+      "pronunciation": "/ˌdeməˈɡræfɪk ˈdɪvɪdend/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cơ hội nhân khẩu, giai đoạn khi dân số trẻ tạo lợi thế kinh tế",
+      "definition_en": "economic growth potential when a large proportion of the population is of working age",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [
+        "demographic burden"
+      ],
+      "example_sentence": "India's demographic dividend is expected to drive economic growth for the next two decades."
+    },
+    {
+      "word": "caregiver burden",
+      "pronunciation": "/ˈkerɡɪvər ˈbɜːrdən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gánh nặng chăm sóc, áp lực tâm lý và vật lý của người chăm sóc người già",
+      "definition_en": "the physical, emotional, and financial stress experienced by those caring for elderly or ill relatives",
+      "level": "C1",
+      "synonyms": [
+        "care stress"
+      ],
+      "antonyms": [],
+      "example_sentence": "The caregiver burden increases significantly in societies where family-based elderly care is the norm."
+    },
+    {
+      "word": "active aging",
+      "pronunciation": "/ˈæktɪv ˈeɪdʒɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lão hóa tích cực, khuyến khích người cao tuổi tiếp tục hoạt động và đóng góp xã hội",
+      "definition_en": "policies and practices promoting continued engagement and contribution of older adults in society",
+      "level": "C1",
+      "synonyms": [
+        "healthy aging"
+      ],
+      "antonyms": [],
+      "example_sentence": "Active aging programs encourage older workers to remain in the workforce longer."
+    },
+    {
+      "word": "age discrimination",
+      "pronunciation": "/eɪdʒ ˌdɪskrɪmɪˈneɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân biệt đối xử theo tuổi, sự bất công trong tuyển dụng hoặc thăng chức dựa trên tuổi",
+      "definition_en": "unfair treatment of individuals based on their age, particularly in employment",
+      "level": "C1",
+      "synonyms": [
+        "ageism"
+      ],
+      "antonyms": [],
+      "example_sentence": "Age discrimination in hiring practices prevents older workers from remaining in the labor force."
+    },
+    {
+      "word": "population pyramid",
+      "pronunciation": "/ˌpɒpjuˈleɪʃən ˈpɪrəmɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kim tự tháp dân số, biểu đồ thể hiện cơ cấu tuổi và giới tính của dân số",
+      "definition_en": "a graphical representation showing the age and gender distribution of a population",
+      "level": "B2",
+      "synonyms": [
+        "age structure diagram"
+      ],
+      "antonyms": [],
+      "example_sentence": "Japan's population pyramid has inverted, showing more elderly than young people."
+    },
+    {
+      "word": "replacement level",
+      "pronunciation": "/rɪˈpleɪsmənt ˈlevəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức thay thế, tỷ suất sinh cần thiết để dân số ổn định (khoảng 2.1 con/phụ nữ)",
+      "definition_en": "the fertility rate required to maintain a stable population without migration",
+      "level": "C1",
+      "synonyms": [
+        "replacement fertility"
+      ],
+      "antonyms": [],
+      "example_sentence": "Most developed nations have fallen below replacement level, leading to natural population decline."
+    },
+    {
+      "word": "geriatric medicine",
+      "pronunciation": "/ˌdʒerɪˈætrɪk ˈmedɪsən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "y học lão khoa, chuyên ngành y tế chuyên điều trị bệnh ở người cao tuổi",
+      "definition_en": "the medical specialty focused on diagnosis and treatment of diseases in elderly patients",
+      "level": "C1",
+      "synonyms": [
+        "geriatrics"
+      ],
+      "antonyms": [],
+      "example_sentence": "The demand for geriatric medicine specialists is growing rapidly in aging societies."
+    },
+    {
+      "word": "social cohesion",
+      "pronunciation": "/ˈsoʊʃəl koʊˈhɪʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết dính xã hội, mức độ liên kết và hợp tác giữa các thành viên xã hội",
+      "definition_en": "the degree of unity and cooperation among members of a society",
+      "level": "C1",
+      "synonyms": [
+        "social solidarity"
+      ],
+      "antonyms": [
+        "social fragmentation"
+      ],
+      "example_sentence": "Intergenerational tensions can threaten social cohesion when young workers resent supporting retirees."
+    },
+    {
+      "word": "productivity decline",
+      "pronunciation": "/prɒdʌkˈtɪvɪti dɪˈklaɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "suy giảm năng suất, giảm hiệu quả sản xuất do lao động già hoặc thiếu hụt lao động",
+      "definition_en": "a decrease in economic output per worker or per unit of input",
+      "level": "C1",
+      "synonyms": [
+        "output decline"
+      ],
+      "antonyms": [
+        "productivity growth"
+      ],
+      "example_sentence": "Productivity decline threatens economic competitiveness in countries with rapidly aging workforces."
+    },
+    {
+      "word": "multigenerational household",
+      "pronunciation": "/ˌmʌltɪˌdʒenəˈreɪʃənəl ˈhaʊshoʊld/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hộ gia đình đa thế hệ, gia đình sống chung gồm nhiều thế hệ khác nhau",
+      "definition_en": "a household containing members from three or more generations living together",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [
+        "nuclear family"
+      ],
+      "example_sentence": "Multigenerational households are becoming more common as families seek to share elderly care costs."
+    },
+    {
+      "word": "economic burden",
+      "pronunciation": "/ˌekəˈnɑːmɪk ˈbɜːrdən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gánh nặng kinh tế, chi phí lớn gây áp lực lên ngân sách hoặc tài chính",
+      "definition_en": "a significant financial cost or obligation that strains economic resources",
+      "level": "B2",
+      "synonyms": [
+        "financial strain",
+        "fiscal pressure"
+      ],
+      "antonyms": [
+        "economic benefit"
+      ],
+      "example_sentence": "The economic burden of supporting an aging population is reshaping government budgets worldwide."
+    },
+    {
+      "word": "life-course perspective",
+      "pronunciation": "/ˌlaɪf kɔːrs pərˈspektɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "góc nhìn vòng đời, cách tiếp cận xem xét sự phát triển con người qua các giai đoạn",
+      "definition_en": "an analytical approach examining how experiences across different life stages shape outcomes",
+      "level": "C1",
+      "synonyms": [],
+      "antonyms": [],
+      "example_sentence": "A life-course perspective reveals how early employment decisions affect retirement security."
+    },
+    {
+      "word": "policy reform",
+      "pronunciation": "/ˈpɑːlɪsi rɪˈfɔːrm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cải cách chính sách, thay đổi các quy định để thích ứng với tình hình mới",
+      "definition_en": "changes to government policies designed to address emerging challenges or improve outcomes",
+      "level": "B2",
+      "synonyms": [
+        "policy change",
+        "institutional reform"
+      ],
+      "antonyms": [
+        "status quo"
+      ],
+      "example_sentence": "Comprehensive policy reform is necessary to ensure pension systems remain viable for future generations."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the relationship between a declining fertility rate and workforce shortage?",
+      "option_a": "A declining fertility rate leads to fewer young people entering the workforce, creating labor shortages.",
+      "option_b": "A declining fertility rate increases the number of workers available for employment.",
+      "option_c": "Fertility rate has no direct impact on workforce composition.",
+      "option_d": "A declining fertility rate only affects retirement age policies.",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Tỷ suất sinh giảm dẫn đến ít trẻ em được sinh ra, do đó ít người trẻ vào lực lượng lao động trong tương lai. Đây là nguyên nhân chính gây thiếu hụt lao động. B sai vì nó mâu thuẫn với khái niệm. C và D quá hẹp."
+    },
+    {
+      "question_text": "In the context of aging populations, what does 'dependency ratio' primarily measure?",
+      "option_a": "The percentage of elderly people living in nursing homes.",
+      "option_b": "The ratio of non-working dependents to the working-age population.",
+      "option_c": "The average age of retirement in a country.",
+      "option_d": "The number of healthcare facilities per elderly person.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Tỷ lệ phụ thuộc đo lường tỷ lệ giữa dân số không làm việc (trẻ em và người cao tuổi) so với dân số lao động. A, C, D đều là các khái niệm khác không liên quan trực tiếp."
+    },
+    {
+      "question_text": "Which term best describes a pension system where current workers' contributions directly fund current retirees' benefits?",
+      "option_a": "Funded pension system",
+      "option_b": "Pay-as-you-go system",
+      "option_c": "Defined contribution system",
+      "option_d": "Private pension scheme",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Hệ thống trả theo từng kỳ (pay-as-you-go) là hệ thống mà người lao động hiện tại trả cho người hưu trí hiện tại. A là hệ thống tích lũy quỹ. C là hệ thống xác định mức đóng góp. D là hệ thống tư nhân."
+    },
+    {
+      "question_text": "What is the primary concern regarding 'intergenerational equity' in aging societies?",
+      "option_a": "Ensuring all generations have equal access to education.",
+      "option_b": "Distributing resources fairly between current and future generations, particularly regarding pension and tax burdens.",
+      "option_c": "Promoting cultural exchange between young and old people.",
+      "option_d": "Increasing the number of intergenerational households.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Công bằng giữa các thế hệ liên quan đến việc chia sẻ công bằng tài nguyên và gánh nặng, đặc biệt là khi thế hệ trẻ phải trả thuế cao để hỗ trợ người hưu trí. A, C, D là các vấn đề khác."
+    },
+    {
+      "question_text": "How does 'brain drain' typically affect aging populations?",
+      "option_a": "It brings young skilled workers to the country, reducing workforce shortages.",
+      "option_b": "It causes highly educated young people to emigrate, worsening workforce shortages.",
+      "option_c": "It has no impact on the age structure of the population.",
+      "option_d": "It increases the fertility rate among remaining residents.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Chảy máu chất xám là sự di cư của những người trẻ, có trình độ cao sang nước khác, làm trầm trọng thêm tình trạng thiếu hụt lao động ở nước gốc. A là ngược lại. C và D không chính xác."
+    },
+    {
+      "question_text": "Which of the following is NOT a typical consequence of an aging population?",
+      "option_a": "Increased healthcare expenditure",
+      "option_b": "Rising pension system costs",
+      "option_c": "Increased labor force participation among young people",
+      "option_d": "Greater demand for long-term care services",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Dân số già không dẫn đến tăng tỷ lệ tham gia lao động của người trẻ; thực tế, nó có thể giảm do ít trẻ em được sinh ra. A, B, D đều là hậu quả điển hình của dân số già."
+    },
+    {
+      "question_text": "What does 'replacement level' fertility refer to?",
+      "option_a": "The age at which workers can be replaced by younger employees.",
+      "option_b": "The fertility rate needed to maintain a stable population without migration.",
+      "option_c": "The percentage of jobs that can be automated.",
+      "option_d": "The number of retirees replaced by new workers annually.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Mức thay thế là tỷ suất sinh cần thiết để dân số ổn định (khoảng 2.1 con/phụ nữ). A, C, D là các khái niệm khác hoàn toàn."
+    },
+    {
+      "question_text": "In the context of aging societies, 'active aging' primarily aims to ___.",
+      "option_a": "Increase the retirement age for all workers",
+      "option_b": "Encourage older adults to remain engaged and contribute to society",
+      "option_c": "Reduce healthcare costs for elderly patients",
+      "option_d": "Eliminate age discrimination in all sectors",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Lão hóa tích cực khuyến khích người cao tuổi tiếp tục hoạt động và đóng góp cho xã hội, không chỉ là tăng tuổi hưu. A quá hẹp. C và D là các mục tiêu khác."
+    },
+    {
+      "question_text": "Which statement best explains why 'fiscal sustainability' is threatened in aging societies?",
+      "option_a": "Older people consume fewer goods and services.",
+      "option_b": "Pension and healthcare costs exceed government revenues as the population ages.",
+      "option_c": "Young workers earn higher salaries than retirees.",
+      "option_d": "Immigration policies become too restrictive.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Tính bền vững tài chính bị đe dọa khi chi phí lương hưu và y tế vượt quá doanh thu của chính phủ. A sai vì người cao tuổi tiêu thụ nhiều dịch vụ y tế. C không liên quan. D là vấn đề riêng biệt."
+    },
+    {
+      "question_text": "What is the primary advantage of a 'demographic dividend'?",
+      "option_a": "It guarantees economic growth for all countries.",
+      "option_b": "It provides a window of economic opportunity when a large proportion of the population is of working age.",
+      "option_c": "It eliminates the need for pension systems.",
+      "option_d": "It automatically increases life expectancy.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Cơ hội nhân khẩu là giai đoạn khi dân số trẻ tạo lợi thế kinh tế do tỷ lệ người lao động cao. A quá tuyệt đối. C và D không chính xác."
+    },
+    {
+      "question_text": "How does 'caregiver burden' relate to aging populations?",
+      "option_a": "It refers to the cost of building new hospitals.",
+      "option_b": "It describes the physical, emotional, and financial stress on those caring for elderly relatives.",
+      "option_c": "It measures the number of elderly people in a country.",
+      "option_d": "It indicates the quality of nursing home facilities.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Gánh nặng chăm sóc là áp lực tâm lý, vật lý và tài chính của người chăm sóc người cao tuổi. A, C, D là các khái niệm khác."
+    },
+    {
+      "question_text": "Which of the following best describes 'age discrimination' in the context of aging populations?",
+      "option_a": "Preferential hiring of older workers over younger ones.",
+      "option_b": "Unfair treatment in employment based on age, often preventing older workers from remaining in the workforce.",
+      "option_c": "The practice of offering higher salaries to elderly employees.",
+      "option_d": "Government policies that mandate retirement at a specific age.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Phân biệt đối xử theo tuổi là sự bất công trong tuyển dụng hoặc thăng chức dựa trên tuổi, thường ngăn cản người lao động lớn tuổi tiếp tục làm việc. A là ngược lại. C và D không phải là định nghĩa chính xác."
+    },
+    {
+      "question_text": "What is the relationship between 'life expectancy' and 'pension system sustainability'?",
+      "option_a": "Higher life expectancy reduces pension costs.",
+      "option_b": "Higher life expectancy extends the retirement period, increasing pension costs and threatening system sustainability.",
+      "option_c": "Life expectancy has no impact on pension systems.",
+      "option_d": "Higher life expectancy automatically increases government revenues.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Tuổi thọ cao hơn có nghĩa là người hưu trí sống lâu hơn, do đó nhận lương hưu lâu hơn, làm tăng chi phí và đe dọa tính bền vững của hệ thống. A sai. C và D không chính xác."
+    },
+    {
+      "question_text": "In aging societies, 'multigenerational households' are becoming more common primarily because ___.",
+      "option_a": "Young people prefer to live with their parents indefinitely.",
+      "option_b": "Families seek to share elderly care costs and provide family-based support.",
+      "option_c": "Government policies mandate multigenerational living arrangements.",
+      "option_d": "Housing prices have no impact on family living arrangements.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Gia đình đa thế hệ trở nên phổ biến hơn vì các gia đình muốn chia sẻ chi phí chăm sóc người cao tuổi và cung cấp hỗ trợ dựa trên gia đình. A là lý do cá nhân. C không chính xác. D là phủ định không hợp lý."
+    }
+  ]
+}

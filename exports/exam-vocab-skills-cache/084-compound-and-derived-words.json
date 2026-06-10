@@ -1,0 +1,532 @@
+{
+  "words": [
+    {
+      "word": "breakthrough",
+      "pronunciation": "/ˈbreɪkθruː/",
+      "part_of_speech": "noun",
+      "definition_vi": "Bước tiến đột phá, thành tựu quan trọng sau một giai đoạn khó khăn",
+      "definition_en": "A sudden, dramatic, and important discovery or development",
+      "level": "B2",
+      "synonyms": [
+        "discovery",
+        "advance",
+        "innovation"
+      ],
+      "antonyms": [
+        "setback",
+        "failure"
+      ],
+      "example_sentence": "The discovery of penicillin was a major breakthrough in modern medicine that saved millions of lives."
+    },
+    {
+      "word": "drawback",
+      "pronunciation": "/ˈdrɔːbæk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Nhược điểm, bất lợi, điều không thuận lợi",
+      "definition_en": "A disadvantage or problem that makes something less attractive",
+      "level": "B1",
+      "synonyms": [
+        "disadvantage",
+        "downside",
+        "limitation"
+      ],
+      "antonyms": [
+        "advantage",
+        "benefit"
+      ],
+      "example_sentence": "While solar energy is renewable, a major drawback is its high initial installation cost."
+    },
+    {
+      "word": "sustainable",
+      "pronunciation": "/səˈsteɪnəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Bền vững, có thể duy trì lâu dài mà không làm hại môi trường",
+      "definition_en": "Able to be maintained at a certain level without depleting natural resources",
+      "level": "B2",
+      "synonyms": [
+        "renewable",
+        "eco-friendly",
+        "long-term"
+      ],
+      "antonyms": [
+        "unsustainable",
+        "temporary"
+      ],
+      "example_sentence": "Governments are investing in sustainable agriculture to reduce environmental damage and ensure food security."
+    },
+    {
+      "word": "overestimate",
+      "pronunciation": "/ˌoʊvərˈestɪmeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đánh giá quá cao, ước tính vượt quá giá trị thực tế",
+      "definition_en": "To assess something as being greater in value, importance, or ability than it actually is",
+      "level": "B2",
+      "synonyms": [
+        "overrate",
+        "exaggerate",
+        "overvalue"
+      ],
+      "antonyms": [
+        "underestimate",
+        "underrate"
+      ],
+      "example_sentence": "Many investors tend to overestimate the potential returns of new startups without conducting thorough market research."
+    },
+    {
+      "word": "underfunded",
+      "pronunciation": "/ˌʌndərˈfʌndɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Thiếu kinh phí, không được cấp đủ ngân sách",
+      "definition_en": "Not having enough money or financial support to operate effectively",
+      "level": "B2",
+      "synonyms": [
+        "under-resourced",
+        "poorly funded",
+        "cash-strapped"
+      ],
+      "antonyms": [
+        "well-funded",
+        "adequately financed"
+      ],
+      "example_sentence": "Many public schools in rural areas remain underfunded, limiting access to quality education for students."
+    },
+    {
+      "word": "overcome",
+      "pronunciation": "/ˌoʊvərˈkʌm/",
+      "part_of_speech": "verb",
+      "definition_vi": "Vượt qua, chiến thắng, giải quyết được (khó khăn, thách thức)",
+      "definition_en": "To successfully deal with or manage a problem or difficulty",
+      "level": "B1",
+      "synonyms": [
+        "conquer",
+        "surmount",
+        "defeat"
+      ],
+      "antonyms": [
+        "surrender",
+        "succumb"
+      ],
+      "example_sentence": "With determination and support, she managed to overcome her fear of public speaking and delivered an excellent presentation."
+    },
+    {
+      "word": "undermine",
+      "pronunciation": "/ˌʌndərˈmaɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "Làm suy yếu, phá hoại từ từ, làm mất hiệu lực",
+      "definition_en": "To weaken or damage something gradually, especially someone's confidence or authority",
+      "level": "B2",
+      "synonyms": [
+        "weaken",
+        "sabotage",
+        "erode"
+      ],
+      "antonyms": [
+        "strengthen",
+        "support"
+      ],
+      "example_sentence": "Constant criticism from colleagues can undermine an employee's confidence and motivation at work."
+    },
+    {
+      "word": "overlook",
+      "pronunciation": "/ˌoʊvərˈlʊk/",
+      "part_of_speech": "verb",
+      "definition_vi": "Bỏ qua, không chú ý đến, coi thường",
+      "definition_en": "To fail to notice something; to ignore or disregard",
+      "level": "B1",
+      "synonyms": [
+        "ignore",
+        "miss",
+        "disregard"
+      ],
+      "antonyms": [
+        "notice",
+        "observe"
+      ],
+      "example_sentence": "It is easy to overlook small details when reading quickly, but they often contain important information."
+    },
+    {
+      "word": "sustainability",
+      "pronunciation": "/səˌsteɪnəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tính bền vững, khả năng duy trì lâu dài",
+      "definition_en": "The quality of being able to be maintained or continued without depleting resources",
+      "level": "B2",
+      "synonyms": [
+        "durability",
+        "longevity",
+        "viability"
+      ],
+      "antonyms": [
+        "unsustainability",
+        "depletion"
+      ],
+      "example_sentence": "The sustainability of renewable energy sources makes them crucial for combating climate change."
+    },
+    {
+      "word": "breakthrough technology",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "Công nghệ đột phá, công nghệ mang lại bước tiến lớn",
+      "definition_en": "A new technology that represents a major advance or innovation",
+      "level": "B2",
+      "synonyms": [
+        "cutting-edge technology",
+        "revolutionary technology"
+      ],
+      "antonyms": [
+        "outdated technology",
+        "conventional technology"
+      ],
+      "example_sentence": "Artificial intelligence is considered a breakthrough technology that will transform multiple industries."
+    },
+    {
+      "word": "environmental drawback",
+      "pronunciation": "",
+      "part_of_speech": "collocation",
+      "definition_vi": "Nhược điểm về môi trường, tác động tiêu cực đến môi trường",
+      "definition_en": "A disadvantage or negative environmental consequence",
+      "level": "B2",
+      "synonyms": [
+        "environmental impact",
+        "ecological downside"
+      ],
+      "antonyms": [
+        "environmental benefit",
+        "ecological advantage"
+      ],
+      "example_sentence": "While coal is an affordable energy source, its major environmental drawback is the emission of greenhouse gases."
+    },
+    {
+      "word": "underestimate",
+      "pronunciation": "/ˌʌndərˈestɪmeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Đánh giá quá thấp, ước tính dưới giá trị thực tế",
+      "definition_en": "To assess something as being less important, valuable, or capable than it actually is",
+      "level": "B2",
+      "synonyms": [
+        "underrate",
+        "downplay",
+        "minimize"
+      ],
+      "antonyms": [
+        "overestimate",
+        "overrate"
+      ],
+      "example_sentence": "Scientists should not underestimate the potential impact of climate change on global food production."
+    },
+    {
+      "word": "unforeseen",
+      "pronunciation": "/ˌʌnfɔːrˈsiːn/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Không lường trước được, bất ngờ, không dự kiến",
+      "definition_en": "Not anticipated or predicted; unexpected",
+      "level": "B2",
+      "synonyms": [
+        "unexpected",
+        "unanticipated",
+        "surprising"
+      ],
+      "antonyms": [
+        "foreseen",
+        "anticipated"
+      ],
+      "example_sentence": "The project faced unforeseen challenges that required the team to adjust their original timeline."
+    },
+    {
+      "word": "irreversible",
+      "pronunciation": "/ˌɪrɪˈvɜːrsəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Không thể đảo ngược, không thể khôi phục lại",
+      "definition_en": "Unable to be changed back to a previous state; permanent",
+      "level": "B2",
+      "synonyms": [
+        "permanent",
+        "irretrievable",
+        "unchangeable"
+      ],
+      "antonyms": [
+        "reversible",
+        "temporary"
+      ],
+      "example_sentence": "Deforestation can cause irreversible damage to ecosystems and biodiversity."
+    },
+    {
+      "word": "inefficient",
+      "pronunciation": "/ˌɪnɪˈfɪʃnt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Không hiệu quả, kém hiệu suất, lãng phí",
+      "definition_en": "Not achieving maximum productivity; wasting time, money, or resources",
+      "level": "B1",
+      "synonyms": [
+        "unproductive",
+        "wasteful",
+        "ineffective"
+      ],
+      "antonyms": [
+        "efficient",
+        "productive"
+      ],
+      "example_sentence": "The old manufacturing process was inefficient and produced excessive waste."
+    },
+    {
+      "word": "unprecedented",
+      "pronunciation": "/ʌnˈpresɪdentɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Chưa từng có tiền lệ, chưa bao giờ xảy ra trước đây",
+      "definition_en": "Never done or known before; having no previous example",
+      "level": "B2",
+      "synonyms": [
+        "unparalleled",
+        "novel",
+        "unique"
+      ],
+      "antonyms": [
+        "common",
+        "typical"
+      ],
+      "example_sentence": "The pandemic caused unprecedented disruption to global supply chains and economies."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Giảm nhẹ, làm dịu bớt, giảm thiểu tác hại",
+      "definition_en": "To make something less severe or serious; to reduce the impact of something negative",
+      "level": "B2",
+      "synonyms": [
+        "alleviate",
+        "reduce",
+        "lessen"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "Governments are implementing policies to mitigate the effects of climate change."
+    },
+    {
+      "word": "interdependent",
+      "pronunciation": "/ˌɪntərdɪˈpendənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Phụ thuộc lẫn nhau, có mối liên hệ tương hỗ",
+      "definition_en": "Dependent on each other; mutually reliant",
+      "level": "B2",
+      "synonyms": [
+        "mutually dependent",
+        "interconnected",
+        "interrelated"
+      ],
+      "antonyms": [
+        "independent",
+        "autonomous"
+      ],
+      "example_sentence": "Modern economies are highly interdependent, so a crisis in one country affects others globally."
+    },
+    {
+      "word": "counterproductive",
+      "pronunciation": "/ˌkaʊntərprəˈdʌktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Có tác dụng ngược lại, không đạt được mục đích mà còn gây hại",
+      "definition_en": "Having the opposite effect to what is intended; preventing progress",
+      "level": "B2",
+      "synonyms": [
+        "self-defeating",
+        "counterintuitive",
+        "unhelpful"
+      ],
+      "antonyms": [
+        "productive",
+        "beneficial"
+      ],
+      "example_sentence": "Punishing students harshly for mistakes can be counterproductive and discourage them from learning."
+    },
+    {
+      "word": "implementation",
+      "pronunciation": "/ˌɪmpləmenˈteɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thực hiện, áp dụng, triển khai (kế hoạch, chính sách)",
+      "definition_en": "The process of putting a plan, decision, or system into action",
+      "level": "B2",
+      "synonyms": [
+        "execution",
+        "application",
+        "deployment"
+      ],
+      "antonyms": [
+        "abandonment",
+        "cancellation"
+      ],
+      "example_sentence": "The implementation of new environmental regulations requires cooperation from both government and industry."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Khả năng phục hồi, sức chống chịu, tính bền bỉ",
+      "definition_en": "The ability to recover quickly from difficulties or adapt to change",
+      "level": "B2",
+      "synonyms": [
+        "toughness",
+        "durability",
+        "adaptability"
+      ],
+      "antonyms": [
+        "fragility",
+        "weakness"
+      ],
+      "example_sentence": "Building community resilience is essential for societies to withstand natural disasters and economic crises."
+    },
+    {
+      "word": "disparity",
+      "pronunciation": "/dɪˈspærəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự chênh lệch, bất bình đẳng, sự khác biệt lớn",
+      "definition_en": "A great difference or inequality between things",
+      "level": "B2",
+      "synonyms": [
+        "inequality",
+        "gap",
+        "difference"
+      ],
+      "antonyms": [
+        "equality",
+        "parity"
+      ],
+      "example_sentence": "There is a significant disparity in income between urban and rural areas in developing countries."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company's new product represents a major _______ in smartphone technology, offering features never seen before.",
+      "option_a": "breakthrough",
+      "option_b": "drawback",
+      "option_c": "setback",
+      "option_d": "obstacle",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Breakthrough (bước tiến đột phá) là từ phù hợp để mô tả một sự phát triển mới lạ và quan trọng. Drawback là nhược điểm, setback là thất bại, obstacle là chướng ngại vật - tất cả đều không phù hợp với ngữ cảnh tích cực."
+    },
+    {
+      "question_text": "Although renewable energy is promising, one significant _______ is the high cost of infrastructure development.",
+      "option_a": "advantage",
+      "option_b": "drawback",
+      "option_c": "benefit",
+      "option_d": "strength",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Drawback (nhược điểm) là từ đúng vì câu đang nói về một vấn đề tiêu cực. Advantage, benefit, strength đều có nghĩa tích cực, trái ngược với ý của câu."
+    },
+    {
+      "question_text": "Which word is the opposite of 'overestimate'?",
+      "option_a": "underestimate",
+      "option_b": "overvalue",
+      "option_c": "exaggerate",
+      "option_d": "miscalculate",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Underestimate (đánh giá quá thấp) là từ trái nghĩa trực tiếp với overestimate (đánh giá quá cao). Overvalue và exaggerate có liên quan đến overestimate nhưng không phải từ trái nghĩa. Miscalculate là tính toán sai nhưng không chỉ rõ hướng sai."
+    },
+    {
+      "question_text": "The government is committed to promoting _______ development to ensure resources are available for future generations.",
+      "option_a": "temporary",
+      "option_b": "sustainable",
+      "option_c": "short-term",
+      "option_d": "immediate",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sustainable (bền vững) là từ phù hợp với ngữ cảnh về phát triển lâu dài và bảo vệ tài nguyên cho thế hệ tương lai. Temporary, short-term, immediate đều chỉ thời gian ngắn, trái với ý của câu."
+    },
+    {
+      "question_text": "The _______ of renewable energy sources is crucial for addressing climate change and reducing carbon emissions.",
+      "option_a": "unsustainability",
+      "option_b": "sustainability",
+      "option_c": "depletion",
+      "option_d": "limitation",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Sustainability (tính bền vững) là danh từ phù hợp để nói về khả năng duy trì lâu dài của năng lượng tái tạo. Unsustainability là từ trái nghĩa, depletion là sự cạn kiệt, limitation là hạn chế - không phù hợp."
+    },
+    {
+      "question_text": "Many investors _______ the risks involved in emerging markets, leading to significant financial losses.",
+      "option_a": "underestimated",
+      "option_b": "overestimated",
+      "option_c": "ignored",
+      "option_d": "dismissed",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Underestimated (đánh giá quá thấp) là từ đúng vì câu nói về việc không nhận ra đủ mức độ rủi ro. Overestimated sẽ có nghĩa ngược lại. Ignored và dismissed không chỉ rõ hành động đánh giá sai."
+    },
+    {
+      "question_text": "What is the meaning of 'underfunded'?",
+      "option_a": "Having too much money",
+      "option_b": "Not having enough financial support",
+      "option_c": "Spending money wisely",
+      "option_d": "Investing in new projects",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Underfunded (thiếu kinh phí) có nghĩa là không được cấp đủ ngân sách. Option A là ngược lại, C và D không liên quan đến ý nghĩa của từ."
+    },
+    {
+      "question_text": "The team managed to _______ numerous obstacles during the project, demonstrating great determination and problem-solving skills.",
+      "option_a": "surrender to",
+      "option_b": "succumb to",
+      "option_c": "overcome",
+      "option_d": "ignore",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Overcome (vượt qua) là từ phù hợp với ngữ cảnh về việc giải quyết thành công các khó khăn. Surrender to và succumb to có nghĩa là đầu hàng, ignore là bỏ qua - không phù hợp."
+    },
+    {
+      "question_text": "Constant negative feedback can _______ an employee's confidence and motivation over time.",
+      "option_a": "strengthen",
+      "option_b": "support",
+      "option_c": "undermine",
+      "option_d": "encourage",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Undermine (làm suy yếu) là từ đúng để mô tả tác động tiêu cực của phản hồi tiêu cực. Strengthen, support, encourage đều có nghĩa tích cực, trái ngược với ý của câu."
+    },
+    {
+      "question_text": "The report _______ several important details that could have changed the outcome of the investigation.",
+      "option_a": "highlighted",
+      "option_b": "emphasized",
+      "option_c": "overlooked",
+      "option_d": "documented",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Overlooked (bỏ qua) là từ phù hợp vì câu nói về việc không chú ý đến các chi tiết quan trọng. Highlighted, emphasized, documented đều chỉ việc chú ý hoặc ghi lại, không phù hợp."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'unprecedented'?",
+      "option_a": "Common",
+      "option_b": "Typical",
+      "option_c": "Unparalleled",
+      "option_d": "Ordinary",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Unparalleled (không có tiền lệ, vô song) là từ đồng nghĩa với unprecedented. Common, typical, ordinary đều có nghĩa ngược lại - thường gặp, bình thường."
+    },
+    {
+      "question_text": "The government implemented new policies to _______ the impact of economic recession on vulnerable populations.",
+      "option_a": "aggravate",
+      "option_b": "mitigate",
+      "option_c": "intensify",
+      "option_d": "worsen",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "advanced",
+      "explanation": "Mitigate (giảm nhẹ, giảm thiểu) là từ đúng để nói về việc làm giảm tác hại của suy thoái kinh tế. Aggravate, intensify, worsen đều có nghĩa là làm tệ hơn, trái ngược với ý của câu."
+    }
+  ]
+}

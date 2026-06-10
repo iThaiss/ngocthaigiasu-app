@@ -1,0 +1,741 @@
+{
+  "words": [
+    {
+      "word": "renewable energy",
+      "pronunciation": "/rɪˈnjuːəbl ˈɛnədʒi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "năng lượng được tái tạo từ các nguồn tự nhiên như mặt trời, gió, nước mà không cạn kiệt",
+      "definition_en": "energy derived from natural sources that are constantly replenished, such as solar and wind power",
+      "level": "B2",
+      "synonyms": [
+        "clean energy",
+        "sustainable energy"
+      ],
+      "antonyms": [
+        "fossil fuel",
+        "non-renewable energy"
+      ],
+      "example_sentence": "Many countries are investing heavily in renewable energy to reduce carbon emissions and combat climate change."
+    },
+    {
+      "word": "solar panel",
+      "pronunciation": "/ˈsoʊlər ˈpænəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thiết bị chuyển đổi ánh sáng mặt trời thành điện năng",
+      "definition_en": "a device that converts sunlight into electricity through photovoltaic cells",
+      "level": "B2",
+      "synonyms": [
+        "photovoltaic panel",
+        "PV panel"
+      ],
+      "antonyms": [],
+      "example_sentence": "Installing solar panels on residential rooftops has become increasingly affordable and popular in urban areas."
+    },
+    {
+      "word": "wind turbine",
+      "pronunciation": "/wɪnd ˈtɜːrbaɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "máy phát điện sử dụng năng lượng gió để quay cánh quạt và tạo ra điện",
+      "definition_en": "a machine that converts wind energy into electrical power through rotating blades",
+      "level": "B2",
+      "synonyms": [
+        "wind generator",
+        "wind mill"
+      ],
+      "antonyms": [],
+      "example_sentence": "Offshore wind turbines are more efficient than onshore installations because they capture stronger and more consistent winds."
+    },
+    {
+      "word": "grid reliability",
+      "pronunciation": "/ɡrɪd rɪˈlaɪəbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của hệ thống điện cung cấp điện liên tục và ổn định mà không bị gián đoạn",
+      "definition_en": "the ability of an electrical grid to consistently deliver power without interruptions or blackouts",
+      "level": "C1",
+      "synonyms": [
+        "grid stability",
+        "power system reliability"
+      ],
+      "antonyms": [
+        "grid failure",
+        "power outage"
+      ],
+      "example_sentence": "Maintaining grid reliability becomes increasingly challenging as utilities integrate more intermittent renewable sources into their networks."
+    },
+    {
+      "word": "energy transition",
+      "pronunciation": "/ˈɛnədʒi trænˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình chuyển đổi từ các nguồn năng lượng truyền thống (dầu, khí, than) sang năng lượng tái tạo",
+      "definition_en": "the shift from fossil fuel-based energy systems to renewable and sustainable energy sources",
+      "level": "C1",
+      "synonyms": [
+        "decarbonization",
+        "energy shift"
+      ],
+      "antonyms": [
+        "energy stagnation"
+      ],
+      "example_sentence": "The energy transition requires substantial investment in infrastructure, technology, and workforce retraining across multiple sectors."
+    },
+    {
+      "word": "decarbonization",
+      "pronunciation": "/diːˌkɑːrbənaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "quá trình giảm hoặc loại bỏ lượng khí carbon dioxide phát thải từ các hoạt động kinh tế",
+      "definition_en": "the process of reducing or eliminating carbon dioxide emissions from economic activities and energy production",
+      "level": "C1",
+      "synonyms": [
+        "carbon reduction",
+        "emissions reduction"
+      ],
+      "antonyms": [
+        "carbonization"
+      ],
+      "example_sentence": "Decarbonization of the transportation sector requires widespread adoption of electric vehicles and sustainable fuels."
+    },
+    {
+      "word": "intermittency",
+      "pronunciation": "/ɪnˈtɜːmɪtənsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "tính chất không liên tục, không ổn định của nguồn năng lượng (như mặt trời và gió phụ thuộc vào thời tiết)",
+      "definition_en": "the irregular and unpredictable nature of renewable energy generation due to weather and seasonal variations",
+      "level": "C1",
+      "synonyms": [
+        "variability",
+        "inconsistency"
+      ],
+      "antonyms": [
+        "consistency",
+        "reliability"
+      ],
+      "example_sentence": "The intermittency of solar and wind power necessitates the development of advanced battery storage systems and smart grid technologies."
+    },
+    {
+      "word": "energy storage",
+      "pronunciation": "/ˈɛnədʒi ˈstɔːrɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "công nghệ lưu trữ năng lượng dư thừa để sử dụng sau này, chẳng hạn như pin hoặc hệ thống thủy điện",
+      "definition_en": "technology that captures and stores energy for later use, such as batteries or pumped hydro systems",
+      "level": "B2",
+      "synonyms": [
+        "battery storage",
+        "energy reserve"
+      ],
+      "antonyms": [],
+      "example_sentence": "Lithium-ion battery energy storage has become crucial for balancing supply and demand in grids with high renewable penetration."
+    },
+    {
+      "word": "carbon footprint",
+      "pronunciation": "/ˈkɑːrbən ˈfʊtprɪnt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tổng lượng khí nhà kính (đặc biệt là CO2) phát thải từ các hoạt động của một cá nhân, tổ chức hoặc sản phẩm",
+      "definition_en": "the total amount of greenhouse gas emissions produced directly or indirectly by human activities or products",
+      "level": "B2",
+      "synonyms": [
+        "carbon emissions",
+        "greenhouse gas emissions"
+      ],
+      "antonyms": [],
+      "example_sentence": "Switching to renewable energy sources significantly reduces the carbon footprint of manufacturing industries."
+    },
+    {
+      "word": "fossil fuel",
+      "pronunciation": "/ˈfɑːsəl ˈfjuːəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhiên liệu được hình thành từ các sinh vật sống cách đây hàng triệu năm, như dầu mỏ, khí tự nhiên, và than",
+      "definition_en": "non-renewable energy sources formed from ancient organic matter, including coal, oil, and natural gas",
+      "level": "B2",
+      "synonyms": [
+        "hydrocarbon",
+        "conventional fuel"
+      ],
+      "antonyms": [
+        "renewable energy",
+        "clean energy"
+      ],
+      "example_sentence": "The combustion of fossil fuels remains the primary driver of climate change and air pollution worldwide."
+    },
+    {
+      "word": "smart grid",
+      "pronunciation": "/smɑːrt ɡrɪd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống điện hiện đại sử dụng công nghệ thông tin và tự động hóa để quản lý cung cấp và tiêu thụ điện hiệu quả",
+      "definition_en": "an advanced electrical grid that uses digital technology and automation to optimize energy distribution and consumption",
+      "level": "C1",
+      "synonyms": [
+        "intelligent grid",
+        "digital grid"
+      ],
+      "antonyms": [
+        "conventional grid"
+      ],
+      "example_sentence": "Smart grid technology enables real-time monitoring and dynamic adjustment of electricity flow to accommodate variable renewable generation."
+    },
+    {
+      "word": "capacity factor",
+      "pronunciation": "/kəˈpæsɪti ˈfæktər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ giữa năng lượng thực tế được tạo ra và năng lượng tối đa có thể tạo ra của một nguồn năng lượng",
+      "definition_en": "the ratio of actual energy output to the maximum possible output of a power generation facility over a specific period",
+      "level": "C1",
+      "synonyms": [
+        "utilization factor",
+        "load factor"
+      ],
+      "antonyms": [],
+      "example_sentence": "Wind turbines typically have a capacity factor of 25-35%, while solar panels average 15-25% depending on geographic location."
+    },
+    {
+      "word": "grid integration",
+      "pronunciation": "/ɡrɪd ˌɪntɪˈɡreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình kết nối các nguồn năng lượng tái tạo vào hệ thống điện chính để cung cấp điện cho người tiêu dùng",
+      "definition_en": "the process of connecting renewable energy sources to the main electrical grid to supply power to consumers",
+      "level": "C1",
+      "synonyms": [
+        "grid connection",
+        "network integration"
+      ],
+      "antonyms": [
+        "grid disconnection"
+      ],
+      "example_sentence": "Successful grid integration of distributed solar and wind resources requires sophisticated forecasting and demand-response mechanisms."
+    },
+    {
+      "word": "peak demand",
+      "pronunciation": "/piːk dɪˈmænd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thời điểm hoặc khoảng thời gian khi nhu cầu tiêu thụ điện đạt mức cao nhất",
+      "definition_en": "the period when electricity consumption reaches its highest level, typically during morning and evening hours",
+      "level": "B2",
+      "synonyms": [
+        "peak load",
+        "maximum demand"
+      ],
+      "antonyms": [
+        "off-peak demand",
+        "base load"
+      ],
+      "example_sentence": "Managing peak demand through demand-side management and energy storage is essential for grid stability during high-consumption periods."
+    },
+    {
+      "word": "load balancing",
+      "pronunciation": "/loʊd ˈbælənɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình phân phối lượng điện tiêu thụ đều đặn trên hệ thống để tránh quá tải",
+      "definition_en": "the distribution of electrical load across multiple sources to prevent overload and maintain system stability",
+      "level": "C1",
+      "synonyms": [
+        "demand management",
+        "load distribution"
+      ],
+      "antonyms": [
+        "load concentration"
+      ],
+      "example_sentence": "Advanced load balancing algorithms help utilities manage the variable output from renewable sources while maintaining grid frequency."
+    },
+    {
+      "word": "photovoltaic",
+      "pronunciation": "/ˌfoʊtoʊvoʊlˈteɪɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến quá trình chuyển đổi trực tiếp ánh sáng thành điện thông qua các tế bào bán dẫn",
+      "definition_en": "relating to the direct conversion of light into electricity using semiconductor materials",
+      "level": "C1",
+      "synonyms": [
+        "solar",
+        "PV"
+      ],
+      "antonyms": [],
+      "example_sentence": "Photovoltaic technology has achieved significant cost reductions over the past decade, making solar energy increasingly competitive with fossil fuels."
+    },
+    {
+      "word": "carbon neutral",
+      "pronunciation": "/ˈkɑːrbən ˈnjuːtrəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "trạng thái không phát thải ròng khí carbon dioxide, hoặc phát thải được bù đắp bằng các biện pháp khác",
+      "definition_en": "achieving zero net carbon dioxide emissions through a balance of emissions and carbon offsets",
+      "level": "B2",
+      "synonyms": [
+        "net-zero",
+        "climate-neutral"
+      ],
+      "antonyms": [
+        "carbon-intensive"
+      ],
+      "example_sentence": "Many countries have committed to achieving carbon neutral status by 2050 through aggressive renewable energy deployment."
+    },
+    {
+      "word": "distributed generation",
+      "pronunciation": "/dɪˈstrɪbjətɪd ˌdʒɛnəˈreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống phát điện phân tán, nơi các nguồn năng lượng nhỏ được đặt gần nơi tiêu thụ thay vì tập trung ở một nơi",
+      "definition_en": "decentralized electricity generation using small-scale power sources located near consumption points rather than centralized power plants",
+      "level": "C1",
+      "synonyms": [
+        "decentralized generation",
+        "rooftop solar"
+      ],
+      "antonyms": [
+        "centralized generation"
+      ],
+      "example_sentence": "Distributed generation through residential solar panels reduces transmission losses and enhances grid resilience in urban communities."
+    },
+    {
+      "word": "grid modernization",
+      "pronunciation": "/ɡrɪd ˌmɑːdərnaɪˈzeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình nâng cấp hệ thống điện cũ bằng công nghệ mới để hỗ trợ năng lượng tái tạo và tăng hiệu quả",
+      "definition_en": "the upgrade of aging electrical infrastructure with advanced technologies to support renewable integration and improve efficiency",
+      "level": "C1",
+      "synonyms": [
+        "grid upgrade",
+        "infrastructure modernization"
+      ],
+      "antonyms": [],
+      "example_sentence": "Grid modernization investments include smart meters, advanced sensors, and automated control systems to optimize renewable energy distribution."
+    },
+    {
+      "word": "renewable penetration",
+      "pronunciation": "/rɪˈnjuːəbl ˌpɛnɪˈtreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ phần trăm điện được cung cấp từ các nguồn tái tạo so với tổng tiêu thụ điện",
+      "definition_en": "the percentage of electricity generated from renewable sources relative to total electricity consumption",
+      "level": "C1",
+      "synonyms": [
+        "renewable share",
+        "renewable proportion"
+      ],
+      "antonyms": [],
+      "example_sentence": "Denmark has achieved renewable penetration exceeding 80% through massive investments in offshore wind farms and grid optimization."
+    },
+    {
+      "word": "energy efficiency",
+      "pronunciation": "/ˈɛnədʒi ɪˈfɪʃənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng sử dụng năng lượng một cách tối ưu để hoàn thành công việc với lượng năng lượng tiêu thụ tối thiểu",
+      "definition_en": "the practice of using less energy to accomplish the same task, reducing waste and lowering costs",
+      "level": "B2",
+      "synonyms": [
+        "energy conservation",
+        "power efficiency"
+      ],
+      "antonyms": [
+        "energy waste",
+        "inefficiency"
+      ],
+      "example_sentence": "Improving energy efficiency in buildings through better insulation and LED lighting is a cost-effective complement to renewable energy adoption."
+    },
+    {
+      "word": "demand response",
+      "pronunciation": "/dɪˈmænd rɪˈspɑːns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chương trình khuyến khích người tiêu dùng giảm hoặc thay đổi thời gian sử dụng điện để cân bằng cung cấp",
+      "definition_en": "programs that incentivize consumers to reduce or shift electricity consumption during peak demand periods",
+      "level": "C1",
+      "synonyms": [
+        "load shedding",
+        "demand management"
+      ],
+      "antonyms": [],
+      "example_sentence": "Demand response programs using smart thermostats and real-time pricing signals help utilities manage variable renewable generation."
+    },
+    {
+      "word": "net metering",
+      "pronunciation": "/nɛt ˈmiːtərɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách cho phép chủ sở hữu hệ thống năng lượng tái tạo bán điện dư thừa trở lại lưới với giá bằng giá mua",
+      "definition_en": "a billing mechanism that credits consumers for excess renewable electricity they generate and feed back into the grid",
+      "level": "C1",
+      "synonyms": [
+        "net billing",
+        "grid export credit"
+      ],
+      "antonyms": [],
+      "example_sentence": "Net metering policies have significantly accelerated residential solar adoption by improving the financial returns for homeowners."
+    },
+    {
+      "word": "baseload power",
+      "pronunciation": "/ˈbeɪsloʊd ˈpaʊər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lượng điện cơ bản cần thiết để đáp ứng nhu cầu tối thiểu của hệ thống điện 24/7",
+      "definition_en": "the minimum amount of electricity required to meet continuous demand throughout the day and night",
+      "level": "C1",
+      "synonyms": [
+        "base load",
+        "minimum load"
+      ],
+      "antonyms": [
+        "peak load"
+      ],
+      "example_sentence": "Providing reliable baseload power while transitioning away from coal requires a combination of nuclear, hydroelectric, and energy storage solutions."
+    },
+    {
+      "word": "frequency regulation",
+      "pronunciation": "/ˈfrikwənsi ˌrɛɡjəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình duy trì tần số điện (50 hoặc 60 Hz) ổn định bằng cách cân bằng cung và cầu điện",
+      "definition_en": "the process of maintaining stable electrical frequency by balancing power supply and demand in real-time",
+      "level": "C1",
+      "synonyms": [
+        "frequency control",
+        "grid stabilization"
+      ],
+      "antonyms": [],
+      "example_sentence": "Frequency regulation becomes more challenging with high renewable penetration, requiring faster-responding resources like battery storage and demand response."
+    },
+    {
+      "word": "transmission loss",
+      "pronunciation": "/trænzˈmɪʃən lɔːs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lượng năng lượng bị mất dưới dạng nhiệt khi truyền tải điện qua dây dẫn từ nhà máy đến người tiêu dùng",
+      "definition_en": "the electrical energy lost as heat during transmission and distribution through power lines and transformers",
+      "level": "C1",
+      "synonyms": [
+        "line loss",
+        "distribution loss"
+      ],
+      "antonyms": [],
+      "example_sentence": "Transmission losses can account for 5-10% of generated electricity, making distributed renewable generation an attractive alternative in remote areas."
+    },
+    {
+      "word": "microgrid",
+      "pronunciation": "/ˈmaɪkroʊɡrɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "hệ thống điện nhỏ gồm các nguồn năng lượng tái tạo, lưu trữ, và tải có thể hoạt động độc lập hoặc kết nối với lưới chính",
+      "definition_en": "a localized electrical grid containing renewable sources, storage, and loads that can operate independently or connected to the main grid",
+      "level": "C1",
+      "synonyms": [
+        "mini-grid",
+        "local grid"
+      ],
+      "antonyms": [
+        "centralized grid"
+      ],
+      "example_sentence": "Microgrids in rural communities provide energy resilience and enable electrification without relying on expensive long-distance transmission infrastructure."
+    },
+    {
+      "word": "grid stability",
+      "pronunciation": "/ɡrɪd stəˈbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của hệ thống điện duy trì hoạt động bình thường và phục hồi sau các sự cố hoặc biến động",
+      "definition_en": "the ability of an electrical grid to maintain normal operation and recover from disturbances or sudden changes",
+      "level": "C1",
+      "synonyms": [
+        "grid resilience",
+        "system stability"
+      ],
+      "antonyms": [
+        "grid instability",
+        "blackout"
+      ],
+      "example_sentence": "Grid stability with high renewable penetration requires synchronous condensers, fast-frequency response, and advanced forecasting systems."
+    },
+    {
+      "word": "carbon pricing",
+      "pronunciation": "/ˈkɑːrbən ˈpraɪsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cơ chế kinh tế gán giá cho khí thải carbon để khuyến khích giảm phát thải, thường thông qua thuế carbon hoặc thị trường phát thải",
+      "definition_en": "an economic mechanism that assigns a cost to carbon emissions to incentivize emission reductions through taxes or cap-and-trade systems",
+      "level": "C1",
+      "synonyms": [
+        "carbon tax",
+        "emissions pricing"
+      ],
+      "antonyms": [],
+      "example_sentence": "Carbon pricing mechanisms have proven effective in accelerating the transition to renewable energy by making fossil fuels more expensive."
+    },
+    {
+      "word": "energy independence",
+      "pronunciation": "/ˈɛnədʒi ɪnˈdɛpəndəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một quốc gia hoặc khu vực tự cung cấp đủ năng lượng mà không phụ thuộc vào nhập khẩu từ nước ngoài",
+      "definition_en": "the ability of a country or region to meet its energy needs through domestic resources without relying on imports",
+      "level": "B2",
+      "synonyms": [
+        "energy self-sufficiency",
+        "energy autonomy"
+      ],
+      "antonyms": [
+        "energy dependence"
+      ],
+      "example_sentence": "Renewable energy development is crucial for achieving energy independence and reducing vulnerability to volatile global energy markets."
+    },
+    {
+      "word": "power purchase agreement",
+      "pronunciation": "/ˈpaʊər ˈpɜːrʧəs əˈɡriːmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hợp đồng dài hạn giữa nhà phát điện và người mua (thường là công ty điện lực) xác định giá và lượng điện được cung cấp",
+      "definition_en": "a long-term contract between a power generator and buyer specifying the price and quantity of electricity to be supplied",
+      "level": "C1",
+      "synonyms": [
+        "PPA",
+        "electricity contract"
+      ],
+      "antonyms": [],
+      "example_sentence": "Power purchase agreements with fixed prices provide financial certainty for renewable energy projects and attract investment from institutional investors."
+    },
+    {
+      "word": "subsidy",
+      "pronunciation": "/ˈsʌbsɪdi/",
+      "part_of_speech": "noun",
+      "definition_vi": "hỗ trợ tài chính từ chính phủ cho một ngành công nghiệp hoặc hoạt động để giảm chi phí hoặc khuyến khích phát triển",
+      "definition_en": "financial support provided by government to reduce costs or encourage development of specific industries or activities",
+      "level": "B2",
+      "synonyms": [
+        "grant",
+        "financial aid"
+      ],
+      "antonyms": [
+        "tax"
+      ],
+      "example_sentence": "Government subsidies for renewable energy installation have been instrumental in reducing costs and accelerating market adoption in developing countries."
+    },
+    {
+      "word": "grid congestion",
+      "pronunciation": "/ɡrɪd kənˈdʒɛʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng hệ thống điện bị quá tải khi lượng điện cần truyền tải vượt quá khả năng của các đường dây",
+      "definition_en": "a condition where electricity demand exceeds transmission capacity, causing bottlenecks and potential service disruptions",
+      "level": "C1",
+      "synonyms": [
+        "transmission congestion",
+        "network bottleneck"
+      ],
+      "antonyms": [
+        "grid capacity"
+      ],
+      "example_sentence": "Grid congestion in areas with high renewable generation requires investment in transmission infrastructure and demand-side management solutions."
+    },
+    {
+      "word": "voltage stability",
+      "pronunciation": "/ˈvoʊltɪdʒ stəˈbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của hệ thống điện duy trì mức điện áp ổn định trong các điều kiện vận hành bình thường và khẩn cấp",
+      "definition_en": "the ability of an electrical system to maintain steady voltage levels under normal and emergency operating conditions",
+      "level": "C1",
+      "synonyms": [
+        "voltage control",
+        "reactive power support"
+      ],
+      "antonyms": [
+        "voltage collapse"
+      ],
+      "example_sentence": "Voltage stability challenges arise with high penetration of inverter-based renewable resources, requiring additional reactive power support."
+    },
+    {
+      "word": "black start capability",
+      "pronunciation": "/blæk stɑːrt ˈkeɪpəbɪlɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một nhà máy điện khôi phục lại hoạt động mà không cần điện từ lưới chính sau khi xảy ra mất điện toàn bộ",
+      "definition_en": "the ability of a power plant to restart and restore electricity supply to the grid without external power input after a blackout",
+      "level": "C2",
+      "synonyms": [
+        "grid restoration",
+        "system recovery"
+      ],
+      "antonyms": [],
+      "example_sentence": "Black start capability is essential for grid resilience, and renewable sources with battery storage are increasingly being designed with this feature."
+    },
+    {
+      "word": "curtailment",
+      "pronunciation": "/kɜːrˈteɪlmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "việc giảm hoặc dừng phát điện từ các nguồn năng lượng tái tạo khi lưới không thể tiếp nhận thêm điện",
+      "definition_en": "the reduction or cessation of electricity generation from renewable sources when grid capacity is exceeded or demand is insufficient",
+      "level": "C1",
+      "synonyms": [
+        "generation reduction",
+        "power limitation"
+      ],
+      "antonyms": [
+        "full generation"
+      ],
+      "example_sentence": "Wind curtailment in regions with high renewable penetration represents wasted clean energy and highlights the need for better storage and demand management."
+    },
+    {
+      "word": "levelized cost of electricity",
+      "pronunciation": "/ˈlɛvəlaɪzd kɔːst əv ɪˈlɛktrɪsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chi phí trung bình của mỗi đơn vị điện được tạo ra từ một nguồn năng lượng trong suốt vòng đời của nó",
+      "definition_en": "the average cost per unit of electricity generated from a power source over its entire operational lifetime",
+      "level": "C1",
+      "synonyms": [
+        "LCOE",
+        "cost per kilowatt-hour"
+      ],
+      "antonyms": [],
+      "example_sentence": "The levelized cost of electricity from solar and wind has dropped dramatically, making them cheaper than fossil fuels in many regions."
+    },
+    {
+      "word": "energy mix",
+      "pronunciation": "/ˈɛnədʒi mɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thành phần các nguồn năng lượng khác nhau (dầu, khí, than, điện hạt nhân, tái tạo) được sử dụng để phát điện",
+      "definition_en": "the combination of different energy sources used to generate electricity in a region or country",
+      "level": "B2",
+      "synonyms": [
+        "energy portfolio",
+        "generation mix"
+      ],
+      "antonyms": [],
+      "example_sentence": "Diversifying the energy mix with renewables, nuclear, and natural gas provides flexibility and resilience in the transition away from coal."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary challenge of integrating solar and wind energy into existing electrical grids?",
+      "option_a": "Their high cost compared to fossil fuels",
+      "option_b": "The intermittency of generation and the need for grid stability",
+      "option_c": "The lack of available land for installation",
+      "option_d": "Their inability to generate electricity during peak demand hours",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intermittency (tính không liên tục) là thách thức chính vì mặt trời và gió không phát điện liên tục. Các tùy chọn khác không chính xác: chi phí đã giảm đáng kể (A sai), đất đai không phải vấn đề lớn (C sai), năng lượng tái tạo có thể phát điện vào các giờ cao điểm (D sai)."
+    },
+    {
+      "question_text": "What is the primary purpose of energy storage systems in a grid with high renewable penetration?",
+      "option_a": "To reduce the carbon footprint of electricity generation",
+      "option_b": "To balance supply and demand by storing excess renewable energy for later use",
+      "option_c": "To eliminate the need for fossil fuel power plants entirely",
+      "option_d": "To increase the capacity factor of solar panels",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Energy storage lưu trữ điện dư thừa từ năng lượng tái tạo để sử dụng khi phát điện giảm. A đúng nhưng không phải mục đích chính của storage. C quá tuyệt đối. D không liên quan đến storage."
+    },
+    {
+      "question_text": "In the context of renewable energy transition, what does 'grid reliability' primarily refer to?",
+      "option_a": "The cost-effectiveness of renewable energy sources",
+      "option_b": "The ability of the electrical system to consistently deliver power without interruptions",
+      "option_c": "The percentage of renewable energy in the total energy mix",
+      "option_d": "The efficiency of solar panel conversion rates",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Grid reliability là khả năng cung cấp điện liên tục ổn định. A liên quan đến chi phí. C là renewable penetration. D là hiệu suất panel."
+    },
+    {
+      "question_text": "Which statement best explains why 'demand response' is important for grids with high renewable energy penetration?",
+      "option_a": "It allows consumers to generate their own electricity",
+      "option_b": "It helps manage variable renewable generation by shifting consumption patterns",
+      "option_c": "It eliminates the need for energy storage systems",
+      "option_d": "It increases the capacity factor of wind turbines",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Demand response khuyến khích người tiêu dùng thay đổi thời gian sử dụng điện để cân bằng với phát điện biến động. A không đúng (không phải tạo điện). C sai (không loại bỏ storage). D không liên quan."
+    },
+    {
+      "question_text": "What is the relationship between 'decarbonization' and 'energy transition'?",
+      "option_a": "They are completely unrelated concepts in energy policy",
+      "option_b": "Energy transition is a broader process that includes decarbonization as a key objective",
+      "option_c": "Decarbonization can only be achieved through nuclear power",
+      "option_d": "Energy transition refers only to switching between renewable sources",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Energy transition là quá trình chuyển từ nhiên liệu hóa thạch sang tái tạo, trong đó decarbonization (giảm carbon) là mục tiêu chính. A sai (có liên quan). C sai (có nhiều cách). D sai (transition rộng hơn)."
+    },
+    {
+      "question_text": "Which of the following is a synonym for 'renewable penetration' in the context of electricity grids?",
+      "option_a": "Grid modernization",
+      "option_b": "The percentage of electricity generated from renewable sources",
+      "option_c": "Energy storage capacity",
+      "option_d": "Transmission loss reduction",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "Renewable penetration chính là tỷ lệ phần trăm điện từ nguồn tái tạo. A là nâng cấp lưới. C là lưu trữ. D là giảm mất mát."
+    },
+    {
+      "question_text": "What does 'capacity factor' measure in renewable energy systems?",
+      "option_a": "The maximum power output of a renewable energy installation",
+      "option_b": "The ratio of actual output to maximum possible output over a period",
+      "option_c": "The cost per kilowatt-hour of renewable electricity",
+      "option_d": "The percentage of renewable energy in the grid",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Capacity factor là tỷ lệ giữa năng lượng thực tế và tối đa có thể tạo ra. A là công suất tối đa. C là LCOE. D là renewable penetration."
+    },
+    {
+      "question_text": "Which technology is most directly related to solving the 'intermittency' problem of renewable energy?",
+      "option_a": "Smart meters for consumer billing",
+      "option_b": "Energy storage systems and demand response programs",
+      "option_c": "Transmission line upgrades",
+      "option_d": "Carbon pricing mechanisms",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Intermittency được giải quyết bằng storage (lưu trữ) và demand response (thay đổi tiêu thụ). A là đo lường. C là truyền tải. D là chính sách giá."
+    },
+    {
+      "question_text": "What is the primary advantage of 'distributed generation' compared to centralized power plants?",
+      "option_a": "It eliminates the need for transmission infrastructure entirely",
+      "option_b": "It reduces transmission losses and enhances grid resilience",
+      "option_c": "It guarantees 100% renewable energy supply",
+      "option_d": "It reduces the cost of electricity for all consumers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Distributed generation giảm mất mát truyền tải (vì gần nơi tiêu thụ) và tăng khả năng phục hồi. A quá tuyệt đối. C không đảm bảo. D không chắc chắn."
+    },
+    {
+      "question_text": "How does 'net metering' encourage residential solar adoption?",
+      "option_a": "By providing government subsidies for panel installation",
+      "option_b": "By crediting consumers for excess electricity fed back to the grid",
+      "option_c": "By eliminating the need for grid connection",
+      "option_d": "By guaranteeing fixed electricity prices for 20 years",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Net metering cho phép chủ nhà bán điện dư thừa với giá bằng giá mua, cải thiện tài chính. A là subsidy. C không đúng (vẫn cần kết nối). D là PPA."
+    },
+    {
+      "question_text": "Which of the following best describes the relationship between 'grid stability' and 'frequency regulation'?",
+      "option_a": "They are unrelated concepts in power systems",
+      "option_b": "Frequency regulation is a key mechanism for maintaining grid stability",
+      "option_c": "Grid stability only depends on voltage levels, not frequency",
+      "option_d": "Frequency regulation is only necessary during peak demand periods",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Frequency regulation (duy trì tần số 50/60 Hz) là cơ chế quan trọng để duy trì grid stability. A sai (có liên quan). C sai (tần số cũng quan trọng). D sai (cần 24/7)."
+    },
+    {
+      "question_text": "What does 'curtailment' represent in the context of renewable energy grids?",
+      "option_a": "The reduction of renewable energy generation when grid capacity is exceeded",
+      "option_b": "The process of upgrading transmission lines",
+      "option_c": "The installation of new solar panels on residential rooftops",
+      "option_d": "The implementation of carbon pricing policies",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Curtailment là việc giảm/dừng phát điện từ tái tạo khi lưới không thể tiếp nhận. B là nâng cấp. C là cài đặt panel. D là chính sách giá."
+    },
+    {
+      "question_text": "Which statement correctly explains why 'carbon pricing' accelerates the transition to renewable energy?",
+      "option_a": "It directly increases the efficiency of solar panels",
+      "option_b": "It makes fossil fuels more expensive, improving the competitiveness of renewables",
+      "option_c": "It eliminates the need for energy storage systems",
+      "option_d": "It guarantees that all electricity will come from renewable sources",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Carbon pricing làm nhiên liệu hóa thạch đắt hơn, giúp tái tạo cạnh tranh hơn. A không liên quan. C sai. D quá tuyệt đối."
+    },
+    {
+      "question_text": "In the context of renewable energy transition, what is the primary function of a 'smart grid'?",
+      "option_a": "To eliminate the need for fossil fuel power plants",
+      "option_b": "To optimize energy distribution and accommodate variable renewable generation through digital technology",
+      "option_c": "To reduce the cost of electricity for industrial consumers only",
+      "option_d": "To prevent all blackouts and power outages permanently",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Smart grid sử dụng công nghệ số để tối ưu hóa phân phối và quản lý năng lượng tái tạo biến động. A quá tuyệt đối. C chỉ một nhóm. D không thể ngăn chặn hoàn toàn."
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "words": [
+    {
+      "word": "purchase",
+      "pronunciation": "/ˈpɜːtʃəs/",
+      "part_of_speech": "verb",
+      "definition_vi": "mua sắm (trang trọng, chính thức); thường dùng trong văn bản hành chính, kinh doanh",
+      "definition_en": "to buy something, especially in a formal or business context",
+      "level": "B1",
+      "synonyms": [
+        "acquire",
+        "obtain"
+      ],
+      "antonyms": [
+        "sell",
+        "dispose"
+      ],
+      "example_sentence": "The company decided to purchase new equipment to improve production efficiency."
+    },
+    {
+      "word": "buy",
+      "pronunciation": "/baɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "mua (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to obtain something in exchange for money, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "get",
+        "pick up"
+      ],
+      "antonyms": [
+        "sell",
+        "vend"
+      ],
+      "example_sentence": "I need to buy groceries on my way home from work."
+    },
+    {
+      "word": "children",
+      "pronunciation": "/ˈtʃɪldrən/",
+      "part_of_speech": "noun",
+      "definition_vi": "trẻ em, con cái (trang trọng, chính thức); dùng trong văn bản học thuật, pháp lý",
+      "definition_en": "young human beings, formal and standard term",
+      "level": "B1",
+      "synonyms": [
+        "youngsters",
+        "juveniles"
+      ],
+      "antonyms": [
+        "adults",
+        "elders"
+      ],
+      "example_sentence": "The government implemented new policies to protect children's rights in education."
+    },
+    {
+      "word": "kids",
+      "pronunciation": "/kɪdz/",
+      "part_of_speech": "noun",
+      "definition_vi": "trẻ con, bé (thân mật, hàng ngày); từ không chính thức",
+      "definition_en": "children, informal and casual term",
+      "level": "B1",
+      "synonyms": [
+        "children",
+        "youngsters"
+      ],
+      "antonyms": [
+        "grown-ups",
+        "adults"
+      ],
+      "example_sentence": "The kids played in the park until sunset."
+    },
+    {
+      "word": "assist",
+      "pronunciation": "/əˈsɪst/",
+      "part_of_speech": "verb",
+      "definition_vi": "hỗ trợ, giúp đỡ (trang trọng, chính thức); dùng trong công việc, tài liệu hành chính",
+      "definition_en": "to help or support someone in a formal manner",
+      "level": "B1",
+      "synonyms": [
+        "aid",
+        "support"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "The medical team will assist the patient throughout the recovery process."
+    },
+    {
+      "word": "help",
+      "pronunciation": "/help/",
+      "part_of_speech": "verb",
+      "definition_vi": "giúp (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to make something easier or better for someone, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "aid",
+        "support"
+      ],
+      "antonyms": [
+        "hinder",
+        "harm"
+      ],
+      "example_sentence": "Can you help me carry these boxes upstairs?"
+    },
+    {
+      "word": "commence",
+      "pronunciation": "/kəˈmens/",
+      "part_of_speech": "verb",
+      "definition_vi": "bắt đầu, khởi động (trang trọng, chính thức); dùng trong thông báo, sự kiện chính thức",
+      "definition_en": "to begin or start something in a formal context",
+      "level": "B2",
+      "synonyms": [
+        "begin",
+        "initiate"
+      ],
+      "antonyms": [
+        "end",
+        "conclude"
+      ],
+      "example_sentence": "The conference will commence at 9:00 AM sharp on Monday morning."
+    },
+    {
+      "word": "start",
+      "pronunciation": "/stɑːrt/",
+      "part_of_speech": "verb",
+      "definition_vi": "bắt đầu (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to begin something, informal and everyday usage",
+      "level": "B1",
+      "synonyms": [
+        "begin",
+        "commence"
+      ],
+      "antonyms": [
+        "stop",
+        "end"
+      ],
+      "example_sentence": "We will start the meeting when everyone arrives."
+    },
+    {
+      "word": "endeavor",
+      "pronunciation": "/ɪnˈdevər/",
+      "part_of_speech": "noun",
+      "definition_vi": "nỗ lực, cố gắng (trang trọng); dùng trong văn bản học thuật, tài liệu chính thức",
+      "definition_en": "an attempt or effort to achieve something, formal term",
+      "level": "B2",
+      "synonyms": [
+        "attempt",
+        "effort"
+      ],
+      "antonyms": [
+        "negligence",
+        "apathy"
+      ],
+      "example_sentence": "The scientist's endeavor to find a cure for the disease lasted many years."
+    },
+    {
+      "word": "try",
+      "pronunciation": "/traɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "cố gắng, thử (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to make an effort to do something, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "attempt",
+        "endeavor"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "I will try my best to finish the project on time."
+    },
+    {
+      "word": "utilize",
+      "pronunciation": "/ˈjuːtɪlaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "sử dụng, tận dụng (trang trọng, chính thức); dùng trong báo cáo, tài liệu kỹ thuật",
+      "definition_en": "to use something effectively or for a specific purpose, formal term",
+      "level": "B2",
+      "synonyms": [
+        "use",
+        "employ"
+      ],
+      "antonyms": [
+        "waste",
+        "neglect"
+      ],
+      "example_sentence": "The company will utilize advanced technology to improve its production process."
+    },
+    {
+      "word": "use",
+      "pronunciation": "/juːz/",
+      "part_of_speech": "verb",
+      "definition_vi": "dùng, sử dụng (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to employ something for a purpose, informal and everyday usage",
+      "level": "B1",
+      "synonyms": [
+        "utilize",
+        "employ"
+      ],
+      "antonyms": [
+        "discard",
+        "waste"
+      ],
+      "example_sentence": "You can use this tool to fix the broken chair."
+    },
+    {
+      "word": "obtain",
+      "pronunciation": "/əbˈteɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "có được, đạt được (trang trọng, chính thức); dùng trong văn bản hành chính, học thuật",
+      "definition_en": "to get or acquire something, formal and official term",
+      "level": "B2",
+      "synonyms": [
+        "acquire",
+        "get"
+      ],
+      "antonyms": [
+        "lose",
+        "forfeit"
+      ],
+      "example_sentence": "Students must obtain permission from the dean before conducting research."
+    },
+    {
+      "word": "get",
+      "pronunciation": "/ɡet/",
+      "part_of_speech": "verb",
+      "definition_vi": "có được, lấy (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to obtain or receive something, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "obtain",
+        "acquire"
+      ],
+      "antonyms": [
+        "lose",
+        "give"
+      ],
+      "example_sentence": "I need to get a new passport before my trip."
+    },
+    {
+      "word": "terminate",
+      "pronunciation": "/ˈtɜːmɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "kết thúc, chấm dứt (trang trọng, chính thức); dùng trong hợp đồng, tài liệu pháp lý",
+      "definition_en": "to end or finish something formally",
+      "level": "B2",
+      "synonyms": [
+        "end",
+        "conclude"
+      ],
+      "antonyms": [
+        "commence",
+        "begin"
+      ],
+      "example_sentence": "The company decided to terminate the contract due to non-compliance."
+    },
+    {
+      "word": "stop",
+      "pronunciation": "/stɑːp/",
+      "part_of_speech": "verb",
+      "definition_vi": "dừng, ngừng (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to cease or halt something, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "halt",
+        "cease"
+      ],
+      "antonyms": [
+        "start",
+        "continue"
+      ],
+      "example_sentence": "Please stop talking during the examination."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện, giúp dễ dàng (trang trọng, chính thức); dùng trong báo cáo, tài liệu quản lý",
+      "definition_en": "to make something easier or help it happen more smoothly",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "The new software will facilitate communication between different departments."
+    },
+    {
+      "word": "make easier",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho dễ dàng hơn (thân mật, hàng ngày); cụm từ cơ bản, không chính thức",
+      "definition_en": "to simplify or reduce difficulty, informal phrase",
+      "level": "B1",
+      "synonyms": [
+        "facilitate",
+        "simplify"
+      ],
+      "antonyms": [
+        "complicate",
+        "hinder"
+      ],
+      "example_sentence": "This new method will make easier the process of data collection."
+    },
+    {
+      "word": "deem",
+      "pronunciation": "/diːm/",
+      "part_of_speech": "verb",
+      "definition_vi": "coi là, xem là (trang trọng, chính thức); dùng trong văn bản pháp lý, học thuật",
+      "definition_en": "to consider or regard something in a particular way, formal term",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "regard"
+      ],
+      "antonyms": [],
+      "example_sentence": "The court deemed the evidence insufficient to prove the defendant's guilt."
+    },
+    {
+      "word": "think",
+      "pronunciation": "/θɪŋk/",
+      "part_of_speech": "verb",
+      "definition_vi": "nghĩ, cho rằng (thân mật, hàng ngày); từ cơ bản, không chính thức",
+      "definition_en": "to have an opinion or belief, informal usage",
+      "level": "B1",
+      "synonyms": [
+        "believe",
+        "consider"
+      ],
+      "antonyms": [],
+      "example_sentence": "I think this solution is the best approach for our problem."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "xét đến, dựa trên (trang trọng, chính thức); cụm từ dùng trong văn bản học thuật",
+      "definition_en": "considering or taking into account something",
+      "level": "B2",
+      "synonyms": [
+        "considering",
+        "given"
+      ],
+      "antonyms": [],
+      "example_sentence": "In light of recent developments, the government has revised its economic policy."
+    },
+    {
+      "word": "because of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "vì, do (thân mật, hàng ngày); cụm từ cơ bản, không chính thức",
+      "definition_en": "for the reason that something caused something else",
+      "level": "B1",
+      "synonyms": [
+        "due to",
+        "owing to"
+      ],
+      "antonyms": [],
+      "example_sentence": "Because of the heavy rain, the outdoor event was postponed to next week."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government announced that it would _____ new infrastructure projects to boost economic growth.",
+      "option_a": "purchase",
+      "option_b": "commence",
+      "option_c": "obtain",
+      "option_d": "utilize",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Trong ngữ cảnh chính thức về dự án của chính phủ, 'commence' (bắt đầu) là từ phù hợp nhất. 'Purchase' (mua) không phù hợp với 'projects'. 'Obtain' và 'utilize' không diễn tả ý bắt đầu dự án."
+    },
+    {
+      "question_text": "Which word is the most formal alternative to 'buy' in a business document?",
+      "option_a": "get",
+      "option_b": "pick up",
+      "option_c": "purchase",
+      "option_d": "take",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "basic",
+      "explanation": "'Purchase' là từ chính thức, thường dùng trong tài liệu kinh doanh và hành chính. 'Get', 'pick up', và 'take' đều là từ thân mật, không phù hợp với ngữ cảnh chính thức."
+    },
+    {
+      "question_text": "The school provides _____ with educational resources and support throughout their academic journey.",
+      "option_a": "kids",
+      "option_b": "children",
+      "option_c": "youngsters",
+      "option_d": "juveniles",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Trong ngữ cảnh chính thức về giáo dục, 'children' là từ chuẩn mực. 'Kids' quá thân mật. 'Youngsters' và 'juveniles' ít phù hợp với bối cảnh giáo dục thông thường."
+    },
+    {
+      "question_text": "The medical team will _____ patients in their recovery process using advanced treatment methods.",
+      "option_a": "help",
+      "option_b": "assist",
+      "option_c": "support",
+      "option_d": "aid",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Assist' là từ chính thức, thường dùng trong bối cảnh y tế và chuyên môn. 'Help' quá thân mật. 'Support' và 'aid' có thể dùng nhưng 'assist' là lựa chọn trang trọng nhất."
+    },
+    {
+      "question_text": "The conference will _____ at 9:00 AM on Monday. Which word is most appropriate for a formal announcement?",
+      "option_a": "start",
+      "option_b": "begin",
+      "option_c": "commence",
+      "option_d": "kick off",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'Commence' là từ chính thức nhất, thường dùng trong thông báo chính thức và sự kiện. 'Start' và 'begin' quá thân mật. 'Kick off' là cụm từ rất không chính thức."
+    },
+    {
+      "question_text": "What is the most formal synonym for 'try' in an academic context?",
+      "option_a": "attempt",
+      "option_b": "endeavor",
+      "option_c": "make an effort",
+      "option_d": "give a shot",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Endeavor' là từ chính thức nhất, thường dùng trong văn bản học thuật. 'Attempt' cũng chính thức nhưng 'endeavor' mang ý nghĩa nỗ lực lâu dài hơn. 'Make an effort' và 'give a shot' quá thân mật."
+    },
+    {
+      "question_text": "The company will _____ advanced technology to improve production efficiency.",
+      "option_a": "use",
+      "option_b": "utilize",
+      "option_c": "apply",
+      "option_d": "employ",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Utilize' là từ chính thức nhất trong bối cảnh kinh doanh và báo cáo kỹ thuật. 'Use' quá thân mật. 'Apply' và 'employ' có thể dùng nhưng 'utilize' là lựa chọn trang trọng nhất."
+    },
+    {
+      "question_text": "Students must _____ permission from the dean before conducting independent research projects.",
+      "option_a": "get",
+      "option_b": "obtain",
+      "option_c": "acquire",
+      "option_d": "receive",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Obtain' là từ chính thức, thường dùng trong tài liệu hành chính và học thuật. 'Get' quá thân mật. 'Acquire' và 'receive' có thể dùng nhưng 'obtain' là lựa chọn chuẩn mực nhất."
+    },
+    {
+      "question_text": "The contract was _____ due to the company's failure to meet the agreed terms.",
+      "option_a": "stopped",
+      "option_b": "ended",
+      "option_c": "terminated",
+      "option_d": "finished",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Terminated' là từ chính thức, thường dùng trong tài liệu pháp lý và hợp đồng. 'Stopped', 'ended', và 'finished' quá thân mật hoặc không chính xác về mặt pháp lý."
+    },
+    {
+      "question_text": "Which phrase is most appropriate in a formal academic paper to introduce a reason?",
+      "option_a": "because of",
+      "option_b": "in light of",
+      "option_c": "due to",
+      "option_d": "thanks to",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'In light of' là cụm từ chính thức nhất, thường dùng để giới thiệu lý do hoặc bối cảnh trong văn bản học thuật. 'Because of' quá thân mật. 'Due to' cũng chính thức nhưng 'in light of' mang ý nghĩa xem xét kỹ lưỡng hơn. 'Thanks to' quá không chính thức."
+    },
+    {
+      "question_text": "The new software will _____ communication between departments by reducing response time.",
+      "option_a": "make easier",
+      "option_b": "facilitate",
+      "option_c": "help",
+      "option_d": "improve",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Facilitate' là từ chính thức, thường dùng trong báo cáo quản lý và tài liệu kỹ thuật. 'Make easier' quá thân mật. 'Help' không cụ thể. 'Improve' không diễn tả ý tạo điều kiện."
+    },
+    {
+      "question_text": "The court _____ the evidence insufficient to support the prosecution's case.",
+      "option_a": "thought",
+      "option_b": "considered",
+      "option_c": "deemed",
+      "option_d": "believed",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Deemed' là từ chính thức, thường dùng trong tài liệu pháp lý. 'Thought' quá thân mật. 'Considered' có thể dùng nhưng 'deemed' là lựa chọn chuẩn mực nhất trong bối cảnh pháp lý. 'Believed' không phù hợp về mặt ngữ pháp."
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "words": [
+    {
+      "word": "actually",
+      "pronunciation": "/ˈæktʃuəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "thực tế, trên thực tế (không phải 'thực sự' hay 'hiện tại'); dùng để làm rõ hoặc sửa lại điều vừa nói",
+      "definition_en": "in fact; used to clarify or correct a previous statement, not simply 'really' or 'at present'",
+      "level": "B1",
+      "synonyms": [
+        "in fact",
+        "as a matter of fact",
+        "in reality"
+      ],
+      "antonyms": [
+        "apparently",
+        "seemingly"
+      ],
+      "example_sentence": "Many students think 'actually' means 'hiện tại', but it actually refers to what is true in reality."
+    },
+    {
+      "word": "eventually",
+      "pronunciation": "/ɪˈventʃuəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "cuối cùng, sau cùng (sau một thời gian dài); không phải 'có thể' hay 'có khả năng'",
+      "definition_en": "in the end; after a long time or series of events, not 'possibly' or 'perhaps'",
+      "level": "B1",
+      "synonyms": [
+        "finally",
+        "in the end",
+        "ultimately"
+      ],
+      "antonyms": [
+        "immediately",
+        "instantly"
+      ],
+      "example_sentence": "After years of hard work, she eventually became a successful engineer and achieved her dream."
+    },
+    {
+      "word": "realize",
+      "pronunciation": "/ˈrɪəlaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhận ra, hiểu được (bỗng nhiên); không phải 'thực hiện' hay 'làm thành hiện thực'",
+      "definition_en": "to become aware of something; to understand suddenly, not 'to make real' or 'to achieve'",
+      "level": "B1",
+      "synonyms": [
+        "understand",
+        "recognize",
+        "become aware of"
+      ],
+      "antonyms": [
+        "overlook",
+        "ignore"
+      ],
+      "example_sentence": "During the interview, the candidate suddenly realized that the job required more experience than expected."
+    },
+    {
+      "word": "sensible",
+      "pronunciation": "/ˈsensəbl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hợp lý, thông minh (về quyết định/hành động); không phải 'nhạy cảm' hay 'dễ bị tổn thương'",
+      "definition_en": "reasonable and practical; showing good judgment, not 'sensitive' or 'easily hurt'",
+      "level": "B1",
+      "synonyms": [
+        "reasonable",
+        "practical",
+        "wise"
+      ],
+      "antonyms": [
+        "foolish",
+        "impractical"
+      ],
+      "example_sentence": "It is sensible to check the weather forecast before planning an outdoor event for your company."
+    },
+    {
+      "word": "sensitive",
+      "pronunciation": "/ˈsensətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhạy cảm, dễ bị tổn thương (cảm xúc); hoặc nhạy (về cảm giác); không phải 'hợp lý'",
+      "definition_en": "easily hurt or offended; responsive to stimuli, not 'reasonable' or 'practical'",
+      "level": "B1",
+      "synonyms": [
+        "touchy",
+        "delicate",
+        "responsive"
+      ],
+      "antonyms": [
+        "insensitive",
+        "thick-skinned"
+      ],
+      "example_sentence": "The topic of climate change is sensitive in many communities, so speakers must address it carefully."
+    },
+    {
+      "word": "in the long run",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "về lâu dài, cuối cùng thì (không phải 'trong một cuộc chạy dài' hay 'trong quãng đường dài')",
+      "definition_en": "over a long period of time; in the end; ultimately, not literal 'in a long race'",
+      "level": "B1",
+      "synonyms": [
+        "eventually",
+        "ultimately",
+        "in the end"
+      ],
+      "antonyms": [
+        "in the short term",
+        "immediately"
+      ],
+      "example_sentence": "Investing in education may be expensive now, but in the long run it benefits society significantly."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính đến, xem xét (một yếu tố); không phải 'lấy vào tài khoản' hay 'ghi vào sổ'",
+      "definition_en": "to consider something as part of a decision or calculation; to include in one's thinking",
+      "level": "B1",
+      "synonyms": [
+        "consider",
+        "factor in",
+        "bear in mind"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "When designing a building, architects must take into account the local climate and environmental regulations."
+    },
+    {
+      "word": "come across",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tình cờ gặp, tìm thấy (không cố ý); hoặc tạo ấn tượng (về cách nói/cách cư xử)",
+      "definition_en": "to meet or find by chance; or to give an impression of being something",
+      "level": "B1",
+      "synonyms": [
+        "encounter",
+        "find",
+        "seem"
+      ],
+      "antonyms": [
+        "miss",
+        "avoid"
+      ],
+      "example_sentence": "While researching, I came across an interesting article that completely changed my understanding of the topic."
+    },
+    {
+      "word": "look into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "điều tra, tìm hiểu kỹ (không phải 'nhìn vào bên trong' theo nghĩa đen)",
+      "definition_en": "to investigate or examine something carefully; to research",
+      "level": "B1",
+      "synonyms": [
+        "investigate",
+        "examine",
+        "research"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The government decided to look into the causes of the recent economic downturn affecting small businesses."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, dẫn đến (một kết quả); không phải 'mang về' theo nghĩa vật lý",
+      "definition_en": "to cause something to happen; to result in; to produce",
+      "level": "B1",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "result in"
+      ],
+      "antonyms": [
+        "prevent",
+        "avoid"
+      ],
+      "example_sentence": "The new technology brought about significant changes in how companies manage their supply chains."
+    },
+    {
+      "word": "put forward",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "đề xuất, trình bày (một ý tưởng/lý do); không phải 'đẩy về phía trước' theo nghĩa vật lý",
+      "definition_en": "to propose or suggest an idea, theory, or argument for consideration",
+      "level": "B1",
+      "synonyms": [
+        "propose",
+        "suggest",
+        "present"
+      ],
+      "antonyms": [
+        "withdraw",
+        "retract"
+      ],
+      "example_sentence": "The researcher put forward a new theory about climate change that challenges previous scientific assumptions."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh (một sự thật); không phải 'chỉ tay vào' theo nghĩa đen",
+      "definition_en": "to draw attention to something; to mention or highlight a fact or issue",
+      "level": "B1",
+      "synonyms": [
+        "highlight",
+        "mention",
+        "indicate"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The teacher pointed out that several students had misunderstood the main argument in the reading passage."
+    },
+    {
+      "word": "carry out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thực hiện, tiến hành (một kế hoạch/nghiên cứu); không phải 'mang ra ngoài' theo nghĩa vật lý",
+      "definition_en": "to perform or execute a task, plan, or experiment; to conduct",
+      "level": "B1",
+      "synonyms": [
+        "perform",
+        "conduct",
+        "execute"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "Scientists carried out extensive research to determine the effects of pollution on marine ecosystems."
+    },
+    {
+      "word": "deal with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xử lý, giải quyết (một vấn đề); hoặc liên quan đến (một chủ đề)",
+      "definition_en": "to handle or manage a problem; to address or be concerned with a topic",
+      "level": "B1",
+      "synonyms": [
+        "handle",
+        "manage",
+        "address"
+      ],
+      "antonyms": [
+        "ignore",
+        "avoid"
+      ],
+      "example_sentence": "The novel deals with themes of identity and belonging in modern multicultural societies."
+    },
+    {
+      "word": "set up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thành lập, lập (một tổ chức/hệ thống); không phải 'đặt lên' theo nghĩa vật lý",
+      "definition_en": "to establish or create an organization, system, or arrangement",
+      "level": "B1",
+      "synonyms": [
+        "establish",
+        "create",
+        "found"
+      ],
+      "antonyms": [
+        "dismantle",
+        "close"
+      ],
+      "example_sentence": "The government set up a new committee to oversee environmental protection and sustainable development."
+    },
+    {
+      "word": "make up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tạo thành, chiếm (một phần); hoặc bịa đặt (một câu chuyện); không phải 'trang điểm' (mặc dù có thể)",
+      "definition_en": "to constitute or form; to invent or fabricate; to reconcile after a quarrel",
+      "level": "B1",
+      "synonyms": [
+        "constitute",
+        "comprise",
+        "invent"
+      ],
+      "antonyms": [
+        "dismantle",
+        "separate"
+      ],
+      "example_sentence": "Women make up more than half of the workforce in many developed countries today."
+    },
+    {
+      "word": "take place",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "diễn ra, xảy ra (một sự kiện); không phải 'chiếm chỗ' theo nghĩa vật lý",
+      "definition_en": "to happen or occur; to be held or scheduled",
+      "level": "B1",
+      "synonyms": [
+        "happen",
+        "occur",
+        "be held"
+      ],
+      "antonyms": [
+        "be cancelled",
+        "be postponed"
+      ],
+      "example_sentence": "The international conference will take place in Geneva next month with representatives from fifty countries."
+    },
+    {
+      "word": "in terms of",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "về mặt, xét theo (một khía cạnh nào đó); không phải 'trong các điều khoản của'",
+      "definition_en": "with regard to; concerning; from the perspective of; in relation to",
+      "level": "B1",
+      "synonyms": [
+        "regarding",
+        "concerning",
+        "as for"
+      ],
+      "antonyms": [],
+      "example_sentence": "In terms of environmental impact, renewable energy sources are significantly better than fossil fuels."
+    },
+    {
+      "word": "due to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do, vì (một nguyên nhân); không phải 'đến hạn' hay 'nợ'",
+      "definition_en": "caused by; because of; as a result of",
+      "level": "B1",
+      "synonyms": [
+        "because of",
+        "caused by",
+        "owing to"
+      ],
+      "antonyms": [
+        "despite",
+        "in spite of"
+      ],
+      "example_sentence": "The flight was delayed due to severe weather conditions affecting the airport's operations."
+    },
+    {
+      "word": "as a result",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do đó, vì vậy (kết quả); không phải 'như một kết quả' theo nghĩa đen",
+      "definition_en": "consequently; therefore; as a consequence",
+      "level": "B1",
+      "synonyms": [
+        "consequently",
+        "therefore",
+        "thus"
+      ],
+      "antonyms": [
+        "however",
+        "nevertheless"
+      ],
+      "example_sentence": "The company invested heavily in technology; as a result, productivity increased by thirty percent."
+    },
+    {
+      "word": "on the other hand",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "mặt khác, từ phía khác (để so sánh hai ý kiến); không phải 'trên tay kia' theo nghĩa vật lý",
+      "definition_en": "in contrast; from another perspective; conversely",
+      "level": "B1",
+      "synonyms": [
+        "conversely",
+        "in contrast",
+        "however"
+      ],
+      "antonyms": [
+        "similarly",
+        "likewise"
+      ],
+      "example_sentence": "Social media helps people stay connected; on the other hand, it can negatively affect mental health."
+    },
+    {
+      "word": "in addition",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngoài ra, thêm nữa (để bổ sung thông tin); không phải 'trong phép cộng' theo nghĩa toán học",
+      "definition_en": "furthermore; moreover; also; in addition to something else",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "furthermore",
+        "besides"
+      ],
+      "antonyms": [
+        "instead",
+        "however"
+      ],
+      "example_sentence": "The university offers excellent academic programs; in addition, it provides extensive scholarship opportunities."
+    },
+    {
+      "word": "in conclusion",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tóm lại, kết luận (để kết thúc); không phải 'trong kết luận' theo nghĩa vật lý",
+      "definition_en": "finally; to summarize; in summary; at the end",
+      "level": "B1",
+      "synonyms": [
+        "finally",
+        "in summary",
+        "to summarize"
+      ],
+      "antonyms": [
+        "initially",
+        "firstly"
+      ],
+      "example_sentence": "In conclusion, the research demonstrates that regular exercise significantly improves both physical and mental health."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Many students mistranslate 'actually' as 'hiện tại' (at present), but in the sentence 'He actually passed the exam', what does 'actually' mean?",
+      "option_a": "He passed the exam in reality, contrary to expectations",
+      "option_b": "He is currently passing the exam right now",
+      "option_c": "He will pass the exam in the future",
+      "option_d": "He is actively taking the exam at this moment",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'actually' không phải 'hiện tại' mà là 'thực tế/trên thực tế'. Nó dùng để làm rõ hoặc sửa lại điều vừa nói, không chỉ thời gian hiện tại. B, C, D đều sai vì hiểu nhầm thành thời gian."
+    },
+    {
+      "question_text": "The word 'sensible' is often confused with 'sensitive'. Which sentence uses 'sensible' correctly?",
+      "option_a": "She is very sensible to criticism and gets upset easily",
+      "option_b": "It is sensible to wear a seatbelt while driving for safety",
+      "option_c": "The patient's sensible skin requires special care and attention",
+      "option_d": "He made a sensible decision when he felt hurt by the comment",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'sensible' = hợp lý, thông minh (về quyết định); 'sensitive' = nhạy cảm, dễ bị tổn thương. A, C, D dùng sai từ; B đúng vì 'sensible' mô tả quyết định hợp lý."
+    },
+    {
+      "question_text": "In the sentence 'Eventually, she became a doctor after years of study', what does 'eventually' imply?",
+      "option_a": "She might possibly become a doctor in the future",
+      "option_b": "She became a doctor after a long period of time and effort",
+      "option_c": "She is currently becoming a doctor",
+      "option_d": "She will definitely become a doctor very soon",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'eventually' = cuối cùng, sau cùng (sau thời gian dài), không phải 'có thể' hay 'hiện tại'. Nó nhấn mạnh quá trình dài dẫn đến kết quả cuối cùng."
+    },
+    {
+      "question_text": "Which sentence correctly uses the phrase 'in the long run'?",
+      "option_a": "In the long run, he jogged five kilometers every morning",
+      "option_b": "In the long run, investing in education will benefit society more than short-term profits",
+      "option_c": "In the long run, the athlete ran faster than his competitors",
+      "option_d": "In the long run, she walked to the store yesterday",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'in the long run' = về lâu dài, không phải 'trong một cuộc chạy dài' theo nghĩa vật lý. A, C, D nhầm lẫn với 'run' (chạy) thực tế; B đúng vì nói về kết quả lâu dài."
+    },
+    {
+      "question_text": "The phrase 'take into account' means to _____ something in a decision or calculation.",
+      "option_a": "put money into a bank account related to",
+      "option_b": "consider or include as an important factor",
+      "option_c": "physically take something into an accounting office",
+      "option_d": "record something in a financial account",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'take into account' = tính đến, xem xét, không phải 'lấy vào tài khoản' theo nghĩa đen. A, C, D hiểu nhầm 'account' thành tài khoản ngân hàng; B đúng vì 'account' ở đây = xem xét."
+    },
+    {
+      "question_text": "When a student 'comes across' a difficult word while reading, what does this mean?",
+      "option_a": "The student walks across to find the word in a dictionary",
+      "option_b": "The student encounters the word by chance during reading",
+      "option_c": "The student deliberately searches for the word",
+      "option_d": "The student crosses out the word because it is difficult",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'come across' = tình cờ gặp, tìm thấy (không cố ý), không phải 'đi qua' theo nghĩa vật lý. A, D hiểu nhầm 'across' thành chuyển động vật lý; B đúng vì nhấn mạnh tính tình cờ."
+    },
+    {
+      "question_text": "Which sentence correctly uses 'look into'?",
+      "option_a": "She looked into the box to see what was inside",
+      "option_b": "The police will look into the cause of the accident thoroughly",
+      "option_c": "He looked into the mirror to check his appearance",
+      "option_d": "They looked into the window of the shop",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bẫy: 'look into' = điều tra, tìm hiểu kỹ, không phải 'nhìn vào bên trong' theo nghĩa vật lý. A, C, D dùng 'look into' theo nghĩa đen; B đúng vì 'look into' = investigate."
+    },
+    {
+      "question_text": "The new policy will 'bring about' significant changes in the company. This means the policy will _____ these changes.",
+      "option_a": "physically bring or carry",
+      "option_b": "cause or result in",
+      "option_c": "bring back from the past",
+      "option_d": "bring forward to a future date",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bẫy: 'bring about' = gây ra, dẫn đến (một kết quả), không phải 'mang về' theo nghĩa vật lý. A, C, D hiểu nhầm 'bring' thành chuyển động vật lý; B đúng vì 'bring about' = cause."
+    },
+    {
+      "question_text": "The researcher 'put forward' a new theory about climate change. What did the researcher do?",
+      "option_a": "Moved the theory to a forward position physically",
+      "option_b": "Proposed or suggested the theory for consideration",
+      "option_c": "Delayed the theory to a future time",
+      "option_d": "Rejected the theory as incorrect",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bẫy: 'put forward' = đề xuất, trình bày (một ý tưởng), không phải 'đẩy về phía trước' theo nghĩa vật lý. A, C, D hiểu nhầm 'forward'; B đúng vì 'put forward' = propose."
+    },
+    {
+      "question_text": "Which sentence correctly uses 'in terms of'?",
+      "option_a": "In terms of the contract, we must pay the money by next month",
+      "option_b": "In terms of environmental impact, solar energy is cleaner than coal",
+      "option_c": "In terms of the agreement, the conditions are written clearly",
+      "option_d": "In terms of the dictionary, the word has multiple meanings",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Bẫy: 'in terms of' = về mặt, xét theo (một khía cạnh), không phải 'trong các điều khoản của'. A, C, D nhầm lẫn với 'terms' (điều khoản); B đúng vì 'in terms of' = from the perspective of."
+    },
+    {
+      "question_text": "The flight was delayed 'due to' severe weather. What caused the delay?",
+      "option_a": "The delay was expected to arrive soon",
+      "option_b": "The delay was owed to the airline company",
+      "option_c": "Severe weather caused the delay",
+      "option_d": "The delay was scheduled for a specific time",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "Bẫy: 'due to' = do, vì (một nguyên nhân), không phải 'đến hạn' hay 'nợ'. A, B, D hiểu nhầm 'due' thành 'expected' hoặc 'owed'; C đúng vì 'due to' = caused by."
+    },
+    {
+      "question_text": "In the sentence 'The company invested in technology; as a result, productivity increased', what does 'as a result' indicate?",
+      "option_a": "The company is still looking for results",
+      "option_b": "The productivity increase happened before the investment",
+      "option_c": "The productivity increase was a consequence of the investment",
+      "option_d": "The company will invest in technology in the future",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Bẫy: 'as a result' = do đó, vì vậy (kết quả), không phải 'như một kết quả' theo nghĩa đen. A, B, D hiểu nhầm thời gian hoặc ý nghĩa; C đúng vì 'as a result' = consequently."
+    }
+  ]
+}

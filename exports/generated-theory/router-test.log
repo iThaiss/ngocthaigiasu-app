@@ -1,0 +1,4 @@
+base=http://localhost:20128
+client-created
+response-created
+Message(id='resp_010ff90e9b70f26a016a2553a2d2648191a3f3e02deab41365', container=None, content=None, model='gpt-5.5', role=None, stop_details=None, stop_reason=None, stop_sequence=None, type=None, usage=Usage(cache_creation=None, cache_creation_input_tokens=None, cache_read_input_tokens=None, inference_geo=None, input_tokens=None, output_tokens=None, output_tokens_details=None, server_tool_use=None, service_tier=None), object='chat.completion', created=1780831140, choices=[{'index': 0, 'message': {'role': 'assistant', 'content': 'OK'}, 'finish_reason': 'stop'}])

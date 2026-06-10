@@ -1,0 +1,267 @@
+{
+  "words": [
+    {
+      "word": "notwithstanding",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "mặc dù, bất chấp; dùng để chỉ điều gì đó không ảnh hưởng đến kết luận hoặc hành động",
+      "definition_en": "in spite of; despite the fact that something exists or is true",
+      "level": "C1",
+      "synonyms": [
+        "despite",
+        "in spite of",
+        "regardless of"
+      ],
+      "antonyms": [
+        "because of",
+        "due to"
+      ],
+      "example_sentence": "Notwithstanding the economic downturn, the company maintained its investment in research and development."
+    },
+    {
+      "word": "be that as it may",
+      "pronunciation": "/biː ðæt æz ɪt meɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dù sao đi nữa, tuy nhiên; dùng để chuyển tiếp từ một ý kiến này sang ý kiến khác mà không hoàn toàn đồng ý",
+      "definition_en": "used to acknowledge a point while moving forward with a different or contrasting argument",
+      "level": "C1",
+      "synonyms": [
+        "however",
+        "nevertheless",
+        "that said"
+      ],
+      "antonyms": [],
+      "example_sentence": "Be that as it may, the evidence suggests that climate change is accelerating faster than previously predicted."
+    },
+    {
+      "word": "by the same token",
+      "pronunciation": "/baɪ ðə seɪm ˈtoʊkən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "theo cách tương tự, cũng vậy; dùng để chỉ ra rằng điều gì đó áp dụng theo cách tương tự như điều vừa nói",
+      "definition_en": "in the same way; for the same reason; similarly",
+      "level": "B2",
+      "synonyms": [
+        "similarly",
+        "likewise",
+        "in the same way"
+      ],
+      "antonyms": [
+        "conversely",
+        "by contrast"
+      ],
+      "example_sentence": "Students who excel in mathematics often perform well in physics; by the same token, those struggling with logic may find programming challenging."
+    },
+    {
+      "word": "to that end",
+      "pronunciation": "/tə ðæt end/",
+      "part_of_speech": "phrase",
+      "definition_vi": "để đạt được mục đích đó, vì lý do đó; dùng để giới thiệu một hành động hoặc biện pháp nhằm đạt được mục tiêu đã nêu",
+      "definition_en": "for that purpose; in order to achieve that goal",
+      "level": "B2",
+      "synonyms": [
+        "for that purpose",
+        "to achieve that",
+        "with that aim"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government aims to reduce carbon emissions by 50% by 2030; to that end, it has implemented stricter regulations on industrial pollution."
+    },
+    {
+      "word": "in the final analysis",
+      "pronunciation": "/ɪn ðə ˈfaɪnəl əˈnæləsɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuối cùng thì, xét cho cùng; dùng để giới thiệu kết luận hoặc nhận xét cuối cùng sau khi xem xét tất cả các yếu tố",
+      "definition_en": "when all factors are considered; ultimately; in conclusion",
+      "level": "C1",
+      "synonyms": [
+        "ultimately",
+        "in the end",
+        "when all is said and done"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the final analysis, the success of any educational reform depends on the commitment of teachers and adequate funding."
+    },
+    {
+      "word": "at the outset",
+      "pronunciation": "/æt ðə ˈaʊtset/",
+      "part_of_speech": "phrase",
+      "definition_vi": "ngay từ đầu, từ lúc bắt đầu; dùng để chỉ điều gì đó xảy ra hoặc được nêu rõ từ giai đoạn đầu tiên",
+      "definition_en": "at the beginning; from the start",
+      "level": "B2",
+      "synonyms": [
+        "at the beginning",
+        "from the start",
+        "initially"
+      ],
+      "antonyms": [
+        "at the end",
+        "eventually"
+      ],
+      "example_sentence": "At the outset of the pandemic, scientists were uncertain about the virus's transmission methods and long-term effects."
+    },
+    {
+      "word": "in this regard",
+      "pronunciation": "/ɪn ðɪs rɪˈɡɑːrd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "về vấn đề này, trong khía cạnh này; dùng để chỉ rõ rằng điều tiếp theo liên quan đến điều vừa nói",
+      "definition_en": "concerning this matter; with respect to this point",
+      "level": "B2",
+      "synonyms": [
+        "in this respect",
+        "on this point",
+        "as far as this is concerned"
+      ],
+      "antonyms": [],
+      "example_sentence": "The report highlights significant disparities in healthcare access across rural and urban areas; in this regard, government intervention is essential."
+    },
+    {
+      "word": "it is worth noting that",
+      "pronunciation": "/ɪt ɪz wɜːrθ ˈnoʊtɪŋ ðæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đáng chú ý rằng, cần lưu ý rằng; dùng để nhấn mạnh một điểm quan trọng hoặc chi tiết đáng lưu ý",
+      "definition_en": "it is important to mention; it deserves attention that",
+      "level": "B2",
+      "synonyms": [
+        "it should be noted",
+        "notably",
+        "significantly"
+      ],
+      "antonyms": [],
+      "example_sentence": "It is worth noting that the majority of participants in the study were from urban backgrounds, which may limit the generalizability of the findings."
+    },
+    {
+      "word": "in light of this",
+      "pronunciation": "/ɪn laɪt əv ðɪs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dựa trên điều này, xét ánh sáng của điều này; dùng để giới thiệu một kết luận hoặc hành động dựa trên thông tin vừa nêu",
+      "definition_en": "considering this fact; as a result of this information",
+      "level": "B2",
+      "synonyms": [
+        "given this",
+        "considering this",
+        "as a result"
+      ],
+      "antonyms": [],
+      "example_sentence": "In light of this evidence, researchers recommend a comprehensive review of current environmental policies."
+    },
+    {
+      "word": "to elaborate further",
+      "pronunciation": "/tə ɪˈlæbəreɪt ˈfɜːrðər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "để giải thích thêm chi tiết, để mở rộng thêm; dùng để giới thiệu thông tin bổ sung hoặc chi tiết hơn về điều vừa nói",
+      "definition_en": "to provide more detailed explanation; to expand on a point",
+      "level": "B2",
+      "synonyms": [
+        "to expand on",
+        "to clarify",
+        "to explain in more detail"
+      ],
+      "antonyms": [
+        "to summarize",
+        "to condense"
+      ],
+      "example_sentence": "To elaborate further, the study examined three distinct demographic groups and found significant variations in consumer behavior patterns."
+    },
+    {
+      "word": "in essence",
+      "pronunciation": "/ɪn ˈesəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "về bản chất, nói chung là; dùng để giới thiệu ý chính hoặc bản chất của vấn đề",
+      "definition_en": "fundamentally; basically; at its core",
+      "level": "B2",
+      "synonyms": [
+        "fundamentally",
+        "basically",
+        "at heart"
+      ],
+      "antonyms": [
+        "in detail",
+        "specifically"
+      ],
+      "example_sentence": "In essence, artificial intelligence is transforming industries by automating complex tasks and enabling data-driven decision-making."
+    },
+    {
+      "word": "from this perspective",
+      "pronunciation": "/frɒm ðɪs pərˈspektɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "từ góc độ này, từ quan điểm này; dùng để giới thiệu một cách nhìn nhận hoặc phân tích vấn đề từ một khía cạnh cụ thể",
+      "definition_en": "from this viewpoint; considering this angle",
+      "level": "B2",
+      "synonyms": [
+        "from this viewpoint",
+        "from this angle",
+        "in this light"
+      ],
+      "antonyms": [],
+      "example_sentence": "From this perspective, the rise of remote work represents not merely a temporary adjustment but a fundamental shift in organizational culture."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best completes the sentence? 'The project faced numerous obstacles during its initial phase; _____, the team successfully delivered the final product on schedule.'",
+      "option_a": "notwithstanding",
+      "option_b": "therefore",
+      "option_c": "furthermore",
+      "option_d": "meanwhile",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Câu này cần một từ nối chỉ sự tương phản mạnh mẽ giữa hai ý: gặp khó khăn nhưng vẫn thành công. 'Notwithstanding' (mặc dù, bất chấp) là lựa chọn đúng vì nó thể hiện rõ ý này. 'Therefore' (vì vậy) sai vì nó chỉ nguyên nhân-kết quả. 'Furthermore' (hơn nữa) và 'meanwhile' (trong khi đó) không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "Read the passage: 'Some critics argue that social media promotes superficial connections. _____, the platform has enabled marginalized communities to organize and amplify their voices.' Which phrase best fits the blank?",
+      "option_a": "By the same token",
+      "option_b": "Be that as it may",
+      "option_c": "To that end",
+      "option_d": "In the final analysis",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Be that as it may' (dù sao đi nữa) là cách tự nhiên để chuyển tiếp từ một quan điểm này sang một quan điểm khác mà không hoàn toàn đồng ý. 'By the same token' (theo cách tương tự) sai vì nó dùng để chỉ sự tương đồng, không phải tương phản. 'To that end' (để đạt được mục đích đó) và 'In the final analysis' (cuối cùng thì) không phù hợp với cấu trúc câu."
+    },
+    {
+      "question_text": "Which phrase is most appropriate to introduce a conclusion after discussing multiple factors? 'The research examined economic, social, and environmental impacts. _____, sustainable development requires integrated policy approaches.'",
+      "option_a": "At the outset",
+      "option_b": "In this regard",
+      "option_c": "In the final analysis",
+      "option_d": "From this perspective",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'In the final analysis' (cuối cùng thì) được dùng để giới thiệu kết luận sau khi xem xét tất cả các yếu tố. 'At the outset' (ngay từ đầu) sai vì nó chỉ điều gì đó ở giai đoạn đầu. 'In this regard' (về vấn đề này) và 'From this perspective' (từ góc độ này) không mạnh mẽ để giới thiệu kết luận cuối cùng."
+    },
+    {
+      "question_text": "Choose the best linking phrase: 'The government implemented strict lockdown measures to control the pandemic. _____, schools were closed and businesses were forced to operate remotely.'",
+      "option_a": "To that end",
+      "option_b": "In light of this",
+      "option_c": "It is worth noting that",
+      "option_d": "To elaborate further",
+      "correct_answer": "D",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'To elaborate further' (để giải thích thêm chi tiết) là lựa chọn đúng vì câu thứ hai cung cấp các ví dụ cụ thể về những biện pháp lockdown. 'To that end' (để đạt được mục đích đó) có thể gây nhầm lẫn nhưng 'to elaborate further' tự nhiên hơn. 'In light of this' (dựa trên điều này) sai vì nó chỉ nguyên nhân-kết quả, không phải giải thích thêm."
+    },
+    {
+      "question_text": "Which of the following is closest in meaning to 'in essence'? 'The debate over artificial intelligence centers on ethics and safety. _____, the technology raises fundamental questions about human agency and autonomy.'",
+      "option_a": "In detail",
+      "option_b": "Fundamentally",
+      "option_c": "Specifically",
+      "option_d": "Conversely",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Fundamentally' (về bản chất) là từ đồng nghĩa gần nhất với 'in essence' (về bản chất). Cả hai đều dùng để chỉ ý chính hoặc bản chất của vấn đề. 'In detail' (chi tiết) và 'Specifically' (cụ thể) sai vì chúng chỉ sự mở rộng chi tiết, không phải bản chất. 'Conversely' (ngược lại) là một từ nối tương phản, không phù hợp."
+    },
+    {
+      "question_text": "Read the sentence: 'The study revealed that remote work increases productivity for some employees. _____, organizational culture and team cohesion may suffer without in-person interaction.' What is the relationship between these two ideas?",
+      "option_a": "Cause and effect",
+      "option_b": "Similarity",
+      "option_c": "Contrast",
+      "option_d": "Addition",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Hai ý này thể hiện mối quan hệ tương phản: một mặt tích cực (tăng năng suất), mặt khác tiêu cực (ảnh hưởng đến văn hóa tổ chức). Từ nối thích hợp sẽ là 'However', 'Nevertheless', hoặc 'Be that as it may'. Đây là một bẫy vì học sinh có thể nhầm lẫn với 'addition' (thêm vào) nếu không chú ý đến ý nghĩa đối lập của hai câu."
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "words": [
+    {
+      "word": "successful",
+      "pronunciation": "/səkˈsesfəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đạt được kết quả tốt, thành công trong việc gì đó",
+      "definition_en": "achieving desired aim or result; accomplishing goals",
+      "level": "B1",
+      "synonyms": [
+        "prosperous",
+        "triumphant",
+        "victorious"
+      ],
+      "antonyms": [
+        "unsuccessful",
+        "failed"
+      ],
+      "example_sentence": "The company's successful expansion into new markets attracted many investors and boosted its reputation significantly."
+    },
+    {
+      "word": "successive",
+      "pronunciation": "/səkˈsesɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên tiếp, nối tiếp nhau (chỉ chuỗi sự kiện/người)",
+      "definition_en": "following one after another in order; consecutive",
+      "level": "B2",
+      "synonyms": [
+        "consecutive",
+        "sequential",
+        "continuous"
+      ],
+      "antonyms": [
+        "interrupted",
+        "sporadic"
+      ],
+      "example_sentence": "The team won three successive championships, demonstrating their dominance in the sport over consecutive years."
+    },
+    {
+      "word": "succession",
+      "pronunciation": "/səkˈseʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự nối tiếp, chuỗi liên tục; sự kế vị",
+      "definition_en": "a number of things following one after another; the process of following in order",
+      "level": "B2",
+      "synonyms": [
+        "sequence",
+        "series",
+        "chain"
+      ],
+      "antonyms": [
+        "interruption",
+        "gap"
+      ],
+      "example_sentence": "In rapid succession, the government announced three major policy reforms that surprised the public and media."
+    },
+    {
+      "word": "considerable",
+      "pronunciation": "/kənˈsɪdərəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, lớn, nhiều (về mức độ/số lượng)",
+      "definition_en": "large in amount, extent, or importance; substantial",
+      "level": "B1",
+      "synonyms": [
+        "substantial",
+        "significant",
+        "substantial"
+      ],
+      "antonyms": [
+        "negligible",
+        "insignificant"
+      ],
+      "example_sentence": "The research required considerable time and resources, but the findings proved invaluable for medical advancement."
+    },
+    {
+      "word": "considerate",
+      "pronunciation": "/kənˈsɪdərət/",
+      "part_of_speech": "adjective",
+      "definition_vi": "chu đáo, tế nhị, suy tính đến cảm xúc người khác",
+      "definition_en": "showing care and attention to the needs and feelings of others",
+      "level": "B1",
+      "synonyms": [
+        "thoughtful",
+        "attentive",
+        "caring"
+      ],
+      "antonyms": [
+        "inconsiderate",
+        "thoughtless"
+      ],
+      "example_sentence": "Her considerate approach to team management made employees feel valued and motivated to perform better."
+    },
+    {
+      "word": "consideration",
+      "pronunciation": "/kənˌsɪdəˈreɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự cân nhắc, xem xét; sự chu đáo; yếu tố cần xem xét",
+      "definition_en": "careful thought about something; a factor to be taken into account",
+      "level": "B1",
+      "synonyms": [
+        "deliberation",
+        "thought",
+        "factor"
+      ],
+      "antonyms": [
+        "disregard",
+        "neglect"
+      ],
+      "example_sentence": "Environmental protection is an important consideration in modern urban planning and development projects."
+    },
+    {
+      "word": "respective",
+      "pronunciation": "/rɪˈspektɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tương ứng, riêng từng cái (dùng khi nói về nhiều người/vật)",
+      "definition_en": "belonging separately to each of two or more people or things mentioned",
+      "level": "B2",
+      "synonyms": [
+        "corresponding",
+        "individual",
+        "separate"
+      ],
+      "antonyms": [
+        "common",
+        "shared"
+      ],
+      "example_sentence": "The three countries signed an agreement to strengthen their respective economies and promote regional cooperation."
+    },
+    {
+      "word": "respectful",
+      "pronunciation": "/rɪˈspektfəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tôn trọng, lễ phép, có thái độ kính trọng",
+      "definition_en": "showing admiration and deference; polite and courteous",
+      "level": "B1",
+      "synonyms": [
+        "polite",
+        "courteous",
+        "deferential"
+      ],
+      "antonyms": [
+        "disrespectful",
+        "rude"
+      ],
+      "example_sentence": "A respectful dialogue between generations helped bridge the cultural gap and foster mutual understanding."
+    },
+    {
+      "word": "respect",
+      "pronunciation": "/rɪˈspekt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự tôn trọng, kính trọng; tôn trọng, kính trọng (động từ)",
+      "definition_en": "admiration for someone or something; to regard with admiration",
+      "level": "B1",
+      "synonyms": [
+        "admiration",
+        "esteem",
+        "regard"
+      ],
+      "antonyms": [
+        "disrespect",
+        "contempt"
+      ],
+      "example_sentence": "Students should respect their teachers' expertise and dedication to providing quality education and guidance."
+    },
+    {
+      "word": "economic",
+      "pronunciation": "/ˌekəˈnɒmɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến kinh tế, tiết kiệm",
+      "definition_en": "relating to the production and consumption of goods and services; cost-effective",
+      "level": "B1",
+      "synonyms": [
+        "financial",
+        "fiscal",
+        "thrifty"
+      ],
+      "antonyms": [
+        "wasteful",
+        "extravagant"
+      ],
+      "example_sentence": "The government implemented economic reforms to reduce inflation and stimulate growth in the manufacturing sector."
+    },
+    {
+      "word": "economical",
+      "pronunciation": "/ˌekəˈnɒmɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tiết kiệm, không lãng phí (chỉ cách sử dụng tài nguyên)",
+      "definition_en": "using money, time, or resources carefully and not wastefully",
+      "level": "B1",
+      "synonyms": [
+        "thrifty",
+        "frugal",
+        "cost-effective"
+      ],
+      "antonyms": [
+        "wasteful",
+        "extravagant"
+      ],
+      "example_sentence": "Switching to LED bulbs is an economical choice that reduces electricity consumption and lowers monthly bills."
+    },
+    {
+      "word": "historic",
+      "pronunciation": "/hɪˈstɒrɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có ý nghĩa lịch sử, đáng nhớ trong lịch sử",
+      "definition_en": "famous or important in history; momentous",
+      "level": "B1",
+      "synonyms": [
+        "momentous",
+        "significant",
+        "memorable"
+      ],
+      "antonyms": [
+        "ordinary",
+        "insignificant"
+      ],
+      "example_sentence": "The historic agreement between the two nations marked a turning point in international relations and peace efforts."
+    },
+    {
+      "word": "historical",
+      "pronunciation": "/hɪˈstɒrɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến lịch sử, thuộc về lịch sử",
+      "definition_en": "relating to history or based on history; concerning past events",
+      "level": "B1",
+      "synonyms": [
+        "past",
+        "ancestral",
+        "archival"
+      ],
+      "antonyms": [
+        "contemporary",
+        "modern"
+      ],
+      "example_sentence": "Historical records show that the city was founded in the 15th century and served as a major trade center."
+    },
+    {
+      "word": "practical",
+      "pronunciation": "/ˈpræktɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, có thể áp dụng được, hữu ích trong thực hành",
+      "definition_en": "concerned with actual use or practice rather than theory; useful and realistic",
+      "level": "B1",
+      "synonyms": [
+        "pragmatic",
+        "realistic",
+        "useful"
+      ],
+      "antonyms": [
+        "theoretical",
+        "impractical"
+      ],
+      "example_sentence": "The training program provides practical skills that students can immediately apply in their future careers."
+    },
+    {
+      "word": "practicable",
+      "pronunciation": "/ˈpræktɪkəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể thực hiện được, khả thi (về kế hoạch/phương pháp)",
+      "definition_en": "able to be done or put into practice; feasible",
+      "level": "B2",
+      "synonyms": [
+        "feasible",
+        "viable",
+        "workable"
+      ],
+      "antonyms": [
+        "impracticable",
+        "unfeasible"
+      ],
+      "example_sentence": "The engineer proposed a practicable solution that could be implemented within the existing budget constraints."
+    },
+    {
+      "word": "sensible",
+      "pronunciation": "/ˈsensɪbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hợp lý, sáng suốt, có lý trí (chỉ quyết định/người)",
+      "definition_en": "reasonable and practical; showing good judgment",
+      "level": "B1",
+      "synonyms": [
+        "reasonable",
+        "prudent",
+        "wise"
+      ],
+      "antonyms": [
+        "foolish",
+        "unreasonable"
+      ],
+      "example_sentence": "It is sensible to invest in renewable energy sources given the long-term environmental and economic benefits."
+    },
+    {
+      "word": "sensitive",
+      "pronunciation": "/ˈsensɪtɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nhạy cảm, dễ bị ảnh hưởng, tinh tế (chỉ cảm xúc/vấn đề)",
+      "definition_en": "easily affected or hurt; responsive to external stimuli; dealing with delicate matters",
+      "level": "B1",
+      "synonyms": [
+        "delicate",
+        "touchy",
+        "responsive"
+      ],
+      "antonyms": [
+        "insensitive",
+        "thick-skinned"
+      ],
+      "example_sentence": "The documentary addressed sensitive issues related to mental health with respect and psychological awareness."
+    },
+    {
+      "word": "comparable",
+      "pronunciation": "/ˈkɒmpərəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể so sánh được, tương đương, ngang bằng",
+      "definition_en": "able to be compared; of similar quality or size",
+      "level": "B2",
+      "synonyms": [
+        "similar",
+        "equivalent",
+        "analogous"
+      ],
+      "antonyms": [
+        "incomparable",
+        "dissimilar"
+      ],
+      "example_sentence": "The two universities have comparable academic standards and offer similar opportunities for student development."
+    },
+    {
+      "word": "comparative",
+      "pronunciation": "/kəmˈpærətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "so sánh, tương đối (dùng khi so sánh hai thứ)",
+      "definition_en": "relating to or involving comparison; relative rather than absolute",
+      "level": "B1",
+      "synonyms": [
+        "relative",
+        "contrasting",
+        "relational"
+      ],
+      "antonyms": [
+        "absolute",
+        "independent"
+      ],
+      "example_sentence": "A comparative study of educational systems across countries revealed significant differences in teaching methodologies."
+    },
+    {
+      "word": "comprehensive",
+      "pronunciation": "/ˌkɒmprɪˈhensɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "toàn diện, bao quát, chi tiết đầy đủ",
+      "definition_en": "complete and including all or nearly all elements or aspects",
+      "level": "B1",
+      "synonyms": [
+        "thorough",
+        "complete",
+        "exhaustive"
+      ],
+      "antonyms": [
+        "partial",
+        "incomplete"
+      ],
+      "example_sentence": "The comprehensive report examined all aspects of climate change, from causes to potential solutions and impacts."
+    },
+    {
+      "word": "comprehensible",
+      "pronunciation": "/ˌkɒmprɪˈhensɪbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ hiểu, có thể hiểu được",
+      "definition_en": "able to be understood; intelligible",
+      "level": "B2",
+      "synonyms": [
+        "understandable",
+        "intelligible",
+        "clear"
+      ],
+      "antonyms": [
+        "incomprehensible",
+        "unclear"
+      ],
+      "example_sentence": "The teacher explained complex scientific concepts in a comprehensible manner using everyday examples and visual aids."
+    },
+    {
+      "word": "distinct",
+      "pronunciation": "/dɪˈstɪŋkt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "rõ ràng, khác biệt, riêng biệt (có thể phân biệt rõ)",
+      "definition_en": "recognizably different in nature; clearly defined or marked",
+      "level": "B1",
+      "synonyms": [
+        "different",
+        "separate",
+        "clear"
+      ],
+      "antonyms": [
+        "similar",
+        "blurred"
+      ],
+      "example_sentence": "The research identified two distinct groups of consumers with different preferences and purchasing behaviors."
+    },
+    {
+      "word": "distinctive",
+      "pronunciation": "/dɪˈstɪŋktɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đặc trưng, nổi bật, có tính chất riêng biệt",
+      "definition_en": "having a quality that makes something different and easily noticed",
+      "level": "B1",
+      "synonyms": [
+        "characteristic",
+        "unique",
+        "notable"
+      ],
+      "antonyms": [
+        "ordinary",
+        "common"
+      ],
+      "example_sentence": "The brand's distinctive logo and packaging design helped it stand out in a crowded marketplace."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "After three _______ years of economic growth, the country faced unexpected challenges that threatened its stability.",
+      "option_a": "successful",
+      "option_b": "successive",
+      "option_c": "successfully",
+      "option_d": "succession",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Cần tính từ để mô tả 'years' (những năm). 'Successive' = liên tiếp, nối tiếp nhau (ba năm liên tiếp). 'Successful' = thành công (không phù hợp về nghĩa ở đây, vì nó chỉ kết quả, không chỉ sự nối tiếp)."
+    },
+    {
+      "question_text": "The company's _______ in expanding to new markets demonstrated strong leadership and strategic planning.",
+      "option_a": "successful",
+      "option_b": "successive",
+      "option_c": "success",
+      "option_d": "succession",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Successful' (tính từ) mô tả sự mở rộng đạt được kết quả tốt. 'Successive' = liên tiếp (sai nghĩa). 'Success' là danh từ (cần tính từ). 'Succession' = sự kế vị (sai nghĩa)."
+    },
+    {
+      "question_text": "The _______ amount of data collected required advanced analytical tools to process and interpret accurately.",
+      "option_a": "considerate",
+      "option_b": "considerable",
+      "option_c": "consideration",
+      "option_d": "considered",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Considerable' (tính từ) = đáng kể, lớn (mô tả 'amount'). 'Considerate' = chu đáo, tế nhị (sai nghĩa). 'Consideration' = sự cân nhắc (danh từ, sai). 'Considered' = được cân nhắc (sai ngữ cảnh)."
+    },
+    {
+      "question_text": "Her _______ behavior toward colleagues created a positive work environment and improved team morale.",
+      "option_a": "considerable",
+      "option_b": "considerate",
+      "option_c": "consideration",
+      "option_d": "considering",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Considerate' (tính từ) = chu đáo, tế nhị (mô tả hành vi). 'Considerable' = đáng kể (sai nghĩa). 'Consideration' = sự cân nhắc (danh từ). 'Considering' = xem xét (sai dạng)."
+    },
+    {
+      "question_text": "The _______ governments agreed to strengthen bilateral trade and cultural exchanges in their regions.",
+      "option_a": "respective",
+      "option_b": "respectful",
+      "option_c": "respectable",
+      "option_d": "respected",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "'Respective' (tính từ) = tương ứng, riêng từng cái (khi nói về nhiều chính phủ). 'Respectful' = tôn trọng (sai nghĩa). 'Respectable' = đáng kính (sai). 'Respected' = được tôn trọng (sai)."
+    },
+    {
+      "question_text": "The _______ tone of the negotiation helped both parties reach a mutually beneficial agreement.",
+      "option_a": "respective",
+      "option_b": "respectful",
+      "option_c": "respectable",
+      "option_d": "respecting",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Respectful' (tính từ) = tôn trọng, lễ phép (mô tả 'tone'). 'Respective' = tương ứng (sai nghĩa). 'Respectable' = đáng kính (sai). 'Respecting' = tôn trọng (sai dạng)."
+    },
+    {
+      "question_text": "The government introduced _______ policies to reduce energy consumption and promote sustainable development.",
+      "option_a": "economic",
+      "option_b": "economical",
+      "option_c": "economics",
+      "option_d": "economically",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "'Economical' (tính từ) = tiết kiệm, không lãng phí (mô tả chính sách). 'Economic' = liên quan đến kinh tế (sai, không chỉ tiết kiệm). 'Economics' = kinh tế học (danh từ). 'Economically' = một cách tiết kiệm (trạng từ, sai)."
+    },
+    {
+      "question_text": "The _______ significance of the treaty was recognized by historians as a turning point in international relations.",
+      "option_a": "historic",
+      "option_b": "historical",
+      "option_c": "historically",
+      "option_d": "historicity",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "'Historic' (tính từ) = có ý nghĩa lịch sử, đáng nhớ (mô tả 'significance'). 'Historical' = liên quan đến lịch sử (sai, chỉ thuộc về lịch sử chứ không chỉ tầm quan trọng). 'Historically' = về mặt lịch sử (trạng từ). 'Historicity' = tính lịch sử (danh từ)."
+    },
+    {
+      "question_text": "The _______ approach to problem-solving emphasized real-world applications rather than theoretical concepts.",
+      "option_a": "practical",
+      "option_b": "practicable",
+      "option_c": "practice",
+      "option_d": "practically",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "'Practical' (tính từ) = thực tế, hữu ích trong thực hành (mô tả 'approach'). 'Practicable' = có thể thực hiện được (sai, chỉ khả thi chứ không chỉ thực tế). 'Practice' = thực hành (danh từ). 'Practically' = hầu như (trạng từ)."
+    },
+    {
+      "question_text": "The engineer proposed a _______ solution that could be implemented within the existing budget and timeline.",
+      "option_a": "practical",
+      "option_b": "practicable",
+      "option_c": "practiced",
+      "option_d": "practicing",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "advanced",
+      "explanation": "'Practicable' (tính từ) = có thể thực hiện được, khả thi (mô tả 'solution'). 'Practical' = thực tế (sai, không chỉ khả thi). 'Practiced' = có kinh nghiệm (sai). 'Practicing' = đang thực hành (sai)."
+    },
+    {
+      "question_text": "It is _______ to invest in education as it provides long-term benefits for both individuals and society.",
+      "option_a": "sensible",
+      "option_b": "sensitive",
+      "option_c": "senseless",
+      "option_d": "sensing",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Sensible' (tính từ) = hợp lý, sáng suốt (mô tả quyết định đầu tư). 'Sensitive' = nhạy cảm (sai). 'Senseless' = vô lý (sai, trái nghĩa). 'Sensing' = cảm nhận (sai dạng)."
+    },
+    {
+      "question_text": "The documentary addressed _______ topics such as mental health and social inequality with care and respect.",
+      "option_a": "sensible",
+      "option_b": "sensitive",
+      "option_c": "sensory",
+      "option_d": "sensational",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "'Sensitive' (tính từ) = nhạy cảm, tinh tế (mô tả các chủ đề cần xử lý cẩn thận). 'Sensible' = hợp lý (sai). 'Sensory' = liên quan đến giác quan (sai). 'Sensational' = gây chú ý (sai)."
+    }
+  ]
+}

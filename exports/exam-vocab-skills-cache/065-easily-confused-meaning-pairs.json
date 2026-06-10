@@ -1,0 +1,530 @@
+{
+  "words": [
+    {
+      "word": "economic",
+      "pronunciation": "/ˌekəˈnɒmɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến kinh tế, hệ thống sản xuất và tiêu dùng của một quốc gia",
+      "definition_en": "relating to the system of money, jobs, and trade in a country or region",
+      "level": "B1",
+      "synonyms": [
+        "financial",
+        "commercial"
+      ],
+      "antonyms": [],
+      "example_sentence": "The government introduced new economic policies to reduce unemployment and boost growth."
+    },
+    {
+      "word": "economical",
+      "pronunciation": "/ˌekəˈnɒmɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tiết kiệm, không lãng phí tiền bạc hoặc tài nguyên",
+      "definition_en": "using money, time, or resources carefully and not wastefully",
+      "level": "B1",
+      "synonyms": [
+        "thrifty",
+        "cost-effective"
+      ],
+      "antonyms": [
+        "wasteful",
+        "extravagant"
+      ],
+      "example_sentence": "LED bulbs are more economical than traditional incandescent lights because they consume less electricity."
+    },
+    {
+      "word": "historic",
+      "pronunciation": "/hɪˈstɒrɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có tầm quan trọng lịch sử, đáng nhớ, thay đổi lịch sử",
+      "definition_en": "important or significant in history; memorable and influential",
+      "level": "B1",
+      "synonyms": [
+        "momentous",
+        "significant"
+      ],
+      "antonyms": [
+        "ordinary",
+        "insignificant"
+      ],
+      "example_sentence": "The moon landing in 1969 was a historic moment that inspired generations of scientists worldwide."
+    },
+    {
+      "word": "historical",
+      "pronunciation": "/hɪˈstɒrɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến lịch sử, thuộc về quá khứ, dựa trên sự kiện lịch sử",
+      "definition_en": "relating to history or the past; based on or concerned with past events",
+      "level": "B1",
+      "synonyms": [
+        "past",
+        "ancient"
+      ],
+      "antonyms": [
+        "modern",
+        "contemporary"
+      ],
+      "example_sentence": "Historians use historical documents and archaeological evidence to understand ancient civilizations."
+    },
+    {
+      "word": "effective",
+      "pronunciation": "/ɪˈfektɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có hiệu quả, đạt được kết quả mong muốn, thành công",
+      "definition_en": "successful in producing the desired result or effect",
+      "level": "B1",
+      "synonyms": [
+        "successful",
+        "productive"
+      ],
+      "antonyms": [
+        "ineffective",
+        "unsuccessful"
+      ],
+      "example_sentence": "Regular exercise is an effective way to improve both physical and mental health."
+    },
+    {
+      "word": "efficient",
+      "pronunciation": "/ɪˈfɪʃənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "làm việc tốt mà không lãng phí thời gian, năng lượng hay tài nguyên",
+      "definition_en": "working in a well-organized and productive way without wasting time or energy",
+      "level": "B1",
+      "synonyms": [
+        "productive",
+        "streamlined"
+      ],
+      "antonyms": [
+        "inefficient",
+        "wasteful"
+      ],
+      "example_sentence": "Modern manufacturing processes are more efficient because robots can work faster and more accurately than humans."
+    },
+    {
+      "word": "sensible",
+      "pronunciation": "/ˈsensəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "hợp lý, thông minh, có ý thức, đưa ra quyết định sáng suốt",
+      "definition_en": "reasonable and practical; showing good judgment",
+      "level": "B1",
+      "synonyms": [
+        "reasonable",
+        "prudent"
+      ],
+      "antonyms": [
+        "foolish",
+        "irrational"
+      ],
+      "example_sentence": "It is sensible to wear a seatbelt while driving to reduce the risk of serious injury."
+    },
+    {
+      "word": "sensitive",
+      "pronunciation": "/ˈsensətɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ bị tổn thương cảm xúc, nhạy cảm với những thay đổi, hoặc dễ bị kích thích",
+      "definition_en": "easily hurt emotionally; responsive to physical stimuli; requiring careful handling",
+      "level": "B1",
+      "synonyms": [
+        "touchy",
+        "responsive"
+      ],
+      "antonyms": [
+        "insensitive",
+        "thick-skinned"
+      ],
+      "example_sentence": "Some people have sensitive skin that reacts negatively to certain chemicals in cosmetics."
+    },
+    {
+      "word": "continual",
+      "pronunciation": "/kənˈtɪnjuəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "xảy ra nhiều lần, liên tục nhưng có những khoảng ngắt",
+      "definition_en": "happening repeatedly over a period of time with breaks in between",
+      "level": "B2",
+      "synonyms": [
+        "repeated",
+        "frequent"
+      ],
+      "antonyms": [
+        "continuous",
+        "uninterrupted"
+      ],
+      "example_sentence": "The continual interruptions during the meeting made it difficult for the speaker to maintain focus."
+    },
+    {
+      "word": "continuous",
+      "pronunciation": "/kənˈtɪnjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không ngừng, liên tục mà không có khoảng ngắt",
+      "definition_en": "happening or existing without stopping; uninterrupted",
+      "level": "B2",
+      "synonyms": [
+        "uninterrupted",
+        "constant"
+      ],
+      "antonyms": [
+        "intermittent",
+        "discontinuous"
+      ],
+      "example_sentence": "The continuous flow of water from the waterfall creates a soothing sound that relaxes visitors."
+    },
+    {
+      "word": "classic",
+      "pronunciation": "/ˈklæsɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "kinh điển, được công nhận là xuất sắc và có giá trị lâu dài",
+      "definition_en": "judged over a period of time to be of the highest quality; timeless",
+      "level": "B1",
+      "synonyms": [
+        "timeless",
+        "exemplary"
+      ],
+      "antonyms": [
+        "modern",
+        "contemporary"
+      ],
+      "example_sentence": "Jane Austen's novels are considered classic literature that continues to influence writers today."
+    },
+    {
+      "word": "classical",
+      "pronunciation": "/ˈklæsɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến Hy Lạp và La Mã cổ đại, hoặc phong cách truyền thống",
+      "definition_en": "relating to ancient Greece and Rome; following traditional styles and methods",
+      "level": "B1",
+      "synonyms": [
+        "traditional",
+        "ancient"
+      ],
+      "antonyms": [
+        "modern",
+        "contemporary"
+      ],
+      "example_sentence": "Classical architecture features columns and symmetry, as seen in ancient Greek temples."
+    },
+    {
+      "word": "practical",
+      "pronunciation": "/ˈpræktɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, có thể áp dụng được, hữu ích trong thực tế",
+      "definition_en": "concerned with actual use or real situations rather than theory",
+      "level": "B1",
+      "synonyms": [
+        "pragmatic",
+        "useful"
+      ],
+      "antonyms": [
+        "theoretical",
+        "impractical"
+      ],
+      "example_sentence": "The workshop provided practical advice on how to start a small business successfully."
+    },
+    {
+      "word": "practicable",
+      "pronunciation": "/ˈpræktɪkəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể thực hiện được, khả thi",
+      "definition_en": "able to be done or put into practice; feasible",
+      "level": "B2",
+      "synonyms": [
+        "feasible",
+        "viable"
+      ],
+      "antonyms": [
+        "impracticable",
+        "impossible"
+      ],
+      "example_sentence": "The engineer confirmed that the new design is practicable within the current budget and timeline."
+    },
+    {
+      "word": "notable",
+      "pronunciation": "/ˈnəʊtəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng chú ý, nổi bật, quan trọng đủ để được nhớ đến",
+      "definition_en": "worthy of attention or notice; remarkable or significant",
+      "level": "B2",
+      "synonyms": [
+        "remarkable",
+        "significant"
+      ],
+      "antonyms": [
+        "insignificant",
+        "unremarkable"
+      ],
+      "example_sentence": "The notable increase in renewable energy usage shows that countries are committed to fighting climate change."
+    },
+    {
+      "word": "noteable",
+      "pronunciation": "/ˈnəʊtəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể ghi chú được, đáng để ghi lại (cách viết hiếm, không chuẩn)",
+      "definition_en": "able to be noted or recorded (archaic or non-standard spelling)",
+      "level": "B2",
+      "synonyms": [
+        "notable"
+      ],
+      "antonyms": [],
+      "example_sentence": "While 'noteable' appears in some texts, 'notable' is the standard and preferred spelling in modern English."
+    },
+    {
+      "word": "ingenious",
+      "pronunciation": "/ɪnˈdʒiːniəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thông minh, sáng tạo, có khả năng phát minh ra những giải pháp thông minh",
+      "definition_en": "clever, original, and inventive; showing great skill and imagination",
+      "level": "B2",
+      "synonyms": [
+        "clever",
+        "inventive"
+      ],
+      "antonyms": [
+        "stupid",
+        "unimaginative"
+      ],
+      "example_sentence": "The engineer's ingenious solution to the water shortage problem impressed the entire community."
+    },
+    {
+      "word": "ingenuous",
+      "pronunciation": "/ɪnˈdʒenjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "ngây thơ, chân thành, không giấu giếm, dễ bị lừa",
+      "definition_en": "innocent and honest; frank and straightforward; naive",
+      "level": "B2",
+      "synonyms": [
+        "naive",
+        "candid"
+      ],
+      "antonyms": [
+        "cunning",
+        "deceitful"
+      ],
+      "example_sentence": "The ingenuous child believed every story the magician told without questioning its truthfulness."
+    },
+    {
+      "word": "adapt",
+      "pronunciation": "/əˈdæpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "thích nghi, điều chỉnh để phù hợp với hoàn cảnh mới",
+      "definition_en": "to change or adjust to fit new conditions or circumstances",
+      "level": "B1",
+      "synonyms": [
+        "adjust",
+        "modify"
+      ],
+      "antonyms": [
+        "resist",
+        "refuse"
+      ],
+      "example_sentence": "Animals must adapt to climate change by migrating to cooler regions or changing their behavior."
+    },
+    {
+      "word": "adopt",
+      "pronunciation": "/əˈdɒpt/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhận nuôi, chấp nhận, áp dụng một chính sách hoặc phương pháp",
+      "definition_en": "to take a child as one's own; to accept or start using a new method or idea",
+      "level": "B1",
+      "synonyms": [
+        "accept",
+        "implement"
+      ],
+      "antonyms": [
+        "reject",
+        "abandon"
+      ],
+      "example_sentence": "Many companies have adopted remote work policies to improve employee satisfaction and productivity."
+    },
+    {
+      "word": "beside",
+      "pronunciation": "/bɪˈsaɪd/",
+      "part_of_speech": "noun",
+      "definition_vi": "bên cạnh, ở gần, sát bên",
+      "definition_en": "at the side of; next to",
+      "level": "B1",
+      "synonyms": [
+        "next to",
+        "alongside"
+      ],
+      "antonyms": [],
+      "example_sentence": "The small cottage sits beside a beautiful lake, offering stunning views from every window."
+    },
+    {
+      "word": "besides",
+      "pronunciation": "/bɪˈsaɪdz/",
+      "part_of_speech": "noun",
+      "definition_vi": "ngoài ra, thêm vào đó, bên cạnh (có nghĩa thêm)",
+      "definition_en": "in addition to; moreover; also; apart from",
+      "level": "B1",
+      "synonyms": [
+        "moreover",
+        "furthermore"
+      ],
+      "antonyms": [],
+      "example_sentence": "Besides being an excellent teacher, Dr. Smith is also a published author and researcher."
+    },
+    {
+      "word": "complement",
+      "pronunciation": "/ˈkɒmplɪment/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều bổ sung, làm cho hoàn chỉnh, kết hợp tốt với",
+      "definition_en": "something that completes or goes well with something else; to complete or enhance",
+      "level": "B2",
+      "synonyms": [
+        "supplement",
+        "enhance"
+      ],
+      "antonyms": [],
+      "example_sentence": "The red wine complements the rich flavors of the beef steak perfectly."
+    },
+    {
+      "word": "compliment",
+      "pronunciation": "/ˈkɒmplɪment/",
+      "part_of_speech": "noun",
+      "definition_vi": "lời khen, lời tặng khen, nói những điều tốt đẹp về ai",
+      "definition_en": "an expression of praise or admiration; to praise someone",
+      "level": "B1",
+      "synonyms": [
+        "praise",
+        "flattery"
+      ],
+      "antonyms": [
+        "insult",
+        "criticism"
+      ],
+      "example_sentence": "She received many compliments on her impressive presentation at the international conference."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's _______ reforms aimed to reduce inflation and create more jobs in the manufacturing sector.",
+      "option_a": "economic",
+      "option_b": "economical",
+      "option_c": "economics",
+      "option_d": "economist",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "Cần tính từ chỉ 'liên quan đến kinh tế' (economic). 'Economical' có nghĩa tiết kiệm, không phù hợp ngữ cảnh nói về chính sách quốc gia."
+    },
+    {
+      "question_text": "LED bulbs are more _______ than traditional lights because they use less electricity and last longer.",
+      "option_a": "economic",
+      "option_b": "economical",
+      "option_c": "economically",
+      "option_d": "economics",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Economical' (tiết kiệm) là đúng vì nói về việc sử dụng ít điện năng. 'Economic' chỉ liên quan đến kinh tế quốc gia, không phù hợp."
+    },
+    {
+      "question_text": "The moon landing in 1969 was a _______ achievement that changed the course of space exploration forever.",
+      "option_a": "historic",
+      "option_b": "historical",
+      "option_c": "history",
+      "option_d": "historically",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Historic' (có tầm quan trọng lịch sử, đáng nhớ) là đúng. 'Historical' chỉ 'liên quan đến lịch sử' mà không nhấn mạnh tầm quan trọng."
+    },
+    {
+      "question_text": "Scholars use _______ documents and archaeological evidence to understand how ancient civilizations lived.",
+      "option_a": "historic",
+      "option_b": "historical",
+      "option_c": "history",
+      "option_d": "historian",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Historical' (liên quan đến lịch sử) là đúng vì nói về các tài liệu từ quá khứ. 'Historic' chỉ những sự kiện quan trọng."
+    },
+    {
+      "question_text": "Regular exercise is an _______ way to improve both physical and mental health.",
+      "option_a": "effective",
+      "option_b": "efficient",
+      "option_c": "effectively",
+      "option_d": "efficiency",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Effective' (có hiệu quả, đạt kết quả mong muốn) là đúng. 'Efficient' chỉ làm việc tốt mà không lãng phí thời gian/năng lượng, không phù hợp ngữ cảnh này."
+    },
+    {
+      "question_text": "Modern manufacturing processes are more _______ because robots can work faster and more accurately than humans.",
+      "option_a": "effective",
+      "option_b": "efficient",
+      "option_c": "effectively",
+      "option_d": "effectiveness",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Efficient' (làm việc tốt mà không lãng phí) là đúng vì nói về cách thức hoạt động. 'Effective' chỉ kết quả cuối cùng."
+    },
+    {
+      "question_text": "It is _______ to wear a seatbelt while driving to reduce the risk of serious injury.",
+      "option_a": "sensible",
+      "option_b": "sensitive",
+      "option_c": "sensibly",
+      "option_d": "sensitivity",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Sensible' (hợp lý, thông minh) là đúng vì nói về quyết định sáng suốt. 'Sensitive' chỉ dễ bị tổn thương cảm xúc."
+    },
+    {
+      "question_text": "Some people have _______ skin that reacts negatively to certain chemicals in cosmetics and skincare products.",
+      "option_a": "sensible",
+      "option_b": "sensitive",
+      "option_c": "sensibly",
+      "option_d": "sensibility",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Sensitive' (nhạy cảm, dễ bị kích thích) là đúng. 'Sensible' chỉ hợp lý, không liên quan đến phản ứng da."
+    },
+    {
+      "question_text": "Which sentence uses 'continuous' correctly?\nA) The _______ interruptions made the meeting very difficult to follow.\nB) The _______ flow of water from the waterfall creates a soothing sound.\nC) The _______ rain throughout the week caused flooding in several areas.\nD) The _______ phone calls from the customer annoyed the staff.",
+      "option_a": "A) continual",
+      "option_b": "B) continuous",
+      "option_c": "C) continuous",
+      "option_d": "D) continual",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "'Continuous' (không ngừng, liên tục) phù hợp với 'flow of water' vì nước chảy không ngừng. 'Continual' (lặp lại với khoảng ngắt) phù hợp với 'interruptions' và 'phone calls' vì chúng xảy ra nhiều lần."
+    },
+    {
+      "question_text": "The engineer's _______ solution to the water shortage problem impressed the entire community.",
+      "option_a": "ingenious",
+      "option_b": "ingenuous",
+      "option_c": "ingeniously",
+      "option_d": "ingenuity",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Ingenious' (thông minh, sáng tạo) là đúng vì nói về giải pháp thông minh. 'Ingenuous' (ngây thơ, chân thành) không phù hợp."
+    },
+    {
+      "question_text": "The _______ child believed every story the magician told without questioning its truthfulness.",
+      "option_a": "ingenious",
+      "option_b": "ingenuous",
+      "option_c": "ingeniously",
+      "option_d": "ingenuity",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Ingenuous' (ngây thơ, dễ bị lừa) là đúng vì nói về tính chất của đứa trẻ. 'Ingenious' chỉ thông minh, sáng tạo."
+    },
+    {
+      "question_text": "Many companies have _______ remote work policies to improve employee satisfaction and productivity.",
+      "option_a": "adapted",
+      "option_b": "adopted",
+      "option_c": "adjusted",
+      "option_d": "accepted",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Adopted' (chấp nhận, áp dụng) là đúng vì nói về việc bắt đầu sử dụng chính sách mới. 'Adapted' chỉ điều chỉnh để phù hợp."
+    }
+  ]
+}

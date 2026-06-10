@@ -1,0 +1,360 @@
+{
+  "words": [
+    {
+      "word": "complement",
+      "pronunciation": "/ˈkɒmplɪment/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều bổ sung hoàn thiện; làm cho hoàn chỉnh hơn (khác với compliment = khen ngợi)",
+      "definition_en": "something that completes or goes well with something else; to complete or enhance",
+      "level": "B2",
+      "synonyms": [
+        "supplement",
+        "addition",
+        "enhancement"
+      ],
+      "antonyms": [
+        "detraction",
+        "diminishment"
+      ],
+      "example_sentence": "The wine selection complements the menu perfectly, offering a diverse range of flavors."
+    },
+    {
+      "word": "elicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "lôi kéo ra, khai thác thông tin từ ai đó (khác với illicit = bất hợp pháp)",
+      "definition_en": "to draw out or evoke information, response, or reaction from someone",
+      "level": "B2",
+      "synonyms": [
+        "extract",
+        "evoke",
+        "draw out"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "The teacher's questions were designed to elicit critical thinking from her students."
+    },
+    {
+      "word": "imminent",
+      "pronunciation": "/ˈɪmɪnənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "sắp xảy ra, cận kề (khác với eminent = nổi tiếng)",
+      "definition_en": "about to happen; impending in the very near future",
+      "level": "B2",
+      "synonyms": [
+        "impending",
+        "forthcoming",
+        "approaching"
+      ],
+      "antonyms": [
+        "distant",
+        "remote"
+      ],
+      "example_sentence": "With the imminent arrival of the monsoon season, farmers began preparing their fields."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mơ hồ, có thể hiểu theo nhiều cách; không rõ ràng (khác với ambivalent = có hai cảm xúc mâu thuẫn)",
+      "definition_en": "open to more than one interpretation; unclear or uncertain in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The contract contained ambiguous language that led to disputes between the two parties."
+    },
+    {
+      "word": "allusion",
+      "pronunciation": "/əˈluːʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "gợi ý gián tiếp, ám chỉ (khác với illusion = ảo giác, delusion = tưởng tượng sai)",
+      "definition_en": "an indirect or passing reference to something; a hint",
+      "level": "B2",
+      "synonyms": [
+        "reference",
+        "hint",
+        "suggestion"
+      ],
+      "antonyms": [
+        "explicit statement",
+        "direct mention"
+      ],
+      "example_sentence": "The author made an allusion to Greek mythology in the opening chapter of her novel."
+    },
+    {
+      "word": "disparate",
+      "pronunciation": "/ˈdɪspərət/",
+      "part_of_speech": "adjective",
+      "definition_vi": "khác biệt lớn, không giống nhau; không thể so sánh được",
+      "definition_en": "fundamentally different in kind; not able to be compared",
+      "level": "B2",
+      "synonyms": [
+        "different",
+        "distinct",
+        "dissimilar"
+      ],
+      "antonyms": [
+        "similar",
+        "comparable"
+      ],
+      "example_sentence": "The study examined disparate groups of participants from different socioeconomic backgrounds."
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "/præɡˈmætɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, thiết thực; dựa trên thực tế hơn là lý thuyết",
+      "definition_en": "dealing with things in a practical, realistic way based on actual circumstances",
+      "level": "B2",
+      "synonyms": [
+        "practical",
+        "realistic",
+        "sensible"
+      ],
+      "antonyms": [
+        "idealistic",
+        "theoretical"
+      ],
+      "example_sentence": "The government adopted a pragmatic approach to solving the housing crisis."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm cho bớt nghiêm trọng; giảm tác động xấu",
+      "definition_en": "to make something less severe or serious; to reduce the impact of something negative",
+      "level": "B2",
+      "synonyms": [
+        "alleviate",
+        "reduce",
+        "lessen"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "The company implemented new safety measures to mitigate the risk of workplace accidents."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác thực; cung cấp bằng chứng cho",
+      "definition_en": "to provide evidence or proof for something; to support with facts",
+      "level": "B2",
+      "synonyms": [
+        "verify",
+        "confirm",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researcher needed to substantiate her claims with empirical data before publishing."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, tự nhiên có sẵn; không thể tách rời",
+      "definition_en": "existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "external",
+        "acquired"
+      ],
+      "example_sentence": "There is an inherent risk in any investment, no matter how carefully it is planned."
+    },
+    {
+      "word": "arbitrary",
+      "pronunciation": "/ˈɑːrbɪtreri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tùy tiện, không có cơ sở logic; được quyết định bởi cá nhân chứ không phải quy tắc",
+      "definition_en": "based on random choice or personal whim rather than reason or system",
+      "level": "B2",
+      "synonyms": [
+        "random",
+        "capricious",
+        "whimsical"
+      ],
+      "antonyms": [
+        "systematic",
+        "logical"
+      ],
+      "example_sentence": "The judge's arbitrary decision to dismiss the case without explanation angered the plaintiff."
+    },
+    {
+      "word": "candid",
+      "pronunciation": "/ˈkændɪd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thẳng thắn, chân thành; nói thật không che giấu",
+      "definition_en": "frank, honest, and straightforward in expression; not holding back the truth",
+      "level": "B2",
+      "synonyms": [
+        "frank",
+        "honest",
+        "forthright"
+      ],
+      "antonyms": [
+        "evasive",
+        "dishonest"
+      ],
+      "example_sentence": "In her candid interview, the actress revealed personal struggles she had never discussed publicly."
+    },
+    {
+      "word": "facilitate",
+      "pronunciation": "/fəˈsɪlɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tạo điều kiện thuận lợi, giúp dễ dàng hơn; thúc đẩy",
+      "definition_en": "to make something easier or help it happen more smoothly",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "promote",
+        "assist"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Technology has facilitated communication across continents, breaking down geographical barriers."
+    },
+    {
+      "word": "tangible",
+      "pronunciation": "/ˈtændʒɪbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể cảm nhận được, thực tế; rõ ràng, cụ thể (khác với intangible = vô hình)",
+      "definition_en": "able to be touched or felt; real and concrete rather than abstract",
+      "level": "B2",
+      "synonyms": [
+        "concrete",
+        "physical",
+        "real"
+      ],
+      "antonyms": [
+        "intangible",
+        "abstract"
+      ],
+      "example_sentence": "The company showed tangible results in productivity after implementing the new training program."
+    },
+    {
+      "word": "obscure",
+      "pronunciation": "/əbˈskjʊr/",
+      "part_of_speech": "noun",
+      "definition_vi": "mờ ám, không rõ ràng; che khuất, làm mất đi sự rõ ràng",
+      "definition_en": "not clearly expressed or easily understood; to hide or make unclear",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "conceal"
+      ],
+      "antonyms": [
+        "clear",
+        "obvious"
+      ],
+      "example_sentence": "The author's obscure writing style made the philosophical concepts difficult for readers to grasp."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "minh oan, chứng tỏ là đúng; bảo vệ danh dự",
+      "definition_en": "to clear someone of blame or suspicion; to prove or justify something as correct",
+      "level": "B2",
+      "synonyms": [
+        "exonerate",
+        "justify",
+        "validate"
+      ],
+      "antonyms": [
+        "condemn",
+        "incriminate"
+      ],
+      "example_sentence": "The new evidence vindicated the defendant, proving his innocence after years of wrongful imprisonment."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which word best describes something that is about to happen very soon?",
+      "option_a": "eminent",
+      "option_b": "imminent",
+      "option_c": "immanent",
+      "option_d": "imminently",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (imminent) là đúng. 'Imminent' = sắp xảy ra. 'Eminent' = nổi tiếng. Đây là bẫy từ phổ biến vì hai từ nghe giống nhau nhưng ý nghĩa hoàn toàn khác."
+    },
+    {
+      "question_text": "The contract's _______ language created confusion, as it could be interpreted in multiple ways.",
+      "option_a": "ambivalent",
+      "option_b": "ambiguous",
+      "option_c": "ambitious",
+      "option_d": "ambidextrous",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (ambiguous) là đúng. 'Ambiguous' = mơ hồ, có thể hiểu theo nhiều cách. 'Ambivalent' = có hai cảm xúc mâu thuẫn. Bẫy từ vì cả hai đều bắt đầu bằng 'ambi-'."
+    },
+    {
+      "question_text": "The author made a subtle _______ to classical mythology, which only well-read readers would recognize.",
+      "option_a": "illusion",
+      "option_b": "delusion",
+      "option_c": "allusion",
+      "option_d": "elusion",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án C (allusion) là đúng. 'Allusion' = ám chỉ, gợi ý gián tiếp. 'Illusion' = ảo giác. 'Delusion' = tưởng tượng sai. 'Elusion' = tránh thoát. Đây là bẫy từ khó vì tất cả đều nghe giống nhau."
+    },
+    {
+      "question_text": "The study examined _______ groups of participants from different socioeconomic backgrounds, making direct comparison challenging.",
+      "option_a": "disparate",
+      "option_b": "desperate",
+      "option_c": "disparaging",
+      "option_d": "dispassionate",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án A (disparate) là đúng. 'Disparate' = khác biệt lớn, không thể so sánh. 'Desperate' = tuyệt vọng. 'Disparaging' = khinh bỉ. 'Dispassionate' = không thiên vị. Bẫy từ vì các từ này đều bắt đầu bằng 'dis-'."
+    },
+    {
+      "question_text": "The researcher needed to _______ her claims with empirical data before the findings could be published in a peer-reviewed journal.",
+      "option_a": "substantiate",
+      "option_b": "substitute",
+      "option_c": "submerge",
+      "option_d": "subordinate",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án A (substantiate) là đúng. 'Substantiate' = chứng minh, xác thực bằng bằng chứng. 'Substitute' = thay thế. 'Submerge' = chìm dưới nước. 'Subordinate' = cấp dưới. Bẫy từ vì tất cả đều bắt đầu bằng 'sub-'."
+    },
+    {
+      "question_text": "Although the judge's decision was _______, it was legally binding and could not be appealed on the grounds of unreasonableness alone.",
+      "option_a": "arbitrary",
+      "option_b": "arrogant",
+      "option_c": "archaic",
+      "option_d": "arduous",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án A (arbitrary) là đúng. 'Arbitrary' = tùy tiện, không có cơ sở logic. 'Arrogant' = kiêu căng. 'Archaic' = lỗi thời. 'Arduous' = khó khăn. Bẫy từ vì các từ này đều bắt đầu bằng 'ar-' và có cấu trúc tương tự."
+    }
+  ]
+}

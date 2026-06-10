@@ -1,0 +1,176 @@
+{
+  "words": [
+    {
+      "word": "social stratification",
+      "pronunciation": "/ˌsoʊʃəl ˌstrætɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự phân tầng xã hội; quá trình chia xã hội thành các lớp hoặc nhóm có địa vị, quyền lực và tài nguyên khác nhau, thường dẫn đến bất bình đẳng cấu trúc.",
+      "definition_en": "The hierarchical arrangement of individuals into distinct social classes or groups based on wealth, power, and prestige, creating systematic inequality.",
+      "level": "C1",
+      "synonyms": [
+        "class hierarchy",
+        "social hierarchy",
+        "class system"
+      ],
+      "antonyms": [
+        "egalitarianism",
+        "social equality"
+      ],
+      "example_sentence": "Researchers argue that rigid social stratification in developing nations perpetuates cycles of poverty across generations."
+    },
+    {
+      "word": "intergenerational transmission",
+      "pronunciation": "/ˌɪntərˌdʒɛnəˈreɪʃənəl trænzˈmɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự truyền tải giữa các thế hệ; quá trình những lợi thế hoặc bất lợi (tài chính, giáo dục, xã hội) được truyền từ cha mẹ sang con cái, ảnh hưởng đến cơ hội sống.",
+      "definition_en": "The process by which advantages or disadvantages (economic, educational, social) are passed from parents to children, shaping lifetime opportunities.",
+      "level": "C1",
+      "synonyms": [
+        "intergenerational inheritance",
+        "generational transfer"
+      ],
+      "antonyms": [
+        "social mobility",
+        "meritocratic advancement"
+      ],
+      "example_sentence": "The intergenerational transmission of poverty remains a critical challenge in addressing long-term inequality in low-income households."
+    },
+    {
+      "word": "structural inequality",
+      "pronunciation": "/strʌkˈtʃərəl ɪnˈɪkwɑləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Bất bình đẳng cấu trúc; những bất công được nhúng sâu trong các thể chế, chính sách và quy tắc xã hội, không phải do hành động cá nhân mà do hệ thống.",
+      "definition_en": "Systemic disadvantage embedded in institutions, policies, and social norms that disadvantage certain groups regardless of individual merit or effort.",
+      "level": "C1",
+      "synonyms": [
+        "institutional inequality",
+        "systemic discrimination"
+      ],
+      "antonyms": [
+        "equal treatment",
+        "fair competition"
+      ],
+      "example_sentence": "Addressing structural inequality requires comprehensive policy reform rather than individual interventions alone."
+    },
+    {
+      "word": "social capital",
+      "pronunciation": "/ˈsoʊʃəl ˈkæpɪtəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Vốn xã hội; những mối quan hệ, mạng lưới, và niềm tin trong cộng đồng giúp cá nhân tiếp cận thông tin, cơ hội việc làm, và tài nguyên.",
+      "definition_en": "Networks, relationships, and trust within communities that enable individuals to access information, opportunities, and resources.",
+      "level": "B2",
+      "synonyms": [
+        "social networks",
+        "community connections"
+      ],
+      "antonyms": [
+        "social isolation",
+        "disconnection"
+      ],
+      "example_sentence": "Disadvantaged youth often lack sufficient social capital to navigate job markets and access professional networks."
+    },
+    {
+      "word": "occupational segregation",
+      "pronunciation": "/ˌɑkjəˈpeɪʃənəl ˌsɛɡrɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự phân tách nghề nghiệp; hiện tượng nhất định nhóm dân cư (theo giới tính, chủng tộc, tôn giáo) bị tập trung vào những công việc cụ thể, thường là những công việc có lương thấp hơn.",
+      "definition_en": "The concentration of certain demographic groups in specific occupations or industries, typically lower-paying roles, due to discrimination or structural barriers.",
+      "level": "C1",
+      "synonyms": [
+        "job segregation",
+        "employment segregation"
+      ],
+      "antonyms": [
+        "occupational diversity",
+        "inclusive hiring"
+      ],
+      "example_sentence": "Gender-based occupational segregation continues to contribute significantly to wage disparities in the labor market."
+    },
+    {
+      "word": "regressive taxation",
+      "pronunciation": "/rɪˈɡrɛsɪv tækˈseɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Thuế lũy thoái; hệ thống thuế mà những người có thu nhập thấp phải trả tỷ lệ phần trăm cao hơn so với những người giàu, làm tăng bất bình đẳng.",
+      "definition_en": "A tax system where lower-income individuals pay a higher percentage of their income in taxes than higher-income earners, exacerbating inequality.",
+      "level": "C1",
+      "synonyms": [
+        "flat tax",
+        "proportional taxation"
+      ],
+      "antonyms": [
+        "progressive taxation",
+        "graduated tax"
+      ],
+      "example_sentence": "Critics argue that regressive taxation policies disproportionately burden low-income families and widen wealth gaps."
+    },
+    {
+      "word": "precariat",
+      "pronunciation": "/prɪˈkɛəriət/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tầng lớp lao động không ổn định; những người lao động có công việc tạm thời, không bảo hiểm, không lợi ích xã hội, sống trong tình trạng bất ổn kinh tế.",
+      "definition_en": "A class of workers in precarious employment—temporary, gig-based, or informal jobs without benefits or job security—living in economic uncertainty.",
+      "level": "C1",
+      "synonyms": [
+        "gig workers",
+        "informal workforce"
+      ],
+      "antonyms": [
+        "stable employment",
+        "permanent workforce"
+      ],
+      "example_sentence": "The growth of the precariat reflects broader economic shifts toward flexible labor markets and reduced worker protections."
+    },
+    {
+      "word": "meritocratic ideal",
+      "pronunciation": "/ˌmɛrɪtəˈkrætɪk ˈaɪdiəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lý tưởng xứng đáng; niềm tin rằng thành công được xác định bởi năng lực và nỗ lực cá nhân chứ không phải bởi xuất thân hay đặc quyền, mặc dù thực tế thường khác.",
+      "definition_en": "The belief that success is determined by individual talent and effort rather than privilege or circumstance, though empirical evidence often contradicts this.",
+      "level": "C1",
+      "synonyms": [
+        "meritocracy",
+        "equal opportunity myth"
+      ],
+      "antonyms": [
+        "nepotism",
+        "privilege-based advancement"
+      ],
+      "example_sentence": "The meritocratic ideal persists in many societies despite evidence that family background and social networks significantly influence outcomes."
+    },
+    {
+      "word": "wealth concentration",
+      "pronunciation": "/wɛlθ ˌkɑnsənˈtreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự tập trung của tài sản; hiện tượng phần lớn tài sản và thu nhập được nắm giữ bởi một tỷ lệ nhỏ dân số, dẫn đến bất bình đẳng kinh tế sâu sắc.",
+      "definition_en": "The accumulation of wealth and assets in the hands of a small proportion of the population, resulting in severe economic inequality.",
+      "level": "B2",
+      "synonyms": [
+        "wealth inequality",
+        "asset concentration"
+      ],
+      "antonyms": [
+        "wealth distribution",
+        "equitable distribution"
+      ],
+      "example_sentence": "Increasing wealth concentration in developed economies has prompted calls for progressive taxation and wealth redistribution policies."
+    },
+    {
+      "word": "social exclusion",
+      "pronunciation": "/ˈsoʊʃəl ɪkˈskluːʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Loại trừ xã hội; quá trình những cá nhân hoặc nhóm bị cô lập khỏi các hoạt động, tài nguyên, và quyền lợi chính của xã hội do nghèo đói, phân biệt đối xử hoặc thiếu cơ hội.",
+      "definition_en": "The process by which individuals or groups are prevented from full participation in society due to poverty, discrimination, or lack of access to resources.",
+      "level": "B2",
+      "synonyms": [
+        "marginalization",
+        "social isolation"
+      ],
+      "antonyms": [
+        "social inclusion",
+        "integration"
+      ],
+      "example_sentence": "Social exclusion of migrant communities limits their access to education, healthcare, and employment opportunities."
+    }
+  ],
+  "questions": []
+}

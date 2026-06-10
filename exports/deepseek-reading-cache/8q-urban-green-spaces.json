@@ -1,0 +1,87 @@
+{
+  "title": "The Role of Urban Green Spaces in Promoting Public Health",
+  "title_vi": "Vai trò của không gian xanh đô thị trong việc thúc đẩy sức khỏe cộng đồng",
+  "content": "Urban green spaces, such as parks, community gardens, and tree-lined streets, have long been valued for their aesthetic appeal. However, a growing body of research now highlights their profound impact on public health. These areas serve as accessible venues for physical activity, from jogging and cycling to casual walking, which helps combat sedentary lifestyles linked to obesity and cardiovascular diseases. Moreover, exposure to natural environments has been shown to reduce stress levels and improve mental well-being, offering a low-cost complement to traditional healthcare approaches.\n\nThe psychological benefits of green spaces are particularly significant in densely populated cities. Studies indicate that even brief contact with nature can lower cortisol levels and alleviate symptoms of anxiety and depression. For instance, hospital patients with views of greenery tend to recover faster and require less pain medication than those facing brick walls. This connection between nature and mental restoration is often explained by Attention Restoration Theory, which suggests that natural settings gently capture our attention without demanding focused effort, allowing the brain's cognitive resources to replenish.\n\nDespite these advantages, access to quality green spaces remains uneven across urban populations. Lower-income neighborhoods frequently lack well-maintained parks and safe recreational areas, contributing to health disparities. This inequity has prompted city planners to adopt inclusive design strategies, such as converting vacant lots into pocket parks and ensuring that all residents live within a ten-minute walk of a green space. Such initiatives not only promote physical health but also strengthen social cohesion by creating shared community hubs where people from diverse backgrounds can interact.\n\nLooking ahead, the integration of green infrastructure into urban development is becoming a priority for sustainable cities. Green roofs, vertical gardens, and expanded urban forests can mitigate air pollution, reduce the urban heat island effect, and provide habitats for wildlife, all of which indirectly benefit human health. Policymakers are increasingly recognizing that investing in urban greenery is not merely an environmental concern but a fundamental public health strategy. By prioritizing these spaces, cities can foster healthier, more resilient communities for generations to come.",
+  "questions": [
+    {
+      "question_text": "According to the passage, which of the following is NOT mentioned as a benefit of urban green spaces?",
+      "option_a": "Reducing stress and improving mental well-being",
+      "option_b": "Providing venues for physical exercise",
+      "option_c": "Increasing property values in surrounding areas",
+      "option_d": "Helping patients recover more quickly in hospitals",
+      "correct_answer": "C",
+      "question_type": "detail_except",
+      "explanation": "Đoạn 1 và 2 đề cập đến giảm căng thẳng (reduce stress), cải thiện sức khỏe tinh thần (improve mental well-being), cung cấp địa điểm tập thể dục (venues for physical activity), và bệnh nhân hồi phục nhanh hơn (patients with views of greenery tend to recover faster). Tăng giá trị bất động sản (increasing property values) không được nhắc đến trong bài."
+    },
+    {
+      "question_text": "The word 'sedentary' in paragraph 1 is closest in meaning to:",
+      "option_a": "inactive",
+      "option_b": "stressful",
+      "option_c": "unhealthy",
+      "option_d": "isolated",
+      "correct_answer": "A",
+      "question_type": "vocab_meaning",
+      "explanation": "Từ 'sedentary' trong cụm 'sedentary lifestyles' có nghĩa là lối sống ít vận động, ngồi nhiều. 'Inactive' (không hoạt động) là từ đồng nghĩa gần nhất. 'Stressful' (căng thẳng), 'unhealthy' (không lành mạnh), và 'isolated' (cô lập) không diễn tả đúng nghĩa gốc của từ."
+    },
+    {
+      "question_text": "Which of the following best paraphrases the sentence 'natural settings gently capture our attention without demanding focused effort, allowing the brain's cognitive resources to replenish' in paragraph 2?",
+      "option_a": "Nature forces the brain to work harder, which eventually restores mental energy.",
+      "option_b": "Natural environments attract our attention effortlessly, helping the mind recover its capacities.",
+      "option_c": "The brain needs focused effort to appreciate natural surroundings and regain cognitive strength.",
+      "option_d": "Cognitive resources are used up when we pay gentle attention to natural settings.",
+      "correct_answer": "B",
+      "question_type": "sentence_paraphrase",
+      "explanation": "Câu gốc nói rằng khung cảnh thiên nhiên thu hút sự chú ý một cách nhẹ nhàng mà không đòi hỏi nỗ lực tập trung, cho phép não bộ phục hồi nguồn lực nhận thức. Đáp án B diễn đạt đúng ý này: 'thu hút sự chú ý một cách dễ dàng, giúp tâm trí phục hồi năng lực'. Các đáp án khác sai về bản chất (A: 'forces the brain to work harder', C: 'needs focused effort', D: 'resources are used up')."
+    },
+    {
+      "question_text": "The word 'This inequity' in paragraph 3 refers to:",
+      "option_a": "the lack of well-maintained parks in lower-income neighborhoods",
+      "option_b": "the adoption of inclusive design strategies by city planners",
+      "option_c": "the health benefits of urban green spaces",
+      "option_d": "the conversion of vacant lots into pocket parks",
+      "correct_answer": "A",
+      "question_type": "reference",
+      "explanation": "'This inequity' đề cập đến sự bất bình đẳng được mô tả ở câu trước: 'Lower-income neighborhoods frequently lack well-maintained parks and safe recreational areas, contributing to health disparities.' Do đó, đáp án A là chính xác. Các đáp án khác nói về giải pháp hoặc lợi ích, không phải là đối tượng mà 'inequity' nhắc tới."
+    },
+    {
+      "question_text": "It can be inferred from the passage that Attention Restoration Theory:",
+      "option_a": "focuses primarily on physical rather than mental recovery",
+      "option_b": "explains why urban environments are more restorative than natural ones",
+      "option_c": "suggests that effortless engagement with nature helps restore mental focus",
+      "option_d": "has been disproven by recent studies on hospital patients",
+      "correct_answer": "C",
+      "question_type": "inference",
+      "explanation": "Đoạn 2 giải thích rằng Attention Restoration Theory cho rằng 'natural settings gently capture our attention without demanding focused effort, allowing the brain's cognitive resources to replenish'. Từ đó suy ra rằng sự tương tác không cần nỗ lực với thiên nhiên giúp phục hồi sự tập trung tinh thần. A sai vì lý thuyết này liên quan đến phục hồi nhận thức (tinh thần). B sai vì bài nói môi trường tự nhiên có tính phục hồi, không phải đô thị. D không được đề cập."
+    },
+    {
+      "question_text": "According to the passage, which statement is TRUE?",
+      "option_a": "All urban residents currently have equal access to quality green spaces.",
+      "option_b": "Green infrastructure can help reduce air pollution and urban heat.",
+      "option_c": "Physical activity in green spaces has no effect on cardiovascular diseases.",
+      "option_d": "Policymakers view urban greenery solely as an environmental issue.",
+      "correct_answer": "B",
+      "question_type": "true_statement",
+      "explanation": "Đoạn 4 nêu rõ: 'Green roofs, vertical gardens, and expanded urban forests can mitigate air pollution, reduce the urban heat island effect'. Do đó B đúng. A sai vì đoạn 3 nói 'access to quality green spaces remains uneven'. C sai vì đoạn 1 nói không gian xanh giúp 'combat sedentary lifestyles linked to obesity and cardiovascular diseases'. D sai vì đoạn 4 nói các nhà hoạch định chính sách coi đây là 'a fundamental public health strategy', không chỉ là vấn đề môi trường."
+    },
+    {
+      "question_text": "In which paragraph does the author discuss the unequal distribution of urban green spaces?",
+      "option_a": "Paragraph 1",
+      "option_b": "Paragraph 2",
+      "option_c": "Paragraph 3",
+      "option_d": "Paragraph 4",
+      "correct_answer": "C",
+      "question_type": "paragraph_location",
+      "explanation": "Đoạn 3 bắt đầu bằng câu: 'Despite these advantages, access to quality green spaces remains uneven across urban populations.' Đây chính là nội dung thảo luận về sự phân bố không đồng đều của không gian xanh đô thị."
+    },
+    {
+      "question_text": "In which paragraph does the author mention the long-term vision for integrating nature into city planning?",
+      "option_a": "Paragraph 1",
+      "option_b": "Paragraph 2",
+      "option_c": "Paragraph 3",
+      "option_d": "Paragraph 4",
+      "correct_answer": "D",
+      "question_type": "paragraph_location",
+      "explanation": "Đoạn 4 mở đầu với 'Looking ahead, the integration of green infrastructure into urban development is becoming a priority for sustainable cities', cho thấy tầm nhìn dài hạn về việc tích hợp thiên nhiên vào quy hoạch đô thị. Các đoạn khác không đề cập đến viễn cảnh tương lai này."
+    }
+  ]
+}

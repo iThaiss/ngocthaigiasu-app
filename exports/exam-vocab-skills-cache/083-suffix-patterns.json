@@ -1,0 +1,542 @@
+{
+  "words": [
+    {
+      "word": "education",
+      "pronunciation": "/ˌedʒuˈkeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "giáo dục; quá trình học tập và phát triển kỹ năng",
+      "definition_en": "the process of teaching and learning, especially in schools",
+      "level": "B1",
+      "synonyms": [
+        "learning",
+        "schooling",
+        "training"
+      ],
+      "antonyms": [
+        "ignorance"
+      ],
+      "example_sentence": "Quality education is essential for developing critical thinking skills in young people."
+    },
+    {
+      "word": "achievement",
+      "pronunciation": "/əˈtʃiːvmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "thành tích; điều đạt được sau nỗ lực",
+      "definition_en": "a successful accomplishment or attainment of a goal",
+      "level": "B1",
+      "synonyms": [
+        "accomplishment",
+        "success",
+        "attainment"
+      ],
+      "antonyms": [
+        "failure",
+        "defeat"
+      ],
+      "example_sentence": "Her academic achievement in mathematics earned her a scholarship to university."
+    },
+    {
+      "word": "development",
+      "pronunciation": "/dɪˈveləpmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự phát triển; quá trình tăng trưởng hoặc cải tiến",
+      "definition_en": "the process of growing, improving, or becoming more advanced",
+      "level": "B1",
+      "synonyms": [
+        "growth",
+        "progress",
+        "advancement"
+      ],
+      "antonyms": [
+        "decline",
+        "regression"
+      ],
+      "example_sentence": "Sustainable development requires balancing economic growth with environmental protection."
+    },
+    {
+      "word": "responsibility",
+      "pronunciation": "/rɪˌspɒnsəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "trách nhiệm; bổn phận hoặc nghĩa vụ phải thực hiện",
+      "definition_en": "the state of being accountable for something or someone",
+      "level": "B1",
+      "synonyms": [
+        "duty",
+        "obligation",
+        "accountability"
+      ],
+      "antonyms": [
+        "irresponsibility"
+      ],
+      "example_sentence": "Students have a responsibility to complete their assignments on time and maintain academic integrity."
+    },
+    {
+      "word": "creativity",
+      "pronunciation": "/ˌkriːeɪˈtɪvəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "sáng tạo; khả năng tạo ra những ý tưởng mới",
+      "definition_en": "the ability to produce original ideas or artistic work",
+      "level": "B2",
+      "synonyms": [
+        "innovation",
+        "imagination",
+        "originality"
+      ],
+      "antonyms": [
+        "conformity",
+        "imitation"
+      ],
+      "example_sentence": "The project encourages creativity by allowing students to design their own solutions."
+    },
+    {
+      "word": "productivity",
+      "pronunciation": "/ˌprɒdʌkˈtɪvəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "năng suất; mức độ hiệu quả trong công việc",
+      "definition_en": "the effectiveness of effort measured by the rate of output per unit of input",
+      "level": "B2",
+      "synonyms": [
+        "efficiency",
+        "output",
+        "yield"
+      ],
+      "antonyms": [
+        "idleness",
+        "inefficiency"
+      ],
+      "example_sentence": "Regular breaks actually improve workplace productivity by reducing mental fatigue."
+    },
+    {
+      "word": "environmental",
+      "pronunciation": "/ɪnˌvaɪrənˈmentl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến môi trường; thuộc về tự nhiên và sinh thái",
+      "definition_en": "relating to the natural world and the impact of human activity on it",
+      "level": "B1",
+      "synonyms": [
+        "ecological",
+        "natural"
+      ],
+      "antonyms": [
+        "artificial"
+      ],
+      "example_sentence": "Environmental protection has become a critical issue in international policy discussions."
+    },
+    {
+      "word": "emotional",
+      "pronunciation": "/ɪˈməʊʃənl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cảm xúc; liên quan đến cảm giác và tâm trạng",
+      "definition_en": "relating to feelings or the expression of feelings",
+      "level": "B1",
+      "synonyms": [
+        "sentimental",
+        "affective"
+      ],
+      "antonyms": [
+        "rational",
+        "logical"
+      ],
+      "example_sentence": "Emotional intelligence is increasingly recognized as important as academic knowledge in education."
+    },
+    {
+      "word": "practical",
+      "pronunciation": "/ˈpræktɪkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế; có thể áp dụng vào thực tiễn",
+      "definition_en": "concerned with actual use or practice rather than theory",
+      "level": "B1",
+      "synonyms": [
+        "applied",
+        "functional",
+        "useful"
+      ],
+      "antonyms": [
+        "theoretical",
+        "impractical"
+      ],
+      "example_sentence": "The course combines theoretical knowledge with practical experience in laboratory settings."
+    },
+    {
+      "word": "critical",
+      "pronunciation": "/ˈkrɪtɪkl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "phê phán; có tính chất đánh giá hoặc rất quan trọng",
+      "definition_en": "expressing disapproval or involving careful judgment; essential or crucial",
+      "level": "B1",
+      "synonyms": [
+        "analytical",
+        "essential",
+        "vital"
+      ],
+      "antonyms": [
+        "uncritical",
+        "trivial"
+      ],
+      "example_sentence": "Critical thinking skills enable students to analyze information and make informed decisions."
+    },
+    {
+      "word": "happiness",
+      "pronunciation": "/ˈhæpinəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "hạnh phúc; trạng thái vui vẻ và hài lòng",
+      "definition_en": "the state of being happy or content",
+      "level": "B1",
+      "synonyms": [
+        "joy",
+        "contentment",
+        "well-being"
+      ],
+      "antonyms": [
+        "sadness",
+        "misery"
+      ],
+      "example_sentence": "Research shows that meaningful relationships contribute significantly to long-term happiness."
+    },
+    {
+      "word": "awareness",
+      "pronunciation": "/əˈweənəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "nhận thức; sự hiểu biết hoặc chú ý đến điều gì",
+      "definition_en": "knowledge or perception of a situation or fact",
+      "level": "B1",
+      "synonyms": [
+        "consciousness",
+        "understanding",
+        "recognition"
+      ],
+      "antonyms": [
+        "ignorance",
+        "unawareness"
+      ],
+      "example_sentence": "Public awareness campaigns have successfully reduced plastic consumption in many communities."
+    },
+    {
+      "word": "improvement",
+      "pronunciation": "/ɪmˈpruːvmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "cải tiến; sự làm tốt hơn hoặc phát triển",
+      "definition_en": "the process of making something better or the result of making something better",
+      "level": "B1",
+      "synonyms": [
+        "enhancement",
+        "progress",
+        "advancement"
+      ],
+      "antonyms": [
+        "deterioration",
+        "decline"
+      ],
+      "example_sentence": "Continuous improvement in teaching methods has led to better student outcomes."
+    },
+    {
+      "word": "protection",
+      "pronunciation": "/prəˈtekʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "bảo vệ; hành động hoặc biện pháp che chở khỏi nguy hiểm",
+      "definition_en": "the action of protecting someone or something from harm or injury",
+      "level": "B1",
+      "synonyms": [
+        "defense",
+        "safeguard",
+        "security"
+      ],
+      "antonyms": [
+        "exposure",
+        "vulnerability"
+      ],
+      "example_sentence": "Data protection regulations require companies to secure personal information responsibly."
+    },
+    {
+      "word": "communication",
+      "pronunciation": "/kəˌmjuːnɪˈkeɪʃn/",
+      "part_of_speech": "noun",
+      "definition_vi": "giao tiếp; quá trình trao đổi thông tin giữa các bên",
+      "definition_en": "the imparting or exchanging of information or news",
+      "level": "B1",
+      "synonyms": [
+        "interaction",
+        "dialogue",
+        "exchange"
+      ],
+      "antonyms": [
+        "silence",
+        "isolation"
+      ],
+      "example_sentence": "Effective communication between teachers and parents improves student academic performance."
+    },
+    {
+      "word": "actively",
+      "pronunciation": "/ˈæktɪvli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "một cách tích cực; với sự tham gia hoặc nỗ lực",
+      "definition_en": "in an engaged or energetic manner; with participation",
+      "level": "B1",
+      "synonyms": [
+        "vigorously",
+        "enthusiastically"
+      ],
+      "antonyms": [
+        "passively",
+        "inactively"
+      ],
+      "example_sentence": "Students who actively participate in class discussions tend to retain information better."
+    },
+    {
+      "word": "significantly",
+      "pronunciation": "/sɪɡˈnɪfɪkəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "đáng kể; một cách có ý nghĩa hoặc tác động lớn",
+      "definition_en": "in a sufficiently great or important way to be worthy of attention",
+      "level": "B2",
+      "synonyms": [
+        "considerably",
+        "substantially",
+        "notably"
+      ],
+      "antonyms": [
+        "insignificantly",
+        "slightly"
+      ],
+      "example_sentence": "Climate change has significantly affected agricultural production in developing countries."
+    },
+    {
+      "word": "gradually",
+      "pronunciation": "/ˈɡrædʒuəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "dần dần; từ từ theo thời gian",
+      "definition_en": "in a slow or gradual manner; by degrees",
+      "level": "B1",
+      "synonyms": [
+        "slowly",
+        "progressively",
+        "incrementally"
+      ],
+      "antonyms": [
+        "suddenly",
+        "abruptly"
+      ],
+      "example_sentence": "Language skills develop gradually through consistent practice and exposure."
+    },
+    {
+      "word": "educational",
+      "pronunciation": "/ˌedʒuˈkeɪʃənl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "giáo dục; liên quan đến việc dạy và học",
+      "definition_en": "relating to the process of teaching and learning",
+      "level": "B1",
+      "synonyms": [
+        "instructional",
+        "academic",
+        "pedagogical"
+      ],
+      "antonyms": [
+        "non-educational"
+      ],
+      "example_sentence": "Educational technology has transformed how students access and engage with learning materials."
+    },
+    {
+      "word": "treatment",
+      "pronunciation": "/ˈtriːtmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "điều trị; cách xử lý hoặc chăm sóc ai/cái gì",
+      "definition_en": "the action or manner of dealing with something; medical care for a disease",
+      "level": "B1",
+      "synonyms": [
+        "therapy",
+        "care",
+        "handling"
+      ],
+      "antonyms": [
+        "neglect"
+      ],
+      "example_sentence": "Early treatment of mental health issues can prevent more serious complications later."
+    },
+    {
+      "word": "investment",
+      "pronunciation": "/ɪnˈvestmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "đầu tư; tiền hoặc tài nguyên dành cho mục đích sinh lợi",
+      "definition_en": "the action of investing money for profit; something worth spending time or effort on",
+      "level": "B2",
+      "synonyms": [
+        "expenditure",
+        "commitment",
+        "contribution"
+      ],
+      "antonyms": [
+        "withdrawal"
+      ],
+      "example_sentence": "Investment in renewable energy is crucial for sustainable economic development."
+    },
+    {
+      "word": "diversity",
+      "pronunciation": "/daɪˈvɜːsəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "đa dạng; sự khác nhau về loại, chủng loại hoặc đặc điểm",
+      "definition_en": "the state of being diverse; variety in terms of race, gender, or background",
+      "level": "B2",
+      "synonyms": [
+        "variety",
+        "heterogeneity",
+        "multiplicity"
+      ],
+      "antonyms": [
+        "uniformity",
+        "homogeneity"
+      ],
+      "example_sentence": "Cultural diversity in the classroom enriches learning experiences for all students."
+    },
+    {
+      "word": "competitive",
+      "pronunciation": "/kəmˈpetɪtɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cạnh tranh; liên quan đến sự so sánh hoặc đua đòi",
+      "definition_en": "relating to or characterized by competition; striving to win or be better than others",
+      "level": "B2",
+      "synonyms": [
+        "ambitious",
+        "rivalrous"
+      ],
+      "antonyms": [
+        "cooperative",
+        "collaborative"
+      ],
+      "example_sentence": "The competitive job market requires graduates to develop specialized skills and experience."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's _______ in education has resulted in improved school facilities and teacher training programs.",
+      "option_a": "invest",
+      "option_b": "investment",
+      "option_c": "investing",
+      "option_d": "invested",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'in' cần danh từ. 'Investment' là danh từ chỉ hành động đầu tư. Các lựa chọn khác là động từ hoặc dạng động từ không phù hợp."
+    },
+    {
+      "question_text": "Her _______ to the project was evident in the quality of her work and dedication to the team.",
+      "option_a": "commit",
+      "option_b": "commitment",
+      "option_c": "committing",
+      "option_d": "committed",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'Her' cần danh từ. 'Commitment' là danh từ chỉ sự cam kết. 'Committed' là tính từ, không phù hợp vị trí này."
+    },
+    {
+      "question_text": "The _______ of the new policy has been gradual, with schools implementing changes over several months.",
+      "option_a": "implement",
+      "option_b": "implementation",
+      "option_c": "implementing",
+      "option_d": "implements",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'The' cần danh từ. 'Implementation' là danh từ chỉ quá trình thực hiện. Các lựa chọn khác là động từ."
+    },
+    {
+      "question_text": "Students who participate _______ in class discussions develop stronger communication skills.",
+      "option_a": "active",
+      "option_b": "activity",
+      "option_c": "actively",
+      "option_d": "activation",
+      "correct_answer": "C",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Sau động từ 'participate' cần trạng từ để bổ sung ý nghĩa. 'Actively' là trạng từ đúng. 'Active' là tính từ, 'activity' là danh từ."
+    },
+    {
+      "question_text": "The _______ of climate change on agriculture has been documented by numerous scientific studies.",
+      "option_a": "effect",
+      "option_b": "affect",
+      "option_c": "effective",
+      "option_d": "effectiveness",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Sau 'The' cần danh từ. 'Effect' là danh từ chỉ tác động/kết quả. 'Affect' là động từ, 'effective' là tính từ, 'effectiveness' cũng là danh từ nhưng không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The _______ between teachers and parents is essential for supporting student success.",
+      "option_a": "communicate",
+      "option_b": "communication",
+      "option_c": "communicating",
+      "option_d": "communicative",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'The' cần danh từ. 'Communication' là danh từ chỉ quá trình giao tiếp. Các lựa chọn khác là động từ hoặc tính từ."
+    },
+    {
+      "question_text": "The research shows that _______ in exercise routines can lead to significant health improvements.",
+      "option_a": "consistent",
+      "option_b": "consistency",
+      "option_c": "consistently",
+      "option_d": "consist",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Sau 'in' cần danh từ. 'Consistency' là danh từ chỉ tính chất nhất quán. 'Consistent' là tính từ, 'consistently' là trạng từ."
+    },
+    {
+      "question_text": "The _______ of the new curriculum has been praised by educators for its comprehensive approach.",
+      "option_a": "design",
+      "option_b": "designing",
+      "option_c": "designer",
+      "option_d": "designed",
+      "correct_answer": "A",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'The' cần danh từ. 'Design' là danh từ chỉ thiết kế. 'Designing' là động từ dạng -ing, 'designer' là danh từ chỉ người, 'designed' là tính từ."
+    },
+    {
+      "question_text": "Environmental _______ requires cooperation between governments, businesses, and individuals.",
+      "option_a": "protect",
+      "option_b": "protection",
+      "option_c": "protective",
+      "option_d": "protecting",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau tính từ 'Environmental' cần danh từ. 'Protection' là danh từ chỉ hành động bảo vệ. Các lựa chọn khác là động từ hoặc tính từ."
+    },
+    {
+      "question_text": "The _______ of the new technology in schools has been slower than expected due to budget constraints.",
+      "option_a": "adopt",
+      "option_b": "adoption",
+      "option_c": "adopting",
+      "option_d": "adoptive",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "intermediate",
+      "explanation": "Sau 'The' cần danh từ. 'Adoption' là danh từ chỉ quá trình chấp nhận/sử dụng. 'Adopt' là động từ, 'adopting' là dạng -ing, 'adoptive' là tính từ."
+    },
+    {
+      "question_text": "The _______ of the project depends on careful planning and adequate resources.",
+      "option_a": "succeed",
+      "option_b": "success",
+      "option_c": "successful",
+      "option_d": "successfully",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "basic",
+      "explanation": "Sau 'The' cần danh từ. 'Success' là danh từ chỉ sự thành công. 'Succeed' là động từ, 'successful' là tính từ, 'successfully' là trạng từ."
+    },
+    {
+      "question_text": "The _______ of the new policy has been questioned by critics who argue it lacks practical solutions.",
+      "option_a": "effective",
+      "option_b": "effectiveness",
+      "option_c": "effectively",
+      "option_d": "effect",
+      "correct_answer": "B",
+      "question_type": "word_form",
+      "difficulty": "advanced",
+      "explanation": "Sau 'The' cần danh từ. 'Effectiveness' là danh từ chỉ mức độ hiệu quả. 'Effective' là tính từ, 'effectively' là trạng từ, 'effect' là danh từ nhưng không phù hợp ngữ cảnh."
+    }
+  ]
+}

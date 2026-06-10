@@ -1,0 +1,242 @@
+{
+  "words": [
+    {
+      "word": "conspicuous consumption",
+      "pronunciation": "/kənˈspɪkjuəs kənˈsʌmpʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hành vi mua sắm các sản phẩm đắt tiền, hàng hiệu chủ yếu để thể hiện địa vị xã hội và sự giàu có cho người khác, chứ không phải vì nhu cầu thực tế.",
+      "definition_en": "The practice of purchasing expensive or luxury goods primarily to display wealth and social status rather than for practical use.",
+      "level": "C1",
+      "synonyms": [
+        "status consumption",
+        "ostentatious spending"
+      ],
+      "antonyms": [
+        "frugal consumption",
+        "minimalist lifestyle"
+      ],
+      "example_sentence": "The rise of luxury brands in emerging markets reflects a growing trend of conspicuous consumption among the newly wealthy middle class."
+    },
+    {
+      "word": "dark patterns",
+      "pronunciation": "/dɑːrk ˈpætərnz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các thiết kế giao diện người dùng được tạo ý để lừa hoặc thao túng người tiêu dùng thực hiện các hành động không mong muốn, chẳng hạn như đăng ký dịch vụ trả phí hoặc chia sẻ dữ liệu cá nhân.",
+      "definition_en": "Deceptive user interface designs intentionally created to manipulate consumers into taking unwanted actions, such as subscribing to paid services or sharing personal data.",
+      "level": "C1",
+      "synonyms": [
+        "deceptive design",
+        "manipulative UX"
+      ],
+      "antonyms": [
+        "transparent design",
+        "ethical UX"
+      ],
+      "example_sentence": "Regulators are increasingly scrutinizing dark patterns used by e-commerce platforms to trick users into unwanted purchases and subscriptions."
+    },
+    {
+      "word": "greenwashing",
+      "pronunciation": "/ˈɡriːnwɒʃɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hành vi của các công ty quảng cáo sản phẩm hoặc dịch vụ của mình là thân thiện với môi trường trong khi thực tế không có hoặc có rất ít cam kết bảo vệ môi trường thực sự.",
+      "definition_en": "The practice of making misleading claims about the environmental benefits of a product or company to appear more eco-friendly than actually warranted.",
+      "level": "C1",
+      "synonyms": [
+        "eco-fraud",
+        "environmental deception"
+      ],
+      "antonyms": [
+        "authentic sustainability",
+        "genuine eco-commitment"
+      ],
+      "example_sentence": "Consumer advocacy groups have exposed greenwashing campaigns by major fashion brands that falsely claim to use sustainable materials."
+    },
+    {
+      "word": "purchase intent",
+      "pronunciation": "/ˈpɜːtʃəs ɪnˈtent/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Mức độ khả năng hoặc sự sẵn sàng của một người tiêu dùng để mua một sản phẩm hoặc dịch vụ cụ thể trong một khoảng thời gian nhất định.",
+      "definition_en": "The likelihood or willingness of a consumer to purchase a specific product or service within a given timeframe.",
+      "level": "B2",
+      "synonyms": [
+        "buying intention",
+        "purchase likelihood"
+      ],
+      "antonyms": [
+        "purchase resistance",
+        "buying hesitation"
+      ],
+      "example_sentence": "Market research surveys measure purchase intent by asking consumers how likely they are to buy a new smartphone model within the next six months."
+    },
+    {
+      "word": "sunk cost fallacy",
+      "pronunciation": "/sʌŋk kɔːst ˈfæləsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sai lầm tâm lý khi người tiêu dùng tiếp tục đầu tư tiền bạc hoặc thời gian vào một sản phẩm hoặc dịch vụ vì đã chi tiêu trước đó, mặc dù nó không còn có giá trị.",
+      "definition_en": "A cognitive bias where consumers continue investing money or time in a product or service because of previous expenditure, despite diminishing returns.",
+      "level": "C1",
+      "synonyms": [
+        "escalation of commitment",
+        "throwing good money after bad"
+      ],
+      "antonyms": [
+        "rational decision-making",
+        "cost-benefit analysis"
+      ],
+      "example_sentence": "The sunk cost fallacy explains why subscription users often continue paying for services they no longer actively use."
+    },
+    {
+      "word": "omnichannel retailing",
+      "pronunciation": "/ɒmniˈtʃænəl ˈretəɪlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Chiến lược bán lẻ tích hợp nhiều kênh bán hàng (cửa hàng vật lý, website, ứng dụng di động, mạng xã hội) để cung cấp trải nghiệm mua sắm liền mạch cho khách hàng.",
+      "definition_en": "A retail strategy that seamlessly integrates multiple sales channels (physical stores, websites, mobile apps, social media) to provide a unified shopping experience.",
+      "level": "C1",
+      "synonyms": [
+        "integrated retail",
+        "multi-channel commerce"
+      ],
+      "antonyms": [
+        "single-channel retail",
+        "fragmented retail"
+      ],
+      "example_sentence": "Leading retailers are investing heavily in omnichannel retailing to allow customers to browse online and pick up purchases in-store the same day."
+    },
+    {
+      "word": "anchoring effect",
+      "pronunciation": "/ˈæŋkərɪŋ ɪˈfekt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hiện tượng tâm lý khi con người dựa vào thông tin đầu tiên (mỏ neo) để đưa ra quyết định, ngay cả khi thông tin đó không liên quan hoặc không chính xác.",
+      "definition_en": "A cognitive bias where individuals rely heavily on the first piece of information encountered (the anchor) when making subsequent judgments or decisions.",
+      "level": "C1",
+      "synonyms": [
+        "anchoring bias",
+        "first impression effect"
+      ],
+      "antonyms": [
+        "independent judgment",
+        "unbiased assessment"
+      ],
+      "example_sentence": "Retailers use the anchoring effect by displaying original prices before discounts to make reduced prices appear more attractive to consumers."
+    },
+    {
+      "word": "brand dilution",
+      "pronunciation": "/brænd daɪˈluːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự suy giảm giá trị hoặc sức mạnh của một thương hiệu do việc mở rộng quá mức, sử dụng tên thương hiệu cho các sản phẩm không phù hợp, hoặc quản lý kém.",
+      "definition_en": "The weakening of a brand's value or strength due to overextension, inappropriate product extensions, or poor management decisions.",
+      "level": "C1",
+      "synonyms": [
+        "brand erosion",
+        "brand degradation"
+      ],
+      "antonyms": [
+        "brand strengthening",
+        "brand consolidation"
+      ],
+      "example_sentence": "Luxury fashion houses risk brand dilution when they expand into mass-market segments or license their names to low-quality products."
+    },
+    {
+      "word": "nudge theory",
+      "pronunciation": "/nʌdʒ ˈθɪəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Lý thuyết về việc sử dụng những thay đổi nhỏ, tinh tế trong cách trình bày thông tin hoặc lựa chọn để hướng dẫn người tiêu dùng đưa ra quyết định mà không hạn chế tự do lựa chọn.",
+      "definition_en": "A behavioral economics concept using subtle changes in how choices are presented to guide consumer decisions without restricting freedom of choice.",
+      "level": "C1",
+      "synonyms": [
+        "choice architecture",
+        "behavioral nudge"
+      ],
+      "antonyms": [
+        "coercion",
+        "forced decision"
+      ],
+      "example_sentence": "E-commerce platforms apply nudge theory by placing the most profitable items at eye level or pre-selecting certain options to influence purchasing behavior."
+    },
+    {
+      "word": "value proposition",
+      "pronunciation": "/ˈvæljuː ˌprɒpəˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Tuyên bố rõ ràng về những lợi ích độc đáo và giá trị cụ thể mà một sản phẩm hoặc dịch vụ mang lại cho khách hàng so với các đối thủ cạnh tranh.",
+      "definition_en": "A clear statement of the tangible benefits and unique value that a product or service delivers to customers compared to competitors.",
+      "level": "B2",
+      "synonyms": [
+        "unique selling proposition",
+        "competitive advantage"
+      ],
+      "antonyms": [
+        "generic offering",
+        "undifferentiated product"
+      ],
+      "example_sentence": "Apple's value proposition emphasizes seamless integration, premium design, and ecosystem lock-in rather than competing solely on price."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the concept of 'conspicuous consumption' in modern consumer behavior?",
+      "option_a": "Buying products only when they are on sale or heavily discounted.",
+      "option_b": "Purchasing luxury goods primarily to display wealth and social status to others.",
+      "option_c": "Consuming products in a way that minimizes environmental impact.",
+      "option_d": "Making rational purchasing decisions based solely on product quality and functionality.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Conspicuous consumption là hành vi mua sắm các sản phẩm đắt tiền chủ yếu để thể hiện địa vị xã hội, không phải vì nhu cầu thực tế. Option A là mua hàng giảm giá, C là tiêu dùng bền vững, D là quyết định hợp lý dựa trên chất lượng—đều không đúng."
+    },
+    {
+      "question_text": "What is the primary concern regulators have about 'dark patterns' in e-commerce and digital platforms?",
+      "option_a": "They make websites visually unattractive and difficult to navigate.",
+      "option_b": "They use deceptive design to manipulate users into unwanted purchases or data sharing.",
+      "option_c": "They require users to spend too much time reading terms and conditions.",
+      "option_d": "They prevent companies from collecting valuable consumer data for marketing purposes.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Dark patterns là các thiết kế giao diện được tạo ý để lừa người dùng thực hiện hành động không mong muốn. Option A nói về tính thẩm mỹ, C về điều khoản, D về thu thập dữ liệu—đều không phải mối quan tâm chính của các cơ quan quản lý."
+    },
+    {
+      "question_text": "A fashion brand claims its new collection uses 'sustainable materials' and is 'eco-friendly,' but independent audits reveal minimal environmental commitment. This is an example of ___.",
+      "option_a": "greenwashing",
+      "option_b": "brand dilution",
+      "option_c": "value proposition",
+      "option_d": "omnichannel retailing",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Greenwashing là hành vi quảng cáo sản phẩm là thân thiện với môi trường trong khi thực tế không có cam kết bảo vệ môi trường thực sự. Option B là suy giảm giá trị thương hiệu, C là đề xuất giá trị, D là bán lẻ đa kênh—không phù hợp."
+    },
+    {
+      "question_text": "Market researchers measure _____ to predict whether consumers will actually buy a new product within the next quarter.",
+      "option_a": "brand recall",
+      "option_b": "purchase intent",
+      "option_c": "conversion rate",
+      "option_d": "market penetration",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Purchase intent là mức độ khả năng hoặc sự sẵn sàng của người tiêu dùng để mua sản phẩm trong khoảng thời gian nhất định. Option A là nhớ lại thương hiệu, C là tỷ lệ chuyển đổi, D là thâm nhập thị trường—đều không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Why do subscription service users often continue paying for services they rarely use? This behavior is explained by the ___.",
+      "option_a": "anchoring effect",
+      "option_b": "sunk cost fallacy",
+      "option_c": "nudge theory",
+      "option_d": "brand dilution",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Sunk cost fallacy giải thích tại sao người dùng tiếp tục trả tiền cho dịch vụ vì đã chi tiêu trước đó, mặc dù không còn sử dụng. Option A là hiệu ứng neo, C là lý thuyết nudge, D là suy giảm thương hiệu—không giải thích hành vi này."
+    },
+    {
+      "question_text": "Which retail strategy allows customers to browse products online, check real-time inventory, and pick up purchases at a physical store on the same day?",
+      "option_a": "Omnichannel retailing",
+      "option_b": "Cross-selling",
+      "option_c": "Price anchoring",
+      "option_d": "Seasonal marketing",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Omnichannel retailing tích hợp nhiều kênh bán hàng (online, cửa hàng vật lý, ứng dụng) để cung cấp trải nghiệm mua sắm liền mạch. Option B là bán thêm sản phẩm khác, C là định giá neo, D là tiếp thị theo mùa—không phù hợp."
+    }
+  ]
+}

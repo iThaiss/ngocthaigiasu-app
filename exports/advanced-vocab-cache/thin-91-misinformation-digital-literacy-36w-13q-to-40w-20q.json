@@ -1,0 +1,247 @@
+{
+  "words": [
+    {
+      "word": "epistemic vulnerability",
+      "pronunciation": "/ˌɛpɪˈstɛmɪk vʌlnərəˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng dễ bị lừa dối hoặc tiếp nhận thông tin sai lệch do thiếu kiến thức chuyên môn hoặc khả năng đánh giá nguồn tin",
+      "definition_en": "susceptibility to misinformation due to lack of expertise or critical evaluation skills in a particular domain",
+      "level": "C1",
+      "synonyms": [
+        "information susceptibility",
+        "cognitive vulnerability"
+      ],
+      "antonyms": [
+        "epistemic resilience",
+        "information immunity"
+      ],
+      "example_sentence": "Elderly citizens often face greater epistemic vulnerability when navigating complex health claims on social media platforms."
+    },
+    {
+      "word": "prebunking",
+      "pronunciation": "/priːˈbʌŋkɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "chiến lược phòng chống tin giả bằng cách chuẩn bị sẵn kiến thức cho người dùng trước khi họ tiếp xúc với thông tin sai lệch",
+      "definition_en": "proactive strategy to inoculate people against misinformation by teaching them to recognize manipulation tactics before exposure",
+      "level": "C1",
+      "synonyms": [
+        "inoculation",
+        "pre-exposure"
+      ],
+      "antonyms": [
+        "debunking"
+      ],
+      "example_sentence": "Prebunking campaigns have proven more effective than traditional fact-checking in reducing belief in false narratives."
+    },
+    {
+      "word": "information disorder",
+      "pronunciation": "/ˌɪnfərˈmeɪʃən dɪsˈɔːrdər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng hỗn loạn thông tin bao gồm cả tin giả, thông tin sai lệch và nội dung bị bối cảnh hóa sai",
+      "definition_en": "the broader ecosystem of false, inaccurate, and misleading information including misinformation and disinformation",
+      "level": "C1",
+      "synonyms": [
+        "information chaos",
+        "content pollution"
+      ],
+      "antonyms": [
+        "information integrity"
+      ],
+      "example_sentence": "Researchers distinguish between information disorder and simple factual errors when analyzing the spread of false claims online."
+    },
+    {
+      "word": "narrative framing",
+      "pronunciation": "/ˈnærətɪv ˈfreɪmɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cách trình bày sự kiện hoặc vấn đề bằng cách chọn lọc chi tiết và góc nhìn để tạo ấn tượng nhất định",
+      "definition_en": "the strategic presentation of information by selecting certain facts and perspectives to shape audience perception",
+      "level": "B2",
+      "synonyms": [
+        "selective presentation",
+        "perspective shaping"
+      ],
+      "antonyms": [
+        "balanced reporting",
+        "objective coverage"
+      ],
+      "example_sentence": "The narrative framing of economic data can significantly influence public opinion about government policy effectiveness."
+    },
+    {
+      "word": "source attribution",
+      "pronunciation": "/ˈsɔːrs ətˈtrɪbjuːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình xác định và ghi nhận nguồn gốc của thông tin, dữ liệu hoặc tuyên bố",
+      "definition_en": "the process of identifying and crediting the origin of information, data, or claims in a text or media",
+      "level": "B2",
+      "synonyms": [
+        "source identification",
+        "origin tracing"
+      ],
+      "antonyms": [
+        "plagiarism",
+        "misattribution"
+      ],
+      "example_sentence": "Proper source attribution is essential in academic writing to distinguish between original research and cited evidence."
+    },
+    {
+      "word": "cognitive dissonance",
+      "pronunciation": "/ˈkɒɡnɪtɪv ˈdɪsənəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng tâm lý không thoải mái khi một người có hai niềm tin hoặc thông tin mâu thuẫn với nhau",
+      "definition_en": "psychological discomfort experienced when holding contradictory beliefs or receiving information that conflicts with existing worldviews",
+      "level": "C1",
+      "synonyms": [
+        "mental conflict",
+        "belief contradiction"
+      ],
+      "antonyms": [
+        "cognitive harmony",
+        "belief alignment"
+      ],
+      "example_sentence": "Cognitive dissonance can cause people to reject factual corrections that challenge their pre-existing political convictions."
+    },
+    {
+      "word": "media consumption patterns",
+      "pronunciation": "/ˈmiːdiə kənˈsʌmpʃən ˈpætərnz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những thói quen và cách thức mà người dùng tiếp nhận, lựa chọn và sử dụng các loại phương tiện truyền thông",
+      "definition_en": "the habits and methods by which individuals select, consume, and interact with different types of media sources",
+      "level": "B2",
+      "synonyms": [
+        "viewing habits",
+        "information seeking behavior"
+      ],
+      "antonyms": [],
+      "example_sentence": "Research shows that media consumption patterns among younger demographics increasingly favor short-form video content over traditional news outlets."
+    },
+    {
+      "word": "semantic manipulation",
+      "pronunciation": "/sɪˈmæntɪk ˌmænɪpjuˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kỹ thuật sử dụng ngôn ngữ, từ vựng hoặc ý nghĩa từ để thay đổi cách hiểu hoặc cảm nhận của người đọc",
+      "definition_en": "the use of language, word choice, and meaning to distort perception or manipulate audience understanding",
+      "level": "C1",
+      "synonyms": [
+        "linguistic distortion",
+        "rhetorical manipulation"
+      ],
+      "antonyms": [
+        "linguistic clarity",
+        "semantic transparency"
+      ],
+      "example_sentence": "Semantic manipulation in political discourse often involves redefining key terms to shift public perception of controversial policies."
+    },
+    {
+      "word": "information hygiene",
+      "pronunciation": "/ˌɪnfərˈmeɪʃən ˈhaɪdʒiːn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những thực hành tốt để bảo vệ bản thân khỏi thông tin sai lệch, bao gồm kiểm tra nguồn và đánh giá độ tin cậy",
+      "definition_en": "practices and habits for protecting oneself from misinformation, including source verification and credibility assessment",
+      "level": "B2",
+      "synonyms": [
+        "information security",
+        "digital hygiene"
+      ],
+      "antonyms": [
+        "information recklessness"
+      ],
+      "example_sentence": "Maintaining good information hygiene requires regularly updating one's understanding of current events from multiple reliable sources."
+    },
+    {
+      "word": "narrative collapse",
+      "pronunciation": "/ˈnærətɪv kəˈlæps/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự sụp đổ hoặc mất tin cậy của một câu chuyện, lý thuyết hoặc tuyên bố khi bằng chứng mâu thuẫn được công bố",
+      "definition_en": "the breakdown or loss of credibility of a narrative or claim when contradictory evidence becomes widely known",
+      "level": "C1",
+      "synonyms": [
+        "narrative failure",
+        "story debunking"
+      ],
+      "antonyms": [
+        "narrative persistence",
+        "story reinforcement"
+      ],
+      "example_sentence": "The narrative collapse of the conspiracy theory occurred rapidly once mainstream media outlets published comprehensive fact-checking reports."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'epistemic vulnerability' in the context of digital literacy?",
+      "option_a": "The ability to understand complex scientific concepts online",
+      "option_b": "Susceptibility to misinformation due to lack of expertise or critical evaluation skills",
+      "option_c": "The technical skill required to access encrypted information",
+      "option_d": "A psychological disorder caused by excessive internet use",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Epistemic vulnerability là tình trạng dễ bị lừa dối do thiếu kiến thức chuyên môn hoặc khả năng đánh giá. Đáp án A sai vì nó chỉ nói về hiểu biết khoa học. C sai vì nó liên quan đến kỹ năng kỹ thuật. D sai vì nó không phải là rối loạn tâm lý."
+    },
+    {
+      "question_text": "Prebunking differs from traditional fact-checking in that it _____ people against misinformation before they encounter it.",
+      "option_a": "protects",
+      "option_b": "inoculates",
+      "option_c": "exposes",
+      "option_d": "isolates",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Prebunking là chiến lược phòng chống trước khi tiếp xúc với tin giả, do đó 'inoculates' (tiêm chủng) là từ chính xác nhất vì nó ngụ ý chuẩn bị sẵn sàng. 'Protects' quá chung chung. 'Exposes' và 'isolates' trái ngược với mục đích của prebunking."
+    },
+    {
+      "question_text": "The term 'information disorder' encompasses not only false information but also _____ content that has been taken out of proper context.",
+      "option_a": "verified",
+      "option_b": "authentic",
+      "option_c": "misleading",
+      "option_d": "transparent",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Information disorder bao gồm cả thông tin sai lệch và nội dung bị bối cảnh hóa sai. 'Misleading' (gây hiểu lầm) là từ phù hợp nhất. 'Verified', 'authentic', 'transparent' đều mang ý nghĩa tích cực, trái với bản chất của information disorder."
+    },
+    {
+      "question_text": "When a news outlet selectively presents facts to shape audience perception of an event, this practice is known as _____ .",
+      "option_a": "narrative framing",
+      "option_b": "source attribution",
+      "option_c": "information hygiene",
+      "option_d": "semantic clarity",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Narrative framing là cách trình bày sự kiện bằng cách chọn lọc chi tiết để tạo ấn tượng nhất định. B là quá trình xác định nguồn. C là thực hành bảo vệ khỏi tin giả. D là sự rõ ràng ngôn ngữ, trái ngược với framing."
+    },
+    {
+      "question_text": "Cognitive dissonance explains why people often _____ factual corrections that contradict their existing beliefs.",
+      "option_a": "eagerly accept",
+      "option_b": "immediately verify",
+      "option_c": "resist or reject",
+      "option_d": "carefully document",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Cognitive dissonance là tình trạng không thoải mái khi có niềm tin mâu thuẫn, do đó người ta thường từ chối (resist) hoặc bác bỏ (reject) thông tin trái với niềm tin hiện tại. A, B, D đều không phù hợp với cơ chế tâm lý này."
+    },
+    {
+      "question_text": "Which practice is most essential for maintaining good information hygiene in the digital age?",
+      "option_a": "Sharing all interesting content immediately on social media",
+      "option_b": "Verifying sources and assessing credibility before accepting claims",
+      "option_c": "Consuming news only from entertainment platforms",
+      "option_d": "Avoiding all online content to prevent exposure to false information",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Information hygiene là những thực hành bảo vệ bản thân khỏi tin giả, bao gồm kiểm tra nguồn và đánh giá độ tin cậy. A, C, D đều là hành vi không lành mạnh hoặc cực đoan. Chỉ B là thực hành hợp lý."
+    },
+    {
+      "question_text": "Semantic manipulation in political discourse often involves _____ key terms to shift public perception of controversial policies.",
+      "option_a": "standardizing",
+      "option_b": "redefining",
+      "option_c": "simplifying",
+      "option_d": "translating",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Semantic manipulation sử dụng ngôn ngữ để thay đổi cách hiểu. 'Redefining' (định nghĩa lại) là cách chính xác để mô tả việc thay đổi ý nghĩa của từ. 'Standardizing' là chuẩn hóa, 'simplifying' là đơn giản hóa, 'translating' là dịch - đều không phù hợp với bối cảnh này."
+    }
+  ]
+}

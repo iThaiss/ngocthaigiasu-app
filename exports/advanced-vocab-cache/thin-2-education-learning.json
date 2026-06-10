@@ -1,0 +1,409 @@
+{
+  "words": [
+    {
+      "word": "pedagogical approach",
+      "pronunciation": "/ˌpedəˈɡɒdʒɪkəl əˈprəʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phương pháp giảng dạy, cách tiếp cận trong dạy học dựa trên lý thuyết giáo dục",
+      "definition_en": "a method or strategy of teaching based on educational theory and practice",
+      "level": "B2",
+      "synonyms": [
+        "teaching method",
+        "instructional strategy"
+      ],
+      "antonyms": [],
+      "example_sentence": "Modern pedagogical approaches emphasize student-centered learning rather than traditional lecture-based instruction."
+    },
+    {
+      "word": "rote learning",
+      "pronunciation": "/rəʊt ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học thuộc lòng, học bằng cách lặp lại nhiều lần mà không hiểu sâu",
+      "definition_en": "memorization through repetition without necessarily understanding the meaning",
+      "level": "B2",
+      "synonyms": [
+        "mechanical learning",
+        "memorization"
+      ],
+      "antonyms": [
+        "deep learning",
+        "conceptual understanding"
+      ],
+      "example_sentence": "Rote learning may help students pass exams quickly, but it does not promote long-term retention of knowledge."
+    },
+    {
+      "word": "holistic education",
+      "pronunciation": "/həʊˈlɪstɪk ˌedʒuˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giáo dục toàn diện, phát triển cân bằng các khía cạnh trí tuệ, thể chất, cảm xúc và xã hội",
+      "definition_en": "an educational approach that develops the whole person—intellectual, physical, emotional, and social dimensions",
+      "level": "B2",
+      "synonyms": [
+        "comprehensive education",
+        "well-rounded education"
+      ],
+      "antonyms": [
+        "narrow education",
+        "specialized education"
+      ],
+      "example_sentence": "Holistic education aims to cultivate critical thinking, creativity, and emotional intelligence alongside academic knowledge."
+    },
+    {
+      "word": "scaffolding",
+      "pronunciation": "/ˈskæfəldɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "hỗ trợ dần dần từ giáo viên, từng bước giảm sự trợ giúp khi học sinh tiến bộ",
+      "definition_en": "temporary support provided by a teacher that is gradually reduced as a learner becomes more competent",
+      "level": "B2",
+      "synonyms": [
+        "guided support",
+        "instructional support"
+      ],
+      "antonyms": [],
+      "example_sentence": "Teachers use scaffolding techniques to help struggling students bridge the gap between their current level and learning objectives."
+    },
+    {
+      "word": "differentiated instruction",
+      "pronunciation": "/ˌdɪfəˈrenʃieɪtɪd ɪnˈstrʌkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dạy học phân hóa, điều chỉnh phương pháp giảng dạy phù hợp với từng học sinh",
+      "definition_en": "tailoring teaching methods and materials to meet the diverse learning needs of individual students",
+      "level": "B2",
+      "synonyms": [
+        "personalized learning",
+        "adaptive instruction"
+      ],
+      "antonyms": [
+        "one-size-fits-all teaching"
+      ],
+      "example_sentence": "Differentiated instruction allows teachers to address varying learning styles and paces within a single classroom."
+    },
+    {
+      "word": "formative assessment",
+      "pronunciation": "/ˈfɔːmətɪv əˈsesmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh giá quá trình, kiểm tra trong quá trình học để điều chỉnh phương pháp giảng dạy",
+      "definition_en": "ongoing evaluation during learning to monitor progress and inform instructional adjustments",
+      "level": "B2",
+      "synonyms": [
+        "continuous assessment",
+        "progress monitoring"
+      ],
+      "antonyms": [
+        "summative assessment"
+      ],
+      "example_sentence": "Formative assessment through quizzes and class discussions helps teachers identify gaps in student understanding early."
+    },
+    {
+      "word": "metacognition",
+      "pronunciation": "/ˌmetəˈkɒɡnɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "nhận thức về nhận thức, khả năng suy nghĩ về cách mình học và giải quyết vấn đề",
+      "definition_en": "awareness and understanding of one's own thinking processes and learning strategies",
+      "level": "B2",
+      "synonyms": [
+        "self-awareness",
+        "reflective thinking"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developing metacognition helps students become independent learners who can evaluate and improve their own study habits."
+    },
+    {
+      "word": "collaborative learning",
+      "pronunciation": "/kəˈlæbərətɪv ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học tập hợp tác, học sinh làm việc cùng nhau để đạt mục tiêu chung",
+      "definition_en": "learning through group work where students work together to achieve shared educational goals",
+      "level": "B2",
+      "synonyms": [
+        "cooperative learning",
+        "group learning"
+      ],
+      "antonyms": [
+        "individual learning",
+        "competitive learning"
+      ],
+      "example_sentence": "Collaborative learning projects develop teamwork skills and expose students to diverse perspectives and problem-solving approaches."
+    },
+    {
+      "word": "blended learning",
+      "pronunciation": "/ˈblendɪd ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học tập kết hợp, kết hợp giữa học trực tiếp và học trực tuyến",
+      "definition_en": "an educational model combining face-to-face instruction with online learning components",
+      "level": "B2",
+      "synonyms": [
+        "hybrid learning",
+        "mixed-mode learning"
+      ],
+      "antonyms": [
+        "purely online learning",
+        "traditional classroom learning"
+      ],
+      "example_sentence": "Blended learning offers flexibility while maintaining the benefits of in-person interaction and personalized feedback."
+    },
+    {
+      "word": "inquiry-based learning",
+      "pronunciation": "/ɪnˈkwaɪəri beɪst ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học tập dựa trên khám phá, học sinh tự đặt câu hỏi và tìm kiếm câu trả lời",
+      "definition_en": "a learning approach where students actively ask questions and investigate to construct knowledge",
+      "level": "B2",
+      "synonyms": [
+        "discovery learning",
+        "problem-based learning"
+      ],
+      "antonyms": [
+        "passive learning",
+        "direct instruction"
+      ],
+      "example_sentence": "Inquiry-based learning encourages students to develop critical thinking and scientific reasoning through hands-on investigation."
+    },
+    {
+      "word": "learning outcome",
+      "pronunciation": "/ˈlɜːnɪŋ ˈaʊtkʌm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết quả học tập, những kiến thức, kỹ năng hay thái độ mà học sinh đạt được sau khóa học",
+      "definition_en": "the specific knowledge, skills, or competencies students are expected to achieve by the end of a course",
+      "level": "B2",
+      "synonyms": [
+        "learning objective",
+        "educational goal"
+      ],
+      "antonyms": [],
+      "example_sentence": "Clear learning outcomes help students understand expectations and allow teachers to measure instructional effectiveness."
+    },
+    {
+      "word": "adaptive learning",
+      "pronunciation": "/əˈdæptɪv ˈlɜːnɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học tập thích ứng, hệ thống tự động điều chỉnh nội dung và độ khó dựa trên tiến độ học sinh",
+      "definition_en": "technology-enabled learning that automatically adjusts content difficulty and pacing based on individual student performance",
+      "level": "B2",
+      "synonyms": [
+        "personalized learning",
+        "intelligent tutoring"
+      ],
+      "antonyms": [
+        "standardized learning"
+      ],
+      "example_sentence": "Adaptive learning platforms use algorithms to provide customized learning paths that optimize student engagement and achievement."
+    },
+    {
+      "word": "flipped classroom",
+      "pronunciation": "/ˈflɪpt ˈklɑːsruːm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lớp học đảo ngược, học sinh học lý thuyết ở nhà qua video, lớp học dành cho thực hành và thảo luận",
+      "definition_en": "an instructional model where students learn content at home via videos and use class time for practice and discussion",
+      "level": "B2",
+      "synonyms": [
+        "inverted classroom"
+      ],
+      "antonyms": [
+        "traditional classroom"
+      ],
+      "example_sentence": "The flipped classroom model maximizes active learning time and allows teachers to provide more personalized support."
+    },
+    {
+      "word": "peer tutoring",
+      "pronunciation": "/pɪə ˈtjuːtərɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "học sinh dạy học sinh, một học sinh giúp đỡ học sinh khác trong cùng lứa tuổi",
+      "definition_en": "a learning arrangement where students teach and help each other, typically those of similar age or ability",
+      "level": "B2",
+      "synonyms": [
+        "peer teaching",
+        "student-to-student instruction"
+      ],
+      "antonyms": [
+        "teacher-led instruction"
+      ],
+      "example_sentence": "Peer tutoring benefits both the tutor and the tutee by reinforcing understanding and building confidence."
+    },
+    {
+      "word": "learning disability",
+      "pronunciation": "/ˈlɜːnɪŋ dɪsəˈbɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khó khăn trong học tập, tình trạng ảnh hưởng đến khả năng tiếp thu kiến thức của học sinh",
+      "definition_en": "a neurological condition that affects how the brain processes information and impacts learning ability",
+      "level": "B2",
+      "synonyms": [
+        "learning difficulty",
+        "educational disability"
+      ],
+      "antonyms": [],
+      "example_sentence": "Students with learning disabilities benefit from specialized support, assistive technology, and modified instructional strategies."
+    },
+    {
+      "word": "critical thinking",
+      "pronunciation": "/ˈkrɪtɪkəl ˈθɪŋkɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tư duy phản biện, khả năng phân tích, đánh giá thông tin một cách logic và khách quan",
+      "definition_en": "the ability to analyze, evaluate, and reason through information objectively and logically",
+      "level": "B2",
+      "synonyms": [
+        "analytical thinking",
+        "logical reasoning"
+      ],
+      "antonyms": [
+        "uncritical thinking",
+        "passive acceptance"
+      ],
+      "example_sentence": "Developing critical thinking skills enables students to solve complex problems and make informed decisions."
+    },
+    {
+      "word": "learning style",
+      "pronunciation": "/ˈlɜːnɪŋ staɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phong cách học tập, cách thức mà mỗi cá nhân tiếp thu và xử lý thông tin hiệu quả nhất",
+      "definition_en": "an individual's preferred method of acquiring and processing information (visual, auditory, kinesthetic, etc.)",
+      "level": "B2",
+      "synonyms": [
+        "learning preference",
+        "cognitive style"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding your learning style helps you choose study strategies that maximize comprehension and retention."
+    },
+    {
+      "word": "student engagement",
+      "pronunciation": "/ˈstjuːdənt ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự tham gia tích cực của học sinh, mức độ quan tâm và tham gia của học sinh trong học tập",
+      "definition_en": "the degree to which students are actively involved, motivated, and invested in their learning",
+      "level": "B2",
+      "synonyms": [
+        "student involvement",
+        "academic engagement"
+      ],
+      "antonyms": [
+        "student disengagement",
+        "apathy"
+      ],
+      "example_sentence": "High student engagement is linked to better academic outcomes and improved classroom behavior."
+    },
+    {
+      "word": "inclusive education",
+      "pronunciation": "/ɪnˈkluːsɪv ˌedʒuˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giáo dục hòa nhập, đảm bảo tất cả học sinh, kể cả những em khuyết tật, được học cùng lớp",
+      "definition_en": "an educational approach that ensures all students, including those with disabilities, learn together in mainstream classrooms",
+      "level": "B2",
+      "synonyms": [
+        "mainstreaming",
+        "inclusive schooling"
+      ],
+      "antonyms": [
+        "segregated education",
+        "exclusionary education"
+      ],
+      "example_sentence": "Inclusive education promotes diversity, reduces stigma, and provides all students with equal access to quality learning opportunities."
+    },
+    {
+      "word": "formative feedback",
+      "pronunciation": "/ˈfɔːmətɪv ˈfedˌbæk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phản hồi xây dựng, nhận xét chi tiết giúp học sinh cải thiện trong quá trình học",
+      "definition_en": "constructive comments provided during learning to help students improve and guide their progress",
+      "level": "B2",
+      "synonyms": [
+        "constructive feedback",
+        "developmental feedback"
+      ],
+      "antonyms": [
+        "summative feedback"
+      ],
+      "example_sentence": "Timely formative feedback helps students identify strengths and areas for improvement before high-stakes assessments."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which pedagogical approach emphasizes students learning through asking questions and investigating rather than passively receiving information?",
+      "option_a": "Rote learning",
+      "option_b": "Inquiry-based learning",
+      "option_c": "Blended learning",
+      "option_d": "Adaptive learning",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Inquiry-based learning là phương pháp dạy học dựa trên khám phá, nơi học sinh tự đặt câu hỏi và tìm kiếm câu trả lời. Rote learning là học thuộc lòng, blended learning kết hợp trực tiếp và trực tuyến, adaptive learning là học tập thích ứng."
+    },
+    {
+      "question_text": "In a flipped classroom model, what is the primary purpose of class time?",
+      "option_a": "To deliver lectures and present new content",
+      "option_b": "To assign homework and independent work",
+      "option_c": "To conduct practice activities and facilitate discussion",
+      "option_d": "To administer summative assessments only",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Trong lớp học đảo ngược, học sinh học lý thuyết ở nhà qua video, còn thời gian lớp học dành cho thực hành, thảo luận và hỗ trợ cá nhân. Các lựa chọn khác không phản ánh đúng mô hình này."
+    },
+    {
+      "question_text": "Metacognition refers to _____ about one's own thinking processes and learning strategies.",
+      "option_a": "emotional awareness",
+      "option_b": "social interaction",
+      "option_c": "awareness and understanding",
+      "option_d": "memorization techniques",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Metacognition là nhận thức về nhận thức, khả năng suy nghĩ về cách mình học. Các lựa chọn khác không phản ánh đúng định nghĩa của thuật ngữ này."
+    },
+    {
+      "question_text": "Which of the following best describes scaffolding in education?",
+      "option_a": "A permanent support system for all students",
+      "option_b": "Temporary support that is gradually reduced as students become more competent",
+      "option_c": "A method of assessing student knowledge",
+      "option_d": "A type of standardized testing",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Scaffolding là hỗ trợ tạm thời từ giáo viên, từng bước giảm sự trợ giúp khi học sinh tiến bộ. Nó không phải là hỗ trợ vĩnh viễn, không phải phương pháp đánh giá, và không phải kiểm tra chuẩn hóa."
+    },
+    {
+      "question_text": "Differentiated instruction is most beneficial because it _____ to meet diverse learning needs.",
+      "option_a": "uses the same teaching method for all students",
+      "option_b": "focuses only on high-achieving students",
+      "option_c": "tailors teaching methods and materials to individual students",
+      "option_d": "eliminates the need for teacher feedback",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Dạy học phân hóa là điều chỉnh phương pháp giảng dạy phù hợp với từng học sinh. Các lựa chọn khác mô tả sai hoặc trái ngược với khái niệm này."
+    },
+    {
+      "question_text": "Formative assessment differs from summative assessment in that it _____ during the learning process.",
+      "option_a": "provides final grades only",
+      "option_b": "monitors progress and informs instructional adjustments",
+      "option_c": "occurs only at the end of a course",
+      "option_d": "measures student competence without feedback",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đánh giá quá trình (formative assessment) giúp theo dõi tiến độ và điều chỉnh phương pháp giảng dạy trong quá trình học. Đánh giá tổng kết (summative assessment) xảy ra ở cuối khóa học để đánh giá kết quả cuối cùng."
+    },
+    {
+      "question_text": "Which statement best explains why peer tutoring is effective for both the tutor and the tutee?",
+      "option_a": "It reduces the teacher's workload completely",
+      "option_b": "It reinforces understanding for the tutor and builds confidence for the tutee",
+      "option_c": "It eliminates the need for formal assessment",
+      "option_d": "It guarantees higher test scores for all students",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Học sinh dạy học sinh có lợi cho cả người dạy (củng cố hiểu biết) và người học (xây dựng tự tin). Các lựa chọn khác là những tuyên bố quá tuyệt đối hoặc không chính xác."
+    },
+    {
+      "question_text": "Inclusive education aims to ensure that _____ have equal access to quality learning in mainstream classrooms.",
+      "option_a": "only gifted students",
+      "option_b": "all students, including those with disabilities",
+      "option_c": "students from wealthy families",
+      "option_d": "students who speak the dominant language",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Giáo dục hòa nhập đảm bảo tất cả học sinh, kể cả những em khuyết tật, được học cùng lớp và có cơ hội học tập bình đẳng. Các lựa chọn khác là những hạn chế không phù hợp với khái niệm hòa nhập."
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "words": [
+    {
+      "word": "data exfiltration",
+      "pronunciation": "/ˈdeɪtə ˌɛksfɪlˈtreɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "hành động trích xuất, chuyển dữ liệu nhạy cảm ra khỏi hệ thống một cách trái phép hoặc không được phép",
+      "definition_en": "the unauthorized transfer or theft of sensitive data from a computer system or network",
+      "level": "C1",
+      "synonyms": [
+        "data theft",
+        "unauthorized data transfer"
+      ],
+      "antonyms": [
+        "data protection",
+        "data containment"
+      ],
+      "example_sentence": "The investigation revealed that attackers had conducted systematic data exfiltration over several months before detection."
+    },
+    {
+      "word": "privilege escalation",
+      "pronunciation": "/ˈprɪvɪlɪdʒ ˌɛskəˈleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật tấn công cho phép kẻ tấn công nâng cấp quyền truy cập từ người dùng thường lên quản trị viên hoặc quyền cao hơn",
+      "definition_en": "a security flaw that allows an attacker to gain higher-level permissions than initially granted",
+      "level": "C1",
+      "synonyms": [
+        "privilege abuse",
+        "access elevation"
+      ],
+      "antonyms": [
+        "access restriction",
+        "least privilege principle"
+      ],
+      "example_sentence": "Security researchers discovered a privilege escalation vulnerability in the operating system that could allow local users to gain administrative control."
+    },
+    {
+      "word": "data residue",
+      "pronunciation": "/ˈdeɪtə ˈrɛzɪduː/",
+      "part_of_speech": "noun",
+      "definition_vi": "dữ liệu còn sót lại trên thiết bị hoặc hệ thống sau khi xóa, có thể được khôi phục bằng công cụ chuyên dụng",
+      "definition_en": "leftover data fragments that remain on storage devices even after deletion and can potentially be recovered",
+      "level": "C1",
+      "synonyms": [
+        "data remnants",
+        "deleted data recovery"
+      ],
+      "antonyms": [
+        "secure deletion",
+        "data wiping"
+      ],
+      "example_sentence": "Organizations must implement secure data wiping procedures to prevent data residue from being recovered by unauthorized parties."
+    },
+    {
+      "word": "threat landscape",
+      "pronunciation": "/θrɛt ˈlændˌskeɪp/",
+      "part_of_speech": "noun",
+      "definition_vi": "tổng thể các mối đe dọa bảo mật hiện tại và tiềm ẩn mà một tổ chức phải đối mặt trong một thời kỳ nhất định",
+      "definition_en": "the overall environment of security threats and risks that an organization faces at a given time",
+      "level": "C1",
+      "synonyms": [
+        "threat environment",
+        "security risk landscape"
+      ],
+      "antonyms": [
+        "secure environment"
+      ],
+      "example_sentence": "The evolving threat landscape requires companies to continuously update their security strategies and invest in advanced detection tools."
+    },
+    {
+      "word": "data controller",
+      "pronunciation": "/ˈdeɪtə kənˈtroʊlər/",
+      "part_of_speech": "noun",
+      "definition_vi": "tổ chức hoặc cá nhân quyết định mục đích và phương tiện xử lý dữ liệu cá nhân, thường có trách nhiệm pháp lý",
+      "definition_en": "an entity that determines the purposes and means of processing personal data, typically bearing legal responsibility",
+      "level": "B2",
+      "synonyms": [
+        "data processor",
+        "responsible party"
+      ],
+      "antonyms": [
+        "data subject"
+      ],
+      "example_sentence": "Under data protection regulations, the data controller must ensure that all processing activities comply with privacy laws and obtain proper consent."
+    },
+    {
+      "word": "breach notification",
+      "pronunciation": "/briːtʃ ˌnoʊtɪfɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "thông báo bắt buộc gửi cho những người bị ảnh hưởng khi dữ liệu cá nhân của họ bị xâm phạm hoặc rò rỉ",
+      "definition_en": "mandatory communication to affected individuals when their personal data has been compromised or exposed",
+      "level": "B2",
+      "synonyms": [
+        "incident notification",
+        "disclosure requirement"
+      ],
+      "antonyms": [
+        "confidentiality",
+        "non-disclosure"
+      ],
+      "example_sentence": "Companies are legally required to issue breach notifications within a specified timeframe to inform customers of potential risks to their personal information."
+    },
+    {
+      "word": "access control list",
+      "pronunciation": "/ˈækˌsɛs kənˈtroʊl lɪst/",
+      "part_of_speech": "noun",
+      "definition_vi": "danh sách xác định ai được phép truy cập tài nguyên cụ thể và những hành động nào họ có thể thực hiện",
+      "definition_en": "a security mechanism that specifies which users or systems have permission to access particular resources and what actions they can perform",
+      "level": "C1",
+      "synonyms": [
+        "ACL",
+        "permission matrix"
+      ],
+      "antonyms": [
+        "unrestricted access"
+      ],
+      "example_sentence": "Proper configuration of access control lists is essential to ensure that employees only have access to the data and systems necessary for their roles."
+    },
+    {
+      "word": "data minimization",
+      "pronunciation": "/ˈdeɪtə ˌmɪnɪməˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "nguyên tắc chỉ thu thập và xử lý dữ liệu cá nhân tối thiểu cần thiết cho mục đích đã xác định",
+      "definition_en": "the principle of collecting and processing only the minimum amount of personal data necessary for a specified purpose",
+      "level": "C1",
+      "synonyms": [
+        "data reduction",
+        "limited data collection"
+      ],
+      "antonyms": [
+        "data maximization",
+        "excessive collection"
+      ],
+      "example_sentence": "Data minimization is a core principle of modern privacy frameworks, requiring organizations to justify every piece of personal information they collect."
+    },
+    {
+      "word": "security posture",
+      "pronunciation": "/sɪˈkjʊrɪti ˈpɑːstʃər/",
+      "part_of_speech": "noun",
+      "definition_vi": "tổng thể các biện pháp, chính sách và công nghệ bảo mật mà một tổ chức triển khai để bảo vệ tài sản thông tin",
+      "definition_en": "the overall state of an organization's security measures, policies, and technologies designed to protect information assets",
+      "level": "C1",
+      "synonyms": [
+        "security stance",
+        "security infrastructure"
+      ],
+      "antonyms": [
+        "security weakness",
+        "vulnerability"
+      ],
+      "example_sentence": "Regular security assessments help organizations evaluate their security posture and identify areas requiring improvement or investment."
+    },
+    {
+      "word": "data subject rights",
+      "pronunciation": "/ˈdeɪtə ˈsʌbdʒɪkt raɪts/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các quyền pháp lý của cá nhân liên quan đến dữ liệu cá nhân của họ, bao gồm quyền truy cập, sửa đổi, xóa",
+      "definition_en": "legal entitlements of individuals regarding their personal data, including rights to access, rectification, erasure, and portability",
+      "level": "B2",
+      "synonyms": [
+        "individual rights",
+        "privacy rights"
+      ],
+      "antonyms": [
+        "data controller obligations"
+      ],
+      "example_sentence": "Organizations must establish clear procedures to handle data subject rights requests, such as the right to be forgotten and the right to data portability."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary concern addressed by data minimization principles?",
+      "option_a": "Ensuring that all personal data is encrypted during transmission",
+      "option_b": "Limiting the collection and processing of personal data to only what is necessary for a specific purpose",
+      "option_c": "Preventing unauthorized access through multi-factor authentication",
+      "option_d": "Monitoring user behavior to detect suspicious activities",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Data minimization là nguyên tắc chỉ thu thập dữ liệu tối thiểu cần thiết. Các lựa chọn A, C, D đều liên quan đến các biện pháp bảo mật khác nhưng không phải là mục đích chính của data minimization."
+    },
+    {
+      "question_text": "In the context of cybersecurity, what does privilege escalation typically refer to?",
+      "option_a": "Promoting an employee to a higher position within the organization",
+      "option_b": "Increasing the complexity of passwords for administrative accounts",
+      "option_c": "An attacker gaining higher-level permissions than initially granted through a security flaw",
+      "option_d": "Upgrading security software to the latest version",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Privilege escalation là kỹ thuật tấn công cho phép kẻ tấn công nâng cấp quyền truy cập. Các lựa chọn A, B, D đều không liên quan đến khái niệm này trong bảo mật mạng."
+    },
+    {
+      "question_text": "A company discovers that sensitive customer information has been systematically removed from their servers without authorization. This incident would best be classified as ___.",
+      "option_a": "data residue",
+      "option_b": "data exfiltration",
+      "option_c": "breach notification",
+      "option_d": "threat landscape",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Data exfiltration là hành động trích xuất dữ liệu trái phép. Data residue là dữ liệu còn sót lại sau xóa. Breach notification là thông báo về vi phạm. Threat landscape là tổng thể các mối đe dọa."
+    },
+    {
+      "question_text": "Which term refers to the leftover data fragments that remain on storage devices even after deletion and can potentially be recovered?",
+      "option_a": "Access control list",
+      "option_b": "Data residue",
+      "option_c": "Security posture",
+      "option_d": "Threat landscape",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Data residue chính xác là dữ liệu còn sót lại trên thiết bị sau khi xóa. Các lựa chọn khác đều là khái niệm bảo mật khác không liên quan đến dữ liệu còn lại."
+    },
+    {
+      "question_text": "Under data protection regulations, the entity that determines the purposes and means of processing personal data is called the ___.",
+      "option_a": "data subject",
+      "option_b": "data processor",
+      "option_c": "data controller",
+      "option_d": "security administrator",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Data controller là tổ chức quyết định mục đích và phương tiện xử lý dữ liệu. Data subject là người mà dữ liệu thuộc về. Data processor là bên xử lý dữ liệu theo hướng dẫn của controller."
+    },
+    {
+      "question_text": "An organization's ___ encompasses all the security measures, policies, and technologies it has implemented to protect its information assets from threats.",
+      "option_a": "threat landscape",
+      "option_b": "security posture",
+      "option_c": "access control list",
+      "option_d": "breach notification",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Security posture là tổng thể các biện pháp bảo mật của một tổ chức. Threat landscape là các mối đe dọa hiện tại. Access control list là danh sách quyền truy cập. Breach notification là thông báo vi phạm."
+    }
+  ]
+}

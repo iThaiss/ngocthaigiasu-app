@@ -1,0 +1,378 @@
+{
+  "words": [
+    {
+      "word": "henceforth",
+      "pronunciation": "/ˈhensˈfɔːrθ/",
+      "part_of_speech": "adverb",
+      "definition_vi": "từ đây trở đi, kể từ bây giờ về sau (dùng trong văn bản chính thức hoặc học thuật)",
+      "definition_en": "from this point forward; from now on in a formal or official context",
+      "level": "B2",
+      "synonyms": [
+        "from now on",
+        "hereafter"
+      ],
+      "antonyms": [
+        "heretofore",
+        "previously"
+      ],
+      "example_sentence": "The new regulations will be enforced henceforth, and all employees must comply with the updated guidelines."
+    },
+    {
+      "word": "preceding",
+      "pronunciation": "/prɪˈsiːdɪŋ/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đi trước, phía trước (về thời gian hoặc vị trí)",
+      "definition_en": "coming or occurring before something in time or order",
+      "level": "B2",
+      "synonyms": [
+        "previous",
+        "prior"
+      ],
+      "antonyms": [
+        "following",
+        "subsequent"
+      ],
+      "example_sentence": "The data presented in the preceding chapter demonstrates a clear correlation between climate change and biodiversity loss."
+    },
+    {
+      "word": "subsequent to",
+      "pronunciation": "/ˈsʌbsɪkwənt tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sau khi, tiếp theo sau (thường dùng trong văn bản chính thức)",
+      "definition_en": "occurring or coming after something else in time",
+      "level": "B2",
+      "synonyms": [
+        "after",
+        "following"
+      ],
+      "antonyms": [
+        "prior to",
+        "before"
+      ],
+      "example_sentence": "Subsequent to the initial investigation, the committee discovered additional evidence that contradicted the original findings."
+    },
+    {
+      "word": "by and large",
+      "pronunciation": "/baɪ ənd lɑːrdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói chung, nhìn chung, phần lớn",
+      "definition_en": "on the whole; in general; mostly",
+      "level": "B2",
+      "synonyms": [
+        "generally",
+        "mostly",
+        "in general"
+      ],
+      "antonyms": [
+        "specifically",
+        "in particular"
+      ],
+      "example_sentence": "By and large, the survey results indicate that most teenagers prefer online learning to traditional classroom instruction."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "/ɪn ˈlaɪt əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xét đến, dựa trên, với sự xem xét đến",
+      "definition_en": "considering; taking into account; because of",
+      "level": "B2",
+      "synonyms": [
+        "considering",
+        "given",
+        "in view of"
+      ],
+      "antonyms": [
+        "ignoring",
+        "disregarding"
+      ],
+      "example_sentence": "In light of the recent economic downturn, the government has decided to implement stricter fiscal policies."
+    },
+    {
+      "word": "notwithstanding",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ/",
+      "part_of_speech": "noun",
+      "definition_vi": "mặc dù, bất chấp, không kể đến",
+      "definition_en": "in spite of; despite; however",
+      "level": "C1",
+      "synonyms": [
+        "despite",
+        "in spite of",
+        "although"
+      ],
+      "antonyms": [
+        "because of",
+        "due to"
+      ],
+      "example_sentence": "Notwithstanding the significant challenges faced by the organization, it managed to achieve its annual targets."
+    },
+    {
+      "word": "be conducive to",
+      "pronunciation": "/bi kənˈdjuːsɪv tuː/",
+      "part_of_speech": "collocation",
+      "definition_vi": "có lợi cho, tạo điều kiện thuận lợi cho, giúp thúc đẩy",
+      "definition_en": "to help create conditions that make something possible or likely",
+      "level": "B2",
+      "synonyms": [
+        "promote",
+        "facilitate",
+        "encourage"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "A calm and organized workspace is conducive to productivity and creative thinking."
+    },
+    {
+      "word": "in the wake of",
+      "pronunciation": "/ɪn ðə ˈweɪk əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sau khi, trong thời gian sau (thường là sau một sự kiện quan trọng)",
+      "definition_en": "as a consequence of; following after an event",
+      "level": "B2",
+      "synonyms": [
+        "following",
+        "after",
+        "as a result of"
+      ],
+      "antonyms": [
+        "before",
+        "prior to"
+      ],
+      "example_sentence": "In the wake of the pandemic, many companies accelerated their digital transformation strategies."
+    },
+    {
+      "word": "draw a conclusion",
+      "pronunciation": "/drɔː ə kənˈkluːʒən/",
+      "part_of_speech": "collocation",
+      "definition_vi": "rút ra kết luận, đi đến kết luận",
+      "definition_en": "to reach a decision or opinion based on evidence or reasoning",
+      "level": "B2",
+      "synonyms": [
+        "reach a conclusion",
+        "come to a conclusion"
+      ],
+      "antonyms": [
+        "question",
+        "doubt"
+      ],
+      "example_sentence": "Based on the experimental results, researchers were able to draw a conclusion about the effectiveness of the new treatment."
+    },
+    {
+      "word": "in essence",
+      "pronunciation": "/ɪn ˈesəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "về bản chất, về cơ bản, nói một cách cơ bản",
+      "definition_en": "fundamentally; basically; in the most important sense",
+      "level": "B2",
+      "synonyms": [
+        "basically",
+        "fundamentally",
+        "essentially"
+      ],
+      "antonyms": [
+        "in detail",
+        "specifically"
+      ],
+      "example_sentence": "In essence, the government's new policy aims to reduce carbon emissions by promoting renewable energy sources."
+    },
+    {
+      "word": "be at odds with",
+      "pronunciation": "/bi ət ˈɒdz wɪð/",
+      "part_of_speech": "collocation",
+      "definition_vi": "mâu thuẫn với, không phù hợp với, trái ngược với",
+      "definition_en": "to be in disagreement or conflict with something",
+      "level": "B2",
+      "synonyms": [
+        "contradict",
+        "conflict with",
+        "clash with"
+      ],
+      "antonyms": [
+        "agree with",
+        "align with"
+      ],
+      "example_sentence": "The company's environmental practices are at odds with its stated commitment to sustainability."
+    },
+    {
+      "word": "pave the way for",
+      "pronunciation": "/peɪv ðə ˈweɪ fər/",
+      "part_of_speech": "collocation",
+      "definition_vi": "mở đường cho, tạo điều kiện cho, làm tiền đề cho",
+      "definition_en": "to make it possible for something to happen; to prepare the ground for",
+      "level": "B2",
+      "synonyms": [
+        "enable",
+        "facilitate",
+        "prepare"
+      ],
+      "antonyms": [
+        "obstruct",
+        "prevent"
+      ],
+      "example_sentence": "The discovery of antibiotics paved the way for modern medicine and saved countless lives."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "/stem frɒm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bắt nguồn từ, xuất phát từ, có gốc rễ từ",
+      "definition_en": "to originate from; to have as a source or cause",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from",
+        "result from"
+      ],
+      "antonyms": [
+        "cause",
+        "lead to"
+      ],
+      "example_sentence": "Many social problems stem from poverty and lack of educational opportunities."
+    },
+    {
+      "word": "bear out",
+      "pronunciation": "/beər ˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng minh, xác nhận, làm cho trở thành sự thật",
+      "definition_en": "to confirm or support a claim, theory, or statement with evidence",
+      "level": "C1",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "refute",
+        "contradict"
+      ],
+      "example_sentence": "Recent studies bear out the hypothesis that regular exercise significantly improves mental health."
+    },
+    {
+      "word": "in tandem with",
+      "pronunciation": "/ɪn ˈtændəm wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cùng với, song song với, kết hợp với",
+      "definition_en": "together with; at the same time as; in conjunction with",
+      "level": "B2",
+      "synonyms": [
+        "alongside",
+        "together with",
+        "in conjunction with"
+      ],
+      "antonyms": [
+        "separately from",
+        "independently of"
+      ],
+      "example_sentence": "The government implemented tax reforms in tandem with infrastructure development to boost economic growth."
+    },
+    {
+      "word": "underscore",
+      "pronunciation": "/ˌʌndərˈskɔːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh, làm nổi bật, gạch chân (ý nghĩa)",
+      "definition_en": "to emphasize or highlight the importance of something",
+      "level": "C1",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The report underscores the urgent need for climate action and international cooperation."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new safety regulations will apply to all employees _____, and failure to comply will result in disciplinary action.",
+      "option_a": "henceforth",
+      "option_b": "meanwhile",
+      "option_c": "initially",
+      "option_d": "thereafter",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Henceforth (từ đây trở đi) là từ chính thức dùng để chỉ một quy định áp dụng từ thời điểm hiện tại trở về sau. Meanwhile (trong khi đó) chỉ sự đồng thời, initially (ban đầu) chỉ giai đoạn đầu, thereafter (sau đó) không mang tính chính thức như henceforth."
+    },
+    {
+      "question_text": "Which phrase best completes this sentence? 'The government's decision to raise taxes is _____ the public's expectation for lower costs of living.'",
+      "option_a": "conducive to",
+      "option_b": "at odds with",
+      "option_c": "in tandem with",
+      "option_d": "paving the way for",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "At odds with (mâu thuẫn với) là cụm từ chính xác để diễn tả sự xung đột giữa hai điều. Conducive to (có lợi cho) mang ý tích cực, in tandem with (cùng với) chỉ sự kết hợp, paving the way for (mở đường cho) chỉ tạo điều kiện."
+    },
+    {
+      "question_text": "The economic crisis _____ from years of mismanagement and lack of oversight by regulatory authorities.",
+      "option_a": "paved the way",
+      "option_b": "stemmed",
+      "option_c": "bore out",
+      "option_d": "underscored",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Stemmed (bắt nguồn từ) là phrasal verb đúng để chỉ nguyên nhân gốc rễ. Paved the way (mở đường) chỉ tạo điều kiện, bore out (chứng minh) cần bằng chứng, underscored (nhấn mạnh) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "_____ the significant budget constraints, the research team managed to complete the project on schedule.",
+      "option_a": "In light of",
+      "option_b": "Notwithstanding",
+      "option_c": "In the wake of",
+      "option_d": "By and large",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Notwithstanding (mặc dù, bất chấp) là từ chính thức dùng để chỉ sự vượt qua khó khăn. In light of (xét đến) chỉ xem xét yếu tố, In the wake of (sau khi) chỉ hậu quả, By and large (nói chung) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The discovery of penicillin _____ modern antibiotic therapy and revolutionized the treatment of bacterial infections.",
+      "option_a": "bore out",
+      "option_b": "paved the way for",
+      "option_c": "underscored",
+      "option_d": "was conducive to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Paved the way for (mở đường cho) là cụm từ chính xác để chỉ một phát minh tạo tiền đề cho những phát triển sau. Bore out (chứng minh) cần bằng chứng, underscored (nhấn mạnh) không phù hợp, was conducive to (có lợi cho) không mạnh mẽ bằng."
+    },
+    {
+      "question_text": "What is the best synonym for 'notwithstanding' in the context of academic writing?",
+      "option_a": "because of",
+      "option_b": "in spite of",
+      "option_c": "as a result of",
+      "option_d": "in the wake of",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "In spite of (bất chấp) là đồng nghĩa chính xác với notwithstanding. Because of (vì) và as a result of (do kết quả của) chỉ nguyên nhân, in the wake of (sau khi) chỉ hậu quả thời gian."
+    },
+    {
+      "question_text": "The preceding analysis clearly demonstrates that _____ the environmental regulations are essential for protecting ecosystems.",
+      "option_a": "in essence",
+      "option_b": "in the wake of",
+      "option_c": "by and large",
+      "option_d": "subsequent to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "In essence (về bản chất) là cụm từ phù hợp để rút gọn ý chính của một phân tích. In the wake of (sau khi) chỉ thời gian, by and large (nói chung) không phù hợp, subsequent to (sau khi) không mang ý rút gọn."
+    },
+    {
+      "question_text": "The research findings _____ the theory that climate change is primarily caused by human activities.",
+      "option_a": "underscore",
+      "option_b": "bear out",
+      "option_c": "stem from",
+      "option_d": "are conducive to",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Bear out (chứng minh, xác nhận) là phrasal verb chính xác để chỉ bằng chứng hỗ trợ một lý thuyết. Underscore (nhấn mạnh) chỉ làm nổi bật, stem from (bắt nguồn) chỉ nguyên nhân, are conducive to (có lợi cho) không phù hợp ngữ cảnh."
+    }
+  ]
+}

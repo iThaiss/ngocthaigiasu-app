@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preview bài 1 - Giới hạn dãy số và hàm số</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050814;
+      --panel: #0b1220;
+      --panel-soft: #101827;
+      --line: #26354d;
+      --text: #f7f9fd;
+      --muted: #a9b7ca;
+      --blue: #60a5fa;
+      --cyan: #67e8f9;
+      --green: #34d399;
+      --amber: #fbbf24;
+      --red: #fb7185;
+      --ink: #111827;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #10213f 0, #050814 360px);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 72px;
+    }
+
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: rgba(8, 15, 29, .92);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    h1 {
+      margin: 6px 0 10px;
+      font-size: 32px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 10px 0; }
+    ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+    li { margin: 6px 0; }
+
+    .lead {
+      color: #d3deee;
+      max-width: 790px;
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: #101a2c;
+      color: #dbeafe;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+    }
+
+    .lesson {
+      display: grid;
+      gap: 14px;
+    }
+
+    .block {
+      border: 1px solid var(--line);
+      background: rgba(11, 18, 32, .96);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .block-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--line);
+      background: #0a1324;
+    }
+
+    .badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: grid;
+      place-items: center;
+      background: #17355c;
+      color: #bfdbfe;
+      font-weight: 900;
+      flex: none;
+    }
+
+    .block-body { padding: 18px; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .teacher {
+      border-left: 3px solid var(--blue);
+      background: #0a1a30;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      color: #dbeafe;
+    }
+
+    .student {
+      border-left: 3px solid var(--amber);
+      background: #1c1608;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      color: #fdecc1;
+    }
+
+    .conclude {
+      border: 1px solid #1f5f4a;
+      background: #071b16;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+
+    .warning {
+      border: 1px solid #733044;
+      background: #1a0d17;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+
+    .figure {
+      border: 1px solid #2b3d58;
+      background: #070c18;
+      border-radius: 8px;
+      padding: 14px;
+      position: sticky;
+      top: 14px;
+    }
+
+    .figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 8px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .observe {
+      margin-top: 12px;
+      padding-left: 12px;
+      border-left: 3px solid var(--cyan);
+      color: #cffafe;
+      font-size: 14px;
+    }
+
+    .numbers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .num {
+      min-width: 54px;
+      text-align: center;
+      border: 1px solid #33455f;
+      background: #0e1728;
+      border-radius: 7px;
+      padding: 8px 10px;
+      font-weight: 800;
+      color: #e0f2fe;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: #091120;
+      border-radius: 8px;
+      padding: 13px;
+    }
+
+    .card b {
+      display: block;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .formula {
+      border: 1px solid #394968;
+      background: #080f1d;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      margin: 12px 0;
+    }
+
+    .table th, .table td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .table th {
+      background: #0f1d33;
+      color: #dbeafe;
+    }
+
+    .table td {
+      background: #08111f;
+    }
+
+    .example {
+      border: 1px solid #34425e;
+      background: #080f1d;
+      border-radius: 8px;
+      padding: 14px;
+      margin: 12px 0;
+    }
+
+    .why { color: #fde68a; font-weight: 800; }
+    .answer { color: #bbf7d0; font-weight: 800; }
+
+    @media (max-width: 860px) {
+      .two-col, .split { grid-template-columns: 1fr; }
+      .figure { position: static; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="breadcrumb">Học tập / Kiến thức nền tảng / Chương 1</div>
+
+    <header class="hero">
+      <div class="eyebrow">Bài mẫu - dạy từ số 0</div>
+      <h1>Giới hạn dãy số và hàm số</h1>
+      <p class="lead">Bài này chỉ cần hiểu một câu trước: có những thứ không chạm tới một số, nhưng càng đi tiếp lại càng áp sát số đó. Toán gọi cái số bị áp sát ấy là giới hạn.</p>
+      <div class="meta">
+        <span class="pill">Không học vẹt công thức ngay</span>
+        <span class="pill">Có câu hỏi dẫn dắt</span>
+        <span class="pill">Hình chỉ xuất hiện khi cần nhìn</span>
+      </div>
+    </header>
+
+    <div class="lesson">
+      <section class="block">
+        <div class="block-title"><div class="badge">1</div><h2>Bắt đầu bằng một trò rất nhỏ</h2></div>
+        <div class="block-body two-col">
+          <div>
+            <p>Hãy tưởng tượng em có một thanh chocolate dài $1$ cái. Mỗi lần, em ăn một nửa phần còn lại.</p>
+            <div class="numbers">
+              <div class="num">$1$</div>
+              <div class="num">$\frac12$</div>
+              <div class="num">$\frac14$</div>
+              <div class="num">$\frac18$</div>
+              <div class="num">$\frac1{16}$</div>
+            </div>
+
+            <div class="teacher"><b>Hỏi 1:</b> Các số này đang lớn lên hay nhỏ đi?</div>
+            <div class="student"><b>Trả lời mong đợi:</b> Nhỏ đi.</div>
+
+            <div class="teacher"><b>Hỏi 2:</b> Có số nào trong dãy trên bằng đúng $0$ không?</div>
+            <div class="student"><b>Trả lời mong đợi:</b> Không. Dù nhỏ mấy thì vẫn là một phân số dương.</div>
+
+            <div class="teacher"><b>Hỏi 3:</b> Nhưng nếu cứ tiếp tục mãi, các số này đang áp sát số nào?</div>
+            <div class="student"><b>Trả lời mong đợi:</b> Áp sát $0$.</div>
+
+            <div class="conclude">
+              Đây chính là ý tưởng của giới hạn: dãy số có thể không bao giờ bằng $0$, nhưng nó tiến gần $0$ mãi mãi.
+            </div>
+          </div>
+
+          <aside class="figure">
+            <img src="../public/math-diagrams/limit-sequence.svg" alt="Dãy số tiến về 0 vẽ bằng TikZ" />
+            <div class="caption">Hình 1. Các điểm của dãy $u_n=\frac1n$ càng về sau càng sát đường $L=0$.</div>
+            <div class="observe"><b>Nhìn hình:</b> điểm sau thấp hơn điểm trước, nhưng không cần chạm vào đường $0$.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">2</div><h2>Bây giờ mới đặt tên: giới hạn dãy số</h2></div>
+        <div class="block-body">
+          <p>Nếu một dãy số càng đi xa càng áp sát một số $L$, ta nói dãy đó có giới hạn là $L$.</p>
+          <div class="formula">
+            Với $u_n=\frac1n$, ta viết:
+            $$\lim_{n\to+\infty}u_n=0.$$
+          </div>
+          <p>Đọc chậm câu này như sau: “khi $n$ càng ngày càng lớn, $u_n$ càng ngày càng gần $0$”.</p>
+
+          <div class="warning">
+            <b>Đừng hiểu sai:</b> giới hạn bằng $0$ không có nghĩa là có một lúc nào đó $u_n$ bằng đúng $0$. Nó chỉ nói rằng dãy đang tiến sát $0$.
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">3</div><h2>Ba mẫu dãy số gặp rất nhiều</h2></div>
+        <div class="block-body">
+          <p>Sau khi đã hiểu “áp sát”, ta mới học vài mẫu hay gặp. Đoạn này không cần hình, vì bản chất là nhận dạng.</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Dạng</th>
+                <th>Nghĩ bằng lời</th>
+                <th>Kết luận nhanh</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$\frac{1}{n^k}$ với $k>0$</td>
+                <td>Mẫu càng lớn thì phân số càng nhỏ</td>
+                <td>$\lim\frac1{n^k}=0$</td>
+              </tr>
+              <tr>
+                <td>$q^n$ với $|q|<1$</td>
+                <td>Nhân nhiều lần với số nhỏ hơn $1$ nên co lại</td>
+                <td>$\lim q^n=0$</td>
+              </tr>
+              <tr>
+                <td>$q^n$ với $q>1$</td>
+                <td>Nhân nhiều lần với số lớn hơn $1$ nên phình ra</td>
+                <td>$\lim q^n=+\infty$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">4</div><h2>Chuyển từ dãy số sang hàm số</h2></div>
+        <div class="block-body">
+          <p>Với hàm số, ta cũng hỏi cùng một kiểu: khi $x$ tiến gần một điểm nào đó, $f(x)$ tiến gần số nào?</p>
+          <div class="teacher"><b>Ví dụ hỏi học sinh:</b> Nếu $f(x)=x^2+3x-1$, khi $x$ tiến đến $2$, giá trị $f(x)$ tiến đến đâu?</div>
+          <p>Vì đây là đa thức, nó không bị đứt đoạn hay có bẫy gì tại $x=2$. Ta thay trực tiếp:</p>
+          <div class="formula">
+            $$\lim_{x\to2}(x^2+3x-1)=2^2+3\cdot2-1=9.$$
+          </div>
+          <div class="conclude">
+            Với hàm “đẹp” như đa thức, giới hạn tại một điểm thường chính là giá trị của hàm tại điểm đó.
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">5</div><h2>Giới hạn hai phía: phải đi từ cả hai bên</h2></div>
+        <div class="block-body two-col">
+          <div>
+            <p>Khi viết $\lim_{x\to x_0}f(x)$, $x$ có thể tiến đến $x_0$ từ bên trái hoặc từ bên phải.</p>
+
+            <div class="teacher"><b>Hỏi:</b> Nếu bên trái tiến về $2$, bên phải tiến về $2$, ta kết luận được gì?</div>
+            <div class="student"><b>Trả lời:</b> Giới hạn tồn tại và bằng $2$.</div>
+
+            <div class="teacher"><b>Hỏi:</b> Nếu bên trái tiến về $2$, bên phải tiến về $5$ thì sao?</div>
+            <div class="student"><b>Trả lời:</b> Không có giới hạn chung tại điểm đó.</div>
+
+            <div class="formula">
+              $$\lim_{x\to x_0}f(x)=L$$
+              khi và chỉ khi
+              $$\lim_{x\to x_0^-}f(x)=\lim_{x\to x_0^+}f(x)=L.$$
+            </div>
+          </div>
+
+          <aside class="figure">
+            <img src="../public/math-diagrams/limit-two-sided.svg" alt="Giới hạn hai phía vẽ bằng TikZ" />
+            <div class="caption">Hình 2. Hai nhánh đồ thị cùng tiến về mức $L$ khi $x$ tiến đến $x_0$.</div>
+            <div class="observe"><b>Nhìn hình:</b> ta không nhìn một phía. Ta kiểm tra cả đường đi từ trái và từ phải.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">6</div><h2>Cách làm bài nhận biết</h2></div>
+        <div class="block-body">
+          <p>Đến đây mới cần quy trình. Khi gặp một câu giới hạn cơ bản, em tự hỏi theo thứ tự này:</p>
+          <div class="split">
+            <div class="card">
+              <b>1. Đây là dãy hay hàm?</b>
+              Có $n\to+\infty$ thì thường là dãy. Có $x\to a$ hoặc $x\to\infty$ thì là hàm.
+            </div>
+            <div class="card">
+              <b>2. Có thay trực tiếp được không?</b>
+              Nếu là đa thức tại một điểm, thường thay được. Nếu ra $\frac00$ thì dừng.
+            </div>
+            <div class="card">
+              <b>3. Nếu ở vô cực thì so sánh độ lớn</b>
+              Với phân thức, nhìn bậc tử và bậc mẫu.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">7</div><h2>Ba ví dụ ngắn, có lý do chọn cách làm</h2></div>
+        <div class="block-body">
+          <div class="example">
+            <h3>Ví dụ 1. Tính $\lim\frac{3n+1}{2n-5}$</h3>
+            <p><span class="why">Vì sao không thay số?</span> Vì $n$ không tiến đến một số cụ thể; $n$ tiến ra vô cực.</p>
+            <p>Tử và mẫu đều có bậc $1$. Khi $n$ rất lớn, phần quan trọng nhất là $3n$ và $2n$.</p>
+            <p>$$\lim\frac{3n+1}{2n-5}=\frac32.$$</p>
+          </div>
+
+          <div class="example">
+            <h3>Ví dụ 2. Tính $\lim_{x\to2}(x^2+3x-1)$</h3>
+            <p><span class="why">Vì sao thay trực tiếp?</span> Vì đa thức liên tục, không có mẫu bằng $0$, không có căn gây điều kiện.</p>
+            <p>$$2^2+3\cdot2-1=9.$$</p>
+            <p><span class="answer">Kết quả:</span> giới hạn bằng $9$.</p>
+          </div>
+
+          <div class="example">
+            <h3>Ví dụ 3. Tính $\lim_{x\to+\infty}\frac{2x+1}{x^2+3}$</h3>
+            <p><span class="why">Vì sao ra $0$?</span> Mẫu có $x^2$, lớn nhanh hơn tử chỉ có $x$.</p>
+            <p>Khi mẫu lớn nhanh hơn tử, phân thức bị kéo về $0$.</p>
+            <p>$$\lim_{x\to+\infty}\frac{2x+1}{x^2+3}=0.$$</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-title"><div class="badge">8</div><h2>Chốt bài trong 30 giây</h2></div>
+        <div class="block-body">
+          <ul>
+            <li>Giới hạn là số mà dãy số hoặc hàm số tiến gần đến.</li>
+            <li>Không cần “chạm đúng” số đó mới gọi là giới hạn.</li>
+            <li>Với hàm số tại một điểm, phải để ý hai phía trái và phải.</li>
+            <li>Với phân thức ở vô cực, thường so sánh bậc tử và bậc mẫu.</li>
+          </ul>
+
+          <div class="warning">
+            <b>Bẫy quan trọng nhất:</b> thấy $\frac00$ thì không được kết luận ngay. Đó là tín hiệu “cần biến đổi tiếp”.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,513 @@
+{
+  "words": [
+    {
+      "word": "initially",
+      "pronunciation": "/ɪˈnɪʃəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "lúc đầu, ban đầu; ở giai đoạn đầu tiên của một quá trình",
+      "definition_en": "at the beginning; in the first place",
+      "level": "B1",
+      "synonyms": [
+        "at first",
+        "originally",
+        "in the beginning"
+      ],
+      "antonyms": [
+        "finally",
+        "ultimately"
+      ],
+      "example_sentence": "Initially, the government rejected the proposal, but later changed its position after public pressure."
+    },
+    {
+      "word": "subsequently",
+      "pronunciation": "/ˈsʌbsɪkwəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "sau đó, tiếp theo; xảy ra hoặc làm điều gì sau một sự kiện khác",
+      "definition_en": "afterwards; at a later time",
+      "level": "B2",
+      "synonyms": [
+        "afterwards",
+        "later",
+        "then"
+      ],
+      "antonyms": [
+        "previously",
+        "before"
+      ],
+      "example_sentence": "The company launched its first product in 2010, and subsequently expanded to five countries within three years."
+    },
+    {
+      "word": "ultimately",
+      "pronunciation": "/ˈʌltɪmətli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "cuối cùng, rốt cuộc; kết quả cuối cùng hoặc quyết định cuối cùng",
+      "definition_en": "in the end; finally; as the final result",
+      "level": "B2",
+      "synonyms": [
+        "finally",
+        "in the end",
+        "eventually"
+      ],
+      "antonyms": [
+        "initially",
+        "at first"
+      ],
+      "example_sentence": "Although the project faced many obstacles, it ultimately succeeded because of the team's determination."
+    },
+    {
+      "word": "overall",
+      "pronunciation": "/ˌəʊvərˈɔːl/",
+      "part_of_speech": "adverb",
+      "definition_vi": "nhìn chung, tổng thể; xem xét tất cả các yếu tố hoặc khía cạnh",
+      "definition_en": "considering everything; in general",
+      "level": "B1",
+      "synonyms": [
+        "in general",
+        "on the whole",
+        "all in all"
+      ],
+      "antonyms": [
+        "specifically",
+        "in detail"
+      ],
+      "example_sentence": "Overall, the conference was productive, though some sessions could have been better organized."
+    },
+    {
+      "word": "to sum up",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tóm lại, nói tóm gọn; kết luận lại những điểm chính",
+      "definition_en": "to summarize the main points",
+      "level": "B1",
+      "synonyms": [
+        "in summary",
+        "in short",
+        "to conclude"
+      ],
+      "antonyms": [],
+      "example_sentence": "To sum up, climate change requires immediate action from both governments and individuals worldwide."
+    },
+    {
+      "word": "in conclusion",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết luận, để kết thúc; dùng để giới thiệu phần kết luận cuối cùng",
+      "definition_en": "at the end; to introduce a final statement",
+      "level": "B1",
+      "synonyms": [
+        "to sum up",
+        "in summary",
+        "finally"
+      ],
+      "antonyms": [],
+      "example_sentence": "In conclusion, the research demonstrates that regular exercise significantly improves mental health."
+    },
+    {
+      "word": "as a result",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "do đó, vì vậy; chỉ ra hệ quả hoặc kết quả của điều gì đó",
+      "definition_en": "therefore; because of this",
+      "level": "B1",
+      "synonyms": [
+        "consequently",
+        "therefore",
+        "thus"
+      ],
+      "antonyms": [],
+      "example_sentence": "The factory reduced its waste by 40%, and as a result, saved millions in disposal costs."
+    },
+    {
+      "word": "consequently",
+      "pronunciation": "/ˈkɒnsɪkwəntli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "do đó, vì vậy; là hệ quả logic của điều gì đó",
+      "definition_en": "as a result; therefore",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "as a result",
+        "thus"
+      ],
+      "antonyms": [],
+      "example_sentence": "The pandemic disrupted supply chains, and consequently, many businesses had to adapt their operations."
+    },
+    {
+      "word": "meanwhile",
+      "pronunciation": "/ˈmiːnwaɪl/",
+      "part_of_speech": "adverb",
+      "definition_vi": "trong khi đó, cùng lúc đó; chỉ ra điều gì xảy ra cùng thời gian",
+      "definition_en": "at the same time; while this is happening",
+      "level": "B1",
+      "synonyms": [
+        "at the same time",
+        "in the meantime",
+        "simultaneously"
+      ],
+      "antonyms": [],
+      "example_sentence": "The CEO was negotiating with investors; meanwhile, the technical team was developing the new software."
+    },
+    {
+      "word": "thereafter",
+      "pronunciation": "/ðɛərˈæftər/",
+      "part_of_speech": "adverb",
+      "definition_vi": "sau đó, từ đó trở đi; từ thời điểm đó về sau",
+      "definition_en": "after that; from that time onwards",
+      "level": "B2",
+      "synonyms": [
+        "afterwards",
+        "subsequently",
+        "then"
+      ],
+      "antonyms": [
+        "before",
+        "previously"
+      ],
+      "example_sentence": "The treaty was signed in 1995, and thereafter, the two nations maintained peaceful relations."
+    },
+    {
+      "word": "in the first place",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "trước hết, ngay từ đầu; dùng để nhấn mạnh điểm đầu tiên hoặc lý do ban đầu",
+      "definition_en": "firstly; to begin with; as the primary reason",
+      "level": "B2",
+      "synonyms": [
+        "initially",
+        "to begin with",
+        "first of all"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the first place, we should consider the budget constraints before approving any new projects."
+    },
+    {
+      "word": "in the second place",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "thứ hai, tiếp theo; dùng để giới thiệu điểm thứ hai trong một danh sách",
+      "definition_en": "secondly; as the second point",
+      "level": "B2",
+      "synonyms": [
+        "secondly",
+        "furthermore",
+        "moreover"
+      ],
+      "antonyms": [],
+      "example_sentence": "In the second place, we need to improve our customer service to maintain market competitiveness."
+    },
+    {
+      "word": "finally",
+      "pronunciation": "/ˈfaɪnəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "cuối cùng, rốt cuộc; ở điểm cuối cùng hoặc sau một loạt sự kiện",
+      "definition_en": "at last; in the end; as the last point",
+      "level": "B1",
+      "synonyms": [
+        "ultimately",
+        "at last",
+        "in the end"
+      ],
+      "antonyms": [
+        "initially",
+        "first"
+      ],
+      "example_sentence": "After months of negotiation, the two companies finally reached an agreement on the merger terms."
+    },
+    {
+      "word": "in summary",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tóm lại, nói tóm gọn; dùng để tóm tắt các điểm chính",
+      "definition_en": "to summarize; briefly stated",
+      "level": "B1",
+      "synonyms": [
+        "to sum up",
+        "in short",
+        "in conclusion"
+      ],
+      "antonyms": [],
+      "example_sentence": "In summary, the study found that sleep deprivation negatively affects academic performance in teenagers."
+    },
+    {
+      "word": "to conclude",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết luận, để kết thúc; dùng để giới thiệu phần kết luận hoặc ý kiến cuối cùng",
+      "definition_en": "to end; to make a final statement",
+      "level": "B1",
+      "synonyms": [
+        "in conclusion",
+        "to sum up",
+        "finally"
+      ],
+      "antonyms": [],
+      "example_sentence": "To conclude, renewable energy sources are essential for sustainable development in the 21st century."
+    },
+    {
+      "word": "thus",
+      "pronunciation": "/ðʌs/",
+      "part_of_speech": "adverb",
+      "definition_vi": "vì vậy, do đó; chỉ ra kết quả logic của điều gì đó (trang trọng hơn 'so')",
+      "definition_en": "therefore; in this way; as a result",
+      "level": "B2",
+      "synonyms": [
+        "therefore",
+        "consequently",
+        "so"
+      ],
+      "antonyms": [],
+      "example_sentence": "The new policy reduced operational costs by 30%; thus, the company could invest more in research and development."
+    },
+    {
+      "word": "in other words",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói cách khác, hay là; dùng để diễn đạt lại ý tưởng bằng cách khác",
+      "definition_en": "that is to say; to rephrase",
+      "level": "B1",
+      "synonyms": [
+        "that is",
+        "namely",
+        "in short"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company's revenue increased by 25% last year; in other words, the business strategy proved highly effective."
+    },
+    {
+      "word": "on the whole",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhìn chung, tổng thể; xem xét toàn bộ tình huống mà không chú ý chi tiết",
+      "definition_en": "in general; considering everything",
+      "level": "B2",
+      "synonyms": [
+        "overall",
+        "in general",
+        "all in all"
+      ],
+      "antonyms": [
+        "specifically",
+        "in particular"
+      ],
+      "example_sentence": "On the whole, the conference was successful despite some minor technical issues with the presentation equipment."
+    },
+    {
+      "word": "all in all",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tóm lại, nhìn chung; dùng để tóm tắt hoặc đánh giá toàn bộ tình huống",
+      "definition_en": "considering everything; in total",
+      "level": "B1",
+      "synonyms": [
+        "overall",
+        "on the whole",
+        "in summary"
+      ],
+      "antonyms": [],
+      "example_sentence": "All in all, the project was completed on time and within budget, exceeding stakeholder expectations."
+    },
+    {
+      "word": "in short",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "nói tóm gọn, tóm lại; dùng để tóm tắt một ý tưởng dài thành vài từ",
+      "definition_en": "briefly; in summary",
+      "level": "B1",
+      "synonyms": [
+        "in summary",
+        "to sum up",
+        "briefly"
+      ],
+      "antonyms": [],
+      "example_sentence": "In short, climate change poses unprecedented challenges that require immediate global cooperation and action."
+    },
+    {
+      "word": "at first",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "lúc đầu, ban đầu; ở giai đoạn sớm nhất của một quá trình",
+      "definition_en": "in the beginning; initially",
+      "level": "B1",
+      "synonyms": [
+        "initially",
+        "originally",
+        "at the beginning"
+      ],
+      "antonyms": [
+        "finally",
+        "ultimately"
+      ],
+      "example_sentence": "At first, the students found the new curriculum challenging, but they adapted quickly after a few weeks."
+    },
+    {
+      "word": "eventually",
+      "pronunciation": "/ɪˈventʃuəli/",
+      "part_of_speech": "adverb",
+      "definition_vi": "cuối cùng, rốt cuộc; sau một thời gian dài hoặc sau nhiều nỗ lực",
+      "definition_en": "in the end; after a long time",
+      "level": "B1",
+      "synonyms": [
+        "finally",
+        "ultimately",
+        "in the end"
+      ],
+      "antonyms": [
+        "immediately",
+        "instantly"
+      ],
+      "example_sentence": "The startup faced numerous setbacks, but eventually became one of the most successful companies in the tech industry."
+    },
+    {
+      "word": "in the end",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuối cùng, rốt cuộc; sau tất cả mọi thứ được xem xét",
+      "definition_en": "finally; ultimately; after everything",
+      "level": "B1",
+      "synonyms": [
+        "finally",
+        "ultimately",
+        "eventually"
+      ],
+      "antonyms": [
+        "at first",
+        "initially"
+      ],
+      "example_sentence": "In the end, the decision to invest in renewable energy proved to be both environmentally and economically beneficial."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company faced several challenges during the first quarter. _______, they implemented new strategies and achieved record profits by year-end.",
+      "option_a": "Initially",
+      "option_b": "Subsequently",
+      "option_c": "Overall",
+      "option_d": "Meanwhile",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Câu này cần một từ nối chỉ sự tiếp diễn theo thời gian. 'Subsequently' (sau đó) là đúng vì nó nối hai sự kiện: thách thức ban đầu → triển khai chiến lược mới. 'Initially' chỉ giai đoạn đầu, không phù hợp. 'Overall' dùng để tóm tắt, 'Meanwhile' chỉ sự đồng thời."
+    },
+    {
+      "question_text": "The research began with a hypothesis. _______, the scientists conducted experiments and analyzed data over two years.",
+      "option_a": "In conclusion",
+      "option_b": "Subsequently",
+      "option_c": "Overall",
+      "option_d": "In short",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Subsequently' (sau đó) chỉ ra rằng các thí nghiệm và phân tích dữ liệu xảy ra sau khi đặt ra giả thuyết. 'In conclusion' dùng để kết luận, 'Overall' để tóm tắt, 'In short' để rút gọn ý tưởng."
+    },
+    {
+      "question_text": "The government introduced new environmental regulations. _______, many industries had to restructure their operations.",
+      "option_a": "As a result",
+      "option_b": "Initially",
+      "option_c": "Meanwhile",
+      "option_d": "In the first place",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'As a result' (do đó) chỉ ra mối quan hệ nhân quả: quy định mới → các ngành phải tái cấu trúc. 'Initially' chỉ giai đoạn đầu, 'Meanwhile' chỉ sự đồng thời, 'In the first place' dùng để nhấn mạnh điểm đầu tiên."
+    },
+    {
+      "question_text": "The project faced budget constraints and technical difficulties. _______, the team successfully delivered the final product on schedule.",
+      "option_a": "In the first place",
+      "option_b": "Meanwhile",
+      "option_c": "Ultimately",
+      "option_d": "In summary",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Ultimately' (cuối cùng) chỉ ra kết quả cuối cùng sau những khó khăn: dù gặp vấn đề → vẫn hoàn thành thành công. 'In the first place' nhấn mạnh điểm đầu, 'Meanwhile' chỉ sự đồng thời, 'In summary' tóm tắt."
+    },
+    {
+      "question_text": "The student studied hard for months. _______, she passed the exam with flying colors.",
+      "option_a": "In the second place",
+      "option_b": "Eventually",
+      "option_c": "On the whole",
+      "option_d": "In other words",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "'Eventually' (cuối cùng) chỉ ra kết quả sau một thời gian dài học tập. 'In the second place' giới thiệu điểm thứ hai, 'On the whole' tóm tắt toàn bộ, 'In other words' diễn đạt lại ý tưởng."
+    },
+    {
+      "question_text": "The company's revenue increased by 40% last year. _______, the business strategy proved highly effective.",
+      "option_a": "In other words",
+      "option_b": "Meanwhile",
+      "option_c": "In the first place",
+      "option_d": "Thereafter",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'In other words' (nói cách khác) dùng để diễn đạt lại ý tưởng: tăng doanh thu 40% = chiến lược hiệu quả. 'Meanwhile' chỉ sự đồng thời, 'In the first place' nhấn mạnh điểm đầu, 'Thereafter' chỉ sự tiếp diễn sau."
+    },
+    {
+      "question_text": "The research demonstrated that exercise improves mental health. _______, governments should promote physical activity programs.",
+      "option_a": "Initially",
+      "option_b": "Thus",
+      "option_c": "Meanwhile",
+      "option_d": "In the second place",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Thus' (vì vậy) chỉ ra kết luận logic: nếu tập thể dục cải thiện sức khỏe tâm thần → chính phủ nên thúc đẩy. 'Initially' chỉ giai đoạn đầu, 'Meanwhile' chỉ sự đồng thời, 'In the second place' giới thiệu điểm thứ hai."
+    },
+    {
+      "question_text": "The pandemic disrupted supply chains. _______, many businesses had to adapt their operations quickly.",
+      "option_a": "Consequently",
+      "option_b": "In the first place",
+      "option_c": "On the whole",
+      "option_d": "At first",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Consequently' (do đó) chỉ ra hệ quả: đại dịch làm gián đoạn chuỗi cung ứng → các doanh nghiệp phải thích ứng. 'In the first place' nhấn mạnh điểm đầu, 'On the whole' tóm tắt, 'At first' chỉ giai đoạn sớm."
+    },
+    {
+      "question_text": "The study found that sleep deprivation negatively affects academic performance. _______, teenagers should prioritize getting adequate sleep.",
+      "option_a": "In summary",
+      "option_b": "Meanwhile",
+      "option_c": "Thereafter",
+      "option_d": "In the second place",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'In summary' (tóm lại) dùng để giới thiệu kết luận từ nghiên cứu. 'Meanwhile' chỉ sự đồng thời, 'Thereafter' chỉ sự tiếp diễn sau, 'In the second place' giới thiệu điểm thứ hai."
+    },
+    {
+      "question_text": "What does the phrase 'to sum up' primarily mean in academic writing?",
+      "option_a": "To calculate the total amount of something",
+      "option_b": "To summarize the main points before concluding",
+      "option_c": "To add more details to an argument",
+      "option_d": "To introduce a new topic in the discussion",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "basic",
+      "explanation": "'To sum up' (tóm lại) là cụm từ kết luận dùng để tóm tắt các điểm chính trước khi kết thúc. A sai vì nó là phép tính, C sai vì nó thêm chi tiết, D sai vì nó giới thiệu chủ đề mới."
+    },
+    {
+      "question_text": "Which connector is most appropriate to show a logical consequence or result?",
+      "option_a": "Initially",
+      "option_b": "Meanwhile",
+      "option_c": "Consequently",
+      "option_d": "Thereafter",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Consequently' (do đó) chỉ ra hệ quả logic. 'Initially' chỉ giai đoạn đầu, 'Meanwhile' chỉ sự đồng thời, 'Thereafter' chỉ sự tiếp diễn sau mà không nhấn mạnh nguyên nhân-kết quả."
+    },
+    {
+      "question_text": "In the context of sequencing events, what is the primary function of 'subsequently'?",
+      "option_a": "To introduce the first event in a series",
+      "option_b": "To indicate an event that happens after another event",
+      "option_c": "To summarize all events that have occurred",
+      "option_d": "To show that two events happen at the same time",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Subsequently' (sau đó) chỉ ra sự tiếp diễn theo thời gian: sự kiện A xảy ra, sau đó sự kiện B xảy ra. A sai vì 'initially' dùng cho sự kiện đầu, C sai vì nó không tóm tắt, D sai vì 'meanwhile' dùng cho sự đồng thời."
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "words": [
+    {
+      "word": "disaster preparedness",
+      "pronunciation": "/dɪˈzɑːstər prɪˈpɛrɪdnəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự chuẩn bị sẵn sàng để ứng phó với thảm họa; bao gồm lập kế hoạch, đào tạo và trang bị nguồn lực",
+      "definition_en": "the state of being ready to respond effectively to disasters through planning, training, and resource allocation",
+      "level": "B2",
+      "synonyms": [
+        "emergency preparedness",
+        "disaster readiness"
+      ],
+      "antonyms": [
+        "unpreparedness",
+        "negligence"
+      ],
+      "example_sentence": "Disaster preparedness programs in coastal regions have significantly reduced casualties during typhoons."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng phục hồi, thích ứng và vượt qua khó khăn; sức chống chịu của cộng đồng hay hệ thống",
+      "definition_en": "the capacity of a system or community to recover quickly from difficulties and adapt to change",
+      "level": "B2",
+      "synonyms": [
+        "resilience",
+        "adaptability",
+        "robustness"
+      ],
+      "antonyms": [
+        "fragility",
+        "vulnerability"
+      ],
+      "example_sentence": "Building community resilience requires investment in infrastructure and disaster education programs."
+    },
+    {
+      "word": "early warning system",
+      "pronunciation": "/ˈɜːrli ˈwɔːrnɪŋ ˈsɪstəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống cảnh báo sớm; công nghệ và quy trình phát hiện và thông báo nguy hiểm trước khi xảy ra",
+      "definition_en": "integrated set of capacities needed to generate and disseminate timely and meaningful warning information",
+      "level": "B2",
+      "synonyms": [
+        "alert system",
+        "warning mechanism"
+      ],
+      "antonyms": [
+        "delayed response",
+        "no notification"
+      ],
+      "example_sentence": "The early warning system for earthquakes has proven effective in evacuating residents before tremors strike."
+    },
+    {
+      "word": "mitigation",
+      "pronunciation": "/ˌmɪtɪˈɡeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "giảm nhẹ, làm giảm bớt mức độ nghiêm trọng của thiên tai hoặc hậu quả của nó",
+      "definition_en": "actions taken to reduce the severity or impact of potential disasters",
+      "level": "B2",
+      "synonyms": [
+        "reduction",
+        "alleviation",
+        "lessening"
+      ],
+      "antonyms": [
+        "aggravation",
+        "exacerbation"
+      ],
+      "example_sentence": "Flood mitigation strategies include building dikes and improving drainage systems in vulnerable areas."
+    },
+    {
+      "word": "vulnerability assessment",
+      "pronunciation": "/ˌvʌlnərəˈbɪləti əˈsɛsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh giá điểm yếu; quá trình xác định những khu vực, nhóm người hoặc cơ sở hạ tầng dễ bị tổn thương",
+      "definition_en": "systematic evaluation of weaknesses and exposure to hazards in a community or region",
+      "level": "C1",
+      "synonyms": [
+        "risk assessment",
+        "exposure analysis"
+      ],
+      "antonyms": [
+        "strength evaluation"
+      ],
+      "example_sentence": "A comprehensive vulnerability assessment revealed that rural villages lack adequate shelter infrastructure."
+    },
+    {
+      "word": "contingency planning",
+      "pronunciation": "/kənˈtɪndʒənsi ˈplænɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lập kế hoạch ứng phó; chuẩn bị các phương án thay thế cho những tình huống bất ngờ",
+      "definition_en": "developing alternative plans and procedures to address potential emergencies or unforeseen events",
+      "level": "C1",
+      "synonyms": [
+        "backup planning",
+        "contingency strategy"
+      ],
+      "antonyms": [
+        "improvisation",
+        "ad-hoc response"
+      ],
+      "example_sentence": "Contingency planning ensures that hospitals can maintain operations even during severe natural disasters."
+    },
+    {
+      "word": "infrastructure resilience",
+      "pronunciation": "/ˌɪnfrəˈstrʌktʃər rɪˈzɪliəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của các công trình cơ sở hạ tầng (cầu, đường, điện) chịu đựng và phục hồi sau thiên tai",
+      "definition_en": "the ability of critical infrastructure systems to withstand and recover from disaster impacts",
+      "level": "C1",
+      "synonyms": [
+        "structural resilience",
+        "system robustness"
+      ],
+      "antonyms": [
+        "fragile infrastructure",
+        "poor maintenance"
+      ],
+      "example_sentence": "Investing in infrastructure resilience through earthquake-resistant construction standards protects urban populations."
+    },
+    {
+      "word": "evacuation protocol",
+      "pronunciation": "/ɪˌvækjuˈeɪʃən ˈproʊtəkɔːl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy trình sơ tán; các bước và quy tắc chi tiết để di chuyển người dân khỏi vùng nguy hiểm",
+      "definition_en": "standardized procedures and guidelines for safely removing people from areas threatened by disaster",
+      "level": "B2",
+      "synonyms": [
+        "evacuation procedure",
+        "emergency exit plan"
+      ],
+      "antonyms": [
+        "shelter-in-place",
+        "lockdown"
+      ],
+      "example_sentence": "Clear evacuation protocols and regular drills have reduced casualties in tsunami-prone coastal communities."
+    },
+    {
+      "word": "post-disaster recovery",
+      "pronunciation": "/ˌpoʊst dɪˈzɑːstər rɪˈkʌvəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phục hồi sau thảm họa; quá trình tái thiết và phục hồi đời sống bình thường sau khi xảy ra thảm họa",
+      "definition_en": "the process of restoring and rebuilding communities, infrastructure, and livelihoods after a disaster",
+      "level": "B2",
+      "synonyms": [
+        "reconstruction",
+        "rehabilitation",
+        "restoration"
+      ],
+      "antonyms": [
+        "deterioration",
+        "collapse"
+      ],
+      "example_sentence": "Post-disaster recovery programs must prioritize housing reconstruction and livelihood restoration for affected families."
+    },
+    {
+      "word": "hazard mapping",
+      "pronunciation": "/ˈhæzərd ˈmæpɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lập bản đồ nguy hiểm; xác định và vẽ các khu vực có nguy cơ cao bị ảnh hưởng bởi thiên tai",
+      "definition_en": "the process of identifying and visualizing geographic areas at risk from specific natural hazards",
+      "level": "C1",
+      "synonyms": [
+        "risk mapping",
+        "hazard identification"
+      ],
+      "antonyms": [
+        "unmarked areas"
+      ],
+      "example_sentence": "Hazard mapping studies identified flood-prone zones, enabling authorities to implement targeted prevention measures."
+    },
+    {
+      "word": "community-based disaster risk reduction",
+      "pronunciation": "/kəˈmjuːnɪti beɪst dɪˈzɑːstər rɪsk rɪˈdʌkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giảm rủi ro thảm họa dựa vào cộng đồng; các hoạt động do cộng đồng địa phương chủ động thực hiện",
+      "definition_en": "disaster risk reduction initiatives led and implemented by local communities themselves",
+      "level": "C1",
+      "synonyms": [
+        "grassroots disaster management",
+        "local risk reduction"
+      ],
+      "antonyms": [
+        "top-down approach",
+        "centralized control"
+      ],
+      "example_sentence": "Community-based disaster risk reduction programs empower residents to identify local hazards and develop solutions."
+    },
+    {
+      "word": "structural reinforcement",
+      "pronunciation": "/ˈstrʌktʃərəl ˌriːɪnˈfɔːrsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gia cố kết cấu; tăng cường độ bền của các công trình để chịu được tác động của thiên tai",
+      "definition_en": "strengthening buildings and structures to increase their capacity to withstand natural hazards",
+      "level": "C1",
+      "synonyms": [
+        "structural strengthening",
+        "reinforcement measures"
+      ],
+      "antonyms": [
+        "structural deterioration",
+        "weakening"
+      ],
+      "example_sentence": "Structural reinforcement of schools and hospitals ensures these critical facilities remain operational during disasters."
+    },
+    {
+      "word": "disaster management",
+      "pronunciation": "/dɪˈzɑːstər ˈmænɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quản lý thảm họa; toàn bộ quá trình lập kế hoạch, ứng phó, phục hồi liên quan đến thảm họa",
+      "definition_en": "the comprehensive approach to handling disasters including prevention, response, and recovery phases",
+      "level": "B2",
+      "synonyms": [
+        "emergency management",
+        "crisis management"
+      ],
+      "antonyms": [
+        "negligence",
+        "inaction"
+      ],
+      "example_sentence": "Effective disaster management requires coordination between government agencies, NGOs, and local communities."
+    },
+    {
+      "word": "climate-related hazards",
+      "pronunciation": "/ˈklaɪmət rɪˈleɪtɪd ˈhæzərdz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nguy hiểm liên quan đến khí hậu; các hiện tượng thời tiết cực đoan như bão, lũ, hạn hán",
+      "definition_en": "natural hazards triggered or intensified by climate change, including storms, floods, and droughts",
+      "level": "B2",
+      "synonyms": [
+        "weather-related hazards",
+        "climate-induced disasters"
+      ],
+      "antonyms": [
+        "stable climate conditions"
+      ],
+      "example_sentence": "Climate-related hazards are increasing in frequency and intensity, demanding stronger adaptation strategies."
+    },
+    {
+      "word": "risk communication",
+      "pronunciation": "/rɪsk kəˈmjuːnɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "truyền thông về rủi ro; cách thức cung cấp thông tin về nguy hiểm cho công chúng một cách hiệu quả",
+      "definition_en": "the process of conveying information about potential hazards and protective actions to the public",
+      "level": "C1",
+      "synonyms": [
+        "hazard communication",
+        "public awareness"
+      ],
+      "antonyms": [
+        "information suppression",
+        "misinformation"
+      ],
+      "example_sentence": "Effective risk communication through multiple channels ensures residents understand evacuation procedures."
+    },
+    {
+      "word": "livelihood diversification",
+      "pronunciation": "/ˈlaɪvlɪhʊd ˌdaɪvɜːrsɪfɪˈkeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đa dạng hóa sinh kế; phát triển nhiều nguồn thu nhập để giảm phụ thuộc vào một ngành duy nhất",
+      "definition_en": "developing multiple income sources to reduce vulnerability and increase economic resilience",
+      "level": "C1",
+      "synonyms": [
+        "income diversification",
+        "economic resilience"
+      ],
+      "antonyms": [
+        "economic dependence",
+        "monoculture"
+      ],
+      "example_sentence": "Livelihood diversification programs help farming communities reduce their vulnerability to climate-induced crop failures."
+    },
+    {
+      "word": "disaster drill",
+      "pronunciation": "/dɪˈzɑːstər drɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc tập trận ứng phó thảm họa; hoạt động thực tập để kiểm tra sự chuẩn bị và phối hợp",
+      "definition_en": "a practice exercise simulating disaster response to test preparedness and coordination",
+      "level": "B2",
+      "synonyms": [
+        "emergency drill",
+        "evacuation exercise"
+      ],
+      "antonyms": [
+        "actual disaster",
+        "unplanned response"
+      ],
+      "example_sentence": "Regular disaster drills in schools help students and staff respond quickly and calmly during actual emergencies."
+    },
+    {
+      "word": "supply chain disruption",
+      "pronunciation": "/səˈplaɪ tʃeɪn ˌdɪsrʌpˈʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gián đoạn chuỗi cung ứng; sự ngừng hoạt động của các tuyến vận chuyển hàng hóa do thảm họa",
+      "definition_en": "interruption of goods and services delivery caused by disaster damage to transportation networks",
+      "level": "C1",
+      "synonyms": [
+        "logistics disruption",
+        "distribution breakdown"
+      ],
+      "antonyms": [
+        "supply continuity",
+        "uninterrupted delivery"
+      ],
+      "example_sentence": "Supply chain disruption following the earthquake delayed humanitarian aid delivery to remote villages."
+    },
+    {
+      "word": "psychological trauma",
+      "pronunciation": "/ˌsaɪkəˈlɑːdʒɪkəl ˈtraʊmə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chấn thương tâm lý; tổn thương tinh thần do trải qua sự kiện thảm họa gây ra",
+      "definition_en": "emotional and psychological injury resulting from exposure to disaster experiences",
+      "level": "B2",
+      "synonyms": [
+        "emotional distress",
+        "mental injury"
+      ],
+      "antonyms": [
+        "psychological well-being",
+        "emotional stability"
+      ],
+      "example_sentence": "Survivors of major disasters often experience psychological trauma requiring long-term mental health support."
+    },
+    {
+      "word": "adaptive capacity",
+      "pronunciation": "/əˈdæptɪv ˈkæpəsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng thích ứng; năng lực của một cộng đồng để điều chỉnh và thích nghi với thay đổi",
+      "definition_en": "the ability of individuals, communities, or systems to adjust to new conditions and challenges",
+      "level": "C1",
+      "synonyms": [
+        "adaptability",
+        "flexibility"
+      ],
+      "antonyms": [
+        "rigidity",
+        "inflexibility"
+      ],
+      "example_sentence": "Communities with higher adaptive capacity recover faster from disasters through innovative problem-solving."
+    },
+    {
+      "word": "disaster-prone area",
+      "pronunciation": "/dɪˈzɑːstər proʊn ˈɛriə/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khu vực dễ bị thảm họa; những nơi có tần suất cao xảy ra các hiện tượng thiên tai",
+      "definition_en": "geographic regions with high frequency or likelihood of experiencing natural disasters",
+      "level": "B2",
+      "synonyms": [
+        "high-risk area",
+        "hazard-prone region"
+      ],
+      "antonyms": [
+        "safe zone",
+        "low-risk area"
+      ],
+      "example_sentence": "Disaster-prone areas require stricter building codes and more frequent disaster preparedness training."
+    },
+    {
+      "word": "social cohesion",
+      "pronunciation": "/ˈsoʊʃəl koʊˈhɪʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự gắn kết xã hội; mức độ liên kết và hợp tác giữa các thành viên trong cộng đồng",
+      "definition_en": "the degree of unity and cooperation among members of a community",
+      "level": "C1",
+      "synonyms": [
+        "community solidarity",
+        "social unity"
+      ],
+      "antonyms": [
+        "social fragmentation",
+        "division"
+      ],
+      "example_sentence": "Strong social cohesion enables communities to mobilize resources and support each other during disasters."
+    },
+    {
+      "word": "disaster impact assessment",
+      "pronunciation": "/dɪˈzɑːstər ˈɪmpækt əˈsɛsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đánh giá tác động thảm họa; quá trình xác định mức độ thiệt hại và nhu cầu hỗ trợ sau thảm họa",
+      "definition_en": "systematic evaluation of damage and losses caused by a disaster to determine recovery needs",
+      "level": "C1",
+      "synonyms": [
+        "damage assessment",
+        "loss evaluation"
+      ],
+      "antonyms": [
+        "prevention",
+        "avoidance"
+      ],
+      "example_sentence": "Disaster impact assessments guide the allocation of reconstruction funds to the most affected communities."
+    },
+    {
+      "word": "early recovery",
+      "pronunciation": "/ˈɜːrli rɪˈkʌvəri/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phục hồi sớm; các hoạt động ngay sau thảm họa nhằm khôi phục các dịch vụ cơ bản",
+      "definition_en": "immediate actions taken after a disaster to restore essential services and stabilize the situation",
+      "level": "B2",
+      "synonyms": [
+        "immediate recovery",
+        "stabilization"
+      ],
+      "antonyms": [
+        "prolonged crisis",
+        "delayed response"
+      ],
+      "example_sentence": "Early recovery efforts focused on restoring water supply and electricity to affected neighborhoods."
+    },
+    {
+      "word": "disaster financing",
+      "pronunciation": "/dɪˈzɑːstər ˈfaɪnænsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tài chính thảm họa; các cơ chế tài chính để hỗ trợ phòng chống và phục hồi sau thảm họa",
+      "definition_en": "financial mechanisms and instruments used to fund disaster preparedness and recovery activities",
+      "level": "C1",
+      "synonyms": [
+        "disaster funding",
+        "financial support"
+      ],
+      "antonyms": [
+        "financial constraints",
+        "lack of funding"
+      ],
+      "example_sentence": "Disaster financing through insurance schemes and government bonds enables rapid reconstruction."
+    },
+    {
+      "word": "critical infrastructure",
+      "pronunciation": "/ˈkrɪtɪkəl ˌɪnfrəˈstrʌktʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cơ sở hạ tầng quan trọng; các công trình thiết yếu như điện, nước, giao thông, y tế",
+      "definition_en": "essential facilities and systems vital to the functioning of society, including utilities and services",
+      "level": "B2",
+      "synonyms": [
+        "essential infrastructure",
+        "vital systems"
+      ],
+      "antonyms": [
+        "non-essential facilities"
+      ],
+      "example_sentence": "Protecting critical infrastructure from disaster damage ensures continuity of essential services."
+    },
+    {
+      "word": "disaster risk reduction framework",
+      "pronunciation": "/dɪˈzɑːstər rɪsk rɪˈdʌkʃən ˈfreɪmwɜːrk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khung giảm rủi ro thảm họa; bộ quy tắc và chính sách toàn diện để giảm thiểu rủi ro",
+      "definition_en": "comprehensive set of policies, strategies, and programs designed to reduce disaster risks systematically",
+      "level": "C1",
+      "synonyms": [
+        "DRR strategy",
+        "risk reduction policy"
+      ],
+      "antonyms": [
+        "ad-hoc response",
+        "reactive approach"
+      ],
+      "example_sentence": "The national disaster risk reduction framework integrates climate adaptation and sustainable development goals."
+    },
+    {
+      "word": "seismic activity",
+      "pronunciation": "/ˈzɪzmɪk ækˈtɪvɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động địa chấn; sự xảy ra các trận động đất và rung chuyển của lớp vỏ trái đất",
+      "definition_en": "the occurrence and measurement of earthquakes and ground movements in a region",
+      "level": "B2",
+      "synonyms": [
+        "earthquake activity",
+        "tectonic movement"
+      ],
+      "antonyms": [
+        "seismic stability",
+        "geological calm"
+      ],
+      "example_sentence": "Monitoring seismic activity helps scientists predict earthquake risks and issue timely warnings."
+    },
+    {
+      "word": "flood mitigation measures",
+      "pronunciation": "/flʌd ˌmɪtɪˈɡeɪʃən ˈmɛʒərz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp giảm thiểu lũ lụt; công trình và kỹ thuật để ngăn chặn hoặc giảm tác hại của lũ",
+      "definition_en": "structural and non-structural interventions designed to prevent or reduce flood damage",
+      "level": "B2",
+      "synonyms": [
+        "flood prevention",
+        "flood control measures"
+      ],
+      "antonyms": [
+        "flood acceleration",
+        "uncontrolled flooding"
+      ],
+      "example_sentence": "Flood mitigation measures including dams and improved drainage systems protect downstream communities."
+    },
+    {
+      "word": "disaster recovery plan",
+      "pronunciation": "/dɪˈzɑːstər rɪˈkʌvəri plæn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kế hoạch phục hồi sau thảm họa; tài liệu chi tiết các bước để tái thiết sau khi xảy ra thảm họa",
+      "definition_en": "detailed strategy outlining steps and resources needed to restore normalcy after a disaster",
+      "level": "B2",
+      "synonyms": [
+        "recovery strategy",
+        "reconstruction plan"
+      ],
+      "antonyms": [
+        "no planning",
+        "improvisation"
+      ],
+      "example_sentence": "A comprehensive disaster recovery plan ensures rapid restoration of government services and economic activity."
+    },
+    {
+      "word": "vulnerable population",
+      "pronunciation": "/ˈvʌlnərəbəl ˈpɑːpjəˌleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dân số dễ bị tổn thương; những nhóm người (trẻ em, người già, người khuyết tật) dễ bị ảnh hưởng",
+      "definition_en": "groups of people with limited capacity to cope with disasters, including children, elderly, and disabled",
+      "level": "B2",
+      "synonyms": [
+        "at-risk groups",
+        "marginalized communities"
+      ],
+      "antonyms": [
+        "resilient population",
+        "well-resourced groups"
+      ],
+      "example_sentence": "Disaster response programs must prioritize vulnerable populations to ensure equitable protection."
+    },
+    {
+      "word": "disaster-resistant construction",
+      "pronunciation": "/dɪˈzɑːstər rɪˈzɪstənt kənˈstrʌkʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xây dựng chống thảm họa; kỹ thuật xây dựng sử dụng vật liệu và thiết kế để chịu được thiên tai",
+      "definition_en": "building techniques and materials designed to withstand natural hazards and minimize damage",
+      "level": "C1",
+      "synonyms": [
+        "resilient construction",
+        "hazard-resistant building"
+      ],
+      "antonyms": [
+        "conventional construction",
+        "vulnerable design"
+      ],
+      "example_sentence": "Disaster-resistant construction standards in earthquake zones have significantly reduced building collapse rates."
+    },
+    {
+      "word": "humanitarian assistance",
+      "pronunciation": "/ˌhjuːmænɪˈtɛriən əˈsɪstəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hỗ trợ nhân đạo; cung cấp lương thực, nước, y tế và nơi trú ẩn cho những người bị ảnh hưởng",
+      "definition_en": "provision of food, water, medical care, and shelter to disaster-affected populations",
+      "level": "B2",
+      "synonyms": [
+        "emergency aid",
+        "disaster relief"
+      ],
+      "antonyms": [
+        "abandonment",
+        "neglect"
+      ],
+      "example_sentence": "International humanitarian assistance arrived within days to support survivors of the devastating earthquake."
+    },
+    {
+      "word": "disaster-induced displacement",
+      "pronunciation": "/dɪˈzɑːstər ɪnˈdjuːst dɪsˈpleɪsmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "di dân do thảm họa; sự buộc phải rời bỏ nhà cửa và địa phương do thiên tai",
+      "definition_en": "forced migration of people from their homes and communities due to disaster impacts",
+      "level": "C1",
+      "synonyms": [
+        "disaster-induced migration",
+        "forced relocation"
+      ],
+      "antonyms": [
+        "stable residence",
+        "permanent settlement"
+      ],
+      "example_sentence": "Disaster-induced displacement creates long-term challenges for housing and livelihood restoration."
+    },
+    {
+      "word": "multi-hazard approach",
+      "pronunciation": "/ˈmʌlti ˈhæzərd əˈproʊtʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiếp cận đa nguy hiểm; xem xét và chuẩn bị cho nhiều loại thảm họa cùng một lúc",
+      "definition_en": "integrated approach to disaster management addressing multiple types of hazards simultaneously",
+      "level": "C1",
+      "synonyms": [
+        "integrated risk management",
+        "comprehensive hazard planning"
+      ],
+      "antonyms": [
+        "single-hazard focus",
+        "narrow approach"
+      ],
+      "example_sentence": "A multi-hazard approach recognizes that communities face earthquakes, floods, and typhoons simultaneously."
+    },
+    {
+      "word": "disaster knowledge transfer",
+      "pronunciation": "/dɪˈzɑːstər ˈnɑːlɪdʒ ˈtrænsfɜːr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chuyển giao kiến thức thảm họa; chia sẻ kinh nghiệm và bài học từ thảm họa trước",
+      "definition_en": "sharing of lessons learned and best practices from past disasters to improve future preparedness",
+      "level": "C1",
+      "synonyms": [
+        "knowledge sharing",
+        "experience transfer"
+      ],
+      "antonyms": [
+        "knowledge hoarding",
+        "information suppression"
+      ],
+      "example_sentence": "Disaster knowledge transfer between countries helps communities adopt proven risk reduction strategies."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary goal of disaster preparedness programs?",
+      "option_a": "To predict the exact time and location of all natural disasters",
+      "option_b": "To ensure communities are ready to respond effectively and minimize casualties",
+      "option_c": "To prevent all natural disasters from occurring",
+      "option_d": "To eliminate the need for emergency services",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Disaster preparedness nhằm chuẩn bị sẵn sàng ứng phó hiệu quả, không phải dự đoán chính xác (A sai), ngăn chặn hoàn toàn (C sai), hay loại bỏ dịch vụ khẩn cấp (D sai)."
+    },
+    {
+      "question_text": "An early warning system is most effective when it _____ residents about potential hazards.",
+      "option_a": "occasionally informs",
+      "option_b": "timely and clearly communicates",
+      "option_c": "delays notification to",
+      "option_d": "confuses",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Early warning system cần thông báo kịp thời và rõ ràng (timely and clearly communicates). Các lựa chọn khác (occasionally, delays, confuses) đều làm giảm hiệu quả của hệ thống."
+    },
+    {
+      "question_text": "What is the relationship between community resilience and disaster recovery?",
+      "option_a": "Resilience has no impact on recovery speed",
+      "option_b": "Communities with higher resilience typically recover faster from disasters",
+      "option_c": "Resilience only applies to wealthy communities",
+      "option_d": "Recovery is impossible regardless of resilience levels",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Resilience (khả năng phục hồi) giúp cộng đồng vượt qua khó khăn nhanh hơn. A sai vì có mối liên hệ mạnh, C sai vì resilience không chỉ áp dụng cho cộng đồng giàu, D sai vì recovery là có thể."
+    },
+    {
+      "question_text": "Hazard mapping serves the primary purpose of _____.",
+      "option_a": "creating decorative maps for government offices",
+      "option_b": "identifying and visualizing areas at high risk from specific natural hazards",
+      "option_c": "replacing the need for evacuation drills",
+      "option_d": "determining insurance premium rates only",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Hazard mapping xác định và vẽ các khu vực nguy hiểm để hỗ trợ lập kế hoạch phòng chống. A, C, D đều là mục đích thứ cấp hoặc sai."
+    },
+    {
+      "question_text": "Which statement best explains why contingency planning is essential in disaster management?",
+      "option_a": "It guarantees that disasters will never occur",
+      "option_b": "It provides alternative procedures when unexpected situations arise",
+      "option_c": "It eliminates the need for emergency response teams",
+      "option_d": "It is only necessary for large-scale disasters",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Contingency planning chuẩn bị các phương án thay thế cho tình huống bất ngờ. A sai (không đảm bảo ngăn chặn), C sai (vẫn cần team ứng phó), D sai (cần cho mọi quy mô)."
+    },
+    {
+      "question_text": "The term 'vulnerability assessment' in disaster management refers to _____.",
+      "option_a": "assessing the strength of emergency response teams",
+      "option_b": "identifying weaknesses and exposure to hazards in a community",
+      "option_c": "evaluating the effectiveness of post-disaster recovery",
+      "option_d": "measuring the economic growth of a region",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Vulnerability assessment xác định điểm yếu và sự tiếp xúc với nguy hiểm. A, C, D đều không phải là định nghĩa chính xác của thuật ngữ này."
+    },
+    {
+      "question_text": "Infrastructure resilience is particularly important because _____.",
+      "option_a": "it prevents all natural disasters",
+      "option_b": "it ensures critical systems can withstand and recover from disaster impacts",
+      "option_c": "it eliminates the need for disaster preparedness",
+      "option_d": "it only applies to developed countries",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Infrastructure resilience đảm bảo các hệ thống quan trọng chịu đựng và phục hồi sau thảm họa. A sai (không ngăn chặn), C sai (vẫn cần chuẩn bị), D sai (áp dụng cho mọi quốc gia)."
+    },
+    {
+      "question_text": "Which of the following is a key component of effective risk communication during disasters?",
+      "option_a": "Providing vague and unclear information to avoid panic",
+      "option_b": "Conveying clear, timely information about hazards and protective actions",
+      "option_c": "Limiting information to government officials only",
+      "option_d": "Delaying public notification until after the disaster occurs",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Risk communication cần cung cấp thông tin rõ ràng và kịp thời. A sai (cần rõ ràng), C sai (cần công khai), D sai (cần thông báo sớm)."
+    },
+    {
+      "question_text": "Post-disaster recovery differs from early recovery in that it _____.",
+      "option_a": "occurs immediately after the disaster and focuses on stabilization",
+      "option_b": "is a longer-term process of rebuilding infrastructure and restoring livelihoods",
+      "option_c": "is less important than early recovery",
+      "option_d": "does not require government involvement",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Post-disaster recovery là quá trình dài hạn tái thiết, khác với early recovery (ngay lập tức). A mô tả early recovery, C sai (đều quan trọng), D sai (cần sự tham gia)."
+    },
+    {
+      "question_text": "Community-based disaster risk reduction is effective because it _____.",
+      "option_a": "relies entirely on international aid",
+      "option_b": "empowers local residents to identify hazards and develop solutions",
+      "option_c": "eliminates the need for government coordination",
+      "option_d": "only works in urban areas",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Community-based DRR trao quyền cho cộng đồng địa phương. A sai (không chỉ dựa vào viện trợ), C sai (vẫn cần phối hợp), D sai (áp dụng cho mọi khu vực)."
+    },
+    {
+      "question_text": "Which statement best illustrates the concept of adaptive capacity in disaster management?",
+      "option_a": "Communities with adaptive capacity cannot change their response strategies",
+      "option_b": "Adaptive capacity enables communities to adjust and thrive despite changing conditions",
+      "option_c": "Only wealthy nations possess adaptive capacity",
+      "option_d": "Adaptive capacity is irrelevant to disaster recovery",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Adaptive capacity là khả năng thích ứng với thay đổi. A sai (ngược lại), C sai (mọi cộng đồng có thể phát triển), D sai (rất quan trọng)."
+    },
+    {
+      "question_text": "Disaster-prone areas require _____ building codes and more frequent preparedness training.",
+      "option_a": "relaxed",
+      "option_b": "stricter",
+      "option_c": "outdated",
+      "option_d": "optional",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Khu vực dễ bị thảm họa cần các quy chuẩn xây dựng nghiêm ngặt hơn (stricter). Các lựa chọn khác (relaxed, outdated, optional) đều không phù hợp."
+    },
+    {
+      "question_text": "The primary purpose of disaster impact assessment is to _____.",
+      "option_a": "prevent all future disasters",
+      "option_b": "determine the extent of damage and recovery needs",
+      "option_c": "eliminate the need for reconstruction",
+      "option_d": "assign blame for the disaster",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Disaster impact assessment xác định mức độ thiệt hại và nhu cầu phục hồi. A sai (không ngăn chặn), C sai (vẫn cần tái thiết), D sai (không phải mục đích)."
+    },
+    {
+      "question_text": "A multi-hazard approach to disaster management is necessary because _____.",
+      "option_a": "communities typically face only one type of hazard",
+      "option_b": "it is more expensive than single-hazard planning",
+      "option_c": "many communities are exposed to multiple types of natural hazards simultaneously",
+      "option_d": "it eliminates the need for specialized expertise",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Multi-hazard approach cần thiết vì cộng đồng phải đối mặt với nhiều loại nguy hiểm cùng lúc. A sai (thường có nhiều), B sai (không phải lý do chính), D sai (vẫn cần chuyên gia)."
+    }
+  ]
+}

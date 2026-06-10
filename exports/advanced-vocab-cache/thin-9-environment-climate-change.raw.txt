@@ -1,0 +1,117 @@
+```json
+{
+  "words": [
+    {
+      "word": "climate variability",
+      "pronunciation": "/ˈklaɪmət vɛəriˈæbɪləti/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Sự biến thiên tự nhiên của khí hậu trong các khoảng thời gian khác nhau, khác với xu hướng dài hạn của biến đổi khí hậu.",
+      "definition_en": "Natural fluctuations in climate patterns over different time scales, distinct from long-term climate change trends.",
+      "level": "C1",
+      "synonyms": ["climate fluctuation", "natural climate variation"],
+      "antonyms": ["climate stability"],
+      "example_sentence": "Climate variability in the monsoon region makes agricultural planning increasingly challenging for farmers across Southeast Asia."
+    },
+    {
+      "word": "carbon intensity",
+      "pronunciation": "/ˈkɑːrbən ɪnˈtɛnsɪti/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Lượng khí thải carbon dioxide trên một đơn vị sản lượng kinh tế hoặc năng lượng được sử dụng.",
+      "definition_en": "The amount of carbon dioxide emissions produced per unit of economic output or energy consumed.",
+      "level": "C1",
+      "synonyms": ["emission intensity", "carbon efficiency ratio"],
+      "antonyms": ["carbon efficiency"],
+      "example_sentence": "Developing nations are working to reduce their carbon intensity by transitioning to cleaner manufacturing processes and renewable power sources."
+    },
+    {
+      "word": "climate tipping point",
+      "pronunciation": "/ˈklaɪmət ˈtɪpɪŋ pɔɪnt/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Ngưỡng tới hạn mà khi vượt qua sẽ gây ra những thay đổi không thể đảo ngược trong hệ thống khí hậu toàn cầu.",
+      "definition_en": "A critical threshold beyond which a climate system undergoes irreversible changes with cascading global consequences.",
+      "level": "C1",
+      "synonyms": ["critical threshold", "irreversible point"],
+      "antonyms": ["reversible change"],
+      "example_sentence": "Scientists warn that the melting of Arctic permafrost represents a dangerous climate tipping point that could accelerate warming exponentially."
+    },
+    {
+      "word": "net-zero emissions",
+      "pronunciation": "/nɛt ˈzɪroʊ ɪˈmɪʃənz/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Trạng thái mà lượng khí thải nhà kính được loại bỏ bằng hoặc vượt quá lượng được phát thải, đạt được thông qua giảm phát thải và loại bỏ carbon.",
+      "definition_en": "A state where greenhouse gas emissions removed from the atmosphere equal or exceed those released, achieved through emission reductions and carbon removal.",
+      "level": "C1",
+      "synonyms": ["carbon neutrality", "zero emissions target"],
+      "antonyms": ["positive emissions", "net emissions increase"],
+      "example_sentence": "The European Union has committed to achieving net-zero emissions by 2050 through comprehensive climate legislation and industrial transformation."
+    },
+    {
+      "word": "climate attribution",
+      "pronunciation": "/ˈklaɪmət ætɪˈbjuːʃən/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Quá trình xác định mức độ mà hoạt động của con người đã gây ra hoặc làm tăng cường một sự kiện khí hậu cụ thể.",
+      "definition_en": "The scientific process of determining the extent to which human activities have caused or intensified a specific climate event.",
+      "level": "C1",
+      "synonyms": ["event attribution", "causality assessment"],
+      "antonyms": ["natural causation"],
+      "example_sentence": "Recent climate attribution studies demonstrate that human-induced warming has increased the likelihood of extreme heatwaves by over 40 percent."
+    },
+    {
+      "word": "climate-resilient",
+      "pronunciation": "/ˈklaɪmət rɪˈzɪliənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "Có khả năng chịu đựng, thích ứng và phục hồi từ những tác động tiêu cực của biến đổi khí hậu.",
+      "definition_en": "Capable of withstanding, adapting to, and recovering from the adverse impacts of climate change.",
+      "level": "B2",
+      "synonyms": ["climate-adaptive", "climate-proof"],
+      "antonyms": ["climate-vulnerable"],
+      "example_sentence": "Developing climate-resilient infrastructure in coastal cities requires integrated planning that accounts for rising sea levels and increased storm intensity."
+    },
+    {
+      "word": "anthropogenic forcing",
+      "pronunciation": "/ˌænθrəpəˈdʒɛnɪk ˈfɔːrsɪŋ/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Những tác động do con người gây ra lên hệ thống khí hậu, chẳng hạn như phát thải khí nhà kính làm thay đổi cân bằng năng lượng của Trái Đất.",
+      "definition_en": "Human-induced changes to Earth's climate system, such as greenhouse gas emissions that alter the planet's energy balance.",
+      "level": "C2",
+      "synonyms": ["human forcing", "anthropogenic climate forcing"],
+      "antonyms": ["natural forcing"],
+      "example_sentence": "The IPCC report confirms that anthropogenic forcing is the dominant driver of observed warming since the mid-20th century."
+    },
+    {
+      "word": "climate finance",
+      "pronunciation": "/ˈklaɪmət ˈfaɪnæns/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Các nguồn tài chính được cấp bởi các nước phát triển cho các nước đang phát triển để hỗ trợ giảm phát thải và thích ứng với biến đổi khí hậu.",
+      "definition_en": "Financial resources provided by developed nations to developing countries to support climate mitigation and adaptation efforts.",
+      "level": "B2",
+      "synonyms": ["climate funding", "climate investment"],
+      "antonyms": ["climate debt"],
+      "example_sentence": "International climate finance mechanisms have mobilized over $100 billion annually to help vulnerable nations implement sustainable development projects."
+    },
+    {
+      "word": "climate feedback mechanism",
+      "pronunciation": "/ˈklaɪmət ˈfɛdˌbæk ˈmɛkənɪzəm/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Quá trình mà một thay đổi khí hậu ban đầu kích hoạt những thay đổi khác, có thể làm tăng (phản hồi dương) hoặc giảm (phản hồi âm) hiệu ứng ban đầu.",
+      "definition_en": "A process where an initial climate change triggers additional changes that either amplify (positive feedback) or diminish (negative feedback) the original effect.",
+      "level": "C1",
+      "synonyms": ["feedback loop", "climate amplification"],
+      "antonyms": ["climate stabilization"],
+      "example_sentence": "The ice-albedo feedback mechanism is a critical climate feedback mechanism where melting Arctic ice reduces Earth's reflectivity, accelerating further warming."
+    },
+    {
+      "word": "climate-induced displacement",
+      "pronunciation": "/ˈklaɪmət ɪnˈdjuːst dɪsˈpleɪsmənt/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "Sự di cư bắt buộc của các cộng đồng do những tác động trực tiếp của biến đổi khí hậu như nước biển dâng, hạn hán hoặc bão lũ.",
+      "definition_en": "The forced migration of communities caused by direct climate impacts such as sea-level rise, drought, or extreme flooding events.",
+      "level": "C1",
+      "synonyms": ["climate migration", "climate-driven relocation"],
+      "antonyms": ["voluntary settlement"],
+      "example_sentence": "Climate-induced displacement in the Pacific Island nations has become an urgent humanitarian crisis requiring international cooperation and resettlement frameworks."
+    }
+  ],
+  "questions": []
+}
+```

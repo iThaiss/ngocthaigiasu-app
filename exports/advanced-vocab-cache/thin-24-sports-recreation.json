@@ -1,0 +1,472 @@
+{
+  "words": [
+    {
+      "word": "endurance",
+      "pronunciation": "/ɪnˈdjʊərəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng chịu đựng, kiên trì trong hoạt động thể chất hoặc tinh thần kéo dài",
+      "definition_en": "the ability to withstand hardship or adversity; capacity to sustain prolonged physical or mental effort",
+      "level": "B2",
+      "synonyms": [
+        "stamina",
+        "perseverance",
+        "resilience"
+      ],
+      "antonyms": [
+        "weakness",
+        "fatigue"
+      ],
+      "example_sentence": "Marathon runners require exceptional endurance to complete the 42-kilometer race without stopping."
+    },
+    {
+      "word": "agility",
+      "pronunciation": "/əˈdʒɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng chuyển động nhanh nhẹn, linh hoạt; sự nhanh nhạy trong phản ứng",
+      "definition_en": "the ability to move quickly and easily; nimbleness and quickness of movement",
+      "level": "B2",
+      "synonyms": [
+        "nimbleness",
+        "dexterity",
+        "flexibility"
+      ],
+      "antonyms": [
+        "clumsiness",
+        "stiffness"
+      ],
+      "example_sentence": "Badminton players must develop excellent agility to respond to rapid changes in court position."
+    },
+    {
+      "word": "competitive spirit",
+      "pronunciation": "/kəmˈpɛtɪtɪv ˈspɪrɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tinh thần cạnh tranh, khát vọng chiến thắng và vượt qua đối thủ",
+      "definition_en": "the drive and determination to win and outperform others in competition",
+      "level": "B2",
+      "synonyms": [
+        "fighting spirit",
+        "winning mentality",
+        "drive"
+      ],
+      "antonyms": [
+        "apathy",
+        "indifference"
+      ],
+      "example_sentence": "The team's competitive spirit was evident in their aggressive play throughout the tournament."
+    },
+    {
+      "word": "recreational activity",
+      "pronunciation": "/ˌrekrɪˈeɪʃənəl ækˈtɪvɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động giải trí, thư giãn nhằm mục đích vui chơi và phục hồi sức khỏe",
+      "definition_en": "leisure activity undertaken for enjoyment, relaxation, and health benefits rather than competition",
+      "level": "B2",
+      "synonyms": [
+        "leisure pursuit",
+        "pastime",
+        "hobby"
+      ],
+      "antonyms": [
+        "professional activity",
+        "work"
+      ],
+      "example_sentence": "Swimming is a popular recreational activity that improves cardiovascular health while being enjoyable."
+    },
+    {
+      "word": "peak performance",
+      "pronunciation": "/piːk pərˈfɔːrməns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ hoạt động tốt nhất, hiệu suất cao nhất mà một vận động viên có thể đạt được",
+      "definition_en": "the highest level of achievement or excellence an athlete can reach",
+      "level": "B2",
+      "synonyms": [
+        "optimal performance",
+        "best form",
+        "prime condition"
+      ],
+      "antonyms": [
+        "poor form",
+        "underperformance"
+      ],
+      "example_sentence": "Athletes spend months training to achieve peak performance during major competitions."
+    },
+    {
+      "word": "tactical",
+      "pronunciation": "/ˈtæktɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến chiến thuật, kế hoạch hành động cụ thể trong trận đấu",
+      "definition_en": "relating to planned methods and strategies used to achieve a goal in sports",
+      "level": "B2",
+      "synonyms": [
+        "strategic",
+        "calculated",
+        "planned"
+      ],
+      "antonyms": [
+        "spontaneous",
+        "unplanned"
+      ],
+      "example_sentence": "The football coach made tactical adjustments during halftime to counter the opponent's strategy."
+    },
+    {
+      "word": "momentum",
+      "pronunciation": "/moʊˈmɛntəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "sức mạnh, động lực phát triển liên tục; xu hướng tích cực trong trận đấu",
+      "definition_en": "the force or speed of movement; the strength gained by motion or by a series of successes",
+      "level": "B2",
+      "synonyms": [
+        "impetus",
+        "drive",
+        "force"
+      ],
+      "antonyms": [
+        "stagnation",
+        "decline"
+      ],
+      "example_sentence": "After scoring three consecutive goals, the team gained momentum and dominated the second half."
+    },
+    {
+      "word": "versatile",
+      "pronunciation": "/ˈvɜːrsətaɪl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đa năng, có khả năng thích ứng với nhiều vị trí hoặc vai trò khác nhau",
+      "definition_en": "able to adapt to many different functions or situations; having multiple skills",
+      "level": "B2",
+      "synonyms": [
+        "adaptable",
+        "flexible",
+        "multi-talented"
+      ],
+      "antonyms": [
+        "specialized",
+        "limited"
+      ],
+      "example_sentence": "Modern basketball players are increasingly versatile, capable of playing multiple positions effectively."
+    },
+    {
+      "word": "exertion",
+      "pronunciation": "/ɪɡˈzɜːrʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự cố gắng, nỗ lực mạnh mẽ; hoạt động thể chất yêu cầu năng lượng lớn",
+      "definition_en": "physical or mental effort; the act of exerting oneself with great effort",
+      "level": "B2",
+      "synonyms": [
+        "effort",
+        "strain",
+        "exertion"
+      ],
+      "antonyms": [
+        "rest",
+        "relaxation"
+      ],
+      "example_sentence": "Intense physical exertion during training helps athletes build strength and cardiovascular endurance."
+    },
+    {
+      "word": "spectacle",
+      "pronunciation": "/ˈspɛktəkəl/",
+      "part_of_speech": "noun",
+      "definition_vi": "cảnh tượng ấn tượng, sự kiện hoành tráng thu hút sự chú ý của đông đảo khán giả",
+      "definition_en": "a visually striking or impressive event or display that attracts public attention",
+      "level": "B2",
+      "synonyms": [
+        "display",
+        "show",
+        "pageant"
+      ],
+      "antonyms": [
+        "mundane event",
+        "ordinary occurrence"
+      ],
+      "example_sentence": "The opening ceremony of the Olympics was a magnificent spectacle watched by billions worldwide."
+    },
+    {
+      "word": "rivalry",
+      "pronunciation": "/ˈraɪvəlri/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự cạnh tranh, đối kháng giữa hai đối thủ hoặc hai đội bóng",
+      "definition_en": "competition or antagonism between rivals; intense competitive relationship",
+      "level": "B2",
+      "synonyms": [
+        "competition",
+        "antagonism",
+        "conflict"
+      ],
+      "antonyms": [
+        "cooperation",
+        "alliance"
+      ],
+      "example_sentence": "The rivalry between the two football clubs has intensified over decades of competitive matches."
+    },
+    {
+      "word": "precision",
+      "pronunciation": "/prɪˈsɪʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "độ chính xác, sự chính xác cao trong thực hiện kỹ thuật hoặc động tác",
+      "definition_en": "the quality of being exact and accurate; careful attention to detail",
+      "level": "B2",
+      "synonyms": [
+        "accuracy",
+        "exactness",
+        "meticulousness"
+      ],
+      "antonyms": [
+        "inaccuracy",
+        "carelessness"
+      ],
+      "example_sentence": "Archery requires exceptional precision, as even millimeter deviations can affect the arrow's trajectory."
+    },
+    {
+      "word": "breakthrough",
+      "pronunciation": "/ˈbreɪkθruː/",
+      "part_of_speech": "noun",
+      "definition_vi": "bước tiến đột phá, thành tích nổi bật; sự vượt qua rào cản",
+      "definition_en": "a sudden, dramatic, and important discovery or development; a significant achievement",
+      "level": "B2",
+      "synonyms": [
+        "achievement",
+        "success",
+        "progress"
+      ],
+      "antonyms": [
+        "setback",
+        "failure"
+      ],
+      "example_sentence": "The athlete's breakthrough performance at the national championship earned her a spot on the Olympic team."
+    },
+    {
+      "word": "stamina",
+      "pronunciation": "/ˈstæmɪnə/",
+      "part_of_speech": "noun",
+      "definition_vi": "sức bền, khả năng duy trì hoạt động thể chất trong thời gian dài",
+      "definition_en": "physical or mental strength and energy; the ability to sustain prolonged effort",
+      "level": "C1",
+      "synonyms": [
+        "endurance",
+        "vigor",
+        "resilience"
+      ],
+      "antonyms": [
+        "weakness",
+        "fatigue"
+      ],
+      "example_sentence": "Long-distance runners develop exceptional stamina through consistent training over many months."
+    },
+    {
+      "word": "coordination",
+      "pronunciation": "/koʊˌɔːrdɪˈneɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự phối hợp, khả năng điều phối các bộ phận cơ thể hoặc các thành viên trong đội",
+      "definition_en": "the ability to use different parts of the body together smoothly; harmonious functioning",
+      "level": "B2",
+      "synonyms": [
+        "synchronization",
+        "harmony",
+        "teamwork"
+      ],
+      "antonyms": [
+        "discoordination",
+        "discord"
+      ],
+      "example_sentence": "Volleyball requires excellent hand-eye coordination and team coordination to execute complex plays."
+    },
+    {
+      "word": "intensity",
+      "pronunciation": "/ɪnˈtɛnsɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "mức độ mạnh, cường độ cao của hoạt động thể chất hoặc cảm xúc",
+      "definition_en": "the degree of strength or force; the quality of being intense or extreme",
+      "level": "B2",
+      "synonyms": [
+        "strength",
+        "force",
+        "vigor"
+      ],
+      "antonyms": [
+        "weakness",
+        "mildness"
+      ],
+      "example_sentence": "High-intensity interval training has become increasingly popular for improving athletic performance."
+    },
+    {
+      "word": "tournament",
+      "pronunciation": "/ˈtʊrnəmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "giải đấu, cuộc thi thể thao có nhiều vòng đấu với nhiều đội hoặc vận động viên tham gia",
+      "definition_en": "a series of contests or matches in which many competitors participate, typically to determine a champion",
+      "level": "C1",
+      "synonyms": [
+        "competition",
+        "championship",
+        "contest"
+      ],
+      "antonyms": [
+        "friendly match",
+        "exhibition"
+      ],
+      "example_sentence": "The tennis tournament attracted players from over 50 countries competing for the prestigious title."
+    },
+    {
+      "word": "technique",
+      "pronunciation": "/tɛkˈniːk/",
+      "part_of_speech": "noun",
+      "definition_vi": "kỹ thuật, phương pháp thực hiện một động tác hoặc kỹ năng thể thao cụ thể",
+      "definition_en": "a way of carrying out a particular task or executing a skill; a method or procedure",
+      "level": "C1",
+      "synonyms": [
+        "method",
+        "approach",
+        "skill"
+      ],
+      "antonyms": [
+        "improvisation",
+        "randomness"
+      ],
+      "example_sentence": "Swimming coaches emphasize proper technique to help athletes swim faster and more efficiently."
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "khả năng phục hồi, sức chống chịu; khả năng vượt qua khó khăn và thất bại",
+      "definition_en": "the ability to recover quickly from difficulties; mental toughness and adaptability",
+      "level": "B2",
+      "synonyms": [
+        "toughness",
+        "perseverance",
+        "determination"
+      ],
+      "antonyms": [
+        "fragility",
+        "weakness"
+      ],
+      "example_sentence": "The team demonstrated remarkable resilience by coming back from a 10-point deficit to win the match."
+    },
+    {
+      "word": "elite athlete",
+      "pronunciation": "/eɪˈliːt ˈæθliːt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vận động viên hàng đầu, những vận động viên có trình độ cao nhất trong lĩnh vực của họ",
+      "definition_en": "a top-level athlete who competes at the highest standard in their sport",
+      "level": "B2",
+      "synonyms": [
+        "top athlete",
+        "world-class competitor",
+        "professional athlete"
+      ],
+      "antonyms": [
+        "amateur",
+        "beginner"
+      ],
+      "example_sentence": "Elite athletes often dedicate their entire lives to training and competing at the highest levels."
+    },
+    {
+      "word": "sportsmanship",
+      "pronunciation": "/ˈspɔːrtsmənʃɪp/",
+      "part_of_speech": "noun",
+      "definition_vi": "tinh thần thể thao, đạo đức thể thao; hành vi công bằng, tôn trọng đối thủ",
+      "definition_en": "fair and honorable behavior in sports; respect for opponents and adherence to rules",
+      "level": "B2",
+      "synonyms": [
+        "fair play",
+        "integrity",
+        "honor"
+      ],
+      "antonyms": [
+        "cheating",
+        "unsportsmanlike conduct"
+      ],
+      "example_sentence": "The player was praised for displaying excellent sportsmanship by congratulating his opponent after losing."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'endurance' in the context of sports?",
+      "option_a": "The ability to move quickly and change direction rapidly",
+      "option_b": "The capacity to sustain prolonged physical effort without becoming exhausted",
+      "option_c": "The skill of executing technical movements with precision",
+      "option_d": "The mental strength to overcome fear during competition",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Endurance là khả năng chịu đựng hoạt động thể chất kéo dài. Option A mô tả agility, C là precision, D là mental toughness. Chỉ B đúng với định nghĩa endurance."
+    },
+    {
+      "question_text": "The coach emphasized the importance of _____ in basketball, as players must respond instantly to changing game situations.",
+      "option_a": "agility",
+      "option_b": "spectacle",
+      "option_c": "rivalry",
+      "option_d": "breakthrough",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Agility (sự nhanh nhạy, linh hoạt) là yếu tố quan trọng trong bóng rổ để phản ứng nhanh. Spectacle (cảnh tượng ấn tượng), rivalry (sự cạnh tranh), breakthrough (bước tiến đột phá) không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "After losing the first set, the tennis player showed remarkable _____ by winning the next two sets and claiming victory.",
+      "option_a": "exertion",
+      "option_b": "resilience",
+      "option_c": "precision",
+      "option_d": "momentum",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Resilience (khả năng phục hồi, vượt qua khó khăn) phù hợp với việc vận động viên quay lại sau thất bại. Exertion là nỗ lực, precision là độ chính xác, momentum là sức mạnh phát triển liên tục—không phù hợp."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'The Olympic Games are a global _____ that showcases the world's best athletes.'",
+      "option_a": "spectacle",
+      "option_b": "tournament",
+      "option_c": "technique",
+      "option_d": "coordination",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Spectacle (cảnh tượng ấn tượng, sự kiện hoành tráng) mô tả chính xác tính chất của Olympic. Tournament là giải đấu, technique là kỹ thuật, coordination là sự phối hợp—không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "What is the primary difference between 'competitive spirit' and 'sportsmanship'?",
+      "option_a": "Competitive spirit focuses on winning, while sportsmanship emphasizes fair play and respect",
+      "option_b": "Competitive spirit is more important than sportsmanship in professional sports",
+      "option_c": "Sportsmanship is only relevant in amateur competitions, not professional ones",
+      "option_d": "Both terms mean exactly the same thing in sports contexts",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Competitive spirit (khát vọng chiến thắng) và sportsmanship (tinh thần thể thao, công bằng) là hai khái niệm khác nhau. Competitive spirit tập trung vào chiến thắng, sportsmanship tập trung vào hành vi công bằng và tôn trọng. B, C, D đều sai."
+    },
+    {
+      "question_text": "Elite athletes often undergo _____ training programs designed to push their bodies to the maximum capacity.",
+      "option_a": "recreational",
+      "option_b": "tactical",
+      "option_c": "high-intensity",
+      "option_d": "versatile",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "High-intensity training (huấn luyện cường độ cao) là collocation phổ biến trong thể thao. Recreational training không phù hợp (giải trí), tactical training không đúng ngữ cảnh, versatile không phải tính từ dùng với training."
+    },
+    {
+      "question_text": "The football team's _____ with their local rivals has produced some of the most exciting matches in the league's history.",
+      "option_a": "momentum",
+      "option_b": "rivalry",
+      "option_c": "coordination",
+      "option_d": "precision",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Rivalry (sự cạnh tranh, đối kháng) là từ chính xác để mô tả mối quan hệ cạnh tranh lâu dài giữa hai đội. Momentum là sức mạnh phát triển, coordination là phối hợp, precision là độ chính xác—không phù hợp."
+    },
+    {
+      "question_text": "Which of the following is NOT a characteristic typically associated with 'peak performance'?",
+      "option_a": "Optimal physical condition",
+      "option_b": "Maximum mental focus",
+      "option_c": "Consistent underperformance",
+      "option_d": "Highest level of skill execution",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Peak performance (hiệu suất cao nhất) liên quan đến điều kiện tối ưu, tập trung tinh thần, và thực hiện kỹ năng ở mức cao nhất. Consistent underperformance (hiệu suất kém liên tục) là đối lập hoàn toàn với peak performance."
+    }
+  ]
+}

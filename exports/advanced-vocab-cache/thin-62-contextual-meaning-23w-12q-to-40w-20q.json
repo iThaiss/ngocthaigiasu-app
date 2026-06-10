@@ -1,0 +1,397 @@
+{
+  "words": [
+    {
+      "word": "nuance",
+      "pronunciation": "/ˈnjuːɑːns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sắc thái tinh tế, chi tiết nhỏ nhưng quan trọng trong ý nghĩa hoặc cách hiểu",
+      "definition_en": "A subtle difference or distinction in meaning, expression, or understanding",
+      "level": "B2",
+      "synonyms": [
+        "subtlety",
+        "shade",
+        "distinction"
+      ],
+      "antonyms": [
+        "obviousness",
+        "clarity"
+      ],
+      "example_sentence": "The speaker's nuance in tone revealed her true feelings about the controversial policy."
+    },
+    {
+      "word": "convey",
+      "pronunciation": "/kənˈveɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "Truyền đạt, diễn tả ý tưởng hoặc cảm xúc qua lời nói, hành động hoặc biểu hiện",
+      "definition_en": "To communicate or make known an idea, feeling, or information",
+      "level": "C1",
+      "synonyms": [
+        "express",
+        "communicate",
+        "impart"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "The documentary conveys the harsh reality of climate change through compelling visual evidence."
+    },
+    {
+      "word": "imply",
+      "pronunciation": "/ɪmˈplaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "Gợi ý,암시 một điều mà không nói rõ ràng; để hiểu rằng điều gì đó là đúng mà không nêu rõ",
+      "definition_en": "To suggest or indicate something indirectly without stating it explicitly",
+      "level": "B2",
+      "synonyms": [
+        "suggest",
+        "hint",
+        "insinuate"
+      ],
+      "antonyms": [
+        "state",
+        "declare"
+      ],
+      "example_sentence": "Her silence implied disapproval of the decision, though she never voiced her objection directly."
+    },
+    {
+      "word": "infer",
+      "pronunciation": "/ɪnˈfɜːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "Suy luận, kết luận dựa trên bằng chứng hoặc thông tin gián tiếp",
+      "definition_en": "To reach a conclusion based on evidence and reasoning rather than explicit statement",
+      "level": "B2",
+      "synonyms": [
+        "deduce",
+        "conclude",
+        "gather"
+      ],
+      "antonyms": [
+        "state",
+        "assert"
+      ],
+      "example_sentence": "From the author's choice of words, we can infer that she holds a critical view of modern consumerism."
+    },
+    {
+      "word": "allude to",
+      "pronunciation": "/əˈluːd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Ám chỉ, gợi ý một cách không trực tiếp đến một sự vật hoặc sự kiện",
+      "definition_en": "To make an indirect or passing reference to something",
+      "level": "B2",
+      "synonyms": [
+        "refer to",
+        "hint at",
+        "mention"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The politician alluded to previous scandals without explicitly naming them in his speech."
+    },
+    {
+      "word": "manifest",
+      "pronunciation": "/ˈmænɪfest/",
+      "part_of_speech": "verb",
+      "definition_vi": "Biểu hiện, thể hiện rõ ràng; làm cho điều gì đó trở nên rõ ràng hoặc hiển thị",
+      "definition_en": "To display, show, or make evident; to become apparent or visible",
+      "level": "B2",
+      "synonyms": [
+        "display",
+        "show",
+        "reveal"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "The economic crisis manifested itself through rising unemployment and declining consumer confidence."
+    },
+    {
+      "word": "illuminate",
+      "pronunciation": "/ɪˈluːmɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Làm sáng tỏ, giải thích rõ ràng; giúp hiểu rõ hơn về một vấn đề",
+      "definition_en": "To clarify or explain something; to shed light on a subject or make it clearer",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "elucidate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The researcher's findings illuminate the complex relationship between social media use and mental health."
+    },
+    {
+      "word": "underscore",
+      "pronunciation": "/ˌʌndərˈskɔːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "Nhấn mạnh, làm nổi bật tầm quan trọng của điều gì đó",
+      "definition_en": "To emphasize or highlight the importance of something",
+      "level": "B2",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The recent natural disasters underscore the urgent need for stronger environmental protection policies."
+    },
+    {
+      "word": "evoke",
+      "pronunciation": "/ɪˈvoʊk/",
+      "part_of_speech": "verb",
+      "definition_vi": "Gợi lên, kích thích cảm xúc hoặc ký ức; làm cho ai đó nhớ đến hoặc cảm nhận điều gì",
+      "definition_en": "To bring forth or trigger a feeling, memory, or image in someone's mind",
+      "level": "B2",
+      "synonyms": [
+        "provoke",
+        "stir",
+        "awaken"
+      ],
+      "antonyms": [
+        "suppress",
+        "repress"
+      ],
+      "example_sentence": "The nostalgic melody evoked memories of childhood summers for many listeners."
+    },
+    {
+      "word": "denote",
+      "pronunciation": "/dɪˈnoʊt/",
+      "part_of_speech": "verb",
+      "definition_vi": "Chỉ định, biểu thị một cách trực tiếp; có nghĩa là (khác với connotation)",
+      "definition_en": "To indicate or be a sign of something; to have as a literal meaning",
+      "level": "B2",
+      "synonyms": [
+        "indicate",
+        "signify",
+        "mean"
+      ],
+      "antonyms": [
+        "conceal",
+        "hide"
+      ],
+      "example_sentence": "In mathematics, the symbol '∞' denotes infinity, representing an endless quantity."
+    },
+    {
+      "word": "connotation",
+      "pronunciation": "/ˌkɑːnəˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hàm ý, ý nghĩa gián tiếp hoặc cảm xúc liên quan đến một từ (khác với denotation)",
+      "definition_en": "An implied or associated meaning of a word beyond its literal definition",
+      "level": "B2",
+      "synonyms": [
+        "implication",
+        "undertone",
+        "suggestion"
+      ],
+      "antonyms": [
+        "denotation",
+        "literal meaning"
+      ],
+      "example_sentence": "The word 'thrifty' has positive connotations, while 'stingy' carries negative ones, though both relate to spending money carefully."
+    },
+    {
+      "word": "tone",
+      "pronunciation": "/toʊn/",
+      "part_of_speech": "noun",
+      "definition_vi": "Giọng điệu, thái độ hoặc cách thể hiện ý kiến trong văn bản hoặc lời nói",
+      "definition_en": "The attitude or feeling conveyed by the writer or speaker toward the subject or audience",
+      "level": "C1",
+      "synonyms": [
+        "mood",
+        "attitude",
+        "manner"
+      ],
+      "antonyms": [],
+      "example_sentence": "The author's tone throughout the essay is critical yet constructive, offering solutions alongside criticism."
+    },
+    {
+      "word": "sentiment",
+      "pronunciation": "/ˈsentɪmənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Cảm tình, quan điểm hoặc cảm xúc được thể hiện; ý kiến chung của một nhóm người",
+      "definition_en": "A feeling, emotion, or opinion expressed; a general attitude or view held by people",
+      "level": "B2",
+      "synonyms": [
+        "feeling",
+        "emotion",
+        "opinion"
+      ],
+      "antonyms": [
+        "indifference",
+        "apathy"
+      ],
+      "example_sentence": "Public sentiment toward renewable energy has shifted dramatically over the past decade."
+    },
+    {
+      "word": "rhetoric",
+      "pronunciation": "/ˈretərɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Hùng biện, nghệ thuật sử dụng ngôn từ để thuyết phục hoặc tác động đến người nghe",
+      "definition_en": "The art of effective or persuasive speaking and writing; language designed to persuade or impress",
+      "level": "B2",
+      "synonyms": [
+        "oratory",
+        "eloquence",
+        "persuasion"
+      ],
+      "antonyms": [
+        "sincerity",
+        "plainness"
+      ],
+      "example_sentence": "The politician's rhetoric was powerful, but critics argued it lacked substance and concrete policy proposals."
+    },
+    {
+      "word": "irony",
+      "pronunciation": "/ˈaɪrəni/",
+      "part_of_speech": "noun",
+      "definition_vi": "Mỉa mai, tình huống hoặc cách nói trong đó ý thực tế trái ngược với ý được thể hiện",
+      "definition_en": "A situation or statement where the actual meaning is opposite to what is expressed or expected",
+      "level": "B2",
+      "synonyms": [
+        "sarcasm",
+        "contradiction",
+        "incongruity"
+      ],
+      "antonyms": [
+        "sincerity",
+        "straightforwardness"
+      ],
+      "example_sentence": "The irony of the situation was that the safety system designed to prevent accidents actually caused one."
+    },
+    {
+      "word": "bias",
+      "pronunciation": "/ˈbaɪəs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Thiên vị, xu hướng không công bằng hoặc định kiến ảnh hưởng đến nhận xét hoặc quyết định",
+      "definition_en": "A prejudice or inclination that prevents objective judgment; a tendency to favor one side unfairly",
+      "level": "B2",
+      "synonyms": [
+        "prejudice",
+        "partiality",
+        "inclination"
+      ],
+      "antonyms": [
+        "objectivity",
+        "fairness"
+      ],
+      "example_sentence": "The study was criticized for its potential bias toward wealthy participants, which may not represent the general population."
+    },
+    {
+      "word": "credibility",
+      "pronunciation": "/ˌkredəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Độ tin cậy, khả năng được tin tưởng hoặc xem là đáng tin dựa trên uy tín hoặc bằng chứng",
+      "definition_en": "The quality of being trusted or believed; the degree to which someone or something is considered reliable",
+      "level": "B2",
+      "synonyms": [
+        "trustworthiness",
+        "reliability",
+        "authenticity"
+      ],
+      "antonyms": [
+        "incredibility",
+        "unreliability"
+      ],
+      "example_sentence": "The journalist's credibility was damaged after it was revealed that she had fabricated several sources in her investigation."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "In the article about climate change, the author uses vivid descriptions of melting glaciers and rising sea levels to _____ the urgency of environmental action.",
+      "option_a": "convey",
+      "option_b": "infer",
+      "option_c": "allude to",
+      "option_d": "denote",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (convey) là đúng vì 'convey' có nghĩa là 'truyền đạt, diễn tả' ý tưởng hoặc cảm xúc. Các đáp án khác không phù hợp: 'infer' (suy luận) là hành động của người đọc chứ không phải tác giả; 'allude to' (ám chỉ) không phù hợp vì tác giả đang mô tả trực tiếp; 'denote' (chỉ định) là ý nghĩa trực tiếp của từ, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The politician's statement that 'we must cut spending to help the poor' contains a hidden _____ that contradicts the literal meaning of the words.",
+      "option_a": "nuance",
+      "option_b": "irony",
+      "option_c": "sentiment",
+      "option_d": "rhetoric",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B (irony) là đúng vì câu nói này thể hiện mâu thuẫn giữa ý được thể hiện (cắt giảm chi tiêu) và kết quả thực tế (làm hại người nghèo). 'Nuance' (sắc thái) quá yếu để mô tả mâu thuẫn rõ ràng này; 'sentiment' (cảm tình) không phù hợp; 'rhetoric' (hùng biện) chỉ cách nói, không chỉ mâu thuẫn."
+    },
+    {
+      "question_text": "The author's _____ toward corporate greed is evident throughout the essay, as she consistently criticizes profit-driven decisions that harm communities.",
+      "option_a": "credibility",
+      "option_b": "tone",
+      "option_c": "connotation",
+      "option_d": "bias",
+      "correct_answer": "D",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án D (bias) là đúng vì tác giả thể hiện thiên vị rõ ràng chống lại tham lam của công ty. 'Tone' (giọng điệu) có thể đúng nhưng 'bias' chỉ rõ hơn về xu hướng không công bằng; 'credibility' (độ tin cậy) không liên quan; 'connotation' (hàm ý) là ý nghĩa gián tiếp của từ, không phù hợp."
+    },
+    {
+      "question_text": "Which of the following best explains the difference between 'imply' and 'infer'?",
+      "option_a": "Imply means to state directly, while infer means to suggest indirectly.",
+      "option_b": "Imply is what the speaker does; infer is what the listener does.",
+      "option_c": "Imply and infer are synonyms with no meaningful difference.",
+      "option_d": "Imply means to conclude, while infer means to communicate.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B là đúng vì 'imply' là hành động của người nói (gợi ý điều gì đó mà không nói rõ), còn 'infer' là hành động của người nghe (suy luận dựa trên gợi ý đó). Đây là sự phân biệt quan trọng trong tiếng Anh. Các đáp án khác đều sai: A sai vì imply không phải nói trực tiếp; C sai vì chúng có sự khác biệt rõ ràng; D sai vì định nghĩa ngược lại."
+    },
+    {
+      "question_text": "The word 'ambitious' has positive _____ in most contexts, suggesting determination and drive, whereas 'ruthless' carries negative _____ despite both describing someone who pursues goals intensely.",
+      "option_a": "denotations / connotations",
+      "option_b": "connotations / connotations",
+      "option_c": "connotations / denotations",
+      "option_d": "implications / sentiments",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B là đúng vì cả hai từ đều có 'connotations' (hàm ý) khác nhau: 'ambitious' có hàm ý tích cực, 'ruthless' có hàm ý tiêu cực. Đây là về ý nghĩa gián tiếp, không phải ý nghĩa trực tiếp (denotation). A sai vì 'ambitious' không phải denotation; C sai vì 'ruthless' không phải denotation; D sai vì 'implications' và 'sentiments' không chính xác."
+    },
+    {
+      "question_text": "The documentary's powerful images of poverty and suffering _____ strong emotional responses from viewers, making them reconsider their assumptions about social inequality.",
+      "option_a": "manifest",
+      "option_b": "evoke",
+      "option_c": "illuminate",
+      "option_d": "underscore",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (evoke) là đúng vì 'evoke' có nghĩa là 'gợi lên, kích thích cảm xúc'. Các đáp án khác không phù hợp: 'manifest' (biểu hiện) là hành động của cảm xúc, không phải của hình ảnh; 'illuminate' (làm sáng tỏ) không chỉ cảm xúc mà là sự hiểu biết; 'underscore' (nhấn mạnh) không phù hợp vì không liên quan đến cảm xúc trực tiếp."
+    },
+    {
+      "question_text": "The speaker's _____ was carefully constructed to appeal to voters' emotions rather than present factual evidence, which critics argued undermined the credibility of her campaign.",
+      "option_a": "sentiment",
+      "option_b": "nuance",
+      "option_c": "rhetoric",
+      "option_d": "connotation",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án C (rhetoric) là đúng vì 'rhetoric' là nghệ thuật sử dụng ngôn từ để thuyết phục, thường nhấn mạnh cảm xúc hơn sự thật. 'Sentiment' (cảm tình) là ý kiến hoặc cảm xúc, không phải cách thể hiện; 'nuance' (sắc thái) quá yếu; 'connotation' (hàm ý) là ý nghĩa gián tiếp của từ, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Although the report claims to be objective, careful readers can _____ a clear _____ toward the pharmaceutical industry, as it consistently downplays negative side effects.",
+      "option_a": "infer / bias",
+      "option_b": "convey / tone",
+      "option_c": "manifest / sentiment",
+      "option_d": "allude to / irony",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án A (infer / bias) là đúng vì người đọc có thể 'suy luận' (infer) về 'thiên vị' (bias) của báo cáo dựa trên cách nó xử lý thông tin. B sai vì 'convey' không phù hợp với 'tone' trong ngữ cảnh này; C sai vì 'manifest' không phù hợp; D sai vì 'allude to' không phù hợp với 'irony' trong ngữ cảnh này."
+    }
+  ]
+}

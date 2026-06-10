@@ -1,0 +1,117 @@
+```json
+{
+  "words": [
+    {
+      "word": "trade imbalance",
+      "pronunciation": "/treɪd ɪmˈbæləns/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "sự mất cân bằng trong thương mại quốc tế khi xuất khẩu và nhập khẩu không tương đương; thường dùng để chỉ tình trạng một nước xuất khẩu nhiều hơn nhập khẩu hoặc ngược lại",
+      "definition_en": "a disparity between a country's imports and exports, resulting in either a surplus or deficit in international trade",
+      "level": "C1",
+      "synonyms": ["trade asymmetry", "commercial imbalance"],
+      "antonyms": ["trade equilibrium", "balanced trade"],
+      "example_sentence": "The persistent trade imbalance between developed and developing nations has prompted calls for more equitable trade agreements."
+    },
+    {
+      "word": "economic integration",
+      "pronunciation": "/ˌekənɒmɪk ɪntɪˈɡreɪʃən/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "quá trình các nền kinh tế khác nhau hòa nhập với nhau thông qua loại bỏ rào cản thương mại, điều hòa chính sách và tạo thị trường chung",
+      "definition_en": "the process by which economies of different countries become increasingly interconnected through removal of trade barriers and policy coordination",
+      "level": "C1",
+      "synonyms": ["economic convergence", "market integration"],
+      "antonyms": ["economic isolation", "protectionist stance"],
+      "example_sentence": "The European Union represents one of the most advanced models of economic integration, with member states sharing a common currency and regulatory framework."
+    },
+    {
+      "word": "trade liberalization",
+      "pronunciation": "/treɪd ˌlɪbərəlaɪˈzeɪʃən/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "quá trình giảm bớt hoặc loại bỏ các rào cản thương mại như thuế quan, hạn ngạch để tạo điều kiện thuận lợi cho tự do thương mại",
+      "definition_en": "the process of reducing or eliminating trade barriers such as tariffs and quotas to promote free trade between nations",
+      "level": "C1",
+      "synonyms": ["trade opening", "market deregulation"],
+      "antonyms": ["trade restriction", "protectionism"],
+      "example_sentence": "Trade liberalization policies implemented in the 1990s significantly increased cross-border investment and consumer access to foreign goods."
+    },
+    {
+      "word": "cross-border commerce",
+      "pronunciation": "/ˌkrɔːs ˈbɔːdə ˈkɒmɜːs/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "hoạt động mua bán hàng hóa và dịch vụ giữa các quốc gia khác nhau, bao gồm cả thương mại điện tử quốc tế",
+      "definition_en": "the buying and selling of goods and services between countries, including international e-commerce transactions",
+      "level": "C1",
+      "synonyms": ["international trade", "transnational commerce"],
+      "antonyms": ["domestic trade", "internal commerce"],
+      "example_sentence": "The rise of digital platforms has revolutionized cross-border commerce, enabling small enterprises to reach global markets without establishing physical presence abroad."
+    },
+    {
+      "word": "trade facilitation",
+      "pronunciation": "/treɪd fəˌsɪlɪˈteɪʃən/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "các biện pháp nhằm đơn giản hóa và tăng tốc độ các thủ tục thương mại, bao gồm hải quan, kiểm dịch và thủ tục hành chính liên quan",
+      "definition_en": "measures designed to simplify and accelerate international trade procedures, including customs clearance and administrative formalities",
+      "level": "C1",
+      "synonyms": ["procedural streamlining", "customs modernization"],
+      "antonyms": ["trade obstruction", "bureaucratic delay"],
+      "example_sentence": "Trade facilitation agreements aim to reduce transaction costs and processing times for exporters and importers across member nations."
+    },
+    {
+      "word": "market access",
+      "pronunciation": "/ˈmɑːkɪt ˈækses/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "khả năng của các doanh nghiệp hoặc sản phẩm từ một nước có thể vào và hoạt động trên thị trường của nước khác mà không gặp rào cản quá lớn",
+      "definition_en": "the ability of businesses or products from one country to enter and operate in another country's market without excessive barriers",
+      "level": "C1",
+      "synonyms": ["market entry", "market opening"],
+      "antonyms": ["market closure", "market exclusion"],
+      "example_sentence": "Negotiations over market access for agricultural products have been a contentious issue in multilateral trade discussions for decades."
+    },
+    {
+      "word": "economic sovereignty",
+      "pronunciation": "/ɪˌkɒnɒmɪk ˈsɒvrɪnti/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "quyền của một quốc gia tự quyết định chính sách kinh tế, thuế quan và quy định mà không bị ảnh hưởng hoặc can thiệp từ bên ngoài",
+      "definition_en": "a nation's right to independently determine its economic policies, regulations, and trade decisions without external interference",
+      "level": "C2",
+      "synonyms": ["economic autonomy", "fiscal independence"],
+      "antonyms": ["economic dependence", "external control"],
+      "example_sentence": "Debates over economic sovereignty have intensified as countries grapple with balancing participation in global trade networks against maintaining control over domestic industries."
+    },
+    {
+      "word": "trade disproportionality",
+      "pronunciation": "/treɪd ˌdɪsprəˌpɔːʃəˈnælɪti/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "tình trạng lợi ích từ thương mại quốc tế được phân bổ không công bằng giữa các nước, thường làm cho một số nước hưởng lợi nhiều hơn những nước khác",
+      "definition_en": "the unequal distribution of benefits from international trade, where some nations gain disproportionately more than others",
+      "level": "C2",
+      "synonyms": ["unequal trade benefit", "asymmetric gain distribution"],
+      "antonyms": ["equitable trade benefit", "proportional advantage"],
+      "example_sentence": "Critics argue that trade disproportionality between wealthy and developing nations perpetuates global inequality and limits opportunities for economic advancement."
+    },
+    {
+      "word": "trade reciprocity mechanism",
+      "pronunciation": "/treɪd rɪˌprɒsɪti ˈmɛkənɪzəm/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "hệ thống hoặc cơ chế đảm bảo rằng các nước trao đổi thương mại với nhau trên cơ sở tương đương, nếu một nước giảm thuế thì nước khác cũng phải làm tương tự",
+      "definition_en": "a system ensuring that trading partners offer equivalent concessions and benefits, where tariff reductions by one nation are matched by others",
+      "level": "C2",
+      "synonyms": ["mutual trade arrangement", "equivalent exchange framework"],
+      "antonyms": ["unilateral trade", "asymmetric concession"],
+      "example_sentence": "The trade reciprocity mechanism embedded in recent bilateral agreements aims to prevent one nation from gaining unfair advantages through selective tariff reductions."
+    },
+    {
+      "word": "global supply chain resilience",
+      "pronunciation": "/ˈɡloʊbəl səˈplaɪ tʃeɪn rɪˈzɪliəns/",
+      "part_of_speech": "noun phrase",
+      "definition_vi": "khả năng của các chuỗi cung ứng toàn cầu chịu đựng và phục hồi từ các cú sốc kinh tế, địa chính trị hoặc thảm họa tự nhiên mà không bị gián đoạn nghiêm trọng",
+      "definition_en": "the capacity of international supply networks to withstand and recover from economic shocks, geopolitical disruptions, or natural disasters with minimal disruption",
+      "level": "C2",
+      "synonyms": ["supply chain robustness", "network adaptability"],
+      "antonyms": ["supply chain fragility", "network vulnerability"],
+      "example_sentence": "The COVID-19 pandemic exposed weaknesses in global supply chain resilience, prompting governments and corporations to diversify sourcing and build strategic reserves."
+    }
+  ],
+  "questions": []
+}
+```

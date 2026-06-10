@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "substantial",
+      "pronunciation": "/səbˈstænʃəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "đáng kể, lớn về mức độ hoặc số lượng; có thực chất, vững chắc",
+      "definition_en": "large in amount, value, or importance; real and solid",
+      "level": "B2",
+      "synonyms": [
+        "considerable",
+        "significant",
+        "considerable"
+      ],
+      "antonyms": [
+        "negligible",
+        "trivial"
+      ],
+      "example_sentence": "The government made a substantial investment in renewable energy infrastructure to combat climate change."
+    },
+    {
+      "word": "substantive",
+      "pronunciation": "/ˈsʌbstəntɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có nội dung thực chất, sâu sắc; liên quan đến bản chất của vấn đề",
+      "definition_en": "dealing with matters of real importance or substance; having solid basis",
+      "level": "C1",
+      "synonyms": [
+        "meaningful",
+        "fundamental",
+        "essential"
+      ],
+      "antonyms": [
+        "superficial",
+        "trivial"
+      ],
+      "example_sentence": "The two nations engaged in substantive negotiations that addressed core economic and security concerns."
+    },
+    {
+      "word": "momentary",
+      "pronunciation": "/ˈmoʊməntɛri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "kéo dài một lát, tức thì, chỉ trong một khoảnh khắc",
+      "definition_en": "lasting for a very short time; brief",
+      "level": "B2",
+      "synonyms": [
+        "fleeting",
+        "brief",
+        "transient"
+      ],
+      "antonyms": [
+        "permanent",
+        "lasting"
+      ],
+      "example_sentence": "There was a momentary pause in the conversation before the speaker resumed her presentation."
+    },
+    {
+      "word": "momentous",
+      "pronunciation": "/moʊˈmɛntəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có ý nghĩa lớn lao, trọng đại, sẽ có hậu quả lâu dài",
+      "definition_en": "of great importance or significance; having serious consequences",
+      "level": "C1",
+      "synonyms": [
+        "significant",
+        "consequential",
+        "weighty"
+      ],
+      "antonyms": [
+        "trivial",
+        "insignificant"
+      ],
+      "example_sentence": "The signing of the climate accord was a momentous occasion that marked a turning point in global environmental policy."
+    },
+    {
+      "word": "temporal",
+      "pronunciation": "/ˈtɛmpərəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến thời gian; tạm thời, không vĩnh viễn; thuộc về thế gian (không tôn giáo)",
+      "definition_en": "relating to time; secular rather than spiritual; temporary",
+      "level": "C1",
+      "synonyms": [
+        "temporary",
+        "secular",
+        "worldly"
+      ],
+      "antonyms": [
+        "eternal",
+        "spiritual"
+      ],
+      "example_sentence": "The temporal nature of human existence reminds us to prioritize meaningful relationships over material possessions."
+    },
+    {
+      "word": "temporary",
+      "pronunciation": "/ˈtɛmpərɛri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tạm thời, không lâu dài, chỉ trong một thời gian nhất định",
+      "definition_en": "lasting for a limited time only; not permanent",
+      "level": "C1",
+      "synonyms": [
+        "provisional",
+        "interim",
+        "fleeting"
+      ],
+      "antonyms": [
+        "permanent",
+        "lasting"
+      ],
+      "example_sentence": "The company hired temporary workers to handle the increased demand during the holiday season."
+    },
+    {
+      "word": "imminent",
+      "pronunciation": "/ˈɪmɪnənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "sắp xảy ra, cận kề, ngay trước mắt (thường là điều nguy hiểm)",
+      "definition_en": "about to happen; impending, especially something unwelcome",
+      "level": "B2",
+      "synonyms": [
+        "impending",
+        "forthcoming",
+        "looming"
+      ],
+      "antonyms": [
+        "distant",
+        "remote"
+      ],
+      "example_sentence": "Scientists warned of an imminent earthquake risk in the region and urged residents to prepare emergency supplies."
+    },
+    {
+      "word": "eminent",
+      "pronunciation": "/ˈɛmɪnənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nổi tiếng, lỗi lạc, được tôn trọng rộng rãi (về người hoặc thành tích)",
+      "definition_en": "famous and respected within a particular field; distinguished",
+      "level": "B2",
+      "synonyms": [
+        "distinguished",
+        "renowned",
+        "prominent"
+      ],
+      "antonyms": [
+        "obscure",
+        "unknown"
+      ],
+      "example_sentence": "The eminent professor was invited to deliver the keynote address at the international conference on climate science."
+    },
+    {
+      "word": "ingenious",
+      "pronunciation": "/ɪnˈdʒɛnjəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thông minh, sáng tạo, có khả năng phát minh ra những cách giải quyết độc đáo",
+      "definition_en": "clever, original, and inventive; showing great skill and imagination",
+      "level": "B2",
+      "synonyms": [
+        "clever",
+        "inventive",
+        "resourceful"
+      ],
+      "antonyms": [
+        "stupid",
+        "unimaginative"
+      ],
+      "example_sentence": "The engineer designed an ingenious system that reduced water waste by 40% in agricultural irrigation."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể hiểu theo nhiều cách khác nhau, không rõ ràng, mơ hồ",
+      "definition_en": "open to more than one interpretation; unclear in meaning",
+      "level": "B2",
+      "synonyms": [
+        "unclear",
+        "vague",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The government's statement on new tax policy was ambiguous, leaving businesses uncertain about their obligations."
+    },
+    {
+      "word": "ambivalent",
+      "pronunciation": "/æmˈbɪvələnt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có hai cảm xúc hoặc quan điểm mâu thuẫn đồng thời; lưỡng lự",
+      "definition_en": "having mixed feelings or contradictory ideas about something",
+      "level": "C1",
+      "synonyms": [
+        "conflicted",
+        "uncertain",
+        "undecided"
+      ],
+      "antonyms": [
+        "certain",
+        "decisive"
+      ],
+      "example_sentence": "Many citizens felt ambivalent about the proposed infrastructure project—excited about economic growth but concerned about environmental impact."
+    },
+    {
+      "word": "allusion",
+      "pronunciation": "/əˈluːʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự gợi ý gián tiếp, tham chiếu không trực tiếp đến một sự kiện, người, hoặc tác phẩm",
+      "definition_en": "an indirect or passing reference to something; a hint",
+      "level": "B2",
+      "synonyms": [
+        "reference",
+        "hint",
+        "allusion"
+      ],
+      "antonyms": [
+        "direct statement",
+        "explicit mention"
+      ],
+      "example_sentence": "The author made a clever allusion to Shakespeare's Hamlet in the final chapter of her novel."
+    },
+    {
+      "word": "illusion",
+      "pronunciation": "/ɪˈluːʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "ảo tưởng, sự nhầm lẫn về thực tế; hình ảnh không thực",
+      "definition_en": "a false perception or belief; something that appears to be real but is not",
+      "level": "B2",
+      "synonyms": [
+        "delusion",
+        "mirage",
+        "fantasy"
+      ],
+      "antonyms": [
+        "reality",
+        "truth"
+      ],
+      "example_sentence": "The magician created an optical illusion that made the audience believe the coin had disappeared into thin air."
+    },
+    {
+      "word": "elicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "kéo ra, lôi ra (thông tin, phản ứng); gợi ra, làm nảy sinh",
+      "definition_en": "to draw out or evoke a response, answer, or fact from someone",
+      "level": "B2",
+      "synonyms": [
+        "extract",
+        "evoke",
+        "draw out"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "The journalist's probing questions elicited surprising admissions from the government official during the press conference."
+    },
+    {
+      "word": "illicit",
+      "pronunciation": "/ɪˈlɪsɪt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "bất hợp pháp, trái phép, không được phép",
+      "definition_en": "forbidden by law, rules, or custom; illegal",
+      "level": "B2",
+      "synonyms": [
+        "illegal",
+        "unlawful",
+        "forbidden"
+      ],
+      "antonyms": [
+        "legal",
+        "lawful"
+      ],
+      "example_sentence": "Authorities cracked down on illicit drug trafficking networks operating across the border."
+    },
+    {
+      "word": "precede",
+      "pronunciation": "/prɪˈsiːd/",
+      "part_of_speech": "verb",
+      "definition_vi": "đi trước, xảy ra trước (về thời gian hoặc vị trí)",
+      "definition_en": "to come before something in time or order",
+      "level": "B2",
+      "synonyms": [
+        "come before",
+        "go ahead of",
+        "antedate"
+      ],
+      "antonyms": [
+        "follow",
+        "succeed"
+      ],
+      "example_sentence": "The economic recession preceded the political crisis by several months, creating widespread social unrest."
+    },
+    {
+      "word": "precedent",
+      "pronunciation": "/ˈprɛsɪdənt/",
+      "part_of_speech": "noun",
+      "definition_vi": "tiền lệ, ví dụ trước đây được dùng làm cơ sở cho quyết định sau này",
+      "definition_en": "an earlier event or action used as an example or rule for future similar situations",
+      "level": "B2",
+      "synonyms": [
+        "example",
+        "standard",
+        "model"
+      ],
+      "antonyms": [
+        "novelty",
+        "innovation"
+      ],
+      "example_sentence": "The court's decision set a legal precedent that would influence similar cases for decades to come."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company made a _____ investment in new technology, while the research team conducted _____ studies on its long-term effectiveness.",
+      "option_a": "substantial; substantive",
+      "option_b": "substantive; substantial",
+      "option_c": "substantial; substantial",
+      "option_d": "substantive; substantive",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Substantial (đáng kể về số lượng/giá trị) dùng cho investment. Substantive (có nội dung thực chất) dùng cho studies. Đây là cặp từ dễ nhầm vì cùng gốc từ nhưng ý nghĩa khác nhau."
+    },
+    {
+      "question_text": "Which sentence uses 'momentary' and 'momentous' correctly?",
+      "option_a": "The momentary decision to change careers proved to be the most important turning point in his life.",
+      "option_b": "There was a momentous delay in the flight, lasting only a few seconds.",
+      "option_c": "The momentous achievement was celebrated for just a momentary period before everyone moved on.",
+      "option_d": "A momentary glitch in the system caused a momentous disruption to the entire network.",
+      "correct_answer": "D",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Momentary = kéo dài một lát (glitch); momentous = có ý nghĩa lớn lao (disruption). A sai vì 'momentary decision' không hợp lý. B sai vì 'momentous delay' không phù hợp. C sai vì 'momentous achievement' không nên 'momentary period'."
+    },
+    {
+      "question_text": "The _____ nature of the conflict suggests it will not be resolved quickly, while _____ peace agreements have already been signed.",
+      "option_a": "temporal; temporary",
+      "option_b": "temporary; temporal",
+      "option_c": "temporal; temporal",
+      "option_d": "temporary; temporary",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Temporal (liên quan đến thời gian/bản chất của vấn đề) phù hợp với 'nature of conflict'. Temporary (tạm thời) phù hợp với 'peace agreements'. Temporal ở đây mang ý nghĩa 'tính chất tạm thời của xung đột'."
+    },
+    {
+      "question_text": "The _____ threat of a hurricane forced residents to evacuate, while the _____ scientist warned about future climate patterns.",
+      "option_a": "imminent; eminent",
+      "option_b": "eminent; imminent",
+      "option_c": "imminent; imminent",
+      "option_d": "eminent; eminent",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Imminent (sắp xảy ra, cận kề) dùng cho 'threat of hurricane'. Eminent (nổi tiếng, lỗi lạc) dùng cho 'scientist'. Đây là cặp từ dễ nhầm vì phát âm gần giống nhưng ý nghĩa hoàn toàn khác."
+    },
+    {
+      "question_text": "The politician's _____ statement about the new policy left voters confused, as many interpreted it in different ways. This _____ attitude toward reform also frustrated his supporters.",
+      "option_a": "ambiguous; ambivalent",
+      "option_b": "ambivalent; ambiguous",
+      "option_c": "ambiguous; ambiguous",
+      "option_d": "ambivalent; ambivalent",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Ambiguous (mơ hồ, có nhiều cách hiểu) dùng cho 'statement'. Ambivalent (lưỡng lự, có hai cảm xúc mâu thuẫn) dùng cho 'attitude'. Ambiguous là về ngôn ngữ/ý nghĩa; ambivalent là về cảm xúc/quan điểm."
+    },
+    {
+      "question_text": "The author's _____ to classical mythology added depth to the narrative, while the magician's _____ created a sense of wonder in the audience.",
+      "option_a": "allusion; illusion",
+      "option_b": "illusion; allusion",
+      "option_c": "allusion; allusion",
+      "option_d": "illusion; illusion",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Allusion (tham chiếu gián tiếp) dùng cho 'to classical mythology'. Illusion (ảo tưởng, hình ảnh không thực) dùng cho 'magician's trick'. Đây là cặp từ dễ nhầm vì phát âm gần giống."
+    },
+    {
+      "question_text": "The investigation aimed to _____ information about _____ activities that had been operating for years.",
+      "option_a": "elicit; illicit",
+      "option_b": "illicit; elicit",
+      "option_c": "elicit; elicit",
+      "option_d": "illicit; illicit",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Elicit (kéo ra, lôi ra thông tin) là động từ. Illicit (bất hợp pháp) là tính từ. Cấu trúc 'elicit information' và 'illicit activities' là cách dùng chính xác."
+    },
+    {
+      "question_text": "The economic crisis _____ the political upheaval by two years, establishing a _____ for how governments should respond to similar situations.",
+      "option_a": "preceded; precedent",
+      "option_b": "precedent; preceded",
+      "option_c": "preceded; preceded",
+      "option_d": "precedent; precedent",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Precede (đi trước, xảy ra trước) là động từ ở thì quá khứ 'preceded'. Precedent (tiền lệ) là danh từ. Cấu trúc 'crisis preceded upheaval' và 'set a precedent' là chính xác."
+    }
+  ]
+}

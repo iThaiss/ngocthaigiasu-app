@@ -1,0 +1,416 @@
+{
+  "words": [
+    {
+      "word": "coupled with",
+      "pronunciation": "/ˈkʌpəld wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kết hợp với, cộng thêm với (để chỉ hai yếu tố cùng tác động)",
+      "definition_en": "combined or associated with something else to produce a particular effect",
+      "level": "B2",
+      "synonyms": [
+        "combined with",
+        "paired with"
+      ],
+      "antonyms": [
+        "separated from",
+        "isolated from"
+      ],
+      "example_sentence": "Rising inflation, coupled with unemployment, has created significant economic challenges for developing nations."
+    },
+    {
+      "word": "underscore",
+      "pronunciation": "/ˌʌndərˈskɔːr/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh, làm nổi bật (tầm quan trọng của điều gì)",
+      "definition_en": "to emphasize or highlight the importance of something",
+      "level": "B2",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "stress"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "The recent pandemic underscores the critical need for robust public health infrastructure."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh, xác thực (bằng bằng chứng cụ thể)",
+      "definition_en": "to provide evidence or proof to support a claim or statement",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "corroborate",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "Scientists must substantiate their hypotheses with rigorous experimental data before publishing findings."
+    },
+    {
+      "word": "reinforce",
+      "pronunciation": "/ˌriːɪnˈfɔːrs/",
+      "part_of_speech": "verb",
+      "definition_vi": "củng cố, tăng cường (ý tưởng, lập luận)",
+      "definition_en": "to strengthen or support an idea, argument, or position",
+      "level": "B2",
+      "synonyms": [
+        "strengthen",
+        "bolster",
+        "support"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "The documentary reinforces the argument that climate change demands immediate governmental intervention."
+    },
+    {
+      "word": "compound",
+      "pronunciation": "/ˈkɒmpaʊnd/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm trầm trọng thêm, tăng thêm (vấn đề, khó khăn)",
+      "definition_en": "to make a problem or difficulty worse by adding more issues",
+      "level": "B2",
+      "synonyms": [
+        "aggravate",
+        "exacerbate",
+        "worsen"
+      ],
+      "antonyms": [
+        "alleviate",
+        "mitigate"
+      ],
+      "example_sentence": "Poor infrastructure compounds the challenges faced by rural communities in accessing quality education."
+    },
+    {
+      "word": "bolster",
+      "pronunciation": "/ˈboʊlstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, hỗ trợ (lập luận, niềm tin)",
+      "definition_en": "to strengthen or support something, especially an argument or confidence",
+      "level": "B2",
+      "synonyms": [
+        "reinforce",
+        "strengthen",
+        "support"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "Recent studies bolster the claim that regular exercise significantly improves mental health outcomes."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực (thông tin bằng bằng chứng độc lập)",
+      "definition_en": "to confirm or give support to a statement or theory by providing additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "validate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple independent investigations corroborate the initial findings about the environmental impact of industrial waste."
+    },
+    {
+      "word": "accentuate",
+      "pronunciation": "/ækˈsentʃueɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "nhấn mạnh, làm nổi bật (đặc điểm, khía cạnh nào đó)",
+      "definition_en": "to make something more noticeable or prominent",
+      "level": "B2",
+      "synonyms": [
+        "emphasize",
+        "highlight",
+        "underscore"
+      ],
+      "antonyms": [
+        "downplay",
+        "obscure"
+      ],
+      "example_sentence": "The film accentuates the social inequalities that persist in modern urban societies."
+    },
+    {
+      "word": "amplify",
+      "pronunciation": "/ˈæmplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "mở rộng, phát triển (ý tưởng, lập luận); tăng cường",
+      "definition_en": "to increase the strength or effect of something; to elaborate on a point",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "enlarge",
+        "strengthen"
+      ],
+      "antonyms": [
+        "diminish",
+        "reduce"
+      ],
+      "example_sentence": "The author amplifies her main argument by presenting case studies from three different continents."
+    },
+    {
+      "word": "exemplify",
+      "pronunciation": "/ɪɡˈzemplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "minh họa, là ví dụ điển hình của (điều gì)",
+      "definition_en": "to be a typical example of something; to illustrate with examples",
+      "level": "B2",
+      "synonyms": [
+        "illustrate",
+        "demonstrate",
+        "embody"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "The success of renewable energy projects in Denmark exemplifies the feasibility of sustainable development."
+    },
+    {
+      "word": "illuminate",
+      "pronunciation": "/ɪˈluːmɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng (vấn đề, khái niệm)",
+      "definition_en": "to clarify or explain something in a clear and understandable way",
+      "level": "B2",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "elucidate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse"
+      ],
+      "example_sentence": "The documentary illuminates the complex relationship between economic growth and environmental degradation."
+    },
+    {
+      "word": "underscore the point that",
+      "pronunciation": "/ˌʌndərˈskɔːr ðə pɔɪnt ðæt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhấn mạnh rằng, làm nổi bật điểm quan trọng rằng",
+      "definition_en": "to emphasize or stress a particular important fact or argument",
+      "level": "B2",
+      "synonyms": [
+        "stress the fact that",
+        "highlight the point that"
+      ],
+      "antonyms": [
+        "downplay",
+        "minimize"
+      ],
+      "example_sentence": "Recent statistics underscore the point that mental health awareness has become increasingly vital in educational institutions."
+    },
+    {
+      "word": "lend credence to",
+      "pronunciation": "/lend ˈkredəns tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm cho (điều gì) trở nên đáng tin cậy, hỗ trợ (lý thuyết, ý kiến)",
+      "definition_en": "to make something seem more believable or trustworthy; to support a theory or claim",
+      "level": "B2",
+      "synonyms": [
+        "support",
+        "validate",
+        "substantiate"
+      ],
+      "antonyms": [
+        "discredit",
+        "undermine"
+      ],
+      "example_sentence": "The discovery of new archaeological evidence lends credence to the theory that ancient civilizations had extensive trade networks."
+    },
+    {
+      "word": "bear out",
+      "pronunciation": "/beər aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng minh, xác nhận (điều gì là đúng)",
+      "definition_en": "to confirm or prove that something is true",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "The latest research bears out the hypothesis that early childhood education significantly impacts long-term academic achievement."
+    },
+    {
+      "word": "attest to",
+      "pronunciation": "/əˈtest tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chứng thực, xác nhận (sự thật của điều gì)",
+      "definition_en": "to provide or serve as clear evidence of something; to confirm",
+      "level": "B2",
+      "synonyms": [
+        "testify to",
+        "confirm",
+        "verify"
+      ],
+      "antonyms": [
+        "deny",
+        "contradict"
+      ],
+      "example_sentence": "The rapid adoption of digital technologies attests to the growing demand for innovative solutions in the workplace."
+    },
+    {
+      "word": "buttress",
+      "pronunciation": "/ˈbʌtrɪs/",
+      "part_of_speech": "verb",
+      "definition_vi": "hỗ trợ, củng cố (lập luận, lý thuyết)",
+      "definition_en": "to provide support or reinforcement for an argument or position",
+      "level": "C1",
+      "synonyms": [
+        "support",
+        "reinforce",
+        "strengthen"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "The economist's analysis is buttressed by decades of empirical data and peer-reviewed research."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh là đúng, minh oan (cho ai, điều gì)",
+      "definition_en": "to prove or justify that something is correct or that someone was right",
+      "level": "B2",
+      "synonyms": [
+        "justify",
+        "validate",
+        "confirm"
+      ],
+      "antonyms": [
+        "condemn",
+        "discredit"
+      ],
+      "example_sentence": "Recent scientific breakthroughs vindicate the controversial theories proposed by researchers a decade ago."
+    },
+    {
+      "word": "dovetail with",
+      "pronunciation": "/ˈdʌvteɪl wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phù hợp hoàn toàn với, kết nối tự nhiên với (ý tưởng, sự kiện)",
+      "definition_en": "to fit together perfectly or connect naturally with something else",
+      "level": "B2",
+      "synonyms": [
+        "align with",
+        "complement",
+        "harmonize with"
+      ],
+      "antonyms": [
+        "conflict with",
+        "contradict"
+      ],
+      "example_sentence": "The government's new education policy dovetails with international standards for sustainable development goals."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The economic crisis, _____ by political instability, has forced many families into poverty.",
+      "option_a": "coupled with",
+      "option_b": "exemplified by",
+      "option_c": "illuminated by",
+      "option_d": "vindicated by",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A đúng vì 'coupled with' có nghĩa là 'kết hợp với' để chỉ hai yếu tố cùng tác động tiêu cực. Các đáp án khác không phù hợp: exemplified by (minh họa bằng), illuminated by (được làm sáng tỏ bằng), vindicated by (được chứng minh đúng bằng) đều không thích hợp trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which word best completes the sentence: 'The documentary _____ the importance of environmental conservation through powerful visual narratives.'",
+      "option_a": "compounds",
+      "option_b": "accentuates",
+      "option_c": "contradicts",
+      "option_d": "obscures",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (accentuates - nhấn mạnh, làm nổi bật) là chính xác vì phù hợp với ngữ cảnh 'làm nổi bật tầm quan trọng'. Compounds (làm trầm trọng thêm) không phù hợp; contradicts (mâu thuẫn) và obscures (làm mờ) có nghĩa ngược lại."
+    },
+    {
+      "question_text": "The researcher's findings _____ the long-standing theory that climate patterns are influenced by solar activity.",
+      "option_a": "refute",
+      "option_b": "corroborate",
+      "option_c": "compound",
+      "option_d": "obscure",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Đáp án B (corroborate - xác nhận, chứng thực) là đúng vì chỉ ra rằng kết quả nghiên cứu hỗ trợ lý thuyết hiện có. Refute (bác bỏ) có nghĩa ngược lại; compound (làm trầm trọng) và obscure (làm mờ) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "What is the closest synonym for 'buttress' in the context of academic writing?",
+      "option_a": "weaken",
+      "option_b": "contradict",
+      "option_c": "reinforce",
+      "option_d": "dismiss",
+      "correct_answer": "C",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Đáp án C (reinforce - tăng cường) là đúng vì 'buttress' có nghĩa là hỗ trợ, củng cố lập luận. Weaken (làm yếu), contradict (mâu thuẫn), dismiss (bác bỏ) đều có nghĩa ngược lại hoặc không liên quan."
+    },
+    {
+      "question_text": "The new evidence _____ the defendant's claim of innocence, leading to his acquittal.",
+      "option_a": "undermines",
+      "option_b": "vindicates",
+      "option_c": "compounds",
+      "option_d": "obscures",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án B (vindicates - chứng minh là đúng, minh oan) là chính xác vì bằng chứng mới chứng minh tuyên bố vô tội của bị cáo. Undermines (làm suy yếu), compounds (làm trầm trọng), obscures (làm mờ) đều không phù hợp."
+    },
+    {
+      "question_text": "The author _____ her argument by providing case studies from multiple countries and statistical data.",
+      "option_a": "amplifies",
+      "option_b": "diminishes",
+      "option_c": "contradicts",
+      "option_d": "ignores",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (amplifies - mở rộng, phát triển) là đúng vì tác giả mở rộng lập luận bằng cách cung cấp nhiều ví dụ và dữ liệu. Diminishes (giảm bớt), contradicts (mâu thuẫn), ignores (bỏ qua) đều không phù hợp."
+    },
+    {
+      "question_text": "Which phrase best completes: 'The success of this project _____ the feasibility of renewable energy solutions in developing nations.'",
+      "option_a": "lends credence to",
+      "option_b": "contradicts",
+      "option_c": "undermines",
+      "option_d": "obscures",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (lends credence to - làm cho đáng tin cậy, hỗ trợ) là chính xác vì thành công của dự án hỗ trợ khả thi của năng lượng tái tạo. Các đáp án khác (contradicts, undermines, obscures) đều có nghĩa ngược lại."
+    },
+    {
+      "question_text": "The historical records _____ to the accuracy of the ancient manuscript, confirming its authenticity.",
+      "option_a": "attest",
+      "option_b": "refute",
+      "option_c": "deny",
+      "option_d": "contradict",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án A (attest - chứng thực, xác nhận) là đúng vì các hồ sơ lịch sử xác nhận tính chính xác của bản thảo. Refute (bác bỏ), deny (phủ nhận), contradict (mâu thuẫn) đều có nghĩa ngược lại."
+    }
+  ]
+}

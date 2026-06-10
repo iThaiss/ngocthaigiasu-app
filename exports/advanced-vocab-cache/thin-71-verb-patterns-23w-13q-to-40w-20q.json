@@ -1,0 +1,386 @@
+{
+  "words": [
+    {
+      "word": "bear on",
+      "pronunciation": "/beər ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có liên quan đến, ảnh hưởng đến; áp dụng vào một tình huống cụ thể",
+      "definition_en": "to be relevant to or have an effect on something; to apply to a particular situation",
+      "level": "B2",
+      "synonyms": [
+        "affect",
+        "influence",
+        "apply to"
+      ],
+      "antonyms": [
+        "be irrelevant to"
+      ],
+      "example_sentence": "The recent economic data bears directly on the government's decision to raise interest rates."
+    },
+    {
+      "word": "cut across",
+      "pronunciation": "/kʌt əˈkrɒs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vượt qua ranh giới; bỏ qua các khác biệt để đi đến vấn đề cốt lõi",
+      "definition_en": "to go across something; to transcend boundaries or differences to reach the core issue",
+      "level": "B2",
+      "synonyms": [
+        "transcend",
+        "override",
+        "bypass"
+      ],
+      "antonyms": [
+        "respect boundaries"
+      ],
+      "example_sentence": "The environmental crisis cuts across political and economic divisions in modern society."
+    },
+    {
+      "word": "fall back on",
+      "pronunciation": "/fɔːl bæk ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dựa vào, sử dụng như một phương án dự phòng khi không còn lựa chọn khác",
+      "definition_en": "to rely on something as a backup option when other choices are unavailable",
+      "level": "B2",
+      "synonyms": [
+        "rely on",
+        "resort to",
+        "depend on"
+      ],
+      "antonyms": [
+        "abandon",
+        "discard"
+      ],
+      "example_sentence": "When traditional methods failed, researchers had to fall back on experimental approaches to solve the problem."
+    },
+    {
+      "word": "get at",
+      "pronunciation": "/ɡet æt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiếp cận, hiểu được ý nghĩa thực sự; chỉ trích, tấn công ai đó",
+      "definition_en": "to reach or understand the real meaning of something; to criticize or attack someone",
+      "level": "B2",
+      "synonyms": [
+        "access",
+        "understand",
+        "imply"
+      ],
+      "antonyms": [
+        "miss",
+        "overlook"
+      ],
+      "example_sentence": "The author's main argument is difficult to get at without careful reading of the entire essay."
+    },
+    {
+      "word": "go about",
+      "pronunciation": "/ɡəʊ əˈbaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiến hành, thực hiện một công việc theo cách nào đó; bắt tay vào làm gì",
+      "definition_en": "to set about doing something; to proceed with a task in a particular manner",
+      "level": "B2",
+      "synonyms": [
+        "proceed with",
+        "undertake",
+        "tackle"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "The team went about the research systematically, collecting data from multiple sources."
+    },
+    {
+      "word": "hold to",
+      "pronunciation": "/həʊld tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bám víu vào, kiên định với một quan điểm hay nguyên tắc; tuân thủ",
+      "definition_en": "to maintain or stick firmly to a belief, principle, or commitment",
+      "level": "B2",
+      "synonyms": [
+        "adhere to",
+        "maintain",
+        "stick to"
+      ],
+      "antonyms": [
+        "abandon",
+        "renounce"
+      ],
+      "example_sentence": "Despite criticism, the scientist held to her original hypothesis until new evidence emerged."
+    },
+    {
+      "word": "hinge on",
+      "pronunciation": "/hɪndʒ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phụ thuộc hoàn toàn vào; có mối liên hệ chặt chẽ với",
+      "definition_en": "to depend entirely on; to be contingent upon a particular factor",
+      "level": "B2",
+      "synonyms": [
+        "depend on",
+        "rest on",
+        "turn on"
+      ],
+      "antonyms": [
+        "be independent of"
+      ],
+      "example_sentence": "The success of the project hinges on securing adequate funding from international donors."
+    },
+    {
+      "word": "latch onto",
+      "pronunciation": "/lætʃ ˈɒntuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nắm bắt, hiểu được một ý tưởng; bám víu vào ai/cái gì",
+      "definition_en": "to grasp or understand an idea quickly; to attach oneself to someone or something",
+      "level": "B2",
+      "synonyms": [
+        "grasp",
+        "seize",
+        "understand"
+      ],
+      "antonyms": [
+        "miss",
+        "overlook"
+      ],
+      "example_sentence": "Students quickly latched onto the concept once the professor provided real-world examples."
+    },
+    {
+      "word": "narrow down",
+      "pronunciation": "/ˈnærəʊ daʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thu hẹp phạm vi, giảm số lượng các lựa chọn; làm cụ thể hóa",
+      "definition_en": "to reduce the number of possibilities; to make something more specific or limited",
+      "level": "B2",
+      "synonyms": [
+        "reduce",
+        "limit",
+        "specify"
+      ],
+      "antonyms": [
+        "expand",
+        "broaden"
+      ],
+      "example_sentence": "After reviewing the data, researchers were able to narrow down the potential causes of the disease."
+    },
+    {
+      "word": "play down",
+      "pronunciation": "/pleɪ daʊn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giảm nhẹ tầm quan trọng, làm cho cái gì đó có vẻ ít đáng kể hơn",
+      "definition_en": "to minimize the importance or significance of something; to downplay",
+      "level": "B2",
+      "synonyms": [
+        "downplay",
+        "minimize",
+        "understate"
+      ],
+      "antonyms": [
+        "emphasize",
+        "highlight"
+      ],
+      "example_sentence": "The government tried to play down the severity of the environmental crisis in its official statements."
+    },
+    {
+      "word": "press for",
+      "pronunciation": "/pres fɔː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thúc đẩy, yêu cầu mạnh mẽ; nỗ lực để đạt được cái gì",
+      "definition_en": "to demand or urge strongly for something; to push for a particular outcome",
+      "level": "B2",
+      "synonyms": [
+        "demand",
+        "urge",
+        "push for"
+      ],
+      "antonyms": [
+        "abandon",
+        "give up"
+      ],
+      "example_sentence": "Environmental groups are pressing for stricter regulations on industrial emissions."
+    },
+    {
+      "word": "scale up",
+      "pronunciation": "/skeɪl ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở rộng quy mô, tăng kích thước hoặc sản lượng; phát triển lên mức độ lớn hơn",
+      "definition_en": "to increase the size, scope, or production of something; to expand to a larger level",
+      "level": "B2",
+      "synonyms": [
+        "expand",
+        "enlarge",
+        "increase"
+      ],
+      "antonyms": [
+        "scale down",
+        "reduce"
+      ],
+      "example_sentence": "The startup plans to scale up production once it secures additional investment capital."
+    },
+    {
+      "word": "single out",
+      "pronunciation": "/ˈsɪŋɡəl aʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chỉ định, lựa chọn riêng ai/cái gì từ một nhóm; phân biệt đối xử",
+      "definition_en": "to select or identify someone or something from a group for special attention or treatment",
+      "level": "B2",
+      "synonyms": [
+        "select",
+        "identify",
+        "distinguish"
+      ],
+      "antonyms": [
+        "group together",
+        "lump together"
+      ],
+      "example_sentence": "The report singled out three key factors that contributed most significantly to the economic downturn."
+    },
+    {
+      "word": "take on",
+      "pronunciation": "/teɪk ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhận lấy, chấp nhận một trách nhiệm hay thách thức; có thêm nhân viên",
+      "definition_en": "to accept or undertake a responsibility, challenge, or task; to hire or employ",
+      "level": "B2",
+      "synonyms": [
+        "accept",
+        "undertake",
+        "assume"
+      ],
+      "antonyms": [
+        "refuse",
+        "decline"
+      ],
+      "example_sentence": "The organization took on the ambitious goal of reducing carbon emissions by fifty percent within a decade."
+    },
+    {
+      "word": "tie in with",
+      "pronunciation": "/taɪ ɪn wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "liên kết với, kết nối với; phù hợp với, tương thích với",
+      "definition_en": "to connect or coordinate with something; to be consistent or compatible with",
+      "level": "B2",
+      "synonyms": [
+        "connect with",
+        "coordinate with",
+        "align with"
+      ],
+      "antonyms": [
+        "disconnect from",
+        "contradict"
+      ],
+      "example_sentence": "The new policy ties in with the government's broader strategy to promote sustainable development."
+    },
+    {
+      "word": "weigh up",
+      "pronunciation": "/weɪ ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cân nhắc, xem xét kỹ lưỡng các ưu và nhược điểm; đánh giá",
+      "definition_en": "to carefully consider and evaluate the advantages and disadvantages of something",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "evaluate",
+        "assess"
+      ],
+      "antonyms": [
+        "ignore",
+        "dismiss"
+      ],
+      "example_sentence": "Before making a decision, the committee had to weigh up the financial costs against the potential benefits."
+    },
+    {
+      "word": "zero in on",
+      "pronunciation": "/ˈzɪərəʊ ɪn ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tập trung vào, hướng sự chú ý đến; xác định chính xác vị trí",
+      "definition_en": "to focus attention on something specific; to identify or locate precisely",
+      "level": "B2",
+      "synonyms": [
+        "focus on",
+        "concentrate on",
+        "target"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The investigation zeroed in on the financial irregularities that occurred during the previous fiscal year."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The success of the climate agreement _____ on whether all nations commit to reducing emissions by 2030.",
+      "option_a": "hinges",
+      "option_b": "bears",
+      "option_c": "scales",
+      "option_d": "weighs",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Hinge on\" có nghĩa là phụ thuộc hoàn toàn vào một điều kiện. \"Bear on\" có nghĩa là ảnh hưởng đến nhưng không chỉ sự phụ thuộc tuyệt đối. \"Scale\" và \"weigh\" không phù hợp trong ngữ cảnh này."
+    },
+    {
+      "question_text": "Which phrasal verb best completes this sentence? The researchers _____ three main variables that could explain the unexpected results.",
+      "option_a": "singled out",
+      "option_b": "latched onto",
+      "option_c": "narrowed down",
+      "option_d": "tied in with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Single out\" có nghĩa là chỉ định riêng từ một nhóm, phù hợp với việc xác định ba biến cụ thể. \"Latch onto\" là hiểu được ý tưởng, \"narrow down\" là thu hẹp phạm vi, \"tie in with\" là liên kết với—đều không phù hợp."
+    },
+    {
+      "question_text": "The government attempted to _____ the severity of the pollution crisis, but environmental groups continued to demand action.",
+      "option_a": "play down",
+      "option_b": "press for",
+      "option_c": "scale up",
+      "option_d": "hold to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Play down\" có nghĩa là giảm nhẹ tầm quan trọng, phù hợp với việc cố gắng làm cho vấn đề có vẻ ít nghiêm trọng hơn. \"Press for\" là thúc đẩy, \"scale up\" là mở rộng quy mô, \"hold to\" là bám víu vào—không phù hợp."
+    },
+    {
+      "question_text": "What is the meaning of \"cut across\" in this context: \"The issue of climate change cuts across all political ideologies\"?",
+      "option_a": "To physically cross over something",
+      "option_b": "To transcend boundaries and affect different groups regardless of their differences",
+      "option_c": "To reduce or minimize something",
+      "option_d": "To criticize or attack a particular group",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "\"Cut across\" trong ngữ cảnh học thuật có nghĩa là vượt qua ranh giới, không phân biệt các khác biệt. Đáp án A là nghĩa đen, C và D là sai lệch hoàn toàn."
+    },
+    {
+      "question_text": "Which option is closest in meaning to \"fall back on\" in this sentence: \"When primary sources were unavailable, historians had to fall back on secondary sources\"?",
+      "option_a": "to abandon or reject",
+      "option_b": "to rely on as a backup option",
+      "option_c": "to criticize or challenge",
+      "option_d": "to expand or enlarge",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "\"Fall back on\" có nghĩa là dựa vào một phương án dự phòng khi không còn lựa chọn khác. Các đáp án khác không phù hợp với ngữ cảnh."
+    },
+    {
+      "question_text": "The company plans to _____ its operations in Southeast Asia after the successful pilot program demonstrated strong market demand.",
+      "option_a": "weigh up",
+      "option_b": "scale up",
+      "option_c": "zero in on",
+      "option_d": "go about",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Scale up\" có nghĩa là mở rộng quy mô, phù hợp với việc mở rộng hoạt động sau khi thành công. \"Weigh up\" là cân nhắc, \"zero in on\" là tập trung vào, \"go about\" là tiến hành—không phù hợp."
+    },
+    {
+      "question_text": "The new environmental policy _____ the government's long-term commitment to sustainable development and renewable energy initiatives.",
+      "option_a": "gets at",
+      "option_b": "presses for",
+      "option_c": "ties in with",
+      "option_d": "holds to",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Tie in with\" có nghĩa là liên kết với, kết nối với, phù hợp với việc chính sách mới kết nối với cam kết dài hạn. \"Gets at\" là hiểu được, \"presses for\" là thúc đẩy, \"holds to\" là bám víu vào—không phù hợp."
+    }
+  ]
+}

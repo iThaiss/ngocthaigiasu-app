@@ -1,0 +1,417 @@
+{
+  "words": [
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm giảm bớt mức độ nghiêm trọng hoặc tác hại của cái gì; giảm nhẹ",
+      "definition_en": "to make something less severe or serious; to reduce the impact of something negative",
+      "level": "B2",
+      "synonyms": [
+        "alleviate",
+        "ease",
+        "lessen"
+      ],
+      "antonyms": [
+        "aggravate",
+        "worsen"
+      ],
+      "example_sentence": "The government implemented new policies to mitigate the effects of climate change on coastal communities."
+    },
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm tình huống trở nên tệ hơn; làm trầm trọng thêm",
+      "definition_en": "to make a problem or situation worse; to intensify negative conditions",
+      "level": "B2",
+      "synonyms": [
+        "aggravate",
+        "worsen",
+        "intensify"
+      ],
+      "antonyms": [
+        "improve",
+        "ameliorate"
+      ],
+      "example_sentence": "Poor air quality exacerbates respiratory diseases in urban areas, particularly affecting vulnerable populations."
+    },
+    {
+      "word": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể hiểu theo nhiều cách khác nhau; không rõ ràng, mơ hồ",
+      "definition_en": "open to more than one interpretation; unclear or uncertain in meaning",
+      "level": "B2",
+      "synonyms": [
+        "vague",
+        "unclear",
+        "equivocal"
+      ],
+      "antonyms": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_sentence": "The contract contained ambiguous language that led to disputes between the two parties."
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "/præɡˈmætɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "thực tế, thiết thực; dựa trên những gì có thể làm được thay vì lý tưởng",
+      "definition_en": "dealing with things in a practical, realistic way based on actual circumstances rather than theory",
+      "level": "B2",
+      "synonyms": [
+        "practical",
+        "realistic",
+        "sensible"
+      ],
+      "antonyms": [
+        "idealistic",
+        "theoretical"
+      ],
+      "example_sentence": "The company took a pragmatic approach to reducing costs by focusing on operational efficiency rather than layoffs."
+    },
+    {
+      "word": "volatile",
+      "pronunciation": "/ˈvɒlətaɪl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ thay đổi, không ổn định; (về người) dễ nổi nóng, bất ổn định về cảm xúc",
+      "definition_en": "liable to change rapidly and unpredictably; unstable or prone to sudden emotional outbursts",
+      "level": "B2",
+      "synonyms": [
+        "unstable",
+        "unpredictable",
+        "turbulent"
+      ],
+      "antonyms": [
+        "stable",
+        "steady"
+      ],
+      "example_sentence": "Stock markets became increasingly volatile following the announcement of unexpected economic data."
+    },
+    {
+      "word": "coherent",
+      "pronunciation": "/kəʊˈhɪərənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "logic, mạch lạc; (về người) sáng suốt, có khả năng diễn đạt rõ ràng",
+      "definition_en": "logical and consistent; able to be understood clearly; making sense as a whole",
+      "level": "B2",
+      "synonyms": [
+        "logical",
+        "consistent",
+        "clear"
+      ],
+      "antonyms": [
+        "incoherent",
+        "confused"
+      ],
+      "example_sentence": "The researcher presented a coherent argument supported by extensive empirical evidence."
+    },
+    {
+      "word": "superficial",
+      "pronunciation": "/ˌsuːpərˈfɪʃəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "nông cạn, không sâu sắc; chỉ ở bề mặt, không đi sâu vào bản chất",
+      "definition_en": "lacking depth; concerned only with what is obvious or apparent; not thorough or genuine",
+      "level": "B2",
+      "synonyms": [
+        "shallow",
+        "cursory",
+        "trivial"
+      ],
+      "antonyms": [
+        "profound",
+        "deep"
+      ],
+      "example_sentence": "The media coverage of the scandal was criticized for being superficial and failing to investigate underlying causes."
+    },
+    {
+      "word": "meticulous",
+      "pronunciation": "/məˈtɪkjələs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tỉ mỉ, cẩn thận; chú ý đến từng chi tiết nhỏ nhất",
+      "definition_en": "showing great attention to detail; very careful and precise in work or behavior",
+      "level": "B2",
+      "synonyms": [
+        "careful",
+        "precise",
+        "thorough"
+      ],
+      "antonyms": [
+        "careless",
+        "sloppy"
+      ],
+      "example_sentence": "The auditor conducted a meticulous examination of the company's financial records."
+    },
+    {
+      "word": "paradox",
+      "pronunciation": "/ˈpærədɒks/",
+      "part_of_speech": "noun",
+      "definition_vi": "mâu thuẫn, điều tưởng chừng như vô lý nhưng lại có thể đúng",
+      "definition_en": "a situation or statement that seems contradictory but may reveal a deeper truth",
+      "level": "B2",
+      "synonyms": [
+        "contradiction",
+        "inconsistency"
+      ],
+      "antonyms": [
+        "consistency",
+        "logic"
+      ],
+      "example_sentence": "The paradox of modern technology is that it connects people globally while often isolating them locally."
+    },
+    {
+      "word": "circumvent",
+      "pronunciation": "/ˌsɜːkəmˈvent/",
+      "part_of_speech": "verb",
+      "definition_vi": "tìm cách vòng qua, né tránh; vượt qua một cách khéo léo",
+      "definition_en": "to find a way around an obstacle or rule; to avoid or bypass something",
+      "level": "B2",
+      "synonyms": [
+        "bypass",
+        "evade",
+        "skirt"
+      ],
+      "antonyms": [
+        "confront",
+        "face"
+      ],
+      "example_sentence": "Some companies attempt to circumvent environmental regulations by relocating to countries with weaker standards."
+    },
+    {
+      "word": "inherent",
+      "pronunciation": "/ɪnˈhɪrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "vốn có, bẩm sinh; là một phần tự nhiên của cái gì",
+      "definition_en": "existing as a natural, permanent, or inseparable element or quality",
+      "level": "B2",
+      "synonyms": [
+        "intrinsic",
+        "innate",
+        "built-in"
+      ],
+      "antonyms": [
+        "acquired",
+        "external"
+      ],
+      "example_sentence": "There are inherent risks in any investment strategy that investors must carefully consider."
+    },
+    {
+      "word": "arbitrary",
+      "pronunciation": "/ˈɑːbɪtrəri/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tùy tiện, không có cơ sở lý do; được quyết định bởi cá nhân chứ không phải quy tắc",
+      "definition_en": "based on random choice or personal whim rather than reason or system; not following a logical principle",
+      "level": "B2",
+      "synonyms": [
+        "random",
+        "capricious",
+        "whimsical"
+      ],
+      "antonyms": [
+        "systematic",
+        "logical"
+      ],
+      "example_sentence": "Critics argued that the selection process was arbitrary and lacked transparent criteria."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh là đúng; bảo vệ danh dự, làm sạch tên tuổi",
+      "definition_en": "to prove or justify that someone or something is right or correct; to clear from blame",
+      "level": "B2",
+      "synonyms": [
+        "justify",
+        "exonerate",
+        "validate"
+      ],
+      "antonyms": [
+        "condemn",
+        "incriminate"
+      ],
+      "example_sentence": "Recent scientific findings vindicated the researcher's controversial hypothesis from a decade earlier."
+    },
+    {
+      "word": "complacent",
+      "pronunciation": "/kəmˈpleɪsənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "tự mãn, thỏa mãn với hiện tại; không lo lắng hoặc cố gắng cải thiện",
+      "definition_en": "satisfied with oneself or one's achievements; lacking concern or motivation for improvement",
+      "level": "B2",
+      "synonyms": [
+        "self-satisfied",
+        "smug",
+        "unconcerned"
+      ],
+      "antonyms": [
+        "ambitious",
+        "vigilant"
+      ],
+      "example_sentence": "The company became complacent after years of market dominance, failing to innovate and losing ground to competitors."
+    },
+    {
+      "word": "juxtapose",
+      "pronunciation": "/ˌdʒʌkstəˈpəʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "đặt cạnh nhau để so sánh hoặc tạo hiệu ứng tương phản",
+      "definition_en": "to place two things side by side, especially for comparison or to create an interesting effect",
+      "level": "B2",
+      "synonyms": [
+        "compare",
+        "contrast",
+        "place together"
+      ],
+      "antonyms": [
+        "separate",
+        "distance"
+      ],
+      "example_sentence": "The artist juxtaposed images of nature and industrial development to highlight environmental concerns."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực; cung cấp bằng chứng hỗ trợ cho một tuyên bố",
+      "definition_en": "to confirm or give support to a statement, theory, or finding with additional evidence",
+      "level": "B2",
+      "synonyms": [
+        "confirm",
+        "verify",
+        "substantiate"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple witnesses corroborated the defendant's account of events on the night in question."
+    },
+    {
+      "word": "tangible",
+      "pronunciation": "/ˈtændʒɪbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có thể cảm nhận được, hữu hình; rõ ràng, cụ thể (không trừu tượng)",
+      "definition_en": "able to be touched or felt; real and concrete rather than abstract or imaginary",
+      "level": "B2",
+      "synonyms": [
+        "concrete",
+        "physical",
+        "real"
+      ],
+      "antonyms": [
+        "intangible",
+        "abstract"
+      ],
+      "example_sentence": "The project delivered tangible results within the first quarter, including a 25% increase in productivity."
+    },
+    {
+      "word": "speculative",
+      "pronunciation": "/ˈspekjələtɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dựa trên suy đoán, không chắc chắn; liên quan đến việc đầu cơ hoặc mạo hiểm",
+      "definition_en": "based on conjecture or guesswork rather than facts; involving risk or uncertainty",
+      "level": "B2",
+      "synonyms": [
+        "conjectural",
+        "theoretical",
+        "risky"
+      ],
+      "antonyms": [
+        "factual",
+        "proven"
+      ],
+      "example_sentence": "The economist warned against speculative investments in emerging markets without proper due diligence."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The new environmental policy aims to _____ the negative impacts of industrial pollution on marine ecosystems.",
+      "option_a": "exacerbate",
+      "option_b": "mitigate",
+      "option_c": "circumvent",
+      "option_d": "juxtapose",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Chính sách môi trường nhằm giảm bớt (mitigate) tác hại, không làm trầm trọng thêm (exacerbate). Circumvent = vòng qua, juxtapose = đặt cạnh nhau, không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Which word best describes a situation where two seemingly opposite ideas are both true?",
+      "option_a": "ambiguous",
+      "option_b": "coherent",
+      "option_c": "paradox",
+      "option_d": "arbitrary",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Paradox là mâu thuẫn tưởng chừng vô lý nhưng có thể đúng. Ambiguous = mơ hồ, coherent = mạch lạc, arbitrary = tùy tiện, không phù hợp."
+    },
+    {
+      "question_text": "The auditor's _____ review of the financial statements revealed several discrepancies that had been overlooked.",
+      "option_a": "superficial",
+      "option_b": "meticulous",
+      "option_c": "pragmatic",
+      "option_d": "volatile",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Kiểm toán viên cần tỉ mỉ (meticulous) để phát hiện sai sót. Superficial = nông cạn, pragmatic = thực tế, volatile = không ổn định, không phù hợp."
+    },
+    {
+      "question_text": "The witness's testimony _____ the suspect's alibi, providing crucial evidence for the prosecution.",
+      "option_a": "vindicated",
+      "option_b": "corroborated",
+      "option_c": "circumvented",
+      "option_d": "exacerbated",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Lời khai của nhân chứng xác nhận (corroborated) lời khai của bị cáo. Vindicate = chứng minh là đúng (cho người), circumvent = vòng qua, exacerbate = làm trầm trọng."
+    },
+    {
+      "question_text": "Which of the following is an antonym of 'complacent'?",
+      "option_a": "satisfied",
+      "option_b": "ambitious",
+      "option_c": "content",
+      "option_d": "peaceful",
+      "correct_answer": "B",
+      "question_type": "antonym",
+      "difficulty": "intermediate",
+      "explanation": "Complacent = tự mãn, không có động lực. Ambitious = có tham vọng, muốn cải thiện, là trái nghĩa. Satisfied, content, peaceful đều gần nghĩa với complacent."
+    },
+    {
+      "question_text": "The government's decision to impose new tariffs was criticized as _____ because it lacked clear economic justification.",
+      "option_a": "inherent",
+      "option_b": "tangible",
+      "option_c": "arbitrary",
+      "option_d": "coherent",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Quyết định tùy tiện (arbitrary) = không có cơ sở lý do. Inherent = vốn có, tangible = cụ thể, coherent = mạch lạc, không phù hợp."
+    },
+    {
+      "question_text": "The artist _____ traditional and contemporary styles in her latest exhibition, creating a striking visual dialogue.",
+      "option_a": "vindicated",
+      "option_b": "juxtaposed",
+      "option_c": "corroborated",
+      "option_d": "mitigated",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Nghệ sĩ đặt cạnh nhau (juxtaposed) các phong cách để tạo tương phản. Vindicated = chứng minh là đúng, corroborated = xác nhận, mitigated = giảm bớt, không phù hợp."
+    },
+    {
+      "question_text": "The company's _____ approach to problem-solving prioritizes practical solutions over idealistic theories.",
+      "option_a": "speculative",
+      "option_b": "pragmatic",
+      "option_c": "volatile",
+      "option_d": "superficial",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Pragmatic = thực tế, thiết thực, ưu tiên giải pháp khả thi. Speculative = suy đoán, volatile = không ổn định, superficial = nông cạn, không phù hợp."
+    }
+  ]
+}

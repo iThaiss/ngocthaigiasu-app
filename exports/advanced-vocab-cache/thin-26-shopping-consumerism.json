@@ -1,0 +1,395 @@
+{
+  "words": [
+    {
+      "word": "disposable income",
+      "pronunciation": "/dɪˈspəʊzəbl ˈɪnkʌm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thu nhập còn lại sau khi trừ đi các chi phí cần thiết (tiền thuê nhà, thực phẩm, hóa đơn), dùng để chi tiêu tự do hoặc tiết kiệm",
+      "definition_en": "income remaining after taxes and essential expenses, available for spending or saving",
+      "level": "B2",
+      "synonyms": [
+        "discretionary income",
+        "spending power"
+      ],
+      "antonyms": [
+        "fixed expenses"
+      ],
+      "example_sentence": "Rising inflation has reduced consumers' disposable income, leading to decreased spending on luxury goods."
+    },
+    {
+      "word": "price-sensitive",
+      "pronunciation": "/praɪs ˈsensɪtɪv/",
+      "part_of_speech": "adjective",
+      "definition_vi": "dễ bị ảnh hưởng bởi giá cả, sẵn sàng thay đổi quyết định mua hàng dựa trên sự thay đổi giá",
+      "definition_en": "responsive to price changes; likely to change purchasing decisions based on price fluctuations",
+      "level": "B2",
+      "synonyms": [
+        "price-conscious",
+        "cost-aware"
+      ],
+      "antonyms": [
+        "price-insensitive"
+      ],
+      "example_sentence": "Price-sensitive customers often delay purchases until seasonal sales or promotional events occur."
+    },
+    {
+      "word": "supply chain",
+      "pronunciation": "/səˈplaɪ tʃeɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chuỗi các bước từ sản xuất, vận chuyển, đến phân phối sản phẩm đến tay người tiêu dùng",
+      "definition_en": "sequence of processes involved in producing and delivering goods from manufacturer to consumer",
+      "level": "B2",
+      "synonyms": [
+        "distribution network",
+        "logistics chain"
+      ],
+      "antonyms": [],
+      "example_sentence": "Global supply chain disruptions have caused product shortages and price increases in retail markets."
+    },
+    {
+      "word": "market saturation",
+      "pronunciation": "/ˈmɑːrkɪt ˌsætʃəˈreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng thị trường đã có quá nhiều sản phẩm hoặc dịch vụ tương tự, không còn nhiều cơ hội tăng trưởng",
+      "definition_en": "state where a market has been filled with products and there is little room for growth",
+      "level": "B2",
+      "synonyms": [
+        "market oversupply"
+      ],
+      "antonyms": [
+        "market gap",
+        "untapped market"
+      ],
+      "example_sentence": "Market saturation in the smartphone industry has forced companies to innovate and differentiate their products."
+    },
+    {
+      "word": "customer retention",
+      "pronunciation": "/ˈkʌstəmər rɪˈtenʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng giữ chân khách hàng hiện tại và khuyến khích họ mua hàng lặp lại",
+      "definition_en": "ability to keep existing customers and encourage repeat purchases",
+      "level": "B2",
+      "synonyms": [
+        "customer loyalty",
+        "repeat business"
+      ],
+      "antonyms": [
+        "customer churn"
+      ],
+      "example_sentence": "Loyalty programs are effective strategies for improving customer retention and increasing lifetime value."
+    },
+    {
+      "word": "niche market",
+      "pronunciation": "/niːʃ ˈmɑːrkɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một phân khúc thị trường nhỏ, chuyên biệt, phục vụ một nhóm khách hàng cụ thể với nhu cầu đặc biệt",
+      "definition_en": "specialized market segment serving specific customer needs or preferences",
+      "level": "B2",
+      "synonyms": [
+        "specialized market",
+        "target segment"
+      ],
+      "antonyms": [
+        "mass market"
+      ],
+      "example_sentence": "Eco-friendly fashion brands have successfully carved out a niche market among environmentally conscious consumers."
+    },
+    {
+      "word": "markup",
+      "pronunciation": "/ˈmɑːrkʌp/",
+      "part_of_speech": "noun",
+      "definition_vi": "phần chênh lệch giữa giá vốn và giá bán, tức lợi nhuận được thêm vào giá gốc",
+      "definition_en": "percentage or amount added to the cost price to determine the selling price",
+      "level": "B2",
+      "synonyms": [
+        "profit margin",
+        "gross profit"
+      ],
+      "antonyms": [
+        "markdown"
+      ],
+      "example_sentence": "Retailers typically apply a 50% markup on wholesale goods to cover operating costs and generate profit."
+    },
+    {
+      "word": "consumer behavior",
+      "pronunciation": "/kənˈsuːmər bɪˈheɪvjər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những hành động, quyết định, và thói quen của người tiêu dùng khi mua sắm và sử dụng sản phẩm",
+      "definition_en": "actions and decisions of individuals when purchasing and using products or services",
+      "level": "B2",
+      "synonyms": [
+        "purchasing behavior",
+        "consumption patterns"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding consumer behavior is crucial for retailers to develop effective marketing strategies and product placement."
+    },
+    {
+      "word": "inventory management",
+      "pronunciation": "/ɪnˈventəri ˈmænɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quản lý hàng tồn kho để đảm bảo có đủ sản phẩm để bán mà không bị tồn kho quá nhiều",
+      "definition_en": "process of managing stock levels to balance supply with demand",
+      "level": "B2",
+      "synonyms": [
+        "stock control",
+        "warehouse management"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective inventory management helps retailers reduce storage costs and minimize the risk of unsold merchandise."
+    },
+    {
+      "word": "payment gateway",
+      "pronunciation": "/ˈpeɪmənt ˈɡeɪtweɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống công nghệ cho phép xử lý thanh toán trực tuyến an toàn giữa khách hàng và cửa hàng",
+      "definition_en": "technology platform that processes online payments securely between customers and merchants",
+      "level": "B2",
+      "synonyms": [
+        "payment processor",
+        "checkout system"
+      ],
+      "antonyms": [],
+      "example_sentence": "Most e-commerce platforms integrate multiple payment gateways to offer customers various payment options."
+    },
+    {
+      "word": "return policy",
+      "pronunciation": "/rɪˈtɜːrn ˈpɒlɪsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy định của cửa hàng về điều kiện và thủ tục hoàn trả hoặc đổi sản phẩm",
+      "definition_en": "store's rules regarding conditions and procedures for returning or exchanging purchased items",
+      "level": "B2",
+      "synonyms": [
+        "refund policy",
+        "exchange policy"
+      ],
+      "antonyms": [],
+      "example_sentence": "A flexible return policy is an important factor that influences customer confidence when shopping online."
+    },
+    {
+      "word": "bulk purchase",
+      "pronunciation": "/bʌlk ˈpɜːrtʃəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mua một lượng lớn sản phẩm cùng một lúc, thường để được giảm giá hoặc tiết kiệm chi phí",
+      "definition_en": "buying large quantities of goods at once, typically to obtain discounts or reduce per-unit costs",
+      "level": "B2",
+      "synonyms": [
+        "wholesale purchase",
+        "large-scale buying"
+      ],
+      "antonyms": [
+        "retail purchase"
+      ],
+      "example_sentence": "Businesses often make bulk purchases from suppliers to reduce costs and maintain adequate inventory levels."
+    },
+    {
+      "word": "market trend",
+      "pronunciation": "/ˈmɑːrkɪt trend/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xu hướng chung của thị trường, thể hiện sự thay đổi trong nhu cầu, giá cả, hoặc hành vi tiêu dùng",
+      "definition_en": "general direction of market movement reflecting changes in demand, prices, or consumer preferences",
+      "level": "B2",
+      "synonyms": [
+        "market movement",
+        "consumer trend"
+      ],
+      "antonyms": [],
+      "example_sentence": "Current market trends show a significant shift toward sustainable and ethically-produced consumer goods."
+    },
+    {
+      "word": "customer demographics",
+      "pronunciation": "/ˈkʌstəmər ˌdeməˈɡræfɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thông tin thống kê về đặc điểm của khách hàng như tuổi, giới tính, thu nhập, vị trí địa lý",
+      "definition_en": "statistical characteristics of customers including age, gender, income, and geographic location",
+      "level": "B2",
+      "synonyms": [
+        "customer profile",
+        "target audience"
+      ],
+      "antonyms": [],
+      "example_sentence": "Retailers analyze customer demographics to tailor marketing campaigns and product offerings to specific groups."
+    },
+    {
+      "word": "flash sale",
+      "pronunciation": "/flæʃ seɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đợt bán hàng giảm giá đột ngột, kéo dài trong thời gian ngắn, để tạo sự khẩn cấp cho khách hàng",
+      "definition_en": "sudden, limited-time sale offering steep discounts to create urgency among buyers",
+      "level": "B2",
+      "synonyms": [
+        "limited-time offer",
+        "quick sale"
+      ],
+      "antonyms": [],
+      "example_sentence": "Flash sales on mobile apps have become a popular strategy to drive immediate purchases and increase sales volume."
+    },
+    {
+      "word": "product differentiation",
+      "pronunciation": "/ˈprɒdʌkt ˌdɪfərenʃiˈeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chiến lược làm cho sản phẩm của mình khác biệt với các sản phẩm cạnh tranh thông qua chất lượng, thiết kế, hoặc tính năng",
+      "definition_en": "strategy of making a product distinct from competitors through unique features, quality, or design",
+      "level": "B2",
+      "synonyms": [
+        "product uniqueness",
+        "competitive advantage"
+      ],
+      "antonyms": [
+        "product homogenization"
+      ],
+      "example_sentence": "Apple's product differentiation strategy focuses on design innovation and user experience rather than competing on price."
+    },
+    {
+      "word": "consumer confidence",
+      "pronunciation": "/kənˈsuːmər ˈkɒnfɪdəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ tin tưởng của người tiêu dùng vào nền kinh tế, ảnh hưởng đến quyết định chi tiêu của họ",
+      "definition_en": "degree of optimism consumers feel about the economy, affecting their spending decisions",
+      "level": "B2",
+      "synonyms": [
+        "consumer sentiment",
+        "purchasing confidence"
+      ],
+      "antonyms": [
+        "consumer pessimism"
+      ],
+      "example_sentence": "During economic downturns, declining consumer confidence often leads to reduced spending and slower retail growth."
+    },
+    {
+      "word": "omnichannel retail",
+      "pronunciation": "/ˌɒmniˈtʃænəl ˈriːteɪl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mô hình bán lẻ tích hợp nhiều kênh bán hàng (cửa hàng vật lý, online, di động) để tạo trải nghiệm mua sắm liền mạch",
+      "definition_en": "retail approach integrating multiple sales channels (physical stores, online, mobile) for seamless shopping experience",
+      "level": "B2",
+      "synonyms": [
+        "multi-channel retail",
+        "integrated retail"
+      ],
+      "antonyms": [
+        "single-channel retail"
+      ],
+      "example_sentence": "Leading retailers are adopting omnichannel strategies to allow customers to shop online and pick up in-store."
+    },
+    {
+      "word": "price elasticity",
+      "pronunciation": "/praɪs ɪˌlæsˈtɪsɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ mà lượng cầu của một sản phẩm thay đổi khi giá thay đổi; sản phẩm co giãn cao sẽ bán ít hơn khi giá tăng",
+      "definition_en": "measure of how demand for a product changes in response to price changes",
+      "level": "B2",
+      "synonyms": [
+        "demand elasticity"
+      ],
+      "antonyms": [],
+      "example_sentence": "Luxury goods typically have low price elasticity because consumers are less sensitive to price increases."
+    },
+    {
+      "word": "subscription model",
+      "pronunciation": "/səbˈskrɪpʃən ˈmɒdəl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mô hình kinh doanh mà khách hàng trả phí định kỳ (hàng tháng, hàng năm) để tiếp cận sản phẩm hoặc dịch vụ",
+      "definition_en": "business model where customers pay recurring fees to access products or services",
+      "level": "B2",
+      "synonyms": [
+        "recurring payment model",
+        "membership model"
+      ],
+      "antonyms": [
+        "one-time purchase"
+      ],
+      "example_sentence": "Subscription models have become increasingly popular for streaming services, software, and meal delivery platforms."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'disposable income'?",
+      "option_a": "Money earned from investments and savings",
+      "option_b": "Income available after paying taxes and essential expenses",
+      "option_c": "The total amount of money a person earns annually",
+      "option_d": "Money spent on luxury items and entertainment",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Disposable income là thu nhập còn lại sau khi trừ đi các chi phí cần thiết và thuế. Đáp án A sai vì không liên quan đến thu nhập khả dụng. Đáp án C sai vì nó là tổng thu nhập, không phải phần còn lại. Đáp án D sai vì disposable income có thể dùng cho bất kỳ mục đích nào, không chỉ chi tiêu xa xỉ."
+    },
+    {
+      "question_text": "A company experiencing _____ must find new markets or innovate to maintain growth, as existing markets are fully saturated.",
+      "option_a": "supply chain disruption",
+      "option_b": "market saturation",
+      "option_c": "price elasticity",
+      "option_d": "inventory management",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Market saturation (bão hòa thị trường) là tình trạng khi thị trường đã đầy đủ sản phẩm và không còn cơ hội tăng trưởng. Đáp án A liên quan đến vấn đề vận chuyển. Đáp án C là khái niệm kinh tế học về độ nhạy cảm giá. Đáp án D là quản lý hàng tồn kho."
+    },
+    {
+      "question_text": "Which strategy is most effective for improving customer retention in competitive retail markets?",
+      "option_a": "Constantly raising product prices",
+      "option_b": "Implementing loyalty programs and personalized customer service",
+      "option_c": "Reducing product quality to increase profit margins",
+      "option_d": "Limiting customer return policies",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Customer retention (giữ chân khách hàng) được cải thiện thông qua các chương trình khách hàng thân thiết và dịch vụ cá nhân hóa. Đáp án A, C, D đều là những chiến lược sai lầm vì chúng sẽ làm mất khách hàng thay vì giữ chân họ."
+    },
+    {
+      "question_text": "The rise of _____ has transformed how consumers shop by allowing them to seamlessly switch between online and physical stores.",
+      "option_a": "niche markets",
+      "option_b": "omnichannel retail",
+      "option_c": "flash sales",
+      "option_d": "bulk purchases",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Omnichannel retail (bán lẻ đa kênh) tích hợp nhiều kênh bán hàng để tạo trải nghiệm liền mạch. Đáp án A là thị trường chuyên biệt. Đáp án C là đợt bán hàng giảm giá đột ngột. Đáp án D là mua hàng số lượng lớn."
+    },
+    {
+      "question_text": "A _____ is a technology platform that enables secure online transactions between customers and merchants.",
+      "option_a": "supply chain",
+      "option_b": "payment gateway",
+      "option_c": "return policy",
+      "option_d": "inventory system",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Payment gateway (cổng thanh toán) là hệ thống công nghệ xử lý thanh toán trực tuyến an toàn. Đáp án A là chuỗi cung ứng. Đáp án C là chính sách hoàn trả. Đáp án D là hệ thống quản lý hàng tồn kho."
+    },
+    {
+      "question_text": "Companies analyze _____ such as age, income, and location to develop targeted marketing campaigns.",
+      "option_a": "market trends",
+      "option_b": "consumer behavior",
+      "option_c": "customer demographics",
+      "option_d": "product differentiation",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Customer demographics (nhân khẩu học khách hàng) bao gồm tuổi, thu nhập, vị trí địa lý. Đáp án A là xu hướng thị trường. Đáp án B là hành vi tiêu dùng. Đáp án D là sự khác biệt sản phẩm."
+    },
+    {
+      "question_text": "Which of the following is a characteristic of products with low price elasticity?",
+      "option_a": "Demand decreases significantly when prices increase",
+      "option_b": "Consumers are highly sensitive to price changes",
+      "option_c": "Demand remains relatively stable despite price increases",
+      "option_d": "Products are typically sold in bulk at discounted rates",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Sản phẩm có price elasticity thấp (co giãn giá thấp) có nhu cầu ổn định dù giá tăng, thường là hàng thiết yếu hoặc hàng xa xỉ. Đáp án A, B mô tả high elasticity. Đáp án D không liên quan đến elasticity."
+    },
+    {
+      "question_text": "A _____ offers customers a limited-time opportunity to purchase products at significantly reduced prices, creating a sense of urgency.",
+      "option_a": "subscription model",
+      "option_b": "flash sale",
+      "option_c": "niche market",
+      "option_d": "markup strategy",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Flash sale (đợt bán hàng giảm giá đột ngột) là bán hàng giảm giá trong thời gian ngắn để tạo sự khẩn cấp. Đáp án A là mô hình thanh toán định kỳ. Đáp án C là thị trường chuyên biệt. Đáp án D là chiến lược định giá."
+    }
+  ]
+}

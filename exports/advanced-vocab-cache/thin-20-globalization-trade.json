@@ -1,0 +1,175 @@
+{
+  "words": [
+    {
+      "word": "cross-border commerce",
+      "pronunciation": "/ˌkrɔːs ˈbɔːrdər ˈkɒmɜːrs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Hoạt động mua bán, trao đổi hàng hóa và dịch vụ giữa các quốc gia khác nhau, thường qua các biên giới địa lý.",
+      "definition_en": "Commercial transactions and exchange of goods and services between different countries across national borders.",
+      "level": "C1",
+      "synonyms": [
+        "international trade",
+        "transnational commerce"
+      ],
+      "antonyms": [
+        "domestic trade",
+        "intra-national commerce"
+      ],
+      "example_sentence": "The rise of e-commerce platforms has dramatically accelerated cross-border commerce, enabling small businesses to reach global markets without establishing physical presence abroad."
+    },
+    {
+      "word": "trade liberalization",
+      "pronunciation": "/ˈtreɪd ˌlɪbərəlaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình loại bỏ hoặc giảm các rào cản thương mại như thuế quan, hạn ngạch để tạo điều kiện tự do hơn cho các giao dịch quốc tế.",
+      "definition_en": "The process of removing or reducing barriers to international trade, such as tariffs and quotas, to facilitate freer commerce.",
+      "level": "C1",
+      "synonyms": [
+        "trade opening",
+        "market deregulation"
+      ],
+      "antonyms": [
+        "trade restriction",
+        "market closure"
+      ],
+      "example_sentence": "Trade liberalization agreements signed in the 1990s fundamentally transformed manufacturing landscapes across Southeast Asia, attracting unprecedented levels of foreign investment."
+    },
+    {
+      "word": "economic interdependence",
+      "pronunciation": "/ˌekəˈnɒmɪk ˌɪntərdɪˈpendəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng các nền kinh tế phụ thuộc lẫn nhau trong việc cung cấp tài nguyên, hàng hóa, và dịch vụ, tạo nên mối liên kết chặt chẽ giữa các quốc gia.",
+      "definition_en": "The mutual reliance of economies on each other for resources, goods, and services, creating interconnected relationships between nations.",
+      "level": "C1",
+      "synonyms": [
+        "mutual dependence",
+        "economic linkage"
+      ],
+      "antonyms": [
+        "economic autonomy",
+        "self-sufficiency"
+      ],
+      "example_sentence": "Economic interdependence between developed and developing nations has created both opportunities for growth and vulnerabilities to external shocks, as evidenced during the 2008 financial crisis."
+    },
+    {
+      "word": "trade imbalance",
+      "pronunciation": "/ˈtreɪd ɪmˈbæləns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự chênh lệch giữa giá trị hàng hóa xuất khẩu và nhập khẩu của một quốc gia, thường được gọi là thâm hụt hoặc thặng dư thương mại.",
+      "definition_en": "A disparity between the value of a country's exports and imports, resulting in either a trade surplus or deficit.",
+      "level": "C1",
+      "synonyms": [
+        "trade gap",
+        "trade asymmetry"
+      ],
+      "antonyms": [
+        "trade equilibrium",
+        "balanced trade"
+      ],
+      "example_sentence": "The persistent trade imbalance between the United States and China has become a focal point of geopolitical tension and protectionist policy debates."
+    },
+    {
+      "word": "market access",
+      "pronunciation": "/ˈmɑːrkɪt ˈækses/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Khả năng của các doanh nghiệp hoặc sản phẩm từ một quốc gia có thể vào và bán hàng trên thị trường của một quốc gia khác mà không gặp rào cản quá lớn.",
+      "definition_en": "The ability of businesses or products from one country to enter and sell in another country's market without excessive barriers.",
+      "level": "C1",
+      "synonyms": [
+        "market entry",
+        "market opening"
+      ],
+      "antonyms": [
+        "market closure",
+        "market exclusion"
+      ],
+      "example_sentence": "Negotiations for improved market access have been central to recent trade agreements, with developing nations seeking greater opportunities to export agricultural products."
+    },
+    {
+      "word": "economic bloc",
+      "pronunciation": "/ˌekəˈnɒmɪk blɒk/",
+      "part_of_speech": "noun",
+      "definition_vi": "Nhóm các quốc gia liên kết với nhau thông qua các hiệp định thương mại hoặc liên minh kinh tế, hợp tác để tăng cường sức mạnh kinh tế chung.",
+      "definition_en": "A group of countries linked together through trade agreements or economic unions, cooperating to strengthen collective economic power.",
+      "level": "C1",
+      "synonyms": [
+        "trade bloc",
+        "economic union"
+      ],
+      "antonyms": [
+        "isolated economy",
+        "independent state"
+      ],
+      "example_sentence": "The European Union represents one of the most integrated economic blocs globally, with member states sharing common currency, regulatory frameworks, and trade policies."
+    },
+    {
+      "word": "foreign exchange volatility",
+      "pronunciation": "/ˈfɒrɪn ɪksˈtʃeɪndʒ vɒˈlætɪləti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự biến động không ổn định của tỷ giá hối đoái giữa các đồng tiền khác nhau, ảnh hưởng đến chi phí và lợi nhuận của thương mại quốc tế.",
+      "definition_en": "Unstable fluctuations in exchange rates between currencies, affecting the costs and profitability of international trade.",
+      "level": "C1",
+      "synonyms": [
+        "currency fluctuation",
+        "exchange rate instability"
+      ],
+      "antonyms": [
+        "exchange rate stability",
+        "currency peg"
+      ],
+      "example_sentence": "Foreign exchange volatility has forced multinational corporations to implement sophisticated hedging strategies to protect profit margins from unpredictable currency movements."
+    },
+    {
+      "word": "trade facilitation",
+      "pronunciation": "/ˈtreɪd fəˌsɪlɪˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các biện pháp và cải tiến nhằm đơn giản hóa, tăng tốc độ và giảm chi phí của các thủ tục thương mại quốc tế, bao gồm hải quan và logistics.",
+      "definition_en": "Measures and improvements aimed at simplifying, accelerating, and reducing costs of international trade procedures, including customs and logistics.",
+      "level": "C1",
+      "synonyms": [
+        "trade simplification",
+        "customs modernization"
+      ],
+      "antonyms": [
+        "trade obstruction",
+        "bureaucratic delay"
+      ],
+      "example_sentence": "Trade facilitation initiatives, such as digital customs documentation and single-window clearance systems, have significantly reduced border crossing times and transaction costs for exporters."
+    },
+    {
+      "word": "economic convergence",
+      "pronunciation": "/ˌekəˈnɒmɪk kənˈvɜːrdʒəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình các nền kinh tế khác nhau dần tiến gần đến nhau về mức độ phát triển, thu nhập bình quân đầu người, và cấu trúc kinh tế thông qua tích hợp toàn cầu.",
+      "definition_en": "The process by which different economies gradually move closer together in terms of development levels, per capita income, and economic structure through global integration.",
+      "level": "C2",
+      "synonyms": [
+        "economic integration",
+        "development convergence"
+      ],
+      "antonyms": [
+        "economic divergence",
+        "development gap"
+      ],
+      "example_sentence": "Economic convergence between emerging markets and developed nations has been uneven, with some Asian economies achieving rapid catch-up growth while others remain trapped in lower-income equilibrium."
+    },
+    {
+      "word": "regulatory harmonization",
+      "pronunciation": "/ˌreɡjələtəri ˌhɑːrmənaɪˈzeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Quá trình các quốc gia điều chỉnh, chuẩn hóa các quy định, tiêu chuẩn kỹ thuật và luật pháp của mình để tạo sự nhất quán và tương thích trong thương mại quốc tế.",
+      "definition_en": "The process of aligning and standardizing regulations, technical standards, and laws across countries to create consistency and compatibility in international trade.",
+      "level": "C2",
+      "synonyms": [
+        "standards alignment",
+        "regulatory alignment"
+      ],
+      "antonyms": [
+        "regulatory fragmentation",
+        "divergent standards"
+      ],
+      "example_sentence": "Regulatory harmonization in the automotive and pharmaceutical sectors has been crucial for reducing compliance costs and accelerating product launches across multiple markets simultaneously."
+    }
+  ],
+  "questions": []
+}

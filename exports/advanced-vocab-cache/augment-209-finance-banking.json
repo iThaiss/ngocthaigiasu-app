@@ -1,0 +1,389 @@
+{
+  "words": [
+    {
+      "word": "quantitative easing",
+      "pronunciation": "/ˌkwɒntɪˈteɪtɪv ˈiːzɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách tiền tệ mở rộng trong đó ngân hàng trung ương mua tài sản dài hạn để tăng cung tiền và kích thích kinh tế",
+      "definition_en": "monetary policy where central banks purchase long-term assets to increase money supply and stimulate economic growth",
+      "level": "C2",
+      "synonyms": [
+        "monetary expansion",
+        "asset purchase programme"
+      ],
+      "antonyms": [
+        "quantitative tightening",
+        "contractionary policy"
+      ],
+      "example_sentence": "The Federal Reserve implemented quantitative easing during the 2008 financial crisis to prevent economic collapse and restore confidence in financial markets."
+    },
+    {
+      "word": "stagflation",
+      "pronunciation": "/stæɡˈfleɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình trạng kinh tế đặc trưng bởi sự kết hợp của tăng trưởng chậm, thất nghiệp cao và lạm phát cao",
+      "definition_en": "economic condition combining slow growth, high unemployment, and high inflation simultaneously",
+      "level": "C2",
+      "synonyms": [
+        "slumpflation",
+        "inflationary recession"
+      ],
+      "antonyms": [
+        "economic boom",
+        "growth period"
+      ],
+      "example_sentence": "The 1970s oil crisis triggered stagflation in many developed economies, forcing policymakers to choose between fighting inflation and stimulating employment."
+    },
+    {
+      "word": "sovereign debt",
+      "pronunciation": "/ˈsɒvrɪn det/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nợ được phát hành bởi chính phủ quốc gia, thường dưới dạng trái phiếu chính phủ",
+      "definition_en": "debt issued by a national government, typically in the form of government bonds and securities",
+      "level": "C1",
+      "synonyms": [
+        "government debt",
+        "national debt"
+      ],
+      "antonyms": [
+        "private debt",
+        "corporate debt"
+      ],
+      "example_sentence": "Greece's sovereign debt crisis in 2010 raised concerns about the stability of the eurozone and prompted international bailout negotiations."
+    },
+    {
+      "word": "fiscal consolidation",
+      "pronunciation": "/ˈfɪskəl ˌkɒnsɒlɪˈdeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chính sách giảm bớt thâm hụt ngân sách thông qua cắt giảm chi tiêu hoặc tăng thuế",
+      "definition_en": "policy of reducing budget deficits through spending cuts or tax increases",
+      "level": "C1",
+      "synonyms": [
+        "austerity measures",
+        "deficit reduction"
+      ],
+      "antonyms": [
+        "fiscal expansion",
+        "stimulus spending"
+      ],
+      "example_sentence": "The government announced fiscal consolidation measures including public sector wage freezes to meet European Union debt reduction targets."
+    },
+    {
+      "word": "subprime lending",
+      "pronunciation": "/ˌsʌbˈpraɪm ˈlendɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động cho vay cho những người có điểm tín dụng thấp hoặc lịch sử tín dụng kém, thường với lãi suất cao hơn",
+      "definition_en": "lending to borrowers with poor credit scores or weak credit history at higher interest rates",
+      "level": "C1",
+      "synonyms": [
+        "high-risk lending",
+        "non-prime lending"
+      ],
+      "antonyms": [
+        "prime lending",
+        "conventional lending"
+      ],
+      "example_sentence": "The proliferation of subprime lending in the housing market contributed significantly to the 2008 financial crisis when borrowers defaulted en masse."
+    },
+    {
+      "word": "monetary transmission mechanism",
+      "pronunciation": "/məˈnetəri trænzˈmɪʃən ˈmekənɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình mà các quyết định chính sách tiền tệ của ngân hàng trung ương ảnh hưởng đến nền kinh tế thực tế",
+      "definition_en": "process by which central bank monetary policy decisions affect the real economy and inflation",
+      "level": "C2",
+      "synonyms": [
+        "policy transmission",
+        "monetary policy channel"
+      ],
+      "antonyms": [],
+      "example_sentence": "Understanding the monetary transmission mechanism is crucial for central bankers to predict how interest rate changes will influence consumer spending and investment decisions."
+    },
+    {
+      "word": "debt servicing",
+      "pronunciation": "/det ˈsɜːvɪsɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "việc thanh toán lãi suất và tiền gốc của nợ theo lịch trình định kỳ",
+      "definition_en": "payment of interest and principal on outstanding debt according to a predetermined schedule",
+      "level": "C1",
+      "synonyms": [
+        "debt repayment",
+        "loan servicing"
+      ],
+      "antonyms": [
+        "debt default",
+        "debt forgiveness"
+      ],
+      "example_sentence": "Rising interest rates increased the government's debt servicing costs, forcing reallocation of budget resources away from social programmes."
+    },
+    {
+      "word": "asset-liability mismatch",
+      "pronunciation": "/ˈæset ˌlaɪəˈbɪləti ˈmɪsmætʃ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng khi kỳ hạn hoặc tính chất của tài sản không phù hợp với kỳ hạn của nợ phải trả",
+      "definition_en": "situation where the maturity or characteristics of assets do not align with the maturity of liabilities",
+      "level": "C2",
+      "synonyms": [
+        "duration mismatch",
+        "maturity mismatch"
+      ],
+      "antonyms": [
+        "asset-liability match",
+        "duration matching"
+      ],
+      "example_sentence": "Banks face significant risk from asset-liability mismatches when they borrow short-term funds to finance long-term loans."
+    },
+    {
+      "word": "macroprudential regulation",
+      "pronunciation": "/ˌmækroʊpruːˈdenʃəl ˌreɡjuˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các quy định nhằm bảo vệ toàn bộ hệ thống tài chính khỏi rủi ro hệ thống thay vì chỉ các tổ chức riêng lẻ",
+      "definition_en": "regulatory framework designed to protect the entire financial system from systemic risks rather than individual institutions",
+      "level": "C2",
+      "synonyms": [
+        "systemic risk regulation",
+        "financial stability regulation"
+      ],
+      "antonyms": [
+        "microprudential regulation"
+      ],
+      "example_sentence": "Central banks increasingly employ macroprudential regulation tools such as countercyclical capital buffers to mitigate systemic financial risks."
+    },
+    {
+      "word": "crowding out effect",
+      "pronunciation": "/ˈkraʊdɪŋ aʊt ɪˈfekt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiệu ứng kinh tế trong đó chi tiêu chính phủ cao làm giảm đầu tư tư nhân bằng cách tăng lãi suất",
+      "definition_en": "economic effect where high government spending reduces private investment by driving up interest rates",
+      "level": "C1",
+      "synonyms": [
+        "crowding out",
+        "displacement effect"
+      ],
+      "antonyms": [
+        "crowding in effect"
+      ],
+      "example_sentence": "Economists debate whether the crowding out effect significantly reduces the effectiveness of fiscal stimulus during economic downturns."
+    },
+    {
+      "word": "financial disintermediation",
+      "pronunciation": "/faɪˈnænʃəl ˌdɪsɪntərmiːdiˈeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình trong đó người vay và người cho vay giao dịch trực tiếp mà không cần trung gian tài chính",
+      "definition_en": "process where borrowers and lenders transact directly without financial intermediaries",
+      "level": "C2",
+      "synonyms": [
+        "direct financing",
+        "disintermediation"
+      ],
+      "antonyms": [
+        "financial intermediation"
+      ],
+      "example_sentence": "Financial disintermediation accelerated with the rise of capital markets, allowing corporations to bypass traditional banks for funding."
+    },
+    {
+      "word": "negative equity",
+      "pronunciation": "/ˈneɡətɪv ˈekwɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình trạng khi giá trị của tài sản thấp hơn số tiền nợ trên tài sản đó",
+      "definition_en": "situation where the value of an asset is less than the amount owed on it",
+      "level": "C1",
+      "synonyms": [
+        "underwater mortgage",
+        "negative net worth"
+      ],
+      "antonyms": [
+        "positive equity",
+        "equity cushion"
+      ],
+      "example_sentence": "Many homeowners found themselves in negative equity after the housing market collapse, owing more on their mortgages than their properties were worth."
+    },
+    {
+      "word": "financial inclusion",
+      "pronunciation": "/faɪˈnænʃəl ɪnˈkluːʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng tiếp cận các dịch vụ tài chính cơ bản cho tất cả mọi người, đặc biệt là những nhóm dân cư thiểu số",
+      "definition_en": "access to basic financial services for all people, particularly underserved populations",
+      "level": "C1",
+      "synonyms": [
+        "financial accessibility",
+        "banking access"
+      ],
+      "antonyms": [
+        "financial exclusion",
+        "banking exclusion"
+      ],
+      "example_sentence": "Development organizations prioritize financial inclusion initiatives to provide unbanked populations with access to savings accounts and microfinance services."
+    },
+    {
+      "word": "procyclical behaviour",
+      "pronunciation": "/proʊˈsaɪklɪkəl bɪˈheɪvjər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hành vi tài chính hoặc kinh tế khuếch đại các chu kỳ kinh tế thay vì làm mềm chúng",
+      "definition_en": "financial or economic behaviour that amplifies business cycles rather than dampening them",
+      "level": "C2",
+      "synonyms": [
+        "procyclicality",
+        "amplification effect"
+      ],
+      "antonyms": [
+        "countercyclical behaviour",
+        "anticyclical policy"
+      ],
+      "example_sentence": "Banks' procyclical behaviour during boom periods, characterized by excessive lending, contributed to the severity of the subsequent financial crisis."
+    },
+    {
+      "word": "debt-to-income ratio",
+      "pronunciation": "/det tuː ˈɪnkəm ˈreɪʃoʊ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ giữa tổng nợ hàng tháng và thu nhập hàng tháng, được sử dụng để đánh giá khả năng trả nợ",
+      "definition_en": "ratio of total monthly debt payments to monthly income, used to assess borrowing capacity",
+      "level": "C1",
+      "synonyms": [
+        "DTI ratio",
+        "debt ratio"
+      ],
+      "antonyms": [],
+      "example_sentence": "Lenders typically require a debt-to-income ratio below 43% to approve mortgage applications for qualified borrowers."
+    },
+    {
+      "word": "financial contagion",
+      "pronunciation": "/faɪˈnænʃəl kənˈteɪdʒən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự lây lan của khủng hoảng tài chính từ một thị trường hoặc quốc gia sang những nơi khác",
+      "definition_en": "spread of financial crisis from one market or country to others through interconnected financial systems",
+      "level": "C2",
+      "synonyms": [
+        "systemic contagion",
+        "spillover effect"
+      ],
+      "antonyms": [
+        "financial isolation",
+        "market decoupling"
+      ],
+      "example_sentence": "The 2008 financial crisis demonstrated the dangers of financial contagion as the collapse of Lehman Brothers triggered a global credit freeze."
+    },
+    {
+      "word": "real interest rate",
+      "pronunciation": "/ˈriːəl ˈɪntrəst reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lãi suất danh nghĩa điều chỉnh theo lạm phát, phản ánh sức mua thực tế của tiền lãi",
+      "definition_en": "nominal interest rate adjusted for inflation, reflecting the true purchasing power of interest earned",
+      "level": "C1",
+      "synonyms": [
+        "inflation-adjusted rate",
+        "ex-ante real rate"
+      ],
+      "antonyms": [
+        "nominal interest rate"
+      ],
+      "example_sentence": "When inflation exceeds the nominal interest rate, the real interest rate becomes negative, eroding savers' purchasing power."
+    },
+    {
+      "word": "regulatory arbitrage",
+      "pronunciation": "/ˌreɡjuˈleɪtəri ˈɑːrbɪtrɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hoạt động khai thác sự khác biệt trong các quy định giữa các quốc gia hoặc các khu vực để giảm chi phí tuân thủ",
+      "definition_en": "practice of exploiting differences in regulations between jurisdictions to reduce compliance costs",
+      "level": "C2",
+      "synonyms": [
+        "regulatory shopping",
+        "jurisdiction arbitrage"
+      ],
+      "antonyms": [
+        "regulatory harmonization"
+      ],
+      "example_sentence": "Financial institutions engaged in regulatory arbitrage by shifting risky assets to lightly regulated offshore subsidiaries before the 2008 crisis."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which monetary policy tool is most directly associated with increasing the money supply during severe economic downturns?",
+      "option_a": "Raising the discount rate to encourage bank lending",
+      "option_b": "Implementing quantitative easing through large-scale asset purchases",
+      "option_c": "Increasing reserve requirements for commercial banks",
+      "option_d": "Tightening open market operations to reduce liquidity",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Quantitative easing là công cụ chính sách tiền tệ mở rộng trong đó ngân hàng trung ương mua tài sản dài hạn để tăng cung tiền. Các lựa chọn khác đều là các biện pháp co hẹp tiền tệ hoặc không liên quan trực tiếp đến tăng cung tiền."
+    },
+    {
+      "question_text": "The simultaneous occurrence of high inflation and economic stagnation is best described as ___.",
+      "option_a": "deflation",
+      "option_b": "stagflation",
+      "option_c": "hyperinflation",
+      "option_d": "disinflation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Stagflation là thuật ngữ chỉ tình trạng kết hợp của tăng trưởng chậm, thất nghiệp cao và lạm phát cao. Các lựa chọn khác không phản ánh đúng sự kết hợp này."
+    },
+    {
+      "question_text": "When a government's spending increases interest rates and reduces private investment, this phenomenon is known as the ___.",
+      "option_a": "crowding out effect",
+      "option_b": "multiplier effect",
+      "option_c": "substitution effect",
+      "option_d": "income effect",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Crowding out effect mô tả cách chi tiêu chính phủ cao làm giảm đầu tư tư nhân bằng cách tăng lãi suất. Các lựa chọn khác là các hiệu ứng kinh tế khác không liên quan đến mối quan hệ này."
+    },
+    {
+      "question_text": "A homeowner owing $300,000 on a mortgage for a house worth only $250,000 is experiencing ___.",
+      "option_a": "positive equity",
+      "option_b": "negative equity",
+      "option_c": "equity appreciation",
+      "option_d": "equity dilution",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Negative equity xảy ra khi giá trị tài sản thấp hơn số tiền nợ trên tài sản đó. Trong trường hợp này, chủ nhà nợ nhiều hơn giá trị nhà của họ."
+    },
+    {
+      "question_text": "Which of the following best describes the process where borrowers and lenders transact directly without using banks or other intermediaries?",
+      "option_a": "Financial intermediation",
+      "option_b": "Financial disintermediation",
+      "option_c": "Financial integration",
+      "option_d": "Financial securitization",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Financial disintermediation là quá trình trong đó người vay và người cho vay giao dịch trực tiếp mà không cần trung gian tài chính. Các lựa chọn khác mô tả các khái niệm tài chính khác."
+    },
+    {
+      "question_text": "Central banks increasingly use ___ tools to protect the entire financial system from systemic risks rather than focusing solely on individual institutions.",
+      "option_a": "microprudential regulation",
+      "option_b": "macroprudential regulation",
+      "option_c": "fiscal policy",
+      "option_d": "monetary expansion",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Macroprudential regulation là các quy định nhằm bảo vệ toàn bộ hệ thống tài chính khỏi rủi ro hệ thống. Microprudential regulation tập trung vào các tổ chức riêng lẻ, không phải toàn bộ hệ thống."
+    },
+    {
+      "question_text": "The spread of financial crisis from one country to another through interconnected financial systems is referred to as ___.",
+      "option_a": "financial isolation",
+      "option_b": "financial decoupling",
+      "option_c": "financial contagion",
+      "option_d": "financial integration",
+      "correct_answer": "C",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Financial contagion mô tả sự lây lan của khủng hoảng tài chính từ một thị trường hoặc quốc gia sang những nơi khác. Các lựa chọn khác không phản ánh khái niệm này."
+    },
+    {
+      "question_text": "Which ratio is most commonly used by lenders to assess whether a borrower can afford additional debt obligations?",
+      "option_a": "Loan-to-value ratio",
+      "option_b": "Debt-to-income ratio",
+      "option_c": "Price-to-earnings ratio",
+      "option_d": "Current ratio",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Debt-to-income ratio là tỷ lệ giữa tổng nợ hàng tháng và thu nhập hàng tháng, được sử dụng để đánh giá khả năng trả nợ. Các lựa chọn khác là các tỷ lệ tài chính khác có mục đích khác."
+    }
+  ]
+}

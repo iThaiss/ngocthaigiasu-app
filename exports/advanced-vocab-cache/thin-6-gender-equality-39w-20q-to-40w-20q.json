@@ -1,0 +1,175 @@
+{
+  "words": [
+    {
+      "word": "gender parity",
+      "pronunciation": "/ˈdʒendər ˈpærɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự bình đẳng về giới tính; tình trạng nam và nữ có cơ hội, quyền lợi và địa vị bằng nhau trong xã hội",
+      "definition_en": "the state of equal rights, responsibilities, and opportunities for people of all genders",
+      "level": "C1",
+      "synonyms": [
+        "gender balance",
+        "gender equity"
+      ],
+      "antonyms": [
+        "gender imbalance",
+        "gender inequality"
+      ],
+      "example_sentence": "The UN's Sustainable Development Goal 5 aims to achieve gender parity in education and the workplace by 2030."
+    },
+    {
+      "word": "gender-blind policies",
+      "pronunciation": "/ˈdʒendər-blaɪnd ˈpɒlɪsiz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các chính sách không phân biệt giới tính nhưng thường bỏ qua những nhu cầu và thách thức cụ thể của từng giới",
+      "definition_en": "policies that treat all genders the same without acknowledging different needs or systemic barriers",
+      "level": "C1",
+      "synonyms": [
+        "gender-neutral policies",
+        "one-size-fits-all approach"
+      ],
+      "antonyms": [
+        "gender-sensitive policies",
+        "gender-responsive policies"
+      ],
+      "example_sentence": "Critics argue that gender-blind policies fail to address the specific challenges women face in accessing leadership positions."
+    },
+    {
+      "word": "occupational segregation",
+      "pronunciation": "/ˌɒkjuˈpeɪʃənəl ˌsɛɡrɪˈɡeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hiện tượng nam và nữ tập trung vào các ngành nghề khác nhau, dẫn đến sự phân chia lao động theo giới tính",
+      "definition_en": "the concentration of men and women in different occupations or industries, often reinforcing gender roles",
+      "level": "C1",
+      "synonyms": [
+        "job segregation",
+        "sectoral segregation"
+      ],
+      "antonyms": [
+        "occupational integration",
+        "mixed-gender workforce"
+      ],
+      "example_sentence": "Occupational segregation remains a significant barrier to wage equality, as female-dominated sectors typically offer lower salaries."
+    },
+    {
+      "word": "implicit bias",
+      "pronunciation": "/ɪmˈplɪsɪt ˈbaɪəs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những định kiến vô thức về giới tính mà con người không nhận thức được nhưng ảnh hưởng đến quyết định và hành động của họ",
+      "definition_en": "unconscious prejudices or stereotypes that influence decisions and behavior without conscious awareness",
+      "level": "C1",
+      "synonyms": [
+        "unconscious bias",
+        "hidden prejudice"
+      ],
+      "antonyms": [
+        "conscious awareness",
+        "explicit recognition"
+      ],
+      "example_sentence": "Research shows that implicit bias in hiring processes often disadvantages female candidates, even when their qualifications are identical to male applicants."
+    },
+    {
+      "word": "intersectional feminism",
+      "pronunciation": "/ˌɪntəˈsɛkʃənəl ˈfɛmɪnɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phong trào nữ quyền công nhân các khía cạnh giao nhau của giới tính, chủng tộc, giai cấp và các yếu tố xã hội khác",
+      "definition_en": "a feminist approach that recognizes how gender intersects with race, class, sexuality, and other social identities",
+      "level": "C1",
+      "synonyms": [
+        "intersectionality-focused feminism",
+        "inclusive feminism"
+      ],
+      "antonyms": [
+        "single-axis feminism",
+        "exclusionary feminism"
+      ],
+      "example_sentence": "Intersectional feminism highlights that women of color and LGBTQ+ individuals face compounded discrimination that cannot be addressed by gender equality alone."
+    },
+    {
+      "word": "affirmative action",
+      "pronunciation": "/əˈfɜːmətɪv ˈækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các biện pháp chính sách nhằm ưu tiên các nhóm bị phân biệt để bù đắp cho những bất công lịch sử",
+      "definition_en": "policies designed to increase opportunities for historically disadvantaged groups through preferential treatment",
+      "level": "B2",
+      "synonyms": [
+        "positive discrimination",
+        "preferential treatment"
+      ],
+      "antonyms": [
+        "merit-based selection",
+        "color-blind recruitment"
+      ],
+      "example_sentence": "Many countries implement affirmative action programs to increase women's representation in senior management and political positions."
+    },
+    {
+      "word": "work-life balance",
+      "pronunciation": "/wɜːk-laɪf ˈbæləns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự cân bằng giữa thời gian làm việc và thời gian dành cho gia đình, sức khỏe và các hoạt động cá nhân",
+      "definition_en": "the equilibrium between time spent on career and personal/family responsibilities",
+      "level": "B2",
+      "synonyms": [
+        "work-life integration",
+        "life balance"
+      ],
+      "antonyms": [
+        "work overload",
+        "burnout"
+      ],
+      "example_sentence": "Women often struggle with work-life balance more than men due to unequal distribution of domestic responsibilities and caregiving duties."
+    },
+    {
+      "word": "reproductive rights",
+      "pronunciation": "/ˌreprəˈdʌktɪv ˈraɪts/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quyền của phụ nữ quyết định về sinh sản, bao gồm quyền tiếp cận tránh thai, chăm sóc sức khỏe sinh sản và quyền có con",
+      "definition_en": "the right of individuals to make decisions about reproduction, contraception, and reproductive healthcare",
+      "level": "C1",
+      "synonyms": [
+        "sexual and reproductive health rights",
+        "bodily autonomy"
+      ],
+      "antonyms": [
+        "reproductive coercion",
+        "forced sterilization"
+      ],
+      "example_sentence": "Access to reproductive rights is considered fundamental to women's autonomy and is essential for achieving gender equality."
+    },
+    {
+      "word": "toxic masculinity",
+      "pronunciation": "/ˈtɒksɪk ˌmæskjuˈlɪnɪti/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những hành vi và thái độ nam tính có hại, như áp dụng bạo lực, cạnh tranh quá mức và kìm nén cảm xúc",
+      "definition_en": "harmful masculine behaviors and attitudes that promote aggression, emotional suppression, and dominance",
+      "level": "C1",
+      "synonyms": [
+        "harmful masculinity",
+        "aggressive masculinity"
+      ],
+      "antonyms": [
+        "healthy masculinity",
+        "emotional intelligence"
+      ],
+      "example_sentence": "Addressing toxic masculinity is crucial for reducing gender-based violence and creating more equitable relationships between men and women."
+    },
+    {
+      "word": "institutional sexism",
+      "pronunciation": "/ˌɪnstɪˈtjuːʃənəl ˈsɛksɪzəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sự phân biệt giới tính được cấu trúc vào các quy tắc, quy trình và văn hóa của các tổ chức, không phải do cá nhân",
+      "definition_en": "discrimination based on gender that is embedded in the policies, practices, and culture of institutions",
+      "level": "C1",
+      "synonyms": [
+        "systemic sexism",
+        "structural discrimination"
+      ],
+      "antonyms": [
+        "gender-inclusive institutions",
+        "equitable practices"
+      ],
+      "example_sentence": "Institutional sexism in academia is evident in the underrepresentation of women in senior academic positions and the prevalence of sexual harassment."
+    }
+  ],
+  "questions": []
+}

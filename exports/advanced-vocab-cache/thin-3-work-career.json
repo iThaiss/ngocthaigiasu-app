@@ -1,0 +1,375 @@
+{
+  "words": [
+    {
+      "word": "attrition rate",
+      "pronunciation": "/əˈtrɪʃən reɪt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tỷ lệ nhân viên rời bỏ công ty trong một khoảng thời gian nhất định; chỉ số mất mát lao động",
+      "definition_en": "the percentage of employees who leave a company over a specific period",
+      "level": "C1",
+      "synonyms": [
+        "employee turnover",
+        "staff turnover"
+      ],
+      "antonyms": [
+        "retention rate"
+      ],
+      "example_sentence": "The tech industry faces a high attrition rate due to competitive job markets and limited career progression opportunities."
+    },
+    {
+      "word": "skill gap",
+      "pronunciation": "/skɪl ɡæp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khoảng cách giữa kỹ năng hiện tại của nhân viên và kỹ năng cần thiết cho công việc hoặc vị trí cao hơn",
+      "definition_en": "the difference between the skills an employee currently possesses and those required for their role or advancement",
+      "level": "B2",
+      "synonyms": [
+        "competency gap",
+        "skills deficit"
+      ],
+      "antonyms": [],
+      "example_sentence": "Identifying skill gaps early allows organizations to invest in targeted training programs for their workforce."
+    },
+    {
+      "word": "succession planning",
+      "pronunciation": "/səkˈseʃən ˈplænɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình lập kế hoạch để xác định và chuẩn bị những người kế nhiệm cho các vị trí lãnh đạo quan trọng",
+      "definition_en": "the process of identifying and developing future leaders to fill key positions within an organization",
+      "level": "C1",
+      "synonyms": [
+        "leadership pipeline",
+        "talent pipeline"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective succession planning ensures organizational continuity and reduces disruption when senior executives retire."
+    },
+    {
+      "word": "stakeholder engagement",
+      "pronunciation": "/ˈsteɪkhoʊldər ɪnˈɡeɪdʒmənt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình tương tác và liên lạc với các bên liên quan (nhân viên, khách hàng, cổ đông) để đạt được sự hỗ trợ và phản hồi",
+      "definition_en": "the process of communicating and collaborating with all parties affected by organizational decisions",
+      "level": "C1",
+      "synonyms": [
+        "stakeholder involvement",
+        "stakeholder communication"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strong stakeholder engagement during organizational restructuring helps mitigate resistance and builds trust."
+    },
+    {
+      "word": "performance metrics",
+      "pronunciation": "/pərˈfɔːrməns ˈmetrɪks/",
+      "part_of_speech": "phrase",
+      "definition_vi": "các chỉ số đo lường hiệu suất công việc của nhân viên hoặc bộ phận",
+      "definition_en": "quantifiable measures used to evaluate employee or departmental performance against set objectives",
+      "level": "B2",
+      "synonyms": [
+        "KPIs",
+        "performance indicators"
+      ],
+      "antonyms": [],
+      "example_sentence": "HR departments use performance metrics to identify high performers and areas requiring improvement."
+    },
+    {
+      "word": "probationary period",
+      "pronunciation": "/proʊˈbeɪʃəneri ˈpɪriəd/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thời gian thử việc sau khi tuyển dụng, trong đó nhân viên mới được đánh giá trước khi chính thức ký hợp đồng dài hạn",
+      "definition_en": "a trial period following hiring during which a new employee is evaluated before permanent employment",
+      "level": "B2",
+      "synonyms": [
+        "trial period",
+        "induction period"
+      ],
+      "antonyms": [],
+      "example_sentence": "Most companies enforce a six-month probationary period to assess whether new hires meet organizational standards."
+    },
+    {
+      "word": "cross-functional team",
+      "pronunciation": "/ˌkrɔːs ˈfʌŋkʃənəl tiːm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhóm làm việc gồm các thành viên từ các bộ phận khác nhau của tổ chức, mỗi người đóng góp chuyên môn riêng",
+      "definition_en": "a team composed of members from different departments or functional areas working toward a common goal",
+      "level": "B2",
+      "synonyms": [
+        "interdepartmental team",
+        "multidisciplinary team"
+      ],
+      "antonyms": [],
+      "example_sentence": "Cross-functional teams accelerate product development by combining diverse expertise and perspectives."
+    },
+    {
+      "word": "due diligence",
+      "pronunciation": "/ˌduː ˈdɪlɪdʒəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình kiểm tra kỹ lưỡng thông tin tài chính, pháp lý và hoạt động của một công ty trước khi sáp nhập hoặc mua lại",
+      "definition_en": "thorough investigation and verification of a company's financial, legal, and operational information before acquisition",
+      "level": "C1",
+      "synonyms": [
+        "background check",
+        "investigation"
+      ],
+      "antonyms": [],
+      "example_sentence": "Investment firms conduct extensive due diligence to assess risks and identify potential issues before finalizing mergers."
+    },
+    {
+      "word": "competitive advantage",
+      "pronunciation": "/kəmˈpɛtɪtɪv ədˈvæntɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "những yếu tố giúp một công ty vượt trội hơn các đối thủ cạnh tranh, như công nghệ, nhân tài hoặc chi phí thấp",
+      "definition_en": "distinctive strengths or capabilities that enable a company to outperform competitors",
+      "level": "B2",
+      "synonyms": [
+        "competitive edge",
+        "market advantage"
+      ],
+      "antonyms": [
+        "competitive disadvantage"
+      ],
+      "example_sentence": "Investing in employee development creates a sustainable competitive advantage by building a skilled and motivated workforce."
+    },
+    {
+      "word": "organizational culture",
+      "pronunciation": "/ˌɔːrɡənɪˈzeɪʃənəl ˈkʌltʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tập hợp các giá trị, niềm tin, hành vi và chuẩn mực chia sẻ trong một tổ chức, ảnh hưởng đến cách làm việc",
+      "definition_en": "the shared values, beliefs, and behavioral norms that characterize how an organization operates",
+      "level": "B2",
+      "synonyms": [
+        "corporate culture",
+        "workplace culture"
+      ],
+      "antonyms": [],
+      "example_sentence": "A strong organizational culture that emphasizes innovation and collaboration attracts top talent and improves retention."
+    },
+    {
+      "word": "strategic initiative",
+      "pronunciation": "/strəˈtɛdʒɪk ɪˈnɪʃətɪv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "một dự án hoặc chương trình được thiết kế để đạt được mục tiêu chiến lược dài hạn của tổ chức",
+      "definition_en": "a planned project or program designed to achieve long-term organizational goals and objectives",
+      "level": "C1",
+      "synonyms": [
+        "strategic project",
+        "strategic program"
+      ],
+      "antonyms": [],
+      "example_sentence": "The company launched a strategic initiative to digitalize operations and reduce costs by 30% within three years."
+    },
+    {
+      "word": "accountability",
+      "pronunciation": "/əˌkaʊntəˈbɪləti/",
+      "part_of_speech": "noun",
+      "definition_vi": "trách nhiệm của một người hoặc tổ chức phải chịu trách nhiệm về hành động và kết quả của họ",
+      "definition_en": "the obligation to accept responsibility for one's actions and their outcomes",
+      "level": "B2",
+      "synonyms": [
+        "responsibility",
+        "answerability"
+      ],
+      "antonyms": [
+        "irresponsibility"
+      ],
+      "example_sentence": "Clear accountability structures ensure that employees understand their responsibilities and consequences for performance."
+    },
+    {
+      "word": "stakeholder value",
+      "pronunciation": "/ˈsteɪkhoʊldər ˈvæljuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giá trị được tạo ra cho tất cả các bên liên quan (nhân viên, khách hàng, cổ đông, cộng đồng) bởi các hoạt động của công ty",
+      "definition_en": "the benefits and returns generated for all parties affected by a company's operations and decisions",
+      "level": "C1",
+      "synonyms": [
+        "shareholder value",
+        "stakeholder return"
+      ],
+      "antonyms": [],
+      "example_sentence": "Modern corporations increasingly recognize that creating stakeholder value requires balancing profits with employee welfare and social responsibility."
+    },
+    {
+      "word": "talent acquisition",
+      "pronunciation": "/ˈtælənt ˌækwɪˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình tìm kiếm, tuyển dụng và tuyển chọn những ứng viên có tài năng để làm việc cho tổ chức",
+      "definition_en": "the strategic process of recruiting and hiring skilled individuals to meet organizational needs",
+      "level": "B2",
+      "synonyms": [
+        "recruitment",
+        "hiring"
+      ],
+      "antonyms": [],
+      "example_sentence": "Effective talent acquisition requires a comprehensive strategy that includes employer branding and targeted outreach."
+    },
+    {
+      "word": "operational efficiency",
+      "pronunciation": "/ˌɑːpəˈreɪʃənəl ɪˈfɪʃənsi/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một tổ chức hoặc bộ phận hoàn thành công việc với chi phí thấp nhất và chất lượng cao nhất",
+      "definition_en": "the ability to deliver products or services with minimal waste and maximum productivity",
+      "level": "B2",
+      "synonyms": [
+        "productivity",
+        "cost-effectiveness"
+      ],
+      "antonyms": [
+        "inefficiency"
+      ],
+      "example_sentence": "Implementing automation and lean processes significantly improved operational efficiency and reduced overhead costs."
+    },
+    {
+      "word": "conflict resolution",
+      "pronunciation": "/ˈkɑːnflɪkt ˌrezəˈluːʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quá trình giải quyết bất đồng hoặc tranh chấp giữa các cá nhân hoặc nhóm trong môi trường làm việc",
+      "definition_en": "the process of addressing and resolving disagreements or disputes between employees or departments",
+      "level": "B2",
+      "synonyms": [
+        "dispute resolution",
+        "mediation"
+      ],
+      "antonyms": [],
+      "example_sentence": "HR professionals use conflict resolution techniques to maintain a harmonious workplace and prevent escalation."
+    },
+    {
+      "word": "employee retention",
+      "pronunciation": "/ɪmˈplɔɪiː rɪˈtenʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khả năng của một công ty giữ chân nhân viên lâu dài thông qua các chính sách, môi trường làm việc tốt và cơ hội phát triển",
+      "definition_en": "the ability of an organization to keep employees engaged and committed to the company long-term",
+      "level": "B2",
+      "synonyms": [
+        "staff retention",
+        "employee loyalty"
+      ],
+      "antonyms": [
+        "attrition"
+      ],
+      "example_sentence": "Companies with strong employee retention programs report higher productivity and lower recruitment costs."
+    },
+    {
+      "word": "performance review",
+      "pronunciation": "/pərˈfɔːrməns rɪˈvjuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cuộc đánh giá định kỳ về hiệu suất công việc của nhân viên, thường được thực hiện hàng năm hoặc nửa năm",
+      "definition_en": "a formal assessment of an employee's job performance, typically conducted annually or semi-annually",
+      "level": "B2",
+      "synonyms": [
+        "performance evaluation",
+        "appraisal"
+      ],
+      "antonyms": [],
+      "example_sentence": "Constructive performance reviews provide employees with feedback and identify opportunities for professional growth."
+    },
+    {
+      "word": "corporate governance",
+      "pronunciation": "/ˈkɔːrpərət ˈɡʌvərnəns/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hệ thống các quy tắc, thực hành và quy trình quản lý công ty để đảm bảo trách nhiệm, minh bạch và tuân thủ pháp luật",
+      "definition_en": "the system of rules and practices that ensures a company is managed ethically and in the interests of stakeholders",
+      "level": "C1",
+      "synonyms": [
+        "corporate management",
+        "governance framework"
+      ],
+      "antonyms": [],
+      "example_sentence": "Strong corporate governance practices build investor confidence and reduce the risk of fraud or misconduct."
+    },
+    {
+      "word": "job satisfaction",
+      "pronunciation": "/dʒɑːb ˌsætɪsˈfækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mức độ hài lòng và thoả mãn của nhân viên đối với công việc, môi trường làm việc và cơ hội phát triển sự nghiệp",
+      "definition_en": "the degree to which employees feel fulfilled and content with their work and workplace environment",
+      "level": "B2",
+      "synonyms": [
+        "work satisfaction",
+        "employee satisfaction"
+      ],
+      "antonyms": [
+        "job dissatisfaction"
+      ],
+      "example_sentence": "Research shows that job satisfaction is strongly correlated with productivity, loyalty, and lower absenteeism rates."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The company's high __________ rate has become a major concern for management, as losing experienced employees increases training costs and disrupts team dynamics.",
+      "option_a": "attrition",
+      "option_b": "retention",
+      "option_c": "performance",
+      "option_d": "recruitment",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Attrition rate (tỷ lệ nhân viên rời bỏ) là từ phù hợp nhất vì câu nói về vấn đề mất mát nhân viên. Retention (giữ chân) là antonym và không phù hợp ngữ cảnh. Performance và recruitment không liên quan đến việc nhân viên rời đi."
+    },
+    {
+      "question_text": "Which of the following best describes 'succession planning' in an organizational context?",
+      "option_a": "The process of reducing workforce costs through layoffs and restructuring",
+      "option_b": "The identification and development of future leaders to fill key positions",
+      "option_c": "The annual evaluation of employee performance and salary adjustments",
+      "option_d": "The recruitment of external candidates to replace retiring managers",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Succession planning là quá trình xác định và chuẩn bị những người kế nhiệm cho các vị trí lãnh đạo quan trọng. Đáp án A nói về giảm chi phí, C nói về đánh giá hiệu suất, D chỉ nói về tuyển dụng bên ngoài mà không nhấn mạnh phát triển lãnh đạo nội bộ."
+    },
+    {
+      "question_text": "The organization's __________ initiative aims to modernize all business processes and reduce operational costs by 25% within two years.",
+      "option_a": "strategic",
+      "option_b": "tactical",
+      "option_c": "routine",
+      "option_d": "temporary",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Strategic initiative (dự án chiến lược) phù hợp vì nó liên quan đến mục tiêu dài hạn (hai năm) và toàn diện. Tactical (chiến thuật) quá hẹp, routine (thường lệ) không phù hợp với mục tiêu lớn, temporary (tạm thời) mâu thuẫn với khoảng thời gian hai năm."
+    },
+    {
+      "question_text": "What is the primary purpose of conducting 'due diligence' before a corporate merger?",
+      "option_a": "To negotiate the final purchase price with the target company",
+      "option_b": "To thoroughly investigate and verify financial, legal, and operational information",
+      "option_c": "To announce the merger to employees and stakeholders",
+      "option_d": "To establish new management structures and reporting lines",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Due diligence là quá trình kiểm tra kỹ lưỡng thông tin tài chính, pháp lý và hoạt động. Đáp án A nói về đàm phán giá, C nói về thông báo, D nói về cấu trúc quản lý - tất cả đều không phải mục đích chính của due diligence."
+    },
+    {
+      "question_text": "A __________ team brings together members from different departments to collaborate on a specific project, combining diverse expertise and perspectives.",
+      "option_a": "hierarchical",
+      "option_b": "cross-functional",
+      "option_c": "autonomous",
+      "option_d": "virtual",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cross-functional team (nhóm đa chức năng) là thuật ngữ chính xác để mô tả nhóm gồm các thành viên từ các bộ phận khác nhau. Hierarchical (phân cấp) nói về cấu trúc, autonomous (tự chủ) nói về độc lập, virtual (ảo) nói về công nghệ - không phù hợp."
+    },
+    {
+      "question_text": "Which statement best explains the relationship between 'organizational culture' and 'employee retention'?",
+      "option_a": "Organizational culture has no significant impact on whether employees choose to stay or leave",
+      "option_b": "A positive organizational culture that values employees increases job satisfaction and retention rates",
+      "option_c": "Employee retention depends solely on salary and benefits, not on organizational culture",
+      "option_d": "Organizational culture is only important for large multinational corporations",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Organizational culture tích cực giúp tăng job satisfaction và employee retention. Đáp án A sai vì culture có tác động lớn, C sai vì culture cũng quan trọng như lương thưởng, D sai vì culture quan trọng cho mọi quy mô công ty."
+    },
+    {
+      "question_text": "The HR department identified a significant __________ between current employee skills and those required for the company's digital transformation initiative.",
+      "option_a": "skill gap",
+      "option_b": "performance gap",
+      "option_c": "salary gap",
+      "option_d": "communication gap",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Skill gap (khoảng cách kỹ năng) là thuật ngữ chính xác để chỉ sự khác biệt giữa kỹ năng hiện tại và kỹ năng cần thiết. Performance gap nói về hiệu suất, salary gap nói về lương, communication gap nói về giao tiếp - không phù hợp ngữ cảnh."
+    }
+  ]
+}

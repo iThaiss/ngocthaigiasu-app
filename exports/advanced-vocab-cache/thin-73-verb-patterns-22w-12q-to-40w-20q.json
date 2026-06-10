@@ -1,0 +1,400 @@
+{
+  "words": [
+    {
+      "word": "abstain from",
+      "pronunciation": "/əbˈsteɪn frəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tự nguyện không tham gia hoặc không sử dụng cái gì, thường vì lý do đạo đức hoặc sức khỏe",
+      "definition_en": "voluntarily refrain from doing or consuming something, often for moral or health reasons",
+      "level": "B2",
+      "synonyms": [
+        "refrain from",
+        "avoid"
+      ],
+      "antonyms": [
+        "indulge in",
+        "partake in"
+      ],
+      "example_sentence": "Many athletes abstain from alcohol during training season to maintain peak performance."
+    },
+    {
+      "word": "adhere to",
+      "pronunciation": "/ədˈhɪər tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuân thủ chặt chẽ, tuân theo (quy tắc, nguyên tắc, kế hoạch)",
+      "definition_en": "stick firmly to a rule, principle, or plan without deviation",
+      "level": "B2",
+      "synonyms": [
+        "comply with",
+        "stick to"
+      ],
+      "antonyms": [
+        "violate",
+        "breach"
+      ],
+      "example_sentence": "The company must adhere to strict environmental regulations to avoid penalties."
+    },
+    {
+      "word": "aspire to",
+      "pronunciation": "/əˈspaɪər tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có khát vọng, mong muốn đạt được điều gì cao đẹp",
+      "definition_en": "have a strong desire to achieve or become something",
+      "level": "C1",
+      "synonyms": [
+        "aim for",
+        "strive for"
+      ],
+      "antonyms": [
+        "abandon",
+        "give up"
+      ],
+      "example_sentence": "She aspires to become a renowned surgeon and help underprivileged communities."
+    },
+    {
+      "word": "attribute to",
+      "pronunciation": "/əˈtrɪbjuːt tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "quy cho, cho rằng cái gì là do nguyên nhân nào gây ra",
+      "definition_en": "regard something as being caused by or resulting from a particular source",
+      "level": "B2",
+      "synonyms": [
+        "ascribe to",
+        "assign to"
+      ],
+      "antonyms": [
+        "deny",
+        "disclaim"
+      ],
+      "example_sentence": "Scientists attribute the recent climate changes to increased greenhouse gas emissions."
+    },
+    {
+      "word": "coincide with",
+      "pronunciation": "/kəʊˈɪnsaɪd wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xảy ra cùng lúc, trùng khớp với (thời gian hoặc sự kiện)",
+      "definition_en": "occur at the same time as something else; happen simultaneously",
+      "level": "B2",
+      "synonyms": [
+        "occur simultaneously with",
+        "align with"
+      ],
+      "antonyms": [
+        "diverge from",
+        "differ from"
+      ],
+      "example_sentence": "The festival coincides with the harvest season, attracting thousands of visitors annually."
+    },
+    {
+      "word": "comply with",
+      "pronunciation": "/kəmˈplaɪ wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tuân theo, chấp hành (luật lệ, yêu cầu, hướng dẫn)",
+      "definition_en": "act in accordance with a rule, request, or instruction",
+      "level": "B2",
+      "synonyms": [
+        "adhere to",
+        "obey"
+      ],
+      "antonyms": [
+        "violate",
+        "defy"
+      ],
+      "example_sentence": "All employees must comply with the new data protection policy by the end of this month."
+    },
+    {
+      "word": "concur with",
+      "pronunciation": "/kənˈkɜːr wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đồng ý, cùng chung ý kiến với ai",
+      "definition_en": "agree with someone's opinion or decision",
+      "level": "B2",
+      "synonyms": [
+        "agree with",
+        "consent to"
+      ],
+      "antonyms": [
+        "disagree with",
+        "dissent from"
+      ],
+      "example_sentence": "The board members concur with the CEO's proposal to expand into emerging markets."
+    },
+    {
+      "word": "defer to",
+      "pronunciation": "/dɪˈfɜːr tuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tôn trọng ý kiến, chấp nhận quyết định của người khác",
+      "definition_en": "respect and accept someone's opinion or authority",
+      "level": "B2",
+      "synonyms": [
+        "yield to",
+        "submit to"
+      ],
+      "antonyms": [
+        "challenge",
+        "resist"
+      ],
+      "example_sentence": "Junior researchers often defer to their supervisors' expertise in methodological decisions."
+    },
+    {
+      "word": "deviate from",
+      "pronunciation": "/ˈdiːvieɪt frəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lệch khỏi, không tuân theo (kế hoạch, tiêu chuẩn, con đường)",
+      "definition_en": "depart from an established course, standard, or plan",
+      "level": "B2",
+      "synonyms": [
+        "diverge from",
+        "stray from"
+      ],
+      "antonyms": [
+        "adhere to",
+        "stick to"
+      ],
+      "example_sentence": "The architect refused to deviate from the original blueprint despite budget constraints."
+    },
+    {
+      "word": "discriminate against",
+      "pronunciation": "/dɪˈskrɪmɪneɪt əˈɡenst/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phân biệt đối xử, bất công với (người nào vì lý do nào)",
+      "definition_en": "treat someone unfairly or unjustly based on prejudice",
+      "level": "B2",
+      "synonyms": [
+        "treat unfairly",
+        "prejudice"
+      ],
+      "antonyms": [
+        "treat equally",
+        "include"
+      ],
+      "example_sentence": "Laws prohibit employers from discriminating against candidates based on age or ethnicity."
+    },
+    {
+      "word": "dissociate from",
+      "pronunciation": "/dɪˈsəʊʃieɪt frəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tách rời, không liên kết với, từ chối liên hệ với",
+      "definition_en": "disconnect oneself from or deny association with someone or something",
+      "level": "B2",
+      "synonyms": [
+        "distance oneself from",
+        "separate from"
+      ],
+      "antonyms": [
+        "associate with",
+        "align with"
+      ],
+      "example_sentence": "The politician attempted to dissociate from controversial statements made by party members."
+    },
+    {
+      "word": "encroach on",
+      "pronunciation": "/ɪnˈkrəʊtʃ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xâm lấn, lấn chiếm (quyền lợi, lãnh thổ, thời gian của người khác)",
+      "definition_en": "gradually intrude on or take over someone's rights, territory, or time",
+      "level": "B2",
+      "synonyms": [
+        "intrude on",
+        "infringe on"
+      ],
+      "antonyms": [
+        "respect",
+        "honor"
+      ],
+      "example_sentence": "Urban development continues to encroach on protected wildlife habitats in the region."
+    },
+    {
+      "word": "grapple with",
+      "pronunciation": "/ˈɡræpəl wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vật lộn, đấu tranh với (vấn đề khó, thách thức)",
+      "definition_en": "struggle to deal with or understand a difficult problem or concept",
+      "level": "B2",
+      "synonyms": [
+        "struggle with",
+        "wrestle with"
+      ],
+      "antonyms": [
+        "master",
+        "solve easily"
+      ],
+      "example_sentence": "Developing nations grapple with balancing economic growth and environmental sustainability."
+    },
+    {
+      "word": "indulge in",
+      "pronunciation": "/ɪnˈdʌldʒ ɪn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "cho phép bản thân thưởng thức, tham gia vào (cái gì dễ chịu nhưng có thể quá mức)",
+      "definition_en": "allow oneself to enjoy something pleasurable, often excessively",
+      "level": "B2",
+      "synonyms": [
+        "engage in",
+        "partake in"
+      ],
+      "antonyms": [
+        "abstain from",
+        "refrain from"
+      ],
+      "example_sentence": "On weekends, she indulges in her favorite hobby of painting watercolor landscapes."
+    },
+    {
+      "word": "infringe on",
+      "pronunciation": "/ɪnˈfrɪndʒ ɒn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "vi phạm, xâm phạm (quyền, bản quyền, tự do của ai)",
+      "definition_en": "violate or encroach upon someone's rights or legal privileges",
+      "level": "B2",
+      "synonyms": [
+        "violate",
+        "breach"
+      ],
+      "antonyms": [
+        "respect",
+        "honor"
+      ],
+      "example_sentence": "Unauthorized copying of software infringes on the developer's intellectual property rights."
+    },
+    {
+      "word": "interfere with",
+      "pronunciation": "/ˌɪntərˈfɪər wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "can thiệp, cản trở, làm ảnh hưởng đến (hoạt động, kế hoạch của ai)",
+      "definition_en": "obstruct or hinder someone's actions or plans; meddle in someone's affairs",
+      "level": "C1",
+      "synonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "antonyms": [
+        "facilitate",
+        "assist"
+      ],
+      "example_sentence": "Excessive noise from construction interferes with students' concentration during exam season."
+    },
+    {
+      "word": "lapse into",
+      "pronunciation": "/læps ˈɪntuː/",
+      "part_of_speech": "phrase",
+      "definition_vi": "rơi vào, trở lại (trạng thái xấu, thói quen cũ)",
+      "definition_en": "gradually fall into an undesirable state or return to a bad habit",
+      "level": "B2",
+      "synonyms": [
+        "fall into",
+        "revert to"
+      ],
+      "antonyms": [
+        "escape from",
+        "break free"
+      ],
+      "example_sentence": "After months of recovery, the patient lapsed into depression following a personal tragedy."
+    },
+    {
+      "word": "recoil from",
+      "pronunciation": "/rɪˈkɔɪl frəm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giật lùi, sợ hãi, từ chối (cái gì khó chịu hoặc đáng sợ)",
+      "definition_en": "draw back in fear, disgust, or horror from something unpleasant",
+      "level": "B2",
+      "synonyms": [
+        "shrink from",
+        "flinch from"
+      ],
+      "antonyms": [
+        "embrace",
+        "welcome"
+      ],
+      "example_sentence": "Many citizens recoil from the government's proposal to increase surveillance in public spaces."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The environmental organization decided to _____ the use of single-use plastics in all their operations.",
+      "option_a": "abstain from",
+      "option_b": "indulge in",
+      "option_c": "interfere with",
+      "option_d": "lapse into",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Cần một cụm từ có nghĩa 'tự nguyện không sử dụng'. 'Abstain from' là đáp án đúng. 'Indulge in' (tham gia vào) và 'interfere with' (cản trở) không phù hợp ngữ cảnh. 'Lapse into' (rơi vào) cũng không thích hợp."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'The new regulations require all companies to _____ environmental standards or face significant fines.'",
+      "option_a": "deviate from",
+      "option_b": "comply with",
+      "option_c": "encroach on",
+      "option_d": "dissociate from",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Comply with' (tuân theo) là cụm từ chính xác khi nói về việc tuân thủ quy định. 'Deviate from' (lệch khỏi) có nghĩa ngược lại. 'Encroach on' (xâm lấn) và 'dissociate from' (tách rời) không phù hợp ngữ cảnh pháp lý."
+    },
+    {
+      "question_text": "The scientist's findings _____ the previous research conducted by her colleagues, leading to a collaborative publication.",
+      "option_a": "concur with",
+      "option_b": "infringe on",
+      "option_c": "recoil from",
+      "option_d": "grapple with",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Concur with' (đồng ý) là cụm từ phù hợp khi nói về việc các kết quả nghiên cứu phù hợp với nhau. 'Infringe on' (vi phạm), 'recoil from' (giật lùi), và 'grapple with' (vật lộn) không phù hợp ngữ cảnh khoa học."
+    },
+    {
+      "question_text": "What is the best synonym for 'aspire to' in the context of career development?",
+      "option_a": "struggle with",
+      "option_b": "aim for",
+      "option_c": "interfere with",
+      "option_d": "attribute to",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Aim for' là từ đồng nghĩa chính xác với 'aspire to' (có khát vọng, mong muốn đạt được). 'Struggle with' (vật lộn) có nghĩa khác. 'Interfere with' (cản trở) và 'attribute to' (quy cho) không liên quan."
+    },
+    {
+      "question_text": "The urban sprawl continues to _____ agricultural land, reducing the area available for farming.",
+      "option_a": "coincide with",
+      "option_b": "defer to",
+      "option_c": "encroach on",
+      "option_d": "lapse into",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Encroach on' (xâm lấn) là cụm từ chính xác để mô tả sự lấn chiếm đất nông nghiệp. 'Coincide with' (trùng khớp) không phù hợp. 'Defer to' (tôn trọng) và 'lapse into' (rơi vào) không có liên quan đến vấn đề này."
+    },
+    {
+      "question_text": "The government's decision to _____ free speech has sparked widespread protests among civil rights activists.",
+      "option_a": "adhere to",
+      "option_b": "infringe on",
+      "option_c": "attribute to",
+      "option_d": "discriminate against",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Infringe on' (vi phạm) là cụm từ đúng khi nói về việc chính phủ hạn chế tự do ngôn luận. 'Adhere to' (tuân theo) có nghĩa ngược lại. 'Attribute to' (quy cho) và 'discriminate against' (phân biệt đối xử) không phù hợp ngữ cảnh này."
+    },
+    {
+      "question_text": "After years of sobriety, the recovering addict _____ alcohol consumption, which deeply disappointed his family.",
+      "option_a": "recoiled from",
+      "option_b": "lapsed into",
+      "option_c": "grappled with",
+      "option_d": "dissociated from",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Lapsed into' (rơi vào) là cụm từ chính xác để mô tả việc quay trở lại thói quen xấu cũ. 'Recoiled from' (giật lùi) có nghĩa là tránh xa. 'Grappled with' (vật lộn) và 'dissociated from' (tách rời) không phù hợp ngữ cảnh này."
+    },
+    {
+      "question_text": "The board members _____ the CEO's controversial decision, refusing to support the new strategic direction.",
+      "option_a": "concurred with",
+      "option_b": "adhered to",
+      "option_c": "recoiled from",
+      "option_d": "coincided with",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Recoiled from' (giật lùi, từ chối) là cụm từ phù hợp khi nói về việc từ chối hỗ trợ quyết định gây tranh cãi. 'Concurred with' (đồng ý) có nghĩa ngược lại. 'Adhered to' (tuân theo) và 'coincided with' (trùng khớp) không phù hợp ngữ cảnh này."
+    }
+  ]
+}

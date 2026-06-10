@@ -18,6 +18,7 @@ import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { useToast } from '@/components/ui/use-toast'
 import { cn } from '@/lib/utils'
+import { getGroupForTopic, normalizePosLabel } from '@/lib/vocabulary-taxonomy'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -110,6 +111,62 @@ function LevelBadge({ level }: { level: string | null }) {
   )
 }
 
+function PosBadge({ value }: { value: string | null }) {
+  const label = normalizePosLabel(value)
+  if (!label) return null
+  return (
+    <Badge variant="outline" className="text-[10px] h-4 px-1.5 border-primary/30 text-primary">
+      {label}
+    </Badge>
+  )
+}
+
+function StudyFlowGuide({ dueCount, progressPct }: { dueCount: number; progressPct: number }) {
+  const suggested = dueCount > 0
+    ? 'Ôn định kỳ'
+    : progressPct > 0
+      ? 'Luyện đề'
+      : 'Học nhanh'
+
+  const steps = [
+    { label: 'Xem từ', desc: 'Tra nhanh nghĩa, ví dụ, phát âm.', icon: List },
+    { label: 'Học nhanh', desc: 'Lật thẻ để tự kiểm tra lần đầu.', icon: Layers },
+    { label: 'Luyện đề', desc: 'Làm câu hỏi theo ngữ cảnh.', icon: Target },
+    { label: 'Ôn định kỳ', desc: 'Lưu tiến độ và hẹn ngày ôn.', icon: Brain },
+  ]
+
+  return (
+    <Card className="border bg-card">
+      <CardContent className="p-3">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <p className="text-sm font-semibold">Cách học bộ này</p>
+            <p className="text-xs text-muted-foreground">Flashcard là bước làm quen nhanh; Ôn định kỳ mới là phần lưu trí nhớ dài hạn.</p>
+          </div>
+          <Badge variant="secondary" className="border-0 text-[10px]">Gợi ý: {suggested}</Badge>
+        </div>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-4">
+          {steps.map(({ label, desc, icon: Icon }, index) => {
+            const active = label === suggested
+            return (
+              <div key={label} className={cn('rounded-lg border px-3 py-2', active ? 'border-primary/40 bg-primary/5' : 'bg-background/60')}>
+                <div className="flex items-center gap-2">
+                  <span className={cn('flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-semibold', active ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground')}>
+                    {index + 1}
+                  </span>
+                  <Icon className={cn('h-3.5 w-3.5', active ? 'text-primary' : 'text-muted-foreground')} />
+                  <span className="text-xs font-semibold">{label}</span>
+                </div>
+                <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{desc}</p>
+              </div>
+            )
+          })}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
 // ─── Tab 1: Word List ─────────────────────────────────────────────────────────
 
 function WordListTab({ words }: { words: Word[] }) {
@@ -182,11 +239,7 @@ function WordListTab({ words }: { words: Word[] }) {
                     {w.pronunciation && (
                       <span className="text-xs text-muted-foreground">{w.pronunciation}</span>
                     )}
-                    {w.part_of_speech && (
-                      <Badge variant="outline" className="text-[10px] h-4 px-1.5 border-primary/30 text-primary">
-                        {w.part_of_speech}
-                      </Badge>
-                    )}
+                    <PosBadge value={w.part_of_speech} />
                     <LevelBadge level={w.level} />
                   </div>
                   <p className="text-sm text-foreground/80 mt-0.5 truncate">{w.definition_vi}</p>
@@ -317,7 +370,7 @@ function FlashcardTab({ words }: { words: Word[] }) {
           </Button>
         )}
       </div>
-      <p className="text-xs text-muted-foreground">Dùng tab <strong>Ôn luyện</strong> để ôn theo lịch thông minh (FSRS)</p>
+      <p className="text-xs text-muted-foreground">Dùng tab <strong>Ôn định kỳ</strong> để lưu tiến độ và ôn theo lịch FSRS.</p>
     </div>
   )
 
@@ -350,18 +403,14 @@ function FlashcardTab({ words }: { words: Word[] }) {
             {current?.pronunciation && (
               <p className="mt-2 text-muted-foreground text-sm">{current.pronunciation}</p>
             )}
-            {current?.part_of_speech && (
-              <Badge variant="outline" className="mt-3 text-xs border-primary/30 text-primary">{current.part_of_speech}</Badge>
-            )}
+            <div className="mt-3"><PosBadge value={current?.part_of_speech ?? null} /></div>
             <p className="mt-5 text-xs text-muted-foreground animate-pulse">Nhấn để xem nghĩa →</p>
           </div>
 
           {/* Back */}
           <div className="absolute inset-0 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 flex flex-col justify-center p-5 shadow-sm overflow-y-auto" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
             <div className="flex items-center gap-2 mb-2 flex-wrap">
-              {current?.part_of_speech && (
-                <Badge variant="outline" className="text-xs border-primary/30 text-primary">{current.part_of_speech}</Badge>
-              )}
+              <PosBadge value={current?.part_of_speech ?? null} />
               <LevelBadge level={current?.level ?? null} />
             </div>
             <p className="text-2xl font-bold text-center mb-2">{current?.definition_vi}</p>
@@ -489,7 +538,7 @@ function QuizTab({ questions, onWrongWord }: { questions: Question[]; onWrongWor
           <RotateCcw className="h-4 w-4" /> Làm lại
         </Button>
         {pct < 100 && (
-          <p className="text-xs text-muted-foreground">💡 Dùng tab <strong>Ôn luyện</strong> để ôn những từ chưa nắm với lịch thông minh</p>
+          <p className="text-xs text-muted-foreground">Dùng tab <strong>Ôn định kỳ</strong> để ôn những từ chưa nắm với lịch thông minh.</p>
         )}
       </div>
     )
@@ -860,9 +909,7 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
               <p className="text-xs text-muted-foreground mb-4 uppercase tracking-widest">Tiếng Anh</p>
               <p className="text-4xl font-bold text-center tracking-tight">{w.word}</p>
               {w.pronunciation && <p className="mt-2 text-muted-foreground">{w.pronunciation}</p>}
-              {w.part_of_speech && (
-                <Badge variant="outline" className="mt-3 border-primary/30 text-primary text-xs">{w.part_of_speech}</Badge>
-              )}
+              <div className="mt-3"><PosBadge value={w.part_of_speech} /></div>
               <motion.p
                 animate={{ opacity: [0.4, 1, 0.4] }}
                 transition={{ repeat: Infinity, duration: 2 }}
@@ -883,9 +930,7 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="font-bold text-lg">{w.word}</span>
                 {w.pronunciation && <span className="text-sm text-muted-foreground">{w.pronunciation}</span>}
-                {w.part_of_speech && (
-                  <Badge variant="outline" className="text-xs border-primary/30 text-primary">{w.part_of_speech}</Badge>
-                )}
+                <PosBadge value={w.part_of_speech} />
                 <LevelBadge level={w.level} />
               </div>
 
@@ -1094,6 +1139,8 @@ export default function VocabSetPage() {
   const masteredCount = progress.filter((p) => p.state === 'Review' || p.state === 'Relearning').length
   const progressPct = set.word_count > 0 ? Math.round((masteredCount / set.word_count) * 100) : 0
   const dueCount = progress.filter((p) => p.due && p.due <= new Date().toISOString()).length
+  const group = getGroupForTopic(set.topic)
+  const GroupIcon = group?.icon
 
   return (
     <div className="max-w-3xl mx-auto space-y-5">
@@ -1107,6 +1154,11 @@ export default function VocabSetPage() {
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap mb-1">
               <h1 className="text-2xl font-bold">{set.name}</h1>
+              {group && GroupIcon && (
+                <Badge variant="secondary" className={cn('border-0 gap-1 bg-primary/10', group.accent)}>
+                  <GroupIcon className="h-3 w-3" /> {group.label}
+                </Badge>
+              )}
               {set.is_ai_generated && (
                 <Badge variant="secondary" className="bg-violet-500/15 text-violet-600 dark:text-violet-400 border-0 gap-1">
                   <Sparkles className="h-3 w-3" /> AI
@@ -1160,24 +1212,26 @@ export default function VocabSetPage() {
         </div>
       </motion.div>
 
+      <StudyFlowGuide dueCount={dueCount} progressPct={progressPct} />
+
       {/* Tabs */}
       <Tabs defaultValue={dueCount > 0 ? 'spaced' : 'wordlist'}>
         <TabsList className="w-full grid grid-cols-4 h-10">
           <TabsTrigger value="wordlist" className="gap-1.5 text-xs sm:text-sm data-[state=active]:font-semibold">
             <List className="h-3.5 w-3.5 shrink-0" />
-            <span className="hidden sm:inline">Từ vựng</span>
+            <span className="hidden sm:inline">Xem từ</span>
           </TabsTrigger>
           <TabsTrigger value="flashcard" className="gap-1.5 text-xs sm:text-sm data-[state=active]:font-semibold">
             <Layers className="h-3.5 w-3.5 shrink-0" />
-            <span className="hidden sm:inline">Flashcard</span>
+            <span className="hidden sm:inline">Học nhanh</span>
           </TabsTrigger>
           <TabsTrigger value="quiz" className="gap-1.5 text-xs sm:text-sm data-[state=active]:font-semibold">
             <Target className="h-3.5 w-3.5 shrink-0" />
-            <span className="hidden sm:inline">Quiz</span>
+            <span className="hidden sm:inline">Luyện đề</span>
           </TabsTrigger>
           <TabsTrigger value="spaced" className="relative gap-1.5 text-xs sm:text-sm data-[state=active]:font-semibold">
             <Brain className="h-3.5 w-3.5 shrink-0" />
-            <span className="hidden sm:inline">Ôn luyện</span>
+            <span className="hidden sm:inline">Ôn định kỳ</span>
             {dueCount > 0 && (
               <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-orange-500 text-[9px] font-bold text-white">
                 {dueCount > 9 ? '9+' : dueCount}

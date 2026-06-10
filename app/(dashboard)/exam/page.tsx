@@ -106,7 +106,7 @@ const REPORT_TYPES = [
 ]
 
 function LatexText({ text, className }: { text: string; className?: string }) {
-  return <span className={className} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
+  return <span className={`inline-block max-w-full min-w-0 overflow-x-auto align-bottom scrollbar-none ${className || ''}`} dangerouslySetInnerHTML={{ __html: renderLatex(text) }} />
 }
 
 function isMarkdownTableSeparator(line: string) {

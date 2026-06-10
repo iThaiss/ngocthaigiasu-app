@@ -1,0 +1,178 @@
+{
+  "words": [
+    {
+      "word": "etiology",
+      "pronunciation": "/ˌiːtiˈɒlədʒi/",
+      "part_of_speech": "noun",
+      "definition_vi": "nguyên nhân gốc rễ của bệnh tật hoặc hiện tượng; lĩnh vực y học nghiên cứu nguyên nhân bệnh",
+      "definition_en": "the cause or origin of a disease or condition; the study of causation in medicine",
+      "level": "C1",
+      "synonyms": [
+        "aetiology",
+        "causation",
+        "origin"
+      ],
+      "antonyms": [
+        "symptomatology"
+      ],
+      "example_sentence": "Understanding the etiology of type 2 diabetes requires investigation into genetic predisposition and lifestyle factors."
+    },
+    {
+      "word": "pathophysiology",
+      "pronunciation": "/ˌpæθoʊˌfɪziˈɒlədʒi/",
+      "part_of_speech": "noun",
+      "definition_vi": "nghiên cứu các quá trình sinh lý bất thường trong cơ thể gây ra bệnh tật; cơ chế bệnh lý",
+      "definition_en": "the study of disordered physiological processes that cause disease; mechanism of disease development",
+      "level": "C1",
+      "synonyms": [
+        "disease mechanism",
+        "pathologic process"
+      ],
+      "antonyms": [
+        "physiology"
+      ],
+      "example_sentence": "The pathophysiology of Alzheimer's disease involves accumulation of amyloid-beta plaques and tau tangles in neural tissue."
+    },
+    {
+      "word": "sequela",
+      "pronunciation": "/sɪˈkwɛlə/",
+      "part_of_speech": "noun",
+      "definition_vi": "hậu quả hoặc biến chứng kéo dài sau một bệnh hoặc chấn thương (số nhiều: sequelae)",
+      "definition_en": "a consequence or result of a disease or injury, typically a long-term complication",
+      "level": "C2",
+      "synonyms": [
+        "consequence",
+        "aftermath",
+        "complication"
+      ],
+      "antonyms": [
+        "cause",
+        "origin"
+      ],
+      "example_sentence": "Post-COVID syndrome presents with multiple sequelae including chronic fatigue, cognitive impairment, and cardiovascular dysfunction."
+    },
+    {
+      "word": "remission",
+      "pronunciation": "/rɪˈmɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "giai đoạn bệnh nhân hồi phục hoặc triệu chứng giảm đáng kể, đặc biệt trong ung thư và bệnh mãn tính",
+      "definition_en": "a period during which symptoms of a disease are reduced or disappear, especially in cancer or chronic illness",
+      "level": "C1",
+      "synonyms": [
+        "recovery",
+        "improvement",
+        "abatement"
+      ],
+      "antonyms": [
+        "relapse",
+        "recurrence"
+      ],
+      "example_sentence": "Patients in complete remission from leukemia undergo regular monitoring to detect early signs of disease recurrence."
+    },
+    {
+      "word": "relapse",
+      "pronunciation": "/rɪˈlæps/",
+      "part_of_speech": "noun",
+      "definition_vi": "tái phát bệnh sau giai đoạn hồi phục; quay trở lại tình trạng bệnh tật trước đó",
+      "definition_en": "the return of symptoms or disease after a period of improvement or remission",
+      "level": "C1",
+      "synonyms": [
+        "recurrence",
+        "regression",
+        "setback"
+      ],
+      "antonyms": [
+        "remission",
+        "recovery"
+      ],
+      "example_sentence": "Multiple sclerosis patients receiving immunomodulatory therapy show reduced relapse rates compared to untreated controls."
+    },
+    {
+      "word": "morbidity",
+      "pronunciation": "/mɔːrˈbɪdɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tỷ lệ mắc bệnh trong một quần thể; số lượng hoặc tỷ lệ người mắc bệnh",
+      "definition_en": "the rate or prevalence of disease in a population; the condition of being diseased",
+      "level": "C1",
+      "synonyms": [
+        "disease rate",
+        "incidence",
+        "prevalence"
+      ],
+      "antonyms": [
+        "health",
+        "wellness"
+      ],
+      "example_sentence": "Cardiovascular morbidity in developing nations has increased dramatically due to urbanization and dietary changes."
+    },
+    {
+      "word": "mortality",
+      "pronunciation": "/mɔːrˈtælɪti/",
+      "part_of_speech": "noun",
+      "definition_vi": "tỷ lệ tử vong; số người chết so với tổng dân số trong một khoảng thời gian",
+      "definition_en": "the rate of death in a population; the number of deaths in a given period",
+      "level": "C1",
+      "synonyms": [
+        "death rate",
+        "fatality rate"
+      ],
+      "antonyms": [
+        "survival",
+        "longevity"
+      ],
+      "example_sentence": "Infant mortality rates serve as a key indicator of public health infrastructure and socioeconomic development."
+    },
+    {
+      "word": "contraindication",
+      "pronunciation": "/ˌkɒntrəˌɪndɪˈkeɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "tình huống hoặc điều kiện mà một phương pháp điều trị không nên được sử dụng vì nguy hiểm",
+      "definition_en": "a condition or factor that makes a particular treatment inadvisable or dangerous",
+      "level": "C1",
+      "synonyms": [
+        "contraindicated condition",
+        "warning"
+      ],
+      "antonyms": [
+        "indication",
+        "recommendation"
+      ],
+      "example_sentence": "Absolute contraindications to ACE inhibitors include pregnancy and history of angioedema related to previous ACE inhibitor use."
+    },
+    {
+      "word": "therapeutic window",
+      "pronunciation": "/θɛrəˈpjuːtɪk ˈwɪndoʊ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "khoảng nồng độ thuốc trong máu giữa liều hiệu quả tối thiểu và liều độc hại; phạm vi an toàn",
+      "definition_en": "the range of drug concentration between minimum effective dose and toxic dose; margin of safety",
+      "level": "C2",
+      "synonyms": [
+        "therapeutic range",
+        "safety margin"
+      ],
+      "antonyms": [
+        "overdose",
+        "underdose"
+      ],
+      "example_sentence": "Digoxin has a narrow therapeutic window, requiring careful monitoring of serum levels to prevent toxicity."
+    },
+    {
+      "word": "immunocompromised",
+      "pronunciation": "/ˌɪmjuːnoʊˈkɒmprəmaɪzd/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có hệ thống miễn dịch suy yếu, không thể chống lại nhiễm trùng hoặc bệnh tật hiệu quả",
+      "definition_en": "having a weakened immune system unable to mount adequate defense against infections or malignancies",
+      "level": "C1",
+      "synonyms": [
+        "immunosuppressed",
+        "immunodeficient"
+      ],
+      "antonyms": [
+        "immunocompetent",
+        "immunologically intact"
+      ],
+      "example_sentence": "Immunocompromised patients receiving live attenuated vaccines face increased risk of vaccine-strain disease."
+    }
+  ],
+  "questions": []
+}

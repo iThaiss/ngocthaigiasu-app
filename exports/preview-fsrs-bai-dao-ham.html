@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quy tắc tính đạo hàm, đạo hàm hàm hợp và cấp hai - FSRS Preview</title>
+  <script>
+    window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] } };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+:root{color-scheme:dark;--bg:#050814;--panel:#0b1220;--soft:#111b2e;--line:#26354d;--text:#f7f9fd;--muted:#a9b7ca;--primary:#8b5cf6;--blue:#60a5fa;--green:#34d399;--amber:#fbbf24;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:#050814;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+.page{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:28px 0 72px}.hero{border:1px solid var(--line);background:linear-gradient(180deg,#0d1729,#08101e);border-radius:8px;padding:22px;margin-bottom:18px}.eyebrow{color:#c4b5fd;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}h1{margin:6px 0 8px;font-size:30px;line-height:1.2;letter-spacing:0}.lead{color:#d3deee;max-width:820px;margin:0;font-size:15px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);background:#101a2c;color:#dbeafe;border-radius:999px;padding:5px 10px;font-size:12px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:16px;align-items:start}.panel{border:1px solid var(--line);background:rgba(11,18,32,.96);border-radius:8px;padding:18px;overflow:hidden}.panel h2{font-size:19px;margin:24px 0 10px;padding-top:16px;border-top:1px solid var(--line);letter-spacing:0}.panel h2:first-child{margin-top:0;padding-top:0;border-top:0}.panel p{margin:8px 0}.panel table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}.panel th,.panel td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}.panel th{background:#0f1d33;color:#dbeafe}.panel td{background:#08111f}.panel ul{padding-left:20px}.panel li{margin:4px 0}.panel code{background:#111827;border:1px solid #283243;border-radius:4px;padding:1px 5px}.sidebar{position:sticky;top:14px;display:flex;flex-direction:column;gap:10px}.card{border:1px solid #2e3d56;background:#091120;border-radius:8px;padding:13px}.card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}.kind{color:#c4b5fd;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.04em}.idx{color:var(--muted);font-size:12px}.front{font-size:14px;font-weight:700;color:#f8fafc;margin:0 0 8px}.back{border-top:1px solid #23324a;padding-top:8px;color:#dbeafe;font-size:14px}.hint{margin-top:8px;color:#a7f3d0;font-size:12px}.explain{margin-top:7px;color:#cbd5e1;font-size:12px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 10px}.section-title h2{margin:0;border:0;padding:0;font-size:17px}.small{color:var(--muted);font-size:12px}.lists{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.tag{border-radius:999px;background:#1d2b44;color:#bfdbfe;font-size:11px;padding:4px 8px}@media(max-width:960px){.layout,.lists{grid-template-columns:1fr}.sidebar{position:static}h1{font-size:25px}}
+.practice{margin-top:16px}.exercise{border:1px solid #2e3d56;background:#08111f;border-radius:8px;padding:14px;margin-top:10px}.exercise-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}.exercise-title strong{font-size:14px}.options{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.option{border:1px solid #223149;border-radius:6px;background:#0c1728;padding:8px;font-size:13px}.answer{border-top:1px solid #23324a;margin-top:10px;padding-top:9px;color:#bbf7d0;font-size:13px}.solution{color:#cbd5e1;font-size:13px;margin-top:6px}.statements{display:grid;gap:7px;margin-top:9px}.statement{border:1px solid #223149;border-radius:6px;background:#0c1728;padding:8px;font-size:13px}
+</style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">FSRS theory preview</div>
+      <h1>Quy tắc tính đạo hàm, đạo hàm hàm hợp và cấp hai</h1>
+      <p class="lead">Bản preview theo khung mới: lý thuyết ngắn để hiểu nhanh, flashcard để ôn lại bằng FSRS. File này sinh từ JSON dry-run, chưa ghi database.</p>
+      <div class="meta">
+        <span class="pill">1508 ký tự lý thuyết</span>
+        <span class="pill">17 flashcards</span>
+        <span class="pill"></span>
+      </div>
+    </header>
+
+    <section class="layout">
+      <article class="panel" id="content"></article>
+      <aside class="sidebar">
+        <div class="panel">
+          <div class="section-title">
+            <h2>Flashcards FSRS</h2>
+            <span class="tag">12-18 thẻ/bài</span>
+          </div>
+          
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#1</span></div>
+              <p class="front">Điền khuyết: $(u+v)&#x27;=\;?$</p>
+              <div class="back">$(u+v)&#x27;=u&#x27;+v&#x27;$</div>
+              <div class="hint">Gợi ý: Tổng thành tổng</div>
+              <div class="explain">Đạo hàm của tổng bằng tổng các đạo hàm.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#2</span></div>
+              <p class="front">Công thức đạo hàm tích $uv$ là gì?</p>
+              <div class="back">$(uv)&#x27;=u&#x27;v+uv&#x27;$</div>
+              <div class="hint">Gợi ý: Có 2 hạng tử</div>
+              <div class="explain">Không được lấy đạo hàm từng thừa số rồi nhân với nhau.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#3</span></div>
+              <p class="front">Công thức đạo hàm thương $\dfrac{u}{v}$?</p>
+              <div class="back">$\left(\dfrac{u}{v}\right)&#x27;=\dfrac{u&#x27;v-uv&#x27;}{v^2}$, $v\ne 0$</div>
+              <div class="hint">Gợi ý: Tử: trước đạo hàm sau trừ trước sau đạo hàm</div>
+              <div class="explain">Đây là công thức chuẩn cần nhớ chính xác dấu trừ.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#4</span></div>
+              <p class="front">Điền khuyết: $(f(g(x)))&#x27;=\;?$</p>
+              <div class="back">$(f(g(x)))&#x27;=f&#x27;(g(x))\cdot g&#x27;(x)$</div>
+              <div class="hint">Gợi ý: Ngoài rồi trong</div>
+              <div class="explain">Đạo hàm hàm hợp bằng đạo hàm hàm ngoài tại biểu thức trong, nhân đạo hàm biểu thức trong.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#5</span></div>
+              <p class="front">Đạo hàm cấp hai $y&#x27;&#x27;$ được tính thế nào?</p>
+              <div class="back">$y&#x27;&#x27;=(y&#x27;)&#x27;$</div>
+              <div class="hint">Gợi ý: Lấy đạo hàm thêm 1 lần</div>
+              <div class="explain">Tức là đạo hàm lần hai của hàm số.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">formula</span><span class="idx">#6</span></div>
+              <p class="front">Điền khuyết: $[(u)^n]&#x27;=\;?$</p>
+              <div class="back">$[(u)^n]&#x27;=n u^{n-1}\cdot u&#x27;$</div>
+              <div class="hint">Gợi ý: Hàm hợp với lũy thừa</div>
+              <div class="explain">Nếu $u$ phụ thuộc vào $x$ thì phải nhân thêm $u&#x27;$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">concept</span><span class="idx">#7</span></div>
+              <p class="front">Ký hiệu $y&#x27;$ có ý nghĩa gì?</p>
+              <div class="back">Là đạo hàm cấp một của $y$ theo $x$.</div>
+              <div class="hint">Gợi ý: Đạo hàm lần đầu</div>
+              <div class="explain">Thường dùng để xét tốc độ biến thiên tức thời.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">concept</span><span class="idx">#8</span></div>
+              <p class="front">Ký hiệu $y&#x27;&#x27;$ là gì?</p>
+              <div class="back">Là đạo hàm cấp hai của $y$ theo $x$.</div>
+              <div class="hint">Gợi ý: Đạo hàm của $y&#x27;$</div>
+              <div class="explain">Tính bằng cách lấy đạo hàm của $y&#x27;$ thêm một lần nữa.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">when_to_use</span><span class="idx">#9</span></div>
+              <p class="front">Nhìn dạng $(3x-2)^5$ thì nên nghĩ đến quy tắc nào?</p>
+              <div class="back">Quy tắc đạo hàm hàm hợp.</div>
+              <div class="hint">Gợi ý: Lũy thừa của biểu thức</div>
+              <div class="explain">Vì bên trong còn có hàm $3x-2$ nên phải nhân thêm đạo hàm của phần trong.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">when_to_use</span><span class="idx">#10</span></div>
+              <p class="front">Khi nào nên dùng quy tắc tích?</p>
+              <div class="back">Khi biểu thức là tích của hai hàm cùng phụ thuộc vào $x$.</div>
+              <div class="hint">Gợi ý: Có dấu nhân</div>
+              <div class="explain">Ví dụ $x^2\sin x$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">when_to_use</span><span class="idx">#11</span></div>
+              <p class="front">Khi nào nên dùng quy tắc thương?</p>
+              <div class="back">Khi tử và mẫu đều là biểu thức chứa $x$.</div>
+              <div class="hint">Gợi ý: Có phân thức</div>
+              <div class="explain">Ví dụ $\dfrac{x^2+1}{x-1}$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">when_to_use</span><span class="idx">#12</span></div>
+              <p class="front">Đề hỏi đạo hàm cấp hai thì làm gì sau khi có $y&#x27;$?</p>
+              <div class="back">Lấy đạo hàm của $y&#x27;$ một lần nữa.</div>
+              <div class="hint">Gợi ý: Thêm 1 bước đạo hàm</div>
+              <div class="explain">Đó chính là cách tìm $y&#x27;&#x27;$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">mistake</span><span class="idx">#13</span></div>
+              <p class="front">Sai ở đâu: $(uv)&#x27;=u&#x27;v&#x27;$?</p>
+              <div class="back">Thiếu hai hạng tử đúng. Phải là $(uv)&#x27;=u&#x27;v+uv&#x27;$.</div>
+              <div class="hint">Gợi ý: Tích không thành tích</div>
+              <div class="explain">Đây là lỗi rất hay gặp khi làm nhanh.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">mistake</span><span class="idx">#14</span></div>
+              <p class="front">Điền lỗi cần tránh: $[(2x+1)^4]&#x27;=4(2x+1)^3$ thiếu gì?</p>
+              <div class="back">Thiếu nhân với $(2x+1)&#x27;=2$.</div>
+              <div class="hint">Gợi ý: Thiếu đạo hàm bên trong</div>
+              <div class="explain">Kết quả đúng là $8(2x+1)^3$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">mistake</span><span class="idx">#15</span></div>
+              <p class="front">Sai ở đâu: $\left(\dfrac{u}{v}\right)&#x27;=\dfrac{u&#x27;}{v&#x27;}$?</p>
+              <div class="back">Đó không phải quy tắc thương. Phải dùng $\dfrac{u&#x27;v-uv&#x27;}{v^2}$.</div>
+              <div class="hint">Gợi ý: Nhớ mẫu bình phương</div>
+              <div class="explain">Không được đạo hàm tử và mẫu riêng rồi chia.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">mini_example</span><span class="idx">#16</span></div>
+              <p class="front">Tính nhanh: $[(x^2+1)^3]&#x27;=?$</p>
+              <div class="back">$3(x^2+1)^2\cdot 2x=6x(x^2+1)^2$</div>
+              <div class="hint">Gợi ý: Hàm hợp</div>
+              <div class="explain">Ngoài là lũy thừa bậc 3, trong là $x^2+1$.</div>
+            </article>
+            
+
+            <article class="card">
+              <div class="card-head"><span class="kind">mini_example</span><span class="idx">#17</span></div>
+              <p class="front">Tính nhanh: nếu $y=x^3$ thì $y&#x27;&#x27;=?$</p>
+              <div class="back">$y&#x27;=3x^2$, nên $y&#x27;&#x27;=6x$.</div>
+              <div class="hint">Gợi ý: Đạo hàm hai lần</div>
+              <div class="explain">Lấy đạo hàm lần 1 rồi lần 2.</div>
+            </article>
+            
+        </div>
+      </aside>
+    </section>
+
+    <section class="lists">
+      <article class="panel">
+        <div class="section-title"><h2>Cần nhớ</h2><span class="small">5 ý</span></div>
+        <ul><li>Nhìn ngoặc lồng nhau như $(ax+b)^n$, $\sin(ux)$ thì ưu tiên quy tắc hàm hợp.</li><li>Gặp tích $uv$ dùng $(uv)&#x27;=u&#x27;v+uv&#x27;$, không lấy đạo hàm từng thừa số rồi nhân.</li><li>Gặp thương $u/v$ dùng $\dfrac{u&#x27;v-uv&#x27;}{v^2}$ và nhớ điều kiện mẫu khác $0$.</li><li>Đạo hàm cấp hai là lấy đạo hàm của $y&#x27;$ thêm một lần nữa.</li><li>Làm xong nên rút gọn để tránh sai dấu và sai hệ số.</li></ul>
+      </article>
+      <article class="panel">
+        <div class="section-title"><h2>Lỗi sai</h2><span class="small">4 lỗi</span></div>
+        <ul><li>Sai: $(uv)&#x27;=u&#x27;v&#x27;$ -&gt; Đúng: $(uv)&#x27;=u&#x27;v+uv&#x27;$.</li><li>Sai: $[(3x+1)^4]&#x27;=4(3x+1)^3$ -&gt; Đúng: $[(3x+1)^4]&#x27;=12(3x+1)^3$.</li><li>Sai: $\left(\dfrac{x^2+1}{x}\right)&#x27;=\dfrac{2x}{1}$ -&gt; Đúng: phải dùng quy tắc thương hoặc rút gọn trước rồi mới đạo hàm.</li><li>Sai: $y&#x27;&#x27;=2y&#x27;$ -&gt; Đúng: $y&#x27;&#x27;$ là đạo hàm của $y&#x27;$, không có công thức cố định như vậy.</li></ul>
+      </article>
+    </section>
+
+    <section class="panel practice">
+      <div class="section-title">
+        <h2>Bài tập luyện</h2>
+        <span class="tag">10 câu</span>
+      </div>
+      
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 1</strong><span class="tag">multiple_choice · Nhận biết</span></div>
+              <p>Đạo hàm của hàm số $y=x^3-2x+1$ là</p>
+              <div class="options"><div class="option"><b>A.</b> $y&#x27;=3x^2-2$</div><div class="option"><b>B.</b> $y&#x27;=3x^2+2$</div><div class="option"><b>C.</b> $y&#x27;=x^2-2$</div><div class="option"><b>D.</b> $y&#x27;=3x-2$</div></div>
+              <div class="answer">Đáp án: A</div>
+              <div class="solution">Dùng quy tắc đạo hàm cơ bản: $(x^3)&#x27;=3x^2$, $(-2x)&#x27;=-2$, $(1)&#x27;=0$ nên $y&#x27;=3x^2-2$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 2</strong><span class="tag">multiple_choice · Nhận biết</span></div>
+              <p>Cho hàm số $y=\sin(2x)$. Đạo hàm cấp hai của hàm số là</p>
+              <div class="options"><div class="option"><b>A.</b> $y&#x27;&#x27;=-4\sin(2x)$</div><div class="option"><b>B.</b> $y&#x27;&#x27;=4\sin(2x)$</div><div class="option"><b>C.</b> $y&#x27;&#x27;=-2\sin(2x)$</div><div class="option"><b>D.</b> $y&#x27;&#x27;=4\cos(2x)$</div></div>
+              <div class="answer">Đáp án: A</div>
+              <div class="solution">Ta có $y&#x27;=(\sin(2x))&#x27;=2\cos(2x)$. Suy ra $y&#x27;&#x27;=(2\cos(2x))&#x27;=-4\sin(2x)$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 3</strong><span class="tag">multiple_choice · Thông hiểu</span></div>
+              <p>Tính đạo hàm của hàm số $y=(3x^2-1)^4$.</p>
+              <div class="options"><div class="option"><b>A.</b> $y&#x27;=8x(3x^2-1)^3$</div><div class="option"><b>B.</b> $y&#x27;=12x(3x^2-1)^3$</div><div class="option"><b>C.</b> $y&#x27;=24x(3x^2-1)^4$</div><div class="option"><b>D.</b> $y&#x27;=4(3x^2-1)^3$</div></div>
+              <div class="answer">Đáp án: B</div>
+              <div class="solution">Dùng quy tắc hàm hợp: $y&#x27;=4(3x^2-1)^3\cdot 6x=24x(3x^2-1)^3$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 4</strong><span class="tag">multiple_choice · Thông hiểu</span></div>
+              <p>Cho hàm số $y=x^3-3x$. Mệnh đề nào đúng về đạo hàm cấp hai của hàm số này?</p>
+              <div class="options"><div class="option"><b>A.</b> $y&#x27;&#x27;=6x$</div><div class="option"><b>B.</b> $y&#x27;&#x27;=6x-3$</div><div class="option"><b>C.</b> $y&#x27;&#x27;=6$</div><div class="option"><b>D.</b> $y&#x27;&#x27;=3x^2-3$</div></div>
+              <div class="answer">Đáp án: C</div>
+              <div class="solution">Ta có $y&#x27;=3x^2-3$, nên $y&#x27;&#x27;=6$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 5</strong><span class="tag">true_false · Thông hiểu</span></div>
+              <p>Xét hàm số $f(x)=x^3-2x^2+5x-1$. Hãy xác định tính đúng sai của các khẳng định sau.</p>
+              <div class="statements"><div class="statement"><b>A.</b> $f&#x27;(x)=3x^2-4x+5$. <span class="small">(Đúng)</span></div><div class="statement"><b>B.</b> $f&#x27;(1)=4$. <span class="small">(Đúng)</span></div><div class="statement"><b>C.</b> $f&#x27;&#x27;(x)=6x-4$. <span class="small">(Đúng)</span></div><div class="statement"><b>D.</b> $f&#x27;&#x27;(1)=0$. <span class="small">(Sai)</span></div></div>
+              <div class="answer">Đáp án đúng/sai đã ghi cạnh từng mệnh đề để review nhanh.</div>
+              <div class="solution">Ta có $f&#x27;(x)=3x^2-4x+5$, nên $f&#x27;(1)=3-4+5=4$. Tiếp theo $f&#x27;&#x27;(x)=6x-4$ và $f&#x27;&#x27;(1)=2\ne 0$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 6</strong><span class="tag">true_false · Thông hiểu</span></div>
+              <p>Xét hàm số $y=(2x-1)^5$. Hãy xác định tính đúng sai của các khẳng định sau.</p>
+              <div class="statements"><div class="statement"><b>A.</b> $y&#x27;=5(2x-1)^4$. <span class="small">(Sai)</span></div><div class="statement"><b>B.</b> $y&#x27;=10(2x-1)^4$. <span class="small">(Đúng)</span></div><div class="statement"><b>C.</b> $y&#x27;&#x27;=80(2x-1)^3$. <span class="small">(Đúng)</span></div><div class="statement"><b>D.</b> $y&#x27;&#x27;(1)=80$. <span class="small">(Sai)</span></div></div>
+              <div class="answer">Đáp án đúng/sai đã ghi cạnh từng mệnh đề để review nhanh.</div>
+              <div class="solution">Dùng quy tắc đạo hàm hàm hợp: $y&#x27;=5(2x-1)^4\cdot 2=10(2x-1)^4$. Suy ra $y&#x27;&#x27;=10\cdot 4(2x-1)^3\cdot 2=80(2x-1)^3$, nên $y&#x27;&#x27;(1)=80$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 7</strong><span class="tag">true_false · Thông hiểu</span></div>
+              <p>Xét hàm số $g(x)=\dfrac{1}{x^2+1}=(x^2+1)^{-1}$. Hãy xác định tính đúng sai của các khẳng định sau.</p>
+              <div class="statements"><div class="statement"><b>A.</b> $g&#x27;(x)=-\dfrac{2x}{(x^2+1)^2}$. <span class="small">(Đúng)</span></div><div class="statement"><b>B.</b> $g&#x27;(0)=1$. <span class="small">(Sai)</span></div><div class="statement"><b>C.</b> $g&#x27;&#x27;(0)=-2$. <span class="small">(Đúng)</span></div><div class="statement"><b>D.</b> $g&#x27;&#x27;(x)=\dfrac{6x^2-2}{(x^2+1)^3}$. <span class="small">(Đúng)</span></div></div>
+              <div class="answer">Đáp án đúng/sai đã ghi cạnh từng mệnh đề để review nhanh.</div>
+              <div class="solution">Ta có $g&#x27;(x)=-(x^2+1)^{-2}\cdot 2x=-\dfrac{2x}{(x^2+1)^2}$ nên $g&#x27;(0)=0$. Lấy tiếp đạo hàm, được $g&#x27;&#x27;(x)=\dfrac{6x^2-2}{(x^2+1)^3}$, do đó $g&#x27;&#x27;(0)=-2$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 8</strong><span class="tag">short_answer · Vận dụng</span></div>
+              <p>Tính giá trị đạo hàm của hàm số $y=(3x^2-2x+1)(x-4)$ tại $x=2$.</p>
+              
+              <div class="answer">Đáp án số: -1</div>
+              <div class="solution">Dùng quy tắc tích: $y&#x27;=(6x-2)(x-4)+(3x^2-2x+1)$. Tại $x=2$: $y&#x27;(2)=(12-2)(-2)+(12-4+1)=-20+9=-1$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 9</strong><span class="tag">short_answer · Vận dụng</span></div>
+              <p>Cho hàm số $y=(2x+1)^5$. Tính giá trị của $y&#x27;$ tại $x=0$.</p>
+              
+              <div class="answer">Đáp án số: 10</div>
+              <div class="solution">Dùng quy tắc đạo hàm hàm hợp: $y&#x27;=5(2x+1)^4\cdot 2=10(2x+1)^4$. Tại $x=0$: $y&#x27;(0)=10$.</div>
+            </article>
+            
+
+            <article class="exercise">
+              <div class="exercise-title"><strong>Câu 10</strong><span class="tag">short_answer · Vận dụng</span></div>
+              <p>Cho hàm số $y=x^3-3x^2+2x$. Tính giá trị của đạo hàm cấp hai $y&#x27;&#x27;$ tại $x=1$.</p>
+              
+              <div class="answer">Đáp án số: 0</div>
+              <div class="solution">Ta có $y&#x27;=3x^2-6x+2$, suy ra $y&#x27;&#x27;=6x-6$. Tại $x=1$: $y&#x27;&#x27;(1)=6-6=0$.</div>
+            </article>
+            
+    </section>
+  </main>
+  <script>
+    const markdown = "## 1. Tóm tắt 30 giây\nBài này giúp tính nhanh đạo hàm của tổng, tích, thương, hàm hợp và đạo hàm cấp hai.  \nKhi làm trắc nghiệm, cần nhìn dạng biểu thức để chọn đúng quy tắc trước, rồi rút gọn cẩn thận.\n\n## 2. Công thức cần nhớ\n| Công thức | Dùng khi | Cần nhớ |\n|---|---|---|\n| $(u\\pm v)'=u'\\pm v'$ | Tổng, hiệu | Lấy đạo hàm từng phần |\n| $(uv)'=u'v+uv'$ | Tích hai hàm | Không nhân đạo hàm trực tiếp |\n| $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$ | Thương | $v\\ne 0$ |\n| $(f(g(x)))'=f'(g(x))\\cdot g'(x)$ | Hàm hợp | Đạo hàm ngoài, giữ trong |\n| $y''=(y')'$ | Đạo hàm cấp hai | Đạo hàm thêm lần nữa |\n\n## 3. Khi nào dùng?\n- Có ngoặc kiểu $(3x^2+1)^5$, $\\sin(2x)$: nghĩ đến **hàm hợp**.\n- Có dấu nhân giữa hai biểu thức chứa $x$: dùng **quy tắc tích**.\n- Có phân thức chứa $x$ ở tử và mẫu: dùng **quy tắc thương**.\n- Đề hỏi gia tốc, độ cong, chiều biến thiên nhanh chậm: thường cần **$y''$**.\n- Sau khi có $y'$, nếu đề hỏi tiếp “đạo hàm cấp hai” thì lấy đạo hàm thêm lần nữa.\n\n## 4. Ví dụ mẫu cực ngắn\nTính $y'$ với $y=(2x-1)^3$.\n\n- Vì đề cho hàm có dạng lũy thừa của biểu thức, ta dùng **đạo hàm hàm hợp**.\n- Đặt $u=2x-1$, khi đó $y=u^3 \\Rightarrow y'=3u^2\\cdot u'$.\n- Suy ra $u'=2$, nên $y'=3(2x-1)^2\\cdot 2=6(2x-1)^2$.\n\n## 5. Lỗi sai hay gặp\n- Sai: $(uv)'=u'v'$ -> Đúng: $(uv)'=u'v+uv'$.\n- Sai: $[(g(x))^n]'=n(g(x))^{n-1}$ -> Đúng: phải nhân thêm $g'(x)$.\n- Sai: $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'}{v'}$ -> Đúng: dùng quy tắc thương.\n- Sai: $y''=(y)^2$ -> Đúng: $y''=(y')'$, là đạo hàm lần hai.";
+    marked.setOptions({ gfm: true, breaks: true });
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+    if (window.MathJax) window.MathJax.typesetPromise();
+  </script>
+</body>
+</html>

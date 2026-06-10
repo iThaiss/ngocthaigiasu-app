@@ -1,0 +1,547 @@
+{
+  "words": [
+    {
+      "word": "account for",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "giải thích, làm rõ lý do; chiếm một tỷ lệ nào đó",
+      "definition_en": "to explain or give a reason for something; to represent a particular amount or percentage",
+      "level": "B2",
+      "synonyms": [
+        "explain",
+        "constitute",
+        "represent"
+      ],
+      "antonyms": [],
+      "example_sentence": "The study failed to account for the impact of social media on teenagers' mental health."
+    },
+    {
+      "word": "result from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xảy ra do, là hậu quả của (thường dùng ở dạng bị động)",
+      "definition_en": "to happen or occur as a consequence of something",
+      "level": "B2",
+      "synonyms": [
+        "stem from",
+        "arise from",
+        "come from"
+      ],
+      "antonyms": [],
+      "example_sentence": "The economic crisis resulted from years of poor financial management and corruption."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "bắt nguồn từ, có gốc rễ từ (nguyên nhân sâu xa)",
+      "definition_en": "to originate or have its source in something; to be caused by",
+      "level": "B2",
+      "synonyms": [
+        "result from",
+        "arise from",
+        "originate from"
+      ],
+      "antonyms": [],
+      "example_sentence": "Many environmental problems stem from industrial pollution and deforestation over decades."
+    },
+    {
+      "word": "bring about",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "gây ra, tạo ra, dẫn đến (thay đổi, sự kiện)",
+      "definition_en": "to cause something to happen; to produce a result or change",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "create",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "avoid"
+      ],
+      "example_sentence": "Technological innovation has brought about significant changes in how we communicate globally."
+    },
+    {
+      "word": "point out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "chỉ ra, nhấn mạnh, lưu ý (một sự thật hoặc vấn đề)",
+      "definition_en": "to indicate or draw attention to something; to mention something important",
+      "level": "B1",
+      "synonyms": [
+        "indicate",
+        "highlight",
+        "mention"
+      ],
+      "antonyms": [
+        "overlook",
+        "ignore"
+      ],
+      "example_sentence": "The researcher pointed out that the data contradicted the initial hypothesis."
+    },
+    {
+      "word": "carry out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thực hiện, tiến hành (một kế hoạch, thí nghiệm, nhiệm vụ)",
+      "definition_en": "to perform or complete a task, plan, or experiment",
+      "level": "B1",
+      "synonyms": [
+        "conduct",
+        "perform",
+        "execute"
+      ],
+      "antonyms": [
+        "abandon",
+        "neglect"
+      ],
+      "example_sentence": "Scientists carried out a comprehensive study to examine the effects of climate change."
+    },
+    {
+      "word": "set up",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "thành lập, lập nên, sắp xếp (một tổ chức, hệ thống, thí nghiệm)",
+      "definition_en": "to establish or create something new; to arrange or prepare",
+      "level": "B1",
+      "synonyms": [
+        "establish",
+        "create",
+        "arrange"
+      ],
+      "antonyms": [
+        "dismantle",
+        "close down"
+      ],
+      "example_sentence": "The university set up a new research center to investigate renewable energy solutions."
+    },
+    {
+      "word": "break down",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phân tích chi tiết, chia nhỏ; hỏng hóc, suy sụp",
+      "definition_en": "to separate into components; to analyze in detail; to stop functioning",
+      "level": "B2",
+      "synonyms": [
+        "analyze",
+        "decompose",
+        "fail"
+      ],
+      "antonyms": [
+        "combine",
+        "assemble"
+      ],
+      "example_sentence": "The report breaks down the budget into different categories for better understanding."
+    },
+    {
+      "word": "take into account",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "tính đến, xem xét, cân nhắc (một yếu tố nào đó)",
+      "definition_en": "to consider or include something in your thinking or planning",
+      "level": "B2",
+      "synonyms": [
+        "consider",
+        "account for",
+        "factor in"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "When designing the policy, the government must take into account the needs of vulnerable populations."
+    },
+    {
+      "word": "lead to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "dẫn đến, gây ra (kết quả, hậu quả)",
+      "definition_en": "to cause something to happen as a result; to result in",
+      "level": "B1",
+      "synonyms": [
+        "result in",
+        "cause",
+        "bring about"
+      ],
+      "antonyms": [
+        "prevent",
+        "hinder"
+      ],
+      "example_sentence": "Poor diet and lack of exercise lead to serious health problems in many developed countries."
+    },
+    {
+      "word": "come down to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "quy về, về cơ bản là (một vấn đề cốt lõi)",
+      "definition_en": "to be essentially or fundamentally about something; to reduce to",
+      "level": "B2",
+      "synonyms": [
+        "boil down to",
+        "amount to",
+        "reduce to"
+      ],
+      "antonyms": [],
+      "example_sentence": "The success of the project comes down to effective teamwork and clear communication."
+    },
+    {
+      "word": "rule out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "loại trừ, không xem xét (một khả năng, giả thuyết)",
+      "definition_en": "to eliminate or exclude something from consideration",
+      "level": "B2",
+      "synonyms": [
+        "exclude",
+        "eliminate",
+        "dismiss"
+      ],
+      "antonyms": [
+        "include",
+        "consider"
+      ],
+      "example_sentence": "The evidence does not rule out the possibility that external factors influenced the outcome."
+    },
+    {
+      "word": "bring in",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "đưa vào, giới thiệu (một ý tưởng, người chuyên gia)",
+      "definition_en": "to introduce or include something new; to earn or generate income",
+      "level": "B2",
+      "synonyms": [
+        "introduce",
+        "include",
+        "earn"
+      ],
+      "antonyms": [
+        "exclude",
+        "remove"
+      ],
+      "example_sentence": "The company decided to bring in external consultants to improve their business strategy."
+    },
+    {
+      "word": "draw on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "sử dụng, tận dụng (kinh nghiệm, kiến thức, tài nguyên)",
+      "definition_en": "to use or utilize something available; to rely on",
+      "level": "B2",
+      "synonyms": [
+        "use",
+        "utilize",
+        "rely on"
+      ],
+      "antonyms": [
+        "ignore",
+        "neglect"
+      ],
+      "example_sentence": "The author draws on her personal experience to create authentic characters in the novel."
+    },
+    {
+      "word": "focus on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "tập trung vào, chú ý đến (một vấn đề, lĩnh vực cụ thể)",
+      "definition_en": "to concentrate attention or effort on something specific",
+      "level": "B1",
+      "synonyms": [
+        "concentrate on",
+        "emphasize",
+        "highlight"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The research focuses on understanding how climate change affects agricultural productivity."
+    },
+    {
+      "word": "look into",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "điều tra, tìm hiểu, xem xét kỹ (một vấn đề)",
+      "definition_en": "to investigate or examine something carefully",
+      "level": "B2",
+      "synonyms": [
+        "investigate",
+        "examine",
+        "inquire"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "The committee will look into the allegations of fraud in the financial department."
+    },
+    {
+      "word": "turn out",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "hóa ra, kết quả là (một sự kiện, kết quả bất ngờ)",
+      "definition_en": "to happen or result in a particular way; to prove to be",
+      "level": "B2",
+      "synonyms": [
+        "prove to be",
+        "happen to be",
+        "result"
+      ],
+      "antonyms": [],
+      "example_sentence": "The experiment turned out to be more successful than the researchers had anticipated."
+    },
+    {
+      "word": "give rise to",
+      "pronunciation": "",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, tạo ra, dẫn đến (một vấn đề, hiện tượng)",
+      "definition_en": "to cause or produce something; to be the origin of",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "create",
+        "produce"
+      ],
+      "antonyms": [
+        "prevent",
+        "eliminate"
+      ],
+      "example_sentence": "The rapid urbanization gave rise to numerous environmental and social challenges."
+    },
+    {
+      "word": "relate to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "liên quan đến, có mối liên hệ với; hiểu được, cảm thông",
+      "definition_en": "to have a connection with something; to understand or empathize",
+      "level": "B2",
+      "synonyms": [
+        "connect to",
+        "concern",
+        "understand"
+      ],
+      "antonyms": [
+        "disconnect",
+        "separate"
+      ],
+      "example_sentence": "The study relates to previous research on the impact of social inequality on health outcomes."
+    },
+    {
+      "word": "contribute to",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "góp phần vào, đóng góp cho (một kết quả, sự phát triển)",
+      "definition_en": "to help cause or produce something; to add to",
+      "level": "B1",
+      "synonyms": [
+        "add to",
+        "help cause",
+        "aid"
+      ],
+      "antonyms": [
+        "hinder",
+        "obstruct"
+      ],
+      "example_sentence": "Multiple factors contribute to the rising rates of mental health disorders among young adults."
+    },
+    {
+      "word": "deal with",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xử lý, giải quyết (một vấn đề, tình huống); liên quan đến",
+      "definition_en": "to handle or manage something; to address or tackle",
+      "level": "B1",
+      "synonyms": [
+        "handle",
+        "manage",
+        "address"
+      ],
+      "antonyms": [
+        "ignore",
+        "avoid"
+      ],
+      "example_sentence": "The government must deal with the issue of unemployment through comprehensive economic reforms."
+    },
+    {
+      "word": "depend on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "phụ thuộc vào, tùy thuộc vào (một điều kiện, yếu tố)",
+      "definition_en": "to rely on; to be determined by",
+      "level": "B1",
+      "synonyms": [
+        "rely on",
+        "hinge on",
+        "be contingent on"
+      ],
+      "antonyms": [
+        "be independent of"
+      ],
+      "example_sentence": "The success of the project depends on securing adequate funding and skilled personnel."
+    },
+    {
+      "word": "build on",
+      "pronunciation": "",
+      "part_of_speech": "phrasal_verb",
+      "definition_vi": "xây dựng dựa trên, phát triển từ (một nền tảng, kết quả trước)",
+      "definition_en": "to develop or improve something using a previous achievement as a base",
+      "level": "B2",
+      "synonyms": [
+        "develop",
+        "expand",
+        "improve"
+      ],
+      "antonyms": [
+        "abandon",
+        "discard"
+      ],
+      "example_sentence": "The new policy builds on the success of previous initiatives to promote sustainable development."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The study failed to _______ the impact of cultural differences on consumer behavior in different markets.",
+      "option_a": "account for",
+      "option_b": "result from",
+      "option_c": "point out",
+      "option_d": "bring about",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Account for\" có nghĩa là giải thích, làm rõ lý do. Câu nói rằng nghiên cứu không giải thích được tác động của sự khác biệt văn hóa. \"Result from\" (xảy ra do), \"point out\" (chỉ ra), \"bring about\" (gây ra) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Many serious health problems _______ from prolonged exposure to air pollution in industrial areas.",
+      "option_a": "bring about",
+      "option_b": "result from",
+      "option_c": "account for",
+      "option_d": "point out",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Result from\" (xảy ra do, là hậu quả của) là cụm đúng để diễn tả nguyên nhân của các vấn đề sức khỏe. \"Bring about\" (gây ra) có thể dùng nhưng \"result from\" tự nhiên hơn trong bối cảnh này. \"Account for\" và \"point out\" không phù hợp."
+    },
+    {
+      "question_text": "The economic inequality in the country _______ from decades of unfair distribution of resources and opportunities.",
+      "option_a": "brings about",
+      "option_b": "accounts for",
+      "option_c": "stems from",
+      "option_d": "points out",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Stem from\" (bắt nguồn từ, có gốc rễ từ) diễn tả nguyên nhân sâu xa và lâu dài. \"Result from\" cũng có thể dùng nhưng \"stem from\" nhấn mạnh hơn gốc rễ lịch sử. \"Bring about\" và \"account for\" không phù hợp."
+    },
+    {
+      "question_text": "The technological revolution has _______ significant changes in the way people work and communicate.",
+      "option_a": "pointed out",
+      "option_b": "brought about",
+      "option_c": "stemmed from",
+      "option_d": "resulted from",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "\"Bring about\" (gây ra, tạo ra) là cụm chính xác để nói về việc tạo ra những thay đổi. \"Stem from\" và \"result from\" diễn tả nguyên nhân, không phù hợp. \"Point out\" (chỉ ra) không thích hợp."
+    },
+    {
+      "question_text": "The researcher _______ that the data contradicted the original hypothesis, which surprised many colleagues.",
+      "option_a": "brought about",
+      "option_b": "accounted for",
+      "option_c": "pointed out",
+      "option_d": "carried out",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "\"Point out\" (chỉ ra, nhấn mạnh) là cụm đúng để nói về việc nhận xét một sự thật quan trọng. \"Brought about\" (gây ra), \"accounted for\" (giải thích), \"carried out\" (thực hiện) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "The scientists _______ a comprehensive experiment to test the effectiveness of the new treatment method.",
+      "option_a": "carried out",
+      "option_b": "pointed out",
+      "option_c": "accounted for",
+      "option_d": "stemmed from",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "\"Carry out\" (thực hiện, tiến hành) là cụm chính xác để nói về việc tiến hành một thí nghiệm. \"Pointed out\" (chỉ ra), \"accounted for\" (giải thích), \"stemmed from\" (bắt nguồn từ) không phù hợp."
+    },
+    {
+      "question_text": "The university _______ a new research center dedicated to studying climate change and its environmental impacts.",
+      "option_a": "pointed out",
+      "option_b": "set up",
+      "option_c": "brought about",
+      "option_d": "accounted for",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Set up\" (thành lập, lập nên) là cụm đúng để nói về việc thành lập một trung tâm nghiên cứu. \"Brought about\" (gây ra), \"pointed out\" (chỉ ra), \"accounted for\" (giải thích) không phù hợp."
+    },
+    {
+      "question_text": "The report _______ the budget into different categories, making it easier for stakeholders to understand the allocation.",
+      "option_a": "breaks down",
+      "option_b": "brings in",
+      "option_c": "rules out",
+      "option_d": "turns out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Break down\" (phân tích chi tiết, chia nhỏ) là cụm đúng để nói về việc chia nhỏ ngân sách thành các danh mục. \"Brings in\" (đưa vào), \"rules out\" (loại trừ), \"turns out\" (hóa ra) không phù hợp."
+    },
+    {
+      "question_text": "When designing public health policies, officials must _______ the needs of elderly and vulnerable populations.",
+      "option_a": "bring about",
+      "option_b": "take into account",
+      "option_c": "point out",
+      "option_d": "rule out",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Take into account\" (tính đến, xem xét) là cụm đúng để nói về việc cân nhắc các nhu cầu. \"Bring about\" (gây ra), \"point out\" (chỉ ra), \"rule out\" (loại trừ) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Excessive screen time and sedentary lifestyle _______ to increasing rates of obesity and mental health issues in teenagers.",
+      "option_a": "lead to",
+      "option_b": "come down to",
+      "option_c": "draw on",
+      "option_d": "relate to",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "basic",
+      "explanation": "\"Lead to\" (dẫn đến, gây ra) là cụm chính xác để nói về nguyên nhân của các vấn đề sức khỏe. \"Come down to\" (quy về), \"draw on\" (sử dụng), \"relate to\" (liên quan đến) không phù hợp."
+    },
+    {
+      "question_text": "The success of the project ultimately _______ effective communication between team members and clear project management.",
+      "option_a": "brings in",
+      "option_b": "comes down to",
+      "option_c": "rules out",
+      "option_d": "focuses on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "\"Come down to\" (về cơ bản là, quy về) là cụm đúng để nói về vấn đề cốt lõi của thành công. \"Brings in\" (đưa vào), \"rules out\" (loại trừ), \"focuses on\" (tập trung vào) không phù hợp."
+    },
+    {
+      "question_text": "The evidence does not _______ the possibility that external economic factors influenced the company's financial performance.",
+      "option_a": "bring in",
+      "option_b": "rule out",
+      "option_c": "turn out",
+      "option_d": "draw on",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "\"Rule out\" (loại trừ) là cụm đúng trong câu phủ định để nói rằng không loại trừ một khả năng. \"Bring in\" (đưa vào), \"turn out\" (hóa ra), \"draw on\" (sử dụng) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Which phrasal verb best completes this sentence? \"The government _______ external experts to develop a comprehensive strategy for economic recovery.\"",
+      "option_a": "brought in",
+      "option_b": "ruled out",
+      "option_c": "looked into",
+      "option_d": "dealt with",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "\"Bring in\" (đưa vào, giới thiệu) là cụm đúng để nói về việc mời các chuyên gia tham gia. \"Ruled out\" (loại trừ), \"looked into\" (điều tra), \"dealt with\" (xử lý) không phù hợp ngữ cảnh."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+```json
+{
+  "words": [
+    {
+      "word": "confound",
+      "pronunciation": "/kənˈfaʊnd/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm phức tạp, gây nhầm lẫn; làm cho một yếu tố khác không thể tách rời khỏi yếu tố đang nghiên cứu",
+      "definition_en": "to make something more difficult to understand or deal with; to mix up or obscure the effect of one variable with another",
+      "level": "C1",
+      "synonyms": ["complicate", "obscure", "muddy"],
+      "antonyms": ["clarify", "isolate"],
+      "example_sentence": "Age and education level confound the relationship between income and health outcomes in this observational study."
+    },
+    {
+      "word": "spurious correlation",
+      "pronunciation": "/ˈspjʊəriəs kɒrəˈleɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mối tương quan giả tạo; sự liên hệ thống kê giữa hai biến mà không có mối quan hệ nhân quả thực sự",
+      "definition_en": "a statistical relationship between two variables that appears to exist but is not causally meaningful",
+      "level": "C1",
+      "synonyms": ["false correlation", "illusory relationship"],
+      "antonyms": ["causal relationship", "genuine correlation"],
+      "example_sentence": "The researchers warned that the strong spurious correlation between ice cream sales and drowning deaths was driven by seasonal temperature."
+    },
+    {
+      "word": "operationalize",
+      "pronunciation": "/ˌɒpəˈreɪʃənəlaɪz/",
+      "part_of_speech": "verb",
+      "definition_vi": "định nghĩa một khái niệm trừu tượng thành các biến đo lường cụ thể; chuyển đổi thành hành động thực tế",
+      "definition_en": "to define a theoretical concept in terms of concrete, measurable procedures or variables",
+      "level": "C1",
+      "synonyms": ["define", "specify", "translate"],
+      "antonyms": ["abstract", "theorize"],
+      "example_sentence": "The team had to operationalize 'academic stress' by measuring cortisol levels, sleep duration, and exam performance."
+    },
+    {
+      "word": "attrition",
+      "pronunciation": "/əˈtrɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "sự mất dần; tỷ lệ người tham gia rời khỏi một nghiên cứu trước khi kết thúc",
+      "definition_en": "the gradual reduction in the number of research participants over the course of a study",
+      "level": "B2",
+      "synonyms": ["dropout", "loss to follow-up", "participant loss"],
+      "antonyms": ["retention", "completion"],
+      "example_sentence": "High attrition rates in the longitudinal cohort study threatened the validity of the final results."
+    },
+    {
+      "word": "proxy variable",
+      "pronunciation": "/ˈprɒksi ˈveəriəbl/",
+      "part_of_speech": "phrase",
+      "definition_vi": "biến thay thế; một biến dễ đo lường được sử dụng để đại diện cho một khái niệm khó đo trực tiếp",
+      "definition_en": "a measurable variable used to represent an unmeasurable or difficult-to-measure concept",
+      "level": "C1",
+      "synonyms": ["surrogate variable", "indicator"],
+      "antonyms": ["direct measure", "primary variable"],
+      "example_sentence": "Researchers used household income as a proxy variable for socioeconomic status in the epidemiological survey."
+    },
+    {
+      "word": "heterogeneous",
+      "pronunciation": "/ˌhetərəˈdʒiːniəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không đồng nhất; gồm các phần tử khác nhau về chất lượng hoặc đặc tính",
+      "definition_en": "composed of different types or elements; not uniform in composition or character",
+      "level": "C1",
+      "synonyms": ["diverse", "mixed", "varied"],
+      "antonyms": ["homogeneous", "uniform"],
+      "example_sentence": "The heterogeneous sample included participants from different socioeconomic backgrounds, age groups, and educational levels."
+    },
+    {
+      "word": "benchmark",
+      "pronunciation": "/ˈbentʃmɑːrk/",
+      "part_of_speech": "noun",
+      "definition_vi": "tiêu chuẩn so sánh; một điểm tham chiếu hoặc chuẩn mực dùng để đánh giá hiệu suất",
+      "definition_en": "a standard or point of reference against which something can be measured or compared",
+      "level": "B2",
+      "synonyms": ["standard", "criterion", "reference point"],
+      "antonyms": ["anomaly", "outlier"],
+      "example_sentence": "The laboratory established benchmarks for acceptable error rates before conducting the clinical trial."
+    },
+    {
+      "word": "robust",
+      "pronunciation": "/rəʊˈbʌst/",
+      "part_of_speech": "adjective",
+      "definition_vi": "mạnh mẽ, vững chắc; (trong nghiên cứu) kết quả không bị ảnh hưởng bởi những thay đổi nhỏ trong phương pháp",
+      "definition_en": "strong and not easily affected by changes in conditions; producing consistent results across different methods or samples",
+      "level": "B2",
+      "synonyms": ["strong", "solid", "reliable"],
+      "antonyms": ["fragile", "weak", "unstable"],
+      "example_sentence": "The findings were robust across multiple statistical models and remained significant even after adjusting for potential confounders."
+    },
+    {
+      "word": "stratified sampling",
+      "pronunciation": "/ˈstrætɪfaɪd ˈsɑːmplɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "lấy mẫu phân tầng; phương pháp chia dân số thành các nhóm con và lấy mẫu từ mỗi nhóm",
+      "definition_en": "a sampling technique in which the population is divided into subgroups and samples are drawn from each stratum",
+      "level": "C1",
+      "synonyms": ["stratified random sampling", "quota sampling"],
+      "antonyms": ["simple random sampling", "convenience sampling"],
+      "example_sentence": "The researchers used stratified sampling to ensure equal representation of males and females across all age groups."
+    },
+    {
+      "word": "incidental finding",
+      "pronunciation": "/ɪnˈsɪdəntəl ˈfaɪndɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "phát hiện tình cờ; một kết quả hoặc quan sát không được lên kế hoạch nhưng được phát hiện trong quá trình nghiên cứu",
+      "definition_en": "an unexpected discovery or observation made during a study that was not the primary focus of the research",
+      "level": "C1",
+      "synonyms": ["serendipitous discovery", "unexpected result"],
+      "antonyms": ["primary outcome", "planned result"],
+      "example_sentence": "An incidental finding of elevated liver enzymes in the control group prompted the researchers to conduct additional safety analyses."
+    }
+  ],
+  "questions": []
+}
+```

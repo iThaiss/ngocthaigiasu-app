@@ -1,0 +1,454 @@
+{
+  "words": [
+    {
+      "word": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "gây ra, dẫn đến (một kết quả, hiện tượng); làm phát sinh",
+      "definition_en": "to cause or produce something as a result",
+      "level": "B2",
+      "synonyms": [
+        "cause",
+        "lead to",
+        "trigger"
+      ],
+      "antonyms": [
+        "prevent",
+        "avert"
+      ],
+      "example_sentence": "The rapid urbanization has given rise to serious environmental concerns in developing nations."
+    },
+    {
+      "word": "in light of",
+      "pronunciation": "/ɪn laɪt əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xét đến, dựa trên (thông tin, sự kiện mới); với sự hiểu biết về",
+      "definition_en": "considering or taking into account new information or circumstances",
+      "level": "B2",
+      "synonyms": [
+        "considering",
+        "given",
+        "in view of"
+      ],
+      "antonyms": [
+        "ignoring",
+        "disregarding"
+      ],
+      "example_sentence": "In light of recent scientific findings, the government has revised its climate policy framework."
+    },
+    {
+      "word": "bring to bear",
+      "pronunciation": "/brɪŋ tu bɛr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "áp dụng, sử dụng (kỹ năng, ảnh hưởng, tài nguyên) để đạt mục đích",
+      "definition_en": "to apply or use something effectively to achieve a purpose",
+      "level": "C1",
+      "synonyms": [
+        "apply",
+        "deploy",
+        "utilize"
+      ],
+      "antonyms": [
+        "withhold",
+        "neglect"
+      ],
+      "example_sentence": "Researchers brought their expertise to bear on solving the complex problem of antibiotic resistance."
+    },
+    {
+      "word": "at odds with",
+      "pronunciation": "/æt ɑdz wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mâu thuẫn với, không phù hợp với; bất đồng với",
+      "definition_en": "in disagreement or conflict with something or someone",
+      "level": "B2",
+      "synonyms": [
+        "in conflict with",
+        "contrary to",
+        "inconsistent with"
+      ],
+      "antonyms": [
+        "in agreement with",
+        "consistent with"
+      ],
+      "example_sentence": "The company's profit-driven strategy is at odds with its stated commitment to environmental sustainability."
+    },
+    {
+      "word": "pave the way for",
+      "pronunciation": "/peɪv ðə weɪ fɔr/",
+      "part_of_speech": "phrase",
+      "definition_vi": "mở đường cho, tạo điều kiện thuận lợi cho (sự phát triển, thay đổi)",
+      "definition_en": "to make it possible or easier for something to happen in the future",
+      "level": "B2",
+      "synonyms": [
+        "facilitate",
+        "enable",
+        "prepare the ground for"
+      ],
+      "antonyms": [
+        "obstruct",
+        "hinder"
+      ],
+      "example_sentence": "The discovery of penicillin paved the way for the development of modern antibiotics."
+    },
+    {
+      "word": "in the long run",
+      "pronunciation": "/ɪn ðə lɔŋ rʌn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "về lâu dài, cuối cùng; xét trên phương diện dài hạn",
+      "definition_en": "over a long period of time; considering the final result or outcome",
+      "level": "B2",
+      "synonyms": [
+        "eventually",
+        "ultimately",
+        "in the end"
+      ],
+      "antonyms": [
+        "in the short term",
+        "immediately"
+      ],
+      "example_sentence": "Although renewable energy requires significant initial investment, it will prove more economical in the long run."
+    },
+    {
+      "word": "stem from",
+      "pronunciation": "/stem frʌm/",
+      "part_of_speech": "phrase",
+      "definition_vi": "xuất phát từ, bắt nguồn từ; có gốc rễ từ",
+      "definition_en": "to originate from or be caused by something",
+      "level": "B2",
+      "synonyms": [
+        "originate from",
+        "arise from",
+        "result from"
+      ],
+      "antonyms": [
+        "lead to",
+        "cause"
+      ],
+      "example_sentence": "Many social problems stem from inadequate access to quality education and healthcare."
+    },
+    {
+      "word": "be conducive to",
+      "pronunciation": "/bi kənˈduːsɪv tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thuận lợi cho, tạo điều kiện cho; có lợi cho",
+      "definition_en": "to create favorable conditions for something to happen or develop",
+      "level": "C1",
+      "synonyms": [
+        "favorable to",
+        "beneficial to",
+        "promoting"
+      ],
+      "antonyms": [
+        "detrimental to",
+        "harmful to"
+      ],
+      "example_sentence": "A collaborative work environment is conducive to innovation and creative problem-solving."
+    },
+    {
+      "word": "in the wake of",
+      "pronunciation": "/ɪn ðə weɪk əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "sau, theo sau (một sự kiện); do kết quả của",
+      "definition_en": "as a consequence of something; following immediately after an event",
+      "level": "C1",
+      "synonyms": [
+        "following",
+        "as a result of",
+        "in the aftermath of"
+      ],
+      "antonyms": [
+        "before",
+        "preceding"
+      ],
+      "example_sentence": "In the wake of the financial crisis, governments implemented stricter regulations on banking institutions."
+    },
+    {
+      "word": "be at stake",
+      "pronunciation": "/bi æt steɪk/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bị đe dọa, có nguy cơ mất; ở trên cái cân",
+      "definition_en": "to be in a situation where something important could be lost or damaged",
+      "level": "B2",
+      "synonyms": [
+        "be in danger",
+        "be at risk",
+        "be in jeopardy"
+      ],
+      "antonyms": [
+        "be secure",
+        "be safe"
+      ],
+      "example_sentence": "With climate change accelerating, the future of entire ecosystems is at stake."
+    },
+    {
+      "word": "go hand in hand with",
+      "pronunciation": "/ɡoʊ hænd ɪn hænd wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đi kèm với, liên quan chặt chẽ với; không thể tách rời",
+      "definition_en": "to be closely connected or associated with something else",
+      "level": "B2",
+      "synonyms": [
+        "be linked with",
+        "be associated with",
+        "accompany"
+      ],
+      "antonyms": [
+        "be separate from",
+        "be independent of"
+      ],
+      "example_sentence": "Economic development and environmental protection must go hand in hand with sustainable practices."
+    },
+    {
+      "word": "cast doubt on",
+      "pronunciation": "/kæst daʊt ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm nghi ngờ, gây hoài nghi về; đặt câu hỏi về tính xác thực",
+      "definition_en": "to make someone uncertain about the truth or reliability of something",
+      "level": "C1",
+      "synonyms": [
+        "question",
+        "challenge",
+        "undermine"
+      ],
+      "antonyms": [
+        "confirm",
+        "validate"
+      ],
+      "example_sentence": "Recent studies have cast doubt on the effectiveness of traditional marketing strategies in digital markets."
+    },
+    {
+      "word": "hold sway over",
+      "pronunciation": "/hoʊld sweɪ ˈoʊvər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "có ảnh hưởng lớn đến, kiểm soát; có quyền lực trên",
+      "definition_en": "to have significant influence or control over something or someone",
+      "level": "C1",
+      "synonyms": [
+        "have influence over",
+        "control",
+        "dominate"
+      ],
+      "antonyms": [
+        "have no influence",
+        "be powerless"
+      ],
+      "example_sentence": "Social media platforms hold considerable sway over public opinion and consumer behavior."
+    },
+    {
+      "word": "be fraught with",
+      "pronunciation": "/bi frɔt wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đầy rẫy, tràn ngập (những vấn đề, nguy hiểm); chứa đầy",
+      "definition_en": "to be full of or accompanied by something undesirable or dangerous",
+      "level": "C1",
+      "synonyms": [
+        "be full of",
+        "be laden with",
+        "be rife with"
+      ],
+      "antonyms": [
+        "be free from",
+        "be devoid of"
+      ],
+      "example_sentence": "The process of implementing large-scale technological change is fraught with unforeseen challenges."
+    },
+    {
+      "word": "be incumbent upon",
+      "pronunciation": "/bi ɪnˈkʌmbənt əˈpɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "là trách nhiệm của, phải làm (theo pháp luật hoặc đạo đức); là bổn phận",
+      "definition_en": "to be the responsibility or duty of someone to do something",
+      "level": "C1",
+      "synonyms": [
+        "be the duty of",
+        "be obligatory for",
+        "be required of"
+      ],
+      "antonyms": [
+        "be optional for",
+        "be voluntary"
+      ],
+      "example_sentence": "It is incumbent upon educational institutions to prepare students for the demands of a rapidly changing workforce."
+    },
+    {
+      "word": "gain traction",
+      "pronunciation": "/ɡeɪn ˈtrækʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "được chấp nhận rộng rãi, phát triển mạnh; có sức hút ngày càng tăng",
+      "definition_en": "to become increasingly popular, accepted, or influential",
+      "level": "B2",
+      "synonyms": [
+        "gain momentum",
+        "become popular",
+        "catch on"
+      ],
+      "antonyms": [
+        "lose ground",
+        "decline"
+      ],
+      "example_sentence": "The concept of circular economy has gained significant traction among businesses seeking sustainable practices."
+    },
+    {
+      "word": "be prone to",
+      "pronunciation": "/bi proʊn tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dễ bị, có xu hướng; dễ mắc phải",
+      "definition_en": "to have a tendency to experience or suffer from something undesirable",
+      "level": "B2",
+      "synonyms": [
+        "be susceptible to",
+        "be inclined to",
+        "tend to"
+      ],
+      "antonyms": [
+        "be resistant to",
+        "be immune to"
+      ],
+      "example_sentence": "Adolescents are particularly prone to peer pressure and may struggle with self-esteem issues."
+    },
+    {
+      "word": "be tantamount to",
+      "pronunciation": "/bi ˈtæntəmaʊnt tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tương đương với, cũng như là; ngang bằng với",
+      "definition_en": "to be equivalent to or have the same effect as something else",
+      "level": "C1",
+      "synonyms": [
+        "be equivalent to",
+        "amount to",
+        "be the same as"
+      ],
+      "antonyms": [
+        "be different from",
+        "be distinct from"
+      ],
+      "example_sentence": "Ignoring scientific evidence on climate change is tantamount to abandoning our responsibility to future generations."
+    },
+    {
+      "word": "be rife with",
+      "pronunciation": "/bi raɪf wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tràn ngập, đầy rẫy; phổ biến, lan rộng",
+      "definition_en": "to be widespread or abundant with something, usually something negative",
+      "level": "C1",
+      "synonyms": [
+        "be full of",
+        "be fraught with",
+        "abound in"
+      ],
+      "antonyms": [
+        "be free from",
+        "lack"
+      ],
+      "example_sentence": "The early internet was rife with misinformation, making it difficult for users to distinguish fact from fiction."
+    },
+    {
+      "word": "be pivotal to",
+      "pronunciation": "/bi ˈpɪvətəl tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "là then chốt, rất quan trọng đối với; quyết định sự thành công của",
+      "definition_en": "to be crucial or essential to the success or development of something",
+      "level": "C1",
+      "synonyms": [
+        "be crucial to",
+        "be essential to",
+        "be vital to"
+      ],
+      "antonyms": [
+        "be irrelevant to",
+        "be insignificant to"
+      ],
+      "example_sentence": "Critical thinking skills are pivotal to academic success and professional advancement in the modern economy."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The discovery of new energy sources has _____ the way for a transition away from fossil fuels.",
+      "option_a": "paved",
+      "option_b": "laid",
+      "option_c": "built",
+      "option_d": "opened",
+      "correct_answer": "A",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án đúng là 'paved'. Cụm 'pave the way for' có nghĩa là 'mở đường cho, tạo điều kiện thuận lợi cho'. Các đáp án khác không tạo thành collocation chính xác trong ngữ cảnh này."
+    },
+    {
+      "question_text": "The government's decision to increase taxes is _____ with the public's expectation of lower living costs.",
+      "option_a": "in conflict",
+      "option_b": "at odds",
+      "option_c": "in disagreement",
+      "option_d": "in opposition",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án đúng là 'at odds'. Cụm 'at odds with' là collocation tiêu chuẩn để diễn tả sự mâu thuẫn. Mặc dù các đáp án khác có ý nghĩa tương tự, nhưng chỉ 'at odds with' là collocation chính xác."
+    },
+    {
+      "question_text": "Many psychological disorders _____ from childhood trauma and adverse life experiences.",
+      "option_a": "originate",
+      "option_b": "stem",
+      "option_c": "derive",
+      "option_d": "emerge",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án đúng là 'stem'. Cụm 'stem from' là collocation phổ biến trong học thuật để chỉ 'bắt nguồn từ'. Mặc dù 'originate' và 'derive' cũng có ý nghĩa tương tự, nhưng 'stem from' là collocation chuẩn xác nhất."
+    },
+    {
+      "question_text": "The rapid spread of misinformation on social media has _____ doubt on the reliability of online information sources.",
+      "option_a": "thrown",
+      "option_b": "cast",
+      "option_c": "raised",
+      "option_d": "created",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Đáp án đúng là 'cast'. Cụm 'cast doubt on' là collocation học thuật chính xác để diễn tả 'làm nghi ngờ'. 'Throw' có thể dùng trong ngữ cảnh khác, nhưng 'cast doubt on' là cụm chuẩn xác nhất."
+    },
+    {
+      "question_text": "The implementation of new technology in the workplace is _____ with numerous challenges and resistance from employees.",
+      "option_a": "laden",
+      "option_b": "fraught",
+      "option_c": "rife",
+      "option_d": "filled",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Đáp án đúng là 'fraught'. Cụm 'be fraught with' là collocation C1 để diễn tả 'đầy rẫy những vấn đề'. Mặc dù 'rife' cũng có thể dùng, nhưng 'fraught with' là lựa chọn tự nhiên nhất trong ngữ cảnh này."
+    },
+    {
+      "question_text": "It is _____ upon governments to establish policies that protect vulnerable populations from economic inequality.",
+      "option_a": "obligatory",
+      "option_b": "incumbent",
+      "option_c": "necessary",
+      "option_d": "required",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Đáp án đúng là 'incumbent'. Cụm 'be incumbent upon' là collocation học thuật chính xác để diễn tả 'là trách nhiệm của'. Các đáp án khác không tạo thành collocation chuẩn xác."
+    },
+    {
+      "question_text": "The concept of artificial intelligence has _____ significant traction in recent years, transforming multiple industries.",
+      "option_a": "achieved",
+      "option_b": "obtained",
+      "option_c": "gained",
+      "option_d": "acquired",
+      "correct_answer": "C",
+      "question_type": "collocation",
+      "difficulty": "intermediate",
+      "explanation": "Đáp án đúng là 'gained'. Cụm 'gain traction' là collocation phổ biến để diễn tả 'được chấp nhận rộng rãi, phát triển mạnh'. Các động từ khác không tạo thành collocation chuẩn xác."
+    },
+    {
+      "question_text": "Dismissing expert scientific advice on public health matters is _____ to endangering the entire population.",
+      "option_a": "equivalent",
+      "option_b": "tantamount",
+      "option_c": "similar",
+      "option_d": "comparable",
+      "correct_answer": "B",
+      "question_type": "collocation",
+      "difficulty": "advanced",
+      "explanation": "Đáp án đúng là 'tantamount'. Cụm 'be tantamount to' là collocation C1 để diễn tả 'tương đương với'. Mặc dù 'equivalent' cũng có ý nghĩa tương tự, nhưng 'tantamount to' là cụm chính xác trong ngữ cảnh học thuật."
+    }
+  ]
+}

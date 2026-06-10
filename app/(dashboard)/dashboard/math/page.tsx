@@ -6,7 +6,8 @@ import { motion } from 'framer-motion'
 import {
   Brain, Trophy, ArrowRight, Clock, Target, Flame,
   Loader2, GraduationCap, AlertCircle, BookmarkCheck,
-  ChevronRight, CalendarRange, Star, Award, FileText
+  ChevronRight, CalendarRange, Star, Award, FileText,
+  Sparkles
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -206,12 +207,14 @@ export default function MathDashboard() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[
           { 
-            label: 'Tổng số bài giải AI', 
-            value: stats?.totalSolves ?? 0, 
+            label: 'Lượt giải toán AI', 
+            value: stats ? `${stats.solvedToday}/${stats.solveLimit}` : '0/0', 
             icon: Brain, 
             color: 'text-purple-500', 
             bg: 'bg-purple-500/10',
-            sub: `${stats?.solveRemaining ?? 0}/${stats?.solveLimit ?? 0} lượt hôm nay` 
+            sub: stats ? `Đã dùng hôm nay (Tổng: ${stats.totalSolves} bài)` : 'Đang tải...',
+            hasProgress: true,
+            progressValue: solveProgress
           },
           { 
             label: 'Điểm TB thi thử', 
@@ -235,17 +238,23 @@ export default function MathDashboard() {
             initial={{ opacity: 0, y: 15 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ delay: 0.1 + i * 0.05 }}
+            className="h-full"
           >
-            <Card>
-              <CardContent className="p-5 flex items-start justify-between">
-                <div className="space-y-1">
+            <Card className="h-full hover:shadow-md hover:border-purple-500/20 transition-all">
+              <CardContent className="p-5 flex items-start justify-between h-full relative">
+                <div className="space-y-1 flex-1 min-w-0 pr-2">
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">{stat.label}</p>
                   <p className={`text-2xl font-bold ${stat.color}`}>
                     {loading ? <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" /> : stat.value}
                   </p>
-                  <p className="text-xs text-muted-foreground">{stat.sub}</p>
+                  <p className="text-xs text-muted-foreground truncate">{stat.sub}</p>
+                  {stat.hasProgress && !loading && (
+                    <div className="pt-1.5 max-w-[140px]">
+                      <Progress value={stat.progressValue} className="h-1.5 bg-purple-500/10" />
+                    </div>
+                  )}
                 </div>
-                <div className={`p-2.5 rounded-xl ${stat.bg}`}>
+                <div className={`p-2.5 rounded-xl ${stat.bg} shrink-0`}>
                   <stat.icon className={`h-5 w-5 ${stat.color}`} />
                 </div>
               </CardContent>
@@ -254,29 +263,7 @@ export default function MathDashboard() {
         ))}
       </div>
 
-      {/* Primary solver limits */}
-      {stats && (
-        <Card className="border border-purple-500/10 bg-purple-500/5">
-          <CardContent className="py-4 px-5">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div>
-                <p className="text-sm font-semibold">Lượt giải toán AI trong ngày</p>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  Đã sử dụng {stats.solvedToday}/{stats.solveLimit} lượt
-                </p>
-              </div>
-              <div className="flex-1 max-w-sm">
-                <Progress value={solveProgress} className="h-2 bg-purple-500/10" />
-              </div>
-              <Link href="/solve">
-                <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white gap-1 h-9">
-                  Giải bài ngay <ArrowRight className="h-3.5 w-3.5" />
-                </Button>
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
-      )}
+      {/* Solver limits integrated inside stats card above */}
 
       {/* Quick Actions & Recent Exams */}
       <div className="grid md:grid-cols-3 gap-6">
@@ -371,21 +358,23 @@ export default function MathDashboard() {
                 <p className="text-xs text-muted-foreground text-center py-4">Chưa có bài giải toán nào</p>
               )}
               {data?.recentSolves.map((solve) => (
-                <div key={solve.id} className="flex gap-3 items-start border border-border/40 p-3 rounded-lg hover:bg-muted/30 transition-colors">
-                  <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 mt-0.5">
+                <div key={solve.id} className="flex gap-3.5 items-start border border-border/40 p-3.5 rounded-xl hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-300">
+                  <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 mt-0.5 shrink-0">
                     <Brain className="h-4 w-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <p className="text-sm font-semibold truncate">{solve.title}</p>
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="text-sm font-bold truncate text-foreground">{solve.title}</p>
                       {solve.difficulty && (
-                        <Badge variant="outline" className="text-[10px] py-0 px-1 border-purple-500/20 text-purple-600 dark:text-purple-400">
+                        <Badge variant="outline" className="text-[10px] py-0 px-1.5 border-purple-500/20 bg-purple-500/5 text-purple-600 dark:text-purple-400 font-semibold rounded-full shrink-0">
                           {solve.difficulty}
                         </Badge>
                       )}
                     </div>
                     <p className="text-xs text-muted-foreground line-clamp-1 mt-1">{solve.description}</p>
-                    <p className="text-[10px] text-muted-foreground mt-1">{formatRelativeTime(solve.createdAt)}</p>
+                    <p className="text-[10px] text-muted-foreground mt-1.5 flex items-center gap-1">
+                      <Clock className="h-3 w-3" /> {formatRelativeTime(solve.createdAt)}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -393,9 +382,41 @@ export default function MathDashboard() {
           </Card>
         </div>
 
-        {/* Recent Exams Sidebar (1/3) */}
+        {/* Sidebar: AI Tutor (1/3) */}
         <div className="space-y-4">
-          <h2 className="text-lg font-bold tracking-tight">Kế hoạch thi thử</h2>
+          <h2 className="text-lg font-bold tracking-tight">AI Phân tích & Hỗ trợ</h2>
+          
+          <Link href="/chat" className="block">
+            <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-purple-500/20 via-violet-500/5 to-background hover:border-purple-500/30 hover:shadow-lg transition-all duration-300 cursor-pointer group">
+              <CardHeader className="pb-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white shadow-md">
+                  <Sparkles className="h-5 w-5" />
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <h3 className="font-bold text-base group-hover:text-purple-500 transition-colors">AI Gia sư Toán cá nhân</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Hệ thống AI hỗ trợ giải đáp mọi bài toán học búa, chỉ ra lỗ hổng kiến thức lý thuyết hình học/đại số và đề xuất bài tập ôn tập tối ưu.
+                </p>
+                <div className="pt-2 flex items-center text-xs font-semibold text-purple-500 gap-1">
+                  Trò chuyện ngay <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+
+          <Card className="bg-gradient-to-br from-purple-600 to-violet-800 text-white">
+            <CardContent className="p-5 space-y-3">
+              <div className="flex items-center gap-1.5 text-amber-300 text-xs font-bold uppercase tracking-wider">
+                <Star className="h-4 w-4 fill-amber-300" /> Bí quyết học tốt
+              </div>
+              <p className="text-xs leading-relaxed text-purple-100 font-medium">
+                &ldquo;Học Toán hiệu quả bắt đầu bằng việc hiểu bản chất lý thuyết trong Lộ trình, sau đó giải đề thi thử để phát hiện phần kiến thức hổng.&rdquo;
+              </p>
+            </CardContent>
+          </Card>
+
+          <h2 className="text-lg font-bold tracking-tight pt-2">Kế hoạch thi thử</h2>
           <Card className="h-fit">
             <CardHeader className="py-4">
               <CardTitle className="text-base font-bold">Bài thi thử gần đây</CardTitle>
@@ -442,18 +463,6 @@ export default function MathDashboard() {
               )}
             </CardContent>
           </Card>
-
-          {/* Motivational banner */}
-          <Card className="bg-gradient-to-br from-purple-600 to-violet-800 text-white">
-            <CardContent className="p-5 space-y-3">
-              <div className="flex items-center gap-1.5 text-amber-300 text-xs font-bold uppercase tracking-wider">
-                <Star className="h-4 w-4 fill-amber-300" /> Bí quyết học tốt
-              </div>
-              <p className="text-xs leading-relaxed text-purple-100 font-medium">
-                &ldquo;Học Toán hiệu quả bắt đầu bằng việc hiểu bản chất lý thuyết trong Lộ trình, sau đó giải đề thi thử để phát hiện phần kiến thức hổng.&rdquo;
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
 
@@ -461,7 +470,7 @@ export default function MathDashboard() {
       <div className="space-y-3">
         <h2 className="text-lg font-bold tracking-tight">Tiện ích học tập</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link href="/saved-questions">
+          <Link href="/saved-questions" className="block h-full">
             <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">
@@ -475,7 +484,7 @@ export default function MathDashboard() {
             </Card>
           </Link>
 
-          <Link href="/documents">
+          <Link href="/documents" className="block h-full">
             <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">
@@ -489,7 +498,7 @@ export default function MathDashboard() {
             </Card>
           </Link>
 
-          <Link href="/schedule">
+          <Link href="/schedule" className="block h-full">
             <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">

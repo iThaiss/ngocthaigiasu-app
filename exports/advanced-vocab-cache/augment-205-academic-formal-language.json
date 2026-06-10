@@ -1,0 +1,399 @@
+{
+  "words": [
+    {
+      "word": "obfuscate",
+      "pronunciation": "/əbˈfʌskeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm mờ đi, che giấu (ý nghĩa, sự thật); cố tình làm cho khó hiểu",
+      "definition_en": "to deliberately make something unclear or difficult to understand",
+      "level": "C1",
+      "synonyms": [
+        "obscure",
+        "cloud",
+        "muddy"
+      ],
+      "antonyms": [
+        "clarify",
+        "illuminate"
+      ],
+      "example_sentence": "The government's vague statements served only to obfuscate the real reasons behind the policy change."
+    },
+    {
+      "word": "epistemological",
+      "pronunciation": "/ɪˌpɪstəməˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến lý thuyết về kiến thức, cách thức con người biết và hiểu",
+      "definition_en": "relating to the theory of knowledge and how we know what we know",
+      "level": "C2",
+      "synonyms": [
+        "cognitive",
+        "gnoseological"
+      ],
+      "antonyms": [],
+      "example_sentence": "The researcher's epistemological framework questioned whether empirical observation alone could validate scientific claims."
+    },
+    {
+      "word": "dialectical",
+      "pronunciation": "/ˌdaɪəˈlektɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến phương pháp tranh luận qua đối lập; dựa trên sự phát triển qua mâu thuẫn",
+      "definition_en": "relating to the logical discussion of ideas and opinions; involving the interaction of opposing forces",
+      "level": "C2",
+      "synonyms": [
+        "oppositional",
+        "contradictory"
+      ],
+      "antonyms": [
+        "harmonious",
+        "unified"
+      ],
+      "example_sentence": "Marx employed a dialectical approach to analyze how capitalism contains inherent contradictions that drive historical change."
+    },
+    {
+      "word": "reify",
+      "pronunciation": "/ˈriːɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "coi một khái niệm trừu tượng như một vật thể cụ thể; biến trừu tượng thành cụ thể",
+      "definition_en": "to treat an abstract concept as if it were a concrete, physical thing",
+      "level": "C2",
+      "synonyms": [
+        "materialize",
+        "concretize"
+      ],
+      "antonyms": [
+        "abstract",
+        "idealize"
+      ],
+      "example_sentence": "Critics argue that society tends to reify social constructs like race, treating cultural categories as if they were natural biological facts."
+    },
+    {
+      "word": "hermeneutic",
+      "pronunciation": "/ˌhɜːməˈnjuːtɪk/",
+      "part_of_speech": "noun",
+      "definition_vi": "liên quan đến việc giải thích, đặc biệt là giải thích văn bản; khoa học/nghệ thuật giải thích",
+      "definition_en": "relating to the interpretation of texts or the theory of interpretation",
+      "level": "C2",
+      "synonyms": [
+        "interpretive",
+        "exegetical"
+      ],
+      "antonyms": [],
+      "example_sentence": "The hermeneutic approach to literary analysis emphasizes how readers construct meaning through their engagement with the text."
+    },
+    {
+      "word": "teleological",
+      "pronunciation": "/ˌteliəˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "giả định sự phát triển hướng tới một mục đích cuối cùng đã định sẵn; có xu hướng nhìn lịch sử theo hướng tất yếu",
+      "definition_en": "assuming that development is directed toward a final purpose or goal; viewing history as inevitably progressing toward a predetermined end",
+      "level": "C2",
+      "synonyms": [
+        "deterministic",
+        "fatalistic"
+      ],
+      "antonyms": [
+        "contingent",
+        "open-ended"
+      ],
+      "example_sentence": "Historians warn against adopting a teleological view of progress that assumes the past inevitably led to the present state of affairs."
+    },
+    {
+      "word": "posit",
+      "pronunciation": "/ˈpɒzɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "đề xuất, giả định (một điều gì đó) như một cơ sở để thảo luận hoặc phân tích",
+      "definition_en": "to put forward or assume something as a basis for argument or discussion",
+      "level": "C1",
+      "synonyms": [
+        "propose",
+        "hypothesize",
+        "assume"
+      ],
+      "antonyms": [
+        "refute",
+        "deny"
+      ],
+      "example_sentence": "The philosopher posits that consciousness arises from the interaction of neural networks, though this remains highly contested."
+    },
+    {
+      "word": "ontological",
+      "pronunciation": "/ˌɒntəˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến bản chất của sự tồn tại; thuộc về lý thuyết về những gì tồn tại",
+      "definition_en": "relating to the nature of being or existence; concerning what exists and how things exist",
+      "level": "C2",
+      "synonyms": [
+        "existential",
+        "metaphysical"
+      ],
+      "antonyms": [],
+      "example_sentence": "The ontological status of abstract entities like numbers remains a central debate in philosophy of mathematics."
+    },
+    {
+      "word": "incommensurable",
+      "pronunciation": "/ˌɪnkəˈmenʃərəbəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không thể so sánh được; không có thước đo chung; không tương xứng",
+      "definition_en": "unable to be measured or compared by the same standard; fundamentally incompatible",
+      "level": "C2",
+      "synonyms": [
+        "incomparable",
+        "incommensurable",
+        "incompatible"
+      ],
+      "antonyms": [
+        "commensurable",
+        "comparable"
+      ],
+      "example_sentence": "The two theoretical frameworks are incommensurable, making it difficult to adjudicate between competing scientific paradigms."
+    },
+    {
+      "word": "apotheosis",
+      "pronunciation": "/əˌpɒθiˈəʊsɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "đỉnh cao, cao độ nhất; sự thần thánh hóa; sự hoàn thiện tuyệt đối",
+      "definition_en": "the highest point in the development of something; the culmination or peak; elevation to divine status",
+      "level": "C2",
+      "synonyms": [
+        "zenith",
+        "pinnacle",
+        "acme"
+      ],
+      "antonyms": [
+        "nadir",
+        "depths"
+      ],
+      "example_sentence": "The Renaissance represented the apotheosis of humanist thought, celebrating human potential and artistic achievement."
+    },
+    {
+      "word": "heterodox",
+      "pronunciation": "/ˈhetərədɒks/",
+      "part_of_speech": "adjective",
+      "definition_vi": "không tuân theo học thuyết chính thống; dị biệt, không theo quy tắc thông thường",
+      "definition_en": "contrary to orthodox or established doctrine; unorthodox",
+      "level": "C1",
+      "synonyms": [
+        "unorthodox",
+        "unconventional",
+        "heretical"
+      ],
+      "antonyms": [
+        "orthodox",
+        "conventional"
+      ],
+      "example_sentence": "The economist's heterodox approach to monetary policy challenged the consensus view held by mainstream institutions."
+    },
+    {
+      "word": "phenomenological",
+      "pronunciation": "/fɪˌnɒmɪnəˈlɒdʒɪkəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến hiện tượng học; tập trung vào trải nghiệm trực tiếp và ý thức của con người",
+      "definition_en": "relating to the study of phenomena as they appear to consciousness; focusing on subjective experience",
+      "level": "C2",
+      "synonyms": [
+        "experiential",
+        "subjective"
+      ],
+      "antonyms": [
+        "objective",
+        "empirical"
+      ],
+      "example_sentence": "The phenomenological approach to psychology emphasizes how individuals subjectively experience and interpret their world."
+    },
+    {
+      "word": "synergistic",
+      "pronunciation": "/ˌsɪnərˈdʒɪstɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến sự phối hợp; khi các yếu tố kết hợp tạo ra hiệu quả lớn hơn tổng các phần",
+      "definition_en": "relating to the interaction of two or more elements that produce a combined effect greater than the sum of individual effects",
+      "level": "C1",
+      "synonyms": [
+        "complementary",
+        "cooperative"
+      ],
+      "antonyms": [
+        "antagonistic",
+        "conflicting"
+      ],
+      "example_sentence": "The synergistic effect of combining medication with therapy proved more effective than either treatment alone."
+    },
+    {
+      "word": "liminal",
+      "pronunciation": "/ˈlɪmɪnəl/",
+      "part_of_speech": "adjective",
+      "definition_vi": "ở ranh giới, ở ngưỡng; thuộc về giai đoạn chuyển tiếp hoặc trạng thái không xác định",
+      "definition_en": "relating to a threshold or boundary; occupying a transitional or ambiguous position",
+      "level": "C2",
+      "synonyms": [
+        "threshold",
+        "transitional",
+        "boundary"
+      ],
+      "antonyms": [
+        "central",
+        "established"
+      ],
+      "example_sentence": "Adolescence is a liminal period between childhood and adulthood, characterized by identity formation and social uncertainty."
+    },
+    {
+      "word": "perspicacious",
+      "pronunciation": "/ˌpɜːspɪˈkeɪʃəs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "sắc sảo, thông minh; có khả năng nhận thức sâu sắc và chính xác",
+      "definition_en": "having keen insight, discernment, or understanding; mentally sharp and perceptive",
+      "level": "C2",
+      "synonyms": [
+        "astute",
+        "discerning",
+        "perceptive"
+      ],
+      "antonyms": [
+        "obtuse",
+        "dull"
+      ],
+      "example_sentence": "The critic's perspicacious analysis of the novel revealed layers of meaning that most readers had overlooked."
+    },
+    {
+      "word": "diachronic",
+      "pronunciation": "/ˌdaɪəˈkrɒnɪk/",
+      "part_of_speech": "adjective",
+      "definition_vi": "liên quan đến sự thay đổi theo thời gian; xét xét lịch sử phát triển",
+      "definition_en": "relating to or studying phenomena as they change over time; historical rather than synchronic",
+      "level": "C2",
+      "synonyms": [
+        "historical",
+        "diachronous"
+      ],
+      "antonyms": [
+        "synchronic",
+        "contemporary"
+      ],
+      "example_sentence": "A diachronic study of language evolution reveals how phonetic systems shift across generations."
+    },
+    {
+      "word": "recalcitrant",
+      "pronunciation": "/rɪˈkælsɪtrənt/",
+      "part_of_speech": "adjective",
+      "definition_vi": "cứng đầu, không chịu tuân phục; khó kiểm soát hoặc quản lý",
+      "definition_en": "stubbornly resistant to authority or control; difficult to manage or deal with",
+      "level": "C1",
+      "synonyms": [
+        "obstinate",
+        "defiant",
+        "unruly"
+      ],
+      "antonyms": [
+        "compliant",
+        "obedient"
+      ],
+      "example_sentence": "The recalcitrant student refused to follow classroom rules despite repeated warnings from the administration."
+    },
+    {
+      "word": "polysemous",
+      "pronunciation": "/pɒˈlɪsɪməs/",
+      "part_of_speech": "adjective",
+      "definition_vi": "có nhiều nghĩa; một từ hoặc cụm từ có thể mang nhiều ý nghĩa khác nhau",
+      "definition_en": "having multiple meanings or senses; capable of being interpreted in various ways",
+      "level": "C2",
+      "synonyms": [
+        "ambiguous",
+        "multivalent"
+      ],
+      "antonyms": [
+        "monosemous",
+        "unambiguous"
+      ],
+      "example_sentence": "The term 'culture' is highly polysemous in academic discourse, ranging from artistic expression to social practices."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes the primary purpose of obfuscating information in academic writing?",
+      "option_a": "To enhance clarity and reader comprehension",
+      "option_b": "To deliberately conceal or make unclear the true meaning or intent",
+      "option_c": "To provide multiple perspectives on a single topic",
+      "option_d": "To strengthen the logical structure of an argument",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Obfuscate có nghĩa là cố tình làm mờ đi hoặc che giấu ý nghĩa. Đáp án A sai vì nó ngược lại với mục đích của obfuscate. C và D không liên quan đến định nghĩa của từ này."
+    },
+    {
+      "question_text": "A philosopher who adopts a teleological view of history would most likely argue that:",
+      "option_a": "Historical events occur randomly without any underlying pattern",
+      "option_b": "The past inevitably progressed toward the present state of society",
+      "option_c": "Multiple futures are equally possible from any given historical moment",
+      "option_d": "Historical analysis should focus exclusively on contemporary issues",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Teleological có nghĩa là giả định sự phát triển hướng tới một mục đích cuối cùng đã định sẵn. Đáp án B phản ánh chính xác quan điểm này. A, C, D đều trái ngược với định nghĩa của teleological."
+    },
+    {
+      "question_text": "When a researcher posits a hypothesis, they are essentially:",
+      "option_a": "Proving the hypothesis through empirical evidence",
+      "option_b": "Putting forward an assumption as a basis for investigation",
+      "option_c": "Rejecting alternative explanations",
+      "option_d": "Conducting a final analysis of collected data",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Posit có nghĩa là đề xuất hoặc giả định một điều gì đó như cơ sở để thảo luận. Đáp án B chính xác. A sai vì posit không phải là chứng minh; C và D không phù hợp với định nghĩa."
+    },
+    {
+      "question_text": "The term 'incommensurable' in academic discourse typically refers to:",
+      "option_a": "Theories or frameworks that can be easily compared and measured by the same standard",
+      "option_b": "Concepts that are fundamentally incompatible and cannot be measured by a common standard",
+      "option_c": "Ideas that are slightly different but ultimately compatible",
+      "option_d": "Hypotheses that require additional empirical validation",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Incommensurable có nghĩa là không thể so sánh được bằng cùng một tiêu chuẩn. Đáp án B chính xác. A là ngược lại; C không phản ánh tính bất khả so sánh; D không liên quan."
+    },
+    {
+      "question_text": "Which statement best illustrates the concept of reification?",
+      "option_a": "Treating the abstract concept of 'justice' as if it were a concrete, tangible object",
+      "option_b": "Analyzing how different cultures define abstract concepts differently",
+      "option_c": "Creating new abstract concepts to explain physical phenomena",
+      "option_d": "Distinguishing between abstract and concrete forms of knowledge",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Reify có nghĩa là coi một khái niệm trừu tượng như một vật thể cụ thể. Đáp án A là ví dụ hoàn hảo. B, C, D không phản ánh đúng định nghĩa của reification."
+    },
+    {
+      "question_text": "A scholar employing a hermeneutic approach to textual analysis would primarily focus on:",
+      "option_a": "Counting word frequencies and linguistic patterns",
+      "option_b": "The interpretation and meaning-making processes engaged in by readers",
+      "option_c": "Identifying grammatical errors and stylistic inconsistencies",
+      "option_d": "Comparing the text to historical documents from the same period",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Hermeneutic liên quan đến việc giải thích văn bản và cách con người tạo ra ý nghĩa. Đáp án B chính xác. A, C, D không phản ánh trọng tâm của phương pháp hermeneutic."
+    },
+    {
+      "question_text": "Which of the following is most likely to be described as 'synergistic'?",
+      "option_a": "Two medications that work against each other, reducing overall effectiveness",
+      "option_b": "A combination of treatments that produces a greater effect than the sum of individual treatments",
+      "option_c": "A single intervention that addresses multiple health issues independently",
+      "option_d": "Sequential treatments applied one after another with no overlap",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Synergistic có nghĩa là khi các yếu tố kết hợp tạo ra hiệu quả lớn hơn tổng các phần. Đáp án B chính xác. A là antagonistic; C và D không phản ánh tính synergistic."
+    },
+    {
+      "question_text": "A perspicacious critic would be most likely to:",
+      "option_a": "Provide superficial observations about a work's obvious features",
+      "option_b": "Demonstrate keen insight and discernment in analyzing subtle layers of meaning",
+      "option_c": "Avoid making any interpretive judgments about artistic merit",
+      "option_d": "Focus exclusively on factual accuracy rather than aesthetic value",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Perspicacious có nghĩa là sắc sảo, thông minh, có khả năng nhận thức sâu sắc. Đáp án B chính xác. A là ngược lại; C và D không phù hợp với định nghĩa."
+    }
+  ]
+}

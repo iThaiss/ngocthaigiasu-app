@@ -1,0 +1,399 @@
+{
+  "words": [
+    {
+      "word": "get away with",
+      "pronunciation": "/ɡet əˈweɪ wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "thoát khỏi hình phạt hoặc hậu quả; làm điều gì đó sai trái mà không bị phát hiện hoặc trừng phạt",
+      "definition_en": "to escape punishment or consequences for doing something wrong",
+      "level": "C1",
+      "synonyms": [
+        "escape punishment",
+        "avoid consequences"
+      ],
+      "antonyms": [
+        "face consequences",
+        "be caught"
+      ],
+      "example_sentence": "The company tried to get away with dumping toxic waste into the river, but environmental inspectors discovered the violation."
+    },
+    {
+      "word": "go along with",
+      "pronunciation": "/ɡoʊ əˈlɔŋ wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "đồng ý với; chấp nhận ý kiến hoặc kế hoạch của người khác",
+      "definition_en": "to agree with or accept someone's idea, plan, or opinion",
+      "level": "C1",
+      "synonyms": [
+        "agree with",
+        "accept"
+      ],
+      "antonyms": [
+        "disagree with",
+        "oppose"
+      ],
+      "example_sentence": "Most team members went along with the proposal to extend the project deadline by two weeks."
+    },
+    {
+      "word": "look down on",
+      "pronunciation": "/lʊk ˈdaʊn ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "coi thường; xem ai/cái gì là kém hơn hoặc không đáng kính",
+      "definition_en": "to regard someone or something as inferior or unworthy of respect",
+      "level": "C1",
+      "synonyms": [
+        "despise",
+        "scorn"
+      ],
+      "antonyms": [
+        "respect",
+        "admire"
+      ],
+      "example_sentence": "In many traditional societies, people who look down on manual labor often fail to appreciate skilled craftspeople."
+    },
+    {
+      "word": "run out of",
+      "pronunciation": "/rʌn ˈaʊt əv/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hết; không còn cái gì nữa",
+      "definition_en": "to use up the entire supply of something; to have no more of something left",
+      "level": "C1",
+      "synonyms": [
+        "exhaust",
+        "deplete"
+      ],
+      "antonyms": [
+        "stock up",
+        "replenish"
+      ],
+      "example_sentence": "The hospital ran out of oxygen supplies during the pandemic, forcing administrators to implement emergency protocols."
+    },
+    {
+      "word": "catch up with",
+      "pronunciation": "/kætʃ ˈʌp wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "bắt kịp; theo kịp ai/cái gì; đạt được mức độ tương tự",
+      "definition_en": "to reach the same level or position as someone ahead; to meet someone after pursuing them",
+      "level": "C1",
+      "synonyms": [
+        "overtake",
+        "reach"
+      ],
+      "antonyms": [
+        "fall behind",
+        "lag"
+      ],
+      "example_sentence": "Developing nations are working hard to catch up with industrialized countries in technological innovation."
+    },
+    {
+      "word": "take after",
+      "pronunciation": "/ˈteɪk ˈæftər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "giống; có những đặc điểm giống như cha mẹ hoặc người thân",
+      "definition_en": "to resemble or have similar characteristics to a parent or relative",
+      "level": "C1",
+      "synonyms": [
+        "resemble",
+        "inherit"
+      ],
+      "antonyms": [
+        "differ from"
+      ],
+      "example_sentence": "The young scientist takes after her mother, who was also a renowned researcher in environmental biology."
+    },
+    {
+      "word": "bring out",
+      "pronunciation": "/brɪŋ ˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "làm nổi bật; phát hành; khiến cái gì trở nên rõ ràng hơn",
+      "definition_en": "to make something more noticeable or prominent; to publish or release a product",
+      "level": "B2",
+      "synonyms": [
+        "highlight",
+        "release"
+      ],
+      "antonyms": [
+        "conceal",
+        "suppress"
+      ],
+      "example_sentence": "The documentary brings out the hidden struggles of migrant workers in the agricultural industry."
+    },
+    {
+      "word": "come across",
+      "pronunciation": "/kʌm əˈkrɔs/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tình cờ gặp; tìm thấy; truyền đạt được ấn tượng nào đó",
+      "definition_en": "to meet or find someone or something by chance; to give a particular impression",
+      "level": "C1",
+      "synonyms": [
+        "encounter",
+        "discover"
+      ],
+      "antonyms": [
+        "miss",
+        "overlook"
+      ],
+      "example_sentence": "While researching climate change, scientists came across evidence suggesting the crisis is accelerating faster than previously predicted."
+    },
+    {
+      "word": "fall back on",
+      "pronunciation": "/fɔl ˈbæk ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "dựa vào; sử dụng cái gì như một phương án dự phòng",
+      "definition_en": "to rely on something as a backup plan or resource when other options fail",
+      "level": "B2",
+      "synonyms": [
+        "rely on",
+        "depend on"
+      ],
+      "antonyms": [
+        "abandon",
+        "discard"
+      ],
+      "example_sentence": "When traditional marketing strategies failed, the startup had to fall back on social media influencers to promote their product."
+    },
+    {
+      "word": "get on with",
+      "pronunciation": "/ɡet ˈɑn wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tiếp tục làm; có mối quan hệ tốt với ai; tiến hành",
+      "definition_en": "to continue doing something; to have a good relationship with someone; to proceed with",
+      "level": "C1",
+      "synonyms": [
+        "continue",
+        "proceed"
+      ],
+      "antonyms": [
+        "stop",
+        "interrupt"
+      ],
+      "example_sentence": "Despite budget constraints, the research team decided to get on with the project and seek alternative funding sources."
+    },
+    {
+      "word": "look up to",
+      "pronunciation": "/lʊk ˈʌp tu/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kính trọng; ngưỡng mộ; coi ai là tấm gương",
+      "definition_en": "to admire and respect someone; to regard someone as a role model",
+      "level": "C1",
+      "synonyms": [
+        "admire",
+        "respect"
+      ],
+      "antonyms": [
+        "despise",
+        "disrespect"
+      ],
+      "example_sentence": "Young environmental activists look up to Greta Thunberg for her unwavering commitment to climate action."
+    },
+    {
+      "word": "put up with",
+      "pronunciation": "/pʊt ˈʌp wɪð/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chịu đựng; chấp nhận cái gì không thoải mái",
+      "definition_en": "to tolerate or accept something unpleasant without complaining",
+      "level": "C1",
+      "synonyms": [
+        "tolerate",
+        "endure"
+      ],
+      "antonyms": [
+        "reject",
+        "refuse"
+      ],
+      "example_sentence": "Factory workers have had to put up with poor working conditions and inadequate safety measures for decades."
+    },
+    {
+      "word": "back up",
+      "pronunciation": "/ˈbæk ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "hỗ trợ; sao lưu; chứng minh; lùi lại",
+      "definition_en": "to support someone; to make a copy of data; to reverse; to provide evidence for a claim",
+      "level": "B2",
+      "synonyms": [
+        "support",
+        "verify"
+      ],
+      "antonyms": [
+        "abandon",
+        "contradict"
+      ],
+      "example_sentence": "The researcher's findings were backed up by multiple peer-reviewed studies conducted across different countries."
+    },
+    {
+      "word": "break up",
+      "pronunciation": "/ˈbreɪk ʌp/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chia tay; tan rã; phá vỡ; kết thúc",
+      "definition_en": "to end a romantic relationship; to dissolve or separate; to interrupt",
+      "level": "C1",
+      "synonyms": [
+        "separate",
+        "dissolve"
+      ],
+      "antonyms": [
+        "unite",
+        "combine"
+      ],
+      "example_sentence": "The coalition government broke up after disagreements over environmental policy implementation."
+    },
+    {
+      "word": "check out",
+      "pronunciation": "/ˈtʃek ˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "kiểm tra; xem xét; rời khỏi (khách sạn); trở nên thú vị",
+      "definition_en": "to examine or investigate; to leave a hotel; to become interesting or impressive",
+      "level": "C1",
+      "synonyms": [
+        "examine",
+        "investigate"
+      ],
+      "antonyms": [
+        "ignore",
+        "overlook"
+      ],
+      "example_sentence": "Investors should check out the company's financial reports before making any major investment decisions."
+    },
+    {
+      "word": "figure out",
+      "pronunciation": "/ˈfɪɡjər ˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "tìm ra; hiểu; giải quyết; tính toán",
+      "definition_en": "to understand or solve something; to calculate; to determine",
+      "level": "C1",
+      "synonyms": [
+        "understand",
+        "solve"
+      ],
+      "antonyms": [
+        "confuse",
+        "misunderstand"
+      ],
+      "example_sentence": "Climate scientists are working to figure out how ocean acidification affects marine ecosystems on a molecular level."
+    },
+    {
+      "word": "hang out",
+      "pronunciation": "/ˈhæŋ ˈaʊt/",
+      "part_of_speech": "phrase",
+      "definition_vi": "chơi; tụ tập; dành thời gian cùng nhau",
+      "definition_en": "to spend time relaxing or socializing with someone; to frequent a place",
+      "level": "C1",
+      "synonyms": [
+        "socialize",
+        "spend time"
+      ],
+      "antonyms": [
+        "isolate",
+        "avoid"
+      ],
+      "example_sentence": "Urban planners recognize that public parks provide essential spaces where communities can hang out and build social connections."
+    },
+    {
+      "word": "pick up on",
+      "pronunciation": "/ˈpɪk ˈʌp ɑn/",
+      "part_of_speech": "phrase",
+      "definition_vi": "nhận thức được; phát hiện; bắt đầu lại; tiếp tục",
+      "definition_en": "to notice or detect something subtle; to resume something; to understand an implication",
+      "level": "B2",
+      "synonyms": [
+        "notice",
+        "detect"
+      ],
+      "antonyms": [
+        "miss",
+        "overlook"
+      ],
+      "example_sentence": "Experienced teachers pick up on subtle signs of student anxiety and adjust their teaching methods accordingly."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The environmental organization warned that companies should not be allowed to _____ illegal dumping practices just because enforcement is weak.",
+      "option_a": "get away with",
+      "option_b": "go along with",
+      "option_c": "look down on",
+      "option_d": "run out of",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Câu hỏi yêu cầu cụm động từ có nghĩa 'thoát khỏi hình phạt'. 'Get away with' là đáp án đúng. 'Go along with' (đồng ý), 'look down on' (coi thường), 'run out of' (hết) không phù hợp ngữ cảnh."
+    },
+    {
+      "question_text": "Which phrase best completes the sentence: 'The board members _____ the CEO's proposal to restructure the company despite initial concerns.'",
+      "option_a": "looked down on",
+      "option_b": "went along with",
+      "option_c": "ran out of",
+      "option_d": "caught up with",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Go along with' (đồng ý/chấp nhận) là cụm động từ phù hợp. 'Looked down on' (coi thường), 'ran out of' (hết), 'caught up with' (bắt kịp) không phù hợp ngữ cảnh về quyết định của hội đồng."
+    },
+    {
+      "question_text": "The developing nation is determined to _____ industrialized countries in renewable energy technology within the next decade.",
+      "option_a": "take after",
+      "option_b": "bring out",
+      "option_c": "catch up with",
+      "option_d": "fall back on",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Catch up with' (bắt kịp/theo kịp) là đáp án chính xác. 'Take after' (giống), 'bring out' (làm nổi bật), 'fall back on' (dựa vào) không phù hợp ngữ cảnh về công nghệ năng lượng."
+    },
+    {
+      "question_text": "What is the best meaning of 'come across' in this context: 'While reading the research paper, I came across some fascinating data about climate patterns.'",
+      "option_a": "to criticize harshly",
+      "option_b": "to meet or find by chance",
+      "option_c": "to communicate effectively",
+      "option_d": "to travel across a distance",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "'Come across' trong ngữ cảnh này có nghĩa 'tình cờ tìm thấy/gặp'. Các đáp án khác không phù hợp: 'criticize harshly' (chỉ trích), 'communicate effectively' (giao tiếp hiệu quả), 'travel across' (đi qua) đều sai."
+    },
+    {
+      "question_text": "The startup had to _____ its initial marketing strategy and focus on digital platforms when traditional advertising failed to generate sales.",
+      "option_a": "pick up on",
+      "option_b": "fall back on",
+      "option_c": "check out",
+      "option_d": "break up",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Fall back on' (dựa vào/sử dụng phương án dự phòng) là đáp án đúng. 'Pick up on' (phát hiện), 'check out' (kiểm tra), 'break up' (chia tay) không phù hợp ngữ cảnh về chiến lược kinh doanh."
+    },
+    {
+      "question_text": "Which phrase is closest in meaning to 'admire and respect someone as a role model'?",
+      "option_a": "look up to",
+      "option_b": "look down on",
+      "option_c": "look into",
+      "option_d": "look out for",
+      "correct_answer": "A",
+      "question_type": "synonym",
+      "difficulty": "intermediate",
+      "explanation": "'Look up to' có nghĩa 'kính trọng/ngưỡng mộ'. 'Look down on' (coi thường), 'look into' (điều tra), 'look out for' (cảnh báo) có nghĩa khác hoàn toàn."
+    },
+    {
+      "question_text": "The research team decided to _____ the project despite budget cuts, believing that the scientific value justified continued effort.",
+      "option_a": "get on with",
+      "option_b": "back up",
+      "option_c": "figure out",
+      "option_d": "hang out",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "'Get on with' (tiếp tục/tiến hành) là đáp án chính xác. 'Back up' (hỗ trợ), 'figure out' (tìm ra), 'hang out' (chơi/tụ tập) không phù hợp ngữ cảnh về tiếp tục dự án."
+    },
+    {
+      "question_text": "The psychologist could _____ subtle signs of depression in the patient's behavior that others had completely missed during initial consultations.",
+      "option_a": "break up",
+      "option_b": "pick up on",
+      "option_c": "hang out",
+      "option_d": "check out",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "'Pick up on' (phát hiện/nhận thức được những dấu hiệu tinh tế) là đáp án đúng. 'Break up' (chia tay), 'hang out' (chơi), 'check out' (kiểm tra) không phù hợp ngữ cảnh về phát hiện các dấu hiệu tâm lý."
+    }
+  ]
+}

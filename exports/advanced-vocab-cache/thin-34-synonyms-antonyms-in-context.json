@@ -1,0 +1,443 @@
+{
+  "words": [
+    {
+      "word": "exacerbate",
+      "pronunciation": "/ɪɡˈzæsərbeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm tình huống trở nên tồi tệ hơn, làm trầm trọng thêm",
+      "definition_en": "to make a problem or bad situation worse",
+      "level": "C1",
+      "synonyms": [
+        "aggravate",
+        "intensify",
+        "worsen"
+      ],
+      "antonyms": [
+        "alleviate",
+        "mitigate"
+      ],
+      "example_sentence": "The lack of investment in infrastructure has exacerbated regional inequality and deepened social tensions."
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "/ˈmɪtɪɡeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "giảm nhẹ, làm giảm bớt mức độ nghiêm trọng của điều gì",
+      "definition_en": "to make something less severe or serious",
+      "level": "C1",
+      "synonyms": [
+        "alleviate",
+        "ease",
+        "reduce"
+      ],
+      "antonyms": [
+        "exacerbate",
+        "aggravate"
+      ],
+      "example_sentence": "Governments must implement policies to mitigate the effects of climate change on vulnerable populations."
+    },
+    {
+      "word": "bolster",
+      "pronunciation": "/ˈboʊlstər/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, làm mạnh hơn, hỗ trợ hoặc củng cố",
+      "definition_en": "to strengthen or support something; to make it more confident or effective",
+      "level": "C1",
+      "synonyms": [
+        "reinforce",
+        "strengthen",
+        "fortify"
+      ],
+      "antonyms": [
+        "weaken",
+        "undermine"
+      ],
+      "example_sentence": "The government's investment in education aims to bolster economic competitiveness and innovation."
+    },
+    {
+      "word": "undermine",
+      "pronunciation": "/ˌʌndərˈmaɪn/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm suy yếu, phá hoại từ từ, làm mất đi sự tin tưởng hoặc uy tín",
+      "definition_en": "to weaken or damage something gradually, especially someone's confidence or authority",
+      "level": "C1",
+      "synonyms": [
+        "weaken",
+        "sabotage",
+        "erode"
+      ],
+      "antonyms": [
+        "bolster",
+        "strengthen"
+      ],
+      "example_sentence": "Misinformation campaigns undermine public trust in democratic institutions and scientific expertise."
+    },
+    {
+      "word": "substantiate",
+      "pronunciation": "/səbˈstænʃieɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cung cấp bằng chứng hoặc chứng minh rằng điều gì là đúng",
+      "definition_en": "to provide evidence or proof that something is true",
+      "level": "C1",
+      "synonyms": [
+        "corroborate",
+        "verify",
+        "validate"
+      ],
+      "antonyms": [
+        "refute",
+        "disprove"
+      ],
+      "example_sentence": "The researcher must substantiate her claims with empirical data and peer-reviewed studies."
+    },
+    {
+      "word": "refute",
+      "pronunciation": "/rɪˈfjuːt/",
+      "part_of_speech": "verb",
+      "definition_vi": "bác bỏ, chứng minh rằng điều gì là sai hoặc không đúng",
+      "definition_en": "to prove that something is false or incorrect",
+      "level": "C1",
+      "synonyms": [
+        "disprove",
+        "rebut",
+        "contradict"
+      ],
+      "antonyms": [
+        "substantiate",
+        "confirm"
+      ],
+      "example_sentence": "The new evidence refutes the long-standing theory about the origins of the disease."
+    },
+    {
+      "word": "proliferate",
+      "pronunciation": "/prəˈlɪfəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng nhanh về số lượng, nhân rộng, lan rộng",
+      "definition_en": "to increase rapidly in number; to spread or multiply",
+      "level": "C1",
+      "synonyms": [
+        "multiply",
+        "expand",
+        "flourish"
+      ],
+      "antonyms": [
+        "diminish",
+        "decline"
+      ],
+      "example_sentence": "Social media platforms have proliferated, creating unprecedented opportunities for both communication and misinformation."
+    },
+    {
+      "word": "curtail",
+      "pronunciation": "/kɜːrˈteɪl/",
+      "part_of_speech": "verb",
+      "definition_vi": "cắt giảm, hạn chế, làm ngắn lại hoặc giới hạn",
+      "definition_en": "to reduce or limit something; to cut short",
+      "level": "C1",
+      "synonyms": [
+        "reduce",
+        "limit",
+        "restrict"
+      ],
+      "antonyms": [
+        "expand",
+        "extend"
+      ],
+      "example_sentence": "The government's decision to curtail public spending has raised concerns about the quality of essential services."
+    },
+    {
+      "word": "diverge",
+      "pronunciation": "/daɪˈvɜːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "tách ra, đi theo hướng khác nhau, có ý kiến khác nhau",
+      "definition_en": "to separate and go in different directions; to differ in opinion or approach",
+      "level": "C1",
+      "synonyms": [
+        "deviate",
+        "differ",
+        "separate"
+      ],
+      "antonyms": [
+        "converge",
+        "align"
+      ],
+      "example_sentence": "The two countries' economic policies have diverged significantly, reflecting their different priorities and values."
+    },
+    {
+      "word": "converge",
+      "pronunciation": "/kənˈvɜːrdʒ/",
+      "part_of_speech": "verb",
+      "definition_vi": "hội tụ, gặp nhau, tiến tới cùng một điểm hoặc kết luận",
+      "definition_en": "to come together or meet at a point; to reach agreement or similarity",
+      "level": "C1",
+      "synonyms": [
+        "meet",
+        "unite",
+        "align"
+      ],
+      "antonyms": [
+        "diverge",
+        "separate"
+      ],
+      "example_sentence": "International experts converge on the conclusion that immediate action is necessary to address climate change."
+    },
+    {
+      "word": "precipitate",
+      "pronunciation": "/prɪˈsɪpɪteɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "gây ra hoặc kích hoạt (một sự kiện), làm xảy ra đột ngột",
+      "definition_en": "to cause something to happen suddenly or unexpectedly",
+      "level": "C2",
+      "synonyms": [
+        "trigger",
+        "provoke",
+        "hasten"
+      ],
+      "antonyms": [
+        "delay",
+        "prevent"
+      ],
+      "example_sentence": "The assassination of the archduke precipitated a chain of events that led to World War I."
+    },
+    {
+      "word": "ameliorate",
+      "pronunciation": "/əˈmiːliəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "cải thiện, làm tốt hơn, giảm nhẹ tình trạng xấu",
+      "definition_en": "to make something better or improve a bad situation",
+      "level": "C2",
+      "synonyms": [
+        "improve",
+        "enhance",
+        "better"
+      ],
+      "antonyms": [
+        "worsen",
+        "deteriorate"
+      ],
+      "example_sentence": "The new social welfare program aims to ameliorate poverty and reduce income inequality."
+    },
+    {
+      "word": "vindicate",
+      "pronunciation": "/ˈvɪndɪkeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "chứng minh rằng ai đó là đúng hoặc không có lỗi, bảo vệ danh dự",
+      "definition_en": "to prove or justify that someone or something is right or innocent",
+      "level": "C1",
+      "synonyms": [
+        "justify",
+        "exonerate",
+        "validate"
+      ],
+      "antonyms": [
+        "condemn",
+        "incriminate"
+      ],
+      "example_sentence": "The court's decision vindicated the defendant's claims of innocence after years of legal struggle."
+    },
+    {
+      "word": "incriminate",
+      "pronunciation": "/ɪnˈkrɪmɪneɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "buộc tội, cáo buộc, cung cấp bằng chứng cho thấy ai đó có tội",
+      "definition_en": "to show or suggest that someone is guilty of a crime or wrongdoing",
+      "level": "C1",
+      "synonyms": [
+        "accuse",
+        "implicate",
+        "indict"
+      ],
+      "antonyms": [
+        "exonerate",
+        "vindicate"
+      ],
+      "example_sentence": "The witness's testimony incriminated several high-ranking officials in the corruption scandal."
+    },
+    {
+      "word": "corroborate",
+      "pronunciation": "/kəˈrɒbəreɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "xác nhận, chứng thực, cung cấp bằng chứng bổ sung cho điều gì",
+      "definition_en": "to confirm or support a statement or finding with additional evidence",
+      "level": "C1",
+      "synonyms": [
+        "verify",
+        "substantiate",
+        "confirm"
+      ],
+      "antonyms": [
+        "contradict",
+        "refute"
+      ],
+      "example_sentence": "Multiple independent studies corroborate the findings of the original research on vaccine efficacy."
+    },
+    {
+      "word": "attenuate",
+      "pronunciation": "/əˈtenjueɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm yếu đi, làm mỏng đi, giảm bớt sức mạnh hoặc tác động",
+      "definition_en": "to make something weaker or less intense; to reduce in force or effect",
+      "level": "C2",
+      "synonyms": [
+        "weaken",
+        "diminish",
+        "reduce"
+      ],
+      "antonyms": [
+        "strengthen",
+        "intensify"
+      ],
+      "example_sentence": "The protective measures attenuate the severity of the disease but do not eliminate it entirely."
+    },
+    {
+      "word": "amplify",
+      "pronunciation": "/ˈæmplɪfaɪ/",
+      "part_of_speech": "verb",
+      "definition_vi": "tăng cường, phóng đại, làm to lên hoặc mạnh hơn",
+      "definition_en": "to increase the strength or effect of something; to make louder or more noticeable",
+      "level": "C1",
+      "synonyms": [
+        "strengthen",
+        "enhance",
+        "magnify"
+      ],
+      "antonyms": [
+        "diminish",
+        "attenuate"
+      ],
+      "example_sentence": "Social media algorithms amplify sensational content, which can distort public perception of reality."
+    },
+    {
+      "word": "obfuscate",
+      "pronunciation": "/ˈɒbfʌskeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm mờ đi, che giấu, làm khó hiểu hoặc khó nhận thức",
+      "definition_en": "to make something unclear or difficult to understand; to deliberately confuse",
+      "level": "C2",
+      "synonyms": [
+        "obscure",
+        "confuse",
+        "muddy"
+      ],
+      "antonyms": [
+        "clarify",
+        "elucidate"
+      ],
+      "example_sentence": "The company's financial reports obfuscate the true extent of their environmental impact."
+    },
+    {
+      "word": "elucidate",
+      "pronunciation": "/ɪˈluːsɪdeɪt/",
+      "part_of_speech": "verb",
+      "definition_vi": "làm sáng tỏ, giải thích rõ ràng, làm cho dễ hiểu",
+      "definition_en": "to explain or clarify something in a clear and detailed way",
+      "level": "C2",
+      "synonyms": [
+        "clarify",
+        "explain",
+        "illuminate"
+      ],
+      "antonyms": [
+        "obfuscate",
+        "obscure"
+      ],
+      "example_sentence": "The professor's lecture elucidated the complex philosophical concepts with compelling examples."
+    },
+    {
+      "word": "juxtapose",
+      "pronunciation": "/ˌdʒʌkstəˈpoʊz/",
+      "part_of_speech": "verb",
+      "definition_vi": "đặt cạnh nhau để so sánh hoặc tạo ra hiệu ứng tương phản",
+      "definition_en": "to place two things side by side, especially for comparison or contrast",
+      "level": "C1",
+      "synonyms": [
+        "compare",
+        "contrast",
+        "place together"
+      ],
+      "antonyms": [
+        "separate",
+        "isolate"
+      ],
+      "example_sentence": "The artist juxtaposes images of nature and industrial development to critique environmental destruction."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "The government's new regulations aim to _____ the spread of misinformation on social media platforms.",
+      "option_a": "proliferate",
+      "option_b": "curtail",
+      "option_c": "amplify",
+      "option_d": "diverge",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Curtail (hạn chế) là từ đúng vì ngữ cảnh nói về việc giảm bớt sự lan rộng của thông tin sai lệch. Proliferate (nhân rộng) và amplify (tăng cường) có nghĩa ngược lại. Diverge (tách ra) không phù hợp về mặt ngữ pháp và ý nghĩa."
+    },
+    {
+      "question_text": "Which of the following words is most similar in meaning to 'substantiate' in the context of academic research?",
+      "option_a": "refute",
+      "option_b": "corroborate",
+      "option_c": "incriminate",
+      "option_d": "obfuscate",
+      "correct_answer": "B",
+      "question_type": "synonym",
+      "difficulty": "advanced",
+      "explanation": "Corroborate (xác nhận bằng bằng chứng bổ sung) là đồng nghĩa gần nhất với substantiate (cung cấp bằng chứng). Refute (bác bỏ) là trái nghĩa. Incriminate (buộc tội) và obfuscate (làm mờ đi) không liên quan."
+    },
+    {
+      "question_text": "The economic policies of the two nations have _____ significantly, with one prioritizing growth while the other emphasizes sustainability.",
+      "option_a": "converged",
+      "option_b": "diverged",
+      "option_c": "juxtaposed",
+      "option_d": "exacerbated",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Diverged (tách ra, đi theo hướng khác) là từ chính xác vì câu nói về sự khác biệt giữa hai chính sách. Converged (hội tụ) có nghĩa ngược lại. Juxtaposed (đặt cạnh nhau) không phù hợp về mặt ngữ pháp. Exacerbated (làm trầm trọng) không liên quan."
+    },
+    {
+      "question_text": "The scandal _____ a series of investigations that ultimately led to the resignation of several government officials.",
+      "option_a": "attenuated",
+      "option_b": "precipitated",
+      "option_c": "vindicated",
+      "option_d": "ameliorated",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Precipitated (gây ra đột ngột) là từ đúng vì nó mô tả việc bê bối kích hoạt một chuỗi sự kiện. Attenuated (làm yếu đi) và ameliorated (cải thiện) không phù hợp. Vindicated (bảo vệ danh dự) không đúng ngữ cảnh."
+    },
+    {
+      "question_text": "The witness's testimony _____ the defendant's claims of innocence, leading to his acquittal.",
+      "option_a": "incriminated",
+      "option_b": "obfuscated",
+      "option_c": "vindicated",
+      "option_d": "attenuated",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Vindicated (chứng minh là đúng/vô tội) là từ chính xác vì nó mô tả việc bảo vệ danh dự của bị cáo. Incriminated (buộc tội) là trái nghĩa. Obfuscated (làm mờ đi) và attenuated (làm yếu đi) không phù hợp."
+    },
+    {
+      "question_text": "The professor's explanation _____ the abstract concepts, making them accessible to undergraduate students.",
+      "option_a": "obfuscated",
+      "option_b": "elucidated",
+      "option_c": "attenuated",
+      "option_d": "curtailed",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Elucidated (làm sáng tỏ, giải thích rõ ràng) là từ đúng vì nó mô tả việc làm cho khái niệm dễ hiểu hơn. Obfuscated (làm mờ đi) là trái nghĩa. Attenuated (làm yếu đi) và curtailed (hạn chế) không phù hợp."
+    },
+    {
+      "question_text": "Which pair of words represents the strongest antonymic relationship in the context of policy-making?",
+      "option_a": "bolster and undermine",
+      "option_b": "exacerbate and amplify",
+      "option_c": "proliferate and diverge",
+      "option_d": "juxtapose and converge",
+      "correct_answer": "A",
+      "question_type": "antonym",
+      "difficulty": "advanced",
+      "explanation": "Bolster (tăng cường) và undermine (làm suy yếu) là cặp trái nghĩa mạnh nhất trong bối cảnh chính sách. Exacerbate (làm trầm trọng) và amplify (tăng cường) không phải trái nghĩa hoàn toàn. Proliferate (nhân rộng) và diverge (tách ra) không phải trái nghĩa. Juxtapose (đặt cạnh nhau) và converge (hội tụ) không phải trái nghĩa."
+    }
+  ]
+}

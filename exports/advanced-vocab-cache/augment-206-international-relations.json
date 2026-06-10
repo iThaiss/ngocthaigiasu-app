@@ -1,0 +1,388 @@
+{
+  "words": [
+    {
+      "word": "soft power",
+      "pronunciation": "/sɔːft ˈpaʊər/",
+      "part_of_speech": "noun",
+      "definition_vi": "Khả năng ảnh hưởng các quốc gia khác thông qua sức hấp dẫn văn hóa, giá trị, và ý tưởng thay vì cưỡng chế hoặc kinh tế",
+      "definition_en": "The ability to influence other nations through cultural appeal, values, and ideas rather than coercion or economic pressure",
+      "level": "C1",
+      "synonyms": [
+        "cultural influence",
+        "persuasive power"
+      ],
+      "antonyms": [
+        "hard power",
+        "military coercion"
+      ],
+      "example_sentence": "The United States has long relied on soft power through Hollywood films and educational exchanges to shape global perceptions."
+    },
+    {
+      "word": "quid pro quo",
+      "pronunciation": "/ˌkwɪd ˈproʊ ˌkwoʊ/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một thỏa thuận hoặc giao dịch trong đó một bên nhận được lợi ích để đổi lấy cung cấp một lợi ích khác",
+      "definition_en": "An arrangement in which one party receives a benefit in exchange for providing a benefit to the other party",
+      "level": "C1",
+      "synonyms": [
+        "reciprocal exchange",
+        "mutual benefit"
+      ],
+      "antonyms": [
+        "one-sided agreement"
+      ],
+      "example_sentence": "The trade negotiation was structured as a quid pro quo, with tariff reductions exchanged for market access."
+    },
+    {
+      "word": "casus belli",
+      "pronunciation": "/ˈkɑːsəs ˈbɛli/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một sự kiện hoặc hành động được coi là lý do chính đáng để tuyên bố chiến tranh",
+      "definition_en": "An event or action that is used as a justification for declaring war",
+      "level": "C2",
+      "synonyms": [
+        "justification for war",
+        "pretext for conflict"
+      ],
+      "antonyms": [
+        "peace initiative"
+      ],
+      "example_sentence": "The sinking of the battleship was presented as a casus belli for military intervention in the region."
+    },
+    {
+      "word": "backchannel diplomacy",
+      "pronunciation": "/ˈbæk.tʃænəl dɪˈplɒmətsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các cuộc đàm phán ngoài chính thức giữa các quốc gia thông qua các kênh bí mật hoặc không chính thức",
+      "definition_en": "Unofficial negotiations between nations conducted through secret or informal channels",
+      "level": "C1",
+      "synonyms": [
+        "covert negotiations",
+        "informal talks"
+      ],
+      "antonyms": [
+        "public diplomacy",
+        "official channels"
+      ],
+      "example_sentence": "Backchannel diplomacy between the two nations helped break the deadlock in peace talks."
+    },
+    {
+      "word": "fait accompli",
+      "pronunciation": "/ˌfeɪt əˈkɒmpli/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một sự kiện hoặc hành động đã hoàn thành và khó hoặc không thể thay đổi, thường được sử dụng để buộc các bên khác phải chấp nhận",
+      "definition_en": "An accomplished fact that is difficult or impossible to reverse, often used to force acceptance by other parties",
+      "level": "C2",
+      "synonyms": [
+        "accomplished fact",
+        "irreversible action"
+      ],
+      "antonyms": [
+        "reversible decision"
+      ],
+      "example_sentence": "The military occupation was presented as a fait accompli, leaving the international community with limited options for response."
+    },
+    {
+      "word": "zero-sum game",
+      "pronunciation": "/ˈzɪroʊ sʌm ɡeɪm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một tình huống trong đó lợi ích của một bên bằng với tổn thất của bên kia, không có lợi ích chung",
+      "definition_en": "A situation in which one party's gain equals another party's loss, with no mutual benefit possible",
+      "level": "C1",
+      "synonyms": [
+        "win-lose scenario",
+        "competitive situation"
+      ],
+      "antonyms": [
+        "win-win situation",
+        "mutual gain"
+      ],
+      "example_sentence": "Viewing international trade as a zero-sum game ignores the potential for mutual economic growth."
+    },
+    {
+      "word": "proxy conflict",
+      "pronunciation": "/ˈprɒksi ˈkɒnflɪkt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một cuộc xung đột giữa các quốc gia hoặc nhóm được hỗ trợ bởi các cường quốc mà không trực tiếp tham gia quân sự",
+      "definition_en": "A conflict between nations or groups supported by superpowers without direct military involvement",
+      "level": "C1",
+      "synonyms": [
+        "indirect conflict",
+        "surrogate warfare"
+      ],
+      "antonyms": [
+        "direct confrontation"
+      ],
+      "example_sentence": "The Cold War was characterized by numerous proxy conflicts in developing nations across Africa and Asia."
+    },
+    {
+      "word": "brinkmanship",
+      "pronunciation": "/ˈbrɪŋkmənʃɪp/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chiến lược đẩy một tình huống đến bờ vực của xung đột hoặc thảm họa để buộc đối phương nhượng bộ",
+      "definition_en": "A strategy of pushing a situation to the edge of conflict or disaster to force the opponent to concede",
+      "level": "C1",
+      "synonyms": [
+        "risk-taking strategy",
+        "dangerous negotiation"
+      ],
+      "antonyms": [
+        "cautious diplomacy"
+      ],
+      "example_sentence": "The Cuban Missile Crisis exemplified brinkmanship as both superpowers pushed toward the precipice of nuclear war."
+    },
+    {
+      "word": "sphere of influence",
+      "pronunciation": "/ˈsfɪr əv ˈɪnfluəns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Vùng địa lý hoặc lĩnh vực mà một quốc gia hoặc cường quốc có quyền kiểm soát hoặc ảnh hưởng chính",
+      "definition_en": "A geographic region or domain in which a nation or superpower has primary control or influence",
+      "level": "C1",
+      "synonyms": [
+        "zone of control",
+        "area of dominance"
+      ],
+      "antonyms": [
+        "neutral territory"
+      ],
+      "example_sentence": "Russia has historically viewed Eastern Europe as within its sphere of influence, leading to tensions with NATO expansion."
+    },
+    {
+      "word": "transnational actor",
+      "pronunciation": "/trænzˈnæʃənəl ˈæktər/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một tổ chức hoặc thực thể hoạt động vượt qua biên giới quốc gia, chẳng hạn như công ty đa quốc gia hoặc tổ chức quốc tế",
+      "definition_en": "An organization or entity that operates across national borders, such as multinational corporations or international organizations",
+      "level": "C1",
+      "synonyms": [
+        "non-state actor",
+        "international organization"
+      ],
+      "antonyms": [
+        "nation-state"
+      ],
+      "example_sentence": "Transnational actors like NGOs and multinational corporations increasingly shape international relations alongside traditional governments."
+    },
+    {
+      "word": "arms race",
+      "pronunciation": "/ɑːrmz reɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Cuộc cạnh tranh giữa các quốc gia để tích lũy vũ khí và quân sự để vượt qua nhau",
+      "definition_en": "A competition between nations to accumulate weapons and military capabilities to surpass each other",
+      "level": "B2",
+      "synonyms": [
+        "military buildup",
+        "weapons competition"
+      ],
+      "antonyms": [
+        "disarmament",
+        "arms control"
+      ],
+      "example_sentence": "The nuclear arms race between the United States and Soviet Union defined Cold War tensions for decades."
+    },
+    {
+      "word": "power vacuum",
+      "pronunciation": "/ˈpaʊər ˈvækjuəm/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng thiếu quyền lực hoặc lãnh đạo trong một khu vực, thường dẫn đến sự không ổn định hoặc can thiệp từ các cường quốc",
+      "definition_en": "A situation of absent or weak authority in a region, often leading to instability or intervention by external powers",
+      "level": "C1",
+      "synonyms": [
+        "leadership void",
+        "authority gap"
+      ],
+      "antonyms": [
+        "strong governance"
+      ],
+      "example_sentence": "The withdrawal of international forces created a power vacuum that rival factions rushed to fill."
+    },
+    {
+      "word": "containment policy",
+      "pronunciation": "/kənˈteɪnmənt ˈpɒlɪsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chiến lược chính trị nhằm ngăn chặn sự mở rộng hoặc ảnh hưởng của một cường quốc hoặc ý thức hệ",
+      "definition_en": "A political strategy aimed at preventing the expansion or influence of a superpower or ideology",
+      "level": "C1",
+      "synonyms": [
+        "restraint strategy",
+        "prevention policy"
+      ],
+      "antonyms": [
+        "expansionism"
+      ],
+      "example_sentence": "The United States adopted a containment policy toward Soviet expansion during the Cold War."
+    },
+    {
+      "word": "humanitarian intervention",
+      "pronunciation": "/ˌhjuːmænɪˈtɛriən ɪntərˈvenʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sự can thiệp quân sự hoặc ngoại giao của các quốc gia vào công việc nội bộ của quốc gia khác để bảo vệ dân thường khỏi bạo lực",
+      "definition_en": "Military or diplomatic intervention by nations in another country's internal affairs to protect civilians from violence",
+      "level": "C1",
+      "synonyms": [
+        "protective intervention",
+        "civilian protection"
+      ],
+      "antonyms": [
+        "non-interference"
+      ],
+      "example_sentence": "The international community debated whether humanitarian intervention in the conflict was justified under international law."
+    },
+    {
+      "word": "strategic ambiguity",
+      "pronunciation": "/strəˈtiːdʒɪk æmˈbɪɡjuəti/",
+      "part_of_speech": "noun",
+      "definition_vi": "Chiến lược cố tình giữ bí mật hoặc không rõ ràng về ý định hoặc hành động để duy trì lợi thế ngoại giao",
+      "definition_en": "A deliberate strategy of maintaining unclear or ambiguous intentions or actions to preserve diplomatic advantage",
+      "level": "C2",
+      "synonyms": [
+        "deliberate vagueness",
+        "intentional obscurity"
+      ],
+      "antonyms": [
+        "transparency",
+        "clarity"
+      ],
+      "example_sentence": "Taiwan's security relies partly on strategic ambiguity regarding the extent of U.S. military commitment."
+    },
+    {
+      "word": "track two diplomacy",
+      "pronunciation": "/træk ˈtuː dɪˈplɒmətsi/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các cuộc đàm phán không chính thức giữa các chuyên gia, học giả, hoặc nhân vật công chúng từ các quốc gia đối địch",
+      "definition_en": "Unofficial negotiations between experts, scholars, or public figures from opposing nations",
+      "level": "C1",
+      "synonyms": [
+        "informal dialogue",
+        "unofficial talks"
+      ],
+      "antonyms": [
+        "official diplomacy",
+        "track one diplomacy"
+      ],
+      "example_sentence": "Track two diplomacy between academics from both countries helped lay groundwork for official peace negotiations."
+    },
+    {
+      "word": "asymmetric warfare",
+      "pronunciation": "/ˌæsɪˈmetrɪk ˈwɔːrfɛər/",
+      "part_of_speech": "noun",
+      "definition_vi": "Một hình thức xung đột trong đó các bên có sức mạnh quân sự không bằng nhau sử dụng các chiến thuật khác nhau để bù đắp sự chênh lệch",
+      "definition_en": "A form of conflict where parties with unequal military strength use different tactics to compensate for the disparity",
+      "level": "C1",
+      "synonyms": [
+        "unconventional warfare",
+        "irregular conflict"
+      ],
+      "antonyms": [
+        "conventional warfare"
+      ],
+      "example_sentence": "Insurgent groups often resort to asymmetric warfare tactics such as guerrilla attacks and terrorism against superior military forces."
+    },
+    {
+      "word": "economic coercion",
+      "pronunciation": "/ɪˌkɒnɒmɪk koʊˈɜːrʒən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Sử dụng các biện pháp kinh tế như thuế quan, cấm vận, hoặc cắt đứt tài chính để buộc một quốc gia thay đổi hành vi",
+      "definition_en": "The use of economic measures such as tariffs, trade restrictions, or financial cutoffs to force a nation to change behavior",
+      "level": "C1",
+      "synonyms": [
+        "economic pressure",
+        "financial leverage"
+      ],
+      "antonyms": [
+        "economic cooperation"
+      ],
+      "example_sentence": "The government imposed economic coercion through targeted sanctions to pressure the regime into compliance."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which term best describes a situation where one nation's gain directly equals another nation's loss in international negotiations?",
+      "option_a": "Zero-sum game",
+      "option_b": "Quid pro quo",
+      "option_c": "Sphere of influence",
+      "option_d": "Soft power",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Zero-sum game mô tả tình huống mà lợi ích của một bên bằng tổn thất của bên kia. Quid pro quo là trao đổi lợi ích lẫn nhau. Sphere of influence là vùng ảnh hưởng. Soft power là ảnh hưởng thông qua văn hóa."
+    },
+    {
+      "question_text": "During the Cold War, the United States pursued a _____ policy to prevent Soviet expansion into Western Europe and other regions.",
+      "option_a": "containment",
+      "option_b": "brinkmanship",
+      "option_c": "humanitarian intervention",
+      "option_d": "strategic ambiguity",
+      "correct_answer": "A",
+      "question_type": "fill_blank",
+      "difficulty": "intermediate",
+      "explanation": "Containment policy là chiến lược ngăn chặn sự mở rộng của Liên Xô. Brinkmanship là đẩy tình huống đến bờ vực. Humanitarian intervention là can thiệp nhân đạo. Strategic ambiguity là giữ bí mật ý định."
+    },
+    {
+      "question_text": "What is the primary advantage of _____ diplomacy in resolving international conflicts without official government involvement?",
+      "option_a": "backchannel",
+      "option_b": "track two",
+      "option_c": "humanitarian",
+      "option_d": "economic",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Track two diplomacy là các cuộc đàm phán không chính thức giữa các chuyên gia. Backchannel diplomacy là các kênh bí mật giữa chính phủ. Humanitarian intervention là can thiệp quân sự. Economic coercion là áp lực kinh tế."
+    },
+    {
+      "question_text": "The military occupation was presented as a _____, leaving neighboring countries with limited options for diplomatic response.",
+      "option_a": "power vacuum",
+      "option_b": "fait accompli",
+      "option_c": "casus belli",
+      "option_d": "proxy conflict",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Fait accompli là một sự kiện đã hoàn thành khó thay đổi. Power vacuum là thiếu quyền lực. Casus belli là lý do tuyên bố chiến tranh. Proxy conflict là xung đột gián tiếp."
+    },
+    {
+      "question_text": "Which strategy involves pushing a situation to the brink of conflict to force an opponent to concede in international negotiations?",
+      "option_a": "Soft power",
+      "option_b": "Brinkmanship",
+      "option_c": "Containment policy",
+      "option_d": "Humanitarian intervention",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Brinkmanship là chiến lược đẩy tình huống đến bờ vực để buộc đối phương nhượng bộ. Soft power là ảnh hưởng thông qua văn hóa. Containment policy là ngăn chặn sự mở rộng. Humanitarian intervention là can thiệp nhân đạo."
+    },
+    {
+      "question_text": "Nations with unequal military capabilities often employ _____ tactics such as guerrilla attacks to compensate for their disadvantage.",
+      "option_a": "soft power",
+      "option_b": "strategic ambiguity",
+      "option_c": "asymmetric warfare",
+      "option_d": "humanitarian intervention",
+      "correct_answer": "C",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Asymmetric warfare là xung đột giữa các bên có sức mạnh không bằng nhau. Soft power là ảnh hưởng văn hóa. Strategic ambiguity là giữ bí mật ý định. Humanitarian intervention là can thiệp nhân đạo."
+    },
+    {
+      "question_text": "Which term refers to an organization or entity that operates across national borders and influences international relations alongside traditional governments?",
+      "option_a": "Transnational actor",
+      "option_b": "Proxy conflict",
+      "option_c": "Power vacuum",
+      "option_d": "Sphere of influence",
+      "correct_answer": "A",
+      "question_type": "meaning",
+      "difficulty": "intermediate",
+      "explanation": "Transnational actor là tổ chức hoạt động vượt qua biên giới quốc gia. Proxy conflict là xung đột gián tiếp. Power vacuum là thiếu quyền lực. Sphere of influence là vùng ảnh hưởng."
+    },
+    {
+      "question_text": "The government used _____ through targeted sanctions and trade restrictions to pressure the regime into compliance with international demands.",
+      "option_a": "soft power",
+      "option_b": "economic coercion",
+      "option_c": "humanitarian intervention",
+      "option_d": "strategic ambiguity",
+      "correct_answer": "B",
+      "question_type": "fill_blank",
+      "difficulty": "advanced",
+      "explanation": "Economic coercion là sử dụng các biện pháp kinh tế để buộc thay đổi hành vi. Soft power là ảnh hưởng văn hóa. Humanitarian intervention là can thiệp nhân đạo. Strategic ambiguity là giữ bí mật ý định."
+    }
+  ]
+}

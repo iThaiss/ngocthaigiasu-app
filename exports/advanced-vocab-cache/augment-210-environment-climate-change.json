@@ -1,0 +1,367 @@
+{
+  "words": [
+    {
+      "word": "anthropogenic climate disruption",
+      "pronunciation": "/ˌænθrəpəˈdʒɛnɪk ˈklaɪmət dɪsˈrʌpʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự thay đổi khí hậu do hoạt động con người gây ra, nhấn mạnh tính chất gián đoạn và bất ổn định của hệ thống khí hậu.",
+      "definition_en": "Climate change caused by human activities, emphasizing the disruptive and destabilizing nature of the system.",
+      "level": "C2",
+      "synonyms": [
+        "human-induced climate change",
+        "anthropogenic warming"
+      ],
+      "antonyms": [
+        "natural climate variability"
+      ],
+      "example_sentence": "Anthropogenic climate disruption has accelerated species extinction rates by an order of magnitude over the past century."
+    },
+    {
+      "word": "nature-based solutions",
+      "pronunciation": "/ˈneɪtʃər ˈbeɪst səˈluːʃənz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các giải pháp ứng phó với biến đổi khí hậu dựa trên bảo vệ, phục hồi hoặc quản lý hệ sinh thái tự nhiên.",
+      "definition_en": "Climate solutions that leverage natural ecosystems and ecological processes to address environmental challenges.",
+      "level": "C1",
+      "synonyms": [
+        "ecosystem-based adaptation",
+        "green infrastructure"
+      ],
+      "antonyms": [
+        "technological solutions",
+        "engineered interventions"
+      ],
+      "example_sentence": "Nature-based solutions such as mangrove restoration and wetland conservation provide dual benefits of carbon storage and coastal protection."
+    },
+    {
+      "word": "climate overshoot",
+      "pronunciation": "/ˈklaɪmət ˈoʊvərˌʃuːt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Tình trạng nhiệt độ toàn cầu vượt quá mục tiêu giới hạn ấm lên (thường là 1.5°C) trước khi giảm xuống.",
+      "definition_en": "A scenario where global temperatures temporarily exceed a climate target before declining through future interventions.",
+      "level": "C1",
+      "synonyms": [
+        "temperature overshoot",
+        "transient warming"
+      ],
+      "antonyms": [
+        "climate stabilization"
+      ],
+      "example_sentence": "Scientists warn that climate overshoot is now inevitable without immediate and drastic reductions in greenhouse gas emissions."
+    },
+    {
+      "word": "maladaptation",
+      "pronunciation": "/ˌmælədæpˈteɪʃən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các biện pháp thích ứng với biến đổi khí hậu không hiệu quả hoặc thậm chí làm tăng tính dễ bị tổn thương.",
+      "definition_en": "Adaptation measures that fail to reduce vulnerability or inadvertently increase exposure to climate hazards.",
+      "level": "C2",
+      "synonyms": [
+        "counterproductive adaptation",
+        "failed adaptation"
+      ],
+      "antonyms": [
+        "effective adaptation",
+        "transformative adaptation"
+      ],
+      "example_sentence": "Building sea walls without considering sediment dynamics exemplifies maladaptation, as it can accelerate erosion in adjacent areas."
+    },
+    {
+      "word": "climate justice",
+      "pronunciation": "/ˈklaɪmət ˈdʒʌstɪs/",
+      "part_of_speech": "noun",
+      "definition_vi": "Nguyên tắc công bằng trong chia sẻ trách nhiệm và lợi ích liên quan đến biến đổi khí hậu, đặc biệt giữa các quốc gia giàu và nghèo.",
+      "definition_en": "The principle of equitable responsibility and benefit-sharing in climate action, addressing historical emissions disparities.",
+      "level": "C1",
+      "synonyms": [
+        "climate equity",
+        "environmental justice"
+      ],
+      "antonyms": [
+        "climate inequality"
+      ],
+      "example_sentence": "Climate justice advocates argue that developed nations must provide financial support to vulnerable countries for adaptation and loss and damage."
+    },
+    {
+      "word": "carbon budget",
+      "pronunciation": "/ˈkɑːrbən ˈbʌdʒɪt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Lượng khí thải carbon dioxide tối đa mà có thể phát thải để giữ mức ấm lên dưới một ngưỡng nhất định.",
+      "definition_en": "The maximum amount of CO₂ that can be emitted while limiting warming to a specific temperature target.",
+      "level": "C1",
+      "synonyms": [
+        "emissions budget",
+        "allowable emissions"
+      ],
+      "antonyms": [],
+      "example_sentence": "The IPCC estimates that the remaining carbon budget for 1.5°C warming is approximately 500 gigatonnes of CO₂."
+    },
+    {
+      "word": "loss and damage",
+      "pronunciation": "/lɔːs ənd ˈdæmɪdʒ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Những tổn thất và thiệt hại do biến đổi khí hậu gây ra mà không thể thích ứng hoặc giảm nhẹ được.",
+      "definition_en": "Negative impacts of climate change that cannot be prevented through adaptation or mitigation measures.",
+      "level": "C1",
+      "synonyms": [
+        "irreversible impacts",
+        "residual damages"
+      ],
+      "antonyms": [
+        "avoided impacts"
+      ],
+      "example_sentence": "Small island developing states face unprecedented loss and damage from rising sea levels and intensifying tropical cyclones."
+    },
+    {
+      "word": "climate-resilient agriculture",
+      "pronunciation": "/ˈklaɪmət rɪˈzɪliənt ˈæɡrɪkʌltʃər/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các phương pháp nông nghiệp có khả năng chịu đựng và thích ứng với các tác động của biến đổi khí hậu.",
+      "definition_en": "Agricultural practices designed to withstand climate variability and maintain productivity under changing conditions.",
+      "level": "C1",
+      "synonyms": [
+        "climate-smart agriculture",
+        "adaptive farming"
+      ],
+      "antonyms": [
+        "conventional agriculture"
+      ],
+      "example_sentence": "Climate-resilient agriculture incorporates drought-resistant crop varieties, improved water management, and agroforestry techniques."
+    },
+    {
+      "word": "permafrost degradation",
+      "pronunciation": "/ˈpɜːrməfrɔːst ˌdɛɡrəˈdeɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự tan chảy và suy thoái của lớp đất vĩnh cửu, giải phóng lượng lớn khí methane và carbon dioxide.",
+      "definition_en": "The thawing and degradation of permanently frozen ground, releasing substantial greenhouse gases and destabilizing infrastructure.",
+      "level": "C1",
+      "synonyms": [
+        "permafrost thaw",
+        "active layer deepening"
+      ],
+      "antonyms": [],
+      "example_sentence": "Permafrost degradation in the Arctic is accelerating, creating a positive feedback loop that amplifies global warming."
+    },
+    {
+      "word": "blue carbon",
+      "pronunciation": "/bluː ˈkɑːrbən/",
+      "part_of_speech": "noun",
+      "definition_vi": "Carbon được hấp thụ và lưu trữ bởi các hệ sinh thái ven biển như rừng ngập mặn, cỏ biển và đầm lầy.",
+      "definition_en": "Carbon sequestered by coastal and marine ecosystems such as mangroves, seagrass meadows, and salt marshes.",
+      "level": "C1",
+      "synonyms": [
+        "coastal carbon",
+        "marine carbon"
+      ],
+      "antonyms": [],
+      "example_sentence": "Blue carbon ecosystems store carbon at rates 10 times higher than terrestrial forests and deserve greater protection and restoration investment."
+    },
+    {
+      "word": "just transition",
+      "pronunciation": "/dʒʌst trænˈzɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Quá trình chuyển đổi kinh tế từ nhiên liệu hóa thạch sang năng lượng sạch với bảo vệ công bằng cho lao động và cộng đồng.",
+      "definition_en": "An equitable shift away from fossil fuels that protects workers, communities, and vulnerable populations from economic disruption.",
+      "level": "C1",
+      "synonyms": [
+        "equitable transition",
+        "fair transition"
+      ],
+      "antonyms": [
+        "abrupt transition"
+      ],
+      "example_sentence": "A just transition requires retraining programs, income support, and economic diversification for coal-dependent regions."
+    },
+    {
+      "word": "climate finance",
+      "pronunciation": "/ˈklaɪmət ˈfaɪnæns/",
+      "part_of_speech": "noun",
+      "definition_vi": "Các khoản tài chính được cung cấp bởi các quốc gia phát triển để hỗ trợ các quốc gia đang phát triển ứng phó với biến đổi khí hậu.",
+      "definition_en": "Funding provided by developed nations to support developing countries in climate mitigation and adaptation efforts.",
+      "level": "C1",
+      "synonyms": [
+        "climate funding",
+        "climate aid"
+      ],
+      "antonyms": [],
+      "example_sentence": "Developed nations committed to mobilizing $100 billion annually in climate finance to support vulnerable countries."
+    },
+    {
+      "word": "ecological footprint",
+      "pronunciation": "/ˌiːkəˈlɒdʒɪkəl ˈfʊtprɪnt/",
+      "part_of_speech": "noun",
+      "definition_vi": "Diện tích đất và nước cần thiết để sản xuất các tài nguyên tiêu thụ và hấp thụ chất thải của một cá nhân hoặc quốc gia.",
+      "definition_en": "The amount of biologically productive land and water required to support human consumption and absorb waste.",
+      "level": "C1",
+      "synonyms": [
+        "environmental footprint",
+        "resource footprint"
+      ],
+      "antonyms": [],
+      "example_sentence": "The average American's ecological footprint is approximately 8 hectares, nearly four times the global average."
+    },
+    {
+      "word": "climate feedback loops",
+      "pronunciation": "/ˈklaɪmət ˈfiːdbæk luːps/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các cơ chế trong đó sự thay đổi khí hậu ban đầu kích hoạt các quá trình làm tăng hoặc giảm sự thay đổi đó.",
+      "definition_en": "Mechanisms where initial climate changes trigger processes that either amplify or dampen the original change.",
+      "level": "C2",
+      "synonyms": [
+        "positive feedback",
+        "negative feedback"
+      ],
+      "antonyms": [],
+      "example_sentence": "The ice-albedo feedback loop is a critical climate feedback mechanism where melting ice reduces Earth's reflectivity, accelerating warming."
+    },
+    {
+      "word": "decarbonization pathway",
+      "pronunciation": "/ˌdiːˈkɑːrbənaɪˈzeɪʃən ˈpæθweɪ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Kế hoạch hoặc chiến lược dài hạn để giảm dần lượng khí thải carbon trong nền kinh tế.",
+      "definition_en": "A long-term strategy or roadmap for progressively reducing carbon emissions across economic sectors.",
+      "level": "C1",
+      "synonyms": [
+        "decarbonization strategy",
+        "net-zero pathway"
+      ],
+      "antonyms": [],
+      "example_sentence": "The EU's decarbonization pathway aims to achieve climate neutrality by 2050 through sectoral emission reductions and renewable energy expansion."
+    },
+    {
+      "word": "climate-induced migration",
+      "pronunciation": "/ˈklaɪmət ɪnˈdjuːst maɪˈɡreɪʃən/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sự di cư của con người do các tác động của biến đổi khí hậu như nước biển dâng, hạn hán hoặc bão lũ.",
+      "definition_en": "Human displacement caused by climate impacts such as sea-level rise, drought, flooding, or extreme weather events.",
+      "level": "C1",
+      "synonyms": [
+        "climate migration",
+        "climate displacement"
+      ],
+      "antonyms": [],
+      "example_sentence": "Climate-induced migration is projected to displace hundreds of millions of people by 2050, creating unprecedented humanitarian challenges."
+    },
+    {
+      "word": "regenerative practices",
+      "pronunciation": "/rɪˈdʒɛnərətɪv ˈpræktɪsɪz/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Các phương pháp quản lý đất đai và tài nguyên nhằm phục hồi và cải thiện sức khỏe của hệ sinh thái.",
+      "definition_en": "Land and resource management practices designed to restore and enhance ecosystem health and productivity.",
+      "level": "C1",
+      "synonyms": [
+        "restorative practices",
+        "ecosystem restoration"
+      ],
+      "antonyms": [
+        "extractive practices",
+        "degradative practices"
+      ],
+      "example_sentence": "Regenerative practices such as rotational grazing and cover cropping rebuild soil carbon and improve agricultural resilience."
+    },
+    {
+      "word": "climate scenario modeling",
+      "pronunciation": "/ˈklaɪmət ˈsɛnərioʊ ˈmɑːdəlɪŋ/",
+      "part_of_speech": "phrase",
+      "definition_vi": "Sử dụng các mô hình máy tính để dự báo các kịch bản khí hậu tương lai dựa trên các giả định khác nhau về phát thải.",
+      "definition_en": "Using computational models to project future climate scenarios based on different emission assumptions and policy pathways.",
+      "level": "C2",
+      "synonyms": [
+        "climate projection",
+        "climate forecasting"
+      ],
+      "antonyms": [],
+      "example_sentence": "Climate scenario modeling indicates that limiting warming to 1.5°C requires immediate and sustained reductions in global emissions."
+    }
+  ],
+  "questions": [
+    {
+      "question_text": "Which of the following best describes 'maladaptation' in the context of climate change?",
+      "option_a": "A successful strategy that reduces vulnerability to climate impacts.",
+      "option_b": "An adaptation measure that fails to reduce vulnerability or inadvertently increases exposure to climate hazards.",
+      "option_c": "The process of gradually adjusting to new climate conditions over decades.",
+      "option_d": "A policy that prioritizes economic growth over environmental protection.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Maladaptation là những biện pháp thích ứng không hiệu quả hoặc thậm chí làm tăng tính dễ bị tổn thương. Ví dụ như xây dựng bức tường biển mà không xem xét động lực trầm tích có thể tăng tốc độ xói mòn ở các khu vực lân cận. Các lựa chọn khác không phản ánh đúng ý nghĩa của từ này."
+    },
+    {
+      "question_text": "The concept of 'climate justice' primarily addresses which of the following issues?",
+      "option_a": "The technological innovations needed to reduce carbon emissions.",
+      "option_b": "Equitable responsibility and benefit-sharing in climate action, particularly between wealthy and vulnerable nations.",
+      "option_c": "The legal penalties imposed on countries that exceed emission targets.",
+      "option_d": "The role of international courts in enforcing climate agreements.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Climate justice tập trung vào sự công bằng trong chia sẻ trách nhiệm và lợi ích liên quan đến biến đổi khí hậu, đặc biệt giữa các quốc gia phát triển (có trách nhiệm lịch sử cao) và các quốc gia dễ bị tổn thương. Các lựa chọn khác không phản ánh đúng khía cạnh công bằng của khái niệm này."
+    },
+    {
+      "question_text": "What is the primary significance of 'blue carbon' ecosystems in climate mitigation?",
+      "option_a": "They produce renewable energy through tidal movements.",
+      "option_b": "They sequester carbon at rates significantly higher than terrestrial forests and require protection and restoration.",
+      "option_c": "They reduce ocean acidification through chemical reactions.",
+      "option_d": "They prevent coastal erosion through physical barriers.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Blue carbon ecosystems (rừng ngập mặn, cỏ biển, đầm lầy) hấp thụ và lưu trữ carbon với tốc độ cao hơn rất nhiều so với rừng trên cạn (khoảng 10 lần). Chúng đáng được bảo vệ và phục hồi để giảm nhẹ biến đổi khí hậu. Các lựa chọn khác không phản ánh đúng vai trò của blue carbon."
+    },
+    {
+      "question_text": "A 'just transition' in the context of climate action requires which of the following elements?",
+      "option_a": "Rapid elimination of all fossil fuel industries without alternative employment.",
+      "option_b": "Equitable shift away from fossil fuels with protection for workers, communities, and vulnerable populations.",
+      "option_c": "Prioritization of economic growth over environmental concerns.",
+      "option_d": "Exclusive reliance on technological solutions for decarbonization.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Just transition là quá trình chuyển đổi công bằng từ nhiên liệu hóa thạch sang năng lượng sạch, bảo vệ lao động, cộng đồng và các nhóm dễ bị tổn thương thông qua các chương trình đào tạo lại, hỗ trợ thu nhập và đa dạng hóa kinh tế. Lựa chọn A sai vì không bảo vệ lao động; C và D không phản ánh bản chất công bằng của khái niệm."
+    },
+    {
+      "question_text": "Which statement best explains the relationship between 'climate feedback loops' and global warming?",
+      "option_a": "They are mechanisms that slow down the rate of climate change.",
+      "option_b": "They are processes where initial climate changes trigger mechanisms that either amplify or dampen the original change.",
+      "option_c": "They refer to public opinion surveys about climate change.",
+      "option_d": "They are international agreements designed to limit emissions.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Climate feedback loops là các cơ chế trong đó sự thay đổi khí hậu ban đầu kích hoạt các quá trình làm tăng (positive feedback) hoặc giảm (negative feedback) sự thay đổi đó. Ví dụ: vòng lặp ice-albedo, nơi tan chảy băng giảm độ phản xạ của Trái Đất, tăng tốc độ ấm lên. Các lựa chọn khác không phản ánh đúng ý nghĩa khoa học."
+    },
+    {
+      "question_text": "The term 'loss and damage' in climate negotiations refers to:",
+      "option_a": "Economic losses from failed renewable energy projects.",
+      "option_b": "Negative impacts of climate change that cannot be prevented through adaptation or mitigation measures.",
+      "option_c": "Damage to infrastructure from natural disasters unrelated to climate change.",
+      "option_d": "Financial penalties imposed on countries for exceeding emission limits.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Loss and damage là những tổn thất và thiệt hại do biến đổi khí hậu gây ra mà không thể thích ứng hoặc giảm nhẹ được, chẳng hạn như nước biển dâng ở các đảo nhỏ hoặc mất đa dạng sinh học không thể phục hồi. Các lựa chọn khác không phản ánh đúng khái niệm này trong bối cảnh đàm phán khí hậu."
+    },
+    {
+      "question_text": "What is the primary purpose of establishing a 'carbon budget' in climate policy?",
+      "option_a": "To allocate government spending on environmental programs.",
+      "option_b": "To determine the maximum amount of CO₂ that can be emitted while limiting warming to a specific temperature target.",
+      "option_c": "To calculate the cost of renewable energy infrastructure.",
+      "option_d": "To measure the profitability of carbon offset projects.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Carbon budget là lượng khí thải CO₂ tối đa mà có thể phát thải để giữ mức ấm lên dưới một ngưỡng nhất định (ví dụ 1.5°C). IPCC ước tính carbon budget còn lại cho 1.5°C là khoảng 500 gigatonnes CO₂. Các lựa chọn khác không phản ánh đúng ý nghĩa chính sách khí hậu của khái niệm này."
+    },
+    {
+      "question_text": "Which of the following best exemplifies 'nature-based solutions' to climate change?",
+      "option_a": "Installing solar panels on residential rooftops.",
+      "option_b": "Mangrove restoration and wetland conservation that provide carbon storage and coastal protection.",
+      "option_c": "Building nuclear power plants to replace fossil fuels.",
+      "option_d": "Developing carbon capture and storage technology.",
+      "correct_answer": "B",
+      "question_type": "meaning",
+      "difficulty": "advanced",
+      "explanation": "Nature-based solutions là các giải pháp dựa trên bảo vệ, phục hồi hoặc quản lý hệ sinh thái tự nhiên, như phục hồi rừng ngập mặn và bảo tồn đầm lầy, mang lại lợi ích kép về lưu trữ carbon và bảo vệ bờ biển. Các lựa chọn khác là các giải pháp công nghệ hoặc năng lượng, không phải dựa trên tự nhiên."
+    }
+  ]
+}
