@@ -220,7 +220,10 @@ export default function LiveClassPage() {
         })
       }
 
-      if (!res.ok) throw new Error()
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}))
+        throw new Error(errorData.error || errorData.details || 'Lỗi hệ thống khi lưu buổi học Live.')
+      }
       
       toast({
         title: editingSession ? 'Cập nhật thành công' : 'Tạo buổi học thành công',
@@ -228,11 +231,11 @@ export default function LiveClassPage() {
       })
       setIsOpenDialog(false)
       fetchSessions()
-    } catch {
+    } catch (err: any) {
       toast({
         variant: 'destructive',
         title: 'Thao tác thất bại',
-        description: 'Lỗi hệ thống khi lưu buổi học Live.',
+        description: err.message || 'Lỗi hệ thống khi lưu buổi học Live.',
       })
     } finally {
       setSaving(false)
