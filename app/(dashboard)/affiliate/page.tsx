@@ -15,10 +15,11 @@ import { formatDateShort } from '@/lib/utils'
 import { VIP_PLANS } from '@/lib/plans'
 
 const MILESTONES = [
-  { count: 5, label: '+1 tháng VIP miễn phí', points: VIP_PLANS.monthly.costPoints, icon: '🎁' },
-  { count: 12, label: '+3 tháng VIP miễn phí', points: VIP_PLANS.monthly.costPoints * 3, icon: '🎉' },
-  { count: 20, label: 'VIP vĩnh viễn', points: null, icon: '👑' },
+  { count: 5, label: '30 ngày VIP miễn phí', icon: '🎁' },
+  { count: 12, label: '90 ngày VIP miễn phí', icon: '🎉' },
+  { count: 20, label: 'VIP vĩnh viễn', icon: '👑' },
 ]
+
 
 interface ReferralRow {
   id: string
@@ -125,7 +126,7 @@ export default function AffiliatePage() {
         ) : (
           [
             { label: 'Điểm hiện có', value: `${data.points} điểm`, icon: Star, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
-            { label: 'Hoa hồng nhận được', value: `${data.totalCommissionPoints} điểm`, icon: TrendingUp, color: 'text-green-500', bg: 'bg-green-500/10' },
+            { label: 'Tổng hoa hồng tích lũy', value: `${data.totalCommissionPoints} điểm`, icon: TrendingUp, color: 'text-green-500', bg: 'bg-green-500/10' },
             { label: 'Đã giới thiệu thành công', value: `${data.commissionedCount} người`, icon: Users, color: 'text-blue-500', bg: 'bg-blue-500/10' },
           ].map((s, i) => (
             <motion.div key={s.label} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}>
@@ -197,7 +198,8 @@ export default function AffiliatePage() {
                   <p className="font-medium">Cách hoạt động:</p>
                   <p className="text-muted-foreground">1. Chia sẻ mã/link giới thiệu của bạn</p>
                   <p className="text-muted-foreground">2. Bạn bè đăng ký tài khoản qua link của bạn</p>
-                  <p className="text-muted-foreground">3. Bạn bè mua gói VIP → bạn nhận <strong>15% hoa hồng</strong></p>
+                  <p className="text-muted-foreground">3. Bạn bè mua gói VIP → Bạn nhận ngay <strong>15% hoa hồng</strong></p>
+                  <p className="text-[11px] text-green-600 dark:text-green-400 font-medium">* Hoa hồng được cộng thẳng vào Điểm hiện có để bạn tự đăng ký VIP.</p>
                 </div>
               </>
             )}

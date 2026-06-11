@@ -91,39 +91,6 @@ export async function POST(req: NextRequest) {
 
   console.log('[webhook] topup complete: user', tx.user_id, '+', pointsAdded, 'points')
 
-  // Affiliate commission — only on first topup (pending referral)
-  const { data: referral } = await supabase
-    .from('affiliate_referrals')
-    .select('id, referrer_id')
-    .eq('referee_id', tx.user_id)
-    .eq('status', 'pending')
-    .single()
-
-  if (referral && referral.referrer_id !== tx.user_id) {
-    await supabase.rpc('increment_points', { uid: referral.referrer_id, delta: 10 })
-
-    await supabase.from('point_transactions').insert({
-      user_id: referral.referrer_id,
-      amount: 10,
-      type: 'commission',
-      description: 'Hoa hồng giới thiệu bạn bè nạp tiền',
-      reference_id: referral.id,
-    })
-
-    await supabase
-      .from('affiliate_referrals')
-      .update({ status: 'commissioned' })
-      .eq('id', referral.id)
-
-    await supabase.from('notifications').insert({
-      user_id: referral.referrer_id,
-      title: 'Nhận được 10 điểm hoa hồng!',
-      content: 'Bạn nhận được 10 điểm hoa hồng từ người bạn giới thiệu vừa nạp tiền.',
-      type: 'commission',
-    })
-
-    console.log('[webhook] affiliate commission: +10 pts for', referral.referrer_id)
-  }
-
   return NextResponse.json({ success: true })
 }
+

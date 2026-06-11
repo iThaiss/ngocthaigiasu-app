@@ -124,9 +124,8 @@ export async function POST(req: NextRequest) {
   // ── Affiliate commission ──────────────────────────────────────────────────
   const { data: referral } = await supabase
     .from('affiliate_referrals')
-    .select('id, referrer_id')
+    .select('id, referrer_id, status')
     .eq('referee_id', userId)
-    .eq('status', 'pending')
     .maybeSingle()
 
   if (referral && referral.referrer_id !== userId) {
@@ -134,98 +133,107 @@ export async function POST(req: NextRequest) {
     const commissionVND = Math.floor(planVND * 0.15)
     const commissionPoints = Math.floor(commissionVND / 1000)
 
-    const { data: refWallet } = await supabase
-      .from('wallets')
-      .select('points')
-      .eq('user_id', referral.referrer_id)
-      .single()
+    if (commissionPoints > 0) {
+      const { data: refWallet } = await supabase
+        .from('wallets')
+        .select('points')
+        .eq('user_id', referral.referrer_id)
+        .single()
 
-    const refPoints = refWallet?.points ?? 0
+      const refPoints = refWallet?.points ?? 0
 
-    await supabase
-      .from('wallets')
-      .update({ points: refPoints + commissionPoints })
-      .eq('user_id', referral.referrer_id)
-
-    await supabase.from('point_transactions').insert({
-      user_id: referral.referrer_id,
-      amount: commissionPoints,
-      type: 'commission',
-      description: 'Hoa hồng giới thiệu 15%',
-    })
-
-    await supabase
-      .from('affiliate_referrals')
-      .update({
-        status: 'commissioned',
-        commission_amount: commissionVND,
-        commission_points: commissionPoints,
-      })
-      .eq('id', referral.id)
-
-    await supabase.from('notifications').insert({
-      user_id: referral.referrer_id,
-      title: 'Nhận hoa hồng giới thiệu!',
-      content: `Bạn nhận được ${commissionPoints} điểm hoa hồng từ người bạn giới thiệu vừa nâng cấp VIP ${planName}.`,
-      type: 'commission',
-    })
-
-    // ── Milestone check ───────────────────────────────────────────────────
-    const { count: commissionsCount } = await supabase
-      .from('affiliate_referrals')
-      .select('*', { count: 'exact', head: true })
-      .eq('referrer_id', referral.referrer_id)
-      .eq('status', 'commissioned')
-
-    const count = commissionsCount ?? 0
-
-    if (count === 5) {
-      const bonus = VIP_PLANS.monthly.costPoints
+      // Add commission points to referrer's wallet
       await supabase
         .from('wallets')
-        .update({ points: refPoints + commissionPoints + bonus })
+        .update({ points: refPoints + commissionPoints })
         .eq('user_id', referral.referrer_id)
+
       await supabase.from('point_transactions').insert({
         user_id: referral.referrer_id,
-        amount: bonus,
-        type: 'milestone',
-        description: 'Thưởng milestone 5 người: +1 tháng VIP',
+        amount: commissionPoints,
+        type: 'commission',
+        description: `Hoa hồng 15% gói ${planName}`,
       })
+
       await supabase.from('notifications').insert({
         user_id: referral.referrer_id,
-        title: 'Thành tích đặc biệt!',
-        content: `Bạn đã giới thiệu 5 người thành công! Nhận thêm ${VIP_PLANS.monthly.costPoints} điểm (1 tháng VIP miễn phí).`,
-        type: 'milestone',
+        title: 'Nhận hoa hồng giới thiệu!',
+        content: `Bạn nhận được ${commissionPoints} điểm hoa hồng từ người bạn giới thiệu vừa mua gói VIP ${planName}.`,
+        type: 'commission',
       })
-    } else if (count === 12) {
-      const bonus = VIP_PLANS.monthly.costPoints * 3
+    }
+
+    // Milestone logic is only triggered on the FIRST purchase (when status changes from pending to commissioned)
+    if (referral.status === 'pending') {
       await supabase
-        .from('wallets')
-        .update({ points: refPoints + commissionPoints + bonus })
-        .eq('user_id', referral.referrer_id)
-      await supabase.from('point_transactions').insert({
-        user_id: referral.referrer_id,
-        amount: bonus,
-        type: 'milestone',
-        description: 'Thưởng milestone 12 người: +3 tháng VIP',
-      })
-      await supabase.from('notifications').insert({
-        user_id: referral.referrer_id,
-        title: 'Thành tích siêu đặc biệt!',
-        content: `Bạn đã giới thiệu 12 người thành công! Nhận thêm ${VIP_PLANS.monthly.costPoints * 3} điểm (3 tháng VIP miễn phí).`,
-        type: 'milestone',
-      })
-    } else if (count === 20) {
-      await supabase
+        .from('affiliate_referrals')
+        .update({
+          status: 'commissioned',
+          commission_amount: commissionVND,
+          commission_points: commissionPoints,
+        })
+        .eq('id', referral.id)
+
+      // Milestone check
+      const { count: commissionsCount } = await supabase
+        .from('affiliate_referrals')
+        .select('*', { count: 'exact', head: true })
+        .eq('referrer_id', referral.referrer_id)
+        .eq('status', 'commissioned')
+
+      const count = commissionsCount ?? 0
+
+      // Fetch referrer's current VIP status
+      const { data: refUser } = await supabase
         .from('users')
-        .update({ is_vip: true, vip_expires_at: '2099-12-31T23:59:59Z' })
+        .select('is_vip, vip_expires_at, vip_plan')
         .eq('id', referral.referrer_id)
-      await supabase.from('notifications').insert({
-        user_id: referral.referrer_id,
-        title: 'VIP vĩnh viễn!',
-        content: 'Chúc mừng! Bạn đã giới thiệu 20 người thành công và nhận được VIP vĩnh viễn.',
-        type: 'milestone',
-      })
+        .single()
+
+      const refCurrentExpiry = refUser?.vip_expires_at
+      const refBaseDate = (refCurrentExpiry && new Date(refCurrentExpiry) > new Date())
+        ? new Date(refCurrentExpiry)
+        : new Date()
+
+      if (count === 5) {
+        const newRefExpiry = new Date(refBaseDate.getTime() + 30 * 24 * 60 * 60 * 1000)
+        await supabase
+          .from('users')
+          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), vip_plan: 'combo_vip' })
+          .eq('id', referral.referrer_id)
+
+        await supabase.from('notifications').insert({
+          user_id: referral.referrer_id,
+          title: 'Mốc giới thiệu 5 người! 🎁',
+          content: 'Chúc mừng! Bạn đã giới thiệu 5 người thành công. Nhận ngay 30 ngày VIP Combo miễn phí.',
+          type: 'milestone',
+        })
+      } else if (count === 12) {
+        const newRefExpiry = new Date(refBaseDate.getTime() + 90 * 24 * 60 * 60 * 1000)
+        await supabase
+          .from('users')
+          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), vip_plan: 'combo_vip' })
+          .eq('id', referral.referrer_id)
+
+        await supabase.from('notifications').insert({
+          user_id: referral.referrer_id,
+          title: 'Mốc giới thiệu 12 người! 🎉',
+          content: 'Chúc mừng! Bạn đã giới thiệu 12 người thành công. Nhận ngay 90 ngày VIP Combo miễn phí.',
+          type: 'milestone',
+        })
+      } else if (count === 20) {
+        await supabase
+          .from('users')
+          .update({ is_vip: true, vip_expires_at: '2099-12-31T23:59:59Z', vip_plan: 'combo_vip' })
+          .eq('id', referral.referrer_id)
+
+        await supabase.from('notifications').insert({
+          user_id: referral.referrer_id,
+          title: 'VIP Vĩnh Viễn! 👑',
+          content: 'Thành tích tối cao! Bạn đã giới thiệu 20 người thành công. Kích hoạt VIP Combo vĩnh viễn.',
+          type: 'milestone',
+        })
+      }
     }
   }
 
