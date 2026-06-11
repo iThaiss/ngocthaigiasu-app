@@ -16,6 +16,12 @@ YÊU CẦU ĐỊNH DẠNG CÔNG THỨC TOÁN (LATEX) VÀ TRÁNH LỖI CÚ PHÁP 
 - QUAN TRỌNG VỀ ESCAPE JSON: Vì kết quả trả về là JSON, tất cả dấu gạch chéo ngược (backslash) của LaTeX trong chuỗi BẮT BUỘC phải được viết dưới dạng double-escaped (gõ hai dấu gạch chéo ngược \\\\).
   Ví dụ: viết \\\\frac{1}{3} (không viết \\frac{1}{3}), viết \\\\{1; 9\\\\} (không viết \\{1; 9\\}), viết \\\\mathbb{R} (không viết \\mathbb{R}). Bất kỳ ký tự gạch chéo ngược đơn nào đứng trước chữ cái hoặc ký tự đặc biệt (như \\{ ) đều gây lỗi cú pháp JSON và làm hỏng ứng dụng.
 
+QUY TẮC KÝ HIỆU TOÁN HỌC BẮT BUỘC:
+- Vectơ AB: LUÔN dùng \\\\overrightarrow{AB} (có mũi tên →), KHÔNG dùng \\\\overline{AB} (gạch ngang) trừ khi đề yêu cầu đoạn thẳng.
+- Đoạn thẳng AB (độ dài): dùng \\\\overline{AB} hoặc |AB|.
+- Góc: dùng \\\\widehat{ABC} hoặc \\\\angle ABC.
+- Tập hợp số: \\\\mathbb{R}, \\\\mathbb{Z}, \\\\mathbb{N}.
+
 YÊU CẦU VỀ MẸO GIẢI NHANH (TIPS):
 - Chỉ cung cấp mẹo thực tế và hữu dụng, cụ thể là:
   1. Hướng dẫn bấm máy tính Casio fx-580VN X chuẩn xác (Ví dụ: Nhấn MENU 9 -> 2 -> 3 để tìm cực trị hàm số bậc 3; Nhấn MENU 8 để lập bảng giá trị kiểm tra tính đơn điệu; Nhấn SHIFT ∫ (d/dx) để tính đạo hàm tại điểm). Viết rõ từng phím bấm và kết quả hiển thị tiếng Việt trên màn hình máy (như "Cực đại x =", "Cực đại y =").
