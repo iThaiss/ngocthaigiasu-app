@@ -70,7 +70,7 @@ export async function GET() {
       .eq('type', 'commission'),
     supabase
       .from('student_answers')
-      .select('question_id, created_at, questions(topic, subtopic, canonical_topic_title, canonical_subtopic_title)')
+      .select('question_id, created_at')
       .eq('user_id', userId)
       .eq('is_correct', false)
       .order('created_at', { ascending: false })
@@ -88,6 +88,16 @@ export async function GET() {
   if (commissionRes.error) console.error('[dashboard] commission error:', commissionRes.error)
   if (recentWrongAnswersRes.error) console.error('[dashboard] weak areas error:', recentWrongAnswersRes.error)
 
+  const wrongAnswerQuestionIds = [...new Set((recentWrongAnswersRes.data ?? []).map((r) => r.question_id).filter(Boolean))]
+  let questionsMap: Record<string, { topic: string | null; subtopic: string | null; canonical_topic_title: string | null; canonical_subtopic_title: string | null }> = {}
+  if (wrongAnswerQuestionIds.length > 0) {
+    const { data: questionsData } = await supabase
+      .from('questions')
+      .select('id, topic, subtopic, canonical_topic_title, canonical_subtopic_title')
+      .in('id', wrongAnswerQuestionIds)
+    for (const q of questionsData ?? []) questionsMap[q.id] = q
+  }
+
   const recentExams = examRecentRes.data ?? []
   const examScores = recentExams.filter((exam) => typeof exam.score === 'number')
   const avgExamScore = examScores.length
@@ -99,7 +109,7 @@ export async function GET() {
   const weakAreaMap = new Map<string, { topic: string | null; subtopic: string | null; count: number }>()
 
   for (const row of recentWrongAnswersRes.data ?? []) {
-    const question = Array.isArray(row.questions) ? row.questions[0] : row.questions
+    const question = row.question_id ? questionsMap[row.question_id] : null
     const topic = question?.canonical_topic_title ?? question?.topic ?? null
     const subtopic = question?.canonical_subtopic_title ?? question?.subtopic ?? null
     const label = subtopic || topic
