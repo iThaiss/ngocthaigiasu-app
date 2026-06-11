@@ -7,19 +7,34 @@ import { isQuestionStudentReady } from '@/lib/question-readiness'
 import { getModelConfig } from '@/lib/plans'
 
 const SOLVE_PROMPT = `Bạn là gia sư Toán chuyên nghiệp tại Việt Nam.
-Đọc bài toán trong ảnh và giải chi tiết từng bước bằng tiếng Việt.
+Nhiệm vụ của bạn là đọc bài toán trong ảnh, giải chi tiết từng bước bằng tiếng Việt theo phong cách sư phạm dễ hiểu, bám sát chương trình THPT Quốc gia.
+
+YÊU CẦU ĐỊNH DẠNG CÔNG THỨC TOÁN (LATEX) VÀ TRÁNH LỖI CÚ PHÁP JSON:
+- Dùng ký hiệu đô la đơn $...$ cho các công thức inline (nằm trong dòng văn bản), ví dụ: tập xác định \\\\mathcal{D} = \\\\mathbb{R}$, biến $x$, hàm số $f(x)$.
+- BẮT BUỘC dùng ký hiệu đô la kép $$...$$ cho các phương trình lớn, hệ phương trình, giới hạn (lim), tích phân, đạo hàm phức tạp, phân số lớn hoặc ma trận để căn giữa tự động và tránh tràn giao diện trên điện thoại di động. Ví dụ:
+  $$f'(x) = x^2 - 10x + 9$$
+- QUAN TRỌNG VỀ ESCAPE JSON: Vì kết quả trả về là JSON, tất cả dấu gạch chéo ngược (backslash) của LaTeX trong chuỗi BẮT BUỘC phải được viết dưới dạng double-escaped (gõ hai dấu gạch chéo ngược \\\\).
+  Ví dụ: viết \\\\frac{1}{3} (không viết \\frac{1}{3}), viết \\\\{1; 9\\\\} (không viết \\{1; 9\\}), viết \\\\mathbb{R} (không viết \\mathbb{R}). Bất kỳ ký tự gạch chéo ngược đơn nào đứng trước chữ cái hoặc ký tự đặc biệt (như \\{ ) đều gây lỗi cú pháp JSON và làm hỏng ứng dụng.
+
+YÊU CẦU VỀ MẸO GIẢI NHANH (TIPS):
+- Chỉ cung cấp mẹo thực tế và hữu dụng, cụ thể là:
+  1. Hướng dẫn bấm máy tính Casio fx-580VN X chuẩn xác (Ví dụ: Nhấn MENU 9 -> 2 -> 3 để tìm cực trị hàm số bậc 3; Nhấn MENU 8 để lập bảng giá trị kiểm tra tính đơn điệu; Nhấn SHIFT ∫ (d/dx) để tính đạo hàm tại điểm). Viết rõ từng phím bấm và kết quả hiển thị tiếng Việt trên màn hình máy (như "Cực đại x =", "Cực đại y =").
+  2. Công thức giải nhanh chính thức của chương trình thi trắc nghiệm.
+  3. Kỹ thuật nhẩm nhanh hoặc loại trừ đáp án nhiễu trực quan.
+- TUYỆT ĐỐI không viết mẹo chung chung mang tính sáo rỗng (như "Đọc kỹ đề bài", "Tính toán cẩn thận").
+- Nếu bài toán tự luận hoặc không thể áp dụng bất kỳ mẹo thực tế nào, hãy gán giá trị "tips": null.
 
 Xác định question_type:
 - "multiple_choice": đề có lựa chọn A., B., C., D. hoặc A), B), C), D)
 - "true_false": đề có mệnh đề a), b), c), d) yêu cầu xác định Đúng/Sai
 - "short_answer": đề yêu cầu tính/tìm một số cụ thể
 
-Xác định needs_visual = true nếu đề có: "hình vẽ bên", "như hình", "hình bên", "đồ thị bên", "bảng biến thiên", "theo đồ thị", "bảng số liệu"
+Xác định needs_visual = true nếu đề có hình vẽ bên, đồ thị bên, bảng biến thiên, hoặc bảng số liệu.
 
-Trả về JSON thuần túy (KHÔNG markdown, KHÔNG \`\`\`):
+Đầu ra bắt buộc là một đối tượng JSON chuẩn khớp hoàn toàn với cấu trúc sau:
 {
-  "problem": "nội dung bài toán đọc được",
-  "topic": "chủ đề chính (Đạo hàm/Tích phân/Xác suất/...)",
+  "problem": "nội dung bài toán đọc được (sử dụng LaTeX $ cho các biểu thức toán)",
+  "topic": "chủ đề chính (Đạo hàm | Tích phân | Xác suất | Oxyz |...)",
   "subtopic": "chủ đề phụ cụ thể",
   "difficulty": "Nhận biết | Thông hiểu | Vận dụng | Vận dụng cao",
   "question_type": "multiple_choice | true_false | short_answer",
@@ -29,21 +44,20 @@ Trả về JSON thuần túy (KHÔNG markdown, KHÔNG \`\`\`):
   "option_d": "nội dung đáp án D (null nếu không phải multiple_choice)",
   "correct_answer": "A | B | C | D (null nếu không phải multiple_choice)",
   "statements": [
-    {"label": "a", "text": "mệnh đề a", "answer": true},
-    {"label": "b", "text": "mệnh đề b", "answer": false},
-    {"label": "c", "text": "mệnh đề c", "answer": true},
-    {"label": "d", "text": "mệnh đề d", "answer": false}
+    {"label": "a", "text": "nội dung mệnh đề a", "answer": true},
+    {"label": "b", "text": "nội dung mệnh đề b", "answer": false},
+    {"label": "c", "text": "nội dung mệnh đề c", "answer": true},
+    {"label": "d", "text": "nội dung mệnh đề d", "answer": false}
   ],
   "numeric_answer": null,
   "needs_visual": false,
-  "visual_description": null,
+  "visual_description": "mô tả hình vẽ/đồ thị nếu cần thiết, null nếu không",
   "steps": [
-    {"step": 1, "title": "Phân tích đề", "content": "...LaTeX: $x^2$..."},
-    {"step": 2, "title": "Lời giải", "content": "..."},
-    {"step": 3, "title": "Kết luận", "content": "..."}
+    {"step": 1, "title": "Tên bước 1", "content": "Nội dung giải thích chi tiết bước 1..."},
+    {"step": 2, "title": "Tên bước 2", "content": "Nội dung giải thích chi tiết bước 2..."}
   ],
-  "answer": "Đáp án: ...",
-  "tips": "Mẹo giải nhanh nếu có, null nếu không",
+  "answer": "Kết luận/Đáp án ngắn gọn",
+  "tips": "Nội dung mẹo bấm máy Casio hoặc công thức giải nhanh cụ thể theo yêu cầu trên, hoặc null",
   "is_math": true
 }`
 
@@ -66,6 +80,7 @@ async function callAiWithRetry(
     messages: RouterMessage[]
     maxTokens: number
     temperature?: number
+    responseFormat?: { type: 'json_object' }
   },
   maxRetries = 3
 ): Promise<{ text: string; provider: string; model: string }> {
@@ -242,6 +257,7 @@ export async function POST(req: NextRequest) {
           { type: 'text', text: SOLVE_PROMPT },
         ],
       }],
+      responseFormat: { type: 'json_object' },
     })
     const rawText = aiResponse.text
     modelConfig.model = aiResponse.model

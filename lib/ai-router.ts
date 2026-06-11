@@ -17,6 +17,7 @@ interface AiCompletionParams {
   messages: RouterMessage[]
   maxTokens?: number
   temperature?: number
+  responseFormat?: { type: 'json_object' }
 }
 
 let routerKeyCursor = 0
@@ -155,6 +156,7 @@ async function callOpenAiCompatible(params: AiCompletionParams, config: { baseUr
           content: anthropicContentToOpenAi(message.content),
         })),
       ],
+      ...(params.responseFormat ? { response_format: params.responseFormat } : {}),
     }),
     })
 
@@ -236,6 +238,7 @@ async function callGeminiWithKey(params: AiCompletionParams, apiKey: string, mod
           content: anthropicContentToOpenAi(message.content),
         })),
       ],
+      ...(params.responseFormat ? { response_format: params.responseFormat } : {}),
     }),
   })
 
