@@ -1,5 +1,1 @@
-# Local-only files not ready for deployment
-lib/server-sanitize.ts
-lib/html.ts
-lib/question-grading.ts
 supabase/
