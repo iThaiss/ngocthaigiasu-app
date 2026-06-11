@@ -362,7 +362,8 @@ export default function SolvePage() {
 
   const effectiveRemaining = remainingToday ?? status?.remaining ?? null
   const effectiveLimit = dailyLimit ?? status?.limit ?? null
-  const isLimitReached = effectiveRemaining !== null && effectiveRemaining <= 0
+  const isUnlimited = effectiveLimit === -1 || effectiveRemaining === -1
+  const isLimitReached = !isUnlimited && effectiveRemaining !== null && effectiveRemaining <= 0
   const isVip = status?.isVip ?? false
   const solveTutorContext: TutorQuestionContext | null = result ? {
     questionText: result.solution.problem,
@@ -423,7 +424,7 @@ export default function SolvePage() {
                         <Badge variant="secondary">Free</Badge>
                       )}
                       <span className={`text-sm font-medium ${isLimitReached ? 'text-destructive' : 'text-foreground'}`}>
-                        Còn {effectiveRemaining ?? '…'}/{effectiveLimit ?? '…'} lượt hôm nay
+                        {isUnlimited ? 'Không giới hạn lượt' : `Còn ${effectiveRemaining ?? '…'}/${effectiveLimit ?? '…'} lượt hôm nay`}
                       </span>
                     </div>
                   </div>
@@ -696,7 +697,7 @@ export default function SolvePage() {
 
                 {/* Meta info */}
                 <p className="text-xs text-muted-foreground text-center">
-                  Còn {effectiveRemaining ?? result.remainingToday}/{effectiveLimit ?? result.limit} lượt hôm nay
+                  {isUnlimited ? 'Không giới hạn lượt' : `Còn ${effectiveRemaining ?? result.remainingToday}/${effectiveLimit ?? result.limit} lượt hôm nay`}
                 </p>
               </motion.div>
             ) : (

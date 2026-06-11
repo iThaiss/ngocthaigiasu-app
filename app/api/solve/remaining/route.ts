@@ -44,6 +44,6 @@ export async function GET() {
   return NextResponse.json({
     used,
     limit,
-    remaining: Math.max(0, limit - used),
+    remaining: limit === -1 ? -1 : Math.max(0, limit - used),
   })
 }

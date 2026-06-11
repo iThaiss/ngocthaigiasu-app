@@ -161,7 +161,7 @@ export async function GET() {
   return NextResponse.json({
     usedToday,
     limit: modelConfig.limit,
-    remaining: Math.max(0, modelConfig.limit - usedToday),
+    remaining: modelConfig.limit === -1 ? -1 : Math.max(0, modelConfig.limit - usedToday),
     model: modelConfig.model,
     modelLabel: modelConfig.label,
     isVip: session.user.isVip,
