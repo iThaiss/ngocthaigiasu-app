@@ -32,6 +32,7 @@ const MATH_ITEMS: NavItem[] = [
 
 const ENGLISH_ITEMS: NavItem[] = [
   { href: '/dashboard/english', label: 'Tổng quan', icon: LayoutDashboard },
+  { href: '/live', label: 'Lớp học Live', icon: Video },
   { href: '/vocabulary', label: 'Từ vựng', icon: Languages },
   { href: '/grammar', label: 'Ngữ pháp', icon: BookOpen },
   { href: '/reading', label: 'Đọc hiểu', icon: BookMarked },
