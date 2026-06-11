@@ -288,6 +288,18 @@ export default function SolvePage() {
     setResult(null)
   }, [])
 
+  const handleImageLoad = useCallback(() => {
+    if (!imgRef.current) return
+    const { width, height } = imgRef.current
+    setCompletedCrop({
+      unit: 'px',
+      x: Math.round(width * 0.10),
+      y: Math.round(height * 0.10),
+      width: Math.round(width * 0.80),
+      height: Math.round(height * 0.80),
+    })
+  }, [])
+
   const handleCropConfirm = useCallback(async () => {
     if (!imgRef.current || !completedCrop || !cropFile) {
       setFile(cropFile)
@@ -739,6 +751,7 @@ export default function SolvePage() {
                   ref={imgRef}
                   src={cropSrc}
                   alt="crop preview"
+                  onLoad={handleImageLoad}
                   className="w-full h-auto max-h-[50vh] object-contain"
                   style={{ maxHeight: '50vh', maxWidth: '100%', height: 'auto', display: 'block' }}
                 />
