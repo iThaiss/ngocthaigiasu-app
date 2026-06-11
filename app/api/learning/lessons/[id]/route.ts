@@ -44,5 +44,11 @@ export async function GET(
     })
   }
 
-  return NextResponse.json({ lesson, isVip: true })
+  const sanitizedLesson = { ...lesson }
+  if (sanitizedLesson.lesson_plan_html) {
+    const { sanitizeLessonHtml } = await import('@/lib/server-sanitize')
+    sanitizedLesson.lesson_plan_html = sanitizeLessonHtml(sanitizedLesson.lesson_plan_html)
+  }
+
+  return NextResponse.json({ lesson: sanitizedLesson, isVip: true })
 }

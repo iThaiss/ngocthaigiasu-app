@@ -20,6 +20,45 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid protocol' }, { status: 400 })
   }
 
+  // SSRF Mitigation: Block local/private hosts and IP ranges
+  const hostname = parsed.hostname.toLowerCase()
+  if (
+    hostname === 'localhost' ||
+    hostname === '127.0.0.1' ||
+    hostname === '0.0.0.0' ||
+    hostname.endsWith('.local') ||
+    hostname.endsWith('.internal')
+  ) {
+    return NextResponse.json({ error: 'Forbidden destination host (SSRF Mitigation)' }, { status: 400 })
+  }
+
+  // Basic check for private IP ranges (IPv4)
+  const isPrivateIp = (ip: string): boolean => {
+    const parts = ip.split('.').map(Number)
+    if (parts.length !== 4 || parts.some(isNaN)) return false
+    return (
+      parts[0] === 10 || // 10.0.0.0/8
+      (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) || // 172.16.0.0/12
+      (parts[0] === 192 && parts[1] === 168) || // 192.168.0.0/16
+      (parts[0] === 169 && parts[1] === 254) // 169.254.0.0/16 (Link-local, including AWS metadata)
+    )
+  }
+
+  if (isPrivateIp(hostname)) {
+    return NextResponse.json({ error: 'Forbidden IP range (SSRF Mitigation)' }, { status: 400 })
+  }
+
+  // Attempt resolving hostname to prevent DNS rebinding or direct IP requests to private range
+  try {
+    const dns = await import('dns/promises')
+    const lookup = await dns.lookup(parsed.hostname).catch(() => null)
+    if (lookup && isPrivateIp(lookup.address)) {
+      return NextResponse.json({ error: 'Forbidden resolved IP destination (SSRF Mitigation)' }, { status: 400 })
+    }
+  } catch {
+    // Ignore DNS resolution errors and let fetch handle resolution/failure
+  }
+
   const res = await fetch(parsed.toString())
   if (!res.ok) return NextResponse.json({ error: 'Image fetch failed' }, { status: 502 })
 

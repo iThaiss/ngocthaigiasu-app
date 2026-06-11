@@ -64,25 +64,23 @@ export async function POST(req: NextRequest) {
 
   const pointsToAdd: number = tx.metadata?.pointsToAdd ?? Math.floor(tx.amount / 1000)
 
-  // Credit points to user wallet (atomic — avoids race condition)
-  const { error: walletErr } = await supabase.rpc('increment_points', { uid: tx.user_id, delta: pointsToAdd })
-  console.log('[webhook] wallet update:', walletErr ? walletErr.message : `+${pointsToAdd} pts`)
-
-  // Record point transaction
-  await supabase.from('point_transactions').insert({
-    user_id: tx.user_id,
-    amount: pointsToAdd,
-    type: 'topup',
-    description: `Nạp tiền ${tx.amount.toLocaleString('vi-VN')}đ`,
-    reference_id: tx.id,
+  // Credit points and mark transaction as completed atomically using RPC
+  const { data: topupResult, error: topupError } = await supabase.rpc('complete_pending_topup', {
+    txid: tx.id,
+    transfer_amount: transferAmount
   })
 
-  // Mark transaction completed
-  await supabase.from('transactions').update({ status: 'completed' }).eq('id', tx.id)
+  if (topupError || !topupResult || !topupResult[0]?.success) {
+    console.error('[webhook] complete_pending_topup RPC error:', topupError || topupResult)
+    return NextResponse.json({ error: 'Topup transaction processing failed' }, { status: 500 })
+  }
+
+  const resultData = topupResult[0] as { success: boolean; transaction_id: string; user_id: string; amount: number; points_added: number }
+  const pointsAdded = resultData.points_added
 
   // Notify user
   const notifTitle = 'Nạp điểm thành công 🎉'
-  const notifContent = `+${pointsToAdd} điểm đã được cộng vào tài khoản của bạn`
+  const notifContent = `+${pointsAdded} điểm đã được cộng vào tài khoản của bạn`
 
   await supabase.from('notifications').insert({
     user_id: tx.user_id,
@@ -91,7 +89,7 @@ export async function POST(req: NextRequest) {
     type: 'payment',
   })
 
-  console.log('[webhook] topup complete: user', tx.user_id, '+', pointsToAdd, 'points')
+  console.log('[webhook] topup complete: user', tx.user_id, '+', pointsAdded, 'points')
 
   // Affiliate commission — only on first topup (pending referral)
   const { data: referral } = await supabase

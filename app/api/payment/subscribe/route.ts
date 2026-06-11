@@ -52,37 +52,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  const { data: wallet } = await supabase
-    .from('wallets')
-    .select('points')
-    .eq('user_id', userId)
-    .single()
-
-  const currentPoints = wallet?.points ?? 0
-
-  if (currentPoints < cost) {
-    return NextResponse.json(
-      { error: 'Không đủ điểm', needed: cost, current: currentPoints },
-      { status: 400 }
-    )
-  }
-
-  const { error: deductErr } = await supabase
-    .from('wallets')
-    .update({ points: currentPoints - cost })
-    .eq('user_id', userId)
-
-  if (deductErr) {
-    return NextResponse.json({ error: 'Failed to deduct points' }, { status: 500 })
-  }
-
-  await supabase.from('point_transactions').insert({
-    user_id: userId,
-    amount: -cost,
-    type: 'subscribe',
-    description: `Đăng ký gói VIP ${planName}`,
-  })
-
   // Calculate VIP expiry with accumulation
   const { data: userData } = await supabase
     .from('users')
@@ -97,18 +66,37 @@ export async function POST(req: NextRequest) {
 
   const vipExpiresAt = new Date(baseDate.getTime() + VIP_PLANS[planId].durationDays * 24 * 60 * 60 * 1000)
 
-  const { error: vipErr } = await supabase
-    .from('users')
-    .update({
-      is_vip: true,
-      vip_expires_at: vipExpiresAt.toISOString(),
-      vip_plan: VIP_PLANS[planId].vipPlanValue,
-    })
-    .eq('id', userId)
+  // Call the atomic purchase_vip_plan function
+  const { data: purchaseResult, error: purchaseError } = await supabase.rpc('purchase_vip_plan', {
+    uid: userId,
+    plan_id: VIP_PLANS[planId].vipPlanValue,
+    cost_points: cost,
+    expires_at: vipExpiresAt.toISOString(),
+    coupon_id: couponId || null,
+    tx_description: `Đăng ký gói VIP ${planName}`
+  })
 
-  if (vipErr) {
-    await supabase.from('wallets').update({ points: currentPoints }).eq('user_id', userId)
-    return NextResponse.json({ error: 'Failed to activate VIP' }, { status: 500 })
+  if (purchaseError || !purchaseResult) {
+    console.error('Purchase VIP RPC error:', purchaseError)
+    return NextResponse.json({ error: 'Không thể xử lý giao dịch đăng ký. Vui lòng thử lại.' }, { status: 500 })
+  }
+
+  // Parse result from RPC (returns {success, reason, points_remaining})
+  interface PurchaseRpcResult {
+    success: boolean
+    reason: string | null
+    points_remaining: number | null
+  }
+  const resultObj = purchaseResult as unknown as PurchaseRpcResult
+
+  if (!resultObj.success) {
+    if (resultObj.reason === 'insufficient_points') {
+      return NextResponse.json(
+        { error: 'Không đủ điểm', needed: cost },
+        { status: 400 }
+      )
+    }
+    return NextResponse.json({ error: resultObj.reason || 'Transaction failed' }, { status: 400 })
   }
 
   await supabase.from('notifications').insert({
@@ -117,6 +105,9 @@ export async function POST(req: NextRequest) {
     content: `Tài khoản đã kích hoạt VIP Gói ${planName}. Hiệu lực đến ${vipExpiresAt.toLocaleDateString('vi-VN')}.`,
     type: 'payment',
   })
+
+  // Set currentPoints to remaining points for response metadata
+  const currentPoints = resultObj.points_remaining ?? 0
 
   // ── Coupon tracking ───────────────────────────────────────────────────────
   if (couponId) {

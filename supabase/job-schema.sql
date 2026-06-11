@@ -11,4 +11,10 @@ CREATE TABLE IF NOT EXISTS ai_jobs (
 );
 
 ALTER TABLE ai_jobs ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Admin view all jobs" ON ai_jobs FOR ALL USING (true);
+CREATE POLICY "Admin view all jobs" ON ai_jobs FOR ALL USING (
+  EXISTS (
+    SELECT 1 FROM users
+    WHERE users.id = auth.uid() AND users.role = 'admin'
+  )
+);
+

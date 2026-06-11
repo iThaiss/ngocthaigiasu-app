@@ -242,7 +242,8 @@ BEGIN
   UPDATE users
   SET is_vip = TRUE,
       vip_expires_at = expires_at,
-      vip_plan = plan_id
+      vip_plan = plan_id,
+      plan = plan_id
   WHERE id = uid;
 
   RETURN QUERY SELECT TRUE, NULL::TEXT, remaining_points;

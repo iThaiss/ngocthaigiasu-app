@@ -58,7 +58,7 @@ DO $$ BEGIN
     SELECT 1 FROM pg_policies WHERE tablename = 'daily_solve_count' AND policyname = 'Users manage own daily count'
   ) THEN
     CREATE POLICY "Users manage own daily count" ON daily_solve_count
-      FOR ALL USING (auth.uid() = user_id);
+      FOR SELECT USING (auth.uid() = user_id);
   END IF;
 END $$;
 
@@ -81,7 +81,7 @@ DO $$ BEGIN
     SELECT 1 FROM pg_policies WHERE tablename = 'student_answers' AND policyname = 'Users manage own answers'
   ) THEN
     CREATE POLICY "Users manage own answers" ON student_answers
-      FOR ALL USING (auth.uid() = user_id);
+      FOR SELECT USING (auth.uid() = user_id);
   END IF;
 END $$;
 

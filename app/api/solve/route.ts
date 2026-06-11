@@ -165,40 +165,42 @@ export async function POST(req: NextRequest) {
 
   // === STEP 1: validate + check limit ===
   console.log('=== STEP 1: validate + check limit ===')
-  const { data: dailyRow } = await supabase
-    .from('daily_solve_count')
-    .select('count')
+
+  // Check if user upgraded to VIP today to reset daily count (non-atomic for count reset only, can be async)
+  const { data: vipTx } = await supabase
+    .from('transactions')
+    .select('created_at')
     .eq('user_id', userId)
-    .eq('date', today)
+    .eq('status', 'completed')
+    .gte('created_at', today)
+    .limit(1)
     .single()
 
-  let currentCount = dailyRow?.count ?? 0
+  const resetFirst = !!vipTx
 
-  // Reset daily count if user upgraded to VIP today
-  if (session.user.isVip && currentCount > 0) {
-    const { data: vipTx } = await supabase
-      .from('transactions')
-      .select('created_at')
-      .eq('user_id', userId)
-      .eq('status', 'completed')
-      .gte('created_at', today)
-      .limit(1)
-      .single()
-    if (vipTx) {
-      await supabase.from('daily_solve_count').upsert(
-        { user_id: userId, date: today, count: 0 },
-        { onConflict: 'user_id,date' }
-      )
-      currentCount = 0
-    }
+  // Reserve usage atomically using RPC
+  const { data: reserveResult, error: reserveError } = await supabase.rpc('reserve_solve_usage', {
+    uid: userId,
+    solve_date: today,
+    solve_limit: modelConfig.limit,
+    reset_first: resetFirst
+  })
+
+  if (reserveError || !reserveResult || !reserveResult[0]) {
+    console.error('[solve] reserve_solve_usage RPC error:', reserveError || reserveResult)
+    return NextResponse.json({ error: 'Không thể kiểm tra hạn mức giải bài. Vui lòng thử lại.' }, { status: 500 })
   }
 
-  if (currentCount >= modelConfig.limit) {
+  const reservation = reserveResult[0] as { allowed: boolean; used: number; remaining: number }
+
+  if (!reservation.allowed) {
     return NextResponse.json(
-      { error: 'Hết lượt', limit: modelConfig.limit, used: currentCount, isVip: session.user.isVip },
+      { error: 'Hết lượt', limit: modelConfig.limit, used: reservation.used, isVip: session.user.isVip },
       { status: 429 }
     )
   }
+
+  const currentCount = reservation.used - 1
 
   let file: File | null = null
   try {
@@ -253,10 +255,14 @@ export async function POST(req: NextRequest) {
     }
   } catch (err) {
     console.error('[solve] Claude API error:', err)
+    // Rollback reserved count on AI failure
+    await supabase.rpc('release_solve_usage', { uid: userId, solve_date: today })
     return NextResponse.json({ error: 'Lỗi phân tích ảnh, vui lòng thử lại' }, { status: 500 })
   }
 
   if (!solution.is_math) {
+    // Rollback reserved count if it is not a math problem
+    await supabase.rpc('release_solve_usage', { uid: userId, solve_date: today })
     return NextResponse.json({ error: 'Không phải bài toán' }, { status: 400 })
   }
 
@@ -379,19 +385,12 @@ export async function POST(req: NextRequest) {
     console.error('[solve] related questions query error:', err)
   }
 
-  // Upsert daily count
-  const newCount = currentCount + 1
-  await supabase.from('daily_solve_count').upsert(
-    { user_id: userId, date: today, count: newCount },
-    { onConflict: 'user_id,date' }
-  )
-
   // === STEP 6: Return response ===
   console.log('=== STEP 6: Return response ===')
   return NextResponse.json({
     solution,
     relatedQuestions,
-    remainingToday: Math.max(0, modelConfig.limit - newCount),
+    remainingToday: reservation.remaining < 0 ? -1 : reservation.remaining,
     limit: modelConfig.limit,
     modelUsed: modelConfig.model,
     modelLabel: modelConfig.label,

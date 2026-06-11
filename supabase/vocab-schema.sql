@@ -184,9 +184,17 @@ CREATE POLICY "Anyone can read dictionary" ON dictionary_entries FOR SELECT USIN
 CREATE POLICY "Read public or own vocab sets" ON vocab_sets FOR SELECT
   USING (is_public = true OR auth.uid() = created_by);
 CREATE POLICY "Users create own vocab sets" ON vocab_sets FOR INSERT
-  WITH CHECK (auth.uid() = created_by);
+  WITH CHECK (
+    auth.uid() = created_by 
+    AND is_system = false 
+    AND featured = false
+  );
 CREATE POLICY "Users update own vocab sets" ON vocab_sets FOR UPDATE
-  USING (auth.uid() = created_by);
+  USING (auth.uid() = created_by)
+  WITH CHECK (
+    is_system = false 
+    AND featured = false
+  );
 CREATE POLICY "Users delete own vocab sets" ON vocab_sets FOR DELETE
   USING (auth.uid() = created_by);
 
