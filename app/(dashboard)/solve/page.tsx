@@ -323,9 +323,9 @@ export default function SolvePage() {
       canvas.height,
     )
     canvas.toBlob((blob) => {
-      setFile(blob ? new File([blob], cropFile.name, { type: cropFile.type }) : cropFile)
+      setFile(blob ? new File([blob], cropFile.name, { type: 'image/jpeg' }) : cropFile)
       setCropSrc(null)
-    }, cropFile.type)
+    }, 'image/jpeg', 0.92)
   }, [completedCrop, cropFile])
 
   const handleCropSkip = useCallback(() => {
@@ -752,8 +752,7 @@ export default function SolvePage() {
                   src={cropSrc}
                   alt="crop preview"
                   onLoad={handleImageLoad}
-                  className="w-full h-auto max-h-[50vh] object-contain"
-                  style={{ maxHeight: '50vh', maxWidth: '100%', height: 'auto', display: 'block' }}
+                  style={{ maxHeight: '50vh', maxWidth: '100%', width: 'auto', height: 'auto', display: 'block', margin: '0 auto' }}
                 />
               </ReactCrop>
             </div>
