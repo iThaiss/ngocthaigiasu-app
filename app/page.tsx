@@ -340,7 +340,7 @@ export default function LandingPage() {
         </div>
 
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-[1fr_auto_auto] gap-12 items-center">
             {/* Left */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -404,6 +404,33 @@ export default function LandingPage() {
                   <MathMockup />
                 </div>
               </div>
+            </motion.div>
+
+            {/* Social bar dọc — chỉ hiện desktop */}
+            <motion.div
+              initial={{ opacity: 0, x: 16 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="hidden lg:flex flex-col items-center gap-3 self-center"
+            >
+              <div className="w-px h-10 bg-border" />
+              {SOCIAL_GROUPS.flatMap((g) =>
+                g.links.map((link) => (
+                  <a
+                    key={`${g.label}-${link.platform}`}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`${link.platform} — ${g.label}`}
+                    className={`w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground transition-all duration-200 hover:scale-110 ${link.hoverColor}`}
+                  >
+                    {link.platform === 'Facebook' && <FacebookIcon />}
+                    {link.platform === 'TikTok'   && <TikTokIcon />}
+                    {link.platform === 'Zalo'     && <ZaloIcon />}
+                  </a>
+                ))
+              )}
+              <div className="w-px h-10 bg-border" />
             </motion.div>
           </div>
         </div>
