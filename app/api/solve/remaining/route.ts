@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-import { getSolveLimit } from '@/lib/plans'
+import { getSolveConfig } from '@/lib/plans'
 
 export async function GET() {
   const session = await getServerSession(authOptions)
@@ -10,7 +10,12 @@ export async function GET() {
 
   const userId = session.user.id
   const today = new Date().toISOString().slice(0, 10)
-  const limit = getSolveLimit(session.user.isVip, session.user.vipExpiresAt)
+  const { limit } = getSolveConfig({
+    plan: session.user.plan,
+    vipPlanId: session.user.vipPlan,
+    isVip: session.user.isVip,
+    vipExpiresAt: session.user.vipExpiresAt,
+  })
   const supabase = createAdminClient()
 
   const { data: dailyRow } = await supabase

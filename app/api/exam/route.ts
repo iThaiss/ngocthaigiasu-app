@@ -3,6 +3,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
+import { getPlanLimits } from '@/lib/plans'
 
 type StandardQuestionRow = Record<string, unknown>
 type StandardExamQuestionRow = Record<string, unknown> & { questions?: StandardQuestionRow | null }
@@ -92,6 +93,14 @@ export async function GET(req: NextRequest) {
   }
 
   if (mode !== 'session') return NextResponse.json({ error: 'Invalid mode' }, { status: 400 })
+
+  // Thi thử đề chuẩn: chỉ dành cho gói có quyền (Toán VIP / Combo). Free & Anh VIP bị chặn.
+  if (!getPlanLimits(session.user.plan).examUnlimited) {
+    return NextResponse.json(
+      { error: 'Tính năng Thi thử dành cho gói Toán VIP hoặc Combo. Vui lòng nâng cấp để luyện đề chuẩn.' },
+      { status: 403 }
+    )
+  }
 
   const examSetId = searchParams.get('examSetId')?.trim()
   const sectionCode = searchParams.get('sectionCode')?.trim()

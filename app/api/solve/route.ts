@@ -4,7 +4,7 @@ import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
 import { createAiCompletion, type RouterMessage } from '@/lib/ai-router'
 import { isQuestionStudentReady } from '@/lib/question-readiness'
-import { getModelConfig } from '@/lib/plans'
+import { getSolveConfig } from '@/lib/plans'
 
 const SOLVE_PROMPT = `Bạn là gia sư Toán chuyên nghiệp tại Việt Nam.
 Nhiệm vụ của bạn là đọc bài toán trong ảnh, giải chi tiết từng bước bằng tiếng Việt theo phong cách sư phạm dễ hiểu, bám sát chương trình THPT Quốc gia.
@@ -124,7 +124,12 @@ export async function GET() {
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const userId = session.user.id
-  const modelConfig = getModelConfig(session.user.isVip, session.user.vipExpiresAt)
+  const modelConfig = getSolveConfig({
+    plan: session.user.plan,
+    vipPlanId: session.user.vipPlan,
+    isVip: session.user.isVip,
+    vipExpiresAt: session.user.vipExpiresAt,
+  })
   const today = new Date().toISOString().slice(0, 10)
   const supabase = createAdminClient()
 
@@ -180,7 +185,12 @@ export async function POST(req: NextRequest) {
   if (!session?.user?.id) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 
   const userId = session.user.id
-  const modelConfig = getModelConfig(session.user.isVip, session.user.vipExpiresAt)
+  const modelConfig = getSolveConfig({
+    plan: session.user.plan,
+    vipPlanId: session.user.vipPlan,
+    isVip: session.user.isVip,
+    vipExpiresAt: session.user.vipExpiresAt,
+  })
   const today = new Date().toISOString().slice(0, 10)
   const supabase = createAdminClient()
 

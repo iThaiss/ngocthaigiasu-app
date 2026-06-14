@@ -27,7 +27,8 @@ const MATH_ITEMS: NavItem[] = [
   { href: '/live', label: 'Lớp học Live', icon: Video },
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
   { href: '/practice', label: 'Luyện tập', icon: Target },
-  { href: '/exam', label: 'Thi thử', icon: FileText },
+  // Tạm ẩn chức năng Thi thử — sẽ phát triển sau (không xóa)
+  // { href: '/exam', label: 'Thi thử', icon: FileText },
 ]
 
 const ENGLISH_ITEMS: NavItem[] = [

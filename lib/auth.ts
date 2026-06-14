@@ -64,7 +64,7 @@ export const authOptions: NextAuthOptions = {
         try {
           const { data } = await supabaseAdmin
             .from('users')
-            .select('id, role, is_vip, vip_expires_at, vip_plan, profile_completed, avatar_url')
+            .select('id, role, is_vip, vip_expires_at, plan, vip_plan, profile_completed, avatar_url')
             .eq('email', email)
             .single()
           if (data) {
@@ -72,6 +72,7 @@ export const authOptions: NextAuthOptions = {
             token.role = data.role
             token.isVip = data.is_vip
             token.vipExpiresAt = data.vip_expires_at
+            token.plan = data.plan ?? null
             token.vipPlan = data.vip_plan ?? null
             token.profileCompleted = data.profile_completed ?? false
             token.avatarUrl = data.avatar_url ?? (token.picture as string | null) ?? null
@@ -88,7 +89,8 @@ export const authOptions: NextAuthOptions = {
         session.user.role = token.role as string
         session.user.isVip = token.isVip as boolean
         session.user.vipExpiresAt = token.vipExpiresAt as string | null
-        session.user.vipPlan = (token.vipPlan as 'monthly' | 'yearly' | null) ?? null
+        session.user.plan = (token.plan as string | null) ?? null
+        session.user.vipPlan = (token.vipPlan as string | null) ?? null
         session.user.profileCompleted = (token.profileCompleted as boolean) ?? false
         if (token.avatarUrl) session.user.image = token.avatarUrl as string
       }

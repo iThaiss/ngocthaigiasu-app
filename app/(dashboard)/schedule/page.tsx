@@ -23,9 +23,9 @@ const CY = NOW.getFullYear()
 const CM = NOW.getMonth()
 
 const MOCK_EVENTS: CalendarEvent[] = [
-  { id: '1', date: 5,  month: CM, year: CY, title: 'Thi thử Toán 12', type: 'exam', subject: 'math' },
+  { id: '1', date: 5,  month: CM, year: CY, title: 'Luyện tập Toán 12', type: 'class', subject: 'math' },
   { id: '2', date: 12, month: CM, year: CY, title: 'Nộp bài tập Lý', type: 'deadline', subject: 'physics' },
-  { id: '3', date: 15, month: CM, year: CY, title: 'Thi thử Tiếng Anh B1', type: 'exam', subject: 'english' },
+  { id: '3', date: 15, month: CM, year: CY, title: 'Ôn tập Tiếng Anh B1', type: 'class', subject: 'english' },
   { id: '4', date: 18, month: CM, year: CY, title: 'Nộp bài đọc IELTS', type: 'deadline', subject: 'english' },
   { id: '5', date: 20, month: CM, year: CY, title: 'Lịch học online', type: 'class', subject: 'all' },
   { id: '6', date: 22, month: CM, year: CY, title: 'Luyện đề Toán học', type: 'class', subject: 'math' },

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
-import { getSolveLimit } from '@/lib/plans'
+import { getSolveConfig } from '@/lib/plans'
 
 function formatActivityTime(date: string | null | undefined) {
   if (!date) return null
@@ -103,7 +103,12 @@ export async function GET() {
   const avgExamScore = examScores.length
     ? Math.round(examScores.reduce((sum, exam) => sum + Number(exam.score ?? 0), 0) / examScores.length)
     : 0
-  const solveLimit = getSolveLimit(isVip, vipExpiresAt)
+  const { limit: solveLimit } = getSolveConfig({
+    plan: session.user.plan,
+    vipPlanId: session.user.vipPlan,
+    isVip,
+    vipExpiresAt,
+  })
   const solvedToday = dailySolveRes.data?.count ?? 0
   const totalCommissionPoints = (commissionRes.data ?? []).reduce((sum, row) => sum + Number(row.amount ?? 0), 0)
   const weakAreaMap = new Map<string, { topic: string | null; subtopic: string | null; count: number }>()

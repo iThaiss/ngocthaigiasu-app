@@ -11,7 +11,8 @@ declare module 'next-auth' {
       role: string
       isVip: boolean
       vipExpiresAt: string | null
-      vipPlan: string | null
+      plan: string | null      // subject: free | math_vip | english_vip | combo_vip
+      vipPlan: string | null   // granular planId: math_monthly | combo_1week | ...
       profileCompleted: boolean
     }
   }
@@ -23,6 +24,7 @@ declare module 'next-auth/jwt' {
     role?: string
     isVip?: boolean
     vipExpiresAt?: string | null
+    plan?: string | null
     vipPlan?: string | null
     profileCompleted?: boolean
     avatarUrl?: string | null

@@ -82,6 +82,21 @@ export async function POST(req: NextRequest) {
 
   const planLimits = getPlanLimits(userData?.plan)
 
+  // Giới hạn tổng số bộ từ vựng người dùng sở hữu (Free: tối đa 3)
+  if (planLimits.vocabSetsMax !== -1) {
+    const { count: ownedCount } = await supabase
+      .from('vocab_sets')
+      .select('id', { count: 'exact', head: true })
+      .eq('created_by', userId)
+
+    if ((ownedCount ?? 0) >= planLimits.vocabSetsMax) {
+      return NextResponse.json(
+        { error: `Bạn đã đạt giới hạn ${planLimits.vocabSetsMax} bộ từ vựng. Nâng cấp gói Anh VIP để tạo không giới hạn.` },
+        { status: 403 }
+      )
+    }
+  }
+
   // Rate limit check
   const withinLimit = await checkRateLimit(supabase, userId, planLimits)
   if (!withinLimit) {

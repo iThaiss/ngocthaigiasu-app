@@ -52,9 +52,9 @@ const MATH_FEATURES = [
     color: 'bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400',
   },
   {
-    icon: Trophy,
-    title: 'Thi Thử Thực Chiến',
-    desc: '50 câu, 90 phút, bảng xếp hạng real-time — y hệt áp lực thi THPT Quốc Gia.',
+    icon: Sparkles,
+    title: 'AI Gia Sư Toán',
+    desc: 'AI phân tích điểm yếu, gợi ý bài tập ôn luyện phù hợp theo từng chủ đề.',
     color: 'bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400',
   },
   {
@@ -115,7 +115,7 @@ const TESTIMONIALS = [
   {
     name: 'Trần Phú Quý',
     school: 'THPT Lê Quý Đôn',
-    text: 'Tính năng thi thử giúp mình quen áp lực thời gian. Bộ từ vựng tiếng Anh B2 rất chất!',
+    text: 'Luyện tập theo chủ đề giúp mình chắc kiến thức hơn hẳn. Bộ từ vựng tiếng Anh B2 rất chất!',
     avatar: 'PQ',
     stars: 5,
   },
@@ -323,7 +323,7 @@ export default function LandingPage() {
                 Giải Toán từng bước với AI · Luyện tiếng Anh từ B1 đến C2
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Thi thử với bảng xếp hạng real-time · Học mọi lúc, mọi nơi
+                Luyện tập theo chủ đề · Học mọi lúc, mọi nơi
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
@@ -420,7 +420,7 @@ export default function LandingPage() {
                   <ul className="space-y-2.5 text-sm text-muted-foreground">
                     {[
                       'Chụp ảnh → AI giải từng bước với LaTeX',
-                      'Thi thử 50 câu / 90 phút, bảng xếp hạng',
+                      'AI Gia sư phân tích điểm yếu, gợi ý ôn tập',
                       'Ngân hàng 10,000+ câu theo chủ đề & độ khó',
                     ].map((f) => (
                       <li key={f} className="flex items-center gap-2">
@@ -858,7 +858,7 @@ export default function LandingPage() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {[
                   { href: '/solve', label: 'Giải Toán AI' },
-                  { href: '/exam', label: 'Thi Thử' },
+                  // { href: '/exam', label: 'Thi Thử' }, // tạm ẩn — sẽ phát triển sau
                   { href: '/vocabulary', label: 'Từ Vựng Anh' },
                   { href: '/grammar', label: 'Ngữ Pháp' },
                 ].map((l) => (

@@ -97,10 +97,11 @@ export default function SubjectSelectPage() {
                 Toán học
               </CardTitle>
               <CardDescription className="text-sm leading-relaxed text-muted-foreground">
-                Giải bài tập AI tự động, ôn tập theo lộ trình cá nhân hóa và thi thử đề THPT Quốc gia chuẩn cấu trúc.
+                Giải bài tập AI tự động và ôn tập theo lộ trình cá nhân hóa chuẩn cấu trúc THPT Quốc gia.
               </CardDescription>
               <div className="pt-4 flex flex-wrap gap-1.5">
-                {['AI solver', 'Luyện tập', 'Thi thử'].map((t) => (
+                {/* 'Thi thử' tạm ẩn — sẽ phát triển sau */}
+                {['AI solver', 'Luyện tập'].map((t) => (
                   <Badge key={t} variant="secondary" className="bg-purple-500/10 text-purple-600 dark:text-purple-400 border-0">
                     {t}
                   </Badge>

@@ -9,6 +9,7 @@ ALTER TABLE affiliate_referrals ADD COLUMN IF NOT EXISTS commission_amount BIGIN
 
 DROP FUNCTION IF EXISTS commission_pending_referral(UUID, INTEGER, BIGINT, TEXT);
 DROP FUNCTION IF EXISTS purchase_vip_plan(UUID, TEXT, INTEGER, TIMESTAMPTZ, UUID, TEXT);
+DROP FUNCTION IF EXISTS purchase_vip_plan(UUID, TEXT, INTEGER, TIMESTAMPTZ, UUID, TEXT, TEXT);
 DROP FUNCTION IF EXISTS complete_pending_topup(UUID, BIGINT);
 DROP FUNCTION IF EXISTS release_solve_usage(UUID, DATE);
 DROP FUNCTION IF EXISTS reserve_solve_usage(UUID, DATE, INTEGER, BOOLEAN);
@@ -162,13 +163,16 @@ BEGIN
 END;
 $$;
 
+-- plan_id: planId granular ('math_monthly', 'combo_1week', ...) -> lưu vào users.vip_plan
+-- plan_subject: giá trị môn ('math_vip'|'english_vip'|'combo_vip') -> lưu vào users.plan (feature gates)
 CREATE OR REPLACE FUNCTION purchase_vip_plan(
   uid UUID,
   plan_id TEXT,
   cost_points INTEGER,
   expires_at TIMESTAMPTZ,
   coupon_id UUID DEFAULT NULL,
-  tx_description TEXT DEFAULT NULL
+  tx_description TEXT DEFAULT NULL,
+  plan_subject TEXT DEFAULT NULL
 )
 RETURNS TABLE(success BOOLEAN, reason TEXT, points_remaining INTEGER)
 LANGUAGE plpgsql
@@ -243,7 +247,7 @@ BEGIN
   SET is_vip = TRUE,
       vip_expires_at = expires_at,
       vip_plan = plan_id,
-      plan = plan_id
+      plan = COALESCE(plan_subject, plan_id)
   WHERE id = uid;
 
   RETURN QUERY SELECT TRUE, NULL::TEXT, remaining_points;

@@ -67,13 +67,15 @@ export async function POST(req: NextRequest) {
   const vipExpiresAt = new Date(baseDate.getTime() + VIP_PLANS[planId].durationDays * 24 * 60 * 60 * 1000)
 
   // Call the atomic purchase_vip_plan function
+  // plan_id = granular (math_monthly...) -> users.vip_plan; plan_subject = môn -> users.plan
   const { data: purchaseResult, error: purchaseError } = await supabase.rpc('purchase_vip_plan', {
     uid: userId,
-    plan_id: VIP_PLANS[planId].vipPlanValue,
+    plan_id: planId,
     cost_points: cost,
     expires_at: vipExpiresAt.toISOString(),
     coupon_id: couponId || null,
-    tx_description: `Đăng ký gói VIP ${planName}`
+    tx_description: `Đăng ký gói VIP ${planName}`,
+    plan_subject: VIP_PLANS[planId].vipPlanValue,
   })
 
   if (purchaseError || !purchaseResult) {
@@ -195,42 +197,47 @@ export async function POST(req: NextRequest) {
         ? new Date(refCurrentExpiry)
         : new Date()
 
+      // Thưởng mốc theo đúng môn người được giới thiệu vừa mua (quyết định #4)
+      const rewardSubject = VIP_PLANS[planId].vipPlanValue // 'math_vip' | 'english_vip' | 'combo_vip'
+      const subjectPrefix = rewardSubject === 'math_vip' ? 'math' : rewardSubject === 'english_vip' ? 'english' : 'combo'
+      const subjectLabel = rewardSubject === 'math_vip' ? 'Toán' : rewardSubject === 'english_vip' ? 'Anh' : 'Combo Toán + Anh'
+
       if (count === 5) {
         const newRefExpiry = new Date(refBaseDate.getTime() + 30 * 24 * 60 * 60 * 1000)
         await supabase
           .from('users')
-          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), vip_plan: 'combo_vip' })
+          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_monthly` })
           .eq('id', referral.referrer_id)
 
         await supabase.from('notifications').insert({
           user_id: referral.referrer_id,
           title: 'Mốc giới thiệu 5 người! 🎁',
-          content: 'Chúc mừng! Bạn đã giới thiệu 5 người thành công. Nhận ngay 30 ngày VIP Combo miễn phí.',
+          content: `Chúc mừng! Bạn đã giới thiệu 5 người thành công. Nhận ngay 30 ngày VIP ${subjectLabel} miễn phí.`,
           type: 'milestone',
         })
       } else if (count === 12) {
         const newRefExpiry = new Date(refBaseDate.getTime() + 90 * 24 * 60 * 60 * 1000)
         await supabase
           .from('users')
-          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), vip_plan: 'combo_vip' })
+          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_3months` })
           .eq('id', referral.referrer_id)
 
         await supabase.from('notifications').insert({
           user_id: referral.referrer_id,
           title: 'Mốc giới thiệu 12 người! 🎉',
-          content: 'Chúc mừng! Bạn đã giới thiệu 12 người thành công. Nhận ngay 90 ngày VIP Combo miễn phí.',
+          content: `Chúc mừng! Bạn đã giới thiệu 12 người thành công. Nhận ngay 90 ngày VIP ${subjectLabel} miễn phí.`,
           type: 'milestone',
         })
       } else if (count === 20) {
         await supabase
           .from('users')
-          .update({ is_vip: true, vip_expires_at: '2099-12-31T23:59:59Z', vip_plan: 'combo_vip' })
+          .update({ is_vip: true, vip_expires_at: '2099-12-31T23:59:59Z', plan: rewardSubject, vip_plan: `${subjectPrefix}_yearly` })
           .eq('id', referral.referrer_id)
 
         await supabase.from('notifications').insert({
           user_id: referral.referrer_id,
           title: 'VIP Vĩnh Viễn! 👑',
-          content: 'Thành tích tối cao! Bạn đã giới thiệu 20 người thành công. Kích hoạt VIP Combo vĩnh viễn.',
+          content: `Thành tích tối cao! Bạn đã giới thiệu 20 người thành công. Kích hoạt VIP ${subjectLabel} vĩnh viễn.`,
           type: 'milestone',
         })
       }

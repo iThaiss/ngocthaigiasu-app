@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { normalizeMathText, renderLatex } from '@/lib/math-render'
 import {
@@ -19,6 +20,9 @@ import QuestionGrid from '@/components/exam/QuestionGrid'
 import { formatTime } from '@/lib/utils'
 import { useToast } from '@/components/ui/use-toast'
 import QuestionTutorAgent, { type TutorMessage, type TutorQuestionContext } from '@/components/QuestionTutorAgent'
+
+// Cờ tạm ẩn chức năng Thi thử. Đặt true để mở lại khi phát triển tiếp.
+const EXAM_FEATURE_ENABLED: boolean = false
 
 type Phase = 'start' | 'exam' | 'result'
 type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'
@@ -355,6 +359,13 @@ function sectionTitle(sectionCode: string) {
 }
 
 export default function ExamPage() {
+  const router = useRouter()
+
+  // Tạm ẩn Thi thử: chặn truy cập trực tiếp bằng URL, đưa về trang Toán.
+  useEffect(() => {
+    if (!EXAM_FEATURE_ENABLED) router.replace('/dashboard/math')
+  }, [router])
+
   const { toast } = useToast()
   const [phase, setPhase] = useState<Phase>('start')
   const [practiceMode, setPracticeMode] = useState<PracticeMode>('study')
@@ -654,6 +665,15 @@ export default function ExamPage() {
     answered: isCurrentSubmitted,
     imageUrl: q.image_url,
   } : null
+
+  // Tạm ẩn Thi thử: không render UI, chỉ hiển thị loader trong lúc redirect.
+  if (!EXAM_FEATURE_ENABLED) {
+    return (
+      <div className="flex h-64 items-center justify-center">
+        <Loader2 className="h-7 w-7 animate-spin text-muted-foreground" />
+      </div>
+    )
+  }
 
   if (loadingMeta) {
     return (

@@ -53,7 +53,8 @@ export async function POST(req: NextRequest) {
     .update({
       is_vip: true,
       vip_expires_at: newExpiry.toISOString(),
-      vip_plan: 'combo_vip', // Give them full access during the trial
+      plan: 'combo_vip',       // subject -> mở feature gates trong 1 ngày trải nghiệm
+      vip_plan: 'combo_1day',  // granular -> getSolveConfig: Lite, 20 lượt/ngày
       last_free_vip_claimed_at: now.toISOString(),
     })
     .eq('id', userId)

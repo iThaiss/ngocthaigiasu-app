@@ -68,7 +68,7 @@ const VIP_BENEFITS = [
   {
     icon: Zap,
     title: 'Trợ lý AI Giải Toán',
-    description: 'Giải toán siêu tốc bằng mô hình Gemini 2.5 Flash cao cấp, giải thích chi tiết từng bước làm bài.',
+    description: 'Giải toán không giới hạn (gói Toán/Combo), giải thích chi tiết từng bước. Gói tháng trở lên dùng mô hình Gemini 2.5 Flash cao cấp.',
     color: 'text-purple-400 bg-purple-500/10 border-purple-500/20',
   },
   {
@@ -470,9 +470,9 @@ export default function PaymentPage() {
           <p className="text-sm font-medium text-amber-300 leading-relaxed">
             Hội viên VIP hiện tại:{' '}
             <span className="text-white font-bold">
-              {session.user.vipPlan === 'math_vip'
+              {session.user.plan === 'math_vip'
                 ? 'Toán VIP'
-                : session.user.vipPlan === 'english_vip'
+                : session.user.plan === 'english_vip'
                 ? 'Anh VIP'
                 : 'Combo Toán + Anh VIP'}
             </span>

@@ -106,7 +106,7 @@ export default function MathDashboard() {
   }, [])
 
   const stats = data?.stats
-  const recentExams = data?.recentExams ?? []
+  // const recentExams = data?.recentExams ?? [] // tạm ẩn cùng chức năng Thi thử
   const topWeakArea = data?.weakAreas?.[0]
   
   const solveProgress = stats ? Math.min(100, Math.round((stats.solvedToday / Math.max(1, stats.solveLimit)) * 100)) : 0
@@ -216,13 +216,14 @@ export default function MathDashboard() {
             hasProgress: true,
             progressValue: solveProgress
           },
-          { 
-            label: 'Điểm TB thi thử', 
-            value: stats ? `${stats.avgExamScore}/50` : '0/50', 
-            icon: Trophy, 
-            color: 'text-amber-500', 
+          // Tạm ẩn "Điểm TB thi thử" — chức năng Thi thử đang ẩn, phát triển sau.
+          {
+            label: 'Điểm tích lũy',
+            value: stats ? `${stats.points}` : '0',
+            icon: Trophy,
+            color: 'text-amber-500',
             bg: 'bg-amber-500/10',
-            sub: `${recentExams.length} bài gần đây` 
+            sub: 'Dùng để đổi quà & VIP'
           },
           { 
             label: 'Câu hỏi đã lưu', 
@@ -286,13 +287,14 @@ export default function MathDashboard() {
                 desc: 'Làm câu hỏi theo chủ đề', 
                 color: 'from-indigo-500/15 to-blue-500/10 text-indigo-500 hover:border-indigo-500/40 border-2 border-transparent' 
               },
-              { 
-                href: '/exam', 
-                icon: Trophy, 
-                label: 'Thi thử', 
-                desc: 'Làm đề 50 câu/90 phút', 
-                color: 'from-amber-500/15 to-yellow-500/10 text-amber-500 hover:border-amber-500/40 border-2 border-transparent' 
-              },
+              // Tạm ẩn lối vào Thi thử — sẽ phát triển sau (không xóa).
+              // {
+              //   href: '/exam',
+              //   icon: Trophy,
+              //   label: 'Thi thử',
+              //   desc: 'Làm đề 50 câu/90 phút',
+              //   color: 'from-amber-500/15 to-yellow-500/10 text-amber-500 hover:border-amber-500/40 border-2 border-transparent'
+              // },
             ].map((action, i) => (
               <motion.div 
                 key={action.href} 
@@ -411,11 +413,12 @@ export default function MathDashboard() {
                 <Star className="h-4 w-4 fill-amber-300" /> Bí quyết học tốt
               </div>
               <p className="text-xs leading-relaxed text-purple-100 font-medium">
-                &ldquo;Học Toán hiệu quả bắt đầu bằng việc hiểu bản chất lý thuyết trong Lộ trình, sau đó giải đề thi thử để phát hiện phần kiến thức hổng.&rdquo;
+                &ldquo;Học Toán hiệu quả bắt đầu bằng việc hiểu bản chất lý thuyết trong Lộ trình, sau đó luyện tập theo chủ đề để phát hiện phần kiến thức hổng.&rdquo;
               </p>
             </CardContent>
           </Card>
 
+          {/* Tạm ẩn section "Kế hoạch thi thử" — chức năng Thi thử sẽ phát triển sau (không xóa).
           <h2 className="text-lg font-bold tracking-tight pt-2">Kế hoạch thi thử</h2>
           <Card className="h-fit">
             <CardHeader className="py-4">
@@ -463,6 +466,7 @@ export default function MathDashboard() {
               )}
             </CardContent>
           </Card>
+          */}
         </div>
       </div>
 

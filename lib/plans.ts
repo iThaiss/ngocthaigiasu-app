@@ -143,15 +143,16 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
   },
 
   // ---- Anh VIP ----
+  // Anh VIP không mở Giải toán AI: giải toán giữ mức Free (Lite, 3 lượt/ngày).
   english_1day: {
     id: 'english_1day',
     name: '1 Ngày',
     displayName: 'Anh VIP — 1 Ngày',
     costPoints: 9,
     durationDays: 1,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash-lite',
-    modelLabel: 'Gemini 2.5 Flash Lite',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -161,9 +162,9 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     displayName: 'Anh VIP — 3 Ngày',
     costPoints: 19,
     durationDays: 3,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash-lite',
-    modelLabel: 'Gemini 2.5 Flash Lite',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -173,9 +174,9 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     displayName: 'Anh VIP — 1 Tuần',
     costPoints: 39,
     durationDays: 7,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash-lite',
-    modelLabel: 'Gemini 2.5 Flash Lite',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -185,9 +186,9 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     displayName: 'Anh VIP — 1 Tháng',
     costPoints: 79,
     durationDays: 30,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash',
-    modelLabel: 'Gemini 2.5 Flash',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -197,9 +198,9 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     displayName: 'Anh VIP — 3 Tháng',
     costPoints: 169,
     durationDays: 90,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash',
-    modelLabel: 'Gemini 2.5 Flash',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -209,9 +210,9 @@ export const VIP_PLANS: Record<PlanId, VipPlanConfig> = {
     displayName: 'Anh VIP — 1 Năm',
     costPoints: 399,
     durationDays: 365,
-    solveLimit: 0,
-    model: 'google/gemini-2.5-flash',
-    modelLabel: 'Gemini 2.5 Flash',
+    solveLimit: FREE_SOLVE_LIMIT,
+    model: FREE_MODEL,
+    modelLabel: FREE_MODEL_LABEL,
     subjects: ['english'],
     vipPlanValue: 'english_vip',
   },
@@ -305,23 +306,51 @@ export function getPlanName(planId: PlanId): string {
   return VIP_PLANS[planId]?.name ?? ''
 }
 
-export function inferVipPlan(vipExpiresAt?: string | null): PlanId {
-  const expiresAt = vipExpiresAt ? new Date(vipExpiresAt) : null
-  const daysLeft = expiresAt ? (expiresAt.getTime() - Date.now()) / (1000 * 60 * 60 * 24) : 0
-  if (daysLeft > 200) return 'combo_yearly'
-  if (daysLeft > 60) return 'combo_3months'
-  return 'combo_monthly'
+const FLASH_MODEL = 'google/gemini-2.5-flash'
+const FLASH_MODEL_LABEL = 'Gemini 2.5 Flash'
+
+const FREE_SOLVE_CONFIG = { model: FREE_MODEL, limit: FREE_SOLVE_LIMIT, label: FREE_MODEL_LABEL }
+
+/**
+ * Suy ra môn (subject) từ một planId granular ('math_monthly' -> 'math_vip') hoặc
+ * từ chính giá trị subject/legacy đã lưu trong DB.
+ */
+export function subjectFromPlanId(
+  planId?: string | null
+): 'math_vip' | 'english_vip' | 'combo_vip' | null {
+  if (!planId) return null
+  if (planId === 'math_vip' || planId === 'english_vip' || planId === 'combo_vip') return planId
+  const config = VIP_PLANS[planId as PlanId]
+  return config?.vipPlanValue ?? null
 }
 
-export function getSolveLimit(isVip: boolean, vipExpiresAt?: string | null): number {
-  if (!isVip) return FREE_SOLVE_LIMIT
-  return VIP_PLANS[inferVipPlan(vipExpiresAt)]?.solveLimit ?? -1
-}
+/**
+ * Nguồn sự thật duy nhất cho cấu hình Giải toán AI (model + hạn mức/ngày).
+ * - Không VIP → Free (Lite, 3).
+ * - Anh VIP → giải toán giữ mức Free (Lite, 3).
+ * - Toán/Combo → tra granular plan để lấy đúng tier (Lite + 20/25/30 cho gói ngắn,
+ *   Flash + unlimited cho tháng trở lên). Fallback: dữ liệu cũ chỉ lưu subject/legacy
+ *   → math/combo dùng Flash unlimited.
+ */
+export function getSolveConfig(opts: {
+  plan?: string | null // subject (users.plan)
+  vipPlanId?: string | null // granular (users.vip_plan)
+  isVip: boolean
+  vipExpiresAt?: string | null
+}): { model: string; limit: number; label: string } {
+  if (!opts.isVip) return { ...FREE_SOLVE_CONFIG }
 
-export function getModelConfig(isVip: boolean, vipExpiresAt?: string | null) {
-  if (!isVip) return { model: FREE_MODEL, limit: FREE_SOLVE_LIMIT, label: FREE_MODEL_LABEL }
-  const plan = VIP_PLANS[inferVipPlan(vipExpiresAt)]
-  return { model: plan?.model ?? 'google/gemini-2.5-flash', limit: plan?.solveLimit ?? -1, label: plan?.modelLabel ?? 'Gemini 2.5 Flash' }
+  const subject = subjectFromPlanId(opts.plan) ?? subjectFromPlanId(opts.vipPlanId)
+  if (subject === 'english_vip') return { ...FREE_SOLVE_CONFIG }
+
+  // Granular plan → đúng model + limit theo thời hạn đã mua.
+  const granular = opts.vipPlanId ? VIP_PLANS[opts.vipPlanId as PlanId] : undefined
+  if (granular) {
+    return { model: granular.model, limit: granular.solveLimit, label: granular.modelLabel }
+  }
+
+  // Fallback legacy (chỉ lưu subject 'math_vip'/'combo_vip' hoặc null): Flash unlimited.
+  return { model: FLASH_MODEL, limit: -1, label: FLASH_MODEL_LABEL }
 }
 
 // ============================================================
@@ -392,19 +421,18 @@ export interface PlanLimits {
   mathPracticeUnlimited: boolean
   englishVocabUnlimited: boolean
   aiVocabPerMonth: number       // -1 = unlimited
-  solvePerDay: number           // -1 = unlimited
   spacedRepetition: boolean
   communityPublish: boolean
   examUnlimited: boolean
   vocabSetsMax: number          // -1 = unlimited
 }
 
+// Lưu ý: hạn mức Giải toán AI KHÔNG nằm ở đây — dùng getSolveConfig() (theo granular plan).
 export const PLAN_LIMITS: Record<string, PlanLimits> = {
   free: {
     mathPracticeUnlimited: false,
     englishVocabUnlimited: false,
     aiVocabPerMonth: 5,
-    solvePerDay: FREE_SOLVE_LIMIT,
     spacedRepetition: false,
     communityPublish: false,
     examUnlimited: false,
@@ -414,7 +442,6 @@ export const PLAN_LIMITS: Record<string, PlanLimits> = {
     mathPracticeUnlimited: true,
     englishVocabUnlimited: false,
     aiVocabPerMonth: 5,
-    solvePerDay: -1,
     spacedRepetition: false,
     communityPublish: false,
     examUnlimited: true,
@@ -424,7 +451,6 @@ export const PLAN_LIMITS: Record<string, PlanLimits> = {
     mathPracticeUnlimited: false,
     englishVocabUnlimited: true,
     aiVocabPerMonth: -1, // English VIP has unlimited AI vocab
-    solvePerDay: FREE_SOLVE_LIMIT,
     spacedRepetition: true,
     communityPublish: true,
     examUnlimited: false,
@@ -434,7 +460,6 @@ export const PLAN_LIMITS: Record<string, PlanLimits> = {
     mathPracticeUnlimited: true,
     englishVocabUnlimited: true,
     aiVocabPerMonth: -1,
-    solvePerDay: -1,
     spacedRepetition: true,
     communityPublish: true,
     examUnlimited: true,
@@ -443,7 +468,9 @@ export const PLAN_LIMITS: Record<string, PlanLimits> = {
 }
 
 export function getPlanLimits(plan: string | null | undefined): PlanLimits {
-  return PLAN_LIMITS[plan ?? 'free'] ?? PLAN_LIMITS['free']
+  // Chuẩn hoá giá trị legacy (gói cũ 'monthly'/'yearly' = Combo) về subject tương ứng.
+  const key = plan === 'monthly' || plan === 'yearly' ? 'combo_vip' : plan
+  return PLAN_LIMITS[key ?? 'free'] ?? PLAN_LIMITS['free']
 }
 
 export function hasMathAccess(plan: string | null | undefined, isVip: boolean): boolean {
