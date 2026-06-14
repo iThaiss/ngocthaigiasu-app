@@ -263,8 +263,8 @@ const TikTokIcon = () => (
 )
 
 const ZaloIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
-    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14h-1.59l-5.41-7.5H7.5V16H6V8h1.59l5.41 7.5H15V8h1.5v8z"/>
+  <svg viewBox="0 0 50 50" fill="currentColor" className="h-4 w-4">
+    <path d="M25 2C12.318 2 2 12.318 2 25c0 3.96 1.023 7.854 2.963 11.29L2.037 46.73a1 1 0 001.265 1.265l10.44-2.926A23 23 0 0025 48c12.682 0 23-10.318 23-23S37.682 2 25 2zm-7.990 15h3v10h-3zm5.5 0h2.5v1.5c.667-.999 1.738-1.5 3-1.5 2.5 0 4 1.79 4 4.5V32h-3v-10c0-1.105-.895-2-2-2s-2 .895-2 2v10h-3zm-8 0h3v2h-3zm0 4h3v8h-3z"/>
   </svg>
 )
 
@@ -954,9 +954,8 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+          <div className="border-t border-border pt-6 text-center text-xs text-muted-foreground">
             <p>© 2024 ngocthaigiasu.id.vn — Tất cả quyền được bảo lưu.</p>
-            <p>Powered by <span className="font-medium text-foreground">Claude AI</span> · Made in Vietnam 🇻🇳</p>
           </div>
         </div>
       </footer>
