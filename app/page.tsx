@@ -249,22 +249,22 @@ function VocabMockup() {
   )
 }
 
-// ─── Social Icons ─────────────────────────────────────────────────────────────
+// ─── Social Icons (official paths from simple-icons) ──────────────────────────
 const FacebookIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
-    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="#0866FF">
+    <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
   </svg>
 )
 
 const TikTokIcon = () => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
-    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="#000000">
+    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
   </svg>
 )
 
 const ZaloIcon = () => (
-  <svg viewBox="0 0 50 50" fill="currentColor" className="h-4 w-4">
-    <path d="M25 2C12.318 2 2 12.318 2 25c0 3.96 1.023 7.854 2.963 11.29L2.037 46.73a1 1 0 001.265 1.265l10.44-2.926A23 23 0 0025 48c12.682 0 23-10.318 23-23S37.682 2 25 2zm-7.990 15h3v10h-3zm5.5 0h2.5v1.5c.667-.999 1.738-1.5 3-1.5 2.5 0 4 1.79 4 4.5V32h-3v-10c0-1.105-.895-2-2-2s-2 .895-2 2v10h-3zm-8 0h3v2h-3zm0 4h3v8h-3z"/>
+  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="#0068FF">
+    <path d="M12.49 10.2722v-.4496h1.3467v6.3218h-.7704a.576.576 0 01-.5763-.5729l-.0006.0005a3.273 3.273 0 01-1.9372.6321c-1.8138 0-3.2844-1.4697-3.2844-3.2823 0-1.8125 1.4706-3.2822 3.2844-3.2822a3.273 3.273 0 011.9372.6321l.0006.0005zM6.9188 7.7896v.205c0 .3823-.051.6944-.2995 1.0605l-.03.0343c-.0542.0615-.1815.206-.2421.2843L2.024 14.8h4.8948v.7682a.5764.5764 0 01-.5767.5761H0v-.3622c0-.4436.1102-.6414.2495-.8476L4.8582 9.23H.1922V7.7896h6.7266zm8.5513 8.3548a.4805.4805 0 01-.4803-.4798v-7.875h1.4416v8.3548H15.47zM20.6934 9.6C22.52 9.6 24 11.0807 24 12.9044c0 1.8252-1.4801 3.306-3.3066 3.306-1.8264 0-3.3066-1.4808-3.3066-3.306 0-1.8237 1.4802-3.3044 3.3066-3.3044zm-10.1412 5.253c1.0675 0 1.9324-.8645 1.9324-1.9312 0-1.065-.865-1.9295-1.9324-1.9295s-1.9324.8644-1.9324 1.9295c0 1.0667.865 1.9312 1.9324 1.9312zm10.1412-.0033c1.0737 0 1.945-.8707 1.945-1.9453 0-1.073-.8713-1.9436-1.945-1.9436-1.0753 0-1.945.8706-1.945 1.9436 0 1.0746.8697 1.9453 1.945 1.9453z"/>
   </svg>
 )
 
@@ -273,18 +273,18 @@ const SOCIAL_GROUPS = [
     label: 'Toán học',
     color: 'text-purple-500',
     links: [
-      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaigiasu',  hoverColor: 'hover:text-[#1877F2] hover:border-[#1877F2]' },
-      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaigiasu',   hoverColor: 'hover:text-[#FF0050] hover:border-[#FF0050]' },
-      { platform: 'Zalo',     href: 'https://zalo.me/g/9c8n1hgb0zul5pbislww', hoverColor: 'hover:text-[#0068FF] hover:border-[#0068FF]' },
+      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaigiasu',  },
+      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaigiasu',   },
+      { platform: 'Zalo',     href: 'https://zalo.me/g/9c8n1hgb0zul5pbislww', },
     ],
   },
   {
     label: 'Tiếng Anh',
     color: 'text-teal-500',
     links: [
-      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaitutor',  hoverColor: 'hover:text-[#1877F2] hover:border-[#1877F2]' },
-      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaitutor',   hoverColor: 'hover:text-[#FF0050] hover:border-[#FF0050]' },
-      { platform: 'Zalo',     href: 'https://zalo.me/g/ihbz7lmenl8cbricsn2b', hoverColor: 'hover:text-[#0068FF] hover:border-[#0068FF]' },
+      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaitutor',  },
+      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaitutor',   },
+      { platform: 'Zalo',     href: 'https://zalo.me/g/ihbz7lmenl8cbricsn2b', },
     ],
   },
 ]
@@ -340,7 +340,7 @@ export default function LandingPage() {
         </div>
 
         <div className="container">
-          <div className="grid lg:grid-cols-[1fr_auto_auto] gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -348,23 +348,44 @@ export default function LandingPage() {
               transition={{ duration: 0.6 }}
             >
               <Badge className="mb-5 gap-1.5 bg-purple-100 text-purple-700 border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700 hover:bg-purple-100">
-                <Sparkles className="h-3 w-3" /> Học Toán & Tiếng Anh cùng AI
+                <Sparkles className="h-3 w-3" /> Dành cho học sinh THPT ôn thi Đại học
               </Badge>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5">
-                Nền tảng học{' '}
+                Ôn thi Đại học{' '}
+                <span className="block">Toán & Tiếng Anh</span>
                 <span className="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-                  thông minh nhất
-                </span>{' '}
-                cho học sinh Việt Nam
+                  với học phí... tiểu học
+                </span>
               </h1>
 
-              <p className="text-lg text-muted-foreground mb-2">
-                Giải Toán từng bước với AI · Luyện tiếng Anh từ B1 đến C2
+              <p className="text-lg text-muted-foreground mb-6">
+                AI giải Toán từng bước · Từ vựng Anh B1→C2 · Luyện đề chuẩn cấu trúc
               </p>
-              <p className="text-lg text-muted-foreground mb-8">
-                Luyện tập theo chủ đề · Học mọi lúc, mọi nơi
-              </p>
+
+              {/* Social links ngang dưới subtext */}
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                <span className="text-xs text-muted-foreground font-medium">Cộng đồng:</span>
+                {SOCIAL_GROUPS.map((group) => (
+                  <div key={group.label} className="flex items-center gap-1.5">
+                    <span className={`text-[10px] font-bold ${group.color}`}>{group.label}</span>
+                    {group.links.map((link) => (
+                      <a
+                        key={`hero-${group.label}-${link.platform}`}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`${link.platform} — ${group.label}`}
+                        className="w-8 h-8 rounded-full border border-border bg-background flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md"
+                      >
+                        {link.platform === 'Facebook' && <FacebookIcon />}
+                        {link.platform === 'TikTok'   && <TikTokIcon />}
+                        {link.platform === 'Zalo'     && <ZaloIcon />}
+                      </a>
+                    ))}
+                  </div>
+                ))}
+              </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/login">
@@ -406,32 +427,6 @@ export default function LandingPage() {
               </div>
             </motion.div>
 
-            {/* Social bar dọc — chỉ hiện desktop */}
-            <motion.div
-              initial={{ opacity: 0, x: 16 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="hidden lg:flex flex-col items-center gap-3 self-center"
-            >
-              <div className="w-px h-10 bg-border" />
-              {SOCIAL_GROUPS.flatMap((g) =>
-                g.links.map((link) => (
-                  <a
-                    key={`${g.label}-${link.platform}`}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={`${link.platform} — ${g.label}`}
-                    className={`w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground transition-all duration-200 hover:scale-110 ${link.hoverColor}`}
-                  >
-                    {link.platform === 'Facebook' && <FacebookIcon />}
-                    {link.platform === 'TikTok'   && <TikTokIcon />}
-                    {link.platform === 'Zalo'     && <ZaloIcon />}
-                  </a>
-                ))
-              )}
-              <div className="w-px h-10 bg-border" />
-            </motion.div>
           </div>
         </div>
       </section>
@@ -933,7 +928,7 @@ export default function LandingPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           title={`${link.platform} — ${group.label}`}
-                          className={`w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground transition-colors ${link.hoverColor}`}
+                          className="w-8 h-8 rounded-full border border-border bg-background flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md"
                         >
                           {link.platform === 'Facebook' && <FacebookIcon />}
                           {link.platform === 'TikTok'   && <TikTokIcon />}
