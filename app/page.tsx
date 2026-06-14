@@ -249,6 +249,46 @@ function VocabMockup() {
   )
 }
 
+// ─── Social Icons ─────────────────────────────────────────────────────────────
+const FacebookIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+  </svg>
+)
+
+const TikTokIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/>
+  </svg>
+)
+
+const ZaloIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14h-1.59l-5.41-7.5H7.5V16H6V8h1.59l5.41 7.5H15V8h1.5v8z"/>
+  </svg>
+)
+
+const SOCIAL_GROUPS = [
+  {
+    label: 'Toán học',
+    color: 'text-purple-500',
+    links: [
+      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaigiasu',  hoverColor: 'hover:text-[#1877F2] hover:border-[#1877F2]' },
+      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaigiasu',   hoverColor: 'hover:text-[#FF0050] hover:border-[#FF0050]' },
+      { platform: 'Zalo',     href: 'https://zalo.me/g/9c8n1hgb0zul5pbislww', hoverColor: 'hover:text-[#0068FF] hover:border-[#0068FF]' },
+    ],
+  },
+  {
+    label: 'Tiếng Anh',
+    color: 'text-teal-500',
+    links: [
+      { platform: 'Facebook', href: 'https://www.facebook.com/ngocthaitutor',  hoverColor: 'hover:text-[#1877F2] hover:border-[#1877F2]' },
+      { platform: 'TikTok',   href: 'https://www.tiktok.com/@ngocthaitutor',   hoverColor: 'hover:text-[#FF0050] hover:border-[#FF0050]' },
+      { platform: 'Zalo',     href: 'https://zalo.me/g/ihbz7lmenl8cbricsn2b', hoverColor: 'hover:text-[#0068FF] hover:border-[#0068FF]' },
+    ],
+  },
+]
+
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function LandingPage() {
@@ -851,6 +891,32 @@ export default function LandingPage() {
               <p className="text-sm text-muted-foreground">
                 Nền tảng học Toán & Tiếng Anh thông minh dành cho học sinh Việt Nam.
               </p>
+
+              {/* Social links */}
+              <div className="mt-4 space-y-2">
+                <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">Cộng đồng học tập</p>
+                {SOCIAL_GROUPS.map((group) => (
+                  <div key={group.label} className="flex items-center gap-2.5">
+                    <span className={`text-[10px] font-bold ${group.color} w-[68px] shrink-0`}>{group.label}</span>
+                    <div className="flex gap-1.5">
+                      {group.links.map((link) => (
+                        <a
+                          key={link.platform}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={`${link.platform} — ${group.label}`}
+                          className={`w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground transition-colors ${link.hoverColor}`}
+                        >
+                          {link.platform === 'Facebook' && <FacebookIcon />}
+                          {link.platform === 'TikTok'   && <TikTokIcon />}
+                          {link.platform === 'Zalo'     && <ZaloIcon />}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div>
