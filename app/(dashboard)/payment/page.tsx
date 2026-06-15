@@ -69,7 +69,7 @@ const VIP_BENEFITS = [
     icon: Zap,
     title: 'Trợ lý AI Giải Toán',
     description: 'Giải toán không giới hạn (gói Toán/Combo), giải thích chi tiết từng bước. Gói tháng trở lên dùng mô hình Gemini 2.5 Flash cao cấp.',
-    color: 'text-purple-400 bg-purple-500/10 border-purple-500/20',
+    color: 'text-primary bg-primary/10 border-primary/20',
   },
   {
     icon: Sparkles,
@@ -87,7 +87,7 @@ const VIP_BENEFITS = [
     icon: Shield,
     title: 'Trải Nghiệm Tập Trung 100%',
     description: 'Không quảng cáo, không bị gián đoạn, bảo mật và đồng bộ tiến độ học tập trên mọi thiết bị.',
-    color: 'text-blue-400 bg-blue-500/10 border-blue-500/20',
+    color: 'text-teal-400 bg-teal-500/10 border-teal-500/20',
   },
 ]
 
@@ -448,7 +448,7 @@ export default function PaymentPage() {
   return (
     <div className="max-w-6xl mx-auto space-y-8 px-4 py-8 text-foreground relative min-h-screen">
       {/* Background glowing decorations */}
-      <div className="absolute top-10 left-1/4 w-96 h-96 rounded-full bg-purple-650/10 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-10 left-1/4 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 rounded-full bg-amber-500/5 blur-3xl pointer-events-none -z-10" />
 
       {/* Header section with Premium Glassmorphism */}
@@ -463,7 +463,7 @@ export default function PaymentPage() {
             <Crown className="h-7 w-7 text-amber-400" />
           </div>
           <div>
-            <h1 className="text-2xl font-black tracking-tight bg-gradient-to-r from-violet-300 via-amber-200 to-yellow-300 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-black tracking-tight bg-gradient-to-r from-rose-300 via-amber-200 to-yellow-300 bg-clip-text text-transparent">
               Đặc Quyền Hội Viên VIP
             </h1>
             <p className="text-muted-foreground text-xs mt-1">Sử dụng điểm cước tự động để kích hoạt các đặc quyền học tập không giới hạn</p>
@@ -513,10 +513,10 @@ export default function PaymentPage() {
       {/* Main Tabs */}
       <Tabs defaultValue="subscribe" className="w-full">
         <TabsList className="grid w-full grid-cols-2 p-1.5 bg-card/60 border border-border rounded-2xl h-14 max-w-xl mx-auto shadow-lg">
-          <TabsTrigger value="subscribe" className="rounded-xl font-bold text-xs sm:text-sm transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+          <TabsTrigger value="subscribe" className="rounded-xl font-bold text-xs sm:text-sm transition-all data-[state=active]:bg-primary data-[state=active]:text-white">
             <Crown className="mr-2 h-4 w-4" /> Đăng ký gói cước
           </TabsTrigger>
-          <TabsTrigger value="topup" className="rounded-xl font-bold text-xs sm:text-sm transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white">
+          <TabsTrigger value="topup" className="rounded-xl font-bold text-xs sm:text-sm transition-all data-[state=active]:bg-primary data-[state=active]:text-white">
             <Plus className="mr-2 h-4 w-4" /> Nạp thêm điểm
           </TabsTrigger>
         </TabsList>
@@ -580,7 +580,7 @@ export default function PaymentPage() {
                   onClick={() => setSubjectCategory(cat.id as any)}
                   className={`py-2 rounded-xl text-xs sm:text-xs font-extrabold transition-all duration-300 ${
                     subjectCategory === cat.id
-                      ? 'bg-purple-600 text-white shadow-[0_0_15px_rgba(147,51,234,0.4)]'
+                      ? 'bg-primary text-white shadow-md'
                       : 'text-muted-foreground hover:text-foreground/90'
                   }`}
                 >
@@ -592,7 +592,7 @@ export default function PaymentPage() {
             {/* Coupon Code Panel */}
             <div className="rounded-2xl border border-border bg-card/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-purple-400" />
+                <Sparkles className="h-4 w-4 text-primary" />
                 <span className="text-xs font-bold text-muted-foreground">Mã giảm giá ôn thi học kỳ/THPT:</span>
               </div>
               {couponApplied ? (
@@ -606,7 +606,7 @@ export default function PaymentPage() {
                     placeholder="MÃ GIẢM GIÁ (VD: VEDICH30)"
                     value={couponInput}
                     onChange={(e) => setCouponInput(e.target.value.toUpperCase())}
-                    className="uppercase h-9 text-xs border-border bg-background/40 focus-visible:ring-purple-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
+                    className="uppercase h-9 text-xs border-border bg-background/40 focus-visible:ring-primary text-center font-bold tracking-wider rounded-lg max-w-[170px]"
                   />
                   <Button
                     variant="outline"
@@ -680,7 +680,7 @@ export default function PaymentPage() {
                     isYearly
                       ? 'border-amber-500 bg-card/70 shadow-[0_0_25px_rgba(245,158,11,0.12)]'
                       : isHighlighted
-                      ? 'border-purple-500 bg-card/60 shadow-[0_0_20px_rgba(147,51,234,0.08)]'
+                      ? 'border-primary bg-card/60 shadow-sm'
                       : 'border-border bg-card/20'
                   }`}
                 >
@@ -690,7 +690,7 @@ export default function PaymentPage() {
                       isYearly
                         ? 'bg-amber-500 text-slate-950'
                         : isHighlighted
-                        ? 'bg-purple-600 text-white'
+                        ? 'bg-primary text-white'
                         : 'bg-muted text-muted-foreground border border-border'
                     }`}>
                       {dur.badge}
@@ -726,7 +726,7 @@ export default function PaymentPage() {
                         isYearly
                           ? 'bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 shadow-[0_4px_12px_rgba(245,158,11,0.3)]'
                           : isHighlighted
-                          ? 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white shadow-[0_4px_12px_rgba(147,51,234,0.25)]'
+                          ? 'bg-primary hover:bg-primary/90 text-white shadow-md'
                           : 'bg-card border-border text-muted-foreground hover:bg-muted/80 hover:text-foreground'
                       }`}
                       variant={isHighlighted || isYearly ? 'default' : 'outline'}
@@ -750,7 +750,7 @@ export default function PaymentPage() {
           <div className="space-y-4 pt-8 border-t border-border/60">
             <div className="text-center space-y-1">
               <h2 className="text-lg font-black tracking-tight text-foreground flex items-center justify-center gap-2">
-                <Sparkles className="h-5 w-5 text-purple-400" /> Đặc Quyền Khi Kích Hoạt VIP
+                <Sparkles className="h-5 w-5 text-primary" /> Đặc Quyền Khi Kích Hoạt VIP
               </h2>
               <p className="text-xs text-muted-foreground">Tất cả các gói cước trên đều kích hoạt trọn vẹn quyền lợi VIP dưới đây</p>
             </div>
@@ -778,7 +778,7 @@ export default function PaymentPage() {
             <CardContent className="space-y-6 pt-6">
               <div className="flex justify-between items-center text-xs border-b border-border pb-4">
                 <span className="text-muted-foreground">Tỷ lệ quy đổi điểm</span>
-                <span className="font-extrabold text-purple-400">1.000đ = 1 điểm cước</span>
+                <span className="font-extrabold text-primary">1.000đ = 1 điểm cước</span>
               </div>
 
               <div className="space-y-2">
@@ -793,7 +793,7 @@ export default function PaymentPage() {
                       const raw = e.target.value.replace(/\D/g, '')
                       setAmountInput(raw)
                     }}
-                    className="h-14 text-lg font-extrabold bg-background/45 border-border text-purple-400 placeholder:text-muted-foreground pl-4 pr-12 focus-visible:ring-purple-500 rounded-xl"
+                    className="h-14 text-lg font-extrabold bg-background/45 border-border text-primary placeholder:text-muted-foreground pl-4 pr-12 focus-visible:ring-primary rounded-xl"
                   />
                   <span className="absolute right-4 top-1/2 -translate-y-1/2 font-extrabold text-muted-foreground text-xs">VNĐ</span>
                 </div>
@@ -811,8 +811,8 @@ export default function PaymentPage() {
                     key={preset}
                     variant="outline"
                     onClick={() => setAmountInput(String(preset))}
-                    className={`h-12 border-border text-xs font-bold hover:bg-purple-500/5 transition-all rounded-xl ${
-                      parsedAmount === preset ? 'border-purple-500 bg-purple-500/10 text-purple-400 shadow-[0_0_12px_rgba(147,51,234,0.15)]' : 'text-muted-foreground'
+                    className={`h-12 border-border text-xs font-bold hover:bg-primary/5 transition-all rounded-xl ${
+                      parsedAmount === preset ? 'border-primary bg-primary/10 text-primary shadow-sm' : 'text-muted-foreground'
                     }`}
                   >
                     {formatCurrency(preset)}
@@ -832,7 +832,7 @@ export default function PaymentPage() {
               )}
 
               <Button
-                className="w-full h-12 gap-2 font-bold text-xs bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white shadow-[0_4px_15px_rgba(147,51,234,0.3)] rounded-xl"
+                className="w-full h-12 gap-2 font-bold text-xs bg-primary hover:bg-primary/90 text-white shadow-md rounded-xl"
                 onClick={handleCreateTopupRequest}
                 disabled={topupLoading || parsedAmount < 20000}
               >
@@ -895,7 +895,7 @@ export default function PaymentPage() {
                   <p className="text-[10px] text-muted-foreground/70 uppercase tracking-wider font-bold">Số dư cũ</p>
                   <p className="text-sm font-bold text-muted-foreground mt-1">{points} điểm</p>
                 </div>
-                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-purple-500/10 text-purple-400 shadow-sm border border-purple-500/15">
+                <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary shadow-sm border border-primary/15">
                   <ArrowRight className="h-4 w-4" />
                 </div>
                 <div className="text-center">
@@ -922,7 +922,7 @@ export default function PaymentPage() {
             </Button>
             <Button
               onClick={handleConfirmSubscribe}
-              className="flex-1 h-10 text-xs font-black bg-purple-655 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
+              className="flex-1 h-10 text-xs font-black bg-primary hover:bg-primary/90 text-white rounded-xl shadow-md"
             >
               Xác nhận
             </Button>
@@ -935,7 +935,7 @@ export default function PaymentPage() {
         <DialogContent className="max-w-sm bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
             <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-foreground">
-              <Wallet className="h-5.5 w-5.5 text-purple-400" /> Nạp điểm để mua gói cước
+              <Wallet className="h-5.5 w-5.5 text-primary" /> Nạp điểm để mua gói cước
             </DialogTitle>
             <DialogDescription className="text-center text-muted-foreground text-xs mt-1 leading-relaxed">
               Bạn không đủ điểm cước trong ví. Hãy tạo nhanh một giao dịch QR thanh toán để bù đắp số điểm thiếu.
@@ -978,7 +978,7 @@ export default function PaymentPage() {
                     </p>
                     <div className="flex justify-between items-center text-xs pt-1">
                       <span className="text-muted-foreground font-bold">Số tiền nạp:</span>
-                      <span className="font-black text-purple-400 text-sm">{formatCurrency(finalTopupAmount)}</span>
+                      <span className="font-black text-primary text-sm">{formatCurrency(finalTopupAmount)}</span>
                     </div>
                     <div className="flex justify-between items-center text-[10px] text-muted-foreground">
                       <span>Ví sau khi mua gói:</span>
@@ -989,7 +989,7 @@ export default function PaymentPage() {
                   <div className="space-y-2.5 pt-1.5 border-t border-border/50">
                     <div className="flex justify-between items-center">
                       <span className="text-muted-foreground font-medium">Số tiền nạp đề xuất:</span>
-                      <span className="font-black text-purple-400 text-sm">{formatCurrency(finalTopupAmount)}</span>
+                      <span className="font-black text-primary text-sm">{formatCurrency(finalTopupAmount)}</span>
                     </div>
                     <div className="flex justify-between items-center text-[10px] text-muted-foreground/60">
                       <span>Điểm cước cộng thêm:</span>
@@ -1003,8 +1003,8 @@ export default function PaymentPage() {
                 )}
               </div>
 
-              <div className="flex items-center gap-2 rounded-xl bg-purple-550/5 border border-purple-500/10 p-3 text-[10px] text-purple-300">
-                <Zap className="h-4 w-4 shrink-0 text-purple-400 animate-pulse" />
+              <div className="flex items-center gap-2 rounded-xl bg-primary/5 border border-primary/10 p-3 text-[10px] text-primary/70">
+                <Zap className="h-4 w-4 shrink-0 text-primary animate-pulse" />
                 <p className="leading-relaxed">
                   <strong>Tự động kích hoạt:</strong> Sau khi hoàn thành chuyển khoản, hệ thống sẽ tự động kích hoạt gói VIP ngay lập tức mà bạn không cần ấn lại.
                 </p>
@@ -1022,7 +1022,7 @@ export default function PaymentPage() {
             </Button>
             <Button
               onClick={() => createTopup(finalTopupAmount, shortPointsPlan)}
-              className="flex-1 h-10 text-xs font-black bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.3)]"
+              className="flex-1 h-10 text-xs font-black bg-primary hover:bg-primary/90 text-white rounded-xl shadow-md"
             >
               Tạo mã QR & Mua
             </Button>
@@ -1035,7 +1035,7 @@ export default function PaymentPage() {
         <DialogContent className="max-w-sm bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
             <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-foreground">
-              <Zap className="h-5.5 w-5.5 text-purple-400" /> Xác nhận tạo mã QR nạp tiền
+              <Zap className="h-5.5 w-5.5 text-primary" /> Xác nhận tạo mã QR nạp tiền
             </DialogTitle>
             <DialogDescription className="text-center text-muted-foreground text-xs mt-1 leading-relaxed">
               Bạn đang chuẩn bị tạo mã QR thanh toán ngân hàng trực tuyến.
@@ -1070,7 +1070,7 @@ export default function PaymentPage() {
             </Button>
             <Button
               onClick={() => createTopup(confirmTopupAmount!, null)}
-              className="flex-1 h-10 text-xs font-black bg-purple-655 hover:bg-purple-700 text-white rounded-xl shadow-[0_4px_12px_rgba(147,51,234,0.25)]"
+              className="flex-1 h-10 text-xs font-black bg-primary hover:bg-primary/90 text-white rounded-xl shadow-md"
             >
               Khởi tạo QR
             </Button>
@@ -1101,7 +1101,7 @@ export default function PaymentPage() {
                 <Star className="h-4 w-4 fill-amber-400/20" />
                 <span>{successMessage.highlight}</span>
               </div>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs h-10 rounded-xl mt-2" onClick={() => handleDialogClose(false)}>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold text-xs h-10 rounded-xl mt-2" onClick={() => handleDialogClose(false)}>
                 Hoàn tất
               </Button>
             </div>
@@ -1134,7 +1134,7 @@ export default function PaymentPage() {
                   <span>Hệ thống đang quét chuyển khoản tự động (1-3 phút).</span>
                 </div>
                 {pendingSubscribePlanId && (
-                  <p className="text-[10px] text-purple-400 text-center leading-relaxed font-semibold italic">
+                  <p className="text-[10px] text-primary text-center leading-relaxed font-semibold italic">
                     * Vui lòng giữ tab này mở để hệ thống tự động kích hoạt gói VIP sau khi thanh toán thành công.
                   </p>
                 )}
@@ -1144,7 +1144,7 @@ export default function PaymentPage() {
 
           {topupLoading && (
             <div className="py-12 flex flex-col items-center justify-center gap-3">
-              <Loader2 className="h-8 w-8 animate-spin text-purple-500" />
+              <Loader2 className="h-8 w-8 animate-spin text-primary" />
               <p className="text-xs text-muted-foreground">Đang khởi tạo giao dịch...</p>
             </div>
           )}
