@@ -137,7 +137,7 @@ export default function Header() {
           ) : theme === 'dark' ? (
             <Sun className="h-4 w-4 text-amber-500" />
           ) : theme === 'pink' ? (
-            <Moon className="h-4 w-4 text-blue-500" />
+            <Moon className="h-4 w-4 text-rose-400" />
           ) : (
             <Flower2 className="h-4 w-4 text-pink-500" />
           )}
