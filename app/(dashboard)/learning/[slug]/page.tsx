@@ -177,8 +177,8 @@ export default function CoursePage() {
       <header className="rounded-lg border bg-card p-5 shadow-sm">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex min-w-0 gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-violet-500/10">
-              <BookOpen className="h-6 w-6 text-violet-500" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+              <BookOpen className="h-6 w-6 text-primary" />
             </div>
             <div className="min-w-0">
               <h1 className="text-2xl font-bold leading-tight">{course.name}</h1>
@@ -319,7 +319,7 @@ export default function CoursePage() {
 
                           <div className="flex items-center gap-2 self-center text-muted-foreground">
                             {lesson.video_url && <Video className="h-4 w-4 text-blue-500" />}
-                            {lesson.lesson_plan && <FileText className="h-4 w-4 text-violet-500" />}
+                            {lesson.lesson_plan && <FileText className="h-4 w-4 text-primary" />}
                             <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                           </div>
                         </Link>

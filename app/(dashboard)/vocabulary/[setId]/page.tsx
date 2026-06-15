@@ -874,7 +874,7 @@ function SpacedRepetitionTab({ words, setId, progress: initProgress }: {
         </span>
         <div className="flex items-center gap-2">
           {isNewWord && (
-            <Badge variant="secondary" className="text-[10px] bg-violet-500/15 text-violet-600 dark:text-violet-400 border-0">
+            <Badge variant="secondary" className="text-[10px] bg-primary/15 text-primary border-0">
               ✨ Từ mới
             </Badge>
           )}
@@ -1160,7 +1160,7 @@ export default function VocabSetPage() {
                 </Badge>
               )}
               {set.is_ai_generated && (
-                <Badge variant="secondary" className="bg-violet-500/15 text-violet-600 dark:text-violet-400 border-0 gap-1">
+                <Badge variant="secondary" className="bg-primary/15 text-primary border-0 gap-1">
                   <Sparkles className="h-3 w-3" /> AI
                 </Badge>
               )}

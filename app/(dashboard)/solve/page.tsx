@@ -173,7 +173,7 @@ function HistoryModal({ item, onClose }: { item: HistoryItem; onClose: () => voi
           <DialogTitle className="flex items-center gap-2 flex-wrap">
             <span>Chi tiết bài giải</span>
             {item.topic && (
-              <span className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5 font-normal">
+              <span className="text-xs bg-primary/10 text-primary rounded-full px-2.5 py-0.5 font-normal">
                 {item.topic}
               </span>
             )}
@@ -401,8 +401,8 @@ export default function SolvePage() {
     <div className="max-w-5xl mx-auto space-y-6">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-500/10">
-          <Brain className="h-5 w-5 text-purple-500" />
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+          <Brain className="h-5 w-5 text-primary" />
         </div>
         <div>
           <h1 className="text-2xl font-bold">Giải toán AI</h1>
@@ -416,7 +416,7 @@ export default function SolvePage() {
         {/* ─── Left: Upload ─── */}
         <div className="space-y-4 min-w-0">
           {/* Status bar */}
-          <Card className="border-purple-500/20">
+          <Card className="border-primary/20">
             <CardContent className="pt-4 pb-4">
               {loadingStatus ? (
                 <div className="space-y-2">
@@ -537,8 +537,8 @@ export default function SolvePage() {
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={item.image_url} alt="" className="h-10 w-10 rounded object-cover shrink-0 border" />
                       ) : (
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-purple-500/10">
-                          <Brain className="h-4 w-4 text-purple-500" />
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                          <Brain className="h-4 w-4 text-primary" />
                         </div>
                       )}
                       <div className="flex-1 min-w-0">
@@ -566,10 +566,10 @@ export default function SolvePage() {
           <AnimatePresence mode="wait">
             {solving ? (
               <motion.div key="loading" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <Card className="border-purple-500/30">
+                <Card className="border-primary/30">
                   <CardContent className="pt-6 space-y-4">
                     <div className="flex items-center gap-3">
-                      <div className="h-8 w-8 animate-spin rounded-full border-2 border-purple-500 border-t-transparent" />
+                      <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
                       <div>
                         <p className="font-medium">AI đang phân tích bài toán...</p>
                         <p className="text-sm text-muted-foreground">Thường mất 5–15 giây</p>
@@ -608,13 +608,13 @@ export default function SolvePage() {
                 </Card>
 
                 {/* Problem statement */}
-                <Card className="border-purple-500/30">
+                <Card className="border-primary/30">
                   <CardHeader className="pb-2">
                     <div className="flex items-center justify-between gap-2 flex-wrap">
                       <CardTitle className="text-base">Đề bài</CardTitle>
                       <div className="flex items-center gap-2 flex-wrap">
                         <DiffBadge diff={result.solution.difficulty} />
-                        <span className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5">
+                        <span className="text-xs bg-primary/10 text-primary rounded-full px-2.5 py-0.5">
                           {result.solution.topic}
                         </span>
                         {result.solution.subtopic && (
@@ -716,8 +716,8 @@ export default function SolvePage() {
               <motion.div key="empty" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                 <Card className="border-dashed">
                   <CardContent className="flex flex-col items-center justify-center py-16 gap-3 text-center">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-purple-500/10">
-                      <Sparkles className="h-8 w-8 text-purple-400" />
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                      <Sparkles className="h-8 w-8 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Kết quả sẽ hiển thị tại đây</p>

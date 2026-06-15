@@ -147,8 +147,8 @@ export default function EnglishDashboard() {
             label: 'Ngữ pháp hoàn thành', 
             value: stats ? `${stats.grammar.mastered}/${stats.grammar.total}` : '0/50', 
             icon: BookOpenCheck, 
-            color: 'text-violet-500', 
-            bg: 'bg-violet-500/10',
+            color: 'text-primary',
+            bg: 'bg-primary/10',
             sub: `${stats?.grammar.attempted ?? 0} chuyên đề đã luyện` 
           },
           { 
@@ -203,7 +203,7 @@ export default function EnglishDashboard() {
                 icon: BookOpen, 
                 label: 'Ngữ pháp', 
                 desc: 'Chuyên đề và cấu trúc câu', 
-                color: 'from-violet-500/15 to-purple-500/10 text-purple-500 hover:border-purple-500/40 border-2 border-transparent' 
+                color: 'from-primary/15 to-primary/10 text-primary hover:border-primary/40 border-2 border-transparent'
               },
               { 
                 href: '/reading', 

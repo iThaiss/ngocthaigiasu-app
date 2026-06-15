@@ -106,7 +106,7 @@ export default function SchedulePage() {
           <CalendarDays className="h-6 w-6 text-primary" /> Lịch học tập
         </h1>
         <p className="text-muted-foreground mt-1">
-          Lịch thi, deadline môn học: <strong className={activeSubject === 'english' ? 'text-rose-500' : 'text-purple-500'}>{activeSubject === 'english' ? 'Tiếng Anh' : 'Toán học'}</strong>
+          Lịch thi, deadline môn học: <strong className={activeSubject === 'english' ? 'text-rose-500' : 'text-primary'}>{activeSubject === 'english' ? 'Tiếng Anh' : 'Toán học'}</strong>
         </p>
       </motion.div>
 

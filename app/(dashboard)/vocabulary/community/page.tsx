@@ -63,8 +63,8 @@ export default function CommunityPage() {
     <div className="max-w-4xl mx-auto space-y-6">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10">
-          <Users className="h-5 w-5 text-blue-500" />
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+          <Users className="h-5 w-5 text-primary" />
         </div>
         <div>
           <h1 className="text-2xl font-bold">Cộng đồng từ vựng</h1>
@@ -151,7 +151,7 @@ export default function CommunityPage() {
                             </Badge>
                           )}
                           {s.is_ai_generated && (
-                            <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 bg-violet-500/15 text-violet-600 dark:text-violet-400 border-0">
+                            <Badge variant="secondary" className="text-[10px] px-1.5 py-0 h-4 bg-primary/15 text-primary border-0">
                               AI
                             </Badge>
                           )}

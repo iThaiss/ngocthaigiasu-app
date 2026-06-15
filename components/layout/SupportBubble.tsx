@@ -40,7 +40,7 @@ export default function SupportBubble() {
               {/* Chat cộng đồng */}
               <Link href="/chat" onClick={() => setIsOpen(false)}>
                 <div className="flex items-center gap-3 rounded-xl px-2.5 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent/60 transition-all cursor-pointer">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10 text-blue-500">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
                     <MessageSquare className="h-4 w-4" />
                   </div>
                   <div>
@@ -72,7 +72,7 @@ export default function SupportBubble() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-purple-600 text-white shadow-lg shadow-primary/30 hover:opacity-95 transition-opacity"
+        className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 hover:opacity-95 transition-opacity"
         aria-label="Support menu"
       >
         <AnimatePresence mode="wait">

@@ -32,7 +32,7 @@ const CONTACT_CHANNELS = [
     label: 'Facebook',
     value: 'fb.com/ngocthaigiasu',
     desc: 'Nhắn tin qua Facebook Page',
-    color: 'text-indigo-500 bg-indigo-500/10',
+    color: 'text-primary bg-primary/10',
     href: '#',
   },
 ]

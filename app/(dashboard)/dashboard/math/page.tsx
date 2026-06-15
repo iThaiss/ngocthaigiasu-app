@@ -162,12 +162,12 @@ export default function MathDashboard() {
         transition={{ delay: 0.05 }}
       >
         <Link href={activeCourse ? `/learning/${activeCourse.slug}` : '/learning'}>
-          <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-violet-500/15 via-purple-500/10 to-transparent hover:border-purple-500/20 hover:shadow-lg transition-all cursor-pointer group relative">
-            <div className="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-purple-500/10 to-transparent pointer-events-none" />
+          <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-primary/15 via-primary/10 to-transparent hover:border-primary/20 hover:shadow-lg transition-all cursor-pointer group relative">
+            <div className="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-primary/10 to-transparent pointer-events-none" />
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="space-y-2 flex-1">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-semibold">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-semibold">
                     <GraduationCap className="h-3.5 w-3.5" /> Lộ trình học tập
                   </div>
                   <h3 className="text-lg font-bold">
@@ -188,13 +188,13 @@ export default function MathDashboard() {
                       </div>
                       <Progress 
                         value={Math.round((activeCourse.completed / activeCourse.lesson_count) * 100)} 
-                        className="h-1.5 bg-purple-500/10" 
+                        className="h-1.5 bg-primary/10" 
                       />
                     </div>
                   )}
                 </div>
                 
-                <Button className="bg-purple-600 text-white hover:bg-purple-700 font-semibold gap-1 shrink-0 self-start md:self-auto group-hover:translate-x-1 transition-transform">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold gap-1 shrink-0 self-start md:self-auto group-hover:translate-x-1 transition-transform">
                   Học tiếp <ChevronRight className="h-4 w-4" />
                 </Button>
               </div>
@@ -210,8 +210,8 @@ export default function MathDashboard() {
             label: 'Lượt giải toán AI', 
             value: stats ? `${stats.solvedToday}/${stats.solveLimit}` : '0/0', 
             icon: Brain, 
-            color: 'text-purple-500', 
-            bg: 'bg-purple-500/10',
+            color: 'text-primary', 
+            bg: 'bg-primary/10',
             sub: stats ? `Đã dùng hôm nay (Tổng: ${stats.totalSolves} bài)` : 'Đang tải...',
             hasProgress: true,
             progressValue: solveProgress
@@ -241,7 +241,7 @@ export default function MathDashboard() {
             transition={{ delay: 0.1 + i * 0.05 }}
             className="h-full"
           >
-            <Card className="h-full hover:shadow-md hover:border-purple-500/20 transition-all">
+            <Card className="h-full hover:shadow-md hover:border-primary/20 transition-all">
               <CardContent className="p-5 flex items-start justify-between h-full relative">
                 <div className="space-y-1 flex-1 min-w-0 pr-2">
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider">{stat.label}</p>
@@ -251,7 +251,7 @@ export default function MathDashboard() {
                   <p className="text-xs text-muted-foreground truncate">{stat.sub}</p>
                   {stat.hasProgress && !loading && (
                     <div className="pt-1.5 max-w-[140px]">
-                      <Progress value={stat.progressValue} className="h-1.5 bg-purple-500/10" />
+                      <Progress value={stat.progressValue} className="h-1.5 bg-primary/10" />
                     </div>
                   )}
                 </div>
@@ -278,14 +278,14 @@ export default function MathDashboard() {
                 icon: Brain, 
                 label: 'Giải toán AI', 
                 desc: 'Chụp/upload ảnh bài toán', 
-                color: 'from-violet-500/15 to-purple-500/10 text-purple-500 hover:border-purple-500/40 border-2 border-transparent' 
+                color: 'from-primary/15 to-primary/10 text-primary hover:border-primary/40 border-2 border-transparent'
               },
-              { 
-                href: '/practice', 
-                icon: Target, 
-                label: 'Luyện tập', 
-                desc: 'Làm câu hỏi theo chủ đề', 
-                color: 'from-indigo-500/15 to-blue-500/10 text-indigo-500 hover:border-indigo-500/40 border-2 border-transparent' 
+              {
+                href: '/practice',
+                icon: Target,
+                label: 'Luyện tập',
+                desc: 'Làm câu hỏi theo chủ đề',
+                color: 'from-primary/15 to-primary/10 text-primary hover:border-primary/40 border-2 border-transparent'
               },
               // Tạm ẩn lối vào Thi thử — sẽ phát triển sau (không xóa).
               // {
@@ -360,15 +360,15 @@ export default function MathDashboard() {
                 <p className="text-xs text-muted-foreground text-center py-4">Chưa có bài giải toán nào</p>
               )}
               {data?.recentSolves.map((solve) => (
-                <div key={solve.id} className="flex gap-3.5 items-start border border-border/40 p-3.5 rounded-xl hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-300">
-                  <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 mt-0.5 shrink-0">
+                <div key={solve.id} className="flex gap-3.5 items-start border border-border/40 p-3.5 rounded-xl hover:border-primary/30 hover:bg-primary/5 transition-all duration-300">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary mt-0.5 shrink-0">
                     <Brain className="h-4 w-4" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-2">
                       <p className="text-sm font-bold truncate text-foreground">{solve.title}</p>
                       {solve.difficulty && (
-                        <Badge variant="outline" className="text-[10px] py-0 px-1.5 border-purple-500/20 bg-purple-500/5 text-purple-600 dark:text-purple-400 font-semibold rounded-full shrink-0">
+                        <Badge variant="outline" className="text-[10px] py-0 px-1.5 border-primary/20 bg-primary/5 text-primary font-semibold rounded-full shrink-0">
                           {solve.difficulty}
                         </Badge>
                       )}
@@ -389,30 +389,30 @@ export default function MathDashboard() {
           <h2 className="text-lg font-bold tracking-tight">AI Phân tích & Hỗ trợ</h2>
           
           <Link href="/chat" className="block">
-            <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-purple-500/20 via-violet-500/5 to-background hover:border-purple-500/30 hover:shadow-lg transition-all duration-300 cursor-pointer group">
+            <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-primary/20 via-primary/5 to-background hover:border-primary/30 hover:shadow-lg transition-all duration-300 cursor-pointer group">
               <CardHeader className="pb-2">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 text-white shadow-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-md">
                   <Sparkles className="h-5 w-5" />
                 </div>
               </CardHeader>
               <CardContent className="space-y-3">
-                <h3 className="font-bold text-base group-hover:text-purple-500 transition-colors">AI Gia sư Toán cá nhân</h3>
+                <h3 className="font-bold text-base group-hover:text-primary transition-colors">AI Gia sư Toán cá nhân</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Hệ thống AI hỗ trợ giải đáp mọi bài toán học búa, chỉ ra lỗ hổng kiến thức lý thuyết hình học/đại số và đề xuất bài tập ôn tập tối ưu.
                 </p>
-                <div className="pt-2 flex items-center text-xs font-semibold text-purple-500 gap-1">
+                <div className="pt-2 flex items-center text-xs font-semibold text-primary gap-1">
                   Trò chuyện ngay <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </CardContent>
             </Card>
           </Link>
 
-          <Card className="bg-gradient-to-br from-purple-600 to-violet-800 text-white">
+          <Card className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
             <CardContent className="p-5 space-y-3">
               <div className="flex items-center gap-1.5 text-amber-300 text-xs font-bold uppercase tracking-wider">
                 <Star className="h-4 w-4 fill-amber-300" /> Bí quyết học tốt
               </div>
-              <p className="text-xs leading-relaxed text-purple-100 font-medium">
+              <p className="text-xs leading-relaxed text-primary-foreground/80 font-medium">
                 &ldquo;Học Toán hiệu quả bắt đầu bằng việc hiểu bản chất lý thuyết trong Lộ trình, sau đó luyện tập theo chủ đề để phát hiện phần kiến thức hổng.&rdquo;
               </p>
             </CardContent>
@@ -475,9 +475,9 @@ export default function MathDashboard() {
         <h2 className="text-lg font-bold tracking-tight">Tiện ích học tập</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link href="/saved-questions" className="block h-full">
-            <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
+            <Card className="hover:shadow-md hover:border-primary/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                   <BookmarkCheck className="h-5 w-5" />
                 </div>
                 <div>
@@ -489,9 +489,9 @@ export default function MathDashboard() {
           </Link>
 
           <Link href="/documents" className="block h-full">
-            <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
+            <Card className="hover:shadow-md hover:border-primary/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                   <FileText className="h-5 w-5" />
                 </div>
                 <div>
@@ -503,9 +503,9 @@ export default function MathDashboard() {
           </Link>
 
           <Link href="/schedule" className="block h-full">
-            <Card className="hover:shadow-md hover:border-purple-500/30 transition-all cursor-pointer h-full group">
+            <Card className="hover:shadow-md hover:border-primary/30 transition-all cursor-pointer h-full group">
               <CardContent className="p-4 flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-purple-500/10 text-purple-500 group-hover:bg-purple-500/20 transition-colors">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                   <CalendarRange className="h-5 w-5" />
                 </div>
                 <div>
