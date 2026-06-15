@@ -85,15 +85,15 @@ export default function SubjectSelectPage() {
           className="cursor-pointer"
           onClick={() => handleSelect('math')}
         >
-          <Card className="relative h-full overflow-hidden border-2 border-transparent bg-gradient-to-br from-violet-500/10 to-purple-600/5 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300">
-            <div className="absolute top-0 right-0 -mr-6 -mt-6 h-24 w-24 rounded-full bg-purple-500/10 blur-xl" />
+          <Card className="relative h-full overflow-hidden border-2 border-transparent bg-gradient-to-br from-primary/10 to-primary/5 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300">
+            <div className="absolute top-0 right-0 -mr-6 -mt-6 h-24 w-24 rounded-full bg-primary/10 blur-xl" />
             <CardHeader className="pb-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 text-white shadow-md shadow-purple-500/20">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-md shadow-primary/20">
                 <Calculator className="h-6 w-6" />
               </div>
             </CardHeader>
             <CardContent className="space-y-2">
-              <CardTitle className="text-xl font-bold text-purple-600 dark:text-purple-400">
+              <CardTitle className="text-xl font-bold text-primary">
                 Toán học
               </CardTitle>
               <CardDescription className="text-sm leading-relaxed text-muted-foreground">
@@ -102,7 +102,7 @@ export default function SubjectSelectPage() {
               <div className="pt-4 flex flex-wrap gap-1.5">
                 {/* 'Thi thử' tạm ẩn — sẽ phát triển sau */}
                 {['AI solver', 'Luyện tập'].map((t) => (
-                  <Badge key={t} variant="secondary" className="bg-purple-500/10 text-purple-600 dark:text-purple-400 border-0">
+                  <Badge key={t} variant="secondary" className="bg-primary/10 text-primary border-0">
                     {t}
                   </Badge>
                 ))}

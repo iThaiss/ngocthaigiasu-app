@@ -25,7 +25,7 @@ interface HistoryItem {
 
 const MODULE_LINKS = [
   { href: '/vocabulary', icon: Languages, label: 'Từ vựng', color: 'text-rose-500 bg-rose-500/10' },
-  { href: '/grammar', icon: BookOpen, label: 'Ngữ pháp', color: 'text-violet-500 bg-violet-500/10' },
+  { href: '/grammar', icon: BookOpen, label: 'Ngữ pháp', color: 'text-primary bg-primary/10' },
   { href: '/reading', icon: Headphones, label: 'Đọc hiểu', color: 'text-sky-500 bg-sky-500/10' },
 ]
 

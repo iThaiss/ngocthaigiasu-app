@@ -26,7 +26,7 @@ const TYPE_CONFIG: Record<NotificationType, { icon: React.ElementType; color: st
   payment: { icon: CreditCard, color: 'text-green-500 bg-green-500/10' },
   commission: { icon: GitBranch, color: 'text-blue-500 bg-blue-500/10' },
   exam: { icon: FileText, color: 'text-yellow-500 bg-yellow-500/10' },
-  solve: { icon: Cpu, color: 'text-purple-500 bg-purple-500/10' },
+  solve: { icon: Cpu, color: 'text-primary bg-primary/10' },
   system: { icon: Wrench, color: 'text-gray-500 bg-gray-500/10' },
 }
 

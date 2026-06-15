@@ -53,8 +53,8 @@ export default function LearningPage() {
       <header className="rounded-lg border bg-card px-5 py-5 shadow-sm">
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div className="flex items-start gap-3">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-violet-500/10">
-              <BookOpen className="h-5 w-5 text-violet-500" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+              <BookOpen className="h-5 w-5 text-primary" />
             </div>
             <div>
               <div className="flex flex-wrap items-center gap-2">
@@ -90,16 +90,16 @@ export default function LearningPage() {
           <motion.section
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-lg border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-card to-card p-5 shadow-sm"
+            className="rounded-lg border border-primary/25 bg-gradient-to-br from-primary/10 via-card to-card p-5 shadow-sm"
           >
             <div className="flex flex-col gap-5 md:flex-row md:items-start">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-violet-500/15 text-violet-500">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
                 <Route className="h-6 w-6" />
               </div>
 
               <div className="min-w-0 flex-1">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <Badge className="bg-violet-500/15 text-violet-600 hover:bg-violet-500/15 dark:text-violet-300">
+                  <Badge className="bg-primary/15 text-primary hover:bg-primary/15">
                     Đang mở
                   </Badge>
                   <Badge variant="outline">Lộ trình chính</Badge>

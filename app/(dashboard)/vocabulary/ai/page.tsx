@@ -67,8 +67,8 @@ export default function AIVocabPage() {
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-3">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10">
-          <Sparkles className="h-5 w-5 text-violet-500" />
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+          <Sparkles className="h-5 w-5 text-primary" />
         </div>
         <div>
           <h1 className="text-2xl font-bold">AI Tạo từ vựng</h1>
@@ -207,9 +207,9 @@ export default function AIVocabPage() {
       </motion.div>
 
       {/* Tips */}
-      <div className="rounded-xl bg-blue-500/5 border border-blue-200 dark:border-blue-900 p-4">
+      <div className="rounded-xl bg-primary/5 border border-primary/20 p-4">
         <div className="flex items-start gap-2">
-          <Badge variant="secondary" className="mt-0.5 bg-blue-500/10 text-blue-600 dark:text-blue-400 border-0 shrink-0">
+          <Badge variant="secondary" className="mt-0.5 bg-primary/10 text-primary border-0 shrink-0">
             Tips
           </Badge>
           <div className="text-xs text-muted-foreground space-y-1">

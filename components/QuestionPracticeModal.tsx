@@ -173,7 +173,7 @@ export default function QuestionPracticeModal({
           <DialogTitle className="flex items-center gap-2 flex-wrap pr-6">
             <span>Luyện tập</span>
             {question.topic && (
-              <span className="text-xs bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full px-2.5 py-0.5 font-normal">
+              <span className="text-xs bg-primary/10 text-primary rounded-full px-2.5 py-0.5 font-normal">
                 {question.topic}
               </span>
             )}

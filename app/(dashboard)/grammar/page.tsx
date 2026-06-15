@@ -34,13 +34,13 @@ const LEVEL_COLOR: Record<string, string> = {
 }
 
 const GROUP_ACCENT: Record<string, { accent: string; bg: string; border: string }> = {
-  'Verb Tenses':         { accent: 'text-violet-500', bg: 'bg-violet-500/8 hover:bg-violet-500/12',  border: 'border-violet-200 dark:border-violet-800' },
+  'Verb Tenses':         { accent: 'text-primary', bg: 'bg-primary/8 hover:bg-primary/12',  border: 'border-primary/20' },
   'Conditionals':        { accent: 'text-blue-500',   bg: 'bg-blue-500/8 hover:bg-blue-500/12',      border: 'border-blue-200 dark:border-blue-800' },
   'Passive Voice':       { accent: 'text-emerald-500', bg: 'bg-emerald-500/8 hover:bg-emerald-500/12', border: 'border-emerald-200 dark:border-emerald-800' },
   'Relative Clauses':    { accent: 'text-cyan-500',    bg: 'bg-cyan-500/8 hover:bg-cyan-500/12',      border: 'border-cyan-200 dark:border-cyan-800' },
   'Modal Verbs':         { accent: 'text-amber-500',   bg: 'bg-amber-500/8 hover:bg-amber-500/12',    border: 'border-amber-200 dark:border-amber-800' },
   'Reported Speech':     { accent: 'text-rose-500',    bg: 'bg-rose-500/8 hover:bg-rose-500/12',      border: 'border-rose-200 dark:border-rose-800' },
-  'Infinitive & Gerund': { accent: 'text-indigo-500',  bg: 'bg-indigo-500/8 hover:bg-indigo-500/12',  border: 'border-indigo-200 dark:border-indigo-800' },
+  'Infinitive & Gerund': { accent: 'text-primary',  bg: 'bg-primary/8 hover:bg-primary/12',  border: 'border-primary/20' },
   'Articles & Prepositions':{ accent: 'text-teal-500', bg: 'bg-teal-500/8 hover:bg-teal-500/12',      border: 'border-teal-200 dark:border-teal-800' },
   'Conjunctions & Linking':{ accent: 'text-pink-500',  bg: 'bg-pink-500/8 hover:bg-pink-500/12',      border: 'border-pink-200 dark:border-pink-800' },
   'Advanced Structures': { accent: 'text-orange-500',  bg: 'bg-orange-500/8 hover:bg-orange-500/12',  border: 'border-orange-200 dark:border-orange-800' },

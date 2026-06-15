@@ -39,7 +39,7 @@ const SUBJECT_MAP: Record<string, string> = {
 }
 
 const SUBJECT_COLORS: Record<string, string> = {
-  Toán: 'text-purple-500 bg-purple-500/10',
+  Toán: 'text-primary bg-primary/10',
   Anh: 'text-rose-500 bg-rose-500/10',
   Lý: 'text-blue-500 bg-blue-500/10',
   Hóa: 'text-green-500 bg-green-500/10',
@@ -74,7 +74,7 @@ export default function DocumentsPage() {
           <BookOpen className="h-6 w-6 text-primary" /> Tài liệu học tập
         </h1>
         <p className="text-muted-foreground mt-1">
-          Không gian tài liệu của bạn cho môn học: <strong className={activeSubject === 'english' ? 'text-rose-500' : 'text-purple-500'}>{subjectName}</strong>
+          Không gian tài liệu của bạn cho môn học: <strong className={activeSubject === 'english' ? 'text-rose-500' : 'text-primary'}>{subjectName}</strong>
         </p>
       </motion.div>
 

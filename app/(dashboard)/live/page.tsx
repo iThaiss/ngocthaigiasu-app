@@ -339,7 +339,7 @@ export default function LiveClassPage() {
           }}
           className={`flex-1 sm:flex-initial px-6 py-3 text-sm font-semibold transition-all border-b-2 -mb-[2px] ${
             activeTab === 'math'
-              ? 'border-purple-500 text-purple-600 dark:text-purple-400'
+              ? 'border-primary text-primary'
               : 'border-transparent text-muted-foreground hover:text-foreground'
           }`}
         >
@@ -698,7 +698,7 @@ export default function LiveClassPage() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-purple-600 dark:text-purple-400">
+                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-primary">
                   <BookOpen className="h-3 w-3" /> Link Tài liệu học tập (Nếu có)
                 </label>
                 <input

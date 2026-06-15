@@ -375,9 +375,9 @@ function getTheorySectionTone(title: string) {
   return {
     icon: BookOpen,
     label: 'Đọc nhanh',
-    frame: 'border-violet-500/20 bg-violet-500/[0.03]',
-    header: 'bg-violet-500/10 text-violet-700 dark:text-violet-300',
-    badge: 'bg-violet-500/15 text-violet-700 dark:text-violet-300',
+    frame: 'border-primary/20 bg-primary/[0.03]',
+    header: 'bg-primary/10 text-primary',
+    badge: 'bg-primary/15 text-primary',
   }
 }
 
@@ -592,7 +592,7 @@ const MATH_RATING_CONFIG = [
     key: 'Good' as const,
     label: 'Nhớ được',
     emoji: '😊',
-    color: 'bg-blue-500/10 text-blue-600 border-blue-200 dark:border-blue-800 hover:bg-blue-500/20',
+    color: 'bg-primary/10 text-primary border-primary/20 hover:bg-primary/20',
   },
   {
     key: 'Easy' as const,
@@ -1062,7 +1062,7 @@ function MathFlashcardReviewTabEnglishStyle({
             {[
               { label: 'Quên', val: sessionStats.again, color: 'text-red-500' },
               { label: 'Khó', val: sessionStats.hard, color: 'text-orange-500' },
-              { label: 'Nhớ được', val: sessionStats.good, color: 'text-blue-500' },
+              { label: 'Nhớ được', val: sessionStats.good, color: 'text-primary' },
               { label: 'Dễ', val: sessionStats.easy, color: 'text-emerald-500' },
             ].map(({ label, val, color }) => val > 0 && (
               <p key={label} className="flex justify-between gap-2">
@@ -1090,7 +1090,7 @@ function MathFlashcardReviewTabEnglishStyle({
         </span>
         <div className="flex items-center gap-2">
           {isNewCard && (
-            <Badge variant="secondary" className="text-[10px] bg-violet-500/15 text-violet-600 dark:text-violet-400 border-0">
+            <Badge variant="secondary" className="text-[10px] bg-primary/15 text-primary border-0">
               Thẻ mới
             </Badge>
           )}
