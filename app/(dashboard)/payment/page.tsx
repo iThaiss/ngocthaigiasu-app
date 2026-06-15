@@ -455,7 +455,7 @@ export default function PaymentPage() {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex flex-wrap items-center justify-between gap-6 p-6 rounded-3xl border border-slate-800 bg-slate-900/40 backdrop-blur-xl shadow-2xl relative overflow-hidden"
+        className="flex flex-wrap items-center justify-between gap-6 p-6 rounded-3xl border border-border bg-card/40 backdrop-blur-xl shadow-2xl relative overflow-hidden"
       >
         <div className="absolute -top-16 -left-16 h-32 w-32 rounded-full bg-amber-500/10 blur-2xl pointer-events-none" />
         <div className="flex items-center gap-5 z-10">
@@ -466,7 +466,7 @@ export default function PaymentPage() {
             <h1 className="text-2xl font-black tracking-tight bg-gradient-to-r from-violet-300 via-amber-200 to-yellow-300 bg-clip-text text-transparent">
               Đặc Quyền Hội Viên VIP
             </h1>
-            <p className="text-slate-400 text-xs mt-1">Sử dụng điểm cước tự động để kích hoạt các đặc quyền học tập không giới hạn</p>
+            <p className="text-muted-foreground text-xs mt-1">Sử dụng điểm cước tự động để kích hoạt các đặc quyền học tập không giới hạn</p>
           </div>
         </div>
 
@@ -512,7 +512,7 @@ export default function PaymentPage() {
 
       {/* Main Tabs */}
       <Tabs defaultValue="subscribe" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 p-1.5 bg-slate-900/60 border border-slate-800 rounded-2xl h-14 max-w-xl mx-auto shadow-lg">
+        <TabsList className="grid w-full grid-cols-2 p-1.5 bg-card/60 border border-border rounded-2xl h-14 max-w-xl mx-auto shadow-lg">
           <TabsTrigger value="subscribe" className="rounded-xl font-bold text-xs sm:text-sm transition-all data-[state=active]:bg-purple-600 data-[state=active]:text-white">
             <Crown className="mr-2 h-4 w-4" /> Đăng ký gói cước
           </TabsTrigger>
@@ -535,7 +535,7 @@ export default function PaymentPage() {
               <div className={`h-12 w-12 rounded-xl flex items-center justify-center shrink-0 ${
                 canClaimFree
                   ? 'bg-emerald-500/20 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-pulse'
-                  : 'bg-slate-900 text-slate-500 border border-slate-800'
+                  : 'bg-card text-muted-foreground/70 border border-border'
               }`}>
                 <Gift className="h-6 w-6" />
               </div>
@@ -544,7 +544,7 @@ export default function PaymentPage() {
                   Tặng 1 Ngày Trải Nghiệm VIP
                   {canClaimFree && <Badge className="bg-emerald-500 text-slate-950 font-bold hover:bg-emerald-500 text-[9px] h-4">Mở sẵn</Badge>}
                 </h4>
-                <p className="text-xs text-slate-400">Trải nghiệm full tính năng VIP hoàn toàn miễn phí. Hồi lại sau mỗi 30 ngày.</p>
+                <p className="text-xs text-muted-foreground">Trải nghiệm full tính năng VIP hoàn toàn miễn phí. Hồi lại sau mỗi 30 ngày.</p>
               </div>
             </div>
 
@@ -569,7 +569,7 @@ export default function PaymentPage() {
 
           {/* Category control panel */}
           <div className="flex flex-col gap-4 items-center justify-center">
-            <div className="grid grid-cols-3 p-1 bg-slate-900/80 border border-slate-800/80 rounded-2xl max-w-md w-full shadow-lg">
+            <div className="grid grid-cols-3 p-1 bg-card/80 border border-border/80 rounded-2xl max-w-md w-full shadow-lg">
               {[
                 { id: 'combo', label: 'Combo Toán + Anh' },
                 { id: 'math', label: 'Môn Toán' },
@@ -581,7 +581,7 @@ export default function PaymentPage() {
                   className={`py-2 rounded-xl text-xs sm:text-xs font-extrabold transition-all duration-300 ${
                     subjectCategory === cat.id
                       ? 'bg-purple-600 text-white shadow-[0_0_15px_rgba(147,51,234,0.4)]'
-                      : 'text-slate-400 hover:text-slate-200'
+                      : 'text-muted-foreground hover:text-foreground/90'
                   }`}
                 >
                   {cat.label}
@@ -590,15 +590,15 @@ export default function PaymentPage() {
             </div>
 
             {/* Coupon Code Panel */}
-            <div className="rounded-2xl border border-slate-850 bg-slate-900/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
+            <div className="rounded-2xl border border-border bg-card/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-purple-400" />
-                <span className="text-xs font-bold text-slate-300">Mã giảm giá ôn thi học kỳ/THPT:</span>
+                <span className="text-xs font-bold text-muted-foreground">Mã giảm giá ôn thi học kỳ/THPT:</span>
               </div>
               {couponApplied ? (
                 <Badge className="bg-green-500/15 text-green-400 border border-green-500/30 px-3 py-1.5 text-xs gap-2 font-mono rounded-lg">
                   {couponApplied.code} (-{couponApplied.discountPercent}%)
-                  <button onClick={() => { setCouponApplied(null); setCouponInput('') }} className="hover:text-white font-bold ml-1 text-sm">×</button>
+                  <button onClick={() => { setCouponApplied(null); setCouponInput('') }} className="hover:text-foreground font-bold ml-1 text-sm">×</button>
                 </Badge>
               ) : (
                 <div className="flex gap-2 w-full sm:w-auto">
@@ -606,13 +606,13 @@ export default function PaymentPage() {
                     placeholder="MÃ GIẢM GIÁ (VD: VEDICH30)"
                     value={couponInput}
                     onChange={(e) => setCouponInput(e.target.value.toUpperCase())}
-                    className="uppercase h-9 text-xs border-slate-800 bg-slate-950/40 focus-visible:ring-purple-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
+                    className="uppercase h-9 text-xs border-border bg-background/40 focus-visible:ring-purple-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
                   />
                   <Button
                     variant="outline"
                     onClick={() => applyCoupon(subjectCategory === 'combo' ? 'combo_3months' : `${subjectCategory}_3months`)}
                     disabled={couponLoading || !couponInput.trim()}
-                    className="h-9 text-xs font-bold border-slate-800 text-slate-300 px-4 hover:bg-slate-900 rounded-lg"
+                    className="h-9 text-xs font-bold border-border text-muted-foreground px-4 hover:bg-card rounded-lg"
                   >
                     Áp dụng
                   </Button>
@@ -622,10 +622,10 @@ export default function PaymentPage() {
           </div>
 
           {/* Gift Code Panel */}
-          <div className="rounded-2xl border border-slate-850 bg-slate-900/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
+          <div className="rounded-2xl border border-border bg-card/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
             <div className="flex items-center gap-2">
               <Gift className="h-4 w-4 text-rose-400" />
-              <span className="text-xs font-bold text-slate-300">Mã quà tặng VIP miễn phí:</span>
+              <span className="text-xs font-bold text-muted-foreground">Mã quà tặng VIP miễn phí:</span>
             </div>
             {giftRedeemed ? (
               <Badge className="bg-rose-500/15 text-rose-400 border border-rose-500/30 px-3 py-1.5 text-xs gap-2 font-mono rounded-lg">
@@ -637,13 +637,13 @@ export default function PaymentPage() {
                   placeholder="MÃ QUÀ TẶNG"
                   value={giftInput}
                   onChange={(e) => setGiftInput(e.target.value.toUpperCase())}
-                  className="uppercase h-9 text-xs border-slate-800 bg-slate-950/40 focus-visible:ring-rose-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
+                  className="uppercase h-9 text-xs border-border bg-background/40 focus-visible:ring-rose-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
                 />
                 <Button
                   variant="outline"
                   onClick={redeemGiftCode}
                   disabled={giftLoading || !giftInput.trim()}
-                  className="h-9 text-xs font-bold border-slate-800 text-slate-300 px-4 hover:bg-slate-900 rounded-lg"
+                  className="h-9 text-xs font-bold border-border text-muted-foreground px-4 hover:bg-card rounded-lg"
                 >
                   {giftLoading ? <Loader2 className="h-3 w-3 animate-spin" /> : 'Đổi quà'}
                 </Button>
@@ -678,10 +678,10 @@ export default function PaymentPage() {
                   whileHover={{ y: -4 }}
                   className={`rounded-2xl border backdrop-blur-md transition-all flex flex-col justify-between p-5 relative ${
                     isYearly
-                      ? 'border-amber-500 bg-slate-900/70 shadow-[0_0_25px_rgba(245,158,11,0.12)]'
+                      ? 'border-amber-500 bg-card/70 shadow-[0_0_25px_rgba(245,158,11,0.12)]'
                       : isHighlighted
-                      ? 'border-purple-500 bg-slate-900/60 shadow-[0_0_20px_rgba(147,51,234,0.08)]'
-                      : 'border-slate-850 bg-slate-900/20'
+                      ? 'border-purple-500 bg-card/60 shadow-[0_0_20px_rgba(147,51,234,0.08)]'
+                      : 'border-border bg-card/20'
                   }`}
                 >
                   {/* Badge Label */}
@@ -691,7 +691,7 @@ export default function PaymentPage() {
                         ? 'bg-amber-500 text-slate-950'
                         : isHighlighted
                         ? 'bg-purple-600 text-white'
-                        : 'bg-slate-800 text-slate-300 border border-slate-700'
+                        : 'bg-muted text-muted-foreground border border-border'
                     }`}>
                       {dur.badge}
                     </span>
@@ -699,24 +699,24 @@ export default function PaymentPage() {
 
                   <div className="space-y-4 mt-2 text-center">
                     <div>
-                      <span className="text-base font-extrabold text-slate-200">{dur.label}</span>
+                      <span className="text-base font-extrabold text-foreground/90">{dur.label}</span>
                     </div>
 
-                    <div className="flex flex-col items-center justify-center py-2.5 border-y border-slate-900/80 gap-1">
+                    <div className="flex flex-col items-center justify-center py-2.5 border-y border-border/80 gap-1">
                       {couponApplied && effectiveCost !== planConfig.costPoints ? (
                         <div className="flex flex-col items-center">
-                          <span className="text-xs line-through text-slate-600 font-mono">{planConfig.costPoints}đ</span>
+                          <span className="text-xs line-through text-muted-foreground/60 font-mono">{planConfig.costPoints}đ</span>
                           <span className="text-3xl font-black text-amber-400 font-mono tracking-tight">{effectiveCost}</span>
                         </div>
                       ) : (
                         <span className="text-3xl font-black text-amber-400 font-mono tracking-tight">{planConfig.costPoints}</span>
                       )}
-                      <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">điểm cước</span>
+                      <span className="text-[10px] text-muted-foreground/70 font-bold uppercase tracking-wider">điểm cước</span>
                     </div>
 
                     {/* Cost per day helper - very clear value proposition */}
-                    <div className="text-[11px] text-slate-400 font-medium">
-                      Tương đương <span className="font-extrabold text-slate-300">{dailyCostFormatted}</span> / ngày
+                    <div className="text-[11px] text-muted-foreground font-medium">
+                      Tương đương <span className="font-extrabold text-muted-foreground">{dailyCostFormatted}</span> / ngày
                     </div>
                   </div>
 
@@ -727,7 +727,7 @@ export default function PaymentPage() {
                           ? 'bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-950 shadow-[0_4px_12px_rgba(245,158,11,0.3)]'
                           : isHighlighted
                           ? 'bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white shadow-[0_4px_12px_rgba(147,51,234,0.25)]'
-                          : 'bg-slate-900 border-slate-800 text-slate-300 hover:bg-slate-800/80 hover:text-white'
+                          : 'bg-card border-border text-muted-foreground hover:bg-muted/80 hover:text-foreground'
                       }`}
                       variant={isHighlighted || isYearly ? 'default' : 'outline'}
                       onClick={() => handleSubscribeRequest(planId)}
@@ -747,23 +747,23 @@ export default function PaymentPage() {
           </div>
 
           {/* Unified VIP Benefits Showcase */}
-          <div className="space-y-4 pt-8 border-t border-slate-900/60">
+          <div className="space-y-4 pt-8 border-t border-border/60">
             <div className="text-center space-y-1">
-              <h2 className="text-lg font-black tracking-tight text-white flex items-center justify-center gap-2">
+              <h2 className="text-lg font-black tracking-tight text-foreground flex items-center justify-center gap-2">
                 <Sparkles className="h-5 w-5 text-purple-400" /> Đặc Quyền Khi Kích Hoạt VIP
               </h2>
-              <p className="text-xs text-slate-400">Tất cả các gói cước trên đều kích hoạt trọn vẹn quyền lợi VIP dưới đây</p>
+              <p className="text-xs text-muted-foreground">Tất cả các gói cước trên đều kích hoạt trọn vẹn quyền lợi VIP dưới đây</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
               {VIP_BENEFITS.map((benefit, idx) => (
-                <div key={idx} className="rounded-2xl border border-slate-900 bg-slate-900/10 p-4.5 space-y-3 backdrop-blur-md hover:border-slate-800/60 hover:bg-slate-900/20 transition-all duration-300">
+                <div key={idx} className="rounded-2xl border border-border bg-card/10 p-4.5 space-y-3 backdrop-blur-md hover:border-border/60 hover:bg-card/20 transition-all duration-300">
                   <div className={`h-10 w-10 rounded-xl flex items-center justify-center shrink-0 border ${benefit.color}`}>
                     <benefit.icon className="h-5.5 w-5.5" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-xs font-extrabold text-slate-200">{benefit.title}</h3>
-                    <p className="text-[10px] text-slate-400 leading-relaxed">{benefit.description}</p>
+                    <h3 className="text-xs font-extrabold text-foreground/90">{benefit.title}</h3>
+                    <p className="text-[10px] text-muted-foreground leading-relaxed">{benefit.description}</p>
                   </div>
                 </div>
               ))}
@@ -774,15 +774,15 @@ export default function PaymentPage() {
 
         {/* Tab: Nạp điểm */}
         <TabsContent value="topup" className="mt-8 space-y-6 max-w-xl mx-auto">
-          <Card className="border border-slate-800 bg-slate-900/20 backdrop-blur-xl rounded-3xl relative overflow-hidden">
+          <Card className="border border-border bg-card/20 backdrop-blur-xl rounded-3xl relative overflow-hidden">
             <CardContent className="space-y-6 pt-6">
-              <div className="flex justify-between items-center text-xs border-b border-slate-900 pb-4">
-                <span className="text-slate-400">Tỷ lệ quy đổi điểm</span>
+              <div className="flex justify-between items-center text-xs border-b border-border pb-4">
+                <span className="text-muted-foreground">Tỷ lệ quy đổi điểm</span>
                 <span className="font-extrabold text-purple-400">1.000đ = 1 điểm cước</span>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="amount" className="text-xs font-bold text-slate-300">Nhập số tiền muốn nạp</Label>
+                <Label htmlFor="amount" className="text-xs font-bold text-muted-foreground">Nhập số tiền muốn nạp</Label>
                 <div className="relative">
                   <Input
                     id="amount"
@@ -793,9 +793,9 @@ export default function PaymentPage() {
                       const raw = e.target.value.replace(/\D/g, '')
                       setAmountInput(raw)
                     }}
-                    className="h-14 text-lg font-extrabold bg-slate-950/45 border-slate-800 text-purple-400 placeholder:text-slate-700 pl-4 pr-12 focus-visible:ring-purple-500 rounded-xl"
+                    className="h-14 text-lg font-extrabold bg-background/45 border-border text-purple-400 placeholder:text-muted-foreground pl-4 pr-12 focus-visible:ring-purple-500 rounded-xl"
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 font-extrabold text-slate-650 text-xs">VNĐ</span>
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 font-extrabold text-muted-foreground text-xs">VNĐ</span>
                 </div>
                 {parsedAmount > 0 && parsedAmount < 20000 && (
                   <p className="text-[11px] text-red-400 font-semibold flex items-center gap-1.5 pt-0.5">
@@ -811,8 +811,8 @@ export default function PaymentPage() {
                     key={preset}
                     variant="outline"
                     onClick={() => setAmountInput(String(preset))}
-                    className={`h-12 border-slate-800 text-xs font-bold hover:bg-purple-500/5 transition-all rounded-xl ${
-                      parsedAmount === preset ? 'border-purple-500 bg-purple-500/10 text-purple-400 shadow-[0_0_12px_rgba(147,51,234,0.15)]' : 'text-slate-400'
+                    className={`h-12 border-border text-xs font-bold hover:bg-purple-500/5 transition-all rounded-xl ${
+                      parsedAmount === preset ? 'border-purple-500 bg-purple-500/10 text-purple-400 shadow-[0_0_12px_rgba(147,51,234,0.15)]' : 'text-muted-foreground'
                     }`}
                   >
                     {formatCurrency(preset)}
@@ -823,7 +823,7 @@ export default function PaymentPage() {
               {/* Points preview panel */}
               {parsedAmount >= 20000 && (
                 <div className="flex items-center justify-between rounded-xl bg-amber-500/5 border border-amber-500/10 px-4 py-3 text-xs">
-                  <span className="text-slate-400">Bạn sẽ nhận được:</span>
+                  <span className="text-muted-foreground">Bạn sẽ nhận được:</span>
                   <div className="flex items-center gap-1.5 font-black text-amber-400">
                     <Star className="h-4.5 w-4.5 fill-amber-400/25" />
                     <span>{pointsPreview} điểm cước</span>
@@ -845,44 +845,44 @@ export default function PaymentPage() {
       </Tabs>
 
       {/* Trust Badges Footer */}
-      <div className="grid grid-cols-3 gap-3 text-center max-w-2xl mx-auto pt-6 border-t border-slate-900/60">
+      <div className="grid grid-cols-3 gap-3 text-center max-w-2xl mx-auto pt-6 border-t border-border/60">
         {[
           { label: 'Bảo mật giao dịch 100%', icon: Shield },
           { icon: Zap, label: 'Duyệt tự động 24/7' },
           { icon: Star, label: 'Đổi điểm học tập tức thì' },
         ].map((item, idx) => (
-          <div key={idx} className="flex flex-col sm:flex-row items-center justify-center gap-2 rounded-2xl bg-slate-900/20 border border-slate-900/60 py-3 px-4 text-[10px] text-slate-500 shadow-inner">
-            <item.icon className="h-4.5 w-4.5 text-slate-655 shrink-0" />
-            <span className="font-semibold text-slate-400">{item.label}</span>
+          <div key={idx} className="flex flex-col sm:flex-row items-center justify-center gap-2 rounded-2xl bg-card/20 border border-border/60 py-3 px-4 text-[10px] text-muted-foreground/70 shadow-inner">
+            <item.icon className="h-4.5 w-4.5 text-muted-foreground shrink-0" />
+            <span className="font-semibold text-muted-foreground">{item.label}</span>
           </div>
         ))}
       </div>
 
       {/* --- MODAL A: CONFIRM SUBSCRIBE (ENOUGH POINTS) --- */}
       <Dialog open={confirmSubscribePlan !== null} onOpenChange={(open) => !open && setConfirmSubscribePlan(null)}>
-        <DialogContent className="max-w-sm bg-slate-950 border border-slate-800 text-slate-200 rounded-3xl p-5 shadow-2xl">
+        <DialogContent className="max-w-sm bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
-            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-white">
+            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-foreground">
               <Crown className="h-6 w-6 text-amber-400 fill-amber-400/10" /> Xác nhận đăng ký VIP
             </DialogTitle>
-            <DialogDescription className="text-center text-slate-400 text-xs mt-1 leading-relaxed">
+            <DialogDescription className="text-center text-muted-foreground text-xs mt-1 leading-relaxed">
               Bạn đang thực hiện đăng ký gói VIP bằng số điểm cước học tập của mình.
             </DialogDescription>
           </DialogHeader>
 
           {confirmSubscribePlan && (
             <div className="space-y-4 py-3 text-xs">
-              <div className="rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 space-y-2.5">
+              <div className="rounded-2xl bg-card/70 border border-border/80 p-4 space-y-2.5">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Gói đăng ký:</span>
-                  <span className="font-bold text-white text-right">{VIP_PLANS[confirmSubscribePlan]?.displayName}</span>
+                  <span className="text-muted-foreground font-medium">Gói đăng ký:</span>
+                  <span className="font-bold text-foreground text-right">{VIP_PLANS[confirmSubscribePlan]?.displayName}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Thời hạn sử dụng:</span>
-                  <span className="font-extrabold text-white">{VIP_PLANS[confirmSubscribePlan]?.durationDays} Ngày</span>
+                  <span className="text-muted-foreground font-medium">Thời hạn sử dụng:</span>
+                  <span className="font-extrabold text-foreground">{VIP_PLANS[confirmSubscribePlan]?.durationDays} Ngày</span>
                 </div>
-                <div className="flex justify-between items-center border-t border-slate-800/60 pt-2.5">
-                  <span className="text-slate-400 font-medium">Chi phí trừ ví:</span>
+                <div className="flex justify-between items-center border-t border-border/60 pt-2.5">
+                  <span className="text-muted-foreground font-medium">Chi phí trừ ví:</span>
                   <span className="font-black text-amber-400 font-mono text-sm">
                     -{couponApplied?.finalPoints?.[confirmSubscribePlan] ?? VIP_PLANS[confirmSubscribePlan]?.costPoints} điểm
                   </span>
@@ -890,23 +890,23 @@ export default function PaymentPage() {
               </div>
 
               {/* Points transition layout */}
-              <div className="flex items-center justify-around bg-slate-900/30 border border-slate-850 rounded-2xl p-4 shadow-inner">
+              <div className="flex items-center justify-around bg-card/30 border border-border rounded-2xl p-4 shadow-inner">
                 <div className="text-center">
-                  <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Số dư cũ</p>
-                  <p className="text-sm font-bold text-slate-300 mt-1">{points} điểm</p>
+                  <p className="text-[10px] text-muted-foreground/70 uppercase tracking-wider font-bold">Số dư cũ</p>
+                  <p className="text-sm font-bold text-muted-foreground mt-1">{points} điểm</p>
                 </div>
                 <div className="flex items-center justify-center h-8 w-8 rounded-full bg-purple-500/10 text-purple-400 shadow-sm border border-purple-500/15">
                   <ArrowRight className="h-4 w-4" />
                 </div>
                 <div className="text-center">
-                  <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Số dư mới</p>
+                  <p className="text-[10px] text-muted-foreground/70 uppercase tracking-wider font-bold">Số dư mới</p>
                   <p className="text-sm font-black text-emerald-400 mt-1">
                     {(points ?? 0) - (couponApplied?.finalPoints?.[confirmSubscribePlan] ?? VIP_PLANS[confirmSubscribePlan]?.costPoints)} điểm
                   </p>
                 </div>
               </div>
 
-              <p className="text-[10.5px] text-slate-500 text-center leading-relaxed italic">
+              <p className="text-[10.5px] text-muted-foreground/70 text-center leading-relaxed italic">
                 * Kích hoạt tức thì, không hỗ trợ đổi trả hoặc hoàn lại điểm sau khi đã kích hoạt gói VIP thành công.
               </p>
             </div>
@@ -916,7 +916,7 @@ export default function PaymentPage() {
             <Button
               variant="outline"
               onClick={() => setConfirmSubscribePlan(null)}
-              className="flex-1 h-10 text-xs font-bold border-slate-800 bg-transparent hover:bg-slate-900 text-slate-400 rounded-xl"
+              className="flex-1 h-10 text-xs font-bold border-border bg-transparent hover:bg-card text-muted-foreground rounded-xl"
             >
               Hủy bỏ
             </Button>
@@ -932,30 +932,30 @@ export default function PaymentPage() {
 
       {/* --- MODAL B: CONFIRM SUBSCRIBE WITH TOP-UP (SHORTAGE POINTS) --- */}
       <Dialog open={shortPointsPlan !== null} onOpenChange={(open) => !open && setShortPointsPlan(null)}>
-        <DialogContent className="max-w-sm bg-slate-950 border border-slate-800 text-slate-200 rounded-3xl p-5 shadow-2xl">
+        <DialogContent className="max-w-sm bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
-            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-white">
+            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-foreground">
               <Wallet className="h-5.5 w-5.5 text-purple-400" /> Nạp điểm để mua gói cước
             </DialogTitle>
-            <DialogDescription className="text-center text-slate-400 text-xs mt-1 leading-relaxed">
+            <DialogDescription className="text-center text-muted-foreground text-xs mt-1 leading-relaxed">
               Bạn không đủ điểm cước trong ví. Hãy tạo nhanh một giao dịch QR thanh toán để bù đắp số điểm thiếu.
             </DialogDescription>
           </DialogHeader>
 
           {shortPointsPlan && shortPointsPlanConfig && (
             <div className="space-y-4 py-2 text-xs">
-              <div className="rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 space-y-2.5">
+              <div className="rounded-2xl bg-card/70 border border-border/80 p-4 space-y-2.5">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Gói muốn đăng ký:</span>
-                  <span className="font-bold text-white text-right">{shortPointsPlanConfig.displayName}</span>
+                  <span className="text-muted-foreground font-medium">Gói muốn đăng ký:</span>
+                  <span className="font-bold text-foreground text-right">{shortPointsPlanConfig.displayName}</span>
                 </div>
-                <div className="flex justify-between items-center border-t border-slate-800/60 pt-2.5">
-                  <span className="text-slate-400 font-medium">Chi phí gói:</span>
-                  <span className="font-bold text-slate-200">{shortPointsPlanCost} điểm</span>
+                <div className="flex justify-between items-center border-t border-border/60 pt-2.5">
+                  <span className="text-muted-foreground font-medium">Chi phí gói:</span>
+                  <span className="font-bold text-foreground/90">{shortPointsPlanCost} điểm</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Số dư ví hiện tại:</span>
-                  <span className="font-bold text-slate-400">{shortPointsCurrent} điểm</span>
+                  <span className="text-muted-foreground font-medium">Số dư ví hiện tại:</span>
+                  <span className="font-bold text-muted-foreground">{shortPointsCurrent} điểm</span>
                 </div>
                 <div className="flex justify-between items-center text-red-400 font-medium">
                   <span>Còn thiếu:</span>
@@ -964,38 +964,38 @@ export default function PaymentPage() {
               </div>
 
               {/* Dynamic topup analysis card */}
-              <div className="bg-slate-900/30 border border-slate-850 rounded-2xl p-4 space-y-2.5 shadow-inner">
+              <div className="bg-card/30 border border-border rounded-2xl p-4 space-y-2.5 shadow-inner">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Hạn mức nạp tối thiểu:</span>
+                  <span className="text-muted-foreground font-medium">Hạn mức nạp tối thiểu:</span>
                   <span className="font-bold text-white">20.000đ (20 điểm)</span>
                 </div>
 
                 {shortPointsCashNeeded < 20000 ? (
-                  <div className="space-y-2.5 pt-1.5 border-t border-slate-800/50">
+                  <div className="space-y-2.5 pt-1.5 border-t border-border/50">
                     <p className="text-[10px] text-amber-400 leading-relaxed font-medium flex items-start gap-1">
                       <AlertCircle className="h-3.5 w-3.5 shrink-0 mt-0.5" />
                       Do số điểm thiếu quy đổi ({formatCurrency(shortPointsCashNeeded)}) nhỏ hơn mức nạp tối thiểu, hệ thống sẽ đề xuất QR trị giá 20.000đ (+20 điểm cước).
                     </p>
                     <div className="flex justify-between items-center text-xs pt-1">
-                      <span className="text-slate-400 font-bold">Số tiền nạp:</span>
+                      <span className="text-muted-foreground font-bold">Số tiền nạp:</span>
                       <span className="font-black text-purple-400 text-sm">{formatCurrency(finalTopupAmount)}</span>
                     </div>
-                    <div className="flex justify-between items-center text-[10px] text-slate-400">
+                    <div className="flex justify-between items-center text-[10px] text-muted-foreground">
                       <span>Ví sau khi mua gói:</span>
                       <span className="font-extrabold text-emerald-400">Còn dư {expectedWalletAfterPurchase} điểm cước</span>
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-2.5 pt-1.5 border-t border-slate-800/50">
+                  <div className="space-y-2.5 pt-1.5 border-t border-border/50">
                     <div className="flex justify-between items-center">
-                      <span className="text-slate-400 font-medium">Số tiền nạp đề xuất:</span>
+                      <span className="text-muted-foreground font-medium">Số tiền nạp đề xuất:</span>
                       <span className="font-black text-purple-400 text-sm">{formatCurrency(finalTopupAmount)}</span>
                     </div>
-                    <div className="flex justify-between items-center text-[10px] text-slate-450">
+                    <div className="flex justify-between items-center text-[10px] text-muted-foreground/60">
                       <span>Điểm cước cộng thêm:</span>
                       <span className="font-bold text-amber-400">+{pointsToAddFromTopup} điểm</span>
                     </div>
-                    <div className="flex justify-between items-center text-[10px] text-slate-400">
+                    <div className="flex justify-between items-center text-[10px] text-muted-foreground">
                       <span>Ví sau khi mua gói:</span>
                       <span className="font-extrabold text-emerald-400">Còn dư {expectedWalletAfterPurchase} điểm cước</span>
                     </div>
@@ -1016,7 +1016,7 @@ export default function PaymentPage() {
             <Button
               variant="outline"
               onClick={() => setShortPointsPlan(null)}
-              className="flex-1 h-10 text-xs font-bold border-slate-800 bg-transparent hover:bg-slate-900 text-slate-400 rounded-xl"
+              className="flex-1 h-10 text-xs font-bold border-border bg-transparent hover:bg-card text-muted-foreground rounded-xl"
             >
               Hủy bỏ
             </Button>
@@ -1032,29 +1032,29 @@ export default function PaymentPage() {
 
       {/* --- MODAL C: CONFIRM FREE TOP-UP (MANUAL TAB TOPUP) --- */}
       <Dialog open={confirmTopupAmount !== null} onOpenChange={(open) => !open && setConfirmTopupAmount(null)}>
-        <DialogContent className="max-w-sm bg-slate-950 border border-slate-800 text-slate-200 rounded-3xl p-5 shadow-2xl">
+        <DialogContent className="max-w-sm bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
-            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-white">
+            <DialogTitle className="text-lg font-black text-center flex items-center justify-center gap-2 text-foreground">
               <Zap className="h-5.5 w-5.5 text-purple-400" /> Xác nhận tạo mã QR nạp tiền
             </DialogTitle>
-            <DialogDescription className="text-center text-slate-400 text-xs mt-1 leading-relaxed">
+            <DialogDescription className="text-center text-muted-foreground text-xs mt-1 leading-relaxed">
               Bạn đang chuẩn bị tạo mã QR thanh toán ngân hàng trực tuyến.
             </DialogDescription>
           </DialogHeader>
 
           {confirmTopupAmount && (
             <div className="space-y-4 py-3 text-xs">
-              <div className="rounded-2xl bg-slate-900/70 border border-slate-800/80 p-4 space-y-3">
+              <div className="rounded-2xl bg-card/70 border border-border/80 p-4 space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-slate-400 font-medium">Số tiền nạp:</span>
-                  <span className="font-black text-white text-base">{formatCurrency(confirmTopupAmount)}</span>
+                  <span className="text-muted-foreground font-medium">Số tiền nạp:</span>
+                  <span className="font-black text-foreground text-base">{formatCurrency(confirmTopupAmount)}</span>
                 </div>
-                <div className="flex justify-between items-center border-t border-slate-800/60 pt-2.5">
-                  <span className="text-slate-400 font-medium">Điểm VIP nhận được:</span>
+                <div className="flex justify-between items-center border-t border-border/60 pt-2.5">
+                  <span className="text-muted-foreground font-medium">Điểm VIP nhận được:</span>
                   <span className="font-black text-amber-400 font-mono text-sm">+{confirmTopupAmount / 1000} điểm cước</span>
                 </div>
               </div>
-              <p className="text-[10.5px] text-slate-500 text-center leading-relaxed">
+              <p className="text-[10.5px] text-muted-foreground/70 text-center leading-relaxed">
                 Vui lòng chuyển tiền đúng nội dung được thiết lập trong mã QR để hệ thống tự động cộng điểm sau 1-3 phút.
               </p>
             </div>
@@ -1064,7 +1064,7 @@ export default function PaymentPage() {
             <Button
               variant="outline"
               onClick={() => setConfirmTopupAmount(null)}
-              className="flex-1 h-10 text-xs font-bold border-slate-800 bg-transparent hover:bg-slate-900 text-slate-400 rounded-xl"
+              className="flex-1 h-10 text-xs font-bold border-border bg-transparent hover:bg-card text-muted-foreground rounded-xl"
             >
               Quay lại
             </Button>
@@ -1080,7 +1080,7 @@ export default function PaymentPage() {
 
       {/* --- DISPLAY BANK TRANSFER QR & SUCCESS MODAL --- */}
       <Dialog open={dialogOpen} onOpenChange={handleDialogClose}>
-        <DialogContent className="max-w-xs bg-slate-950 border border-slate-800 text-slate-200 rounded-3xl p-5 shadow-2xl">
+        <DialogContent className="max-w-xs bg-background border border-border text-foreground/90 rounded-3xl p-5 shadow-2xl">
           <DialogHeader>
             <DialogTitle className="text-base font-black text-center text-white">
               {topupSuccess ? 'Giao dịch hoàn tất' : 'Thanh toán nạp điểm'}
@@ -1094,8 +1094,8 @@ export default function PaymentPage() {
                 <CheckCircle className="h-9 w-9 text-emerald-500" />
               </div>
               <div className="space-y-1.5">
-                <p className="text-sm font-black text-white">{successMessage.title}</p>
-                <p className="text-xs text-slate-400 leading-relaxed px-2">{successMessage.subtitle}</p>
+                <p className="text-sm font-black text-foreground">{successMessage.title}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed px-2">{successMessage.subtitle}</p>
               </div>
               <div className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 text-xs font-black text-amber-400">
                 <Star className="h-4 w-4 fill-amber-400/20" />
@@ -1110,7 +1110,7 @@ export default function PaymentPage() {
           {/* Transfer QR screen */}
           {!topupLoading && topupInfo && !topupSuccess && (
             <div className="space-y-4">
-              <div className="flex justify-center p-2.5 bg-white rounded-2xl border border-slate-800 max-w-[185px] mx-auto animate-fade-in shadow-lg">
+              <div className="flex justify-center p-2.5 bg-white rounded-2xl border border-border max-w-[185px] mx-auto animate-fade-in shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={topupInfo.qrUrl}
@@ -1145,7 +1145,7 @@ export default function PaymentPage() {
           {topupLoading && (
             <div className="py-12 flex flex-col items-center justify-center gap-3">
               <Loader2 className="h-8 w-8 animate-spin text-purple-500" />
-              <p className="text-xs text-slate-400">Đang khởi tạo giao dịch...</p>
+              <p className="text-xs text-muted-foreground">Đang khởi tạo giao dịch...</p>
             </div>
           )}
         </DialogContent>
@@ -1164,13 +1164,13 @@ function InfoRow({
   onCopy?: () => void
 }) {
   return (
-    <div className="flex items-center justify-between rounded-xl bg-slate-900 border border-slate-800/80 px-3 py-2">
+    <div className="flex items-center justify-between rounded-xl bg-card border border-border/80 px-3 py-2">
       <div>
-        <p className="text-[9px] text-slate-500 uppercase font-semibold">{label}</p>
-        <p className={`${mono ? 'font-mono text-xs' : 'text-xs'} ${bold ? 'font-bold text-white' : 'font-medium text-slate-300'} mt-0.5`}>{value}</p>
+        <p className="text-[9px] text-muted-foreground/70 uppercase font-semibold">{label}</p>
+        <p className={`${mono ? 'font-mono text-xs' : 'text-xs'} ${bold ? 'font-bold text-foreground' : 'font-medium text-muted-foreground'} mt-0.5`}>{value}</p>
       </div>
       {onCopy && (
-        <button onClick={onCopy} className="ml-2 text-slate-500 transition-colors hover:text-slate-350 p-1" title="Sao chép">
+        <button onClick={onCopy} className="ml-2 text-muted-foreground/70 transition-colors hover:text-foreground/80 p-1" title="Sao chép">
           <Copy className="h-3.5 w-3.5" />
         </button>
       )}

@@ -9,6 +9,7 @@ import Header from '@/components/layout/Header'
 import SupportBubble from '@/components/layout/SupportBubble'
 import ProfileCompletionModal from '@/components/ProfileCompletionModal'
 import DictionaryPopup from '@/components/vocabulary/DictionaryPopup'
+import PinkThemeDecorations from '@/components/PinkThemeDecorations'
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { isLoading } = useAuth()
@@ -97,6 +98,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
       {/* Floating help / chat bubble widget */}
       {!isSelectOrRedirect && <SupportBubble />}
+
+      {/* Pink theme cute decorations — only visible when theme=pink */}
+      <PinkThemeDecorations />
     </div>
   )
 }

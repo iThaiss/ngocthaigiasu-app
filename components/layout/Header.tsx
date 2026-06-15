@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Bell, Sun, Moon, Crown, ArrowLeftRight, LogOut, User, Calendar, GitBranch, Sparkles } from 'lucide-react'
+import { Bell, Sun, Moon, Crown, ArrowLeftRight, LogOut, User, Calendar, GitBranch, Sparkles, Flower2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
@@ -124,20 +124,22 @@ export default function Header() {
           </Button>
         </Link>
 
-        {/* Standalone Theme Toggle */}
+        {/* Standalone Theme Toggle — cycles light → dark → pink → light */}
         <Button
           variant="ghost"
           size="icon"
           className="h-9 w-9 text-muted-foreground hover:text-foreground cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95"
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          title={theme === 'dark' ? 'Giao diện sáng' : 'Giao diện tối'}
+          onClick={() => setTheme(theme === 'light' ? 'dark' : theme === 'dark' ? 'pink' : 'light')}
+          title={theme === 'dark' ? 'Chuyển sang sáng' : theme === 'pink' ? 'Chuyển sang tối' : 'Chuyển sang hồng'}
         >
           {!mounted ? (
             <Sun className="h-4 w-4 text-muted-foreground" />
           ) : theme === 'dark' ? (
             <Sun className="h-4 w-4 text-amber-500" />
-          ) : (
+          ) : theme === 'pink' ? (
             <Moon className="h-4 w-4 text-blue-500" />
+          ) : (
+            <Flower2 className="h-4 w-4 text-pink-500" />
           )}
         </Button>
 
