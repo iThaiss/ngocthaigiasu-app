@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { signOut, useSession } from 'next-auth/react'
 import {
-  LayoutDashboard, HelpCircle, FileText, Users, CreditCard, Ticket,
+  LayoutDashboard, HelpCircle, FileText, Users, CreditCard, Ticket, Gift,
   LogOut, Shield, Menu, X, ChevronRight, GraduationCap, ImageOff, MessageSquareWarning, FileStack, BookmarkCheck, Bot, Layers,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -24,6 +24,7 @@ const NAV = [
   { href: '/admin/students', label: 'Học sinh', icon: Users },
   { href: '/admin/transactions', label: 'Giao dịch', icon: CreditCard },
   { href: '/admin/coupons', label: 'Coupon', icon: Ticket },
+  { href: '/admin/gift-codes', label: 'Mã quà tặng', icon: Gift },
 ]
 
 function AdminSidebar({ open, onClose }: { open?: boolean; onClose?: () => void }) {
