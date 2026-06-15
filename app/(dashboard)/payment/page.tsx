@@ -109,6 +109,9 @@ export default function PaymentPage() {
   const [couponApplied, setCouponApplied] = useState<{ code: string; discountPercent: number; finalPoints: Record<string, number> } | null>(null)
   const [couponLoading, setCouponLoading] = useState(false)
   const [claimingFree, setClaimingFree] = useState(false)
+  const [giftInput, setGiftInput] = useState('')
+  const [giftLoading, setGiftLoading] = useState(false)
+  const [giftRedeemed, setGiftRedeemed] = useState<{ label: string } | null>(null)
 
   // Confirm states
   const [confirmSubscribePlan, setConfirmSubscribePlan] = useState<PlanId | null>(null)
@@ -174,6 +177,29 @@ export default function PaymentPage() {
       toast({ title: 'Không thể nhận VIP miễn phí', description: err instanceof Error ? err.message : 'Vui lòng thử lại.', variant: 'destructive' })
     } finally {
       setClaimingFree(false)
+    }
+  }
+
+  async function redeemGiftCode() {
+    if (!giftInput.trim()) return
+    setGiftLoading(true)
+    try {
+      const res = await fetch('/api/payment/redeem-gift-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: giftInput.trim() }),
+      })
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error ?? 'Lỗi đổi mã quà tặng')
+      setGiftRedeemed({ label: data.planLabel })
+      await updateSession()
+      router.refresh()
+      await fetchPoints()
+      toast({ title: 'Đổi quà thành công! 🎁', description: `Đã kích hoạt ${data.planLabel}.` })
+    } catch (err) {
+      toast({ title: 'Không thể đổi mã quà tặng', description: err instanceof Error ? err.message : 'Vui lòng thử lại.', variant: 'destructive' })
+    } finally {
+      setGiftLoading(false)
     }
   }
 
@@ -593,6 +619,36 @@ export default function PaymentPage() {
                 </div>
               )}
             </div>
+          </div>
+
+          {/* Gift Code Panel */}
+          <div className="rounded-2xl border border-slate-850 bg-slate-900/20 p-4 flex flex-wrap items-center justify-between gap-4 w-full max-w-lg shadow-inner">
+            <div className="flex items-center gap-2">
+              <Gift className="h-4 w-4 text-rose-400" />
+              <span className="text-xs font-bold text-slate-300">Mã quà tặng VIP miễn phí:</span>
+            </div>
+            {giftRedeemed ? (
+              <Badge className="bg-rose-500/15 text-rose-400 border border-rose-500/30 px-3 py-1.5 text-xs gap-2 font-mono rounded-lg">
+                ✓ {giftRedeemed.label} đã được kích hoạt!
+              </Badge>
+            ) : (
+              <div className="flex gap-2 w-full sm:w-auto">
+                <Input
+                  placeholder="MÃ QUÀ TẶNG"
+                  value={giftInput}
+                  onChange={(e) => setGiftInput(e.target.value.toUpperCase())}
+                  className="uppercase h-9 text-xs border-slate-800 bg-slate-950/40 focus-visible:ring-rose-500 text-center font-bold tracking-wider rounded-lg max-w-[170px]"
+                />
+                <Button
+                  variant="outline"
+                  onClick={redeemGiftCode}
+                  disabled={giftLoading || !giftInput.trim()}
+                  className="h-9 text-xs font-bold border-slate-800 text-slate-300 px-4 hover:bg-slate-900 rounded-lg"
+                >
+                  {giftLoading ? <Loader2 className="h-3 w-3 animate-spin" /> : 'Đổi quà'}
+                </Button>
+              </div>
+            )}
           </div>
 
           {/* Pricing Grid - Highly Minimalistic Redesign */}
