@@ -110,7 +110,7 @@ export default function PinkThemeDecorations() {
       >
         <div className="relative">
           <div className="absolute -top-8 -left-16 bg-white/90 border border-pink-200 rounded-xl px-2 py-1 text-[10px] font-bold text-pink-500 whitespace-nowrap shadow-sm">
-            ʕ•ᴥ•ʔ 頑張れ！
+ʕ•ᴥ•ʔ Cố lên!
           </div>
           <PixelCat />
         </div>
