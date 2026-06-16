@@ -681,7 +681,7 @@ export default function LiveClassPage() {
 
       {/* Create / Edit Dialog */}
       <Dialog open={isOpenDialog} onOpenChange={setIsOpenDialog}>
-        <DialogContent className="max-w-md w-[95vw]">
+        <DialogContent className="max-w-md w-[95vw] max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>{editingSession ? 'Chỉnh sửa buổi học Live' : 'Tạo buổi học Live mới'}</DialogTitle>
             <DialogDescription>
