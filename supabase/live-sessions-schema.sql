@@ -15,11 +15,15 @@ CREATE TABLE IF NOT EXISTS live_sessions (
   subject            subject_type NOT NULL,
   meet_url           TEXT NOT NULL,          -- Link Google Meet gốc (chỉ hiển thị với Admin hoặc đi qua API redirect)
   external_event_id  VARCHAR(255),  -- ID sự kiện Lịch để gọi Google Calendar API
-  recording_url      TEXT,              -- Video xem lại sau khi học xong
+  recording_url      TEXT,              -- Video xem lại (phần 1) sau khi học xong
+  recording_url_2    TEXT,              -- Video xem lại (phần 2) — tùy chọn
   document_url       TEXT,              -- Tài liệu học tập đính kèm (PDF, bài tập)
   created_at         TIMESTAMPTZ DEFAULT NOW(),
   updated_at         TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- Nếu bảng đã tồn tại trước đó, chạy dòng này để thêm cột link xem lại thứ 2:
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS recording_url_2 TEXT;
 
 -- Bật RLS
 ALTER TABLE live_sessions ENABLE ROW LEVEL SECURITY;
