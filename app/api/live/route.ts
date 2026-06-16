@@ -27,8 +27,8 @@ export async function GET(req: NextRequest) {
       if (isAdmin || isVip) {
         return s
       }
-      // Omit Meet URL for normal students
-      const { meet_url, external_event_id, ...rest } = s
+      // Ẩn link Meet + record + tài liệu khỏi học sinh chưa VIP
+      const { meet_url, external_event_id, recording_url, document_url, ...rest } = s
       return rest
     })
 

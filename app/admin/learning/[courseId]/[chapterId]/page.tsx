@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import {
   ChevronRight, ChevronLeft, Plus, Trash2, Loader2,
-  Video, CheckCircle2, Circle, Download,
+  Video, CheckCircle2, Circle, Download, Pencil,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -36,6 +36,16 @@ interface Chapter {
   course_id: string
 }
 
+interface MathLesson {
+  id: string
+  title: string
+  topic: string | null
+  video_url: string | null
+  video_source: string | null
+  order_index: number
+  is_active: boolean
+}
+
 
 export default function AdminLessonsPage() {
   const params = useParams()
@@ -45,7 +55,13 @@ export default function AdminLessonsPage() {
 
   const [chapter, setChapter] = useState<Chapter | null>(null)
   const [lessons, setLessons] = useState<Lesson[]>([])
+  const [mathLessons, setMathLessons] = useState<MathLesson[]>([])
   const [loading, setLoading] = useState(true)
+
+  // Edit video for math lesson
+  const [videoTarget, setVideoTarget] = useState<MathLesson | null>(null)
+  const [videoForm, setVideoForm] = useState({ video_url: '', video_source: 'youtube' })
+  const [savingVideo, setSavingVideo] = useState(false)
 
   // Create lesson
   const [createOpen, setCreateOpen] = useState(false)
@@ -61,15 +77,18 @@ export default function AdminLessonsPage() {
   const fetchData = useCallback(async () => {
     setLoading(true)
     try {
-      const [chRes, lRes] = await Promise.all([
+      const [chRes, lRes, mlRes] = await Promise.all([
         fetch(`/api/admin/learning/courses/${courseId}/chapters`),
         fetch(`/api/admin/learning/lessons?chapterId=${chapterId}`),
+        fetch(`/api/admin/learning/math-lessons?chapterId=${chapterId}`),
       ])
       const chData = await chRes.json()
       const lData = await lRes.json()
+      const mlData = await mlRes.json()
       const found = (chData.chapters ?? []).find((c: Chapter) => c.id === chapterId)
       setChapter(found ?? null)
       setLessons(lData.lessons ?? [])
+      setMathLessons(mlData.lessons ?? [])
     } finally {
       setLoading(false)
     }
@@ -96,6 +115,37 @@ export default function AdminLessonsPage() {
       toast({ title: 'Lỗi khi tạo bài', variant: 'destructive' })
     } finally {
       setCreating(false)
+    }
+  }
+
+  function openVideoDialog(lesson: MathLesson) {
+    setVideoTarget(lesson)
+    setVideoForm({
+      video_url: lesson.video_url ?? '',
+      video_source: lesson.video_source ?? 'youtube',
+    })
+  }
+
+  async function handleSaveVideo() {
+    if (!videoTarget) return
+    setSavingVideo(true)
+    try {
+      const res = await fetch(`/api/admin/learning/math-lessons/${videoTarget.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          video_url: videoForm.video_url || null,
+          video_source: videoForm.video_source,
+        }),
+      })
+      if (!res.ok) throw new Error()
+      toast({ title: 'Đã cập nhật video bài học' })
+      setVideoTarget(null)
+      fetchData()
+    } catch {
+      toast({ title: 'Lỗi khi lưu video', variant: 'destructive' })
+    } finally {
+      setSavingVideo(false)
     }
   }
 
@@ -183,7 +233,59 @@ export default function AdminLessonsPage() {
         </Button>
       </div>
 
-      {/* Lessons table */}
+      {/* Math syllabus lessons (gắn video bài giảng) */}
+      {mathLessons.length > 0 && (
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <h2 className="text-sm font-semibold text-zinc-200">Bài học giáo trình (Học tập)</h2>
+            <span className="text-xs text-zinc-500">{mathLessons.length} bài · gắn video bài giảng tại đây</span>
+          </div>
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900 overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-zinc-800 text-xs text-zinc-400">
+                  <th className="px-4 py-3 text-left font-medium">Tiêu đề</th>
+                  <th className="px-4 py-3 text-left font-medium">Chủ đề</th>
+                  <th className="px-4 py-3 text-center font-medium">Video</th>
+                  <th className="px-4 py-3 text-center font-medium">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-zinc-800/60">
+                {mathLessons.map((lesson) => (
+                  <tr key={lesson.id} className="hover:bg-zinc-800/30 transition-colors">
+                    <td className="px-4 py-3 text-zinc-200 max-w-xs">
+                      <p className="font-medium line-clamp-1">{lesson.title}</p>
+                    </td>
+                    <td className="px-4 py-3 text-zinc-400 text-xs">{lesson.topic ?? '—'}</td>
+                    <td className="px-4 py-3 text-center">
+                      {lesson.video_url
+                        ? <Video className="h-4 w-4 text-blue-400 mx-auto" />
+                        : <span className="text-zinc-600">—</span>
+                      }
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex items-center justify-center">
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-7 gap-1 px-2 text-xs text-zinc-400 hover:text-zinc-100"
+                          onClick={() => openVideoDialog(lesson)}
+                        >
+                          <Pencil className="h-3.5 w-3.5" />
+                          {lesson.video_url ? 'Sửa video' : 'Thêm video'}
+                        </Button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
+      {/* Legacy lessons table — ẩn khi chương dùng giáo trình math mà chưa có bài legacy */}
+      {(lessons.length > 0 || mathLessons.length === 0) && (
       <div className="rounded-xl border border-zinc-800 bg-zinc-900 overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
@@ -274,6 +376,46 @@ export default function AdminLessonsPage() {
           </tbody>
         </table>
       </div>
+      )}
+
+      {/* Edit video dialog (math lessons) */}
+      <Dialog open={!!videoTarget} onOpenChange={(open) => !open && setVideoTarget(null)}>
+        <DialogContent className="max-w-md bg-zinc-900 border-zinc-800 text-zinc-100">
+          <DialogHeader>
+            <DialogTitle className="line-clamp-1">Video bài giảng — {videoTarget?.title}</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="space-y-1.5">
+              <label className="text-xs text-zinc-400">Video URL (YouTube / Google Drive)</label>
+              <Input
+                value={videoForm.video_url}
+                onChange={(e) => setVideoForm((f) => ({ ...f, video_url: e.target.value }))}
+                placeholder="https://youtu.be/... hoặc https://drive.google.com/..."
+                className="bg-zinc-800 border-zinc-700 text-zinc-100"
+              />
+              <p className="text-[11px] text-zinc-500">Để trống và Lưu để gỡ video khỏi bài học.</p>
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-zinc-400">Nguồn video</label>
+              <select
+                value={videoForm.video_source}
+                onChange={(e) => setVideoForm((f) => ({ ...f, video_source: e.target.value }))}
+                className="w-full rounded-md border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-100"
+              >
+                <option value="youtube">YouTube</option>
+                <option value="drive">Google Drive</option>
+              </select>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="ghost" onClick={() => setVideoTarget(null)} className="text-zinc-400">Hủy</Button>
+            <Button onClick={handleSaveVideo} disabled={savingVideo}>
+              {savingVideo && <Loader2 className="mr-1 h-3.5 w-3.5 animate-spin" />}
+              Lưu
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Create lesson dialog */}
       <Dialog open={createOpen} onOpenChange={setCreateOpen}>

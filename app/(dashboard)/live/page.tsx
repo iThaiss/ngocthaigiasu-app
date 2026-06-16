@@ -95,6 +95,18 @@ function formatSessionTime(startStr: string, endStr: string) {
   }
 }
 
+// Chuyển link record sang URL nhúng được. Trả null nếu không nhận diện được.
+function getRecordingEmbedUrl(url: string): string | null {
+  if (!url) return null
+  const yt = url.match(
+    /(?:youtube\.com\/(?:watch\?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([\w-]{11})/
+  )
+  if (yt) return `https://www.youtube-nocookie.com/embed/${yt[1]}`
+  const drive = url.match(/drive\.google\.com\/file\/d\/([^/]+)/)
+  if (drive) return `https://drive.google.com/file/d/${drive[1]}/preview`
+  return null
+}
+
 export default function LiveClassPage() {
   const { user, isVip, isLoading: authLoading } = useAuth()
   const { toast } = useToast()
@@ -106,6 +118,7 @@ export default function LiveClassPage() {
   // Dialog States
   const [isOpenDialog, setIsOpenDialog] = useState(false)
   const [editingSession, setEditingSession] = useState<LiveClass | null>(null)
+  const [replaySession, setReplaySession] = useState<LiveClass | null>(null)
   
   // Form States
   const [formTitle, setFormTitle] = useState('')
@@ -461,11 +474,21 @@ export default function LiveClassPage() {
                             ) : isEnded ? (
                               <div className="flex gap-2 w-full sm:w-auto">
                                 {session.recording_url && (
-                                  <a href={session.recording_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                                    <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
+                                  getRecordingEmbedUrl(session.recording_url) ? (
+                                    <Button
+                                      onClick={() => setReplaySession(session)}
+                                      variant="outline" size="sm"
+                                      className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
+                                    >
                                       <Film className="h-3.5 w-3.5" /> Xem lại
                                     </Button>
-                                  </a>
+                                  ) : (
+                                    <a href={session.recording_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
+                                      <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
+                                        <Film className="h-3.5 w-3.5" /> Xem lại
+                                      </Button>
+                                    </a>
+                                  )
                                 )}
                                 {session.document_url && (
                                   <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
@@ -692,7 +715,7 @@ export default function LiveClassPage() {
                   type="url"
                   value={formRecordingUrl}
                   onChange={(e) => setFormRecordingUrl(e.target.value)}
-                  placeholder="https://drive.google.com/file/d/..."
+                  placeholder="https://youtu.be/... hoặc https://drive.google.com/..."
                   className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
                 />
               </div>
@@ -726,6 +749,29 @@ export default function LiveClassPage() {
               </Button>
             </DialogFooter>
           </form>
+        </DialogContent>
+      </Dialog>
+
+      {/* Replay video player */}
+      <Dialog open={!!replaySession} onOpenChange={(open) => !open && setReplaySession(null)}>
+        <DialogContent className="max-w-3xl p-3 sm:p-4">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-base pr-6">
+              <Film className="h-4 w-4 text-rose-500 shrink-0" />
+              <span className="truncate">{replaySession?.title}</span>
+            </DialogTitle>
+          </DialogHeader>
+          {replaySession?.recording_url && (
+            <div className="aspect-video w-full overflow-hidden rounded-lg bg-black">
+              <iframe
+                src={getRecordingEmbedUrl(replaySession.recording_url) ?? undefined}
+                className="h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title={replaySession.title}
+              />
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>
