@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url } = body
+    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key } = body
 
     if (!title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -56,6 +56,9 @@ export async function POST(req: NextRequest) {
         recording_url: recording_url || null,
         recording_url_2: recording_url_2 || null,
         document_url: document_url || null,
+        homework_file_url: homework_file_url || null,
+        homework_title: homework_title || null,
+        homework_answer_key: homework_answer_key ?? null,
       })
       .select()
       .single()
@@ -79,7 +82,7 @@ export async function PUT(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url } = body
+    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key } = body
 
     if (!id || !title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -118,6 +121,9 @@ export async function PUT(req: NextRequest) {
         recording_url: recording_url || null,
         recording_url_2: recording_url_2 || null,
         document_url: document_url || null,
+        homework_file_url: homework_file_url || null,
+        homework_title: homework_title || null,
+        homework_answer_key: homework_answer_key ?? null,
         updated_at: new Date().toISOString(),
       })
       .eq('id', id)

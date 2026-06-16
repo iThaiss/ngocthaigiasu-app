@@ -24,11 +24,16 @@ export async function GET(req: NextRequest) {
 
     // Security check: Hide raw meet_url from non-VIP users to prevent link sharing
     const sanitizedSessions = sessions.map((s) => {
-      if (isAdmin || isVip) {
+      // Đáp án BTVN chỉ admin được thấy (tránh lộ đáp án qua payload chung)
+      if (isAdmin) {
         return s
       }
-      // Ẩn link Meet + record + tài liệu khỏi học sinh chưa VIP
-      const { meet_url, external_event_id, recording_url, recording_url_2, document_url, ...rest } = s
+      if (isVip) {
+        const { homework_answer_key, ...rest } = s
+        return rest
+      }
+      // Ẩn link Meet + record + tài liệu + BTVN khỏi học sinh chưa VIP
+      const { meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, ...rest } = s
       return rest
     })
 

@@ -5,7 +5,8 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Video, Calendar, Clock, Users, ShieldAlert,
-  Crown, Play, ExternalLink, AlertCircle, Loader2, Plus, Edit2, Trash2, BookOpen, Film
+  Crown, Play, ExternalLink, AlertCircle, Loader2, Plus, Edit2, Trash2, BookOpen, Film,
+  PencilLine, ClipboardList, BarChart3
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -20,6 +21,8 @@ import {
   DialogFooter,
   DialogDescription
 } from '@/components/ui/dialog'
+import HomeworkRunner from '@/components/live/HomeworkRunner'
+import type { HomeworkSlot, HomeworkSlotType } from '@/lib/homework-grading'
 
 interface LiveClass {
   id: string
@@ -33,6 +36,9 @@ interface LiveClass {
   recording_url?: string
   recording_url_2?: string
   document_url?: string
+  homework_file_url?: string
+  homework_title?: string
+  homework_answer_key?: HomeworkSlot[]
 }
 
 function SessionCountdown({ startTime }: { startTime: string }) {
@@ -120,7 +126,9 @@ export default function LiveClassPage() {
   const [isOpenDialog, setIsOpenDialog] = useState(false)
   const [editingSession, setEditingSession] = useState<LiveClass | null>(null)
   const [replay, setReplay] = useState<{ title: string; url: string } | null>(null)
-  
+  const [btvnSessionId, setBtvnSessionId] = useState<string | null>(null)
+  const [resultsSession, setResultsSession] = useState<LiveClass | null>(null)
+
   // Form States
   const [formTitle, setFormTitle] = useState('')
   const [formTeacher, setFormTeacher] = useState('Thầy Ngọc Thái')
@@ -132,6 +140,9 @@ export default function LiveClassPage() {
   const [formRecordingUrl, setFormRecordingUrl] = useState('')
   const [formRecordingUrl2, setFormRecordingUrl2] = useState('')
   const [formDocumentUrl, setFormDocumentUrl] = useState('')
+  const [formHomeworkUrl, setFormHomeworkUrl] = useState('')
+  const [formHomeworkTitle, setFormHomeworkTitle] = useState('')
+  const [formAnswerKey, setFormAnswerKey] = useState<HomeworkSlot[]>([])
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
@@ -173,6 +184,9 @@ export default function LiveClassPage() {
     setFormRecordingUrl('')
     setFormRecordingUrl2('')
     setFormDocumentUrl('')
+    setFormHomeworkUrl('')
+    setFormHomeworkTitle('')
+    setFormAnswerKey([])
     setIsOpenDialog(true)
   }
 
@@ -194,7 +208,35 @@ export default function LiveClassPage() {
     setFormRecordingUrl(session.recording_url || '')
     setFormRecordingUrl2(session.recording_url_2 || '')
     setFormDocumentUrl(session.document_url || '')
+    setFormHomeworkUrl(session.homework_file_url || '')
+    setFormHomeworkTitle(session.homework_title || '')
+    setFormAnswerKey(Array.isArray(session.homework_answer_key) ? session.homework_answer_key : [])
     setIsOpenDialog(true)
+  }
+
+  // BTVN answer-key builder
+  const addAnswerSlot = () => {
+    setFormAnswerKey((prev) => [
+      ...prev,
+      { stt: prev.length + 1, type: 'multiple_choice', correct: 'A' },
+    ])
+  }
+  const removeAnswerSlot = (index: number) => {
+    setFormAnswerKey((prev) =>
+      prev.filter((_, i) => i !== index).map((s, i) => ({ ...s, stt: i + 1 }))
+    )
+  }
+  const changeSlotType = (index: number, type: HomeworkSlotType) => {
+    setFormAnswerKey((prev) => prev.map((s, i) => {
+      if (i !== index) return s
+      const correct = type === 'multiple_choice' ? 'A'
+        : type === 'true_false' ? [true, true, true, true]
+        : ''
+      return { ...s, type, correct }
+    }))
+  }
+  const changeSlotCorrect = (index: number, correct: string | boolean[]) => {
+    setFormAnswerKey((prev) => prev.map((s, i) => (i === index ? { ...s, correct } : s)))
   }
 
   const handleSave = async (e: React.FormEvent) => {
@@ -220,6 +262,9 @@ export default function LiveClassPage() {
       recording_url: formRecordingUrl || null,
       recording_url_2: formRecordingUrl2 || null,
       document_url: formDocumentUrl || null,
+      homework_file_url: formHomeworkUrl || null,
+      homework_title: formHomeworkTitle || null,
+      homework_answer_key: formAnswerKey.length > 0 ? formAnswerKey : null,
     }
 
     try {
@@ -505,9 +550,18 @@ export default function LiveClassPage() {
                                 {session.document_url && (
                                   <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
                                     <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9">
-                                      <BookOpen className="h-3.5 w-3.5" /> Tài liệu
+                                      <PencilLine className="h-3.5 w-3.5" /> File viết tay
                                     </Button>
                                   </a>
+                                )}
+                                {session.homework_file_url && (
+                                  <Button
+                                    onClick={() => setBtvnSessionId(session.id)}
+                                    size="sm"
+                                    className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 bg-primary text-primary-foreground hover:bg-primary/90"
+                                  >
+                                    <ClipboardList className="h-3.5 w-3.5" /> BTVN
+                                  </Button>
                                 )}
                               </div>
                             ) : (
@@ -552,6 +606,16 @@ export default function LiveClassPage() {
 
                             {/* Edit/Delete Buttons */}
                             <div className="flex items-center gap-1.5 ml-auto">
+                              {session.homework_file_url && (
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  onClick={() => setResultsSession(session)}
+                                  className="h-8 gap-1 text-[10px]"
+                                >
+                                  <BarChart3 className="h-3.5 w-3.5" /> Kết quả BTVN
+                                </Button>
+                              )}
                               <Button
                                 size="icon"
                                 variant="ghost"
@@ -747,7 +811,7 @@ export default function LiveClassPage() {
 
               <div className="space-y-1">
                 <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-primary">
-                  <BookOpen className="h-3 w-3" /> Link Tài liệu học tập (Nếu có)
+                  <PencilLine className="h-3 w-3" /> Link File viết tay (Nếu có)
                 </label>
                 <input
                   type="url"
@@ -756,6 +820,108 @@ export default function LiveClassPage() {
                   placeholder="https://drive.google.com/file/d/..."
                   className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
                 />
+              </div>
+            </div>
+
+            {/* BTVN */}
+            <div className="space-y-3 border-t border-border/40 pt-3">
+              <p className="text-xs font-black uppercase flex items-center gap-1 text-primary">
+                <ClipboardList className="h-3.5 w-3.5" /> Bài tập về nhà (BTVN)
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-muted-foreground uppercase">Tên BTVN</label>
+                  <input
+                    type="text"
+                    value={formHomeworkTitle}
+                    onChange={(e) => setFormHomeworkTitle(e.target.value)}
+                    placeholder="VD: BTVN buổi 3 — Tích phân"
+                    className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+                <div className="space-y-1">
+                  <label className="text-xs font-bold text-muted-foreground uppercase">Link đề BTVN (PDF/Drive)</label>
+                  <input
+                    type="url"
+                    value={formHomeworkUrl}
+                    onChange={(e) => setFormHomeworkUrl(e.target.value)}
+                    placeholder="https://drive.google.com/file/d/..."
+                    className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+              </div>
+
+              {/* Bảng đáp án */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-muted-foreground uppercase">Bảng đáp án ({formAnswerKey.length} câu)</label>
+                  <Button type="button" size="sm" variant="outline" className="h-7 gap-1 text-xs" onClick={addAnswerSlot}>
+                    <Plus className="h-3.5 w-3.5" /> Thêm câu
+                  </Button>
+                </div>
+                {formAnswerKey.length === 0 && (
+                  <p className="text-xs text-muted-foreground italic">Chưa có câu nào. Bấm &quot;Thêm câu&quot; để tạo ô nhập đáp án.</p>
+                )}
+                <div className="space-y-2">
+                  {formAnswerKey.map((slot, idx) => (
+                    <div key={idx} className="flex flex-wrap items-center gap-2 rounded-lg border border-border/60 bg-muted/30 p-2">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-bold shrink-0">{slot.stt}</span>
+                      <select
+                        value={slot.type}
+                        onChange={(e) => changeSlotType(idx, e.target.value as HomeworkSlotType)}
+                        className="text-xs rounded-md border bg-background px-2 py-1.5"
+                      >
+                        <option value="multiple_choice">Trắc nghiệm</option>
+                        <option value="true_false">Đúng/Sai</option>
+                        <option value="short_answer">Trả lời ngắn</option>
+                      </select>
+
+                      {/* Đáp án đúng theo loại */}
+                      {slot.type === 'multiple_choice' && (
+                        <div className="flex gap-1">
+                          {['A', 'B', 'C', 'D'].map((c) => (
+                            <button
+                              key={c}
+                              type="button"
+                              onClick={() => changeSlotCorrect(idx, c)}
+                              className={`h-7 w-7 rounded-md border text-xs font-bold ${slot.correct === c ? 'bg-primary text-primary-foreground border-primary' : 'border-border hover:bg-muted'}`}
+                            >{c}</button>
+                          ))}
+                        </div>
+                      )}
+                      {slot.type === 'true_false' && (
+                        <div className="flex flex-wrap gap-2">
+                          {['a', 'b', 'c', 'd'].map((lab, i) => {
+                            const arr = Array.isArray(slot.correct) ? slot.correct : [true, true, true, true]
+                            return (
+                              <div key={i} className="flex items-center gap-0.5">
+                                <span className="text-[10px] font-bold text-muted-foreground">{lab}</span>
+                                <button type="button" onClick={() => { const n = [...arr]; n[i] = true; changeSlotCorrect(idx, n) }}
+                                  className={`h-6 w-6 rounded text-[10px] font-bold border ${arr[i] === true ? 'bg-emerald-500 text-white border-emerald-500' : 'border-border'}`}>Đ</button>
+                                <button type="button" onClick={() => { const n = [...arr]; n[i] = false; changeSlotCorrect(idx, n) }}
+                                  className={`h-6 w-6 rounded text-[10px] font-bold border ${arr[i] === false ? 'bg-rose-500 text-white border-rose-500' : 'border-border'}`}>S</button>
+                              </div>
+                            )
+                          })}
+                        </div>
+                      )}
+                      {slot.type === 'short_answer' && (
+                        <input
+                          type="text"
+                          inputMode="decimal"
+                          value={typeof slot.correct === 'string' ? slot.correct : ''}
+                          onChange={(e) => changeSlotCorrect(idx, e.target.value)}
+                          placeholder="Đáp án (số)"
+                          className="text-xs rounded-md border bg-background px-2 py-1.5 w-28"
+                        />
+                      )}
+
+                      <button type="button" onClick={() => removeAnswerSlot(idx)} className="ml-auto text-muted-foreground hover:text-destructive">
+                        <Trash2 className="h-3.5 w-3.5" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -799,6 +965,111 @@ export default function LiveClassPage() {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* BTVN runner (học sinh làm bài) */}
+      {btvnSessionId && (
+        <HomeworkRunner
+          sessionId={btvnSessionId}
+          open={!!btvnSessionId}
+          onClose={() => setBtvnSessionId(null)}
+        />
+      )}
+
+      {/* Kết quả BTVN (admin) */}
+      {resultsSession && (
+        <HomeworkResultsDialog
+          session={resultsSession}
+          onClose={() => setResultsSession(null)}
+        />
+      )}
     </div>
+  )
+}
+
+interface HwResult {
+  id: string
+  student_name: string | null
+  student_email: string | null
+  score: number
+  max_score: number
+  correct_count: number
+  total_count: number
+  time_spent_seconds: number | null
+  created_at: string
+}
+
+function HomeworkResultsDialog({ session, onClose }: { session: LiveClass; onClose: () => void }) {
+  const [loading, setLoading] = useState(true)
+  const [results, setResults] = useState<HwResult[]>([])
+
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const res = await fetch(`/api/admin/live/homework-results?sessionId=${session.id}`)
+        const data = await res.json()
+        if (!cancelled) setResults(data.results ?? [])
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    })()
+    return () => { cancelled = true }
+  }, [session.id])
+
+  const fmtTime = (s: number | null) => {
+    if (!s) return '—'
+    const m = Math.floor(s / 60)
+    const sec = Math.round(s % 60)
+    return `${m}p${sec.toString().padStart(2, '0')}`
+  }
+
+  return (
+    <Dialog open onOpenChange={(o) => !o && onClose()}>
+      <DialogContent className="max-w-2xl">
+        <DialogHeader>
+          <DialogTitle className="flex items-center gap-2 text-base pr-6">
+            <BarChart3 className="h-4 w-4 text-primary shrink-0" />
+            <span className="truncate">Kết quả BTVN — {session.homework_title || session.title}</span>
+          </DialogTitle>
+        </DialogHeader>
+        {loading ? (
+          <div className="flex h-32 items-center justify-center">
+            <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+          </div>
+        ) : results.length === 0 ? (
+          <p className="py-8 text-center text-sm text-muted-foreground">Chưa có học sinh nào nộp bài.</p>
+        ) : (
+          <div className="max-h-[60vh] overflow-y-auto rounded-lg border">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/50 text-xs text-muted-foreground sticky top-0">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium">Học sinh</th>
+                  <th className="px-3 py-2 text-center font-medium">Điểm</th>
+                  <th className="px-3 py-2 text-center font-medium">Đúng</th>
+                  <th className="px-3 py-2 text-center font-medium">Thời gian</th>
+                  <th className="px-3 py-2 text-right font-medium">Nộp lúc</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                {results.map((r) => (
+                  <tr key={r.id} className="hover:bg-muted/30">
+                    <td className="px-3 py-2">
+                      <p className="font-medium truncate max-w-[180px]">{r.student_name || 'Học sinh'}</p>
+                      <p className="text-[11px] text-muted-foreground truncate max-w-[180px]">{r.student_email}</p>
+                    </td>
+                    <td className="px-3 py-2 text-center font-bold text-primary">{r.score}/{r.max_score}</td>
+                    <td className="px-3 py-2 text-center">{r.correct_count}/{r.total_count}</td>
+                    <td className="px-3 py-2 text-center text-muted-foreground">{fmtTime(r.time_spent_seconds)}</td>
+                    <td className="px-3 py-2 text-right text-xs text-muted-foreground">
+                      {new Date(r.created_at).toLocaleString('vi-VN', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </DialogContent>
+    </Dialog>
   )
 }
