@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
         return s
       }
       // Ẩn link Meet + record + tài liệu khỏi học sinh chưa VIP
-      const { meet_url, external_event_id, recording_url, document_url, ...rest } = s
+      const { meet_url, external_event_id, recording_url, recording_url_2, document_url, ...rest } = s
       return rest
     })
 

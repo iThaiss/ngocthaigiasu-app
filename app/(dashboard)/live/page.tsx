@@ -31,6 +31,7 @@ interface LiveClass {
   subject: 'math' | 'english'
   meet_url?: string
   recording_url?: string
+  recording_url_2?: string
   document_url?: string
 }
 
@@ -118,7 +119,7 @@ export default function LiveClassPage() {
   // Dialog States
   const [isOpenDialog, setIsOpenDialog] = useState(false)
   const [editingSession, setEditingSession] = useState<LiveClass | null>(null)
-  const [replaySession, setReplaySession] = useState<LiveClass | null>(null)
+  const [replay, setReplay] = useState<{ title: string; url: string } | null>(null)
   
   // Form States
   const [formTitle, setFormTitle] = useState('')
@@ -129,6 +130,7 @@ export default function LiveClassPage() {
   const [formSubject, setFormSubject] = useState<'math' | 'english'>('math')
   const [formMeetUrl, setFormMeetUrl] = useState('')
   const [formRecordingUrl, setFormRecordingUrl] = useState('')
+  const [formRecordingUrl2, setFormRecordingUrl2] = useState('')
   const [formDocumentUrl, setFormDocumentUrl] = useState('')
   const [saving, setSaving] = useState(false)
 
@@ -169,6 +171,7 @@ export default function LiveClassPage() {
     setFormSubject(activeTab)
     setFormMeetUrl('')
     setFormRecordingUrl('')
+    setFormRecordingUrl2('')
     setFormDocumentUrl('')
     setIsOpenDialog(true)
   }
@@ -189,6 +192,7 @@ export default function LiveClassPage() {
     setFormSubject(session.subject)
     setFormMeetUrl(session.meet_url || '')
     setFormRecordingUrl(session.recording_url || '')
+    setFormRecordingUrl2(session.recording_url_2 || '')
     setFormDocumentUrl(session.document_url || '')
     setIsOpenDialog(true)
   }
@@ -214,6 +218,7 @@ export default function LiveClassPage() {
       subject: formSubject,
       meet_url: formMeetUrl || null,
       recording_url: formRecordingUrl || null,
+      recording_url_2: formRecordingUrl2 || null,
       document_url: formDocumentUrl || null,
     }
 
@@ -473,23 +478,30 @@ export default function LiveClassPage() {
                               </a>
                             ) : isEnded ? (
                               <div className="flex gap-2 w-full sm:w-auto">
-                                {session.recording_url && (
-                                  getRecordingEmbedUrl(session.recording_url) ? (
-                                    <Button
-                                      onClick={() => setReplaySession(session)}
-                                      variant="outline" size="sm"
-                                      className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
-                                    >
-                                      <Film className="h-3.5 w-3.5" /> Xem lại
-                                    </Button>
-                                  ) : (
-                                    <a href={session.recording_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                                      <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
-                                        <Film className="h-3.5 w-3.5" /> Xem lại
+                                {(() => {
+                                  const recs = [session.recording_url, session.recording_url_2].filter(Boolean) as string[]
+                                  const multi = recs.length > 1
+                                  return recs.map((url, i) => {
+                                    const label = multi ? `Phần ${i + 1}` : 'Xem lại'
+                                    const embed = getRecordingEmbedUrl(url)
+                                    return embed ? (
+                                      <Button
+                                        key={i}
+                                        onClick={() => setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url })}
+                                        variant="outline" size="sm"
+                                        className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
+                                      >
+                                        <Film className="h-3.5 w-3.5" /> {label}
                                       </Button>
-                                    </a>
-                                  )
-                                )}
+                                    ) : (
+                                      <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
+                                        <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
+                                          <Film className="h-3.5 w-3.5" /> {label}
+                                        </Button>
+                                      </a>
+                                    )
+                                  })
+                                })()}
                                 {session.document_url && (
                                   <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
                                     <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9">
@@ -709,12 +721,25 @@ export default function LiveClassPage() {
             <div className="space-y-3 border-t border-border/40 pt-3">
               <div className="space-y-1">
                 <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-teal-600 dark:text-teal-400">
-                  <Film className="h-3 w-3" /> Link Video Xem lại (Nếu có)
+                  <Film className="h-3 w-3" /> Link Video Xem lại — Phần 1 (Nếu có)
                 </label>
                 <input
                   type="url"
                   value={formRecordingUrl}
                   onChange={(e) => setFormRecordingUrl(e.target.value)}
+                  placeholder="https://youtu.be/... hoặc https://drive.google.com/..."
+                  className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-teal-600 dark:text-teal-400">
+                  <Film className="h-3 w-3" /> Link Video Xem lại — Phần 2 (Nếu có)
+                </label>
+                <input
+                  type="url"
+                  value={formRecordingUrl2}
+                  onChange={(e) => setFormRecordingUrl2(e.target.value)}
                   placeholder="https://youtu.be/... hoặc https://drive.google.com/..."
                   className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
                 />
@@ -753,22 +778,22 @@ export default function LiveClassPage() {
       </Dialog>
 
       {/* Replay video player */}
-      <Dialog open={!!replaySession} onOpenChange={(open) => !open && setReplaySession(null)}>
+      <Dialog open={!!replay} onOpenChange={(open) => !open && setReplay(null)}>
         <DialogContent className="max-w-3xl p-3 sm:p-4">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2 text-base pr-6">
               <Film className="h-4 w-4 text-rose-500 shrink-0" />
-              <span className="truncate">{replaySession?.title}</span>
+              <span className="truncate">{replay?.title}</span>
             </DialogTitle>
           </DialogHeader>
-          {replaySession?.recording_url && (
+          {replay && (
             <div className="aspect-video w-full overflow-hidden rounded-lg bg-black">
               <iframe
-                src={getRecordingEmbedUrl(replaySession.recording_url) ?? undefined}
+                src={getRecordingEmbedUrl(replay.url) ?? undefined}
                 className="h-full w-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                title={replaySession.title}
+                title={replay.title}
               />
             </div>
           )}

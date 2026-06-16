@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, document_url } = body
+    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url } = body
 
     if (!title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
         resolvedEventId = result.eventId
       } catch (err: any) {
         console.error('Failed to create calendar event automatically:', err)
-        return NextResponse.json({ 
+        return NextResponse.json({
           error: `Không thể tạo phòng học Google Meet tự động: ${err.message || err}`
         }, { status: 500 })
       }
@@ -54,6 +54,7 @@ export async function POST(req: NextRequest) {
         meet_url: finalMeetUrl,
         external_event_id: resolvedEventId,
         recording_url: recording_url || null,
+        recording_url_2: recording_url_2 || null,
         document_url: document_url || null,
       })
       .select()
@@ -78,7 +79,7 @@ export async function PUT(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, document_url } = body
+    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url } = body
 
     if (!id || !title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -115,6 +116,7 @@ export async function PUT(req: NextRequest) {
         meet_url: finalMeetUrl,
         external_event_id: resolvedEventId,
         recording_url: recording_url || null,
+        recording_url_2: recording_url_2 || null,
         document_url: document_url || null,
         updated_at: new Date().toISOString(),
       })
