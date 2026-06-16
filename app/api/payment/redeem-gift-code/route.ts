@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
   const { data, error } = await supabase.rpc('redeem_gift_code', {
     uid: userId,
-    code_text: code,
+    input_code: code,
   })
 
   if (error) {
