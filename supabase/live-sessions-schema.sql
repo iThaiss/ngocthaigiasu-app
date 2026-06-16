@@ -17,13 +17,35 @@ CREATE TABLE IF NOT EXISTS live_sessions (
   external_event_id  VARCHAR(255),  -- ID sự kiện Lịch để gọi Google Calendar API
   recording_url      TEXT,              -- Video xem lại (phần 1) sau khi học xong
   recording_url_2    TEXT,              -- Video xem lại (phần 2) — tùy chọn
-  document_url       TEXT,              -- Tài liệu học tập đính kèm (PDF, bài tập)
+  document_url       TEXT,              -- File viết tay (PDF/ảnh) đính kèm
+  homework_file_url  TEXT,              -- BTVN: link đề PDF/Drive học sinh nhìn song song
+  homework_title     TEXT,              -- BTVN: tên bài tập
+  homework_answer_key JSONB,            -- BTVN: mảng slot đáp án [{stt,type,correct}]
   created_at         TIMESTAMPTZ DEFAULT NOW(),
   updated_at         TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Nếu bảng đã tồn tại trước đó, chạy dòng này để thêm cột link xem lại thứ 2:
+-- Nếu bảng đã tồn tại trước đó, chạy các dòng này để thêm cột mới:
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS recording_url_2 TEXT;
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_file_url TEXT;
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_title TEXT;
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_answer_key JSONB;
+
+-- BTVN: lưu mọi lần nộp của học sinh (cho AI phân tích sau)
+CREATE TABLE IF NOT EXISTS homework_submissions (
+  id                 UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  live_session_id    UUID REFERENCES live_sessions(id) ON DELETE CASCADE,
+  user_id            UUID REFERENCES users(id),
+  answers            JSONB NOT NULL,   -- [{stt,type,answer,correct,correctAnswer,points,maxPoints}]
+  score              NUMERIC NOT NULL,
+  max_score          NUMERIC NOT NULL,
+  correct_count      INTEGER,
+  total_count        INTEGER,
+  time_spent_seconds INTEGER,
+  created_at         TIMESTAMPTZ DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_hw_sub_session ON homework_submissions(live_session_id);
+CREATE INDEX IF NOT EXISTS idx_hw_sub_user    ON homework_submissions(user_id);
 
 -- Bật RLS
 ALTER TABLE live_sessions ENABLE ROW LEVEL SECURITY;
