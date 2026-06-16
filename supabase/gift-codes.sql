@@ -43,7 +43,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS uniq_gift_use_codetext_user
 
 DROP FUNCTION IF EXISTS redeem_gift_code(UUID, TEXT);
 
-CREATE OR REPLACE FUNCTION redeem_gift_code(uid UUID, code_text TEXT)
+-- Tham số đặt tên input_code để không trùng tên cột code_text trong gift_code_uses
+CREATE OR REPLACE FUNCTION redeem_gift_code(uid UUID, input_code TEXT)
 RETURNS JSONB
 LANGUAGE plpgsql SECURITY DEFINER SET search_path = public
 AS $$
@@ -51,9 +52,10 @@ DECLARE
   gc         gift_codes%ROWTYPE;
   cur_expiry TIMESTAMPTZ;
   new_expiry TIMESTAMPTZ;
+  normalized TEXT := UPPER(TRIM(input_code));
 BEGIN
   SELECT * INTO gc FROM gift_codes
-  WHERE code = UPPER(TRIM(code_text))
+  WHERE code = normalized
   FOR UPDATE;
 
   IF NOT FOUND THEN
@@ -69,8 +71,8 @@ BEGIN
     RETURN jsonb_build_object('error', 'Mã đã được sử dụng hết lượt');
   END IF;
 
-  -- Chặn trùng theo TÊN mã (gc.code đã là UPPER/TRIM) — chặn cả khi mã bị xóa & tạo lại cùng tên
-  IF EXISTS (SELECT 1 FROM gift_code_uses WHERE code_text = gc.code AND user_id = uid) THEN
+  -- Chặn trùng theo TÊN mã — chặn cả khi mã bị xóa & tạo lại cùng tên
+  IF EXISTS (SELECT 1 FROM gift_code_uses gcu WHERE gcu.code_text = gc.code AND gcu.user_id = uid) THEN
     RETURN jsonb_build_object('error', 'Bạn đã sử dụng mã này rồi');
   END IF;
 
