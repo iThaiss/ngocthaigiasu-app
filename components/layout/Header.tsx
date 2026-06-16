@@ -4,10 +4,9 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Bell, Sun, Moon, Crown, ArrowLeftRight, LogOut, User, Calendar, GitBranch, Sparkles, Flower2 } from 'lucide-react'
+import { Bell, Sun, Moon, ArrowLeftRight, LogOut, User, Calendar, Sparkles, Flower2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Badge } from '@/components/ui/badge'
 import { useAuth } from '@/lib/auth-context'
 import AppBreadcrumb from './Breadcrumb'
 import {
@@ -169,27 +168,6 @@ export default function Header() {
               <DropdownMenuItem className="cursor-pointer">
                 <User className="mr-2 h-4 w-4" />
                 <span>Hồ sơ cá nhân</span>
-              </DropdownMenuItem>
-            </Link>
-
-            {/* VIP Upgrade */}
-            <Link href="/payment">
-              <DropdownMenuItem className="cursor-pointer">
-                <Crown className={isVip ? 'mr-2 h-4 w-4 text-yellow-500' : 'mr-2 h-4 w-4 text-muted-foreground'} />
-                <span>Nâng cấp VIP</span>
-                {isVip && (
-                  <Badge variant="warning" className="ml-auto text-[10px] py-0 px-1 border-0">
-                    VIP
-                  </Badge>
-                )}
-              </DropdownMenuItem>
-            </Link>
-
-            {/* Affiliate */}
-            <Link href="/affiliate">
-              <DropdownMenuItem className="cursor-pointer">
-                <GitBranch className="mr-2 h-4 w-4 text-muted-foreground" />
-                <span>Hoa hồng affiliate</span>
               </DropdownMenuItem>
             </Link>
 

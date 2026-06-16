@@ -8,7 +8,7 @@ import {
   LayoutDashboard, User, Brain, FileText,
   BookOpen, LogOut, ChevronLeft, ChevronRight, Menu, X,
   Crown, GraduationCap, Target, Languages, Sparkles, Users, BookMarked, BotMessageSquare,
-  Video,
+  Video, GitBranch,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -120,6 +120,38 @@ export default function Sidebar({ subject }: SidebarProps) {
           })}
         </div>
       </nav>
+
+      {/* VIP & Affiliate quick links */}
+      <div className="px-2 pb-2 border-t border-border/50 pt-2 space-y-0.5">
+        <Link href="/payment" onClick={() => setMobileOpen(false)}>
+          <div className={cn(
+            'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground cursor-pointer',
+            pathname === '/payment' ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : 'text-muted-foreground',
+            collapsed && 'justify-center px-2'
+          )}>
+            <Crown className={cn('h-4 w-4 shrink-0', isVip && pathname !== '/payment' && 'text-yellow-500')} />
+            {!collapsed && (
+              <>
+                <span className="flex-1 truncate">{isVip ? 'Quản lý VIP' : 'Nâng cấp VIP'}</span>
+                {!isVip && (
+                  <span className="text-[9px] font-bold bg-primary/15 text-primary px-1.5 py-0.5 rounded-full leading-none">PRO</span>
+                )}
+              </>
+            )}
+          </div>
+        </Link>
+
+        <Link href="/affiliate" onClick={() => setMobileOpen(false)}>
+          <div className={cn(
+            'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all hover:bg-accent hover:text-accent-foreground cursor-pointer',
+            pathname === '/affiliate' ? 'bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground' : 'text-muted-foreground',
+            collapsed && 'justify-center px-2'
+          )}>
+            <GitBranch className="h-4 w-4 shrink-0" />
+            {!collapsed && <span className="flex-1 truncate">Hoa hồng</span>}
+          </div>
+        </Link>
+      </div>
 
       {/* User Info (Footer) */}
       <Link href="/profile" onClick={() => setMobileOpen(false)}>
