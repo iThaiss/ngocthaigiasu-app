@@ -98,6 +98,28 @@ export default function AdminGiftCodesPage() {
     }
   }
 
+  async function handleAddUses(gc: GiftCode) {
+    const input = window.prompt(`Tăng thêm bao nhiêu lượt cho mã ${gc.code}? (hiện tại tối đa ${gc.max_uses})`)
+    if (input === null) return
+    const add = parseInt(input, 10)
+    if (!Number.isFinite(add) || add < 1) {
+      toast({ title: 'Số lượt không hợp lệ', variant: 'destructive' })
+      return
+    }
+    const newMax = gc.max_uses + add
+    const res = await fetch(`/api/admin/gift-codes/${gc.id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ max_uses: newMax }),
+    })
+    if (res.ok) {
+      setGiftCodes((prev) => prev.map((c) => c.id === gc.id ? { ...c, max_uses: newMax } : c))
+      toast({ title: `Đã tăng lượt mã ${gc.code} lên ${newMax}` })
+    } else {
+      toast({ title: 'Tăng lượt thất bại', variant: 'destructive' })
+    }
+  }
+
   async function handleDelete(id: string) {
     if (!confirm('Xóa mã quà tặng này?')) return
     const res = await fetch(`/api/admin/gift-codes/${id}`, { method: 'DELETE' })
@@ -184,7 +206,7 @@ export default function AdminGiftCodesPage() {
               <th className="px-4 py-2.5 text-center font-medium">Đã dùng / Tối đa</th>
               <th className="px-4 py-2.5 text-left font-medium">Hết hạn mã</th>
               <th className="px-4 py-2.5 text-center font-medium">Trạng thái</th>
-              <th className="px-4 py-2.5 text-center font-medium">Xóa</th>
+              <th className="px-4 py-2.5 text-center font-medium">Thao tác</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-zinc-800/60">
@@ -225,13 +247,23 @@ export default function AdminGiftCodesPage() {
                       }
                     </button>
                   </td>
-                  <td className="px-4 py-2.5 text-center">
-                    <button
-                      onClick={() => handleDelete(gc.id)}
-                      className="p-1 text-zinc-600 hover:text-red-400 transition-colors"
-                    >
-                      <Trash2 className="h-3.5 w-3.5" />
-                    </button>
+                  <td className="px-4 py-2.5">
+                    <div className="flex items-center justify-center gap-1">
+                      <button
+                        onClick={() => handleAddUses(gc)}
+                        className="flex items-center gap-0.5 rounded px-1.5 py-1 text-[11px] font-semibold text-emerald-400 hover:bg-emerald-500/10 transition-colors"
+                        title="Tăng lượt dùng"
+                      >
+                        <Plus className="h-3 w-3" /> Lượt
+                      </button>
+                      <button
+                        onClick={() => handleDelete(gc.id)}
+                        className="p-1 text-zinc-600 hover:text-red-400 transition-colors"
+                        title="Xóa mã"
+                      >
+                        <Trash2 className="h-3.5 w-3.5" />
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))

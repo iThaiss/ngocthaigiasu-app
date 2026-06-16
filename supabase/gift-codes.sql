@@ -17,11 +17,29 @@ CREATE TABLE IF NOT EXISTS gift_codes (
 
 CREATE TABLE IF NOT EXISTS gift_code_uses (
   id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  gift_code_id  UUID NOT NULL REFERENCES gift_codes(id) ON DELETE CASCADE,
+  gift_code_id  UUID REFERENCES gift_codes(id) ON DELETE SET NULL,
   user_id       UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  code_text     TEXT,            -- tên mã (UPPER/TRIM) để chặn trùng theo tên, sống sót khi xóa mã
   redeemed_at   TIMESTAMPTZ DEFAULT NOW(),
   UNIQUE (gift_code_id, user_id)
 );
+
+-- Mỗi học sinh chỉ dùng 1 lần cho 1 TÊN mã (kể cả khi mã bị xóa & tạo lại cùng tên)
+CREATE UNIQUE INDEX IF NOT EXISTS uniq_gift_use_codetext_user
+  ON gift_code_uses (code_text, user_id) WHERE code_text IS NOT NULL;
+
+-- ============================================================
+-- Migration cho DB đã tồn tại (chạy 1 lần trên Supabase):
+-- ALTER TABLE gift_code_uses ADD COLUMN IF NOT EXISTS code_text TEXT;
+-- UPDATE gift_code_uses u SET code_text = g.code
+--   FROM gift_codes g WHERE u.gift_code_id = g.id AND u.code_text IS NULL;
+-- ALTER TABLE gift_code_uses ALTER COLUMN gift_code_id DROP NOT NULL;
+-- ALTER TABLE gift_code_uses DROP CONSTRAINT IF EXISTS gift_code_uses_gift_code_id_fkey;
+-- ALTER TABLE gift_code_uses ADD CONSTRAINT gift_code_uses_gift_code_id_fkey
+--   FOREIGN KEY (gift_code_id) REFERENCES gift_codes(id) ON DELETE SET NULL;
+-- CREATE UNIQUE INDEX IF NOT EXISTS uniq_gift_use_codetext_user
+--   ON gift_code_uses (code_text, user_id) WHERE code_text IS NOT NULL;
+-- ============================================================
 
 DROP FUNCTION IF EXISTS redeem_gift_code(UUID, TEXT);
 
@@ -51,7 +69,8 @@ BEGIN
     RETURN jsonb_build_object('error', 'Mã đã được sử dụng hết lượt');
   END IF;
 
-  IF EXISTS (SELECT 1 FROM gift_code_uses WHERE gift_code_id = gc.id AND user_id = uid) THEN
+  -- Chặn trùng theo TÊN mã (gc.code đã là UPPER/TRIM) — chặn cả khi mã bị xóa & tạo lại cùng tên
+  IF EXISTS (SELECT 1 FROM gift_code_uses WHERE code_text = gc.code AND user_id = uid) THEN
     RETURN jsonb_build_object('error', 'Bạn đã sử dụng mã này rồi');
   END IF;
 
@@ -66,7 +85,7 @@ BEGIN
     vip_plan       = gc.vip_plan_id
   WHERE id = uid;
 
-  INSERT INTO gift_code_uses (gift_code_id, user_id) VALUES (gc.id, uid);
+  INSERT INTO gift_code_uses (gift_code_id, user_id, code_text) VALUES (gc.id, uid, gc.code);
   UPDATE gift_codes SET used_count = used_count + 1 WHERE id = gc.id;
 
   RETURN jsonb_build_object(
