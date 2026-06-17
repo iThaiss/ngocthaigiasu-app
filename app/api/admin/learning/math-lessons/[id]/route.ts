@@ -12,7 +12,7 @@ export async function PUT(
   if (!guard.ok) return guard.res
 
   const body = await req.json()
-  const allowed = ['video_url', 'video_source', 'title', 'topic', 'is_active']
+  const allowed = ['video_url', 'video_source', 'title', 'topic', 'is_active', 'view_count_base']
   const update: Record<string, unknown> = {}
   for (const key of allowed) {
     if (key in body) update[key] = body[key]

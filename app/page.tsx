@@ -24,6 +24,7 @@ import {
   ChevronRight,
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
+import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -293,6 +294,14 @@ const SOCIAL_GROUPS = [
 
 export default function LandingPage() {
   const { theme, setTheme } = useTheme()
+  const [userCountDisplay, setUserCountDisplay] = useState('1,000+')
+
+  useEffect(() => {
+    fetch('/api/stats/public')
+      .then((r) => r.json())
+      .then((d) => { if (d.display) setUserCountDisplay(d.display) })
+      .catch(() => {})
+  }, [])
 
   return (
     <div className="min-h-screen bg-background">
@@ -435,7 +444,7 @@ export default function LandingPage() {
       <section className="border-y border-border bg-muted/40">
         <div className="container py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {STATS.map((s, i) => (
+            {STATS.map((s, i) => ({ ...s, value: s.label === 'Học sinh đang dùng' ? userCountDisplay : s.value })).map((s, i) => (
               <motion.div
                 key={s.label}
                 initial={{ opacity: 0, y: 12 }}
