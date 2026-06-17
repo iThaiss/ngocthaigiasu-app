@@ -24,13 +24,16 @@ export async function GET(req: NextRequest) {
     .single()
 
   if (error || !data) return NextResponse.json({ error: 'Không tìm thấy buổi học' }, { status: 404 })
-  if (!data.homework_file_url || !Array.isArray(data.homework_answer_key)) {
+  if (!data.homework_file_url) {
     return NextResponse.json({ error: 'Buổi học chưa có BTVN' }, { status: 404 })
   }
+
+  const answerKey = Array.isArray(data.homework_answer_key) ? data.homework_answer_key as HomeworkSlot[] : []
 
   return NextResponse.json({
     title: data.homework_title ?? 'Bài tập về nhà',
     file_url: data.homework_file_url,
-    slots: publicSlots(data.homework_answer_key as HomeworkSlot[]),
+    slots: publicSlots(answerKey),
+    has_answer_key: answerKey.length > 0,
   })
 }

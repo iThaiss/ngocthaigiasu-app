@@ -22,6 +22,7 @@ interface HomeworkData {
   title: string
   file_url: string
   slots: PublicHomeworkSlot[]
+  has_answer_key: boolean
 }
 
 interface SubmitResult {
@@ -159,6 +160,11 @@ export default function HomeworkRunner({
 
               {/* Làm bài */}
               <div className={`${mobileView === 'lambai' ? 'flex' : 'hidden'} md:flex md:w-1/2 lg:w-2/5 flex-1 flex-col min-h-0`}>
+                {!data.has_answer_key && (
+                  <div className="mx-4 mt-4 p-3 rounded-lg border border-amber-400/30 bg-amber-400/10 text-amber-700 dark:text-amber-400 text-xs">
+                    Bảng đáp án chưa được thiết lập. Admin vui lòng chỉnh sửa buổi học để thêm đáp án.
+                  </div>
+                )}
                 <div className="flex-1 overflow-y-auto p-4 space-y-4">
                   {data.slots.map((slot) => {
                     const r = resultByStt.get(slot.stt)
@@ -248,7 +254,11 @@ export default function HomeworkRunner({
 
                 {/* Footer actions */}
                 <div className="border-t p-3 shrink-0 flex gap-2">
-                  {result ? (
+                  {!data.has_answer_key ? (
+                    <Button variant="outline" className="w-full" onClick={onClose}>
+                      <X className="h-4 w-4 mr-1.5" /> Đóng
+                    </Button>
+                  ) : result ? (
                     <>
                       <Button variant="outline" className="flex-1 gap-1.5" onClick={load}>
                         <RotateCcw className="h-4 w-4" /> Làm lại
