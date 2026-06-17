@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base } = body
+    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type } = body
 
     if (!title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -60,6 +60,7 @@ export async function POST(req: NextRequest) {
         homework_title: homework_title || null,
         homework_answer_key: homework_answer_key ?? null,
         view_count_base: typeof view_count_base === 'number' ? view_count_base : 0,
+        session_type: session_type ?? 'ly_thuyet',
       })
       .select()
       .single()
@@ -83,7 +84,7 @@ export async function PUT(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base } = body
+    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type } = body
 
     if (!id || !title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -126,6 +127,7 @@ export async function PUT(req: NextRequest) {
         homework_title: homework_title || null,
         homework_answer_key: homework_answer_key ?? null,
         view_count_base: typeof view_count_base === 'number' ? view_count_base : 0,
+        session_type: session_type ?? 'ly_thuyet',
         updated_at: new Date().toISOString(),
       })
       .eq('id', id)

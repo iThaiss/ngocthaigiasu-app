@@ -41,6 +41,7 @@ interface LiveClass {
   homework_answer_key?: HomeworkSlot[]
   view_count?: number
   view_count_base?: number
+  session_type?: 'ly_thuyet' | 'chua_bt'
 }
 
 function SessionCountdown({ startTime }: { startTime: string }) {
@@ -146,6 +147,8 @@ export default function LiveClassPage() {
   const [formHomeworkTitle, setFormHomeworkTitle] = useState('')
   const [formAnswerKey, setFormAnswerKey] = useState<HomeworkSlot[]>([])
   const [formViewCountBase, setFormViewCountBase] = useState(0)
+  const [formSessionType, setFormSessionType] = useState<'ly_thuyet' | 'chua_bt'>('ly_thuyet')
+  const [showAllEnded, setShowAllEnded] = useState(false)
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
@@ -191,6 +194,7 @@ export default function LiveClassPage() {
     setFormHomeworkTitle('')
     setFormAnswerKey([])
     setFormViewCountBase(0)
+    setFormSessionType('ly_thuyet')
     setIsOpenDialog(true)
   }
 
@@ -216,6 +220,7 @@ export default function LiveClassPage() {
     setFormHomeworkTitle(session.homework_title || '')
     setFormAnswerKey(Array.isArray(session.homework_answer_key) ? session.homework_answer_key : [])
     setFormViewCountBase(session.view_count_base ?? 0)
+    setFormSessionType(session.session_type ?? 'ly_thuyet')
     setIsOpenDialog(true)
   }
 
@@ -271,6 +276,7 @@ export default function LiveClassPage() {
       homework_title: formHomeworkTitle || null,
       homework_answer_key: formAnswerKey.length > 0 ? formAnswerKey : null,
       view_count_base: formViewCountBase,
+      session_type: formSessionType,
     }
 
     try {
@@ -382,6 +388,163 @@ export default function LiveClassPage() {
 
   const filteredSessions = sessions.filter((s) => s.subject === activeTab)
 
+  const STATUS_PRIORITY: Record<string, number> = { live: 0, upcoming: 1, ended: 2 }
+  const sortedSessions = [...filteredSessions].sort((a, b) => {
+    const sp = STATUS_PRIORITY[a.status] - STATUS_PRIORITY[b.status]
+    if (sp !== 0) return sp
+    const asc = a.status !== 'ended'
+    const tA = new Date(a.start_time).getTime()
+    const tB = new Date(b.start_time).getTime()
+    return asc ? tA - tB : tB - tA
+  })
+
+  const liveSessions = sortedSessions.filter((s) => s.status === 'live')
+  const upcomingSessions = sortedSessions.filter((s) => s.status === 'upcoming')
+  const endedSessions = sortedSessions.filter((s) => s.status === 'ended')
+  const visibleEndedSessions = showAllEnded ? endedSessions : endedSessions.slice(0, 3)
+
+  const renderCard = (session: LiveClass) => {
+    const isLive = session.status === 'live'
+    const isEnded = session.status === 'ended'
+    return (
+      <Card
+        key={session.id}
+        className={`transition-all border ${
+          isLive ? 'border-rose-500 shadow-md ring-1 ring-rose-500/20 bg-rose-500/5' : 'bg-card'
+        }`}
+      >
+        <CardContent className="p-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="space-y-2 flex-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                {isLive && (
+                  <Badge variant="destructive" className="bg-rose-500 gap-1 text-[10px] uppercase font-bold animate-pulse px-2 py-0 h-5">
+                    <span className="h-1.5 w-1.5 bg-white rounded-full inline-block" /> Đang Live
+                  </Badge>
+                )}
+                {session.status === 'upcoming' && (
+                  <>
+                    <Badge variant="secondary" className="text-[10px] uppercase font-semibold px-2 py-0 h-5">Chờ bắt đầu</Badge>
+                    <SessionCountdown startTime={session.start_time} />
+                  </>
+                )}
+                {isEnded && (
+                  <Badge variant="outline" className="text-[10px] uppercase font-semibold px-2 py-0 h-5 text-muted-foreground bg-muted/40">Đã kết thúc</Badge>
+                )}
+                {session.session_type && (
+                  <span className={`text-[10px] font-bold px-2 py-0 h-5 rounded-full border flex items-center ${
+                    session.session_type === 'ly_thuyet'
+                      ? 'bg-blue-500/10 text-blue-600 border-blue-500/20 dark:text-blue-400'
+                      : 'bg-orange-500/10 text-orange-600 border-orange-500/20 dark:text-orange-400'
+                  }`}>
+                    {session.session_type === 'ly_thuyet' ? '📖 Lý thuyết' : '✏️ Chữa BT'}
+                  </span>
+                )}
+                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                  <Users className="h-3.5 w-3.5" /> {session.teacher}
+                </span>
+              </div>
+              <h3 className="font-bold text-sm md:text-base leading-snug break-words">{session.title}</h3>
+              <p className="text-xs text-muted-foreground flex items-center gap-1">
+                <Clock className="h-3.5 w-3.5" /> {formatSessionTime(session.start_time, session.end_time)}
+              </p>
+              {((session.view_count ?? 0) + (session.view_count_base ?? 0)) > 0 && (
+                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  <Users className="h-3.5 w-3.5 text-primary" />
+                  <span className="font-semibold text-primary">{((session.view_count ?? 0) + (session.view_count_base ?? 0)).toLocaleString('vi-VN')}</span> học sinh đã tham gia
+                </p>
+              )}
+            </div>
+
+            {/* Action Button */}
+            <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-2 w-full sm:w-auto border-t sm:border-t-0 pt-3 sm:pt-0">
+              {isLive ? (
+                <a href={`/api/live/join?id=${session.id}`} className="w-full sm:w-auto" onClick={() => trackView(session.id)}>
+                  <Button className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-10 shadow-sm">
+                    <Play className="h-4 w-4 fill-current" />
+                    Vào học ngay <ExternalLink className="h-3.5 w-3.5" />
+                  </Button>
+                </a>
+              ) : isEnded ? (
+                <div className="flex gap-2 w-full sm:w-auto">
+                  {(() => {
+                    const recs = [session.recording_url, session.recording_url_2].filter(Boolean) as string[]
+                    const multi = recs.length > 1
+                    return recs.map((url, i) => {
+                      const label = multi ? `Phần ${i + 1}` : 'Xem lại'
+                      const embed = getRecordingEmbedUrl(url)
+                      return embed ? (
+                        <Button
+                          key={i}
+                          onClick={() => { trackView(session.id); setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url }) }}
+                          variant="outline" size="sm"
+                          className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
+                        >
+                          <Film className="h-3.5 w-3.5" /> {label}
+                        </Button>
+                      ) : (
+                        <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
+                          <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
+                            <Film className="h-3.5 w-3.5" /> {label}
+                          </Button>
+                        </a>
+                      )
+                    })
+                  })()}
+                  {session.document_url && (
+                    <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
+                      <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9">
+                        <PencilLine className="h-3.5 w-3.5" /> File viết tay
+                      </Button>
+                    </a>
+                  )}
+                  {session.homework_file_url && (
+                    <Button
+                      onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
+                      size="sm"
+                      className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                      <ClipboardList className="h-3.5 w-3.5" /> BTVN
+                    </Button>
+                  )}
+                </div>
+              ) : (
+                <Button disabled variant="outline" className="w-full sm:w-auto text-xs h-10 opacity-60">
+                  Chưa mở phòng
+                </Button>
+              )}
+            </div>
+          </div>
+
+          {/* Admin Controls */}
+          {isAdmin && (
+            <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between gap-3 flex-wrap">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] uppercase font-bold text-muted-foreground">Admin Status:</span>
+                <Button size="sm" variant={session.status === 'upcoming' ? 'default' : 'outline'} onClick={() => handleStatusToggle(session, 'upcoming')} className="h-7 px-2 text-[10px]">Sắp diễn ra</Button>
+                <Button size="sm" variant={session.status === 'live' ? 'destructive' : 'outline'} onClick={() => handleStatusToggle(session, 'live')} className="h-7 px-2 text-[10px]">Đang Live</Button>
+                <Button size="sm" variant={session.status === 'ended' ? 'secondary' : 'outline'} onClick={() => handleStatusToggle(session, 'ended')} className="h-7 px-2 text-[10px]">Kết thúc</Button>
+              </div>
+              <div className="flex items-center gap-1.5 ml-auto">
+                {session.homework_file_url && (
+                  <Button size="sm" variant="outline" onClick={() => setResultsSession(session)} className="h-8 gap-1 text-[10px]">
+                    <BarChart3 className="h-3.5 w-3.5" /> Kết quả BTVN
+                  </Button>
+                )}
+                <Button size="icon" variant="ghost" onClick={() => openEditDialog(session)} className="h-8 w-8 text-muted-foreground hover:text-foreground">
+                  <Edit2 className="h-3.5 w-3.5" />
+                </Button>
+                <Button size="icon" variant="ghost" onClick={() => handleDelete(session.id)} className="h-8 w-8 text-destructive hover:bg-destructive/10">
+                  <Trash2 className="h-3.5 w-3.5" />
+                </Button>
+              </div>
+            </div>
+          )}
+        </CardContent>
+      </Card>
+    )
+  }
+
   return (
     <div className="max-w-4xl mx-auto space-y-6 pb-12">
       {/* Header */}
@@ -477,185 +640,44 @@ export default function LiveClassPage() {
                 <p className="text-sm font-medium text-muted-foreground">Chưa có lịch học Live nào được xếp tuần này.</p>
               </div>
             ) : (
-              <div className="space-y-3">
-                {filteredSessions.map((session) => {
-                  const isLive = session.status === 'live'
-                  const isEnded = session.status === 'ended'
-                  
-                  return (
-                    <Card
-                      key={session.id}
-                      className={`transition-all border ${
-                        isLive
-                          ? 'border-rose-500 shadow-md ring-1 ring-rose-500/20 bg-rose-500/5'
-                          : 'bg-card'
-                      }`}
-                    >
-                      <CardContent className="p-5">
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                          <div className="space-y-2 flex-1 min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              {isLive && (
-                                <Badge variant="destructive" className="bg-rose-500 gap-1 text-[10px] uppercase font-bold animate-pulse px-2 py-0 h-5">
-                                  <span className="h-1.5 w-1.5 bg-white rounded-full inline-block" /> Đang Live
-                                </Badge>
-                              )}
-                              {session.status === 'upcoming' && (
-                                <>
-                                  <Badge variant="secondary" className="text-[10px] uppercase font-semibold px-2 py-0 h-5">Chờ bắt đầu</Badge>
-                                  <SessionCountdown startTime={session.start_time} />
-                                </>
-                              )}
-                              {isEnded && (
-                                <Badge variant="outline" className="text-[10px] uppercase font-semibold px-2 py-0 h-5 text-muted-foreground bg-muted/40">Đã kết thúc</Badge>
-                              )}
-                              <span className="text-xs text-muted-foreground flex items-center gap-1">
-                                <Users className="h-3.5 w-3.5" /> {session.teacher}
-                              </span>
-                            </div>
-                            <h3 className="font-bold text-sm md:text-base leading-snug break-words">{session.title}</h3>
-                            <p className="text-xs text-muted-foreground flex items-center gap-1">
-                              <Clock className="h-3.5 w-3.5" /> {formatSessionTime(session.start_time, session.end_time)}
-                            </p>
-                            {((session.view_count ?? 0) + (session.view_count_base ?? 0)) > 0 && (
-                              <p className="text-xs text-muted-foreground flex items-center gap-1">
-                                <Users className="h-3.5 w-3.5 text-primary" />
-                                <span className="font-semibold text-primary">{((session.view_count ?? 0) + (session.view_count_base ?? 0)).toLocaleString('vi-VN')}</span> học sinh đã tham gia
-                              </p>
-                            )}
-                          </div>
+              <div className="space-y-6">
+                {/* Section: Đang diễn ra */}
+                {liveSessions.length > 0 && (
+                  <div className="space-y-3">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-rose-500 flex items-center gap-1.5">
+                      <span className="h-1.5 w-1.5 bg-rose-500 rounded-full animate-pulse inline-block" /> Đang diễn ra
+                    </p>
+                    {liveSessions.map((session) => renderCard(session))}
+                  </div>
+                )}
 
-                          {/* Action Button */}
-                          <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-2 w-full sm:w-auto border-t sm:border-t-0 pt-3 sm:pt-0">
-                            {isLive ? (
-                              <a
-                                href={`/api/live/join?id=${session.id}`}
-                                className="w-full sm:w-auto"
-                                onClick={() => trackView(session.id)}
-                              >
-                                <Button className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-10 shadow-sm">
-                                  <Play className="h-4 w-4 fill-current" />
-                                  Vào học ngay <ExternalLink className="h-3.5 w-3.5" />
-                                </Button>
-                              </a>
-                            ) : isEnded ? (
-                              <div className="flex gap-2 w-full sm:w-auto">
-                                {(() => {
-                                  const recs = [session.recording_url, session.recording_url_2].filter(Boolean) as string[]
-                                  const multi = recs.length > 1
-                                  return recs.map((url, i) => {
-                                    const label = multi ? `Phần ${i + 1}` : 'Xem lại'
-                                    const embed = getRecordingEmbedUrl(url)
-                                    return embed ? (
-                                      <Button
-                                        key={i}
-                                        onClick={() => { trackView(session.id); setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url }) }}
-                                        variant="outline" size="sm"
-                                        className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
-                                      >
-                                        <Film className="h-3.5 w-3.5" /> {label}
-                                      </Button>
-                                    ) : (
-                                      <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                                        <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
-                                          <Film className="h-3.5 w-3.5" /> {label}
-                                        </Button>
-                                      </a>
-                                    )
-                                  })
-                                })()}
-                                {session.document_url && (
-                                  <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                                    <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9">
-                                      <PencilLine className="h-3.5 w-3.5" /> File viết tay
-                                    </Button>
-                                  </a>
-                                )}
-                                {session.homework_file_url && (
-                                  <Button
-                                    onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
-                                    size="sm"
-                                    className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 bg-primary text-primary-foreground hover:bg-primary/90"
-                                  >
-                                    <ClipboardList className="h-3.5 w-3.5" /> BTVN
-                                  </Button>
-                                )}
-                              </div>
-                            ) : (
-                              <Button disabled variant="outline" className="w-full sm:w-auto text-xs h-10 opacity-60">
-                                Chưa mở phòng
-                              </Button>
-                            )}
-                          </div>
-                        </div>
+                {/* Section: Sắp diễn ra */}
+                {upcomingSessions.length > 0 && (
+                  <div className="space-y-3">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                      <Calendar className="h-3.5 w-3.5" /> Sắp diễn ra
+                    </p>
+                    {upcomingSessions.map((session) => renderCard(session))}
+                  </div>
+                )}
 
-                        {/* Admin Controls */}
-                        {isAdmin && (
-                          <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between gap-3 flex-wrap">
-                            {/* Quick status gạt nhanh */}
-                            <div className="flex items-center gap-1.5">
-                              <span className="text-[10px] uppercase font-bold text-muted-foreground">Admin Status:</span>
-                              <Button
-                                size="sm"
-                                variant={session.status === 'upcoming' ? 'default' : 'outline'}
-                                onClick={() => handleStatusToggle(session, 'upcoming')}
-                                className="h-7 px-2 text-[10px]"
-                              >
-                                Sắp diễn ra
-                              </Button>
-                              <Button
-                                size="sm"
-                                variant={session.status === 'live' ? 'destructive' : 'outline'}
-                                onClick={() => handleStatusToggle(session, 'live')}
-                                className="h-7 px-2 text-[10px]"
-                              >
-                                Đang Live
-                              </Button>
-                              <Button
-                                size="sm"
-                                variant={session.status === 'ended' ? 'secondary' : 'outline'}
-                                onClick={() => handleStatusToggle(session, 'ended')}
-                                className="h-7 px-2 text-[10px]"
-                              >
-                                Kết thúc
-                              </Button>
-                            </div>
-
-                            {/* Edit/Delete Buttons */}
-                            <div className="flex items-center gap-1.5 ml-auto">
-                              {session.homework_file_url && (
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => setResultsSession(session)}
-                                  className="h-8 gap-1 text-[10px]"
-                                >
-                                  <BarChart3 className="h-3.5 w-3.5" /> Kết quả BTVN
-                                </Button>
-                              )}
-                              <Button
-                                size="icon"
-                                variant="ghost"
-                                onClick={() => openEditDialog(session)}
-                                className="h-8 w-8 text-muted-foreground hover:text-foreground"
-                              >
-                                <Edit2 className="h-3.5 w-3.5" />
-                              </Button>
-                              <Button
-                                size="icon"
-                                variant="ghost"
-                                onClick={() => handleDelete(session.id)}
-                                className="h-8 w-8 text-destructive hover:bg-destructive/10"
-                              >
-                                <Trash2 className="h-3.5 w-3.5" />
-                              </Button>
-                            </div>
-                          </div>
-                        )}
-                      </CardContent>
-                    </Card>
-                  )
-                })}
+                {/* Section: Đã kết thúc */}
+                {endedSessions.length > 0 && (
+                  <div className="space-y-3">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                      <Film className="h-3.5 w-3.5" /> Đã kết thúc
+                    </p>
+                    {visibleEndedSessions.map((session) => renderCard(session))}
+                    {endedSessions.length > 3 && (
+                      <button
+                        onClick={() => setShowAllEnded((v) => !v)}
+                        className="w-full text-xs text-muted-foreground hover:text-foreground py-2 border border-dashed rounded-lg transition-colors"
+                      >
+                        {showAllEnded ? 'Thu gọn' : `Xem thêm ${endedSessions.length - 3} buổi đã kết thúc`}
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -744,6 +766,19 @@ export default function LiveClassPage() {
                   <option value="english">Tiếng Anh</option>
                 </select>
               </div>
+            </div>
+
+            {/* Session Type */}
+            <div className="space-y-1">
+              <label className="text-xs font-bold text-muted-foreground uppercase">Loại buổi học</label>
+              <select
+                value={formSessionType}
+                onChange={(e) => setFormSessionType(e.target.value as 'ly_thuyet' | 'chua_bt')}
+                className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+              >
+                <option value="ly_thuyet">📖 Lý thuyết</option>
+                <option value="chua_bt">✏️ Chữa bài tập</option>
+              </select>
             </div>
 
             {/* Start Time & End Time */}
