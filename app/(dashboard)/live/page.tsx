@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Video, Calendar, Clock, Users, ShieldAlert,
   Crown, Play, ExternalLink, AlertCircle, Loader2, Plus, Edit2, Trash2, BookOpen, Film,
-  PencilLine, ClipboardList, BarChart3
+  PencilLine, ClipboardList, BarChart3, ChevronDown, ChevronRight, Folder
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -42,6 +42,7 @@ interface LiveClass {
   view_count?: number
   view_count_base?: number
   session_type?: 'ly_thuyet' | 'chua_bt'
+  folder_label?: string | null
 }
 
 function SessionCountdown({ startTime }: { startTime: string }) {
@@ -148,7 +149,8 @@ export default function LiveClassPage() {
   const [formAnswerKey, setFormAnswerKey] = useState<HomeworkSlot[]>([])
   const [formViewCountBase, setFormViewCountBase] = useState(0)
   const [formSessionType, setFormSessionType] = useState<'ly_thuyet' | 'chua_bt'>('ly_thuyet')
-  const [showAllEnded, setShowAllEnded] = useState(false)
+  const [formFolderLabel, setFormFolderLabel] = useState('')
+  const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({})
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
@@ -195,6 +197,7 @@ export default function LiveClassPage() {
     setFormAnswerKey([])
     setFormViewCountBase(0)
     setFormSessionType('ly_thuyet')
+    setFormFolderLabel('')
     setIsOpenDialog(true)
   }
 
@@ -221,6 +224,7 @@ export default function LiveClassPage() {
     setFormAnswerKey(Array.isArray(session.homework_answer_key) ? session.homework_answer_key : [])
     setFormViewCountBase(session.view_count_base ?? 0)
     setFormSessionType(session.session_type ?? 'ly_thuyet')
+    setFormFolderLabel(session.folder_label ?? '')
     setIsOpenDialog(true)
   }
 
@@ -277,6 +281,7 @@ export default function LiveClassPage() {
       homework_answer_key: formAnswerKey.length > 0 ? formAnswerKey : null,
       view_count_base: formViewCountBase,
       session_type: formSessionType,
+      folder_label: formFolderLabel.trim() || null,
     }
 
     try {
@@ -359,7 +364,13 @@ export default function LiveClassPage() {
           subject: session.subject,
           meet_url: session.meet_url || '',
           recording_url: session.recording_url || '',
+          recording_url_2: session.recording_url_2 || '',
           document_url: session.document_url || '',
+          homework_file_url: session.homework_file_url || '',
+          homework_title: session.homework_title || '',
+          homework_answer_key: session.homework_answer_key ?? null,
+          view_count_base: session.view_count_base ?? 0,
+          session_type: session.session_type ?? 'ly_thuyet',
         }),
       })
       if (!res.ok) throw new Error()
@@ -401,7 +412,6 @@ export default function LiveClassPage() {
   const liveSessions = sortedSessions.filter((s) => s.status === 'live')
   const upcomingSessions = sortedSessions.filter((s) => s.status === 'upcoming')
   const endedSessions = sortedSessions.filter((s) => s.status === 'ended')
-  const visibleEndedSessions = showAllEnded ? endedSessions : endedSessions.slice(0, 3)
 
   const renderCard = (session: LiveClass) => {
     const isLive = session.status === 'live'
@@ -661,23 +671,36 @@ export default function LiveClassPage() {
                   </div>
                 )}
 
-                {/* Section: Đã kết thúc */}
-                {endedSessions.length > 0 && (
-                  <div className="space-y-3">
-                    <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                      <Film className="h-3.5 w-3.5" /> Đã kết thúc
-                    </p>
-                    {visibleEndedSessions.map((session) => renderCard(session))}
-                    {endedSessions.length > 3 && (
-                      <button
-                        onClick={() => setShowAllEnded((v) => !v)}
-                        className="w-full text-xs text-muted-foreground hover:text-foreground py-2 border border-dashed rounded-lg transition-colors"
-                      >
-                        {showAllEnded ? 'Thu gọn' : `Xem thêm ${endedSessions.length - 3} buổi đã kết thúc`}
-                      </button>
-                    )}
-                  </div>
-                )}
+                {/* Section: Đã kết thúc — grouped by folder_label */}
+                {endedSessions.length > 0 && (() => {
+                  const grouped: Record<string, LiveClass[]> = {}
+                  for (const s of endedSessions) {
+                    const key = s.folder_label?.trim() || '📼 Buổi đã kết thúc'
+                    grouped[key] = [...(grouped[key] || []), s]
+                  }
+                  return Object.entries(grouped).map(([label, sessions]) => {
+                    const isOpen = openFolders[label] ?? false
+                    return (
+                      <div key={label} className="rounded-xl border border-border/60 overflow-hidden">
+                        <button
+                          onClick={() => setOpenFolders((prev) => ({ ...prev, [label]: !isOpen }))}
+                          className="w-full flex items-center justify-between px-4 py-3 bg-muted/30 hover:bg-muted/50 transition-colors text-left"
+                        >
+                          <span className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                            <Folder className="h-3.5 w-3.5" /> {label}
+                            <span className="text-[10px] font-normal normal-case bg-border rounded-full px-2 py-0.5">{sessions.length} buổi</span>
+                          </span>
+                          {isOpen ? <ChevronDown className="h-4 w-4 text-muted-foreground" /> : <ChevronRight className="h-4 w-4 text-muted-foreground" />}
+                        </button>
+                        {isOpen && (
+                          <div className="p-3 space-y-3 border-t border-border/40">
+                            {sessions.map((session) => renderCard(session))}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })
+                })()}
               </div>
             )}
           </div>
@@ -768,17 +791,31 @@ export default function LiveClassPage() {
               </div>
             </div>
 
-            {/* Session Type */}
-            <div className="space-y-1">
-              <label className="text-xs font-bold text-muted-foreground uppercase">Loại buổi học</label>
-              <select
-                value={formSessionType}
-                onChange={(e) => setFormSessionType(e.target.value as 'ly_thuyet' | 'chua_bt')}
-                className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
-              >
-                <option value="ly_thuyet">📖 Lý thuyết</option>
-                <option value="chua_bt">✏️ Chữa bài tập</option>
-              </select>
+            {/* Session Type & Folder Label */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-muted-foreground uppercase">Loại buổi học</label>
+                <select
+                  value={formSessionType}
+                  onChange={(e) => setFormSessionType(e.target.value as 'ly_thuyet' | 'chua_bt')}
+                  className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                >
+                  <option value="ly_thuyet">📖 Lý thuyết</option>
+                  <option value="chua_bt">✏️ Chữa bài tập</option>
+                </select>
+              </div>
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1">
+                  <Folder className="h-3 w-3" /> Thư mục (tùy chọn)
+                </label>
+                <input
+                  type="text"
+                  value={formFolderLabel}
+                  onChange={(e) => setFormFolderLabel(e.target.value)}
+                  placeholder="VD: Tháng 6, Chuyên đề..."
+                  className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                />
+              </div>
             </div>
 
             {/* Start Time & End Time */}

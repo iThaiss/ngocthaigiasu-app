@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS live_sessions (
   view_count         INTEGER NOT NULL DEFAULT 0,   -- lượt xem thật (tự tăng)
   view_count_base    INTEGER NOT NULL DEFAULT 0,   -- số nền admin đặt (fake boost)
   session_type       TEXT NOT NULL DEFAULT 'ly_thuyet' CHECK (session_type IN ('ly_thuyet', 'chua_bt')),
+  folder_label       TEXT,                            -- nhãn thư mục tùy chỉnh (chỉ dùng cho ended)
   created_at         TIMESTAMPTZ DEFAULT NOW(),
   updated_at         TIMESTAMPTZ DEFAULT NOW()
 );
@@ -36,6 +37,7 @@ ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_answer_key JSONB;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS view_count INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS view_count_base INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS session_type TEXT NOT NULL DEFAULT 'ly_thuyet' CHECK (session_type IN ('ly_thuyet', 'chua_bt'));
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS folder_label TEXT;
 
 -- BTVN: lưu mọi lần nộp của học sinh (cho AI phân tích sau)
 CREATE TABLE IF NOT EXISTS homework_submissions (
