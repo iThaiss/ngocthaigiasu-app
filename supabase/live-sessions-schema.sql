@@ -21,6 +21,8 @@ CREATE TABLE IF NOT EXISTS live_sessions (
   homework_file_url  TEXT,              -- BTVN: link đề PDF/Drive học sinh nhìn song song
   homework_title     TEXT,              -- BTVN: tên bài tập
   homework_answer_key JSONB,            -- BTVN: mảng slot đáp án [{stt,type,correct}]
+  view_count         INTEGER NOT NULL DEFAULT 0,   -- lượt xem thật (tự tăng)
+  view_count_base    INTEGER NOT NULL DEFAULT 0,   -- số nền admin đặt (fake boost)
   created_at         TIMESTAMPTZ DEFAULT NOW(),
   updated_at         TIMESTAMPTZ DEFAULT NOW()
 );
@@ -30,6 +32,8 @@ ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS recording_url_2 TEXT;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_file_url TEXT;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_title TEXT;
 ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS homework_answer_key JSONB;
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS view_count INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE live_sessions ADD COLUMN IF NOT EXISTS view_count_base INTEGER NOT NULL DEFAULT 0;
 
 -- BTVN: lưu mọi lần nộp của học sinh (cho AI phân tích sau)
 CREATE TABLE IF NOT EXISTS homework_submissions (

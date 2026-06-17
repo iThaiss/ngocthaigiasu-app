@@ -39,6 +39,8 @@ interface LiveClass {
   homework_file_url?: string
   homework_title?: string
   homework_answer_key?: HomeworkSlot[]
+  view_count?: number
+  view_count_base?: number
 }
 
 function SessionCountdown({ startTime }: { startTime: string }) {
@@ -143,6 +145,7 @@ export default function LiveClassPage() {
   const [formHomeworkUrl, setFormHomeworkUrl] = useState('')
   const [formHomeworkTitle, setFormHomeworkTitle] = useState('')
   const [formAnswerKey, setFormAnswerKey] = useState<HomeworkSlot[]>([])
+  const [formViewCountBase, setFormViewCountBase] = useState(0)
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
@@ -187,6 +190,7 @@ export default function LiveClassPage() {
     setFormHomeworkUrl('')
     setFormHomeworkTitle('')
     setFormAnswerKey([])
+    setFormViewCountBase(0)
     setIsOpenDialog(true)
   }
 
@@ -211,6 +215,7 @@ export default function LiveClassPage() {
     setFormHomeworkUrl(session.homework_file_url || '')
     setFormHomeworkTitle(session.homework_title || '')
     setFormAnswerKey(Array.isArray(session.homework_answer_key) ? session.homework_answer_key : [])
+    setFormViewCountBase(session.view_count_base ?? 0)
     setIsOpenDialog(true)
   }
 
@@ -265,6 +270,7 @@ export default function LiveClassPage() {
       homework_file_url: formHomeworkUrl || null,
       homework_title: formHomeworkTitle || null,
       homework_answer_key: formAnswerKey.length > 0 ? formAnswerKey : null,
+      view_count_base: formViewCountBase,
     }
 
     try {
@@ -326,6 +332,10 @@ export default function LiveClassPage() {
         description: 'Gặp lỗi trong quá trình thực thi lệnh xóa.',
       })
     }
+  }
+
+  const trackView = (id: string) => {
+    fetch(`/api/live/${id}/view`, { method: 'POST' }).catch(() => {})
   }
 
   const handleStatusToggle = async (session: LiveClass, newStatus: 'upcoming' | 'live' | 'ended') => {
@@ -507,6 +517,12 @@ export default function LiveClassPage() {
                             <p className="text-xs text-muted-foreground flex items-center gap-1">
                               <Clock className="h-3.5 w-3.5" /> {formatSessionTime(session.start_time, session.end_time)}
                             </p>
+                            {((session.view_count ?? 0) + (session.view_count_base ?? 0)) > 0 && (
+                              <p className="text-xs text-muted-foreground flex items-center gap-1">
+                                <Users className="h-3.5 w-3.5 text-primary" />
+                                <span className="font-semibold text-primary">{((session.view_count ?? 0) + (session.view_count_base ?? 0)).toLocaleString('vi-VN')}</span> học sinh đã tham gia
+                              </p>
+                            )}
                           </div>
 
                           {/* Action Button */}
@@ -515,6 +531,7 @@ export default function LiveClassPage() {
                               <a
                                 href={`/api/live/join?id=${session.id}`}
                                 className="w-full sm:w-auto"
+                                onClick={() => trackView(session.id)}
                               >
                                 <Button className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-10 shadow-sm">
                                   <Play className="h-4 w-4 fill-current" />
@@ -532,7 +549,7 @@ export default function LiveClassPage() {
                                     return embed ? (
                                       <Button
                                         key={i}
-                                        onClick={() => setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url })}
+                                        onClick={() => { trackView(session.id); setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url }) }}
                                         variant="outline" size="sm"
                                         className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
                                       >
@@ -556,7 +573,7 @@ export default function LiveClassPage() {
                                 )}
                                 {session.homework_file_url && (
                                   <Button
-                                    onClick={() => setBtvnSessionId(session.id)}
+                                    onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
                                     size="sm"
                                     className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 bg-primary text-primary-foreground hover:bg-primary/90"
                                   >
@@ -923,6 +940,20 @@ export default function LiveClassPage() {
                   ))}
                 </div>
               </div>
+            </div>
+
+            {/* Social proof */}
+            <div className="space-y-1 border-t border-border/40 pt-3">
+              <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1">
+                <Users className="h-3 w-3" /> Số học sinh (nền) — hiển thị cộng thêm vào lượt thật
+              </label>
+              <input
+                type="number"
+                min="0"
+                value={formViewCountBase}
+                onChange={(e) => setFormViewCountBase(Math.max(0, parseInt(e.target.value) || 0))}
+                className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
             </div>
 
             <DialogFooter className="pt-2">

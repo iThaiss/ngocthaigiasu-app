@@ -20,6 +20,8 @@ CREATE TABLE IF NOT EXISTS math_lessons (
   video_url        TEXT,                      -- URL video bài giảng (Youtube, Vimeo, Bunny, v.v.)
   video_source     TEXT DEFAULT 'youtube' CHECK (video_source IN ('youtube', 'drive', 'vimeo', 'bunny')),
   exercise_count   INTEGER DEFAULT 0,
+  view_count       INTEGER NOT NULL DEFAULT 0,  -- lượt xem thật
+  view_count_base  INTEGER NOT NULL DEFAULT 0,  -- số nền admin đặt
   is_active        BOOLEAN DEFAULT TRUE,
   order_index      INTEGER DEFAULT 0,
   created_at       TIMESTAMPTZ DEFAULT NOW()

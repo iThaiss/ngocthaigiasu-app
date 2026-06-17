@@ -44,6 +44,8 @@ interface MathLesson {
   video_source: string | null
   order_index: number
   is_active: boolean
+  view_count?: number
+  view_count_base?: number
 }
 
 
@@ -60,7 +62,7 @@ export default function AdminLessonsPage() {
 
   // Edit video for math lesson
   const [videoTarget, setVideoTarget] = useState<MathLesson | null>(null)
-  const [videoForm, setVideoForm] = useState({ video_url: '', video_source: 'youtube' })
+  const [videoForm, setVideoForm] = useState({ video_url: '', video_source: 'youtube', view_count_base: 0 })
   const [savingVideo, setSavingVideo] = useState(false)
 
   // Create lesson
@@ -123,6 +125,7 @@ export default function AdminLessonsPage() {
     setVideoForm({
       video_url: lesson.video_url ?? '',
       video_source: lesson.video_source ?? 'youtube',
+      view_count_base: lesson.view_count_base ?? 0,
     })
   }
 
@@ -136,6 +139,7 @@ export default function AdminLessonsPage() {
         body: JSON.stringify({
           video_url: videoForm.video_url || null,
           video_source: videoForm.video_source,
+          view_count_base: videoForm.view_count_base,
         }),
       })
       if (!res.ok) throw new Error()
@@ -405,6 +409,16 @@ export default function AdminLessonsPage() {
                 <option value="youtube">YouTube</option>
                 <option value="drive">Google Drive</option>
               </select>
+            </div>
+            <div className="space-y-1.5">
+              <label className="text-xs text-zinc-400">Số học sinh (nền) — cộng thêm vào lượt xem thật</label>
+              <Input
+                type="number"
+                min="0"
+                value={videoForm.view_count_base}
+                onChange={(e) => setVideoForm((f) => ({ ...f, view_count_base: Math.max(0, parseInt(e.target.value) || 0) }))}
+                className="bg-zinc-800 border-zinc-700 text-zinc-100"
+              />
             </div>
           </div>
           <DialogFooter>

@@ -1307,6 +1307,13 @@ export default function LessonPage() {
     }
   }, [fetchLessonData])
 
+  // Track view once when math lesson loads
+  useEffect(() => {
+    if (lessonId && lessonType === 'math') {
+      fetch(`/api/learning/math/${lessonId}/view`, { method: 'POST' }).catch(() => {})
+    }
+  }, [lessonId, lessonType])
+
   // Video Trial Timer
   useEffect(() => {
     if (videoStarted && !isVip && !videoExpired) {
@@ -1501,6 +1508,11 @@ export default function LessonPage() {
               </Badge>
             )}
             <span className="text-muted-foreground flex items-center gap-1">⏱ {duration} phút</span>
+            {(((lesson as any).view_count ?? 0) + ((lesson as any).view_count_base ?? 0)) > 0 && (
+              <span className="flex items-center gap-1 text-primary font-semibold">
+                👥 {(((lesson as any).view_count ?? 0) + ((lesson as any).view_count_base ?? 0)).toLocaleString('vi-VN')} học sinh
+              </span>
+            )}
             {progress?.mastered && (
               <span className="text-emerald-500 flex items-center gap-1 font-semibold">
                 <CheckCircle2 className="h-3.5 w-3.5 fill-current text-white bg-emerald-500 rounded-full" /> Đã hoàn thành ({progress.best_score}%)
