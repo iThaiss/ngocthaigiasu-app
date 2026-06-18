@@ -19,7 +19,7 @@ export async function GET(req: NextRequest) {
   const supabase = createAdminClient()
   const { data, error } = await supabase
     .from('live_sessions')
-    .select('homework_title, homework_file_url, homework_answer_key')
+    .select('homework_title, homework_file_url, homework_answer_key, homework_recording_url, homework_document_url')
     .eq('id', sessionId)
     .single()
 
@@ -35,5 +35,7 @@ export async function GET(req: NextRequest) {
     file_url: data.homework_file_url,
     slots: publicSlots(answerKey),
     has_answer_key: answerKey.length > 0,
+    homework_recording_url: data.homework_recording_url ?? null,
+    homework_document_url: data.homework_document_url ?? null,
   })
 }
