@@ -73,6 +73,13 @@ export default function HomeworkRunner({
       const d = await res.json()
       setData(d)
       startRef.current = Date.now()
+      // Restore kết quả lần nộp cuối từ localStorage
+      if (initiallySubmitted) {
+        try {
+          const saved = localStorage.getItem(`btvn_result_${sessionId}`)
+          if (saved) setResult(JSON.parse(saved))
+        } catch {}
+      }
     } catch {
       toast({ title: 'Không tải được BTVN', variant: 'destructive' })
       onCloseRef.current()
@@ -118,6 +125,7 @@ export default function HomeworkRunner({
       setShowSolution(true)
       setMobileView('lambai')
       onSubmitted?.()
+      try { localStorage.setItem(`btvn_result_${sessionId}`, JSON.stringify(r)) } catch {}
       toast({ title: `Đã nộp! ${r.score}/${r.max_score} điểm` })
     } catch {
       toast({ title: 'Lỗi khi nộp bài', variant: 'destructive' })
