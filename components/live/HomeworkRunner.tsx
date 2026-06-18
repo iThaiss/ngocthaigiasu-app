@@ -39,10 +39,14 @@ export default function HomeworkRunner({
   sessionId,
   open,
   onClose,
+  onSubmitted,
+  initiallySubmitted = false,
 }: {
   sessionId: string
   open: boolean
   onClose: () => void
+  onSubmitted?: () => void
+  initiallySubmitted?: boolean
 }) {
   const { toast } = useToast()
   const [loading, setLoading] = useState(true)
@@ -51,6 +55,8 @@ export default function HomeworkRunner({
   const [submitting, setSubmitting] = useState(false)
   const [result, setResult] = useState<SubmitResult | null>(null)
   const [mobileView, setMobileView] = useState<'de' | 'lambai'>('de')
+  // true = đang xem giải (sau khi nộp hoặc mở lại sau khi đã nộp)
+  const [showSolution, setShowSolution] = useState(initiallySubmitted)
   const startRef = useRef<number>(Date.now())
   const onCloseRef = useRef(onClose)
   useEffect(() => { onCloseRef.current = onClose })
@@ -59,6 +65,8 @@ export default function HomeworkRunner({
     setLoading(true)
     setResult(null)
     setAnswers({})
+    // Nếu đã nộp trước đó thì mở thẳng vào view giải
+    setShowSolution(initiallySubmitted)
     try {
       const res = await fetch(`/api/live/homework?sessionId=${sessionId}`)
       if (!res.ok) throw new Error()
@@ -71,7 +79,7 @@ export default function HomeworkRunner({
     } finally {
       setLoading(false)
     }
-  }, [sessionId, toast])
+  }, [sessionId, toast, initiallySubmitted])
 
   useEffect(() => {
     if (open) load()
@@ -107,7 +115,9 @@ export default function HomeworkRunner({
       if (!res.ok) throw new Error()
       const r = await res.json()
       setResult(r)
+      setShowSolution(true)
       setMobileView('lambai')
+      onSubmitted?.()
       toast({ title: `Đã nộp! ${r.score}/${r.max_score} điểm` })
     } catch {
       toast({ title: 'Lỗi khi nộp bài', variant: 'destructive' })
@@ -162,7 +172,7 @@ export default function HomeworkRunner({
                 />
               </div>
 
-              {/* Làm bài */}
+              {/* Làm bài / Xem giải */}
               <div className={`${mobileView === 'lambai' ? 'flex' : 'hidden'} md:flex md:w-1/2 lg:w-2/5 flex-1 flex-col min-h-0`}>
                 {!data.has_answer_key && (
                   <div className="mx-4 mt-4 p-3 rounded-lg border border-amber-400/30 bg-amber-400/10 text-amber-700 dark:text-amber-400 text-xs">
@@ -197,7 +207,7 @@ export default function HomeworkRunner({
                             {['A', 'B', 'C', 'D'].map((c) => (
                               <button
                                 key={c}
-                                disabled={!!result}
+                                disabled={showSolution}
                                 onClick={() => setMcq(slot.stt, c)}
                                 className={`flex-1 h-9 rounded-lg border text-sm font-bold transition-colors disabled:opacity-70
                                   ${answers[slot.stt] === c ? 'bg-primary text-primary-foreground border-primary' : 'border-border hover:bg-muted'}`}
@@ -215,12 +225,12 @@ export default function HomeworkRunner({
                                 <div key={idx} className="flex items-center gap-2">
                                   <span className="text-xs font-semibold w-4 text-muted-foreground">{TF_LABELS[idx]})</span>
                                   <button
-                                    disabled={!!result}
+                                    disabled={showSolution}
                                     onClick={() => setTf(slot.stt, idx, true, slot.statementCount ?? 4)}
                                     className={`flex-1 h-8 rounded-lg border text-xs font-bold disabled:opacity-70 ${cur === true ? 'bg-emerald-500 text-white border-emerald-500' : 'border-border hover:bg-muted'}`}
                                   >Đúng</button>
                                   <button
-                                    disabled={!!result}
+                                    disabled={showSolution}
                                     onClick={() => setTf(slot.stt, idx, false, slot.statementCount ?? 4)}
                                     className={`flex-1 h-8 rounded-lg border text-xs font-bold disabled:opacity-70 ${cur === false ? 'bg-rose-500 text-white border-rose-500' : 'border-border hover:bg-muted'}`}
                                   >Sai</button>
@@ -235,7 +245,7 @@ export default function HomeworkRunner({
                           <input
                             type="text"
                             inputMode="decimal"
-                            disabled={!!result}
+                            disabled={showSolution}
                             value={(answers[slot.stt] as string) ?? ''}
                             onChange={(e) => setShort(slot.stt, e.target.value)}
                             placeholder="Nhập đáp án (số)"
@@ -262,9 +272,13 @@ export default function HomeworkRunner({
                     <Button variant="outline" className="w-full" onClick={onClose}>
                       <X className="h-4 w-4 mr-1.5" /> Đóng
                     </Button>
-                  ) : result ? (
+                  ) : showSolution ? (
                     <>
-                      <Button variant="outline" className="flex-1 gap-1.5 min-w-[90px]" onClick={load}>
+                      <Button
+                        variant="outline"
+                        className="flex-1 gap-1.5 min-w-[90px]"
+                        onClick={() => { setShowSolution(false); setResult(null); setAnswers({}) }}
+                      >
                         <RotateCcw className="h-4 w-4" /> Nộp lại
                       </Button>
                       {data.homework_recording_url && (
