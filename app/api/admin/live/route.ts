@@ -108,7 +108,12 @@ export async function PUT(req: NextRequest) {
         }, { status: 500 })
       }
     } else if (!resolvedEventId) {
-      resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
+      try {
+        resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
+      } catch (err) {
+        console.error('findEventIdByMeetUrl error (non-fatal on edit):', err)
+        resolvedEventId = null
+      }
     }
 
     const supabaseAdmin = createAdminClient()
