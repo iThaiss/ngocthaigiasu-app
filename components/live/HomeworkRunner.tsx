@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/components/ui/use-toast'
-import { Loader2, FileText, CheckCircle2, XCircle, RotateCcw, Send, X } from 'lucide-react'
+import { Loader2, FileText, CheckCircle2, XCircle, RotateCcw, Send, X, Play } from 'lucide-react'
 import type { PublicHomeworkSlot, GradedAnswer } from '@/lib/homework-grading'
 
 const TF_LABELS = ['a', 'b', 'c', 'd', 'e', 'f']
@@ -23,6 +23,8 @@ interface HomeworkData {
   file_url: string
   slots: PublicHomeworkSlot[]
   has_answer_key: boolean
+  homework_recording_url: string | null
+  homework_document_url: string | null
 }
 
 interface SubmitResult {
@@ -253,17 +255,31 @@ export default function HomeworkRunner({
                 </div>
 
                 {/* Footer actions */}
-                <div className="border-t p-3 shrink-0 flex gap-2">
+                <div className="border-t p-3 shrink-0 flex gap-2 flex-wrap">
                   {!data.has_answer_key ? (
                     <Button variant="outline" className="w-full" onClick={onClose}>
                       <X className="h-4 w-4 mr-1.5" /> Đóng
                     </Button>
                   ) : result ? (
                     <>
-                      <Button variant="outline" className="flex-1 gap-1.5" onClick={load}>
-                        <RotateCcw className="h-4 w-4" /> Làm lại
+                      <Button variant="outline" className="flex-1 gap-1.5 min-w-[90px]" onClick={load}>
+                        <RotateCcw className="h-4 w-4" /> Nộp lại
                       </Button>
-                      <Button className="flex-1 gap-1.5" onClick={onClose}>
+                      {data.homework_recording_url && (
+                        <Button variant="outline" className="flex-1 gap-1.5 min-w-[110px]" asChild>
+                          <a href={data.homework_recording_url} target="_blank" rel="noreferrer">
+                            <Play className="h-4 w-4" /> Record giải
+                          </a>
+                        </Button>
+                      )}
+                      {data.homework_document_url && (
+                        <Button variant="outline" className="flex-1 gap-1.5 min-w-[120px]" asChild>
+                          <a href={data.homework_document_url} target="_blank" rel="noreferrer">
+                            <FileText className="h-4 w-4" /> Bản viết tay
+                          </a>
+                        </Button>
+                      )}
+                      <Button className="flex-1 gap-1.5 min-w-[80px]" onClick={onClose}>
                         <X className="h-4 w-4" /> Đóng
                       </Button>
                     </>

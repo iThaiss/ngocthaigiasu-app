@@ -43,6 +43,8 @@ interface LiveClass {
   view_count_base?: number
   session_type?: 'ly_thuyet' | 'chua_bt'
   folder_label?: string | null
+  homework_recording_url?: string | null
+  homework_document_url?: string | null
 }
 
 function SessionCountdown({ startTime }: { startTime: string }) {
@@ -150,7 +152,10 @@ export default function LiveClassPage() {
   const [formViewCountBase, setFormViewCountBase] = useState(0)
   const [formSessionType, setFormSessionType] = useState<'ly_thuyet' | 'chua_bt'>('ly_thuyet')
   const [formFolderLabel, setFormFolderLabel] = useState('')
+  const [formHomeworkRecordingUrl, setFormHomeworkRecordingUrl] = useState('')
+  const [formHomeworkDocumentUrl, setFormHomeworkDocumentUrl] = useState('')
   const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({})
+  const [openedLyThuyet, setOpenedLyThuyet] = useState<Record<string, boolean>>({})
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
@@ -198,6 +203,8 @@ export default function LiveClassPage() {
     setFormViewCountBase(0)
     setFormSessionType('ly_thuyet')
     setFormFolderLabel('')
+    setFormHomeworkRecordingUrl('')
+    setFormHomeworkDocumentUrl('')
     setIsOpenDialog(true)
   }
 
@@ -225,6 +232,8 @@ export default function LiveClassPage() {
     setFormViewCountBase(session.view_count_base ?? 0)
     setFormSessionType(session.session_type ?? 'ly_thuyet')
     setFormFolderLabel(session.folder_label ?? '')
+    setFormHomeworkRecordingUrl(session.homework_recording_url ?? '')
+    setFormHomeworkDocumentUrl(session.homework_document_url ?? '')
     setIsOpenDialog(true)
   }
 
@@ -282,6 +291,8 @@ export default function LiveClassPage() {
       view_count_base: formViewCountBase,
       session_type: formSessionType,
       folder_label: formFolderLabel.trim() || null,
+      homework_recording_url: formHomeworkRecordingUrl || null,
+      homework_document_url: formHomeworkDocumentUrl || null,
     }
 
     try {
@@ -371,6 +382,8 @@ export default function LiveClassPage() {
           homework_answer_key: session.homework_answer_key ?? null,
           view_count_base: session.view_count_base ?? 0,
           session_type: session.session_type ?? 'ly_thuyet',
+          homework_recording_url: session.homework_recording_url || '',
+          homework_document_url: session.homework_document_url || '',
         }),
       })
       if (!res.ok) throw new Error()
@@ -466,60 +479,95 @@ export default function LiveClassPage() {
               )}
             </div>
 
-            {/* Action Button */}
-            <div className="flex sm:flex-col items-center justify-between sm:justify-center gap-2 w-full sm:w-auto border-t sm:border-t-0 pt-3 sm:pt-0">
-              {isLive ? (
-                <a href={`/api/live/join?id=${session.id}`} className="w-full sm:w-auto" onClick={() => trackView(session.id)}>
-                  <Button className="w-full sm:w-auto bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-10 shadow-sm">
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-2 border-t sm:border-t-0 pt-3 sm:pt-0 w-full sm:w-auto sm:justify-end">
+              {/* Vào học — chỉ live */}
+              {isLive && (
+                <a href={`/api/live/join?id=${session.id}`} onClick={() => trackView(session.id)}>
+                  <Button className="bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-9 shadow-sm text-sm">
                     <Play className="h-4 w-4 fill-current" />
                     Vào học ngay <ExternalLink className="h-3.5 w-3.5" />
                   </Button>
                 </a>
-              ) : isEnded ? (
-                <div className="flex gap-2 w-full sm:w-auto">
-                  {(() => {
-                    const recs = [session.recording_url, session.recording_url_2].filter(Boolean) as string[]
-                    const multi = recs.length > 1
-                    return recs.map((url, i) => {
-                      const label = multi ? `Phần ${i + 1}` : 'Xem lại'
-                      const embed = getRecordingEmbedUrl(url)
-                      return embed ? (
-                        <Button
-                          key={i}
-                          onClick={() => { trackView(session.id); setReplay({ title: multi ? `${session.title} — ${label}` : session.title, url }) }}
-                          variant="outline" size="sm"
-                          className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20"
-                        >
-                          <Film className="h-3.5 w-3.5" /> {label}
-                        </Button>
-                      ) : (
-                        <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                          <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9 border-rose-200 text-rose-600 dark:border-rose-900 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/20">
-                            <Film className="h-3.5 w-3.5" /> {label}
+              )}
+
+              {/* Nút Lý thuyết — hiện nếu có record hoặc bản viết tay */}
+              {(session.recording_url || session.document_url) && (
+                <div className="relative">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="gap-1.5"
+                    onClick={() => setOpenedLyThuyet((p) => ({ ...p, [session.id]: !p[session.id] }))}
+                  >
+                    <BookOpen className="h-3.5 w-3.5" /> Lý thuyết
+                  </Button>
+                  {openedLyThuyet[session.id] && (
+                    <div className="absolute bottom-full mb-1 left-0 flex gap-1 p-1 rounded-lg border bg-card shadow-lg z-10 whitespace-nowrap">
+                      {session.recording_url && (() => {
+                        const embed = getRecordingEmbedUrl(session.recording_url)
+                        return embed ? (
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="gap-1.5"
+                            onClick={() => { trackView(session.id); setReplay({ title: session.title, url: session.recording_url! }) }}
+                          >
+                            <Play className="h-3.5 w-3.5" /> Record
+                          </Button>
+                        ) : (
+                          <a href={session.recording_url} target="_blank" rel="noreferrer">
+                            <Button size="sm" variant="ghost" className="gap-1.5">
+                              <Play className="h-3.5 w-3.5" /> Record
+                            </Button>
+                          </a>
+                        )
+                      })()}
+                      {session.recording_url_2 && (() => {
+                        const embed2 = getRecordingEmbedUrl(session.recording_url_2)
+                        return embed2 ? (
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="gap-1.5"
+                            onClick={() => { trackView(session.id); setReplay({ title: `${session.title} — Phần 2`, url: session.recording_url_2! }) }}
+                          >
+                            <Play className="h-3.5 w-3.5" /> Phần 2
+                          </Button>
+                        ) : (
+                          <a href={session.recording_url_2} target="_blank" rel="noreferrer">
+                            <Button size="sm" variant="ghost" className="gap-1.5">
+                              <Play className="h-3.5 w-3.5" /> Phần 2
+                            </Button>
+                          </a>
+                        )
+                      })()}
+                      {session.document_url && (
+                        <a href={session.document_url} target="_blank" rel="noreferrer">
+                          <Button size="sm" variant="ghost" className="gap-1.5">
+                            <PencilLine className="h-3.5 w-3.5" /> Bản viết tay
                           </Button>
                         </a>
-                      )
-                    })
-                  })()}
-                  {session.document_url && (
-                    <a href={session.document_url} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial">
-                      <Button variant="outline" size="sm" className="w-full gap-1 text-xs h-9">
-                        <PencilLine className="h-3.5 w-3.5" /> File viết tay
-                      </Button>
-                    </a>
-                  )}
-                  {session.homework_file_url && (
-                    <Button
-                      onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
-                      size="sm"
-                      className="flex-1 sm:flex-initial w-full gap-1 text-xs h-9 bg-primary text-primary-foreground hover:bg-primary/90"
-                    >
-                      <ClipboardList className="h-3.5 w-3.5" /> BTVN
-                    </Button>
+                      )}
+                    </div>
                   )}
                 </div>
-              ) : (
-                <Button disabled variant="outline" className="w-full sm:w-auto text-xs h-10 opacity-60">
+              )}
+
+              {/* Nộp BTVN */}
+              {session.homework_file_url && (
+                <Button
+                  size="sm"
+                  className="gap-1.5"
+                  onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
+                >
+                  <ClipboardList className="h-3.5 w-3.5" /> Nộp BTVN
+                </Button>
+              )}
+
+              {/* Upcoming chưa có gì */}
+              {!isLive && !isEnded && !session.recording_url && !session.document_url && !session.homework_file_url && (
+                <Button disabled variant="outline" className="text-xs h-9 opacity-60">
                   Chưa mở phòng
                 </Button>
               )}
@@ -938,6 +986,32 @@ export default function LiveClassPage() {
                     className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
                   />
                 </div>
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-rose-600 dark:text-rose-400">
+                  <Play className="h-3 w-3" /> Link record giải BTVN (sau khi nộp)
+                </label>
+                <input
+                  type="url"
+                  value={formHomeworkRecordingUrl}
+                  onChange={(e) => setFormHomeworkRecordingUrl(e.target.value)}
+                  placeholder="https://youtu.be/... hoặc https://drive.google.com/..."
+                  className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                />
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-xs font-bold text-muted-foreground uppercase flex items-center gap-1 text-rose-600 dark:text-rose-400">
+                  <PencilLine className="h-3 w-3" /> Link bản viết tay lời giải (sau khi nộp)
+                </label>
+                <input
+                  type="url"
+                  value={formHomeworkDocumentUrl}
+                  onChange={(e) => setFormHomeworkDocumentUrl(e.target.value)}
+                  placeholder="https://drive.google.com/file/d/..."
+                  className="w-full px-3 py-2 text-sm rounded-lg border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20"
+                />
               </div>
 
               {/* Bảng đáp án */}

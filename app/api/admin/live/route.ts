@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type, folder_label } = body
+    const { title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type, folder_label, homework_recording_url, homework_document_url } = body
 
     if (!title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -62,6 +62,8 @@ export async function POST(req: NextRequest) {
         view_count_base: typeof view_count_base === 'number' ? view_count_base : 0,
         session_type: session_type ?? 'ly_thuyet',
         folder_label: folder_label ?? null,
+        homework_recording_url: homework_recording_url || null,
+        homework_document_url: homework_document_url || null,
       })
       .select()
       .single()
@@ -85,7 +87,7 @@ export async function PUT(req: NextRequest) {
     }
 
     const body = await req.json()
-    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type, folder_label } = body
+    const { id, title, teacher, start_time, end_time, status, subject, meet_url, external_event_id, recording_url, recording_url_2, document_url, homework_file_url, homework_title, homework_answer_key, view_count_base, session_type, folder_label, homework_recording_url, homework_document_url } = body
 
     if (!id || !title || !teacher || !start_time || !end_time || !subject) {
       return NextResponse.json({ error: 'Thiếu thông tin bắt buộc' }, { status: 400 })
@@ -130,6 +132,8 @@ export async function PUT(req: NextRequest) {
         view_count_base: typeof view_count_base === 'number' ? view_count_base : 0,
         session_type: session_type ?? 'ly_thuyet',
         folder_label: folder_label ?? null,
+        homework_recording_url: homework_recording_url || null,
+        homework_document_url: homework_document_url || null,
         updated_at: new Date().toISOString(),
       })
       .eq('id', id)
