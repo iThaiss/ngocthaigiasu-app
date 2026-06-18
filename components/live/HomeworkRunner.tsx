@@ -52,6 +52,8 @@ export default function HomeworkRunner({
   const [result, setResult] = useState<SubmitResult | null>(null)
   const [mobileView, setMobileView] = useState<'de' | 'lambai'>('de')
   const startRef = useRef<number>(Date.now())
+  const onCloseRef = useRef(onClose)
+  useEffect(() => { onCloseRef.current = onClose })
 
   const load = useCallback(async () => {
     setLoading(true)
@@ -65,11 +67,11 @@ export default function HomeworkRunner({
       startRef.current = Date.now()
     } catch {
       toast({ title: 'Không tải được BTVN', variant: 'destructive' })
-      onClose()
+      onCloseRef.current()
     } finally {
       setLoading(false)
     }
-  }, [sessionId, toast, onClose])
+  }, [sessionId, toast])
 
   useEffect(() => {
     if (open) load()
