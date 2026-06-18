@@ -156,9 +156,21 @@ export default function LiveClassPage() {
   const [formHomeworkDocumentUrl, setFormHomeworkDocumentUrl] = useState('')
   const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({})
   const [openedLyThuyet, setOpenedLyThuyet] = useState<Record<string, boolean>>({})
+  const [submittedSessions, setSubmittedSessions] = useState<Set<string>>(() => {
+    if (typeof window === 'undefined') return new Set()
+    try { return new Set(JSON.parse(localStorage.getItem('btvn_submitted') ?? '[]')) } catch { return new Set() }
+  })
   const [saving, setSaving] = useState(false)
 
   const isAdmin = user?.role === 'admin'
+
+  const markSubmitted = (sessionId: string) => {
+    setSubmittedSessions((prev) => {
+      const next = new Set([...prev, sessionId])
+      try { localStorage.setItem('btvn_submitted', JSON.stringify([...next])) } catch {}
+      return next
+    })
+  }
 
   const fetchSessions = async () => {
     try {
@@ -554,14 +566,16 @@ export default function LiveClassPage() {
                 </div>
               )}
 
-              {/* Nộp BTVN */}
+              {/* Nộp / Xem giải BTVN */}
               {session.homework_file_url && (
                 <Button
                   size="sm"
+                  variant={submittedSessions.has(session.id) ? 'outline' : 'default'}
                   className="gap-1.5"
                   onClick={() => { trackView(session.id); setBtvnSessionId(session.id) }}
                 >
-                  <ClipboardList className="h-3.5 w-3.5" /> Nộp BTVN
+                  <ClipboardList className="h-3.5 w-3.5" />
+                  {submittedSessions.has(session.id) ? 'Xem giải BTVN' : 'Nộp BTVN'}
                 </Button>
               )}
 
@@ -1149,6 +1163,8 @@ export default function LiveClassPage() {
           sessionId={btvnSessionId}
           open={!!btvnSessionId}
           onClose={() => setBtvnSessionId(null)}
+          onSubmitted={() => markSubmitted(btvnSessionId)}
+          initiallySubmitted={submittedSessions.has(btvnSessionId)}
         />
       )}
 
