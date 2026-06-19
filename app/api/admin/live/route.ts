@@ -36,7 +36,12 @@ export async function POST(req: NextRequest) {
         // Tiếp tục tạo session mà không có meet_url — admin điền sau
       }
     } else if (!resolvedEventId) {
-      resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
+      try {
+        resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
+      } catch (err) {
+        console.error('findEventIdByMeetUrl error (non-fatal on create):', err)
+        resolvedEventId = null
+      }
     }
 
     const supabaseAdmin = createAdminClient()
