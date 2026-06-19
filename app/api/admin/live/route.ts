@@ -32,10 +32,8 @@ export async function POST(req: NextRequest) {
         finalMeetUrl = result.meetUrl
         resolvedEventId = result.eventId
       } catch (err: any) {
-        console.error('Failed to create calendar event automatically:', err)
-        return NextResponse.json({
-          error: `Không thể tạo phòng học Google Meet tự động: ${err.message || err}`
-        }, { status: 500 })
+        console.error('Failed to create calendar event automatically (non-fatal):', err)
+        // Tiếp tục tạo session mà không có meet_url — admin điền sau
       }
     } else if (!resolvedEventId) {
       resolvedEventId = await findEventIdByMeetUrl(finalMeetUrl)
