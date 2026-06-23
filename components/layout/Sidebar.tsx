@@ -8,7 +8,7 @@ import {
   Brain, Target, Video, Crown, GitBranch, User,
   Languages, BookOpen, BookMarked, BotMessageSquare, Sparkles,
   ChevronLeft, ChevronRight, ChevronDown, ChevronUp,
-  MoreHorizontal, X, LogOut,
+  MoreHorizontal, X, LogOut, FileText,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -25,6 +25,7 @@ const PRIMARY_NAV: NavItem[] = [
   { href: '/live', label: 'Lớp học Live', icon: Video },
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
   { href: '/practice', label: 'Luyện tập', icon: Target },
+  { href: '/exam', label: 'Thi thử', icon: FileText },
 ]
 
 const BOTTOM_NAV: NavItem[] = [
