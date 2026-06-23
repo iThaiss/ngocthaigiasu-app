@@ -22,7 +22,7 @@ import { useToast } from '@/components/ui/use-toast'
 import QuestionTutorAgent, { type TutorMessage, type TutorQuestionContext } from '@/components/QuestionTutorAgent'
 
 // Cờ tạm ẩn chức năng Thi thử. Đặt true để mở lại khi phát triển tiếp.
-const EXAM_FEATURE_ENABLED: boolean = false
+const EXAM_FEATURE_ENABLED: boolean = true
 
 type Phase = 'start' | 'exam' | 'result'
 type QuestionType = 'multiple_choice' | 'true_false' | 'short_answer'

@@ -111,18 +111,6 @@ export async function POST(req: NextRequest) {
   // Set currentPoints to remaining points for response metadata
   const currentPoints = resultObj.points_remaining ?? 0
 
-  // ── Coupon tracking ───────────────────────────────────────────────────────
-  if (couponId) {
-    const { data: couponRow } = await supabase
-      .from('coupons').select('used_count').eq('id', couponId).single()
-    await Promise.all([
-      supabase.from('coupons')
-        .update({ used_count: (couponRow?.used_count ?? 0) + 1 })
-        .eq('id', couponId),
-      supabase.from('coupon_uses').insert({ coupon_id: couponId, user_id: userId }),
-    ])
-  }
-
   // ── Affiliate commission ──────────────────────────────────────────────────
   const { data: referral } = await supabase
     .from('affiliate_referrals')
@@ -247,6 +235,6 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({
     success: true,
     vipExpiresAt: vipExpiresAt.toISOString(),
-    pointsRemaining: currentPoints - cost,
+    pointsRemaining: currentPoints,
   })
 }

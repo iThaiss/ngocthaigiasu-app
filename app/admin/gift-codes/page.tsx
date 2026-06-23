@@ -31,6 +31,7 @@ function genCode() {
 
 const PLAN_OPTIONS = (Object.keys(VIP_PLANS) as PlanId[])
   .filter((id) => !['monthly', 'yearly'].includes(id))
+  .filter((id) => ['math_vip', 'combo_vip'].includes(VIP_PLANS[id].vipPlanValue))
   .map((id) => ({
     value: id,
     label: VIP_PLANS[id].displayName + ` (${VIP_PLANS[id].durationDays} ngày)`,
