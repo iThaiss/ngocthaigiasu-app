@@ -111,119 +111,77 @@ export async function POST(req: NextRequest) {
   // Set currentPoints to remaining points for response metadata
   const currentPoints = resultObj.points_remaining ?? 0
 
-  // ── Affiliate commission ──────────────────────────────────────────────────
-  const { data: referral } = await supabase
-    .from('affiliate_referrals')
-    .select('id, referrer_id, status')
-    .eq('referee_id', userId)
-    .maybeSingle()
+  // ── Affiliate commission — chỉ lần mua đầu tiên ─────────────────────────
+  // commission_pending_referral RPC: atomic — update status + increment wallet + log tx
+  // Chỉ xử lý nếu referral.status = 'pending'; trả về success=false nếu đã commissioned
+  const commissionVND = Math.floor(cost * 1000 * 0.15)
+  const commissionPoints = Math.floor(commissionVND / 1000)
 
-  if (referral && referral.referrer_id !== userId) {
-    const planVND = cost * 1000
-    const commissionVND = Math.floor(planVND * 0.15)
-    const commissionPoints = Math.floor(commissionVND / 1000)
+  if (commissionPoints > 0) {
+    interface CommissionResult {
+      success: boolean
+      referral_id: string | null
+      referrer_id: string | null
+      points_added: number
+      commissioned_count: number
+    }
 
-    if (commissionPoints > 0) {
-      const { data: refWallet } = await supabase
-        .from('wallets')
-        .select('points')
-        .eq('user_id', referral.referrer_id)
-        .single()
+    const { data: commResult } = await supabase.rpc('commission_pending_referral', {
+      referee: userId,
+      commission_points: commissionPoints,
+      commission_amount: commissionVND,
+      tx_description: `Hoa hồng 15% gói ${planName}`,
+    }) as { data: CommissionResult | null }
 
-      const refPoints = refWallet?.points ?? 0
-
-      // Add commission points to referrer's wallet
-      await supabase
-        .from('wallets')
-        .update({ points: refPoints + commissionPoints })
-        .eq('user_id', referral.referrer_id)
-
-      await supabase.from('point_transactions').insert({
-        user_id: referral.referrer_id,
-        amount: commissionPoints,
-        type: 'commission',
-        description: `Hoa hồng 15% gói ${planName}`,
-      })
+    if (commResult?.success && commResult.referrer_id) {
+      const referrerId = commResult.referrer_id
+      const commissionedCount = Number(commResult.commissioned_count)
 
       await supabase.from('notifications').insert({
-        user_id: referral.referrer_id,
+        user_id: referrerId,
         title: 'Nhận hoa hồng giới thiệu!',
         content: `Bạn nhận được ${commissionPoints} điểm hoa hồng từ người bạn giới thiệu vừa mua gói VIP ${planName}.`,
         type: 'commission',
       })
-    }
 
-    // Milestone logic is only triggered on the FIRST purchase (when status changes from pending to commissioned)
-    if (referral.status === 'pending') {
-      await supabase
-        .from('affiliate_referrals')
-        .update({
-          status: 'commissioned',
-          commission_amount: commissionVND,
-          commission_points: commissionPoints,
-        })
-        .eq('id', referral.id)
-
-      // Milestone check
-      const { count: commissionsCount } = await supabase
-        .from('affiliate_referrals')
-        .select('*', { count: 'exact', head: true })
-        .eq('referrer_id', referral.referrer_id)
-        .eq('status', 'commissioned')
-
-      const count = commissionsCount ?? 0
-
-      // Fetch referrer's current VIP status
-      const { data: refUser } = await supabase
-        .from('users')
-        .select('is_vip, vip_expires_at, vip_plan')
-        .eq('id', referral.referrer_id)
-        .single()
-
-      const refCurrentExpiry = refUser?.vip_expires_at
-      const refBaseDate = (refCurrentExpiry && new Date(refCurrentExpiry) > new Date())
-        ? new Date(refCurrentExpiry)
-        : new Date()
-
-      // Thưởng mốc theo đúng môn người được giới thiệu vừa mua (quyết định #4)
-      const rewardSubject = VIP_PLANS[planId].vipPlanValue // 'math_vip' | 'english_vip' | 'combo_vip'
+      // Milestone VIP bonus
+      const rewardSubject = VIP_PLANS[planId].vipPlanValue
       const subjectPrefix = rewardSubject === 'math_vip' ? 'math' : rewardSubject === 'english_vip' ? 'english' : 'combo'
       const subjectLabel = rewardSubject === 'math_vip' ? 'Toán' : rewardSubject === 'english_vip' ? 'Anh' : 'Combo Toán + Anh'
 
-      if (count === 5) {
-        const newRefExpiry = new Date(refBaseDate.getTime() + 30 * 24 * 60 * 60 * 1000)
-        await supabase
-          .from('users')
-          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_monthly` })
-          .eq('id', referral.referrer_id)
+      const { data: refUser } = await supabase.from('users').select('vip_expires_at').eq('id', referrerId).single()
+      const refBaseDate = (refUser?.vip_expires_at && new Date(refUser.vip_expires_at) > new Date())
+        ? new Date(refUser.vip_expires_at)
+        : new Date()
 
+      if (commissionedCount === 5) {
+        const newExpiry = new Date(refBaseDate.getTime() + 30 * 24 * 60 * 60 * 1000)
+        await supabase.from('users')
+          .update({ is_vip: true, vip_expires_at: newExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_monthly` })
+          .eq('id', referrerId)
         await supabase.from('notifications').insert({
-          user_id: referral.referrer_id,
+          user_id: referrerId,
           title: 'Mốc giới thiệu 5 người! 🎁',
           content: `Chúc mừng! Bạn đã giới thiệu 5 người thành công. Nhận ngay 30 ngày VIP ${subjectLabel} miễn phí.`,
           type: 'milestone',
         })
-      } else if (count === 12) {
-        const newRefExpiry = new Date(refBaseDate.getTime() + 90 * 24 * 60 * 60 * 1000)
-        await supabase
-          .from('users')
-          .update({ is_vip: true, vip_expires_at: newRefExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_3months` })
-          .eq('id', referral.referrer_id)
-
+      } else if (commissionedCount === 12) {
+        const newExpiry = new Date(refBaseDate.getTime() + 90 * 24 * 60 * 60 * 1000)
+        await supabase.from('users')
+          .update({ is_vip: true, vip_expires_at: newExpiry.toISOString(), plan: rewardSubject, vip_plan: `${subjectPrefix}_3months` })
+          .eq('id', referrerId)
         await supabase.from('notifications').insert({
-          user_id: referral.referrer_id,
+          user_id: referrerId,
           title: 'Mốc giới thiệu 12 người! 🎉',
           content: `Chúc mừng! Bạn đã giới thiệu 12 người thành công. Nhận ngay 90 ngày VIP ${subjectLabel} miễn phí.`,
           type: 'milestone',
         })
-      } else if (count === 20) {
-        await supabase
-          .from('users')
+      } else if (commissionedCount === 20) {
+        await supabase.from('users')
           .update({ is_vip: true, vip_expires_at: '2099-12-31T23:59:59Z', plan: rewardSubject, vip_plan: `${subjectPrefix}_yearly` })
-          .eq('id', referral.referrer_id)
-
+          .eq('id', referrerId)
         await supabase.from('notifications').insert({
-          user_id: referral.referrer_id,
+          user_id: referrerId,
           title: 'VIP Vĩnh Viễn! 👑',
           content: `Thành tích tối cao! Bạn đã giới thiệu 20 người thành công. Kích hoạt VIP ${subjectLabel} vĩnh viễn.`,
           type: 'milestone',
