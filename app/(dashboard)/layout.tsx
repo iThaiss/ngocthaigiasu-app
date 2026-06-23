@@ -20,34 +20,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   const isSelectOrRedirect = pathname === '/select' || pathname === '/dashboard'
 
-  // Detect subject from pathname
-  const isEnglish = pathname.includes('/dashboard/english') || 
-                    pathname.includes('/vocabulary') || 
-                    pathname.includes('/grammar') || 
-                    pathname.includes('/reading') || 
-                    pathname.includes('/english-feedback')
-
-  const isMath = pathname.includes('/dashboard/math') || 
-                 pathname.includes('/solve') || 
-                 pathname.includes('/practice') || 
-                 pathname.includes('/exam') || 
-                 pathname.includes('/learning')
-
-  const [subject, setSubject] = useState<'math' | 'english' | null>(null)
-
-  useEffect(() => {
-    if (isEnglish) {
-      setSubject('english')
-    } else if (isMath) {
-      setSubject('math')
-    } else {
-      const saved = localStorage.getItem('ngocthai_subject') as 'math' | 'english' | null
-      setSubject(saved)
-    }
-  }, [pathname, isEnglish, isMath])
-
-  // Show profile completion modal only if user is logged in, profile not completed,
-  // and NOT on the subject select / redirect page
   useEffect(() => {
     if (profileCompleted === false && !isSelectOrRedirect) {
       setShowProfileModal(true)
@@ -79,10 +51,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="flex h-screen overflow-hidden bg-background">
-      {!isSelectOrRedirect && <Sidebar subject={subject} />}
+      {!isSelectOrRedirect && <Sidebar />}
       <div className="flex flex-1 flex-col overflow-hidden min-w-0">
         {!isSelectOrRedirect && <Header />}
-        <main className="flex-1 overflow-y-auto p-4 md:p-6">
+        {/* pb-14 trên mobile để tránh bị bottom tab bar che khuất */}
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 pb-20 md:pb-6">
           {children}
         </main>
       </div>
@@ -93,13 +66,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         userName={session?.user?.name ?? ''}
       />
 
-      {/* Global dictionary popup — active on any text selection across the app */}
       <DictionaryPopup />
 
-      {/* Floating help / chat bubble widget */}
       {!isSelectOrRedirect && <SupportBubble />}
 
-      {/* Pink theme cute decorations — only visible when theme=pink */}
       <PinkThemeDecorations />
     </div>
   )
