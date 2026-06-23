@@ -203,7 +203,7 @@ function MobileBottomBar({ onOpenMore }: { onOpenMore: () => void }) {
     { href: '/live', label: 'Live', icon: Video },
     { href: '/solve', label: 'Giải toán', icon: Brain },
     { href: '/practice', label: 'Luyện tập', icon: Target },
-    { href: '/payment', label: 'VIP', icon: Crown },
+    { href: '/de-thi', label: 'Đề thi', icon: FileText },
   ]
 
   return (
@@ -279,6 +279,10 @@ export default function Sidebar() {
                   <NavLink key={item.href} item={item} onClick={() => setMobileOpen(false)} />
                 ))}
                 <div className="pt-2 mt-1 border-t border-border/40 space-y-0.5">
+                  <NavLink
+                    item={{ href: '/payment', label: 'Nâng cấp VIP', icon: Crown }}
+                    onClick={() => setMobileOpen(false)}
+                  />
                   <NavLink
                     item={{ href: '/affiliate', label: 'Hoa hồng', icon: GitBranch }}
                     onClick={() => setMobileOpen(false)}
