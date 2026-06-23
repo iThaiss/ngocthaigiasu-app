@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'
 import { useAuth } from '@/lib/auth-context'
 import Sidebar from '@/components/layout/Sidebar'
 import Header from '@/components/layout/Header'
-import SupportBubble from '@/components/layout/SupportBubble'
 import ProfileCompletionModal from '@/components/ProfileCompletionModal'
 import DictionaryPopup from '@/components/vocabulary/DictionaryPopup'
 import PinkThemeDecorations from '@/components/PinkThemeDecorations'
@@ -68,7 +67,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
       <DictionaryPopup />
 
-      {!isSelectOrRedirect && <SupportBubble />}
 
       <PinkThemeDecorations />
     </div>
