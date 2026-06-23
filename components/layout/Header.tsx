@@ -3,8 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { Bell, Sun, Moon, ArrowLeftRight, LogOut, User, Calendar, Sparkles, Flower2 } from 'lucide-react'
+import { Bell, Sun, Moon, LogOut, User, Calendar, Sparkles, Flower2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { useAuth } from '@/lib/auth-context'
@@ -29,7 +28,6 @@ import {
 export default function Header() {
   const { theme, setTheme } = useTheme()
   const { user, isVip, logout } = useAuth()
-  const router = useRouter()
   const [unreadCount, setUnreadCount] = useState(0)
   const [daysLeft, setDaysLeft] = useState<number | null>(null)
   const [mounted, setMounted] = useState(false)
@@ -62,15 +60,10 @@ export default function Header() {
     }
   }, [])
 
-  const handleSwitchSubject = () => {
-    localStorage.removeItem('ngocthai_subject')
-    router.push('/select')
-  }
-
   return (
-    <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-border bg-background/95 backdrop-blur px-4 md:px-6">
+    <header className="sticky top-0 z-30 flex h-12 items-center justify-between border-b border-border bg-background/95 backdrop-blur px-4">
       {/* Left: Breadcrumbs */}
-      <div className="flex-1 min-w-0 pl-10 md:pl-0">
+      <div className="flex-1 min-w-0">
         <AppBreadcrumb />
       </div>
 
@@ -100,17 +93,6 @@ export default function Header() {
 
       {/* Right: Actions & User Menu */}
       <div className="flex items-center gap-2">
-        {/* Switch Subject Button */}
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={handleSwitchSubject}
-          className="gap-1.5 h-9 px-2.5 text-muted-foreground hover:text-foreground"
-        >
-          <ArrowLeftRight className="h-4 w-4" />
-          <span className="hidden sm:inline text-xs font-medium">Chọn môn khác</span>
-        </Button>
-
         {/* Notifications */}
         <Link href="/notifications">
           <Button variant="ghost" size="icon" className="relative h-9 w-9">
