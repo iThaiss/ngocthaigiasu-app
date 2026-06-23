@@ -281,75 +281,14 @@ export default function ExamDetailPage() {
   const displayNum = q ? getPartDisplayNum(questions, q.question_number) : 0
   const embedUrl = exam.pdf_url ? toEmbedUrl(exam.pdf_url) : null
 
-  const PdfPanel = () => embedUrl ? (
+  // pdfContent được tính 1 lần — không re-create mỗi render để tránh iframe reload
+  const pdfContent = embedUrl ? (
     <iframe src={embedUrl} className="w-full h-full border-0" title={exam.title} allow="autoplay" />
   ) : (
     <div className="flex h-full items-center justify-center flex-col gap-2 text-muted-foreground">
       <FileText className="h-8 w-8 opacity-30" />
       <p className="text-sm">Chưa có file đề thi</p>
     </div>
-  )
-
-  const AnswerPanel = () => (
-    <>
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        <div className="flex items-center gap-2 flex-wrap">
-          <Badge>{PART_LABELS[q.part]}</Badge>
-          <Badge variant="outline">Câu {displayNum}</Badge>
-          <Badge variant="secondary">{q.max_score}đ</Badge>
-          {q.question_type === 'true_false' && (
-            <span className="text-xs text-muted-foreground">Chọn Đúng/Sai cho từng ý</span>
-          )}
-        </div>
-
-        {/* Session expired warning */}
-        {needsLogin && (
-          <div className="rounded-md border border-destructive/40 bg-destructive/5 p-3 flex items-center gap-2">
-            <LogIn className="h-4 w-4 text-destructive shrink-0" />
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-destructive">Phiên đăng nhập hết hạn</p>
-              <p className="text-xs text-muted-foreground">Bài làm đã lưu. Đăng nhập lại rồi nộp bài.</p>
-            </div>
-            <Button size="sm" variant="destructive" asChild className="shrink-0">
-              <a href="/api/auth/signin">Đăng nhập</a>
-            </Button>
-          </div>
-        )}
-
-        <AnswerInput
-          question={q}
-          value={answers[q.question_number]}
-          onChange={(val) => {
-            setAnswers((prev) => ({ ...prev, [q.question_number]: val }))
-            setNeedsLogin(false)
-          }}
-        />
-
-        <div className="pt-2 border-t">
-          <p className="text-xs font-medium text-muted-foreground mb-2">Danh sách câu</p>
-          <DethiQuestionGrid
-            questions={questions}
-            current={current}
-            answered={answeredSet}
-            onSelect={(i) => { setCurrent(i); setMobileTab('answers') }}
-          />
-        </div>
-      </div>
-
-      <div className="border-t p-3 flex justify-between shrink-0">
-        <Button variant="outline" size="sm" disabled={current === 0} onClick={() => setCurrent((c) => c - 1)}>
-          ← Trước
-        </Button>
-        {current < questions.length - 1 ? (
-          <Button size="sm" onClick={() => { setCurrent((c) => c + 1); setMobileTab('answers') }}>Sau →</Button>
-        ) : (
-          <Button size="sm" variant="destructive" onClick={() => submitExam(false)} disabled={submitting}>
-            {submitting ? <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" /> : null}
-            Nộp bài
-          </Button>
-        )}
-      </div>
-    </>
   )
 
   return (
@@ -476,26 +415,105 @@ export default function ExamDetailPage() {
             {/* Body */}
             <div className="flex flex-col lg:flex-row flex-1 min-h-0 border-x border-b rounded-b-lg overflow-hidden">
 
-              {/* Mobile: single panel, tab-switched */}
+              {/* Mobile: cả 2 panel luôn mount — dùng display để ẩn/hiện, tránh iframe reload */}
               <div className="flex lg:hidden flex-col flex-1 min-h-0">
-                {mobileTab === 'pdf' ? (
-                  <div className="flex-1 bg-muted/20">
-                    <PdfPanel />
+                <div className="flex-1 bg-muted/20" style={{ display: mobileTab === 'pdf' ? 'flex' : 'none' }}>
+                  {pdfContent}
+                </div>
+                <div className="flex flex-col flex-1 min-h-0" style={{ display: mobileTab === 'answers' ? 'flex' : 'none' }}>
+                  <div className="flex-1 overflow-y-auto p-4 space-y-4">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Badge>{PART_LABELS[q.part]}</Badge>
+                      <Badge variant="outline">Câu {displayNum}</Badge>
+                      <Badge variant="secondary">{q.max_score}đ</Badge>
+                      {q.question_type === 'true_false' && (
+                        <span className="text-xs text-muted-foreground">Chọn Đúng/Sai cho từng ý</span>
+                      )}
+                    </div>
+                    {needsLogin && (
+                      <div className="rounded-md border border-destructive/40 bg-destructive/5 p-3 flex items-center gap-2">
+                        <LogIn className="h-4 w-4 text-destructive shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium text-destructive">Phiên đăng nhập hết hạn</p>
+                          <p className="text-xs text-muted-foreground">Bài làm đã lưu. Đăng nhập lại rồi nộp bài.</p>
+                        </div>
+                        <Button size="sm" variant="destructive" asChild className="shrink-0">
+                          <a href="/api/auth/signin">Đăng nhập</a>
+                        </Button>
+                      </div>
+                    )}
+                    <AnswerInput
+                      question={q}
+                      value={answers[q.question_number]}
+                      onChange={(val) => { setAnswers((prev) => ({ ...prev, [q.question_number]: val })); setNeedsLogin(false) }}
+                    />
+                    <div className="pt-2 border-t">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Danh sách câu</p>
+                      <DethiQuestionGrid questions={questions} current={current} answered={answeredSet}
+                        onSelect={(i) => { setCurrent(i); setMobileTab('answers') }} />
+                    </div>
                   </div>
-                ) : (
-                  <div className="flex flex-col flex-1 min-h-0">
-                    <AnswerPanel />
+                  <div className="border-t p-3 flex justify-between shrink-0">
+                    <Button variant="outline" size="sm" disabled={current === 0} onClick={() => setCurrent((c) => c - 1)}>← Trước</Button>
+                    {current < questions.length - 1 ? (
+                      <Button size="sm" onClick={() => { setCurrent((c) => c + 1); setMobileTab('answers') }}>Sau →</Button>
+                    ) : (
+                      <Button size="sm" variant="destructive" onClick={() => submitExam(false)} disabled={submitting}>
+                        {submitting ? <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" /> : null}Nộp bài
+                      </Button>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
 
               {/* Desktop: side by side */}
               <div className="hidden lg:flex flex-row flex-1 min-h-0">
                 <div className="flex-1 border-r bg-muted/20">
-                  <PdfPanel />
+                  {pdfContent}
                 </div>
                 <div className="w-[340px] shrink-0 flex flex-col">
-                  <AnswerPanel />
+                  <div className="flex-1 overflow-y-auto p-4 space-y-4">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Badge>{PART_LABELS[q.part]}</Badge>
+                      <Badge variant="outline">Câu {displayNum}</Badge>
+                      <Badge variant="secondary">{q.max_score}đ</Badge>
+                      {q.question_type === 'true_false' && (
+                        <span className="text-xs text-muted-foreground">Chọn Đúng/Sai cho từng ý</span>
+                      )}
+                    </div>
+                    {needsLogin && (
+                      <div className="rounded-md border border-destructive/40 bg-destructive/5 p-3 flex items-center gap-2">
+                        <LogIn className="h-4 w-4 text-destructive shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium text-destructive">Phiên đăng nhập hết hạn</p>
+                          <p className="text-xs text-muted-foreground">Bài làm đã lưu. Đăng nhập lại rồi nộp bài.</p>
+                        </div>
+                        <Button size="sm" variant="destructive" asChild className="shrink-0">
+                          <a href="/api/auth/signin">Đăng nhập</a>
+                        </Button>
+                      </div>
+                    )}
+                    <AnswerInput
+                      question={q}
+                      value={answers[q.question_number]}
+                      onChange={(val) => { setAnswers((prev) => ({ ...prev, [q.question_number]: val })); setNeedsLogin(false) }}
+                    />
+                    <div className="pt-2 border-t">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Danh sách câu</p>
+                      <DethiQuestionGrid questions={questions} current={current} answered={answeredSet}
+                        onSelect={(i) => setCurrent(i)} />
+                    </div>
+                  </div>
+                  <div className="border-t p-3 flex justify-between shrink-0">
+                    <Button variant="outline" size="sm" disabled={current === 0} onClick={() => setCurrent((c) => c - 1)}>← Trước</Button>
+                    {current < questions.length - 1 ? (
+                      <Button size="sm" onClick={() => setCurrent((c) => c + 1)}>Sau →</Button>
+                    ) : (
+                      <Button size="sm" variant="destructive" onClick={() => submitExam(false)} disabled={submitting}>
+                        {submitting ? <Loader2 className="h-3.5 w-3.5 animate-spin mr-1" /> : null}Nộp bài
+                      </Button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
