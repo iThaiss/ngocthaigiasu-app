@@ -56,11 +56,19 @@ export async function GET(
   })
 
   const token = await at.toJwt()
-  const hlsUrl = `${process.env.NEXT_PUBLIC_MEDIAMTX_HLS_BASE_URL}/live/${roomName}/index.m3u8`
+  // strip BOM / khoảng trắng phòng env var bị lỗi encoding
+  const hlsBase = (process.env.NEXT_PUBLIC_MEDIAMTX_HLS_BASE_URL ?? '')
+    .replace(/^﻿/, '')
+    .trim()
+    .replace(/\/$/, '')
+  const livekitUrl = (process.env.NEXT_PUBLIC_LIVEKIT_URL ?? '')
+    .replace(/^﻿/, '')
+    .trim()
+  const hlsUrl = `${hlsBase}/live/${roomName}/index.m3u8`
 
   return NextResponse.json({
     token,
-    livekitUrl: process.env.NEXT_PUBLIC_LIVEKIT_URL,
+    livekitUrl,
     hlsUrl,
     roomName,
     sessionTitle: liveSession.title,
