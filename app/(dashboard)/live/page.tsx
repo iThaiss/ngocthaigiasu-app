@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   Video, Calendar, Clock, Users, ShieldAlert,
   Crown, Play, ExternalLink, AlertCircle, Loader2, Plus, Edit2, Trash2, BookOpen, Film,
-  PencilLine, ClipboardList, BarChart3, ChevronDown, ChevronRight, Folder
+  PencilLine, ClipboardList, BarChart3, ChevronDown, ChevronRight, Folder, Radio
 } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -495,12 +495,21 @@ export default function LiveClassPage() {
             <div className="flex flex-wrap items-center gap-2 border-t sm:border-t-0 pt-3 sm:pt-0 w-full sm:w-auto sm:justify-end">
               {/* Vào học — chỉ live */}
               {isLive && (
-                <a href={`/api/live/join?id=${session.id}`} onClick={() => trackView(session.id)}>
+                <Link href={`/live/${session.id}`} onClick={() => trackView(session.id)}>
                   <Button className="bg-rose-500 hover:bg-rose-600 text-white font-bold gap-1.5 h-9 shadow-sm text-sm">
                     <Play className="h-4 w-4 fill-current" />
-                    Vào học ngay <ExternalLink className="h-3.5 w-3.5" />
+                    Vào học ngay
                   </Button>
-                </a>
+                </Link>
+              )}
+              {/* Admin: mở lớp khi upcoming */}
+              {isAdmin && !isLive && !isEnded && (
+                <Link href={`/live/${session.id}`}>
+                  <Button variant="outline" size="sm" className="gap-1.5 border-rose-500/40 text-rose-600 hover:bg-rose-500/10">
+                    <Radio className="h-3.5 w-3.5" />
+                    Mở lớp học
+                  </Button>
+                </Link>
               )}
 
               {/* Nút Lý thuyết — hiện nếu có record hoặc bản viết tay */}
