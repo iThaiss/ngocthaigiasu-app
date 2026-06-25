@@ -26,15 +26,17 @@ export async function POST(
     return NextResponse.json({ error: 'Phòng học chưa được tạo' }, { status: 404 })
   }
 
-  const livekitHost = process.env.LIVEKIT_URL!
+  const livekitHost = (process.env.LIVEKIT_URL ?? '').replace(/^﻿/, '').trim()
     .replace('wss://', 'https://')
     .replace('ws://', 'http://')
+  const apiKey = (process.env.LIVEKIT_API_KEY ?? '').replace(/^﻿/, '').trim()
+  const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').replace(/^﻿/, '').trim()
 
-  const roomService = new RoomServiceClient(
-    livekitHost,
-    process.env.LIVEKIT_API_KEY!,
-    process.env.LIVEKIT_API_SECRET!
-  )
+  if (!apiKey || !apiSecret) {
+    return NextResponse.json({ error: 'Thiếu LiveKit API credentials' }, { status: 500 })
+  }
+
+  const roomService = new RoomServiceClient(livekitHost, apiKey, apiSecret)
 
   const roomName = liveSession.livekit_room_name
 

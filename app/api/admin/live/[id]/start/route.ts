@@ -13,15 +13,17 @@ export async function POST(
     return NextResponse.json({ error: 'Unauthorized' }, { status: 403 })
   }
 
-  const livekitHost = process.env.LIVEKIT_URL!
+  const livekitHost = (process.env.LIVEKIT_URL ?? '').replace(/^﻿/, '').trim()
     .replace('wss://', 'https://')
     .replace('ws://', 'http://')
+  const apiKey = (process.env.LIVEKIT_API_KEY ?? '').replace(/^﻿/, '').trim()
+  const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').replace(/^﻿/, '').trim()
 
-  const roomService = new RoomServiceClient(
-    livekitHost,
-    process.env.LIVEKIT_API_KEY!,
-    process.env.LIVEKIT_API_SECRET!
-  )
+  if (!apiKey || !apiSecret) {
+    return NextResponse.json({ error: 'Thiếu LiveKit API credentials' }, { status: 500 })
+  }
+
+  const roomService = new RoomServiceClient(livekitHost, apiKey, apiSecret)
 
   const roomName = `live-${params.id.slice(0, 8)}`
 
@@ -43,12 +45,14 @@ export async function POST(
     .update({ livekit_room_name: roomName, status: 'live' })
     .eq('id', params.id)
 
-  const rtmpBase = process.env.MEDIAMTX_RTMP_URL ?? 'rtmp://localhost'
-  const hlsBase = process.env.NEXT_PUBLIC_MEDIAMTX_HLS_BASE_URL ?? 'http://localhost:8888'
+  const rtmpBase = (process.env.MEDIAMTX_RTMP_URL ?? 'rtmp://localhost').replace(/^﻿/, '').trim()
+  const hlsBase = (process.env.NEXT_PUBLIC_MEDIAMTX_HLS_BASE_URL ?? 'http://localhost:8888').replace(/^﻿/, '').trim().replace(/\/$/, '')
+  const streamKey = process.env.STREAM_KEY ?? 'stream'
 
   return NextResponse.json({
     roomName,
-    rtmpUrl: `${rtmpBase}/live/${roomName}`,
-    hlsUrl: `${hlsBase}/live/${roomName}/index.m3u8`,
+    rtmpUrl: `${rtmpBase}/live`,
+    streamKey,
+    hlsUrl: `${hlsBase}/live/${streamKey}/index.m3u8`,
   })
 }
