@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import {
   LiveKitRoom,
+  RoomAudioRenderer,
   useParticipants,
   useLocalParticipant,
   useDataChannel,
@@ -218,6 +219,7 @@ export default function ClassroomPage() {
       audio={false}
       className="h-[calc(100vh-4rem)] flex flex-col"
     >
+      <RoomAudioRenderer />
       <ClassroomContent
         sessionId={sessionId}
         roomInfo={roomInfo}
