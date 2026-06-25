@@ -1,0 +1,17 @@
+# MediaMTX v1.19+ config cho lop hoc live
+
+rtmpAddress: :1935
+hlsAddress: :8888
+rtspAddress: :8554
+webrtcAddress: :8889
+apiAddress: :9997
+
+hls: yes
+hlsVariant: fmp4
+hlsSegmentCount: 3
+hlsSegmentDuration: 2s
+
+api: yes
+
+paths:
+  all_others:

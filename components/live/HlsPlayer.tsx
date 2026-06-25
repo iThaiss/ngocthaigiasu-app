@@ -24,8 +24,16 @@ export default function HlsPlayer({ src, className = '' }: HlsPlayerProps) {
       hlsRef.current?.destroy()
 
       const hls = new Hls({
-        lowLatencyMode: true,
         backBufferLength: 30,
+        // MediaMTX HLS dùng cookie session (Secure, SameSite=None) — phải gửi
+        // credentials cho request cross-origin, nếu không sub-playlist bị "authentication error"
+        xhrSetup: (xhr) => {
+          xhr.withCredentials = true
+        },
+        fetchSetup: (context, initParams) => {
+          initParams.credentials = 'include'
+          return new Request(context.url, initParams)
+        },
       })
       hlsRef.current = hls
 
