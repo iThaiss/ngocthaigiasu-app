@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS live_sessions (
   end_time           TIMESTAMPTZ NOT NULL,
   status             live_status DEFAULT 'upcoming' NOT NULL,
   subject            subject_type NOT NULL,
-  meet_url           TEXT NOT NULL,          -- Link Google Meet gốc (chỉ hiển thị với Admin hoặc đi qua API redirect)
+  meet_url           TEXT,                   -- Link Google Meet gốc (chỉ hiển thị với Admin hoặc đi qua API redirect)
   external_event_id  VARCHAR(255),  -- ID sự kiện Lịch để gọi Google Calendar API
   recording_url      TEXT,              -- Video xem lại (phần 1) sau khi học xong
   recording_url_2    TEXT,              -- Video xem lại (phần 2) — tùy chọn

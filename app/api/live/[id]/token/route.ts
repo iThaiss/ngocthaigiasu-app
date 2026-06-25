@@ -36,15 +36,22 @@ export async function GET(
 
   const roomName = liveSession.livekit_room_name ?? `session-${params.id.slice(0, 8)}`
 
-  const at = new AccessToken(
-    process.env.LIVEKIT_API_KEY!,
-    process.env.LIVEKIT_API_SECRET!,
-    {
-      identity: session.user.id,
-      name: session.user.name ?? 'Học sinh',
-      ttl: '4h',
-    }
-  )
+  // Lấy tên từ DB (profile name) thay vì Google name
+  const { data: userData } = await supabase
+    .from('users')
+    .select('name')
+    .eq('id', session.user.id)
+    .single()
+  const displayName = userData?.name ?? session.user.name ?? 'Học sinh'
+
+  const apiKey = (process.env.LIVEKIT_API_KEY ?? '').replace(/^﻿/, '').trim()
+  const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').replace(/^﻿/, '').trim()
+
+  const at = new AccessToken(apiKey, apiSecret, {
+    identity: session.user.id,
+    name: displayName,
+    ttl: '4h',
+  })
 
   at.addGrant({
     roomJoin: true,
@@ -56,15 +63,12 @@ export async function GET(
   })
 
   const token = await at.toJwt()
-  // strip BOM / khoảng trắng phòng env var bị lỗi encoding
   const hlsBase = (process.env.NEXT_PUBLIC_MEDIAMTX_HLS_BASE_URL ?? '')
-    .replace(/^﻿/, '')
-    .trim()
-    .replace(/\/$/, '')
+    .replace(/^﻿/, '').trim().replace(/\/$/, '')
   const livekitUrl = (process.env.NEXT_PUBLIC_LIVEKIT_URL ?? '')
-    .replace(/^﻿/, '')
-    .trim()
-  const hlsUrl = `${hlsBase}/live/${roomName}/index.m3u8`
+    .replace(/^﻿/, '').trim()
+  const streamKey = (process.env.STREAM_KEY ?? 'stream').trim()
+  const hlsUrl = `${hlsBase}/live/${streamKey}/index.m3u8`
 
   return NextResponse.json({
     token,
