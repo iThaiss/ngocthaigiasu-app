@@ -20,14 +20,9 @@ export async function POST(
   const apiKey = (process.env.LIVEKIT_API_KEY ?? '').trim()
   const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').trim()
 
-  // debug — xóa sau khi fix
-  return NextResponse.json({
-    debug: true,
-    livekitHost: livekitHost.slice(0, 40),
-    apiKeyLen: apiKey.length,
-    apiKeyFirst6: apiKey.slice(0, 6),
-    apiSecretLen: apiSecret.length,
-  })
+  if (!apiKey || !apiSecret) {
+    return NextResponse.json({ error: 'Thiếu LiveKit API credentials' }, { status: 500 })
+  }
 
 
   const roomService = new RoomServiceClient(livekitHost, apiKey, apiSecret)

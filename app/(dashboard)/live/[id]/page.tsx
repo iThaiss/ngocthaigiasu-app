@@ -102,8 +102,6 @@ export default function ClassroomPage() {
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
       setStartResult({ rtmpUrl: data.rtmpUrl, hlsUrl: data.hlsUrl })
-      // Re-fetch token now that room exists
-      await fetchToken()
     } catch (err: any) {
       toast({ variant: 'destructive', title: 'Lỗi', description: err.message })
     } finally {
