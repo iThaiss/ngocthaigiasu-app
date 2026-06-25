@@ -7,9 +7,9 @@ webrtcAddress: :8889
 apiAddress: :9997
 
 hls: yes
-hlsVariant: fmp4
-hlsSegmentCount: 3
-hlsSegmentDuration: 2s
+hlsVariant: mpegts
+hlsSegmentCount: 7
+hlsSegmentDuration: 1s
 
 api: yes
 

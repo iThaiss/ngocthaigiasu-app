@@ -1,38 +1,21 @@
 # MediaMTX config cho lớp học live
 # Tải tại: https://github.com/bluenviron/mediamtx/releases
 # Chạy: ./mediamtx mediamtx.yml
+# (Bản đang dùng thực tế: tools/mediamtx/mediamtx.yml)
 
-###############################################
-# Cổng mạng
-###############################################
-rtmpAddress: :1935     # OBS/Meld Studio stream vào đây
+rtmpAddress: :1935     # Meld Studio stream vào đây
 hlsAddress: :8888      # Học sinh xem qua đây (HLS)
 rtspAddress: :8554
 webrtcAddress: :8889
 apiAddress: :9997
 
-###############################################
-# HLS settings — độ trễ thấp
-###############################################
+# HLS settings — mpegts gộp audio+video vào 1 luồng .ts (tương thích tốt nhất với hls.js)
 hls: yes
-hlsVariant: lowLatency
-hlsSegmentCount: 3
+hlsVariant: mpegts
+hlsSegmentCount: 7
 hlsSegmentDuration: 1s
-hlsPartDuration: 200ms
 
-###############################################
-# API (dùng để check status nếu cần)
-###############################################
 api: yes
 
-###############################################
-# Paths — mỗi stream key là 1 path
-###############################################
 paths:
-  # Cho phép stream đến bất kỳ path nào dạng /live/{room_name}
-  live/:
-    source: publisher
-    # Chỉ cho phép publish từ localhost (giáo viên)
-    publishIPs: [127.0.0.1, ::1]
-    # Không giới hạn số người xem HLS
-    readIPs: []
+  all_others:
