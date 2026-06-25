@@ -36,13 +36,13 @@ export async function GET(
 
   const roomName = liveSession.livekit_room_name ?? `session-${params.id.slice(0, 8)}`
 
-  // Lấy tên từ DB (profile name) thay vì Google name
   const { data: userData } = await supabase
     .from('users')
-    .select('name')
+    .select('name, avatar_url')
     .eq('id', session.user.id)
     .single()
   const displayName = userData?.name ?? session.user.name ?? 'Học sinh'
+  const avatarUrl = userData?.avatar_url ?? session.user.image ?? ''
 
   const apiKey = (process.env.LIVEKIT_API_KEY ?? '').replace(/^﻿/, '').trim()
   const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').replace(/^﻿/, '').trim()
@@ -50,13 +50,14 @@ export async function GET(
   const at = new AccessToken(apiKey, apiSecret, {
     identity: session.user.id,
     name: displayName,
+    metadata: JSON.stringify({ avatar: avatarUrl }),
     ttl: '4h',
   })
 
   at.addGrant({
     roomJoin: true,
     room: roomName,
-    canPublish: false,
+    canPublish: isAdmin,
     canSubscribe: true,
     canPublishData: true,
     roomAdmin: isAdmin,

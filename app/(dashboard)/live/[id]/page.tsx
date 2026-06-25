@@ -104,8 +104,6 @@ export default function ClassroomPage() {
       const data = await res.json()
       if (!res.ok) throw new Error(data.error)
       setStartResult({ rtmpUrl: data.rtmpUrl, streamKey: data.streamKey, hlsUrl: data.hlsUrl })
-      // Re-fetch token now that room exists
-      await fetchToken()
     } catch (err: any) {
       toast({ variant: 'destructive', title: 'Lỗi', description: err.message })
     } finally {
@@ -241,6 +239,10 @@ function ClassroomContent({
   const participants = useParticipants()
   const room = useRoomContext()
 
+  const getMyAvatar = useCallback(() => {
+    try { return JSON.parse(localParticipant?.metadata ?? '{}').avatar ?? '' } catch { return '' }
+  }, [localParticipant])
+
   const [mobileTab, setMobileTab] = useState<'video' | 'chat' | 'people'>('video')
   const [micEnabled, setMicEnabled] = useState(false)
   const [handRaised, setHandRaised] = useState(false)
@@ -368,9 +370,11 @@ function ClassroomContent({
       return
     }
 
+    const avatar = getMyAvatar()
     const payload = {
       userId: localParticipant.identity,
       userName: localParticipant.name ?? 'Học sinh',
+      userAvatar: avatar,
       text,
       time: Date.now(),
     }
@@ -380,6 +384,7 @@ function ClassroomContent({
       id: `local-${Date.now()}`,
       userId: payload.userId,
       userName: payload.userName,
+      userAvatar: avatar,
       text: payload.text,
       time: payload.time,
     }])
@@ -389,9 +394,11 @@ function ClassroomContent({
 
   const sendReaction = (value: '1' | '0') => {
     if (!localParticipant) return
+    const avatar = getMyAvatar()
     const payload = {
       userId: localParticipant.identity,
       userName: localParticipant.name ?? 'Học sinh',
+      userAvatar: avatar,
       text: value,
       time: Date.now(),
     }
@@ -400,6 +407,7 @@ function ClassroomContent({
       id: `local-reaction-${Date.now()}`,
       userId: payload.userId,
       userName: payload.userName,
+      userAvatar: avatar,
       text: value,
       time: payload.time,
       isReaction: true,
@@ -537,14 +545,23 @@ function ClassroomContent({
             'flex gap-2',
             msg.isReaction && 'opacity-70'
           )}>
-            <div className={cn(
-              'h-7 w-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0',
-              msg.isReaction
-                ? msg.text === '1' ? 'bg-emerald-500/20 text-emerald-600' : 'bg-rose-500/20 text-rose-500'
-                : 'bg-primary/10 text-primary'
-            )}>
-              {msg.isReaction ? (msg.text === '1' ? '✓' : '?') : (msg.userName[0] ?? 'H').toUpperCase()}
-            </div>
+            {msg.userAvatar && !msg.isReaction ? (
+              <img
+                src={msg.userAvatar}
+                alt=""
+                className="h-7 w-7 rounded-full shrink-0 object-cover"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              <div className={cn(
+                'h-7 w-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0',
+                msg.isReaction
+                  ? msg.text === '1' ? 'bg-emerald-500/20 text-emerald-600' : 'bg-rose-500/20 text-rose-500'
+                  : 'bg-primary/10 text-primary'
+              )}>
+                {msg.isReaction ? (msg.text === '1' ? '✓' : '?') : (msg.userName[0] ?? 'H').toUpperCase()}
+              </div>
+            )}
             <div className="min-w-0 flex-1">
               <div className="flex items-baseline gap-1.5">
                 <span className="text-[11px] font-semibold text-foreground truncate">{msg.userName}</span>
@@ -654,12 +671,23 @@ function ClassroomContent({
                 isSpeaking ? 'bg-emerald-500/10' : 'hover:bg-muted/40'
               )}
             >
-              <div className={cn(
-                'h-6 w-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0',
-                isSpeaking ? 'bg-emerald-500 text-white' : 'bg-muted text-muted-foreground'
-              )}>
-                {(p.name ?? 'H')[0].toUpperCase()}
-              </div>
+              {(() => {
+                let avatar = ''
+                try { avatar = JSON.parse(p.metadata ?? '{}').avatar ?? '' } catch {}
+                return avatar ? (
+                  <img src={avatar} alt="" className={cn(
+                    'h-6 w-6 rounded-full shrink-0 object-cover',
+                    isSpeaking && 'ring-2 ring-emerald-500'
+                  )} referrerPolicy="no-referrer" />
+                ) : (
+                  <div className={cn(
+                    'h-6 w-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0',
+                    isSpeaking ? 'bg-emerald-500 text-white' : 'bg-muted text-muted-foreground'
+                  )}>
+                    {(p.name ?? 'H')[0].toUpperCase()}
+                  </div>
+                )
+              })()}
               <span className="text-xs truncate flex-1">
                 {p.name ?? 'Học sinh'}
                 {isRaisingHand && ' ✋'}
