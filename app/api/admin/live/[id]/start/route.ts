@@ -17,15 +17,22 @@ export async function POST(
     .replace('wss://', 'https://')
     .replace('ws://', 'http://')
 
+  const apiKey = (process.env.LIVEKIT_API_KEY ?? '').trim()
+  const apiSecret = (process.env.LIVEKIT_API_SECRET ?? '').trim()
+
+  // debug — xóa sau khi fix
+  console.log('[live/start] LIVEKIT_URL:', livekitHost.slice(0, 30))
+  console.log('[live/start] API_KEY:', apiKey.slice(0, 6), 'len:', apiKey.length)
+  console.log('[live/start] API_SECRET len:', apiSecret.length)
+
   if (!livekitHost) {
     return NextResponse.json({ error: 'LIVEKIT_URL chưa được cấu hình' }, { status: 500 })
   }
+  if (!apiKey || !apiSecret) {
+    return NextResponse.json({ error: `Thiếu API credentials (key=${apiKey.length} secret=${apiSecret.length})` }, { status: 500 })
+  }
 
-  const roomService = new RoomServiceClient(
-    livekitHost,
-    process.env.LIVEKIT_API_KEY!,
-    process.env.LIVEKIT_API_SECRET!
-  )
+  const roomService = new RoomServiceClient(livekitHost, apiKey, apiSecret)
 
   const roomName = `live-${params.id.slice(0, 8)}`
 
