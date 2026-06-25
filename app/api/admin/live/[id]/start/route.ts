@@ -13,9 +13,13 @@ export async function POST(
     return NextResponse.json({ error: 'Unauthorized' }, { status: 403 })
   }
 
-  const livekitHost = process.env.LIVEKIT_URL!
+  const livekitHost = (process.env.LIVEKIT_URL ?? '').trim()
     .replace('wss://', 'https://')
     .replace('ws://', 'http://')
+
+  if (!livekitHost) {
+    return NextResponse.json({ error: 'LIVEKIT_URL chưa được cấu hình' }, { status: 500 })
+  }
 
   const roomService = new RoomServiceClient(
     livekitHost,
