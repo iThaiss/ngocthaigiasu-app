@@ -5,23 +5,19 @@ import { useParams, useRouter } from 'next/navigation'
 import {
   LiveKitRoom,
   RoomAudioRenderer,
-  useParticipants,
   useLocalParticipant,
-  useDataChannel,
-  useRoomContext,
 } from '@livekit/components-react'
-import { Track, ParticipantEvent } from 'livekit-client'
 import {
   Mic, MicOff, Hand, Users, MessageSquare, Send, Loader2,
-  Crown, Video, Settings, LogOut, Volume2, CheckCircle2, XCircle,
-  Radio, Copy, Check, Pin, BarChart3, VolumeX, Timer, Plus, Trash2, Megaphone,
+  Crown, Video, LogOut, CheckCircle2, XCircle,
+  Radio, Copy, Check, BarChart3, VolumeX, Timer, Plus, Megaphone,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { supabase } from '@/lib/supabase'
 import HlsPlayer from '@/components/live/HlsPlayer'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { useToast } from '@/components/ui/use-toast'
-import { useAuth } from '@/lib/auth-context'
 
 // ─── Types ───────────────────────────────────────────────
 interface RoomInfo {
@@ -32,6 +28,9 @@ interface RoomInfo {
   sessionTitle: string
   sessionStatus: string
   isAdmin: boolean
+  userId: string
+  userName: string
+  userAvatar?: string
 }
 
 interface ChatMessage {
@@ -50,15 +49,11 @@ interface HandRaiser {
   time: number
 }
 
-// ─── Data channel message protocol ───────────────────────
-type MsgType = 'chat' | 'raise_hand' | 'lower_hand' | 'mic_approved' | 'mic_revoked' | 'reaction' | 'announcement' | 'poll' | 'poll_vote'
-
-function encode(type: MsgType, payload: Record<string, unknown>) {
-  return new TextEncoder().encode(JSON.stringify({ type, ...payload }))
-}
-
-function decode(data: Uint8Array) {
-  try { return JSON.parse(new TextDecoder().decode(data)) } catch { return null }
+interface OnlineUser {
+  userId: string
+  userName: string
+  userAvatar?: string
+  isAdmin: boolean
 }
 
 // ─── Main export ─────────────────────────────────────────
@@ -66,14 +61,13 @@ export default function ClassroomPage() {
   const params = useParams()
   const router = useRouter()
   const { toast } = useToast()
-  const { user } = useAuth()
   const sessionId = params.id as string
 
   const [roomInfo, setRoomInfo] = useState<RoomInfo | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  // Admin: start stream modal
+  // Admin: start stream
   const [startResult, setStartResult] = useState<{ rtmpUrl: string; streamKey: string; hlsUrl: string } | null>(null)
   const [starting, setStarting] = useState(false)
   const [copied, setCopied] = useState(false)
@@ -112,7 +106,7 @@ export default function ClassroomPage() {
     }
   }
 
-  const copyRtmp = () => {
+  const copyKey = () => {
     if (!startResult) return
     navigator.clipboard.writeText(startResult.streamKey)
     setCopied(true)
@@ -189,7 +183,7 @@ export default function ClassroomPage() {
                   <code className="flex-1 text-xs bg-background border rounded-lg px-3 py-2 font-mono">
                     {startResult.streamKey}
                   </code>
-                  <Button size="icon" variant="outline" className="h-9 w-9 shrink-0" onClick={copyRtmp}>
+                  <Button size="icon" variant="outline" className="h-9 w-9 shrink-0" onClick={copyKey}>
                     {copied ? <Check className="h-3.5 w-3.5 text-emerald-500" /> : <Copy className="h-3.5 w-3.5" />}
                   </Button>
                 </div>
@@ -198,10 +192,7 @@ export default function ClassroomPage() {
             <p className="text-xs text-muted-foreground">
               Sau khi dán vào Meld Studio và bắt đầu stream, học sinh sẽ thấy video của bạn trong vài giây.
             </p>
-            <Button
-              onClick={() => window.location.reload()}
-              className="w-full"
-            >
+            <Button onClick={() => window.location.reload()} className="w-full">
               Vào phòng dạy học
             </Button>
           </div>
@@ -210,25 +201,32 @@ export default function ClassroomPage() {
     )
   }
 
+  return <ClassroomContent sessionId={sessionId} roomInfo={roomInfo} />
+}
+
+// ─── Mic layer (chỉ mount khi cần dùng mic — giữ slot LiveKit tối thiểu) ───
+function MicController({ publishMic }: { publishMic: boolean }) {
+  const { localParticipant } = useLocalParticipant()
+  useEffect(() => {
+    if (!localParticipant) return
+    localParticipant.setMicrophoneEnabled(publishMic).catch(() => {})
+  }, [localParticipant, publishMic])
+  return null
+}
+
+function MicLayer({
+  serverUrl, token, publishMic,
+}: { serverUrl: string; token: string; publishMic: boolean }) {
+  if (!serverUrl || !token) return null
   return (
-    <LiveKitRoom
-      serverUrl={roomInfo.livekitUrl}
-      token={roomInfo.token}
-      connect={true}
-      video={false}
-      audio={false}
-      className="h-[calc(100vh-4rem)] flex flex-col"
-    >
+    <LiveKitRoom serverUrl={serverUrl} token={token} connect audio={false} video={false}>
       <RoomAudioRenderer />
-      <ClassroomContent
-        sessionId={sessionId}
-        roomInfo={roomInfo}
-      />
+      <MicController publishMic={publishMic} />
     </LiveKitRoom>
   )
 }
 
-// ─── Classroom Content (inside LiveKitRoom context) ───────
+// ─── Classroom Content ───────────────────────────────────
 function ClassroomContent({
   sessionId,
   roomInfo,
@@ -237,27 +235,31 @@ function ClassroomContent({
   roomInfo: RoomInfo
 }) {
   const { toast } = useToast()
-  const { localParticipant } = useLocalParticipant()
-  const participants = useParticipants()
-  const room = useRoomContext()
-
-  const getMyAvatar = useCallback(() => {
-    try { return JSON.parse(localParticipant?.metadata ?? '{}').avatar ?? '' } catch { return '' }
-  }, [localParticipant])
+  const router = useRouter()
+  const me = {
+    userId: roomInfo.userId,
+    userName: roomInfo.userName,
+    userAvatar: roomInfo.userAvatar,
+    isAdmin: roomInfo.isAdmin,
+  }
 
   const [mobileTab, setMobileTab] = useState<'video' | 'chat' | 'people'>('video')
-  const [micEnabled, setMicEnabled] = useState(false)
-  const [handRaised, setHandRaised] = useState(false)
-  const [canPublish, setCanPublish] = useState(false)
+  const [online, setOnline] = useState<OnlineUser[]>([])
+  const [speakers, setSpeakers] = useState<Set<string>>(new Set())
+
+  // Mic state
+  const [adminMic, setAdminMic] = useState(false)   // admin bật/tắt mic của mình
+  const [micApproved, setMicApproved] = useState(false) // học sinh được duyệt nói
+  const [speaking, setSpeaking] = useState(false)   // học sinh đang bật mic
+
   const chatStorageKey = `live_chat_${sessionId}`
   const [messages, setMessages] = useState<ChatMessage[]>(() => {
     if (typeof window === 'undefined') return []
-    try {
-      return JSON.parse(localStorage.getItem(chatStorageKey) ?? '[]')
-    } catch { return [] }
+    try { return JSON.parse(localStorage.getItem(chatStorageKey) ?? '[]') } catch { return [] }
   })
   const [chatInput, setChatInput] = useState('')
   const [handRaisers, setHandRaisers] = useState<HandRaiser[]>([])
+  const [handRaised, setHandRaised] = useState(false)
   const [reactionCounts, setReactionCounts] = useState({ understood: 0, confused: 0 })
   const [announcement, setAnnouncement] = useState<string | null>(null)
   const [announcementInput, setAnnouncementInput] = useState('')
@@ -269,54 +271,25 @@ function ClassroomContent({
   const [myVote, setMyVote] = useState<string | null>(null)
   const chatEndRef = useRef<HTMLDivElement>(null)
 
-  // Listen for permission changes (admin approves mic)
-  useEffect(() => {
-    if (!localParticipant) return
+  const channelRef = useRef<ReturnType<typeof supabase.channel> | null>(null)
 
-    const onPermissionsChanged = () => {
-      const perm = localParticipant.permissions
-      const nowCanPublish = perm?.canPublish ?? false
-      setCanPublish(nowCanPublish)
-      if (nowCanPublish && !canPublish) {
-        toast({ title: '🎤 Mic đã được bật', description: 'Giáo viên cho phép bạn phát biểu!' })
-      }
-    }
-
-    localParticipant.on(ParticipantEvent.ParticipantPermissionsChanged, onPermissionsChanged)
-    return () => {
-      localParticipant.off(ParticipantEvent.ParticipantPermissionsChanged, onPermissionsChanged)
-    }
-  }, [localParticipant, canPublish, toast])
-
-  // Toggle mic
-  const toggleMic = useCallback(async () => {
-    if (!canPublish && !roomInfo.isAdmin) {
-      toast({ description: 'Giơ tay và chờ giáo viên cho phép trước khi bật mic' })
-      return
-    }
-    try {
-      await localParticipant.setMicrophoneEnabled(!micEnabled)
-      setMicEnabled(!micEnabled)
-    } catch {
-      toast({ variant: 'destructive', description: 'Không thể bật mic' })
-    }
-  }, [canPublish, micEnabled, localParticipant, roomInfo.isAdmin, toast])
-
-  // Data channel for chat + raise hand
-  const { send } = useDataChannel('classroom', (msg) => {
-    const data = decode(msg.payload)
-    if (!data) return
+  // ── Xử lý message đến (ref để tránh stale closure mà không phải resubscribe) ──
+  const handleMsg = (data: any) => {
+    if (!data?.type) return
 
     if (data.type === 'chat' || data.type === 'reaction') {
-      setMessages(prev => [...prev, {
-        id: `${data.userId}-${data.time}`,
-        userId: data.userId,
-        userName: data.userName,
-        userAvatar: data.userAvatar,
-        text: data.text,
-        time: data.time,
-        isReaction: data.type === 'reaction',
-      }])
+      setMessages(prev => {
+        if (prev.some(m => m.id === `${data.userId}-${data.time}`)) return prev
+        return [...prev, {
+          id: `${data.userId}-${data.time}`,
+          userId: data.userId,
+          userName: data.userName,
+          userAvatar: data.userAvatar,
+          text: data.text,
+          time: data.time,
+          isReaction: data.type === 'reaction',
+        }]
+      })
       if (data.type === 'reaction') {
         setReactionCounts(prev => ({
           ...prev,
@@ -325,21 +298,31 @@ function ClassroomContent({
         }))
       }
     } else if (data.type === 'raise_hand') {
-      setHandRaisers(prev => {
-        if (prev.some(h => h.userId === data.userId)) return prev
-        return [...prev, { userId: data.userId, userName: data.userName, time: data.time }]
-      })
-      if (roomInfo.isAdmin) {
-        toast({ title: `✋ ${data.userName} giơ tay`, description: 'Học sinh muốn phát biểu' })
-      }
+      setHandRaisers(prev => prev.some(h => h.userId === data.userId)
+        ? prev
+        : [...prev, { userId: data.userId, userName: data.userName, time: data.time }])
+      if (me.isAdmin) toast({ title: `✋ ${data.userName} giơ tay`, description: 'Học sinh muốn phát biểu' })
     } else if (data.type === 'lower_hand') {
       setHandRaisers(prev => prev.filter(h => h.userId !== data.userId))
-    } else if (data.type === 'mic_approved' && data.forUserId === localParticipant?.identity) {
-      toast({ title: '🎤 Mic đã được bật', description: 'Giáo viên cho phép bạn phát biểu!' })
-    } else if (data.type === 'mic_revoked' && data.forUserId === localParticipant?.identity) {
-      setMicEnabled(false)
-      localParticipant?.setMicrophoneEnabled(false)
-      toast({ description: 'Giáo viên đã tắt mic của bạn' })
+    } else if (data.type === 'mic_approved') {
+      setSpeakers(prev => new Set(prev).add(data.forUserId))
+      if (data.forUserId === me.userId) {
+        setMicApproved(true)
+        setHandRaised(false)
+        toast({ title: '🎤 Bạn được phép phát biểu', description: 'Bấm "Bật mic" để nói' })
+      }
+    } else if (data.type === 'mic_revoked') {
+      setSpeakers(prev => { const n = new Set(prev); n.delete(data.forUserId); return n })
+      if (data.forUserId === me.userId) {
+        setMicApproved(false)
+        setSpeaking(false)
+        toast({ description: 'Giáo viên đã tắt quyền nói của bạn' })
+      }
+    } else if (data.type === 'kicked') {
+      if (data.forUserId === me.userId) {
+        toast({ variant: 'destructive', description: 'Bạn đã bị mời khỏi lớp học' })
+        setTimeout(() => router.push('/live'), 1500)
+      }
     } else if (data.type === 'announcement') {
       setAnnouncement(data.text || null)
     } else if (data.type === 'poll') {
@@ -351,103 +334,144 @@ function ClassroomContent({
         const votes = { ...prev.votes }
         const opt = data.option as string
         if (!votes[opt]) votes[opt] = []
-        if (!votes[opt].includes(data.userId)) votes[opt].push(data.userId)
+        if (!votes[opt].includes(data.userId)) votes[opt] = [...votes[opt], data.userId]
         return { ...prev, votes }
       })
+    } else if (data.type === 'end_session') {
+      if (!me.isAdmin) {
+        toast({ description: 'Buổi học đã kết thúc' })
+        setTimeout(() => router.push('/live'), 1500)
+      }
     }
-  })
+  }
+  const handlerRef = useRef(handleMsg)
+  handlerRef.current = handleMsg
 
-  // Persist chat + scroll to bottom
+  // ── Kết nối Supabase Realtime (broadcast + presence) ──
+  useEffect(() => {
+    const ch = supabase.channel(`live-${sessionId}`, {
+      config: { broadcast: { self: false }, presence: { key: me.userId } },
+    })
+
+    ch.on('broadcast', { event: 'msg' }, ({ payload }) => handlerRef.current(payload))
+    ch.on('presence', { event: 'sync' }, () => {
+      const state = ch.presenceState() as Record<string, any[]>
+      const users: OnlineUser[] = Object.values(state)
+        .map(arr => arr[0])
+        .filter(Boolean)
+        .map(m => ({ userId: m.userId, userName: m.userName, userAvatar: m.userAvatar, isAdmin: m.isAdmin }))
+      setOnline(users)
+    })
+
+    ch.subscribe(async (status) => {
+      if (status === 'SUBSCRIBED') {
+        await ch.track({
+          userId: me.userId,
+          userName: me.userName,
+          userAvatar: me.userAvatar ?? '',
+          isAdmin: me.isAdmin,
+        })
+      }
+    })
+
+    channelRef.current = ch
+    return () => {
+      supabase.removeChannel(ch)
+      channelRef.current = null
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId, me.userId])
+
+  const broadcast = useCallback((type: string, payload: Record<string, unknown>) => {
+    channelRef.current?.send({ type: 'broadcast', event: 'msg', payload: { type, ...payload } })
+  }, [])
+
+  // Persist chat + scroll
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' })
     try { localStorage.setItem(chatStorageKey, JSON.stringify(messages.slice(-200))) } catch {}
   }, [messages, chatStorageKey])
 
+  // ── Số học sinh (không tính admin) ──
+  const studentCount = online.filter(u => !u.isAdmin).length
+
+  // ── Actions ──
   const sendChat = () => {
     const text = chatInput.trim()
-    if (!text || !localParticipant) return
-
-    if (slowMode && !roomInfo.isAdmin && Date.now() - lastChatTime < 5000) {
+    if (!text) return
+    if (slowMode && !me.isAdmin && Date.now() - lastChatTime < 5000) {
       toast({ description: 'Chế độ chậm: chờ 5 giây giữa các tin nhắn' })
       return
     }
-
-    const avatar = getMyAvatar()
-    const payload = {
-      userId: localParticipant.identity,
-      userName: localParticipant.name ?? 'Học sinh',
-      userAvatar: avatar,
-      text,
-      time: Date.now(),
-    }
-    send(encode('chat', payload), { reliable: true })
-
-    setMessages(prev => [...prev, {
-      id: `local-${Date.now()}`,
-      userId: payload.userId,
-      userName: payload.userName,
-      userAvatar: avatar,
-      text: payload.text,
-      time: payload.time,
-    }])
+    const time = Date.now()
+    broadcast('chat', { userId: me.userId, userName: me.userName, userAvatar: me.userAvatar, text, time })
+    setMessages(prev => [...prev, { id: `${me.userId}-${time}`, userId: me.userId, userName: me.userName, userAvatar: me.userAvatar, text, time }])
     setChatInput('')
-    setLastChatTime(Date.now())
+    setLastChatTime(time)
   }
 
   const sendReaction = (value: '1' | '0') => {
-    if (!localParticipant) return
-    const avatar = getMyAvatar()
-    const payload = {
-      userId: localParticipant.identity,
-      userName: localParticipant.name ?? 'Học sinh',
-      userAvatar: avatar,
-      text: value,
-      time: Date.now(),
-    }
-    send(encode('reaction', payload), { reliable: true })
-    setMessages(prev => [...prev, {
-      id: `local-reaction-${Date.now()}`,
-      userId: payload.userId,
-      userName: payload.userName,
-      userAvatar: avatar,
-      text: value,
-      time: payload.time,
-      isReaction: true,
-    }])
+    const time = Date.now()
+    broadcast('reaction', { userId: me.userId, userName: me.userName, userAvatar: me.userAvatar, text: value, time })
+    setMessages(prev => [...prev, { id: `${me.userId}-${time}`, userId: me.userId, userName: me.userName, userAvatar: me.userAvatar, text: value, time, isReaction: true }])
     setReactionCounts(prev => ({
       ...prev,
-      [value === '1' ? 'understood' : 'confused']:
-        prev[value === '1' ? 'understood' : 'confused'] + 1,
+      [value === '1' ? 'understood' : 'confused']: prev[value === '1' ? 'understood' : 'confused'] + 1,
     }))
   }
 
   const toggleHand = () => {
-    if (!localParticipant) return
     const nowRaised = !handRaised
     setHandRaised(nowRaised)
-    const type = nowRaised ? 'raise_hand' : 'lower_hand'
-    send(encode(type, {
-      userId: localParticipant.identity,
-      userName: localParticipant.name ?? 'Học sinh',
-      time: Date.now(),
-    }), { reliable: true })
+    broadcast(nowRaised ? 'raise_hand' : 'lower_hand', {
+      userId: me.userId, userName: me.userName, time: Date.now(),
+    })
   }
 
-  // Admin: send announcement
+  const toggleMic = () => {
+    if (me.isAdmin) {
+      setAdminMic(v => !v)
+      return
+    }
+    if (!micApproved) {
+      toast({ description: 'Giơ tay và chờ giáo viên cho phép trước khi bật mic' })
+      return
+    }
+    setSpeaking(v => !v)
+  }
+
+  // Admin controls (qua broadcast — không tốn slot LiveKit)
+  const approveMic = (userId: string) => {
+    broadcast('mic_approved', { forUserId: userId })
+    setSpeakers(prev => new Set(prev).add(userId))
+    setHandRaisers(prev => prev.filter(h => h.userId !== userId))
+  }
+  const revokeMic = (userId: string) => {
+    broadcast('mic_revoked', { forUserId: userId })
+    setSpeakers(prev => { const n = new Set(prev); n.delete(userId); return n })
+  }
+  const kick = (userId: string) => {
+    broadcast('kicked', { forUserId: userId })
+    toast({ description: 'Đã mời học sinh khỏi lớp' })
+  }
+  const muteAll = () => {
+    online.filter(u => !u.isAdmin).forEach(u => broadcast('mic_revoked', { forUserId: u.userId }))
+    setSpeakers(new Set())
+    toast({ description: 'Đã tắt mic tất cả học sinh' })
+  }
+
   const sendAnnouncement = () => {
     const text = announcementInput.trim()
     if (!text) return
-    send(encode('announcement', { text, time: Date.now() }), { reliable: true })
+    broadcast('announcement', { text })
     setAnnouncement(text)
     setAnnouncementInput('')
   }
-
   const clearAnnouncement = () => {
-    send(encode('announcement', { text: '', time: Date.now() }), { reliable: true })
+    broadcast('announcement', { text: '' })
     setAnnouncement(null)
   }
 
-  // Admin: create poll
   const createPoll = () => {
     const q = pollQuestion.trim()
     const opts = pollOptions.map(o => o.trim()).filter(Boolean)
@@ -455,73 +479,42 @@ function ClassroomContent({
       toast({ description: 'Cần câu hỏi và ít nhất 2 lựa chọn' })
       return
     }
-    send(encode('poll', { question: q, options: opts, time: Date.now() }), { reliable: true })
+    broadcast('poll', { question: q, options: opts })
     setActivePoll({ question: q, options: opts, votes: {} })
     setPollQuestion('')
     setPollOptions(['', ''])
     setMyVote(null)
   }
-
   const votePoll = (option: string) => {
-    if (!localParticipant || myVote) return
-    send(encode('poll_vote', {
-      userId: localParticipant.identity,
-      option,
-      time: Date.now(),
-    }), { reliable: true })
+    if (myVote) return
+    broadcast('poll_vote', { userId: me.userId, option })
     setMyVote(option)
     setActivePoll(prev => {
       if (!prev) return null
       const votes = { ...prev.votes }
       if (!votes[option]) votes[option] = []
-      votes[option].push(localParticipant.identity)
+      votes[option] = [...votes[option], me.userId]
       return { ...prev, votes }
     })
   }
 
-  // Admin: mute all students
-  const muteAll = async () => {
-    const students = participants.filter(p => p.identity !== localParticipant?.identity)
-    for (const p of students) {
-      try {
-        await fetch(`/api/admin/live/${sessionId}/control`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ action: 'revoke_mic', participantIdentity: p.identity }),
-        })
-        send(encode('mic_revoked', { forUserId: p.identity }), { reliable: true })
-      } catch {}
-    }
-    toast({ description: `Đã tắt mic tất cả ${students.length} học sinh` })
-  }
-
-  // Admin: approve/revoke mic, kick
-  const adminControl = async (action: string, participantIdentity: string) => {
+  const endSession = async () => {
+    if (!confirm('Kết thúc buổi học? Tất cả học sinh sẽ bị ngắt kết nối.')) return
+    broadcast('end_session', {})
     try {
       await fetch(`/api/admin/live/${sessionId}/control`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action, participantIdentity }),
+        body: JSON.stringify({ action: 'end_session', participantIdentity: '' }),
       })
-      if (action === 'approve_mic') {
-        send(encode('mic_approved', { forUserId: participantIdentity }), { reliable: true })
-        setHandRaisers(prev => prev.filter(h => h.userId !== participantIdentity))
-      } else if (action === 'revoke_mic') {
-        send(encode('mic_revoked', { forUserId: participantIdentity }), { reliable: true })
-      } else if (action === 'kick') {
-        toast({ description: `Đã xóa học sinh khỏi phòng học` })
-      }
-    } catch {
-      toast({ variant: 'destructive', description: 'Lỗi điều khiển phòng học' })
-    }
-  }
-
-  const endSession = async () => {
-    if (!confirm('Kết thúc buổi học? Tất cả học sinh sẽ bị ngắt kết nối.')) return
-    await adminControl('end_session', '')
-    room.disconnect()
+    } catch {}
     window.location.href = '/live'
   }
+
+  // Có cần kết nối LiveKit không (chỉ admin hoặc HS đang nói)
+  const audioActive = me.isAdmin || speaking
+  const publishMic = me.isAdmin ? adminMic : speaking
+  const micButtonOn = me.isAdmin ? adminMic : speaking
 
   // ─── Chat panel ──────────────────────────────────────
   const chatPanel = (
@@ -531,7 +524,7 @@ function ClassroomContent({
           <MessageSquare className="h-3.5 w-3.5 text-muted-foreground" />
           <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Chat</span>
         </div>
-        {roomInfo.isAdmin && (reactionCounts.understood > 0 || reactionCounts.confused > 0) && (
+        {me.isAdmin && (reactionCounts.understood > 0 || reactionCounts.confused > 0) && (
           <div className="flex items-center gap-2 text-[10px]">
             <span className="text-emerald-600">Hiểu {reactionCounts.understood}</span>
             <span className="text-rose-500">Chưa {reactionCounts.confused}</span>
@@ -543,17 +536,9 @@ function ClassroomContent({
           <p className="text-xs text-muted-foreground text-center py-8">Chưa có tin nhắn nào</p>
         )}
         {messages.map(msg => (
-          <div key={msg.id} className={cn(
-            'flex gap-2',
-            msg.isReaction && 'opacity-70'
-          )}>
+          <div key={msg.id} className={cn('flex gap-2', msg.isReaction && 'opacity-70')}>
             {msg.userAvatar && !msg.isReaction ? (
-              <img
-                src={msg.userAvatar}
-                alt=""
-                className="h-7 w-7 rounded-full shrink-0 object-cover"
-                referrerPolicy="no-referrer"
-              />
+              <img src={msg.userAvatar} alt="" className="h-7 w-7 rounded-full shrink-0 object-cover" referrerPolicy="no-referrer" />
             ) : (
               <div className={cn(
                 'h-7 w-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0',
@@ -592,22 +577,12 @@ function ClassroomContent({
             <Send className="h-3.5 w-3.5" />
           </Button>
         </div>
-        {!roomInfo.isAdmin && (
+        {!me.isAdmin && (
           <div className="flex gap-1.5">
-            <Button
-              size="sm"
-              variant="outline"
-              className="flex-1 h-8 text-[11px] gap-1 text-emerald-600 border-emerald-500/30 hover:bg-emerald-500/10"
-              onClick={() => sendReaction('1')}
-            >
+            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] gap-1 text-emerald-600 border-emerald-500/30 hover:bg-emerald-500/10" onClick={() => sendReaction('1')}>
               <CheckCircle2 className="h-3.5 w-3.5" /> Hiểu bài
             </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              className="flex-1 h-8 text-[11px] gap-1 text-rose-500 border-rose-500/30 hover:bg-rose-500/10"
-              onClick={() => sendReaction('0')}
-            >
+            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] gap-1 text-rose-500 border-rose-500/30 hover:bg-rose-500/10" onClick={() => sendReaction('0')}>
               <XCircle className="h-3.5 w-3.5" /> Chưa hiểu
             </Button>
           </div>
@@ -616,17 +591,16 @@ function ClassroomContent({
     </div>
   )
 
-  // ─── Participants + raise hand panel ──────────────────
+  // ─── People panel ─────────────────────────────────────
   const peoplePanel = (
     <div className="flex flex-col h-full">
       <div className="px-3 py-2 border-b border-border/60 flex items-center gap-2">
         <Users className="h-3.5 w-3.5 text-muted-foreground" />
         <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-          {participants.length} học sinh
+          {studentCount} học sinh online
         </span>
       </div>
 
-      {/* Raise hands queue */}
       {handRaisers.length > 0 && (
         <div className="border-b border-border/60 p-2 space-y-1.5">
           <p className="text-[10px] font-bold text-amber-600 uppercase tracking-wider flex items-center gap-1">
@@ -635,22 +609,12 @@ function ClassroomContent({
           {handRaisers.map(h => (
             <div key={h.userId} className="flex items-center justify-between rounded-lg bg-amber-500/10 px-2 py-1.5">
               <span className="text-xs font-medium truncate mr-2">{h.userName}</span>
-              {roomInfo.isAdmin && (
+              {me.isAdmin && (
                 <div className="flex gap-1 shrink-0">
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="h-6 px-2 text-[10px] text-emerald-600 hover:bg-emerald-500/10"
-                    onClick={() => adminControl('approve_mic', h.userId)}
-                  >
+                  <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px] text-emerald-600 hover:bg-emerald-500/10" onClick={() => approveMic(h.userId)}>
                     <Mic className="h-3 w-3 mr-1" /> Cho phép
                   </Button>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    className="h-6 px-2 text-[10px] text-muted-foreground hover:bg-muted"
-                    onClick={() => setHandRaisers(prev => prev.filter(x => x.userId !== h.userId))}
-                  >
+                  <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px] text-muted-foreground hover:bg-muted" onClick={() => setHandRaisers(prev => prev.filter(x => x.userId !== h.userId))}>
                     <XCircle className="h-3 w-3" />
                   </Button>
                 </div>
@@ -660,59 +624,31 @@ function ClassroomContent({
         </div>
       )}
 
-      {/* Participants list */}
       <div className="flex-1 overflow-y-auto p-2 space-y-1 min-h-0">
-        {participants.map(p => {
-          const isRaisingHand = handRaisers.some(h => h.userId === p.identity)
-          const isSpeaking = p.isSpeaking
+        {online.map(p => {
+          const isSpeaker = speakers.has(p.userId)
           return (
-            <div
-              key={p.identity}
-              className={cn(
-                'flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors',
-                isSpeaking ? 'bg-emerald-500/10' : 'hover:bg-muted/40'
+            <div key={p.userId} className="group flex items-center gap-2 rounded-lg px-2 py-1.5 hover:bg-muted/40 transition-colors">
+              {p.userAvatar ? (
+                <img src={p.userAvatar} alt="" className="h-6 w-6 rounded-full shrink-0 object-cover" referrerPolicy="no-referrer" />
+              ) : (
+                <div className="h-6 w-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0 bg-muted text-muted-foreground">
+                  {(p.userName ?? 'H')[0].toUpperCase()}
+                </div>
               )}
-            >
-              {(() => {
-                let avatar = ''
-                try { avatar = JSON.parse(p.metadata ?? '{}').avatar ?? '' } catch {}
-                return avatar ? (
-                  <img src={avatar} alt="" className={cn(
-                    'h-6 w-6 rounded-full shrink-0 object-cover',
-                    isSpeaking && 'ring-2 ring-emerald-500'
-                  )} referrerPolicy="no-referrer" />
-                ) : (
-                  <div className={cn(
-                    'h-6 w-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0',
-                    isSpeaking ? 'bg-emerald-500 text-white' : 'bg-muted text-muted-foreground'
-                  )}>
-                    {(p.name ?? 'H')[0].toUpperCase()}
-                  </div>
-                )
-              })()}
-              <span className="text-xs truncate flex-1">
-                {p.name ?? 'Học sinh'}
-                {isRaisingHand && ' ✋'}
+              <span className="text-xs truncate flex-1 flex items-center gap-1">
+                {p.userName ?? 'Học sinh'}
+                {p.isAdmin && <Crown className="h-3 w-3 text-yellow-500" />}
               </span>
-              {isSpeaking && <Volume2 className="h-3 w-3 text-emerald-500 shrink-0" />}
-              {roomInfo.isAdmin && (
+              {isSpeaker && <Mic className="h-3 w-3 text-emerald-500 shrink-0" />}
+              {me.isAdmin && !p.isAdmin && (
                 <div className="flex gap-0.5 shrink-0 opacity-0 group-hover:opacity-100">
-                  <Button
-                    size="icon"
-                    variant="ghost"
-                    className="h-5 w-5"
-                    title="Tắt mic"
-                    onClick={() => adminControl('revoke_mic', p.identity)}
-                  >
-                    <MicOff className="h-3 w-3" />
-                  </Button>
-                  <Button
-                    size="icon"
-                    variant="ghost"
-                    className="h-5 w-5 text-destructive"
-                    title="Kick"
-                    onClick={() => adminControl('kick', p.identity)}
-                  >
+                  {isSpeaker && (
+                    <Button size="icon" variant="ghost" className="h-5 w-5" title="Tắt quyền nói" onClick={() => revokeMic(p.userId)}>
+                      <MicOff className="h-3 w-3" />
+                    </Button>
+                  )}
+                  <Button size="icon" variant="ghost" className="h-5 w-5 text-destructive" title="Mời ra" onClick={() => kick(p.userId)}>
                     <XCircle className="h-3 w-3" />
                   </Button>
                 </div>
@@ -725,7 +661,12 @@ function ClassroomContent({
   )
 
   return (
-    <div className="flex flex-col h-full overflow-hidden">
+    <div className="flex flex-col h-[calc(100vh-4rem)] overflow-hidden">
+      {/* Mic layer — chỉ kết nối LiveKit khi cần */}
+      {audioActive && (
+        <MicLayer serverUrl={roomInfo.livekitUrl} token={roomInfo.token} publishMic={publishMic} />
+      )}
+
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-2 border-b border-border/60 shrink-0">
         <div className="flex items-center gap-2 min-w-0">
@@ -735,14 +676,9 @@ function ClassroomContent({
           <span className="text-sm font-semibold truncate">{roomInfo.sessionTitle}</span>
         </div>
         <div className="flex items-center gap-1 shrink-0">
-          <span className="text-xs text-muted-foreground hidden sm:block">{participants.length} người</span>
-          {roomInfo.isAdmin && (
-            <Button
-              size="sm"
-              variant="destructive"
-              className="h-7 text-xs gap-1 ml-2"
-              onClick={endSession}
-            >
+          <span className="text-xs text-muted-foreground hidden sm:block">{studentCount} học sinh</span>
+          {me.isAdmin && (
+            <Button size="sm" variant="destructive" className="h-7 text-xs gap-1 ml-2" onClick={endSession}>
               <LogOut className="h-3 w-3" /> Kết thúc
             </Button>
           )}
@@ -754,7 +690,7 @@ function ClassroomContent({
         <div className="shrink-0 px-4 py-2 bg-amber-500/10 border-b border-amber-500/20 flex items-center gap-2">
           <Megaphone className="h-3.5 w-3.5 text-amber-600 shrink-0" />
           <p className="text-xs font-medium text-amber-700 dark:text-amber-400 flex-1">{announcement}</p>
-          {roomInfo.isAdmin && (
+          {me.isAdmin && (
             <Button size="icon" variant="ghost" className="h-6 w-6 shrink-0" onClick={clearAnnouncement}>
               <XCircle className="h-3 w-3" />
             </Button>
@@ -774,63 +710,40 @@ function ClassroomContent({
               const total = Object.values(activePoll.votes).reduce((s, v) => s + v.length, 0)
               const pct = total > 0 ? Math.round((count / total) * 100) : 0
               return (
-                <Button
-                  key={opt}
-                  size="sm"
-                  variant={myVote === opt ? 'default' : 'outline'}
-                  className="h-7 text-[11px] gap-1"
-                  onClick={() => votePoll(opt)}
-                  disabled={!!myVote}
-                >
-                  {opt} {(roomInfo.isAdmin || myVote) && <span className="text-[10px] opacity-70">({count} · {pct}%)</span>}
+                <Button key={opt} size="sm" variant={myVote === opt ? 'default' : 'outline'} className="h-7 text-[11px] gap-1" onClick={() => votePoll(opt)} disabled={!!myVote}>
+                  {opt} {(me.isAdmin || myVote) && <span className="text-[10px] opacity-70">({count} · {pct}%)</span>}
                 </Button>
               )
             })}
           </div>
-          {roomInfo.isAdmin && (
-            <Button size="sm" variant="ghost" className="h-6 text-[10px]" onClick={() => setActivePoll(null)}>
-              Đóng poll
-            </Button>
+          {me.isAdmin && (
+            <Button size="sm" variant="ghost" className="h-6 text-[10px]" onClick={() => setActivePoll(null)}>Đóng poll</Button>
           )}
         </div>
       )}
 
       {/* Main layout */}
       <div className="flex-1 flex overflow-hidden min-h-0">
-        {/* Video + mobile tabs */}
         <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
           {/* Mobile tab bar */}
           <div className="flex md:hidden border-b border-border/60 shrink-0">
             {(['video', 'chat', 'people'] as const).map(tab => (
-              <button
-                key={tab}
-                onClick={() => setMobileTab(tab)}
-                className={cn(
-                  'flex-1 py-2 text-[11px] font-semibold transition-colors flex items-center justify-center gap-1',
-                  mobileTab === tab ? 'text-primary border-b-2 border-primary' : 'text-muted-foreground'
-                )}
-              >
+              <button key={tab} onClick={() => setMobileTab(tab)}
+                className={cn('flex-1 py-2 text-[11px] font-semibold transition-colors flex items-center justify-center gap-1',
+                  mobileTab === tab ? 'text-primary border-b-2 border-primary' : 'text-muted-foreground')}>
                 {tab === 'video' && <><Video className="h-3.5 w-3.5" /> Video</>}
                 {tab === 'chat' && <><MessageSquare className="h-3.5 w-3.5" /> Chat</>}
-                {tab === 'people' && <><Users className="h-3.5 w-3.5" /> {participants.length}</>}
+                {tab === 'people' && <><Users className="h-3.5 w-3.5" /> {studentCount}</>}
               </button>
             ))}
           </div>
 
           {/* Video area */}
-          <div
-            className={cn(
-              'bg-black overflow-hidden',
-              // Desktop: always show, flex-1
-              'md:flex-1',
-              // Mobile: only show on video tab
-              mobileTab === 'video' ? 'flex-1' : 'hidden md:flex'
-            )}
-          >
+          <div className={cn('bg-black overflow-hidden md:flex-1', mobileTab === 'video' ? 'flex-1' : 'hidden md:flex')}>
             <HlsPlayer src={roomInfo.hlsUrl} className="w-full h-full" />
           </div>
 
-          {/* Mobile: chat/people panels */}
+          {/* Mobile panels */}
           <div className={cn('flex-1 overflow-hidden md:hidden', mobileTab === 'chat' ? 'flex flex-col' : 'hidden')}>
             {chatPanel}
           </div>
@@ -839,44 +752,29 @@ function ClassroomContent({
           </div>
         </div>
 
-        {/* Desktop right sidebar */}
+        {/* Desktop sidebar */}
         <div className="hidden md:flex flex-col w-72 border-l border-border/60 shrink-0 overflow-hidden">
-          <div className="flex-[3] border-b border-border/60 overflow-hidden flex flex-col">
-            {chatPanel}
-          </div>
-          <div className="flex-[2] overflow-hidden flex flex-col">
-            {peoplePanel}
-          </div>
+          <div className="flex-[3] border-b border-border/60 overflow-hidden flex flex-col">{chatPanel}</div>
+          <div className="flex-[2] overflow-hidden flex flex-col">{peoplePanel}</div>
         </div>
       </div>
 
       {/* Bottom controls */}
       <div className="shrink-0 border-t border-border/60 px-4 py-2 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
-          {/* Mic button */}
-          <Button
-            size="sm"
-            variant={micEnabled ? 'default' : 'outline'}
-            className={cn(
-              'gap-1.5 h-9',
-              !canPublish && !roomInfo.isAdmin && 'opacity-50 cursor-not-allowed'
-            )}
-            onClick={toggleMic}
-          >
-            {micEnabled ? <Mic className="h-3.5 w-3.5" /> : <MicOff className="h-3.5 w-3.5" />}
+          <Button size="sm" variant={micButtonOn ? 'default' : 'outline'}
+            className={cn('gap-1.5 h-9', !me.isAdmin && !micApproved && 'opacity-50')}
+            onClick={toggleMic}>
+            {micButtonOn ? <Mic className="h-3.5 w-3.5" /> : <MicOff className="h-3.5 w-3.5" />}
             <span className="hidden sm:inline text-xs">
-              {micEnabled ? 'Tắt mic' : canPublish || roomInfo.isAdmin ? 'Bật mic' : 'Cần được duyệt'}
+              {micButtonOn ? 'Tắt mic' : me.isAdmin || micApproved ? 'Bật mic' : 'Cần được duyệt'}
             </span>
           </Button>
 
-          {/* Raise hand (students only) */}
-          {!roomInfo.isAdmin && (
-            <Button
-              size="sm"
-              variant={handRaised ? 'default' : 'outline'}
+          {!me.isAdmin && (
+            <Button size="sm" variant={handRaised ? 'default' : 'outline'}
               className={cn('gap-1.5 h-9', handRaised && 'bg-amber-500 hover:bg-amber-600 border-amber-500')}
-              onClick={toggleHand}
-            >
+              onClick={toggleHand}>
               <Hand className="h-3.5 w-3.5" />
               <span className="hidden sm:inline text-xs">{handRaised ? 'Hạ tay' : 'Giơ tay'}</span>
             </Button>
@@ -884,67 +782,47 @@ function ClassroomContent({
         </div>
 
         <div className="flex items-center gap-2">
-          {canPublish && !roomInfo.isAdmin && (
+          {micApproved && !me.isAdmin && (
             <Badge variant="outline" className="text-[10px] text-emerald-600 border-emerald-500/30 bg-emerald-500/10">
-              Mic đã được bật
+              Được phép nói
             </Badge>
           )}
-
-          {roomInfo.isAdmin && (
+          {me.isAdmin && (
             <>
               <Badge variant="outline" className="text-[10px] hidden sm:flex">
-                <Users className="h-2.5 w-2.5 mr-1" /> {participants.length}
+                <Users className="h-2.5 w-2.5 mr-1" /> {studentCount}
               </Badge>
               <Button size="sm" variant="outline" className="h-7 text-[10px] gap-1" onClick={muteAll} title="Tắt mic tất cả">
-                <VolumeX className="h-3 w-3" />
-                <span className="hidden sm:inline">Mute all</span>
+                <VolumeX className="h-3 w-3" /><span className="hidden sm:inline">Mute all</span>
               </Button>
-              <Button
-                size="sm"
-                variant={slowMode ? 'default' : 'outline'}
-                className="h-7 text-[10px] gap-1"
-                onClick={() => setSlowMode(!slowMode)}
-                title="Chế độ chậm (5s giữa tin nhắn)"
-              >
-                <Timer className="h-3 w-3" />
-                <span className="hidden sm:inline">Slow</span>
+              <Button size="sm" variant={slowMode ? 'default' : 'outline'} className="h-7 text-[10px] gap-1" onClick={() => setSlowMode(!slowMode)} title="Chế độ chậm (5s)">
+                <Timer className="h-3 w-3" /><span className="hidden sm:inline">Slow</span>
               </Button>
             </>
           )}
         </div>
       </div>
 
-      {/* Admin: announcement & poll inputs */}
-      {roomInfo.isAdmin && (
-        <div className="shrink-0 border-t border-border/60 px-4 py-1.5 flex items-center gap-2 bg-muted/20">
-          <div className="flex items-center gap-1.5 flex-1">
+      {/* Admin: announcement & poll */}
+      {me.isAdmin && (
+        <div className="shrink-0 border-t border-border/60 px-4 py-1.5 flex flex-wrap items-center gap-2 bg-muted/20">
+          <div className="flex items-center gap-1.5 flex-1 min-w-[200px]">
             <Megaphone className="h-3 w-3 text-muted-foreground shrink-0" />
-            <input
-              value={announcementInput}
-              onChange={e => setAnnouncementInput(e.target.value)}
+            <input value={announcementInput} onChange={e => setAnnouncementInput(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && sendAnnouncement()}
               placeholder="Ghim thông báo..."
-              className="flex-1 text-[11px] bg-transparent border-none outline-none placeholder:text-muted-foreground/50"
-            />
+              className="flex-1 text-[11px] bg-transparent border-none outline-none placeholder:text-muted-foreground/50" />
             <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px]" onClick={sendAnnouncement}>Ghim</Button>
           </div>
-          <div className="h-4 w-px bg-border" />
-          <div className="flex items-center gap-1.5">
+          <div className="h-4 w-px bg-border hidden sm:block" />
+          <div className="flex items-center gap-1.5 flex-wrap">
             <BarChart3 className="h-3 w-3 text-muted-foreground shrink-0" />
-            <input
-              value={pollQuestion}
-              onChange={e => setPollQuestion(e.target.value)}
-              placeholder="Câu hỏi poll..."
-              className="w-28 text-[11px] bg-transparent border-none outline-none placeholder:text-muted-foreground/50"
-            />
+            <input value={pollQuestion} onChange={e => setPollQuestion(e.target.value)} placeholder="Câu hỏi poll..."
+              className="w-28 text-[11px] bg-transparent border-none outline-none placeholder:text-muted-foreground/50" />
             {pollOptions.map((opt, i) => (
-              <input
-                key={i}
-                value={opt}
-                onChange={e => setPollOptions(prev => prev.map((o, j) => j === i ? e.target.value : o))}
+              <input key={i} value={opt} onChange={e => setPollOptions(prev => prev.map((o, j) => j === i ? e.target.value : o))}
                 placeholder={`Đáp án ${i + 1}`}
-                className="w-16 text-[11px] bg-transparent border-b border-border outline-none placeholder:text-muted-foreground/50"
-              />
+                className="w-16 text-[11px] bg-transparent border-b border-border outline-none placeholder:text-muted-foreground/50" />
             ))}
             {pollOptions.length < 4 && (
               <Button size="icon" variant="ghost" className="h-5 w-5" onClick={() => setPollOptions(p => [...p, ''])}>

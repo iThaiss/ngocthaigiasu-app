@@ -54,10 +54,12 @@ export async function GET(
     ttl: '4h',
   })
 
+  // Mic dùng LiveKit; chỉ người cần nói mới kết nối phòng (client tự gate),
+  // nên cho phép publish để học sinh được duyệt có thể bật mic.
   at.addGrant({
     roomJoin: true,
     room: roomName,
-    canPublish: isAdmin,
+    canPublish: true,
     canSubscribe: true,
     canPublishData: true,
     roomAdmin: isAdmin,
@@ -79,5 +81,8 @@ export async function GET(
     sessionTitle: liveSession.title,
     sessionStatus: liveSession.status,
     isAdmin,
+    userId: session.user.id,
+    userName: displayName,
+    userAvatar: avatarUrl,
   })
 }
