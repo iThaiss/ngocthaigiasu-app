@@ -150,3 +150,13 @@
   fill: currentColor;
   overflow: visible;
 }
+
+/* Reaction nổi trong lớp học live — trôi lên và mờ dần */
+@keyframes live-float-up {
+  0% { transform: translateY(0) scale(0.8); opacity: 0; }
+  15% { opacity: 1; transform: translateY(-10px) scale(1.1); }
+  100% { transform: translateY(-180px) scale(1); opacity: 0; }
+}
+.live-float-up {
+  animation: live-float-up 3s ease-out forwards;
+}

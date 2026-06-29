@@ -56,6 +56,9 @@ interface OnlineUser {
   isAdmin: boolean
 }
 
+// Tối đa số học sinh nói cùng lúc (giữ LiveKit dưới trần free tier + tránh loạn tiếng)
+const MAX_SPEAKERS = 6
+
 // ─── Main export ─────────────────────────────────────────
 export default function ClassroomPage() {
   const params = useParams()
@@ -247,10 +250,12 @@ function ClassroomContent({
   const [online, setOnline] = useState<OnlineUser[]>([])
   const [speakers, setSpeakers] = useState<Set<string>>(new Set())
 
-  // Mic state
+  // Mic state — bỏ duyệt: ai cũng bật được, tối đa MAX_SPEAKERS người nói cùng lúc
   const [adminMic, setAdminMic] = useState(false)   // admin bật/tắt mic của mình
-  const [micApproved, setMicApproved] = useState(false) // học sinh được duyệt nói
   const [speaking, setSpeaking] = useState(false)   // học sinh đang bật mic
+
+  // Reaction nổi trên video
+  const [floaters, setFloaters] = useState<{ id: string; value: string }[]>([])
 
   const chatStorageKey = `live_chat_${sessionId}`
   const [messages, setMessages] = useState<ChatMessage[]>(() => {
@@ -272,6 +277,13 @@ function ClassroomContent({
   const chatEndRef = useRef<HTMLDivElement>(null)
 
   const channelRef = useRef<ReturnType<typeof supabase.channel> | null>(null)
+
+  // Reaction nổi: thêm 1 icon, tự xóa sau 3s
+  const pushFloater = (value: string) => {
+    const id = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
+    setFloaters(prev => [...prev, { id, value }])
+    setTimeout(() => setFloaters(prev => prev.filter(f => f.id !== id)), 3000)
+  }
 
   // ── Xử lý message đến (ref để tránh stale closure mà không phải resubscribe) ──
   const handleMsg = (data: any) => {
@@ -296,6 +308,7 @@ function ClassroomContent({
           [data.text === '1' ? 'understood' : 'confused']:
             prev[data.text === '1' ? 'understood' : 'confused'] + 1,
         }))
+        pushFloater(data.text)
       }
     } else if (data.type === 'raise_hand') {
       setHandRaisers(prev => prev.some(h => h.userId === data.userId)
@@ -304,19 +317,21 @@ function ClassroomContent({
       if (me.isAdmin) toast({ title: `✋ ${data.userName} giơ tay`, description: 'Học sinh muốn phát biểu' })
     } else if (data.type === 'lower_hand') {
       setHandRaisers(prev => prev.filter(h => h.userId !== data.userId))
-    } else if (data.type === 'mic_approved') {
-      setSpeakers(prev => new Set(prev).add(data.forUserId))
-      if (data.forUserId === me.userId) {
-        setMicApproved(true)
-        setHandRaised(false)
-        toast({ title: '🎤 Bạn được phép phát biểu', description: 'Bấm "Bật mic" để nói' })
-      }
-    } else if (data.type === 'mic_revoked') {
-      setSpeakers(prev => { const n = new Set(prev); n.delete(data.forUserId); return n })
-      if (data.forUserId === me.userId) {
-        setMicApproved(false)
+    } else if (data.type === 'mic_on') {
+      setSpeakers(prev => new Set(prev).add(data.userId))
+    } else if (data.type === 'mic_off') {
+      setSpeakers(prev => { const n = new Set(prev); n.delete(data.userId); return n })
+    } else if (data.type === 'mute_all') {
+      if (!me.isAdmin && speaking) {
         setSpeaking(false)
-        toast({ description: 'Giáo viên đã tắt quyền nói của bạn' })
+        channelRef.current?.send({ type: 'broadcast', event: 'msg', payload: { type: 'mic_off', userId: me.userId } })
+        toast({ description: 'Giáo viên đã tắt mic tất cả' })
+      }
+    } else if (data.type === 'force_mute') {
+      if (data.forUserId === me.userId && speaking) {
+        setSpeaking(false)
+        channelRef.current?.send({ type: 'broadcast', event: 'msg', payload: { type: 'mic_off', userId: me.userId } })
+        toast({ description: 'Giáo viên đã tắt mic của bạn' })
       }
     } else if (data.type === 'kicked') {
       if (data.forUserId === me.userId) {
@@ -338,9 +353,17 @@ function ClassroomContent({
         return { ...prev, votes }
       })
     } else if (data.type === 'end_session') {
+      // Gia cố: xác minh với server (chống giả mạo broadcast) trước khi rời
       if (!me.isAdmin) {
-        toast({ description: 'Buổi học đã kết thúc' })
-        setTimeout(() => router.push('/live'), 1500)
+        fetch(`/api/live/${sessionId}/token`)
+          .then(r => r.ok ? r.json() : null)
+          .then(d => {
+            if (!d || d.sessionStatus === 'ended') {
+              toast({ description: 'Buổi học đã kết thúc' })
+              setTimeout(() => router.push('/live'), 1500)
+            }
+          })
+          .catch(() => {})
       }
     }
   }
@@ -356,11 +379,25 @@ function ClassroomContent({
     ch.on('broadcast', { event: 'msg' }, ({ payload }) => handlerRef.current(payload))
     ch.on('presence', { event: 'sync' }, () => {
       const state = ch.presenceState() as Record<string, any[]>
-      const users: OnlineUser[] = Object.values(state)
-        .map(arr => arr[0])
-        .filter(Boolean)
-        .map(m => ({ userId: m.userId, userName: m.userName, userAvatar: m.userAvatar, isAdmin: m.isAdmin }))
-      setOnline(users)
+      const metas = Object.values(state).map(arr => arr[0]).filter(Boolean)
+      setOnline(metas.map(m => ({ userId: m.userId, userName: m.userName, userAvatar: m.userAvatar, isAdmin: m.isAdmin })))
+
+      // Đồng bộ cho người vào trễ: đọc thông báo/poll từ presence của admin
+      if (!me.isAdmin) {
+        const adminMeta = metas.find(m => m.isAdmin)
+        if (adminMeta) {
+          if (adminMeta.announcement) setAnnouncement(prev => prev ?? adminMeta.announcement)
+          if (adminMeta.poll) {
+            setActivePoll(prev => {
+              if (prev) return prev
+              try {
+                const p = typeof adminMeta.poll === 'string' ? JSON.parse(adminMeta.poll) : adminMeta.poll
+                return p?.question ? { question: p.question, options: p.options, votes: {} } : null
+              } catch { return null }
+            })
+          }
+        }
+      }
     })
 
     ch.subscribe(async (status) => {
@@ -381,6 +418,43 @@ function ClassroomContent({
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId, me.userId])
+
+  // Admin: cập nhật presence kèm thông báo/poll để người vào trễ thấy ngay
+  useEffect(() => {
+    if (!me.isAdmin) return
+    channelRef.current?.track({
+      userId: me.userId,
+      userName: me.userName,
+      userAvatar: me.userAvatar ?? '',
+      isAdmin: true,
+      announcement: announcement ?? '',
+      poll: activePoll ? JSON.stringify({ question: activePoll.question, options: activePoll.options }) : '',
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [announcement, activePoll, me.isAdmin])
+
+  // Tải lịch sử chat (người vào trễ / đổi máy thấy tin cũ)
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const res = await fetch(`/api/live/${sessionId}/chat`)
+        if (!res.ok) return
+        const data = await res.json()
+        if (cancelled || !Array.isArray(data.messages)) return
+        setMessages(prev => {
+          const seen = new Set(prev.map(m => m.id))
+          const merged = [...prev]
+          for (const m of data.messages) {
+            if (!seen.has(m.id)) merged.push(m)
+          }
+          return merged.sort((a, b) => a.time - b.time)
+        })
+      } catch {}
+    })()
+    return () => { cancelled = true }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId])
 
   const broadcast = useCallback((type: string, payload: Record<string, unknown>) => {
     channelRef.current?.send({ type: 'broadcast', event: 'msg', payload: { type, ...payload } })
@@ -408,6 +482,12 @@ function ClassroomContent({
     setMessages(prev => [...prev, { id: `${me.userId}-${time}`, userId: me.userId, userName: me.userName, userAvatar: me.userAvatar, text, time }])
     setChatInput('')
     setLastChatTime(time)
+    // Lưu lịch sử (fire-and-forget)
+    fetch(`/api/live/${sessionId}/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, time, userName: me.userName, userAvatar: me.userAvatar }),
+    }).catch(() => {})
   }
 
   const sendReaction = (value: '1' | '0') => {
@@ -418,6 +498,7 @@ function ClassroomContent({
       ...prev,
       [value === '1' ? 'understood' : 'confused']: prev[value === '1' ? 'understood' : 'confused'] + 1,
     }))
+    pushFloater(value)
   }
 
   const toggleHand = () => {
@@ -433,29 +514,35 @@ function ClassroomContent({
       setAdminMic(v => !v)
       return
     }
-    if (!micApproved) {
-      toast({ description: 'Giơ tay và chờ giáo viên cho phép trước khi bật mic' })
-      return
+    // Bỏ duyệt: ai cũng bật được, nhưng tối đa MAX_SPEAKERS người nói cùng lúc
+    if (!speaking) {
+      const otherSpeakers = [...speakers].filter(id => id !== me.userId).length
+      if (otherSpeakers >= MAX_SPEAKERS) {
+        toast({ description: `Đang có ${MAX_SPEAKERS} người nói, chờ chút rồi thử lại` })
+        return
+      }
+      setSpeaking(true)
+      setSpeakers(prev => new Set(prev).add(me.userId))
+      broadcast('mic_on', { userId: me.userId })
+    } else {
+      setSpeaking(false)
+      setSpeakers(prev => { const n = new Set(prev); n.delete(me.userId); return n })
+      broadcast('mic_off', { userId: me.userId })
     }
-    setSpeaking(v => !v)
   }
 
   // Admin controls (qua broadcast — không tốn slot LiveKit)
-  const approveMic = (userId: string) => {
-    broadcast('mic_approved', { forUserId: userId })
-    setSpeakers(prev => new Set(prev).add(userId))
-    setHandRaisers(prev => prev.filter(h => h.userId !== userId))
-  }
-  const revokeMic = (userId: string) => {
-    broadcast('mic_revoked', { forUserId: userId })
+  const forceMute = (userId: string) => {
+    broadcast('force_mute', { forUserId: userId })
     setSpeakers(prev => { const n = new Set(prev); n.delete(userId); return n })
+    toast({ description: 'Đã tắt mic học sinh' })
   }
   const kick = (userId: string) => {
     broadcast('kicked', { forUserId: userId })
     toast({ description: 'Đã mời học sinh khỏi lớp' })
   }
   const muteAll = () => {
-    online.filter(u => !u.isAdmin).forEach(u => broadcast('mic_revoked', { forUserId: u.userId }))
+    broadcast('mute_all', {})
     setSpeakers(new Set())
     toast({ description: 'Đã tắt mic tất cả học sinh' })
   }
@@ -525,9 +612,16 @@ function ClassroomContent({
           <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Chat</span>
         </div>
         {me.isAdmin && (reactionCounts.understood > 0 || reactionCounts.confused > 0) && (
-          <div className="flex items-center gap-2 text-[10px]">
+          <div className="flex items-center gap-1.5 text-[10px]">
             <span className="text-emerald-600">Hiểu {reactionCounts.understood}</span>
             <span className="text-rose-500">Chưa {reactionCounts.confused}</span>
+            <button
+              className="text-muted-foreground hover:text-foreground underline"
+              onClick={() => setReactionCounts({ understood: 0, confused: 0 })}
+              title="Xóa bộ đếm"
+            >
+              reset
+            </button>
           </div>
         )}
       </div>
@@ -610,14 +704,9 @@ function ClassroomContent({
             <div key={h.userId} className="flex items-center justify-between rounded-lg bg-amber-500/10 px-2 py-1.5">
               <span className="text-xs font-medium truncate mr-2">{h.userName}</span>
               {me.isAdmin && (
-                <div className="flex gap-1 shrink-0">
-                  <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px] text-emerald-600 hover:bg-emerald-500/10" onClick={() => approveMic(h.userId)}>
-                    <Mic className="h-3 w-3 mr-1" /> Cho phép
-                  </Button>
-                  <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px] text-muted-foreground hover:bg-muted" onClick={() => setHandRaisers(prev => prev.filter(x => x.userId !== h.userId))}>
-                    <XCircle className="h-3 w-3" />
-                  </Button>
-                </div>
+                <Button size="sm" variant="ghost" className="h-6 px-2 text-[10px] text-muted-foreground hover:bg-muted shrink-0" onClick={() => setHandRaisers(prev => prev.filter(x => x.userId !== h.userId))} title="Bỏ qua">
+                  <XCircle className="h-3 w-3" />
+                </Button>
               )}
             </div>
           ))}
@@ -644,7 +733,7 @@ function ClassroomContent({
               {me.isAdmin && !p.isAdmin && (
                 <div className="flex gap-0.5 shrink-0 opacity-0 group-hover:opacity-100">
                   {isSpeaker && (
-                    <Button size="icon" variant="ghost" className="h-5 w-5" title="Tắt quyền nói" onClick={() => revokeMic(p.userId)}>
+                    <Button size="icon" variant="ghost" className="h-5 w-5" title="Tắt mic" onClick={() => forceMute(p.userId)}>
                       <MicOff className="h-3 w-3" />
                     </Button>
                   )}
@@ -739,8 +828,25 @@ function ClassroomContent({
           </div>
 
           {/* Video area */}
-          <div className={cn('bg-black overflow-hidden md:flex-1', mobileTab === 'video' ? 'flex-1' : 'hidden md:flex')}>
-            <HlsPlayer src={roomInfo.hlsUrl} className="w-full h-full" />
+          <div className={cn('relative bg-black overflow-hidden md:flex-1', mobileTab === 'video' ? 'flex-1' : 'hidden md:flex')}>
+            <HlsPlayer
+              src={roomInfo.hlsUrl}
+              className="w-full h-full"
+              startMuted={me.isAdmin}
+              forceMuted={!me.isAdmin && speaking}
+            />
+            {/* Reaction nổi */}
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+              {floaters.map(f => (
+                <span
+                  key={f.id}
+                  className="live-float-up absolute bottom-4 text-3xl"
+                  style={{ left: `${10 + Math.random() * 70}%` }}
+                >
+                  {f.value === '1' ? '✅' : '🤔'}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* Mobile panels */}
@@ -763,12 +869,10 @@ function ClassroomContent({
       <div className="shrink-0 border-t border-border/60 px-4 py-2 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <Button size="sm" variant={micButtonOn ? 'default' : 'outline'}
-            className={cn('gap-1.5 h-9', !me.isAdmin && !micApproved && 'opacity-50')}
+            className="gap-1.5 h-9"
             onClick={toggleMic}>
             {micButtonOn ? <Mic className="h-3.5 w-3.5" /> : <MicOff className="h-3.5 w-3.5" />}
-            <span className="hidden sm:inline text-xs">
-              {micButtonOn ? 'Tắt mic' : me.isAdmin || micApproved ? 'Bật mic' : 'Cần được duyệt'}
-            </span>
+            <span className="hidden sm:inline text-xs">{micButtonOn ? 'Tắt mic' : 'Bật mic'}</span>
           </Button>
 
           {!me.isAdmin && (
@@ -782,9 +886,9 @@ function ClassroomContent({
         </div>
 
         <div className="flex items-center gap-2">
-          {micApproved && !me.isAdmin && (
+          {speaking && !me.isAdmin && (
             <Badge variant="outline" className="text-[10px] text-emerald-600 border-emerald-500/30 bg-emerald-500/10">
-              Được phép nói
+              Đang nói
             </Badge>
           )}
           {me.isAdmin && (
