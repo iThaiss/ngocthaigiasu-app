@@ -48,7 +48,19 @@ export default function HlsPlayer({ src, className = '', startMuted = false, for
       hlsRef.current?.destroy()
 
       const hls = new Hls({
+        // Buffer rộng để chịu mạng/thiết bị yếu (chống "mất kết nối" do segment hết hạn)
         backBufferLength: 30,
+        maxBufferLength: 30,
+        maxMaxBufferLength: 60,
+        liveSyncDurationCount: 4,
+        liveMaxLatencyDurationCount: 12,
+        // Thử lại nhiều lần trước khi báo lỗi
+        manifestLoadingMaxRetry: 8,
+        manifestLoadingRetryDelay: 1000,
+        levelLoadingMaxRetry: 8,
+        levelLoadingRetryDelay: 1000,
+        fragLoadingMaxRetry: 10,
+        fragLoadingRetryDelay: 1000,
         // MediaMTX HLS dùng cookie session (Secure, SameSite=None) — phải gửi
         // credentials cho request cross-origin, nếu không sub-playlist bị "authentication error"
         xhrSetup: (xhr) => {
@@ -69,14 +81,31 @@ export default function HlsPlayer({ src, className = '', startMuted = false, for
         tryPlay(video)
       })
 
+      // Tự phục hồi: lỗi mạng → tải lại; lỗi giải mã → recover; chỉ báo "mất kết nối"
+      // khi không thể cứu (rồi khởi tạo lại sau vài giây)
+      let recovering = false
       hls.on(Hls.Events.ERROR, (_, data) => {
-        if (data.fatal) {
+        if (!data.fatal) return
+        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+          setStatus('loading')
+          hls.startLoad()
+        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+          setStatus('loading')
+          hls.recoverMediaError()
+        } else if (!recovering) {
+          recovering = true
           setStatus('error')
           setTimeout(() => {
-            hls.loadSource(src)
-            hls.startLoad()
+            try {
+              hls.destroy()
+            } catch {}
+            const fresh = new Hls(hls.config)
+            hlsRef.current = fresh
+            fresh.loadSource(src)
+            fresh.attachMedia(video)
+            fresh.on(Hls.Events.MANIFEST_PARSED, () => { setStatus('playing'); tryPlay(video) })
             setStatus('loading')
-          }, 5000)
+          }, 4000)
         }
       })
 

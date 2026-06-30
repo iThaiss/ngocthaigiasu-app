@@ -8,8 +8,9 @@ apiAddress: :9997
 
 hls: yes
 hlsVariant: mpegts
-hlsSegmentCount: 7
-hlsSegmentDuration: 1s
+# Buffer ~20s (10 doan x 2s) de may/wifi yeu khong bi "mat ket noi" do segment het han
+hlsSegmentCount: 10
+hlsSegmentDuration: 2s
 
 api: yes
 

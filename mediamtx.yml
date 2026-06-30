@@ -10,10 +10,11 @@ webrtcAddress: :8889
 apiAddress: :9997
 
 # HLS settings — mpegts gộp audio+video vào 1 luồng .ts (tương thích tốt nhất với hls.js)
+# Buffer ~20s (10 đoạn × 2s) để máy/wifi yếu không bị "mất kết nối" do segment hết hạn
 hls: yes
 hlsVariant: mpegts
-hlsSegmentCount: 7
-hlsSegmentDuration: 1s
+hlsSegmentCount: 10
+hlsSegmentDuration: 2s
 
 api: yes
 
