@@ -8,7 +8,7 @@ import {
   Brain, Target, Video, Crown, GitBranch, User,
   Languages, BookOpen, BookMarked, BotMessageSquare, Sparkles,
   ChevronLeft, ChevronRight, ChevronDown, ChevronUp,
-  MoreHorizontal, X, LogOut, FileText,
+  MoreHorizontal, X, LogOut, FileText, FolderOpen,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { useAuth } from '@/lib/auth-context'
@@ -26,6 +26,7 @@ const PRIMARY_NAV: NavItem[] = [
   { href: '/solve', label: 'Giải toán AI', icon: Brain },
   { href: '/practice', label: 'Luyện tập', icon: Target },
   { href: '/de-thi', label: 'Đề thi', icon: FileText },
+  { href: '/documents', label: 'Tài liệu', icon: FolderOpen },
 ]
 
 const BOTTOM_NAV: NavItem[] = [
@@ -272,7 +273,11 @@ export default function Sidebar() {
                 </Button>
               </div>
               <div className="overflow-y-auto p-3 space-y-0.5">
-                <p className="px-2 py-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
+                <NavLink
+                  item={{ href: '/documents', label: 'Tài liệu', icon: FolderOpen }}
+                  onClick={() => setMobileOpen(false)}
+                />
+                <p className="px-2 py-1 mt-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground/60">
                   Tiếng Anh
                 </p>
                 {ENGLISH_NAV.map((item) => (
