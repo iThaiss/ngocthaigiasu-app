@@ -105,10 +105,10 @@ export async function PUT(req: NextRequest) {
         finalMeetUrl = result.meetUrl
         resolvedEventId = result.eventId
       } catch (err: any) {
-        console.error('Failed to create calendar event automatically on edit:', err)
-        return NextResponse.json({ 
-          error: `Không thể tạo phòng học Google Meet tự động: ${err.message || err}`
-        }, { status: 500 })
+        // Lớp live dùng MediaMTX/LiveKit, không cần Google Meet — bỏ qua lỗi, cập nhật vẫn tiếp tục
+        console.error('Failed to create calendar event automatically on edit (non-fatal):', err)
+        finalMeetUrl = null
+        resolvedEventId = null
       }
     } else if (!resolvedEventId) {
       try {
