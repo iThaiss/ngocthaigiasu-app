@@ -8,7 +8,7 @@ import 'katex/dist/katex.min.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ngocthaigiasu.id.vn — Gia sư Toán AI',
+  title: 'Ngọc Thái Gia Sư - Ôn Toán thi Đại học giá Tiểu học',
   description: 'Nền tảng gia sư Toán thông minh với AI, luyện tập theo chủ đề và cộng đồng học tập.',
 }
 
