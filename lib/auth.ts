@@ -59,7 +59,18 @@ export const authOptions: NextAuthOptions = {
       }
     },
     async jwt({ token, user, trigger }) {
-      const email = user?.email ?? (trigger === 'update' ? (token.email as string) : null)
+      const isVipExpired = (expiresAt: string | null | undefined) => {
+        if (!expiresAt) return false
+        const expiryTime = new Date(expiresAt).getTime()
+        return Number.isNaN(expiryTime) || expiryTime <= Date.now()
+      }
+
+      // Refresh an expired VIP session even without an explicit session update.
+      // This prevents a stale JWT from retaining VIP access after its expiry date.
+      const refreshExpiredVip = isVipExpired(token.vipExpiresAt as string | null | undefined)
+      const email = user?.email ?? (
+        trigger === 'update' || refreshExpiredVip ? (token.email as string) : null
+      )
       if (email) {
         try {
           const { data } = await supabaseAdmin
@@ -70,10 +81,11 @@ export const authOptions: NextAuthOptions = {
           if (data) {
             token.userId = data.id
             token.role = data.role
-            token.isVip = data.is_vip
+            const isVipActive = data.is_vip && !isVipExpired(data.vip_expires_at)
+            token.isVip = isVipActive
             token.vipExpiresAt = data.vip_expires_at
-            token.plan = data.plan ?? null
-            token.vipPlan = data.vip_plan ?? null
+            token.plan = isVipActive ? data.plan ?? null : 'free'
+            token.vipPlan = isVipActive ? data.vip_plan ?? null : null
             token.profileCompleted = data.profile_completed ?? false
             token.avatarUrl = data.avatar_url ?? (token.picture as string | null) ?? null
           }
