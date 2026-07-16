@@ -55,7 +55,7 @@ export const authOptions: NextAuthOptions = {
         return true
       } catch (error) {
         console.error('SignIn error:', error)
-        return true
+        return false
       }
     },
     async jwt({ token, user, trigger }) {

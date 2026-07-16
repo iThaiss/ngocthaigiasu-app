@@ -6,20 +6,25 @@ export async function POST(req: NextRequest) {
   const rawBody = await req.text()
   const signature = req.headers.get('X-SePay-Signature') ?? ''
   const timestamp = req.headers.get('X-SePay-Timestamp') ?? ''
+  const secret = process.env.SEPAY_WEBHOOK_SECRET
+
+  if (!secret || !/^\d+$/.test(timestamp)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
 
   const now = Math.floor(Date.now() / 1000)
-  if (Math.abs(now - parseInt(timestamp)) > 300) {
-    console.log('[webhook] Request expired, timestamp:', timestamp)
+  const timestampSeconds = Number(timestamp)
+  if (!Number.isSafeInteger(timestampSeconds) || Math.abs(now - timestampSeconds) > 300) {
     return NextResponse.json({ error: 'Request expired' }, { status: 401 })
   }
 
-  const expected = 'sha256=' + crypto
-    .createHmac('sha256', process.env.SEPAY_WEBHOOK_SECRET!)
-    .update(`${timestamp}.${rawBody}`)
-    .digest('hex')
+  const expected = Buffer.from(
+    crypto.createHmac('sha256', secret).update(`${timestamp}.${rawBody}`).digest('hex'),
+    'utf8',
+  )
+  const received = Buffer.from(signature.replace(/^sha256=/, ''), 'utf8')
 
-  if (signature !== expected) {
-    console.log('[webhook] Signature mismatch')
+  if (!/^sha256=[0-9a-f]{64}$/i.test(signature) || received.length !== expected.length || !crypto.timingSafeEqual(received, expected)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
@@ -30,18 +35,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
 
-  console.log('[webhook] received:', JSON.stringify(body))
-
   const content = (body.content ?? body.code ?? '') as string
-  const transferAmount = body.transferAmount as number
+  const transferAmount = Number(body.transferAmount)
+  if (!Number.isSafeInteger(transferAmount) || transferAmount <= 0) {
+    return NextResponse.json({ error: 'Invalid transfer amount' }, { status: 400 })
+  }
 
   const match = content.match(/NT\d{6}/)
   if (!match) {
-    console.log('[webhook] No referenceCode in content, skipping')
     return NextResponse.json({ success: true })
   }
   const referenceCode = match[0]
-  console.log('[webhook] referenceCode:', referenceCode)
 
   const supabase = createAdminClient()
 
@@ -53,12 +57,10 @@ export async function POST(req: NextRequest) {
     .single()
 
   if (!tx) {
-    console.log('[webhook] transaction not found for', referenceCode)
     return NextResponse.json({ success: true })
   }
 
   if (tx.amount !== transferAmount) {
-    console.log('[webhook] amount mismatch: expected', tx.amount, 'got', transferAmount)
     return NextResponse.json({ success: true })
   }
 
@@ -88,8 +90,6 @@ export async function POST(req: NextRequest) {
     content: notifContent,
     type: 'payment',
   })
-
-  console.log('[webhook] topup complete: user', tx.user_id, '+', pointsAdded, 'points')
 
   return NextResponse.json({ success: true })
 }

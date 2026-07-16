@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import net from 'net'
 import { requireAdmin } from '@/lib/admin-guard'
 import { createAdminClient } from '@/lib/supabase'
 
@@ -35,13 +36,22 @@ export async function GET(req: NextRequest) {
   // Basic check for private IP ranges (IPv4)
   const isPrivateIp = (ip: string): boolean => {
     const parts = ip.split('.').map(Number)
-    if (parts.length !== 4 || parts.some(isNaN)) return false
-    return (
-      parts[0] === 10 || // 10.0.0.0/8
-      (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) || // 172.16.0.0/12
-      (parts[0] === 192 && parts[1] === 168) || // 192.168.0.0/16
-      (parts[0] === 169 && parts[1] === 254) // 169.254.0.0/16 (Link-local, including AWS metadata)
-    )
+    if (parts.length === 4 && parts.every((part) => Number.isInteger(part) && part >= 0 && part <= 255)) {
+      return (
+        parts[0] === 10 ||
+        (parts[0] === 172 && parts[1] >= 16 && parts[1] <= 31) ||
+        (parts[0] === 192 && parts[1] === 168) ||
+        (parts[0] === 169 && parts[1] === 254) ||
+        parts[0] === 127
+      )
+    }
+
+    if (net.isIP(ip) === 6) {
+      const normalized = ip.toLowerCase()
+      return normalized === '::1' || normalized.startsWith('fc') || normalized.startsWith('fd') || normalized.startsWith('fe8') || normalized.startsWith('fe9') || normalized.startsWith('fea') || normalized.startsWith('feb') || normalized.startsWith('::ffff:10.') || normalized.startsWith('::ffff:127.') || normalized.startsWith('::ffff:192.168.')
+    }
+
+    return false
   }
 
   if (isPrivateIp(hostname)) {
@@ -51,23 +61,33 @@ export async function GET(req: NextRequest) {
   // Attempt resolving hostname to prevent DNS rebinding or direct IP requests to private range
   try {
     const dns = await import('dns/promises')
-    const lookup = await dns.lookup(parsed.hostname).catch(() => null)
-    if (lookup && isPrivateIp(lookup.address)) {
+    const lookups = await dns.lookup(parsed.hostname, { all: true }).catch(() => [])
+    if (lookups.some((lookup) => isPrivateIp(lookup.address))) {
       return NextResponse.json({ error: 'Forbidden resolved IP destination (SSRF Mitigation)' }, { status: 400 })
     }
   } catch {
     // Ignore DNS resolution errors and let fetch handle resolution/failure
   }
 
-  const res = await fetch(parsed.toString())
+  const res = await fetch(parsed.toString(), { signal: AbortSignal.timeout(10_000) })
   if (!res.ok) return NextResponse.json({ error: 'Image fetch failed' }, { status: 502 })
+
+  const contentLength = Number(res.headers.get('content-length') ?? 0)
+  if (contentLength > 8 * 1024 * 1024) {
+    return NextResponse.json({ error: 'Image is too large' }, { status: 413 })
+  }
 
   const contentType = res.headers.get('content-type') ?? ''
   if (!contentType.startsWith('image/')) {
     return NextResponse.json({ error: 'URL is not an image' }, { status: 400 })
   }
 
-  return new NextResponse(await res.arrayBuffer(), {
+  const image = await res.arrayBuffer()
+  if (image.byteLength > 8 * 1024 * 1024) {
+    return NextResponse.json({ error: 'Image is too large' }, { status: 413 })
+  }
+
+  return new NextResponse(image, {
     headers: {
       'Content-Type': contentType,
       'Cache-Control': 'private, max-age=300',
