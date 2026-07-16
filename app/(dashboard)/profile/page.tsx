@@ -325,7 +325,8 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
   if (isVip && vipExpiresAt) {
     const expires = new Date(vipExpiresAt)
     const today = new Date()
-    daysRemaining = Math.max(0, Math.ceil((expires.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)))
+    const remainingMs = Math.max(0, expires.getTime() - today.getTime())
+    daysRemaining = Math.ceil(remainingMs / (1000 * 60 * 60 * 24))
     
     let totalDays = 30
     if (vipPlan) {
@@ -337,8 +338,8 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
       else if (vipPlan.includes('1day')) totalDays = 1
     }
     
-    const daysUsed = totalDays - daysRemaining
-    progressPercent = Math.max(0, Math.min(100, (daysUsed / totalDays) * 100))
+    // The bar represents time remaining: full at activation and empty at expiry.
+    progressPercent = Math.max(0, Math.min(100, (remainingMs / (totalDays * 24 * 60 * 60 * 1000)) * 100))
   }
 
   return (
@@ -359,9 +360,13 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
               <span className="text-sm text-muted-foreground">Còn {daysRemaining} ngày</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Hiệu lực: {fmt(new Date())} → {fmt(new Date(vipExpiresAt))}
+              Hết hạn: {fmt(new Date(vipExpiresAt))}
             </p>
             <div className="space-y-1.5">
+              <div className="flex items-center justify-between text-xs text-muted-foreground">
+                <span>Thời gian còn lại</span>
+                <span>{Math.round(progressPercent)}%</span>
+              </div>
               <Progress value={progressPercent} className="h-2" />
             </div>
             <Button variant="outline" size="sm" className="w-full gap-2" asChild>
