@@ -17,6 +17,7 @@ import { useAuth } from '@/lib/auth-context'
 import { useSession } from 'next-auth/react'
 import { useToast } from '@/components/ui/use-toast'
 import { VIP_PLANS } from '@/lib/plans'
+import { isVipActive } from '@/lib/vip'
 
 const PROVINCES = [
   'An Giang', 'Bạc Liêu', 'Bắc Ninh', 'Cà Mau',
@@ -316,16 +317,18 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
   vipExpiresAt: string | null
   vipPlan: string | null
 }) {
+  const hasActiveVip = isVipActive(isVip, vipExpiresAt)
   const fmt = (d: Date) =>
     d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
 
   let daysRemaining = 0
   let progressPercent = 0
 
-  if (isVip && vipExpiresAt) {
+  if (hasActiveVip && vipExpiresAt) {
     const expires = new Date(vipExpiresAt)
     const today = new Date()
-    daysRemaining = Math.max(0, Math.ceil((expires.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)))
+    const remainingMs = Math.max(0, expires.getTime() - today.getTime())
+    daysRemaining = Math.ceil(remainingMs / (1000 * 60 * 60 * 24))
     
     let totalDays = 30
     if (vipPlan) {
@@ -337,20 +340,20 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
       else if (vipPlan.includes('1day')) totalDays = 1
     }
     
-    const daysUsed = totalDays - daysRemaining
-    progressPercent = Math.max(0, Math.min(100, (daysUsed / totalDays) * 100))
+    // The bar represents time remaining: full at activation and empty at expiry.
+    progressPercent = Math.max(0, Math.min(100, (remainingMs / (totalDays * 24 * 60 * 60 * 1000)) * 100))
   }
 
   return (
-    <Card className={isVip ? 'border-yellow-500/40 bg-yellow-500/5' : ''}>
+    <Card className={hasActiveVip ? 'border-yellow-500/40 bg-yellow-500/5' : ''}>
       <CardHeader className="pb-3">
         <div className="flex items-center gap-2">
-          <Crown className={`h-5 w-5 ${isVip ? 'text-yellow-500' : 'text-muted-foreground'}`} />
+          <Crown className={`h-5 w-5 ${hasActiveVip ? 'text-yellow-500' : 'text-muted-foreground'}`} />
           <CardTitle className="text-base">Trạng thái VIP</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        {isVip && vipExpiresAt ? (
+        {hasActiveVip && vipExpiresAt ? (
           <>
             <div className="flex items-center justify-between">
               <Badge className="bg-yellow-500 text-white gap-1">
@@ -359,9 +362,13 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
               <span className="text-sm text-muted-foreground">Còn {daysRemaining} ngày</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Hiệu lực: {fmt(new Date())} → {fmt(new Date(vipExpiresAt))}
+              Hết hạn: {fmt(new Date(vipExpiresAt))}
             </p>
             <div className="space-y-1.5">
+              <div className="flex items-center justify-between text-xs text-muted-foreground">
+                <span>Thời gian còn lại</span>
+                <span>{Math.round(progressPercent)}%</span>
+              </div>
               <Progress value={progressPercent} className="h-2" />
             </div>
             <Button variant="outline" size="sm" className="w-full gap-2" asChild>

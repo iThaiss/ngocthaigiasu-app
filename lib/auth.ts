@@ -1,6 +1,7 @@
 import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import { createClient } from '@supabase/supabase-js'
+import { isVipActive } from '@/lib/vip'
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder-url.supabase.co'
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder-service-key'
@@ -59,7 +60,14 @@ export const authOptions: NextAuthOptions = {
       }
     },
     async jwt({ token, user, trigger }) {
-      const email = user?.email ?? (trigger === 'update' ? (token.email as string) : null)
+      // Refresh an expired VIP session even without an explicit session update.
+      // This prevents a stale JWT from retaining VIP access after its expiry date.
+      const tokenSaysVip = token.isVip as boolean | undefined
+      const tokenExpiry = token.vipExpiresAt as string | null | undefined
+      const refreshExpiredVip = Boolean(tokenSaysVip) && !isVipActive(tokenSaysVip, tokenExpiry)
+      const email = user?.email ?? (
+        trigger === 'update' || refreshExpiredVip ? (token.email as string) : null
+      )
       if (email) {
         try {
           const { data } = await supabaseAdmin
@@ -70,10 +78,11 @@ export const authOptions: NextAuthOptions = {
           if (data) {
             token.userId = data.id
             token.role = data.role
-            token.isVip = data.is_vip
+            const hasActiveVip = isVipActive(data.is_vip, data.vip_expires_at)
+            token.isVip = hasActiveVip
             token.vipExpiresAt = data.vip_expires_at
-            token.plan = data.plan ?? null
-            token.vipPlan = data.vip_plan ?? null
+            token.plan = hasActiveVip ? data.plan ?? null : 'free'
+            token.vipPlan = hasActiveVip ? data.vip_plan ?? null : null
             token.profileCompleted = data.profile_completed ?? false
             token.avatarUrl = data.avatar_url ?? (token.picture as string | null) ?? null
           }
@@ -87,10 +96,12 @@ export const authOptions: NextAuthOptions = {
       if (session.user) {
         session.user.id = token.userId as string
         session.user.role = token.role as string
-        session.user.isVip = token.isVip as boolean
-        session.user.vipExpiresAt = token.vipExpiresAt as string | null
-        session.user.plan = (token.plan as string | null) ?? null
-        session.user.vipPlan = (token.vipPlan as string | null) ?? null
+        const vipExpiresAt = token.vipExpiresAt as string | null
+        const hasActiveVip = isVipActive(token.isVip as boolean, vipExpiresAt)
+        session.user.isVip = hasActiveVip
+        session.user.vipExpiresAt = vipExpiresAt
+        session.user.plan = hasActiveVip ? (token.plan as string | null) ?? null : 'free'
+        session.user.vipPlan = hasActiveVip ? (token.vipPlan as string | null) ?? null : null
         session.user.profileCompleted = (token.profileCompleted as boolean) ?? false
         if (token.avatarUrl) session.user.image = token.avatarUrl as string
       }
