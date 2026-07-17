@@ -17,6 +17,7 @@ import { useAuth } from '@/lib/auth-context'
 import { useSession } from 'next-auth/react'
 import { useToast } from '@/components/ui/use-toast'
 import { VIP_PLANS } from '@/lib/plans'
+import { isVipActive } from '@/lib/vip'
 
 const PROVINCES = [
   'An Giang', 'Bạc Liêu', 'Bắc Ninh', 'Cà Mau',
@@ -316,13 +317,14 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
   vipExpiresAt: string | null
   vipPlan: string | null
 }) {
+  const hasActiveVip = isVipActive(isVip, vipExpiresAt)
   const fmt = (d: Date) =>
     d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
 
   let daysRemaining = 0
   let progressPercent = 0
 
-  if (isVip && vipExpiresAt) {
+  if (hasActiveVip && vipExpiresAt) {
     const expires = new Date(vipExpiresAt)
     const today = new Date()
     const remainingMs = Math.max(0, expires.getTime() - today.getTime())
@@ -343,15 +345,15 @@ function VipStatusCard({ isVip, vipExpiresAt, vipPlan }: {
   }
 
   return (
-    <Card className={isVip ? 'border-yellow-500/40 bg-yellow-500/5' : ''}>
+    <Card className={hasActiveVip ? 'border-yellow-500/40 bg-yellow-500/5' : ''}>
       <CardHeader className="pb-3">
         <div className="flex items-center gap-2">
-          <Crown className={`h-5 w-5 ${isVip ? 'text-yellow-500' : 'text-muted-foreground'}`} />
+          <Crown className={`h-5 w-5 ${hasActiveVip ? 'text-yellow-500' : 'text-muted-foreground'}`} />
           <CardTitle className="text-base">Trạng thái VIP</CardTitle>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        {isVip && vipExpiresAt ? (
+        {hasActiveVip && vipExpiresAt ? (
           <>
             <div className="flex items-center justify-between">
               <Badge className="bg-yellow-500 text-white gap-1">

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { createAdminClient } from '@/lib/supabase'
+import { isVipActive } from '@/lib/vip'
 
 export async function GET() {
   const session = await getServerSession(authOptions)
@@ -25,14 +26,16 @@ export async function GET() {
       .maybeSingle(),
   ])
 
+  const vipExpiresAt = userRes.data?.vip_expires_at ?? null
+
   return NextResponse.json({
     name: userRes.data?.name ?? null,
     email: userRes.data?.email ?? null,
     phone: userRes.data?.phone ?? null,
     school: userRes.data?.school ?? null,
     province: userRes.data?.province ?? null,
-    isVip: userRes.data?.is_vip ?? false,
-    vipExpiresAt: userRes.data?.vip_expires_at ?? null,
+    isVip: isVipActive(userRes.data?.is_vip, vipExpiresAt),
+    vipExpiresAt,
     studentClass: profileRes.data?.class ?? null,
   })
 }

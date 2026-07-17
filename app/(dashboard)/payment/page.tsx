@@ -18,6 +18,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { useToast } from '@/components/ui/use-toast'
 import { formatCurrency } from '@/lib/utils'
 import { VIP_PLANS, PlanId } from '@/lib/plans'
+import { isVipActive } from '@/lib/vip'
 
 interface TopupInfo {
   txId: string
@@ -108,7 +109,7 @@ export default function PaymentPage() {
 
   const parsedAmount = parseInt(amountInput.replace(/\D/g, ''), 10) || 0
   const pointsPreview = Math.floor(parsedAmount / 1000)
-  const isVip = session?.user?.isVip ?? false
+  const isVip = isVipActive(session?.user?.isVip, session?.user?.vipExpiresAt)
 
   const getFreeVipStatus = () => {
     if (!lastFreeVipClaimedAt) return { eligible: true, daysLeft: 0 }
